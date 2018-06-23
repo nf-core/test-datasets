@@ -10,4 +10,4 @@ Test data to be used for automated testing with the nf-core pipelines
 
 ### Paired-end data
 
-`JK2782_*`: HiSeq MT Capture library (~10K reads after merging, Mammoth Data, Fellows Yates (2017) Sci. Rep)
+`JK2782_*`: HiSeq MT Capture library (~10K reads after merging, Mammoth Data, Fellows-Yates (2017) Sci. Rep)
