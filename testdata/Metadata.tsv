@@ -1,0 +1,5 @@
+ID	treatment1	bad3	bad4	bad5	num6	num7	mix8	bad9	badpairwise10
+1	b	a	a		1		2	a	
+2	b	a			2	1	2	b	2
+1a	a	a			3		a	c	2
+2a	a	a	a		1		a	d	a
