@@ -1,16 +1,10 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# test-datasets: `atacseq`
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+## Content of this repository
 
-nf-core is a collection of high quality Nextflow pipelines.
+`design.csv`: Sample design file
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+**NOTE**: Genome reference files and raw fastq files required to run the pipeline will be obtained from the existing [nf-core/chipseq test-dataset](https://github.com/nf-core/test-datasets/tree/chipseq)
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Gitter channel](https://gitter.im/nf-core/Lobby)
+This branch contains test data for the [nf-core/atacseq](https://github.com/nf-core/atacseq) pipeline.
