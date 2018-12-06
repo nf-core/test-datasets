@@ -4,13 +4,13 @@ nf-core is a collection of high quality Nextflow pipelines.
 
 ## Content of this repository
 
-NOTE: A full packaged test data set can be downloand from http://cancerbio.info/pub/lncpipe/testdata.tar.gz
+NOTE: A full packaged test data set can be downloaded from http://cancerbio.info/pub/lncpipe/testdata.tar.gz
 
 This branch contains test data instruction for the nf-core/lncpipe pipeline.   
 
 ## Run test data of lncpipe   
 
-As lncpipe involved integrated analysis of multi samples, we provided a four-sample packaged test data that have two different  experiment conditions. To run the test of lncpipe, plz run the following command step by step :  
+As lncpipe involved integrated analysis of multi samples, we provided a four-sample packaged test data that have two different  experiment conditions. To run the test of lncpipe, plz type the following command step by step :  
 
 ```shell
       #prepare test data 
@@ -50,7 +50,7 @@ As lncpipe involved integrated analysis of multi samples, we provided a four-sam
           └── lncipedia.chr22.gtf
 ```  
       
-* `design.file` stored the test exprimental design for performing comparision   
+* `design.file` store the exprimental design for performing comparision   
 
 ```
       D:dPDLSCs1,dPDLSCs2
