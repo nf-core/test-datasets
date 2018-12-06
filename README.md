@@ -66,5 +66,5 @@ As lncpipe involved integrated analysis of multi samples, we provided a four-sam
       
      * `lncipedia.chr22.gtf` GTF files grepped from [lncpedia_4.0.gtf](https://lncipedia.org/downloads/lncipedia_5_0_hc_hg38.gtf)  
      
-     * `gencode.chr22.gtf` GTP files grepped from [Genecode](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_27/gencode.v27.annotation.gtf.gz)
+     * `gencode.chr22.gtf` GTP files grepped from [GENCODE](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_27/gencode.v27.annotation.gtf.gz)
      
