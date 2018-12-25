@@ -17,8 +17,11 @@ As lncpipe involved integrated analysis of multi samples, we provided a four-sam
       wget http://cancerbio.info/pub/lncpipe/testdata.tar.gz
       tar -xvzf testdata.tar.gz 
       cd testdata
+      # pull the dev branch of lncpipe 
+       git clone -b dev https://github.com/nf-core/lncpipe.git
+      
       #run test command 
-      nextflow run nf-core/lncpipe -profile test,docker
+      nextflow run lncpipe -profile test,docker
 ```
 
 ## Test data content 
