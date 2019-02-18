@@ -1,3 +1,5 @@
 group,replicate,fastq_1,fastq_2
-Spt5-ChIP_IP,1,https://github.com/nf-core/test-datasets/raw/chipseq/testdata/SRR5204807_Spt5-ChIP_IP1_SacCer_ChIP-Seq_ss100k_R1.fastq.gz,https://github.com/nf-core/test-datasets/raw/chipseq/testdata/SRR5204807_Spt5-ChIP_IP1_SacCer_ChIP-Seq_ss100k_R2.fastq.gz
-Spt5-ChIP_IP,2,https://github.com/nf-core/test-datasets/raw/chipseq/testdata/SRR5204808_Spt5-ChIP_IP2_SacCer_ChIP-Seq_ss100k_R1.fastq.gz,https://github.com/nf-core/test-datasets/raw/chipseq/testdata/SRR5204808_Spt5-ChIP_IP2_SacCer_ChIP-Seq_ss100k_R2.fastq.gz
+OSMOTIC_STRESS_T0,1,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822153_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822153_2.fastq.gz
+OSMOTIC_STRESS_T0,2,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822154_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822154_2.fastq.gz
+OSMOTIC_STRESS_T15,1,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822157_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822157_2.fastq.gz
+OSMOTIC_STRESS_T15,2,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822158_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822158_2.fastq.gz
