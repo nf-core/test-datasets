@@ -12,10 +12,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 *S. cerevisiae* paired-end ATAC-seq dataset was obtained from:
 
-Schep AN, Buenrostro JD, Denny SK, Schwartz K, Sherlock G, Greenleaf WJ. Structured nucleosome fingerprints enable high-resolution mapping of chromatin architecture within regulatory regions. Genome Res 2015 Nov;25(11):1757-70.
-
-https://www.ncbi.nlm.nih.gov/pubmed/26314830   
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66386
+Schep AN, Buenrostro JD, Denny SK, Schwartz K, Sherlock G, Greenleaf WJ. Structured nucleosome fingerprints enable high-resolution mapping of chromatin architecture within regulatory regions. Genome Res 2015 Nov;25(11):1757-70. [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/26314830) [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66386)
 
 ### Sample information
 
@@ -28,7 +25,7 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66386
 
 ## Sampling procedure
 
-The following command was used to sub-sample the raw paired-end FastQ files to 100,000 reads (see [seqtk](https://github.com/lh3/seqtk)).
+The example command below was used to sub-sample the raw paired-end FastQ files to 100,000 reads (see [seqtk](https://github.com/lh3/seqtk)).
 
 ```bash
 mkdir -p sample
