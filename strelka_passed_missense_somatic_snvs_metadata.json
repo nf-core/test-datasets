@@ -1,0 +1,7 @@
+{
+"patient_firstname":"ABC",
+"patient_lastname":"DEF",
+"patient_dateofbirth":"12.12.1212",
+"patient_diagnosis_short":"HCC",
+"mutation_load":"Medium"
+}
