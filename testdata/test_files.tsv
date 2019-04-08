@@ -1,0 +1,1 @@
+testset	testdata/test_read_nanopore.fastq.gz	testdata/test_read_illumina_R1.fastq.gz	testdata/test_read_illumina_R2.fastq.gz
