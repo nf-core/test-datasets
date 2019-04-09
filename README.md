@@ -7,7 +7,8 @@ This branch contains test data for the [nf-core/bcellmagic](https://github.com/n
 
 ###  Metadata and primer files
 
-`metadata_test.tsv`
+`Metadata_test.tsv` contains the metadata sheet needed to run the pipeline.
+`C_primers.fasta` and `V_primers.fasta` contain fake primers, do not use them!
 
 ## Paired-end data
 
