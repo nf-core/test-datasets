@@ -1,2 +1,2 @@
 ID	R1	R2	I1	Source	Treatment	Extraction_time	Population
-Sample_ID	0705M_S3_L001_R1_001.fastq.gz	0705M_S3_L001_R2_001.fastq.gz	0705M_S3_L001_I1_001.fastq.gz	Patient1	Drug_treatment	5months	pbl
+Sample_ID	https://github.com/nf-core/test-datasets/blob/bcellmagic/testdata/test_short_R1.fastq.gz	https://github.com/nf-core/test-datasets/blob/bcellmagic/testdata/test_short_R2.fastq.gz	https://github.com/nf-core/test-datasets/blob/bcellmagic/testdata/test_short_I1.fastq.gz	Patient1	Drug_treatment	5months	pbl

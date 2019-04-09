@@ -1,0 +1,321 @@
+>V01577|IGKV1-12*01|Homo_sapiens|F|L-PART1+L-PART2|1170..1224+1349..1359|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggttcccaggttcc
+agatgc
+>V01576|IGKV1-12*02|Homo_sapiens|F|L-PART1+L-PART2|1170..1224+1350..1360|66 nt|1| | | | |66+0=66| | |
+atggacatgatggtccccgctcagctcctggggctcctgctgctctggttcccaggttcc
+agatgc
+>Z00010|IGKV1-13*01|Homo_sapiens|P|L-PART1+L-PART2|427..481+608..618|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggcttctgctgctctggctcccaggtgcc
+agatgt
+>Z00006|IGKV1-13*02|Homo_sapiens|F|L-PART1+L-PART2|747..801+928..938|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggcttctgctgctctggctcccaggtgcc
+agatgt
+>J00248|IGKV1-16*01|Homo_sapiens|F|L-PART1+L-PART2|131..185+311..321|66 nt|1| | | | |66+0=66| | |
+atggacatgagagtcctcgctcagctcctggggctcctgctgctctgtttcccaggtgcc
+agatgt
+>X72808|IGKV1-17*01|Homo_sapiens|F|L-PART1+L-PART2|397..451+577..587|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggttcccaggtgcc
+aggtgt
+>D88255|IGKV1-17*02|Homo_sapiens|F|L-PART1+L-PART2|656..704+831..841|60 nt|1| | | | |60+0=60| | |
+atgagggtccccgctcagctcctggggctcctgctgctctggttcccaggtgccaggtgt
+>KM455566|IGKV1-17*03|Homo_sapiens|F|L-PART1+L-PART2|1..49+175..185|60 nt|1| | | | |60+0=60| | |
+atgagggtccccgctcagctcctggggctcctgctgctctggttcccaggtgccaggtgt
+>X71885|IGKV1-22*01|Homo_sapiens|P|L-PART1+L-PART2|2665..2719+2833..2843|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccactcagctccaggggctcctgctgctctggctcccaggagtc
+agatgt
+>X63398|IGKV1-27*01|Homo_sapiens|F|L-PART1+L-PART2|323..377+502..512|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccctgctcagctcctgggactcctgctgctctggctcccagatacc
+agatgt
+>X71883|IGKV1-32*01|Homo_sapiens|P|L-PART1+L-PART2|560..614+733..743|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccctgctcagctcctggggctcctgctgctctggctctcaggtgcc
+agatat
+>M64856|IGKV1-33*01|Homo_sapiens|F|L-PART1+L-PART2|131..185+310..320|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccctgctcagctcctggggctcctgcagctctggctctcaggtgcc
+agatgt
+>X71890|IGKV1-35*01|Homo_sapiens|P|L-PART1+L-PART2|456..510+635..645|66 nt|1| | | | |66+0=66| | |
+atggacatgaagaccctcattcagctcccgggacttctgccatcctggtttccagggacc
+agaagt
+>Z00005|IGKV1-35*02|Homo_sapiens|P|L-PART1+L-PART2|1..27+152..162|38 nt|3| | | | |38+0=38|partial in 5'| |
+cgggacttctgccatcctggtttccagggaccagaagt
+>X59316|IGKV1-37*01|Homo_sapiens|ORF|L-PART1+L-PART2|356..410+535..545|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctactgctctgggtcccaggtgcc
+agatgt
+>X59315|IGKV1-39*01|Homo_sapiens|F|L-PART1+L-PART2|134..188+313..323|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctactctggctccgaggtgcc
+agatgt
+>X59318|IGKV1-39*02|Homo_sapiens|P|L-PART1+L-PART2|651..705+830..840|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctactctggctctgaggtgcc
+agatgt
+>Z00001|IGKV1-5*01|Homo_sapiens|F|L-PART1+L-PART2|297..351+477..487|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgcc
+aaatgt
+>M23851|IGKV1-5*02|Homo_sapiens|F|L-PART1+L-PART2|292..346+472..482|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgcc
+aaatgt
+>M64858|IGKV1-6*01|Homo_sapiens|F|L-PART1+L-PART2|131..185+312..322|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgcc
+agatgt
+>KM455558|IGKV1-6*02|Homo_sapiens|F|L-PART1+L-PART2|1..49+176..186|60 nt|1| | | | |60+0=60| | |
+atgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgccagatgt
+>Z00014|IGKV1-8*01|Homo_sapiens|F|L-PART1+L-PART2|957..1005+1131..1141|60 nt|1| | | | |60+0=60| | |
+atgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgccagatgt
+>Z00013|IGKV1-9*01|Homo_sapiens|F|L-PART1+L-PART2|690..744+870..880|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgcc
+agatgt
+>Y14865|IGKV1-NL1*01|Homo_sapiens|F|L-PART1+L-PART2|161..215+340..350|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtacc
+agatgt
+>X64640|IGKV1/OR-2*01|Homo_sapiens|P|L-PART1+L-PART2|168..231+356..366|75 nt|1| | | | |75+0=75| | |
+acggacgtgagggcccccactcagctcctggggctcctggggctcctggggctctggctg
+acaggtgccagatgt
+>X64641|IGKV1/OR-3*01|Homo_sapiens|P|L-PART1+L-PART2|426..489+614..624|75 nt|1| | | | |75+0=75| | |
+aaggacgtgagggcccccactcagctcctggggctcctggggctcctggggctctggctg
+ccaggtgccagatgt
+>X64642|IGKV1/OR-4*01|Homo_sapiens|P|L-PART1+L-PART2|183..237+362..372|66 nt|1| | | | |66+0=66| | |
+acagacgtgagggcccccactcagctcttggggctcctggtgctctggctgccaggtgcc
+agatgt
+>M20809|IGKV1/OR1-1*01|Homo_sapiens|P|L-PART1+L-PART2|113..167+292..302|66 nt|1| | | | |66+0=66| | |
+acagacatgagggcccccactcagctcctggggctcctggtgctctggctgccaggtgcc
+agatgt
+>AL031601|IGKV1/OR10-1*01|Homo_sapiens|P|L-PART1+L-PART2|84082..84130+84255..84265|60 nt|1| | | | |60+0=60| | |
+gtgagggcccccactcagctcctggggctcctggtgctctggctgccaggtgccagatgt
+>M20812|IGKV1/OR15-118*01|Homo_sapiens|P|L-PART1+L-PART2|120..174+299..309|66 nt|1| | | | |66+0=66| | |
+acagacatgagggcccccactcagctcctggggctcctggtgctctggctgccaggtgcc
+agatgt
+>Y08392|IGKV1/OR2-0*01|Homo_sapiens|ORF|L-PART1+L-PART2|136..184+309..319|60 nt|1| | | | |60+0=60| | |
+atgagggcccccactcagctcctggggctcctggtgctctggctgccaggtgccagatgt
+>M20813|IGKV1/OR2-1*01|Homo_sapiens|P|L-PART1+L-PART2|130..184+309..319|66 nt|1| | | | |66+0=66| | |
+acggacgtgagggcccccactcagctcctggggctcctggggctctggctgccaggtgcc
+agatgt
+>X51887|IGKV1/OR2-108*01|Homo_sapiens|ORF|L-PART1+L-PART2|132..186+311..321|66 nt|1| | | | |66+0=66| | |
+atggaaatgagggtccccgctcagctcctggggctcctgctgctctggctccgaggtgcc
+agatgt
+>X51885|IGKV1/OR2-11*01|Homo_sapiens|P|L-PART1+L-PART2|169..223+348..358|66 nt|1| | | | |66+0=66| | |
+atgaacatgaggatccccgctcagctcctggccttcctgctgctctgtctcccagatgcc
+agatgt
+>AC128677|IGKV1/OR2-2*01|Homo_sapiens|P|L-PART1+L-PART2|125665..125719+125530..125540|66 nt|1| | | | |66+0=66| |rev-compl|
+acggacgtgagggcccccactcagctcctggggctcctggggctctggctgccaggtgcc
+agatgt
+>X05102|IGKV1/OR2-3*01|Homo_sapiens|P|L-PART1+L-PART2|600..654+779..789|66 nt|1| | | | |66+0=66| | |
+atgaacatgaggatccccgctcagctcctggccttcctgctgctctgtctcccagatgcc
+agatgt
+>X05103|IGKV1/OR2-6*01|Homo_sapiens|P|L-PART1+L-PART2|130..184+309..319|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctctgaggtgcc
+agatgt
+>X51879|IGKV1/OR2-9*01|Homo_sapiens|P|L-PART1+L-PART2|294..348+473..483|66 nt|1| | | | |66+0=66| | |
+atgaacatgaggatccccgctcagctcctggccttcctgctgctctgtctcccagatgcc
+agatgt
+>Z00040|IGKV1/OR22-1*01|Homo_sapiens|P|L-PART1+L-PART2|664..718+842..852|66 nt|1| | | | |66+0=66| | |
+acggacgcgagggcccccactcagctcctggggctcctggggctctggctgccaggtacc
+agacgt
+>Z00003|IGKV1/OR22-5*01|Homo_sapiens|P|L-PART1+L-PART2|130..184+309..319|66 nt|1| | | | |66+0=66| | |
+acggatgcaaggtcccccactcagctcctggggctcctggtgctctggctgccaggtgcc
+agatgt
+>Z00002|IGKV1/OR22-5*02|Homo_sapiens|P|L-PART1+L-PART2|219..273+398..408|66 nt|1| | | | |66+0=66| | |
+acggatgcaaggtcccccactcagctcctggggctcctggtgctctggttgccaggtgcc
+agatgt
+>AL512605|IGKV1/OR9-1*01|Homo_sapiens|P|L-PART1+L-PART2|84013..84076+83878..83888|75 nt|1| | | | |75+0=75| |rev-compl|
+acggacgtgagggcccccactcagctcctggggctcctggggctcctggggctctggctg
+ccaggtgtcagatgt
+>AC129778|IGKV1/OR9-2*01|Homo_sapiens|P|L-PART1+L-PART2|148535..148598+148400..148410|75 nt|1| | | | |75+0=75| |rev-compl|
+acggacgtgagggcccccactcagctcctggggctcctggggctcctggggctctggctg
+ccaggtgtcagatgt
+>AC134879|IGKV1/ORY-1*01|Homo_sapiens|P|L-PART1+L-PART2|118665..118719+118844..118854|66 nt|1| | | | |66+0=66| | |
+acggatgtgagggcccccactcagctcctggggctcctggtgttctggctgccaggtgtc
+agatgt
+>X17263|IGKV1D-12*01|Homo_sapiens|F|L-PART1+L-PART2|131..185+310..320|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggttcccaggttcc
+agatgc
+>V01576|IGKV1D-12*02|Homo_sapiens|F|L-PART1+L-PART2|1170..1224+1350..1360|66 nt|1| | | | |66+0=66| | |
+atggacatgatggtccccgctcagctcctggggctcctgctgctctggttcccaggttcc
+agatgc
+>X17262|IGKV1D-13*01|Homo_sapiens|F|L-PART1+L-PART2|130..184+311..321|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggcttctgctgctctggctcccaggtgcc
+agatgt
+>KM455562|IGKV1D-13*02|Homo_sapiens|F|L-PART1+L-PART2|1..49+176..186|60 nt|1| | | | |60+0=60| | |
+atgagggtccccgctcagctcctggggcttctgctgctctggctcccaggtgccagatgt
+>K01323|IGKV1D-16*01|Homo_sapiens|F|L-PART1+L-PART2|131..185+311..321|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtcctcgctcagctcctggggctcctgctgctctgtttcccaggtgcc
+agatgt
+>V00558|IGKV1D-16*02|Homo_sapiens|F|L-PART1+L-PART2|131..185+311..321|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtcctcgctcagctcctggggctcctgctgctctgtttcccaggtgcc
+agatgt
+>X63392|IGKV1D-17*01|Homo_sapiens|F|L-PART1+L-PART2|986..1040+1166..1176|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggttcccaggtgcc
+agatgt
+>X71887|IGKV1D-22*01|Homo_sapiens|P|L-PART1+L-PART2|2664..2718+2832..2842|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccactcagctccaggggctcctgctgctccggctcccaggagtc
+agatgt
+>Z00004|IGKV1D-27*01|Homo_sapiens|P|L-PART1+L-PART2|525..579+704..714|66 nt|1| | | | |66+0=66| | |
+atggacatgagggcccccgctcagctcctgggactcctgctgctctggctcccagatacc
+agatgt
+>X71896|IGKV1D-32*01|Homo_sapiens|P|L-PART1+L-PART2|578..632+751..761|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccctgctcagctcctggggctcctgctgctctgactctcaggtgcc
+agatat
+>M64855|IGKV1D-33*01|Homo_sapiens|F|L-PART1+L-PART2|131..185+310..320|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccctgctcagctcctggggctcctgctgctctggctctcaggtgcc
+agatgt
+>X71894|IGKV1D-35*01|Homo_sapiens|P|L-PART1+L-PART2|121..175+300..310|66 nt|1| | | | |66+0=66| | |
+atggacatgaagaccctcattcagctcccgggacttctgccatcctggtttccagggacc
+agaagt
+>Z00005|IGKV1D-35*02|Homo_sapiens|P|L-PART1+L-PART2|1..27+152..162|38 nt|3| | | | |38+0=38|partial in 5'| |
+cgggacttctgccatcctggtttccagggaccagaagt
+>X71893|IGKV1D-37*01|Homo_sapiens|ORF|L-PART1+L-PART2|437..491+616..626|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctactgctctgggtcccaggtgcc
+agatgt
+>X59312|IGKV1D-39*01|Homo_sapiens|F|L-PART1+L-PART2|134..188+313..323|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctactctggctccgaggtgcc
+agatgt
+>X72816|IGKV1D-42*01|Homo_sapiens|ORF|L-PART1+L-PART2|209..263+380..390|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgtc
+agattt
+>KM455560|IGKV1D-42*02|Homo_sapiens|ORF|L-PART1+L-PART2|1..49+166..176|60 nt|1| | | | |60+0=60| | |
+atgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgtcagattt
+>X72817|IGKV1D-43*01|Homo_sapiens|F|L-PART1+L-PART2|150..204+330..340|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtgcccgctcagcgcctggggctcctgctgctctggttcccaggtgcc
+agatgt
+>Z00008|IGKV1D-8*01|Homo_sapiens|F|L-PART1+L-PART2|305..359+484..494|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgcc
+agatgt
+>KM455563|IGKV1D-8*02|Homo_sapiens|F|L-PART1+L-PART2|1..49+174..184|60 nt|1| | | | |60+0=60| | |
+atgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgccagatgt
+>KM455567|IGKV1D-8*03|Homo_sapiens|F|L-PART1+L-PART2|1..55+180..190|66 nt|1| | | | |66+0=66| | |
+atggacatgagggtccccgctcagctcctggggctcctgctgctctggctcccaggtgcc
+agatgt
+>Z00012|IGKV2-10*01|Homo_sapiens|P|L-PART1+L-PART2|121..169+503..513|60 nt|1| | | | |60+0=60| | |
+gtgaggctccctgctcagctcctggggctgctaatgctctgggtccctggatccaatgga
+>X72810|IGKV2-14*01|Homo_sapiens|P|L-PART1+L-PART2|191..239+645..655|60 nt|1| | | | |60+0=60| | |
+gtgaggctccctgctcagctcccagggctgctaatgcactgggtccctggatccaatgga
+>X63400|IGKV2-18*01|Homo_sapiens|P|L-PART1+L-PART2|341..389+807..817|60 nt|1| | | | |60+0=60| | |
+ataagggtccctgctcagctcctggggctgctaatgctttgggttcctggatccagtgga
+>X71885|IGKV2-23*01|Homo_sapiens|P|L-PART1+L-PART2|834..882+1327..1337|60 nt|1| | | | |60+0=60| | |
+gtgaggttccctgctcagctcctggggctgctaatgctttgggttcctggatccggtggg
+>X12684|IGKV2-24*01|Homo_sapiens|F|L-PART1+L-PART2|154..202+646..656|60 nt|1| | | | |60+0=60| | |
+atgaggctccttgctcagcttctggggctgctaatgctctgggtccctggatccagtggg
+>X71884|IGKV2-26*01|Homo_sapiens|P|L-PART1+L-PART2|505..553+944..954|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcttggggctgctaatgctctgggtccctggatccagtgca
+>X63397|IGKV2-28*01|Homo_sapiens|F|L-PART1+L-PART2|305..353+728..738|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtctctggatccagtggg
+>X63396|IGKV2-29*01|Homo_sapiens|P|L-PART1+L-PART2|322..370+738..748|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctggatccctggatccagtgcg
+>U41645|IGKV2-29*02|Homo_sapiens|F|L-PART1+L-PART2|160..208+576..586|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctggatccctggatccagtgcg
+>X63403|IGKV2-30*01|Homo_sapiens|F|L-PART1+L-PART2|898..946+1373..1383|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtcccaggatccagtggg
+>X72814|IGKV2-4*01|Homo_sapiens|P|L-PART1+L-PART2|569..617+986..996|60 nt|1| | | | |60+0=60| | |
+gtgaggctccctgctcagctcctggggctgctaatgctctgggtccctggatccagtggg
+>X59314|IGKV2-40*01|Homo_sapiens|F|L-PART1+L-PART2|889..937+1309..1319|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtccctggatccagtgag
+>X05101|IGKV2/OR2-1*01|Homo_sapiens|P|L-PART1+L-PART2|387..435+813..823|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtccctggatctagtggg
+>X51886|IGKV2/OR2-10*01|Homo_sapiens|P|L-PART1+L-PART2|268..325+676..686|69 nt|1| | | | |69+0=69| | |
+atgaggctccctgctcagctcctggggcggctaatgctcaagatagaaaaaatatgagga
+tccagtggt
+>X51884|IGKV2/OR2-2*01|Homo_sapiens|P|L-PART1+L-PART2|264..321+672..682|69 nt|1| | | | |69+0=69| | |
+atgaggctccctgctcagctcctggggcggctaatgctcaagatagaaaaaatatgagga
+tccagtggt
+>X51883|IGKV2/OR2-4*01|Homo_sapiens|P|L-PART1+L-PART2|339..386+764..774|59 nt|1| | | | |59+0=59| | |
+atgaggctccctgctcagctcctggggctgctaatgctcgggtccccggatctagtggg
+>X51881|IGKV2/OR2-7*01|Homo_sapiens|P|L-PART1+L-PART2|249..297+675..685|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctccgggtccccggatctagtggg
+>X51880|IGKV2/OR2-8*01|Homo_sapiens|P|L-PART1+L-PART2|255..312+663..673|69 nt|1| | | | |69+0=69| | |
+atgaggctccctgctcagctcctggggcggctaatgctcaagatagaaaaaatatgagga
+tccagtggt
+>M20707|IGKV2/OR22-4*01|Homo_sapiens|P|L-PART1+L-PART2|202..250+630..640|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtctctggatccagtggg
+>X17265|IGKV2D-10*01|Homo_sapiens|P|L-PART1+L-PART2|122..170+576..586|60 nt|1| | | | |60+0=60| | |
+gtgaggctccctgctcagctcctggggctgctaatgctctgggtccctggatccaatgga
+>X72811|IGKV2D-14*01|Homo_sapiens|P|L-PART1+L-PART2|221..269+675..685|60 nt|1| | | | |60+0=60| | |
+gtgaggctccctgctcagctccctgggctgctaatgcactgggtccctggatccaatgga
+>X63395|IGKV2D-18*01|Homo_sapiens|P|L-PART1+L-PART2|308..356+774..784|60 nt|1| | | | |60+0=60| | |
+ataaggttccctgctcagctcctggggctgctaatgctttgggttcctggatccagtgga
+>X71887|IGKV2D-23*01|Homo_sapiens|P|L-PART1+L-PART2|834..882+1326..1336|60 nt|1| | | | |60+0=60| | |
+gtgaggttccctgctcagctcctggggctgctaatgctttgggttcctggatcctgtggg
+>X63401|IGKV2D-24*01|Homo_sapiens|ORF|L-PART1+L-PART2|185..233+677..687|60 nt|1| | | | |60+0=60| | |
+atgaggctccttgctcagcttctggggctgctaatgctctgggtccctggatccagtggg
+>AP001216|IGKV2D-26*01|Homo_sapiens|F|L-PART1+L-PART2|30326..30374+30766..30776|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcttggggctgctaatgctctgggtccctggatccagtgca
+>KM455565|IGKV2D-26*03|Homo_sapiens|F|L-PART1+L-PART2|1..49+441..451|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcttggggctgctaatgctctgggtccctggatccagtgca
+>X12691|IGKV2D-28*01|Homo_sapiens|F|L-PART1+L-PART2|304..352+727..737|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtctctggatccagtggg
+>M31952|IGKV2D-29*01|Homo_sapiens|F|L-PART1+L-PART2|324..372+741..751|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctggatacctggatccagtgca
+>U41644|IGKV2D-29*02|Homo_sapiens|F|L-PART1+L-PART2|157..205+574..584|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctggatacctggatccagtgca
+>X63402|IGKV2D-30*01|Homo_sapiens|F|L-PART1+L-PART2|507..555+982..992|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtcccaggatccagtggg
+>X59311|IGKV2D-40*01|Homo_sapiens|F|L-PART1+L-PART2|146..194+566..576|60 nt|1| | | | |60+0=60| | |
+atgaggctccctgctcagctcctggggctgctaatgctctgggtccctggatccagtgag
+>X01668|IGKV3-11*01|Homo_sapiens|F|L-PART1+L-PART2|134..182+352..362|60 nt|1| | | | |60+0=60| | |
+atggaagccccagctcagcttctcttcctcctgctactctggctcccagataccaccgga
+>K02768|IGKV3-11*02|Homo_sapiens|F|L-PART1+L-PART2|134..182+352..362|60 nt|1| | | | |60+0=60| | |
+atggaagccccagctcagcttctcttcctcctgctactctggctcccagataccaccgga
+>M23090|IGKV3-15*01|Homo_sapiens|F|L-PART1+L-PART2|676..724+894..904|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcgcagcttctcttcctcctgctactctggctcccagataccactgga
+>X12686|IGKV3-20*01|Homo_sapiens|F|L-PART1+L-PART2|108..156+344..354|60 nt|1| | | | |60+0=60| | |
+atggaaaccccagcgcagcttctcttcctcctgctactctggctcccagataccaccgga
+>X06583|IGKV3-25*01|Homo_sapiens|P|L-PART1+L-PART2|636..687+2134..2144|63 nt|1| | | | |63+0=63| | |
+atgtgcatcagctcatgtatttaccatttctttatgttactctgggtcccagatttcact
+gta
+>X71883|IGKV3-31*01|Homo_sapiens|P|L-PART1+L-PART2|1839..1887+2083..2093|60 nt|1| | | | |60+0=60| | |
+atggaagctgcagctcagctgctttgattcttgttactctggctcccagataccaccaga
+>X71891|IGKV3-34*01|Homo_sapiens|P|L-PART1+L-PART2|588..636+822..832|60 nt|1| | | | |60+0=60| | |
+atggaagttccagctcagctcctctcctttctggtactctggctcccagataccactgga
+>X02725|IGKV3-7*01|Homo_sapiens|ORF|L-PART1+L-PART2|134..182+352..362|60 nt|1| | | | |60+0=60| | |
+atggaagccccagctcagcttctcttcctcctgctactctggctcccagataccaccaga
+>X72812|IGKV3-7*02|Homo_sapiens|ORF|L-PART1+L-PART2|134..182+352..362|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcgcagcttctcttcctcctgctactctggctcccagataccaccaga
+>K02769|IGKV3-7*03|Homo_sapiens|ORF|L-PART1+L-PART2|134..182+352..362|60 nt|1| | | | |60+0=60| | |
+atggaagccccagctcagcttctcttcctcctgctactctggctcccagataccaccaga
+>X74459|IGKV3/OR2-268*01|Homo_sapiens|ORF|L-PART1+L-PART2|135..183+359..369|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcacagcttctcttcctcctgctactctggctcccagataccaccgga
+>X74460|IGKV3/OR2-268*02|Homo_sapiens|ORF|L-PART1+L-PART2|135..183+359..369|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcacagcttctcttcctcctgctactctggctcccagataccaccgga
+>X51882|IGKV3/OR2-5*01|Homo_sapiens|P|L-PART1+L-PART2|469..517+724..732|58 nt|1| | | | |58+0=58| | |
+acggaagccccagctcagcctctctgtctcttgttactctgggtgtcaaaatactgga
+>Z00042|IGKV3/OR22-2*01|Homo_sapiens|P|L-PART1+L-PART2|610..657+848..858|59 nt|1| | | | |59+0=59| | |
+atggaagccccatctcagcttctctgcctcctgtactctagctcccagtccctccagag
+>X17264|IGKV3D-11*01|Homo_sapiens|F|L-PART1+L-PART2|83..131+301..311|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcgcagcttctcttcctcctgctactctggctcacagataccaccgga
+>KM455561|IGKV3D-11*02|Homo_sapiens|F|L-PART1+L-PART2|1..49+219..229|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcgcagcttctcttcctcctgctactctggctcccagataccaccgga
+>L19271|IGKV3D-11*03|Homo_sapiens|F|L-PART1+L-PART2|1..24+194..204|35 nt|1| | | | |35+0=35|partial in 5'| |
+acctcctgctactctggctcccagataccaccgga
+>X72815|IGKV3D-15*01|Homo_sapiens|F|L-PART1+L-PART2|71..119+289..299|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcgcagcttctcttcctcctgctactctggctcccagataccactgga
+>M23091|IGKV3D-15*02|Homo_sapiens|P|L-PART1+L-PART2|676..724+894..904|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcgcagcttctcttcctcctgctactctggctcccagataccactgga
+>KM455564|IGKV3D-15*03|Homo_sapiens|F|L-PART1+L-PART2|1..49+219..229|60 nt|1| | | | |60+0=60| | |
+atggaagccccagcgcagcttctcttcctcctgctactctggctcccagataccactgga
+>X12687|IGKV3D-20*01|Homo_sapiens|F|L-PART1+L-PART2|108..156+344..354|60 nt|1| | | | |60+0=60| | |
+atggaaaccccagcgcagcttctcttcctcctgctactctggctcccagataccaccgga
+>L19272|IGKV3D-20*02|Homo_sapiens|ORF|L-PART1+L-PART2|1..24+212..222|35 nt|1| | | | |35+0=35|partial in 5'| |
+acctcctgctactctggctcccagataccaccgga
+>X71886|IGKV3D-25*01|Homo_sapiens|P|L-PART1+L-PART2|628..679+2115..2125|63 nt|1| | | | |63+0=63| | |
+atgtgcatcagctcatgtatttatcatttctttatgttactctgggtcccagatttcact
+gta
+>X71896|IGKV3D-31*01|Homo_sapiens|P|L-PART1+L-PART2|1857..1905+2101..2111|60 nt|1| | | | |60+0=60| | |
+atggaagctgcagctcagctgctctgattcttgttactctggctcccagataccaccaga
+>X71895|IGKV3D-34*01|Homo_sapiens|P|L-PART1+L-PART2|588..636+822..832|60 nt|1| | | | |60+0=60| | |
+atggaagttccagctcagctcctctcctttctggtactctggctcccagataccactgga
+>X72820|IGKV3D-7*01|Homo_sapiens|F|L-PART1+L-PART2|441..498+674..684|69 nt|1| | | | |69+0=69| | |
+atggaaccatggaagccccagcacagcttcttcttcctcctgctactctggctcccagat
+accaccgga
+>Z00023|IGKV4-1*01|Homo_sapiens|F|L-PART1+L-PART2|98..146+366..376|60 nt|1| | | | |60+0=60| | |
+atggtgttgcagacccaggtcttcatttctctgttgctctggatctctggtgcctacggg
+>X02485|IGKV5-2*01|Homo_sapiens|F|L-PART1+L-PART2|304..352+498..508|60 nt|1| | | | |60+0=60| | |
+atggggtcccaggttcacctcctcagcttcctcctcctttggatctctgataccagggca
+>X63399|IGKV6-21*01|Homo_sapiens|F|L-PART1+L-PART2|507..552+763..773|57 nt|1| | | | |57+0=57| | |
+atgttgccatcacaactcattgggtttctgctgctctgggttccagcctccaggggt
+>KM455568|IGKV6-21*02|Homo_sapiens|F|L-PART1+L-PART2|1..46+257..267|57 nt|1| | | | |57+0=57| | |
+atgttgccatcacaactcattgggtttctgctgctctgggttccagcctccaggggt
+>X12683|IGKV6D-21*01|Homo_sapiens|F|L-PART1+L-PART2|378..423+634..644|57 nt|1| | | | |57+0=57| | |
+atgttgccatcacaactcattgggtttctgctgctctgggttccagcctccaggggt
+>KM455569|IGKV6D-21*02|Homo_sapiens|F|L-PART1+L-PART2|32..77+288..298|57 nt|1| | | | |57+0=57| | |
+atgtcgccatcacaactcattgggtttctgctgctctgggttccagcctccaggggt
+>M27751|IGKV6D-41*01|Homo_sapiens|ORF|L-PART1+L-PART2|220..268+475..485|60 nt|1| | | | |60+0=60| | |
+atggtgtccccgttgcaattcctgcggcttctgctcctctgggttccagcctccaggggt
+>X12682|IGKV7-3*01|Homo_sapiens|P|L-PART1+L-PART2|683..731+974..984|60 nt|1| | | | |60+0=60| | |
+atagggtccggggctcctttgctgtggatcctcctgctctgggctccaagctgcaatggg
+

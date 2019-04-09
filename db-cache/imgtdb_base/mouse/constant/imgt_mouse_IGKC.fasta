@@ -1,0 +1,57 @@
+>M21795|IGKC*01|Mus cookii|F|C-REGION|c,1087..1406|321 nt|1|+1| | | |321+0=321| | |
+cgggctgatgttgcaccaactgtatccatcttcccaccatccagtgagcagttaacatct
+ggaggtgcctcagtcgtgtgcttcatgaacaacttctaccccagagacattaatgtcaag
+tggaagattgatggcagtgaacgacaaggtggcgtcctgaacagttggactgatcaggac
+agcaaagacagcacctacagcatgagcagcaccctcacgttgaccaaggccgagtatgaa
+caacataacagctacacctgtgaggccactcacaggacatcagcttcacccatcgtcaag
+agcttcaacaggaatgagtgt
+>M21794|IGKC*01|Mus minutoides|F|C-REGION|c,1090..1409|321 nt|1|+1| | | |321+0=321| | |
+cggtctgatgttgcaccaactgcatccatcttcccgccatccagtgagcagttagcatct
+ggaggtgcctcagtcgtgtgcttcatgaacaacttctaccccagagacatcaatgtcaag
+tggaagattgatggcaatgaacgtcgagatggcatcctgaccagttatactgatcaggac
+agcaaagacagcacctacagcttgagcagcaccctcacattgaccaaggacgagtatgaa
+cgacataacagctatacctgtgaggccactcacaagacgtcaacttcgcccatcgtcaag
+agcttcaacaggaatgagtgt
+>V00807|IGKC*01|Mus_musculus|F|C-REGION|c,211..530|321 nt|1|+1| | | |321+0=321| | |
+cgggctgatgctgcaccaactgtatccatcttcccaccatccagtgagcagttaacatct
+ggaggtgcctcagtcgtgtgcttcttgaacaacttctaccccaaagacatcaatgtcaag
+tggaagattgatggcagtgaacgacaaaatggcgtcctgaacagttggactgatcaggac
+agcaaagacagcacctacagcatgagcagcaccctcacgttgaccaaggacgagtatgaa
+cgacataacagctatacctgtgaggccactcacaagacatcaacttcacccattgtcaag
+agcttcaacaggaatgagtgt
+>X67002|IGKC*02|Mus_musculus_AKR|F|C-REGION|c,61..376|321 nt|1|+1| | | |321+0=321| | |
+cgggctgatgctgcaccaactgtatccatcttcccaccatccagtgagcagttaacatct
+ggaggtgcctcagtcgtgtgcttcttgaacaacttctaccccaaagacatcaatgtcaag
+tggaagattgatggcagtgaacgacaaaatggcgtcctgaacagttggactgatcaggac
+agcaaagacagcacctacagcatgagcagcaccctcacgttgaccaaggacgagtatgaa
+cgacataacagctatacctgtgaggccactcacaagacatcaacttcacccatcgtcaag
+agcttcaacaggaatgagtgt
+>X67011|IGKC*03|Mus_musculus_SJL|F|C-REGION|c,58..373|321 nt|1|+1| | | |321+0=321| | |
+cgggctgatgctgcaccaactgtatccatcttcccaccatccagtgagcagttaacatct
+ggaggtgcctcagtcgtgtgcttcttgaacaacttctaccccagagacatcaatgtcaag
+tggaagattgatggcagtgaacgacaaaatggtgtcctgaacagttggactgatcaggac
+agcaaagacagcacctacagcatgagcagcaccctcacattgaccaaggacgagtatgaa
+cgacataacagctatacctgtgaggccactcacaagacatcaacttcacccatcgtcaag
+agcttcaacaggaatgagtgt
+>M21793|IGKC*01|Mus pahari|F|C-REGION|c,1077..1396|321 nt|1|+1| | | |321+0=321| | |
+cgggctgatgttgcaccaactgcatccatcttcccaccatccaatgagcagttagcatct
+ggaggtgcctcaatcgtgtgtttcctgaacaacttctaccccagagacatcaatgtcaag
+tggaaggttgatggcagtgaaaaacaagatggcgtcctgaacagttggactgaacaggac
+agcaaggacagcacctacagcatgagcagcaccctcacattgaccaaggcagagtatgaa
+caacataacagctatacctgtgaggccgttcataaaacatcaagttcacccatcgtcaag
+agcttcaacaggaatgagtgt
+>M21792|IGKC*01|Mus saxicola|F|C-REGION|c,1201..1520|321 nt|1|+1| | | |321+0=321| | |
+cgggctgatgttgcaccaactgcatccatcttcccaccatccagtgagcagttagcatct
+ggaggtgcctcagtcgtgtgcttcatgaacaacttctaccccaaagacatcagtgtcaag
+tggaaggttgatggcagtgaacgacaagatggcttcctgaacagttggactgaacaggac
+agcaaagacagcacctacagcatgagcagcaccctcacattgaccaaggatgagtatgaa
+cgacataacagctatacctgtgaggccactcataagacgtcatcttcacccatcgtcaag
+agcttcaacaggaatgagtgt
+>M21796|IGKC*01|Mus spretus|F|C-REGION|n,1086..1405|321 nt|1|+1| | | |321+0=321| | |
+ngggctgatgctgcaccaacagtatccatcttcccaccatccagtgagcagttaacatct
+ggaggtgcctcagtcgtgtgcttcttgaacaacttctaccccagagacatcaatgtcaag
+tggaagattgatggcagtgaacgacaaaatggtgtcctgaacagttggactgatcaggac
+agcaaagacagcacctacagcatgagcagcaccctcacattgaccaaggacgagtatgaa
+cgacataacagctatacctgtgaggccactcacaagacatcaacttcacccattgtcaag
+agcttcaacaggaatgagtgt
+

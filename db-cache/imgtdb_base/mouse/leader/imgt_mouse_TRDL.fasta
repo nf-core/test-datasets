@@ -1,0 +1,51 @@
+>AC003996|TRAV13-4/DV7*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|3802..3853+4035..4042|60 nt|1| | | | |60+0=60| | |
+atgaagaggctgctgtgctctctgctggggcttctgtgcacccaggtttgctgggtgaaa
+>L77152|TRAV14D-3/DV8*01|Mus_musculus_B10.A|F|L-PART1+L-PART2|60..111+250..278|81 nt|1| | | | |81+0=81| | |
+atggacaagatcctgacagcattgtttttacttctaggtcttcacctagctggggtgagt
+ggccagcaggagaaacatgac
+>L77151|TRAV14D-3/DV8*02|Mus_musculus_B10.A|F|L-PART1+L-PART2|60..111+250..278|81 nt|1| | | | |81+0=81| | |
+atggacaagatcctgacagcatcatttttacttctaggccttcacctatctggggtgagt
+ggccagcaggagaaacgtgac
+>U04624|TRAV14D-3/DV8*03|Mus_musculus_BALB/c|F|L-PART1+L-PART2|242..293+433..461|81 nt|1| | | | |81+0=81| | |
+atggacaagatcctgacagcatcgtttttacttctaggccttcacctagctggggtgagt
+ggccagcaggagaaacatgac
+>AC163653|TRAV14D-3/DV8*08|Mus_musculus_C57BL/6J|F|L-PART1+L-PART2|131052..131103+131242..131270|81 nt|1| | | | |81+0=81| | |
+atggacaagatcctgacagcatcgtttttacttctaggccttcacctagctggggtgagt
+ggccagcaggagaaacgtgac
+>AC004406|TRAV15-1/DV6-1*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|38433..38481+38702..38712|60 nt|1| | | | |60+0=60| | |
+atgcctcctcacagcctgctctgtgtgctggtggccttagctttctctggatctaatgtg
+>AC003997|TRAV15-2/DV6-2*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|91138..91186+91408..91418|60 nt|1| | | | |60+0=60| | |
+atgcctcctcagagcctgctctgtgtgctggtggccttggctttctctggatgcaatgtg
+>X07878|TRAV15D-1/DV6D-1*01|Mus_musculus_BALB/c|F|L-PART1+L-PART2|18..66+287..297|60 nt|1| | | | |60+0=60| | |
+atgcctcctcacagcctgctctgtgtgctggtggccttggctatctctggatctaatgtg
+>AC005402|TRAV15D-1/DV6D-1*02|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|20793..20841+21062..21072|60 nt|1| | | | |60+0=60| | |
+atgcctcctcacagcctgctctgtgtgctggtggccttggctatctctggatctaatgtg
+>AC005402|TRAV15D-2/DV6D-2*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|114803..114851+115073..115083|60 nt|1| | | | |60+0=60| | |
+atgcctcctcacagcctgctctgtgtgctggtggccttggctttctctggatgcaatgtg
+>AC163653|TRAV15D-2/DV6D-2*03|Mus_musculus_C57BL/6J|F|L-PART1+L-PART2|9333..9381+9603..9613|60 nt|1| | | | |60+0=60| | |
+atgcctcctcagagcctgctctgtgtgctggtggccttggctttctctggatgcaatgtg
+>AC005855|TRAV16D/DV11*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|69671..69713+69902..69912|54 nt|1| | | | |54+0=54| | |
+atgctgattctaagcctgttgggagcagcctttggctccatttcaaccagcatg
+>AC163653|TRAV16D/DV11*02|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|99792..99837+100026..100036|57 nt|1| | | | |57+0=57| | |
+atgctgattctaagcctgttgggagctccattttttggctccatttcaaccagcatg
+>M94080|TRAV21/DV12*01|Mus_musculus_BALB/c|F|L-PART1+L-PART2|26406..26445+26857..26867|51 nt|1| | | | |51+0=51| | |
+atgggatgtgtgagtggaattgccattctcctggctttgggtattgcgggt
+>AC004102|TRAV4-4/DV10*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|2928..2979+3150..3157|60 nt|1| | | | |60+0=60| | |
+atgcagaggaacctgggagctgtgctggggattctgtgggtgcagatttgctgggtgaga
+>AC003995|TRAV6-7/DV9*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|14599..14644+14774..14784|57 nt|1| | | | |57+0=57| | |
+atgaactcttctccaggcttcatgactgtgatgctcctcatattcacaatggcccag
+>M94080|TRDV1*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|32001..32052+32328..32335|60 nt|1| | | | |60+0=60| | |
+atggggatgttccttcaagtgcttgcttggctattgacatttcaggctgcctgggtcaac
+>AC003993|TRDV2-2*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|13429..13477+13731..13741|60 nt|1| | | | |60+0=60| | |
+atggtacggccgttcttcctgtgggtgctcttcctttccacttctcttgaagccagcatg
+>U28810|TRDV2-2*02|Mus_musculus_B10.A|[F]|L-PART1+L-PART2|1..49+290..300|60 nt|1| | | | |60+0=60| | |
+atggcagtccttagctcactgtgggcagttgtgatcaccacctgtctaggagccagcatg
+>AC003057|TRDV4*01|Mus_musculus_129/SvJ|F|L-PART1+L-PART2|25945..25990+26158..26168|57 nt|1| | | | |57+0=57| | |
+atgctttggagatgtccagtcctctgtatattcatcttcagtacagggacctctttg
+>M23382|TRDV5*01|Mus_musculus_BALB/c|F|L-PART1+L-PART2|17..53+249..262|51 nt|1| | | | |51+0=51| | |
+atgattcttgccgcgacccttacccttctgtttgcctacaaggatgtgctg
+>M23095|TRDV5*02|Mus_musculus_B10.D2-H2dm1|F|L-PART1+L-PART2|223..259+455..468|51 nt|1| | | | |51+0=51| | |
+atgattcttgccgcgacccttacccttctgtttgcctacaaggatgtgctg
+>M64239|TRDV5*03|Mus_musculus_B10.D2-H2dm1|F|L-PART1+L-PART2|14826..14862+14617..14630|51 nt|1| | | | |51+0=51| |rev-compl|
+atgattgttgccgcgacccttacccttctgtttgcctacaaggatgtgctg
+
