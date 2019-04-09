@@ -1,0 +1,789 @@
+>AJ851868|IGHV(II)-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|974395..974440+974525..974535|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggtgctgaacctctgcctggtgacatttccaagctaatcgtctcct
+>AJ851868|IGHV(II)-2*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|919215..919259+919344..919354|56 nt|1| | | | |56+0=56| | |
+atgctgtcctggtgctgaacctctgcctggtgacatttcaaagctaatcgtctcct
+>AJ851868|IGHV(II)-3*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|792977..793021+793106..793116|56 nt|1| | | | |56+0=56| | |
+atggctgtcctggtgctgaacctctgcctggtgaatttctgagctaatcctctcct
+>AJ851868|IGHV(II)-4*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|718413..718457+718542..718552|56 nt|1| | | | |56+0=56| | |
+atgctgtcctggtgctgaacctctgcctggtgacatttcaaagctaatcgtctcct
+>AJ851868|IGHV(II)-5*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|570827..570872+570957..570967|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggtgctgaacctctgcctggtgacatttccaagctaattgtctcct
+>AC160985|IGHV(III)-11*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|131782..131827+131648..131658|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgggctcagcttggttttccttgtcattctttgaaaaggtgcccagtgt
+>AJ851868|IGHV(III)-2*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|654557..654605+654809..654819|60 nt|1| | | | |60+0=60| | |
+atgaaaacaatacgtcctctgacccctgtatctctggcataggaaccaagtgttcagggt
+>AJ851868|IGHV(III)-3*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|522643..522691+522895..522905|60 nt|1| | | | |60+0=60| | |
+atgaaaacaatatatgctctgacccctgtatctctggcagagggaccaagtgttcagggt
+>AJ851868|IGHV(III)-4*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|486899..486944+487042..487052|57 nt|1| | | | |57+0=57| | |
+atggacttgaggatcagttttgtttttcatattgtaattttaaaaggagtccactgc
+>AC160985|IGHV(III)-9*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|105464..105509+105330..105340|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgggctcagcttggctttccttgtcattatttgaaaaggtgcccagtgt
+>AC073590|IGHV1-1*01|Mus_musculus|P|L-PART1+L-PART2|117700..117943+117935..117945|255 nt|1| | | | |255+0=255| |rev-compl|
+atccatttccaaatccaactgcaaccgtctggggccgacctgattaatcctggatcctca
+atgaaggtgtcttgcaaggttcctggctacagtttcactagctactatatgacctgggta
+aaagagagtcctggacagggtctagaatagattagagaaaccaccctagtagttgcagta
+taagttatgcacagaagtttcaaggacacatctccatgactaggcacatatcctccagca
+tggcgtatccatttc
+>AC090843|IGHV1-10*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|100906..100951+100812..100822|57 nt|1| | | | |57+0=57| |rev-compl|
+atggtctggagctggattatccttttcctattggtaacatccacagttgtccactcc
+>AC090843|IGHV1-11*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|115255..115300+115162..115172|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagccagatcaccctctttctggtggcagcaattacatgtgcctactcc
+>AC090843|IGHV1-12*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|118863..118908+118769..118779|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggattcagcaggatctttctcttcctcctgtcagtaactacaggtgtccactcc
+>AC090843|IGHV1-13*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|133692..133736+133599..133609|56 nt|1| | | | |56+0=56| |rev-compl|
+atggaatgaagctgcatcttttcttcctcctgtcaataactataggcatcctctcc
+>AC090843|IGHV1-14*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|149585..149630+149491..149501|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggagctgaatatttctctttctcctgtcaggaactgcaggtgtccactct
+>AC090843|IGHV1-15*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|160366..160411+160272..160282|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggagctgggtctttctcttcctcctgtcagtaattgcaggtgtccaatcc
+>AC090843|IGHV1-16*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|168885..168930+168791..168801|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggagttgggtctttattttattcctgtcagtaactacaggtgtccactct
+>AC090843|IGHV1-17*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|179761..179806+179667..179677|57 nt|1| | | | |57+0=57| |rev-compl|
+ataaaattgagctggatctttctcttccttctgtcaggaactgcaggtgtccactct
+>AC090843|IGHV1-17-1*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|174981..175026+174887..174897|57 nt|1| | | | |57+0=57| |rev-compl|
+agggaatggagctggaactttctcttcctcctttcaggaactacaggtgtcaactct
+>AC090843|IGHV1-18*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|185645..185690+185551..185561|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagctggatctttctcctcttcctgtcaggaactgcaggtgtcctctct
+>L33958|IGHV1-18*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|577..622+705..715|57 nt|1| | | | |57+0=57| | |
+atggaatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>L33961|IGHV1-18*03|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|575..620+704..714|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcttcctgtcaggaactgcaggtgtcctctct
+>AC073565|IGHV1-19*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|177370..177415+177499..177509|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggtgtccactct
+>AC073561|IGHV1-2*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|65002..65047+64908..64918|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggaactggatacttccttttattatgtcagtaactgcaggtgtctactca
+>AC073565|IGHV1-20*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|162246..162291+162375..162385|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcagtaactgcaggtgtgttctct
+>AC073565|IGHV1-21*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|145610..145655+145739..145749|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>AC073565|IGHV1-21-1*01|Mus_musculus_C57BL/6J|P|L-PART1+L-PART2|149773..149818+149902..149912|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggtgtccactct
+>AC073565|IGHV1-22*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|139745..139790+139874..139884|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcagaaactgcaggtgtcctctct
+>AC073565|IGHV1-23*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|121568..121613+121697..121707|57 nt|1| | | | |57+0=57| | |
+atggaatggagctggatctttctcttcctcctgtcagtaactgcaggtgtccaatcc
+>AC073565|IGHV1-24*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|113090..113135+113219..113229|57 nt|1| | | | |57+0=57| | |
+atggaatggagctgggtctttattttaatcctgtcagtaactacaggtgtccactct
+>AC073565|IGHV1-25*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|104611..104656+104738..104748|57 nt|1| | | | |57+0=57| | |
+ataaaatggagctggatctttctcttcctcctgtcaggaactgcaggtgtccactct
+>AC073565|IGHV1-26*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|97646..97691+97775..97785|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>AC073565|IGHV1-27*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|81403..81448+81531..81541|57 nt|1| | | | |57+0=57| | |
+attgtacggagctggctctttctcttcctcctgtcagtaactgcaggcatccactct
+>AC073565|IGHV1-28*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|76597..76642+76726..76736|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctgttccttctgtcaggaactgcaggtgtccactct
+>AC073565|IGHV1-29*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|73707..73751+73835..73845|56 nt|1| | | | |56+0=56| | |
+atggagctggttggaactttctctttctcctgtcaggaactacaggtgtccactct
+>AC073565|IGHV1-30*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|68925..68970+69050..69060|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttattttaatcctgtcagtaactacaggtgtccactct
+>AC073565|IGHV1-31*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|56754..56799+56883..56893|57 nt|1| | | | |57+0=57| | |
+atggaatgtatctggatctttctcttccttctgtcagtaactgcaggtgtccactct
+>AC073565|IGHV1-32*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|50795..50840+50924..50934|57 nt|1| | | | |57+0=57| | |
+atggaatagagctgcatctttctcttccttctgtcagtaactgcaggtgtccactct
+>AC073565|IGHV1-33*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|42368..42413+42497..42507|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcttgtcaggatctgcaggtgtccactct
+>L33944|IGHV1-33*02|Mus_musculus_C57BL/6|[P]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcttgtcaggatctgcagggtgtccactc
+>AC073565|IGHV1-34*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|34828..34873+34957..34967|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggtgtcctctct
+>AC073565|IGHV1-35*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|10714..10756+10843..10853|54 nt|1| | | | |54+0=54| | |
+atggaatggagcttggtctttcttttcctcctgtcagtaactggtgtccactct
+>AC073565|IGHV1-36*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|6130..6175+6259..6269|57 nt|1| | | | |57+0=57| | |
+atggggtggagctggatctttttcttcctcctgtcaggaactgcaggtgtcctctct
+>AC079181|IGHV1-37*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|171508..171553+171637..171647|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcagtaactgtaggtgtgttctct
+>AC079181|IGHV1-38*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|157736..157781+157865..157875|57 nt|1| | | | |57+0=57| | |
+atggaatggagctagaactttctcttcctcctgtcaggaactacaggtgtccactct
+>AC079181|IGHV1-39*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|153147..153192+153276..153286|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctctcaggaactgcaggtgtccactct
+>AC073561|IGHV1-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|83036..83081+82942..82952|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaaaggcactggatctttctcttcctgttgtcagtaacttcaggtgtccactcc
+>AC079181|IGHV1-40*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|142806..142851+142935..142945|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgggtctttctcttcctcctgtcaggaactgcaggtgtccactct
+>AC079181|IGHV1-42*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|130635..130680+130762..130772|57 nt|1| | | | |57+0=57| | |
+atgggatggaactggatctttattttaatcctgtcagtaactacaggtgtccactct
+>L33945|IGHV1-42*02|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|581..626+710..720|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcctcttcctgtcaggaactgcaggtgtccactct
+>L33948|IGHV1-42*03|Mus_musculus_C57BL/6|[P]|L-PART1+L-PART2|576..621+703..713|57 nt|1| | | | |57+0=57| | |
+atgggatggaactggatctttattttaatcctgtcagtaactacaggtgtccactct
+>AC079181|IGHV1-43*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|121796..121841+121925..121935|57 nt|1| | | | |57+0=57| | |
+atggaatggagctgggtctttctcttcctcctgtcagtaactacaggtgtccactct
+>AC079181|IGHV1-44*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|104366..104411+104494..104504|57 nt|1| | | | |57+0=57| | |
+atgggttggagctgtatcatcttcttcctggtagcaacagctataggtgtccactcc
+>AC079181|IGHV1-45*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|97691..97736+97819..97829|57 nt|1| | | | |57+0=57| | |
+atgggatggacccagactaccctctttctaggggcaacatttacatttgttcactcc
+>AC079181|IGHV1-46*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|90053..90098+90182..90192|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgggtctttctcttcctcctgtcagtaactgcaggtatccactgc
+>AC079181|IGHV1-47*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|76645..76690+76767..76777|57 nt|1| | | | |57+0=57| | |
+atggcgtggatctctatcatcctcttcctagtggcaacagctataggtgtccactcc
+>AC079181|IGHV1-48*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|29525..29570+29648..29658|57 nt|1| | | | |57+0=57| | |
+atgagatggagctatataatcttcttcttggtggcaacagcaataggtgtctacttc
+>AC079181|IGHV1-49*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|12523..12568+12652..12662|57 nt|1| | | | |57+0=57| | |
+atggaatggatctgggtctttctcttcctcctgtcaggaactgcaggagtccactca
+>AC090843|IGHV1-5*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|16342..16387+16248..16258|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatgtaactggatacttccttttattctgtcggtaacttcaggggtctactca
+>AC074329|IGHV1-50*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|87644..87689+87551..87561|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactct
+>AC074329|IGHV1-51*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|99268..99310+99178..99188|54 nt|1| | | | |54+0=54| |rev-compl|
+atggaatggagctgtatcctctttctatgggcagcatctacaagtatctactcc
+>AC074329|IGHV1-52*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|113383..113428+113290..113300|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>AC074329|IGHV1-53*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|126299..126344+126206..126216|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>L27628|IGHV1-53*02|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|569..614+697..707|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>L26932|IGHV1-53*03|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|570..615+698..708|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>L26927|IGHV1-53*04|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|571..616+699..709|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccacttc
+>AC074329|IGHV1-54*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|161572..161617+161478..161488|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggagcagagtctttatctttctcctatcagtaactgcaggtgttcactcc
+>AC074329|IGHV1-55*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|175991..176036+175898..175908|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagctgtatcatcctcattttggtagcagcagctacaggtgtccactcc
+>L26877|IGHV1-55*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|571..616+699..709|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>L26952|IGHV1-55*03|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|571..616+699..709|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcattttggtagcagcagctacaggtgtccactcc
+>L26930|IGHV1-55*04|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcattttggtagcagcagctacaggtgtccagttc
+>AC087166|IGHV1-56*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|138595..138640+138724..138734|57 nt|1| | | | |57+0=57| | |
+atggaatggagttgggtctttcttttcctcctgtcagtaactgcaggtgtccactgc
+>AC087166|IGHV1-57*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|112974..113019+113104..113114|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcttcttccttgtagcaacagctatatatatccactcc
+>AC087166|IGHV1-58*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|69231..69276+69360..69370|57 nt|1| | | | |57+0=57| | |
+atggaattgatctgggtctttctcttcctcctgtcagtaactgcaggtgtccactct
+>M34978|IGHV1-58*02|Mus_musculus_A/J|P|L-PART1+L-PART2|119..164+249..259|57 nt|1| | | | |57+0=57| | |
+acggaattgatctgcgtctttctcttcctcctgtcagtaactgcaggtgtccaccct
+>AC087166|IGHV1-59*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|46316..46361+46444..46454|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcattgtcctcttggtatcaacagctacaggtgtccactcc
+>AC087166|IGHV1-60*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|36867..36909+36989..36999|54 nt|1| | | | |54+0=54| | |
+atggaatggagctgtatcctctttctatgggcagcatctacaggtatctactcc
+>AC087166|IGHV1-61*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|22258..22303+22386..22396|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcaacagctacaggtgtccactcc
+>AC087166|IGHV1-62*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|9397..9442+9541..9551|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>J00533|IGHV1-62-3*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|67..112+195..205|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccacttc
+>L26929|IGHV1-62-3*02|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|576..621+704..714|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>AC073939|IGHV1-63*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|165181..165226+165310..165320|57 nt|1| | | | |57+0=57| | |
+atggaatggagcggggtctttatctttctcctgtcagtaactgcaggtgtccactcc
+>D14633|IGHV1-63*02|Mus_musculus_MRL/lpr|F|L-PART1+L-PART2|207..252+336..346|57 nt|1| | | | |57+0=57| | |
+atggaatggagcggggtctttatctttctcctgtcagtaactgcaggtgtccactcc
+>AC073939|IGHV1-64*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|153278..153323+153406..153416|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctctttttggtagcaacagctacaggtgtccactcc
+>L26853|IGHV1-64*02|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctctttttggtagcaacagctacaggtgtccactcc
+>AC073939|IGHV1-65*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|128770..128815+128897..128907|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcttcttccttgtagcaacagctataggtattcactcc
+>AC073939|IGHV1-66*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|67712..67757+67841..67851|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggtgtccattgc
+>AC073939|IGHV1-67*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|56879..56924+57011..57021|57 nt|1| | | | |57+0=57| | |
+atcggttggagctgtatcatcatctttctggtagcaacagctacaggtgtgcactcc
+>AC073939|IGHV1-68*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|49492..49537+49621..49631|57 nt|1| | | | |57+0=57| | |
+agggaatggagctgcatctttcacctcctcctgtcaataaaaacagatgttaactcc
+>AC073939|IGHV1-69*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|37660..37705+37790..37800|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtatcaacagctacaggtgtccactcc
+>X00160|IGHV1-69*02|Mus_musculus_BALB/c|F|L-PART1+L-PART2|1..46+131..141|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtatcaacagctacaggtgtccactcc
+>L26854|IGHV1-69*03|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|569..614+699..709|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtatcaacagctacaggtgtccactcc
+>AC090843|IGHV1-7*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|41508..41553+41414..41424|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaaaggcactggatctttctctccctgttgtcagtaatagcaggtgtccactcc
+>AC163348|IGHV1-70*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|80768..80813+80897..80907|57 nt|1| | | | |57+0=57| | |
+atggaatggagttgggtctttctcttcctcctgtcattaactgcagctgtccactgc
+>AC163348|IGHV1-71*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|30443..30488+30573..30583|57 nt|1| | | | |57+0=57| | |
+atggaatggtgctgggtctttctcttcctcctgtcagtaactgcaggtgtccactcc
+>AC163348|IGHV1-72*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|14674..14719+14802..14812|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>L26851|IGHV1-72*02|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>L26868|IGHV1-72*03|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|576..621+704..714|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaagagctacaggtgtccactcc
+>J00532|IGHV1-72*04|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|67..112+195..205|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>L26878|IGHV1-72*05|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|570..615+698..708|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcaacagctacaggtgtccactcc
+>AC160473|IGHV1-73*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|112386..112431+112292..112302|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggagcggggtctttatctttctcctgtcagtaactgcaggtgtccactcc
+>AC160473|IGHV1-74*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|124439..124484+124346..124356|57 nt|1| | | | |57+0=57| |rev-compl|
+atgagatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26857|IGHV1-74*02|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|570..615+698..708|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26933|IGHV1-74*03|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgagatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>J00537|IGHV1-74*04|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|1..46+129..139|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttgtcagcaacagctacaggtgtccactcc
+>AC160473|IGHV1-75*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|155755..155800+155648..155658|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggtgtccattgc
+>AC160473|IGHV1-76*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|169673..169718+169579..169589|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggatggagctggatctttttcttcctcctgtcaggaactgcaggtgtccactgt
+>AC160473|IGHV1-77*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|183659..183704+183565..183575|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggagctgggtctttctcttcctcctgtcagtaactgcaggtgtccactgc
+>AC160473|IGHV1-78*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|190561..190606+190471..190481|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggagctgggtctctctcttcttcctgtcagtaactacaggtgtccactcc
+>AC160990|IGHV1-79*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|162426..162471+162554..162564|57 nt|1| | | | |57+0=57| | |
+atggaatggaggtggatctttctcttcctcctgtcagtaactgcaggtgtccactct
+>AC090843|IGHV1-8*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|58626..58671+58528..58538|57 nt|1| | | | |57+0=57| |rev-compl|
+actgtggaagagagctgtatctttctcttcctcttgtcagtaacttgtgtccactca
+>AC160990|IGHV1-80*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|138178..138223+138306..138316|57 nt|1| | | | |57+0=57| | |
+atggaatggcctttgatctttctcttcctcctgtcaggaactgcaggtgtccaatcc
+>AC160990|IGHV1-81*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|130242..130287+130371..130381|57 nt|1| | | | |57+0=57| | |
+atggaatggatctggatctttctcttcatcctgtcaggaactgcaggtgtccaatcc
+>AC160990|IGHV1-82*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|97984..98029+98112..98122|57 nt|1| | | | |57+0=57| | |
+atggaatggccttgtatctttctcttcctcctgtcagtaactgaaggtgtccactcc
+>AC160990|IGHV1-83*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|86704..86749+86833..86843|57 nt|1| | | | |57+0=57| | |
+atggaatggatctggatctttctcttcatcctgtctggaactgcaggcgtccactct
+>AC160990|IGHV1-84*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|69820..69865+69948..69958|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttcttttcctcctgtcaggaactgcaggtgtccattgc
+>AF305910|IGHV1-84*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|176..221+304..314|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttcttttcctcctgtcaggaactgcaggtgtccattgc
+>AC160990|IGHV1-85*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|50493..50538+50622..50632|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggtgtccactcc
+>AC160990|IGHV1-86*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|40861..40906+40989..40999|57 nt|1| | | | |57+0=57| | |
+atgtgttggagctgtatcatcctcttcctgttagcaacagctgcacgtgtgcactcc
+>NW_001033180|IGHV1-87*01|Mus_musculus|F|L-PART1+L-PART2|481876..481921+481782..481792|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatgtaactggatacttccttttattctgtcggtaacttcaggggtctactca
+>AC090843|IGHV1-9*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|86582..86627+86488..86498|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggacctgggtctttctcttcctcctgtcagtaactgcaggtgtccactcc
+>AC073561|IGHV10-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|74918..74963+74819..74829|57 nt|1| | | | |57+0=57| |rev-compl|
+atgctgttggggctgaagtgggttttctttgttgttttttatcaaggtgtgcattgt
+>AF064445|IGHV10-1*02|Mus_musculus_BALB/c|F|L-PART1+L-PART2|178..223+312..322|57 nt|1| | | | |57+0=57| | |
+atgctgttggggctgaagtgggttttctttgttgttttttatcaaggtgtgcattgt
+>AC073561|IGHV10-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|119354..119399+119255..119265|57 nt|1| | | | |57+0=57| |rev-compl|
+atggtgttggggcttaagtgggttttctttgttgttttttatcaaggtgtgcattgt
+>AF064442|IGHV10-3*02|Mus_musculus_C57BL/10|F|L-PART1+L-PART2|178..223+312..322|57 nt|1| | | | |57+0=57| | |
+atggtgttggggcttaagtgggttttctttgttgttttttatcaaggtgtgcattgt
+>AF064444|IGHV10-3*03|Mus_musculus_BALB/c|F|L-PART1+L-PART2|178..223+312..322|57 nt|1| | | | |57+0=57| | |
+atggtgttggggctgaagtgggttttctttgttgttttttatcaaggtgtgcattgt
+>AF064446|IGHV10S3*01|Mus_musculus_BALB/c|F|L-PART1+L-PART2|176..221+310..320|57 nt|1| | | | |57+0=57| | |
+atgctgttggggctgaagtgggttttctttgttgttttttatcaaggtgtgcattgt
+>AC073563|IGHV11-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|175544..175589+175700..175710|57 nt|1| | | | |57+0=57| | |
+atggagtgggaactgagcttaattttcatttttgctcttttaaaagatgtccagtgt
+>AJ851868|IGHV11-1*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|298194..298239+298352..298362|57 nt|1| | | | |57+0=57| | |
+atggagtgggaactgggcttaattttcatttttgctcttttaaaagatgtccagtgt
+>AC073563|IGHV11-2*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|109181..109226+109338..109348|57 nt|1| | | | |57+0=57| | |
+atggagtgggaactgagcttaattttcatttttgctcttttaaaagatgtccagtgt
+>AJ851868|IGHV11-2*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|237967..238012+238124..238134|57 nt|1| | | | |57+0=57| | |
+atggagtgggaactgagcttaattttcatttttgctcttttaaaagatgtccagtgt
+>AC073563|IGHV12-1*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|50183..50232+50311..50321|61 nt|1| | | | |61+0=61| | |
+atgttcacttataatcttagtgattattattttttagttttcatatccaggtgttctgtc
+c
+>AJ851868|IGHV12-1*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|189877..189922+190013..190023|57 nt|1| | | | |57+0=57| | |
+atgagactactagggtttctcctgtgcttggcagcagctctgaaaagtattctgtcc
+>AJ851868|IGHV12-1-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|135571..135616+135707..135717|57 nt|1| | | | |57+0=57| | |
+atgagactactagggtttctcctgtgcttggcagcagctctaaaaagtgttctgtcc
+>AJ851868|IGHV12-1-2*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|94250..94299+94378..94388|61 nt|1| | | | |61+0=61| | |
+atgttcacttataattttagtgattactattttttagttttcatatccaggtgttctgtc
+c
+>AC073589|IGHV12-2*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|161199..161244+161335..161345|57 nt|1| | | | |57+0=57| | |
+atgagactactagggtttctcctgtgcttggcagcagctctgaaaagtattctgtcc
+>AJ851868|IGHV12-2*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|166861..166905+166996..167006|56 nt|1| | | | |56+0=56| | |
+atgagactactagggttactcctgtgcttggcagcagctctgaaagtgttctgtcc
+>AJ851868|IGHV12-2-1*01|Mus_musculus_129/Sv|ORF|L-PART1+L-PART2|109626..109671+109762..109772|57 nt|1| | | | |57+0=57| | |
+atgagactcctagggtttctcctgtgcttggcagcagcgctgaaaagtattctgtcc
+>AC073590|IGHV12-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|132851..132893+132759..132769|54 nt|1| | | | |54+0=54| |rev-compl|
+atgagagtgctgggatttgtgtgcctggtgacagtccttcctggtagcctgtct
+>AJ972404|IGHV12-3*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|67927..67969+67835..67845|54 nt|1| | | | |54+0=54| |rev-compl|
+atgagagtgctgggatttttgtgcctggtgacagtccttcctggtagcctgtct
+>AC073589|IGHV13-1*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|21117..21161+21266..21276|56 nt|1| | | | |56+0=56| | |
+atggcattgagactgagttggattttccttgtttcccttttaaaggtattcactgt
+>AJ972403|IGHV13-1*02|Mus_musculus_129/Sv|ORF|L-PART1+L-PART2|77878..77923+77764..77774|57 nt|1| | | | |57+0=57| |rev-compl|
+atggcattgggactgagttggattttccttgtttcccttttaaagggtattcactgt
+>AC073590|IGHV13-2*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|124112..124157+124000..124010|57 nt|1| | | | |57+0=57| |rev-compl|
+atggagttgggactgagctgggtatttcttgtggctcttttgaacggtgtccagtgt
+>AJ972404|IGHV13-2*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|59223..59268+59111..59121|57 nt|1| | | | |57+0=57| |rev-compl|
+atggagttgggactgagctgggtatttcttgtggctcttttgaatggtgtccagtgt
+>AC079273|IGHV14-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|119008..119053+118918..118928|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaaatgcagctgggtcatcttcttcctgatggcagtggttacaggggtcaattca
+>AJ851868|IGHV14-1*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|356570..356615+356695..356705|57 nt|1| | | | |57+0=57| | |
+atgaaatgcagctgggtcatcttcttcctgatggcagtggttacaggggtcaattca
+>AC073563|IGHV14-2*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|162987..163032+163112..163122|57 nt|1| | | | |57+0=57| | |
+atgaaatgcagctggatcatcttcttcctgatggcagtggttacaggggtcaattca
+>AJ851868|IGHV14-2*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|288865..288910+288990..289000|57 nt|1| | | | |57+0=57| | |
+atgaaatgcagctgggtcatcttcttcctgatggcagtggttacaggggtcaattca
+>AC073563|IGHV14-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|97612..97657+97736..97746|57 nt|1| | | | |57+0=57| | |
+atgaaattcagctgggtcatcttcttcctgatggcagtggttacaggggtcaattca
+>AJ851868|IGHV14-3*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|226395..226440+226520..226530|57 nt|1| | | | |57+0=57| | |
+atgaaatgcagctgggttatcttcttcctgatggcagtggttacaggggtcaattca
+>AC073589|IGHV14-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|112316..112361+112441..112451|57 nt|1| | | | |57+0=57| | |
+atgaaatgcagctgggtcatcttcttcctgatggcagtggttataggggtcaattca
+>AJ851868|IGHV14-4*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|50585..50630+50710..50720|57 nt|1| | | | |57+0=57| | |
+atgaaatgcagctgggtcatcttcttcctgatggcagtggttataggaatcaattca
+>AC090843|IGHV15-2*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|67592..67637+67500..67510|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactggatttggatcactctccatctgctggcagcagctacaggtatccaatcc
+>AC073563|IGHV16-1*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|88604..88646+88748..88758|54 nt|1| | | | |54+0=54| | |
+atggagtttggacttagttgggctttccttgttattttaaaaggcatacagggt
+>X06864|IGHV1S10*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|45..90+175..185|57 nt|1| | | | |57+0=57| | |
+atggaatgcagctgggtctttctcttcctcctgtcattaactgcaggtgtccactgc
+>M17574|IGHV1S10*02|Mus_musculus_BALB/c|P|L-PART1+L-PART2|45..90+175..185|57 nt|1| | | | |57+0=57| | |
+atggaatgcagctgggtctttctcttcctcctgtcattaactgcaggtgtccactgc
+>L33934|IGHV1S100*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|578..623+707..717|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggtgtcctctct
+>L33936|IGHV1S101*01|Mus_musculus_C57BL/6|[P]|L-PART1+L-PART2|580..625+709..719|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcttgtcaggatctgcaggtgtcctctct
+>L33950|IGHV1S101*02|Mus_musculus_C57BL/6|[P]|L-PART1+L-PART2|580..625+708..718|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcttgtcaggatctgcaggtgtcctctct
+>L33942|IGHV1S103*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|576..621+703..713|57 nt|1| | | | |57+0=57| | |
+atgggatggaactggatctttattttaatcctgtcagtaactacaggtgtccactct
+>L33946|IGHV1S107*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|574..619+703..713|57 nt|1| | | | |57+0=57| | |
+atgggatggaactggatctttattttaatcctgtcagtaactacaggtgtccactct
+>L33947|IGHV1S108*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|577..622+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcctcttcctgtcaggaactgcaggtgtcctctct
+>J00513|IGHV1S11*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|612..657+741..751|57 nt|1| | | | |57+0=57| | |
+atggaatggagcggggtctttatctttctcctgtcagtaactgcaggtgtctactcg
+>L33951|IGHV1S110*01|Mus_musculus_C57BL/6|[P]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>L33952|IGHV1S111*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|578..623+707..717|57 nt|1| | | | |57+0=57| | |
+atggaatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>L33953|IGHV1S112*01|Mus_musculus_BALB/c|[P]|L-PART1+L-PART2|578..623+707..717|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgggtctttctctccttcctgtcaggaactgcaggtgtactttct
+>L33959|IGHV1S112*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|577..622+705..715|57 nt|1| | | | |57+0=57| | |
+atggaatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>L33954|IGHV1S113*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|578..623+707..717|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>L33957|IGHV1S113*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|577..622+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcctgtcaggaactgcaggtgtcctctct
+>L33960|IGHV1S118*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|575..620+704..714|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcttcctgtcaggaactgcaggtgtcctctct
+>J00507|IGHV1S12*01|Mus_musculus_BALB/c|F|L-PART1+L-PART2|810..855+938..948|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttcccttcctcctgtcaggaactgcaggtgtccattgc
+>AF025443|IGHV1S120*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctctttttggtagcaacagcaacaggtgtccactcc
+>AF025448|IGHV1S120*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctctttttggtagcaacagctacaggtgtccactcc
+>AF025445|IGHV1S121*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|569..614+697..707|57 nt|1| | | | |57+0=57| | |
+atgggatggagttgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>AF025446|IGHV1S122*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcattttctttttggtagcaacagctacaggtgtccactcc
+>AF025449|IGHV1S124*01|Mus_musculus_BALB/c|[P]|L-PART1+L-PART2|569..614+693..703|57 nt|1| | | | |57+0=57| | |
+ataggatggagctatatcatcctccttttggtagcaacagctacaggtgtccactcc
+>K00707|IGHV1S14*01|Mus_musculus_BALB/c|F|L-PART1+L-PART2|1..46+131..141|57 nt|1| | | | |57+0=57| | |
+atgggatggagctctatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>K00603|IGHV1S15*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|65..110+193..203|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtggcaacagctacaggtgtccactcc
+>K00604|IGHV1S16*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|66..111+194..204|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcattttctttttggtagcaacagctacaggtgtccacttc
+>K00605|IGHV1S17*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|65..110+193..203|57 nt|1| | | | |57+0=57| | |
+aagggagggagctgtgtcagcctcttcttagtagcaacagctaacggtgtccacttc
+>K00607|IGHV1S19*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|1..46+128..138|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtgtcttgctcttcttggtgtcaggaactgcaggtgtcctctgc
+>X02460|IGHV1S28*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|147..192+276..286|57 nt|1| | | | |57+0=57| | |
+atggaatggagcggggtctttatctttctcctgtcagtaactgcaggtgtccactcg
+>J00488|IGHV1S29*02|Mus_musculus_BALB/c|F|L-PART1+L-PART2|201..246+330..340|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctcttcctcctgtcaggaactgcaggcgtccactct
+>X02462|IGHV1S30*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|124..169+253..263|57 nt|1| | | | |57+0=57| | |
+ataaaatggagctggatctttctcttcctcctgtcaggaactgcacgtgtccactct
+>M17575|IGHV1S40*01|Mus_musculus_BALB/c|F|L-PART1+L-PART2|45..90+174..184|57 nt|1| | | | |57+0=57| | |
+atggaatggagttgggtctttctcttcctcctgtcattaacttcaggtgtccacagc
+>M19402|IGHV1S44*01|Mus_musculus_I/St|[F]|L-PART1+L-PART2|1..6+90..100|17 nt|3| | | | |17+0=17|partial in 5'| |
+ctgcaggtgtccactct
+>M19403|IGHV1S45*01|Mus_musculus_I/St|F|L-PART1+L-PART2|245..290+374..384|57 nt|1| | | | |57+0=57| | |
+atgggatggagctggatctttctctttctcttgtcaggaactgcaggtgtcctctct
+>M34977|IGHV1S47*01|Mus_musculus_A/J|ORF|L-PART1+L-PART2|119..164+248..258|57 nt|1| | | | |57+0=57| | |
+atggaatggagctgcatctttctcttcctcctgtcagtaactgcaggtgtccactct
+>M34979|IGHV1S49*01|Mus_musculus_A/J|F|L-PART1+L-PART2|119..164+248..258|57 nt|1| | | | |57+0=57| | |
+atggaatggagctgcatctttctcttcctcctgtcagtaactgcaggtatccactcc
+>J00535|IGHV1S5*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|67..112+211..221|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>M34980|IGHV1S50*01|Mus_musculus_A/J|F|L-PART1+L-PART2|121..166+250..260|57 nt|1| | | | |57+0=57| | |
+atgggatggagccggatctttctcttcctcctgtcaataactgcaggtgtccattgc
+>M34981|IGHV1S51*01|Mus_musculus_A/J|P|L-PART1+L-PART2|119..164+250..260|57 nt|1| | | | |57+0=57| | |
+atggaatggttgggnntctttctcctcttcctctcattaactgcatgtgtccactgc
+>M34982|IGHV1S52*01|Mus_musculus_A/J|F|L-PART1+L-PART2|118..163+245..255|57 nt|1| | | | |57+0=57| | |
+atggaatggagcagagtctttatctttctcctgtcagtaactgcaggtgttcactcc
+>M34983|IGHV1S53*01|Mus_musculus_A/J|F|L-PART1+L-PART2|119..164+243..253|57 nt|1| | | | |57+0=57| | |
+atggaatggagctgggtctttctcttcttcctgtcagtaactacaggtgtccactcc
+>L14547|IGHV1S53*02|Mus_musculus_BALB/c|F|L-PART1+L-PART2|384..429+509..519|57 nt|1| | | | |57+0=57| | |
+atggaatggagctgggtctttctcttcttcctgtcagtaactacaggtgtccactcc
+>L14548|IGHV1S53*03|Mus_musculus_BALB/c|F|L-PART1+L-PART2|230..275+355..365|57 nt|1| | | | |57+0=57| | |
+atggcatggagctgggtctttctcttcttcctgtcagtaactacaggtgtccactcc
+>M34985|IGHV1S55*01|Mus_musculus_A/J|F|L-PART1+L-PART2|114..159+243..253|57 nt|1| | | | |57+0=57| | |
+atgggatggagctctatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>M34987|IGHV1S56*01|Mus_musculus_A/J|F|L-PART1+L-PART2|1..32+114..124|43 nt|2| | | | |43+0=43|partial in 5'| |
+gatctttctcttcctcctgtcaataactgcaggtgtccattgc
+>D13200|IGHV1S57*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|187..232+316..326|57 nt|1| | | | |57+0=57| | |
+agggaatggagctggaactttctcttcctcctttcaggaactacaggtgtcaactct
+>D14634|IGHV1S61*01|Mus_musculus_MRL/lpr|F|L-PART1+L-PART2|145..190+273..283|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>L26856|IGHV1S65*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>L26873|IGHV1S65*02|Mus_musculus_BALB/c|[P]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>L26886|IGHV1S65*03|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>L26858|IGHV1S67*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|571..616+715..725|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>AF025447|IGHV1S67*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctctttttggtagcaacagctacaggtgtccactcc
+>L26860|IGHV1S68*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|579..624+707..717|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26874|IGHV1S68*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctcttcttggtagcaacagctacaggtgtccactct
+>L26867|IGHV1S70*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|575..620+703..713|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26869|IGHV1S72*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|571..616+699..709|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26870|IGHV1S73*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcattttctttttggtagcaacagctacaggtgtccacttc
+>L26871|IGHV1S74*01|Mus_musculus_BALB/c|[P]|L-PART1+L-PART2|572..617+700..710|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26872|IGHV1S75*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|570..615+698..708|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcaacagctacaggtgtccactcc
+>L26885|IGHV1S75*02|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|571..616+699..709|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcaacagctacaggtgtccactct
+>L26875|IGHV1S78*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctcttcttggtagcaacagctacaggtgtcaactcc
+>L26880|IGHV1S81*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|576..621+704..714|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctctttttggtagcaacagctacagatgtccactcc
+>L26881|IGHV1S82*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|564..609+692..702|57 nt|1| | | | |57+0=57| | |
+atgggatggagctctatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26882|IGHV1S83*01|Mus_musculus_BALB/c|[F]|L-PART1+L-PART2|567..612+695..705|57 nt|1| | | | |57+0=57| | |
+atgggatggagctctatcatcctcttcttggtagcaacagctacaggtgtccactcc
+>L26883|IGHV1S84*01|Mus_musculus_BALB/c|[P]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctcttcttggtagcaacagctacaggtgtccactct
+>L26925|IGHV1S87*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|571..616+699..709|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>L26926|IGHV1S88*01|Mus_musculus_C57BL/6|[P]|L-PART1+L-PART2|569..614+713..723|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatcctctttttggtagcagcagctacaggtgtccactcc
+>J00511|IGHV1S9*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|677..722+806..816|57 nt|1| | | | |57+0=57| | |
+ataaaatggagctggatctctctcttcctcctgtcaggaactgcaggtgtccactct
+>L26931|IGHV1S92*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|578..623+706..716|57 nt|1| | | | |57+0=57| | |
+atgggatggagctatatcatcctctttttggtagcaacagctacaggtggccactcc
+>L26934|IGHV1S95*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>L26935|IGHV1S96*01|Mus_musculus_C57BL/6|[F]|L-PART1+L-PART2|568..613+696..706|57 nt|1| | | | |57+0=57| | |
+atgggatggagctgtatcatgctcttcttggcagcaacagctacaggtgtccactcc
+>AC090887|IGHV2-1*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|32590..32635+32495..32505|57 nt|1| | | | |57+0=57| |rev-compl|
+atgactgtgctagagctgctcctctgcctggtggcctttccaagctgtgtcctgtcc
+>AJ851868|IGHV2-1*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|1047635..1047680+1047765..1047775|57 nt|1| | | | |57+0=57| | |
+atgactgtgctagagctgctcctctgcctggtggcctttccaagctgtgtcctgtcc
+>AC090887|IGHV2-2*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|46609..46654+46514..46524|57 nt|1| | | | |57+0=57| |rev-compl|
+atggctgtcttggggctgctcttctgcctggtgacattcccaagctgtgtcctatcc
+>AJ851868|IGHV2-2*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|1033613..1033658+1033743..1033753|57 nt|1| | | | |57+0=57| | |
+atggctgtcttggggctgctcttctgcctggtgacattcccaagctgtgtcctatcc
+>J00502|IGHV2-2*03|Mus_musculus_BALB/c|F|L-PART1+L-PART2|267..312+397..407|57 nt|1| | | | |57+0=57| | |
+atggctgtcttagggctgctcttctgcctagtgacattcccaagctgtgtcctatcc
+>AJ851868|IGHV2-2-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|821697..821742+821827..821837|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggtgctactcctctgcctgctgactttcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-2-2*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|564965..565010+565095..565105|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggagctgctcctctccctggtgacattcccaagctgtgtcctgtcc
+>AC090887|IGHV2-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|69526..69571+69431..69441|57 nt|1| | | | |57+0=57| |rev-compl|
+atggctgtcctggcactgctcctctgcctggtgacattcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-3-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|764284..764329+764414..764424|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggtgctgctcttctgcctggtgacattcccaagctgtgtcctttcc
+>AC090887|IGHV2-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|111633..111678+111538..111548|57 nt|1| | | | |57+0=57| |rev-compl|
+atggctgtcctggtgctgctcttctgcctggtgacattcccaagctgtgtcctatcc
+>AJ851868|IGHV2-4*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|968570..968615+968700..968710|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggtgctgctcttctgcctggtgacattcccaagctgtgtcctatcc
+>AJ851868|IGHV2-4-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|787818..787863+787948..787958|57 nt|1| | | | |57+0=57| | |
+atggctgtcttggggctgctcttctgcctggtgacattcccaagctgtgtcctatcc
+>AC090887|IGHV2-5*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|143824..143869+143729..143739|57 nt|1| | | | |57+0=57| |rev-compl|
+atggctgtcctggtgctgctcctctgcctggtgacattcccaagctgtgtcctatcc
+>AJ851868|IGHV2-5-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|715376..715421+715506..715516|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggtgctgctcctctgcctggtgacattcccaagctgtgtcctgtcc
+>CAAA01078923|IGHV2-6*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|5516..5561+5642..5652|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggcgctactcctctgcctggtgactttcccaagctgtatcctttcc
+>AJ851868|IGHV2-6*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|884871..884916+885001..885011|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggggctgcttctctgcctggtgactttcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-6-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|854133..854178+854263..854273|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggggctgcttctctgcctggtgactttcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-6-2*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|747841..747886+747971..747981|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggggctgcttctctgcctggtgactttcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-6-3*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|672419..672464+672549..672559|57 nt|1| | | | |57+0=57| | |
+atggctgacctggctctgttcctctgcatgctgacattcccaaactgtgtcctgtcc
+>AJ851868|IGHV2-6-4*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|586815..586860+586945..586955|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggggctgcttctctgcctggtgacgttcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-6-5*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|552279..552324+552409..552419|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggggctgcttctctgcctggtgacgttcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-6-6*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|535699..535744+535829..535839|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggagctgctcctctccctggtgacattcccaagctgtgtcctgtcc
+>AJ851868|IGHV2-6-7*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|494247..494292+494373..494383|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggcattactcttctgcctggtaacattcccaagctgtatcctttcc
+>V00767|IGHV2-6-7*02|Mus_musculus|F|L-PART1+L-PART2|131..176+258..268|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggcattactcttctgcctggtaacattcccaagctgtatcctttcc
+>CAAA01073483|IGHV2-7*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|19213..19258+19343..19353|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggggctgctcctctgcctggtgacctttccaagctgtgtcctgtca
+>AC079273|IGHV2-8*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|64420..64465+64325..64331|53 nt|1| | | | |53+0=53| |rev-compl|
+atgtgttttgtttgcttggacctcctctacttggtaacgtttccagtaccctg
+>AC079273|IGHV2-9*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|66155..66200+66060..66070|57 nt|1| | | | |57+0=57| |rev-compl|
+atggctgtcctggtgctgttcctctgcctggttgcatttccaagctgtgtcctgtcc
+>AJ851868|IGHV2-9*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|405363..405408+405493..405503|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggtgctgttcctctgcctggttgcatttccaagctgtgtcctgtcc
+>AC160985|IGHV2-9-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|107527..107572+107432..107442|57 nt|1| | | | |57+0=57| |rev-compl|
+atggctgtcctggcgctactcctctgcctggtgactttcccaagctgtgccctgtcc
+>AJ851868|IGHV2-9-2*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|770101..770146+770231..770241|57 nt|1| | | | |57+0=57| | |
+atggctgtcctggcactactcctctgcctggtggctttcccaagctgtaccctgtcc
+>M27021|IGHV2S3*01|Mus_musculus_NFS|F|L-PART1+L-PART2|225..270+356..366|57 nt|1| | | | |57+0=57| | |
+atggctgtcctagggctgctcctctgcctggtgacattcccaagctgtgtcctgtcc
+>AC073563|IGHV3-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|193107..193149+193231..193241|54 nt|1| | | | |54+0=54| | |
+atgagcgtgctgattcttttgtggctgttcacagcctttcctggtatcctgtct
+>AJ851868|IGHV3-1*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|314796..314838+314921..314931|54 nt|1| | | | |54+0=54| | |
+atgagagtgctgattcttttgtgcctgttcacagcctttcctggtatcctgtct
+>AC073563|IGHV3-2*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|123652..123694+123777..123787|54 nt|1| | | | |54+0=54| | |
+atgagcgtgctgattcttttgtggctgttcacagcctttcctggtatcctgtct
+>AJ851868|IGHV3-2*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|252784..252826+252909..252919|54 nt|1| | | | |54+0=54| | |
+atgagagtgctgattcttttgtggctgttcacagcctttcctggtatcctgtct
+>AC073589|IGHV3-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|92308..92350+92438..92448|54 nt|1| | | | |54+0=54| | |
+atgagaatgttgagtgttctgtacctgttgtcagcccttcctggtatcctgtct
+>AJ851868|IGHV3-3*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|12821..12863+12948..12958|54 nt|1| | | | |54+0=54| | |
+atgagaatgttgagtgttctgtacctgttgtcagcccttcctggtatcctgtct
+>AC073590|IGHV3-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|19946..19988+19853..19863|54 nt|1| | | | |54+0=54| |rev-compl|
+atgagagtgttgattcttgtgtacctgttgacagcccttcctggtatcttgtct
+>AJ972403|IGHV3-4*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|63839..63881+63746..63756|54 nt|1| | | | |54+0=54| |rev-compl|
+atgagagtgttgattcttgtgtacctgttgacagtccttcctggtatactgtct
+>AC073590|IGHV3-5*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|28982..29024+28888..28898|54 nt|1| | | | |54+0=54| |rev-compl|
+atgaaaatgttcactcttctgtacctgttgacagtcgttcctggtatcctgtct
+>AJ972403|IGHV3-5*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|72856..72898+72761..72771|54 nt|1| | | | |54+0=54| |rev-compl|
+atgaaaatgttcactcttctgtacctgttgacagtcgttcctggtatcctgtct
+>AC073590|IGHV3-6*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|54478..54520+54386..54396|54 nt|1| | | | |54+0=54| |rev-compl|
+atgaaagtgttgagtctgttgtacctgttgacagccattcctggtatcctgtct
+>AJ972403|IGHV3-6*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|94454..94496+94362..94372|54 nt|1| | | | |54+0=54| |rev-compl|
+atgaaagtgttgagtctgttgtacctgttgacagccattcctggtatcctgtct
+>AC073590|IGHV3-7*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|80515..80557+80419..80429|54 nt|1| | | | |54+0=54| |rev-compl|
+atgagagtgttgagtcttgtgtacctgttgataggtgttcctggtatcctatct
+>AJ972403|IGHV3-7*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|120499..120532+120394..120404|45 nt|1| | | | |45+0=45| |rev-compl|
+atgagagtgttgagtcttgtgtacctgttgataggtatcctatcc
+>AC073590|IGHV3-8*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|88692..88737+88606..88616|57 nt|1| | | | |57+0=57| |rev-compl|
+atggtgttaagtcttctgtacctgttgacagcccttccgggtgagtgtatcctgtca
+>AJ972403|IGHV3-8*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|127975..128020+127889..127899|57 nt|1| | | | |57+0=57| |rev-compl|
+atggtgttaagtcttctgtacctgttgacagcccttccgggtgagtgtatcctgtca
+>AC079273|IGHV4-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|135361..135403+135249..135259|54 nt|1| | | | |54+0=54| |rev-compl|
+atggattttgggctgattttttttattgttgctcttttaaaaggggtccagtgt
+>AJ851868|IGHV4-1*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|334724..334766+334868..334878|54 nt|1| | | | |54+0=54| | |
+atggattttgggctgattttttttattgttgctcttttaaaaggggtccagtgt
+>AC073563|IGHV4-2*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|144291..144333+144435..144445|54 nt|1| | | | |54+0=54| | |
+atggattttgggctgattttttttattgttgctcttttaaaaggggtccagtgt
+>AJ851868|IGHV4-2*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|272776..272818+272920..272930|54 nt|1| | | | |54+0=54| | |
+atggattttgggctgattttttttattgttgctcttttaaaaggggtccagtgt
+>AC090887|IGHV5-1*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|31311..31356+31177..31187|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactgcgggatcagcttggttttccttgtccttatattaaaaagtgtccagtgt
+>AJ851868|IGHV5-1*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|1048915..1048960+1049077..1049087|57 nt|1| | | | |57+0=57| | |
+atggactgcgggatcagcttggttttccttgtccttatattaaaaatttgtaggtgt
+>AC090887|IGHV5-10*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|128056..128101+127923..127933|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgggctcagcttggctttccttgtccttattttaaaaggtgcccagtgg
+>AJ851868|IGHV5-10-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|837469..837514+837638..837648|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagcttggctttccttgtccttattttgaaaggtgcccagtgg
+>AJ851868|IGHV5-10-2*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|731159..731204+731327..731337|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagcttggctttccttgtccttattttaaaaggtgcccagtgg
+>AC090887|IGHV5-11*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|145584..145629+145448..145458|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgggctcaggtttgttttccttgtccttattttaaaaggtgcccagtgt
+>AJ851868|IGHV5-11-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|713612..713657+713783..713793|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcaggtttgttttccttgtccttattttaaaaggtgcccagtgt
+>AJ851868|IGHV5-11-2*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|666049..666094+666213..666223|57 nt|1| | | | |57+0=57| | |
+atggactttgggttcagcttggttttccttgttcttattttaaaagctttgaagtgt
+>AC090887|IGHV5-12*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|160487..160532+160374..160384|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaacttggggctcagcttgattttccttgtccttgttttaaaaggtgtccagtgt
+>AJ851868|IGHV5-12*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|899398..899443+899546..899556|57 nt|1| | | | |57+0=57| | |
+atgaacttggggctcagcttgattttccttgtccttgttttaaaaggtgtccagtgt
+>AJ851868|IGHV5-12-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|698661..698706+698814..698824|57 nt|1| | | | |57+0=57| | |
+atgaactttgggctcagattgattttccttgtccttactttaaaaggtgtgaagtgt
+>AJ851868|IGHV5-12-2*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|617967..618012+618120..618130|57 nt|1| | | | |57+0=57| | |
+atgaatttcgggctcagcttgattttccttgtccttgttttaaaaggtgtcctgtgt
+>AJ851868|IGHV5-12-3*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|560244..560289+560414..560424|57 nt|1| | | | |57+0=57| | |
+atgggctttgggctcagattggttttccttgtccttatttgaaaaggtgtccagtgt
+>CAAA01078923|IGHV5-13*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|7545..7590+7714..7724|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagcttggttttccttgtcattctttgaaaaggtgcccagtgt
+>AJ851868|IGHV5-13*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|589019..589064+589188..589198|57 nt|1| | | | |57+0=57| | |
+atggactttgtgctcagattggctttccttgtccttattttaaaaggtgcccagtgt
+>AJ851868|IGHV5-13-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|496283..496327+496456..496466|56 nt|1| | | | |56+0=56| | |
+atggatgtgggctcagcttggttttccttgtcattatttgaaaaggtgcccagtgt
+>AC079273|IGHV5-15*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|13747..13792+13613..13623|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacttcaggctcagcttacttatttttgtccttattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-15*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|455515..455560+455679..455689|57 nt|1| | | | |57+0=57| | |
+atggacttcaggctcagcttacttatttttgtccttattttaaaaggtgtccagtgt
+>AC079273|IGHV5-16*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|25609..25654+25493..25503|57 nt|1| | | | |57+0=57| |rev-compl|
+atgtacttcaggctcagctcagtttttcttgttcttattttaaaaggagtccagtgt
+>AC079273|IGHV5-17*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|46242..46287+46114..46124|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactccaggctcaatttagttttccttgtccttattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-17*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|430728..430773+430891..430901|57 nt|1| | | | |57+0=57| | |
+atggactccaggctcaatttagttttccttgtccttattttaaaaggtgtccagtgt
+>AC079273|IGHV5-18*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|62865..62910+62737..62746|56 nt|1| | | | |56+0=56| |rev-compl|
+atgtacttcaggcacagcttggattttcttgcccttattttaaaaggtgcccagtg
+>AJ851868|IGHV5-18*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|408654..408700+408819..408829|58 nt|1| | | | |58+0=58| | |
+atgtacttcaggcacagcttggatttttcttgcccttattttaaaaggtgtccagtgt
+>AC079273|IGHV5-19*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|71969..72013+71728..71730|48 nt|1| | | | |48+0=48| |rev-compl|
+atggctccaggcaccaagagtggactggctggggtgggggtggggata
+>AJ851868|IGHV5-19*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|399832..399871+400102..400112|51 nt|1| | | | |51+0=51| | |
+atggctccaggcaccaagagtggactggctggggtgggggatatccagtgt
+>AC090887|IGHV5-2*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|36899..36944+36754..36764|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacttcgggctcagcttggttttccttgtccttattttaaaaagtgtacagtgt
+>X01113|IGHV5-2*02|Mus_musculus_BALB/c|F|L-PART1+L-PART2|204..249+384..394|57 nt|1| | | | |57+0=57| | |
+atggacttcgggctcagcttggttttccttgtccttattttaaaaagtgtacagtgt
+>AC073590|IGHV5-21*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|86360..86404+86264..86274|56 nt|1| | | | |56+0=56| |rev-compl|
+atgaagctggggattagatgggtttctttgttgctcttataaaaggcatacagggt
+>AJ972403|IGHV5-21*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|125651..125695+125555..125565|56 nt|1| | | | |56+0=56| |rev-compl|
+atgaagctggggattaaatgggtttctttgttgctcttataaaaggcatacagggt
+>AC090887|IGHV5-3*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|48322..48367+48186..48196|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgggctcagctttgttttccttgtccttattttaaaaggtgtccagtgt
+>AC090887|IGHV5-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|55814..55859+55696..55706|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaacttcgggctcagcttgattttccttgtccttgttttaaaaggtgtccagtgt
+>AJ851868|IGHV5-4*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|1024368..1024413+1024521..1024531|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggctcagcttgattttccttgtccttgttttaaaaggtgtccagtgt
+>AC090887|IGHV5-5*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|71351..71396+71215..71225|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgggctcagctttgttttccttgtccttattttaaaatgtgtcaagtgt
+>AJ851868|IGHV5-5*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|1008865..1008910+1009036..1009046|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagctttgttttccttgtccttattttaaaatgtgtcaagtgt
+>AJ851868|IGHV5-5-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|762590..762635+762761..762771|57 nt|1| | | | |57+0=57| | |
+atggtcttggggctcagctttgttttccttgtacttattttaaaaggtgtccagtgt
+>AC090887|IGHV5-6*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|83865..83910+83756..83766|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaacttcgggctcagcttgattttccttgcccttattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-6-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|941634..941679+941778..941788|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggctcagcttgattttccttgccctcattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-6-2*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|755959..756004+756112..756122|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggctcagattgattttccttgtccttgttttaaaaggtgtcctgtgt
+>AJ851868|IGHV5-6-3*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|679159..679204+679312..679322|57 nt|1| | | | |57+0=57| | |
+atgaacttagggctcagcttcattttccttgcccttattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-6-4*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|643854..643899+644005..644015|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggctcagattgattttccttgtccttactttaaaaggtgtccagtgt
+>AJ851868|IGHV5-6-5*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|595069..595114+595220..595230|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggttcagcttgattttccttgtccttgttttaaaaggtgtccagtgt
+>AJ851868|IGHV5-6-6*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|514500..514545+514653..514663|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggttcagcttgattttccttgtccttgttttaaaaggtgtccagtgt
+>AC090887|IGHV5-7*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|93069..93114+92936..92946|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgggctcagcttggctttactcgtccttattttaaaaggtgcccagtgg
+>AJ851868|IGHV5-7-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|932429..932474+932597..932607|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagcttggctttactcgtccttattttaaaaggtgcccagtgg
+>AJ851868|IGHV5-7-2*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|688091..688136+688260..688270|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagctttgtttttcttgtcctaattttaaaaggtgcccaatgt
+>AJ851868|IGHV5-7-3*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|634849..634894+635018..635028|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagctttgtttttcttgtcctaattttaaaaggtgcccaatgt
+>AJ851868|IGHV5-7-4*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|611100..611145+611268..611278|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagcttggctttccttgtccttattttaaaaggtgcccagtgg
+>AJ851868|IGHV5-7-5*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|554319..554360+554488..554498|53 nt|1| | | | |53+0=53| | |
+atgtgggctcagcttggttttccttgtcattatttgaaaagggtgtccagtgt
+>AC090887|IGHV5-8*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|113333..113378+113198..113208|57 nt|1| | | | |57+0=57| |rev-compl|
+atggactttgagctcagctttgttttccttgttctgattttaaaaggtgcccagtgt
+>AJ851868|IGHV5-8-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|819973..820018+820143..820153|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagctttgttttccttgtcctaattttaaaaggtgcccagtgt
+>AJ851868|IGHV5-8-2*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|785778..785823+785949..785959|57 nt|1| | | | |57+0=57| | |
+atggactttgagctcagctttgttttccttgtcctaattttaaaaggtgcccagtgt
+>AJ851868|IGHV5-8-3*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|563277..563322+563447..563457|57 nt|1| | | | |57+0=57| | |
+atggactttgggctcagctttgttttccttgtcctaattttaaaaggtgtccaggga
+>AC090887|IGHV5-9*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|120137..120182+120019..120029|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaactttgggctgagcttgattttccttgtcctaattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-9*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|960081..960126+960234..960244|57 nt|1| | | | |57+0=57| | |
+atgaactttgggctgagcttgattttccttgtcctaattttaaaaggtgtccagtgt
+>X00163|IGHV5-9*03|Mus_musculus_BALB/c|F|L-PART1+L-PART2|83..128+237..247|57 nt|1| | | | |57+0=57| | |
+atgaattttgggctgagcttgattttccttgtcctaattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-9-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|862251..862296+862404..862414|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggctcagcttgattttccttgtccttgttttaaaaggtgtccagtgt
+>AJ851868|IGHV5-9-2*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|845373..845418+845526..845536|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggctcagcttgattttccttgtcctaattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-9-3*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|805049..805094+805202..805212|57 nt|1| | | | |57+0=57| | |
+atgaactttgtgctcagcttgattttccttgccctcattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-9-4*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|778188..778233+778341..778351|57 nt|1| | | | |57+0=57| | |
+atgaacttcgggctcagcttgattttccttgtccttattttaaaaggtgtccagtgt
+>AJ851868|IGHV5-9-5*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|739082..739127+739235..739245|57 nt|1| | | | |57+0=57| | |
+atgaactttgggctgagcttgattttccttgtcctaattttaaaaggtgtccagtgt
+>AC090887|IGHV6-1*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|61837..61882+61708..61718|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaactttgggttcagcttggttttccttgtcattatttgaaaaggtgcccagtgt
+>AJ851868|IGHV6-1*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|1018344..1018389+1018508..1018518|57 nt|1| | | | |57+0=57| | |
+atgaactttgggttcagcttggttttccttgtcattatttgaaaaggtgcccagtgt
+>AJ851868|IGHV6-1-1*01|Mus_musculus_129/Sv|P|L-PART1+L-PART2|772120..772165+772293..772303|57 nt|1| | | | |57+0=57| | |
+atggactttgtgctcagattggctttccttgtccttattttaaaaggtgtccagtgt
+>AC073590|IGHV6-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|158063..158108+157950..157960|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacttgagactgagctgtgcttttattattgttcttttaaaaggggtccagagt
+>AJ972404|IGHV6-3*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|90816..90861+90703..90713|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacttgagactgagctgtgcttttattattgttcttttaaaaggggtccagagt
+>AC073561|IGHV6-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|2429..2474+2287..2297|57 nt|1| | | | |57+0=57| |rev-compl|
+atgtacttggaactgagctgtgttttcattgttgttctcttaaaaggtgtccagagt
+>AJ972404|IGHV6-4*02|Mus_musculus_129/Sv|ORF|L-PART1+L-PART2|106655..106700+106533..106543|57 nt|1| | | | |57+0=57| |rev-compl|
+atgtacttggaaatgagctgtgttttcattgttgttctcttaaaaggtgtccagagt
+>AC073561|IGHV6-5*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|12521..12566+12409..12419|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacttggaactgaactgtgttttcattgttgtcctcttaaaaggtgtccagagt
+>AJ972404|IGHV6-5*02|Mus_musculus_129/Sv|ORF|L-PART1+L-PART2|116314..116359+116202..116212|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacttggaactgagctgtgttttcattgttgtcctcttaaaaggtgtccagagt
+>AC073561|IGHV6-6*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|30713..30758+30602..30612|57 nt|1| | | | |57+0=57| |rev-compl|
+atgtacttgggactgaactgtgtattcatagtttttctcttaaaaggtgtccagagt
+>AJ972404|IGHV6-6*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|133697..133742+133586..133596|57 nt|1| | | | |57+0=57| |rev-compl|
+atgtacttgggactgaactgtgtattcatagtttttctcttaaaaggtgtccagagt
+>AC073561|IGHV6-7*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|51550..51595+51438..51448|57 nt|1| | | | |57+0=57| |rev-compl|
+atgtacttgggactgagctgtgtattcattttttttctcttaaaaggtgtccagtgt
+>AJ972404|IGHV6-7*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|149612..149657+149500..149510|57 nt|1| | | | |57+0=57| |rev-compl|
+atgtacttgggactgagctgtgtattcattgtttttctcttaaaaggtgtccagtgt
+>AC079273|IGHV7-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|83572..83617+83385..83395|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaagttgtggttaaactgggtttttcttttaacacttttacatggtatccagtgt
+>AJ851868|IGHV7-1*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|388209..388254+388411..388421|57 nt|1| | | | |57+0=57| | |
+atgaagttgtggttaaactgggtttttcttttaacacttttacatggtatccagtgt
+>X03253|IGHV7-1*03|Mus_musculus_C57BL/10|F|L-PART1+L-PART2|35..80+250..260|57 nt|1| | | | |57+0=57| | |
+atgaagttgtggttaaactgggtttttcttttaacacttttacatggtatccagtgt
+>AC079273|IGHV7-2*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|99115..99154+99002..99012|51 nt|1| | | | |51+0=51| |rev-compl|
+atgtttaacatcattatcttcacagtaacacctttaaatggtatccagtgt
+>AJ851868|IGHV7-2*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|372514..372553+372656..372666|51 nt|1| | | | |51+0=51| | |
+atgtttaacatcattatcttcacagtaacacctttaaatggtatccagtgt
+>AC073563|IGHV7-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|4241..4286+4391..4401|57 nt|1| | | | |57+0=57| | |
+atgaagttgtggctgaactggattttccttgtaacacttttaaatggtatccagtgt
+>AJ851868|IGHV7-3*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|73107..73152+73257..73267|57 nt|1| | | | |57+0=57| | |
+atgaagttgtggctgaactggattttccttgtaacacttttaaatggtatccagtgt
+>X03256|IGHV7-3*03|Mus_musculus_C57BL/10|F|L-PART1+L-PART2|29..74+179..189|57 nt|1| | | | |57+0=57| | |
+atgaagttgtggctgaactggattttacttgtaacacttttaaatggtatccagtgt
+>AC073589|IGHV7-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|65929..65974+66079..66089|57 nt|1| | | | |57+0=57| | |
+atgaagttgtgggtgaactggattctacttgtagcacttttaaatggtatccagtgt
+>AJ972403|IGHV7-4*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|47630..47675+47515..47525|57 nt|1| | | | |57+0=57| |rev-compl|
+atgaagttgtggctgaactggattctacttgtagcacttttaaatggtatccagtgt
+>M16726|IGHV7-4*03|Mus_musculus_BALB/c|F|L-PART1+L-PART2|298..343+448..458|57 nt|1| | | | |57+0=57| | |
+atgaagttgtggctgaactggattctacttgtagcacttttaaatggtatccagtgt
+>X03255|IGHV7-4*04|Mus_musculus_C57BL/10|F|L-PART1+L-PART2|35..80+185..195|57 nt|1| | | | |57+0=57| | |
+atgaagttgtgggtgaactggattctacttgtagcacttttacatggtatccagtgt
+>AC073590|IGHV8-1*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|99135..99180+99026..99036|57 nt|1| | | | |57+0=57| |rev-compl|
+atggattggggcttagattgggtttccttgttactcttttaaaagggcttagaggat
+>AJ972404|IGHV8-1*02|Mus_musculus_129/Sv|P|L-PART1+L-PART2|37640..37685+37532..37542|57 nt|1| | | | |57+0=57| |rev-compl|
+atggattggggcttagattgggtttccttgttactcttttaaaagggcttagaggat
+>AC073939|IGHV8-10*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|141473..141518+141604..141614|57 nt|1| | | | |57+0=57| | |
+atggacaggcttacttcctcattcctgctgctgattgtccctgcatatgtcctgtcc
+>AC073939|IGHV8-11*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|93664..93709+93795..93805|57 nt|1| | | | |57+0=57| | |
+atgggcaggcttacttcttcattcctgctactgattgttcctgcatatgtcctctcc
+>AC073939|IGHV8-12*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|12868..12913+12999..13009|57 nt|1| | | | |57+0=57| | |
+atggacaggcttacttcctcattcctgctgctgattgtccctgcatatgtcctgtcc
+>AC160473|IGHV8-14*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|130219..130264+130132..130142|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacaggcttacttcctcattcctgctgctgattgtccctgcatatgtcctgtcc
+>AC160473|IGHV8-15*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|165801..165846+165712..165722|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacaggctgacttcctcattcgtgctgcttattgtccctgcatatgtcttgtca
+>AC160473|IGHV8-16*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|179793..179838+179704..179714|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacaggctgacttcctcattcgtgctgcttattgtccctgcatatgtcttgtca
+>AC073561|IGHV8-2*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|58194..58242+58102..58112|60 nt|1| | | | |60+0=60| |rev-compl|
+atgggcagacttacattctcattcctgctgctgctgcctgtccctgcatatgtcctatct
+>AC079181|IGHV8-3*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|64340..64385+64456..64466|57 nt|1| | | | |57+0=57| | |
+atgaacagccttacttcctcattcctgctgatgattgtccctacatttttcttcaca
+>AC079181|IGHV8-4*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|43720..43765+43849..43859|57 nt|1| | | | |57+0=57| | |
+atggacaggcttatgtcttcattcctgctgctggttgtccctatatatgttctgtcc
+>AC074329|IGHV8-5*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|35466..35511+35370..35380|57 nt|1| | | | |57+0=57| |rev-compl|
+atgggcaggcttacttcttcattcttgctactgattgtccctgcatatgtcctgtcc
+>AC074329|IGHV8-6*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|133684..133729+133587..133597|57 nt|1| | | | |57+0=57| |rev-compl|
+atggacaggcttacttcctcattcctactgctgattgtccctgtctatgtcctatcc
+>AC087166|IGHV8-7*01|Mus_musculus_C57BL/6|P|L-PART1+L-PART2|122876..122921+123387..123397|57 nt|1| | | | |57+0=57| | |
+atggacaggtttacttcctcattcctgctgctgattatccctgcatatgtcctgtcc
+>AC087166|IGHV8-8*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|87326..87371+87457..87467|57 nt|1| | | | |57+0=57| | |
+atgggcaggcttacttcttcattcctgttactgattgtccctgcatatgtcctgtcc
+>AC073939|IGHV8-9*01|Mus_musculus_C57BL/6|ORF|L-PART1+L-PART2|192465..192510+192597..192607|57 nt|1| | | | |57+0=57| | |
+atggacaggcttacttcctcattcctactgctgattgtccctgtctatgtcctatcc
+>X03302|IGHV8S1*01|Mus_musculus_BALB/c|P|L-PART1+L-PART2|174..222+304..314|60 nt|1| | | | |60+0=60| | |
+atgggcagacttacattctcattcctgctgctgctgcctgtccctgcatatgtcctatct
+>U14945|IGHV8S2*01|Mus_musculus|P|L-PART1+L-PART2|11..56+133..143|57 nt|1| | | | |57+0=57| | |
+atggacaggcttacttcctcattcctgctgctgattgtccctgcatatgtcctgtcc
+>AC073563|IGHV9-1*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|63527..63572+63653..63663|57 nt|1| | | | |57+0=57| | |
+atggattgggtgtggaccttgctattcctgatagcagctgcccaaagtgcccaagca
+>AJ851868|IGHV9-1*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|202289..202334+202414..202424|57 nt|1| | | | |57+0=57| | |
+atggattggctgtggaacttgctattcctgatggcagctgcccaaagtgcccaagca
+>Z15022|IGHV9-1*03|Mus_musculus_BALB/c|F|L-PART1+L-PART2|1..25+106..116|36 nt|1| | | | |36+0=36|partial in 5'| |
+ctattcctgatggcagctgcccaaagtgcccaagca
+>Z15020|IGHV9-1*04|Mus_musculus_BALB/c|F|L-PART1+L-PART2|1..25+105..115|36 nt|1| | | | |36+0=36|partial in 5'| |
+ctattcctgatggcagctgcccaaagtgcccaagca
+>AC073563|IGHV9-2*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|48455..48500+48580..48590|57 nt|1| | | | |57+0=57| | |
+atggattgggtgtggaccttgctattcctgatggcagctgcccaaagggctcaagca
+>AJ851868|IGHV9-2*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|185032..185077+185158..185168|57 nt|1| | | | |57+0=57| | |
+atggattgggtgtggaccttgctattcctgatggcagctgcccaaagtgcccaagca
+>AJ851868|IGHV9-2-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|92500..92545+92626..92636|57 nt|1| | | | |57+0=57| | |
+atggcttgggtgtggaccttgctattcctgatggcagctgcccaaagtatccaagca
+>AC073563|IGHV9-3*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|16763..16808+16889..16899|57 nt|1| | | | |57+0=57| | |
+atgggttggctgtggaacttgctattcctgatggcagctgcccaaagtgcccaagca
+>AJ851868|IGHV9-3*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|146460..146505+146585..146595|57 nt|1| | | | |57+0=57| | |
+atggattggctgtggaacttgctattcctgatggcagctgcccaaagtatccaagca
+>AJ851868|IGHV9-3-1*01|Mus_musculus_129/Sv|F|L-PART1+L-PART2|122012..122057+122137..122147|57 nt|1| | | | |57+0=57| | |
+atggcttgggtgtggaccttgctattcctgatggcagctgcccaaagtgcccaagca
+>AC073590|IGHV9-4*01|Mus_musculus_C57BL/6|F|L-PART1+L-PART2|66283..66328+66194..66204|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggctgtggaacttgctatttctcatggcagcagctcaaagtatccaagca
+>AJ972403|IGHV9-4*02|Mus_musculus_129/Sv|F|L-PART1+L-PART2|106260..106305+106171..106181|57 nt|1| | | | |57+0=57| |rev-compl|
+atggaatggctgtggaacttgctatttctcatggcagcagctcaaagtatccaagca
+

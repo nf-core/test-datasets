@@ -10,7 +10,11 @@ This branch contains test data for the [nf-core/bcellmagic](https://github.com/n
 `Metadata_test.tsv` contains the metadata sheet needed to run the pipeline.
 `C_primers.fasta` and `V_primers.fasta` contain fake primers, do not use them!
 
-## Paired-end data
+### Paired-end data
 
 `test_data-R1.fastq.gz` and `test_data-R2.fastq.gz`: paired end MiSeq data (~10K reads).
 `test_data-I1.fastq.gz` : containing illumina barcodes and UMI codes.
+
+### Imgt and Igblast databases cache
+
+`imgtdb_base` and `igblast_base` databases cache.

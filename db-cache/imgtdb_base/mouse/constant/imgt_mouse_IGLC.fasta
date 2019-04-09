@@ -1,0 +1,43 @@
+>J00587|IGLC1*01|Mus_musculus_BALB/c|F|C-REGION|g,30..346|318 nt|1|+1| | | |318+0=318| | |
+ggccagcccaagtcttcgccatcagtcaccctgtttccaccttcctctgaagagctcgag
+actaacaaggccacactggtgtgtacgatcactgatttctacccaggtgtggtgacagtg
+gactggaaggtagatggtacccctgtcactcagggtatggagacaacccagccttccaaa
+cagagcaacaacaagtacatggctagcagctacctgaccctgacagcaagagcatgggaa
+aggcatagcagttacagctgccaggtcactcatgaaggtcacactgtggagaagagtttg
+tcccgtgctgactgttcc
+>J00595|IGLC2*01|Mus_musculus_BALB/c|F|C-REGION|g,27..340|315 nt|1|+1| | | |315+0=315| | |
+ggtcagcccaagtccactcccactctcaccgtgtttccaccttcctctgaggagctcaag
+gaaaacaaagccacactggtgtgtctgatttccaacttttccccgagtggtgtgacagtg
+gcctggaaggcaaatggtacacctatcacccagggtgtggacacttcaaatcccaccaaa
+gagggcaacaagttcatggccagcagcttcctacatttgacatcggaccagtggagatct
+cacaacagttttacctgtcaagttacacatgaaggggacactgtggagaagagtctgtct
+cctgcagaatgtctc
+>J00585|IGLC3*01|Mus_musculus_BALB/c|F|C-REGION|g,27..340|315 nt|1|+1| | | |315+0=315| | |
+ggtcagcccaagtccactcccacactcaccatgtttccaccttcccctgaggagctccag
+gaaaacaaagccacactcgtgtgtctgatttccaatttttccccaagtggtgtgacagtg
+gcctggaaggcaaatggtacacctatcacccagggtgtggacacttcaaatcccaccaaa
+gaggacaacaagtacatggccagcagcttcttacatttgacatcggaccagtggagatct
+cacaacagttttacctgccaagttacacatgaaggggacactgtggagaagagtctgtct
+cctgcagaatgtctc
+>M16554|IGLC2*01|Mus spretus_SPE|F|C-REGION|g,593..906|315 nt|1|+1| | | |315+0=315| | |
+ggtcagcccaagtccactcccactctcacagtgtttccaccttcctctgaggagctcaag
+gaaaacaaagccacactggtgtgtctgatttccaacttttccccgagtggtgtgacagtg
+gcctggaaggcaaatggtacacctatcacccagggtgtggacacttcaaatcccaccaaa
+gagggcaacaagttcatggccagcagcttcctacatttgacatcggaccagtggagatct
+cacaacagttttacctgtcaagttacacatgaaggggacactgtggagaagagtctgtct
+cctgcagaatgtctc
+>AF357973|IGLC2*02|Mus spretus_B6.lambdaSEG|F|C-REGION|g,6..319|315 nt|1|+1| | | |315+0=315| | |
+ggtcagcccaagtccactcccactctcaccgtgtttccaccttcctctgaggagctcaag
+gaaaacaaagccacactggtgtgtctgatttccaacttttccccgagtggtgtgacagtg
+gcctggaaggcaaatggtacacctatcacccagggtgtggacacttcaaatcccaccaaa
+gagggcaacaagttcatggccagcagcttcctacatttgacatcggaccagtggagatct
+cacaacagttttacctgtcaagttacacatgaaggggacactgtggagaagagtctgtct
+cctgcagaatgtctc
+>AF357974|IGLC5*01|Mus spretus_B6.lambdaSEG|F|C-REGION|1294..1604|311 nt|1| | | | |311+0=311| | |
+gccaacccaaggctacaccctcagttaatctgttcccaccttcctctgaagagctcaaga
+ctaaaaaggccacactggtgtgtatgatcactgagttctacgcaactgctgtgagaatgg
+cctggaaggcagacggtacccctatcactcaggatgtagagactacccagcctcccaaac
+agagtgacaacatggctagcagttacctgctcttcacagcagaagcgtgggaatctcata
+gcagttacagctgccatgtcactcatgaagggaacactgtggagaagaatttgtcccgtg
+ctgagtgttcc
+
