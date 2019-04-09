@@ -1,16 +1,15 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `bcellmagic`
+Test data to be used for automated testing with the nf-core pipeline.
 
-## Introduction
+This branch contains test data for the [nf-core/bcellmagic](https://github.com/nf-core/bcellmagic) pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines.
+## Content
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+###  Metadata and primer files
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+`metadata_test.tsv`
 
-## Support
+## Paired-end data
 
-For further information or help, don't hesitate to get in touch on our [Gitter channel](https://gitter.im/nf-core/Lobby)
+`test_data-R1.fastq.gz` and `test_data-R2.fastq.gz`: paired end MiSeq data (~10K reads).
+`test_data-I1.fastq.gz` : containing illumina barcodes and UMI codes.
