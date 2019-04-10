@@ -1,0 +1,2 @@
+ID	R1	R2	I1	Source	Treatment	Extraction_time	Population
+Sample_ID	data/test_short_R1.fastq.gz	data/test_short_R2.fastq.gz	data/test_short_I1.fastq.gz	Patient1	Drug_treatment	5months	pbl
