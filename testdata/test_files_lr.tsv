@@ -1,1 +1,1 @@
-testset_lr	https://github.com/nf-core/test-datasets/blob/denovohybrid/testdata/test_read_nanopore.fastq.gz
+testset_lr	https://raw.githubusercontent.com/nf-core/test-datasets/denovohybrid/testdata/test_read_nanopore.fastq.gz
