@@ -1,1 +1,1 @@
-minigut minigut_reads.fasta.gz test_minigut_R1.fastq.gz test_minigut_R2.fastq.gz 
+minigut https://github.com/HadrienG/test-datasets/blob/mag/test_data/minigut_reads.fastq.gz https://github.com/HadrienG/test-datasets/blob/mag/test_data/test_minigut_R1.fastq.gz   https://github.com/HadrienG/test-datasets/blob/mag/test_data/test_minigut_R2.fastq.gz
