@@ -1,0 +1,10 @@
+DREAM	XX	0	DREAM_N	DREAM_N_1	s3://sarek-dream-test/normal/C09DF.1_1.fastq.gz	s3://sarek-dream-test/normal/C09DF.1_2.fastq.gz
+DREAM	XX	0	DREAM_N	DREAM_N_2	s3://sarek-dream-test/normal/C09DF.2_1.fastq.gz	s3://sarek-dream-test/normal/C09DF.2_2.fastq.gz
+DREAM	XX	0	DREAM_N	DREAM_N_3	s3://sarek-dream-test/normal/D0EN0.4_1.fastq.gz	s3://sarek-dream-test/normal/D0EN0.4_2.fastq.gz
+DREAM	XX	0	DREAM_N	DREAM_N_4	s3://sarek-dream-test/normal/D0EN0.7_1.fastq.gz	s3://sarek-dream-test/normal/D0EN0.7_2.fastq.gz
+DREAM	XX	0	DREAM_N	DREAM_N_5	s3://sarek-dream-test/normal/D0EN0.8_1.fastq.gz	s3://sarek-dream-test/normal/D0EN0.8_2.fastq.gz
+DREAM	XX	1	DREAM_T	DREAM_T_1	s3://sarek-dream-test/tumor/T_C09DF.1_1.fastq.gz	s3://sarek-dream-test/tumor/T_C09DF.1_2.fastq.gz
+DREAM	XX	1	DREAM_T	DREAM_T_2	s3://sarek-dream-test/tumor/T_C09DF.2_1.fastq.gz	s3://sarek-dream-test/tumor/T_C09DF.2_2.fastq.gz
+DREAM	XX	1	DREAM_T	DREAM_T_3	s3://sarek-dream-test/tumor/T_D0EN0.4_1.fastq.gz	s3://sarek-dream-test/tumor/T_D0EN0.4_2.fastq.gz
+DREAM	XX	1	DREAM_T	DREAM_T_4	s3://sarek-dream-test/tumor/T_D0EN0.7_1.fastq.gz	s3://sarek-dream-test/tumor/T_D0EN0.7_2.fastq.gz
+DREAM	XX	1	DREAM_T	DREAM_T_5	s3://sarek-dream-test/tumor/T_D0EN0.8_1.fastq.gz	s3://sarek-dream-test/tumor/T_D0EN0.8_2.fastq.gz
