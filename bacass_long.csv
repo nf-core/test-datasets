@@ -1,3 +1,2 @@
 ID,R1,R2,LongFastQ,Fast5,GenomeSize
-'ERR044595','https://github.com/nf-core/test-datasets/raw/bacass/ERR044595_1M_1.fastq.gz','https://github.com/nf-core/test-datasets/raw/bacass/ERR044595_1M_2.fastq.gz','','','2.8m'
-'ER064912', 'https://github.com/nf-core/test-datasets/raw/bacass/ERR064912_1M_1.fastq.gz', 'https://github.com/nf-core/test-datasets/raw/bacass/ERR064912_1M_2.fastq.gz','','','2.8m'
+'TestMe','NA','NA','https://github.com/nf-core/test-datasets/raw/bacass/nanopore/subset500.fq.gz','','2.8m'
