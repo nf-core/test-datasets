@@ -34,10 +34,10 @@ nextflow run porepatrol --reads nanopore_reads.fastq.gz
 
 Expected file sizes:
 
-Gzipped input file size: 634 KB
-Unzipped file size: 1,264 KB
-After adapters are chopped: 1,259 KB
-After filtering with defaults (-q 12): 935 KB
+* Gzipped input file size: 634 KB
+* Unzipped file size: 1,264 KB
+* After adapters are chopped: 1,259 KB
+* After filtering with defaults (-q 12): 935 KB
 
 
 
