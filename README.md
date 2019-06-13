@@ -32,12 +32,15 @@ Running the pipeline locally with the default parameters:
 nextflow run porepatrol --reads nanopore_reads.fastq.gz 
 ```
 
-Expected file sizes:
+The number of reads and number of bases are summarized in `results/read_summary/read_summary.txt`:
 
-* Gzipped input file size: 634 KB
-* Unzipped file size: 1,264 KB
-* After adapters are chopped: 1,259 KB
-* After filtering with defaults (-q 12): 935 KB
+
+Input                Number of reads   35.0
+After adapter chop   Number of reads   35.0
+After filtering      Number of reads   26.0
+Input                Total bases       629,487.0
+After adapter chop   Total bases       626,738.0
+After filtering      Total bases       465,573.0
 
 
 
