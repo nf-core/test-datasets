@@ -35,13 +35,6 @@ nextflow run porepatrol --reads nanopore_reads.fastq.gz
 The number of reads and number of bases are summarized in `results/read_summary/read_summary.txt`:
 
 
-* Input                Number of reads   35.0
-* After adapter chop   Number of reads   35.0
-* After filtering      Number of reads   26.0
-* Input                Total bases       629,487.0
-* After adapter chop   Total bases       626,738.0
-* After filtering      Total bases       465,573.0
-
 | Stage               | Number of reads| Number of bases |
 | :-------------      |---------------:| ---------------:|
 | Input               | 35             |          629,487|
