@@ -42,5 +42,10 @@ The number of reads and number of bases are summarized in `results/read_summary/
 * After adapter chop   Total bases       626,738.0
 * After filtering      Total bases       465,573.0
 
+| Stage               | Number of reads| Number of bases |
+| :-------------      |---------------:| ---------------:|
+| Input               | 35             |          629,487|
+| After adapter chop  | 35             |          626,738|
+| After filtering     | 26             |          465,573|
 
 
