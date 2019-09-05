@@ -15,3 +15,12 @@ Explanation of flags:
 
 - `-F` preserves attributes for genes and transcripts, but doesn't preserve for exon features
 - `--keep-exon-attrs` is needed as [featureCounts](http://subread.sourceforge.net/) in the [nf-core/rnaseq](https://github.com/nf-core/rnaseq/) pipeline uses the gene type/biotype (e.g. `protein_coding`, `lncRNA`) of the exons to count number of reads per biotype
+
+## Create the gzipped references
+In case the reference genomes or gene annotations get updated, the gzipped references would need to get updated, too. To make the gzipped references, run the following snippet in the `reference` folder:
+
+```bash
+for F in $(ls -1 | grep -vE '.gz$'); do echo $F ; gzip -c $F > $F.gz ; done
+```
+
+This looks for files that don't end in `.gz` and compresses them.
