@@ -1,0 +1,5 @@
+sample,fastq,barcode,genome
+HOMOZYGOTE_A12,,1,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa
+HOMOZYGOTE_D08,,2,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa
+HETEROZYGOTE_MOSAIC_A05,,3,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa
+HETEROZYGOTE_A08,,4,https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa
