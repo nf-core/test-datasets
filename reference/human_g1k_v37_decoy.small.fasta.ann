@@ -1,0 +1,13 @@
+804978 6 11
+0 1 dna:chromosome chromosome:GRCh37:1:1:249250621:1
+0 200000 2
+0 2 dna:chromosome chromosome:GRCh37:2:1:243199373:1
+200000 200000 1
+0 3 dna:chromosome chromosome:GRCh37:3:1:198022430:1
+400000 200000 1
+0 8 (null)
+600000 1282 2
+0 11 (null)
+601282 3696 3
+0 X dna:chromosome chromosome:GRCh37:X:1:155270560:1
+604978 200000 2
