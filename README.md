@@ -1,16 +1,18 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# test-datasets: `kmermaid`
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+This branch contains test data for the [nf-core/kmermaid](https://github.com/nf-core/kmermaid) pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines.
+## View .bam file obtained from 10x datasets
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+	A .bam file can be viewed using samtools, and is processed using pysam in sourmash (wrapper around samtools in kmermaid):
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+	```samtools view 10x-example/possorted_genome_bam.bam | less -S```
 
-## Support
+## Barcodes are cell barcodes in .tsv file
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+	 	Cell barcodes provided in barcodes.tsv could be unfiltered for "good barcodes" (high quality, not repeated, etc) so it could be the whole set of them which for the 10x v2 chemistry is 700k and for the 10x v3 chemistry is 2 million possible barcodes
+
+## Renamer barcodes in .tsv file
+	
+	For bam/10x files, Use this to specify the location of your tsv (tab separated file) containing map of cell barcodes and their corresponding new names(e.g row in the tsv file: AAATGCCCAAACTGCT-1    lung_epithelial_cell|AAATGCCCAAACTGCT-1). 
