@@ -5,9 +5,14 @@ This branch contains test data for the [nf-core/kmermaid](https://github.com/nf-
 
 ## View .bam file obtained from 10x datasets
 
-	A .bam file can be viewed using samtools, and is processed using pysam in sourmash (wrapper around samtools in kmermaid):
+	A .bam file can be viewed using samtools, and is processed using pysam in sourmash (wrapper around samtools in kmermaid) A bam file is a binary blob that stores all of your aligned sequence data.:
 
 	```samtools view 10x-example/possorted_genome_bam.bam | less -S```
+
+
+## .bai file obtained from 10x datasets
+
+	A bai file isn't an indexed form of a bam - it's a companion to your bam that contains the index.
 
 ## Barcodes are cell barcodes in .tsv file
 
