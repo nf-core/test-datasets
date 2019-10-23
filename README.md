@@ -22,7 +22,7 @@ The SG-NEx project was initiated by the Genome Institute of Singapore with the a
 
 The data is not barcoded.
 
-| Type	                | Sample  	  |
+|     	                |         	  |
 |-----------------------|-------------|
 | Flow Cell       	    | FLO-MIN106	|
 | Kit	                  | SQK-DCS108	|
