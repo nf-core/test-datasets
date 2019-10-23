@@ -16,7 +16,7 @@ The SG-NEx project was initiated by the Genome Institute of Singapore with the a
 
 ### Sample information
 
-The data is not barcoded
+The data is not barcoded.
 
 | Type	                |   Sample	  |
 |-----------------------|-------------|
