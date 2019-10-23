@@ -1,16 +1,14 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `nanoseq`
 
-## Introduction
+This branch contains test data to be used for automated testing with the [nf-core/nanoseq](https://github.com/nf-core/nanoseq) pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines.
+## Content of this repository
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+`testdata/` : subset of fast5 files from direct cDNA Nanopore reads for MCF7 (Breast Cancer) cell line   
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+## Dataset origin
 
-## Support
+Fast5 files were obtained from the SG-NEx Project public dataset.
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+The SG-NEx project was initiated by the Genome Institute of Singapore with the aim to generate reference transcriptomes for 5 of the most commonly used cancer cell lines using Nanopore RNA-Seq data.
+(https://github.com/GoekeLab/sg-nex-data)
