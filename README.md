@@ -4,7 +4,11 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-`testdata/` : subset of fast5 files from direct cDNA Nanopore reads for MCF7 (Breast Cancer) cell line   
+| File	                | Description	                                                                                              |
+|-----------------------|-----------------------------------------------------------------------------------------------------------|
+| `samplesheet.csv`     | Sample information file                                                                                   |
+| `fast5/`              | subset of fast5 files from direct cDNA Nanopore reads for MCF7 (Breast Cancer) cell line                  |
+| `reference/`          | Genome reference files (`hg19` UCSC release; cDNA for KCMF1 gene +- 1kb obtained via UCSC Table Browser)  |
 
 ## Dataset origin
 
@@ -18,8 +22,8 @@ The SG-NEx project was initiated by the Genome Institute of Singapore with the a
 
 The data is not barcoded.
 
-| Type	                |   Sample	  |
+|     	                |         	  |
 |-----------------------|-------------|
 | Flow Cell       	    | FLO-MIN106	|
 | Kit	                  | SQK-DCS108	|
-| Barcode Kit	          |    None  	  |
+| Barcode Kit	          | None    	  |
