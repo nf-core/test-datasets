@@ -12,3 +12,12 @@ Fast5 files were obtained from the SG-NEx Project public dataset.
 
 The SG-NEx project was initiated by the Genome Institute of Singapore with the aim to generate reference transcriptomes for 5 of the most commonly used cancer cell lines using Nanopore RNA-Seq data.
 (https://github.com/GoekeLab/sg-nex-data)
+
+### Sample information
+
+The data is not barcoded
+
+|-----------------------|-------------|
+| Flow Cell       	    | FLO-MIN106	|
+| Kit	                  | SQK-DCS108	|
+| Barcode Kit	          |    None  	  |
