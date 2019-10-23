@@ -4,7 +4,9 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-`testdata/` : subset of fast5 files from direct cDNA Nanopore reads for MCF7 (Breast Cancer) cell line   
+`samplesheet.csv`: Sample information file
+`fast5/` : subset of fast5 files from direct cDNA Nanopore reads for MCF7 (Breast Cancer) cell line
+`reference/`: Genome reference files (iGenomes `GRCh37` Ensembl release; region `` of chromosome `1` only)
 
 ## Dataset origin
 
@@ -22,4 +24,4 @@ The data is not barcoded.
 |-----------------------|-------------|
 | Flow Cell       	    | FLO-MIN106	|
 | Kit	                  | SQK-DCS108	|
-| Barcode Kit	          |    None  	  |
+| Barcode Kit	          | None    	  |
