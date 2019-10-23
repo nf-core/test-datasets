@@ -11,6 +11,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 Fast5 files were obtained from the SG-NEx Project public dataset.
 
 The SG-NEx project was initiated by the Genome Institute of Singapore with the aim to generate reference transcriptomes for 5 of the most commonly used cancer cell lines using Nanopore RNA-Seq data.
+
 [Read more about SG-NEx](https://github.com/GoekeLab/sg-nex-data)
 
 ### Sample information
