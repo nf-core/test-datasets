@@ -1,16 +1,17 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# test-datasets `eager2`
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+## Content of this repository
 
-nf-core is a collection of high quality Nextflow pipelines.
+### Reference genome(s)
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+`Mammoth_MT_Krause.fasta`: Reference genome for mammoth data.
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
-## Support
+### Paired-end data
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+`JK2782_*`: HiSeq MT Capture library (~10K reads after merging, Mammoth Data, Fellows-Yates (2017) Sci. Rep)
+
+### BAM data
+
+`JK2782_*.bam` : Above paired-end data but already merged and mapped to the reference genome.
