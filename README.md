@@ -3,15 +3,36 @@ Test data to be used for automated testing with the nf-core pipelines
 
 ## Content of this repository
 
+For both `reference` and `testdata`, there is one directory for each organism type. 
+
+In `references` this will contain fasta, possible indices and auxiliary files (such as annotation files). 
+
+In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `vcf`. 
+
 ### Reference genome(s)
+
+#### Mammoth 
 
 `Mammoth_MT_Krause.fasta`: Reference genome for mammoth data.
 
+### testdata
 
-### Paired-end data
+#### Mammoth
 
-`JK2782_*`: HiSeq MT Capture library (~10K reads after merging, Mammoth Data, Fellows-Yates (2017) Sci. Rep)
+**fastq**
+This contains two paired end samples which are the default test samples.
 
-### BAM data
+`JK2782_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
+`JK2802*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
 
-`JK2782_*.bam` : Above paired-end data but already merged and mapped to the reference genome.
+**bam**
+Already clipped, merged and mapped BAM files of the two paired-end FASTQ files described aobve.
+
+**vcf**
+An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
+
+#### Human
+
+**bam**
+
+`JK2067_*`: HiSeq 1240k captured UDG-half single-end (~10K reads after clipping, Lamnidis (2018) Nat. Comms.)
