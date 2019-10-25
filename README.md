@@ -28,7 +28,7 @@ This contains two paired end samples which are the default test samples.
 
 **bam**
 
-Already clipped, merged and mapped BAM files of the two paired-end FASTQ files as described above in [fastq](#fastq).
+Already clipped, merged and mapped BAM files of the two paired-end FASTQ files as described above in `fastq`.
 
 **vcf**
 
