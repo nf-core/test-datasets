@@ -20,16 +20,19 @@ In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `
 #### Mammoth
 
 **fastq**
+
 This contains two paired end samples which are the default test samples.
 
 `JK2782_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
-`JK2802*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
+`JK2802_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
 
 **bam**
-Already clipped, merged and mapped BAM files of the two paired-end FASTQ files described aobve.
+
+Already clipped, merged and mapped BAM files of the two paired-end FASTQ files as described above in `fastq`.
 
 **vcf**
-An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
+
+`JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
 
 #### Human
 
