@@ -12,5 +12,6 @@ This branch contains test data for the [nf-core/bcellmagic](https://github.com/n
 
 ### Paired-end test data
 
+For each test Sample 1-8
 `test_data-R1.fastq.gz` and `test_data-R2.fastq.gz`: paired end MiSeq data (~10K reads).
 `test_data-I1.fastq.gz` : containing illumina barcodes and UMI codes.
