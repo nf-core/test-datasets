@@ -1,11 +1,12 @@
 # test-datasets: `bcellmagic`
+
 Test data to be used for automated testing with the nf-core pipeline.
 
 This branch contains test data for the [nf-core/bcellmagic](https://github.com/nf-core/bcellmagic) pipeline.
 
 ## Content
 
-###  Metadata file and primer fasta files
+### Metadata file and primer fasta files
 
 `Metadata_test.tsv` contains the metadata sheet needed to run the pipeline.
 `C_primers.fasta` and `V_primers.fasta` contain fake primers, do not use them!
