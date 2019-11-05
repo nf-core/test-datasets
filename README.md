@@ -1,4 +1,4 @@
-# test-datasets `eager2`
+# test-datasets `eager`
 Test data to be used for automated testing with the nf-core pipelines
 
 ## Content of this repository
