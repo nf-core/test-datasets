@@ -1,0 +1,1 @@
+Nov-07 11:37:50.648 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core-diaproteomics/ -profile test -with-docker bichmale/diaproteomics
