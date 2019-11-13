@@ -4,7 +4,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Barcoded data
 
-(`test.config`)
+The barcoded data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the pipeline can be found in [`test.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test.config)
 
 ### Sequencing information
 
@@ -21,7 +21,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Non-barcoded data
 
-(`test_nobarcode.config`)
+The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_nonbarcoded.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nonbarcoded.config)
 
 ### Sequencing information
 
