@@ -38,13 +38,11 @@ The non-barcoded data in this repository will be used to test the pipeline witho
 
 ## Reference genome
 
-### Obtaining KCMF1 DNA sequence
-
 The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and after visual inspecition of the alignments a single gene (i.e. KCMF1) was chosen to represent the reference.
 
 > NB: The [UCSC Genome Browser](https://genome.ucsc.edu) and other methods can also be used to obtain the gene interval or the DNA sequence directly. The approach outlined below is more flexible for instances where the reference genome isnt hosted on UCSC or for custom interval sets.
 
-#### Creating a BED file of gene intervals
+### Creating a BED file of gene intervals
 
 The interval for KCMF1 was obtained by:
 * loading the "hg19" genome in [IGV](http://software.broadinstitute.org/software/igv/)
@@ -68,7 +66,7 @@ chr2    85198230    85286595    KCMF1   0   +
 
 > NB: The BED format uses a 0-based coordinate system so the start position has been adjusted accordingly.
 
-#### Generate chromosome sizes file for genome
+### Generate chromosome sizes file for genome
 
 We need to use [BEDTools](https://github.com/arq5x/bedtools2/) to extract the DNA sequence for KCMF1 from the hg19 reference. First, you will need to create a file that represents the sizes of all the chromosomes in the genome using [SAMtools](https://sourceforge.net/projects/samtools/files/samtools/):
 
@@ -77,7 +75,7 @@ samtools faidx hg19.fa
 cut -f 1,2 hg19.fa.fai > hg19.sizes
 ```
 
-#### Extend the upstream/downstream regions around KCMF1
+### Extend the upstream/downstream regions around KCMF1
 
 Now we have the interval for KCMF1 in BED format we can simply use BEDTools to extend this by 1kb both upstream and downstream.
 
@@ -91,7 +89,7 @@ This should create a file with the following contents:
 chr2    85197230    85287595    KCMF1   0   +
 ```
 
-#### Extract DNA sequence from reference
+### Extract DNA sequence from reference
 
 Finally, we can use BEDTools again to extract the DNA sequence for the KCMF1 gene from the reference genome:
 
