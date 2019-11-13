@@ -4,12 +4,36 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
+### Barcoded data (`test.config`)
+
 | File	                | Description	                                                                                                  |
 |-----------------------|---------------------------------------------------------------------------------------------------------------|
-| `samplesheet.csv`     | Sample information file                                                                                       |
+| `samplesheet_barcoded.csv`     | Sample information file                                                                                       |
 | `fast5/barcoded/`     | Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines |
+
+|             |         	 |
+|-------------|------------|
+| Flow Cell   | FLO-MIN106 |
+| Kit         | SQK-DCS109 |
+| Barcode Kit | EXP-NBD103 |
+
+#### Non-barcoded data (`test_nobarcode.config`)
+
+| File	                | Description	                                                                                                  |
+|-----------------------|---------------------------------------------------------------------------------------------------------------|
+| `samplesheet_nonbarcoded.csv`     | Sample information file                                                                                       |
 | `fast5/nonbarcoded/`  | Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines |
+
+|             |         	 |
+|-------------|------------|
+| Flow Cell   | FLO-MIN106 |
+| Kit         | SQK-DCS108 |
+| Barcode Kit | None    	 |
+
+
+| File	                | Description	                                                                                                  |
 | `reference/`          | Genome reference files (`hg19` UCSC release; cDNA for KCMF1 gene +- 1kb obtained via UCSC Table Browser)      |
+
 
 ## Dataset origin
 
@@ -19,10 +43,11 @@ The SG-NEx project was initiated by the Genome Institute of Singapore with the a
 
 [Read more about SG-NEx](https://github.com/GoekeLab/sg-nex-data)
 
-There are 2 test-datasets - one each for barcoded and non-barcoded data, respectively.
+As outlined in the section above, there are 2 test-datasets - one each for barcoded and non-barcoded data, respectively.
 
 A subset of 150 fast5 files was obtained using the following:
-```
+
+```bash
 tar -xvf `ls | shuf -n1` # to obtain a random directory
 cd <untarred_dir>
 cp `ls | shuf -n 150` <output_dir> # to obtain random files
