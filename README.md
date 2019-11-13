@@ -6,6 +6,11 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 The barcoded data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the pipeline can be found in [`test.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test.config)
 
+### Files
+
+* `samplesheet_barcoded.csv` - Sample information file
+* `fast5/barcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
+
 ### Sequencing information
 
 |             |         	 |
@@ -14,14 +19,14 @@ The barcoded data in this repository will be used to test the pipeline from end-
 | Kit         | SQK-DCS109 |
 | Barcode Kit | EXP-NBD103 |
 
-### Files
-
-* `samplesheet_barcoded.csv` - Sample information file
-* `fast5/barcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
-
 ## Non-barcoded data
 
 The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_nonbarcoded.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nonbarcoded.config)
+
+### Files
+
+* `samplesheet_nonbarcoded.csv` - Sample information file
+* `fast5/nonbarcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
 
 ### Sequencing information
 
@@ -31,16 +36,15 @@ The non-barcoded data in this repository will be used to test the pipeline witho
 | Kit         | SQK-DCS108 |
 | Barcode Kit | None    	 |
 
-### Files
-
-* `samplesheet_nonbarcoded.csv` - Sample information file
-* `fast5/nonbarcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
-
 ## Reference genome
 
 The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and after visual inspecition of the alignments a single gene (i.e. KCMF1) was chosen to represent the reference.
 
 > NB: The [UCSC Genome Browser](https://genome.ucsc.edu) and other methods can also be used to obtain the gene interval or the DNA sequence directly. The approach outlined below is more flexible for instances where the reference genome isnt hosted on UCSC or for custom interval sets.
+
+### Files
+
+* `reference/hg19_KCMF1.fa` - DNA for KCMF1 gene +- 1kb obtained from the `hg19` UCSC human genome assembly
 
 ### Creating a BED file of gene intervals
 
@@ -96,10 +100,6 @@ Finally, we can use BEDTools again to extract the DNA sequence for the KCMF1 gen
 ```bash
 bedtools getfasta -name -fi hg19.fa -bed hg19_KCMF1.slop_1kb.bed > hg19_KCMF1.fa
 ```
-
-### Files
-
-* `reference/hg19_KCMF1.fa` - DNA for KCMF1 gene +- 1kb obtained from the `hg19` UCSC human genome assembly
 
 ## Dataset origin
 
