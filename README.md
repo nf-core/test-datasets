@@ -9,7 +9,7 @@ In `references` this will contain fasta, possible indices and auxiliary files (s
 
 In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `vcf`. 
 
-### Reference genome(s)
+### Reference Genomes (`reference/`)
 
 #### Mammoth 
 
@@ -20,7 +20,7 @@ In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `
 
 `1240K.pos.list_hs37d5.0based.bed.gz`: a bed file containing positions for the '1240k' SNP capture array (file by [Alex Peltzer](https://github.com/apeltzer) and [Stephen Clayton](https://github.com/sc13-bioinf), originally defined in [Mathieson et al 2015 _Nature_](https://www.nature.com/articles/nature16152))
 
-### testdata
+### Sequencing Data (`testdata/`)
 
 #### Mammoth
 
