@@ -6,10 +6,12 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### Barcoded data (`test.config`)
 
-| File	                | Description	                                                                                                  |
-|-----------------------|---------------------------------------------------------------------------------------------------------------|
-| `samplesheet_barcoded.csv`     | Sample information file                                                                                       |
-| `fast5/barcoded/`     | Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines |
+#### Files
+
+* `samplesheet_barcoded.csv` - Sample information file
+* `fast5/barcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
+
+#### Sample information
 
 |             |         	 |
 |-------------|------------|
@@ -17,12 +19,14 @@ This branch contains test data to be used for automated testing with the [nf-cor
 | Kit         | SQK-DCS109 |
 | Barcode Kit | EXP-NBD103 |
 
-#### Non-barcoded data (`test_nobarcode.config`)
+### Non-barcoded data (`test_nobarcode.config`)
 
-| File	                | Description	                                                                                                  |
-|-----------------------|---------------------------------------------------------------------------------------------------------------|
-| `samplesheet_nonbarcoded.csv`     | Sample information file                                                                                       |
-| `fast5/nonbarcoded/`  | Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines |
+#### Files
+
+* `samplesheet_nonbarcoded.csv` - Sample information file
+* `fast5/nonbarcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
+
+#### Sample information
 
 |             |         	 |
 |-------------|------------|
@@ -30,10 +34,9 @@ This branch contains test data to be used for automated testing with the [nf-cor
 | Kit         | SQK-DCS108 |
 | Barcode Kit | None    	 |
 
+### Reference genome
 
-| File	                | Description	                                                                                                  |
-| `reference/`          | Genome reference files (`hg19` UCSC release; cDNA for KCMF1 gene +- 1kb obtained via UCSC Table Browser)      |
-
+* `reference/hg19_KCMF1.fa` - `hg19` UCSC release; cDNA for KCMF1 gene +- 1kb from the `hg19` UCSC human genome assembly
 
 ## Dataset origin
 
