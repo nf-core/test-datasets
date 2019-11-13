@@ -38,7 +38,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Reference genome
 
-### Extraction of KCMF1 DNA sequence
+### Obtaining KCMF1 DNA sequence
 
 The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and after visual inspecition of the alignments a single gene (i.e. KCMF1) was chosen to represent the reference.
 
@@ -101,7 +101,7 @@ bedtools getfasta -name -fi hg19.fa -bed hg19_KCMF1.slop_1kb.bed > hg19_KCMF1.fa
 
 ### Files
 
-* `reference/hg19_KCMF1.fa` - `hg19` UCSC release; cDNA for KCMF1 gene +- 1kb from the `hg19` UCSC human genome assembly
+* `reference/hg19_KCMF1.fa` - DNA for KCMF1 gene +- 1kb obtained from the `hg19` UCSC human genome assembly
 
 ## Dataset origin
 
