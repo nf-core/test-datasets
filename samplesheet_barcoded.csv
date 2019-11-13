@@ -1,0 +1,4 @@
+sample,fastq,barcode,genome
+K562_RUN1_REP3,,1,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/hg19_KCMF1.fa
+HEPG2_RUN3_REP5,,2,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/hg19_KCMF1.fa
+CALIBRATION_RUN,,3,
