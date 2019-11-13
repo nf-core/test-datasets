@@ -13,7 +13,12 @@ In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `
 
 #### Mammoth 
 
-`Mammoth_MT_Krause.fasta`: Reference genome for mammoth data.
+`Mammoth_MT_Krause.fasta`: Reference genome for mammoth data, plus bwa/samtools/picard indices of this file.
+`Mammoth_MT_Krause.gff3`: GFF file with feature annotations for the above FASTA file.
+
+#### Human
+
+`1240K.pos.list_hs37d5.0based.bed.gz`: a bed file containing positions for the '1240k' SNP capture array (file by @apeltzer and @sc13-bioinf, originally defined in Mathieson et al 2015 _Nature_)
 
 ### testdata
 
@@ -23,8 +28,8 @@ In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `
 
 This contains two paired end samples which are the default test samples.
 
-`JK2782_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
-`JK2802_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
+`JK2782_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows Yates et al. 2017 _Sci. Rep._)
+`JK2802_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows Yates et al. 2017 _Sci. Rep._)
 
 **bam**
 
@@ -38,4 +43,4 @@ Already clipped, merged and mapped BAM files of the two paired-end FASTQ files a
 
 **bam**
 
-`JK2067_*`: HiSeq 1240k captured UDG-half single-end (~10K reads after clipping, Lamnidis (2018) Nat. Comms.)
+`JK2067_*`: HiSeq 1240k captured UDG-half single-end (~10K reads after clipping, Lamnidis et al. 2018 _Nat. Comms._)
