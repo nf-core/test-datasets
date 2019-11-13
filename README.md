@@ -18,7 +18,7 @@ In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `
 
 #### Human
 
-`1240K.pos.list_hs37d5.0based.bed.gz`: a bed file containing positions for the '1240k' SNP capture array (file by [Alex Peltzer](https://github.com/apeltzer) and [Stephen Clayton](https://github.com/sc13-bioinf), originally defined in [Mathieson et al 2015 _Nature_](https://www.nature.com/articles/nature16152))
+`1240K.pos.list_hs37d5.0based.bed.gz`: a bed file containing positions for the '1240k' SNP capture array (file by [Alex Peltzer](https://github.com/apeltzer) and [Stephen Clayton](https://github.com/sc13-bioinf), originally defined in [Mathieson et al. 2015 _Nature_](https://www.nature.com/articles/nature16152))
 
 ### Sequencing Data (`testdata/`)
 
@@ -37,7 +37,7 @@ Already clipped, merged and mapped BAM files of the two paired-end FASTQ files a
 
 **vcf**
 
-`JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, [Fellows Yates 2017 _Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
+`JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, [Fellows Yates 2017 e al._Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
 
 #### Human
 
