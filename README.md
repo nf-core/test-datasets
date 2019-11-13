@@ -9,13 +9,18 @@ In `references` this will contain fasta, possible indices and auxiliary files (s
 
 In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `vcf`. 
 
-### Reference genome(s)
+### Reference Genomes (`reference/`)
 
 #### Mammoth 
 
-`Mammoth_MT_Krause.fasta`: Reference genome for mammoth data.
+`Mammoth_MT_Krause.fasta`: Reference genome for mammoth data, plus bwa/samtools/picard indices of this file.
+`Mammoth_MT_Krause.gff3`: GFF file with feature annotations for the above FASTA file.
 
-### testdata
+#### Human
+
+`1240K.pos.list_hs37d5.0based.bed.gz`: a bed file containing positions for the '1240k' SNP capture array (file by [Alex Peltzer](https://github.com/apeltzer) and [Stephen Clayton](https://github.com/sc13-bioinf), originally defined in [Mathieson et al. 2015 _Nature_](https://www.nature.com/articles/nature16152))
+
+### Sequencing Data (`testdata/`)
 
 #### Mammoth
 
@@ -23,8 +28,8 @@ In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `
 
 This contains two paired end samples which are the default test samples.
 
-`JK2782_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
-`JK2802_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
+`JK2782_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, [Fellows Yates et al. 2017 _Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
+`JK2802_*`: HiSeq MT captured library with no UDG treatment (~10K reads after merging, [Fellows Yates et al. 2017 _Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
 
 **bam**
 
@@ -32,10 +37,10 @@ Already clipped, merged and mapped BAM files of the two paired-end FASTQ files a
 
 **vcf**
 
-`JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, Fellows-Yates (2017) Sci. Rep)
+`JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, [Fellows Yates 2017 et al._Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
 
 #### Human
 
 **bam**
 
-`JK2067_*`: HiSeq 1240k captured UDG-half single-end (~10K reads after clipping, Lamnidis (2018) Nat. Comms.)
+`JK2067_*`: HiSeq 1240k captured UDG-half single-end (~10K reads after clipping, [Lamnidis et al. 2018 _Nat. Comms._](https://doi.org/10.1038/s41467-018-07483-5))
