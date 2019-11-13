@@ -37,7 +37,7 @@ Already clipped, merged and mapped BAM files of the two paired-end FASTQ files a
 
 **vcf**
 
-`JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, [Fellows Yates 2017 e al._Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
+`JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, [Fellows Yates 2017 et al._Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
 
 #### Human
 
