@@ -4,11 +4,11 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Barcoded data
 
-The barcoded data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the pipeline can be found in [`test.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test.config)
+The barcoded data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the pipeline can be found in [`test.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test.config).
 
 ### Files
 
-* `samplesheet_barcoded.csv` - Sample information file
+* `samplesheet_barcoded.csv` - Sample information sheet required for the pipeline
 * `fast5/barcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
 
 ### Sequencing information
@@ -21,11 +21,11 @@ The barcoded data in this repository will be used to test the pipeline from end-
 
 ## Non-barcoded data
 
-The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_nonbarcoded.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nonbarcoded.config)
+The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_nonbarcoded.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nonbarcoded.config).
 
 ### Files
 
-* `samplesheet_nonbarcoded.csv` - Sample information file
+* `samplesheet_nonbarcoded.csv` - Sample information sheet required for the pipeline
 * `fast5/nonbarcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
 
 ### Sequencing information
