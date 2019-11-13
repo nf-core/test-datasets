@@ -21,7 +21,7 @@ The barcoded data in this repository will be used to test the pipeline from end-
 
 ## Non-barcoded data
 
-The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_nonbarcoded.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nonbarcoded.config).
+The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_nonbc.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nonbc.config).
 
 ### Files
 
