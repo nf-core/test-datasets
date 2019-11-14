@@ -1,3 +1,5 @@
 group,replicate,fastq_1,fastq_2
-WT,1,https://github.com/nf-core/test-datasets/raw/mnaseseq/testdata/NGS-12720_S1_L001_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/mnaseseq/testdata/NGS-12720_S1_L001_R2_001.fastq.gz
-DEGRON,1,https://github.com/nf-core/test-datasets/raw/mnaseseq/testdata/NGS-13237_S2_L006_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/mnaseseq/testdata/NGS-13237_S2_L006_R2_001.fastq.gz
+WT,1,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-12720_S1_L001_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-12720_S1_L001_R2_001.fastq.gz
+WT,2,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-13236_S1_L006_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-13236_S1_L006_R2_001.fastq.gz
+DEGRON,1,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-12721_S2_L001_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-12721_S2_L001_R2_001.fastq.gz
+DEGRON,1,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-13237_S2_L006_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/mnaseseq/fastq/NGS-13237_S2_L006_R2_001.fastq.gz
