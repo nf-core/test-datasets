@@ -26,7 +26,7 @@ The non-barcoded data in this repository will be used to test the pipeline witho
 ### Files
 
 * `samplesheet_nonbarcoded.csv` - Sample information sheet required for the pipeline
-* `fast5/nonbarcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
+* `fast5/nonbarcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for the MCF7 (Breast Cancer) cell line
 
 ### Sequencing information
 
@@ -113,10 +113,12 @@ The SG-NEx project was initiated by the Genome Institute of Singapore with the a
 
 As outlined in the section above, there are 2 test-datasets - one each for barcoded and non-barcoded data, respectively.
 
-A subset of 150 fast5 files was obtained using the following:
+The full datasets consisted of multiple subdirectories each containing hundreds of fast5 files.
+
+A subset of 150 fast5 files were obtained from a randomly selected sub-directory using the following:
 
 ```bash
-tar -xvf `ls | shuf -n1` # to obtain a random directory
+tar -xvf `ls | shuf -n1` # untar a random subdirectory
 cd <untarred_dir>
-cp `ls | shuf -n 150` <output_dir> # to obtain random files
+cp `ls | shuf -n 150` <output_dir> # obtain random files
 ```
