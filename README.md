@@ -7,9 +7,9 @@ This branch contains test data to be used for automated testing with the [nf-cor
 `design.csv`: Sample design file  
 `fastq/`: Raw FastQ files required to test the pipeline. Data originated from *S. cerevisiae*.
 
- ## Dataset origin
+## Dataset origin
 
- Raw fastq files were downloaded from (GSE117881)[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117881] and sub-sampled to 100,000 read pairs per sample.
+Raw fastq files were downloaded from [GSE117881](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117881) and sub-sampled to 100,000 read pairs per sample.
 
 | GEO ID     | Sample description            |
 |------------|-------------------------------|
