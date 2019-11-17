@@ -44,3 +44,13 @@ Already clipped, merged and mapped BAM files of the two paired-end FASTQ files a
 **bam**
 
 `JK2067_*`: HiSeq 1240k captured UDG-half single-end (~10K reads after clipping, [Lamnidis et al. 2018 _Nat. Comms._](https://doi.org/10.1038/s41467-018-07483-5))
+
+### Databases
+
+#### MALT
+
+Contains database for MALT, built with MALT v041, containing
+  - A mammoth mitochondrial genome (Mammoth_MT_Krause above) 
+  - A human mitochondrial genome (NCBI Accession: NC_012920.1)
+  - A boa constrictor mitochondrial genome (NCBI Accession: AB177354.1)
+
