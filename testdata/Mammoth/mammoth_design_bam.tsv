@@ -1,2 +1,2 @@
-Sample_Name 	Library_ID 	Lane 	SeqType 	Organism 	Strandedness 	UDG_Treatment 	R1 	R2 	BAM 	BAI 	Group 	Populations
-JK2782 	JK2782 	1 	PE 	Mammoth 	double 	full 	NA 	NA 	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/bam/JK2782_TGGCCGATCAACGA_L008_R1_001.fastq.gz.tengrand.fq.combined.fq.mapped.bam 	NA 	Swabian 	Europe,Asia,Africa
+Sample_Name 	Library_ID 	Lane 	SeqType 	Organism 	Strandedness 	UDG_Treatment 	R1 	R2 	BAM 	BAM_Index 	Group 	Populations 	Age
+JK2782 	JK2782 	1	PE 	Mammoth 	double 	full 	NA 	NA 	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/bam/JK2782_TGGCCGATCAACGA_L008_R1_001.fastq.gz.tengrand.fq.combined.fq.mapped.bam 	NA 	Swabian 	Europe,Asia,Africa	Palaeolithic
