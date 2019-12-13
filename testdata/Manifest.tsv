@@ -1,5 +1,5 @@
 sample-id	forward-absolute-filepath	reverse-absolute-filepath
-sampleID_1a	$PWD/manifest_testdata/sampleID_1a_S103_L001_R1_001.fastq.gz	$PWD/manifest_testdata/sampleID_1a_S103_L001_R2_001.fastq.gz
-sampleID_1	$PWD/manifest_testdata/sampleID_1_S103_L001_R1_001.fastq.gz	$PWD/manifest_testdata/sampleID_1_S103_L001_R2_001.fastq.gz
-sampleID_2a	$PWD/manifest_testdata/sampleID_2a_S115_L001_R1_001.fastq.gz	$PWD/manifest_testdata/sampleID_2a_S115_L001_R2_001.fastq.gz
-sampleID_2	$PWD/manifest_testdata/sampleID_2_S115_L001_R1_001.fastq.gz	$PWD/manifest_testdata/sampleID_2_S115_L001_R2_001.fastq.gz
+sampleID_1a	$PWD/sampleID_1a_S103_L001_R1_001.fastq.gz	$PWD/sampleID_1a_S103_L001_R2_001.fastq.gz
+sampleID_1	$PWD/sampleID_1_S103_L001_R1_001.fastq.gz	$PWD/sampleID_1_S103_L001_R2_001.fastq.gz
+sampleID_2a	$PWD/sampleID_2a_S115_L001_R1_001.fastq.gz	$PWD/sampleID_2a_S115_L001_R2_001.fastq.gz
+sampleID_2	$PWD/sampleID_2_S115_L001_R1_001.fastq.gz	$PWD/sampleID_2_S115_L001_R2_001.fastq.gz
