@@ -1,16 +1,20 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets `proteomicslfq`
+Test data to be used for automated testing with the nf-core pipeline proteomicslfq
 
-## Introduction
+## Content of this repository
 
-nf-core is a collection of high quality Nextflow pipelines.
+`testdata`, contains all inputs needed for a basic test of proteomicslfq.
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+### Input spectra (`testdata/*.mzML`)
+Three runs on a BSA sample. Each in-silico fractionated by splitting the files in RT dimension.
+Results in BSA\_[sample]\_[fraction].mzML
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+### Input database (`testdata/*.fasta`)
 
-## Support
+The 18 proteins supposed to be in each BSA sample. Decoys were already added.
+TODO which decoy prefix and which method.
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+### Experimental design (`testdata/BSA_design.tsv`)
+
+Samples and fractions are listed in the OpenMS specific experimental design format.
+
