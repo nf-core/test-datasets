@@ -1,4 +1,4 @@
-sample-id	read1	read2
+sample_ID	read1	read2
 sampleID_1a	sampleID_1a_S103_L001_R1_001.fastq.gz	sampleID_1a_S103_L001_R2_001.fastq.gz
 sampleID_1	sampleID_1_S103_L001_R1_001.fastq.gz	sampleID_1_S103_L001_R2_001.fastq.gz
 sampleID_2a	sampleID_2a_S115_L001_R1_001.fastq.gz	sampleID_2a_S115_L001_R2_001.fastq.gz
