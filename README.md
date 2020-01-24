@@ -2,13 +2,13 @@
 
 This branch contains test data to be used for automated testing with the [nf-core/nanoseq](https://github.com/nf-core/nanoseq) pipeline.
 
-## Barcoded data
+## Basecalling barcoded data
 
-The barcoded data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the pipeline can be found in [`test.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test.config).
+The barcoded data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the default tests for the pipeline can be found in [`test.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test.config).
 
 ### Files
 
-* `samplesheet_barcoded.csv` - Sample information sheet required for the pipeline
+* `samplesheet_bc_dx.csv` - Sample information sheet required for the pipeline
 * `fast5/barcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for HepG2 (Liver Cancer) and K562 (Leukemia) cell lines
 
 ### Sequencing information
@@ -19,13 +19,13 @@ The barcoded data in this repository will be used to test the pipeline from end-
 | Kit         | SQK-DCS109 |
 | Barcode Kit | EXP-NBD103 |
 
-## Non-barcoded data
+## Basecalling non-barcoded data
 
-The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_nonbc.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nonbc.config).
+The non-barcoded data in this repository will be used to test the pipeline without the demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_bc_nodx.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_bc_nodx.config).
 
 ### Files
 
-* `samplesheet_nonbarcoded.csv` - Sample information sheet required for the pipeline
+* `samplesheet_bc_nodx.csv` - Sample information sheet required for the pipeline
 * `fast5/nonbarcoded/` - Subset of fast5 files from direct cDNA Nanopore reads for the MCF7 (Breast Cancer) cell line
 
 ### Sequencing information
@@ -35,6 +35,15 @@ The non-barcoded data in this repository will be used to test the pipeline witho
 | Flow Cell   | FLO-MIN106 |
 | Kit         | SQK-DCS108 |
 | Barcode Kit | None    	 |
+
+## Pre-basecalled and demultiplexed data
+
+The pre-basecalled and demultiplexed data in this repository will be used to test the pipeline without both the basecalling and demultiplexing steps. The associated parameters and settings to run the pipeline can be found in [`test_nobc_nodx.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nobc_nodx.config).
+
+### Files
+
+* `samplesheet_nobc_nodx.csv` - Sample information sheet required for the pipeline
+* `fastq/demultiplexed/` - FastQ files for barcodes 1 and 2 obtained from [Basecalling barcoded data](#basecalling-barcoded-data)
 
 ## Reference genome
 
