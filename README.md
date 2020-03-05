@@ -41,6 +41,8 @@ Contain TSV files used to launch `Sarek` with different settings.
 * `*-recal*` files contain bam files and are to be used for `Variant Calling`.
 * `*-multiple*` files contain multiple samples.
 
+
+
 * `umi-dna`
 
 Used to test UMI functionality. Contains two different folders:
