@@ -42,10 +42,11 @@ Contain TSV files used to launch `Sarek` with different settings.
 * `*-multiple*` files contain multiple samples.
 
 
+To test UMI functionality
 
-* `umi-dna`
+* `umi-dna/`
 
-Used to test UMI functionality. Contains two different folders:
+Contains two different folders:
 
 - Illumina TSO
 
