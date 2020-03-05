@@ -60,5 +60,10 @@ Small reference files for testing, based on `GRCh37`
 * `Mills_and_1000G_gold_standard.indels.b37.small.vcf.gz`
   Indels and index
 
+
+For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+=======
 * `small.intervals`
   Intervals for Preprocessing and Variant Calling
+
+
