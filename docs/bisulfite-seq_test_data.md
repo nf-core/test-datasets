@@ -7,7 +7,7 @@ Ecoli_10K_methylated_R1.fastq.gz
 Ecoli_10K_methylated_R2.fastq.gz
 ```
 
-```
+```bash
 Sherman --non_dir --genome /bi/scratch/Genomes/E_coli/ --paired -n 10000 -l 100 --CG 20 --CH 90
 ```
 
