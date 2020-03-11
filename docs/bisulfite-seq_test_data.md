@@ -1,6 +1,6 @@
 ### E. coli paired-end test dataset for Bisulfite-seq applications
 
-The E. coli data set was generated as 10,000 reads of paired-end data, with average methylation levels of 80% in CpG context, and 10% in non-CG context. The files can be found in the folder: genaral/fastq/dna, and are called:
+The E. coli data set was generated using [Sherman](https://github.com/FelixKrueger/Sherman) as 10,000 reads of paired-end data, with average methylation levels of 80% in CpG context, and 10% in non-CG context. The files can be found in the folder: genaral/fastq/dna, and are called:
 
 ```
 Ecoli_10K_methylated_R1.fastq.gz
