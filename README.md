@@ -3,6 +3,10 @@ Test data to be used for automated testing with the nf-core pipelines
 
 This branch contains test data for the [nf-core/methylseq](https://github.com/nf-core/methylseq) pipeline.
 
+
+
+# Here is some E. coli test data that is currently not used by the nf-core/methylseq pipeline
+
 The E. coli data set was generated as 10,000 reads of paired-end data, with average methylation levels of 80% in CpG context, and 10% in non-CG context.
 
 ```
