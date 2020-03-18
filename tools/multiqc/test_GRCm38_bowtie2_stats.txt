@@ -1,1 +1,0 @@
-../../general/reports/test_GRCm38_bowtie2_stats.txt
