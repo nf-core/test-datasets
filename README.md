@@ -4,7 +4,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-`shortreads/` : FastQ files sub-sampled to 0.02% of the original data   
+`shortreads/` : FastQ files sub-sampled to 0.02 of the original data   
 
 ## Dataset origin
 
@@ -46,7 +46,7 @@ Download SRA using `parallel-fastq-dump` and `parallel`.
 cat list.txt | parallel 'fasterq-dump {}'
 ```
 
-Sub-sampling fastq files with a ratio of 0.02% using `seqkit`
+Sub-sampling fastq files with a ratio of 0.02 using `seqkit`
 
 ```bash
 parallel 'seqkit sample -p 0.02 -s 2020 {} | pigz > {.}.fastq.gz' ::: SRR*
