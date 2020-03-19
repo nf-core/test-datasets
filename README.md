@@ -4,9 +4,13 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-FastQ files sub-sampled to 0.02 of the original data
+### `samplesheet.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
 
 ### `illumina/`
+
+> All FastQ files were sub-sampled to 0.02% of the original reads.
 
 | file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
 |-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
@@ -21,6 +25,8 @@ FastQ files sub-sampled to 0.02 of the original data
 | SRR11241255.fastq.gz    |    2,442 |    438,067 |      20 |   179.4 |     185 |      86K  | SE Illumina | Viral RNA          |
 
 ### `nanopore/`
+
+> All FastQ files were sub-sampled to 0.02% of the original reads.
 
 | file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
 |-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
