@@ -1,6 +1,6 @@
 # test-datasets: `covid19`
 
-This branch contains test data to be used for automated testing with the [nf-core/covid19](https://github.com/nf-core/atacseq) pipeline.
+This branch contains test data to be used for automated testing with the [nf-core/covid19](https://github.com/nf-core/covid19) pipeline.
 
 ## Content of this repository
 
