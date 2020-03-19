@@ -8,9 +8,11 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
 
-### `illumina/`
+### `reference/`
 
-> All FastQ files were sub-sampled to 0.02% of the original reads.
+`hg19_chr21.fa`: Entire chromosome 21 DNA sequence from the UCSC hg19 human assembly.
+
+### `illumina/`
 
 | file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
 |-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
@@ -24,14 +26,16 @@ Sample information sheet required to test the pipeline containing sample informa
 | SRR11177792_2.fastq.gz  |  104,780 | 28,110,045 |      35 |   268.3 |     301 |      16M  | PE Illumina | Genomic            |
 | SRR11241255.fastq.gz    |    2,442 |    438,067 |      20 |   179.4 |     185 |      86K  | SE Illumina | Viral RNA          |
 
-### `nanopore/`
-
 > All FastQ files were sub-sampled to 0.02% of the original reads.
+
+### `nanopore/`
 
 | file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
 |-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
 | SRR10948474.fastq.gz    |   10,141 |  5,655,211 |     125 |   557.7 |   5,892 |      5.7M |    Nanopore | Genomic            |
 | SRR10948550.fastq.gz    |    8,539 |  2,953,453 |     104 |   345.9 |   1,577 |      2.9M |    Nanopore | Genomic            |
+
+> All FastQ files were sub-sampled to 0.02% of the original reads.
 
 ## Sampling procedure
 
