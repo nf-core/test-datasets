@@ -1,0 +1,17 @@
+RawFile,Class,Groups,Type,rename,rep,Age,Gender,BMI,
+X1_Rep1.mzML,Sample,Control,keep,Control_1,Control_1,48,F,0,
+X2_Rep1.mzML,Sample,Control,keep,Control_2,Control_2,19,F,0,
+X3_Rep1.mzML,Sample,Control,keep,Control_3,Control_3,35,F,0,
+X6_Rep1.mzML,Sample,RRMS,keep,RRMS_6,RRMS_6,39,F,0,
+X7_Rep1.mzML,Sample,RRMS,keep,RRMS_7,RRMS_7,44,F,0,
+X8_Rep1.mzML,Sample,RRMS,keep,RRMS_8,RRMS_8,41,F,0,
+Blank_1.mzML,Blank,remove,NA,NA,NA,NA,NA,NA,NA
+Blank_2.mzML,Blank,remove,NA,NA,NA,NA,NA,NA,NA
+Blank_3.mzML,Blank,remove,NA,NA,NA,NA,NA,NA,NA
+D1.mzML,D1,remove,NA,NA,NA,NA,NA,NA,NA
+D2.mzML,D2,remove,NA,NA,NA,NA,NA,NA,NA
+D3.mzML,D3,remove,NA,NA,NA,NA,NA,NA,NA
+D4.mzML,D4,remove,NA,NA,NA,NA,NA,NA,NA
+QC_1.mzML,QC,remove,NA,NA,NA,NA,NA,NA,NA
+QC_2.mzML,QC,remove,NA,NA,NA,NA,NA,NA,NA
+QC_3.mzML,QC,remove,NA,NA,NA,NA,NA,NA,NA
