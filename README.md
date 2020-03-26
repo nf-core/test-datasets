@@ -5,7 +5,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 ## Content of this repository
 
 `design.csv`: Experiment design file for minimal test dataset  
-`design_full.csv`: Experiment design file for full test dataset
+`design_full.csv`: Experiment design file for full test dataset  
 `reference/`: Genome reference files (iGenomes R64-1-1 Ensembl release)   
 `testdata/` : FastQ files sub-sampled to 100,000 paired-end reads   
 
