@@ -1,0 +1,7 @@
+group,replicate,fastq_1,fastq_2
+CD4_DAY1,1,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891275/SRR891275_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891275/SRR891275_2.fastq.gz
+CD4_DAY1,2,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891276/SRR891276_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891276/SRR891276_2.fastq.gz
+CD4_DAY2,1,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891277/SRR891277_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891277/SRR891277_2.fastq.gz
+CD4_DAY2,2,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891278/SRR891278_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891278/SRR891278_2.fastq.gz
+CD4_DAY3,1,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891279/SRR891279_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891279/SRR891279_2.fastq.gz
+CD4_DAY3,2,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891280/SRR891280_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR891/SRR891280/SRR891280_2.fastq.gz
