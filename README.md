@@ -24,7 +24,7 @@ Schep AN, Buenrostro JD, Denny SK, Schwartz K, Sherlock G, Greenleaf WJ. Structu
 | GSM1621343	| SRR1822157	| Osmotic Stress Time 15 C rep1	|
 | GSM1621344	| SRR1822158	| Osmotic Stress Time 15 C rep2	|
 
-## Sampling procedure
+### Sampling procedure
 
 The example command below was used to sub-sample the raw paired-end FastQ files to 100,000 reads (see [seqtk](https://github.com/lh3/seqtk)).
 
@@ -34,7 +34,7 @@ seqtk sample -s100 SRR1822153_1.fastq.gz 100000 | gzip > ./sample/SRR1822153_1.f
 seqtk sample -s100 SRR1822153_2.fastq.gz 100000 | gzip > ./sample/SRR1822153_2.fastq.gz
 ```
 
-## Expected output
+### Expected output
 
 To track and test the reproducibility of the pipeline with default parameters below are some of the expected outputs.
 
