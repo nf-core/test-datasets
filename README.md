@@ -65,6 +65,7 @@ Buenrostro JD, Giresi PG, Zaba LC, Chang HY, Greenleaf WJ. Transposition of nati
 ### Sample information
 
 | GEO_ID	    | SRA_ID	    | SAMPLE_NAME	           |
+|-------------|-------------|------------------------|
 | GSM1155964	| SRR891275   | CD4+_ATACseq_Day1_Rep1 |
 | GSM1155965	| SRR891276   | CD4+_ATACseq_Day1_Rep2 |
 | GSM1155966	| SRR891277   | CD4+_ATACseq_Day2_Rep1 |
