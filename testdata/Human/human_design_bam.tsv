@@ -1,2 +1,2 @@
-Sample_Name 	Library_ID 	Lane 	SeqType 	Organism 	Strandedness 	UDG_Treatment 	R1 	R2 	BAM 	BAI 	Group 	Populations
-JK2067 	JK2067 	1 	SE 	Homo Sapiens 	double 	full 	NA 	NA 	NA 	NA 	Finn 	Sweden, Finland,Norway,Latvia,Russia
+Sample_Name 	Library_ID 	Lane 	SeqType 	Organism 	Strandedness 	UDG_Treatment 	R1 	R2 	BAM 	Group 	Populations
+JK2067 	JK2067 	1	SE 	Homo Sapiens 	double 	full 	NA 	NA 	https://github.com/nf-core/test-datasets/raw/eager/testdata/Human/bam/JK2067_downsampled_s0.1.bam	Finn 	Sweden, Finland,Norway,Latvia,Russia
