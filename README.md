@@ -1,4 +1,4 @@
-# test-datasets: `covid19`
+# test-datasets: `viralrecon`
 
 This branch contains test data to be used for automated testing with the [nf-core/covid19](https://github.com/nf-core/covid19) pipeline.
 
@@ -28,24 +28,13 @@ Sample information sheet required to test the pipeline containing sample informa
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
-### `nanopore/`
-
-| file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
-|-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
-| SRR10948474.fastq.gz    |   10,141 |  5,655,211 |     125 |   557.7 |   5,892 |      5.7M |    Nanopore | Genomic            |
-| SRR10948550.fastq.gz    |    8,539 |  2,953,453 |     104 |   345.9 |   1,577 |      2.9M |    Nanopore | Genomic            |
-
-> All FastQ files were sub-sampled to 0.02% of the original reads.
-
 ## Sampling procedure
 
 Prepare a file `list.txt` with the following SRA accession numbers:
 
 ```
 SRR10903401
-SRR10948474
 SRR10903402
-SRR10948550
 SRR11092056
 SRR11177792
 SRR11241255
