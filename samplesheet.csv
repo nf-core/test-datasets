@@ -1,7 +1,7 @@
-sample,run,short_fastq_1,short_fastq_2,long_fastq
-SRR11177792,1,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR11177792_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR11177792_2.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/nanopore/SRR10948474.fastq.gz
-SRR11177792,2,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR11092056_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR11092056_2.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/nanopore/SRR10948550.fastq.gz
-SRR10903401,1,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR10903401_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR10903401_2.fastq.gz,
-SRR10903401,2,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR10903402_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR10903402_2.fastq.gz,
-SRR11241255,1,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/illumina/SRR11241255.fastq.gz,,
-SRR10948550,1,,,https://raw.githubusercontent.com/nf-core/test-datasets/covid19/nanopore/SRR10948550.fastq.gz
+sample,fastq_1,fastq_2
+SRR10903401,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/SRR10903401_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/SRR10903401_2.fastq.gz
+SRR10903401,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/SRR10903402_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/SRR10903402_2.fastq.gz
+SRR11241255,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/SRR11241255.fastq.gz,
+SRR11241255,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/SRR11092056_1.fastq.gz,
+SRR11092056,,
+SRR11177792,,
