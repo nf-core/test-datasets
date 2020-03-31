@@ -4,7 +4,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-### `samplesheet_SISPA.csv`
+### `samplesheet.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
 
