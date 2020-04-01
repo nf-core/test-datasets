@@ -16,6 +16,10 @@ Sample information sheet required to test the pipeline containing sample informa
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina Amplicons data.
 
+### `samplesheet_full_amplicons.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina Amplicons data.
+
 ### `reference/`
 
 * `hg19_chr21.fa`: Entire chromosome 21 DNA sequence from the UCSC hg19 human assembly.
