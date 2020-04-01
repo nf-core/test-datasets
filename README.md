@@ -6,7 +6,15 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### `samplesheet.csv`
 
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
+
+### `samplesheet_test_sispa.csv`
+
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
+
+### `samplesheet_test_amplicons.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina Amplicons data.
 
 ### `reference/`
 
@@ -36,6 +44,17 @@ Sample information sheet required to test the pipeline containing sample informa
 | SRR11140750_R1.fastq.gz |      369 |     81,898 |     100 |   175.5 |     251 |       40K | PE Illumina | Metagenomics       |
 | SRR11140750_R2.fastq.gz |      369 |     80,344 |     102 |   176.5 |     251 |       41K | PE Illumina | Metagenomics       |
 
+
+> All FastQ files were sub-sampled to 0.02% of the original reads.
+
+### `illumina_amplicons/`
+
+| file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
+|-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
+| sample1_R1.fastq.gz     |   27,721 |  8,285,732 |      35 |     168 |     301 |        4M | PE Illumina | Metagenomics       |
+| sample1_R2.fastq.gz     |   27,721 |  8,285,900 |      35 |     168 |     301 |        4M | PE Illumina | Metagenomics       |
+| sample2_R1.fastq.gz     |   21,481 |  6,416,734 |      35 |     168 |     301 |        3M | PE Illumina | Metagenomics       |
+| sample2_R2.fastq.gz     |   21,481 |  6,416,265 |      35 |     168 |     301 |        3M | PE Illumina | Metagenomics       |
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
