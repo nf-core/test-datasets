@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2
+sample1,https://zenodo.org/record/3735111/files/sample1_R1.fastq.gz,https://zenodo.org/record/3735111/files/sample1_R2.fastq.gz
+sample2,https://zenodo.org/record/3735111/files/sample2_R1.fastq.gz,https://zenodo.org/record/3735111/files/sample2_R2.fastq.gz
