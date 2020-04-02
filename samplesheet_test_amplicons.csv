@@ -1,3 +1,0 @@
-sample,fastq_1,fastq_2
-sample1,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina_amplicons/sample1_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina_amplicons/sample1_2.fastq.gz
-sample2,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina_amplicons/sample2_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina_amplicons/sample2_2.fastq.gz

@@ -6,27 +6,30 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### `samplesheet.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This file is just for preliminary testing whilst we get the pipeline working and will most likely be deleted.
 
 ### `samplesheet_test_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
 
-### `samplesheet_test_amplicons.csv`
+### `samplesheet_test_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina Amplicons data.
 
-### `samplesheet_full_amplicons.csv`
+### `samplesheet_full_sispa.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina SISPA data.
+
+### `samplesheet_full_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina Amplicons data.
 
 ### `reference/`
 
-* `hg19_chr21.fa`: Entire chromosome 21 DNA sequence from the UCSC hg19 human assembly.
 * `NC_045512.2.fasta`: Reference SARS-Cov2 fasta file.
 * `NC_045512.2.gff`: Reference SARS-Cov2 gff file.
 
-### `illumina/`
+### `fastq/illumina_sispa/`
 
 | file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
 |-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
@@ -48,10 +51,9 @@ Sample information sheet required to test the pipeline containing sample informa
 | SRR11140750_R1.fastq.gz |      369 |     81,898 |     100 |   175.5 |     251 |       40K | PE Illumina | Metagenomics       |
 | SRR11140750_R2.fastq.gz |      369 |     80,344 |     102 |   176.5 |     251 |       41K | PE Illumina | Metagenomics       |
 
-
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
-### `illumina_amplicons/`
+### `fastq/illumina_amplicon/`
 
 | file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
 |-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
