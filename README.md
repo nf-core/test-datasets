@@ -6,13 +6,13 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### `samplesheet.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This file is just for preliminary testing whilst we get the pipeline working and will most likely be deleted.
 
 ### `samplesheet_test_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
 
-### `samplesheet_test_amplicons.csv`
+### `samplesheet_test_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina Amplicons data.
 
@@ -20,7 +20,7 @@ Sample information sheet required to test the pipeline containing sample informa
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina SISPA data.
 
-### `samplesheet_full_amplicons.csv`
+### `samplesheet_full_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina Amplicons data.
 
