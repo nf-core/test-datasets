@@ -64,6 +64,21 @@ Sample information sheet required to test the pipeline containing sample informa
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
+### `kraken2_host_db/kraken2_hs22.tar.gz`
+
+Small host DB for kraken2 required to test the pipeline containing only human chr22. The commands used to generate the DB are:
+
+```
+# Download hs chr22
+rsync -av rsync://ftp.ensembl.org/ensembl/pub/release-99/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz .
+gunzip Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz
+
+# Generate the DB
+kraken2-build --db kraken2_hs22 --download-taxonomy
+kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromosome.22.fa
+kraken2-build --db kraken2_hs22 --build
+```
+
 ## Sampling procedure
 
 Prepare a file `list.txt` with the following SRA accession numbers:
