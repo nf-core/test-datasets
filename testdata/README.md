@@ -238,3 +238,33 @@ mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/
 mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/mouse_brown_fat_ptprc_plus_unaligned__barcodes.tsv
 mouse_brown_fat_ptprc_plus_unaligned/outs/possorted_genome_bam.bam
 ```
+
+#### Remove files from flat directory
+
+```
+(samtools)
+ Wed  8 Apr - 11:31  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz ✔ 
+ olga@lrrr  rm -rf mouse_brown_fat_ptprc_plus_unaligned.bam*                                                (samtools)
+ Wed  8 Apr - 11:31  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz 2‒ 
+ olga@lrrr  git rm -rf mouse_brown_fat_ptprc_plus_unaligned.bam*
+zsh: no matches found: mouse_brown_fat_ptprc_plus_unaligned.bam*
+(samtools)
+ ✘  Wed  8 Apr - 11:31  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz 2‒ 
+ olga@lrrr  git rm -rf mouse_brown_fat_ptprc_plus_unaligned.bam
+rm 'testdata/mouse_brown_fat_ptprc_plus_unaligned.bam'
+(samtools)
+ Wed  8 Apr - 11:31  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz 1‒1± ⚑ 
+ olga@lrrr  git rm -rf mouse_brown_fat_ptprc_plus_unaligned.bam.bai
+rm 'testdata/mouse_brown_fat_ptprc_plus_unaligned.bam.bai'
+(samtools)
+ Wed  8 Apr - 11:31  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz ‒2± ⚑ 
+ olga@lrrr  rm mouse_brown_fat_ptprc_plus_unaligned__barcodes.tsvrm: remove regular file 'mouse_brown_fat_ptprc_plus_unaligned__barcodes.tsv'? y
+````
+
+#### Move barcodes file to *correct* place
+
+```
+(samtools)
+ Wed  8 Apr - 11:36  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz 1● 1‒ 
+ olga@lrrr  mv mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/mouse_brown_fat_ptprc_plus_unaligned__barcodes.tsv mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/barcodes.tsv
+```
