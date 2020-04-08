@@ -64,7 +64,7 @@ Sample information sheet required to test the pipeline containing sample informa
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
-### `kraken2_host_db/kraken2_hs22.tar.gz`
+### `kraken2/kraken2_hs22.tar.gz`
 
 Small host DB for kraken2 required to test the pipeline containing only human chr22. The commands used to generate the DB are:
 
