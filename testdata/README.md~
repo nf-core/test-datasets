@@ -1,0 +1,60 @@
+
+
+### Subset bam to just *Ptprc* expression
+
+```
+(samtools)
+ Wed  8 Apr - 06:12  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  samtools view -bh MACA_18m_M_BAT_52__possorted_genome_bam.bam chr1:138,063,407-138,175,306 > MACA_18m_M_BAT_52__possorted_genome_bam__ptprc.bam
+```
+
+### Get unique cell barcodes in PTPRC data
+
+```
+(samtools)
+ Wed  8 Apr - 06:21  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  samtools view MACA_18m_M_BAT_52__possorted_genome_bam__ptprc.bam | cut -f 17- | grep -Eo '(CB|CB):Z:(([ACGT]+)(\\-1)?)' | sort | uniq > ptprc_cell_barcodes.txt
+(samtools)
+ ✘  Wed  8 Apr - 06:22  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  head ptprc_cell_barcodes.txt
+CB:Z:AAAGTAGGTGTGAATA
+CB:Z:AAAGTAGGTTGGTTTG
+CB:Z:AAATGCCCAGCGAACA
+CB:Z:AAATGCCGTTACCGAT
+CB:Z:AACACGTAGCTAAGAT
+CB:Z:AACTCCCTCAAACGGG
+CB:Z:AACTCTTGTTCTGAAC
+CB:Z:AACTTTCTCCCATTTA
+CB:Z:AACTTTCTCGAATCCA
+CB:Z:AAGACCTAGCGGATCA
+```
+
+### Get just the barcode sequence, without the "CB" and such
+
+```
+(samtools)
+ Wed  8 Apr - 06:22  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  cut -f 3 -d ':' ptprc_cell_barcodes.txt > ptprc_cell_barcodes__barcode_sequence.txt
+(samtools)
+ Wed  8 Apr - 06:22  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  head ptprc_cell_barcodes__barcode_sequence.txt
+AAAGTAGGTGTGAATA
+AAAGTAGGTTGGTTTG
+AAATGCCCAGCGAACA
+AAATGCCGTTACCGAT
+AACACGTAGCTAAGAT
+AACTCCCTCAAACGGG
+AACTCTTGTTCTGAAC
+AACTTTCTCCCATTTA
+AACTTTCTCGAATCCA
+AAGACCTAGCGGATCA
+```
+
+
+### Grep for ptprc barcodes in sorted umi per cell barcode counts
+
+
+```
+ Wed  8 Apr - 06:26  /mnt/data_sm/olga/tabula-microcebus/analyses/kmermaid/tenx-tgz--tabula-muris-senis/10x-fastqs/umis-per-cell 
+ olga@lrrr  fgrep --file /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b/ptprc_cell_barcodes__barcode_sequence.txt MACA_18m_M_SCAT_52__aligned__n_umi_per_cell.csv | sort -k2n -t',' -
+```
