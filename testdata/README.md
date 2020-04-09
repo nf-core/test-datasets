@@ -181,9 +181,37 @@ ACACCCTTCGCCAGCA-1
 ACACCGGGTTGCGCAC-1
 ```
 
+#### Use first 1000 lines of unaligned reads
+
+```
+(samtools)
+ Wed  8 Apr - 18:15  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  head -n 1000 unaligned__ptprc_cell_barcodes.sam > unaligned__ptprc_cell_barcodes_first1000.sam
+(samtools)
+ Wed  8 Apr - 18:17  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  samtools -Sb unaligned__ptprc_cell_barcodes_first1000.bam
+[main] unrecognized command '-Sb'
+(samtools)
+ ✘  Wed  8 Apr - 18:17  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  samtools view -Sb unaligned__ptprc_cell_barcodes_first1000.bam
+[E::hts_open_format] Failed to open file unaligned__ptprc_cell_barcodes_first1000.bam
+samtools view: failed to open "unaligned__ptprc_cell_barcodes_first1000.bam" for reading: No such file or directory
+(samtools)
+ ✘  Wed  8 Apr - 18:17  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  samtools view -Sb unaligned__ptprc_cell_barcodes_first1000.sam > unaligned__ptprc_cell_barcodes_first1000.bam
+(samtools)
+ Wed  8 Apr - 18:17  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  samtools view -Sb unaligned__ptprc_cell_barcodes_first1000.sam > unaligned__ptprc_cell_barcodes_first1000__no_header.bam
+(samtools)
+ Wed  8 Apr - 18:17  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  samtools reheader header.sam unaligned__ptprc_cell_barcodes_first1000__no_header.bam > unaligned__ptprc_cell_barcodes_first1000.bam
+```
+
+
+
 ### Copy files over and move into correct directories
 
-### Copy files
+#### Copy files
 
 ```
 (samtools)
@@ -267,4 +295,42 @@ rm 'testdata/mouse_brown_fat_ptprc_plus_unaligned.bam.bai'
 (samtools)
  Wed  8 Apr - 11:36  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz 1● 1‒ 
  olga@lrrr  mv mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/mouse_brown_fat_ptprc_plus_unaligned__barcodes.tsv mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/barcodes.tsv
+```
+
+
+#### Re-add smaller bam and bai
+
+```
+(samtools)
+ Wed  8 Apr - 18:19  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b 
+ olga@lrrr  cd ~/code/nf-core/test-datasets--kmermaid/testdata/mouse_brown_fat_ptprc_plus_unaligned/outs/(samtools)
+ Wed  8 Apr - 18:31  ~/code/nf-core/test-datasets--kmermaid/testdata/mouse_brown_fat_ptprc_plus_unaligned/outs   olgabot/kmermaid-unaligned-tgz-v2 1● 
+ olga@lrrr  ll
+Permissions Size User Group Date Modified Git Name
+drwxr-xr-x     - olga czb    8 Apr 11:24   -- filtered_gene_bc_matrices
+.rw-r--r--   38M olga czb    8 Apr 11:24   -- possorted_genome_bam.bam
+.rw-r--r--   68k olga czb    8 Apr 11:24   -- possorted_genome_bam.bam.bai
+(samtools)
+ Wed  8 Apr - 18:31  ~/code/nf-core/test-datasets--kmermaid/testdata/mouse_brown_fat_ptprc_plus_unaligned/outs   olgabot/kmermaid-unaligned-tgz-v2 1● 
+ olga@lrrr  cp  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b/mouse_brown_fat_ptprc_plus_unaligned_first1000.bam possorted_genome_bam.bam
+cp: overwrite 'possorted_genome_bam.bam'? y
+(samtools)
+ Wed  8 Apr - 18:31  ~/code/nf-core/test-datasets--kmermaid/testdata/mouse_brown_fat_ptprc_plus_unaligned/outs   olgabot/kmermaid-unaligned-tgz-v2 2● 
+ olga@lrrr  cp  /mnt/data_sm/olga/nextflow-intermediates-lrrr/7a/ed752d5e82cdd39e5fde9c21c3423b/mouse_brown_fat_ptprc_plus_unaligned_first1000.bam.bai possorted_genome_bam.bam.bai
+cp: overwrite 'possorted_genome_bam.bam.bai'? y
+```
+
+#### Re-make targz
+
+```
+(samtools)
+ Wed  8 Apr - 18:32  ~/code/nf-core/test-datasets--kmermaid/testdata   olgabot/kmermaid-unaligned-tgz-v2 3● 
+ olga@lrrr  tar -zcvf mouse_brown_fat_ptprc_plus_unaligned.tgz mouse_brown_fat_ptprc_plus_unaligned
+mouse_brown_fat_ptprc_plus_unaligned/
+mouse_brown_fat_ptprc_plus_unaligned/outs/
+mouse_brown_fat_ptprc_plus_unaligned/outs/possorted_genome_bam.bam.bai
+mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/
+mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/
+mouse_brown_fat_ptprc_plus_unaligned/outs/filtered_gene_bc_matrices/placeholder/barcodes.tsv
+mouse_brown_fat_ptprc_plus_unaligned/outs/possorted_genome_bam.bam
 ```
