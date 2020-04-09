@@ -79,6 +79,14 @@ kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromos
 kraken2-build --db kraken2_hs22 --build
 ```
 
+### `amplicon/nCoV-2019.artic.primers.fasta`
+
+`fasta` file with the localization of the primers in the SARS-Cov-2 virus genome from an enrichment experiment using the Artic network amplicons. Retrieved from [Zenodo](https://doi.org/10.5281/zenodo.3735110). 
+
+### `amplicon/nCoV-2019.schemeMod.bed`
+
+`bed` file with the localization of the primers in the SARS-Cov-2 virus genome from an enrichment experiment using the Artic network amplicons. Retrieved from [Zenodo](https://doi.org/10.5281/zenodo.3735110).
+
 ## Sampling procedure
 
 Prepare a file `list.txt` with the following SRA accession numbers:
