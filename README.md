@@ -4,50 +4,52 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-### `samplesheet_test_sispa.csv`
+### `samplesheet/`
+
+#### `samplesheet_test_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
 
-### `samplesheet_test_amplicon.csv`
+#### `samplesheet_test_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina amplicon data.
 
-### `samplesheet_full_sispa.csv`
+#### `samplesheet_full_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina SISPA data.
 
-### `samplesheet_full_amplicon.csv`
+#### `samplesheet_full_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina amplicon data.
 
 ### `genome/`
 
-* `NC_045512.2.fasta`: Reference SARS-Cov2 fasta file.
-* `NC_045512.2.gff`: Reference SARS-Cov2 gff file.
+#### `kraken2/kraken2_hs22.tar.gz`
 
-### `amplicon/nCoV-2019.artic.primers.fasta`
-
-`fasta` file with the localization of the primers in the SARS-Cov-2 virus genome from an enrichment experiment using the Artic network amplicons. Retrieved from [Zenodo](https://doi.org/10.5281/zenodo.3735110).
-
-### `amplicon/nCoV-2019.schemeMod.bed`
-
-`bed` file with the localization of the primers in the SARS-Cov-2 virus genome from an enrichment experiment using the Artic network amplicons. Retrieved from [Zenodo](https://doi.org/10.5281/zenodo.3735110).
-
-### `kraken2/kraken2_hs22.tar.gz`
-
-Small host DB for kraken2 required to test the pipeline containing only human chr22. The commands used to generate the DB are:
+Small host database for `kraken2` containing only human chr22 required to test the pipeline. The commands used to generate the database are:
 
 ```
-# Download hs chr22
+# Download human chr22
 rsync -av rsync://ftp.ensembl.org/ensembl/pub/release-99/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz .
 gunzip Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz
 
-# Generate the DB
+# Generate the database
 kraken2-build --db kraken2_hs22 --download-taxonomy
 kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromosome.22.fa
 kraken2-build --db kraken2_hs22 --build
 ```
 
+#### `NC_045512.2/`
+
+* `NC_045512.2.fasta.gz`: SARS-CoV2 genome fasta file downloaded directly from the [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2)
+* `NC_045512.2.gff3.gz`: SARS-CoV2 genome annotation file downloaded directly from the [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2)
+* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the NC_045512.2 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
+
+#### `MN908947.3/`
+
+* `MN908947.3.fasta.gz`: SARS-CoV2 genome fasta file downloaded directly from the [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/MN908947.3)
+* `MN908947.3.gff3.gz`: SARS-CoV2 genome annotation file downloaded directly from the [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/MN908947.3)
+* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the MN908947.3 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
 
 ### `fastq/illumina_sispa/`
 
