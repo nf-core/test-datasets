@@ -4,44 +4,59 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-### `samplesheet.csv`
+### `samplesheet/`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This file is just for preliminary testing whilst we get the pipeline working and will most likely be deleted.
-
-### `samplesheet_test_sispa.csv`
+#### `samplesheet_test_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
 
-### `samplesheet_test_amplicon.csv`
+#### `samplesheet_test_amplicon.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina Amplicons data.
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina amplicon data.
 
-### `samplesheet_full_sispa.csv`
+#### `samplesheet_full_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina SISPA data.
 
-### `samplesheet_full_amplicon.csv`
+#### `samplesheet_full_amplicon.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina Amplicons data.
+Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina amplicon data.
 
-### `reference/`
+### `genome/`
 
-* `NC_045512.2.fasta`: Reference SARS-Cov2 fasta file.
-* `NC_045512.2.gff`: Reference SARS-Cov2 gff file.
+#### `kraken2/kraken2_hs22.tar.gz`
+
+Small host database for `kraken2` containing only human chr22 required to test the pipeline. The commands used to generate the database are:
+
+```
+# Download human chr22
+rsync -av rsync://ftp.ensembl.org/ensembl/pub/release-99/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz .
+gunzip Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz
+
+# Generate the database
+kraken2-build --db kraken2_hs22 --download-taxonomy
+kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromosome.22.fa
+kraken2-build --db kraken2_hs22 --build
+```
+
+#### `NC_045512.2/`
+
+* `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz)
+* `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz)
+* `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gtf.gz)
+* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the NC_045512.2 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
+
+#### `MN908947.3/`
+
+* `GCA_009858895.3_ASM985889v3_genomic.200409.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.fna.gz)
+* `GCA_009858895.3_ASM985889v3_genomic.200409.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gff.gz)
+* `GCA_009858895.3_ASM985889v3_genomic.200409.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gtf.gz)
+* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the NC_045512.2 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
 
 ### `fastq/illumina_sispa/`
 
 | file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
 |-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
-| SRR10903401_1.fastq.gz  |    9,580 |  1,442,283 |     143 |   150.6 |     151 |      665K | PE Illumina | Metatranscriptomic |
-| SRR10903401_2.fastq.gz  |    9,580 |  1,443,343 |     145 |   150.7 |     151 |      751K | PE Illumina | Metatranscriptomic |
-| SRR10903402_1.fastq.gz  |   13,588 |  2,045,955 |     144 |   150.6 |     151 |      991K | PE Illumina | Metatranscriptomic |
-| SRR10903402_2.fastq.gz  |   13,588 |  2,046,944 |     141 |   150.6 |     151 |      1.2M | PE Illumina | Metatranscriptomic |
-| SRR11092056_1.fastq.gz  |  104,641 | 14,823,897 |      35 |   141.7 |     151 |      9.7M | PE Illumina | Metagenomics       |
-| SRR11092056_2.fastq.gz  |  104,641 | 14,823,709 |      35 |   141.7 |     151 |      11M  | PE Illumina | Metagenomics       |
-| SRR11177792_1.fastq.gz  |  104,780 | 28,110,508 |      35 |   268.3 |     301 |      15M  | PE Illumina | Genomic            |
-| SRR11177792_2.fastq.gz  |  104,780 | 28,110,045 |      35 |   268.3 |     301 |      16M  | PE Illumina | Genomic            |
-| SRR11241255.fastq.gz    |    2,442 |    438,067 |      20 |   179.4 |     185 |      86K  | SE Illumina | Viral RNA          |
 | SRR11140744_R1.fastq.gz |   10,092 |  2,284,737 |     100 |   175.5 |     251 |      747K | PE Illumina | Metagenomics       |
 | SRR11140744_R2.fastq.gz |   10,092 |  2,260,970 |     100 |   175.5 |     251 |      783K | PE Illumina | Metagenomics       |
 | SRR11140746_R1.fastq.gz |    7,196 |  1,609,884 |     100 |   175.5 |     251 |      554K | PE Illumina | Metagenomics       |
@@ -64,39 +79,15 @@ Sample information sheet required to test the pipeline containing sample informa
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
-### `kraken2/kraken2_hs22.tar.gz`
-
-Small host DB for kraken2 required to test the pipeline containing only human chr22. The commands used to generate the DB are:
-
-```
-# Download hs chr22
-rsync -av rsync://ftp.ensembl.org/ensembl/pub/release-99/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz .
-gunzip Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz
-
-# Generate the DB
-kraken2-build --db kraken2_hs22 --download-taxonomy
-kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromosome.22.fa
-kraken2-build --db kraken2_hs22 --build
-```
-
-### `amplicon/nCoV-2019.artic.primers.fasta`
-
-`fasta` file with the localization of the primers in the SARS-Cov-2 virus genome from an enrichment experiment using the Artic network amplicons. Retrieved from [Zenodo](https://doi.org/10.5281/zenodo.3735110). 
-
-### `amplicon/nCoV-2019.schemeMod.bed`
-
-`bed` file with the localization of the primers in the SARS-Cov-2 virus genome from an enrichment experiment using the Artic network amplicons. Retrieved from [Zenodo](https://doi.org/10.5281/zenodo.3735110).
-
 ## Sampling procedure
 
 Prepare a file `list.txt` with the following SRA accession numbers:
 
 ```
-SRR10903401
-SRR10903402
-SRR11092056
-SRR11177792
-SRR11241255
+SRR11140744
+SRR11140746
+SRR11140748
+SRR11140750
 ```
 
 Download SRA using `parallel-fastq-dump` and `parallel`.
