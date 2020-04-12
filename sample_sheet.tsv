@@ -1,0 +1,5 @@
+ID	Sample	Condition	ReplicateFileName
+1	MM15_Melanom	A	test-datasets/MM15_Melanom_1_A_1.mzML
+2	MM15_Melanom	A	test-datasets/MM15_Melanom_2_A_1.mzML
+3	MM16_Melanom	B	test-datasets/MM15_Melanom_1_B_1.mzML
+4	MM16_Melanom	B	test-datasets/MM15_Melanom_2_B_1.mzML
