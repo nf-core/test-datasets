@@ -22,6 +22,9 @@ Sample information sheet required to test the pipeline containing sample informa
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina amplicon data.
 
+#### `samplesheet_test_sra.csv`
+Sample information sheet required to test the pipeline containing sample information of one link to a original full FastQ files and two files that must be downloaded from SRA one single-end and one paired-end, respectively. This sample sheet corresponds to Illumina SISPA data.
+
 ### `genome/`
 
 #### `kraken2/kraken2_hs22.tar.gz`
