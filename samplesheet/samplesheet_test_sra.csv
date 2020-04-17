@@ -1,7 +1,7 @@
 sample,fastq_1,fastq_2
 SAMPLE1_PE,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140744_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140744_R2.fastq.gz
 SAMPLE1_PE,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140746_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140746_R2.fastq.gz
-SAMPLE1_SE,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140748_R1.fastq.gz,
-SAMPLE1_SE,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140750_R1.fastq.gz,
+SAMPLE2_SE,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140748_R1.fastq.gz,
+SAMPLE2_SE,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/fastq/illumina_sispa/SRR11140750_R1.fastq.gz,
 SRR11140750,,
 SRR11241254,,
