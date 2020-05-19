@@ -1,0 +1,5 @@
+Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
+BR2	BR2	0	4	SE	Human	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/001/SRR1186791/SRR1186791.fastq.gz	NA	NA
+IR1	IR1	0	4	SE	Human	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/004/SRR1186714/SRR1186714.fastq.gz	NA	NA
+NE2	NE2	0	4	SE	Human	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/002/SRR1187682/SRR1187682.fastq.gz	NA	NA
+KO2	KO2	0	4	SE	Human	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/008/SRR1187678/SRR1187678.fastq.gz	NA	NA

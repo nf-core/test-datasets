@@ -1,0 +1,12 @@
+Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
+KunilaII	KunilaII_nonUDG	4	4	PE	Human	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112547/ABI843_XB583_EstKunila2_S0_L004_R1_001.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112547/ABI843_XB583_EstKunila2_S0_L004_R2_001.fastq.gz	NA
+KunilaII	KunilaII_UDG	4	4	PE	Human	double	full	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112548/XB583UDG_S0_L004_R1_001.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112548/XB583UDG_S0_L004_R2_001.fastq.gz	NA
+6Post	6Post_PE	1	2	PE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112549/ABI910_6POST_S0_L001_R1_001.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112549/ABI910_6POST_S0_L001_R2_001.fastq.gz	NA
+6Post	6Post_PE	2	2	PE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112550/ABI910_6POST_S0_L002_R1_001.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112550/ABI910_6POST_S0_L002_R2_001.fastq.gz	NA
+6Post	6Post_PE	3	2	PE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112551/ABI910_6POST_S0_L003_R1_001.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112551/ABI910_6POST_S0_L003_R2_001.fastq.gz	NA
+6Post	6Post_PE	4	2	PE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112552/ABI910_6POST_S0_L004_R1_001.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112552/ABI910_6POST_S0_L004_R2_001.fastq.gz	NA
+6Post	6Post_SE	1	4	SE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112569/ABI910_6POST_HiSeq_S0_L001_R1_001.fastq.gz	NA	NA
+6Post	6Post_SE	2	4	SE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112570/ABI910_6POST_HiSeq_S0_L002_R1_001.fastq.gz	NA	NA
+6Post	6Post_SE	3	4	SE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112571/ABI910_6POST_HiSeq_S0_L003_R1_001.fastq.gz	NA	NA
+6Post	6Post_SE	4	4	SE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112572/ABI910_6POST_HiSeq_S0_L004_R1_001.fastq.gz	NA	NA
+6Post	6Post_SE	5	4	SE	Human	double	half	ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR211/ERR2112573/ABI910_6POST_HiSeq_S0_L008_R1_001.fastq.gz	NA	NA
