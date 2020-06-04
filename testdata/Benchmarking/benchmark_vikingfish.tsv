@@ -1,0 +1,6 @@
+Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
+COD086	COD086E1bL1	6	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/004/ERR1943604/ERR1943604_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/004/ERR1943604/ERR1943604_2.fastq.gz	NA
+COD086	COD086E1bL1	8	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/003/ERR1943603/ERR1943603_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/003/ERR1943603/ERR1943603_2.fastq.gz	NA
+COD023	COD023E1bL1i61	6	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/005/ERR1943575/ERR1943575_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/005/ERR1943575/ERR1943575_2.fastq.gz	NA
+COD023	COD023E1bL1i61	7	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/006/ERR1943576/ERR1943576_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/006/ERR1943576/ERR1943576_2.fastq.gz	NA
+COD023	COD023E1bL1i61	8	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943577/ERR1943577_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943577/ERR1943577_2.fastq.gz	NA
