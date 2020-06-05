@@ -51,10 +51,10 @@ kraken2-build --db kraken2_hs22 --build
 
 #### `MN908947.3/`
 
-* `GCA_009858895.3_ASM985889v3_genomic.200409.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.fna.gz)
-* `GCA_009858895.3_ASM985889v3_genomic.200409.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gff.gz)
-* `GCA_009858895.3_ASM985889v3_genomic.200409.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gtf.gz)
-* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the NC_045512.2 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
+* `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.fna.gz)
+* `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gff.gz)
+* `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gtf.gz)
+* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the MN908947.3 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
 
 ### `fastq/illumina_sispa/`
 
