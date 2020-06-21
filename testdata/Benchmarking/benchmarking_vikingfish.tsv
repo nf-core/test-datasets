@@ -1,6 +1,7 @@
 Sample_Name	Library_ID	Lane	Colour_Chemistry	SeqType	Organism	Strandedness	UDG_Treatment	R1	R2	BAM
-COD086	COD086E1bL1	6	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/004/ERR1943604/ERR1943604_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/004/ERR1943604/ERR1943604_2.fastq.gz	NA
-COD086	COD086E1bL1	8	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/003/ERR1943603/ERR1943603_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/003/ERR1943603/ERR1943603_2.fastq.gz	NA
-COD023	COD023E1bL1i61	6	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/005/ERR1943575/ERR1943575_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/005/ERR1943575/ERR1943575_2.fastq.gz	NA
-COD023	COD023E1bL1i61	7	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/006/ERR1943576/ERR1943576_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/006/ERR1943576/ERR1943576_2.fastq.gz	NA
-COD023	COD023E1bL1i61	8	4	PE	Gadus_morhua	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943577/ERR1943577_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943577/ERR1943577_2.fastq.gz	NA
+COD076	COD076E1bL1	8	4	PE	Gadus_morhua	double	none	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_1.fastq.gz	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/000/ERR1943600/ERR1943600_2.fastq.gz	NA
+COD076	COD076E1bL1	6	4	PE	Gadus_morhua	double	none	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_1.fastq.gz	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/001/ERR1943601/ERR1943601_2.fastq.gz	NA
+COD076	COD076E1bL1	1	4	PE	Gadus_morhua	double	none	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_1.fastq.gz	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/002/ERR1943602/ERR1943602_2.fastq.gz	NA
+COD092	COD092E1bL1i69	6	4	PE	Gadus_morhua	double	none	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_1.fastq.gz	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/007/ERR1943607/ERR1943607_2.fastq.gz	NA
+COD092	COD092E1bL1i69	7	4	PE	Gadus_morhua	double	none	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_1.fastq.gz	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/008/ERR1943608/ERR1943608_2.fastq.gz	NA
+COD092	COD092E1bL1i69	8	4	PE	Gadus_morhua	double	none	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_1.fastq.gz	http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR194/009/ERR1943609/ERR1943609_2.fastq.gz	NA

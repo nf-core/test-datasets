@@ -20,9 +20,13 @@ In `testdata`, there will be one directory for file type, e.g. `fastq`, `bam`, `
 
 `1240K.pos.list_hs37d5.0based.bed.gz`: a bed file containing positions for the '1240k' SNP capture array (file by [Alex Peltzer](https://github.com/apeltzer) and [Stephen Clayton](https://github.com/sc13-bioinf), originally defined in [Mathieson et al. 2015 _Nature_](https://www.nature.com/articles/nature16152))
 
+`1240K.pos.list_GH19.0based.bed.gz`: a bed file containing positions for the '1240k' SNP capture array for the HG19 reference genome ported from the above by [Thiseas C. Lamnidis](https://github.com/TCLamnidis), originally defined in [Mathieson et al. 2015 _Nature_](https://www.nature.com/articles/nature16152))
+
 ### Sequencing Data (`testdata/`)
 
 #### Mammoth
+
+TSV input versions of FASTQ and BAM files exists for all files below.
 
 **fastq**
 
@@ -45,9 +49,19 @@ Already clipped, merged and mapped BAM files of the two paired-end FASTQ files a
 
 #### Human
 
+TSV input versions of BAM files exists for all files below.
+
 **bam**
 
 `JK2067_*`: HiSeq 1240k captured UDG-half single-end (~10K reads after clipping, [Lamnidis et al. 2018 _Nat. Comms._](https://doi.org/10.1038/s41467-018-07483-5))
+
+#### Benchmarking
+
+There are three test TSV input files that can be used for larger, more 'realistic' shotgun testing with full sized data. This currently covers three main contexts.
+
+`benchmarking_human.tsv`: Ancient Fish from [Star et al. 2017](https://doi.org/10.1073/pnas.1710186114)
+`benchmarking_vikingfish`: Ancient Humans from [Gamba et al. 2014](https://doi.org/10.1073/10.1038/ncomms6257)
+`benchmarking_pathogenscreening`: Ancient Pathogen from [Andrades Valtueña et al. 2017](https://doi.org/10.1016/j.cub.2017.10.025)
 
 ### Databases
 
