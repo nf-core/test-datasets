@@ -7,7 +7,7 @@ This branch contains test data for the [nf-core/chipseq](https://github.com/nf-c
 
 `design.csv`: Experiment design file for minimal test dataset  
 `design_full.csv`: Experiment design file for full test dataset  
-`reference/`: Genome reference files
+`reference/`: Genome reference files  
 `testdata/` : Sub-sampled FastQ files sub-sampled
 
 ## Full test dataset origin
