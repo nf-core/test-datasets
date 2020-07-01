@@ -1,2 +1,0 @@
-SRR5204807_Spt5-ChIP_IP1_SacCer_ChIP-Seq_ss100k,SRR5204809_Spt5-ChIP_Input1_SacCer_ChIP-Seq_ss100k,Test1
-SRR5204808_Spt5-ChIP_IP2_SacCer_ChIP-Seq_ss100k,SRR5204810_Spt5-ChIP_Input2_SacCer_ChIP-Seq_ss100k,Test2
