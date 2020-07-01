@@ -60,15 +60,17 @@ These are just guidelines and will change with the use of different software, an
 
 *H. sapiens* paired-end ATAC-seq dataset was obtained from:
 
-Buenrostro JD, Giresi PG, Zaba LC, Chang HY, Greenleaf WJ. Transposition of native chromatin for fast and sensitive epigenomic profiling of open chromatin, DNA-binding proteins and nucleosome position. Nat Methods. 2013 Dec;10(12):1213-8. [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/24097267) [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47753)
+M Ryan Corces *et al*. An Improved ATAC-seq Protocol Reduces Background and Enables Interrogation of Frozen Tissues. Nat Methods. 2017 Oct;14(10):959-962. doi: 10.1038/nmeth.4396.
+[Pubmed](https://pubmed.ncbi.nlm.nih.gov/28846090/) [SRA](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA380283)
+
 
 ### Sample information
 
-| GEO_ID	    | SRA_ID	    | SAMPLE_NAME	           |
-|-------------|-------------|------------------------|
-| GSM1155964	| SRR891275   | CD4+_ATACseq_Day1_Rep1 |
-| GSM1155965	| SRR891276   | CD4+_ATACseq_Day1_Rep2 |
-| GSM1155966	| SRR891277   | CD4+_ATACseq_Day2_Rep1 |
-| GSM1155967	| SRR891278   | CD4+_ATACseq_Day2_Rep2 |
-| GSM1155968	| SRR891279   | CD4+_ATACseq_Day3_Rep1 |
-| GSM1155969	| SRR891280   | CD4+_ATACseq_Day3_Rep2 |
+| SRA ID     | SAMPLE NAME                                                         |
+|------------|---------------------------------------------------------------------|
+| SRR5427884 | ATAC-seq of in vitro culture GM12878 using the Standard ATAC method |
+| SRR5427885 | ATAC-seq of in vitro culture GM12878 using the Standard ATAC method |
+| SRR5427886 | ATAC-seq of in vitro culture GM12878 using the Omni-ATAC method	   |
+| SRR5427887 | ATAC-seq of in vitro culture GM12878 using the Omni-ATAC method	   |
+| SRR5427888 | ATAC-seq of in vitro culture GM12878 using the Fast-ATAC method	   |
+| SRR5427889 | ATAC-seq of in vitro culture GM12878 using the Fast-ATAC method	   |
