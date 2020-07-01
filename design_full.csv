@@ -7,11 +7,3 @@ INPUT_VEH,1,ftp.sra.ebi.ac.uk/vol1/fastq/SRR163/005/SRR1635435/SRR1635435.fastq.
 INPUT_VEH,2,ftp.sra.ebi.ac.uk/vol1/fastq/SRR163/006/SRR1635436/SRR1635436.fastq.gz,,,
 INPUT_E2,1,ftp.sra.ebi.ac.uk/vol1/fastq/SRR163/007/SRR1635437/SRR1635437.fastq.gz,,,
 INPUT_E2,2,ftp.sra.ebi.ac.uk/vol1/fastq/SRR163/008/SRR1635438/SRR1635438.fastq.gz,,,
-EZH2_IP_NTKO,1,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/000/SRR1285070/SRR1285070.fastq.gz,,EZH2,INPUT_NTKO
-EZH2_IP_NTKO,2,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/001/SRR1285071/SRR1285071.fastq.gz,,EZH2,INPUT_NTKO
-EZH2_IP_TKO,1,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/002/SRR1285072/SRR1285072.fastq.gz,,EZH2,INPUT_TKO
-EZH2_IP_TKO,2,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/003/SRR1285073/SRR1285073.fastq.gz,,EZH2,INPUT_TKO
-INPUT_NTKO,1,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/004/SRR1285074/SRR1285074.fastq.gz,,,
-INPUT_NTKO,2,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/005/SRR1285075/SRR1285075.fastq.gz,,,
-INPUT_TKO,1,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/006/SRR1285076/SRR1285076.fastq.gz,,,
-INPUT_TKO,2,ftp.sra.ebi.ac.uk/vol1/fastq/SRR128/007/SRR1285077/SRR1285077.fastq.gz,,,
