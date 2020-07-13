@@ -1,0 +1,5 @@
+plate_id	barcode_id	treatment	treatment_and_dose
+test_plate	37	DMSO	DMSO
+test_plate	38	DMSO	DMSO
+test_plate	49	Vorinostat	Vorinostat_8.3
+test_plate	50	Vorinostat	Vorinostat_8.3
