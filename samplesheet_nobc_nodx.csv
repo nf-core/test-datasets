@@ -1,4 +1,4 @@
-sample,sample_path,barcode,genome,transcriptome,condition
+sample,input_file,barcode,genome,transcriptome,condition
 MCF7_directcDNA_replicate1,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/fastq/MCF7_directcDNA_replicate1.fastq.gz,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22.fa,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/genes.gtf,MCF7
 MCF7_directcDNA_replicate3,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/fastq/MCF7_directcDNA_replicate3.fastq.gz,,,,MCF7
 MCF7_directRNA_replicate4,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/fastq/MCF7_directRNA_replicate4.fastq.gz,,,,MCF7
