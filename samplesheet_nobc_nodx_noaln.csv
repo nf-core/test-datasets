@@ -1,2 +1,2 @@
 sample,input_file,barcode,genome,transcriptome,condition
-MCF7_directcDNA_replicate1,	https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/bam/MCF7_directcDNA_replicate1.bam,,	https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_19431000-19528000.fa,	https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_19431000-19528000.gtf,A
+MCF7_directcDNA_replicate1,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/bam/MCF7_directcDNA_replicate1.bam,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_19431000-19528000.fa,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_19431000-19528000.gtf,MCF7
