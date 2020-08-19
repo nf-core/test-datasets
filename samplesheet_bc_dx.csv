@@ -1,4 +1,4 @@
-group,replicate,input_file,barcode,genome,transcriptome
-K562_RUN1,1,,1,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/hg19_KCMF1.fa,
-,5,HEPG2_RUN3_REP5,2,,
-,,CALIBRATION_RUN,3,,
+group,replicate,barcode,input_file,genome,transcriptome
+K562_RUN1,1,1,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/hg19_KCMF1.fa,
+,5,2,HEPG2_RUN3_REP5,,
+,,3,CALIBRATION_RUN,,
