@@ -1,2 +1,2 @@
 group,replicate,barcode,input_file,genome,transcriptome
-,1,1,MCF7_RUN1,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/hg19_KCMF1.fa,
+MCF7,1,1,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/hg19_KCMF1.fa,
