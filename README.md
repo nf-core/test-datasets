@@ -5,14 +5,16 @@ This branch contains test data to be used for automated testing with the [nf-cor
 ## Content of this repository
 
 `reference/`: Sub-sampled genome reference files (iGenomes **S. cerevisiae** R64-1-1 Ensembl release)   
+
 `testdata/*.fastq.gz`: Historical single-end test data for pipeline sub-sampled to ~2000 reads
-`testdata/GSE110004/*.fastq.gz`: Paired-end test data for pipeline sub-sampled to ~100000 reads
+`testdata/GSE110004/*.fastq.gz`: Paired-end test data for pipeline sub-sampled to ~10000 reads
+
 `samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset  
 `samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset  
 
 ## Minimal test dataset origin
 
-*S. cerevisiae* paired-end strand-specifc RNA-seq dataset was obtained from:
+*S. cerevisiae* 101bp paired-end strand-specific RNA-seq dataset was obtained from:
 
 Andrew C K Wu, Harshil Patel, Minghao Chia, Fabien Moretto, David Frith, Ambrosius P Snijders, Folkert J van Werven. Repression of Divergent Noncoding Transcription by a Sequence-Specific Transcription Factor. Mol Cell. 2018 Dec 20;72(6):942-954.e7. doi: 10.1016/j.molcel.2018.10.018. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/30576656/) [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE110004)
 
