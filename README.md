@@ -37,12 +37,12 @@ Andrew C K Wu, Harshil Patel, Minghao Chia, Fabien Moretto, David Frith, Ambrosi
 
 ### Sampling procedure
 
-The example command below was used to sub-sample the raw paired-end FastQ files to 100,000 reads (see [seqtk](https://github.com/lh3/seqtk)).
+The example command below was used to sub-sample the raw paired-end FastQ files to 50,000 reads (see [seqtk](https://github.com/lh3/seqtk)).
 
 ```bash
 mkdir -p sample
-seqtk sample -s100 SRR6357070_1.fastq.gz 100000 | gzip > ./sample/SRR6357070_1.fastq.gz
-seqtk sample -s100 SRR6357070_2.fastq.gz 100000 | gzip > ./sample/SRR6357070_2.fastq.gz
+seqtk sample -s100 SRR6357070_1.fastq.gz 50000 | gzip > ./sample/SRR6357070_1.fastq.gz
+seqtk sample -s100 SRR6357070_2.fastq.gz 50000 | gzip > ./sample/SRR6357070_2.fastq.gz
 ```
 
 ## Full test dataset origin
