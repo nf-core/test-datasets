@@ -7,7 +7,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 `reference/`: Sub-sampled genome reference files (iGenomes **S. cerevisiae** R64-1-1 Ensembl release)   
 
 `testdata/*.fastq.gz`: Historical single-end test data for pipeline sub-sampled to ~2000 reads
-`testdata/GSE110004/*.fastq.gz`: Paired-end test data for pipeline sub-sampled to ~10000 reads
+`testdata/GSE110004/*.fastq.gz`: Paired-end test data for pipeline sub-sampled to 50000 reads
 
 `samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset  
 `samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset  
