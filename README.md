@@ -1,16 +1,12 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `dualrnaseq`
+Test data to be used for automated testing with nf-core pipelines
 
-## Introduction
+This branch contains test data for the [nf-core/dualrnaseq](https://github.com/nf-core/dualrnaseq) pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines.
+## Test data
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+Paired end data was simulated using the R package [Polyester](https://bioconductor.org/packages/release/bioc/html/polyester.html).
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+Data (3 samples) was simulated from the Human genome (Gencode v33) plus *Salmonella Typhimurium (SL1344)*
 
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+The corresponding subsets of genomes and annotation files can be found in the `references/` directory. 
