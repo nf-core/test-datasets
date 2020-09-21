@@ -1,3 +1,4 @@
 ID	Sample	RawFileName	IdFileName
 1	Malignant	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzML	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzid
-2	Benign	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzML	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzid
+2	Malignant	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzML	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzid
+3	Benign	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzML	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzid
