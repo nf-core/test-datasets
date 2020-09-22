@@ -1,3 +1,3 @@
-ID	Sample	irtLibraryFileName
+Fraction_Group	Sample	irt_Filepath
 1	Malignant	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/irts.pqp
 2	Benign	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/irts.pqp
