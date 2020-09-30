@@ -47,7 +47,7 @@ seqtk sample -s100 SRR6357070_2.fastq.gz 50000 | gzip > ./sample/SRR6357070_2.fa
 
 ## Full test dataset origin
 
-H. sapiens paired-end strand-specific RNA-seq dataset was obtained from:
+*H. sapiens* paired-end strand-specific RNA-seq dataset was obtained from:
 
 ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. Nature 2012 Sep 6;489(7414):57-74. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/22955616/)
 
