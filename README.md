@@ -47,7 +47,13 @@ seqtk sample -s100 SRR6357070_2.fastq.gz 50000 | gzip > ./sample/SRR6357070_2.fa
 
 ## Full test dataset origin
 
+H. sapiens paired-end strand-specific RNA-seq dataset was obtained from:
 
+ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. Nature 2012 Sep 6;489(7414):57-74. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/22955616/)
+
+The GM12878 and K562 ENCODE data was also used to benchmark RNA-seq quantification pipelines in the paper below:
+
+Mingxiang Teng, Michael I. Love, Carrie A. Davis, Sarah Djebali, Alexander Dobin, Brenton R. Graveley, Sheng Li, Christopher E. Mason, Sara Olson, Dmitri Pervouchine, Cricket A. Sloan, Xintao Wei, Lijun Zhan, and Rafael A. Irizarry. A benchmark for RNA-seq quantification pipelines. Genome Biol. 2016; 17: 74. Published online 2016 Apr 23. doi: 10.1186/s13059-016-0940-1. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/27107712/)
 
 
 | study_alias | run_accession | experiment_alias | encode_library_id | sample_description | instrument_model | library_layout | read_count | sex | fastq_ftp | fastq_md5 |
