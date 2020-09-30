@@ -1,7 +1,5 @@
 # test-datasets: `dualrnaseq`
-Test data to be used for automated testing with nf-core pipelines
-
-This branch contains test data for the [nf-core/dualrnaseq](https://github.com/nf-core/dualrnaseq) pipeline.
+This branch contains test data to be used for automated testing with the [nf-core/dualrnaseq](https://github.com/nf-core/dualrnaseq) pipeline.
 
 ## Test data
 
