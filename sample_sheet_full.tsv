@@ -1,4 +1,4 @@
-Fraction_Group	Sample	Fraction	Spectra_Filepath	
+Fraction_Group	Sample	Fraction	Spectra_Filepath
 1	Aqua	A	https://abibuilder.informatik.uni-tuebingen.de/archive/openms/Tutorials/Data/latest/Example_Data/OpenSWATH/data/split_napedro_L120420_010_SW-400AQUA__human_2ul_dilution_1_0.nf.pp.mzML
 2	Aqua	A	https://abibuilder.informatik.uni-tuebingen.de/archive/openms/Tutorials/Data/latest/Example_Data/OpenSWATH/data/split_napedro_L120420_010_SW-400AQUA__human_2ul_dilution_1_1.nf.pp.mzML
 3	Aqua	A	https://abibuilder.informatik.uni-tuebingen.de/archive/openms/Tutorials/Data/latest/Example_Data/OpenSWATH/data/split_napedro_L120420_010_SW-400AQUA__human_2ul_dilution_1_2.nf.pp.mzML
