@@ -1,15 +1,13 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+## Test data for nf-core/mag
 
-nf-core is a collection of high quality Nextflow pipelines.
+This branch contains test data for the [nf-core/mag](https://github.com/nf-core/mag) pipeline.
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+## Full-size test data
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+The `manifext.full.txt` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. *Nature Biotechnology* (2019)](https://doi.org/10.1038/s41587-019-0191-2).
 
 ## Support
 
