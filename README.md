@@ -12,8 +12,11 @@ reads per plate (2000 reads per sample per plate), with an additional of 10
 non-RIF-Seq reads per sample per plate.
 
 `testdata/*.fastq.gz`: Two RIF-Seq plates of test data
+<br>
 `testdata/metadata.tsv`: The metadata for the test data
+<br>
 `reference/Homo_sapiens.GRCh38.cdna.chr22.fa.gz`: Human chromosome 22 cDNA FASTA
+<br>
 `script/simulate-rifseq-data.py`: Script for generating test data
 
 ## Sample metadata
