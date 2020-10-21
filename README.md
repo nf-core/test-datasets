@@ -13,4 +13,4 @@ nf-core/test-datasets comes with documentation in the `docs/` directory:
 
 ## Support
 
-For further information or help, don't hesitate to get in touch on our [Gitter channel](https://gitter.im/nf-core/Lobby)
+For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
