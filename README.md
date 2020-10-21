@@ -13,6 +13,8 @@ non-RIF-Seq reads per sample per plate.
 
 `testdata/*.fastq.gz`: Two RIF-Seq plates of test data
 `testdata/metadata.tsv`: The metadata for the test data
+`reference/Homo_sapiens.GRCh38.cdna.chr22.fa.gz`: Human chromosome 22 cDNA FASTA
+`script/simulate-rifseq-data.py`: Script for generating test data
 
 ## Sample metadata
 
@@ -26,3 +28,29 @@ non-RIF-Seq reads per sample per plate.
 | test_plate_B | 97         | DMSO       | 0.001 |
 | test_plate_B | 193        | Vorinostat | 8.3   |
 | test_plate_B | 289        | Vorinostat | 8.3   |
+
+## Dataset origin
+
+The test data was generated using the `simulate-rifseq-data.py` Python script,
+along with the `Homo_sapiens.GRCh38.cdna.chr22.fa.gz` FASTA reference, like so:
+
+```bash
+python script/simulate-rifseq-data.py \
+    reference/Homo_sapiens.GRCh38.cdna.chr22.fa \
+    testdata/test_plate_A.fastq \
+    --seed 42
+python script/simulate-rifseq-data.py \
+    reference/Homo_sapiens.GRCh38.cdna.chr22.fa \
+    testdata/test_plate_B.fastq \
+    --seed 24
+```
+
+The FASTA reference was generated from the `Homo_sapiens.GRCh38.cdna.all.fa`
+file available at [Ensembl's FTP site](ftp://ftp.ensembl.org/pub/release-86/fasta/homo_sapiens/cdna/)
+and the following code:
+
+```bash
+grep -A 1 "chromosome:GRCh38:22" Homo_sapiens.GRCh38.cdna.all.fa \
+    | grep -v -- -- \
+    > reference/Homo_sapiens.GRCh38.cdna.chr22.fa
+```
