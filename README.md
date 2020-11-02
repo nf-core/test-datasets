@@ -45,6 +45,42 @@ The pre-basecalled and demultiplexed data in this repository will be used to tes
 * `samplesheet_nobc_nodx.csv` - Sample information sheet required for the pipeline
 * `fastq/demultiplexed/` - FastQ files for barcodes 1 and 2 obtained from [Basecalling barcoded data](#basecalling-barcoded-data)
 
+## Pre-basecalled and nondemultiplexed data
+
+The pre-basecalled and nondemultiplexed data in this repository will be used to test the pipeline without both the basecalling and demultiplexing steps. The associated parameters and settings to run the pipeline can be found in [`test_nobc_dx.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nobc_dx.config).
+
+### Files
+
+* `samplesheet_nobc_dx.csv` - Sample information sheet required for the pipeline
+* `fastq/nondemultiplexed/` - Non-demuliplexed FastQ files for the nanopore DNA reads from  the Hct116 (Colon Cancer) cell line.
+
+### Sequencing information
+
+|             |         	    |
+|-------------|---------------|
+| Flow Cell   | FLO-MIN106    |
+| Kit         | SQK-LSK109    |
+| Barcode Kit | NBD103/NBD104 |
+
+## Aligned data
+
+The aligned data in this repository will be used to test the pipeline without the basecalling, demultiplexing and alignment step. The associated parameters and settings to run the pipeline can be found in [`test_nobc_nodx_noaln.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nobc_nodx_noaln.config).
+
+### Files
+
+* `samplesheet_nobc_nodx_noaln.csv` - Sample information sheet required for the pipeline
+* `bam/` - Bam files obtained from [Pre-basecalled and nondemultiplexed data](#pre-basecalled-and-nondemultiplexed-data)
+
+
+## Full-sized test data
+
+The full sized test data in this repository will be used to test the pipeline without the basecalling, demultiplexing and alignment step. The associated parameters and settings to run the pipeline can be found in [`test_full.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_full.config).
+
+### Files
+
+* `samplesheet_full.csv` - Sample information sheet required for the pipeline
+
+
 ## Reference genome
 
 The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and after visual inspection of the alignments a single gene (i.e. KCMF1) was chosen to represent the reference.
