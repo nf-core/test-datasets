@@ -74,7 +74,7 @@ The aligned data in this repository will be used to test the pipeline without th
 
 ## Full-sized test data
 
-The full sized test data in this repository will be used to test the pipeline without the basecalling, demultiplexing and alignment step. The associated parameters and settings to run the pipeline can be found in [`test_full.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_full.config).
+The full sized test data in this repository will be used to test the pipeline without the basecalling and demultiplexing step from the SG-NEx Project public dataset. The associated parameters and settings to run the pipeline can be found in [`test_full.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_full.config).
 
 ### Files
 
