@@ -60,8 +60,12 @@ TSV input versions of BAM files exists for all files below.
 There are three test TSV input files that can be used for larger, more 'realistic' shotgun testing with full sized data. This currently covers three main contexts.
 
 `benchmarking_human.tsv`: Ancient Fish from [Star et al. 2017](https://doi.org/10.1073/pnas.1710186114)
-`benchmarking_vikingfish`: Ancient Humans from [Gamba et al. 2014](https://doi.org/10.1073/10.1038/ncomms6257)
-`benchmarking_pathogenscreening`: Ancient Pathogen from [Andrades Valtueña et al. 2017](https://doi.org/10.1016/j.cub.2017.10.025)
+`benchmarking_vikingfish.tsv`: Ancient Humans from [Gamba et al. 2014](https://doi.org/10.1073/10.1038/ncomms6257)
+`benchmarking_pathogenscreening.tsv`: Ancient Pathogen from [Andrades Valtueña et al. 2017](https://doi.org/10.1016/j.cub.2017.10.025)
+
+A further one for internal large-scale AWS testing is:
+
+`human_stresstest.tsv`: 137 ancient human genomes from [de Barros Damgaard et al. 2018](https://doi.org/10.1038/s41586-018-0094-2)
 
 ### Databases
 
