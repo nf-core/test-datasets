@@ -52,7 +52,7 @@ The pre-basecalled and nondemultiplexed data in this repository will be used to 
 ### Files
 
 * `samplesheet_nobc_dx.csv` - Sample information sheet required for the pipeline
-* `fastq/nondemultiplexed/` - Non-demuliplexed FastQ files for the nanopore DNA reads from  the Hct116 (Colon Cancer) cell line.
+* `fastq/nondemultiplexed/` - Non-demuliplexed FastQ files for the nanopore DNA reads from the Hct116 (Colon Cancer) cell line.
 
 ### Sequencing information
 
@@ -74,7 +74,23 @@ The aligned data in this repository will be used to test the pipeline without th
 
 ## Full-sized test data
 
-The full sized test data in this repository will be used to test the pipeline without the basecalling and demultiplexing step from the SG-NEx Project public dataset. The associated parameters and settings to run the pipeline can be found in [`test_full.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_full.config).
+The full sized test data in this repository will be used to test the pipeline without the basecalling and demultiplexing step. The associated parameters and settings to run the pipeline can be found in [`test_full.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_full.config).
+
+### Origin
+
+*H. sapiens* Nanopore cDNA and direct cDNA datasets were obtained from:
+ > The Singapore Nanopore Expression Consortium. (2020). The Singapore Nanopore Expression Project (SG-NEx) data pre-release v0.1 (Version v0.1-pre-release) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.4159715
+
+The sample information are listed here: 
+
+| Cell line     | Replicate | Sequencing protocol |
+|---------------|-----------|---------------------|
+| A549          |	1	        | cDNA                |
+| A549          | 2         | direct cDNA         |
+| A549          |	3	        | direct cDNA         |
+| K562          | 1         | cDNA                |
+| K562          | 2         | direct cDNA         |
+| K562          |	3	        | direct cDNA         |
 
 ### Files
 
