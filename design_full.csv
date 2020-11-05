@@ -1,7 +1,7 @@
 group,replicate,fastq_1,fastq_2
-GM12878_STD,1,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/004/SRR5427884/SRR5427884_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/004/SRR5427884/SRR5427884_2.fastq.gz
-GM12878_STD,2,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/005/SRR5427885/SRR5427885_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/005/SRR5427885/SRR5427885_2.fastq.gz
-GM12878_OMNI,1,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/006/SRR5427886/SRR5427886_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/006/SRR5427886/SRR5427886_2.fastq.gz
-GM12878_OMNI,2,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/007/SRR5427887/SRR5427887_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/007/SRR5427887/SRR5427887_2.fastq.gz
-GM12878_FAST,1,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/008/SRR5427888/SRR5427888_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/008/SRR5427888/SRR5427888_2.fastq.gz
-GM12878_FAST,2,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/009/SRR5427889/SRR5427889_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR542/009/SRR5427889/SRR5427889_2.fastq.gz
+GM12878_STD,1,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717909_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717909_T1_2.fastq.gz
+GM12878_STD,2,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717910_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717910_T1_2.fastq.gz
+GM12878_OMNI,1,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717911_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717911_T1_2.fastq.gz
+GM12878_OMNI,2,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717912_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717912_T1_2.fastq.gz
+GM12878_FAST,1,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717913_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717913_T1_2.fastq.gz
+GM12878_FAST,2,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717914_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717914_T1_2.fastq.gz
