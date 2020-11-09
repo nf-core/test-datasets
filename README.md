@@ -3,7 +3,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Test dataset
 
-The test dataset for dualrnaseq pipeline consist of subsets of genomes and annotation files of Human (GRCh38.p13) and *Salmonella* Typhimurium (FQ312003), which can be found in the `references/` directory and simulated paired-end reads located in the `PE_reads/` folder. 
+The test dataset for the dualrnaseq pipeline consists of subsets of genomes and annotation files of Human (GRCh38.p13) and *Salmonella* Typhimurium (FQ312003), which can be found in the `references/` directory and simulated paired-end reads located in the `PE_reads/` folder. 
 
 ## Read simulation procedure
 
