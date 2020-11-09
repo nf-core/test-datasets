@@ -1,4 +1,4 @@
-Fraction_Group	Sample	Fraction	Spectra_Filepath
+Sample	Sample_Group	MSstats_Condition	Spectra_Filepath
 1	Hela	A	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2016/06/PXD003179/Hela1ug_QC_Middle_DIA_15Da_150226_01.raw
 2	Hela	A	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2016/06/PXD003179/Hela1ug_QC_Middle_DIA_15Da_150226_02.raw
 3	Hela	A	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2016/06/PXD003179/Hela1ug_QC_Middle_DIA_15Da_150226_03.raw
