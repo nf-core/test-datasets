@@ -1,4 +1,4 @@
-Fraction_Group	Sample	Spectra_Filepath	Id_Filepath
+Sample	Sample_Group	Spectra_Filepath	Id_Filepath
 1	Malignant	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzML	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzid
 2	Malignant	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzML	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzid
 3	Benign	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzML	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DDA_test.mzid
