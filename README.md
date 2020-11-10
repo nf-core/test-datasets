@@ -12,7 +12,7 @@ _DRB1-3123.fa.gz_ FASTA data set consists of twelve HLA DRB1-3123 haplotypes tak
 
 ### Sequence information
 
-| Sequence   | Lenght    |
+| Sequence   | Length    |
 |-------------|------------|
 | gi\|568815592:32578768-32589835 | 11068 |
 | gi\|568815529:3998044-4011446 | 13403 |
@@ -34,11 +34,11 @@ pggb -i /data/HLA/DRB1-3123.fa.gz -s 3000 -K 11 -p 70 -a 70 -n 10 -t 2 -v -l
 ```
 
 #### Seqwish graph statistics
-| Lenght | Nodes | Edges | Paths |
+| Length | Nodes | Edges | Paths |
 | ----- | ----- | ----- | -----|
 | 23622 | 3608 | 4913 | 12 |
 
->Running the pipeline with the _DRB1-3123.fa.gz_ test data might result in slightly different outputs compared to what you see here. This is due to some _stochastic processes_ in [`smoothxg`](https://github.com/pangenome/smoothxg).
+> Running the pipeline with the _DRB1-3123.fa.gz_ test data might result in slightly different outputs compared to what you see here. This is due to some _stochastic processes_ in [`smoothxg`](https://github.com/pangenome/smoothxg).
 
 
 #### 1D visualization of the smoothed graph
