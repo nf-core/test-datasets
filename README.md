@@ -38,9 +38,6 @@ pggb -i /data/HLA/DRB1-3123.fa.gz -s 3000 -K 11 -p 70 -a 70 -n 10 -t 2 -v -l
 | ----- | ----- | ----- | -----|
 | 23622 | 3608 | 4913 | 12 |
 
-> Running the pipeline with the _DRB1-3123.fa.gz_ test data might result in slightly different outputs compared to what you see here. This is due to some _stochastic processes_ in [`smoothxg`](https://github.com/pangenome/smoothxg).
-
-
 #### 1D visualization of the smoothed graph
 
 ![test](./example_output/DRB1-3123/DRB1-3123.fa.pggb-s3000-p70-n10-a70-K11-k8-w10000-j5000-e5000.smooth.og.viz.png)
