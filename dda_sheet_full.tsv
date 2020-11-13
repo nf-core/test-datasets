@@ -1,4 +1,4 @@
-Sample	Sample_Group	Spectra_Filepath	Id_Filepath
+Sample	BatchID	Spectra_Filepath	Id_Filepath
 1	Hela	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2016/06/PXD003179/Hela1ug_QC_Middle_DDA_150226_01_150227005127.raw	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/Hela1ug_QC_Middle_DDA_150226_01_idx_psm_perc_filt.idXML
 2	Hela	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2016/06/PXD003179/Hela1ug_QC_Middle_DDA_150226_02_150227032618.raw	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/Hela1ug_QC_Middle_DDA_150226_02_idx_psm_perc_filt.idXML
 3	Hela	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2016/06/PXD003179/Hela1ug_QC_Middle_DDA_150226_03_150227060105.raw	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/Hela1ug_QC_Middle_DDA_150226_03_idx_psm_perc_filt.idXML
