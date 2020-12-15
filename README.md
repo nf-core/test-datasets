@@ -7,7 +7,7 @@ This branch contains test data for the [nf-core/mag](https://github.com/nf-core/
 
 ## Full-size test data
 
-The `manifext.full.txt` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. *Nature Biotechnology* (2019)](https://doi.org/10.1038/s41587-019-0191-2).
+The `manifext.full.tsv` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. *Nature Biotechnology* (2019)](https://doi.org/10.1038/s41587-019-0191-2).
 
 | SAMPLE    | ILLUMINA READS: ENA ID | ONT READs: ENA ID |
 |-----------|------------------------|-------------------|
