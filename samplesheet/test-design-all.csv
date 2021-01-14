@@ -1,0 +1,7 @@
+sample_id,id,experiment,group,control,data1,data2
+h3k27me3_rep1,h3k27me3_rep1,h3k27me3,rep1,no,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k27me3_rep1_r1.fastq.gz,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k27me3_rep1_r2.fastq.gz,
+h3k27me3_rep2,h3k27me3_rep2,h3k27me3,rep2,no,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k27me3_rep2_r1.fastq.gz,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k27me3_rep2_r2.fastq.gz,
+h3k4me3_rep1,h3k4me3_rep1,h3k4me3,rep1,no,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k4me3_rep1_r1.fastq.gz,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k4me3_rep1_r2.fastq.gz,
+h3k4me3_rep2,h3k4me3_rep2,h3k4me3,rep2,no,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k4me3_rep2_r1.fastq.gz,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/h3k4me3_rep2_r2.fastq.gz,
+igg_rep1,igg_rep1,igg,rep1,yes,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/igg_rep1_r1.fastq.gz,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/igg_rep1_r2.fastq.gz,
+igg_rep2,igg_rep2,igg,rep2,yes,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/igg_rep2_r1.fastq.gz,https://raw.githubusercontent.com/luslab/nf-cut-tag/master/test_data/GSE145187/igg_rep2_r2.fastq.gz
