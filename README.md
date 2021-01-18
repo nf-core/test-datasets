@@ -13,7 +13,7 @@ This branch contains test data for the [nf-core/clipseq](https://github.com/nf-c
 
 ## Test dataset origin
 
-*H. sapiens* single-end iCLIP data for two replicate was obtained from: [Exon junction complex shapes the transcriptome by repressing recursive splicing](https://doi.org/10.1016/j.molcel.2018.09.033) and subsampled to chromosome 20.
+*H. sapiens* single-end iCLIP data for two replicates was obtained from: [Exon junction complex shapes the transcriptome by repressing recursive splicing](https://doi.org/10.1016/j.molcel.2018.09.033) and subsampled to chromosome 20.
 
 ## Support
 
