@@ -7,7 +7,7 @@ This branch contains test data for the [nf-core/clipseq](https://github.com/nf-c
 
 ## Contents of this repository
 
-- `prpf8-metadata.csv`: Experiment metadata input file for minimal test dataset
+- `metadata.csv`: Experiment metadata input file for minimal test dataset
 - `reference/`: Genome reference FASTA file
 - `reads/`: Subsampled FASTQ files
 
