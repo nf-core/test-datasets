@@ -1,16 +1,41 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# [nf-core/epitopeprediction](https://github.com/nf-core/epitopeprediction) test data
 
-## Introduction
+This branch contains test data and non-free software for the epitopeprediction pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines.
+## Input data
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+* `variants/`
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+  Input files to be provided to the pipeline via `--input`
+* `proteins/`
 
-## Support
+  Alternative input files to be provided to the pipeline via `--proteins`
+* `peptides/`
 
-For further information or help, don't hesitate to get in touch on our [Gitter channel](https://gitter.im/nf-core/Lobby)
+  Alternative input files to be provided to the pipeline via `--peptides`
+
+## Additional data
+
+* `alleles/`
+
+  Allele lists to be provided to the pipeline via `--alleles`
+
+## Software
+
+* `software/non-free-software.tar.gpg`
+
+  An encrypted tarball providing non-free software supported by the pipeline to be used in CI tests. The tarball contains the original compressed tarballs for each tool as provided upstream.
+  ```
+  $ gpg -d software/non-free-software.tar.gpg | tar tv
+  gpg: AES256.CFB encrypted data
+  gpg: encrypted with 1 passphrase
+  -rw-r--r--  0 lk     staff 3624305 Jan 13 13:10 netMHC-4.0a.Linux.tar.gz
+  -rw-r--r--  0 lk     staff 8034930 Jan 14 17:49 netMHCII-2.2.Linux.tar.Z
+  -rw-r--r--  0 lk     staff 3251741 Jan 15 20:05 netMHCIIpan-3.1a.Linux.tar.gz
+  -rw-r--r--  0 lk     staff 1332999 Jan 15 16:18 netMHCpan-4.0a.Linux.tar.gz
+  lrwxr-xr-x  0 lk     staff       0 Jan 22 13:06 netmhc.tar.gz -> netMHC-4.0a.Linux.tar.gz
+  lrwxr-xr-x  0 lk     staff       0 Jan 22 13:06 netmhcii.tar.Z -> netMHCII-2.2.Linux.tar.Z
+  lrwxr-xr-x  0 lk     staff       0 Jan 22 13:06 netmhciipan.tar.gz -> netMHCIIpan-3.1a.Linux.tar.gz
+  lrwxr-xr-x  0 lk     staff       0 Jan 22 13:06 netmhcpan.tar.gz -> netMHCpan-4.0a.Linux.tar.gz
+  ```
+  The passphrase is included as a repository level secret in the pipeline repository.
