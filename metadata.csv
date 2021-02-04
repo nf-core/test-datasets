@@ -1,0 +1,3 @@
+sample,fastq
+exp1,https://raw.githubusercontent.com/nf-core/test-datasets/clipseq/reads/prpf8-hela-eif4a3-sirna-20190611-ju_trimmed_chr20_0_64444167.fq.gz
+exp2,https://raw.githubusercontent.com/nf-core/test-datasets/clipseq/reads/prpf8-hela-eif4a3-sirna-20190611-ju-2_trimmed_chr20_0_64444167.fq.gz

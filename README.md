@@ -1,15 +1,19 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+# test-datasets: `clipseq`
 
-nf-core is a collection of high quality Nextflow pipelines.
+This branch contains test data for the [nf-core/clipseq](https://github.com/nf-core/clipseq) pipeline.
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+## Contents of this repository
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+- `metadata.csv`: Experiment metadata input file for minimal test dataset
+- `reference/`: Genome reference FASTA file
+- `reads/`: Subsampled FASTQ files
+
+## Test dataset origin
+
+*H. sapiens* single-end iCLIP data for two replicates was obtained from: [Exon junction complex shapes the transcriptome by repressing recursive splicing](https://doi.org/10.1016/j.molcel.2018.09.033) and subsampled to chromosome 20.
 
 ## Support
 
