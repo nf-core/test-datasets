@@ -1,0 +1,8 @@
+samples	condition
+normal_rep1	normal
+normal_rep2	normal
+normal_rep3	normal
+tumor_rep1	tumor
+tumor_rep2	tumor
+tumor_rep3	tumor
+
