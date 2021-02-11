@@ -1,16 +1,17 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+## nf-core/circrna
+This branch contains test-data for `nf-core/circrna`.
 
-nf-core is a collection of high quality Nextflow pipelines.
+### Contents of branch:
+* `fastq/` 6 FASTQ read pairs.
+* `reference/` Reference annotation files
+* `source/` Scripts used to simulate circRNA FASTQ reads.
+* `phenotype.txt` metadata file for DESeq2.
+* `samples.csv` input test-dataset csv file
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+### Test-dataset generation strategy:
+Gencode GRCh38 (v34) GTF file was sub-sampled to chromosome 1, and split into 2 GTF files per chromosome arm, including only protein coding regions.
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+`CIRI_simulator.pl` was used on each sub-sampled chromosome 1 arm to generate reads mimicking differential circRNA expression.

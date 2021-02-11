@@ -1,0 +1,7 @@
+Sample_ID,Read1,Read2,Bam
+normal_rep1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/normal_rep1_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/normal_rep1_2.fq.gz,NA
+normal_rep2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/normal_rep2_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/normal_rep2_2.fq.gz,NA
+normal_rep3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/normal_rep3_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/normal_rep3_2.fq.gz,NA
+tumor_rep1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep1_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep1_2.fq.gz,NA
+tumor_rep2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep2_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep2_2.fq.gz,NA
+tumor_rep3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep3_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep3_2.fq.gz,NA
