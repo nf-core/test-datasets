@@ -6,24 +6,29 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### `samplesheet/`
 
-#### `samplesheet_test_sispa.csv`
+#### `samplesheet_test_nanopore.csv`
+
+Sample information sheet required to test the pipeline containing sample names and barcodes for MinION data hosted in this repository. For testing purposes, some barcodes have been appended to this samplesheet that may not necessarily have associated data. The raw data associated with this run can be found in [`nanopore/minion`](nanopore/minion), and has been sub-setted to include a maximum of 3 `fast5`/`fastq`files per barcode.
+
+#### `samplesheet_test_sra.csv`
+
+Sample information sheet required to test the pipeline containing sample information of one link to a original full FastQ files and two files that must be downloaded from SRA one single-end and one paired-end, respectively. This sample sheet corresponds to Illumina SISPA data.
+
+#### `samplesheet_test_illumina_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
 
-#### `samplesheet_test_amplicon.csv`
+#### `samplesheet_test_illumina_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina amplicon data.
 
-#### `samplesheet_full_sispa.csv`
+#### `samplesheet_full_illumina_sispa.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina SISPA data.
 
-#### `samplesheet_full_amplicon.csv`
+#### `samplesheet_full_illumina_amplicon.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina amplicon data.
-
-#### `samplesheet_test_sra.csv`
-Sample information sheet required to test the pipeline containing sample information of one link to a original full FastQ files and two files that must be downloaded from SRA one single-end and one paired-end, respectively. This sample sheet corresponds to Illumina SISPA data.
 
 ### `genome/`
 
