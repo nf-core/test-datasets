@@ -1,7 +1,7 @@
 samples	condition
-normal_rep1	normal
-normal_rep2	normal
-normal_rep3	normal
+normal_rep1	control
+normal_rep2	control
+normal_rep3	control
 tumor_rep1	tumor
 tumor_rep2	tumor
 tumor_rep3	tumor
