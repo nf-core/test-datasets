@@ -1,7 +1,0 @@
-samples	condition
-control_rep1	control
-control_rep2	control
-control_rep3	control
-tumor_rep1	tumor
-tumor_rep2	tumor
-tumor_rep3	tumor
