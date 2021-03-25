@@ -5,14 +5,13 @@ Test data to be used for automated testing with the nf-core pipelines
 This branch contains test-data for `nf-core/circrna`.
 
 ### Contents of branch:
-* `fastq/` 6 FASTQ read pairs.
+* `fastq/` 9 FASTQ read pairs.
 * `reference/` Reference annotation files
-* `source/` Scripts used to simulate circRNA FASTQ reads.
-* `phenotype.txt` metadata file for DESeq2.
+* `phenotype.csv` metadata file for DESeq2.
 * `samples.csv` input test-dataset csv file
 
 ### Test-dataset generation strategy:
-Gencode GRCh38 (v34) GTF file was subsampled to chromosome 1 (protein coding only) and mock datasets were made for each phenotype in the experimental design: 
+Gencode GRCh38 (v34) GTF file was subsampled to chromosome 1 (protein coding only) and mock datasets were made for each phenotype in the experimental design:
 
 1. `control`: chromosome 1 arm 2
 2. `lung`: chromosome 1 arm 1
