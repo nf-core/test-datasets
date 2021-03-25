@@ -2,6 +2,9 @@ Sample_ID,Read1,Read2,Bam
 control_rep1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/control_rep1_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/control_rep1_2.fq.gz,NA
 control_rep2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/control_rep2_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/control_rep2_2.fq.gz,NA
 control_rep3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/control_rep3_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/control_rep3_2.fq.gz,NA
-tumor_rep1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep1_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep1_2.fq.gz,NA
-tumor_rep2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep2_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep2_2.fq.gz,NA
-tumor_rep3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep3_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/tumor_rep3_2.fq.gz,NA
+lung_rep1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/lung_rep1_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/lung_rep1_2.fq.gz,NA
+lung_rep2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/lung_rep2_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/lung_rep2_2.fq.gz,NA
+lung_rep3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/lung_rep3_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/lung_rep3_2.fq.gz,NA
+melanoma_rep1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/melanoma_rep1_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/melanoma_rep1_2.fq.gz,NA
+melanoma_rep2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/melanoma_rep2_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/melanoma_rep2_2.fq.gz,NA
+melanoma_rep3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/melanoma_rep3_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/melanoma_rep3_2.fq.gz,NA

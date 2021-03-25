@@ -2,6 +2,9 @@ samples,condition
 control_rep1,control
 control_rep2,control
 control_rep3,control
-tumor_rep1,tumor
-tumor_rep2,tumor
-tumor_rep3,tumor
+lung_rep1,lung
+lung_rep2,lung
+lung_rep3,lung
+melanoma_rep1,melanoma
+melanoma_rep2,melanoma
+melanoma_rep3,melanoma
