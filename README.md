@@ -12,6 +12,10 @@ This branch contains test-data for `nf-core/circrna`.
 * `samples.csv` input test-dataset csv file
 
 ### Test-dataset generation strategy:
-Gencode GRCh38 (v34) GTF file was sub-sampled to chromosome 1, and split into 2 GTF files per chromosome arm, including only protein coding regions.
+Gencode GRCh38 (v34) GTF file was subsampled to chromosome 1 (protein coding only) and mock datasets were made for each phenotype in the experimental design: 
 
-`CIRI_simulator.pl` was used on each sub-sampled chromosome 1 arm to generate reads mimicking differential circRNA expression.
+1. `control`: chromosome 1 arm 2
+2. `lung`: chromosome 1 arm 1
+3. `melanoma`: chromosome 1 arm 1 + 2
+
+3 replicates of each phenotype were generated, with 2 of the 3 replicates being identical to ensure differentially expressed circRNAs can be detected by `DESeq2`.
