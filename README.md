@@ -21,13 +21,19 @@ Please ask [Olga Botvinnik](https://github.com/olgabot) for details on how this 
 
 ### Kallisto/Bustools Testdata
 
-The [reference/kallisto] and [testdata/kallisto] folders hold testing data that was subsetted to be able to utilize the data on automated continous integration services due to memory and time restrictions on these services. The data used here refers to [this howto article](https://www.kallistobus.tools/getting_started_explained.html). The files were subsetted utilizing these commands:
+The [reference/kallisto] and [testdata/kallisto] folders hold testing data that was subsetted to be able to utilize the data on automated continous integration services due to memory and time restrictions on these services. The data used here refers to [this howto article](https://www.kallistobus.tools/tutorials/kb_getting_started/python/kb_intro_2_python/). The files were subsetted utilizing these commands:
 
 ```bash
 zcat SRR8599150_S1_L001_R1_001.fastq.gz |head -n 5000 > SRR8599150_S1_L001_R1_001.sub5000.fastq
 zcat SRR8599150_S1_L001_R2_001.fastq.gz |head -n 5000 > SRR8599150_S1_L001_R2_001.sub5000.fastq
 zcat Mus_musculus.GRCm38.cdna.all.fa.gz | sed -n '433032,517910 p'
 zcat Mus_musculus.GRCm38.96.gtf.gz | grep -e '^#' -e '^19' > Mus_musculus.GRCm38.96.chr19.gtf
+
+## New reference files for kb wrapper (requires genomic fasta)
+## kb can handle gzipped files and we therefore use gzipped references to keep them small
+zgrep "chr19" gencode.vM26.annotation.gtf.gz | gzip > chr19.gtf.gz
+zcat gencode.VM26.chr19.gtf.gz | head -10000 | gzip > gencode.VM26.chr19_10k.gtf.gz ## The gtf only contains a part of chr19 to keep it small
+zcat chr19.fa.gz | head -100000 | gzip > chr19_100k.fa.gz ## The fasta only contains sequences for the genes defined in the gtf to keep it small
 ```
 
 The GTF file contains annotation for more than just the chr19 data but has large portions of exons on chr19, so gives somewhat meaningful results. The cdna file was evaluated manually to determine an appropriate range with chr19 entries for testing.
