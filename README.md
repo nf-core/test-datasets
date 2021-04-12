@@ -39,6 +39,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 1. If we have a file called "chrI.fa" containing a single chromosome from _S. cerevisiae_ just edit the fasta entry header to include the taxonomy info as suggested in the Kraken2 manual (see [docs](https://github.com/DerrickWood/kraken2/wiki/Manual#custom-databases)) e.g. rename the entry header from `>I` to `>I|kraken:taxid|4932`.
 
+> NB: May not have to do this step but I just did it anyway.
+
 2. Build Kraken2 database for custom genome
 
     ```console
@@ -47,8 +49,6 @@ This branch contains test data to be used for automated testing with the [nf-cor
     kraken2-build --add-to-library chrI.fa --db $DBNAME
     kraken2-build --build --db $DBNAME
     ```
-
-    > NB: May not have to do this step but I just did it anyway.
 
 3. (OPTIONAL) Download publicly available fastq files with [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline (see [docs](https://nf-co.re/rnaseq/3.0/usage#direct-download-of-public-repository-data)). This also auto-generates a samplesheet that can be easily re-formatted to work as input with nf-core/viralrecon in the following next step:
 
