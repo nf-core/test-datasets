@@ -50,13 +50,15 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
     > NB: May not have to do this step but I just did it anyway.
 
-3. (OPTIONAL) Download test data with nf-core/rnaseq pipeline (see [docs](https://nf-co.re/rnaseq/3.0/usage#direct-download-of-public-repository-data)). This also auto-generates a samplesheet that can be easily re-formatted to work as input with nf-core/viralrecon in the following next step:
+3. (OPTIONAL) Download test data with [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline (see [docs](https://nf-co.re/rnaseq/3.0/usage#direct-download-of-public-repository-data)). This also auto-generates a samplesheet that can be easily re-formatted to work as input with nf-core/viralrecon in the following next step:
 
     ```console
-    nextflow run nf-core/rnaseq --public_data_ids ids.txt -profile crick
+    nextflow run nf-core/rnaseq \
+        --public_data_ids ids.txt \
+        -profile singularity
     ```
 
-4. Only run the Kraken2 process from the nf-core/viralrecon pipeline to get filtered fastq files:
+4. Only run the Kraken2 process from the [nf-core/viralrecon](https://github.com/nf-core/viralrecon) pipeline to get filtered fastq files:
 
     ```console
     nextflow run nf-core/viralrecon \
