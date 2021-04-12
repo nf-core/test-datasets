@@ -39,7 +39,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 1. If we have a file called "chrI.fa" containing a single chromosome from _S. cerevisiae_ just edit the fasta entry header to include the taxonomy info as suggested in the Kraken2 manual (see [docs](https://github.com/DerrickWood/kraken2/wiki/Manual#custom-databases)) e.g. rename the entry header from `>I` to `>I|kraken:taxid|4932`.
 
-> NB: May not have to do this step but I just did it anyway.
+    > NB: May not have to do this step but I just did it anyway.
 
 2. Build Kraken2 database for custom genome
 
