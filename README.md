@@ -18,7 +18,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 > Andrew C K Wu, Harshil Patel, Minghao Chia, Fabien Moretto, David Frith, Ambrosius P Snijders, Folkert J van Werven. Repression of Divergent Noncoding Transcription by a Sequence-Specific Transcription Factor. Mol Cell. 2018 Dec 20;72(6):942-954.e7. doi: 10.1016/j.molcel.2018.10.018. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/30576656/) [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE110004)
 
-### Sample information
+### Sampling information
 
 | run_accession | experiment_alias | read_count | sample_title                                                              |
 |---------------|------------------|------------|---------------------------------------------------------------------------|
@@ -37,13 +37,63 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### Sampling procedure
 
-The example command below was used to sub-sample the raw paired-end FastQ files to 50,000 reads (see [seqtk](https://github.com/lh3/seqtk)).
+1. If we have a file called "chrI.fa" containing a single chromosome from _S. cerevisiae_ just edit the fasta entry header to include the taxonomy info as suggested in the Kraken2 manual (see [docs](https://github.com/DerrickWood/kraken2/wiki/Manual#custom-databases)) e.g. rename the entry header from `>I` to `>I|kraken:taxid|4932`.
 
-```bash
-mkdir -p sample
-seqtk sample -s100 SRR6357070_1.fastq.gz 50000 | gzip > ./sample/SRR6357070_1.fastq.gz
-seqtk sample -s100 SRR6357070_2.fastq.gz 50000 | gzip > ./sample/SRR6357070_2.fastq.gz
-```
+2. Build Kraken2 database for custom genome
+
+    ```console
+    DBNAME='yeast_chrI'
+    kraken2-build --download-taxonomy --db $DBNAME
+    kraken2-build --add-to-library chrI.fa --db $DBNAME
+    kraken2-build --build --db $DBNAME
+    ```
+
+    > NB: May not have to do this step but I just did it anyway.
+
+3. (OPTIONAL) Download test data with [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline (see [docs](https://nf-co.re/rnaseq/3.0/usage#direct-download-of-public-repository-data)). This also auto-generates a samplesheet that can be easily re-formatted to work as input with nf-core/viralrecon in the following next step:
+
+    ```console
+    nextflow run nf-core/rnaseq \
+        --public_data_ids ids.txt \
+        -profile singularity
+    ```
+
+4. Only run the Kraken2 process from the [nf-core/viralrecon](https://github.com/nf-core/viralrecon) pipeline to get filtered fastq files:
+
+    ```console
+    nextflow run nf-core/viralrecon \
+        --input samplesheet.csv \
+        --kraken2_db yeast_chrI/ \
+        --fasta chrI.fa \
+        --platform illumina \
+        --protocol metagenomic \
+        --skip_fastqc \
+        --skip_fastp \
+        --skip_multiqc \
+        --skip_assembly \
+        --skip_variants \
+        -profile singularity \
+        -c custom.config \
+    ```
+
+    The contents of `custom.config` are defined below and are used to tell the pipeline to also publish the "fastq.gz" files because this isn't done by default:
+
+    ```nextflow
+    params {
+        modules {
+            'illumina_kraken2_run' {
+                publish_files = ['txt':'', 'fastq.gz':'']
+            }
+        }
+    }
+    ```
+
+5. The example command below was used to sub-sample the raw paired-end FastQ files to 50,000 reads (see [seqtk](https://github.com/lh3/seqtk)):
+
+    ```console
+    seqtk sample -s100 SRR6357070.classified_1.fastq.gz 50000 | gzip > SRR6357070_1.fastq.gz
+    seqtk sample -s100 SRR6357070.classified_2.fastq.gz 50000 | gzip > SRR6357070_2.fastq.gz
+    ```
 
 ## Full test dataset origin
 
@@ -71,7 +121,7 @@ The GM12878 and K562 ENCODE data was also used to benchmark RNA-seq quantificati
 
 In case the GTF gene annotation file gets updated, then GFF would also need to get updated. One can use [gffread](https://bioconda.github.io/recipes/gffread/README.html) to perform the conversion:
 
-```bash
+```console
 gffread -F --keep-exon-attrs genes.gtf > genes.gff
 ```
 
@@ -84,7 +134,7 @@ Explanation of flags:
 
 In case the reference genomes or gene annotations get updated, the gzipped references would need to get updated, too. To make the gzipped references, run the following snippet in the `reference` folder:
 
-```bash
+```console
 for F in $(ls -1 | grep -vE '.gz$'); do echo $F ; gzip -c $F > $F.gz ; done
 ```
 
