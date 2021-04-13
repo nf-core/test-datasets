@@ -53,8 +53,11 @@ If you cannot find suitable test data on this repository, please contact us on t
             * 'test_unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
         * bedgraph
             * 'test.bedgraph'
-         * 'contigs.fasta' sarscov2 contigs obtained running SPAdes `--rnaviral`on sample1 of the [nf-core/viralrecon tests-dataset](https://github.com/nf-core/test-datasets/tree/viralrecon/illumina/amplicon)
-        * 'scaffolds.fasta' sarscov2 scaffolds obtained running SPAdes `--rnaviral`on sample1 of the [nf-core/viralrecon test-dataset](https://github.com/nf-core/test-datasets/tree/viralrecon/illumina/amplicon)
+        * bigwig
+            * 'test.bw'
+        * fasta
+            * 'contigs.fasta': sarscov2 contigs obtained running SPAdes `--rnaviral`on sample1 of the [nf-core/viralrecon tests-dataset](https://github.com/nf-core/test-datasets/tree/viralrecon/illumina/amplicon)
+            * 'scaffolds.fasta': sarscov2 scaffolds obtained running SPAdes `--rnaviral`on sample1 of the [nf-core/viralrecon test-dataset](https://github.com/nf-core/test-datasets/tree/viralrecon/illumina/amplicon)
         * fastq
             * 'test_{1,2}.fastq.gz' sarscov2 paired-end sequencing reads
             * 'test_{1,2}.2.fastq.gz‘: copies of the above reads
