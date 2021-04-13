@@ -55,6 +55,8 @@ If you cannot find suitable test data on this repository, please contact us on t
             * 'test.bedgraph'
         * bigwig
             * 'test.bw'
+        * deeptools
+            * 'test.computeMatrix.mat.gz': matrix generated with deeptools computeMatrix using 'test.bw'
         * fasta
             * 'contigs.fasta': sarscov2 contigs obtained running SPAdes `--rnaviral`on sample1 of the [nf-core/viralrecon tests-dataset](https://github.com/nf-core/test-datasets/tree/viralrecon/illumina/amplicon)
             * 'scaffolds.fasta': sarscov2 scaffolds obtained running SPAdes `--rnaviral`on sample1 of the [nf-core/viralrecon test-dataset](https://github.com/nf-core/test-datasets/tree/viralrecon/illumina/amplicon)
