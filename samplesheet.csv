@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+ERR2172265,test/input/ERR2172265_1.fastq.gz,test/input/ERR2172265_2.fastq.gz
+ERR2172266,test/input/ERR2172266_1.fastq.gz,test/input/ERR2172266_2.fastq.gz
+ERR2172267,test/input/ERR2172267_1.fastq.gz,test/input/ERR2172267_2.fastq.gz
