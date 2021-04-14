@@ -9,4 +9,5 @@ Please fill in the appropriate checklist below (delete whatever is not relevant)
  - [ ] Add your test dataset
  - [ ] Make a PR on a new branch with a relevant name
  - [ ] Wait for the PR to be merged
- - [ ] Use this newly created branch for your tests
+ - [ ] Use this newly created branch for your test
+s
