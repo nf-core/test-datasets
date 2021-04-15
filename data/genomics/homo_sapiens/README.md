@@ -20,7 +20,7 @@
     chr22   16570000        16610000
     ```
 
-2. Save in `region.txt`
+2. Save in `test.bed`
 
 ## VCF reference files
 
@@ -39,6 +39,9 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
     bcftools filter dbsnp_146.hg38.chr22.vcf.gz -r chr22:16570000-16610000 > region_22/dbsnp_146.hg38.chr22_region.vcf
     bgzip dbsnp_146.hg38.chr22_region.vcf
     tabix dbsnp_146.hg38.chr22_region.vcf.gz
+
+    mv dbsnp_146.hg38.chr22_region.vcf.gz dbsnp_146.hg38.vcf.gz
+    mv dbsnp_146.hg38.chr22_region.vcf.gz.tbi dbsnp_146.hg38.vcf.gz.tbi
     ```
 
 2. Manipulate mills & gnomAD file, by changing chr length for chr22 to 40001
@@ -48,7 +51,7 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
 As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes/chr22.fasta` was used.
 
 ```bash
-samtools faidx chr22.fasta chr22:16570000-16610000  > region_22/chr22_region.fasta
+samtools faidx chr22.fasta chr22:16570000-16610000  > genome.fasta
 ```
 
 ## Sarek pipeline alteration to generate all output files
@@ -61,10 +64,10 @@ samtools faidx chr22.fasta chr22:16570000-16610000  > region_22/chr22_region.fas
     gatk --java-options -Xmx${task.memory.toGiga()}g SamToFastq --INPUT=${inputFile1} --FASTQ=/dev/stdout --INTERLEAVE=true     --NON_PF=true > ${inputFile1}.fq.gz
     ```
 
-   and `publish` the reads. Un-interleave reads after sarek is run:
+    and `publish` the reads. Un-interleave reads after sarek is run:
 
     ```bash
-    paste - - - - - - - - < testT_umi-consensus.bam.fq.gz | tee >(cut -f 1-4 | tr "\t" "\n" > testT.1.fq) | cut -f 5-8 | tr "\t" "\n" > testT.2.fq
+    paste - - - - - - - - < test2_umi-consensus.bam.fq.gz | tee >(cut -f 1-4 | tr "\t" "\n" > test2_1.fq) | cut -f 5-8 | tr "\t" "\n" > test2_2.fq
     ```
 
 4. Add `publishDir` to HaplotypeCaller process to publish `.g.vcf` files
@@ -79,16 +82,16 @@ nextflow run  ~/.nextflow/assets/nf-core/sarek/main.nf -profile cfc -c sarek.con
 --aligner 'bwa-mem2' \
 --igenomes_ignore  \
 --save_reference \
---fasta './supportfiles/region_22/chr22_region.fasta' \
+--fasta 'genome.fasta' \
 --save_bam_mapped \
 --genome custom \
 --dict false \
---dbsnp './supportfiles/region_22/dbsnp_146.hg38.chr22_region.vcf.gz' \
---dbsnp_index './supportfiles/region_22/dbsnp_146.hg38.chr22_region.vcf.gz.tbi' \
---known_indels './supportfiles/region_22/Mills_and_1000G_gold_standard.indels.hg38.chr22_region.vcf.gz' \
---known_indels_index './supportfiles/region_22/Mills_and_1000G_gold_standard.indels.hg38.chr22_region.vcf.gz.tbi' \
---germline_resource './supportfiles/region_22/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.chr22_region.vcf.gz' \
---germline_resource_index './supportfiles/region_22/gnomAD.r2.1.1.GRCh38.PASS.AC.AF.only.chr22_region.vcf.gz.tbi' \
+--dbsnp 'dbsnp_146.hg38.vcf.gz' \
+--dbsnp_index 'dbsnp_146.hg38.vcf.gz.tbi' \
+--known_indels 'mills_and_1000G.indels.vcf.gz' \
+--known_indels_index 'mills_and_1000G.indels.vcf.gz.tbi' \
+--germline_resource 'gnomAD.r2.1.1.vcf.gz' \
+--germline_resource_index 'gnomAD.r2.1.1.vcf.gz.tbi' \
 --tools 'freebayes,mpileup,msisensor,cnvkit,strelka,HaplotypeCaller,Manta,tiddit' \
 --umi --read_structure1 "7M1S+T" --read_structure2 "7M1S+T" \
 --max_memory 59.GB \
@@ -99,8 +102,8 @@ nextflow run  ~/.nextflow/assets/nf-core/sarek/main.nf -profile cfc -c sarek.con
 with the following TSV:
 
 ```bash
-test    XY      0       testN   1       /sfs/7/workspace/ws/iizha01-dsl2_testdata_human-0/results_chr22/reads/test_normal.1.fq.gz       /sfs/7/workspace/ws/iizha01-dsl2_testdata_human-0/results_chr22/reads/test_normal.2.fq.gz
-test    XY      1       testT   2       /sfs/7/workspace/ws/iizha01-dsl2_testdata_human-0/results_chr22/reads/test_tumor.1.fq.gz        /sfs/7/workspace/ws/iizha01-dsl2_testdata_human-0/results_chr22/reads/test_tumor.2.fq.gz
+test	XY	0	testN	1	test_umi_1.fq.gz	test_umi_2.fq.gz
+test	XY	1	testT	2	test2_umi_1.fq.gz	test2_umi_2.fq.gz
 ```
 
 ## GTF/GFF
@@ -120,11 +123,20 @@ Downloaded the gtf and gff3 files from Ensembl:
     gzip -d
     ```
 
-3. Copy `region.txt`, change chromosome name to `22`
+3. Copy `test.bed`, change chromosome name to `22`
 
     ```bash
-    bedtools intersect -a region.txt -b Homo_sapiens.GRCh38.103.chr.gtf -wa -wb > interesting_genes.gtf
+    bedtools intersect -a test.bed -b Homo_sapiens.GRCh38.103.chr.gtf -wa -wb > genome_bed.gtf
     ```
+
+4. Remove the first three columns in both files:
+
+    ```bash
+    awk '{ $1=""; $2=""; $3=""; print}' genome_bed.gtf > genome.gtf
+    ```
+
+5. Change chromosome name to `chr22`
+6. Replace spaces with tabs
 
 ## Limitations
 
