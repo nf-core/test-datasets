@@ -20,7 +20,7 @@
     chr22   16570000        16610000
     ```
 
-2. Save in `test.bed`
+2. Save length in `test.bed` 0-40001
 
 ## VCF reference files
 

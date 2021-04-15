@@ -83,3 +83,39 @@ If you cannot find suitable test data on this repository, please contact us on t
             * 'test.fastq.gz'
         * sequencing_summary
             * 'test.sequencing_summary.txt'
+
+
+* homo_sapiens
+    * genome
+        * dbsnp: DBSnp file downsampled based on reference position
+        * dict: Sequence dictionary corresponding to `fasta`
+        * fasta: Reference fasta based on chr22:16570000-16610000
+        * gff3: Encode GFF3 file downsampled based on reference position
+        * gtf: Encode GTF file downsampled based on reference position
+        * sizes:
+        * gnomAD: gnomAD file downsampled based on reference position
+        * mills_and_1000G: Indels file downsampled based on reference position
+        * .bed
+    * illumina
+        * bam:
+            * test.sorted: Mapped, and sorted reads based on `test_{,umi}_{1,2}` (normal)
+            * test2.sorted: Mapped, and sorted reads based on `test2_{,umi}_{1,2}` (tumor)
+            * test_markduplicates: Mapped, sorted, and duplicate marked reads based on `test_{,umi}_{1,2}` (normal)
+            * test2_markduplicates: Mapped, sorted, and duplicate marked reads based on `test2_{,umi}_{1,2}` (tumor)
+            * test_recalibrated: Mapped, sorted, duplicate marked, and recalibrated reads based on `test_{,umi}_{1,2}` (normal)
+            * test2_recalibrated: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2_{,umi}_{1,2}` (tumor)
+
+            * UMI:
+                * test_umi: Files base on  `test_umi_{1,2}` (normal)
+                * test2_umi: Files base on  `test2_umi_{1,2}` (tumor)
+        * fastq:
+            * test_{1,2}: reads corresponding to normal sample
+            * test_umi_{1,2}: UMI tagged reads corresponding to normal sample
+            * test2_{1,2}: reads corresponding to tumor sample
+            * test2_umi_{1,2}: UMI tagged reads corresponding to tumor sample
+        * gatk:
+            * test: Recalibration table corresponding to `test_{,umi}_{1,2}` (normal) reads
+            * test2: Recalibration table corresponding to `test2_{,umi}_{1,2}` (tumor) reads
+        * gvcf:
+            * test: Genome vcf corresponding to `test_{,umi}_{1,2}` (normal) reads
+            * test2: Genome vcf corresponding to `test2_{,umi}_{1,2}` (tumor) reads
