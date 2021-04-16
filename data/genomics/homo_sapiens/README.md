@@ -137,6 +137,7 @@ Downloaded the gtf and gff3 files from Ensembl:
 
 5. Change chromosome name to `chr22`
 6. Replace spaces with tabs
+7. the coordinates in `genome.gtf` where adapted to start from 1
 
 ## Limitations
 
