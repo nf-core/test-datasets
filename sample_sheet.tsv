@@ -1,5 +1,5 @@
-Sample	BatchID	MSstats_Condition	Spectra_Filepath
-1	Study_1	Malignant	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_1.mzML
-2	Study_1	Benign	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_2.mzML
-3	Study_2	Malignant	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_3.mzML
-4	Study_2	Benign	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_4.mzML
+Sample	BatchID	MSstats_Condition	MSstats_BioReplicate	Spectra_Filepath
+1	Study_1	Malignant	Sample_1	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_1.mzML
+2	Study_1	Benign	Sample_1	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_2.mzML
+3	Study_2	Malignant	Sample_2	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_3.mzML
+4	Study_2	Benign	Sample_2	https://raw.githubusercontent.com/nf-core/test-datasets/diaproteomics/DIA_test_4.mzML
