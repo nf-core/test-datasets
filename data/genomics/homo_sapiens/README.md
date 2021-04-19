@@ -10,7 +10,7 @@
     sam-dump <Acc number> | samtools view -bS - > <Acc number>.bam
     ```
 
-3. Reads mapping to chr 22 were extracted and converted to `fq.gz` using [qbic-pipelines/bamtofastq](https://github.com/qbic-pipelines/bamtofastq)
+3. Reads mapping to chr 22 were extracted and converted to `fastq.gz` using [qbic-pipelines/bamtofastq](https://github.com/qbic-pipelines/bamtofastq)
 
 ## Determine region covered by reads
 
@@ -20,7 +20,7 @@
     chr22   16570000        16610000
     ```
 
-2. Save length in `test.bed` 0-40001
+2. Save length in `genome.bed` 0-40001
 
 ## VCF reference files
 
@@ -137,7 +137,7 @@ Downloaded the gtf and gff3 files from Ensembl:
 
 5. Change chromosome name to `chr22`
 6. Replace spaces with tabs
-7. the coordinates in `genome.gtf` where adapted to start from 1
+7. The coordinates in `genome.gtf` were adapted to start from 1
 
 ## Limitations
 
