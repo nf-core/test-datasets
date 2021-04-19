@@ -53,7 +53,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test.paired_end.{,methylated}.sorted.bam': sorted version of the above bam file
       * 'test.paired_end.{,methylated}.bam.sorted.bam.bai': bam index for the sorted bam file
       * 'test.single_end.bam': alignment (unsorted) of the 'test_1.fastq.gz' reads against test_genomic.fasta using minimap2
-      * 'test_unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
+      * 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
     * bedgraph
       * 'test.bedgraph'
     * bigwig
