@@ -121,3 +121,8 @@ If you cannot find suitable test data on this repository, please contact us on t
     * gvcf:
       * test: Genome vcf corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2: Genome vcf corresponding to `test2{,.umi}_{1,2}` (tumor) reads
+
+### Uncategorized
+
+* e_coli_k12_16s.fna: E. coli K-12 16S rRNA
+* bac.16S_rRNA.hmm: Bacterial 16S HMM file 
