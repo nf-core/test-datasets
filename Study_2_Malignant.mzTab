@@ -1,0 +1,107 @@
+MTD	mzTab-version	1.0
+MTD	mzTab-mode	Summary
+MTD	mzTab-type	Quantification
+MTD	description	mztab-like output summarizing DIAproteomics search results
+MTD	software	nfcore/DIAproteomics V.1.2.3
+MTD	false_discovery_rate	pep:global FDR	1.0
+MTD	ms_run[1]-location	DIA_test_3
+MTD	ms_run[2]-location	DIA_test_4
+
+PRH	accession	protein_abundance_sub[1]	protein_abundance_sub[2]	protein_abundance_stdev_sub[1]	protein_abundance_std_error_sub[1]	protein_abundance_stdev_sub[2]	protein_abundance_std_error_sub[2]	num_peptides	num_peptides_distinct	unit_id	description	taxid	species	database	database_version	search_engine	search_engine_score	reliability	num_peptides_unambiguous	ambiguity_members	modifications	uri	go_terms	protein_coverage
+PRT	sp|O00391|QSOX1_HUMAN	457163.1	96888.59113938731	null	null	null	null	4	2	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|O15400|STX7_HUMAN	4390.93	4390.84228515625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|O43915|VEGFD_HUMAN	225256.0	9466.328125	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|O75955|FLOT1_HUMAN	5647.59	5647.17431640625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P01009|A1AT_HUMAN	535144.37	498614.76930721605	null	null	null	null	8	4	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P02649|APOE_HUMAN	856497.0	856470.953125	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P05186|PPBT_HUMAN	30252.0	30249.6484375	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P06396|GELS_HUMAN	5054197.0	4821017.509770559	null	null	null	null	4	2	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P07858|CATB_HUMAN	47516.9	47516.986328125	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P08670|VIME_HUMAN	11413.9	1201.75449342264	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P08962|CD63_HUMAN	40691.4	40691.34765625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P09467|F16P1_HUMAN	6075.59	6075.46044921875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P10619|PPGB_HUMAN	12083.8	0.0	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P10809|CH60_HUMAN	5690.74	5690.9765625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P13639|EF2_HUMAN	439343.0	439334.294433594	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P13686|PPA5_HUMAN	533324.0	141039.85560103902	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P16284|PECA1_HUMAN	22807492.45	22807816.021972656	null	null	null	null	4	2	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P16949|STMN1_HUMAN	10513.5	10513.634765625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P17813|EGLN_HUMAN	9874.99	9875.3837890625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P20701|ITAL_HUMAN	8839.22	8839.416015625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P22102|PUR2_HUMAN	7714.41	7714.31787109375	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P35222|CTNB1_HUMAN	5671.24	5671.39013671875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P39023|RL3_HUMAN	24938.6	24939.6279296875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P41250|GARS_HUMAN	155167.0	155166.935058594	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P46781|RS9_HUMAN	3998.27	3998.22119140625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P60660|MYL6_HUMAN	11293.9	11293.1044921875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|P62495|ERF1_HUMAN	4795.29	4795.3935546875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q01518|CAP1_HUMAN	96276.67	68457.78588867208	null	null	null	null	6	3	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q02790|FKBP4_HUMAN	23279.2	23279.3449707031	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q07075|AMPE_HUMAN	20091.8	20090.935546875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q07954|LRP1_HUMAN	565342.7	494324.520429688	null	null	null	null	4	2	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q13332|PTPRS_HUMAN	6680.46	6680.84619140625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q13753|LAMC2_HUMAN	6258.6	6258.5419921875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q15084|PDIA6_HUMAN	67369.6	67366.3984375	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q15149|PLEC_HUMAN	6626.01	6625.73046875	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q16706|MA2A1_HUMAN	15185.6	15186.15234375	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q2M385|MPEG1_HUMAN	43315.7	43316.4375	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q8IV08|PLD3_HUMAN	116063.0	116068.1484375	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q96MM7|H6ST2_HUMAN	10464.9	10464.7939453125	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q9C0D0|PHAR1_HUMAN	34462.8	34462.1494140625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q9H013|ADA19_HUMAN	29824.0	29823.3759765625	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q9NZM1|MYOF_HUMAN	549271.0	454212.6953125	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+PRT	sp|Q9Y5K6|CD2AP_HUMAN	4169.27	4169.15283203125	null	null	null	null	2	1	null	null	null	null	null	null	null	null	null	null	null	null	null	null	null
+
+PEH	sequence	accession	charge	mass_to_charge	peptide_abundance_sub[1]	peptide_abundance_sub[2]	peptide_abundance_stdev_sub[1]	peptide_abundance_std_error_sub[1]	peptide_abundance_stdev_sub[2]	peptide_abundance_std_error_sub[2]	retention_time	search_engine	unit_id	unique	database	database_version	search_engine_score	reliability	modifications	uri	spectra_ref
+PEP	AEERRKSHEAEVLKQL	sp|P16949|STMN1_HUMAN	4.0	481.5156	10513.5	10513.634765625	null	null	null	null	2075.115	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	AHNNYQAQSAVPLR	sp|P05186|PPBT_HUMAN	3.0	523.6025	30252.0	30249.6484375	null	null	null	null	2151.29	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	APFHTAREM(UniMod:35)ANAKEIART	sp|P13686|PPA5_HUMAN	4.0	508.2614	533324.0	141039.85560103902	null	null	null	null	1856.9299999999998	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	AQRISSNIQKITQ	sp|O15400|STX7_HUMAN	3.0	496.2827	4390.93	4390.84228515625	null	null	null	null	1907.3000000000002	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	ASHFEQM(UniMod:35)AAASM(UniMod:35)HR	sp|O00391|QSOX1_HUMAN	3.0	535.9014	57485.1	0.0	null	null	null	null	1978.1950000000002	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	AYVM(UniMod:35)EKAGGMA	sp|P09467|F16P1_HUMAN	2.0	572.2623	6075.59	6075.46044921875	null	null	null	null	1885.585	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	DDLGKDEL	sp|Q15084|PDIA6_HUMAN	2.0	452.7166	67369.6	67366.3984375	null	null	null	null	1850.72	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	DM(UniMod:35)QKLTHGVLHT	sp|Q8IV08|PLD3_HUMAN	3.0	465.9065	116063.0	116068.1484375	null	null	null	null	1847.995	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	DSLPLVDTHSKRT	sp|P08670|VIME_HUMAN	3.0	490.2633	11413.9	1201.75449342264	null	null	null	null	1807.5549999999998	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	DSQKHIDF	sp|P46781|RS9_HUMAN	2.0	495.23800000000006	3998.27	3998.22119140625	null	null	null	null	1974.605	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	FVRHILSG	sp|P60660|MYL6_HUMAN	2.0	464.7718	11293.9	11293.1044921875	null	null	null	null	1909.42	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	GFEKISKGANPVE	sp|P10809|CH60_HUMAN	2.0	688.3644	5690.74	5690.9765625	null	null	null	null	1952.7649999999999	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	GKRKVINTPEILRKPS	sp|Q9H013|ADA19_HUMAN	4.0	459.7849	29824.0	29823.3759765625	null	null	null	null	1816.98	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	GPKIHQVKHM(UniMod:35)YQVRIQPS	sp|P20701|ITAL_HUMAN	4.0	541.2967	8839.22	8839.416015625	null	null	null	null	1846.505	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	GSGGREHTLAWKLAQSHH	sp|P22102|PUR2_HUMAN	4.0	493.7529	7714.41	7714.31787109375	null	null	null	null	1841.7150000000001	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	GSGHM(UniMod:35)EVLRGHEF	sp|Q07954|LRP1_HUMAN	3.0	491.2297	14795.7	14795.404296875	null	null	null	null	1863.49	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	GSNSNRYERLKATQVSKGI	sp|P06396|GELS_HUMAN	4.0	527.7856	4913210.0	4774503.74515363	null	null	null	null	1971.795	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	HKPKSWVAAEKMYHT	sp|Q9NZM1|MYOF_HUMAN	4.0	453.9858	549271.0	454212.6953125	null	null	null	null	1996.4850000000001	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	HPKEYGALSNM(UniMod:35)PVAKE	sp|Q07075|AMPE_HUMAN	3.0	596.2979	20091.8	20090.935546875	null	null	null	null	1845.115	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	IFKPWKWRKKKSEK	sp|Q9C0D0|PHAR1_HUMAN	4.0	473.0373	34462.8	34462.1494140625	null	null	null	null	2114.89	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	IKKLIKSLEAARGNGTS	sp|P62495|ERF1_HUMAN	3.0	596.023	4795.29	4795.3935546875	null	null	null	null	1998.395	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	IRKVYNREIAM(UniMod:35)KISSD	sp|Q16706|MA2A1_HUMAN	4.0	485.5162	15185.6	15186.15234375	null	null	null	null	1968.0149999999999	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	IRSGYEVM(UniMod:35)	sp|P08962|CD63_HUMAN	2.0	485.7368	40691.4	40691.34765625	null	null	null	null	1961.5900000000001	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	KELQAAQARLGADM(UniMod:35)	sp|P02649|APOE_HUMAN	3.0	506.5962	856497.0	856470.953125	null	null	null	null	1805.42	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	KGLFRRGEAHLAVN	sp|Q02790|FKBP4_HUMAN	3.0	523.2987	23279.2	23279.3449707031	null	null	null	null	1898.1100000000001	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	KLEKTKSLAQQLTRE	sp|Q13753|LAMC2_HUMAN	3.0	591.6791	6258.6	6258.5419921875	null	null	null	null	1870.005	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	KLSKAVHKAVLTID	sp|P01009|A1AT_HUMAN	3.0	508.3154	423425.0	423423.8359375	null	null	null	null	1946.255	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	KLSKAVHKAVLTIDEK	sp|P01009|A1AT_HUMAN	3.0	594.0279	2763.57	2763.46850585938	null	null	null	null	1941.325	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	KLSKAVHKAVLTIDEKG	sp|P01009|A1AT_HUMAN	3.0	613.035	8949.8	8949.1953125	null	null	null	null	2184.1899999999996	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	KVVKKSNTVQIVV	sp|P16284|PECA1_HUMAN	3.0	481.3082	4292.45	4292.52197265625	null	null	null	null	1958.635	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	LKARKRVLEAKELALQPK	sp|P41250|GARS_HUMAN	4.0	523.5836	155167.0	155166.935058594	null	null	null	null	1835.92	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	LPIKRERHGNVASLVQR	sp|Q9Y5K6|CD2AP_HUMAN	4.0	494.0433	4169.27	4169.15283203125	null	null	null	null	1912.58	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	LRLKSFTSM(UniMod:35)DSRSASHRST	sp|O43915|VEGFD_HUMAN	4.0	546.5301	225256.0	9466.328125	null	null	null	null	2135.47	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	NSNRYERLKATQVSKGI	sp|P06396|GELS_HUMAN	4.0	491.7723	140987.0	46513.7646169286	null	null	null	null	2115.605	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	PSPKRATKKEPAVLELEGK	sp|Q01518|CAP1_HUMAN	4.0	520.3047	6043.77	6043.92578125	null	null	null	null	1931.795	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	QEQRKFLKGRLLQTH	sp|Q96MM7|H6ST2_HUMAN	4.0	471.2747	10464.9	10464.7939453125	null	null	null	null	1966.475	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SGHM(UniMod:35)EVLRGHEF	sp|Q07954|LRP1_HUMAN	3.0	472.2226	550547.0	479529.116132813	null	null	null	null	1877.4850000000001	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SGVYQHVTGEM(UniMod:35)M(UniMod:35)GGH	sp|P07858|CATB_HUMAN	3.0	541.2293	47516.9	47516.986328125	null	null	null	null	2181.135	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SHFEQMAAASM(UniMod:35)HR	sp|O00391|QSOX1_HUMAN	3.0	506.8907	399678.0	96888.59113938731	null	null	null	null	1852.62	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SHRKFSAPRHGSLGFLPRKR	sp|P39023|RL3_HUMAN	5.0	467.6692	24938.6	24939.6279296875	null	null	null	null	1899.01	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SLYRQLAHQ	sp|P01009|A1AT_HUMAN	2.0	558.3014	100006.0	63478.2695513567	null	null	null	null	2135.52	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SPKRATKKEPAVLELEGK	sp|Q01518|CAP1_HUMAN	4.0	496.0415	77324.9	52805.4492187502	null	null	null	null	2049.83	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SPNKHNRLYMKARPFPDG	sp|P13639|EF2_HUMAN	4.0	532.7772	439343.0	439334.294433594	null	null	null	null	1843.6950000000002	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	SPSPKRATKKEPAVLELEGK	sp|Q01518|CAP1_HUMAN	4.0	542.0627	12908.0	9608.41088867188	null	null	null	null	1895.225	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	STEFQRM(UniMod:35)KTLQVKDQ	sp|Q2M385|MPEG1_HUMAN	3.0	618.9841	43315.7	43316.4375	null	null	null	null	1862.195	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	TGVSISQVNHKPLRTA	sp|O75955|FLOT1_HUMAN	3.0	569.9882	5647.59	5647.17431640625	null	null	null	null	1914.4250000000002	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	TQRFLQEEAEKM(UniMod:35)KQ	sp|Q15149|PLEC_HUMAN	3.0	594.6332	6626.01	6625.73046875	null	null	null	null	2040.615	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	TTSHVKPQHQM(UniMod:35)LFYKD	sp|P16284|PECA1_HUMAN	4.0	494.7478	22803200.0	22803523.5	null	null	null	null	1872.79	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	VAGHKEAHILRVLPGHSAGPR	sp|P17813|EGLN_HUMAN	4.0	551.3146	9874.99	9875.3837890625	null	null	null	null	1885.585	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	VVNKAAVM(UniMod:35)VHQLSK	sp|P35222|CTNB1_HUMAN	3.0	513.9607	5671.24	5671.39013671875	null	null	null	null	1835.615	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	YQVHYVRM(UniMod:35)EGAEARGPPR	sp|Q13332|PTPRS_HUMAN	4.0	533.7668	6680.46	6680.84619140625	null	null	null	null	1812.28	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
+PEP	YRRLYRSM(UniMod:35)NSQYLK	sp|P10619|PPGB_HUMAN	4.0	474.2493	12083.8	0.0	null	null	null	null	2060.585	OpenSwathWorkflow	null	null	null	null	null	null	null	null	null
