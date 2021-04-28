@@ -106,6 +106,23 @@ test	XY	0	testN	1	test_umi_1.fq.gz	test_umi_2.fq.gz
 test	XY	1	testT	2	test2_umi_1.fq.gz	test2_umi_2.fq.gz
 ```
 
+## GVCF files
+
+1. Set up conda environment:
+
+    ```bash
+    conda install -c bioconda gatk4=4.2.0.0
+    conda install -c bioconda tabix=1.11
+    ```
+
+2. Run commands on both `test.genome.vcf` and `test2.genome.vcf` files:
+
+    ```bash
+    gatk IndexFeatureFile -I test.genome.vcf
+    bgzip test.genome.vcf
+    tabix test.genome.vcf.gz
+    ```
+
 ## GTF/GFF
 
 Downloaded the gtf and gff3 files from Ensembl:
