@@ -100,6 +100,8 @@ If you cannot find suitable test data on this repository, please contact us on t
     * sizes
     * .bed
   * illumina
+    * 10xgenomics
+      * test_{1,2}.fastq.gz: 10X Genomics V3 fastq files from human PBMCs
     * bam:
       * test.paired_end.sorted: Mapped, and sorted reads based on `test{,.umi}_{1,2}` (normal)
       * test.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test{,.umi}_{1,2}` (normal)
