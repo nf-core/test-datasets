@@ -119,10 +119,14 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
     * gvcf:
-      * test: Genome vcf corresponding to `test{,.umi}_{1,2}` (normal) reads
-      * test2: Genome vcf corresponding to `test2{,.umi}_{1,2}` (tumor) reads
+      * test.genome.vcf: Genome vcf corresponding to `test{,.umi}_{1,2}` (normal) reads
+      * test2.genome.vcf: Genome vcf corresponding to `test2{,.umi}_{1,2}` (tumor) reads
+      * test{,2}.genome.vcf.gz: Bgzipped file based on `test{,2}.genome.vcf` file
+      * test{,2}.genome.vcf.gz.tbi: Tbi index based on `test{,2}.genome.vcf.gz` file
+      * test{,2}.genome.vcf.idx: Index feature file based on `test{,2}.genome.vcf` file
+
 
 ### Uncategorized
 
 * e_coli_k12_16s.fna: E. coli K-12 16S rRNA
-* bac.16S_rRNA.hmm: Bacterial 16S HMM file 
+* bac.16S_rRNA.hmm: Bacterial 16S HMM file
