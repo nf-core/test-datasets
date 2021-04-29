@@ -156,6 +156,34 @@ Downloaded the gtf and gff3 files from Ensembl:
 6. Replace spaces with tabs
 7. The coordinates in `genome.gtf` were adapted to start from 1
 
+## 10X genomics scRNA-seq data
+10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
+Data generation:
+
+1. Data was downloaded from https://support.10xgenomics.com/single-cell-gene-expression/datasets/3.0.0/pbmc_1k_v3
+2. A STAR index was generated from `genome.fasta` and `genome.gtf`
+3. Reads were aligned with STAR using the generated index:
+
+    ```bash
+    STAR --genomeDir star --readFilesIn pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R2_001.fastq.gz pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R1_001.fastq.gz --runThreadN 6 --outFileNamePrefix test --soloCBwhitelist ../10x_V3_barcode_whitelist.txt --sjdbGTFfile genome/genome.gtf --soloType CB_UMI_Simple --readFilesCommand zcat --soloBarcodeReadLength 28
+    ```
+
+4. Extract the readnames: `samtools view testAligned.out.sam | cut -f 1 > readnames.txt`
+5. Extract reads mapping to chr22 from fastq files:
+
+    ```bash
+    seqtk subseq pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R1_001.fastq  readnames.txt  > pbmc_R1.fastq`
+    seqtk subseq pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R2_001.fastq  readnames.txt  > pbmc_R2.fastq`
+    
+    ```
+
+6. Subsample 100 reads
+
+    ```bash
+    seqtk sample -s100 pbmc_R1.fastq 100 > test_1.fastq
+    seqtk sample -s100 pbmc_R2.fastq 100 > test_2.fastq
+    ```
+
 ## Limitations
 
 1. Reads do not cover chromosome 6
