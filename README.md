@@ -94,11 +94,14 @@ If you cannot find suitable test data on this repository, please contact us on t
       * gnomAD: gnomAD file downsampled based on reference position
       * mills_and_1000G: Indels file downsampled based on reference position
     * dict: Sequence dictionary corresponding to `fasta`
-    * fasta: Reference fasta based on chr22:16570000-16610000
+    * genome.fasta: Reference fasta based on chr22:16570000-16610000
+    * transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     * gff3: Encode GFF3 file downsampled based on reference position
     * gtf: Encode GTF file downsampled based on reference position
     * sizes
     * .bed
+    * index
+      * salmon: salmon index created with `transcriptome.fasta`
   * illumina
     * 10xgenomics
       * test_{1,2}.fastq.gz: 10X Genomics V3 fastq files from human PBMCs

@@ -54,6 +54,11 @@ As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/
 samtools faidx chr22.fasta chr22:16570000-16610000  > genome.fasta
 ```
 
+The corresponding transcriptome file was extracted:
+```bash
+gffread -F -w transcriptome.fasta -g genome.fasta genome.gtf
+```
+
 ## Sarek pipeline alteration to generate all output files
 
 1. Used release 2.7 container:
@@ -183,6 +188,13 @@ Data generation:
     seqtk sample -s100 pbmc_R1.fastq 100 > test_1.fastq
     seqtk sample -s100 pbmc_R2.fastq 100 > test_2.fastq
     ```
+
+## salmon index
+The salmon index  (`homo_sapiens/genome/index/salmon`) was created with the following command:
+
+```bash
+salmon index -t transcriptome.fasta -k 31 -i salmon
+```
 
 ## Limitations
 
