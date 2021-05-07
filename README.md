@@ -80,9 +80,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * bam
       * 'test.sorted.bam'
       * 'test.sorted.bam.bai'
-    * fast5
-      * '100read_fast5'
-    * 'fast5.tar.gz'
+      * 'fast5.tar.gz': compressed `fast5` folder with the following structure: `fast5/100read_fast5/*.fast5` 
     * fastq
       * 'test.fastq.gz'
     * sequencing_summary
