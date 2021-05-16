@@ -1,16 +1,16 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `scflow`
 
-## Introduction
+This branch contains test data to be used for automated testing with the [nf-core/scflow](https://github.com/nf-core/scflow) pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines.
+## Content of this repository
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+`assets/ensembl_mappings.tsv`: A tsv file with biomart mappings between human ensembl_gene_id, gene_biotype, external_gene_name.   
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+`testdata/individual_*`: Directories containing matrix.mtx.gz, features.tsv.gz, barcodes.tsv.gz for individual samples.
 
-## Support
+`refs/Manifest.txt`: A tab-separated-variable file for the test dataset with two columns: key and filepath.  
+`refs/SampleSheet.tsv`: A tab-separated-variable file with sample metadata for the test dataset.
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+## Minimal test dataset origin
+
+Detailed information on how the minimal downsampled test data was generated can be found in [neurogenomics/scFlowExample](https://github.com/neurogenomics/scFlowExample) repo.
