@@ -1,0 +1,7 @@
+key	filepath
+rinuv	https://raw.githubusercontent.com/nf-core/test-datasets/scflow/testdata/individual_1
+finov	https://raw.githubusercontent.com/nf-core/test-datasets/scflow/testdata/individual_2
+jafap	https://raw.githubusercontent.com/nf-core/test-datasets/scflow/testdata/individual_3
+rigap	https://raw.githubusercontent.com/nf-core/test-datasets/scflow/testdata/individual_4
+vihig	https://raw.githubusercontent.com/nf-core/test-datasets/scflow/testdata/individual_5
+bamum	https://raw.githubusercontent.com/nf-core/test-datasets/scflow/testdata/individual_6
