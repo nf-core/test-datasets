@@ -1,0 +1,3 @@
+id,group,replicate,single_end,bt2_total_reads_target,bt2_align1_target,bt2_align_gt1_target,bt2_non_aligned_target,bt2_total_aligned_target,bt2_total_reads_spikein,bt2_align1_spikein,bt2_align_gt1_spikein,bt2_non_aligned_spikein,bt2_total_aligned_spikein,scale_factor,dedup_library,dedup_unpaired_reads_examined,dedup_read_pairs_examined,dedup_secondary_or_supplementary_rds,dedup_unmapped_reads,dedup_unpaired_read_duplicates,dedup_read_pair_duplicates,dedup_read_pair_optical_duplicates,dedup_percent_duplication,dedup_estimated_library_size
+h3k27me3_R1,h3k27me3,1,false,9616,315,449,8852,764,9616,1,0,9615,1,10000,unknown library,0,350,0,0,0,0,0,0,
+igg_R1,igg,1,false,9401,242,464,8695,706,9401,343,9,9049,352,28.4090909091,unknown library,0,231,0,0,0,2,0,0.008658,13263
