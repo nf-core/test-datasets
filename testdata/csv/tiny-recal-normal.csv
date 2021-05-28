@@ -1,0 +1,2 @@
+patient,gender,status,sample,bam,bai
+1234,XX,0,1234N,data/testdata/recalbam/1234N.recal.bam,data/testdata/recalbam/1234N.recal.bai
