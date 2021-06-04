@@ -21,3 +21,7 @@ This branch contains test data for the [nf-core/bcellmagic](https://github.com/n
 * `metadata.tsv` contains the paths to the TCR test data.
 * `C_primers.fasta` and `linker.fasta` are the primer sequences, and linker sequences for the 5' RACE amplification of the TCR.
 * The `fastq` files are random samples of a human TCRseq 5'RACE sequencing data produced with the TAKARA protocol, for 2 different samples.
+
+### AIRRflow test data
+
+`testdata-airrflow` contains test data needed to run the AIRRseq workflow. Further details can be found in the README.md file inside the folder.
