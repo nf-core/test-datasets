@@ -64,6 +64,11 @@ The corresponding transcriptome file was extracted:
 gffread -F -w transcriptome.fasta -g genome.fasta genome.gtf
 ```
 
+An interval list file was prepared from the genome.bed using GATK4:
+```bash
+gatk BedToIntervalList -I genome.bed -SD genome.dict -O genome.interval_list
+```
+
 ## Sarek pipeline alteration to generate all output files
 
 1. Used release 2.7 container:
