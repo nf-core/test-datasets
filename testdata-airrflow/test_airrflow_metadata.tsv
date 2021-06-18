@@ -1,0 +1,3 @@
+filename	species	subject_id	sample_id	tissue	sex	age	biomaterial_provider
+https://raw.githubusercontent.com/nf-core/test-datasets/bcellmagic/testdata-airrflow/sc5p_v2_hs_PBMC_1k_b_airr_rearrangement.tsv	human	subject_x	sc5p_v2_hs_PBMC_1k_5fb	PBMC	NA	NA	10x Genomics
+https://raw.githubusercontent.com/nf-core/test-datasets/bcellmagic/testdata-airrflow/sc5p_v2_mm_c57bl6_splenocyte_1k_b_airr_rearrangement.tsv	mouse	mouse_x	sc5p_v2_mm_c57bl6_splenocyte_1k_b	splenocyte	NA	NA	10x Genomics
