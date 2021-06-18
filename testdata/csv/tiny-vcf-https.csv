@@ -1,0 +1,2 @@
+patient,sample,vcf
+1234,1234N,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/vcf/Strelka_1234N_variants.vcf.gz
