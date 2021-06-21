@@ -23,7 +23,7 @@
     chr22   16570000        16610000
     ```
 
-    For RNAseq, all the reads and their pair-mates that overlap the SNP sites in the above region were extracted using [VariantBAM](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4920121/) and converted to `fastq.gz` using the method described above.
+    For RNAseq, all the reads and their pair-mates that overlap the SNP sites in the above region were extracted using [VariantBAM](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4920121/) and converted to `fastq.gz` using the method described above. Files are available in illumina/fastq/
 
 2. Save length in `genome.bed` 0-40001
 
