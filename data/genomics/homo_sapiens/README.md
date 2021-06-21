@@ -49,9 +49,7 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
     mv dbsnp_146.hg38.chr22_region.vcf.gz.tbi dbsnp_146.hg38.vcf.gz.tbi
     ```
 
-2. Manipulated mills & gnomAD file, by changing chr length for chr22 to 40001 and coordinates were adapted to start with 1.
-
-3. Variants from the RNAseq test data is also placed in the vcf/ directory for reference.
+2. Manipulated mills & gnomAD file, by changing chr length for chr22 to 40001.
 
 ## Mapping files
 
