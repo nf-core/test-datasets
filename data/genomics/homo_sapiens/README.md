@@ -3,6 +3,9 @@
 ## Data Access
 
 1. The raw data was retrieved from [this](https://www.ncbi.nlm.nih.gov/bioproject/?term=prjeb39899) project. The two used datasets are [ERR4467723](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?run=ERR4467723) (tumor) and [ERR4467726](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?run=ERR4467726) (normal)
+
+    For RNAseq, the raw data was retrieved from 'Genome in a Bottle' sample GM12878 (SRA accession [SRX2900878](https://www.ncbi.nlm.nih.gov/sra/?term=SRX2900878), sequenced on NextSeq 500 with 150bpx2 library). 
+
 2. The data was downloaded using the SRA Toolkit with:
 
     ```bash
@@ -19,6 +22,8 @@
     ```bash
     chr22   16570000        16610000
     ```
+
+    For RNAseq, all the reads and their pair-mates that overlap the SNP sites in the above region were extracted using [VariantBAM](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4920121/) and converted to `fastq.gz` using the method described above. Files are available in illumina/fastq/
 
 2. Save length in `genome.bed` 0-40001
 
@@ -44,7 +49,7 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
     mv dbsnp_146.hg38.chr22_region.vcf.gz.tbi dbsnp_146.hg38.vcf.gz.tbi
     ```
 
-2. Manipulate mills & gnomAD file, by changing chr length for chr22 to 40001
+2. Manipulated mills & gnomAD file, by changing chr length for chr22 to 40001.
 
 ## Mapping files
 
@@ -57,6 +62,11 @@ samtools faidx chr22.fasta chr22:16570000-16610000  > genome.fasta
 The corresponding transcriptome file was extracted:
 ```bash
 gffread -F -w transcriptome.fasta -g genome.fasta genome.gtf
+```
+
+An interval list file was prepared from the genome.bed using GATK4:
+```bash
+gatk BedToIntervalList -I genome.bed -SD genome.dict -O genome.interval_list
 ```
 
 ## Sarek pipeline alteration to generate all output files
