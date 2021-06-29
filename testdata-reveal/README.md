@@ -60,4 +60,4 @@ docker run -v $(pwd):/data:z --workdir /data immcantation/suite:4.1.0 \
 
 * `bulk-Laserson-2014.fasta`
 
-Processed bulk sequencing data from B cell receptor reads from one healthy donor (PGP1) 3 weeks after flu vaccination (Laserson et al. (2014), DOI: 10.1073/pnas.1323862111. As part of the processing, each sequence has been annotated with the isotype.
+5,000 processed reads from a bulk sequencing experiment. Reads belong to one healthy donor (PGP1) 3 weeks after flu vaccination (Laserson et al. (2014), DOI: 10.1073/pnas.1323862111). As part of the processing, each sequence has been annotated with the isotype (`C_CALL`).
