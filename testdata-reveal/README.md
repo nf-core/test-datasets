@@ -57,3 +57,7 @@ docker run -v $(pwd):/data:z --workdir /data immcantation/suite:4.1.0 \
    -b /usr/local/share/igblast \
    --organism human --loci ig --format airr --nproc 1
 ```
+
+* `bulk-Laserson-2014.fasta`
+
+Processed bulk sequencing data from B cell receptor reads from one healthy donor (PGP1) 3 weeks after flu vaccination (Laserson et al. (2014), DOI: 10.1073/pnas.1323862111. As part of the processing, each sequence has been annotated with the isotype.

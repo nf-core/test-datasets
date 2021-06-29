@@ -1,3 +1,4 @@
 filename	species	subject_id	sample_id	tissue	sex	age	biomaterial_provider	pcr_target_locus	single_cell
 https://raw.githubusercontent.com/nf-core/test-datasets/bcellmagic/testdata-reveal/sc5p_v2_hs_PBMC_1k_b_airr_rearrangement.tsv	human	subject_x	sc5p_v2_hs_PBMC_1k_5fb	PBMC	NA	NA	10x Genomics	ig	TRUE
 https://raw.githubusercontent.com/nf-core/test-datasets/bcellmagic/testdata-reveal/sc5p_v2_mm_c57bl6_splenocyte_1k_b_airr_rearrangement.tsv	mouse	mouse_x	sc5p_v2_mm_c57bl6_splenocyte_1k_b	splenocyte	NA	NA	10x Genomics	ig	TRUE
+https://raw.githubusercontent.com/nf-core/test-datasets/bcellmagic/testdata-reveal/bulk-Laserson-2014.fasta	human	PGP1	PGP1	PBMC	male	NA	Laserson-2014	ig	FALSE
