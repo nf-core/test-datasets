@@ -136,7 +136,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * hg004_mat.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}_001.fastq.gz and D3_S1_L001_R{1,2}_001.fastq.gz and map to `pacbio_hifi/fastq/hg002_son.fastq`.
   * pacbio_hifi:
     * fastq:
-      * hg002_son.fastq: Reads from the same randomly selected contig of the whole genome assembly by [Cheng et al., 2021](https://www.nature.com/articles/s41592-020-01056-5) of the child of the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392).
+      * hg002_son.fastq: Reads mapping to a randomly selected contig from the whole genome assembly of the child of the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392) by [Cheng et al., 2021](https://www.nature.com/articles/s41592-020-01056-5). The reads were taken from [SRR10382244](https://www.ncbi.nlm.nih.gov/sra/?term=SRR10382244).
 
 ### Uncategorized
 
