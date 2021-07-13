@@ -131,7 +131,12 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test{,2}.genome.vcf.idx: Index feature file based on `test{,2}.genome.vcf` file
     * vcf:
       * test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
-
+    * yak:
+      * test.yak: Yak kmer index of 1000 of paternal paired-end reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D2_S1_L001_R{1,2}_001.fastq.gz and D2_S1_L001_R{1,2}_002.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
+      * test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}_001.fastq.gz and D3_S1_L001_R{1,2}_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
+  * pacbio:
+    * fastq:
+      * test_hifi.fastq.gz: Reads mapping to a randomly selected contig from the whole genome assembly by [Cheng et al., 2021](https://www.nature.com/articles/s41592-020-01056-5) of the child of the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). The reads were taken from [SRR10382244](https://www.ncbi.nlm.nih.gov/sra/?term=SRR10382244).
 
 ### Uncategorized
 
