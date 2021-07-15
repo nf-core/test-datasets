@@ -5,16 +5,26 @@ Test data to be used for automated testing with the nf-core pipelines
 This branch contains test-data for `nf-core/circrna`.
 
 ### Contents of branch:
-* `fastq/` 9 FASTQ read pairs.
+* `fastq/` 6 FASTQ read pairs.
 * `reference/` Reference annotation files
 * `phenotype.csv` metadata file for DESeq2.
 * `samples.csv` input test-dataset csv file
 
 ### Test-dataset generation strategy:
-Gencode GRCh38 (v34) GTF file was subsampled to chromosome 1 (protein coding only) and mock datasets were made for each phenotype in the experimental design:
+Sequencing reads retrieved using `nf-core/fetchngs`, input file contained the accession `PRJNA669975`.
 
-1. `control`: chromosome 1 arm 2
-2. `lung`: chromosome 1 arm 1
-3. `melanoma`: chromosome 1 arm 1 + 2
+Reads were mapped to the `ce10` genome using hisat2. Bam files were subset according to a specific region:
 
-3 replicates of each phenotype were generated, with 2 of the 3 replicates being identical to ensure differentially expressed circRNAs can be detected by `DESeq2`.
+```console
+for bam in *.bam; do samtools view -b $bam chrI:1000000-4000000 > /data/bdigby/igenomes_test/bams/${bam%.bam}.bam; done
+```
+
+And subsequently converted to FASTQ files using `Picard`:
+
+```console
+for bam in *.bam; do picard -Xmx2g SamToFastq I=$bam F=${bam%.bam}_1.fastq.gz F2=${bam%.bam}_2.fastq.gz VALIDATION_STRINGENCY=LENIENT ; done
+```
+
+Reference FASTA and GTF file were subset to contain only `chrI`.
+
+- Barry
