@@ -1,0 +1,5 @@
+ID	Folder	Name	treatment1	bad3	bad4	bad5	num6	bad9
+run1-1	run1	1	a	a	a		1	a
+run1-1a	run1	1a	a	a			2	b
+run2-2	run2	2	b	a			3	c
+run2-2a	run2	2a	b	a	a		1	d

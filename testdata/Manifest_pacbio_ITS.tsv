@@ -1,0 +1,5 @@
+sampleID	Reads
+pb1	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/pb1-its-reads_of_insert.fastq.gz
+pb2	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/pb2-its-reads_of_insert.fastq.gz
+pb3	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/pb3-its-reads_of_insert.fastq.gz
+
