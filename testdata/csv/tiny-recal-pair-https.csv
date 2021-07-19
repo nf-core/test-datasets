@@ -1,3 +1,3 @@
-patient,gender,status,sample,bam,bai
-1234,XX,0,1234N,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalbam/1234N.recal.bam,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalbam/1234N.recal.bai
-1234,XX,1,9876T,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalbam/9876T.recal.bam,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalbam/9876T.recal.bai
+patient,gender,status,sample,cram,crai
+1234,XX,0,1234N,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/1234N.recal.cram,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/1234N.recal.crai
+1234,XX,1,9876T,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/9876T.recal.cram,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/9876T.recal.crai
