@@ -1,2 +1,2 @@
 patient,sample,cram,crai
-1234,1234N,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/1234N.recal.cram,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/1234N.recal.crai
+1234,1234N,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/1234N.recal.cram,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/recalcram/1234N.recal.cram.crai
