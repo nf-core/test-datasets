@@ -1,0 +1,2 @@
+patient,sample,bam,bai
+1234,1234N,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/mappedbam/1234N.bam,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/mappedbam/1234N.bam.bai
