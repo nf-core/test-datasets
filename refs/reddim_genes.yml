@@ -1,4 +1,10 @@
 NEURONS:
   - SYT1
+  - LAMP5
+  - SST
 MICROGLIA:
-  - CD74
+  - HEXB
+  - CTSS
+OLIGO:
+  - PLP1
+  - MAL
