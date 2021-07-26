@@ -1,2 +1,3 @@
 sample,fastq_1,fastq_2
 A10,https://raw.githubusercontent.com/nf-core/test-datasets/scp/samplesheet/A10_test_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/scp/samplesheet/A10_test_R2.fastq.gz
+X1,https://raw.githubusercontent.com/nf-core/test-datasets/scp/samplesheet/X1_test_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/scp/samplesheet/X1_test_R2.fastq.gz
