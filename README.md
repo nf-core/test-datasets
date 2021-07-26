@@ -13,11 +13,14 @@ nf-core/test-datasets comes with documentation in the `docs/` directory:
 
 ## Single-cell WGS test dataset
 
-The test dataset is taken from [DOI:10.1002/smll.202001172](https://doi.org/10.1002/smll.202001172). The example command below was used to subsample the raw paired-end FastQ files to 30,000 reads:
+The test dataset is taken from [DOI:10.1002/smll.202001172](https://doi.org/10.1002/smll.202001172) \[A10: clinical *E. coli*; X1: *E. coli* ATCC35218\].
+The example command below was used to subsample the raw paired-end FastQ files to 30,000 reads:
 
 ```
 seqtk sample -s100 A10_combined_R1.fastq.gz 30000 | gzip > A10_test_R1.fastq.gz
 seqtk sample -s100 A10_combined_R2.fastq.gz 30000 | gzip > A10_test_R2.fastq.gz
+seqtk sample -s100 X1_combined_R1.fastq.gz 30000 | gzip > X1_test_R1.fastq.gz
+seqtk sample -s100 X1_combined_R2.fastq.gz 30000 | gzip > X1_test_R2.fastq.gz
 ```
 
 ## Support
