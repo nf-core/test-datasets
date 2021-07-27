@@ -143,7 +143,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * hg19.GM12878-MboI.pairs.subsample.sorted.txt.gz, hg19.GM12878-MboI.pairs.subsample.sorted.txt.gz.tbi: hg19 tabix test file and its index file.
       * hg19.sample1.pairs: hg19 pair test file.
       * hg19.chrom.sizes: hg19 chromosome sizes. Downloaded from [goldenpath](http://genome.ucsc.edu/goldenpath/help/hg19.chrom.sizes)
-      * test-1M.hm: hg19 hiClib test file.
+      * test-hg19.hdf5: hg19 hiClib test file.
 
 ### Uncategorized
 
