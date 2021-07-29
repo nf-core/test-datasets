@@ -73,6 +73,11 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test.methylated_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
     * gatk
       * 'test.baserecalibrator.table': Recalibration table generated with gatk4 BaseRecalibrator from 'test_paired_end.sorted.bam', using 'test.vcf.gz' as known sites.
+    * gfa
+      * 'assembly.gfa': assembly in Graphical Fragment Assembly (GFA) 1.0 format
+      * 'assembly.gfa.bgz': compressed with block-compressed GZIP (BGZF)
+      * 'assembly.gfa.gz': compressed with GZIP
+      * 'assembly.gfa.zst': compressed with Zstandard (zstd)
     * sra
       * `SRR13255544.tar.gz`: Tar archive containing SRA file obtained from SRR13255544.
       * `SRR11140744.tar.gz`: Tar archive containing SRA file obtained from SRR11140744.
