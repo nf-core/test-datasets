@@ -9,7 +9,7 @@ The `delete_me` folder does not adhere to a defined structure as data in this fo
 
 ### genomics
 
-The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are twor organisms available:
+The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are two organisms available:
     *homo_sapiens
     * sarscov2
 
@@ -81,7 +81,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test.sorted.bam'
       * 'test.sorted.bam.bai'
     * fast5
-      * 'fast5.tar.gz': compressed `fast5` folder with the following structure: `fast5/100read_fast5/*.fast5` 
+      * 'fast5.tar.gz': compressed `fast5` folder with the following structure: `fast5/100read_fast5/*.fast5`
     * fastq
       * 'test.fastq.gz'
     * sequencing_summary
@@ -137,6 +137,16 @@ If you cannot find suitable test data on this repository, please contact us on t
   * pacbio:
     * fastq:
       * test_hifi.fastq.gz: Reads mapping to a randomly selected contig from the whole genome assembly by [Cheng et al., 2021](https://www.nature.com/articles/s41592-020-01056-5) of the child of the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). The reads were taken from [SRR10382244](https://www.ncbi.nlm.nih.gov/sra/?term=SRR10382244).
+  * cooler:
+    * cload:
+      * hg19:
+        * hg19.GM12878-MboI.pairs.subsample.blksrt.txt.gz, hg19.GM12878-MboI.pairs.subsample.blksrt.txt.gz.px2: hg19 pairix test file and its index file.
+        * hg19.GM12878-MboI.pairs.subsample.sorted.possrt.txt.gz, hg19.GM12878-MboI.pairs.subsample.sorted.possrt.txt.gz.tbi: hg19 tabix test file and its index file.
+        * hg19.sample1.pairs: hg19 pair test file.
+        * hg19.chrom.sizes: hg19 chromosome sizes. Downloaded from [goldenpath](http://genome.ucsc.edu/goldenpath/help/hg19.chrom.sizes)
+    * merge:
+      * toy:
+        * toy.symm.upper.2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
 
 ### Uncategorized
 
