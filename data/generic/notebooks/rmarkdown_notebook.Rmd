@@ -7,7 +7,7 @@ params:
   artifact_dir: NULL
   cpus: 1 
   input_filename: NULL
-  n: 10
+  n_iter: 10
 ---
 
 ## Running from Nextflow
@@ -15,7 +15,7 @@ params:
  * input_dir = `r params$input_dir``
  * artifact_dir = `r params$artifact_dir`
  * cpus = `r params$cpus`
- * n = `r params$n`
+ * n_iter = `r params$n`
  * input_filename = `r params$input_filename`
  * meta.id = `r params$meata$id`
  
@@ -32,7 +32,7 @@ if(!is.null(params$input_dir)) {
 
 ## Print "Hello World" `n` times: 
 ```{r}
-for(i in 1:params$n) {
+for(i in 1:params$n_iter) {
   print(paste0("Hello World ", i))
 }
 ```
