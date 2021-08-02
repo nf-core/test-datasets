@@ -2,6 +2,7 @@
 title: "Test notebook"
 output: html_document
 params:
+  meta: NULL
   input_dir: NULL
   artifact_dir: NULL
   cpus: 1 
@@ -16,6 +17,7 @@ params:
  * cpus = `r params$cpus`
  * n = `r params$n`
  * input_filename = `r params$input_filename`
+ * meta.id = `r params$meata$id`
  
  
 ## Read an input file
