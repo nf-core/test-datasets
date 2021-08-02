@@ -25,8 +25,8 @@ params:
 ```{r}
 if(!is.null(params$input_dir)) {
   file_content = readLines(file.path(params$input_dir, params$input_filename))
+  cat(file_content)
 }
-cat(file_content)
 ```
 
 
