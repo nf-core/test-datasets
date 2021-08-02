@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 input_dir = None
 artifact_dir = None
 cpus = 1
-n = 10
+n_iter = 10
 input_filename = None
 ```
 
@@ -21,7 +21,7 @@ if input_dir is not None:
 ## Print Hello world `n` times
 
 ```python
-for i in range(n):
+for i in range(n_iter):
     print(f"Hello World {i+1}!")
 ```
 
