@@ -10,6 +10,16 @@ n_iter = 10
 input_filename = None
 ```
 
+## Running from nextflow
+The parameters are:
+
+```python
+print(f"input_dir = {input_dir}")
+print(f"artifact_dir = {artifact_dir}")
+print(f"cpus = {cpus}")
+print(f"n_iter = {n_iter}")
+print(f"input_filename = {input_filename}")
+
 ## Read an input file
 
 ```python
@@ -39,6 +49,3 @@ if artifact_dir is not None:
         f.write("Hello World!\n")
 ```
 
-```python
-
-```
