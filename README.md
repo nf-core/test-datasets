@@ -25,7 +25,7 @@ This branch contains test data for the [nf-core/bcellmagic](https://github.com/n
 
 ### TCR test data
 
-`testdata-tcr` contains the test data needed to run the pipeline for BCRseq data.
+`testdata-tcr` contains the test data needed to run the pipeline for TCRseq data.
 
 * `metadata.tsv` contains the paths to the TCR test data.
 * `C_primers.fasta` and `linker.fasta` are the primer sequences, and linker sequences for the 5' RACE amplification of the TCR.
