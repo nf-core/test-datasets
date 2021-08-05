@@ -12,12 +12,12 @@ params:
 
 ## Running from Nextflow
 
- * input_dir = `r params$input_dir``
+ * input_dir = `r params$input_dir`
  * artifact_dir = `r params$artifact_dir`
  * cpus = `r params$cpus`
  * n_iter = `r params$n`
  * input_filename = `r params$input_filename`
- * meta.id = `r params$meata$id`
+ * meta.id = `r params$meta$id`
  
  
 ## Read an input file
