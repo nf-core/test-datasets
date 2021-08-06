@@ -1,0 +1,8 @@
+Sample_ID,Read1,Read2,Bam
+cel_N2_1,s3://nf-core-awsmegatests/circrna/input_data/SRX9313375_T1_1.fastq.gz,s3://nf-core-awsmegatests/circrna/input_data/ SRX9313375_T1_2.fastq.gz,NA
+cel_N2_2,s3://nf-core-awsmegatests/circrna/input_data/SRX9313376_T1_1.fastq.gz,s3://nf-core-awsmegatests/circrna/input_data/ SRX9313376_T1_2.fastq.gz,NA
+cel_N2_3,s3://nf-core-awsmegatests/circrna/input_data/SRX9313377_T1_1.fastq.gz,s3://nf-core-awsmegatests/circrna/input_data/ SRX9313377_T1_2.fastq.gz,NA
+fust1_1,s3://nf-core-awsmegatests/circrna/input_data/SRX9313378_T1_1.fastq.gz,s3://nf-core-awsmegatests/circrna/input_data/ SRX9313378_T1_2.fastq.gz,NA
+fust1_2,s3://nf-core-awsmegatests/circrna/input_data/SRX9313379_T1_1.fastq.gz,s3://nf-core-awsmegatests/circrna/input_data/ SRX9313379_T1_2.fastq.gz,NA
+fust1_3,s3://nf-core-awsmegatests/circrna/input_data/SRX9313380_T1_1.fastq.gz,s3://nf-core-awsmegatests/circrna/input_data/ SRX9313380_T1_2.fastq.gz,NA
+
