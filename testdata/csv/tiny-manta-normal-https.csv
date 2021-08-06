@@ -1,4 +1,4 @@
-patient,sample,lane,fastq1,fastq2
+patient,sample,lane,fastq_1,fastq_2
 1234,1234N,1234N_M1,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/manta/normal/C097F_N_111207.1.AGTTGCTT_R1_xxx.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/manta/normal/C097F_N_111207.1.AGTTGCTT_R2_xxx.fastq.gz
 1234,1234N,1234N_M2,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/manta/normal/C097F_N_111207.2.AGTTGCTT_R1_xxx.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/manta/normal/C097F_N_111207.2.AGTTGCTT_R2_xxx.fastq.gz
 1234,1234N,1234N_M4,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/manta/normal/C09DF_N_111207.4.AGTTGCTT_R1_xxx.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/manta/normal/C09DF_N_111207.4.AGTTGCTT_R2_xxx.fastq.gz
