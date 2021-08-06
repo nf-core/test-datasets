@@ -1,4 +1,4 @@
-patient,gender,status,sample,lane,fastq1,fastq2
+patient,gender,status,sample,lane,fastq_1,fastq_2
 1222,XX,0,1222N,1222N_1,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/tiny/normal/tiny_n_L001_R1_xxx.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/tiny/normal/tiny_n_L001_R2_xxx.fastq.gz
 1222,XX,0,1222N,1222N_2,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/tiny/normal/tiny_n_L002_R1_xxx.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/tiny/normal/tiny_n_L002_R2_xxx.fastq.gz
 1222,XX,0,1222N,1222N_4,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/tiny/normal/tiny_n_L004_R1_xxx.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/sarek/testdata/tiny/normal/tiny_n_L004_R2_xxx.fastq.gz
