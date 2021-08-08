@@ -1,7 +1,0 @@
-id,group,replicate,single_end,bt2_total_reads_spikein,bt2_align1_spikein,bt2_align_gt1_spikein,bt2_non_aligned_spikein,bt2_total_aligned_spikein,bt2_total_reads_target,bt2_align1_target,bt2_align_gt1_target,bt2_non_aligned_target,bt2_total_aligned_target,scale_factor,dedup_library,dedup_unpaired_reads_examined,dedup_read_pairs_examined,dedup_secondary_or_supplementary_rds,dedup_unmapped_reads,dedup_unpaired_read_duplicates,dedup_read_pair_duplicates,dedup_read_pair_optical_duplicates,dedup_percent_duplication,dedup_estimated_library_size
-h3k4me3_R2,h3k4me3,2,false,1725035,4093,113,1720829,4206,1725035,106331,62940,1555764,169271,2.3775558726,unknown library,0,169271,0,0,0,4037,0,0.023849,3492107
-h3k27me3_R2,h3k27me3,2,false,2535578,446,15,2535117,461,2535578,190258,181849,2163471,372107,21.6919739696,unknown library,0,372107,0,0,0,4051,0,0.010887,16965792
-h3k4me3_R1,h3k4me3,1,false,1511072,340,7,1510725,347,1511072,87991,32964,1390117,120955,28.8184438040,unknown library,0,120955,0,0,0,7628,0,0.063065,918217
-igg_R2,igg,2,false,1113563,40122,1160,1072281,41282,1113563,62155,71755,979653,133910,0.2422363258,unknown library,0,133910,0,0,0,39588,0,0.295631,179210
-h3k27me3_R1,h3k27me3,1,false,2860575,210,10,2860355,220,2860575,208496,170330,2481749,378826,45.4545454545,unknown library,0,378826,0,0,0,16244,0,0.04288,4290097
-igg_R1,igg,1,false,2056442,75440,2061,1978941,77501,2056442,122953,125243,1808246,248196,0.1290305932,unknown library,0,248196,0,0,0,62615,0,0.25228,405129
