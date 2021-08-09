@@ -14,3 +14,15 @@ nf-core/test-datasets comes with documentation in the `docs/` directory:
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+
+## About this dataset
+
+This small dataset contains reads from human chr22
+
+* data/genomics/homo_sapiens/T1: technique replicates1 (real data)
+    * WT: wild type HiCAR reads
+    * KD: knock-down HiCAR reads
+* data/genomics/homo_sapiens/T2: technique replicates1 (simulated data)
+    * WT: wild type HiCAR reads
+    * KD: knock-down HiCAR reads
+* data/genomics/homo_sapiens/mappability/wgEncodeCrgMapabilityAlign50mer.chr22.bigWig: mappability of chr22.
