@@ -1,49 +1,38 @@
-# test-datasets: `chipseq`
+# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+
+# test-datasets: `cutandrun`
+
 Test data to be used for automated testing with the nf-core pipelines
 
-This branch contains test data for the [nf-core/chipseq](https://github.com/nf-core/chipseq) pipeline.
+This branch contains test data for the [nf-core/cutandrun](https://github.com/nf-core/cutandrun) pipeline.
+
+## Documentation
+nf-core/test-datasets comes with documentation in the `docs/` directory:
+
+01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
+02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+
+## Support
+
+For further information or help, don't hesitate to get in touch on the [Slack `#cutandrun` channel](https://nfcore.slack.com/channels/cutandrun) (you can join with [this invite](https://nf-co.re/join/slack)).
 
 ## Content of this repository
 
-`design.csv`: Experiment design file for minimal test dataset  
-`design_full.csv`: Experiment design file for full test dataset  
-`reference/`: Genome reference files  
-`testdata/` : Sub-sampled FastQ files sub-sampled
+- `reference/`: Genome reference files used in testing
+- `samplesheet/`: Sample sheets used for the `--input` param in testing
+- `testdata/`: Experimental test data referenced in the samplesheets
 
-## Full test dataset origin
+## GSE145187 dataset origin
 
-*H. sapiens* single-end ChIP-seq dataset was obtained from 2 separate studies as described [here](https://academic.oup.com/bib/article/17/6/953/2453197#47712047).
+The test data available was taken from the original CUT&Tag protocol published in [nature](https://www.nature.com/articles/s41596-020-0373-x)/[pubmed](https://pubmed.ncbi.nlm.nih.gov/32913232/)
 
-### Transcription factor data
+Kaya-Okur, H.S., Janssens, D.H., Henikoff, J.G. et al. Efficient low-cost chromatin profiling with CUT&Tag. Nat Protoc 15, 3264–3283 (2020). https://doi.org/10.1038/s41596-020-0373-x
 
-[Pubmed](https://pubmed.ncbi.nlm.nih.gov/25752574/), [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE59530)
+The experiment was performed using two antibody targets for the histone marks h3k4me3 and h3k27me3. Each target had two biological replicates with an IgG control for each replicate.
 
-#### Sample information
+The data can be found at [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE145187)
 
-| SRA ID     | GEO ID     | SAMPLE NAME                 |
-|------------|------------|-----------------------------|
-| SRR1635435 | GSM1534712 | ChIP-seq_Input_Vehicle_rep1 |
-| SRR1635436 | GSM1534713 | ChIP-seq_Input_Vehicle_rep2 |
-| SRR1635437 | GSM1534714 | ChIP-seq_Input_E2_rep1      |
-| SRR1635438 | GSM1534715 | ChIP-seq_Input_E2_rep2      |
-| SRR1635459 | GSM1534736 | ChIP-seq_FoxA1_Vehicle_rep1 |
-| SRR1635460 | GSM1534737 | ChIP-seq_FoxA1_Vehicle_rep2 |
-| SRR1635461 | GSM1534738 | ChIP-seq_FoxA1_E2_rep1      |
-| SRR1635462 | GSM1534739 | ChIP-seq_FoxA1_E2_rep2      |
+### Folder Structure
 
-### Broad histone data
-
-[Pubmed](https://pubmed.ncbi.nlm.nih.gov/25188243/), [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57632)
-
-#### Sample information
-
-| SRA ID     | GEO ID     | SAMPLE NAME          |
-|------------|------------|----------------------|
-| SRR1285070 | GSM1385748 | NTKO_EZH2_ChIPseq_1  |
-| SRR1285071 | GSM1385749 | NTKO_EZH2_ChIPseq_2  |
-| SRR1285072 | GSM1385750 | TKO_EZH2_ChIPseq_1   |
-| SRR1285073 | GSM1385751 | TKO_EZH2_ChIPseq_2   |
-| SRR1285074 | GSM1385752 | NTKO_Input_ChIPseq_1 |
-| SRR1285075 | GSM1385753 | NTKO_Input_ChIPseq_2 |
-| SRR1285076 | GSM1385754 | TKO_Input_ChIPseq_1  |
-| SRR1285077 | GSM1385755 | TKO_Input_ChIPseq_2  |
+- `GSE145187`: Contains the full test data from the GEO repository
+- `GSE145187_10000`: Contains a random subset of 10,000 reads from the main dataset for testing
