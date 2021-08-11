@@ -26,3 +26,5 @@ This small dataset contains reads from human chr22
     * WT: wild type HiCAR reads
     * KD: knock-down HiCAR reads
 * data/genomics/homo_sapiens/mappability/wgEncodeCrgMapabilityAlign50mer.chr22.bigWig: mappability of chr22.
+* fasta/chr22.fa.gz: fasta file of chr22
+* annotation/chr22.gtf.gz: gtf file of chr22 from ucsc hg19.
