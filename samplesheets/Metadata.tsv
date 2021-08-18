@@ -1,5 +1,5 @@
-ID	treatment1	bad3	bad4	bad5	num6	num7	mix8	bad9	badpairwise10
-sampleID_1	b	a	a		1		2	a	
-sampleID_2	b	a			2	1	2	b	2
-sampleID_1a	a	a			3		a	c	2
-sampleID_2a	a	a	a		1		a	d	a
+ID	treatment1	bad3	bad4	bad5	num6	num7	mix8	bad9	badpairwise10	materialSampleID	target_gene
+1	b	a	a		1		2	a		ERS3508481	SSU rRNA
+2	b	a			2	1	2	b	2	ERS3508482	SSU rRNA
+1a	a	a			3		a	c	2	ERS3508483	SSU rRNA
+2a	a	a	a		1		a	d	a	ERS3508484	SSU rRNA
