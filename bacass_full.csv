@@ -1,0 +1,3 @@
+ID	R1	R2	LongFastQ	Fast5	GenomeSize
+SRR10093028	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR100/028/SRR10093028/SRR10093028_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR100/028/SRR10093028/SRR10093028_2.fastq.gz	NA	NA	NA
+SRR10093029	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR100/029/SRR10093029/SRR10093029_1.fastq.gz	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR100/029/SRR10093029/SRR10093029_2.fastq.gz	NA	NA	NA
