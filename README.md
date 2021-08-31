@@ -36,6 +36,9 @@ If you cannot find suitable test data on this repository, please contact us on t
   * db
     * 'kraken2': kraken2 DB
     * 'kraken2.tar.gz': kraken2 DB archive
+    * maltextract
+      * 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract 
+      * 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
   * genome
     * 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     * 'genome.dict': GATK dict for 'genome.fasta'
@@ -46,7 +49,6 @@ If you cannot find suitable test data on this repository, please contact us on t
     * 'genome.gff3': GFF for MT192765.1 genome
     * 'genome.gff3.gz': bgzipped-version
     * 'genome.sizes': genome size for the MT192765.1 genome
-    * 'genome.fasta.zip': zipped version of FASTA
 
   * illumina
     * bam
