@@ -37,7 +37,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * 'kraken2': kraken2 DB
     * 'kraken2.tar.gz': kraken2 DB archive
   * genome
-    * 'genome.fasta': MT192765.1 genomem including (GCA_011545545.1_ASM1154554v1)
+    * 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     * 'genome.dict': GATK dict for 'genome.fasta'
     * 'genome.fasta.fai': fasta index for 'genome.fasta'
     * 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
@@ -46,6 +46,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * 'genome.gff3': GFF for MT192765.1 genome
     * 'genome.gff3.gz': bgzipped-version
     * 'genome.sizes': genome size for the MT192765.1 genome
+    * 'genome.fasta.zip': zipped version of FASTA
 
   * illumina
     * bam
@@ -76,6 +77,8 @@ If you cannot find suitable test data on this repository, please contact us on t
       * '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
     * wig
       * 'test.wig.gz'
+    * picard
+      *  'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads  
   * nanopore
     * bam
       * 'test.sorted.bam'
