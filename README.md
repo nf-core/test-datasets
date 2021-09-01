@@ -72,6 +72,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * vcf
       * 'test.vcf', 'test2.vcf': generated from 'test_paired_end.sorted.bam' using bcftools mpileup, call and filter
       * 'test3.vcf': generated from 'test_single_end.sorted.bam' using bcftools mpileup, call and filter
+      * 'test2.targets.tsv.gz' from 'test2.vcf.gz' using bcftools query  and bgzip
       * '*.gz': generated from VCF files using bgzip
       * '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
     * wig
