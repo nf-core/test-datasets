@@ -1,0 +1,2 @@
+ID	R1	R2	Source	Treatment	Extraction_time	Population
+Sample1	https://raw.githubusercontent.com/nf-core/test-datasets/bcellmagic/testdata-no-umi/ERR346600_2kReads_1.fastq.gz	https://raw.githubusercontent.com/nf-core/test-datasets/bcellmagic/testdata-no-umi/ERR346600_2kReads_2.fastq.gz	Patient1	DrugTreatment	baseline	dn
