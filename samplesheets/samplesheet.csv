@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+s0,https://github.com/nf-core/test-datasets/raw/magmap/testdata/s0_1.fastq.gz,https://github.com/nf-core/test-datasets/raw/magmap/testdata/s0_2.fastq.gz
+s1,https://github.com/nf-core/test-datasets/raw/magmap/testdata/s1_1.fastq.gz,https://github.com/nf-core/test-datasets/raw/magmap/testdata/s1_2.fastq.gz
+s2,https://github.com/nf-core/test-datasets/raw/magmap/testdata/s2_1.fastq.gz,https://github.com/nf-core/test-datasets/raw/magmap/testdata/s2_2.fastq.gz
