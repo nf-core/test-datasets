@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pbds:ConsensusReadSet CreatedAt="2021-09-20T14:28:16.851Z" MetaType="PacBio.DataSet.ConsensusReadSet" Name="alz.2.ccs (CCS)" Tags="ccs" TimeStampedName="alz.2.ccs (CCS)-210920_142816851" UniqueId="040b8198-10f7-475d-baf6-9d971f09807a" Version="3.0.1" xmlns:pbbase="http://pacificbiosciences.com/PacBioBaseDataModel.xsd" xmlns:pbdm="http://pacificbiosciences.com/PacBioDataModel.xsd" xmlns:pbmeta="http://pacificbiosciences.com/PacBioCollectionMetadata.xsd" xmlns:pbpn="http://pacificbiosciences.com/PacBioPartNumbers.xsd" xmlns:pbrk="http://pacificbiosciences.com/PacBioReagentKit.xsd" xmlns:pbsample="http://pacificbiosciences.com/PacBioSampleInfo.xsd" xmlns="http://pacificbiosciences.com/PacBioDatasets.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pacificbiosciences.com/PacBioDatasets.xsd" xmlns:pbds="http://pacificbiosciences.com/PacBioDatasets.xsd">
+	<pbbase:ExternalResources>
+		<pbbase:ExternalResource CreatedAt="2021-09-20T14:28:16.851Z" MetaType="PacBio.ConsensusReadFile.ConsensusReadBamFile" ResourceId="/tmp/pytest_workflow_j37ld03e/pbccs_test_pbccs/work/fc/a2c002c442a28dcbf1966bf50e6476/alz.2.ccs.bam" TimeStampedName="pacbio_consensusreadfile_consensusreadbamfile-210920_142816851" UniqueId="87c74dfc-745b-42d6-9c1a-2c8d18213deb" Version="3.0.1">
+			<pbbase:FileIndices>
+				<pbbase:FileIndex CreatedAt="2021-09-20T14:28:16.851Z" MetaType="PacBio.Index.PacBioIndex" ResourceId="/tmp/pytest_workflow_j37ld03e/pbccs_test_pbccs/work/fc/a2c002c442a28dcbf1966bf50e6476/alz.2.ccs.bam.pbi" TimeStampedName="pacbio_index_pacbioindex-210920_142816851" UniqueId="22d3b622-19b9-4b4a-9caa-b53b7c30ce8e" Version="3.0.1" />
+			</pbbase:FileIndices>
+			<pbbase:ExternalResources>
+				<pbbase:ExternalResource CreatedAt="2021-09-20T14:28:16.851Z" MetaType="PacBio.FileTypes.json" ResourceId="/tmp/pytest_workflow_j37ld03e/pbccs_test_pbccs/work/fc/a2c002c442a28dcbf1966bf50e6476/alz.2.zmw_metrics.json.gz" TimeStampedName="pacbio_filetypes_json-210920_142816851" UniqueId="f57fbcfb-3588-41b2-8e7c-453203127e0a" Version="3.0.1" />
+				<pbbase:ExternalResource CreatedAt="2021-09-20T14:28:16.851Z" MetaType="PacBio.FileTypes.JsonReport" ResourceId="/tmp/pytest_workflow_j37ld03e/pbccs_test_pbccs/work/fc/a2c002c442a28dcbf1966bf50e6476/alz.2.ccs_report.json" TimeStampedName="pacbio_filetypes_jsonreport-210920_142816851" UniqueId="ad584599-b955-4190-83a3-81ac844c4c3f" Version="3.0.1" />
+				<pbbase:ExternalResource CreatedAt="2021-09-20T14:28:16.851Z" MetaType="PacBio.FileTypes.txt" ResourceId="/tmp/pytest_workflow_j37ld03e/pbccs_test_pbccs/work/fc/a2c002c442a28dcbf1966bf50e6476/alz.2.ccs_report.txt" TimeStampedName="pacbio_filetypes_txt-210920_142816851" UniqueId="bc83643a-9832-4162-8996-361fb4be11e5" Version="3.0.1" />
+			</pbbase:ExternalResources>
+		</pbbase:ExternalResource>
+	</pbbase:ExternalResources>
+	<pbds:DataSetMetadata>
+		<pbds:TotalLength>27999</pbds:TotalLength>
+		<pbds:NumRecords>11</pbds:NumRecords>
+	</pbds:DataSetMetadata>
+</pbds:ConsensusReadSet>
