@@ -4,7 +4,7 @@
 
 1. The raw data was retrieved from [this](https://www.ncbi.nlm.nih.gov/bioproject/?term=prjeb39899) project. The two used datasets are [ERR4467723](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?run=ERR4467723) (tumor) and [ERR4467726](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?run=ERR4467726) (normal)
 
-    For RNAseq, the raw data was retrieved from 'Genome in a Bottle' sample GM12878 (SRA accession [SRX2900878](https://www.ncbi.nlm.nih.gov/sra/?term=SRX2900878), sequenced on NextSeq 500 with 150bpx2 library). 
+    For RNAseq, the raw data was retrieved from 'Genome in a Bottle' sample GM12878 (SRA accession [SRX2900878](https://www.ncbi.nlm.nih.gov/sra/?term=SRX2900878), sequenced on NextSeq 500 with 150bpx2 library).
 
 2. The data was downloaded using the SRA Toolkit with:
 
@@ -189,7 +189,7 @@ Data generation:
     ```bash
     seqtk subseq pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R1_001.fastq  readnames.txt  > pbmc_R1.fastq`
     seqtk subseq pbmc_1k_v3_fastqs/pbmc_1k_v3_S1_L001_R2_001.fastq  readnames.txt  > pbmc_R2.fastq`
-    
+
     ```
 
 6. Subsample 100 reads
@@ -220,3 +220,15 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 6. Ploidy files for ASCAT
 7. Mappability files for CONTROLFREEC
 8. snpEff & VEP cache
+
+## cooler test dataset
+
+The raw data were downloaded from https://github.com/open2c/cooler/tree/master/tests/data
+
+### PACBIO test dataset
+The first 1000 raw reads were extracted from the [public Alzheimer dataset](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2020_Alzheimer8M_subset/alz.1perc.subreads.bam) using samtools.
+```
+samtools view -h alz.1perc.subreads.bam|head -n 1006|samtools view -bh > alz.bam
+```
+The lima, refine, clustered, singletons and gene models datasets were generated using the isoseq3 framework and TANA collapse.  
+
