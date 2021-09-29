@@ -1,0 +1,7 @@
+#<METADATA>SAMPLE=testT
+contig	position	ref_count	alt_count	other_alt_count	allele_frequency
+chr22	1982	160	32	0	0.0854886
+chr22	2060	473	0	1	0.0183036
+chr22	3214	16	0	1	0.117694
+chr22	3402	6	0	0	0.0871633
+chr22	3443	529	0	0	0.11713
