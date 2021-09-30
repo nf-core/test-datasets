@@ -1,2 +1,2 @@
-sample_id	filename_R1	filename_R2	subject_id	group_name	pcr_target_locus
-Sample1	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-no-umi/ERR346600_2kReads_1.fastq.gz	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-no-umi/ERR346600_2kReads_2.fastq.gz	Patient1	group1	ig
+sample_id	filename_R1	filename_R2	subject_id	species	pcr_target_locus
+Sample1	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-no-umi/ERR346600_2kReads_1.fastq.gz	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-no-umi/ERR346600_2kReads_2.fastq.gz	Patient1	human	IG
