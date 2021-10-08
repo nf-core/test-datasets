@@ -4,5 +4,5 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-`sra_ids.txt`: SRA ids used as a minimal test for the pipeline
-`synapse_ids.txt`: Synapse ids used as a minimal test for the pipeline
+`sra_ids_test.txt`: SRA ids used as a minimal test for the pipeline  
+`synapse_ids_test.txt`: Synapse ids used as a minimal test for the pipeline
