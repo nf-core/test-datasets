@@ -1,16 +1,8 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `fetchngs`
 
-## Introduction
+This branch contains test data to be used for automated testing with the [nf-core/fetchngs](https://github.com/nf-core/fetchngs) pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines.
+## Content of this repository
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+`sra_ids.txt`: SRA ids used as a minimal test for the pipeline
+`synapse_ids.txt`: Synapse ids used as a minimal test for the pipeline
