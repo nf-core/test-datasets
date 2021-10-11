@@ -1,0 +1,13 @@
+Fraction_Group	Fraction	Spectra_Filepath	Label	Sample
+1	1	https://raw.githubusercontent.com/nf-core/test-datasets/proteomicslfq/testdata/BSA1_F1.mzML	1	1
+1	2	https://raw.githubusercontent.com/nf-core/test-datasets/proteomicslfq/testdata/BSA1_F2.mzML	1	1
+2	1	https://raw.githubusercontent.com/nf-core/test-datasets/proteomicslfq/testdata/BSA2_F1.mzML	1	2
+2	2	https://raw.githubusercontent.com/nf-core/test-datasets/proteomicslfq/testdata/BSA2_F2.mzML	1	2
+3	1	https://raw.githubusercontent.com/nf-core/test-datasets/proteomicslfq/testdata/BSA3_F1.mzML	1	3
+3	2	https://raw.githubusercontent.com/nf-core/test-datasets/proteomicslfq/testdata/BSA3_F2.mzML	1	3
+
+Sample	MSstats_Condition	MSstats_BioReplicate
+1	1	1
+2	2	2
+3	3	3
+
