@@ -74,8 +74,8 @@ If you cannot find suitable test data on this repository, please contact us on t
     * gatk
       * 'test.baserecalibrator.table': Recalibration table generated with gatk4 BaseRecalibrator from 'test_paired_end.sorted.bam', using 'test.vcf.gz' as known sites.
     * sra
-      * `test_single_end.sra.tar.gz`: Tar archive containing SRA file obtained from SRR13255544.
-      * `test_paired_end.sra.tar.gz`: Tar archive containing SRA file obtained from SRR11140744.
+      * `SRR13255544.tar.gz`: Tar archive containing SRA file obtained from SRR13255544.
+      * `SRR11140744.tar.gz`: Tar archive containing SRA file obtained from SRR11140744.
     * vcf
       * 'test.vcf', 'test2.vcf': generated from 'test_paired_end.sorted.bam' using bcftools mpileup, call and filter
       * 'test3.vcf': generated from 'test_single_end.sorted.bam' using bcftools mpileup, call and filter
