@@ -1,5 +1,13 @@
 # Test Data
 
+## Table of contents
+
+- [Data Access](#data-access)
+- [Reference files](#reference-files)
+- [Index files](#index-files)
+- [Output data generation](#output-data-generation)
+- [Limitations](#limitations)
+
 ## Data Access
 
 1. The raw data was retrieved from [this](https://www.ncbi.nlm.nih.gov/bioproject/?term=prjeb39899) project. The two used datasets are [ERR4467723](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?run=ERR4467723) (tumor) and [ERR4467726](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?run=ERR4467726) (normal)
@@ -27,8 +35,9 @@
 
 2. Save length in `genome.bed` 0-40001
 
-## VCF reference files
+## Reference files
 
+### VCF files
 Following 'reference' vcf files are generated. All found in igenomes at `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/`:
 
 - dbsnp_146.hg38
@@ -51,7 +60,7 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
 
 2. Manipulated mills & gnomAD file, by changing chr length for chr22 to 40001.
 
-## Mapping files
+### Fasta
 
 As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes/chr22.fasta` was used.
 
@@ -69,76 +78,7 @@ An interval list file was prepared from the genome.bed using GATK4:
 gatk BedToIntervalList -I genome.bed -SD genome.dict -O genome.interval_list
 ```
 
-## Sarek pipeline alteration to generate all output files
-
-1. Used release 2.7 container:
-2. Add `publishDir` to all UMI related steps
-3. Add to mapping process:
-
-    ```bash
-    gatk --java-options -Xmx${task.memory.toGiga()}g SamToFastq --INPUT=${inputFile1} --FASTQ=/dev/stdout --INTERLEAVE=true     --NON_PF=true > ${inputFile1}.fq.gz
-    ```
-
-    and `publish` the reads. Un-interleave reads after sarek is run:
-
-    ```bash
-    paste - - - - - - - - < test2_umi-consensus.bam.fq.gz | tee >(cut -f 1-4 | tr "\t" "\n" > test2_1.fq) | cut -f 5-8 | tr "\t" "\n" > test2_2.fq
-    ```
-
-4. Add `publishDir` to HaplotypeCaller process to publish `.g.vcf` files
-5. Run sarek with the following command:
-
-```bash
-nextflow run  ~/.nextflow/assets/nf-core/sarek/main.nf -profile cfc -c sarek.config \
---input 'testdata_dsl2_chr22.tsv' \
---outdir 'results_sarek_22' \
---intervals false  \
---bwa false \
---aligner 'bwa-mem2' \
---igenomes_ignore  \
---save_reference \
---fasta 'genome.fasta' \
---save_bam_mapped \
---genome custom \
---dict false \
---dbsnp 'dbsnp_146.hg38.vcf.gz' \
---dbsnp_index 'dbsnp_146.hg38.vcf.gz.tbi' \
---known_indels 'mills_and_1000G.indels.vcf.gz' \
---known_indels_index 'mills_and_1000G.indels.vcf.gz.tbi' \
---germline_resource 'gnomAD.r2.1.1.vcf.gz' \
---germline_resource_index 'gnomAD.r2.1.1.vcf.gz.tbi' \
---tools 'freebayes,mpileup,msisensor,cnvkit,strelka,HaplotypeCaller,Manta,tiddit' \
---umi --read_structure1 "7M1S+T" --read_structure2 "7M1S+T" \
---max_memory 59.GB \
---max_cpus 19 \
--resume
-```
-
-with the following TSV:
-
-```bash
-test	XY	0	testN	1	test_umi_1.fq.gz	test_umi_2.fq.gz
-test	XY	1	testT	2	test2_umi_1.fq.gz	test2_umi_2.fq.gz
-```
-
-## GVCF files
-
-1. Set up conda environment:
-
-    ```bash
-    conda install -c bioconda gatk4=4.2.0.0
-    conda install -c bioconda tabix=1.11
-    ```
-
-2. Run commands on both `test.genome.vcf` and `test2.genome.vcf` files:
-
-    ```bash
-    gatk IndexFeatureFile -I test.genome.vcf
-    bgzip test.genome.vcf
-    tabix test.genome.vcf.gz
-    ```
-
-## GTF/GFF
+### GTF/GFF
 
 Downloaded the gtf and gff3 files from Ensembl:
 
@@ -171,7 +111,98 @@ Downloaded the gtf and gff3 files from Ensembl:
 6. Replace spaces with tabs
 7. The coordinates in `genome.gtf` were adapted to start from 1
 
-## 10X genomics scRNA-seq data
+## Index files
+
+### salmon index
+The salmon index  (`homo_sapiens/genome/index/salmon`) was created with the following command:
+
+```bash
+salmon index -t transcriptome.fasta -k 31 -i salmon
+```
+
+## Output data generation
+
+### Sarek pipeline generation
+
+1. Used release 2.7.1 container:
+2. Add `publishDir` to all UMI related steps
+3. Add to mapping process:
+
+    ```bash
+    gatk --java-options -Xmx${task.memory.toGiga()}g SamToFastq --INPUT=${inputFile1} --FASTQ=/dev/stdout --INTERLEAVE=true     --NON_PF=true > ${inputFile1}.fq.gz
+    ```
+
+    and `publish` the reads. Un-interleave reads after sarek is run:
+
+    ```bash
+    paste - - - - - - - - < test2_umi-consensus.bam.fq.gz | tee >(cut -f 1-4 | tr "\t" "\n" > test2_1.fq) | cut -f 5-8 | tr "\t" "\n" > test2_2.fq
+    ```
+    Double-check the integrity of the read files with `seqkit sana` and `seqkir pair`
+
+4. Add `publishDir` to HaplotypeCaller process to publish `.g.vcf` files
+5. Run sarek with the following command:
+
+```bash
+nextflow run  ~/.nextflow/assets/nf-core/sarek/main.nf -profile cfc -c sarek.config \
+--input 'testdata_dsl2_chr22.tsv' \
+--outdir 'results_sarek_22' \
+--intervals false  \
+--bwa false \
+--aligner 'bwa-mem2' \
+--igenomes_ignore  \
+--save_reference \
+--fasta 'genome.fasta' \
+--save_bam_mapped \
+--genome custom \
+--dict false \
+--dbsnp 'dbsnp_146.hg38.vcf.gz' \
+--dbsnp_index 'dbsnp_146.hg38.vcf.gz.tbi' \
+--known_indels 'mills_and_1000G.indels.vcf.gz' \
+--known_indels_index 'mills_and_1000G.indels.vcf.gz.tbi' \
+--germline_resource 'gnomAD.r2.1.1.vcf.gz' \
+--germline_resource_index 'gnomAD.r2.1.1.vcf.gz.tbi' \
+--tools 'mutect2,freebayes,mpileup,msisensor,cnvkit,strelka,HaplotypeCaller,Manta,tiddit' \
+--umi --read_structure1 "7M1S+T" --read_structure2 "7M1S+T" \
+--max_memory 59.GB \
+--max_cpus 19 \
+-resume
+```
+
+with the following TSV:
+
+```bash
+test	XY	0	testN	1	test_umi_1.fq.gz	test_umi_2.fq.gz
+test	XY	1	testT	2	test2_umi_1.fq.gz	test2_umi_2.fq.gz
+```
+
+#### GVCF files
+
+1. Set up conda environment:
+
+    ```bash
+    conda install -c bioconda gatk4=4.2.0.0
+    conda install -c bioconda tabix=1.11
+    ```
+
+2. Take the vcf files generated with sarek and run commands on both `test.genome.vcf` and `test2.genome.vcf` files:
+
+    ```bash
+    gatk IndexFeatureFile -I test.genome.vcf
+    bgzip test.genome.vcf
+    tabix test.genome.vcf.gz
+    ```
+
+#### CRAM files
+
+The cram files were generated with
+
+    ```bash
+    samtools view -C -T genome.fasta -o test2.paired_end.recalibrated.sorted.cram test2.paired_end.recalibrated.sorted.bam
+    samtools index test2.paired_end.recalibrated.sorted.cram
+    ```
+
+
+### 10X genomics scRNA-seq data
 10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
 Data generation:
 
@@ -199,29 +230,7 @@ Data generation:
     seqtk sample -s100 pbmc_R2.fastq 100 > test_2.fastq
     ```
 
-## salmon index
-The salmon index  (`homo_sapiens/genome/index/salmon`) was created with the following command:
-
-```bash
-salmon index -t transcriptome.fasta -k 31 -i salmon
-```
-
-## Limitations
-
-1. Reads do not cover chromosome 6
-
-### Missing files
-
-1. Contamination tables for Mutect2
-2. Single-end reads
-3. Methylated bams
-4. Unaligned bams
-5. Panel of Normals
-6. Ploidy files for ASCAT
-7. Mappability files for CONTROLFREEC
-8. snpEff & VEP cache
-
-## cooler test dataset
+### cooler test dataset
 
 The raw data were downloaded from https://github.com/open2c/cooler/tree/master/tests/data
 
@@ -230,5 +239,17 @@ The first 1000 raw reads were extracted from the [public Alzheimer dataset](http
 ```
 samtools view -h alz.1perc.subreads.bam|head -n 1006|samtools view -bh > alz.bam
 ```
-The lima, refine, clustered, singletons and gene models datasets were generated using the isoseq3 framework and TANA collapse.  
+The lima, refine, clustered, singletons and gene models datasets were generated using the isoseq3 framework and TANA collapse.
 
+## Limitations
+
+1. Reads do not cover chromosome 6
+
+### Missing files
+
+1. Single-end reads
+2. Methylated bams
+3. Unaligned bams
+4. Panel of Normals
+5. Ploidy files for ASCAT
+6. Mappability files for CONTROLFREEC
