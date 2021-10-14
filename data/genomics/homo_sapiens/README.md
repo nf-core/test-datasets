@@ -143,29 +143,30 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 5. Run sarek with the following command:
 
 ```bash
-nextflow run  ~/.nextflow/assets/nf-core/sarek/main.nf -profile cfc -c sarek.config \
+nextflow run nf-core/sarek -r 2.7.1 -profile cfc -c sarek.config \
 --input 'testdata_dsl2_chr22.tsv' \
---outdir 'results_sarek_22' \
+--outdir 'results_fix_bams_again' \
 --intervals false  \
 --bwa false \
---aligner 'bwa-mem2' \
 --igenomes_ignore  \
 --save_reference \
---fasta 'genome.fasta' \
+--fasta 'data/genomics/homo_sapiens/genome/genome.fasta' \
 --save_bam_mapped \
 --genome custom \
 --dict false \
---dbsnp 'dbsnp_146.hg38.vcf.gz' \
---dbsnp_index 'dbsnp_146.hg38.vcf.gz.tbi' \
---known_indels 'mills_and_1000G.indels.vcf.gz' \
---known_indels_index 'mills_and_1000G.indels.vcf.gz.tbi' \
---germline_resource 'gnomAD.r2.1.1.vcf.gz' \
---germline_resource_index 'gnomAD.r2.1.1.vcf.gz.tbi' \
---tools 'mutect2,freebayes,mpileup,msisensor,cnvkit,strelka,HaplotypeCaller,Manta,tiddit' \
---umi --read_structure1 "7M1S+T" --read_structure2 "7M1S+T" \
+--dbsnp 'data/genomics/homo_sapiens/genome/vcf/dbsnp_146.hg38.vcf.gz' \
+--dbsnp_index 'data/genomics/homo_sapiens/genome/vcf/dbsnp_146.hg38.vcf.gz.tbi' \
+--known_indels 'data/genomics/homo_sapiens/genome/vcf/mills_and_1000G.indels.vcf.gz' \
+--known_indels_index 'data/genomics/homo_sapiens/genome/vcf/mills_and_1000G.indels.vcf.gz.tbi' \
+--germline_resource 'data/genomics/homo_sapiens/genome/vcf/gnomAD.r2.1.1.vcf.gz' \
+--germline_resource_index 'data/genomics/homo_sapiens/genome/vcf/gnomAD.r2.1.1.vcf.gz.tbi' \
+--pon 'data/genomics/homo_sapiens/genome/vcf/mills_and_1000G.indels.vcf.gz' \
+--pon_index 'data/genomics/homo_sapiens/genome/vcf/mills_and_1000G.indels.vcf.gz.tbi' \
+--tools 'CNVkit,mutect2,freebayes,mpileup,msisensor,cnvkit,strelka,HaplotypeCaller,Manta,tiddit' \
 --max_memory 59.GB \
 --max_cpus 19 \
--resume
+-resume \
+--generate_gvcf \
 ```
 
 with the following TSV:
@@ -184,13 +185,15 @@ test	XY	1	testT	2	test2_umi_1.fq.gz	test2_umi_2.fq.gz
     conda install -c bioconda tabix=1.11
     ```
 
-2. Take the vcf files generated with sarek and run commands on both `test.genome.vcf` and `test2.genome.vcf` files:
+2. Take the vcf files generated with haplotypecaller within sarek and run commands on both `test.genome.vcf` and `test2.genome.vcf` files:
 
     ```bash
     gatk IndexFeatureFile -I test.genome.vcf
     bgzip test.genome.vcf
     tabix test.genome.vcf.gz
     ```
+
+
 
 #### CRAM files
 
@@ -201,6 +204,28 @@ The cram files were generated with
     samtools index test2.paired_end.recalibrated.sorted.cram
     ```
 
+#### GATK
+
+`test_test2_paired_mutect2_calls.artifact-prior.tar.gz`:
+
+```
+gatk LearnReadOrientationModel -I ..illumina/gatk/paired_mutect2_calls/test_test2_paired_mutect2_calls.f1r2.tar.gz -O test_test2_paired_mutect2_calls.artifact-prior.tar.gz
+```
+#### Paired Mutect files
+
+The unfiltered calls are used from the Mutect2 output directory in sarek.
+
+
+
+#### GenomicsDB
+
+```
+gatk GenomicsDBImport -V ../gvcf/test.genome.vcf --genomicsdb-workspace-path test_genomicsdb -L ../../genome/genome.interval_list
+```
+
+The directory name: /test_genomicsdb/chr22$1$40001/__3cf81648-433d-4464-be08-23d082445c9b139814474716928_1630588248448/
+and the file:
+/test_genomicsdb/chr22$1$40001/genomicsdb_meta_dir/genomicsdb_meta_2b25a6c2-cb94-4a4a-9005-acb7c595d322.json change with each run, but the contents of the file and directory will remain the same. Rename them to the above values to keep tests passing.
 
 ### 10X genomics scRNA-seq data
 10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
