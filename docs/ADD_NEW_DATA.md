@@ -6,7 +6,8 @@ Please fill in the appropriate checklist below (delete whatever is not relevant)
    - If this is the case, follow the [documentation on how to use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
  - [ ] Fork the [nf-core/test-datasets repository](https://github.com/nf-core/test-datasets) to your GitHub account
  - [ ] Create a new branch on your fork
- - [ ] Add your test dataset(if you clone it locally use `git clone --depth 1`)
+ - [ ] Add your test dataset
+   - [ ] If you clone it locally use `git clone <url> --branch <branch> --single-branch`
  - [ ] Make a PR on a new branch with a relevant name
  - [ ] Wait for the PR to be merged
  - [ ] Use this newly created branch for your tests
