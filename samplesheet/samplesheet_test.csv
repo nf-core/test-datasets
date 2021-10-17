@@ -1,0 +1,7 @@
+sample,fastq_1,fastq_2,strandedness,group
+SRX882903_T1,https://raw.githubusercontent.com/nf-core/test-datasets/nascent/testdata/SRX882903_T1.fastq.gz,,reverse,cd4
+SRX882903_T2,https://raw.githubusercontent.com/nf-core/test-datasets/nascent/testdata/SRX882903_T2.fastq.gz,,reverse,cd4
+SRX882903_T3,https://raw.githubusercontent.com/nf-core/test-datasets/nascent/testdata/SRX882903_T3.fastq.gz,,reverse,cd4
+SRX882903_T4,https://raw.githubusercontent.com/nf-core/test-datasets/nascent/testdata/SRX882903_T4.fastq.gz,,reverse,cd4
+SRX882904_T1,https://raw.githubusercontent.com/nf-core/test-datasets/nascent/testdata/SRX882904_T1.fastq.gz,,reverse,jurkat
+SRX882904_T2,https://raw.githubusercontent.com/nf-core/test-datasets/nascent/testdata/SRX882904_T2.fastq.gz,,reverse,jurkat
