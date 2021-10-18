@@ -192,6 +192,15 @@ If you cannot find suitable test data on this repository, please contact us on t
       * toy:
         * toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
 
+* bacteroides_fragilis
+  * illumina
+    * fastq
+      * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+      * 'test2_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+    * fasta
+      * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
+      * 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut\_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+
 ### Uncategorized
 
 * e_coli_k12_16s.fna: E. coli K-12 16S rRNA
