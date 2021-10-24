@@ -1,0 +1,17 @@
+sample,fastq_1,fastq_2,antibody,control
+FOXA1_IP_VEH_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX747791_T1.fastq.gz,,FOXA1,INPUT_VEH_REP1
+FOXA1_IP_VEH_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX747792_T1.fastq.gz,,FOXA1,INPUT_VEH_REP2
+FOXA1_IP_E2_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX747793_T1.fastq.gz,,FOXA1,INPUT_E2_REP1
+FOXA1_IP_E2_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX747794_T1.fastq.gz,,FOXA1,INPUT_E2_REP2
+INPUT_VEH_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX747767_T1.fastq.gz,,,
+INPUT_VEH_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX747768_T1.fastq.gz,,,
+INPUT_E2_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX747769_T1.fastq.gz,,,
+INPUT_E2_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX747770_T1.fastq.gz,,,
+EZH2_IP_NTKO_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX541384_T1.fastq.gz,,EZH2,INPUT_NTKO_REP1
+EZH2_IP_NTKO_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX541385_T1.fastq.gz,,EZH2,INPUT_NTKO_REP2
+EZH2_IP_TKO_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX541386_T1.fastq.gz,,EZH2,INPUT_TKO_REP1
+EZH2_IP_TKO_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX541387_T1.fastq.gz,,EZH2,INPUT_TKO_REP2
+INPUT_NTKO_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX541388_T1.fastq.gz,,,
+INPUT_NTKO_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX541389_T1.fastq.gz,,,
+INPUT_TKO_REP1,s3://nf-core-awsmegatests/chipseq/input_data/SRX541390_T1.fastq.gz,,,
+INPUT_TKO_REP2,s3://nf-core-awsmegatests/chipseq/input_data/SRX541391_T1.fastq.gz,,,
