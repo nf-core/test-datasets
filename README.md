@@ -106,6 +106,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * dict: Sequence dictionary corresponding to `fasta`
     * genome.fasta: Reference fasta based on chr22:16570000-16610000
     * genome2.fasta: Reference fasta based on chr22:16600000-16800000
+    * genome_chr22.fa: Reference fasta based on full chr22
     * transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     * gff3: Encode GFF3 file downsampled based on reference position
     * gtf: Encode GTF file downsampled based on reference position
