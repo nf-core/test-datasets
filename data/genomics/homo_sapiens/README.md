@@ -225,6 +225,7 @@ The unfiltered calls are used from the Mutect2 output directory in sarek.
 gatk GenomicsDBImport -V ../gvcf/test.genome.vcf --genomicsdb-workspace-path test_genomicsdb -L ../../genome/genome.interval_list
 ```
 
+The test_genomicsdb has been placed in a tar archive in order to make it easier to download for tests, please remember to untar the directory when using it for tests.
 The directory name: /test_genomicsdb/chr22$1$40001/__3cf81648-433d-4464-be08-23d082445c9b139814474716928_1630588248448/
 and the file:
 /test_genomicsdb/chr22$1$40001/genomicsdb_meta_dir/genomicsdb_meta_2b25a6c2-cb94-4a4a-9005-acb7c595d322.json change with each run, but the contents of the file and directory will remain the same. Rename them to the above values to keep tests passing.
