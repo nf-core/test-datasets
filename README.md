@@ -85,7 +85,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * wig
       * 'test.wig.gz'
     * picard
-      *  'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads  
+      *  'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads
   * nanopore
     * bam
       * 'test.sorted.bam'
@@ -109,6 +109,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     * gff3: Encode GFF3 file downsampled based on reference position
     * gtf: Encode GTF file downsampled based on reference position
+    * genome_chr22.gtf: Encode GTF file downsampled and filtered on reference position
     * sizes
     * .bed
     * index
