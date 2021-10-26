@@ -111,7 +111,7 @@ Downloaded the gtf and gff3 files from Ensembl:
 
 5. Change chromosome name to `chr22`
 6. Replace spaces with tabs
-7. The coordinates in `genome.gtf` were adapted to start from 1
+7. The coordinates in `genome.gtf` were adapted to start from 1, and the last entries that ended in coordinates >40000 were adapted to end at coordinate 40000.
 
 ## Index files
 
