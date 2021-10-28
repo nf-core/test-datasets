@@ -152,6 +152,12 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test{,2}.genome.vcf.gz: Bgzipped file based on `test{,2}.genome.vcf` file
       * test{,2}.genome.vcf.gz.tbi: Tbi index based on `test{,2}.genome.vcf.gz` file
       * test{,2}.genome.vcf.idx: Index feature file based on `test{,2}.genome.vcf` file
+    * broadPeak:
+      * test.broadPeak: Genome broadPeak file obtained using MACS2
+      * test2.broadPeak: Genome broadPeak file obtained using MACS2, replicate from `test.broadPeak`
+    * narrowPeak:
+      * test.narrowPeak: Genome narrowPeak file obtained using MACS2
+      * test2.narrowPeak: Genome narrowPeak file obtained using MACS2, replicate from `test.narrowPeak`
     * vcf:
       * test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
     * yak:
