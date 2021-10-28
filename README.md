@@ -58,6 +58,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test.paired_end.name.sorted.bam': Paired-end bam file sorted by name
       * 'test.single_end.bam': alignment (unsorted) of the 'test_1.fastq.gz' reads against test_genomic.fasta using minimap2
       * 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
+      * 'example_hla_pe.bam': Downsampled BAM file for HLATyping workflow / OptiType module. Using existing data did not work as it misses preparation steps. 
     * bedgraph
       * 'test.bedgraph'
     * bigwig
