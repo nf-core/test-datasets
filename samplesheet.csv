@@ -1,2 +1,2 @@
-sample,fastq_1,fastq_2
-test,https://github.com/nf-core/test-datasets/raw/scrnaseq/testdata/S10_L001_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/scrnaseq/testdata/S10_L001_R2_001.fastq.gz
+group,replicate,fastq_1,fastq_2
+test,1,https://github.com/nf-core/test-datasets/raw/scrnaseq/testdata/S10_L001_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/scrnaseq/testdata/S10_L001_R2_001.fastq.gz
