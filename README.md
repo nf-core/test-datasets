@@ -208,6 +208,13 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test2_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
     * fasta
       * 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut\_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+    * bam
+      * 'test1.bam': 'test1_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
+      * 'test1.sorted.bam': sorted 'test1.bam'
+      * 'test1.sorted.bai': index of 'test1.sorted.bam'
+      * 'test2.bam': 'test2_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
+      * 'test2.sorted.bam': sorted 'test2.bam'
+      * 'test2.sorted.bai': index of 'test2.sorted.bam'
   * nanopore
     * fastq
       * 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
