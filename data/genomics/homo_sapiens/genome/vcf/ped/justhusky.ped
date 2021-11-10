@@ -1,0 +1,4 @@
+#family_id	sample_id	father	mother	sex	phenotype
+justhusky	earlycasualcaiman	0	0	1	1
+justhusky	hugelymodelbat	earlycasualcaiman	slowlycivilbuck	1	2
+justhusky	slowlycivilbuck	0	0	2	1
