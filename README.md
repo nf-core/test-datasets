@@ -202,6 +202,7 @@ If you cannot find suitable test data on this repository, please contact us on t
 * bacteroides_fragilis
   * genome
       * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome           
+      * 'genome.gbff.gz': NC_006347 genome downloaded from NCBI Genomes in GenBank format
   * illumina
     * fastq
       * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
