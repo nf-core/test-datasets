@@ -99,6 +99,8 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 * homo_sapiens
   * genome
+    * BUSCO
+      * 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
     * vcf
       * dbsnp: DBSnp file downsampled based on reference position
       * gnomAD: gnomAD file downsampled based on reference position
