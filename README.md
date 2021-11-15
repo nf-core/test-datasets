@@ -1,23 +1,28 @@
 # Modules Test Data
 
 This branch of the `nf-core/test-datasets` repository contains all data used for the individual module tests.
-There are two main directories: `genomics` and `delete_me`. The former contains all datasets for genomics tools while the latter contains temporary datasets that will be deleted as better data gets available.
+There are three main directories: `generic`, `genomics` and `delete_me`. The first contains generic files, the second contains all datasets for genomics tools while the latter contains temporary datasets that will be deleted as better data gets available.
 
 ### delete_me
 
 The `delete_me` folder does not adhere to a defined structure as data in this folder should be directly as fast as possible, whenever a more suitable dataset is found that can be added to the `genomics` folder.
 
+### generic
+
+The `generic` folder contains generic files that currently cannot be associated to a genomics category. They are organised by their respective file extension. Also, it contains depreciated files which will be removed in the future and exchanged by files in `genomics`.
+
 ### genomics
 
-The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are two organisms available:
-    *homo_sapiens
-    * sarscov2
+The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are three organisms available:
 
-The two folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files
-in the `illumina` and `nanopore` subfolders.
-It is currently organised in `genomics` and `generic`. The former contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organisms. Any other data is stored in `generic`. This contains files that currently cannot be associated to a genomics category, but also depreciated files which will be removed in the future and exchanged by files in `genomics`. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
+* bacteroides_fragilis
+* homo_sapiens
+* sarscov2
 
-If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md)
+The three folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `illumina`, `nanopore`, `pacbio` and `cooler` subfolders whenever available.
+`Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
+
+If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
 
 ## Data Description
 
@@ -90,7 +95,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * wig
       * 'test.wig.gz'
     * picard
-      *  'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads  
+      * 'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads  
   * nanopore
     * bam
       * 'test.sorted.bam'
@@ -130,7 +135,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.paired_end.sorted: Mapped, and sorted reads based on `test2{,.umi}_{1,2}` (tumor)
       * test2.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2{,.umi}_{1,2}` (tumor)
       * test2.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2{,.umi}_{1,2}` (tumor)
-      * 'example_hla_pe.bam': Downsampled BAM file for HLATyping workflow / OptiType module. Using existing data did not work as it misses preparation steps. 
+      * 'example_hla_pe.bam': Downsampled BAM file for HLATyping workflow / OptiType module. Using existing data did not work as it misses preparation steps.
       * umi:
         * test.paired_end.umi_*: Files base on  `test.umi_{1,2}` (normal)
         * test2.paired_end.umi_*: Files base on  `test2.umi_{1,2}` (tumor)
@@ -212,8 +217,8 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'genome.gbff.gz': NC_006347 genome downloaded from NCBI Genomes in GenBank format
   * illumina
     * fastq
-      * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
-      * 'test2_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+      * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+      * 'test2_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
     * fasta
       * 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut\_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
     * bam
@@ -226,6 +231,21 @@ If you cannot find suitable test data on this repository, please contact us on t
   * nanopore
     * fastq
       * 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+
+## generic
+
+* csv
+  * 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
+* notebooks
+  * jupyter
+    * 'ipython_notebook.ipynb': exemplary jupyter notebook
+    * 'ipython_notebook.md': exemplary markdown notebook
+  * rmarkdown
+    * 'rmarkdown_notebook.Rmd': exemplary R notebook
+* tsv
+  * 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
+* txt
+  * 'hello.txt': one-line txt file
 
 ### Uncategorized
 
