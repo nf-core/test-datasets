@@ -124,6 +124,15 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 
 ## Output data generation
 
+### Plink data generations
+1. Used plink: 1.9
+2. using `test.rnaseq.vcf` from test datasets was used but chrmosoomes were renamed to match plink requirements ( only integer numbers)
+with the following command:
+```bash
+pplink --file test.rnaseq --make-bed --out test.rnaseq
+
+```
+
 ### Sarek pipeline generation
 
 1. Used release 2.7.1 container:
