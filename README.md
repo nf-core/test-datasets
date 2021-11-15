@@ -78,6 +78,11 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test.methylated_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
     * gatk
       * 'test.baserecalibrator.table': Recalibration table generated with gatk4 BaseRecalibrator from 'test_paired_end.sorted.bam', using 'test.vcf.gz' as known sites.
+    * gfa
+      * 'assembly.gfa': assembly in Graphical Fragment Assembly (GFA) 1.0 format
+      * 'assembly.gfa.bgz': compressed with block-compressed GZIP (BGZF)
+      * 'assembly.gfa.gz': compressed with GZIP
+      * 'assembly.gfa.zst': compressed with Zstandard (zstd)
     * sra
       * `SRR13255544.tar.gz`: Tar archive containing SRA file obtained from SRR13255544.
       * `SRR11140744.tar.gz`: Tar archive containing SRA file obtained from SRR11140744.
@@ -104,6 +109,8 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 * homo_sapiens
   * genome
+    * BUSCO
+      * 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
     * vcf
       * dbsnp: DBSnp file downsampled based on reference position
       * gnomAD: gnomAD file downsampled based on reference position
@@ -206,13 +213,21 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 * bacteroides_fragilis
   * genome
-    * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
+      * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome           
+      * 'genome.gbff.gz': NC_006347 genome downloaded from NCBI Genomes in GenBank format
   * illumina
     * fastq
       * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
       * 'test2_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
     * fasta
       * 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut\_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+    * bam
+      * 'test1.bam': 'test1_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
+      * 'test1.sorted.bam': sorted 'test1.bam'
+      * 'test1.sorted.bai': index of 'test1.sorted.bam'
+      * 'test2.bam': 'test2_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
+      * 'test2.sorted.bam': sorted 'test2.bam'
+      * 'test2.sorted.bai': index of 'test2.sorted.bam'
   * nanopore
     * fastq
       * 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
