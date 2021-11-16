@@ -92,6 +92,10 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test2.targets.tsv.gz' from 'test2.vcf.gz' using bcftools query  and bgzip
       * '*.gz': generated from VCF files using bgzip
       * '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
+      * ped
+        * 'justhusky_minimal.vcf.gz': minimal combination example of VCF/PED file
+        * 'justhusky.ped': minimal combination example of VCF/PED file
+        * '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
     * wig
       * 'test.wig.gz'
     * picard

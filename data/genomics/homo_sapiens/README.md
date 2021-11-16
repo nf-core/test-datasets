@@ -62,6 +62,8 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
 
 3. The `syntheticvcf_short.vcf.gz` set is a synthetically generated dataset containing ~2000 common variants made for testing polygenic risk scoring. It is expected to score particularly high for type 2 diabetes.
 
+4. justhusky_minimal.vcf.gz and associated files justhusky_minimal.vcf.gz.tbi and justhusky.ped is a subsampled minimal example vcf/ped combination made for testing family-related modules. justhusky_minimal.vcf.gz.tbi was generated with tabix.
+
 ### Fasta
 
 As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes/chr22.fasta` was used.
