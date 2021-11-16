@@ -1,0 +1,8 @@
+[
+    {
+        "LocusId": "TEST",
+        "LocusStructure": "(GGG)*",
+        "ReferenceRegion": "chr20:64290311-64290409",
+        "VariantType": "Repeat"
+    }
+]
