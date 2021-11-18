@@ -1,0 +1,3 @@
+group,replicate,control_group,fastq_1,fastq_2
+h3.k27._me3,1,1,h3k27me3_rep1_r1.fastq.gz,h3k27me3_rep1_r2.fastq.gz
+igg_.,1,1,igg_rep1_r1.fastq.gz,igg_rep1_r2.fastq.gz
