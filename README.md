@@ -115,6 +115,24 @@ If you cannot find suitable test data on this repository, please contact us on t
   * genome
     * BUSCO
       * 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
+    * chr21: directory for reference files using chr21 rather than 22, used for most gatk4 testing
+      * sequence: directory containing fasta, fai, dict and several other indexes for chr21 including:
+        * .{1-4,rev.1-2}.bt2
+        * .amb
+        * .ann
+        * .bwt
+        * .pac
+        * .sa
+        * .interval_list
+      * germlineresources: directory containing several germline resource vcfs and tbis, including:
+        * 1000G_omni2.5
+        * 1000G_phase1.snps
+        * axiom_exome_plus.genotypes.all_populations.poly
+        * dbsnp_138.hg38
+        * gnomAD.r2.1.1
+        * hapmap_3.3.hg38
+        * hapmap_3.pop_stratified_chr21
+        * mills_and_1000G.indels
     * vcf
       * dbsnp: DBSnp file downsampled based on reference position
       * gnomAD: gnomAD file downsampled based on reference position
@@ -140,14 +158,24 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2{,.umi}_{1,2}` (tumor)
       * test2.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2{,.umi}_{1,2}` (tumor)
       * 'example_hla_pe.bam': Downsampled BAM file for HLATyping workflow / OptiType module. Using existing data did not work as it misses preparation steps.
+      * mitochon_standin.recalibrated.sorted: copy of the old, smaller test2.paired_end.recalibrated.sorted, this is to be used to test mutect2's mitochondria mode, as the current recal bams are far too big. This should be replaced once rarediseases obtain an actual mitochondria sample.
       * umi:
         * test.paired_end.umi_*: Files base on  `test.umi_{1,2}` (normal)
         * test2.paired_end.umi_*: Files base on  `test2.umi_{1,2}` (tumor)
+    * cram:
+      * test.paired_end.sorted: Mapped, and sorted reads based on `test_{1,2}` (normal)
+      * test.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test_{1,2}` (normal)
+      * test.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test_{1,2}` (normal)
+      * test2.paired_end.sorted: Mapped, and sorted reads based on `test2_{1,2}` (tumor)
+      * test2.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2_{1,2}` (tumor)
+      * test2.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2_{1,2}` (tumor)
     * fastq:
       * test_{1,2}: reads corresponding to normal sample
       * test.umi_{1,2}: UMI tagged reads corresponding to normal sample
       * test2_{1,2}: reads corresponding to tumor sample
       * test2.umi_{1,2}: UMI tagged reads corresponding to tumor sample
+      * test_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
+      * test2_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
     * gatk:
       * test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
@@ -161,7 +189,37 @@ If you cannot find suitable test data on this repository, please contact us on t
         * test_test2_paired_mutect2_calls.vcf.gz.tbi: Index file for test_test2_paired_mutect2_calls.vcf.gz
         * test_test2_paired_mutect2_calls.vcf.gz.stats: Stats table output along with test_test2_paired_mutect2_calls.vcf.gz
         * test_test2_paired_mutect2_calls.f1r2.tar.gz: Output file generated along with test_test2_paired_mutect2_calls.vcf.gz used by LearnReadOrientationModel to generate artifact_priors
-      * test_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from test.genome.vcf, only one sample used to minimize size, used to test CreateSomaticPanelofNormals and GenomicsdbImport, directory has been tar archived to make downloading for tests easier, please remember to untar the directory before using it for testing.
+        * test_test2_paired_filtered_mutect2_calls.vcf.gz: tumor normal vcf file after being passed through filtermutectcalls
+        * test_test2_paired_filtered_mutect2_calls.vcf.gz.tbi: tumor normal tbi file after being passed through filtermutectcalls
+        * test_test2_paired_filtered_mutect2_calls.vcf.gz.filteringStats.tsv: 	filtering stats file for the tumor normal vcf file after being passed through filtermutectcalls
+      * pon_mutect2_calls:
+        * test_pon.vcf.gz: variant calls of normal sample run through mutect2 in panel of normals mode
+        * test_pon.vcf.gz.tbi: variant calls index of normal sample run through mutect2 in panel of normals mode
+        * test_pon.vcf.gz.stats: variant calls stats file of normal sample run through mutect2 in panel of normals mode
+        * test2_pon.vcf.gz: variant calls of tumour sample run through mutect2 in panel of normals mode tumour data used as standin would normally be another normal sample in a real pon
+        * test2_pon.vcf.gz.tbi: variant calls index of tumour sample run through mutect2 in panel of normals mode tumour data used as standin would normally be another normal sample in a real pon
+        * test2_pon.vcf.gz.stats: variant calls stats file of tumour sample run through mutect2 in panel of normals mode tumour data used as standin would normally be another normal sample in a real pon
+      * haplotypecaller_calls:
+        * test_haplotc.vcf.gz: vcf output from HaplotypeCaller using germline normal reads
+        * test_haplotc.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline normal reads
+        * test2_haplotc.vcf.gz: vcf output from HaplotypeCaller using germline disease reads
+        * test2_haplotc.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline disease reads
+        * test_haplotc.ann.vcf.gz: vcf output from HaplotypeCaller using germline normal reads annotated with snpeff
+        * test_haplotc.ann.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline normal reads annotated with snpeff
+        * test2_haplotc.ann.vcf.gz: vcf output from HaplotypeCaller using germline disease reads annotated with snpeff
+        * test2_haplotc.ann.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline disease reads annotated with snpeff
+        * test.g.vcf.gz: vcf output from HaplotypeCaller using germline normal reads in GVCF mode
+        * test.g.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline normal reads in GVCF mode
+        * test2.g.vcf.gz: vcf output from HaplotypeCaller using germline disease reads in GVCF mode
+        * test2.g.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline disease reads in GVCF mode
+      * variantrecalibrator:
+        * test2.recal: vqsr recalibration table, based on test2_haplotc.ann.vcf.gz
+        * test2.recal.idx: vqsr recalibration index, based on test2_haplotc.ann.vcf.gz
+        * test2.tranches: vqsr recalibration tranches file, based on test2_haplotc.ann.vcf.gz
+        * test2_allele_specific.recal: vqsr allele specific recalibration table, based on test2_haplotc.ann.vcf.gz
+        * test2_allele_specific.recal.idx: vqsr allele specific recalibration index, based on test2_haplotc.ann.vcf.gz
+        * test2_allele_specific.tranches: vqsr allele specific recalibration tranches file, based on test2_haplotc.ann.vcf.gz
+      * test_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from vcf files in the pon_mutect2_calls subdirectory, used to test CreateSomaticPanelofNormals and GenomicsdbImport, directory has been tar archived to make downloading for tests easier, please remember to untar the directory before using it for testing.
     * gvcf:
       * test.genome.vcf: Genome vcf corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2.genome.vcf: Genome vcf corresponding to `test2{,.umi}_{1,2}` (tumor) reads
