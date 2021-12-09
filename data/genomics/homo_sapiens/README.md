@@ -226,9 +226,19 @@ gatk LearnReadOrientationModel -I ..illumina/gatk/paired_mutect2_calls/test_test
 ```
 #### Paired Mutect files
 
-The unfiltered calls are used from the Mutect2 output directory in sarek.
+The unfiltered calls are from the mutect2 portion of the gatk_tumor_normal_somatic_variant_calling subworkflow, filtered calls are the final output.
 
+#### pon_mutect2_calls
 
+Unfiltered variant calls from running Mutect2 in panel of normals mode, these are used to test CreateSomaticPanelofNormals
+
+#### haplotypecaller_calls files
+
+Variant call output files from haplotypecaller for both disease and normal samples, contains an annotated, unannotated and unnanotated gvcf versions of the samples.
+
+#### VariantRecalibrator files
+
+output files from VariantRecalibrator, contains recal, index and tranches files from both normal and allele specific mode, generated using test2_haplotc.ann.vcf.gz
 
 #### GenomicsDB
 
