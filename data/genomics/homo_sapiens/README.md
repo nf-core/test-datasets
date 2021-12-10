@@ -251,6 +251,8 @@ The directory name: /test_genomicsdb/chr22$1$40001/__3cf81648-433d-4464-be08-23d
 and the file:
 /test_genomicsdb/chr22$1$40001/genomicsdb_meta_dir/genomicsdb_meta_2b25a6c2-cb94-4a4a-9005-acb7c595d322.json change with each run, but the contents of the file and directory will remain the same. Rename them to the above values to keep tests passing.
 
+This advice also applies to test_pon_genomicsdb, which is generated using the vcf files in pon_mutect2_calls directory.
+
 ### 10X genomics scRNA-seq data
 10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
 Data generation:
