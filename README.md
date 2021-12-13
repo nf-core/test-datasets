@@ -316,7 +316,7 @@ If you cannot find suitable test data on this repository, please contact us on t
   * pangenome
     * 'pangenome.fa': A FASTA file which contains several related genomes.
     * 'pangenome.fa.gz': A GZIP compressed FASTA file which contains several related genomes.
-    * 'pangenome.paf': A GZIP compressed PAF file which contains the pairwise alignments of related genomes. 
+    * 'pangenome.paf': A PAF file which contains the all versus all pairwise alignments of related genomes. 
     * 'pangenome.paf.gz': A GZIP compressed PAF file which contains the all versus all pairwise alignments of related genomes.
     * 'pangenome.seqwish.gfa': A GFA file which contains the pangenome graph induced by `seqwish` encoded in the variation graph model.
     * 'pangenome.smoothxg.gfa': A GFA file which contains the `smoothxg` smoothed pangenome graph.
