@@ -1,0 +1,5 @@
+sample,alleles,filename
+sample1,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/alleles/alleles.txt,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/variants/variants.vcf
+sample2,A*02:01,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/variants/variants.tsv
+sample3,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/alleles/alleles.txt,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/proteins/proteins.fasta
+sample4,A*01:01;A*02:01,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/peptides/peptides.tsv
