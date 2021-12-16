@@ -1,0 +1,5 @@
+sample  fastq_1    fastq_2
+CAST    https://raw.githubusercontent.com/nf-core/test-datasets/ssds/testdata/SRR2961475_1e6.R1.fastq.gz  https://raw.githubusercontent.com/nf-core/test-datasets/ssds/testdata/SRR2961475_1e6.R2.fastq.gz
+B6  https://raw.githubusercontent.com/nf-core/test-datasets/ssds/testdata/SRR404028_1e6.R1.fastq.gz   https://raw.githubusercontent.com/nf-core/test-datasets/ssds/testdata/SRR404028_1e6.R2.fastq.gz
+Input   https://raw.githubusercontent.com/nf-core/test-datasets/ssds/testdata/SRR404052_1e6.R1.fastq.gz   https://raw.githubusercontent.com/nf-core/test-datasets/ssds/testdata/SRR404052_1e6.R2.fastq.gz
+
