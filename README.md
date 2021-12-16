@@ -40,6 +40,10 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 * sarscov2
   * alignment
+    * last
+      * 'contigs.genome.maf.gz': alignment of 'contigs.fasta' to 'scaffolds.fasta', in MAF format.
+      * 'contigs.genome.par': alignment parameters for comparing 'contigs.fasta' to 'scaffolds.fasta' with LAST.
+      * 'lastdb.tar.gz ': 'scaffolds.fasta' index archive for the LAST aligner.
     * 'all_sites.fas'
     * 'informative_sites.fas'
   * bed
