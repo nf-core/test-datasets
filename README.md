@@ -40,6 +40,10 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 * sarscov2
   * alignment
+    * last
+      * 'contigs.genome.maf.gz': alignment of 'contigs.fasta' to 'scaffolds.fasta', in MAF format.
+      * 'contigs.genome.par': alignment parameters for comparing 'contigs.fasta' to 'scaffolds.fasta' with LAST.
+      * 'lastdb.tar.gz ': 'scaffolds.fasta' index archive for the LAST aligner.
     * 'all_sites.fas'
     * 'informative_sites.fas'
   * bed
@@ -229,7 +233,8 @@ If you cannot find suitable test data on this repository, please contact us on t
         * test2_allele_specific.recal: vqsr allele specific recalibration table, based on test2_haplotc.ann.vcf.gz
         * test2_allele_specific.recal.idx: vqsr allele specific recalibration index, based on test2_haplotc.ann.vcf.gz
         * test2_allele_specific.tranches: vqsr allele specific recalibration tranches file, based on test2_haplotc.ann.vcf.gz
-      * test_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from vcf files in the pon_mutect2_calls subdirectory, used to test CreateSomaticPanelofNormals and GenomicsdbImport, directory has been tar archived to make downloading for tests easier, please remember to untar the directory before using it for testing.
+      * test_pon_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from vcf files in the pon_mutect2_calls subdirectory, used to test CreateSomaticPanelofNormals and GenomicsdbImport, directory has been tar archived to make downloading for tests easier, please remember to untar the directory before using it for testing.
+      * test_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from test.genome.vcf in the gvcf subdirectory, used to test GenotypeGVCFs, directory has been tar archived to make downloading for tests easier.
     * gvcf:
       * test.genome.vcf: Genome vcf corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2.genome.vcf: Genome vcf corresponding to `test2{,.umi}_{1,2}` (tumor) reads
