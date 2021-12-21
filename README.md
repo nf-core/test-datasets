@@ -69,7 +69,7 @@ The pre-basecalled and demultiplexed data in this repository will be used to tes
 ### Files
 
 * `samplesheet_nobc_nodx_vc.csv` - Sample information sheet required for the pipeline
-* `fastq/nondemultiplexed/` - Non-demuliplexed FastQ files for the nanopore DNA reads overlapping the EDIL3 gene for NA12878.
+* `fastq/demultiplexed/` - Non-demuliplexed FastQ files for the nanopore DNA reads overlapping the EDIL3 gene for NA12878.
 
 ## Aligned data
 
@@ -108,12 +108,12 @@ The sample information are listed here:
 
 ## Reference genome
 
-The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and after visual inspection of the alignments a single genes (i.e. KCMF1) was chosen to represent the reference.
+The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and after visual inspection of the alignments a single genes. Two genes, KCMF1 and EDIL3 were selected to represent the reference genome for different tests.
 
 ### Files
 
 * `reference/hg19_KCMF1.fa` - DNA for KCMF1 gene +- 1kb obtained from the `hg19` UCSC human genome assembly
-* `reference/GRCh38_EDIL3.fa` - DNA from the EDIL3 gene +- 1kb obtained from GRCh38.
+* `reference/GRCh38_EDIL3.fa` - DNA from the EDIL3 gene obtained from the GRCh38 human genome assembly.
 
 ### Obtaining DNA sequences
 
