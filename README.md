@@ -62,6 +62,15 @@ The pre-basecalled and nondemultiplexed data in this repository will be used to 
 | Kit         | SQK-LSK109    |
 | Barcode Kit | NBD103/NBD104 |
 
+## Pre-basecalled and demultiplexed data for variant calling
+
+The pre-basecalled and demultiplexed data in this repository will be used to test the dna variant calling without either of the basecalling or demultiplexing steps. The associated parameters and dettings to run the pipeline can be found in [`test_nobc_nodx_vc.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nobc_nodx_vc.config)
+
+### Files
+
+* `samplesheet_nobc_nodx_vc.csv` - Sample information sheet required for the pipeline
+* `fastq/demultiplexed/` - Demuliplexed FastQ files for the nanopore DNA reads overlapping the EDIL3 gene for NA12878.
+
 ## Aligned data
 
 The aligned data in this repository will be used to test the pipeline without the basecalling, demultiplexing and alignment step. The associated parameters and settings to run the pipeline can be found in [`test_nobc_nodx_noaln.config`](https://github.com/nf-core/nanoseq/blob/master/conf/test_nobc_nodx_noaln.config).
@@ -99,24 +108,30 @@ The sample information are listed here:
 
 ## Reference genome
 
-The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and after visual inspection of the alignments a single gene (i.e. KCMF1) was chosen to represent the reference.
+The test-datasets in this repository were derived from human samples. The size of the entire human genome is too large and possibly too excessive to test the functionality of the pipeline from end-to-end. To overcome this, the data was initially mapped to the human genome and visually inspected. Two genes, KCMF1 and EDIL3, were selected to represent the reference genome for different tests.
 
 ### Files
 
 * `reference/hg19_KCMF1.fa` - DNA for KCMF1 gene +- 1kb obtained from the `hg19` UCSC human genome assembly
+* `reference/GRCh38_EDIL3.fa` - DNA from the EDIL3 gene obtained from the GRCh38 human genome assembly.
 
-### Obtaining KCMF1 DNA sequence
+### Obtaining DNA sequences
 
 The [UCSC Genome Browser](https://genome.ucsc.edu) and other methods can also be used to obtain the gene interval or the DNA sequence directly. The approach outlined below is more flexible for instances where the reference genome isnt hosted on UCSC or for custom interval sets.
 
 #### Creating a BED file of gene intervals
 
-The interval for KCMF1 was obtained by:
+The intervals for KCMF1 were obtained by:
 * loading the "hg19" genome in [IGV](http://software.broadinstitute.org/software/igv/)
 * searching for "KCMF1" in the search box
 * right-clicking on the gene interval in the "RefSeq Genes" track and selecting "Copy Details To Clipboard"
 
-The output of this should look like:
+The intervals for EDIL3 were obtained by:
+* loading the "GRCh38" genome in [IGV](http://software.broadinstitute.org/software/igv/)
+* searching for "EDIL3" in the search box
+* right-clicking on the gene interval in the "RefSeq Genes" track and selecting "Copy Details To Clipboard"
+
+The outputs should look like:
 
 ```bash
 chr2:85198231-85286595
@@ -125,10 +140,21 @@ chr2:85198231-85286595
 id = NM_020122
 ```
 
-This information was reformatted in order to create a [BED](https://genome.ucsc.edu/FAQ/FAQformat.html#format1) file called `hg19_KCMF1.bed`.
+```bash
+chr5:83940554-84384880
+EDIL3
+chr5:83940554-84384880
+id = NM_005711.5
+```
+
+This information was reformatted in order to create [BED](https://genome.ucsc.edu/FAQ/FAQformat.html#format1) files called `hg19_KCMF1.bed` and `GRCh38_EDIL3.bed`, respectively.
 
 ```bash
 chr2    85198230    85286595    KCMF1   0   +
+```
+
+```bash
+chr5	83940554	84384880	EDIL3	0	-
 ```
 
 > NB: The BED format uses a 0-based coordinate system so the start position has been adjusted accordingly.
@@ -140,6 +166,11 @@ We need to use [BEDTools](https://github.com/arq5x/bedtools2/) to extract the DN
 ```bash
 samtools faidx hg19.fa
 cut -f 1,2 hg19.fa.fai > hg19.sizes
+```
+
+```bash
+samtools faidx Homo_sapiens_assembly38.fasta
+cut -f 1,2 Homo_sapiens_assembly38.fasta.fai > GRCh38.sizes
 ```
 
 #### Extend the upstream/downstream regions around KCMF1
@@ -156,12 +187,18 @@ This should create a file with the following contents:
 chr2    85197230    85287595    KCMF1   0   +
 ```
 
+> NB: The intervals for EDIL3 were not extended so this step was omitted. 
+
 #### Extract DNA sequence from reference
 
-Finally, we can use BEDTools again to extract the DNA sequence for the KCMF1 gene from the reference genome:
+Finally, we can use BEDTools again to extract the DNA sequence for the KCMF1 and EDIL3 genes from the reference genome:
 
 ```bash
 bedtools getfasta -name -fi hg19.fa -bed hg19_KCMF1.slop_1kb.bed > hg19_KCMF1.fa
+```
+
+```bash
+bedtools getfasta -name -fi Homo_sapiens_assembly38.fasta -bed GRCh38_EDIL3.bed > GRCh38_EDIL3.fa
 ```
 
 ## Dataset origin
