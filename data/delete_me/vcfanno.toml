@@ -1,0 +1,4 @@
+[[annotation]]
+file="test.vcf.gz"
+fields = ["MQ"]
+ops=["self"]
