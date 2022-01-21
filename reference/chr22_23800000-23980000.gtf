@@ -253,3 +253,4 @@ chr22	BestRefSeq	CDS	23974307	23974414	.	-	0	gene_id "DDT"; gene_name "DDT"; p_i
 chr22	BestRefSeq	exon	23974307	23974439	.	-	.	gene_id "DDT"; gene_name "DDT"; p_id "P2825"; transcript_id "NM_001355.3"; tss_id "TSS9350";
 chr22	BestRefSeq	exon	23974307	23974491	.	-	.	gene_id "DDT"; gene_name "DDT"; p_id "P2825"; transcript_id "NM_001084392.1"; tss_id "TSS13567";
 chr22	BestRefSeq	exon	23979726	23979828	.	-	.	gene_id "DDT"; gene_name "DDT"; p_id "P2825"; transcript_id "NM_001355.3"; tss_id "TSS9350";
+
