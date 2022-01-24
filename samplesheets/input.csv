@@ -1,0 +1,5 @@
+condition,type,microbiome_path,alleles,weights_path
+cond_1,taxa,https://github.com/nf-core/test-datasets/raw/metapep/taxids.txt,A*01:01,
+cond_2,taxa,https://github.com/nf-core/test-datasets/raw/metapep/taxids.tiny.txt,A*01:01 B*07:02,
+cond_3,taxa,https://github.com/nf-core/test-datasets/raw/metapep/taxids.tiny.txt,A*01:01,
+cond_4,assembly,https://github.com/nf-core/test-datasets/raw/metapep/test_minigut.contigs.fa.gz,A*01:01,https://github.com/nf-core/test-datasets/raw/metapep/test_minigut.contig_weights.tsv
