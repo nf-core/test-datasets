@@ -113,7 +113,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * wig
       * 'test.wig.gz'
     * picard
-      * 'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads  
+      * 'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads
   * nanopore
     * bam
       * 'test.sorted.bam'
@@ -138,6 +138,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         * .pac
         * .sa
         * .interval_list
+        * .bed
       * germlineresources: directory containing several germline resource vcfs and tbis, including:
         * 1000G_omni2.5
         * 1000G_phase1.snps
@@ -159,6 +160,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * gtf: Encode GTF file downsampled based on reference position
     * sizes
     * .bed
+    * multi_intervals.bed: Contains the interval from `interval.list` split into two parts
     * index
       * salmon: salmon index created with `transcriptome.fasta`
   * illumina
@@ -296,7 +298,7 @@ If you cannot find suitable test data on this repository, please contact us on t
 * prokaryotes
   * bacteroides_fragilis
     * genome
-        * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome           
+        * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
         * 'genome.gbff.gz': NC_006347 genome downloaded from NCBI Genomes in GenBank format
     * illumina
       * fastq
@@ -320,11 +322,11 @@ If you cannot find suitable test data on this repository, please contact us on t
 * homo_sapiens
   * 'pangenome.fa': A FASTA file which contains several related genomes.
   * 'pangenome.fa.gz': A GZIP compressed FASTA file which contains several related genomes.
-  * 'pangenome.paf': A PAF file which contains the all versus all pairwise alignments of related genomes. 
+  * 'pangenome.paf': A PAF file which contains the all versus all pairwise alignments of related genomes.
   * 'pangenome.paf.gz': A GZIP compressed PAF file which contains the all versus all pairwise alignments of related genomes.
   * 'pangenome.seqwish.gfa': A GFA file which contains the pangenome graph induced by `seqwish` encoded in the variation graph model.
   * 'pangenome.smoothxg.gfa': A GFA file which contains the `smoothxg` smoothed pangenome graph.
-  * 'pangenome.gfaffix.gfa': A GFA file which was normalized with `gfaffix`. 
+  * 'pangenome.gfaffix.gfa': A GFA file which was normalized with `gfaffix`.
   * odgi
     * 'pangenome.og': A variation graph encoded in the binary ODGI format. It is consumed by `odgi view`.
     * 'pangenome.lay': A binary file which holds the 2D graph layout produced by `odgi layout`. Input for `odgi draw`.
