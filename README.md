@@ -251,6 +251,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.narrowPeak: Genome narrowPeak file obtained using MACS2, replicate from `test.narrowPeak`
     * vcf:
       * test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
+      * test.genome_21.somatic_sv.vcf: Indels VCF corresponding to ` test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
     * plink
       * test.rnaseq.bed: Plink binaries obtained using test.rnaseq.vcf with plink tool
       * test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
