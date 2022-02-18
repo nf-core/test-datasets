@@ -50,12 +50,6 @@ One of the files was converted to FASTA file with seqtk 1.3-r106
 seqtk seq -a  ERX5474930_ERR5766174_1.fastq.gz > ERX5474930_ERR5766174_1.fa.gz 
 ```
 
-
-
-
-
-
-
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
