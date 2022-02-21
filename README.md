@@ -153,8 +153,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * gnomAD: gnomAD file downsampled based on reference position
       * mills_and_1000G: Indels file downsampled based on reference position
       * vcfanno
-        * 'exac.vcf.gz': reference ExAC vcf used to query
-        * 'exac.vcf.gz.tbi': required tabix to the reference vcf
+        * 'vcfanno_grch38_module_test.tar.gz': exac.vcf.gz + exac.vcf.gz.tbi and they're reference ExAC vcf used to query
         * 'vcfanno.toml': configuration file for vcfanno to operate
     * dict: Sequence dictionary corresponding to `fasta`
     * genome.fasta: Reference fasta based on chr22:16570000-16610000
