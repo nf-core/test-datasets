@@ -36,31 +36,34 @@ Illumina HiSeq 4000, Paired, WGS was used to generate the test datasets.
 
 ### Assembly and tools tested
 
-Assembly was done with nf-core/mag pipeline, default settings. The file from SPAdes Assembly SRX5027541_T1_contigs.fasta was used to test the following tools:
-01. Fargene
-02. Macrel
-03. deepARG
-04. Antismash
-05. Ampir (on faa file produced by prodigal)
+Assembly was done with nf-core/mag pipeline (v2.1.1), default settings. The file from SPAdes Assembly SRX5027541_T1_contigs.fasta was used to test the following tools:
+
+1. Fargene
+2. Macrel
+3. deepARG
+4. Antismash
+5. Ampir (on faa file produced by prodigal)
 This resulted in a list of hits with 120 unique contig names.
 
 ### Commands to generate the test dataset
 Filter the assembly fasta for the list of hits
-```
+
+```bash
 awk '{ if ((NR>1)&&($0~/^>/)) { printf("\n%s", $0); } else if (NR==1) { printf("%s", $0); } else { printf("\t%s", $0); } }' in.fa | grep -Ff patterns.txt - | tr "\t" "\n" > out.fa
 ```
 
 Filter for all reads except list of hits
-```
+
+```bash
 awk '{ if ((NR>1)&&($0~/^>/)) { printf("\n%s", $0); } else if (NR==1) { printf("%s", $0); } else { printf("\t%s", $0); } }' in.fa | grep -v patterns.txt - | tr "\t" "\n" > out.fa
-```
 Get a subsample of a fasta file (specify number of contigs)
-```
+
+```bash
 seqtk sample nohits.fa 1200 >sub_nohits.fa
-````
 Join the hits.fa and sub_nohits.fa to the dataset
-01. dataset 01 contains all 120 hits plus 1200 non-hit contigs
-02. dataset 02 contains only 60 hits plus 3000 non-hit contigs
+
+1. dataset 01 contains all 120 hits plus 1200 non-hit contigs
+2. dataset 02 contains only 60 hits plus 3000 non-hit contigs
 
 In addition prokka annotated files were added for both test-datasets.
 
