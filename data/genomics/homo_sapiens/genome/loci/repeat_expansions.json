@@ -3,6 +3,8 @@
         "LocusId": "TEST",
         "LocusStructure": "(CAT)*",
         "ReferenceRegion": "chr22:5703-5708",
-        "VariantType": "Repeat"
+        "VariantType": "Repeat",
+        "NormalMax": 15,
+        "PathologicMin": 25
     }
 ]
