@@ -246,6 +246,9 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test{,2}.genome.vcf.gz: Bgzipped file based on `test{,2}.genome.vcf` file
       * test{,2}.genome.vcf.gz.tbi: Tbi index based on `test{,2}.genome.vcf.gz` file
       * test{,2}.genome.vcf.idx: Index feature file based on `test{,2}.genome.vcf` file
+    * mpileup:
+      * test.mpileup.gz: Pileup file correspongind to `test_paired_end_recalibrated_sorted_bam` (normal) generate with `samtools mpileup`
+      * test2.mpileup.gz: Pileup file correspongind to `test2_paired_end_recalibrated_sorted_bam` (tumor) generate with `samtools mpileup`
     * broadPeak:
       * test.broadPeak: Genome broadPeak file obtained using MACS2
       * test2.broadPeak: Genome broadPeak file obtained using MACS2, replicate from `test.broadPeak`
@@ -259,7 +262,6 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test.rnaseq.bed: Plink binaries obtained using test.rnaseq.vcf with plink tool
       * test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
       * test.rnaseq.fam: Plink binaries obtained using test.rnaseq.vcf with plink tool
-
     * yak:
       * test.yak: Yak kmer index of 1000 of paternal paired-end reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D2_S1_L001_R{1,2}_001.fastq.gz and D2_S1_L001_R{1,2}_002.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
       * test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}_001.fastq.gz and D3_S1_L001_R{1,2}_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
