@@ -148,6 +148,8 @@ If you cannot find suitable test data on this repository, please contact us on t
         * hapmap_3.3.hg38
         * hapmap_3.pop_stratified_chr21
         * mills_and_1000G.indels
+      * chromosomes: directory containing the fasta genome file renamed to chr21 (needed for ControlFREEC)
+        * chr21.fasta: Copy of genome.fasta
     * vcf
       * dbsnp: DBSnp file downsampled based on reference position
       * gnomAD: gnomAD file downsampled based on reference position
