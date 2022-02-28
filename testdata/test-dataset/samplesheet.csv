@@ -1,2 +1,2 @@
 sample_id,species,st_data_dir,sc_data_dir
-Andersson_Nat_Gen_2021_CID4465_full,Human,/home/domans/Projects/ST/data/test-dataset/CID4465_ST/,/home/domans/Projects/ST/data/test-dataset/CID4465_SC/filtered_feature_bc_matrix/
+Andersson_Nat_Gen_2021_CID4465_full,Human,https://github.com/sdomanskyi/test-datasets/tree/spatialtranscriptomics/testdata/test-dataset/CID4465_ST/,https://github.com/sdomanskyi/test-datasets/tree/spatialtranscriptomics/testdata/test-dataset/CID4465_SC/filtered_feature_bc_matrix/
