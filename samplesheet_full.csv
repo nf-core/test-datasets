@@ -1,7 +1,7 @@
-group,replicate,barcode,input_file,fasta,gtf
-A549,1,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_A549_cDNA_replicate1_run2.fastq.gz,GRCh37,
-A549,2,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_A549_directcDNA_replicate3_run2.fastq.gz,GRCh37,
-A549,3,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_A549_directcDNA_replicate5_run3.fastq.gz,GRCh37,
-K562,1,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_K562_cDNA_replicate1_run3.fastq.gz,GRCh37,
-K562,2,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_K562_directcDNA_replicate3_run1.fastq.gz,GRCh37,
-K562,3,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_K562_directcDNA_replicate4_run2.fastq.gz,GRCh37,
+group,replicate,barcode,input_file,genome,transcriptome
+A549,1,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_A549_cDNA_replicate1_run2.fastq.gz,GRCh38,
+A549,2,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_A549_directcDNA_replicate3_run2.fastq.gz,GRCh38,
+A549,3,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_A549_directcDNA_replicate5_run3.fastq.gz,GRCh38,
+K562,1,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_K562_cDNA_replicate1_run3.fastq.gz,GRCh38,
+K562,2,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_K562_directcDNA_replicate3_run1.fastq.gz,GRCh38,
+K562,3,,s3://nf-core-awsmegatests/nanoseq/input_data/SGNex_K562_directcDNA_replicate4_run2.fastq.gz,GRCh38,

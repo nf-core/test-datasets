@@ -1,4 +1,4 @@
-group,replicate,barcode,input_file,fasta,gtf
+group,replicate,barcode,input_file,genome,transcriptome
 MCF7,1,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/fastq/demultiplexed/quantification/stringtie/MCF7_directcDNA_replicate1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_23800000-23980000.fa,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_23800000-23980000.gtf
 MCF7,2,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/fastq/demultiplexed/quantification/stringtie/MCF7_directcDNA_replicate3.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_23800000-23980000.fa,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_23800000-23980000.gtf
 MCF7,3,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/fastq/demultiplexed/quantification/stringtie/MCF7_directRNA_replicate4.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_23800000-23980000.fa,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/reference/chr22_23800000-23980000.gtf
