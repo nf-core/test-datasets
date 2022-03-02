@@ -307,6 +307,8 @@ If you cannot find suitable test data on this repository, please contact us on t
     * genome
         * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
         * 'genome.gbff.gz': NC_006347 genome downloaded from NCBI Genomes in GenBank format
+        * 'genome.paf': NC_006347 genome PAF file
+        * 'genome.mapping.potential.ARG': DeepARG anti-microbial resistance gene prediction of NC_006347 genome
     * illumina
       * fastq
         * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
