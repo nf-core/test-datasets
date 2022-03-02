@@ -1,23 +1,38 @@
 # Modules Test Data
 
 This branch of the `nf-core/test-datasets` repository contains all data used for the individual module tests.
-There are two main directories: `genomics` and `delete_me`. The former contains all datasets for genomics tools while the latter contains temporary datasets that will be deleted as better data gets available.
+There are three main directories: `generic`, `genomics` and `delete_me`. The first contains generic files, the second contains all datasets for genomics tools while the latter contains temporary datasets that will be deleted as better data gets available.
 
 ### delete_me
 
 The `delete_me` folder does not adhere to a defined structure as data in this folder should be directly as fast as possible, whenever a more suitable dataset is found that can be added to the `genomics` folder.
 
+### generic
+
+The `generic` folder contains generic files that currently cannot be associated to a genomics category. They are organised by their respective file extension. Also, it contains depreciated files which will be removed in the future and exchanged by files in `genomics`.
+
 ### genomics
 
-The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are two organisms available:
-    *homo_sapiens
-    * sarscov2
+The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are three organisms available:
 
-The two folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files
-in the `illumina` and `nanopore` subfolders.
-It is currently organised in `genomics` and `generic`. The former contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organisms. Any other data is stored in `generic`. This contains files that currently cannot be associated to a genomics category, but also depreciated files which will be removed in the future and exchanged by files in `genomics`. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
+* bacteroides_fragilis
+* homo_sapiens
+* sarscov2
 
-If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md)
+The three folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `illumina`, `nanopore`, `pacbio` and `cooler` subfolders whenever available.
+`Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
+
+### pangenomics
+
+The pangenomics folder contains subfolders for all organisms for which test data is available. At the moment, there is one organism available:
+
+* homos_sapiens
+
+The folder is structured in the following way: Any nonspecific-pangenome file is located in `pangenome` (e.g. PAF, GFA, ...) and software specific binary files in the `odgi` subfolder. `Pangenomics` contains all typical data required for pangenomics modules, such as PAF, GFA files including the binary formats ODGI, and LAY. Every folder in `pangenomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder. All files in the `pangenomics` folder originates from a [PGGB](https://github.com/pangenome/pggb) run using the [HLA V-352962 gene FASTA](https://github.com/pangenome/pggb/blob/master/data/HLA/V-352962.fa.gz).
+
+## Adding New Data
+
+If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
 
 ## Data Description
 
@@ -25,6 +40,10 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 * sarscov2
   * alignment
+    * last
+      * 'contigs.genome.maf.gz': alignment of 'contigs.fasta' to 'scaffolds.fasta', in MAF format.
+      * 'contigs.genome.par': alignment parameters for comparing 'contigs.fasta' to 'scaffolds.fasta' with LAST.
+      * 'lastdb.tar.gz ': 'scaffolds.fasta' index archive for the LAST aligner.
     * 'all_sites.fas'
     * 'informative_sites.fas'
   * bed
@@ -73,6 +92,11 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test.methylated_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
     * gatk
       * 'test.baserecalibrator.table': Recalibration table generated with gatk4 BaseRecalibrator from 'test_paired_end.sorted.bam', using 'test.vcf.gz' as known sites.
+    * gfa
+      * 'assembly.gfa': assembly in Graphical Fragment Assembly (GFA) 1.0 format
+      * 'assembly.gfa.bgz': compressed with block-compressed GZIP (BGZF)
+      * 'assembly.gfa.gz': compressed with GZIP
+      * 'assembly.gfa.zst': compressed with Zstandard (zstd)
     * sra
       * `SRR13255544.tar.gz`: Tar archive containing SRA file obtained from SRR13255544.
       * `SRR11140744.tar.gz`: Tar archive containing SRA file obtained from SRR11140744.
@@ -82,10 +106,14 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test2.targets.tsv.gz' from 'test2.vcf.gz' using bcftools query  and bgzip
       * '*.gz': generated from VCF files using bgzip
       * '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
+      * ped
+        * 'justhusky_minimal.vcf.gz': minimal combination example of VCF/PED file
+        * 'justhusky.ped': minimal combination example of VCF/PED file
+        * '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
     * wig
       * 'test.wig.gz'
     * picard
-      *  'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads  
+      * 'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads
   * nanopore
     * bam
       * 'test.sorted.bam'
@@ -99,10 +127,35 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 * homo_sapiens
   * genome
+    * BUSCO
+      * 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
+    * chr21: directory for reference files using chr21 rather than 22, used for most gatk4 testing
+      * sequence: directory containing fasta, fai, dict and several other indexes for chr21 including:
+        * .{1-4,rev.1-2}.bt2
+        * .amb
+        * .ann
+        * .bwt
+        * .pac
+        * .sa
+        * .interval_list
+        * .bed
+      * germlineresources: directory containing several germline resource vcfs and tbis, including:
+        * 1000G_omni2.5
+        * 1000G_phase1.snps
+        * axiom_exome_plus.genotypes.all_populations.poly
+        * dbsnp_138.hg38
+        * gnomAD.r2.1.1
+        * hapmap_3.3.hg38
+        * hapmap_3.pop_stratified_chr21
+        * mills_and_1000G.indels
+      * chromosomes.tar.gz: compressed directory containing the fasta genome file renamed to chr21 (needed for ControlFREEC)
     * vcf
       * dbsnp: DBSnp file downsampled based on reference position
       * gnomAD: gnomAD file downsampled based on reference position
       * mills_and_1000G: Indels file downsampled based on reference position
+      * vcfanno
+        * 'vcfanno_grch38_module_test.tar.gz': exac.vcf.gz + exac.vcf.gz.tbi and they're reference ExAC vcf used to query
+        * 'vcfanno.toml': configuration file for vcfanno to operate
     * dict: Sequence dictionary corresponding to `fasta`
     * genome.fasta: Reference fasta based on chr22:16570000-16610000
     * genome2.fasta: Reference fasta based on chr22:16600000-16800000
@@ -111,6 +164,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * gtf: Encode GTF file downsampled based on reference position
     * sizes
     * .bed
+    * multi_intervals.bed: Contains the interval from `interval.list` split into two parts
     * index
       * salmon: salmon index created with `transcriptome.fasta`
   * illumina
@@ -123,15 +177,25 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.paired_end.sorted: Mapped, and sorted reads based on `test2{,.umi}_{1,2}` (tumor)
       * test2.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2{,.umi}_{1,2}` (tumor)
       * test2.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2{,.umi}_{1,2}` (tumor)
-      * 'example_hla_pe.bam': Downsampled BAM file for HLATyping workflow / OptiType module. Using existing data did not work as it misses preparation steps. 
+      * 'example_hla_pe.bam': Downsampled BAM file for HLATyping workflow / OptiType module. Using existing data did not work as it misses preparation steps.
+      * mitochon_standin.recalibrated.sorted: copy of the old, smaller test2.paired_end.recalibrated.sorted, this is to be used to test mutect2's mitochondria mode, as the current recal bams are far too big. This should be replaced once rarediseases obtain an actual mitochondria sample.
       * umi:
         * test.paired_end.umi_*: Files base on  `test.umi_{1,2}` (normal)
         * test2.paired_end.umi_*: Files base on  `test2.umi_{1,2}` (tumor)
+    * cram:
+      * test.paired_end.sorted: Mapped, and sorted reads based on `test_{1,2}` (normal)
+      * test.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test_{1,2}` (normal)
+      * test.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test_{1,2}` (normal)
+      * test2.paired_end.sorted: Mapped, and sorted reads based on `test2_{1,2}` (tumor)
+      * test2.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2_{1,2}` (tumor)
+      * test2.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2_{1,2}` (tumor)
     * fastq:
       * test_{1,2}: reads corresponding to normal sample
       * test.umi_{1,2}: UMI tagged reads corresponding to normal sample
       * test2_{1,2}: reads corresponding to tumor sample
       * test2.umi_{1,2}: UMI tagged reads corresponding to tumor sample
+      * test_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
+      * test2_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
     * gatk:
       * test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
@@ -145,13 +209,47 @@ If you cannot find suitable test data on this repository, please contact us on t
         * test_test2_paired_mutect2_calls.vcf.gz.tbi: Index file for test_test2_paired_mutect2_calls.vcf.gz
         * test_test2_paired_mutect2_calls.vcf.gz.stats: Stats table output along with test_test2_paired_mutect2_calls.vcf.gz
         * test_test2_paired_mutect2_calls.f1r2.tar.gz: Output file generated along with test_test2_paired_mutect2_calls.vcf.gz used by LearnReadOrientationModel to generate artifact_priors
-      * test_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from test.genome.vcf, only one sample used to minimize size, used to test CreateSomaticPanelofNormals and GenomicsdbImport, directory has been tar archived to make downloading for tests easier, please remember to untar the directory before using it for testing.
+        * test_test2_paired_filtered_mutect2_calls.vcf.gz: tumor normal vcf file after being passed through filtermutectcalls
+        * test_test2_paired_filtered_mutect2_calls.vcf.gz.tbi: tumor normal tbi file after being passed through filtermutectcalls
+        * test_test2_paired_filtered_mutect2_calls.vcf.gz.filteringStats.tsv: 	filtering stats file for the tumor normal vcf file after being passed through filtermutectcalls
+      * pon_mutect2_calls:
+        * test_pon.vcf.gz: variant calls of normal sample run through mutect2 in panel of normals mode
+        * test_pon.vcf.gz.tbi: variant calls index of normal sample run through mutect2 in panel of normals mode
+        * test_pon.vcf.gz.stats: variant calls stats file of normal sample run through mutect2 in panel of normals mode
+        * test2_pon.vcf.gz: variant calls of tumour sample run through mutect2 in panel of normals mode tumour data used as standin would normally be another normal sample in a real pon
+        * test2_pon.vcf.gz.tbi: variant calls index of tumour sample run through mutect2 in panel of normals mode tumour data used as standin would normally be another normal sample in a real pon
+        * test2_pon.vcf.gz.stats: variant calls stats file of tumour sample run through mutect2 in panel of normals mode tumour data used as standin would normally be another normal sample in a real pon
+      * haplotypecaller_calls:
+        * test_haplotc.vcf.gz: vcf output from HaplotypeCaller using germline normal reads
+        * test_haplotc.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline normal reads
+        * test2_haplotc.vcf.gz: vcf output from HaplotypeCaller using germline disease reads
+        * test2_haplotc.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline disease reads
+        * test_haplotc.ann.vcf.gz: vcf output from HaplotypeCaller using germline normal reads annotated with snpeff
+        * test_haplotc.ann.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline normal reads annotated with snpeff
+        * test2_haplotc.ann.vcf.gz: vcf output from HaplotypeCaller using germline disease reads annotated with snpeff
+        * test2_haplotc.ann.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline disease reads annotated with snpeff
+        * test.g.vcf.gz: vcf output from HaplotypeCaller using germline normal reads in GVCF mode
+        * test.g.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline normal reads in GVCF mode
+        * test2.g.vcf.gz: vcf output from HaplotypeCaller using germline disease reads in GVCF mode
+        * test2.g.vcf.gz.tbi: vcf.tbi output from HaplotypeCaller using germline disease reads in GVCF mode
+      * variantrecalibrator:
+        * test2.recal: vqsr recalibration table, based on test2_haplotc.ann.vcf.gz
+        * test2.recal.idx: vqsr recalibration index, based on test2_haplotc.ann.vcf.gz
+        * test2.tranches: vqsr recalibration tranches file, based on test2_haplotc.ann.vcf.gz
+        * test2_allele_specific.recal: vqsr allele specific recalibration table, based on test2_haplotc.ann.vcf.gz
+        * test2_allele_specific.recal.idx: vqsr allele specific recalibration index, based on test2_haplotc.ann.vcf.gz
+        * test2_allele_specific.tranches: vqsr allele specific recalibration tranches file, based on test2_haplotc.ann.vcf.gz
+      * test_pon_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from vcf files in the pon_mutect2_calls subdirectory, used to test CreateSomaticPanelofNormals and GenomicsdbImport, directory has been tar archived to make downloading for tests easier, please remember to untar the directory before using it for testing.
+      * test_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from test.genome.vcf in the gvcf subdirectory, used to test GenotypeGVCFs, directory has been tar archived to make downloading for tests easier.
     * gvcf:
       * test.genome.vcf: Genome vcf corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2.genome.vcf: Genome vcf corresponding to `test2{,.umi}_{1,2}` (tumor) reads
       * test{,2}.genome.vcf.gz: Bgzipped file based on `test{,2}.genome.vcf` file
       * test{,2}.genome.vcf.gz.tbi: Tbi index based on `test{,2}.genome.vcf.gz` file
       * test{,2}.genome.vcf.idx: Index feature file based on `test{,2}.genome.vcf` file
+    * mpileup:
+      * test.mpileup.gz: Pileup file correspongind to `test_paired_end_recalibrated_sorted_bam` (normal) generate with `samtools mpileup`
+      * test2.mpileup.gz: Pileup file correspongind to `test2_paired_end_recalibrated_sorted_bam` (tumor) generate with `samtools mpileup`
     * broadPeak:
       * test.broadPeak: Genome broadPeak file obtained using MACS2
       * test2.broadPeak: Genome broadPeak file obtained using MACS2, replicate from `test.broadPeak`
@@ -160,6 +258,11 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.narrowPeak: Genome narrowPeak file obtained using MACS2, replicate from `test.narrowPeak`
     * vcf:
       * test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
+      * test.genome_21.somatic_sv.vcf: Indels VCF corresponding to ` test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
+    * plink
+      * test.rnaseq.bed: Plink binaries obtained using test.rnaseq.vcf with plink tool
+      * test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
+      * test.rnaseq.fam: Plink binaries obtained using test.rnaseq.vcf with plink tool
     * yak:
       * test.yak: Yak kmer index of 1000 of paternal paired-end reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D2_S1_L001_R{1,2}_001.fastq.gz and D2_S1_L001_R{1,2}_002.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
       * test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}_001.fastq.gz and D3_S1_L001_R{1,2}_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
@@ -199,27 +302,58 @@ If you cannot find suitable test data on this repository, please contact us on t
       * toy:
         * toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
 
-* bacteroides_fragilis
-  * genome
-    * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
-    * 'genome.paf': NC_006347 genome PAF file
-    * 'genome.mapping.potential.ARG': DeepARG anti-microbial resistance gene prediction of NC_006347 genome
-  * illumina
-    * fastq
-      * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
-      * 'test2_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
-    * fasta
-      * 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut\_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
-    * bam
-      * 'test1.bam': 'test1_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
-      * 'test1.sorted.bam': sorted 'test1.bam'
-      * 'test1.sorted.bai': index of 'test1.sorted.bam'
-      * 'test2.bam': 'test2_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
-      * 'test2.sorted.bam': sorted 'test2.bam'
-      * 'test2.sorted.bai': index of 'test2.sorted.bam'
-  * nanopore
-    * fastq
-      * 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+* prokaryotes
+  * bacteroides_fragilis
+    * genome
+        * 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
+        * 'genome.gbff.gz': NC_006347 genome downloaded from NCBI Genomes in GenBank format
+        * 'genome.paf': NC_006347 genome PAF file
+        * 'genome.mapping.potential.ARG': DeepARG anti-microbial resistance gene prediction of NC_006347 genome
+    * illumina
+      * fastq
+        * 'test1_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis_ YCH46  bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+        * 'test2_{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+      * fasta
+        * 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut\_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+      * bam
+        * 'test1.bam': 'test1_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
+        * 'test1.sorted.bam': sorted 'test1.bam'
+        * 'test1.sorted.bai': index of 'test1.sorted.bam'
+        * 'test2.bam': 'test2_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
+        * 'test2.sorted.bam': sorted 'test2.bam'
+        * 'test2.sorted.bai': index of 'test2.sorted.bam'
+    * nanopore
+      * fastq
+        * 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+
+### pangenomics
+
+* homo_sapiens
+  * 'pangenome.fa': A FASTA file which contains several related genomes.
+  * 'pangenome.fa.gz': A GZIP compressed FASTA file which contains several related genomes.
+  * 'pangenome.paf': A PAF file which contains the all versus all pairwise alignments of related genomes.
+  * 'pangenome.paf.gz': A GZIP compressed PAF file which contains the all versus all pairwise alignments of related genomes.
+  * 'pangenome.seqwish.gfa': A GFA file which contains the pangenome graph induced by `seqwish` encoded in the variation graph model.
+  * 'pangenome.smoothxg.gfa': A GFA file which contains the `smoothxg` smoothed pangenome graph.
+  * 'pangenome.gfaffix.gfa': A GFA file which was normalized with `gfaffix`.
+  * odgi
+    * 'pangenome.og': A variation graph encoded in the binary ODGI format. It is consumed by `odgi view`.
+    * 'pangenome.lay': A binary file which holds the 2D graph layout produced by `odgi layout`. Input for `odgi draw`.
+
+### generic
+
+* csv
+  * 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
+* notebooks
+  * jupyter
+    * 'ipython_notebook.ipynb': exemplary jupyter notebook
+    * 'ipython_notebook.md': exemplary markdown notebook
+  * rmarkdown
+    * 'rmarkdown_notebook.Rmd': exemplary R notebook
+* tsv
+  * 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
+* txt
+  * 'hello.txt': one-line txt file
 
 ### Uncategorized
 

@@ -62,6 +62,8 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
 
 3. The `syntheticvcf_short.vcf.gz` set is a synthetically generated dataset containing ~2000 common variants made for testing polygenic risk scoring. It is expected to score particularly high for type 2 diabetes.
 
+4. justhusky_minimal.vcf.gz and associated files justhusky_minimal.vcf.gz.tbi and justhusky.ped is a subsampled minimal example vcf/ped combination made for testing family-related modules. justhusky_minimal.vcf.gz.tbi was generated with tabix.
+
 ### Fasta
 
 As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes/chr22.fasta` was used.
@@ -123,6 +125,15 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 ```
 
 ## Output data generation
+
+### Plink data generations
+1. Used plink: 1.9
+2. using `test.rnaseq.vcf` from test datasets was used but chrmosoomes were renamed to match plink requirements ( only integer numbers)
+with the following command:
+```bash
+pplink --file test.rnaseq --make-bed --out test.rnaseq
+
+```
 
 ### Sarek pipeline generation
 
@@ -215,9 +226,19 @@ gatk LearnReadOrientationModel -I ..illumina/gatk/paired_mutect2_calls/test_test
 ```
 #### Paired Mutect files
 
-The unfiltered calls are used from the Mutect2 output directory in sarek.
+The unfiltered calls are from the mutect2 portion of the gatk_tumor_normal_somatic_variant_calling subworkflow, filtered calls are the final output.
 
+#### pon_mutect2_calls
 
+Unfiltered variant calls from running Mutect2 in panel of normals mode, these are used to test CreateSomaticPanelofNormals
+
+#### haplotypecaller_calls files
+
+Variant call output files from haplotypecaller for both disease and normal samples, contains an annotated, unannotated and unnanotated gvcf versions of the samples.
+
+#### VariantRecalibrator files
+
+output files from VariantRecalibrator, contains recal, index and tranches files from both normal and allele specific mode, generated using test2_haplotc.ann.vcf.gz
 
 #### GenomicsDB
 
@@ -229,6 +250,8 @@ The test_genomicsdb has been placed in a tar archive in order to make it easier 
 The directory name: /test_genomicsdb/chr22$1$40001/__3cf81648-433d-4464-be08-23d082445c9b139814474716928_1630588248448/
 and the file:
 /test_genomicsdb/chr22$1$40001/genomicsdb_meta_dir/genomicsdb_meta_2b25a6c2-cb94-4a4a-9005-acb7c595d322.json change with each run, but the contents of the file and directory will remain the same. Rename them to the above values to keep tests passing.
+
+This advice also applies to test_pon_genomicsdb, which is generated using the vcf files in pon_mutect2_calls directory.
 
 ### 10X genomics scRNA-seq data
 10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
