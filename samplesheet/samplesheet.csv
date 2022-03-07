@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2
+TEST,"test-data/data/circdna_R1.fastq.gz","test-data/data/circdna_R2.fastq.gz"
