@@ -39,25 +39,25 @@ To track and test the reproducibility of the pipeline with default parameters be
 
 | sample	              | circles	|
 |-----------------------|-------|
-| circdna_1	| 926	  |
-| circdna_2	| 924	  |
-| circdna_3	| 931	  |
+| circdna_1	| 275	  |
+| circdna_2	| 280	  |
+| circdna_3	| 279	  |
 
 ### Number of `Circexplorer2` circles
 
 | sample	              | circles	|
 |-----------------------|-------|
-| circdna_1	| 1042	  |
-| circdna_2	| 1070	  |
-| circdna_3	| 1059	  |
+| circdna_1	| 392	  |
+| circdna_2	| 328	  |
+| circdna_3	| 393	  |
 
 ### Number of `circle_finder` circles
 
 | sample	              | circles	|
 |-----------------------|-------|
-| circdna_1	| 848	  |
-| circdna_2	| 841	  |
-| circdna_3	| 848	  |
+| circdna_1	| 267	  |
+| circdna_2	| 275	  |
+| circdna_3	| 266	  |
 
 ### Number of `unicycler` circles
 
