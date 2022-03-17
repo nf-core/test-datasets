@@ -38,6 +38,10 @@ zcat chr19.fa.gz | head -100000 | gzip > chr19_100k.fa.gz ## The fasta only cont
 
 The GTF file contains annotation for more than just the chr19 data but has large portions of exons on chr19, so gives somewhat meaningful results. The cdna file was evaluated manually to determine an appropriate range with chr19 entries for testing.
 
+## Samplesheet Format
+
+The samplesheet format has been discussed in the community for ideally supporting all types of subworkflows in the main workflow. This means, that the example workflow uses a format of: `sample,fastq_1,fastq_2,protocol,expected_cells` as a header that is supported by all available tools. For a summary on the discussion that led to this decision, please have a look [here](https://github.com/nf-core/scrnaseq/issues/92).
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack](https://nfcore.slack.com) or [Click here for an invite](https://nf-core-invite.herokuapp.com/)
