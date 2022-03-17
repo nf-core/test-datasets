@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+circdna_1,https://raw.githubusercontent.com/nf-core/test-datasets/circdna/testdata/circdna_1_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circdna/testdata/circdna_1_R2.fastq.gz
+circdna_2,https://raw.githubusercontent.com/nf-core/test-datasets/circdna/testdata/circdna_2_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circdna/testdata/circdna_2_R2.fastq.gz
+circdna_3,https://raw.githubusercontent.com/nf-core/test-datasets/circdna/testdata/circdna_3_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circdna/testdata/circdna_3_R2.fastq.gz
