@@ -1,71 +1,36 @@
-# test-datasets: `circdna`
+# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+Test data to be used for automated testing with the nf-core pipelines
 
-This branch contains test data to be used for automated testing with the [nf-core/circdna](https://github.com/nf-core/circdna) pipeline.
+## Introduction
 
-## Content of this repository
+nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
 
-`reference/`: Genome reference files (iGenomes R64-1-1 Ensembl release)
+The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
 
-`testdata/` : 200,000 FastQ paired-end reads
+## Documentation
 
-## Minimal test dataset origin
-The data set was generated using Circle-Map Simulate (see [Circle-Map](https://github.com/iprada/Circle-Map) and InSilicoSeq (see [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq). Circle-Map simulated 120,000 paired-end reads originated from circle-seq data and InSilicoSeq simulated 80,000 random reads from the reference genome.
+nf-core/test-datasets comes with documentation in the `docs/` directory:
 
-### Data Generation
+01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
+02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
-The example below was used to generate the raw paired-end FastQ files.
+## Downloading test data
 
-``` bash
-Circle-Map Simulate -c 200 -g genome.fa -N 120000 -r 150 -b cm_1 -p 10
-Circle-Map Simulate -c 200 -g genome.fa -N 120000 -r 150 -b cm_2 -p 10
-Circle-Map Simulate -c 200 -g genome.fa -N 120000 -r 150 -b cm_3 -p 10
-wgsim -1 150 -2 150 -N 80000 genome.fa wgsim_1_R1.fastq wgsim_1_R2.fastq -S 1
-wgsim -1 150 -2 150 -N 80000 genome.fa wgsim_2_R1.fastq wgsim_2_R2.fastq -S 1
-wgsim -1 150 -2 150 -N 80000 genome.fa wgsim_3_R1.fastq wgsim_3_R2.fastq -S 1
-cat cm_1_2.fastq wgsim_1_R2.fastq | gzip --no-name > ../testdata/circdna_1_R2.fastq.gz
-cat cm_2_2.fastq wgsim_2_R2.fastq | gzip --no-name > ../testdata/circdna_2_R2.fastq.gz
-cat cm_3_2.fastq wgsim_3_R2.fastq | gzip --no-name > ../testdata/circdna_3_R2.fastq.gz
+Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
 
-cat cm_1_1.fastq wgsim_1_R1.fastq | gzip --no-name > ../testdata/circdna_1_R1.fastq.gz
-cat cm_2_1.fastq wgsim_2_R1.fastq | gzip --no-name > ../testdata/circdna_2_R1.fastq.gz
-cat cm_3_1.fastq wgsim_3_R1.fastq | gzip --no-name > ../testdata/circdna_3_R1.fastq.gz
+```bash
+git clone <url> --single-branch --branch <pipeline/modules/branch_name>
 ```
 
-### Expected output
+To subsequently clone other branches[^1]
 
-To track and test the reproducibility of the pipeline with default parameters below are some of the expected outputs.
+```bash
+git remote set-branches --add origin [remote-branch]
+git fetch
+```
 
-### Number of `Circle-Map Realign` circles
+## Support
 
-| sample	              | circles	|
-|-----------------------|-------|
-| circdna_1	| 275	  |
-| circdna_2	| 280	  |
-| circdna_3	| 279	  |
+For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
-### Number of `Circexplorer2` circles
-
-| sample	              | circles	|
-|-----------------------|-------|
-| circdna_1	| 392	  |
-| circdna_2	| 328	  |
-| circdna_3	| 393	  |
-
-### Number of `circle_finder` circles
-
-| sample	              | circles	|
-|-----------------------|-------|
-| circdna_1	| 267	  |
-| circdna_2	| 275	  |
-| circdna_3	| 266	  |
-
-### Number of `unicycler` circles
-
-| sample	              | circles	|
-|-----------------------|-------|
-| circdna_1	| 1	  |
-| circdna_2	| 0	  |
-| circdna_3	| 0	  |
-
-These are just guidelines and will change with the use of different software, and with any restructuring of the pipeline away from the current defaults.
-
+[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
