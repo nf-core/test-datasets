@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+circdna_1,"testdata/circdna_1_R1.fastq.gz","testdata/circdna_1_R2.fastq.gz"
+circdna_2,"testdata/circdna_2_R1.fastq.gz","testdata/circdna_2_R2.fastq.gz"
+circdna_3,"testdata/circdna_3_R1.fastq.gz","testdata/circdna_3_R2.fastq.gz"
