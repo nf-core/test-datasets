@@ -42,6 +42,8 @@ The GTF file contains annotation for more than just the chr19 data but has large
 
 The samplesheet format has been discussed in the community for ideally supporting all types of subworkflows in the main workflow. This means, that the example workflow uses a format of: `sample,fastq_1,fastq_2,protocol,expected_cells` as a header that is supported by all available tools. For a summary on the discussion that led to this decision, please have a look [here](https://github.com/nf-core/scrnaseq/issues/92).
 
+As some tools (CellRanger specifically) use a one folder per sample approach, we will have a custom subprocess in the cellranger subworkflow that automatically groups samples together in a subfolder if they are replicates.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack](https://nfcore.slack.com) or [Click here for an invite](https://nf-core-invite.herokuapp.com/)
