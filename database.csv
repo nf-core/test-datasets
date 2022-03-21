@@ -1,0 +1,5 @@
+tool,db_name,db_params,db_path
+malt,malt85,-id 85,database/malt/malt85/
+malt,malt95,-id 90,database/malt/malt90/
+kraken2,virus,"",https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/sarscov2/genome/db/kraken2.tar.gz
+kraken2,greengenes,"--quick",/home/jfellows/Documents/git/nf-core/taxprofiler/testing/database/kraken2/16S_Greengenes_k2db/

@@ -30,6 +30,7 @@ git fetch
 ```
 
 ## nf-core/taxprofiler specific information
+# fastq
 
 The main test data used for nf-core/taxprofiler is from [Maixner et al. (2021) _Curr. Bio._](https://doi.org/10.1016/j.cub.2021.09.031), with ENA project accession ID: PRJEB44507. The following selected libraries were all sequenced on an Illumina MiSeq, and were selected due to their small size (~1million reads, <100MB) and known mixture of (gut) bacteria, (ancient human) eukaryotes, and (yeast) fungi (according to the results of the paper).
 
@@ -38,17 +39,47 @@ The main test data used for nf-core/taxprofiler is from [Maixner et al. (2021) _
 - ERX5474930
 - ERX5474936
 
+
 Data was downloaded with nf-core/fetchNGS 1.5 (with Nextflow 21.10.06):
 
 ```bash
 nextflow run nf-core/fetchngs --input maixner2021_acc_codes.txt --input_type sra
 ```
+FASTQ files are stored under `data/fastq/`
+### fasta
 
 One of the files was converted to FASTA file with seqtk 1.3-r106
 
 ```bash
 seqtk seq -a  ERX5474930_ERR5766174_1.fastq.gz > ERX5474930_ERR5766174_1.fa.gz 
 ```
+
+FASTQ files are stored under `data/fasta/`
+
+### databases
+
+Two abundant species found in the above dataset are _Penicillium roqueforti_
+and _Saccharomyces cerevisiae_. The genomes of the two P. roqueforti were 
+downloaded with:
+
+```bash
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/533/775/GCF_015533775.1_ASM1553377v1/GCF_015533775.1_ASM1553377v1_genomic.fna.gz # P. roqueforti
+```
+
+In addition we include the human mitochondrial genome.
+
+```bash
+curl 'https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=fasta&id=251831106&extrafeat=null&conwithfeat=on&hide-cdd=on'| gzip > NC_012920.1.fa.gz # H. sapiens mito
+```
+
+#### MALT
+
+```bash
+wget https://software-ab.informatik.uni-tuebingen.de/download/megan6/megan-nucl-Feb2022.db.zip
+unzip megan-nucl-Feb2022.db
+malt-build -i *.gz -s DNA -d taxprofiler-testdb -t 8 -st 4 -a2t megan-nucl-Feb2022.db
+```
+
 
 ## Support
 
