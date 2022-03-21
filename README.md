@@ -81,7 +81,15 @@ wget https://software-ab.informatik.uni-tuebingen.de/download/megan6/megan-nucl-
 unzip megan-nucl-Feb2022.db
 malt-build -i *.gz -s DNA -d taxprofiler-testdb -t 8 -st 4 -a2t megan-nucl-Feb2022.db
 ```
+#### Kraken2
 
+```bash
+kraken2-build --download-taxonomy --db taxprofiler-testdb
+gunzip ../raw/*.gz
+kraken2-build --add-to-library ../raw/GCF_000146045.2_R64_genomic.fna --db taxprofiler-testdb/
+kraken2-build --add-to-library ../raw/NC_012920.1.fa --db taxprofiler-testdb/
+kraken2-build --build --db taxprofiler-testdb/
+kraken2-build --clean --db taxprofiler-testdb/
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
