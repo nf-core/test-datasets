@@ -58,6 +58,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * maltextract
       * 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
       * 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
+    * 'kaiju': Kaiju DB. Database created from protein UNJ12943.1 and taxonomic ID 2697049.
   * genome
     * 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     * 'genome.dict': GATK dict for 'genome.fasta'
