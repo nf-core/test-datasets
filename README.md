@@ -56,7 +56,7 @@ One of the files was converted to FASTA file with seqtk 1.3-r106
 seqtk seq -a  ERX5474930_ERR5766174_1.fastq.gz > ERX5474930_ERR5766174_1.fa.gz 
 ```
 
-FASTQ files are stored under `data/fasta/`
+FASTA files are stored under `data/fasta/`
 
 ### databases
 
@@ -90,6 +90,7 @@ kraken2-build --add-to-library ../raw/GCF_000146045.2_R64_genomic.fna --db taxpr
 kraken2-build --add-to-library ../raw/NC_012920.1.fa --db taxprofiler-testdb/
 kraken2-build --build --db taxprofiler-testdb/
 kraken2-build --clean --db taxprofiler-testdb/
+```
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
