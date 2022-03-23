@@ -1,18 +1,19 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+## Test data for nf-core/mag
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+This branch contains test data for the [nf-core/mag](https://github.com/nf-core/mag) pipeline.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+## Full-size test data
 
-## Documentation
+The `manifext.full.tsv` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. *Nature Biotechnology* (2019)](https://doi.org/10.1038/s41587-019-0191-2).
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+| SAMPLE    | ILLUMINA READS: ENA ID | ONT READs: ENA ID |
+|-----------|------------------------|-------------------|
+| CAPES S11 | ERR3201918             | ERR3201942        |
+| CAPES S21 | ERR3201928             | ERR3201952        |
+| CAPES S7  | ERR3201914             | ERR3201938        |
 
 ## Downloading test data
 
