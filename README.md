@@ -1,20 +1,12 @@
-# test-datasets `proteomicslfq`
-Test data to be used for automated testing with the nf-core pipeline proteomicslfq
+# test-datasets `quantms`
+Test data to be used for automated testing with the nf-core pipeline quantms
 
 ## Content of this repository
 
-`testdata`, contains all inputs needed for a basic test of proteomicslfq.
+`testdata`, contains all inputs needed for the basic CI tests of quantms for every pull request.
+`testdata-aws`, contains data sets for full tests done at every release. It should show all/most capabilities of quantms
+ and have a rich output to be displayed on the nf-core quantms page.
 
-### Input spectra (`testdata/*.mzML`)
-Three runs on a BSA sample. Each in-silico fractionated by splitting the files in RT dimension.
-Results in BSA\_[sample]\_[fraction].mzML
+ Have a look at the READMEs inside each folder to check where the data came from and more infos.
 
-### Input database (`testdata/*.fasta`)
-
-The 18 proteins supposed to be in each BSA sample. Decoys were already added.
-TODO which decoy prefix and which method.
-
-### Experimental design (`testdata/BSA_design.tsv`)
-
-Samples and fractions are listed in the OpenMS specific experimental design format.
 
