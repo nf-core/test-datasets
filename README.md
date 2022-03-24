@@ -201,6 +201,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.umi_{1,2}: UMI tagged reads corresponding to tumor sample
       * test_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
       * test2_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
+      * test_rnaseq_{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
     * gatk:
       * test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
