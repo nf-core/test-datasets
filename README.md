@@ -92,7 +92,6 @@ kraken2-build --add-to-library ../raw/GCF_000146045.2_R64_genomic.fna --db taxpr
 kraken2-build --add-to-library ../raw/NC_012920.1.fa --db taxprofiler-testdb/
 kraken2-build --build --db taxprofiler-testdb/
 kraken2-build --clean --db taxprofiler-testdb/
-```
 #### Centrifuge
 We use the same test database for [centrifuge](https://github.com/nf-core/test-datasets/blob/mag/test_data/minigut_cf.tar.gz) as [nf-core/mag](https://github.com/nf-core/mag) is using in their test data.
 
