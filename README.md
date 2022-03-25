@@ -48,7 +48,9 @@ nextflow run nf-core/fetchngs --input maixner2021_acc_codes.txt --input_type sra
 ```
 FASTQ files are stored under `data/fastq/`
 
+Test data for long reads are the same as [nf-core/mag](https://github.com/nf-core/mag) is using and can be found [here](https://github.com/nf-core/test-datasets/blob/mag/test_data/minigut_reads.fastq.gz)
 ### fasta
+
 
 One of the files was converted to FASTA file with seqtk 1.3-r106
 
@@ -90,7 +92,9 @@ kraken2-build --add-to-library ../raw/GCF_000146045.2_R64_genomic.fna --db taxpr
 kraken2-build --add-to-library ../raw/NC_012920.1.fa --db taxprofiler-testdb/
 kraken2-build --build --db taxprofiler-testdb/
 kraken2-build --clean --db taxprofiler-testdb/
-```
+#### Centrifuge
+We use the same test database for [centrifuge](https://github.com/nf-core/test-datasets/blob/mag/test_data/minigut_cf.tar.gz) as [nf-core/mag](https://github.com/nf-core/mag) is using in their test data.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
