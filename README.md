@@ -51,6 +51,7 @@ FASTQ files are stored under `data/fastq/`
 Test data for long reads are the same as [nf-core/mag](https://github.com/nf-core/mag) is using and can be found [here](https://github.com/nf-core/test-datasets/blob/mag/test_data/minigut_reads.fastq.gz)
 ### fasta
 
+
 One of the files was converted to FASTA file with seqtk 1.3-r106
 
 ```bash
