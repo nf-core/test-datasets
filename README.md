@@ -94,6 +94,7 @@ kraken2-build --clean --db taxprofiler-testdb/
 ```
 #### Centrifuge
 We use the same test database for [centrifuge](https://github.com/nf-core/test-datasets/blob/mag/test_data/minigut_cf.tar.gz) as [nf-core/mag](https://github.com/nf-core/mag) is using in their test data.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
