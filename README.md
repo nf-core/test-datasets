@@ -48,7 +48,12 @@ nextflow run nf-core/fetchngs --input maixner2021_acc_codes.txt --input_type sra
 ```
 FASTQ files are stored under `data/fastq/`
 
-Test data for long reads are the same as [nf-core/mag](https://github.com/nf-core/mag) is using and can be found [here](https://github.com/nf-core/test-datasets/blob/mag/test_data/minigut_reads.fastq.gz)
+Test data for long reads with ENA project accession ID: PRJEB29152. They were subsampled with seqtk 1.3-r106:
+
+```bash
+seqtk sample ERR3201952.fastq.gz 10000 > ERR3201952.fastq.gz
+```
+
 ### fasta
 
 
