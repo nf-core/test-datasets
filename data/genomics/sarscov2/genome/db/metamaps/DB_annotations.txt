@@ -1,1 +1,0 @@
-ContigId	Start	Stop	GeneName	GeneLocusTag	CDSProteinId	CDSProduct
