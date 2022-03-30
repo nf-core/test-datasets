@@ -55,10 +55,13 @@ If you cannot find suitable test data on this repository, please contact us on t
   * db
     * 'kraken2': kraken2 DB
     * 'kraken2.tar.gz': kraken2 DB archive
+    * 'kraken2_bracken': kraken2 & Bracken DB
+    * 'kraken2_bracken.tar.gz': kraken2 & Bracken DB archive
     * 'metamaps.tar.gz': metamaps DB archive
     * maltextract
       * 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
       * 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
+    * 'kaiju': Kaiju DB. Database created from ORF1ab polyprotein UNJ12943.1 and taxonomic ID 2697049.
   * genome
     * 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     * 'genome.dict': GATK dict for 'genome.fasta'
@@ -199,6 +202,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.umi_{1,2}: UMI tagged reads corresponding to tumor sample
       * test_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
       * test2_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
+      * test_rnaseq_{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
     * gatk:
       * test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
