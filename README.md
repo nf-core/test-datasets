@@ -55,6 +55,7 @@ If you cannot find suitable test data on this repository, please contact us on t
   * db
     * 'kraken2': kraken2 DB
     * 'kraken2.tar.gz': kraken2 DB archive
+    * 'metamaps.tar.gz': metamaps DB archive
     * maltextract
       * 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
       * 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
