@@ -122,7 +122,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'fast5.tar.gz': compressed `fast5` folder with the following structure: `fast5/100read_fast5/*.fast5`
     * fastq
       * 'test.fastq.gz'
-      * 'test_2.fastq.gz': Contains more data than 'test.fastq.gz', which is needed to test MetaMaps
+      * 'test_2.fastq.gz'
     * sequencing_summary
       * 'test.sequencing_summary.txt'
 
