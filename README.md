@@ -29,3 +29,5 @@ This branch contains test data to be used for automated testing with the [nf-cor
 `testdata/NA12878_mito_1.fq.gz`: Test fastq file 1 with chr20 and chrM reads
 
 `testdata/NA12878_mito_2.fq.gz`: Test fastq file 2 with chr20 and chrM reads
+
+`testdata/NA12878_sorted_chrM_chr20_rehead_60pdown.cram`: Test alignment file with chrM and chr20 downsampled and compressed 
