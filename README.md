@@ -150,6 +150,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         * axiom_exome_plus.genotypes.all_populations.poly
         * dbsnp_138.hg38
         * gnomAD.r2.1.1
+        * haplotype_map
         * hapmap_3.3.hg38
         * hapmap_3.pop_stratified_chr21
         * mills_and_1000G.indels
