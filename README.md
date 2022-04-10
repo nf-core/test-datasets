@@ -55,9 +55,13 @@ If you cannot find suitable test data on this repository, please contact us on t
   * db
     * 'kraken2': kraken2 DB
     * 'kraken2.tar.gz': kraken2 DB archive
+    * 'kraken2_bracken': kraken2 & Bracken DB
+    * 'kraken2_bracken.tar.gz': kraken2 & Bracken DB archive
+    * 'metamaps.tar.gz': metamaps DB archive
     * maltextract
       * 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
       * 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
+    * 'kaiju': Kaiju DB. Database created from ORF1ab polyprotein UNJ12943.1 and taxonomic ID 2697049.
   * genome
     * 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     * 'genome.dict': GATK dict for 'genome.fasta'
@@ -122,6 +126,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'fast5.tar.gz': compressed `fast5` folder with the following structure: `fast5/100read_fast5/*.fast5`
     * fastq
       * 'test.fastq.gz'
+      * 'test_2.fastq.gz'
     * sequencing_summary
       * 'test.sequencing_summary.txt'
 
@@ -145,6 +150,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         * axiom_exome_plus.genotypes.all_populations.poly
         * dbsnp_138.hg38
         * gnomAD.r2.1.1
+        * haplotype_map
         * hapmap_3.3.hg38
         * hapmap_3.pop_stratified_chr21
         * mills_and_1000G.indels
@@ -178,6 +184,8 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2{,.umi}_{1,2}` (tumor)
       * test2.paired_end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2{,.umi}_{1,2}` (tumor)
       * 'example_hla_pe.bam': Downsampled BAM file for HLATyping workflow / OptiType module. Using existing data did not work as it misses preparation steps.
+      * 'example_hla_pe.sorted.bam': Sorted BAM file for HLATyping workflow / OptiType module.
+      * 'example_hla_pe.sorted.bam.bai': Sorted BAM file index for HLATyping workflow / OptiType module.
       * mitochon_standin.recalibrated.sorted: copy of the old, smaller test2.paired_end.recalibrated.sorted, this is to be used to test mutect2's mitochondria mode, as the current recal bams are far too big. This should be replaced once rarediseases obtain an actual mitochondria sample.
       * umi:
         * test.paired_end.umi_*: Files base on  `test.umi_{1,2}` (normal)
@@ -196,6 +204,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * test2.umi_{1,2}: UMI tagged reads corresponding to tumor sample
       * test_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
       * test2_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
+      * test_rnaseq_{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
     * gatk:
       * test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       * test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
