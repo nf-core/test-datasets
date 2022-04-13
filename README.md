@@ -30,7 +30,9 @@ git fetch
 ```
 
 ## Metagenome test dataset: specific information
+
 ### Publication
+
 One wastewater dataset published by [Che et al. (2019)](https://doi.org/10.1186/s40168-019-0663-0), SRX5027541, activated sludge, SWH plant,
 Illumina HiSeq 4000, Paired, WGS was used to generate the test datasets.
 
@@ -46,6 +48,7 @@ Assembly was done with nf-core/mag pipeline (v2.1.1), default settings. The file
 This resulted in a list of hits with 120 unique contig names.
 
 ### Commands to generate the test dataset
+
 Filter the assembly fasta for the list of hits
 
 ```bash
@@ -66,6 +69,13 @@ Join the hits.fa and sub_nohits.fa to the dataset
 2. dataset 02 contains only 60 hits plus 3000 non-hit contigs
 
 In addition prokka annotated files were added for both test-datasets.
+
+## HMM Models
+
+For testing HMMSearch, we downloaded the following files from the Pfam database, as generally ubiquitous gene families:
+
+- [ABC_tran](http://pfam.xfam.org/family/PF00005)
+- [Pkinase](http://pfam.xfam.org/family/PF00069)
 
 ## Support
 
