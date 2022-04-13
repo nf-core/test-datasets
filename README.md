@@ -130,7 +130,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     * sequencing_summary
       * 'test.sequencing_summary.txt'
   * taxonomy
-      * 'test_1.kraken2.reads.txt': kraken classification of each input read of test file test_1.fastq.gz
+      * 'test_1.kraken2.reads.txt': kraken classification of each input read of test file `test_1.fastq.gz`
       * 'test_1.kraken2.report.txt': kraken report after classification of test file 'test_1.fastq.gz'
 
 * homo_sapiens
