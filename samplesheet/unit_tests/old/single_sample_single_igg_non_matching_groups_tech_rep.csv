@@ -1,5 +1,0 @@
-group,replicate,control_group,fastq_1,fastq_2
-h3k27me3,1,1,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/h3k27me3_rep1_r1.fastq.gz,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/h3k27me3_rep1_r2.fastq.gz
-h3k27me3,1,2,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/h3k27me3_rep1_r1.fastq.gz,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/test_rep1_r2.fastq.gz
-igg,1,1,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/igg_rep1_r1.fastq.gz,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/igg_rep1_r2.fastq.gz
-igg,2,2,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/igg_rep1_r1.fastq.gz,https://raw.githubusercontent.com/luslab/test-datasets/cutandrun/testdata/GSE145187_10000/igg_rep1_r2.fastq.gz
