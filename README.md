@@ -367,6 +367,8 @@ If you cannot find suitable test data on this repository, please contact us on t
 * txt
   * 'hello.txt': one-line txt file
   * 'ktimporttext.txt': [Krona ktimporttext](https://github.com/marbl/Krona) test file
+  * 'kaijiu_out4krona.txt': [Kaiju output for Krona](https://github.com/bioinformatics-centre/kaiju#creating-input-file-for-krona) for [Krona ktimporttext](https://github.com/marbl/Krona) test file
+  * 'kraken2_report.txt': [Kraken2 report file](https://github.com/DerrickWood/kraken2/wiki/Manual) for [Krona ktimporttext](https://github.com/marbl/Krona) test file
 
 ### Uncategorized
 
