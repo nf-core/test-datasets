@@ -1,0 +1,8 @@
+2	Fats	Saturated fat
+3	Fats	Unsaturated fat	Monounsaturated fat
+3	Fats	Unsaturated fat	Polyunsaturated fat
+13	Carbohydrates	Sugars
+4	Carbohydrates	Dietary fiber
+21	Carbohydrates
+5	Protein
+4
