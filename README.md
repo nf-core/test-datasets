@@ -129,7 +129,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test_2.fastq.gz'
     * sequencing_summary
       * 'test.sequencing_summary.txt'
-  * taxonomy
+  * metagenome
       * 'test_1.kraken2.reads.txt': kraken classification of each input read of test file `test_1.fastq.gz`
       * 'test_1.kraken2.report.txt': kraken report after classification of test file `test_1.fastq.gz`
 
@@ -366,10 +366,6 @@ If you cannot find suitable test data on this repository, please contact us on t
   * 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 * txt
   * 'hello.txt': one-line txt file
-  * 'ktimporttext.txt': [Krona ktimporttext](https://github.com/marbl/Krona) test file
-  * 'kaijiu_out4krona.txt': [Kaiju output for Krona](https://github.com/bioinformatics-centre/kaiju#creating-input-file-for-krona) for [Krona ktimporttext](https://github.com/marbl/Krona) test file
-  * 'kraken2_report.txt': [Kraken2 report file](https://github.com/DerrickWood/kraken2/wiki/Manual) for [Krona ktimporttext](https://github.com/marbl/Krona) test file
-
 ### Uncategorized
 
 * e_coli_k12_16s.fna: E. coli K-12 16S rRNA
