@@ -193,6 +193,9 @@ If you cannot find suitable test data on this repository, please contact us on t
       * umi:
         * test.paired_end.umi_*: Files base on  `test.umi_{1,2}` (normal)
         * test2.paired_end.umi_*: Files base on  `test2.umi_{1,2}` (tumor)
+    * bcl:
+      * flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
+      * flowcell_samplesheet.csv: SampleSheet for data on flowcell
     * cram:
       * test.paired_end.sorted: Mapped, and sorted reads based on `test_{1,2}` (normal)
       * test.paired_end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test_{1,2}` (normal)
