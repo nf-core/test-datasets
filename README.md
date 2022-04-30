@@ -120,7 +120,16 @@ We use the same test database for [centrifuge](https://github.com/nf-core/test-d
 Diamond Version 2.0.15
 
 ```bash
-cat ../raw/*.faa | diamond makedb -d testdb-diamond
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip
+unzip taxdmp.zip
+
+## warning: large file!
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.FULL.gz
+
+## warning: takes a long time!
+cat ../raw/*.faa | diamond makedb -d testdb-diamond --taxonmap prot.accession2taxid.FULL.gz --taxonnodes nodes.dmp --taxonnames names.dmp
+
+rm *dmp *txt *gz *prt *zip
 ```
 
 ## Support
