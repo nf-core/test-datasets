@@ -20,5 +20,5 @@ Lastly, change the underscore to a dash in the sequence names with `sed -i 's/_/
 
 ### MLST Profiles 4/29/2022:
 
-Copy the MLST Scheme https://pubmlst.org/bigsdb?db=pubmlst_bfragilis_seqdef&page=downloadProfiles&scheme_id=1 to get the profiles_csv file. 
+Copy the MLST Scheme https://pubmlst.org/bigsdb?db=pubmlst_bfragilis_seqdef&page=downloadProfiles&scheme_id=1 to get the profiles.csv file. 
 
