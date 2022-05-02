@@ -129,9 +129,10 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'test_2.fastq.gz'
     * sequencing_summary
       * 'test.sequencing_summary.txt'
-  * taxonomy
+  * metagenome
       * 'test_1.kraken2.reads.txt': kraken classification of each input read of test file `test_1.fastq.gz`
       * 'test_1.kraken2.report.txt': kraken report after classification of test file `test_1.fastq.gz`
+      * 'krona_taxonomy.tab': sars-cov-2 taxonomy tree only extracted from taxonomy.tab database created with ktUpdateTaxonomy
 
 * homo_sapiens
   * genome
