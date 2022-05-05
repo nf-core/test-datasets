@@ -5,6 +5,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 ## Content of this repository
 
 `samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset
+
 `samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset
 
 ## Minimal test dataset origin
