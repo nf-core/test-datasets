@@ -1,9 +1,0 @@
-# TOML
-
-title = "Vcfanno configuration file"
-
-[[annotation]]
-file="grch38_gnomad_reformated_-r3.1.1-.vcf.gz"
-fields = ["AF", "AF_popmax"]
-ops=["self", "self"]
-names=["GNOMADAF", "GNOMADAF_popmax"]
