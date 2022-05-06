@@ -82,6 +82,15 @@ An interval list file was prepared from the genome.bed using GATK4:
 gatk BedToIntervalList -I genome.bed -SD genome.dict -O genome.interval_list
 ```
 
+### SDF
+
+An SDF folder of the reference FASTA of chromosome 21 was created using:
+
+```bash
+rtg format -o genome_sdf genome.fasta
+tar -czf genome_sdf.tar.gz genome_sdf/
+```
+
 ### GTF/GFF
 
 Downloaded the gtf and gff3 files from Ensembl:
