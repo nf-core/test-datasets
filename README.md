@@ -140,6 +140,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       * 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
     * chr21: directory for reference files using chr21 rather than 22, used for most gatk4 testing
       * sequence: directory containing fasta, fai, dict and several other indexes for chr21 including:
+        * 'genome_sdf.tar.gz': The SDF (RTG Sequence Data File) folder of the reference genome
         * .{1-4,rev.1-2}.bt2
         * .amb
         * .ann
