@@ -32,6 +32,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/NA12878_mito_2.fq.gz`: Test fastq file 2 with chr20 and chrM reads
 
-`testdata/NA12878_sorted_chrM_chr20_rehead_60pdown.cram`: Test alignment file with chrM and chr20 downsampled and compressed 
+`testdata/NA12878_sorted_chrM_chr20_rehead_60pdown.cram`: Test alignment file with chrM and chr20 downsampled and compressed
 
 `testdata/samplesheet_MT.csv`: samplesheet containing fastq from chr20 and chrM
+
+`testdata/NA12878_chrM.vcf.gz`: mitochondrial variants detected through the use of _NA12878_mito_1.fq.gz_ and _NA12878_mito_2.fq.gz_ reads
