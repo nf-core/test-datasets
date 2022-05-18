@@ -1,2 +1,2 @@
 sample,bam,pbi
-ChickenE8Muscle,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR860/ERR8606831/30dpf_Muscle.bam,s3://myisoseq/30dpf_Muscle.bam.pbi
+Pig30dpfMuscle,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR860/ERR8606831/30dpf_Muscle.bam,s3://myisoseq/30dpf_Muscle.bam.pbi
