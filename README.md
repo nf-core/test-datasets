@@ -180,6 +180,11 @@ If you cannot find suitable test data on this repository, please contact us on t
     - .bed
     - multi_intervals.bed: Contains the interval from `interval.list` split into two parts
     - blacklist_intervals.bed: Contains the intervals of problematic regions of the genome
+    - annotated_intervals.tsv: Contains the intervals of the genome (annotated with gc-content) excluding problematic regions
+    - filtered_intervals.interval_list: Contains the intervals of the genome that contain at least one read hit
+    - ploidy_priors.tsv: Contains contig ploidy priors for gatk4's DetermineGermlineContigPloidy
+    - preprocessed_intervals.counts.tsv: Contains the intervals of the genome excluding problematic regions and the respective read counts
+    - preprocessed_intervals.interval_list: Contains the intervals of the genome excluding problematic regions
     - index
       - salmon: salmon index created with `transcriptome.fasta`
   - illumina
