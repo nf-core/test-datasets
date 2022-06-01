@@ -82,6 +82,11 @@ An interval list file was prepared from the genome.bed using GATK4:
 gatk BedToIntervalList -I genome.bed -SD genome.dict -O genome.interval_list
 ```
 
+A StrTableFile zip folder was created using GATK4:
+```bash
+gatk ComposeSTRTableFile --reference genome.fasta --output genome_strtablefile.zip
+```
+
 ### GTF/GFF
 
 Downloaded the gtf and gff3 files from Ensembl:
