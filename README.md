@@ -98,6 +98,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
     - gatk
       - 'test.baserecalibrator.table': Recalibration table generated with gatk4 BaseRecalibrator from 'test_paired_end.sorted.bam', using 'test.vcf.gz' as known sites.
+      - 'test_paired_end_sorted_dragstrmodel.txt': The DRAGEN STR model of 'test_paired_end.sorted.bam'.
     - gfa
       - 'assembly.gfa': assembly in Graphical Fragment Assembly (GFA) 1.0 format
       - 'assembly.gfa.bgz': compressed with block-compressed GZIP (BGZF)
