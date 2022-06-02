@@ -82,6 +82,10 @@ An interval list file was prepared from the genome.bed using GATK4:
 gatk BedToIntervalList -I genome.bed -SD genome.dict -O genome.interval_list
 ```
 
+A StrTableFile zip folder was created using GATK4:
+```bash
+gatk ComposeSTRTableFile --reference genome.fasta --output genome_strtablefile.zip
+
 ### SDF
 
 An SDF folder of the reference FASTA of chromosome 21 was created using:
@@ -233,6 +237,12 @@ The cram files were generated with
 ```
 gatk LearnReadOrientationModel -I ..illumina/gatk/paired_mutect2_calls/test_test2_paired_mutect2_calls.f1r2.tar.gz -O test_test2_paired_mutect2_calls.artifact-prior.tar.gz
 ```
+
+`test_paired_end_sorted_dragstrmodel.txt`:
+```bash
+gatk CalibrateDragstrModel --str-table-path genome_strtablefile.zip --output test_paired_end_sorted_dragstrmodel.txt --input test.paired_end.sorted.bam --reference genome.fasta
+```
+
 #### Paired Mutect files
 
 The unfiltered calls are from the mutect2 portion of the gatk_tumor_normal_somatic_variant_calling subworkflow, filtered calls are the final output.
