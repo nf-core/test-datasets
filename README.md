@@ -291,6 +291,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - vcf:
       - test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
       - test.genome_21.somatic_sv.vcf: Indels VCF corresponding to `test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
+      - NA12878_chrM.vcf.gz: mitochondrial variants corresponding to `testdata/NA12878_mito_{1,2}.fq.gz` from the `rarediseases` branch.
     - plink
       - test.rnaseq.bed: Plink binaries obtained using test.rnaseq.vcf with plink tool
       - test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
