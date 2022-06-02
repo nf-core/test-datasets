@@ -37,7 +37,6 @@ If you cannot find suitable test data on this repository, please contact us on t
 ## Data Description
 
 ### genomics
-
 - sarscov2
 
   - alignment
@@ -69,6 +68,7 @@ If you cannot find suitable test data on this repository, please contact us on t
 
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     - 'genome.dict': GATK dict for 'genome.fasta'
+    - 'genome_strtablefile.zip': An StrTableFile zip folder for 'genome.fasta'
     - 'genome.fasta.fai': fasta index for 'genome.fasta'
     - 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
     - 'transcriptome.paf': PAF file for MT192765.1 genome
@@ -100,6 +100,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
     - gatk
       - 'test.baserecalibrator.table': Recalibration table generated with gatk4 BaseRecalibrator from 'test_paired_end.sorted.bam', using 'test.vcf.gz' as known sites.
+      - 'test_paired_end_sorted_dragstrmodel.txt': The DRAGEN STR model of 'test_paired_end.sorted.bam'.
     - gfa
       - 'assembly.gfa': assembly in Graphical Fragment Assembly (GFA) 1.0 format
       - 'assembly.gfa.bgz': compressed with block-compressed GZIP (BGZF)
