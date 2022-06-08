@@ -1,0 +1,3 @@
+group,replicate,fastq_1,fastq_2,control
+h3k27me3,1,https://raw.githubusercontent.com/nf-core/test-datasets/cutandrun/testdata/GSE145187_10000/h3k27me3_rep1_r1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/cutandrun/testdata/GSE145187_10000/h3k27me3_rep1_r2.fastq.gz,igg_ctrl
+igg_ctrl,1,https://raw.githubusercontent.com/nf-core/test-datasets/cutandrun/testdata/GSE145187_10000/igg_rep1_r1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/cutandrun/testdata/GSE145187_10000/igg_rep1_r2.fastq.gz,
