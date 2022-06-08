@@ -1,0 +1,12 @@
+[RunParameters]
+ParameterName,Value
+KitConfiguration,300Cycles
+PreparationMethod,ElementDNA
+RunName,Bases2Fastq-Sim
+R1Cycles,151
+R2Cycles,151
+[Settings]
+SettingName,Value,Lane
+SpikeInAsUnassigned,FALSE
+R1Adapter,AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+R2Adapter,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
