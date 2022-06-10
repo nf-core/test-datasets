@@ -1,0 +1,3 @@
+sample,group,input1
+testsample01,test,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/bam/testsample01.bam
+testsample02,test,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/bam/testsample02.bam

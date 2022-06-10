@@ -1,0 +1,4 @@
+sample,group,input1,input2
+testsample01,test,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/fastq/testsample01_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/fastq/testsample01_2.fastq.gz
+testsample02,test,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/fastq/testsample02_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/fastq/testsample02_2.fastq.gz
+testsample03,test,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/fastq/testsample03_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hgtseq/testdata/fastq/testsample03_2.fastq.gz
