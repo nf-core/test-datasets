@@ -61,6 +61,10 @@ The folder `testdata/classified` contains reads extracted from the bam files in 
 
 Like for the above sample data, they represent reads extracted from *SRR13106578* (testsample01) and *SRR13106582* (testsample02). These files are example inputs for the downstream subworkflows of this pipeline.
 
+### Reference
+
+The folder `testdata/reference` only contains the dictionary file of the Human reference in GRCh38, used to plot circular plots in R with *ggbio*
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
