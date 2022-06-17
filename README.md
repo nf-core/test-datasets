@@ -1,6 +1,6 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 # ISOSEQ
-Test data to be used for automated testing with the nf-core pipelines
+Test data to be used for automated testing with the nf-core isoseq pipelines
 
 ## Test dataset
 The test dataset is composed of: 
