@@ -37,6 +37,7 @@ If you cannot find suitable test data on this repository, please contact us on t
 ## Data Description
 
 ### genomics
+
 - sarscov2
 
   - alignment
@@ -192,6 +193,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - preprocessed_intervals.interval_list: Contains the intervals of the genome excluding problematic regions
     - index
       - salmon: salmon index created with `transcriptome.fasta`
+    - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
   - illumina
     - 10xgenomics
       - test\_{1,2}.fastq.gz: 10X Genomics V3 fastq files from human PBMCs
@@ -293,7 +295,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - vcf:
       - test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
       - test.genome_21.somatic_sv.vcf: Indels VCF corresponding to `test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
-      - NA12878_chrM.vcf.gz: mitochondrial variants corresponding to `testdata/NA12878_mito_{1,2}.fq.gz` from the `rarediseases` branch.
+      - NA12878*chrM.vcf.gz: mitochondrial variants corresponding to `testdata/NA12878_mito*{1,2}.fq.gz`from the`rarediseases` branch.
     - plink
       - test.rnaseq.bed: Plink binaries obtained using test.rnaseq.vcf with plink tool
       - test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
@@ -351,7 +353,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - 'test1*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
         - 'test2*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
       - fasta
-        - 'test1.contigs.fa.gz': *de novo* assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+        - 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
       - bam
         - 'test1.bam': 'test1\_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
         - 'test1.sorted.bam': sorted 'test1.bam'
@@ -361,7 +363,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - 'test2.sorted.bai': index of 'test2.sorted.bam'
     - nanopore
       - fastq
-        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing *Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
 
 ### pangenomics
 
