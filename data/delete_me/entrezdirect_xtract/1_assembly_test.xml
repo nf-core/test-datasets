@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DocumentSummarySet PUBLIC "-//NLM//DTD esummary assembly 20211202//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20211202/esummary_assembly.dtd">
+
+<DocumentSummarySet status="OK">
+<DocumentSummary>
+<Id>191021</Id>
+	<RsUid></RsUid>
+	<GbUid>1154788</GbUid>
+	<AssemblyAccession>GCA_000413255.3</AssemblyAccession>
+	<LastMajorReleaseAccession>GCA_000413255.3</LastMajorReleaseAccession>
+	<LatestAccession></LatestAccession>
+	<ChainId>413255</ChainId>
+	<AssemblyName>Physarum_polycephalum-10.0</AssemblyName>
+	<UCSCName></UCSCName>
+	<EnsemblName></EnsemblName>
+	<Taxid>5791</Taxid>
+	<Organism>Physarum polycephalum (plasmodial slime molds)</Organism>
+	<SpeciesTaxid>5791</SpeciesTaxid>
+	<SpeciesName>Physarum polycephalum</SpeciesName>
+	<AssemblyType>haploid</AssemblyType>
+	<AssemblyStatus>Scaffold</AssemblyStatus>
+	<AssemblyStatusSort>5</AssemblyStatusSort>
+	<WGS>ATCM03</WGS>
+	<GB_BioProjects>
+		<Bioproj>
+			<BioprojectAccn>PRJNA12851</BioprojectAccn>
+			<BioprojectId>12851</BioprojectId>
+		</Bioproj>
+	</GB_BioProjects>
+	<GB_Projects>
+	</GB_Projects>
+	<RS_BioProjects>
+	</RS_BioProjects>
+	<RS_Projects>
+	</RS_Projects>
+	<BioSampleAccn>SAMN02839457</BioSampleAccn>
+	<BioSampleId>2839457</BioSampleId>
+	<Biosource>
+		<InfraspeciesList>
+			<Infraspecie>
+				<Sub_type>strain</Sub_type>
+				<Sub_value>LU352</Sub_value>
+			</Infraspecie>
+		</InfraspeciesList>
+		<Sex></Sex>
+		<Isolate></Isolate>
+	</Biosource>
+	<Coverage>55</Coverage>
+	<PartialGenomeRepresentation>false</PartialGenomeRepresentation>
+	<Primary>1151408</Primary>
+	<AssemblyDescription></AssemblyDescription>
+	<ReleaseLevel>Major</ReleaseLevel>
+	<ReleaseType>Major</ReleaseType>
+	<AsmReleaseDate_GenBank>2014/07/01 00:00</AsmReleaseDate_GenBank>
+	<AsmReleaseDate_RefSeq>1/01/01 00:00</AsmReleaseDate_RefSeq>
+	<SeqReleaseDate>2014/06/30 00:00</SeqReleaseDate>
+	<AsmUpdateDate>2014/07/01 00:00</AsmUpdateDate>
+	<SubmissionDate>2014/06/30 00:00</SubmissionDate>
+	<LastUpdateDate>2014/07/01 00:00</LastUpdateDate>
+	<SubmitterOrganization>WUGSC</SubmitterOrganization>
+	<RefSeq_category>representative genome</RefSeq_category>
+	<AnomalousList>
+	</AnomalousList>
+	<ExclFromRefSeq>
+	</ExclFromRefSeq>
+	<PropertyList>
+		<string>full-genome-representation</string>
+		<string>latest</string>
+		<string>latest_genbank</string>
+		<string>representative</string>
+		<string>wgs</string>
+	</PropertyList>
+	<FromType></FromType>
+	<Synonym>
+		<Genbank>GCA_000413255.3</Genbank>
+		<RefSeq></RefSeq>
+		<Similarity></Similarity>
+	</Synonym>
+	<ContigN50>2245</ContigN50>
+	<ScaffoldN50>54474</ScaffoldN50>
+	<FtpPath_GenBank>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/413/255/GCA_000413255.3_Physarum_polycephalum-10.0</FtpPath_GenBank>
+	<FtpPath_RefSeq></FtpPath_RefSeq>
+	<FtpPath_Assembly_rpt>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/413/255/GCA_000413255.3_Physarum_polycephalum-10.0/GCA_000413255.3_Physarum_polycephalum-10.0_assembly_report.txt</FtpPath_Assembly_rpt>
+	<FtpPath_Stats_rpt>ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/413/255/GCA_000413255.3_Physarum_polycephalum-10.0/GCA_000413255.3_Physarum_polycephalum-10.0_assembly_stats.txt</FtpPath_Stats_rpt>
+	<FtpPath_Regions_rpt></FtpPath_Regions_rpt>
+	<Busco>
+		<RefSeqAnnotationRelease></RefSeqAnnotationRelease>
+		<BuscoLineage></BuscoLineage>
+		<BuscoVer></BuscoVer>
+		<Complete></Complete>
+		<SingleCopy></SingleCopy>
+		<Duplicated></Duplicated>
+		<Fragmented></Fragmented>
+		<Missing></Missing>
+		<TotalCount>0</TotalCount>
+	</Busco>
+	<SortOrder>2C5X958E9999977540004132559600</SortOrder>
+	<Meta><Stats> <Stat category="alt_loci_count" sequence_tag="all">0</Stat> <Stat category="chromosome_count" sequence_tag="all">0</Stat> <Stat category="contig_count" sequence_tag="all">152640</Stat> <Stat category="contig_l50" sequence_tag="all">22123</Stat> <Stat category="contig_n50" sequence_tag="all">2245</Stat> <Stat category="non_chromosome_replicon_count" sequence_tag="all">0</Stat> <Stat category="replicon_count" sequence_tag="all">0</Stat> <Stat category="scaffold_count" sequence_tag="all">69687</Stat> <Stat category="scaffold_count" sequence_tag="placed">0</Stat> <Stat category="scaffold_count" sequence_tag="unlocalized">0</Stat> <Stat category="scaffold_count" sequence_tag="unplaced">69687</Stat> <Stat category="scaffold_l50" sequence_tag="all">813</Stat> <Stat category="scaffold_n50" sequence_tag="all">54474</Stat> <Stat category="total_length" sequence_tag="all">205175886</Stat> <Stat category="ungapped_length" sequence_tag="all">189976770</Stat> </Stats> <FtpSites>   <FtpPath type="Assembly_rpt">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/413/255/GCA_000413255.3_Physarum_polycephalum-10.0/GCA_000413255.3_Physarum_polycephalum-10.0_assembly_report.txt</FtpPath>   <FtpPath type="GenBank">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/413/255/GCA_000413255.3_Physarum_polycephalum-10.0</FtpPath>   <FtpPath type="Stats_rpt">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/413/255/GCA_000413255.3_Physarum_polycephalum-10.0/GCA_000413255.3_Physarum_polycephalum-10.0_assembly_stats.txt</FtpPath> </FtpSites> <assembly-level>2</assembly-level> <assembly-status>Scaffold</assembly-status> <representative-status>representative genome</representative-status> <submitter-organization>WUGSC</submitter-organization></Meta>
+</DocumentSummary>
+</DocumentSummarySet>
+

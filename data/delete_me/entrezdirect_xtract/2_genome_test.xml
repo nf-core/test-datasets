@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DocumentSummarySet PUBLIC "-//NLM//DTD esummary genome 20140703//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20140703/esummary_genome.dtd">
+
+<DocumentSummarySet status="OK">
+<DbBuild>Build220705-1250.1</DbBuild>
+
+<DocumentSummary><Id>768</Id>
+	<Organism_Name>Hypsibius dujardini</Organism_Name>
+	<Organism_Kingdom>Eukaryota</Organism_Kingdom>
+	<Organism_Group></Organism_Group>
+	<Organism_Subgroup>Other Animals</Organism_Subgroup>
+	<Defline>The tardigrade, or water bear, is a model Ecdysozoan animal</Defline>
+	<ProjectID>20345</ProjectID>
+	<Project_Accession>PRJNA20345</Project_Accession>
+	<Status>Complete</Status>
+	<Number_of_Chromosomes>0</Number_of_Chromosomes>
+	<Number_of_Plasmids>0</Number_of_Plasmids>
+	<Number_of_Organelles>0</Number_of_Organelles>
+	<Assembly_Name>ASM157998v1</Assembly_Name>
+	<Assembly_Accession>GCA_001579985.1</Assembly_Accession>
+	<AssemblyID>656211</AssemblyID>
+	<Create_Date>2015/12/01 00:00</Create_Date>
+	<Options></Options>
+	<Weight>0</Weight>
+	<Chromosome_assemblies>0</Chromosome_assemblies>
+	<Scaffold_assemblies>2</Scaffold_assemblies>
+	<SRA_genomes>0</SRA_genomes>
+	<TaxId>232323</TaxId>
+</DocumentSummary>
+
+</DocumentSummarySet>
+
