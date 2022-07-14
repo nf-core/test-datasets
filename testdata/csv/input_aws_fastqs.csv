@@ -1,0 +1,5 @@
+sample,group,input1,input2
+SRR13106578,CHIKV,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR131/078/SRR13106578/SRR13106578_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR131/078/SRR13106578/SRR13106578_2.fastq.gz
+SRR13106582,CHIKV,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR131/082/SRR13106582/SRR13106582_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR131/082/SRR13106582/SRR13106582_2.fastq.gz
+SRR17085829,COPD,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR170/029/SRR17085829/SRR17085829_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR170/029/SRR17085829/SRR17085829_2.fastq.gz
+SRR17085830,COPD,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR170/030/SRR17085830/SRR17085830_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR170/030/SRR17085830/SRR17085830_2.fastq.gz
