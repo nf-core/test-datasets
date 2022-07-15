@@ -98,6 +98,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'scaffolds.fasta': sarscov2 scaffolds obtained running SPAdes `--rnaviral`on sample1 of the [nf-core/viralrecon test-dataset](https://github.com/nf-core/test-datasets/tree/viralrecon/illumina/amplicon)
     - fastq
       - 'test\_{1,2}.fastq.gz' sarscov2 paired-end sequencing reads
+      - 'test_interleaved.fastq.gz': Interleaved version of the above
       - 'test\_{1,2}.2.fastq.gz‘: copies of the above reads
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
     - gatk
