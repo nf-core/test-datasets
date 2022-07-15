@@ -1,2 +1,2 @@
 sample,alleles,mhc_class,filename
-sample1,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/alleles/alleles.DRB1_01_01.txt,II,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/peptides/peptides_MHC_II.txt
+sample1,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/alleles/alleles.DRB1_01_01.txt,II,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/peptides/peptides_MHC_II.tsv
