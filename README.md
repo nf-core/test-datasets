@@ -41,6 +41,7 @@ Contain CSV files used to launch `Sarek` with different settings.
 - `*-recal*` files contain bam files and are to be used for `Variant Calling`.
 - `*-multiple*` files contain multiple samples.
 - `NA12878_WGS_30x_full_test.csv` is the samplesheet for full size tests with the subsampled 30X NA12878 WGS.
+- `HCC1395_WXS_somatic_full_test.csv` is the samplesheet for full size somatic VC tests.
 
 To test UMI functionality
 
