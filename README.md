@@ -380,12 +380,6 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'pangenome.og': A variation graph encoded in the binary ODGI format. It is consumed by `odgi view`.
     - 'pangenome.lay': A binary file which holds the 2D graph layout produced by `odgi layout`. Input for `odgi draw`.
 
-### Synthetic
- - Synthetic
-    - nanopore
-      - 'test.fast5': A fast5 file containing four reads from nanopore sequencing basecalled with Guppy and with info about polyA tail. Input for `tailfindr`.
-
-
 ### generic
 
 - csv
