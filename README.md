@@ -68,6 +68,7 @@ If you cannot find suitable test data on this repository, please contact us on t
   - genome
 
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
+    - 'genome.fasta.gz': bgzipped version of 'genome.fasta'
     - 'genome.dict': GATK dict for 'genome.fasta'
     - 'genome_strtablefile.zip': An StrTableFile zip folder for 'genome.fasta'
     - 'genome.fasta.fai': fasta index for 'genome.fasta'
