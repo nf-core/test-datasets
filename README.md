@@ -3,12 +3,23 @@
 This branch of the `nf-core/test-datasets` repository contains all data used for the individual module tests.
 There are three main directories: `generic`, `genomics` and `delete_me`. The first contains generic files, the second contains all datasets for genomics tools while the latter contains temporary datasets that will be deleted as better data gets available.
 
+<<<<<<< HEAD
 ### delete_me
 
 The `delete_me` folder does not adhere to a defined structure as data in this folder should be directly as fast as possible, whenever a more suitable dataset is found that can be added to the `genomics` folder.
+=======
+nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+
+The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+
+## Documentation
+
+nf-core/test-datasets comes with documentation in the `docs/` directory:
+>>>>>>> 13c222f2b2276f98271901b0b51dc84a34e5dc09
 
 ### generic
 
+<<<<<<< HEAD
 The `generic` folder contains generic files that currently cannot be associated to a genomics category. They are organised by their respective file extension. Also, it contains depreciated files which will be removed in the future and exchanged by files in `genomics`.
 
 ### genomics
@@ -399,3 +410,25 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 - e_coli_k12_16s.fna: E. coli K-12 16S rRNA
 - bac.16S_rRNA.hmm: Bacterial 16S HMM file
+=======
+## Downloading test data
+
+Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+
+```bash
+git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+```
+
+To subsequently clone other branches[^1]
+
+```bash
+git remote set-branches --add origin [remote-branch]
+git fetch
+```
+
+## Support
+
+For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+
+[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+>>>>>>> 13c222f2b2276f98271901b0b51dc84a34e5dc09
