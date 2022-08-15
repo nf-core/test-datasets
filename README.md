@@ -735,6 +735,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - txt
   - 'hello.txt': one-line txt file
+  - 'taxonomy_ids.txt': contains species names, to be used as input for [goat-cli taxon search tool](https://github.com/genomehubs/goat-cli).
 - tar
   - 'hello.tar.gz': gzipped tar archive containing a single file without a directory
 
