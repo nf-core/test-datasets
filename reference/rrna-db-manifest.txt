@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/nf-core/test-datasets/rifseq/reference/silva-euk-18s-id95-minimal.fasta
