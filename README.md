@@ -11,13 +11,19 @@ information. The data comes from a real RIF-Seq dataset manually subset to 8000
 reads per plate (2000 reads per sample per plate), with an additional of 10
 non-RIF-Seq reads per sample per plate.
 
-`testdata/*.fastq.gz`: Two RIF-Seq plates of test data
+`testdata/test_plate_{A,B}.fastq.gz`: Two plates of RIF-Seq test data
+<br>
+`testdata/samplesheet.tsv`: The sample sheet for the test data
 <br>
 `testdata/metadata.tsv`: The metadata for the test data
 <br>
 `reference/Homo_sapiens.GRCh38.cdna.chr22.fa.gz`: Human chromosome 22 cDNA FASTA
 <br>
-`script/simulate-rifseq-data.py`: Script for generating test data
+`reference/silva-euk-18s-id95-minimal.fasta`: Minimally subset rRNA FASTA for SortMeRNA
+<br>
+`reference/rrna-db-manifest.fasta`: File manifest for the rRNA FASTA
+<br>
+`script/simulate-rifseq-data.py`: Script for generating RIF-Seq test data
 
 ## Sample metadata
 
@@ -56,4 +62,12 @@ and the following code:
 grep -A 1 "chromosome:GRCh38:22" Homo_sapiens.GRCh38.cdna.all.fa \
     | grep -v -- -- \
     > reference/Homo_sapiens.GRCh38.cdna.chr22.fa
+```
+
+The rRNA FASTA reference was generated from the `silva-euk-18s-id95.fasta`
+available at the [SortMeRNA GitHub](https://github.com/biocore/sortmerna/tree/master/data/rRNA_databases)
+and the following code:
+
+```bash
+head -100 silva-euk-18s-id95.fasta > reference/silva-euk-18s-id95-minimal.fasta
 ```
