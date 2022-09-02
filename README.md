@@ -18,9 +18,15 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `reference/Homo_sapiens_assembly38_chr20_chrM.fasta`: chr20 and chrM hg38 reference fasta file
 
+`reference/Homo_sapiens_assembly38_chr20_chrM.fasta.fai`: chr20 and chrM hg38 reference index fasta file
+
 `reference/hg38.chrM.fa`: chrM hg38 reference fasta file
 
+`reference/hg38.chrM.fa.fai`: chrM hg38 reference index fasta file
+
 `reference/hg38.chrMshifted8000.fa`: chrM hg38 reference fasta file shifted by 8000 bp
+
+`reference/hg38.chrMshifted8000.fa.fai`: chrM hg38 reference index fasta file shifted by 8000 bp
 
 `reference/control_region_shifted.chrM.interval_list`: Subset of mitochondrial control regions shifted by 8000 bp
 
