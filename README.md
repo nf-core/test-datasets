@@ -340,6 +340,15 @@ If you cannot find suitable test data on this repository, please contact us on t
     - merge:
       - toy:
         - toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
+  
+  - scramble:
+    - test.fa: A reference file containing chr3:70000000-70100000 and chr11:418014-438014
+    - test.fa.fai: The index of this reference
+    - test.bam: A BAM file containing soft-clipped clusters
+    - test.bam.bai: The index of the BAM file
+    - test.cram: The converted CRAM from the BAM file
+    - test.cram.crai: The index of the CRAM file
+    - test.bed: A BED file containing only the regions from chr3
 
 - prokaryotes
   - bacteroides_fragilis
