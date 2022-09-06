@@ -348,7 +348,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - test.bam.bai: The index of the BAM file
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
-    - test.bed: A BED file containing only the regions from chr3
+    - test.bed: A BED file containing only the regions from chr11
 
 - prokaryotes
   - bacteroides_fragilis
