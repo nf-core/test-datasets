@@ -332,6 +332,8 @@ The lima, refine, clustered, singletons and gene models datasets were generated 
 
 ### Scramble test dataset
 
+This folder contains test data containing soft-clipped clusters. The data was fetched from the official [repository](https://github.com/GeneDx/scramble/tree/master/validation) of the tool
+
 This test data contains:
    - test.fa => A reference file containing chr3:70000000-70100000 and chr11:418014-438014
    - test.fa.fai => The index of this reference
