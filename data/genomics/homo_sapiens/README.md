@@ -330,6 +330,19 @@ samtools view -h alz.1perc.subreads.bam|head -n 1006|samtools view -bh > alz.bam
 
 The lima, refine, clustered, singletons and gene models datasets were generated using the isoseq3 framework and TANA collapse.
 
+### Scramble test dataset
+
+This folder contains test data containing soft-clipped clusters. The data was fetched from the official [repository](https://github.com/GeneDx/scramble/tree/master/validation) of the tool
+
+This test data contains:
+   - test.fa => A reference file containing chr3:70000000-70100000 and chr11:418014-438014
+   - test.fa.fai => The index of this reference
+   - test.bam => A BAM file containing soft-clipped clusters
+   - test.bam.bai => The index of the BAM file
+   - test.cram => The converted CRAM from the BAM file
+   - test.cram.crai => The index of the CRAM file
+   - test.bed => A BED file containing only the regions from chr11
+
 ## Limitations
 
 1. Reads do not cover chromosome 6
