@@ -53,6 +53,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'test.bed.gz': gzipped version
     - 'baits.bed'
     - 'test.bed12'
+    - 'bed6alt.as': AutoSQL file to describe an alternative bed 3+3 format
   - cnn
     - 'reference.cnn': exemplary copy-number reference file for MT192765.1 genome
   - db
