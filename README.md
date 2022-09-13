@@ -113,7 +113,48 @@ kraken2-build --clean --db taxprofiler-testdb/
 
 #### Centrifuge
 
-We use the same test database for [centrifuge](https://github.com/nf-core/test-datasets/blob/mag/test_data/minigut_cf.tar.gz) as [nf-core/mag](https://github.com/nf-core/mag) is using in their test data.
+Centrifuge version 1.0.4
+
+Downloaded taxonomy files
+
+```
+centrifuge-download -o taxonomy taxonomy
+```
+
+Made custom seqid2taxid.map
+
+```
+NC_001133.9    4392 
+NC_012920.1    9606
+NC_001134.8    4392
+NC_001135.5    4392
+NC_001136.10    4392
+NC_001137.3    4392
+NC_001138.5    4392
+NC_001139.9    4392
+NC_001140.6    4392
+NC_001141.2    4392
+NC_001142.9    4392
+NC_001143.9    4392
+NC_001144.5    4392
+NC_001145.3    4392
+NC_001146.8    4392
+NC_001147.6    4392
+NC_001148.4    4392
+NC_001224.1    4392
+```
+
+Combined the two FASTAs together
+
+```
+cat *.{fa,fna} > input-sequences.fna
+```
+
+Then build the CF database files
+
+```bash
+centrifuge-build -p 4 --conversion-table seqid2taxid.map --taxonomy-tree taxonomy/nodes.dmp --name-table taxonomy/names.dmp input-sequences.fna taxprofiler_cf
+```
 
 #### DIAMOND
 
