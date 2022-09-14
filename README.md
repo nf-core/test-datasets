@@ -68,7 +68,7 @@ FASTA files are stored under `data/fasta/`
 ### databases
 
 An abundant species found in the above dataset is _Penicillium roqueforti_.
-The genomes and translations of P. roqueforti were downloaded with:
+The genome and translations of P. roqueforti were downloaded with:
 
 ```bash
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/533/775/GCF_015533775.1_ASM1553377v1/GCF_015533775.1_ASM1553377v1_genomic.fna.gz # P. roqueforti
@@ -87,6 +87,15 @@ All four were unzipped
 
 ```bash
 gunzip *.gz
+```
+
+Note all test database files should be placed in an archive containing the following structure
+
+```
+test-db-<tool>.tar.gz
+└── test-db-<tool>/
+     ├── <file1>
+     └── <file2>
 ```
 
 #### MALT
@@ -124,7 +133,7 @@ centrifuge-download -o taxonomy taxonomy
 Made custom seqid2taxid.map
 
 ```
-NC_001133.9    4392 
+NC_001133.9    4392
 NC_012920.1    9606
 NC_001134.8    4392
 NC_001135.5    4392
@@ -178,7 +187,3 @@ rm *dmp *txt *gz *prt *zip
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
-
-```
-
-```
