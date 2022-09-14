@@ -333,6 +333,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - filelist.txt: A TAMA merge filelist file. It's a 4 columns (bed file, cap status, merging order, id) file listing bed files to merge. The file listed are alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.bed alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.2.bed.
 
   - cooler:
+
     - cload:
       - hg19:
         - hg19.GM12878-MboI.pairs.subsample.blksrt.txt.gz, hg19.GM12878-MboI.pairs.subsample.blksrt.txt.gz.px2: hg19 pairix test file and its index file.
@@ -342,7 +343,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - merge:
       - toy:
         - toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
-  
+
   - scramble:
     - test.fa: A reference file containing chr3:70000000-70100000 and chr11:418014-438014
     - test.fa.fai: The index of this reference
@@ -405,6 +406,8 @@ If you cannot find suitable test data on this repository, please contact us on t
   - 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - txt
   - 'hello.txt': one-line txt file
+- tar
+  - 'hello.tar.gz': gzipped tar archive containing a single file without a directory
 
 ### Uncategorized
 
