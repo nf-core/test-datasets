@@ -8,6 +8,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/`: chr20 test resources
 
+`reference/LoFtool_scores.txt`: file containing LoFtool scores for grch38 version 105 to run  Ensembl vep
+
 `reference/grch38_gnomad_reformated_-r3.1.1-.vcf.gz`: Gnomad vcf file containing entries for the region chr20:90000-92000
 
 `reference/grch38_vcfanno_config_-v0.2-_chr20.toml`: TOML file for small test
