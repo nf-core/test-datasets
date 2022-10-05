@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,bam,seq_type
+SAMPLE_PAIRED_END_BAM,,,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/bam/example_pe.bam,dna
