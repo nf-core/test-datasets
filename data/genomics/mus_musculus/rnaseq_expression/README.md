@@ -6,7 +6,7 @@ This data is intended for use in expression analysis downstream of the nf-core R
 
  * Sample sheet and FASTQ files derived by running [fetchngs](https://nf-co.re/fetchngs) with accession SRP254919.
  * Count matrix derived by running [rnaseq](https://nf-co.re/rnaseq) against the mouse genome GRCm38 with default parameters.
- * The top 1000 most variable genes from `salmon.merged.gene_counts` as follows: 
+ * The top 1000 most variable genes were selcted from `salmon.merged.gene_counts` in R as follows: 
 
 ```
 expression <- read.table("salmon.merged.gene_counts.tsv")
