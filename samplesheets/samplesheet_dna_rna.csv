@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2,seq_type
+SAMPLE_FASTQ,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_1_fished.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_2_fished.fastq.gz,dna
+SAMPLE_FASTQ_RNA,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_1_fished.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_2_fished.fastq.gz,rna
