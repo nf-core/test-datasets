@@ -227,6 +227,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - test2.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
     - fastq:
+      
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
       - test2\_{1,2}: reads corresponding to tumor sample
@@ -234,6 +235,8 @@ If you cannot find suitable test data on this repository, please contact us on t
       - test\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
       - test2\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
       - test*rnaseq*{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
+      - rCRS_simulated_test.fq.gz: Synthetic raw mitochondrial reads from the rCRS mitochondrial reference genome for use in testing HaploCart.
+ 
     - gatk:
       - test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       - test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
