@@ -1,0 +1,89 @@
+knum	threshold	score_type	profile_type	F-measure	nseq	nseq_used	alen	mlen	eff_nseq	re/pos	definition
+K01421	178.80	full	all	0.937790	3107	2706	11682	936	14.99	0.590	putative membrane protein
+K01540	277.27	full	all	0.895455	2039	1887	3466	563	8.31	0.590	sodium/potassium-transporting ATPase subunit beta
+K01992	18.20	domain	all	0.313831	34932	30313	33751	305	768.56	0.590	ABC-2 type transport system permease protein
+K02067	81.47	domain	all	0.982356	16583	13948	11508	388	30.55	0.590	phospholipid/cholesterol/gamma-HCH transport system substrate-binding protein
+K02359	174.83	full	all	0.992771	220	206	1072	518	3.01	0.590	beta-1,4-mannosyltransferase [EC:2.4.1.-]
+K02632	217.07	full	all	1.000000	14	13	261	208	0.90	0.588	phycoerythrocyanin alpha-cysteine-84 phycoviolobilin lyase/isomerase subunit PecF [EC:4.4.1.31]
+K03223	106.33	domain	trim	0.802170	689	469	1038	385	7.23	0.590	type III secretion protein L
+K03581	248.43	full	all	0.988294	4785	4007	8891	637	6.94	0.590	exodeoxyribonuclease V alpha subunit [EC:3.1.11.5]
+K03633	215.90	full	all	1.000000	719	434	615	440	1.78	0.589	chromosome partition protein MukF
+K03820	237.50	full	all	0.957986	5402	4697	7480	809	14.52	0.590	apolipoprotein N-acyltransferase [EC:2.3.1.269]
+K04265	431.73	full	all	0.880219	739	699	2083	424	6.42	0.590	adenosine receptor A1
+K04873	537.70	full	trim	0.933647	316	278	1447	435	1.59	0.589	voltage-dependent calcium channel gamma-8
+K05479	110.10	domain	all	1.000000	127	114	409	202	1.93	0.590	tumor necrosis factor ligand superfamily member 18
+K05802	500.57	full	all	0.821286	2349	2034	5326	841	13.29	0.590	potassium-dependent mechanosensitive channel
+K07362	79.80	full	all	0.992907	153	143	1000	354	3.57	0.590	linker for activation of T cells
+K07452	70.00	domain	all	0.995841	1433	1326	10859	431	10.75	0.590	5-methylcytosine-specific restriction enzyme B [EC:3.1.21.-]
+K07680	241.03	domain	trim	0.989860	217	192	1405	759	6.00	0.590	two-component system, NarL family, sensor histidine kinase ComP [EC:2.7.13.3]
+K07778	170.90	full	all	0.979604	1957	1747	3990	454	9.21	0.590	two-component system, NarL family, sensor histidine kinase DesK [EC:2.7.13.3]
+K08044	1746.60	full	all	0.881381	177	176	2746	1147	1.17	0.590	adenylate cyclase 4 [EC:4.6.1.1]
+K08082	269.23	full	all	0.815724	824	745	1551	408	8.36	0.590	two-component system, LytTR family, sensor histidine kinase AlgZ [EC:2.7.13.3]
+K08873	658.27	full	all	0.997425	590	584	13070	3364	5.48	0.590	serine/threonine-protein kinase SMG1 [EC:2.7.11.1]
+K09167	114.23	domain	all	0.942228	2156	1829	1219	258	13.02	0.590	uncharacterized protein
+K09525	160.47	domain	all	0.988072	1206	1015	1779	292	3.12	0.590	DnaJ homolog subfamily C member 5
+K09936	39.17	domain	all	0.998477	3721	2961	4135	265	14.70	0.590	bacterial/archaeal transporter family-2 protein
+K10060	296.03	domain	all	0.735394	261	260	2723	526	9.05	0.590	C-type lectin domain family 4 member F
+K10062	544.40	domain	all	0.976466	353	342	2767	895	2.67	0.590	collectin sub-family member 12
+K10290	146.27	full	trim	0.940600	537	489	2557	535	7.41	0.590	F-box protein 3
+K10658	250.17	full	all	0.469050	510	432	1819	328	7.30	0.590	E3 ubiquitin-protein ligase MARCH3 [EC:2.3.2.27]
+K10706	478.23	domain	all	0.974078	496	494	10924	1801	8.62	0.590	senataxin [EC:5.6.2.-]
+K10742	460.97	domain	all	0.945755	920	905	10333	1273	6.56	0.590	DNA replication ATP-dependent helicase/nuclease Dna2 [EC:5.6.2.3 3.1.-.-]
+K11622	86.13	full	all	0.997980	676	499	873	304	6.67	0.590	lia operon protein LiaF
+K11701	666.07	full	all	1.000000	76	75	2732	1108	2.19	0.590	helicase required for RNAi-mediated heterochromatin assembly 1 [EC:3.6.4.13]
+K11936	251.00	full	all	0.705068	1583	1286	2789	557	12.51	0.590	poly-beta-1,6-N-acetyl-D-glucosamine synthase [EC:2.4.1.-]
+K12566	142.17	full	all	1.000000	455	405	1394	414	3.54	0.590	beta-sarcoglycan
+K13092	151.23	full	all	0.991051	463	458	7567	1761	5.46	0.590	nuclear protein NHN1
+K13590	261.03	domain	all	0.825699	1826	1682	4059	530	14.01	0.590	diguanylate cyclase [EC:2.7.7.65]
+K13871	775.47	full	trim	0.959716	536	514	2868	796	3.11	0.590	solute carrier family 7 (cationic amino acid transporter), member 14
+K14326	463.57	domain	all	0.989692	761	687	6554	1088	2.70	0.590	regulator of nonsense transcripts 1 [EC:3.6.4.13 5.6.2.3]
+K14522	97.43	full	all	0.994872	101	101	849	332	4.85	0.590	ribonuclease P/MRP protein subunit POP3 [EC:3.1.26.5]
+K15011	197.47	domain	all	0.993869	1605	1394	1803	475	6.01	0.590	two-component system, sensor histidine kinase RegB [EC:2.7.13.3]
+K15260	526.80	domain	trim	0.941722	301	297	4052	994	4.59	0.590	poly [ADP-ribose] polymerase 9 [EC:2.4.2.30]
+K15261	538.13	full	all	0.918233	942	942	23664	1968	9.75	0.590	poly [ADP-ribose] polymerase 10/14/15 [EC:2.4.2.30]
+K15290	742.93	full	all	0.757318	580	482	2220	629	3.04	0.590	synaptotagmin-1
+K18353	112.67	full	all	0.997685	444	431	1098	369	6.01	0.590	vancomycin resistance protein VanJ
+K18422	797.83	full	all	0.779709	962	941	9109	953	5.13	0.590	helicase MOV-10 [EC:3.6.4.13]
+K19036	799.70	full	all	0.832492	522	520	5974	1079	3.55	0.590	ATP-dependent RNA/DNA helicase IGHMBP2 [EC:3.6.4.13 5.6.2.3]
+K19254	795.57	full	all	1.000000	43	43	2288	1212	1.68	0.589	Coronaviridae (excluding betacoronavirus) spike glycoprotein
+K19532	693.73	full	trim	0.756874	459	452	2218	709	4.58	0.590	Delta14-sterol reductase (lamin-B receptor) [EC:1.3.1.70]
+K19608	409.83	full	all	1.000000	281	280	4473	1299	4.29	0.590	ellis van creveld syndrome protein 2
+K19783	728.83	domain	trim	0.881825	168	164	3817	785	2.64	0.590	DNA polymerase alpha-associated DNA helicase A [EC:5.6.2.3]
+K19915	387.80	domain	all	0.985858	262	248	2222	593	1.90	0.590	synaptotagmin-17
+K20028	249.53	full	all	0.922707	1973	1840	6083	432	7.16	0.590	palmitoyltransferase ZDHHC2/15/20 [EC:2.3.1.225]
+K23518	217.30	domain	all	0.850038	3872	3435	6228	493	17.34	0.590	O-acetyl-ADP-ribose deacetylase [EC:3.1.1.106]
+K24106	900.47	full	all	1.000000	3	3	422	421	0.42	0.586	SARS coronavirus nucleocapsid protein
+K24149	15566.27	full	all	1.000000	3	3	7108	7079	0.41	0.591	SARS coronavirus replicase polyprotein 1ab
+K24150	476.73	full	all	1.000000	3	3	227	222	0.39	0.590	SARS coronavirus membrane protein
+K24151	160.77	full	all	1.000000	3	3	76	76	0.52	0.742	SARS coronavirus envelope small membrane protein
+K24152	2410.87	full	all	1.000000	3	3	1282	1263	0.44	0.592	SARS coronavirus spike glycoprotein
+K24324	2229.93	full	all	1.000000	6	6	1386	1348	0.53	0.593	MERS coronavirus spike glycoprotein
+K24325	1210.47	full	all	0.962963	14	14	1604	1322	0.86	0.588	Betacoronavirus (excluding SARS and MERS) spike glycoprotein
+K24579	484.60	full	all	1.000000	3	3	275	275	0.45	0.587	SARS coronavirus accessory protein 3a
+K24580	92.50	full	all	1.000000	3	3	63	63	0.88	0.889	SARS coronavirus accessory protein 6
+K24581	206.03	full	all	1.000000	3	3	122	121	0.45	0.589	SARS coronavirus accessory protein 7a
+K24582	77.37	full	all	1.000000	3	3	44	43	1.13	1.276	SARS coronavirus accessory protein 7b
+K24583	-	-	-	-	2	2	129	121	0.58	0.593	SARS coronavirus accessory protein 8
+K24584	-	-	-	-	1	1	38	38	0.99	1.439	SARS coronavirus accessory protein 10
+K24778	90.27	full	all	0.996508	433	428	1879	378	4.10	0.590	abscission/NoCut checkpoint regulator
+K25001	-	-	-	-	2	2	676	673	0.43	0.588	SARS coronavirus spike protein S1
+K25002	-	-	-	-	2	2	588	588	0.40	0.595	SARS coronavirus spike protein S2
+K25011	-	-	-	-	2	2	180	180	0.41	0.587	SARS coronavirus host translation inhibitor nsp1
+K25012	-	-	-	-	2	2	638	638	0.43	0.594	SARS coronavirus non-structural protein 2
+K25013	-	-	-	-	2	2	1952	1945	0.43	0.590	SARS coronavirus non-structural protein 3 [EC:3.4.19.12]
+K25014	-	-	-	-	2	2	500	500	0.39	0.591	SARS coronavirus non-structural protein 4
+K25015	-	-	-	-	2	2	306	306	0.38	0.590	SARS coronavirus 3C-like proteinase
+K25016	-	-	-	-	2	2	290	290	0.38	0.589	SARS coronavirus non-structural protein 6
+K25017	-	-	-	-	2	2	83	83	0.49	0.687	SARS coronavirus non-structural protein 7
+K25018	-	-	-	-	2	2	198	198	0.42	0.590	SARS coronavirus non-structural protein 8
+K25019	-	-	-	-	2	2	113	113	0.39	0.590	SARS coronavirus non-structural protein 9
+K25020	-	-	-	-	2	2	139	139	0.36	0.584	SARS coronavirus non-structural protein 10
+K25021	1912.00	full	all	0.522222	3	3	935	932	0.42	0.589	SARS coronavirus RNA-directed RNA polymerase [EC:2.7.7.48]
+K25022	1250.20	full	all	0.800000	3	3	601	601	0.43	0.594	SARS coronavirus helicase [EC:5.6.2.3 3.6.4.13]
+K25023	-	-	-	-	2	2	527	527	0.37	0.593	SARS coronavirus proofreading exoribonuclease [EC:3.1.13.-]
+K25024	-	-	-	-	2	2	346	346	0.39	0.589	SARS coronavirus uridylate-specific endoribonuclease
+K25025	-	-	-	-	2	2	298	298	0.39	0.590	SARS coronavirus 2'-O-methyltransferase [EC:2.1.1.-]
+K25165	1219.03	full	all	0.990420	364	363	11794	2963	3.82	0.590	helicase with zinc finger domain 2 [EC:3.6.4.-]
+K25924	-	-	-	-	1	1	1587	1587	0.38	0.591	Alphacoronavirus papain-like proteinase 1/2 [EC:3.4.19.12 3.4.22.-]
+K25925	-	-	-	-	1	1	1301	1301	0.37	0.587	Rubella virus protease/methyltransferase p150 [EC:3.4.22.-]
+K25926	-	-	-	-	1	1	302	302	0.38	0.595	Alphacoronavirus 3C-like proteinase [EC:3.4.22.-]
