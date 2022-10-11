@@ -1,0 +1,3 @@
+#ARG	query-start	query-end	read_id	predicted_ARG-class	best-hit	probability	identity	alignment-length	alignment-bitscore	alignment-evalue	counts
+TETQ	1	657	NZ_CP069563.1	multidrug	BAD46890|FEATURES|tetQ|tetracycline|tetQ	0.22720350402822395	99.8	657	1305	0.0	1
+TETQ	1	657	NZ_CP069563.1	peptide	BAD46890|FEATURES|tetQ|tetracycline|tetQ	0.22908892362462083	99.8	657	1305	0.0	1
