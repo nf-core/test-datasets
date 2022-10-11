@@ -399,6 +399,21 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'pangenome.og': A variation graph encoded in the binary ODGI format. It is consumed by `odgi view`.
     - 'pangenome.lay': A binary file which holds the 2D graph layout produced by `odgi layout`. Input for `odgi draw`.
 
+### proteomics
+
+- msspectra
+  - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
+  - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
+
+- database
+  - 'yeast_UPS.fasta': FASTA database for Yeast organism.
+
+- maxquant
+  - 'mqpar.xml': MaxQuant parameters file.
+
+- idxml: 
+  - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
+
 ### generic
 
 - csv
