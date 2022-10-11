@@ -412,7 +412,7 @@ If you cannot find suitable test data on this repository, please contact us on t
 - maxquant
   - 'mqpar.xml': MaxQuant parameters file
 
-- idxml: 
+- openms_idxml: 
   - 'QC01_ae7fcd9aa17ad92971e19e90e002f864.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine
 
 ### generic
