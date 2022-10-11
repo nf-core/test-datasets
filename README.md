@@ -217,6 +217,11 @@ If you cannot find suitable test data on this repository, please contact us on t
       - umi:
         - test.paired*end.umi*\*: Files base on `test.umi_{1,2}` (normal)
         - test2.paired*end.umi*\*: Files base on `test2.umi_{1,2}` (tumor)
+        - test.paired_end.duplex_umi_unmapped.bam: file originating from `test_duplex_umi\_{1,2}` (spiked)
+        - test.paired_end.duplex_umi_mapped.bam: file originating from `test.paired_end.duplex_umi_unmapped.bam`
+        - test.paired_end.duplex_umi_mapped_tagged.bam: file originating from `test.paired_end.duplex_umi_unmapped.bam` and `test.paired_end.duplex_umi_mapped.bam`
+        - test.paired_end.duplex_umi_grouped.bam: file originating from `test.paired_end.duplex_umi_mapped_tagged.bam`
+        - test.paired_end.duplex_umi_duplex_consensus.bam: file originating from `test.paired_end.duplex_umi_grouped.bam`
     - bcl:
       - flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
       - flowcell_samplesheet.csv: SampleSheet for data on flowcell
@@ -230,6 +235,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - fastq:
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
+      - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
       - test2\_{1,2}: reads corresponding to tumor sample
       - test2.umi\_{1,2}: UMI tagged reads corresponding to tumor sample
       - test\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
