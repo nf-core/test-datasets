@@ -369,7 +369,12 @@ If you cannot find suitable test data on this repository, please contact us on t
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
-
+- mus_musculus
+  - mageck
+    - ERR376998.small.fastq.gz and ERR376999.small.fastq.gz downloaded from sourceforge mageck documentation, shortened to only 10k reads
+    - design_matrix.txt taken from the mageck documentation tutorial
+    - yusa_library.csv taken from the mageck sourceforge, crisprcas9 functional genomics library
+    - count_table.csv leukemia mice experiment with crisprcas9 functional genomics 
 - prokaryotes
   - bacteroides_fragilis
     - genome
