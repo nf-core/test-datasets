@@ -120,6 +120,14 @@ kraken2-build --build --db taxprofiler-testdb/
 kraken2-build --clean --db taxprofiler-testdb/
 ```
 
+#### Bracken
+
+Bracken Version 2.7
+
+```bash
+nextflow run https://github.com/Midnighter/kraken2-bracken-test-db -profile docker
+```
+
 #### Centrifuge
 
 Centrifuge version 1.0.4
