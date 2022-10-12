@@ -1,36 +1,30 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+## test-datasets: MELT module
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+This branch contains test data to be used for automated testing with the nf-core/module/melt.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+## Content of this repository
 
-## Documentation
+### MELT requires transposon .zip files to direct MEI discovery.
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+  testdata/ALU_MELT.zip: ALU transposon info (Hg38)
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+  testdata/HERVK_MELT.zip: HERVK transposon info (Hg38)
 
-## Downloading test data
+  testdata/LINE1_MELT.zip: LINE1 transposon info (Hg38)
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+  testdata/SVA_MELT.zip: SVA transposon info (Hg38)
 
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
 
-To subsequently clone other branches[^1]
 
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
+### MELT requires Gene Annotation in BED format. For details and structure of this bed files, see table 2 in the [MELT documentation](https://melt.igs.umaryland.edu/manual.php)
 
-## Support
+  testdata/AluY.deletion.bed : bed file for ALU Y deletion (Hg38)
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+  testdata/LINE1.deletion.bed : bed file for LINE1 deletion (Hg38)
 
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+  testdata/Hg38.genes.bed : bed file for genes (Hg38)
+
+
