@@ -25,7 +25,7 @@ An example file we might use to define contrasts over the above experiment. Vari
 
 Count matrix derived by running [rnaseq](https://nf-co.re/rnaseq) against the mouse genome GRCm38 with default parameters. The top 1000 most variable genes were selected from `salmon.merged.gene_counts` in R as follows: 
 
-```
+```r
 expression <- read.table("salmon.merged.gene_counts.tsv")
 
 # Remove rows with zeros
