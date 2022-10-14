@@ -1,30 +1,26 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-## test-datasets: MELT module
+## test-datasets: comradesnf
 
-This branch contains test data to be used for automated testing with the nf-core/module/melt.
+This branch contains test data to be used for automated testing with the nf-core/comradesnf
 
 ## Content of this repository
 
-### MELT requires transposon .zip files to direct MEI discovery.
+### comradesnf requires input paired-end sequences in fastq.gz format
 
-  testdata/ALU_MELT.zip: ALU transposon info (Hg38)
+  testdata/rRNA1_S1_R1.fastq.gz: R1 sequences for sample 1 in fastq format
 
-  testdata/HERVK_MELT.zip: HERVK transposon info (Hg38)
+  testdata/rRNA1_S1_R2.fastq.gz: R2 sequences for sample 1 in fastq format
 
-  testdata/LINE1_MELT.zip: LINE1 transposon info (Hg38)
+  testdata/rRNA1_S1_R1.fastq.gz: R1 sequences for sample 1 control in fastq format
 
-  testdata/SVA_MELT.zip: SVA transposon info (Hg38)
+  testdata/rRNA1_S1_R2.fastq.gz: R1 sequences for sample 1 control in fastq format
 
 
 
-### MELT requires Gene Annotation in BED format. For details and structure of this bed files, see table 2 in the [MELT documentation](https://melt.igs.umaryland.edu/manual.php)
 
-  testdata/AluY.deletion.bed : bed file for ALU Y deletion (Hg38)
+### comradesnf requires transcriptome sequences for mapping in fasta format 
 
-  testdata/LINE1.deletion.bed : bed file for LINE1 deletion (Hg38)
-
-  testdata/Hg38.genes.bed : bed file for genes (Hg38)
-
+  testdata/18Sref.fasta: 18S ribosomal RNA sequence in fasta format
 
