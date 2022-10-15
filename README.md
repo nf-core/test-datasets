@@ -1,30 +1,36 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-## test-datasets: MELT module
+## Introduction
 
-This branch contains test data to be used for automated testing with the nf-core/module/melt.
+nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
 
-## Content of this repository
+The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
 
-### MELT requires transposon .zip files to direct MEI discovery.
+## Documentation
 
-  testdata/ALU_MELT.zip: ALU transposon info (Hg38)
+nf-core/test-datasets comes with documentation in the `docs/` directory:
 
-  testdata/HERVK_MELT.zip: HERVK transposon info (Hg38)
+01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
+02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
-  testdata/LINE1_MELT.zip: LINE1 transposon info (Hg38)
+## Downloading test data
 
-  testdata/SVA_MELT.zip: SVA transposon info (Hg38)
+Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
 
+```bash
+git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+```
 
+To subsequently clone other branches[^1]
 
-### MELT requires Gene Annotation in BED format. For details and structure of this bed files, see table 2 in the [MELT documentation](https://melt.igs.umaryland.edu/manual.php)
+```bash
+git remote set-branches --add origin [remote-branch]
+git fetch
+```
 
-  testdata/AluY.deletion.bed : bed file for ALU Y deletion (Hg38)
+## Support
 
-  testdata/LINE1.deletion.bed : bed file for LINE1 deletion (Hg38)
+For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
-  testdata/Hg38.genes.bed : bed file for genes (Hg38)
-
-
+[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
