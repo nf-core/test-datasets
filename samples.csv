@@ -1,7 +1,7 @@
-Sample_ID,Read1,Read2,Bam
-cel_N2_1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep1_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep1_2.fastq.gz,NA
-cel_N2_2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep2_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep2_2.fastq.gz,NA
-cel_N2_3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep3_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep3_2.fastq.gz,NA
-fust1_1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep1_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep1_2.fastq.gz,NA
-fust1_2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep2_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep2_2.fastq.gz,NA
-fust1_3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep3_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep3_2.fastq.gz,NA
+sample,fastq_1,fastq_2
+cel_N2_1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep1_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep1_2.fastq.gz
+cel_N2_2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep2_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep2_2.fastq.gz
+cel_N2_3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep3_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/N2_rep3_2.fastq.gz
+fust1_1,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep1_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep1_2.fastq.gz
+fust1_2,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep2_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep2_2.fastq.gz
+fust1_3,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep3_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/circrna/fastq/fust1_rep3_2.fastq.gz
