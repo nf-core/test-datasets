@@ -1,6 +1,0 @@
-{
- "mapping_error_rate": 0.01,
- "mean_bias_sd": 0.01,
- "psi_j_scale": 0.001,
- "psi_s_scale": 0.0001
-}
