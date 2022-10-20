@@ -14,6 +14,8 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
 - `C_primers.fasta` and `V_primers.fasta` contain fake primers, do not use them!
 - The `fastq` files are random samples of a human BCRseq MiSeq amplicon sequencing data, for 4 different B-cell populations and two time points. The `*I1.fastq.gz` files are the index reads with illumina and UMI barcodes.
 
+- `metadata_pcr_umi_airr.tsv` contains the samplesheet for the pipeline full tests.
+
 `testdata-no-umi` contains BCR test data to run the pipeline without UMIs. This dataset is a minimal example to test pipeline function based on the Illumina MiSeq 2x250 BCR mRNA workflow from the presto docs.
 
 - `metadata_test-no-umi.tsv` contains the paths to the associated test data.
