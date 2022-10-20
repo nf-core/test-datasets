@@ -6,7 +6,7 @@ This data is intended for use in expression analysis downstream of the nf-core R
 
 ### SRP254919.samplesheet.csv 
 
-Sample sheet and FASTQ files derived by running [fetchngs](https://nf-co.re/fetchngs) with accession SRP254919. A 'treatment' column has been added to use in contrasts.
+Sample sheet and FASTQ files derived by running [fetchngs](https://nf-co.re/fetchngs) with accession SRP254919. A 'treatment' column has been added to use in contrasts, along with a 'sample_number' column to be used as a blocking factor.
 
 ### SRP254919.gene_meta.tsv 
 
