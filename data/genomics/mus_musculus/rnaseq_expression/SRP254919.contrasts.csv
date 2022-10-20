@@ -1,2 +1,3 @@
 variable,reference,target,blocking
 treatment,mCherry,hND6,
+treatment,mCherry,hND6,sample_number
