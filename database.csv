@@ -1,9 +1,8 @@
 tool,db_name,db_params,db_path
 malt,malt85,-id 85,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/malt/testdb-malt.tar.gz
 malt,malt95,-id 90,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/malt/testdb-malt.tar.gz
-kraken2,db1,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kraken2/testdb-kraken2.tar.gz
-kraken2,db2,--quick,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kraken2/testdb-kraken2.tar.gz
 bracken,db1,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/bracken/testdb-bracken.tar.gz
+kraken2,db2,--quick,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kraken2/testdb-kraken2.tar.gz
 centrifuge,db3,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/centrifuge/test-db-centrifuge.tar.gz
 metaphlan3,db4,,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan_database.tar.gz
 kaiju,db5,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kaiju/kaiju.tar.gz
