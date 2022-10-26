@@ -61,6 +61,9 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'kraken2.tar.gz': kraken2 DB archive
     - 'kraken2_bracken': kraken2 & Bracken DB
     - 'kraken2_bracken.tar.gz': kraken2 & Bracken DB archive
+    - kofamscan: kofamscan DB files
+      - 'ko_list.gz': compressed text file list of KO terms
+      - 'profiles.tar.gz': directory archive with HMMER profiles
     - 'metamaps.tar.gz': metamaps DB archive
     - maltextract
       - 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
@@ -143,6 +146,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'test_1.kraken2.reads.txt': kraken classification of each input read of test file `test_1.fastq.gz`
     - 'test_1.kraken2.report.txt': kraken report after classification of test file `test_1.fastq.gz`
     - 'krona_taxonomy.tab': sars-cov-2 taxonomy tree only extracted from taxonomy.tab database created with ktUpdateTaxonomy
+    - 'seqid2taxid.map': taxonomy mapping file of the SARS-CoV2 genome genbank ID with NCBI taxonomy ID, originally generated for KrakenUniq
 
 - homo_sapiens
 
@@ -179,6 +183,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - vcfanno
         - 'vcfanno_grch38_module_test.tar.gz': exac.vcf.gz + exac.vcf.gz.tbi and they're reference ExAC vcf used to query
         - 'vcfanno.toml': configuration file for vcfanno to operate
+    - ploidy-model: directory containing the ploidy model files
     - dict: Sequence dictionary corresponding to `fasta`
     - genome.fasta: Reference fasta based on chr22:16570000-16610000
     - genome2.fasta: Reference fasta based on chr22:16600000-16800000
@@ -212,9 +217,17 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'example_hla_pe.sorted.bam.bai': Sorted BAM file index for HLATyping workflow / OptiType module.
       - mitochon_standin.recalibrated.sorted: copy of the old, smaller test2.paired_end.recalibrated.sorted, this is to be used to test mutect2's mitochondria mode, as the current recal bams are far too big. This should be replaced once rarediseases obtain an actual mitochondria sample.
       - 'test3.single_end.markduplicates.sorted.bam': Mapped, sorted, and duplicate removed reads from ancient DNA across all human chromosomes on the hs37d5 human reference. Data from [ERR2857053](https://www.ebi.ac.uk/ena/browser/view/ERR2857053) downsampled to 10% of original reads.
+    - 'test.rna.paired_end.bam': STAR-aligned, unsorted, paired-end RNAseq bam file from the test*rnaseq*{1,2}.fastq.gz: chr22 of sample GM12878 (SRA accession: SRX2900878)
+      - 'test.rna.paired_end.sorted.bam': STAR-aligned, sorted, paired-end RNAseq bam file based on test.rna.Aligned.unsorted.bam
+      - 'test.rna.paired_end.sorted.bam.bai': STAR-aligned, sorted paired-end RNAseq bam index file for test.rna.Aligned.sorted.bam
       - umi:
         - test.paired*end.umi*\*: Files base on `test.umi_{1,2}` (normal)
         - test2.paired*end.umi*\*: Files base on `test2.umi_{1,2}` (tumor)
+        - test.paired_end.duplex_umi_unmapped.bam: file originating from `test_duplex_umi\_{1,2}` (spiked)
+        - test.paired_end.duplex_umi_mapped.bam: file originating from `test.paired_end.duplex_umi_unmapped.bam`
+        - test.paired_end.duplex_umi_mapped_tagged.bam: file originating from `test.paired_end.duplex_umi_unmapped.bam` and `test.paired_end.duplex_umi_mapped.bam`
+        - test.paired_end.duplex_umi_grouped.bam: file originating from `test.paired_end.duplex_umi_mapped_tagged.bam`
+        - test.paired_end.duplex_umi_duplex_consensus.bam: file originating from `test.paired_end.duplex_umi_grouped.bam`
     - bcl:
       - flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
       - flowcell_samplesheet.csv: SampleSheet for data on flowcell
@@ -228,11 +241,13 @@ If you cannot find suitable test data on this repository, please contact us on t
     - fastq:
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
+      - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
       - test2\_{1,2}: reads corresponding to tumor sample
       - test2.umi\_{1,2}: UMI tagged reads corresponding to tumor sample
       - test\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
       - test2\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
       - test*rnaseq*{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
+      - test*airrseq*{umi_R1,R2}.fastq.gz: reads from MiSEQ sequencing of BCR data.
     - gatk:
       - test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       - test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
@@ -295,14 +310,19 @@ If you cannot find suitable test data on this repository, please contact us on t
     - narrowPeak:
       - test.narrowPeak: Genome narrowPeak file obtained using MACS2
       - test2.narrowPeak: Genome narrowPeak file obtained using MACS2, replicate from `test.narrowPeak`
-    - vcf:
-      - test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
-      - test.genome_21.somatic_sv.vcf: Indels VCF corresponding to `test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
-      - NA12878*chrM.vcf.gz: mitochondrial variants corresponding to `testdata/NA12878_mito*{1,2}.fq.gz`from the`rarediseases` branch.
     - plink
       - test.rnaseq.bed: Plink binaries obtained using test.rnaseq.vcf with plink tool
       - test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
       - test.rnaseq.fam: Plink binaries obtained using test.rnaseq.vcf with plink tool
+    - vcf:
+      - test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
+      - test.genome_21.somatic_sv.vcf: Indels VCF corresponding to `test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
+      - NA12878*chrM.vcf.gz: mitochondrial variants corresponding to `testdata/NA12878_mito*{1,2}.fq.gz`from the`rarediseases` branch.
+    - svd:
+      - test.genome.vcf.bed: bed file for markers with format(chr\tpos-1\tpos\trefAllele\taltAllele). Derived from test.genome.vcf and genome.fasta and it was a part of reference stack generated by verifybamid2 --RefVCF test.genome.vcf --Reference genome.fasta
+      - test.genome.vcf.mu: matrix file of genotype matrix. Derived from test.genome.vcf and genome.fasta and it was a part of reference stack generated by verifybamid2 --RefVCF test.genome.vcf --Reference genome.fasta
+      - test.genome.vcf.UD: matrix file from SVD result of genotype matrix. Derived from test.genome.vcf and genome.fasta and it was a part of reference stack generated by verifybamid2 --RefVCF test.genome.vcf --Reference genome.fasta
+      - test.genome.vcf.V: test value file, which was generated by verifybamid2 --RefVCF test.genome.vcf --Reference genome.fasta --BamFile test.paired_end.sorted.bam
     - yak:
       - test.yak: Yak kmer index of 1000 of paternal paired-end reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D2_S1_L001_R{1,2}\_001.fastq.gz and D2_S1_L001_R{1,2}\_002.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
       - test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}\_001.fastq.gz and D3_S1_L001_R{1,2}\_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
@@ -352,7 +372,12 @@ If you cannot find suitable test data on this repository, please contact us on t
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
-
+- mus_musculus
+  - mageck
+    - ERR376998.small.fastq.gz and ERR376999.small.fastq.gz downloaded from sourceforge mageck documentation, shortened to only 10k reads
+    - design_matrix.txt taken from the mageck documentation tutorial
+    - yusa_library.csv taken from the mageck sourceforge, crisprcas9 functional genomics library
+    - count_table.csv leukemia mice experiment with crisprcas9 functional genomics 
 - prokaryotes
   - bacteroides_fragilis
     - genome
@@ -391,6 +416,22 @@ If you cannot find suitable test data on this repository, please contact us on t
   - odgi
     - 'pangenome.og': A variation graph encoded in the binary ODGI format. It is consumed by `odgi view`.
     - 'pangenome.lay': A binary file which holds the 2D graph layout produced by `odgi layout`. Input for `odgi draw`.
+
+### proteomics
+
+- msspectra
+  - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
+  - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
+
+- database
+  - 'yeast_UPS.fasta': FASTA database for Yeast organism.
+
+- maxquant
+  - 'mqpar.xml': MaxQuant parameters file.
+
+- Bos_taurus
+  - idxml: 
+    - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
 
 ### generic
 

@@ -19,15 +19,15 @@ properties:
           description: "Name of the platform that sequenced the samples."
           enum: ["ABI_SOLID", "BGISEQ", "CAPILLARY", "COMPLETE_GENOMICS", "DNBSEQ", "HELICOS", "ILLUMINA", "ION_TORRENT", "LS454", "OXFORD_NANOPORE", "PACBIO_SMRT"]
         fastq1:
-          type: string
+          type: ["string", "null"]
           description: "FASTQ file for read 1."
           pattern: "^[\\S]+.(fq\\.gz|fastq\\.gz)$"
         fastq2:
-          type: string
+          type: ["string", "null"]
           description: "FASTQ file for read 2."
           pattern: "^[\\S]+.(fq\\.gz|fastq\\.gz)$"
         fasta:
-          type: string
+          type: ["string", "null"]
           description: "Path to FASTA file."
       required:
         - sample
