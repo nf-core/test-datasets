@@ -1,4 +1,9 @@
 sample,fastq_1
-sample1,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/sample_1.fastq.gz
-sample2,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/sample_2.fastq.gz
-sample3,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/sample_3.fastq.gz
+Clone1_N1,s3://nf-core-awsmegatests/smrnaseq/input_data/C1-N1-R1_S4_L001_R1_001.fastq.gz
+Clone1_N3,s3://nf-core-awsmegatests/smrnaseq/input_data/C1-N3-R1_S6_L001_R1_001.fastq.gz
+Clone9_N1,s3://nf-core-awsmegatests/smrnaseq/input_data/C9-N1-R1_S7_L001_R1_001.fastq.gz
+Clone9_N2,s3://nf-core-awsmegatests/smrnaseq/input_data/C9-N2-R1_S8_L001_R1_001.fastq.gz
+Clone9_N3,s3://nf-core-awsmegatests/smrnaseq/input_data/C9-N3-R1_S9_L001_R1_001.fastq.gz
+Control_N1,s3://nf-core-awsmegatests/smrnaseq/input_data/Ctl-N1-R1_S1_L001_R1_001.fastq.gz
+Control_N2,s3://nf-core-awsmegatests/smrnaseq/input_data/Ctl-N2-R1_S2_L001_R1_001.fastq.gz
+Control_N3,s3://nf-core-awsmegatests/smrnaseq/input_data/Ctl-N3-R1_S3_L001_R1_001.fastq.gz
