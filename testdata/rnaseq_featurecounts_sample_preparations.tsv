@@ -1,0 +1,25 @@
+Secondary Name	Lab ID	Sample Type	Source	Source Name(s)	Source Lab ID(s)	Extract Name(s)	Extract Lab ID(s)	Condition genotype	Condition treatment	Condition time	batch
+Sample1	1_EV1_PBS_1H	RNA	Mus musculus 1	WT ; Control ; 1H	1_EV1_PBS_1H	WT ; Control ; 1H	1_EV1_PBS_1H	WT	Control	1H	b1
+Sample2	3_EV2_PBS_1H	RNA	Mus musculus 2	WT ; Control ; 1H	3_EV2_PBS_1H	WT ; Control ; 1H	3_EV2_PBS_1H	WT	Control	1H	b1
+Sample3	5_EV3_PBS_1H	RNA	Mus musculus 3	WT ; Control ; 1H	5_EV3_PBS_1H	WT ; Control ; 1H	5_EV3_PBS_1H	WT	Control	1H	b1
+Sample4	13_EV1_PBS_16H	RNA	Mus musculus 4	WT ; Control ; 16H	13_EV1_PBS_16H	WT ; Control ; 16H	13_EV1_PBS_16H	WT	Control	16H	b2
+Sample5	15_EV2_PBS_16H	RNA	Mus musculus 5	WT ; Control ; 16H	15_EV2_PBS_16H	WT ; Control ; 16H	15_EV2_PBS_16H	WT	Control	16H	b2
+Sample6	17_EV3_PBS_16H	RNA	Mus musculus 6	WT ; Control ; 16H	17_EV3_PBS_16H	WT ; Control ; 16H	17_EV3_PBS_16H	WT	Control	16H	b2
+Sample7	2_EV1_Treated_1H	RNA	Mus musculus 7	WT ; Treated ; 1H	2_EV1_Treated_1H	WT ; Treated ; 1H	2_EV1_Treated_1H	WT	Treated	1H	b1
+Sample8	4_EV2_Treated_1H	RNA	Mus musculus 8	WT ; Treated ; 1H	4_EV2_Treated_1H	WT ; Treated ; 1H	4_EV2_Treated_1H	WT	Treated	1H	b3
+Sample9	6_EV3_Treated_1H	RNA	Mus musculus 9	WT ; Treated ; 1H	6_EV3_Treated_1H	WT ; Treated ; 1H	6_EV3_Treated_1H	WT	Treated	1H	b3
+Sample10	14_EV1_Treated_16H	RNA	Mus musculus 10	WT ; Treated ; 16H	14_EV1_Treated_16H	WT ; Treated ; 16H	14_EV1_Treated_16H	WT	Treated	16H	b1
+Sample11	16_EV2_Treated_16H	RNA	Mus musculus 11	WT ; Treated ; 16H	16_EV2_Treated_16H	WT ; Treated ; 16H	16_EV2_Treated_16H	WT	Treated	16H	b1
+Sample12	18_EV3_Treated_16H	RNA	Mus musculus 12	WT ; Treated ; 16H	18_EV3_Treated_16H	WT ; Treated ; 16H	18_EV3_Treated_16H	WT	Treated	16H	b1
+Sample13	7_Cre1_PBS_1H	RNA	Mus musculus 13	KO ; Control ; 1H	7_Cre1_PBS_1H	KO ; Control ; 1H	7_Cre1_PBS_1H	KO	Control	1H	b1
+Sample14	9_Cre2_PBS_1H	RNA	Mus musculus 14	KO ; Control ; 1H	9_Cre2_PBS_1H	KO ; Control ; 1H	9_Cre2_PBS_1H	KO	Control	1H	b2
+Sample15	11_Cre3_PBS_1H	RNA	Mus musculus 15	KO ; Control ; 1H	11_Cre3_PBS_1H	KO ; Control ; 1H	11_Cre3_PBS_1H	KO	Control	1H	b1
+Sample16	19_ Cre1_PBS_16H	RNA	Mus musculus 16	KO ; Control ; 16H	19_ Cre1_PBS_16H	KO ; Control ; 16H	19_ Cre1_PBS_16H	KO	Control	16H	b3
+Sample17	21_Cre2_PBS_16H	RNA	Mus musculus 17	KO ; Control ; 16H	21_Cre2_PBS_16H	KO ; Control ; 16H	21_Cre2_PBS_16H	KO	Control	16H	b3
+Sample18	23_Cre3_PBS_16H	RNA	Mus musculus 18	KO ; Control ; 16H	23_Cre3_PBS_16H	KO ; Control ; 16H	23_Cre3_PBS_16H	KO	Control	16H	b1
+Sample19	8_Cre1_Treated_1H	RNA	Mus musculus 19	KO ; Treated ; 1H	8_Cre1_Treated_1H	KO ; Treated ; 1H	8_Cre1_Treated_1H	KO	Treated	1H	b1
+Sample20	10_Cre2_Treated_1H	RNA	Mus musculus 20	KO ; Treated ; 1H	10_Cre2_Treated_1H	KO ; Treated ; 1H	10_Cre2_Treated_1H	KO	Treated	1H	b1
+Sample21	12_Cre3_Treated_1H	RNA	Mus musculus 21	KO ; Treated ; 1H	12_Cre3_Treated_1H	KO ; Treated ; 1H	12_Cre3_Treated_1H	KO	Treated	1H	b3
+Sample22	20_Cre1_Treated_16H	RNA	Mus musculus 22	KO ; Treated ; 16H	20_Cre1_Treated_16H	KO ; Treated ; 16H	20_Cre1_Treated_16H	KO	Treated	16H	b3
+Sample23	22_Cre2_Treated_16H	RNA	Mus musculus 23	KO ; Treated ; 16H	22_Cre2_Treated_16H	KO ; Treated ; 16H	22_Cre2_Treated_16H	KO	Treated	16H	b3
+Sample24	24_Cre3_Treated_16H	RNA	Mus musculus 24	KO ; Treated ; 16H	24_Cre3_Treated_16H	KO ; Treated ; 16H	24_Cre3_Treated_16H	KO	Treated	16H	b2
