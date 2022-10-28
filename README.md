@@ -61,6 +61,9 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'kraken2.tar.gz': kraken2 DB archive
     - 'kraken2_bracken': kraken2 & Bracken DB
     - 'kraken2_bracken.tar.gz': kraken2 & Bracken DB archive
+    - kofamscan: kofamscan DB files
+      - 'ko_list.gz': compressed text file list of KO terms
+      - 'profiles.tar.gz': directory archive with HMMER profiles
     - 'metamaps.tar.gz': metamaps DB archive
     - maltextract
       - 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
@@ -236,6 +239,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - test2.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
     - fastq:
+      
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
       - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
@@ -245,6 +249,8 @@ If you cannot find suitable test data on this repository, please contact us on t
       - test2\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate disease test data for HaplotypeCaller
       - test*rnaseq*{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
       - test*airrseq*{umi_R1,R2}.fastq.gz: reads from MiSEQ sequencing of BCR data.
+      - rCRS_simulated_test.fq.gz: Synthetic raw mitochondrial reads from the rCRS mitochondrial reference genome for use in testing HaploCart.
+
     - gatk:
       - test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       - test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
@@ -413,6 +419,22 @@ If you cannot find suitable test data on this repository, please contact us on t
   - odgi
     - 'pangenome.og': A variation graph encoded in the binary ODGI format. It is consumed by `odgi view`.
     - 'pangenome.lay': A binary file which holds the 2D graph layout produced by `odgi layout`. Input for `odgi draw`.
+
+### proteomics
+
+- msspectra
+  - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
+  - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
+
+- database
+  - 'yeast_UPS.fasta': FASTA database for Yeast organism.
+
+- maxquant
+  - 'mqpar.xml': MaxQuant parameters file.
+
+- Bos_taurus
+  - idxml: 
+    - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
 
 ### generic
 
