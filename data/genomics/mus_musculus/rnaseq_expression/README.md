@@ -12,6 +12,16 @@ Sample sheet and FASTQ files derived by running [fetchngs](https://nf-co.re/fetc
 
 A simple two-column table of id/ symbol mappings for genes, useful in downstream tools expecting gene annotation.
 
+### genes.gtf.gz
+
+The genes.gtf for mouse in iGenomes, cut down to match the genes in this subset like:
+
+```
+tail -n +2 SRP254919.gene_meta.tsv | awk '{print $1}' | while read -r l; do grep "$l" genes.gtf >> mini.gtf; done
+```
+
+This is useful for testing with pipelines expeting a gtf.gz.
+
 ### SRP254919.contrasts.csv  
 
 An example file we might use to define contrasts over the above experiment. Variables per contrast are:
