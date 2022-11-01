@@ -165,6 +165,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - .interval_list
         - .bed
         - .cnn: copy number reference file for chr_21
+        - .snp: Eigenstrat snp file of 1240k snps on chr 21
       - germlineresources: directory containing several germline resource vcfs and tbis, including:
         - 1000G_omni2.5
         - 1000G_phase1.snps
