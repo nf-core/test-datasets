@@ -4,10 +4,10 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-`design.csv`: Experiment design file for minimal test dataset  
-`design_full.csv`: Experiment design file for full test dataset  
-`reference/`: Genome reference files (iGenomes R64-1-1 Ensembl release)   
-`testdata/` : FastQ files sub-sampled to 100,000 paired-end reads   
+`samplesheet/v2.0/samplesheet.csv`: Experiment design file for minimal test dataset
+`samplesheet/v2.0/samplesheet_full.csv`: Experiment design file for full test dataset
+`reference/`: Genome reference files (iGenomes R64-1-1 Ensembl release)
+`testdata/` : FastQ files sub-sampled to 100,000 paired-end reads
 
 ## Minimal test dataset origin
 
@@ -15,7 +15,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 Schep AN, Buenrostro JD, Denny SK, Schwartz K, Sherlock G, Greenleaf WJ. Structured nucleosome fingerprints enable high-resolution mapping of chromatin architecture within regulatory regions. Genome Res 2015 Nov;25(11):1757-70. [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/26314830) [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE66386)
 
-### Sample information
+### Sample information minimal test dataset
 
 | GEO_ID	    | SRA_ID	    | SAMPLE_NAME	                  |
 |-------------|-------------|-------------------------------|
@@ -64,7 +64,7 @@ M Ryan Corces *et al*. An Improved ATAC-seq Protocol Reduces Background and Enab
 [Pubmed](https://pubmed.ncbi.nlm.nih.gov/28846090/) [SRA](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA380283)
 
 
-### Sample information
+### Sample information full test dataset
 
 | SRA ID     | SAMPLE NAME                                                         |
 |------------|---------------------------------------------------------------------|
