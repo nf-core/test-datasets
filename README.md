@@ -12,9 +12,10 @@ This branch contains test data to be used for automated testing with the nf-core
 <!---
 TODO: add more info here under testdata
 -->
-`testdata/`
+`testdata/`:
 
 `samplesheet/samplesheet.csv`: samplesheet file for minimal test dataset
+
 `samplesheet/samplesheet_full.csv`: samplesheet file for full test dataset
 
 ## Minimal test dataset origin
@@ -36,4 +37,8 @@ Think having some of this inforamtion will be helpful
 
 <!---
 TODO: Again, add brief data information (noting that it's >Q20 technology) and citation
+-->
+
+<!---
+TODO: ensure there is no other relevant info. that should be added
 -->
