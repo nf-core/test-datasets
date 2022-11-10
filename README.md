@@ -255,6 +255,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - gatk:
       - test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       - test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
+      - contig_ploidy_priors_table.tsv: The contig ploidy priors table needed for GATK DetermineGermlineContigPloidy
       - test.pileups.table: Summarises normal allele counts, based on test.paired_end.recalibrated.sorted.bam, used by CalculateContamination
       - test2.pileups.table: Summarises tumor allele counts, based on test2.paired_end.recalibrated.sorted.bam, used by CalculateContamination
       - test_test2_paired_mutect2_calls.artifact-prior.tar.gz: Table of artifact priors, generated from test_test2_paired_mutect2_calls.f1r2.tar.gz, used by FilterMutectCalls

@@ -258,6 +258,10 @@ gatk LearnReadOrientationModel -I ..illumina/gatk/paired_mutect2_calls/test_test
 gatk CalibrateDragstrModel --str-table-path genome_strtablefile.zip --output test_paired_end_sorted_dragstrmodel.txt --input test.paired_end.sorted.bam --reference genome.fasta
 ```
 
+`contig_ploidy_priors_table.tsv`:
+
+Copied from this post: https://gatk.broadinstitute.org/hc/en-us/community/posts/360074399831/comments/4410556196507
+
 #### Paired Mutect files
 
 The unfiltered calls are from the mutect2 portion of the gatk_tumor_normal_somatic_variant_calling subworkflow, filtered calls are the final output.
