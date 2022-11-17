@@ -1,0 +1,4 @@
+entry	chrA	coordA	orientA	chrB	coordB	orientB	primary_brkpt_type	num_primary_reads	num_supp_reads	total	adj_total	excluded_reads	frac_reads_removed	virus_brkend_grp	is_primary	hits	min_per_id	max_end_clipping	min_anchor_len	flankA	flankB	entropyA	entropyB	splice_type
+chr6~64935774~+~HPV16~4034~-	chr6	64935774	+	HPV16	4034	-	Split	16	145	161	161		0.0	HPV16:4034	True	1.012	97.1	7.657999999999999	65.90100000000001	ggaaagtaacccaaaaaaagtatagcatatCA	TAcaataaaacacctaaacgcagaggctgctg	1.733	1.889	.
+chr18~73320805~+~HPV16~7409~-	chr18	73320805	+	HPV16	7409	-	Split	22	128	150	150		0.0	HPV16:7409	True	1.013	97.1	10.353	64.3	atttatttattaaaactaaattcagtaattTA	TAtaaaacaaaaacaggatgtagcaaatatag	1.46	1.6580000000000001	.
+chr11~117344947~+~HPV16~1222~+	chr11	117344947	+	HPV16	1222	+	Split	8	106	114	114		0.0	HPV16:1222	True	1.1840000000000002	97.0	5.509	68.053	gactccatctcaaaaaaaaaaaccaaagtaAA	TAgagctgcaaaaaggagattatttgaaagcg	1.6019999999999999	1.8459999999999999	.
