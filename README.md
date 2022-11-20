@@ -10,7 +10,8 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
 
 `testdata-bcr` contains the test data needed to run the pipeline for BCRseq data.
 
-- `Metadata_test.tsv` contains the paths to the BCR test data.
+- `Metadata_test.tsv` samplesheet for BCR test data for nf-core/airrflow version < 3.0.
+- `Metadata_test_airr.tsv` samplesheet for BCR test data for nf-core/airrflow version >= 3.0.
 - `C_primers.fasta` and `V_primers.fasta` contain fake primers, do not use them!
 - The `fastq` files are random samples of a human BCRseq MiSeq amplicon sequencing data, for 4 different B-cell populations and two time points. The `*I1.fastq.gz` files are the index reads with illumina and UMI barcodes.
 
