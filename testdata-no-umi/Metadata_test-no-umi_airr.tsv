@@ -1,0 +1,2 @@
+sample_id	filename_R1	filename_R2	subject_id	species	pcr_target_locus	single_cell	tissue	sex	age	biomaterial_provider
+Sample1	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-no-umi/ERR346600_2kReads_1.fastq.gz	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-no-umi/ERR346600_2kReads_2.fastq.gz	Patient1	human	IG	FALSE	blood	NA	NA	greiff_lab
