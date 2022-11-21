@@ -26,7 +26,7 @@ divided into the following directories and files:
 
 ### Sample sheet
 
-| plate        | fastq                                  |
+| plate_id     | fastq                                  |
 | -------------|----------------------------------------|
 | test_plate_A | [github address]/test_plate_A.fastq.gz |
 | test_plate_B | [github address]/test_plate_B.fastq.gz |
