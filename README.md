@@ -1,6 +1,8 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
+> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+
 ## Introduction
 
 nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
