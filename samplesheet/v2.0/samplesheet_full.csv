@@ -1,7 +1,7 @@
-sample,fastq_1,fastq_2
-GM12878_STD_1,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717909_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717909_T1_2.fastq.gz
-GM12878_STD_2,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717910_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717910_T1_2.fastq.gz
-GM12878_OMNI_1,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717911_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717911_T1_2.fastq.gz
-GM12878_OMNI_2,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717912_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717912_T1_2.fastq.gz
-GM12878_FAST_1,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717913_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717913_T1_2.fastq.gz
-GM12878_FAST_2,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717914_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717914_T1_2.fastq.gz
+sample,fastq_1,fastq_2,replicate
+GM12878_STD,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717909_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717909_T1_2.fastq.gz,1
+GM12878_STD,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717910_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717910_T1_2.fastq.gz,2
+GM12878_OMNI,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717911_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717911_T1_2.fastq.gz,1
+GM12878_OMNI,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717912_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717912_T1_2.fastq.gz,2
+GM12878_FAST,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717913_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717913_T1_2.fastq.gz,1
+GM12878_FAST,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717914_T1_1.fastq.gz,s3://nf-core-awsmegatests/atacseq/input_data/SRX2717914_T1_2.fastq.gz,2
