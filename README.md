@@ -204,6 +204,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - salmon: salmon index created with `transcriptome.fasta`
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
   - illumina
+
     - 10xgenomics
       - test\_{1,2}.fastq.gz: 10X Genomics V3 fastq files from human PBMCs
     - bam:
@@ -218,9 +219,11 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'example_hla_pe.sorted.bam.bai': Sorted BAM file index for HLATyping workflow / OptiType module.
       - mitochon_standin.recalibrated.sorted: copy of the old, smaller test2.paired_end.recalibrated.sorted, this is to be used to test mutect2's mitochondria mode, as the current recal bams are far too big. This should be replaced once rarediseases obtain an actual mitochondria sample.
       - 'test3.single_end.markduplicates.sorted.bam': Mapped, sorted, and duplicate removed reads from ancient DNA across all human chromosomes on the hs37d5 human reference. Data from [ERR2857053](https://www.ebi.ac.uk/ena/browser/view/ERR2857053) downsampled to 10% of original reads.
-    - 'test.rna.paired_end.bam': STAR-aligned, unsorted, paired-end RNAseq bam file from the test*rnaseq*{1,2}.fastq.gz: chr22 of sample GM12878 (SRA accession: SRX2900878)
-      - 'test.rna.paired_end.sorted.bam': STAR-aligned, sorted, paired-end RNAseq bam file based on test.rna.Aligned.unsorted.bam
-      - 'test.rna.paired_end.sorted.bam.bai': STAR-aligned, sorted paired-end RNAseq bam index file for test.rna.Aligned.sorted.bam
+      - 'test.rna.paired_end.bam': STAR-aligned, unsorted, paired-end RNAseq bam file from the test*rnaseq*{1,2}.fastq.gz: chr22 of sample GM12878 (SRA accession: SRX2900878)
+        - 'test.rna.paired_end.sorted.bam': STAR-aligned, sorted, paired-end RNAseq bam file based on test.rna.Aligned.unsorted.bam
+        - 'test.rna.paired_end.sorted.bam.bai': STAR-aligned, sorted paired-end RNAseq bam index file for test.rna.Aligned.sorted.bam
+      - 'test.rna.paired_end.sorted.chr6.bam': STAR-aligned, sorted, paired-end sampled RNAseq bam file of chromosome 6 of sample GM12878 (SRA accession: SRX2900878)
+      - 'test.rna.paired_end.sorted.chr6.bam.bai': STAR-aligned, sorted, paired-end sampled RNAseq bam index file of chromosome 6 of sample GM12878 (SRA accession: SRX2900878)
       - umi:
         - test.paired*end.umi*\*: Files base on `test.umi_{1,2}` (normal)
         - test2.paired*end.umi*\*: Files base on `test2.umi_{1,2}` (tumor)
@@ -240,7 +243,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - test2.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
     - fastq:
-      
+
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
       - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
@@ -331,6 +334,7 @@ If you cannot find suitable test data on this repository, please contact us on t
     - yak:
       - test.yak: Yak kmer index of 1000 of paternal paired-end reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D2_S1_L001_R{1,2}\_001.fastq.gz and D2_S1_L001_R{1,2}\_002.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
       - test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}\_001.fastq.gz and D3_S1_L001_R{1,2}\_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
+
   - pacbio:
 
     - bam:
@@ -377,12 +381,13 @@ If you cannot find suitable test data on this repository, please contact us on t
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
+
 - mus_musculus
   - mageck
     - ERR376998.small.fastq.gz and ERR376999.small.fastq.gz downloaded from sourceforge mageck documentation, shortened to only 10k reads
     - design_matrix.txt taken from the mageck documentation tutorial
     - yusa_library.csv taken from the mageck sourceforge, crisprcas9 functional genomics library
-    - count_table.csv leukemia mice experiment with crisprcas9 functional genomics 
+    - count_table.csv leukemia mice experiment with crisprcas9 functional genomics
 - prokaryotes
   - bacteroides_fragilis
     - genome
@@ -396,7 +401,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - 'test1*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
         - 'test2*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
       - fasta
-        - 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+        - 'test1.contigs.fa.gz': *de novo* assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
       - bam
         - 'test1.bam': 'test1\_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
         - 'test1.sorted.bam': sorted 'test1.bam'
@@ -406,7 +411,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - 'test2.sorted.bai': index of 'test2.sorted.bam'
     - nanopore
       - fastq
-        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing *Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
 
 ### pangenomics
 
@@ -425,17 +430,20 @@ If you cannot find suitable test data on this repository, please contact us on t
 ### proteomics
 
 - msspectra
+
   - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
   - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
 
 - database
+
   - 'yeast_UPS.fasta': FASTA database for Yeast organism.
 
 - maxquant
+
   - 'mqpar.xml': MaxQuant parameters file.
 
 - Bos_taurus
-  - idxml: 
+  - idxml:
     - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
 
 ### generic
