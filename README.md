@@ -48,7 +48,8 @@ ChrX fastq files we further sub-sampled to improve speed of testing.
   ```console
   awk -F"\t" '$1=="X"' genes.gtf > genes_chrX.gtf
   ```
- 
+ 3. Ensembl GRCh37 ChrX fasta file was downloaded from iGenomes (https://ewels.github.io/AWS-iGenomes/).
+
 ## Full test dataset origin
 
 *H. sapiens* total RNA paired-end RNA-seq dataset was obtained from:

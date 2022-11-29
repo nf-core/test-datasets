@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2,strandedness,condition
+ERR188383,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR188383_chrX_1.fastq.gz,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR188383_chrX_2.fastq.gz,unstranded,GBR
+ERR188428,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR188428_chrX_1.fastq.gz,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR188428_chrX_2.fastq.gz,unstranded,GBR
+ERR188454,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR188454_chrX_1.fastq.gz,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR188454_chrX_2.fastq.gz,unstranded,YRI
+ERR204916,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR204916_chrX_1.fastq.gz,https://github.com/zifornd/zifo-test-datasets/raw/main/testdata/Pertea_2016/rnasplice/ERR204916_chrX_2.fastq.gz,unstranded,YRI
