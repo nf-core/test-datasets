@@ -100,7 +100,7 @@ test-db-<tool>.tar.gz
 
 #### MALT
 
-MALT Version 0.5.3
+MALT Version 0.6.1
 
 ```bash
 wget https://software-ab.informatik.uni-tuebingen.de/download/megan6/megan-nucl-Feb2022.db.zip
@@ -189,6 +189,17 @@ cat ../raw/*.faa | diamond makedb -d testdb-diamond --taxonmap prot.accession2ta
 
 rm *dmp *txt *gz *prt *zip
 ```
+
+#### KrakenUniq
+
+KrakenUniq version 1.0.0
+
+> ⚠️  This database _does not_ use the specified files used in the other databases, as this built into a database that was tool large.
+
+This database includes the SARS-CoV2 genome used on the nf-core/modules test-datasets repository (NCBI Accession: MT192765.1).
+
+It was generated using the nf-core/module KRAKENUNIQ_BUILD module.  
+
 
 ## Support
 
