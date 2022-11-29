@@ -6,3 +6,4 @@ kraken2,db2,--quick,https://github.com/nf-core/test-datasets/raw/taxprofiler/dat
 centrifuge,db3,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/centrifuge/testdb-centrifuge.tar.gz
 metaphlan3,db4,,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan_database.tar.gz
 kaiju,db5,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kaiju/kaiju.tar.gz
+krakenuniq,db6,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/krakenuniq/testdb-krakenuniq.tar.gz
