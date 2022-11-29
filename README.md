@@ -100,7 +100,7 @@ test-db-<tool>.tar.gz
 
 #### MALT
 
-MALT Version 0.5.3
+MALT Version 0.6.1
 
 ```bash
 wget https://software-ab.informatik.uni-tuebingen.de/download/megan6/megan-nucl-Feb2022.db.zip
