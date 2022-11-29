@@ -26,7 +26,7 @@ Of all samples only the following were chosen for testing: ERR188383, ERR188428,
 
 ### Sampling information
 
-| run_accession | sex        | population | sample_title                                                                  |
+| SRA ID | Sex        | Population | Sample title                                                                  |
 |---------------|------------|------------|-------------------------------------------------------------------------------|
 | ERR188383     | male       | GBR        | ChrX subsampled total RNA-seq male GBR (British from England)                 |
 | ERR188428     | female     | GBR        | ChrX subsampled total RNA-seq female GBR (British from England)               |
@@ -35,7 +35,7 @@ Of all samples only the following were chosen for testing: ERR188383, ERR188428,
 
 ### Sampling procedure
 
-Although chrX had already been sampled from these fastq files we also further sub-sampled them for improved speed of testing.
+ChrX fastq files we further sub-sampled to improve speed of testing.
 
 1. The example command below was used to sub-sample the raw paired-end FastQ files to 50,000 reads (see [seqtk](https://github.com/lh3/seqtk)):
 
@@ -43,3 +43,25 @@ Although chrX had already been sampled from these fastq files we also further su
   seqtk sample -s100 ERR188383_unclass_chrX_1.fastq.gz 50000 | gzip > ERR188383_chrX_1.fastq.gz
   seqtk sample -s100 ERR188383_unclass_chrX_2.fastq.gz 50000 | gzip > ERR188383_chrX_2.fastq.gz
   ```
+ 2. Ensembl GRCh37 annotation was downloaded from iGenomes (https://ewels.github.io/AWS-iGenomes/) and subsetted for ChrX with the following command:
+ 
+  ```console
+  awk -F"\t" '$1=="X"' genes.gtf > genes_chrX.gtf
+  ```
+ 
+## Full test dataset origin
+
+*H. sapiens* total RNA paired-end RNA-seq dataset was obtained from:
+
+> Shen S, Park JW, Lu ZX, Lin L, Henry MD, Wu YN, Zhou Q, Xing Y. rMATS: robust and flexible detection of differential alternative splicing from replicate RNA-Seq data. Proc Natl Acad Sci U S A. 2014 Dec 23;111(51):E5593-601. doi: 10.1073/pnas.1419161111. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/25480548/) [SRA](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=SRP014759)
+
+### Sample information full test dataset
+
+| SRA ID    | Title           | Platform            | Sample title                                                        |
+|-----------|-----------------|---------------------|---------------------------------------------------------------------|
+| SRR536350 | PC3E sample     | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line E-cadherin positive PC-3 cells |
+| SRR536348 | PC3E sample     | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line E-cadherin positive PC-3 cells |
+| SRR536342 | PC3E sample     | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line E-cadherin positive PC-3 cells |
+| SRR536346 | GS689.Li sample | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line isolated from a secondary metastatic liver tumor after intravenous injection of PC-3 cells into mouse |
+| SRR536352 | GS689.Li sample | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line isolated from a secondary metastatic liver tumor after intravenous injection of PC-3 cells into mouse |
+| SRR536344 | GS689.Li sample | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line isolated from a secondary metastatic liver tumor after intravenous injection of PC-3 cells into mouse |
