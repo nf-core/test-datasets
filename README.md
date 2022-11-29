@@ -196,7 +196,7 @@ KrakenUniq version 1.0.0
 
 > ⚠️  This database _does not_ use the specified files used in the other databases, as this built into a database that was tool large.
 
-This database was includes the SARS-CoV2 genome used on the nf-core/modules test-datasets repository (NCBI Accession: MT192765.1).
+This database includes the SARS-CoV2 genome used on the nf-core/modules test-datasets repository (NCBI Accession: MT192765.1).
 
 It was generated using the nf-core/module KRAKENUNIQ_BUILD module.  
 
