@@ -62,7 +62,7 @@ ChrX fastq files we further sub-sampled to improve speed of testing.
 |-----------|-----------------|---------------------|---------------------------------------------------------------------|
 | SRR536350 | PC3E sample     | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line E-cadherin positive PC-3 cells |
 | SRR536348 | PC3E sample     | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line E-cadherin positive PC-3 cells |
-| SRR536342 | PC3E sample     | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line E-cadherin positive PC-3 cells |
+| SRR536352 | PC3E sample     | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line E-cadherin positive PC-3 cells |
 | SRR536346 | GS689.Li sample | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line isolated from a secondary metastatic liver tumor after intravenous injection of PC-3 cells into mouse |
-| SRR536352 | GS689.Li sample | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line isolated from a secondary metastatic liver tumor after intravenous injection of PC-3 cells into mouse |
+| SRR536342 | GS689.Li sample | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line isolated from a secondary metastatic liver tumor after intravenous injection of PC-3 cells into mouse |
 | SRR536344 | GS689.Li sample | Illumina HiSeq 2000 | RNA-seq of prostate cancer cell line isolated from a secondary metastatic liver tumor after intravenous injection of PC-3 cells into mouse |
