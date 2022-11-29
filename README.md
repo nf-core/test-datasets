@@ -31,7 +31,7 @@ Of all samples only the following were chosen for testing: ERR188383, ERR188428,
 | ERR188383     | male       | GBR        | ChrX subsampled total RNA-seq male GBR (British from England)                 |
 | ERR188428     | female     | GBR        | ChrX subsampled total RNA-seq female GBR (British from England)               |
 | ERR188454     | male       | YRI        | ChrX subsampled total RNA-seq male YRI (Yoruba from Ibadan, Nigeria)          |
-| ERR204916     | female     | YRI        | ChrX subsampled total RNA-seq from a female YRI (Yoruba from Ibadan, Nigeria) |
+| ERR204916     | female     | YRI        | ChrX subsampled total RNA-seq female YRI (Yoruba from Ibadan, Nigeria) |
 
 ### Sampling procedure
 
