@@ -1,0 +1,2 @@
+https://github.com/ramprasadn/test-datasets/blob/7335472656b35b9725d865b36873d5b89365f4cd/reference/grch38_gnomad_reformated_-r3.1.1-.vcf.gz
+https://github.com/ramprasadn/test-datasets/blob/7335472656b35b9725d865b36873d5b89365f4cd/reference/grch38_gnomad_reformated_-r3.1.1-.vcf.gz.tbi
