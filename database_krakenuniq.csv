@@ -1,0 +1,2 @@
+tool,db_name,db_params,db_path
+krakenuniq,db6,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/krakenuniq/testdb-krakenuniq.tar.gz
