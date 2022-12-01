@@ -5,7 +5,7 @@ There are three main directories: `generic`, `genomics` and `delete_me`. The fir
 
 ### delete_me
 
-The `delete_me` folder does not adhere to a defined structure as data in this folder should be directly as fast as possible, whenever a more suitable dataset is found that can be added to the `genomics` folder.
+The `delete_me` folder does not adhere to a defined structure as data in this folder should be delete as fast as possible, whenever a more suitable dataset is found that can be added to the `genomics` folder.
 
 ### generic
 
@@ -57,6 +57,7 @@ If you cannot find suitable test data on this repository, please contact us on t
   - cnn
     - 'reference.cnn': exemplary copy-number reference file for MT192765.1 genome
   - db
+    - 'kaiju': Kaiju DB. Database created from ORF1ab polyprotein UNJ12943.1 and taxonomic ID 2697049
     - 'kraken2': kraken2 DB
     - 'kraken2.tar.gz': kraken2 DB archive
     - 'kraken2_bracken': kraken2 & Bracken DB
@@ -68,9 +69,8 @@ If you cannot find suitable test data on this repository, please contact us on t
     - maltextract
       - 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
       - 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
-    - 'kaiju': Kaiju DB. Database created from ORF1ab polyprotein UNJ12943.1 and taxonomic ID 2697049.
+    - 'mmseqs.tar.gz': mmseqs DB archive
   - genome
-
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     - 'genome.fasta.gz': bgzipped version of 'genome.fasta'
     - 'genome.dict': GATK dict for 'genome.fasta'
@@ -82,7 +82,6 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'genome.gff3': GFF for MT192765.1 genome
     - 'genome.gff3.gz': bgzipped-version
     - 'genome.sizes': genome size for the MT192765.1 genome
-
   - illumina
     - bam
       - 'test.paired_end.{,methylated}.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
