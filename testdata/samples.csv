@@ -1,2 +1,2 @@
-sample,queryfile,refalignment,refphylogeny,model
+sample,queryseqfile,refseqfile,refphylogeny,model
 PF14720,https://github.com/nf-core/test-datasets/raw/phyloplace/testdata/PF14720_3_sequences.faa,https://github.com/nf-core/test-datasets/raw/phyloplace/testdata/PF14720_seed.alnfaa,https://github.com/nf-core/test-datasets/raw/phyloplace/testdata/PF14720_seed.ft.LGCAT.newick,LG
