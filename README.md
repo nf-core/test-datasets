@@ -41,3 +41,5 @@ This branch contains test data to be used for automated testing with the [nf-cor
 `testdata/NA12878_sorted_chrM_chr20_rehead_60pdown.cram`: Test alignment file with chrM and chr20 downsampled and compressed 
 
 `testdata/samplesheet_MT.csv`: samplesheet containing fastq from chr20 and chrM
+
+`testdata/samplesheet_2_samples.csv`: samplesheet containing fastq from chr20 and chrM for 2 patients
