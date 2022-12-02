@@ -373,6 +373,11 @@ If you cannot find suitable test data on this repository, please contact us on t
       - toy:
         - toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
 
+  - gene_set_analysis:
+    - P53_6samples_collapsed_symbols.gct: a gene cluster text file format (GCT) example
+    - P53_6samples.cls: a categorical (e.g tumor vs normal) class file format (CLS) example
+    - c1.symbols.reduced.gmx: a GMX (Gene MatriX file format) example
+
   - scramble:
     - test.fa: A reference file containing chr3:70000000-70100000 and chr11:418014-438014
     - test.fa.fai: The index of this reference
