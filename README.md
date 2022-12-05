@@ -13,13 +13,14 @@ The `generic` folder contains generic files that currently cannot be associated 
 
 ### genomics
 
-The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are three organisms available:
+The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available:
 
 - bacteroides_fragilis
 - homo_sapiens
 - sarscov2
+- galaxea_fascicularis
 
-The three folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `illumina`, `nanopore`, `pacbio` and `cooler` subfolders whenever available.
+The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
 ### pangenomics
@@ -416,6 +417,10 @@ If you cannot find suitable test data on this repository, please contact us on t
     - nanopore
       - fastq
         - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing *Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+
+- galaxea_fascicularis
+    - hic
+        - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
 
 ### pangenomics
 
