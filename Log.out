@@ -1,0 +1,75 @@
+STAR version=                 2.7.2a
+STAR compilation time,server,dir=__REDACTED__
+##### Command Line:
+STAR --runMode genomeGenerate --genomeDir /share/ddiep/public/test-datasets/GRCm39/star --runThreadN 1 --genomeFastaFiles /share/ddiep/public/test-datasets/GRCm39/fasta/genome.fa --sjdbGTFfile /share/ddiep/public/test-datasets/GRCm39/genes/genes.gtf --limitGenomeGenerateRAM 17179869184 --genomeSAsparseD 1 --genomeSAindexNbases 11 --genomeChrBinNbits 18
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runMode                       genomeGenerate     ~RE-DEFINED
+genomeDir                     /share/ddiep/public/test-datasets/GRCm39/star     ~RE-DEFINED
+runThreadN                    1     ~RE-DEFINED
+genomeFastaFiles              /share/ddiep/public/test-datasets/GRCm39/fasta/genome.fa        ~RE-DEFINED
+sjdbGTFfile                   /share/ddiep/public/test-datasets/GRCm39/genes/genes.gtf     ~RE-DEFINED
+limitGenomeGenerateRAM        17179869184     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeSAindexNbases           11     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate
+runThreadN                        1
+genomeDir                         /share/ddiep/public/test-datasets/GRCm39/star
+genomeFastaFiles                  /share/ddiep/public/test-datasets/GRCm39/fasta/genome.fa   
+genomeSAindexNbases               11
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+limitGenomeGenerateRAM            17179869184
+sjdbGTFfile                       /share/ddiep/public/test-datasets/GRCm39/genes/genes.gtf
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode genomeGenerate   --runThreadN 1   --genomeDir /share/ddiep/public/test-datasets/GRCm39/star   --genomeFastaFiles /share/ddiep/public/test-datasets/GRCm39/fasta/genome.fa      --genomeSAindexNbases 11   --genomeChrBinNbits 18   --genomeSAsparseD 1   --limitGenomeGenerateRAM 17179869184   --sjdbGTFfile /share/ddiep/public/test-datasets/GRCm39/genes/genes.gtf
+----------------------------------------
+
+Finished loading and checking parameters
+Dec 08 15:39:31 ... starting to generate Genome files
+/share/ddiep/public/test-datasets/GRCm39/fasta/genome.fa : chr # 0  "chr19" chrStart: 0
+Estimated genome size=262603840   61603840   201000000
+GstrandBit=32
+Number of SA indices: 116440008
+Dec 08 15:39:33 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 1;   chunks size limit: 10233984896 bytes
+Dec 08 15:39:33 ... sorting Suffix Array chunks and saving them to disk...
+Writing 931520064 bytes into /share/ddiep/public/test-datasets/GRCm39/star/SA_0 ; empty space on disk = 9223227484837773312 bytes ... done
+Dec 08 15:40:21 ... loading chunks from disk, packing SA...
+Dec 08 15:40:40 ... finished generating suffix array
+Dec 08 15:40:40 ... generating Suffix Array index
+Dec 08 15:40:41 ... completed Suffix Array index
+Dec 08 15:40:41 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=/share/ddiep/public/test-datasets/GRCm39/genes/genes.gtf, found:
+		2428 transcripts
+		17373 exons (non-collapsed)
+		7962 collapsed junctions
+Dec 08 15:40:42 ..... finished GTF processing
+Dec 08 15:40:42   Loaded database junctions from the GTF file: /share/ddiep/public/test-datasets/GRCm39/genes/genes.gtf: 7962 total junctions
+
+Dec 08 15:40:42   Finished preparing junctions
+Dec 08 15:40:42 ..... inserting junctions into the genome indices
+Dec 08 15:40:47   Finished SA search: number of new junctions=7958, old junctions=0
+Dec 08 15:40:47   Finished sorting SA indicesL nInd=3183200
+Genome size with junctions=63203398  61603840   1599558
+GstrandBit1=32   GstrandBit=32
+Dec 08 15:40:49   Finished inserting junction indices
+Dec 08 15:40:49   Finished SAi
+Dec 08 15:40:49 ..... finished inserting junctions into genome
+Dec 08 15:40:49 ... writing Genome to disk ...
+Writing 63203398 bytes into /share/ddiep/public/test-datasets/GRCm39/star/Genome ; empty space on disk = 9223227484837773312 bytes ... done
+SA size in bytes: 493445736
+Dec 08 15:40:49 ... writing Suffix Array to disk ...
+Writing 493445736 bytes into /share/ddiep/public/test-datasets/GRCm39/star/SA ; empty space on disk = 9223227484837773312 bytes ... done
+Dec 08 15:40:50 ... writing SAindex to disk
+Writing 8 bytes into /share/ddiep/public/test-datasets/GRCm39/star/SAindex ; empty space on disk = 9223227484837773312 bytes ... done
+Writing 96 bytes into /share/ddiep/public/test-datasets/GRCm39/star/SAindex ; empty space on disk = 9223227484837773312 bytes ... done
+Writing 24466771 bytes into /share/ddiep/public/test-datasets/GRCm39/star/SAindex ; empty space on disk = 9223227484837773312 bytes ... done
+Dec 08 15:40:50 ..... finished successfully
+DONE: Genome generation, EXITING

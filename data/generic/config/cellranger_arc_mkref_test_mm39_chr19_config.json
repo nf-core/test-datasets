@@ -1,0 +1,6 @@
+{
+    organism: "mm39"
+    genome: ["GRCm39"]
+    input_fasta: ["data/genomics/mus_musculus/genome/chr19.fa"]
+    input_gtf: ["data/genomics/mus_musculus/genome/chr19.filtered.gtf.gz"]
+}
