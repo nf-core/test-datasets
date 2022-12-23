@@ -1,0 +1,4 @@
+data/panel/*
+data/NA12878/*
+data/validation/*
+!data/**/*.s.*
