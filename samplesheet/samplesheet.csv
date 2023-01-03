@@ -1,3 +1,3 @@
 sample,fastq_1,fastq_2
-test_minigut,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R1.fastq.gz,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R2.fastq.gz
-test_minigut_sample2,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_sample2_R1.fastq.gz,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_sample2_R2.fastq.gz
+SAMPLE1_PE,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R1.fastq.gz,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R2.fastq.gz
+SAMPLE2_PE,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_sample2_R1.fastq.gz,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_sample2_R2.fastq.gz
