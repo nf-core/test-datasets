@@ -1,15 +1,6 @@
 # 10X_Multiome_test_data
 Test data for 10X_Multiome (cellranger-arc) analysis
 
-## cellranger-arc mkfastq
-1. 10x_bcl files are from 10X Genomics, but with second tile removed to make the file size even smaller. They are at `data/genomics/homo_sapiens/illumina/10xgenomics/bcl`
-2. Untar the folder first
-3. To demultiplex files, run the command: 
-```
-cellranger-arc mkfastq --id=tiny-bcl-atac --run cellranger-arc-tiny-bcl-atac-1.0.0 --csv=tiny_bcl_atac.csv 
-```
-4. Test success when program runs without error.
-
 ## cellranger-arc mkgtf
 1. mus_musculus chr19.filtered.gtf file is from Genode Release M31 (https://www.gencodegenes.org/mouse/). Then filtered to only genes on chromosome 19. It is at `data/genomics/mus_musculus/genome/`
 2. Run test with command: 
