@@ -393,6 +393,9 @@ If you cannot find suitable test data on this repository, please contact us on t
     - design_matrix.txt taken from the mageck documentation tutorial
     - yusa_library.csv taken from the mageck sourceforge, crisprcas9 functional genomics library
     - count_table.csv leukemia mice experiment with crisprcas9 functional genomics
+  - gene_set_analysis:
+    - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023 
+    - Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip Ensembl ID to gene symbol mapping in Broad's 'chip' format, suitable for passing to GSEA when using matrices keyed by Ensembl Gene ID. Downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations/mouse/Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip) 5/1/2023
 - prokaryotes
   - bacteroides_fragilis
     - genome
