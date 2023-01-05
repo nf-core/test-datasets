@@ -1,0 +1,7 @@
+{
+    organism: "homo_sapiens"
+    genome: ["cellranger_atac_reference"]
+    input_fasta: ["genome.fasta"]
+    input_gtf: ["genome.gtf"]
+    input_motifs: "JASPAR2018_CORE_non-redundant_pfms_jaspar.txt.modified"
+}
