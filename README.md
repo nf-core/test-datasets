@@ -38,7 +38,8 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
 
 ## How data has been acquired
-### Initial data
+### For GLIMPSE
+#### Initial data
 Beware can be long to download especially 'NA12878.final.cram'
 ```
 wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr21.filtered.shapeit2-duohmm-phased.vcf.gz{,.tbi}
@@ -47,17 +48,27 @@ wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram
 wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/homo_sapiens/genome/chr21/germlineresources/gnomAD.r2.1.1.vcf.gz -O gnomAD.r2.1.1.chr21.vcf.gz
 ```
 
-### Preparation of the different panel files
+#### Preparation of the different panel files
 ```
 . get_panel_s.sh
 ```
 
-### Preparation and downsampling of the individual file validation and test file
+#### Preparation and downsampling of the individual file validation and test file
 ```
 . get_ind_1x
 ```
 
-### Compute the genotype likelihood for the individual data 
+#### Compute the genotype likelihood for the individual data 
 ```
 . get_ind_gl.sh
+```
+### For Beagle
+```
+wget http://faculty.washington.edu/browning/beagle/test.22Jul22.46e.vcf.gz
+
+echo "*** Creating test files: ref.22Jul22.46e.vcf.gz target.22Jul22.46e.vcf.gz ***"
+zcat test.22Jul22.46e.vcf.gz | cut -f1-190 | tr '/' '|' | gzip > ref.22Jul22.46e.vcf.gz
+zcat test.22Jul22.46e.vcf.gz | cut -f1-9,191-200 | gzip > target.22Jul22.46e.vcf.gz
+
+wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip
 ```
