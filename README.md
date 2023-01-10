@@ -72,3 +72,9 @@ zcat test.22Jul22.46e.vcf.gz | cut -f1-9,191-200 | gzip > target.22Jul22.46e.vcf
 
 wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip
 ```
+
+## Files size
+To get the size of all the files inside the git repository use the following command
+```
+git ls-files | xargs -r du -h | sort
+```
