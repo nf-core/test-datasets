@@ -1,0 +1,7 @@
+sample,fastq_1,fastq_2,strandedness,condition
+SRR536350,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536350_PC3E_sample_1.fastq.gz,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536350_PC3E_sample_2.fastq.gz,unstranded,pce3
+SRR536348,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536348_PC3E_sample_1.fastq.gz,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536348_PC3E_sample_2.fastq.gz,unstranded,pce3
+SRR536352,s3://nf-core-awsmegatests/rnasplice/input_data/RR536352_PC3E_sample_1.fastq.gz,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536352_PC3E_sample_2.fastq.gz,unstranded,pce3
+SRR536346,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536346_GS689.Li_sample_1.fastq.gz,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536346_GS689.Li_sample_2.fastq.gz,unstranded,GS689
+SRR536342,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536342_GS689.Li_sample_1.fastq.gz,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536342_GS689.Li_sample_2.fastq.gz,unstranded,GS689
+SRR536344,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536344_GS689.Li_sample_1.fastq.gz,s3://nf-core-awsmegatests/rnasplice/input_data/SRR536344_GS689.Li_sample_2.fastq.gz,unstranded,GS689
