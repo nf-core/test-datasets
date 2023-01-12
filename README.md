@@ -56,16 +56,25 @@ conda env create --name env_tools --file environment.yml
 conda activate env_tools
 ```
 #### Preparation of the different panel files
+1) Filter the region of interest of the panel file
+2) Filter the region of interest of the validation file gnomAD
+3) Normalise the panel and filter out related individual to NA12878
+4) Select only the SNPS
+5) Convert to TSV
 ```
 . get_panel_s.sh
 ```
 
 #### Preparation and downsampling of the individual file validation and test file
+1) Filter out the region of interest and format to BAM
+2) Get the genotype likelihood based on the panel for the validation file
+3) Downsampling the individual data to 1X
 ```
 . get_ind_1x
 ```
 
 #### Compute the genotype likelihood for the individual data 
+1) Compute genotype likelihood based on the panel
 ```
 . get_ind_gl.sh
 ```
