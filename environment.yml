@@ -1,0 +1,10 @@
+name: env_tools
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - bioconda::samtools
+  - bioconda::bcftools
+  - bioconda::tabix

@@ -48,6 +48,13 @@ wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram
 wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/homo_sapiens/genome/chr21/germlineresources/gnomAD.r2.1.1.vcf.gz -O gnomAD.r2.1.1.chr21.vcf.gz
 ```
 
+#### Environment
+To use the different script below you need bcftools, samtools and tabix.
+You can install everything with conda by using the following commands:
+```
+conda env create --name env_tools --file environment.yml
+conda activate env_tools
+```
 #### Preparation of the different panel files
 ```
 . get_panel_s.sh
