@@ -8,7 +8,7 @@ VALI_S=${VALI_NAME}.s
 
 REGION=chr21:16600000-16800000
 
-# Filter the region of interest of the panel and the validation gnomAD
+# Filter the region of interest of the panel file
 bcftools view ${PANEL_ORIGIN} -r ${REGION} -O z -o ${PANEL_S}.vcf.gz
 
 # Filter the region of interest of the validation file gnomAD
