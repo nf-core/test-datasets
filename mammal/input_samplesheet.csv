@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,barcode_details
+human_AY53-1_50,assets/human/test_data/AY53-1_50k_downsampled_human.fastq.gz,,assets/human/barcode_details.json
