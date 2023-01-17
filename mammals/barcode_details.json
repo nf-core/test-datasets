@@ -1,0 +1,45 @@
+{
+    "batch": "",
+    "tf": "",
+    "r1": {
+        "pb": {"trim": true,
+               "index": [0,3]},
+
+        "lrt1": {"trim": true,
+                    "index": [3,28]},
+        "srt": {"trim": true,
+                "index":[28,32]},
+
+        "lrt2": {"trim": true,
+                    "index": [32,38]}
+    },
+    "r2":{},
+    "components": {
+
+        "r1_pb":    {"map":["TAG"],
+                     "match_allowance": 0,
+                     "bam_tag": "PB"},
+
+        "r1_lrt1":  {"map": ["CGTCAATTTTACGCAGACTATCTTT"],
+                     "match_type": "edit_distance",
+                     "match_allowance": 0,
+                     "require": true,
+                     "bam_tag": "L1"},
+        "r1_srt":   {"map": ["CTAG", "CAAC", "CTGA", "GCAT", "GTAC", "CACA", "TGAC", "GTCA",
+                             "CGAT", "CTCT", "GAAG", "TCGA", "CATG", "GTTG", "CTTC", "GCTA",
+                             "GAGA", "GTGT", "CGTA", "TGGT", "GGAA", "ACAC", "TCAG", "TTGG",
+                             "CAGT", "TTTT"],
+                     "match_type": "edit_distance",
+                     "match_allowance": 0,
+                     "require": true,
+                     "bam_tag": "ST",
+                     "annotation": true},
+        "r1_lrt2":  {"map": ["GGTTAA"],
+                     "match_type": "edit_distance",
+                     "match_allowance": 0,
+                     "require": true,
+                     "bam_tag": "L2"}
+    },
+    "insert_seq": ["TTAA"],
+    "max_mismatch": 0
+}

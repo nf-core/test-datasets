@@ -1,38 +1,24 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `callingcards`
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+This branch contains test data to be used for automated testing with the [nf-core/callingcards](https://github.com/nf-core/callingcards) pipeline.
 
-## Introduction
+## Content of this repository
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+`mammals/`: Subsampled test data and other resources meant to test the mammal specific functionality
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+`mammals/*.fastq.gz`: Significantly downsampled raw hops reads
+`mammals/barcode_details.json`: A configuration file describing the read barcode structure suitable for human and mouse data
+`mammals/chr1.fa`: A short subset of GRCh38 chr1
+`mammals/chr1.gtf`: A subset of the gencode v38 human chr1 gtf format annotations
 
-## Documentation
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+`mammals/samplesheet.csv`: Experiment design file for minimal test dataset
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+## Minimal test dataset origin
 
-## Downloading test data
+- mammals: a significant subsampling of unpublished data meant for process testing only
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+### Sampling information
 
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
+### Sampling procedure
 
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
