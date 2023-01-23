@@ -7,7 +7,7 @@ IND_S_1X=${IND_LOC}NA12878.chr21.s.1x
 
 REGION=chr21:16600000-16800000
 
-PANEL_NAME=./data/panel/1000GP.chr22.noNA12878
+PANEL_NAME=./data/panel/1000GP.chr21.noNA12878.s
 VCF=${PANEL_NAME}.sites.vcf.gz
 TSV=${PANEL_NAME}.sites.tsv.gz
 
