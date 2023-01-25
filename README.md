@@ -380,6 +380,10 @@ If you cannot find suitable test data on this repository, please contact us on t
     - P53_6samples.cls: a categorical (e.g tumor vs normal) class file format (CLS) example
     - c1.symbols.reduced.gmx: a GMX (Gene MatriX file format) example
 
+  - array_expression:
+    - GSE38751.csv: Sample sheet describing Affy array CEL files
+    - '*.CEL.gz': compressed array CEL files
+
   - scramble:
     - test.fa: A reference file containing chr3:70000000-70100000 and chr11:418014-438014
     - test.fa.fai: The index of this reference
