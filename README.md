@@ -1,16 +1,24 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `radseq`
 
 This branch contains test data for [nf-core/radseq](blah) pipeline
 
-## SRR5567681 (ezRAD)
+## Content of this repository
 
-This data was generated using 
+`testdata/PRJNA386062`: ezRAD sequences from...
 
-## T. arcticus (ddRAD)
+### For Reference Based Approach Or Denovo
 
-This data was generated using sbfI and mseI restriction enzymes with a read length of 101bp and 20x coverage. 
+`testdata/ArcticGrayling/CM014990.1.fna`: Chromosome 1 
+
+`testdata/ArcticGrayling/Golden3B05.{1,2}.fq.gz`: individual 1 ddRAD seq. w/out umi barcodes
+
+`testdata/ArcticGrayling/Golden3B08.{1,2}.fq.gz`: individual 2 ddRAD seq. w/out umi barcodes
+
+`testdata/ArcticGrayling/Golden3B12.{1,2}.fq.gz`: individual 3 ddRAD seq. w/out umi barcodes
+
+`testdata/ArcticGrayling/Golden7A01.{1,2}.fq.gz`: individual 4 ddRAD seq. w/ umi barcodes
+
+`testdata/ArcticGrayling/popmap.txt`: population map used in Freebayes 
 
 ## Support
 

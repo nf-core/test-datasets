@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2,umi_barcodes
+Golden3B05,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden3B05.1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden3B05.2.fq.gz,FALSE
+Golden3B08,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden3B08.1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden3B08.2.fq.gz,FALSE
+Golden3B12,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden3B12.1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden3B12.2.fq.gz,FALSE
+Golden7A01,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden7A01.1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/radseq/testdata/ArcticGrayling/Golden7A01.2.fq.gz,TRUE
