@@ -67,6 +67,8 @@ cp nf-core/V-352962.fa.gz.7f683ec.2ff309f.9799452.smooth.og pangenome-test-data/
 cp nf-core/V-352962.fa.gz.7f683ec.2ff309f.9799452.smooth.og.lay pangenome-test-data/pangenome.og.lay
 gunzip -c pangenome-test-data/pangenome.fa.gz > pangenome-test-data/pangenome.fa
 gzip -k pangenome-test-data/pangenome.paf
+cp nf-core/V-352962.fa.gz.7f683ec.2ff309f.9799452.smooth.gi_568815592.vcf pangenome-test-data/pangenome.vcf
+bgzip pangenome-test-data/pangenome.vcf
 ```
 
 That's it :)
