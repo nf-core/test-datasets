@@ -8,17 +8,17 @@ This branch contains test data for [nf-core/radseq](blah) pipeline
 
 ### For Reference Based Approach Or Denovo
 
-`testdata/ArcticGrayling/CM014990.1.fna`: Chromosome 1 
+`testdata/ddRAD/CM014990.1.fna`: Chromosome 1 
 
-`testdata/ArcticGrayling/Golden3B05.{1,2}.fq.gz`: individual 1 ddRAD seq. w/out umi barcodes
+`testdata/ddRAD/Golden3B05.{1,2}.fq.gz`: individual 1 ddRAD seq. w/out umi barcodes
 
-`testdata/ArcticGrayling/Golden3B08.{1,2}.fq.gz`: individual 2 ddRAD seq. w/out umi barcodes
+`testdata/ddRAD/Golden3B08.{1,2}.fq.gz`: individual 2 ddRAD seq. w/out umi barcodes
 
-`testdata/ArcticGrayling/Golden3B12.{1,2}.fq.gz`: individual 3 ddRAD seq. w/out umi barcodes
+`testdata/ddRAD/Golden3B12.{1,2}.fq.gz`: individual 3 ddRAD seq. w/out umi barcodes
 
-`testdata/ArcticGrayling/Golden7A01.{1,2}.fq.gz`: individual 4 ddRAD seq. w/ umi barcodes
+`testdata/ddRAD/Golden7A01.{1,2}.fq.gz`: individual 4 ddRAD seq. w/ umi barcodes
 
-`testdata/ArcticGrayling/popmap.txt`: population map used in Freebayes 
+`testdata/ddRAD/popmap.txt`: population map used in Freebayes 
 
 ## Support
 
