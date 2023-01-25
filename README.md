@@ -437,6 +437,7 @@ If you cannot find suitable test data on this repository, please contact us on t
   - 'pangenome.seqwish.gfa': A GFA file which contains the pangenome graph induced by `seqwish` encoded in the variation graph model.
   - 'pangenome.smoothxg.gfa': A GFA file which contains the `smoothxg` smoothed pangenome graph.
   - 'pangenome.gfaffix.gfa': A GFA file which was normalized with `gfaffix`.
+  - 'pangenome.vcf.gz': A BGZIPPED VCF file whic was created by `vg deconstruct`. Contains the `LV=0` tag in the INFO field. This specifies the snarl level of the variation.
   - odgi
     - 'pangenome.og': A variation graph encoded in the binary ODGI format. It is consumed by `odgi view`.
     - 'pangenome.lay': A binary file which holds the 2D graph layout produced by `odgi layout`. Input for `odgi draw`.
