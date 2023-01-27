@@ -18,8 +18,8 @@ git checkout origin/rnaseq -- reference/salmon.tar.gz
 # https://github.com/nf-core/test-datasets/raw/rnaseq/reference/transcriptome.fasta
 git checkout origin/rnaseq -- reference/transcriptome.fasta
 
-
 # https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/samplesheet/v3.10/samplesheet_test.csv
+git checkout origin/rnaseq -- samplesheet/v3.10/samplesheet_test.csv
 # https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_1.fastq.gz
 git checkout origin/rnaseq -- testdata/GSE110004/SRR6357070_1.fastq.gz
 # https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/testdata/GSE110004/SRR6357070_2.fastq.gz
