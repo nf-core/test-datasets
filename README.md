@@ -11,6 +11,8 @@ The principle for nf-core test data is as small as possible, as large as necessa
 
 ## Documentation
 
+This is a sub set of the [rnaseq](https://github.com/nf-core/test-datasets/tree/rnaseq) branch
+
 nf-core/test-datasets comes with documentation in the `docs/` directory:
 
 01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)

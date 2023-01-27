@@ -1,0 +1,2 @@
+sarscov2,https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/reference/GCA_009858895.3_ASM985889v3_genomic.200409.fna
+human,https://raw.githubusercontent.com/nf-core/test-datasets/rnaseq/reference/chr22_23800000-23980000.fa
