@@ -33,7 +33,7 @@ git remote set-branches --add origin [remote-branch]
 git fetch
 ```
 
-## taxprofiler ci test specific information
+## Taxprofiler CI test specific information
 
 ### FASTQ
 
@@ -204,7 +204,7 @@ This database includes the SARS-CoV2 genome used on the nf-core/modules test-dat
 It was generated using the nf-core/module KRAKENUNIQ_BUILD module.  
 
 
-## taxprofiler AWS Full Test specific-information
+## Taxprofiler AWS Full Test specific-information
 
 ### FASTQ
 
