@@ -225,7 +225,7 @@ FASTQ files for the `samplesheet_full.tsv` are stored on the [EBI ENA servers](h
 
 ### FASTA
 
-FASTA files for use in database construction were identified based on Supp. Table 1 from [Meslier (2022)](https://doi.org/10.1038/s41597-022-01762-z), which were copy and pasted into into an empty text file called `meslier2022_supptab1.tsv`.
+FASTA files for use in database construction were identified based on Supp. Table 1 from [Meslier (2022)](https://doi.org/10.1038/s41597-022-01762-z), which were copy-pasted into an empty text file called `meslier2022_supptab1.tsv`.
 
 We then used the AWK combined with the NCBI Datasets package (v14.7.0) to download the reference genomes and protein translations of each strain from the file.
 
