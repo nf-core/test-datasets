@@ -8,6 +8,9 @@ nf-core is a collection of high quality Nextflow pipelines. This repository cont
 
 The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
 
+- For nf-core/taxprofiler CI test information see [here](#taxprofiler-ci-test-specific-information)
+- For nf-core/taxprofiler AWS full test information see [here](#taxprofiler-aws-full-test-specific-information)
+
 ## Documentation
 
 nf-core/test-datasets comes with documentation in the `docs/` directory:
@@ -30,11 +33,11 @@ git remote set-branches --add origin [remote-branch]
 git fetch
 ```
 
-## nf-core/taxprofiler specific information
+## Taxprofiler CI test specific information
 
-### fastq
+### FASTQ
 
-The main test data used for nf-core/taxprofiler is from [Maixner et al. (2021) _Curr. Bio._](https://doi.org/10.1016/j.cub.2021.09.031), with ENA project accession ID: PRJEB44507. The following selected libraries were all sequenced on an Illumina MiSeq, and were selected due to their small size (~1million reads, <100MB) and known mixture of (gut) bacteria, (ancient human) eukaryotes, and (yeast) fungi (according to the results of the paper).
+The main CI test data used for nf-core/taxprofiler is from [Maixner et al. (2021) _Curr. Bio._](https://doi.org/10.1016/j.cub.2021.09.031), with ENA project accession ID: PRJEB44507. The following selected libraries were all sequenced on an Illumina MiSeq, and were selected due to their small size (~1million reads, <100MB) and known mixture of (gut) bacteria, (ancient human) eukaryotes, and (yeast) fungi (according to the results of the paper).
 
 - ERX5474937
 - ERX5474932
@@ -55,7 +58,7 @@ Test data for long reads with ENA project accession ID: PRJEB29152. They were su
 seqtk sample ERR3201952.fastq.gz 10000 > ERR3201952.fastq.gz
 ```
 
-### fasta
+### FASTA
 
 One of the files was converted to FASTA file with seqtk 1.3-r106
 
@@ -65,7 +68,7 @@ seqtk seq -a  ERX5474930_ERR5766174_1.fastq.gz > ERX5474930_ERR5766174_1.fa.gz
 
 FASTA files are stored under `data/fasta/`
 
-### databases
+### Databases
 
 An abundant species found in the above dataset is _Penicillium roqueforti_.
 The genome and translations of P. roqueforti were downloaded with:
@@ -200,6 +203,398 @@ This database includes the SARS-CoV2 genome used on the nf-core/modules test-dat
 
 It was generated using the nf-core/module KRAKENUNIQ_BUILD module.  
 
+
+## Taxprofiler AWS Full Test specific-information
+
+### FASTQ
+
+The main AWS full test data used for nf-core/taxprofiler is from [Meslier et al. (2022) _Sci. Data_](https://doi.org/10.1038/s41597-022-01762-z), with ENA project accession ID: PRJEB52977. The following selected libraries were all sequenced on an Illumina HiSeq 3000 and ONT Minion R9.
+
+They were selected as a benchmarking dataset containing a semi-complex microbial community with strains that have known reference genomes, and with multiple sequencing runs one of sample of the Illumina dataset. ENA Experiment IDs are as follows
+
+- ONT MiniION R9
+    - ERX9314125
+    - ERX9314126
+    - ERR9765782
+- Illumina HiSeq 3000
+    - ERX9314116
+    - ERX9314117
+    - ERX9314118 (x2 runs)
+
+FASTQ files for the `samplesheet_full.tsv` are stored on the [EBI ENA servers](https://www.ebi.ac.uk/ena/browser/view/PRJEB52977)
+
+### FASTA
+
+FASTA files for use in database construction were identified based on Supp. Table 1 from [Meslier (2022)](https://doi.org/10.1038/s41597-022-01762-z), which were copy-pasted into an empty text file called `meslier2022_supptab1.tsv`.
+
+We then used the AWK combined with the NCBI Datasets package (v14.7.0) to download the reference genomes and protein translations of each strain from the file.
+
+```bash
+awk -F'\t' '{print $2}' meslier2022_supptab1.tsv | xargs -I '{}' datasets download genome accession {} --include genome,protein --filename meslier2022_fasta/{}.zip
+```
+
+In this case I had one failure for assembly `GCA_000009225.1`, which has since been replaced with `GCA_931907645.1`, which was downloaded manually using the command above. A further five accessions have been suppressed with no replacement, and thus these were not included in the databases.
+
+Once downloaded, we need to unpack the `datasets` and rename the protein translation for each file to make them unique.
+
+```bash
+for i in meslier2022_fasta/*zip; do
+    f_basename=$(basename $i)
+    unzip $i ncbi_dataset/data/*/*.f* -d meslier2022_fasta/
+    mv meslier2022_fasta/ncbi_dataset/data/${f_basename%%.zip}/protein.faa meslier2022_fasta/ncbi_dataset/data/${f_basename%%.zip}/${f_basename%%.zip}.faa
+done
+```
+
+### Databases
+
+The following sections describe how each database within `databases_full.csv` were constructed, following on from the full test FASTA download in the section above.
+
+> ⚠️ Be aware all commands include thread/CPU and/or memory parameters which may not apply to your machine.
+
+#### Kraken2
+
+The following steps were performed using Kraken2 v2.1.2
+
+First create a working directory
+
+```bash
+mkdir -p meslier2022/kraken2
+```
+
+Download NCBI taxonomy files
+
+```bash
+kraken2-build --download-taxonomy --db meslier2022/kraken2
+```
+
+Index all the FASTA files to the Kraken2 database
+
+```bash
+find meslier2022_fasta/ -name '*.fna' -print0 | xargs -0 -I{} -P 8 -n1 kraken2-build --add-to-library {} --db meslier2022/kraken2
+```
+
+Build the database
+
+```bash
+kraken2-build --build --threads 32 --db /raven/ptmp/jfellowsy/databases/taxprofiler_full_test/meslier2022/kraken2
+```
+
+Copy the `seqid2taxid.map` for reuse in other profiler database construction
+
+```bash
+cp meslier2022/kraken2/seqid2taxid.map .
+```
+
+#### Bracken
+
+The following steps were performed using Bracken (v2.8).
+
+Bracken requires an existing Kraken2 database to build upon, for which we use the database built in the previous section.
+
+We also need to specify the average read length, which according to the ENA was sequenced paired-end 150, so we will select 150 bp.
+
+Make a working directory
+
+```bash
+mkdir -p meslier2022/bracken
+```
+
+Make a symbolic link from the Kraken2 database
+
+```bash
+cd meslier2022/bracken
+ln -s ../kraken2/* .
+cd ../../
+```
+
+Build the database
+
+```bash
+bracken-build -t 72 -l 150 -d meslier2022/bracken
+```
+
+#### KrakenUniq
+
+The following steps were performed using KrakenUniq (v1.0.3).
+
+Make a working directory
+
+```bash
+mkdir -p meslier2022/krakenuniq/library
+```
+
+Download NCBI taxonomy files
+
+```bash
+krakenuniq-download --db meslier2022/krakenuniq/ taxonomy
+```
+
+Make the FASTA file directory following structure required for the build command, and symlink in the FASTAs
+
+```
+mkdir -p meslier2022/krakenuniq/library
+cd meslier2022/krakenuniq/library
+ln -s ../../../meslier2022_fasta/ncbi_dataset/data/*/*.fna .
+cd ../../../
+```
+
+Copy the saved Kraken2 `seqid2taxid.map` file into the corresponding KrakenUniq location
+
+```bash
+cp seqid2taxid.map meslier2022/krakenuniq/
+```
+
+Run the build command. Note due to a suspected misconfiguration in the `conda` package used, we had to manually call the `jellyfish` `bin/` path
+
+```bash
+krakenuniq-build --build --threads 72 --db meslier2022/krakenuniq --work-on-disk --jellyfish-bin $(which jellyfish)
+```
+
+#### MALT
+
+The following steps were performed using MALT (v0.6.1).
+
+Make a working directory
+
+```bash
+mkdir -p meslier2022/malt
+```
+
+Download and unpack the required taxonomy files
+
+```bash
+wget https://software-ab.informatik.uni-tuebingen.de/download/megan6/megan-nucl-Feb2022.db.zip
+unzip megan-nucl-Feb2022.db
+```
+
+Run the build command
+
+```bash
+malt-build -J-Xmx490G -i meslier2022_fasta/ncbi_dataset/data/*/*.fna -s DNA -d meslier2022/malt -t 72 -st 16 -a2t megan-nucl-Feb2022.db
+```
+
+#### DIAMOND
+
+The following steps were performed used DIAMOND (v2.0.15).
+
+Make a working directory
+
+```bash
+mkdir -p meslier2022/diamond
+```
+
+Download and unpack the required taxonomy files. 
+
+> ⚠️ The accession2taxid file is very large!
+
+```bash
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip
+unzip taxdmp.zip
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.FULL.gz
+```
+
+Run the build command
+
+```bash
+cat fasta/*.faa | diamond makedb --threads 72 -v --log -d meslier2022/diamond/diamond --taxonmap prot.accession2taxid.FULL.gz --taxonnodes nodes.dmp --taxonnames names.dmp
+```
+
+#### Centrifuge
+
+The following steps were performed used Centrifuge (v1.0.4).
+
+Make a working directory
+
+```bash
+mkdir -p meslier2022/centrifuge
+```
+
+Download and unpack the required taxonomy files
+
+```bash
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.zip
+unzip new_taxdump.zip
+```
+
+Combine all reference sequences into a single FASTA
+
+```bash
+cat meslier2022_fasta/ncbi_dataset/data/*/*.fna > centrifuge_sequences.fna
+```
+
+Run the build command using the saved Kraken2 `seqid2taxid.map` file from the corresponding section above 
+
+```bash
+centrifuge-build -p 32 --conversion-table seqid2taxid.map --taxonomy-tree nodes.dmp --name-table names.dmp centrifuge_sequences.fna meslier2022/centrifuge/centrifuge
+```
+
+#### Kaiju 
+
+The following steps were performed used Kaiju (v1.9.2).
+
+Make a working directory
+
+```bash
+mkdir -p meslier2022/kaiju
+```
+
+Download and unpack the required taxonomy files
+
+> ℹ️ You can skip this step if you also download the same files already with Centrifuge
+
+```bash
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.zip
+unzip new_taxdump.zip
+```
+
+Combine all protein translation sequences into a single amino acid FASTA
+
+```bash
+cat meslier2022_fasta/ncbi_dataset/data/*/*.faa > kaiju_sequences.faa
+```
+
+We now must make modifications to the combined amino acid FASTA file to ensure the headers are formatted expected by Kaiju.
+
+The headers are expected to be the numeric NCBI taxon identifiers of the protein sequences, which can optionally be prefixed by another identifier (e.g. a counter) followed by an underscore.
+
+First we extract all the Kaiju headers
+
+```bash
+cut -d ' ' -f1 kaiju_sequences.faa > kaiju_sequences_accession.faa
+grep ">" kaiju_sequences_accession.faa > kaiju_sequences_accession.txt 
+sed -i 's/>//g' kaiju_sequences_accession.txt 
+```
+
+We then use the following R (v4.2.2) commands with the taxonomizr package (0.7.1) to pull the NCBI Taxonomic ID from the NCBI Protein accession IDs in the FASTA file.
+
+We firstly install the taxonmizer package
+
+```r
+install.packages("taxonomizr")
+library(taxonomizr)
+```
+
+Download the necessary nodes and names files from NCBI 
+
+```r
+getNamesAndNodes()
+```
+
+Download and load the prot file from NCBI. This may take some time as it is a large file
+
+```r
+getAccession2taxid(types='prot')
+read.names.sql('names.dmp','accessionTaxa.sql')
+read.nodes.sql('nodes.dmp','accessionTaxa.sql')
+read.accession2taxid(list.files('.','prot.accession2taxid.gz'),'accessionTaxa.sql')
+```
+
+Load the FASTA headers, bind with taxonomy ID information and save the file.
+
+```r
+kaiju_sequences_taxid <- read.csv("kaiju_sequences_accession.txt",header=FALSE)
+taxaId < -accessionToTaxa(kaiju_sequences_taxid$V1,"accessionTaxa.sql")
+write.csv(taxaId,file="kaiju_sequences_taxId.txt",row.names=F)
+```
+
+Exit the R session
+
+```r
+quit()
+```
+
+We can then create a new FASTA with the correct numeric IDs using AWK
+
+```bash
+paste kaiju_sequences_accession.txt kaiju_sequences_taxId.txt >  kaiju_accession_taxid.txt 
+awk 'FNR==NR {f2[$1]=$2;next} /^>/ { for (i in f2) { if (index(substr($1,2), i)) { print ">"f2[i]; next } } }1' kaiju_accession_taxid.txt kaiju_sequences_accession.faa > kaiju_sequences.faa
+```
+
+We can copy the previously downloaded NCBI taxonomy files into the Kaiju working directory
+
+
+```bash
+cp nodes.dmp names.dmp meslier2022/kaiju/
+```
+
+And build the database
+
+```bash
+kaiju-mkbwt -n 32 -a ACDEFGHIKLMNPQRSTVWY -o meslier2022/kaiju/kaiju kaiju_sequences.faa
+kaiju-mkfmi meslier2022/kaiju/kaiju
+```
+
+#### MetaPhlAn3
+
+The following steps were performed used MetaPhlAn3 (v3.1.0).
+
+```bash
+metaphlan --install --bowtie2db meslier2022/metaphlan3/
+```
+
+#### mOTUs
+
+The following steps were performed used MetaPhlAn3 (v3.0.3).
+
+```bash
+motus downloadDB
+```
+
+You then will need to find the location of the downloaded file in the mOTUs installation directory, e.g.,
+
+```console
+<conda_installion>/envs/motus/lib/python3.9/site-packages/motus/db_mOTU/
+```
+
+## Database Archive Creation
+
+To make the compressed TAR, we must make sure all symlinks are followed as necessary. It is recommended to run the cleanup commands below _prior_ to archiving, however it is critical that Bracken archiving is performed BEFORE running the Kraken2 cleanup.
+
+```bash
+tar -hzcvf <toolname>.tar.gz meslier2022_<toolname>/
+```
+
+These archives are then used in the `database_full.csv` file.
+
+### Cleanup
+
+For KrakenUniq
+
+```bash
+rm meslier2022/krakenuniq/*.{log,counts,tsv,map,jdb,txt} meslier2022/krakenuniq/database0.kbd meslier2022/krakenuniq/library/ meslier2022/krakenuniq/taxonomy
+```
+
+For Kraken2
+
+> ⚠️ Only do once Bracken/KrakenUniq databases are built, if they are required
+
+```bash
+kraken2-build --db meslier2022/kraken2/ --clean
+```
+
+For MALT
+
+```bash
+rm *.db *.db.zip
+```
+
+For DIAMOND
+
+```bash
+rm dmp readme.txt *prt taxdmp.zip  prot.accession2taxid.FULL.gz
+```
+
+Centrifuge
+
+```bash
+new_taxdump.zip
+```
+
+KAIJU
+
+```bash
+rm meslier2022/kaiju/*.{bwt,sa}
+```
 
 ## Support
 
