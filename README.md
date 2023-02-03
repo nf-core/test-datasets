@@ -7,12 +7,19 @@ nf-core is a collection of high quality Nextflow pipelines. This repository cont
 
 The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
 
-## Documentation
+## Full-size test data
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+### Assembly test data
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+The `samplesheet.fullsize_assembly.csv` file links to the following metagenome assembly test data:
+
+| SAMPLE | ASSEMBLY FILE            | CONTIG DEPTHS FILE      |
+|--------|--------------------------|-------------------------|
+| G0_T0  | G0_T0_scaffolds.fasta.gz | SPAdes-G0_T0_depths.tsv |
+| G0_T1  | G0_T1_scaffolds.fasta.gz | SPAdes-G0_T0_depths.tsv |
+
+The underlying read data was simulated with CAMISIM [(Fritz, A. et al., 2019)](https://doi.org/10.1186/s40168-019-0633-6) based on the genome sources from the "CAMI II challenge toy mouse gut dataset" [(Meyer et al., 2021)](https://doi.org/10.1038/s41596-020-00480-3), containing 791 genomes (the simulated read data is available at https://doi.org/10.5281/zenodo.5155395).
+The data was further processed with the nf-core/mag pipeline version 2.1.0. The assemblies computed with `SPADes` as well as the by nf-core/mag generated contig depth files are used here.
 
 ## Downloading test data
 
