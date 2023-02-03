@@ -1,5 +1,5 @@
 tool,db_name,db_params,db_path
-bracken,bracken-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/bracken.tar.gz
+bracken,bracken-db,-r 150,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/bracken.tar.gz
 centrifuge,centrifuge-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/centrifuge.tar.gz
 diamond,diamond-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/diamond.dmnd
 kaiju,kaiju-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/kaiju.tar.gz
