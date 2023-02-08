@@ -83,8 +83,9 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'genome.gff3': GFF for MT192765.1 genome
     - 'genome.gff3.gz': bgzipped-version
     - 'genome.sizes': genome size for the MT192765.1 genome
-    - graphtyper: files for testing graphtyper
+    - graphtyper: files for testing graphtyper‚
       - regions.txt: chromosome names and positions for MT192765.1 genome
+    - PRG_test: zipped directory to build a test Population Reference Graph‚
   - illumina
     - bam
       - 'test.paired_end.{,methylated}.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
