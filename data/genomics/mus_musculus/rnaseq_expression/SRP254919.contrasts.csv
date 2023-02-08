@@ -1,0 +1,3 @@
+id,variable,reference,target,blocking
+treatment_mCherry_hND6_,treatment,mCherry,hND6,
+treatment_mCherry_hND6_sample_number,treatment,mCherry,hND6,sample_number

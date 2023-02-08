@@ -1,0 +1,314 @@
+1	0	1	no rank	root
+10239	1	1	superkingdom	Viruses
+10472	2	10239	family	Plasmaviridae
+10474	2	10239	family	Fuselloviridae
+10482	2	10239	family	Polydnaviridae
+10556	2	10239	genus	Rhizidiovirus
+10993	4	2732396	family	Birnaviridae
+11118	8	2499399	family	Coronaviridae
+12333	2	10239	no rank	unclassified bacterial viruses
+12429	2	10239	no rank	unclassified viruses
+12877	2	10239	clade	Satellites
+35325	3	2559587	clade	dsRNA viruses
+76804	6	2732506	order	Nidovirales
+185751	2	10239	family	Pospiviroidae
+185752	2	10239	family	Avsunviroidae
+186616	2	10239	no rank	environmental samples
+227860	13	694009	no rank	SARS coronavirus Vietnam
+227861	13	694009	no rank	SARS coronavirus Taiwan
+227998	13	694009	no rank	SARS coronavirus Hong Kong/03/2003
+228330	13	694009	no rank	SARS coronavirus Urbani
+228404	13	694009	no rank	SARS coronavirus HKU-39849
+228406	13	694009	no rank	SARS coronavirus BJ02
+228407	13	694009	no rank	SARS coronavirus BJ01
+228409	13	694009	no rank	SARS coronavirus BJ03
+228415	13	694009	no rank	SARS coronavirus CUHK-W1
+228607	13	694009	no rank	SARS coronavirus BJ04
+229206	13	694009	no rank	SARS coronavirus CUHK-Su10
+229992	13	694009	no rank	SARS coronavirus Frankfurt 1
+229993	13	694009	no rank	SARS coronavirus TW1
+230471	13	694009	no rank	SARS coronavirus ZJ01
+230522	13	694009	no rank	SARS coronavirus Taiwan JC-2003
+231513	13	694009	no rank	Civet SARS CoV SZ3/2003
+231514	13	694009	no rank	SARS coronavirus SZ13
+231515	13	694009	no rank	Civet SARS CoV SZ16/2003
+231516	13	694009	no rank	SARS coronavirus SZ1
+231517	13	694009	no rank	SARS coronavirus GZ43
+231518	13	694009	no rank	SARS coronavirus GZ60
+231519	13	694009	no rank	SARS coronavirus HKU-36871
+231520	13	694009	no rank	SARS coronavirus HKU-65806
+231521	13	694009	no rank	SARS coronavirus HKU-66078
+231522	13	694009	no rank	SARS coronavirus GZ50
+233044	13	694009	no rank	SARS coronavirus GD01
+233872	13	694009	no rank	SARS coronavirus TWC
+235088	13	694009	no rank	SARS coronavirus HSR 1
+235173	13	694009	no rank	SARS coronavirus Shanhgai LY
+235410	13	694009	no rank	SARS coronavirus Sin2774
+235411	13	694009	no rank	SARS coronavirus Sin2748
+235412	13	694009	no rank	SARS coronavirus Sin2679
+235413	13	694009	no rank	SARS coronavirus Sin2677
+235414	13	694009	no rank	SARS coronavirus Sin2500
+237639	13	694009	no rank	SARS coronavirus Taiwan TC1
+237640	13	694009	no rank	SARS coronavirus Taiwan TC2
+239241	13	694009	no rank	SARS coronavirus CUHK-AG01
+239242	13	694009	no rank	SARS coronavirus CUHK-AG02
+239243	13	694009	no rank	SARS coronavirus CUHK-AG03
+239758	13	694009	no rank	SARS coronavirus Taiwan TC3
+240273	13	694009	no rank	SARS coronavirus ZMY 1
+240549	13	694009	no rank	SARS coronavirus TWH
+240550	13	694009	no rank	SARS coronavirus TWJ
+240551	13	694009	no rank	SARS coronavirus TWK
+240552	13	694009	no rank	SARS coronavirus TWS
+240553	13	694009	no rank	SARS coronavirus TWY
+241183	13	694009	no rank	SARS coronavirus BJ2232
+241628	13	694009	no rank	SARS coronavirus TWC2
+241629	13	694009	no rank	SARS coronavirus TWC3
+242743	13	694009	no rank	SARS coronavirus FRA
+243925	13	694009	no rank	SARS coronavirus HPZ-2003
+247149	13	694009	no rank	SARS coronavirus WHU
+248485	13	694009	no rank	SARS coronavirus AS
+249062	13	694009	no rank	SARS coronavirus GZ-A
+249063	13	694009	no rank	SARS coronavirus GZ-B
+249064	13	694009	no rank	SARS coronavirus GZ-C
+249065	13	694009	no rank	SARS coronavirus GZ-D
+249066	13	694009	no rank	SARS coronavirus HGZ8L1-A
+249067	13	694009	no rank	SARS coronavirus HGZ8L1-B
+249068	13	694009	no rank	SARS coronavirus HSZ2-A
+249069	13	694009	no rank	SARS coronavirus HSZ-A
+249070	13	694009	no rank	SARS coronavirus HSZ-Bb
+249071	13	694009	no rank	SARS coronavirus HSZ-Cb
+249072	13	694009	no rank	SARS coronavirus HZS2-Fb
+249073	13	694009	no rank	SARS coronavirus JMD
+249074	13	694009	no rank	SARS coronavirus HZS2-D
+249075	13	694009	no rank	SARS coronavirus HZS2-E
+249076	13	694009	no rank	SARS coronavirus HZS2-Fc
+249077	13	694009	no rank	SARS coronavirus HZS2-C
+249078	13	694009	no rank	SARS coronavirus HGZ8L2
+249079	13	694009	no rank	SARS coronavirus HSZ-Bc
+249080	13	694009	no rank	SARS coronavirus HSZ-Cc
+249081	13	694009	no rank	SARS coronavirus ZS-B
+249082	13	694009	no rank	SARS coronavirus ZS-A
+249083	13	694009	no rank	SARS coronavirus LC1
+249084	13	694009	no rank	SARS coronavirus LC2
+249085	13	694009	no rank	SARS coronavirus LC3
+249086	13	694009	no rank	SARS coronavirus LC4
+249087	13	694009	no rank	SARS coronavirus LC5
+249088	13	694009	no rank	SARS coronavirus ZS-C
+249089	13	694009	no rank	SARS coronavirus HZS2-Bb
+252654	13	694009	no rank	SARS coronavirus BJ302
+253433	13	694009	no rank	SARS coronavirus PUMC01
+253434	13	694009	no rank	SARS coronavirus PUMC02
+253435	13	694009	no rank	SARS coronavirus PUMC03
+253634	13	694009	no rank	SARS coronavirus HB
+255194	13	694009	no rank	SARS coronavirus SoD
+255729	13	694009	no rank	SARS coronavirus Sino3-11
+255730	13	694009	no rank	SARS coronavirus Sino1-11
+256753	13	694009	no rank	SARS coronavirus GZ02
+258445	13	694009	no rank	SARS coronavirus GD69
+258507	13	694009	no rank	SARS coronavirus ShanghaiQXC1
+258508	13	694009	no rank	SARS coronavirus ShanghaiQXC2
+258963	13	694009	no rank	SARS coronavirus TW10
+258964	13	694009	no rank	SARS coronavirus TW11
+258965	13	694009	no rank	SARS coronavirus TW2
+258966	13	694009	no rank	SARS coronavirus TW3
+258967	13	694009	no rank	SARS coronavirus TW4
+258968	13	694009	no rank	SARS coronavirus TW5
+258969	13	694009	no rank	SARS coronavirus TW6
+258970	13	694009	no rank	SARS coronavirus TW7
+258971	13	694009	no rank	SARS coronavirus TW8
+258972	13	694009	no rank	SARS coronavirus TW9
+260069	13	694009	no rank	SARS coronavirus HC/SZ/61/03
+260550	13	694009	no rank	SARS coronavirus CUHK-L2
+260743	13	694009	no rank	SARS coronavirus NS-1
+262338	13	694009	no rank	SARS coronavirus GD03T0013
+264370	13	694009	no rank	SARS coronavirus TW
+264988	13	694009	no rank	SARS coronavirus sf099
+264989	13	694009	no rank	SARS coronavirus cw049
+264990	13	694009	no rank	SARS coronavirus sf098
+265124	13	694009	no rank	SARS coronavirus cw037
+265125	13	694009	no rank	SARS coronavirus xw002
+265963	3	2559587	no rank	unclassified viroids
+266147	13	694009	no rank	SARS coronavirus Sin0409
+266148	13	694009	no rank	SARS coronavirus Sin_WNV
+267383	13	694009	no rank	SARS coronavirus Sin842
+267384	13	694009	no rank	SARS coronavirus Sin852
+267385	13	694009	no rank	SARS coronavirus Sin3408
+267386	13	694009	no rank	SARS coronavirus Sin3765V
+267387	13	694009	no rank	SARS coronavirus Sin848
+267388	13	694009	no rank	SARS coronavirus Sin849
+267389	13	694009	no rank	SARS coronavirus Sin3725V
+267390	13	694009	no rank	SARS coronavirus SinP1
+267391	13	694009	no rank	SARS coronavirus SinP2
+267392	13	694009	no rank	SARS coronavirus SinP3
+267393	13	694009	no rank	SARS coronavirus SinP4
+267394	13	694009	no rank	SARS coronavirus SinP5
+267395	13	694009	no rank	SARS coronavirus Sin845
+267396	13	694009	no rank	SARS coronavirus Sin846
+267397	13	694009	no rank	SARS coronavirus Sin847
+267398	13	694009	no rank	SARS coronavirus Sin850
+267399	13	694009	no rank	SARS coronavirus Sin3408L
+273522	13	694009	no rank	SARS coronavirus LLJ-2004
+281976	13	694009	no rank	SARS coronavirus GZ0401
+284672	13	694009	no rank	SARS coronavirus TJF
+285267	13	694009	no rank	SARS coronavirus HHS-2004
+285945	13	694009	no rank	Civet SARS CoV 007/2004
+285946	13	694009	no rank	SARS coronavirus civet010
+285947	13	694009	no rank	SARS coronavirus civet014
+285948	13	694009	no rank	SARS coronavirus civet019
+285949	13	694009	no rank	SARS coronavirus civet020
+291613	13	694009	no rank	SARS coronavirus GD322
+292360	13	694009	no rank	SARS Coronavirus CDC#200301157
+292638	2	10239	family	Globuloviridae
+293319	13	694009	no rank	SARS coronavirus PC4-127
+293320	13	694009	no rank	SARS coronavirus PC4-205
+293321	13	694009	no rank	SARS coronavirus GZ0403
+293933	13	694009	no rank	SARS coronavirus GZ0402
+293934	13	694009	no rank	SARS coronavirus PC4-13
+293935	13	694009	no rank	SARS coronavirus PC4-136
+293936	13	694009	no rank	SARS coronavirus PC4-227
+296837	13	694009	no rank	SARS coronavirus PC4-115
+296838	13	694009	no rank	SARS coronavirus PC4-137
+296839	13	694009	no rank	SARS coronavirus PC4-145
+296840	13	694009	no rank	SARS coronavirus PC4-199
+296841	13	694009	no rank	SARS coronavirus PC4-241
+299335	13	694009	no rank	SARS coronavirus B039
+304858	13	694009	no rank	SARS coronavirus A022
+305401	13	694009	no rank	SARS coronavirus A001
+305402	13	694009	no rank	SARS coronavirus A013
+305403	13	694009	no rank	SARS coronavirus A021
+305404	13	694009	no rank	SARS coronavirus A030
+305405	13	694009	no rank	SARS coronavirus A031
+305406	13	694009	no rank	SARS coronavirus B012
+305407	13	694009	no rank	SARS coronavirus B024
+305408	13	694009	no rank	SARS coronavirus B029
+305409	13	694009	no rank	SARS coronavirus B033
+305410	13	694009	no rank	SARS coronavirus B040
+305411	13	694009	no rank	SARS coronavirus C013
+305412	13	694009	no rank	SARS coronavirus C014
+305413	13	694009	no rank	SARS coronavirus C017
+305414	13	694009	no rank	SARS coronavirus C018
+305415	13	694009	no rank	SARS coronavirus C019
+305416	13	694009	no rank	SARS coronavirus C025
+305417	13	694009	no rank	SARS coronavirus C028
+305418	13	694009	no rank	SARS coronavirus C029
+312027	13	694009	no rank	SARS coronavirus WH20
+321147	13	694009	no rank	SARS coronavirus BJ162
+321149	13	694009	no rank	SARS coronavirus BJ202
+324686	2	10239	family	Guttaviridae
+344702	13	694009	no rank	SARS coronavirus ZJ0301
+347536	13	694009	no rank	Bat SARS CoV Rm1/2004
+347537	13	694009	no rank	Bat SARS CoV Rf1/2004
+349342	13	694009	no rank	Bat SARS coronavirus Rp1
+349343	13	694009	no rank	Bat SARS coronavirus Rp2
+349344	13	694009	no rank	Bat SARS CoV Rp3/2004
+353145	13	694009	no rank	SARS coronavirus ZJ02
+385683	13	694009	no rank	SARS coronavirus CS21
+385684	13	694009	no rank	SARS coronavirus CS24
+385685	13	694009	no rank	SARS coronavirus ES191
+385686	13	694009	no rank	SARS coronavirus ES260
+385687	13	694009	no rank	SARS coronavirus WF188
+388737	13	694009	no rank	SARS coronavirus GDH-BJH01
+421444	13	694009	no rank	SARS coronavirus TJ01
+423358	2	10239	family	Bicaudaviridae
+442736	13	694009	no rank	Bat SARS coronavirus HKU3
+451344	2	10239	no rank	unclassified archaeal viruses
+464095	6	2732506	order	Picornavirales
+511429	13	694009	no rank	SARS coronavirus BJ182-12
+511430	13	694009	no rank	SARS coronavirus BJ182-4
+511431	13	694009	no rank	SARS coronavirus BJ182-8
+511432	13	694009	no rank	SARS coronavirus BJ182a
+511433	13	694009	no rank	SARS coronavirus BJ182b
+552364	2	10239	no rank	unclassified virophages
+557004	20	291018	species	Matayba cf. opaca Acevedo 11118
+569542	10	2637762	species	Nocardia sp. 11118
+573053	2	10239	family	Ampullaviridae
+627442	13	694009	no rank	SARS coronavirus P2
+652290	13	150498	species	Sordariomycetes sp. 11118
+687329	2	10239	family	Anelloviridae
+693995	9	11118	subfamily	Coronavirinae
+693996	10	2501931	genus	Alphacoronavirus
+694002	10	2501931	genus	Betacoronavirus
+694009	12	2509511	species	Severe acute respiratory syndrome-related coronavirus
+694013	10	2501931	genus	Gammacoronavirus
+696098	11	694002	no rank	unclassified Betacoronavirus
+698398	13	694009	no rank	recombinant SARSr-CoV
+722424	13	694009	no rank	SARS coronavirus Rs_672/2006
+889872	7	76804	no rank	unclassified Nidovirales
+926565	11	153721	strain	Sporocytophaga myxococcoides DSM 11118
+1159901	10	2501931	genus	Deltacoronavirus
+1232647	2	10239	genus	Dinodnavirus
+1232737	2	10239	family	Clavaviridae
+1283210	4	2732396	family	Permutotetraviridae
+1283332	13	694009	no rank	Bat coronavirus Rp/Shaanxi2011
+1283333	13	694009	no rank	Bat coronavirus Cp/Yunnan2011
+1415834	13	694009	no rank	Bat SARS-like coronavirus Rs3367
+1415851	13	694009	no rank	Bat SARS-like coronavirus RsSHC014
+1415852	13	694009	no rank	Bat SARS-like coronavirus WIV1
+1425366	3	2559587	clade	Virus-associated RNAs
+1431340	13	694009	no rank	SARS bat coronavirus
+1458186	2	10239	family	Alphasatellitidae
+1487703	13	694009	no rank	Rhinolophus affinis coronavirus
+1503296	13	694009	no rank	BtRf-BetaCoV/HeB2013
+1503299	13	694009	no rank	BtRf-BetaCoV/JL2012
+1503300	13	694009	no rank	BtRf-BetaCoV/SX2013
+1503301	13	694009	no rank	BtRs-BetaCoV/GX2013
+1503302	13	694009	no rank	BtRs-BetaCoV/HuB2013
+1503303	13	694009	no rank	BtRs-BetaCoV/YN2013
+1508227	13	694009	no rank	Bat SARS-like coronavirus
+1511855	2	10239	family	Spiraviridae
+1699360	13	694009	no rank	Bat SARS-like coronavirus YNLF_31C
+1699361	13	694009	no rank	Bat SARS-like coronavirus YNLF_34C
+1915204	3	2559587	genus	Albetovirus
+1917979	3	2559587	genus	Aumaivirus
+1918013	4	2732396	genus	Botybirnavirus
+1921431	3	2559587	genus	Papanivirus
+1922240	3	2559587	family	Sarthroviridae
+1925802	3	2559587	genus	Virtovirus
+1986197	9	11118	no rank	unclassified Coronaviridae
+1993640	2	10239	family	Tolecusatellitidae
+2042697	13	694009	no rank	SARS-related bat coronavirus RsSHC014
+2042698	13	694009	no rank	SARS-related betacoronavirus Rp3/2004
+2080735	2	10239	clade	DNA viruses
+2169572	2	10239	family	Portogloboviridae
+2497569	4	2732396	phylum	Negarnaviricota
+2499398	7	76804	suborder	Arnidovirineae
+2499399	7	76804	suborder	Cornidovirineae
+2499400	7	76804	suborder	Mesnidovirineae
+2499401	7	76804	suborder	Monidovirineae
+2499402	7	76804	suborder	Ronidovirineae
+2499403	7	76804	suborder	Tornidovirineae
+2501930	9	11118	subfamily	Letovirinae
+2501931	9	11118	subfamily	Orthocoronavirinae
+2509481	11	694002	subgenus	Embecovirus
+2509486	11	694002	subgenus	Hibecovirus
+2509494	11	694002	subgenus	Merbecovirus
+2509502	11	694002	subgenus	Nobecovirus
+2509511	11	694002	subgenus	Sarbecovirus
+2559587	2	10239	clade	Riboviria
+2560062	2	10239	family	Ovaliviridae
+2585030	3	2559587	no rank	unclassified Riboviria
+2697049	13	694009	no rank	Severe acute respiratory syndrome coronavirus 2
+2709072	13	694009	no rank	Bat coronavirus RaTG13
+2720068	12	2509511	no rank	unclassified Sarbecovirus
+2730119	10	2501931	no rank	unclassified Orthocoronavirinae
+2731341	2	10239	clade	Duplodnaviria
+2731342	2	10239	clade	Monodnaviria
+2732004	2	10239	clade	Varidnaviria
+2732396	3	2559587	kingdom	Orthornavirae
+2732397	3	2559587	kingdom	Pararnavirae
+2732405	4	2732396	phylum	Duplornaviricota
+2732406	4	2732396	phylum	Kitrinoviricota
+2732407	4	2732396	phylum	Lenarviricota
+2732408	4	2732396	phylum	Pisuviricota
+2732505	5	2732408	class	Duplopiviricetes
+2732506	5	2732408	class	Pisoniviricetes
+2732507	5	2732408	class	Stelpaviricetes
+2732553	6	2732506	order	Sobelivirales
+2732888	7	76804	suborder	Nanidovirineae
+2732900	3	2559587	family	Polymycoviridae
+2732901	2	10239	family	Finnlakeviridae
+2732902	2	10239	family	Halspiviridae
+2840022	2	10239	clade	Adnaviria
+2840056	2	10239	class	Naldaviricetes
+2842242	2	10239	clade	Ribozyviria
+2901879	13	694009	no rank	Severe acute respiratory syndrome coronavirus

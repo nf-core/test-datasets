@@ -1,0 +1,3 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+genome.fna.gz	NZ_CP069563.1	1906639	1907541	+	cepA	1-903/903	===============	0/0	100.00	100.00	ncbi	NG_047625.1	CepA family class A extended-spectrum beta-lactamase	CEPHALOSPORIN
+genome.fna.gz	NZ_CP069563.1	4410553	4412478	+	tet(Q)	1-1926/1926	===============	0/0	100.00	99.84	ncbi	NG_048270.1	tetracycline resistance ribosomal protection protein Tet(Q)	TETRACYCLINE
