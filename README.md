@@ -465,6 +465,12 @@ If you cannot find suitable test data on this repository, please contact us on t
   - idxml:
     - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
 
+### spatialomics
+
+- sarscov2
+  - tiff
+    - 'mindagap.mouse_heart.wga.tiff': Exemplary tiff file with black gridlines to fill for MindaGap tool.
+
 ### generic
 
 - csv
