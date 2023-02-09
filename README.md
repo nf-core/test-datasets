@@ -15,11 +15,12 @@ The `samplesheet.fullsize_assembly.csv` file links to the following metagenome a
 
 | SAMPLE | ASSEMBLY FILE            | CONTIG DEPTHS FILE      |
 |--------|--------------------------|-------------------------|
-| G0_T0  | G0_T0_scaffolds.fasta.gz | SPAdes-G0_T0_depths.tsv |
-| G0_T1  | G0_T1_scaffolds.fasta.gz | SPAdes-G0_T1_depths.tsv |
+| G0_T0  | fullsize_CAMISIM_SPAdes.G0_T0.top300000.fasta.gz | fullsize_CAMISIM_SPAdes.G0_T0_depths.top300000.tsv |
+| G0_T1  | fullsize_CAMISIM_SPAdes.G0_T1.top300000.fasta.gz | fullsize_CAMISIM_SPAdes.G0_T1_depths.top300000.tsv |
 
 The underlying read data was simulated with CAMISIM [(Fritz, A. et al., 2019)](https://doi.org/10.1186/s40168-019-0633-6) based on the genome sources from the "CAMI II challenge toy mouse gut dataset" [(Meyer et al., 2021)](https://doi.org/10.1038/s41596-020-00480-3), containing 791 genomes (the simulated read data is available at https://doi.org/10.5281/zenodo.5155395).
 The data was further processed with the nf-core/mag pipeline version 2.1.0. The assemblies computed with `SPADes` as well as the by nf-core/mag generated contig depth files are used here.
+Due to the GitHub limit of 100MB, the top 300.000 contigs were extracted.
 
 ## Downloading test data
 
