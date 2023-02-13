@@ -1,0 +1,2 @@
+id,samplesheet,fastq
+test,nf-core/test-datasets/demultiplex/testdata/sim-data/fqtk_sample_metadata_subset.tsv,nf-core/test-datasets/raw/demultiplex/testdata/sim-data/fqtk_subset_fastqs.tar.gz
