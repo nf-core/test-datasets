@@ -1,2 +1,2 @@
-id,samplesheet,fastq
-test,nf-core/test-datasets/demultiplex/testdata/sim-data/fqtk_sample_metadata_subset.tsv,nf-core/test-datasets/raw/demultiplex/testdata/sim-data/fqtk_subset_fastqs.tar.gz
+flowcell,samplesheet,lane,run_dir
+sim-data,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/fqtk_sample_metadata_subset.tsv,,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/fqtk_subset_fastqs.tar.gz
