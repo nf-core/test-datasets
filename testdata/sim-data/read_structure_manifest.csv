@@ -1,4 +1,6 @@
 fastq,read_structure
-Undetermined_S0_L001_I1_001_subset.fastq.gz,8B
-Undetermined_S0_L001_I2_001_subset.fastq.gz,8B
-Undetermined_S0_L001_R1_001_subset.fastq.gz,151T
+out_L001_I1_001.fastq.gz,8B
+out_L001_I2_001.fastq.gz,8B
+out_L001_R1_001.fastq.gz,150T
+out_L001_R2_001.fastq.gz,150T
+
