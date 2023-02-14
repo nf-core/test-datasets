@@ -8,3 +8,5 @@ dependencies:
   - bioconda::samtools
   - bioconda::bcftools
   - bioconda::tabix
+  - bioconda::shapeit5
+  - bioconda::htslib

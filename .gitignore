@@ -4,3 +4,4 @@ data/validation/*
 !data/**/*.s.*
 slurm*.out
 data/genetic_maps.b38/plink.GRCh38.map.zip
+*.log

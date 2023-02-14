@@ -28,3 +28,7 @@ bcftools index -f ${PANEL_S}.sites.vcf.gz
 # Convert to TSV
 bcftools query -f'%CHROM\t%POS\t%REF,%ALT\n' ${PANEL_S}.sites.vcf.gz | bgzip -c > ${PANEL_S}.sites.tsv.gz
 tabix -s1 -b2 -e2 ${PANEL_S}.sites.tsv.gz
+
+# Get phased haplotypes
+SHAPEIT5_phase_common -I ${PANEL_S}.bcf -T 4 -O ${PANEL_S}.phased.vcf.gz -R ${REGION}
+bcftools index -f ${PANEL_S}.phased.vcf.gz
