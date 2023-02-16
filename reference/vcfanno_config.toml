@@ -1,0 +1,19 @@
+# TOML
+
+title = "Vcfanno configuration file"
+
+[functions]
+file="vcfanno_functions.lua"
+
+[[annotation]]
+file="vcfanno_gnomad_mt.vcf.gz"
+fields = ["AF_hom", "AF_het", "mitotip_score", "mitotip_trna_prediction"]
+ops=["self", "self", "self", "self"]
+names=["GNOMAD_MTAF_hom", "GNOMAD_MTAF_het", "mitotip_score", "mitotip_trna_prediction"]
+
+[[annotation]]
+file="vcfanno_cadd.tsv.gz"
+names=["CADD"]
+ops=["mean"]
+columns=[6]
+

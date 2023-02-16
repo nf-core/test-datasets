@@ -1,0 +1,4 @@
+sample,lane,fastq_1,fastq_2,gender,phenotype,paternal_id,maternal_id,case_id
+earlycasualcaiman,1,/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/reads/1_171015_HHT5NDSXX_earlycasualcaiman_XXXXXX_1.fastq.gz,/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/reads/1_171015_HHT5NDSXX_earlycasualcaiman_XXXXXX_2.fastq.gz,1,1,0,0,justhusky
+slowlycivilbuck,1,/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/reads/1_171015_HHT5NDSXX_slowlycivilbuck_XXXXXX_1.fastq.gz,/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/reads/1_171015_HHT5NDSXX_slowlycivilbuck_XXXXXX_2.fastq.gz,2,1,0,0,justhusky
+hugelymodelbat,1,/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/reads/1_171015_HHT5NDSXX_hugelymodelbat_XXXXXX_1.fastq.gz,/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/reads/1_171015_HHT5NDSXX_hugelymodelbat_XXXXXX_2.fastq.gz,1,2,earlycasualcaiman,slowlycivilbuck,justhusky
