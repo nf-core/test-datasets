@@ -1,0 +1,4 @@
+/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_cadd.tsv.gz
+/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_cadd.tsv.gz.tbi
+/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_gnomad_mt.vcf.gz
+/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_gnomad_mt.vcf.gz.tbi

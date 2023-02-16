@@ -1,0 +1,19 @@
+[
+    {
+        "VariantType": "Repeat",
+        "LocusId": "CSTB",
+        "HGNCId": 2482,
+        "InheritanceMode": "AR" ,
+        "DisplayRU": "CCCCGCCCCGCG",
+        "SourceDisplay": "GeneReviews Internet 2019-11-07",
+        "Source": "GeneReviews",
+        "SourceId": "NBK535148",
+        "SweGenMean": 2.948,
+        "SweGenStd": 1.628,
+        "LocusStructure": "(CGCGGGGCGGGG)*",
+        "ReferenceRegion": "21:45196324-45196360",
+        "Disease": "EPM1",
+        "NormalMax": 3,
+        "PathologicMin": 30
+    }
+]

@@ -1,0 +1,3 @@
+filename,in_freq_info_key,in_allele_count_info_key,out_freq_info_key,out_allele_count_info_key,use_in_freq_filter
+/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/svdb_gnomad_genomes_sv-.vcf,AF,AC,gnomad_svAF,gnomad_svAC,1
+
