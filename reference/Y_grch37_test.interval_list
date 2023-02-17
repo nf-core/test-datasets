@@ -22,7 +22,7 @@
 @SQ	SN:21	LN:48129895	M5:2979a6085bfe28e3ad6f552f361ed74d	UR:grch37_homo_sapiens_-d5-.fasta
 @SQ	SN:22	LN:51304566	M5:a718acaa6135fdca8357d5bfe94211dd	UR:grch37_homo_sapiens_-d5-.fasta
 @SQ	SN:X	LN:155270560	M5:7e0e2e580297b7764e31dbc80c2540dd	UR:grch37_homo_sapiens_-d5-.fasta
-@SQ	SN:Y	LN:59373566	M5:1fa3474750af0948bdf97d5a0ee52e51	UR:grch37_homo_sapiens_-d5-.fasta
+@SQ	SN:Y	LN:1000	M5:1fa3474750af0948bdf97d5a0ee52e51	UR:grch37_homo_sapiens_-d5-.fasta
 @SQ	SN:MT	LN:16569	M5:c68f52674c9fb33aef52dcf399755519	UR:grch37_homo_sapiens_-d5-.fasta
 @SQ	SN:GL000207.1	LN:4262	M5:f3814841f1939d3ca19072d9e89f3fd7	UR:grch37_homo_sapiens_-d5-.fasta
 @SQ	SN:GL000226.1	LN:15008	M5:1c1b2cd1fccbc0a99b6a447fa24d1504	UR:grch37_homo_sapiens_-d5-.fasta
@@ -85,4 +85,4 @@
 @SQ	SN:GL000192.1	LN:547496	M5:325ba9e808f669dfeee210fdd7b470ac	UR:grch37_homo_sapiens_-d5-.fasta
 @SQ	SN:NC_007605	LN:171823	M5:6743bd63b3ff2b5b8985d8933c53290a	UR:grch37_homo_sapiens_-d5-.fasta
 @SQ	SN:hs37d5	LN:35477943	M5:5b6a4b3a81a2d3c134b7d14bf6ad39f1	UR:grch37_homo_sapiens_-d5-.fasta
-Y	1	1000	+	.
+Y	100 1000	+	.
