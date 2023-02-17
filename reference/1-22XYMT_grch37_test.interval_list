@@ -85,6 +85,6 @@
 @SQ     SN:GL000192.1   LN:547496       M5:325ba9e808f669dfeee210fdd7b470ac     UR:grch37_homo_sapiens_-d5-.fasta
 @SQ     SN:NC_007605    LN:171823       M5:6743bd63b3ff2b5b8985d8933c53290a     UR:grch37_homo_sapiens_-d5-.fasta
 @SQ     SN:hs37d5       LN:35477943     M5:5b6a4b3a81a2d3c134b7d14bf6ad39f1     UR:grch37_homo_sapiens_-d5-.fasta
-5	1       1000	+	.
+5   1   1000	+	.
 21	1	48129895	+	.
 MT	1	16569	+	.
