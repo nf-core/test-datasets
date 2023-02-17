@@ -1,0 +1,6 @@
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:5	LN:1000	M5:e5744e5de221d711224a591f79861950	UR:reference.fasta
+@SQ	SN:21	LN:48129895	M5:2979a6085bfe28e3ad6f552f361ed74d	UR:reference.fasta
+@SQ	SN:MT	LN:16569	M5:c68f52674c9fb33aef52dcf399755519	UR:reference.fasta
+@SQ	SN:Y	LN:1000	M5:e5744e5de221d711224a591f79861950	UR:reference.fasta
+Y	1	900	+	.
