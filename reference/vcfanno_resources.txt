@@ -1,4 +1,4 @@
-/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_cadd.tsv.gz
-/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_cadd.tsv.gz.tbi
-/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_gnomad_mt.vcf.gz
-/home/ramprasad.neethiraj/nextflow/demo/minimal_test_data/vcfanno_gnomad_mt.vcf.gz.tbi
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vcfanno_cadd.tsv.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vcfanno_cadd.tsv.gz.tbi
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vcfanno_gnomad_mt.vcf.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vcfanno_gnomad_mt.vcf.gz.tbi
