@@ -124,6 +124,8 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'test.vcf', 'test2.vcf': generated from 'test_paired_end.sorted.bam' using bcftools mpileup, call and filter
       - 'test3.vcf': generated from 'test_single_end.sorted.bam' using bcftools mpileup, call and filter
       - 'test2.targets.tsv.gz' from 'test2.vcf.gz' using bcftools query and bgzip
+      - 'sv_query.vcf.gz': a VCF file containing structural variants in chromosome 22
+      - 'sv_query.vcf.gz.tbi': The index of the sv_query.vcf.gz file
       - '\*.gz': generated from VCF files using bgzip
       - '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
       - ped
