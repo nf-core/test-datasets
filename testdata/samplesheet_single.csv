@@ -1,2 +1,2 @@
 sample,lane,fastq_1,fastq_2,gender,phenotype,paternal_id,maternal_id,case_id
-hugelymodelbat,1,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/1_171015_HHT5NDSXX_hugelymodelbat_XXXXXX_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/1_171015_HHT5NDSXX_hugelymodelbat_XXXXXX_2.fastq.gz,1,2,earlycasualcaiman,slowlycivilbuck,justhusky
+hugelymodelbat,1,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/1_171015_HHT5NDSXX_hugelymodelbat_XXXXXX_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/1_171015_HHT5NDSXX_hugelymodelbat_XXXXXX_2.fastq.gz,1,2,0,0,justhusky
