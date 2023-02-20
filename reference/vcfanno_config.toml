@@ -6,6 +6,12 @@ title = "Vcfanno configuration file"
 file="vcfanno_functions.lua"
 
 [[annotation]]
+file="grch37_gnomad_-r2.1.1-.vcf.gz"
+fields = ["AF", "AF_popmax"]
+ops=["self", "self"]
+names=["GNOMADAF", "GNOMADAF_popmax"]
+
+[[annotation]]
 file="vcfanno_gnomad_mt.vcf.gz"
 fields = ["AF_hom", "AF_het", "mitotip_score", "mitotip_trna_prediction"]
 ops=["self", "self", "self", "self"]

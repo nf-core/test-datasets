@@ -2,3 +2,5 @@ https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vc
 https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vcfanno_cadd.tsv.gz.tbi
 https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vcfanno_gnomad_mt.vcf.gz
 https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/vcfanno_gnomad_mt.vcf.gz.tbi
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/grch37_gnomad_-r2.1.1-.vcf.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/grch37_gnomad_-r2.1.1-.vcf.gz.tbi
