@@ -31,6 +31,13 @@ The pangenomics folder contains subfolders for all organisms for which test data
 
 The folder is structured in the following way: Any nonspecific-pangenome file is located in `pangenome` (e.g. PAF, GFA, ...) and software specific binary files in the `odgi` subfolder. `Pangenomics` contains all typical data required for pangenomics modules, such as PAF, GFA files including the binary formats ODGI, and LAY. Every folder in `pangenomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder. All files in the `pangenomics` folder originates from a [PGGB](https://github.com/pangenome/pggb) run using the [HLA V-352962 gene FASTA](https://github.com/pangenome/pggb/blob/master/data/HLA/V-352962.fa.gz).
 
+### spatialomics
+The spatialomics folder contains data related to the analysis of highly-multiplexed imaging data, such as image preprocessing, cell segmentation, signal quantification and others. The files are organized by their respective data type.
+
+- tiff: tiff image files
+- h5: image files in h5 format
+- ilp: ilastik specific project files
+
 ## Adding New Data
 
 If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
@@ -470,9 +477,14 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 ### spatialomics
 
-- sarscov2
   - tiff
     - 'mindagap.mouse_heart.wga.tiff': Exemplary tiff file with black gridlines to fill for MindaGap tool.
+  - h5
+    - 'plant_wga.h5' : Image of rice root 
+    - 'plant_wga_probabilities.h5' :
+  - ilp
+    - 'plant_wga.multicut.ilp' : 
+    - 'plant_wga.pixel_prob.ilp' :
 
 ### generic
 
