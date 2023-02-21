@@ -38,7 +38,7 @@ The spatialomics folder contains data related to the analysis of highly-multiple
 - h5: image files in h5 format
 - ilp: ilastik specific project files
 
-All files labeled plant_* were taken from the [ilastik4ij Github repository](https://github.com/ilastik/ilastik4ij/blob/master/doc/screenshots/MC-output.png) and are available under the MIT license.
+The h5 image files labeled plant_* were produced from example image from the [ilastik4ij Github repository](https://github.com/ilastik/ilastik4ij/blob/master/doc/screenshots/MC-output.png), which is available under the MIT license. The ilastik project files were (.ilp) were created by training classfiiers using the ilastik graphical user interface (version ilastik-1.4.0rc8).
 
 ## Adding New Data
 
