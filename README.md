@@ -38,6 +38,8 @@ The spatialomics folder contains data related to the analysis of highly-multiple
 - h5: image files in h5 format
 - ilp: ilastik specific project files
 
+All files labeled plant_* were taken from the [ilastik4ij Github repository](https://github.com/ilastik/ilastik4ij/blob/master/doc/screenshots/MC-output.png) and are available under the MIT license.
+
 ## Adding New Data
 
 If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
@@ -480,11 +482,11 @@ If you cannot find suitable test data on this repository, please contact us on t
   - tiff
     - 'mindagap.mouse_heart.wga.tiff': Exemplary tiff file with black gridlines to fill for MindaGap tool.
   - h5
-    - 'plant_wga.h5' : Image of rice root 
-    - 'plant_wga_probabilities.h5' :
+    - 'plant_wga.h5' : Image of rice root stained with Wheat-Germ agglutinin (WGA) from : 
+    - 'plant_wga_probabilities.h5' : Probability maps from pixel classification workflow (plant_wga.pixel_prob.ilp).
   - ilp
-    - 'plant_wga.multicut.ilp' : 
-    - 'plant_wga.pixel_prob.ilp' :
+    - 'plant_wga.multicut.ilp' : Ilastik project file for multicut. Output format is set to tiff.
+    - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5 
 
 ### generic
 
