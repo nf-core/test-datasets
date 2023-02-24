@@ -15,5 +15,23 @@
         "Disease": "EPM1",
         "NormalMax": 3,
         "PathologicMin": 30
+    },
+    {
+        "VariantType": "Repeat",
+        "LocusId": "TEST",
+        "HGNCId": 1111,
+        "InheritanceMode": "AR" ,
+        "DisplayRU": "TAAA",
+        "SourceDisplay": "Que",
+        "Source": "FawlyTowers",
+        "SourceId": "Cast",
+        "SweGenMean": 2.948,
+        "SweGenStd": 1.628,
+        "LocusStructure": "(TAAA)*",
+        "ReferenceRegion": "21:14933511-14933518",
+        "Disease": "POLLY",
+        "NormalMax": 1,
+        "PathologicMin": 2
     }
+
 ]
