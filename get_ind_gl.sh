@@ -1,4 +1,6 @@
 #!/bin/sh
+conda init bash
+conda activate env_tools
 #Variables
 REF_GENOME=./data/reference_genome/hs38DH.chr21.fa.gz
 
