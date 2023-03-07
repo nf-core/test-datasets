@@ -2,7 +2,7 @@
 conda init bash
 conda activate env_tools
 
-CHR=22
+CHR=21
 REF_GENOME=./data/reference_genome/hs38DH.chr${CHR}.fa.gz
 IND_LOC=./data/NA12878/
 IND_NAME=${IND_LOC}NA12878
@@ -32,6 +32,8 @@ MEAN_DEPTH=$(samtools coverage ${IND_S}.bam -r ${REGION} | \
 FRAC_DEPTH=$(echo "scale=5; 1/$MEAN_DEPTH" | bc)
 samtools view -T ${REF_GENOME} -s 1${FRAC_DEPTH} -bo ${IND_S_1X}.bam ${IND_NAME}.final.cram ${REGION}
 samtools index ${IND_S_1X}.bam
+samtools view -T ${REF_GENOME} -s 1${FRAC_DEPTH} -Co ${IND_S_1X}.cram ${IND_NAME}.final.cram ${REGION}
+samtools index ${IND_S_1X}.cram
 
 # Compute genotype likelihood based on the panel
 echo 'Compute genotype likelihood based on the panel'
