@@ -57,8 +57,14 @@ wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz -
 Individual data, beware can be long to download
 ```
 wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram -O data/NA12878/NA12878.final.cram
+wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram.crai -O data/NA12878/NA12878.final.cram.crai
 ```
 
+SNP array value
+```
+wget -c https://api.gdc.cancer.gov/data/9bd7cbce-80f9-449e-8007-ddc9b1e89dfb data/affi/snp6.txt.gz
+gunzip data/affi/snp6.txt.gz
+```
 #### Environment
 To use the different script below you need bcftools, samtools and tabix.
 You can install everything with conda by using the following commands:
