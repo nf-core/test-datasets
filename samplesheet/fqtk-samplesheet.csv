@@ -1,2 +1,2 @@
-flowcell,samplesheet,lane,run_dir,read_structure_fastq_manifest
-test,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/fqtk_sample_metadata_subset.tsv,,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/fastq.tar.gz,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/fqtk_sample_metadata_subset.tsv,,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/per_flowcell_manifest.csv
+flowcell,samplesheet,lane,run_dir
+test,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/fqtk_sample_metadata_subset.tsv,,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/fastq.tar.gz
