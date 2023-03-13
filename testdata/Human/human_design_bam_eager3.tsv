@@ -1,0 +1,2 @@
+sample_id	library_id	lane	colour_chemistry	pairment	strandedness	damage_treatment	r1	r2	bam
+JK2067	JK2067	1	4	SE	double	full	NA	NA	https://github.com/nf-core/test-datasets/raw/eager/testdata/Human/bam/JK2067_downsampled_s0.1.bam
