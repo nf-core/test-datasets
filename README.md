@@ -23,6 +23,15 @@ The genomics folder contains subfolders for all organisms for which test data is
 The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
+### imaging
+
+The imaging folder contains data related to the analysis of highly-multiplexed imaging data, such as image preprocessing, cell segmentation, signal quantification and others. The files are organized by their respective data type.
+
+- h5: image files in HDF5 format
+- ilp: ilastik specific project files
+- ome-tiff: OME-TIFF image files
+- tiff: TIFF image files
+
 ### pangenomics
 
 The pangenomics folder contains subfolders for all organisms for which test data is available. At the moment, there is one organism available:
@@ -30,15 +39,6 @@ The pangenomics folder contains subfolders for all organisms for which test data
 - homo_sapiens
 
 The folder is structured in the following way: Any nonspecific-pangenome file is located in `pangenome` (e.g. PAF, GFA, ...) and software specific binary files in the `odgi` subfolder. `Pangenomics` contains all typical data required for pangenomics modules, such as PAF, GFA files including the binary formats ODGI, and LAY. Every folder in `pangenomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder. All files in the `pangenomics` folder originates from a [PGGB](https://github.com/pangenome/pggb) run using the [HLA V-352962 gene FASTA](https://github.com/pangenome/pggb/blob/master/data/HLA/V-352962.fa.gz).
-
-### spatialomics
-The spatialomics folder contains data related to the analysis of highly-multiplexed imaging data, such as image preprocessing, cell segmentation, signal quantification and others. The files are organized by their respective data type.
-
-- tiff: tiff image files
-- h5: image files in h5 format
-- ilp: ilastik specific project files
-
-The h5 image files labeled plant_* were produced from example image from the [ilastik4ij Github repository](https://github.com/ilastik/ilastik4ij/blob/master/doc/screenshots/MC-output.png), which is available under the MIT license. The ilastik project files were (.ilp) were created by training classfiiers using the ilastik graphical user interface (version ilastik-1.4.0rc8).
 
 ## Adding New Data
 
