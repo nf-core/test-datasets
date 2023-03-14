@@ -22,6 +22,9 @@ curl -O https://cf.10xgenomics.com/supp/cell-vdj/refdata-cellranger-vdj-GRCh38-a
 tar -xf refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz
 ```
 
+Note that the tarball includes 5' gene expression FASTQs as well as B-cell sequencing FASTQs.
+We only need the latter here.
+
 ## Subsampling
 
 The original data are excessively large for nf-core testing purposes.
@@ -31,19 +34,31 @@ Data here were subsampled as follows:
 
 ```bash
 
-# subsample the 5gex FASTQs in subfolder /sc5p_v2_hs_B_1k_5gex_fastqs/
-for i in 1 2; do
-  for j in 1 2; do
-    zcat sc5p_v2_hs_B_1k_5gex_S1_L00${i}_R${j}_001.fastq.gz | head -n 40000 | gzip -c > subsampled_sc5p_v2_hs_B_1k_5gex_S1_L00${i}_R${j}_001.fastq.gz
-  done
-done
-
 # subsample B cell FASTQs in subfolder /sc5p_v2_hs_B_1k_b_fastqs/
 for i in 1 2; do
   for j in 1 2; do
     zcat sc5p_v2_hs_B_1k_b_S1_L00${i}_R${j}_001.fastq.gz | head -n 40000 | gzip -c > subsampled_sc5p_v2_hs_B_1k_b_S1_L00${i}_R${j}_001.fastq.gz
   done
 done
+
+# rename subfolder to /subsampled_sc5p_v2_hs_B_1k_b_fastqs/
+cd ..
+mv sc5p_v2_hs_B_1k_b_fastqs/ subsampled_sc5p_v2_hs_B_1k_b_fastqs/
 ```
 
-## 
+## Test data folder structure
+
+```bash
+cellranger_vdj/
+├── README.md
+├── refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0
+│   ├── fasta
+│   │   ├── regions.fa
+│   │   └── supp_regions.fa
+│   └── reference.json
+└── subsampled_sc5p_v2_hs_B_1k_b_fastqs
+    ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R1_001.fastq.gz
+    ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R2_001.fastq.gz
+    ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L002_R1_001.fastq.gz
+    └── subsampled_sc5p_v2_hs_B_1k_b_S1_L002_R2_001.fastq.gz
+```
