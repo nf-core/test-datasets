@@ -1,10 +1,10 @@
 tool,db_name,db_params,db_path
-bracken,bracken-db,;-r 150,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/bracken.tar.gz
-centrifuge,centrifuge-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/centrifuge.tar.gz
-diamond,diamond-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/diamond.dmnd
-kaiju,kaiju-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/kaiju.tar.gz
-kraken2,kraken2-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/kraken2.tar.gz
-krakenuniq,krakenuniq-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/krakenuniq.tar.gz
-malt,malt-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/malt.tar.gz
-metaphlan3,metaphlan3-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/metaphlan3.tar.gz
-motus,motus-db,,https://nf-core-awsmegatests.s3.eu-west-1.amazonaws.com/taxprofiler/input_data/db_mOTU.tar.gz
+bracken,bracken-db,;-r 150,s3://ngi-igenomes/test-data/taxprofiler/bracken.tar.gz
+centrifuge,centrifuge-db,,s3://ngi-igenomes/test-data/taxprofiler/centrifuge.tar.gz
+diamond,diamond-db,,s3://ngi-igenomes/test-data/taxprofiler/diamond.dmnd
+kaiju,kaiju-db,,s3://ngi-igenomes/test-data/taxprofiler/kaiju.tar.gz
+kraken2,kraken2-db,,s3://ngi-igenomes/test-data/taxprofiler/kraken2.tar.gz
+krakenuniq,krakenuniq-db,,s3://ngi-igenomes/test-data/taxprofiler/krakenuniq.tar.gz
+malt,malt-db,,s3://ngi-igenomes/test-data/taxprofiler/malt.tar.gz
+metaphlan3,metaphlan3-db,,s3://ngi-igenomes/test-data/taxprofiler/metaphlan3.tar.gz
+motus,motus-db,,s3://ngi-igenomes/test-data/taxprofiler/db_mOTU.tar.gz
