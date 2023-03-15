@@ -1,4 +1,4 @@
 sample,fastq_1,fastq_2
-HIC_ES_4,s3://nf-core-awsmegatests/hic/input/SRR5339783_1.fastq.gz,s3://nf-core-awsmegatests/hic/input/SRR5339783_2.fastq.gz
-HIC_ES_4,s3://nf-core-awsmegatests/hic/input/SRR5339784_1.fastq.gz,s3://nf-core-awsmegatests/hic/input/SRR5339784_2.fastq.gz
-HIC_ES_4,s3://nf-core-awsmegatests/hic/input/SRR5339785_1.fastq.gz,s3://nf-core-awsmegatests/hic/input/SRR5339785_2.fastq.gz
+HIC_ES_4,s3://ngi-igenomes/test-data/hic/SRR5339783_1.fastq.gz,s3://ngi-igenomes/test-data/hic/SRR5339783_2.fastq.gz
+HIC_ES_4,s3://ngi-igenomes/test-data/hic/SRR5339784_1.fastq.gz,s3://ngi-igenomes/test-data/hic/SRR5339784_2.fastq.gz
+HIC_ES_4,s3://ngi-igenomes/test-data/hic/SRR5339785_1.fastq.gz,s3://ngi-igenomes/test-data/hic/SRR5339785_2.fastq.gz
