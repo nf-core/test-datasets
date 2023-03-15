@@ -1,2 +1,2 @@
 sample,bam,pbi
-30dpf_Muscle,s3://nf-core-awsmegatests/isoseq/input/30dpf_Muscle.bam,s3://nf-core-awsmegatests/isoseq/input/30dpf_Muscle.bam.pbi
+30dpf_Muscle,s3://ngi-igenomes/test-data/isoseq/30dpf_Muscle.bam,s3://ngi-igenomes/test-data/isoseq/30dpf_Muscle.bam.pbi
