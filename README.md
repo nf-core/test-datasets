@@ -106,7 +106,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'read_group_settings.txt': a simple textfile containing the readgroup settings '1 paired' primarily used for the atlas/splitmerge module
     - bedgraph
       - 'test.bedgraph'
-      - 'test2.bedgraph'
+      - 'test2.bedgraph': exact same file as 'test.bedgraph'
     - bigwig
       - 'test.bw'
     - deeptools
