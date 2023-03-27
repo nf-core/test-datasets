@@ -1,5 +1,5 @@
 sample,fastq_1,fastq_2
-sample_R1,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R1_1.fq,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R1_2.fq
-sample_R2,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R2_1.fq,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R2_2.fq
-sample_R3,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R3_1.fq,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R3_2.fq
+sample_R1,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R1_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R1_2.fq.gz
+sample_R2,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R2_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R2_2.fq.gz
+sample_R3,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R3_1.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/dualrnaseq/PE_reads/sample_R3_2.fq.gz
 
