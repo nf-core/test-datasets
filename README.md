@@ -200,6 +200,9 @@ If you cannot find suitable test data on this repository, please contact us on t
       - vcfanno
         - 'vcfanno_grch38_module_test.tar.gz': exac.vcf.gz + exac.vcf.gz.tbi and they're reference ExAC vcf used to query
         - 'vcfanno.toml': configuration file for vcfanno to operate
+    - tsv
+      - functional.genomics.counts.tsv : functional genomics count table for CNV correction
+      - library.functional.genomics.tsv : functional genomics library for CNV correction
     - ploidy-model: directory containing the ploidy model files
     - dict: Sequence dictionary corresponding to `fasta`
     - genome.fasta: Reference fasta based on chr22:16570000-16610000
