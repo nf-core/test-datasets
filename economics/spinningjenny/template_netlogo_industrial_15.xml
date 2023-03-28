@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE experiments SYSTEM "behaviorspace.dtd">  
+
+<experiments>
+<experiment name="testing1" repetitions="8" sequentialRunOrder="false" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <final>export-world ( word "testing1" random-float 1.0 ".csv")</final>
+    <timeLimit steps="200"/>
+    <metric>starting-seed</metric>
+    <metric>mean [price] of farms</metric>
+    <metric>mean [price] of firms</metric>
+    <metric>mean [price] of bourgeoisie</metric>
+    <metric>count workers with [unemployed? = false]</metric>
+    <metric>count workers with [unemployed? = true]</metric>
+    <metric>count workers with [state? = true]</metric>
+    <metric>count workers with [firm? = true ]</metric>
+    <metric>count workers with [farm? = true]</metric>
+    <metric>mean [salary] of workers</metric>
+    <metric>mean [labor-price] of firms</metric>
+    <metric>mean [labor-price] of farms</metric>
+    <metric>mean [wealth] of bourgeoisie</metric>
+    <metric>mean [wealth] of nobles</metric>
+    <metric>mean [wealth] of workers</metric>
+    <metric>goods-income-value</metric>
+    <metric>service-income-value</metric>
+    <metric>count firms</metric>
+    <metric>count firms with [industry? = true]</metric>
+    <metric>mean [stock] of firms</metric>
+    <metric>mean [stock] of farms</metric>
+    <metric>count firms with [stock = 0]</metric>
+    <metric>aggregate-farm-production</metric>
+    <metric>aggregate-industry-production</metric>
+    <metric>aggregate-services</metric>
+    <metric>aggregate-metabolism</metric>
+    <metric>aggregate-goods-demand</metric>
+    <metric>aggregate-services-demand</metric>
+    <metric>aggregate-profits</metric>
+    <metric>aggregate-dividends</metric>
+    <metric>average-capital-firms</metric>
+    <metric>average-capital-farms</metric>
+    <metric>average-profits-firms</metric>
+    <metric>average-profits-farms</metric>
+    <metric>mean-profits-farms</metric>
+    <metric>mean-profit-firms</metric>
+    <metric>yearly-interest</metric>
+    <metric>industrialized-firms</metric>
+    <metric>failed-firms</metric>
+    <metric>new-firms</metric>
+    <metric>local-number</metric>
+    <metric>unemployed</metric>
+    <metric>employed</metric>
+    <metric>bonds-sold</metric>
+    <metric>kids-number</metric>
+    <metric>mean-firm-price</metric>
+    <metric>mean-farm-price</metric>
+    <metric>mean-salaries</metric>
+    <metric>mean-salaries-firm-workers</metric>
+    <metric>mean-salaries-farm-workers</metric>
+    <metric>mean-salaries-public-workers</metric>
+    <metric>taxes</metric>
+    <metric>GDP-income</metric>
+    <metric>GDP-spending</metric>
+    <metric>labor-income-value</metric>
+    <metric>land-income-value</metric>
+    <metric>profit-income-value</metric>
+    <metric>real-GDP-spending</metric>
+    <enumeratedValueSet variable="initial-labor-price">
+      <value value="15"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="initial-capital">
+      <value value="500"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="government-demand">
+      <value value="0.1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="firm-labor">
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="foreing-markup">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="nobles-ratio-wealth">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="government-initial-wealth">
+      <value value="10000"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="markup">
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number-of-nobles">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="change-chance">
+      <value value="0.2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="foreign-market-features">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="tax-rate">
+      <value value="1.01"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="bourgeoisie-ratio-wealth">
+      <value value="30"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number-of-coal">
+      <value value="5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="trans-cost">
+      <value value="1500"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="trans-cost-multiplier">
+      <value value="150"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="price-change-chance">
+      <value value="0.3"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="service-distance-multiplier">
+      <value value="1.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="initial-household-wealth">
+      <value value="30"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number-of-bourgeoisie">
+      <value value="1000"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number-of-workers">
+      <value value="10000"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="firm-productivity">
+      <value value="6"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="time">
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="reproduction">
+      <value value="250"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="industrial-switch-probability">
+      <value value="0.2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number-of-cities">
+      <value value="10"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="percent-government-workers">
+      <value value="0.05"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="initial-foreing-percentage">
+      <value value="0.05"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="safe-zone">
+      <value value="0.3"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number-of-firms">
+      <value value="500"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="distribution">
+      <value value="4"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="initial-service-price">
+      <value value="15"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="service-productivity">
+      <value value="10"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="price-delta">
+      <value value="0.2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="government-features">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="distance-setup">
+      <value value="5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="firm-industrial-labor">
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="initial-industrial-productivity">
+      <value value="15"/>
+    </enumeratedValueSet>
+  </experiment>
+
+</experiments>
