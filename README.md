@@ -21,6 +21,7 @@ This branch contains test data for the [nf-core/crisprseq](https://github.com/nf
     seqtk sample -s100 ERR9897751_2.fastq 632577 > ERR9897751_2_subsample.fastq
     seqtk sample -s100 ERR9897765_1.fastq 606960 > ERR9897765_1_subsample.fastq
     seqtk sample -s100 ERR9897765_2.fastq 606960 > ERR9897765_2_subsample.fastq
+
   ```
 
 ### Analysis of CRISPR editing
@@ -37,3 +38,6 @@ This branch contains test data for the [nf-core/crisprseq](https://github.com/nf
 - 'design_matrix.txt' is the design matrix to run mageck mle and is tailored to the 'count_table.csv'
 
 - 'count_table.csv' is the count matrix to run mageck mle. It is taken from [leukemia.new.csv](https://sourceforge.net/projects/mageck/files/example/)
+
+  ```
+
