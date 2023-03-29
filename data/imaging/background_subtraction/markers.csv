@@ -7,7 +7,3 @@ channel,cycle,marker_name,exposure,background,remove
 6,2,Antigen Ki67,100,Na/K ATPase,
 7,2,Pan-cytokeratin,100,CD3,
 8,2,Aortic smooth muscle actin,100,CD45RO,
-9,3,DNA 3,100,,TRUE
-10,3,CD8a,100,,
-11,3,CD4,100,,
-12,3,PD-1,100,,
