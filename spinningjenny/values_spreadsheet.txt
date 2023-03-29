@@ -1,2 +1,0 @@
-trans-cost	500	1500	1000
-price-change-chance	0.1	0.2	0.1
