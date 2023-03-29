@@ -483,6 +483,8 @@ If you cannot find suitable test data on this repository, please contact us on t
 - Bos_taurus
   - idxml:
     - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
+  - raw:
+    - 'BSA_QC_file.raw': spectra file for Bovine (BSA) organism.
 
 ### spatialomics
 
