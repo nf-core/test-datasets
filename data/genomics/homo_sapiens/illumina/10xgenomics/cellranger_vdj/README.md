@@ -59,6 +59,5 @@ cellranger_vdj/
 └── subsampled_sc5p_v2_hs_B_1k_b_fastqs
     ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R1_001.fastq.gz
     ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R2_001.fastq.gz
-    ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L002_R1_001.fastq.gz
     └── subsampled_sc5p_v2_hs_B_1k_b_S1_L002_R2_001.fastq.gz
 ```
