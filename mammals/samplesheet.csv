@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,barcode_details
+human_AY53-1_50,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/AY53-1_50k_downsampled_human.fastq.gz,,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/barcode_details.json
