@@ -206,6 +206,9 @@ If you cannot find suitable test data on this repository, please contact us on t
     - ploidy-model: directory containing the ploidy model files
     - dict: Sequence dictionary corresponding to `fasta`
     - genome.fasta: Reference fasta based on chr22:16570000-16610000
+    - genome.fasta.gz: bgzipped version of 'genome.fasta'
+    - genome.fasta.gz.fai: index file for 'genome.fasta.gz'
+    - genome.fasta.gz.gzi: index file for 'genome.fasta.gz'
     - genome2.fasta: Reference fasta based on chr22:16600000-16800000
     - transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     - gff3: Encode GFF3 file downsampled based on reference position
