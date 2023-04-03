@@ -72,6 +72,12 @@ As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/
 ```bash
 samtools faidx chr22.fasta chr22:16570000-16610000  > genome.fasta
 ```
+The corresponding compressed fasta and index files:
+
+```bash
+bgzip genome.fasta
+samtools faidx genome.fasta.gz
+```
 
 The corresponding transcriptome file was extracted:
 
