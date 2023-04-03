@@ -1,7 +1,0 @@
-ID	Sample	Condition	ReplicateFileName
-1	PBMC009	A	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC009_msms37.raw
-2	PBMC009	A	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC009_msms36.raw
-3	PBMC009	A	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC009_msms35.raw
-4	PBMC005	B	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC007_msms31.raw
-5	PBMC005	B	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC007_msms30.raw
-6	PBMC005	B	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC007_msms29.raw
