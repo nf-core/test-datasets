@@ -1,7 +1,0 @@
-##SnpEffVersion="4.1g (build 2015-05-17), by Pablo Cingolani"
-##SnpEffCmd="SnpEff  GRCh38.78 variants.vcf "
-##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
-##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected' ">
-##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected' ">
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
-X       100687163       .       G       A       .       .       ANN=A|missense_variant|MODERATE|SYTL4|ENSG00000102362|transcript|ENST00000263033|protein_coding|11/17|c.1088C>T|p.Ser363Phe|1276/2335|1088/2016|363/671||,A|missense_variant|MODERATE|SYTL4|ENSG00000102362|transcript|ENST00000372989|protein_coding|13/19|c.1088C>T|p.Ser363Phe|1420/3885|1088/2016|363/671||,A|missense_variant|MODERATE|SYTL4|ENSG00000102362|transcript|ENST00000276141|protein_coding|11/17|c.1088C>T|p.Ser363Phe|1275/3737|1088/2016|363/671||,A|3_prime_UTR_variant|MODIFIER|SYTL4|ENSG00000102362|transcript|ENST00000372981|protein_coding|10/10|c.*1143C>T|||||1143| .
