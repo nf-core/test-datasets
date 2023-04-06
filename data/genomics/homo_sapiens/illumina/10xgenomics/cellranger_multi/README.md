@@ -2,7 +2,8 @@
 
 This folder contains test data for the `cellranger multi` module.
 Tests for `cellranger multi` will also refer to FASTQs from B cells in the [sister folder](../cellranger_vdj/README.md) for the `cellranger vdj` module.
-This folder contains the corresponding 5' gene expression FASTQs for the B cell data.
+The B cell sequencing data are symlinked here.
+This folder contains the corresponding 5' gene expression FASTQs.
 
 ## Source
 
@@ -62,9 +63,9 @@ We therefore discard lane 2.
 ## Test data folder structure
 
 ```bash
-cellranger_multi/
 ├── README.md
-└── subsampled_sc5p_v2_hs_B_1k_5gex_fastqs
-    ├── subsampled_sc5p_v2_hs_B_1k_5gex_S1_L001_R1_001.fastq.gz
-    └── subsampled_sc5p_v2_hs_B_1k_5gex_S1_L001_R2_001.fastq.gz
+├── subsampled_sc5p_v2_hs_B_1k_5gex_fastqs
+│   ├── subsampled_sc5p_v2_hs_B_1k_5gex_S1_L001_R1_001.fastq.gz
+│   └── subsampled_sc5p_v2_hs_B_1k_5gex_S1_L001_R2_001.fastq.gz
+└── subsampled_sc5p_v2_hs_B_1k_b_fastqs -> ../cellranger_vdj/subsampled_sc5p_v2_hs_B_1k_b_fastqs
 ```
