@@ -1,6 +1,8 @@
-# cellranger vdj test data
+# cellranger multi test data
 
-This folder contains test data from sequenced B cells for the `cellranger vdj` and `cellranger multi` modules.
+This folder contains test data for the `cellranger multi` module.
+Tests for `cellranger multi` will also refer to FASTQs from B cells in the [sister folder](../cellranger_vdj/README.md) for the `cellranger vdj` module.
+This folder contains the corresponding 5' gene expression FASTQs for the B cell data.
 
 ## Source
 
@@ -17,35 +19,40 @@ curl -LO https://cf.10xgenomics.com/samples/cell-vdj/6.0.0/sc5p_v2_hs_B_1k_multi
 # untar the FASTQs
 tar -xf sc5p_v2_hs_B_1k_multi_5gex_b_Multiplex_fastqs.tar
 
-# download and untar the reference files
-curl -O https://cf.10xgenomics.com/supp/cell-vdj/refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz
-tar -xf refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz
+# don't forget to download a transcriptome reference, e.g. from 10X Genomics
+# or make a custom one with cellranger mkref
 ```
 
 Note that the tarball includes 5' gene expression FASTQs as well as B-cell sequencing FASTQs.
-We only need the latter here.
+We only need the *former* here.
+
+Gene expression analyses in `cellranger multi` require a corresponding transcriptome reference.
+Suitable ones can be downloaded [here](https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest).
+For tests, it's wisest to build a dummy reference against human chromosome 22 using the following files:
+* [a FASTA reference](../../../genome/genome.fasta)
+* [a corresponding GTF annotation](../../../genome/genome.gtf)
 
 ## Subsampling
 
 The original data are excessively large for nf-core testing purposes.
 Decrease the file size by subsampling the reads. 
-Note that `cellranger vdj` needs at least 10,000 reads to autodetect the library chemistry.
+Note that `cellranger` typically needs at least 10,000 reads to autodetect the library chemistry.
 Since every FASTQ entry uses 4 lines, subsampling amounts to reading the first 40,000 lines of each FASTQ file.
 Data here were subsampled as follows:
 
 ```bash
 
-# subsample B cell FASTQs in subfolder /sc5p_v2_hs_B_1k_b_fastqs/
+# subsample GEX FASTQs in subfolder /sc5p_v2_hs_B_1k_5gex_fastqs/
 # some Unix systems might prefer gunzip in lieu of zcat
 for i in 1 2; do
   for j in 1 2; do
-    zcat sc5p_v2_hs_B_1k_b_S1_L00${i}_R${j}_001.fastq.gz | head -n 40000 | gzip -c > subsampled_sc5p_v2_hs_B_1k_b_S1_L00${i}_R${j}_001.fastq.gz
+    zcat sc5p_v2_hs_B_1k_5gex_S1_L00${i}_R${j}_001.fastq.gz | head -n 40000 | gzip -c > subsampled_sc5p_v2_hs_B_1k_5gex_S1_L00${i}_R${j}_001.fastq.gz
   done
 done
 
-# rename subfolder to /subsampled_sc5p_v2_hs_B_1k_b_fastqs/
+# rename subfolder to /subsampled_sc5p_v2_hs_B_1k_5gex_fastqs/
 cd ..
-mv sc5p_v2_hs_B_1k_b_fastqs/ subsampled_sc5p_v2_hs_B_1k_b_fastqs/
+mv sc5p_v2_hs_B_1k_5gex_fastqs/ subsampled_sc5p_v2_hs_B_1k_5gex_fastqs/
 ```
 
 While two lanes are provided in the original dataset,
@@ -55,14 +62,9 @@ We therefore discard lane 2.
 ## Test data folder structure
 
 ```bash
-cellranger_vdj/
+cellranger_multi/
 ├── README.md
-├── refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0
-│   ├── fasta
-│   │   ├── regions.fa
-│   │   └── supp_regions.fa
-│   └── reference.json
-└── subsampled_sc5p_v2_hs_B_1k_b_fastqs
-    ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R1_001.fastq.gz
-    ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R2_001.fastq.gz
+└── subsampled_sc5p_v2_hs_B_1k_5gex_fastqs
+    ├── subsampled_sc5p_v2_hs_B_1k_5gex_S1_L001_R1_001.fastq.gz
+    └── subsampled_sc5p_v2_hs_B_1k_5gex_S1_L001_R2_001.fastq.gz
 ```
