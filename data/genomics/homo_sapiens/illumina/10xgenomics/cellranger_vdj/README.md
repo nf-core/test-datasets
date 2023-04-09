@@ -1,6 +1,6 @@
 # cellranger vdj test data
 
-This folder contains test data for the `cellranger vdj` module.
+This folder contains test data from sequenced B cells for the `cellranger vdj` and `cellranger multi` modules.
 
 ## Source
 
@@ -30,11 +30,13 @@ We only need the latter here.
 The original data are excessively large for nf-core testing purposes.
 Decrease the file size by subsampling the reads. 
 Note that `cellranger vdj` needs at least 10,000 reads to autodetect the library chemistry.
+Since every FASTQ entry uses 4 lines, subsampling amounts to reading the first 40,000 lines of each FASTQ file.
 Data here were subsampled as follows:
 
 ```bash
 
 # subsample B cell FASTQs in subfolder /sc5p_v2_hs_B_1k_b_fastqs/
+# some Unix systems might prefer gunzip in lieu of zcat
 for i in 1 2; do
   for j in 1 2; do
     zcat sc5p_v2_hs_B_1k_b_S1_L00${i}_R${j}_001.fastq.gz | head -n 40000 | gzip -c > subsampled_sc5p_v2_hs_B_1k_b_S1_L00${i}_R${j}_001.fastq.gz
@@ -45,6 +47,10 @@ done
 cd ..
 mv sc5p_v2_hs_B_1k_b_fastqs/ subsampled_sc5p_v2_hs_B_1k_b_fastqs/
 ```
+
+While two lanes are provided in the original dataset,
+one lane of data is sufficient for nf-core module tests.
+We therefore discard lane 2.
 
 ## Test data folder structure
 
@@ -59,5 +65,4 @@ cellranger_vdj/
 └── subsampled_sc5p_v2_hs_B_1k_b_fastqs
     ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R1_001.fastq.gz
     ├── subsampled_sc5p_v2_hs_B_1k_b_S1_L001_R2_001.fastq.gz
-    └── subsampled_sc5p_v2_hs_B_1k_b_S1_L002_R2_001.fastq.gz
 ```
