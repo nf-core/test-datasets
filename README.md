@@ -203,7 +203,10 @@ If you cannot find suitable test data on this repository, please contact us on t
     - tsv
       - functional_genomics.counts.tsv : functional genomics count table for CNV correction
       - library_functional_genomics.tsv : functional genomics library for CNV correction
-    - ploidy-model: directory containing the ploidy model files
+    - genome.ploidy_model.tar.gz: tar gzipped directory containing the ploidy model files
+    - genome.ploidy_calls.tar.gz: tar gzipped directory containing the ploidy call files
+    - genome.germline_cnv_model.tar.gz: tar gzipped directory containing the cnv model files
+    - genome.germline_cnv_calls.tar.gz: tar gzipped directory containing the cnv calls files
     - dict: Sequence dictionary corresponding to `fasta`
     - genome.fasta: Reference fasta based on chr22:16570000-16610000
     - genome.fasta.gz: bgzipped version of 'genome.fasta'
