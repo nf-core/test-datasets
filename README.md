@@ -14,6 +14,12 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `reference/vcfanno_grch38_small_test.tar.gz`: the archived files of grch38_*.{vcf.gz, vcf.gz.tbi} for small test
 
+`reference/genome.ploidy_priors.tsv`: Contains contig ploidy priors for gatk4's DetermineGermlineContigPloidy
+
+`reference/genome.ploidy_model.tar.gz`: tar gzipped directory containing the ploidy model files
+
+`reference/genome.germline_cnv_model.tar.gz`: tar gzipped directory containing the cnv model files
+
 ### For Mitochondrial subworkflow
 
 `reference/Homo_sapiens_assembly38_chr20_chrM.fasta`: chr20 and chrM hg38 reference fasta file
