@@ -1,0 +1,2 @@
+sample_id,mapped,index,file_type
+HCC1395N,s3://ngi-igenomes/test-data/bamtofastq/HCC1395N.md.cram,s3://ngi-igenomes/test-data/bamtofastq/HCC1395N.md.cram.crai,cram
