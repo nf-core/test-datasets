@@ -330,6 +330,10 @@ Data generation:
 
 The raw data were downloaded from https://github.com/open2c/cooler/tree/master/tests/data
 
+### pairtools test dataset
+
+The raw data were downloaded from https://github.com/open2c/pairtools/tree/master/tests/data
+
 ### PACBIO test dataset
 
 The first 1000 raw reads were extracted from the [public Alzheimer dataset](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2020_Alzheimer8M_subset/alz.1perc.subreads.bam) using samtools.
