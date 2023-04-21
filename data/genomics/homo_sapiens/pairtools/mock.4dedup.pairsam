@@ -1,0 +1,17 @@
+## pairs format v1.0.0
+#sorted: chr1-chr2-pos1-pos2
+#shape: upper triangle
+#genome_assembly: unknown
+#chromosomes: chr1 chr2
+#columns: readID chrom1 pos1 chrom2 pos2 strand1 strand2 pair_type sam1 sam2
+readid1	!	0	chr1	25	-	+	NU	.	.
+readid2	!	0	chr1	25	-	+	NU	.	.
+readid3	chr1	1	chr1	20	+	+	UU	.	.
+readid4	chr1	1	chr1	20	+	+	UU	.	.
+readid5	chr1	1	chr1	25	+	+	UU	.	.
+readid6	chr1	1	chr1	27	+	+	UU	.	.
+readid7	chr1	1	chr1	28	+	-	UU	.	.
+readid8	chr1	1	chr1	28	+	+	UU	.	.
+readid9	chr1	1	chr1	50	+	+	UU	.	.
+readid10	chr1	2	chr1	21	+	+	UU	.	.
+readid11	chr1	1	chr2	25	+	+	UU	.	.
