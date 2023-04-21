@@ -1,0 +1,2 @@
+sample_id,mapped,index,file_type
+test3,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/homo_sapiens/illumina/bam/test3.single_end.markduplicates.sorted.bam,,bam
