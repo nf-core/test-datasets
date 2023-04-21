@@ -332,7 +332,8 @@ The raw data were downloaded from https://github.com/open2c/cooler/tree/master/t
 
 ### pairtools test dataset
 
-The raw data were downloaded from https://github.com/open2c/pairtools/tree/master/tests/data
+The data were downloaded from https://github.com/open2c/pairtools/tree/master/tests/data
+with the exception of `frag.bed` that is crafted for the pairtools/restrict test.
 
 ### PACBIO test dataset
 
