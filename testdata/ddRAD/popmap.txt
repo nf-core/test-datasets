@@ -1,4 +1,0 @@
-Golden3B08_T1	Sag
-Golden3B12_T1	Sag
-Golden3B05_T1	Sag
-Golden7A01_T1	Sag
