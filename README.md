@@ -3,9 +3,13 @@
 This branch of the `nf-core/test-datasets` repository contains all data used for the individual module tests.
 There are three main directories: `generic`, `genomics` and `delete_me`. The first contains generic files, the second contains all datasets for genomics tools while the latter contains temporary datasets that will be deleted as better data gets available.
 
+## Adding New Data
+
+If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
+
 ### delete_me
 
-The `delete_me` folder does not adhere to a defined structure as data in this folder should be delete as fast as possible, whenever a more suitable dataset is found that can be added to the `genomics` folder.
+The `delete_me` folder does not adhere to a defined structure as data in this folder should be delete as fast as possible, whenever a more suitable dataset is found that can be added to any other folder.
 
 ### generic
 
@@ -39,10 +43,6 @@ The pangenomics folder contains subfolders for all organisms for which test data
 - homo_sapiens
 
 The folder is structured in the following way: Any nonspecific-pangenome file is located in `pangenome` (e.g. PAF, GFA, ...) and software specific binary files in the `odgi` subfolder. `Pangenomics` contains all typical data required for pangenomics modules, such as PAF, GFA files including the binary formats ODGI, and LAY. Every folder in `pangenomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder. All files in the `pangenomics` folder originates from a [PGGB](https://github.com/pangenome/pggb) run using the [HLA V-352962 gene FASTA](https://github.com/pangenome/pggb/blob/master/data/HLA/V-352962.fa.gz).
-
-## Adding New Data
-
-If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
 
 ## Data Description
 
@@ -268,8 +268,8 @@ If you cannot find suitable test data on this repository, please contact us on t
       - test2.paired*end.sorted: Mapped, and sorted reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
+      - test3.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
     - fastq:
-
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
       - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
@@ -454,8 +454,8 @@ If you cannot find suitable test data on this repository, please contact us on t
         - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing *Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
 
 - galaxea_fascicularis
-    - hic
-        - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
+  - hic
+    - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
 
 ### pangenomics
 
@@ -495,14 +495,14 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 ### spatialomics
 
-  - tiff
-    - 'mindagap.mouse_heart.wga.tiff': Exemplary tiff file with black gridlines to fill for MindaGap tool.
-  - h5
-    - 'plant_wga.h5' : Image of rice root stained with Wheat-Germ agglutinin (WGA) from : 
-    - 'plant_wga_probabilities.h5' : Probability maps from pixel classification workflow (plant_wga.pixel_prob.ilp).
-  - ilp
-    - 'plant_wga.multicut.ilp' : Ilastik project file for multicut. Output format is set to tiff.
-    - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5 
+- tiff
+  - 'mindagap.mouse_heart.wga.tiff': Exemplary tiff file with black gridlines to fill for MindaGap tool.
+- h5
+  - 'plant_wga.h5' : Image of rice root stained with Wheat-Germ agglutinin (WGA) from :
+  - 'plant_wga_probabilities.h5' : Probability maps from pixel classification workflow (plant_wga.pixel_prob.ilp).
+- ilp
+  - 'plant_wga.multicut.ilp' : Ilastik project file for multicut. Output format is set to tiff.
+  - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5
 
 ### generic
 
