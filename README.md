@@ -270,6 +270,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
       - test3.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
     - fastq:
+
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
       - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
@@ -402,11 +403,13 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
 
   - gene_set_analysis:
+
     - P53_6samples_collapsed_symbols.gct: a gene cluster text file format (GCT) example
     - P53_6samples.cls: a categorical (e.g tumor vs normal) class file format (CLS) example
     - c1.symbols.reduced.gmx: a GMX (Gene MatriX file format) example
 
   - array_expression:
+
     - GSE38751.csv: Sample sheet describing Affy array CEL files
     - GSE38751_RAW.tar: compressed CEL files archive
 
@@ -426,9 +429,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - yusa_library.csv taken from the mageck sourceforge, crisprcas9 functional genomics library
     - count_table.csv leukemia mice experiment with crisprcas9 functional genomics
   - gene_set_analysis:
-    - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023 
+    - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023
     - Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip Ensembl ID to gene symbol mapping in Broad's 'chip' format, suitable for passing to GSEA when using matrices keyed by Ensembl Gene ID. Downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations/mouse/Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip) 5/1/2023
 - prokaryotes
+
   - bacteroides_fragilis
     - genome
       - 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
@@ -441,7 +445,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - 'test1*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
         - 'test2*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
       - fasta
-        - 'test1.contigs.fa.gz': *de novo* assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+        - 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
       - bam
         - 'test1.bam': 'test1\_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
         - 'test1.sorted.bam': sorted 'test1.bam'
@@ -451,7 +455,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - 'test2.sorted.bai': index of 'test2.sorted.bam'
     - nanopore
       - fastq
-        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing *Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
 
 - galaxea_fascicularis
   - hic
