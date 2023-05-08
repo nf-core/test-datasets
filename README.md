@@ -268,7 +268,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test2.paired*end.sorted: Mapped, and sorted reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
-      - test3.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
+      - test3.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor) Sample is renamed to allow multi-sample testing
     - fastq:
 
       - test\_{1,2}: reads corresponding to normal sample
