@@ -1,0 +1,5 @@
+id,assembler,fasta
+0,MEGAHIT,https://github.com/nf-core/test-datasets/raw/mag/assemblies/MEGAHIT-test_minigut.contigs.fa.gz
+0,SPAdes,https://github.com/nf-core/test-datasets/raw/mag/assemblies/SPAdes-test_minigut_contigs.fasta.gz
+0,MEGAHIT,https://github.com/nf-core/test-datasets/raw/mag/assemblies/MEGAHIT-test_minigut_sample2.contigs.fa.gz
+0,SPAdes,https://github.com/nf-core/test-datasets/raw/mag/assemblies/SPAdes-test_minigut_sample2_contigs.fasta.gz
