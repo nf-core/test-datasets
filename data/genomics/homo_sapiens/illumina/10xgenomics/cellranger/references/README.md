@@ -2,13 +2,21 @@
 
 This directory contains downloaded references for use in testing Cellranger modules and pipelines.
 
-# References
+## References
 
-## VDJ
+### GEX
+
+This repository does not store references for `cellranger count` and related single cell gene expression analyses.
+Instead, choose one of two options:
+* either use `cellranger mkref` to construct one from an existing reference sequence, such as human [chromosome 21](../../../../genome/chr21/sequence/genome.fasta) or [chromosome 22](../../../../genome/genome.fasta); or
+* [download](https://support.10xgenomics.com/single-cell-gene-expression/software/release-notes/build) a full reference from 10X Genomics
+
+### VDJ
 
 For use with calls to `cellranger vdj` or `cellranger multi` calls that include V(D)J libraries.
+The option to [download a VDJ reference from IMGT](https://support.10xgenomics.com/single-cell-vdj/software/pipelines/latest/advanced/references#imgt) is _not supported_ in nf-core but will otherwise work with a correctly configured `cellranger` container or installation.
 
-### Source
+#### Source
 
 The reference is found in the official 10X Genomics `cellranger vdj` tutorial:
 - [Tutorial](https://support.10xgenomics.com/single-cell-vdj/software/pipelines/latest/tutorial/tutorial-vdj)

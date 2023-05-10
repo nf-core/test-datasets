@@ -33,7 +33,7 @@ PBMCs_human_1,CMO301,PBMCs_human_1
 PBMCs_human_2,CMO302,PBMCs_human_2
 ```
 
-## CMO
+## Cell Multiplexing Data 
 
 The cell multiplexing libraries require more generous subsampling to yield sufficient reads for successful processing. 
 Test data use the first 3,500,000 lines of each of the lane 1 FASTQs.

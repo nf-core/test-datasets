@@ -6,7 +6,7 @@ Fixed RNA Gene Expression and Cell Surface Protein libraries were generated as d
 
 ## Download original input data
 
-``bash
+```bash
 curl -O https://s3-us-west-2.amazonaws.com/10x.files/samples/cell-exp/7.0.0/10k_Human_PBMC_TotalSeqB_singleplex_Multiplex/10k_Human_PBMC_TotalSeqB_singleplex_Multiplex_fastqs.tar
 curl -O https://cf.10xgenomics.com/samples/cell-exp/7.0.0/10k_Human_PBMC_TotalSeqB_singleplex_Multiplex/10k_Human_PBMC_TotalSeqB_singleplex_Multiplex_config.csv
 curl -O https://cf.10xgenomics.com/samples/cell-exp/7.0.0/10k_Human_PBMC_TotalSeqB_singleplex_Multiplex/10k_Human_PBMC_TotalSeqB_singleplex_Multiplex_count_feature_reference.csv
