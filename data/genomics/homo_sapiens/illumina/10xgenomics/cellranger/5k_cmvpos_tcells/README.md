@@ -16,7 +16,7 @@ wget https://cf.10xgenomics.com/samples/cell-vdj/6.1.2/5k_human_antiCMV_T_TBNK_c
 wget https://cf.10xgenomics.com/samples/cell-vdj/6.1.2/5k_human_antiCMV_T_TBNK_connect_Multiplex/5k_human_antiCMV_T_TBNK_connect_Multiplex_count_feature_reference.csv
 ```
 
-# Original `cellranger multi` config
+## Original `cellranger multi` config
 
 ```bash
 [gene-expression]
