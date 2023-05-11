@@ -46,7 +46,7 @@ Unless stated otherwise, FASTQs were naively subsampled to 10,000 reads by readi
 |   |   `-- vdj
 |   |       |-- subsampled_5k_human_antiCMV_T_TBNK_connect_VDJ_S1_L001_R1_001.fastq.gz
 |   |       `-- subsampled_5k_human_antiCMV_T_TBNK_connect_VDJ_S1_L001_R2_001.fastq.gz
-|   `-- test_cellranger_multi_5kcmvpos_tcells.csv
+|   `-- 5k_cmvpos_tcells_config.csv
 |-- README.md
 |-- 10k_pbmc
 |   |-- fastqs

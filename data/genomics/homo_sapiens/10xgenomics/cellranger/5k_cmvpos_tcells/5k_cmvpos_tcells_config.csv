@@ -1,5 +1,5 @@
 [gene-expression]
-ref,/genomics/deleteme
+ref,/references/refdata-gex-GRCh38-2020-A
 expect-cells,1000
 chemistry,SC5P-R2
 no-bam,true

@@ -1,5 +1,5 @@
 [gene-expression]
-reference,/references/deleteme
+reference,/references/refdata-gex-GRCh38-2020-A
 expect-cells,1000
 no-bam,true
 no-secondary,true
