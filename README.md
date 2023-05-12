@@ -24,7 +24,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - sarscov2
 - galaxea_fascicularis
 
-The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
+The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
 ### imaging
@@ -168,7 +168,23 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'names_dmp': file with sars-cov-2 taxonomy names, originally generated for Kaiju
 
 - homo_sapiens
-
+  - 10xgenomics
+    - cellranger
+      - test_10x_10k_pbmc_5fb_fastq_\{1,2\}_gz: 5' V2 Feature Barcode FASTQs from 10k PBMC data
+      - test_10x_10k_pbmc_5gex_fastq_\{1,2\}_gz: 5' V2 gene expression FASTQs from 10k PBMC data
+      - test_10x_10k_pbmc_b_fastq_\{1,2\}_gz: 5' V2 B-cell FASTQs from 10k PBMC data
+      - test_10x_10k_pbmc_t_fastq_\{1,2\}_gz: 5' V2 T-cell FASTQs from 10K PBMC data
+      - test_10x_10k_pbmc_feature_ref_csv: Feature Barcode reference for the 10k PBMC
+      - test_10x_10k_pbmc_cmo_cmo_fastq_\{1,2\}_gz: 3' V3 Cell Multiplexing FASTQs from 10k PBMC data with Cell Multiplexing
+      - test_10x_10k_pbmc_cmo_gex\{1,2\}_fastq_\{1,2\}_gz: 3' V3 gene expression FASTQs from 10k PBMC data with Cell Multiplexing
+      - test_10x_10k_pbmc_cmo_feature_ref_csv: Feature Barcode reference for the 10k PBMC data with Cell Multiplexing
+      - test_10x_5k_cmvpos_tcells_ab_fastq_\{1,2\}_gz: Antibody Capture FASTQs from the 5k CMV+ T-cell dataset
+      - test_10x_5k_cmvpos_tcells_gex1_fastq_\{1,2\}_gz: Gene expression FASTQs from the 5k CMV+ T-cell dataset
+      - test_10x_5k_cmvpos_tcells_vdj_fastq_\{1,2\}_gz: V(D)J FASTQs from the 5k CMV+ T-cell dataset
+      - test_10x_5k_cmvpos_tcells_feature_ref_csv: Feature Barcode reference for the 5k CMV+ T-cell dataset
+      - test_10x_vdj_ref_json: JSON from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
+      - test_10x_vdj_ref_fasta: FASTA file of V(D)J sequences from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
+      - test_10x_vdj_ref_suppfasta: Supplemental FASTA file from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
   - genome
     - BUSCO
       - 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
@@ -234,8 +250,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
   - illumina
 
-    - 10xgenomics
-      - test\_{1,2}.fastq.gz: 10X Genomics V3 fastq files from human PBMCs
     - bam:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test{,.umi}*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test{,.umi}*{1,2}` (normal)
