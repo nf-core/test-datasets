@@ -212,6 +212,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - hapmap_3.3.hg38
         - hapmap_3.pop_stratified_chr21
         - mills_and_1000G.indels
+        - dbNSFP4.1a.21: Created from dbNSFP database. Chromosome 21 extracted from main file and posterior subsampling of first 100K lines.
       - chromosomes.tar.gz: compressed directory containing the fasta genome file renamed to chr21 (needed for ControlFREEC)
     - vcf
       - dbsnp: DBSnp file downsampled based on reference position
