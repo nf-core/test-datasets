@@ -1,2 +1,2 @@
-sample,lane,fastq_1,fastq_2,gender,phenotype,paternal_id,maternal_id,case_id
+sample,lane,fastq_1,fastq_2,sex,phenotype,paternal_id,maternal_id,case_id
 hugelymodelbat,1,s3://ngi-igenomes/test-data/sarek/SRR7890919_WES_HCC1395BL-EA_normal_1.fastq.gz,s3://ngi-igenomes/test-data/sarek/SRR7890919_WES_HCC1395BL-EA_normal_2.fastq.gz,1,2,,,justhusky
