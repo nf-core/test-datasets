@@ -203,6 +203,13 @@ This database includes the SARS-CoV2 genome used on the nf-core/modules test-dat
 
 It was generated using the nf-core/module KRAKENUNIQ_BUILD module.  
 
+#### ganon
+
+ganon version 1.5.1
+
+```bash
+ganon build-custom --threads 4 --input *.fa --db-prefix test-db-ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa
+```
 
 ## Taxprofiler AWS Full Test specific-information
 
