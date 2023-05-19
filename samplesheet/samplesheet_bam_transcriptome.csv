@@ -1,4 +1,4 @@
-sample,condition,bam,transcriptome
+sample,condition,genome_bam,transcriptome_bam
 ERR188383,GBR,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188383.Aligned.out.bam,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188383.Aligned.toTranscriptome.out.bam
 ERR188428,GBR,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188428.Aligned.out.bam,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188428.Aligned.toTranscriptome.out.bam
 ERR188454,YRI,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188454.Aligned.out.bam,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188454.Aligned.toTranscriptome.out.bam
