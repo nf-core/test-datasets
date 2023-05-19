@@ -3,9 +3,13 @@
 This branch of the `nf-core/test-datasets` repository contains all data used for the individual module tests.
 There are three main directories: `generic`, `genomics` and `delete_me`. The first contains generic files, the second contains all datasets for genomics tools while the latter contains temporary datasets that will be deleted as better data gets available.
 
+## Adding New Data
+
+If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
+
 ### delete_me
 
-The `delete_me` folder does not adhere to a defined structure as data in this folder should be delete as fast as possible, whenever a more suitable dataset is found that can be added to the `genomics` folder.
+The `delete_me` folder does not adhere to a defined structure as data in this folder should be delete as fast as possible, whenever a more suitable dataset is found that can be added to any other folder.
 
 ### generic
 
@@ -20,7 +24,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - sarscov2
 - galaxea_fascicularis
 
-The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
+The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
 ### imaging
@@ -39,10 +43,6 @@ The pangenomics folder contains subfolders for all organisms for which test data
 - homo_sapiens
 
 The folder is structured in the following way: Any nonspecific-pangenome file is located in `pangenome` (e.g. PAF, GFA, ...) and software specific binary files in the `odgi` subfolder. `Pangenomics` contains all typical data required for pangenomics modules, such as PAF, GFA files including the binary formats ODGI, and LAY. Every folder in `pangenomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder. All files in the `pangenomics` folder originates from a [PGGB](https://github.com/pangenome/pggb) run using the [HLA V-352962 gene FASTA](https://github.com/pangenome/pggb/blob/master/data/HLA/V-352962.fa.gz).
-
-## Adding New Data
-
-If you cannot find suitable test data on this repository, please contact us on the [nf-core Slack `#modules` channel](https://nfcore.slack.com/channels/modules) (you can join with [this invite](https://nf-co.re/join/slack)). The goal is to create a suitable, small test dataset that should be usable with the available test data and if possible be generated with modules available from `nf-core/modules`. If creating that test data is difficult but you want to add the module first, it is also possible to add a small subset to the `delete_me` folder to get your module tests running, and then add proper test data afterwards. This should be discussed on slack. In order to add test data. For a short description of the workflow for adding new data, have a look at [here](docs/ADD_NEW_DATA.md).
 
 ## Data Description
 
@@ -104,6 +104,9 @@ If you cannot find suitable test data on this repository, please contact us on t
       - 'test.single_end.bam': alignment (unsorted) of the 'test_1.fastq.gz' reads against test_genomic.fasta using minimap2
       - 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
       - 'read_group_settings.txt': a simple textfile containing the readgroup settings '1 paired' primarily used for the atlas/splitmerge module
+      - 'purecn_ex1.bam': Example BAM file used to test PureCN
+      - 'purecn_ex1.bam.bai': BAM index for 'purecn_ex1.bam'
+      - 'purecn_ex1_intervals.txt': File containing genomic intervals to be used for testing PureCN
     - bedgraph
       - 'test.bedgraph'
     - bigwig
@@ -165,7 +168,23 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'names_dmp': file with sars-cov-2 taxonomy names, originally generated for Kaiju
 
 - homo_sapiens
-
+  - 10xgenomics
+    - cellranger
+      - test_10x_10k_pbmc_5fb_fastq_\{1,2\}_gz: 5' V2 Feature Barcode FASTQs from 10k PBMC data
+      - test_10x_10k_pbmc_5gex_fastq_\{1,2\}_gz: 5' V2 gene expression FASTQs from 10k PBMC data
+      - test_10x_10k_pbmc_b_fastq_\{1,2\}_gz: 5' V2 B-cell FASTQs from 10k PBMC data
+      - test_10x_10k_pbmc_t_fastq_\{1,2\}_gz: 5' V2 T-cell FASTQs from 10K PBMC data
+      - test_10x_10k_pbmc_feature_ref_csv: Feature Barcode reference for the 10k PBMC
+      - test_10x_10k_pbmc_cmo_cmo_fastq_\{1,2\}_gz: 3' V3 Cell Multiplexing FASTQs from 10k PBMC data with Cell Multiplexing
+      - test_10x_10k_pbmc_cmo_gex\{1,2\}_fastq_\{1,2\}_gz: 3' V3 gene expression FASTQs from 10k PBMC data with Cell Multiplexing
+      - test_10x_10k_pbmc_cmo_feature_ref_csv: Feature Barcode reference for the 10k PBMC data with Cell Multiplexing
+      - test_10x_5k_cmvpos_tcells_ab_fastq_\{1,2\}_gz: Antibody Capture FASTQs from the 5k CMV+ T-cell dataset
+      - test_10x_5k_cmvpos_tcells_gex1_fastq_\{1,2\}_gz: Gene expression FASTQs from the 5k CMV+ T-cell dataset
+      - test_10x_5k_cmvpos_tcells_vdj_fastq_\{1,2\}_gz: V(D)J FASTQs from the 5k CMV+ T-cell dataset
+      - test_10x_5k_cmvpos_tcells_feature_ref_csv: Feature Barcode reference for the 5k CMV+ T-cell dataset
+      - test_10x_vdj_ref_json: JSON from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
+      - test_10x_vdj_ref_fasta: FASTA file of V(D)J sequences from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
+      - test_10x_vdj_ref_suppfasta: Supplemental FASTA file from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
   - genome
     - BUSCO
       - 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
@@ -180,6 +199,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - .sa
         - .interval_list
         - .bed
+        - .gtf
         - .cnn: copy number reference file for chr_21
         - .snp: Eigenstrat snp file of 1240k snps on chr 21
       - germlineresources: directory containing several germline resource vcfs and tbis, including:
@@ -192,6 +212,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - hapmap_3.3.hg38
         - hapmap_3.pop_stratified_chr21
         - mills_and_1000G.indels
+        - dbNSFP4.1a.21: Created from dbNSFP database. Chromosome 21 extracted from main file and posterior subsampling of first 100K lines.
       - chromosomes.tar.gz: compressed directory containing the fasta genome file renamed to chr21 (needed for ControlFREEC)
     - vcf
       - dbsnp: DBSnp file downsampled based on reference position
@@ -203,7 +224,10 @@ If you cannot find suitable test data on this repository, please contact us on t
     - tsv
       - functional_genomics.counts.tsv : functional genomics count table for CNV correction
       - library_functional_genomics.tsv : functional genomics library for CNV correction
-    - ploidy-model: directory containing the ploidy model files
+    - genome.ploidy_model.tar.gz: tar gzipped directory containing the ploidy model files
+    - genome.ploidy_calls.tar.gz: tar gzipped directory containing the ploidy call files
+    - genome.germline_cnv_model.tar.gz: tar gzipped directory containing the cnv model files
+    - genome.germline_cnv_calls.tar.gz: tar gzipped directory containing the cnv calls files
     - dict: Sequence dictionary corresponding to `fasta`
     - genome.fasta: Reference fasta based on chr22:16570000-16610000
     - genome.fasta.gz: bgzipped version of 'genome.fasta'
@@ -227,8 +251,6 @@ If you cannot find suitable test data on this repository, please contact us on t
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
   - illumina
 
-    - 10xgenomics
-      - test\_{1,2}.fastq.gz: 10X Genomics V3 fastq files from human PBMCs
     - bam:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test{,.umi}*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test{,.umi}*{1,2}` (normal)
@@ -264,6 +286,7 @@ If you cannot find suitable test data on this repository, please contact us on t
       - test2.paired*end.sorted: Mapped, and sorted reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
+      - test3.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor) Sample is renamed to allow multi-sample testing
     - fastq:
 
       - test\_{1,2}: reads corresponding to normal sample
@@ -398,11 +421,13 @@ If you cannot find suitable test data on this repository, please contact us on t
         - toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
 
   - gene_set_analysis:
+
     - P53_6samples_collapsed_symbols.gct: a gene cluster text file format (GCT) example
     - P53_6samples.cls: a categorical (e.g tumor vs normal) class file format (CLS) example
     - c1.symbols.reduced.gmx: a GMX (Gene MatriX file format) example
 
   - array_expression:
+
     - GSE38751.csv: Sample sheet describing Affy array CEL files
     - GSE38751_RAW.tar: compressed CEL files archive
 
@@ -422,9 +447,10 @@ If you cannot find suitable test data on this repository, please contact us on t
     - yusa_library.csv taken from the mageck sourceforge, crisprcas9 functional genomics library
     - count_table.csv leukemia mice experiment with crisprcas9 functional genomics
   - gene_set_analysis:
-    - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023 
+    - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023
     - Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip Ensembl ID to gene symbol mapping in Broad's 'chip' format, suitable for passing to GSEA when using matrices keyed by Ensembl Gene ID. Downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations/mouse/Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip) 5/1/2023
 - prokaryotes
+
   - bacteroides_fragilis
     - genome
       - 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
@@ -437,7 +463,7 @@ If you cannot find suitable test data on this repository, please contact us on t
         - 'test1*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
         - 'test2*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
       - fasta
-        - 'test1.contigs.fa.gz': *de novo* assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
+        - 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
       - bam
         - 'test1.bam': 'test1\_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
         - 'test1.sorted.bam': sorted 'test1.bam'
@@ -447,11 +473,11 @@ If you cannot find suitable test data on this repository, please contact us on t
         - 'test2.sorted.bai': index of 'test2.sorted.bam'
     - nanopore
       - fastq
-        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing *Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+        - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
 
 - galaxea_fascicularis
-    - hic
-        - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
+  - hic
+    - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
 
 ### pangenomics
 
@@ -491,14 +517,14 @@ If you cannot find suitable test data on this repository, please contact us on t
 
 ### spatialomics
 
-  - tiff
-    - 'mindagap.mouse_heart.wga.tiff': Exemplary tiff file with black gridlines to fill for MindaGap tool.
-  - h5
-    - 'plant_wga.h5' : Image of rice root stained with Wheat-Germ agglutinin (WGA) from : 
-    - 'plant_wga_probabilities.h5' : Probability maps from pixel classification workflow (plant_wga.pixel_prob.ilp).
-  - ilp
-    - 'plant_wga.multicut.ilp' : Ilastik project file for multicut. Output format is set to tiff.
-    - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5 
+- tiff
+  - 'mindagap.mouse_heart.wga.tiff': Exemplary tiff file with black gridlines to fill for MindaGap tool.
+- h5
+  - 'plant_wga.h5' : Image of rice root stained with Wheat-Germ agglutinin (WGA) from :
+  - 'plant_wga_probabilities.h5' : Probability maps from pixel classification workflow (plant_wga.pixel_prob.ilp).
+- ilp
+  - 'plant_wga.multicut.ilp' : Ilastik project file for multicut. Output format is set to tiff.
+  - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5
 
 ### generic
 

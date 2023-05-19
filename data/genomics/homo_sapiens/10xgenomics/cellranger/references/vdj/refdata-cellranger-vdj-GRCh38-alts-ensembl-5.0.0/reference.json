@@ -1,0 +1,10 @@
+{
+    "fasta_hash": "10aa54c58952f920c072270fc459d1e304c2ba3c2da20ac80528064f638dc1f1",
+    "genomes": "vdj_GRCh38_alts_ensembl",
+    "gtf_hash": "b2b50cc12da4d2bda69207aa7fd51bf648826d0d2f39199e87922bf107d81ed0",
+    "input_fasta_files": "release-94/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa",
+    "input_gtf_files": "release-94/gtf/homo_sapiens/Homo_sapiens.GRCh38.94.chr_patch_hapl_scaff.gtf",
+    "mkref_version": "",
+    "type": "V(D)J Reference",
+    "version": "5.0.0"
+}
