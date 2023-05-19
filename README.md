@@ -185,9 +185,16 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test_10x_vdj_ref_json: JSON from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
       - test_10x_vdj_ref_fasta: FASTA file of V(D)J sequences from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
       - test_10x_vdj_ref_suppfasta: Supplemental FASTA file from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
+    - cellranger-atac
+      - test_scATAC_S1_L001_I1_001.fastq.gz: Dual index i7 read (8bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
+      - test_scATAC_S1_L001_R\{1,3\}_001.fastq.gz: Read 1 and 2 of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
+      - test_scATAC_S1_L001_R2_001.fastq.gz: Dual index i5 read (16 bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
   - genome
     - BUSCO
       - 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
+    - chr1: directory for reference files using chr1 rather than 22, used for cellranger-atac
+      - genome.fasta.gz
+      - genome.gtf
     - chr21: directory for reference files using chr21 rather than 22, used for most gatk4 testing
       - sequence: directory containing fasta, fai, dict and several other indexes for chr21 including:
         - 'genome_sdf.tar.gz': The SDF (RTG Sequence Data File) folder of the reference genome
@@ -224,6 +231,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - tsv
       - functional_genomics.counts.tsv : functional genomics count table for CNV correction
       - library_functional_genomics.tsv : functional genomics library for CNV correction
+    - genome_config.json: json config file for cellranger-atac or cellranger-arc  
     - genome.ploidy_model.tar.gz: tar gzipped directory containing the ploidy model files
     - genome.ploidy_calls.tar.gz: tar gzipped directory containing the ploidy call files
     - genome.germline_cnv_model.tar.gz: tar gzipped directory containing the cnv model files
@@ -234,6 +242,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - genome.fasta.gz.fai: index file for 'genome.fasta.gz'
     - genome.fasta.gz.gzi: index file for 'genome.fasta.gz'
     - genome2.fasta: Reference fasta based on chr22:16600000-16800000
+    - genome_motifs.txt: TF motifs used for cellranger-atac
     - transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     - gff3: Encode GFF3 file downsampled based on reference position
     - gtf: Encode GTF file downsampled based on reference position
