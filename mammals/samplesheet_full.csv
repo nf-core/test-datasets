@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,barcode_details
+hSRR23262566,s3://sra-pub-src-3/SRR23262566/midbrain_rep3_R1.fastq.gz.1,,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/barcode_details.json
