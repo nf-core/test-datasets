@@ -458,6 +458,16 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - gene_set_analysis:
     - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023
     - Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip Ensembl ID to gene symbol mapping in Broad's 'chip' format, suitable for passing to GSEA when using matrices keyed by Ensembl Gene ID. Downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations/mouse/Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip) 5/1/2023
+  - genome
+    - chr19.fa.gz: Reference fasta based on chr19
+    - chr19.filtered.gtf.gz: Reference annotation in GTF format. File is from Genode Release M31 (https://www.gencodegenes.org/mouse/). Then filtered to only genes on chromosome 19.
+    - lib.csv: FASTQ library csv file for cellranger-arc
+    - genome_config.json: json config file for cellranger-atac or cellranger-arc
+  - 10xgenomics
+    - cellranger-arc
+      - test_scARC_gex_S1_L001_R\{1,2\}_001.fastq.gz: Read 1 and 2 of a downsampled version from SRA database SRR18907480.
+      - test_scARC_atac_S1_L001_R\{1,2\}_001.fastq.gz: Read 1 and 2 of a downsamples version from SRA database SRR18907481.
+      - test_scARC_atac_S1_L001_I2_001.fastq.gz: Dual index i5 read (16 bp) of a downsamples version from SRA database SRR18907481.
 - prokaryotes
 
   - bacteroides_fragilis
