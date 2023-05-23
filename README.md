@@ -24,20 +24,22 @@ This branch contains test data for the [nf-core/crisprseq](https://github.com/nf
 
   ```
 
-### Analysis of CRISPR editing
+### Analysis of CRISPR screening
 
 `testdata` contains the a minimal test dataset needed to run the pipeline for the analysis of CRISPR functional screenings.
 
-- `samplesheet_test.csv` contains the input samplesheet file to run the pipeline.
-- The `fastq`files are samples from a simulated run and are downloaded from the [ENA archive](https://www.ebi.ac.uk/ena/browser/view/ERR376998)
+- `samplesheet_test.csv` contains the input samplesheet file to run the pipeline. Data is obtained from ENA project [PRJNA540212](https://www.ebi.ac.uk/ena/browser/view/PRJNA540212) obtained by [Tyner JW et al. 2019](https://doi.org/10.1158/2159-8290.CD-19-0125) and subsampled to with seqtk and a seed of 100.
+  ```
+    seqtk sample -s100 SRR8983580.fastq.gz 1529806 > SRR8983580.small.fastq.gz
+    seqtk sample -s100 SRR8983579.fastq.gz 1529806 > SRR8983579.small.fastq.gz
+  ```
 
-- the 'yusa_library.csv' file is used for the mageck count module and is taken from the mageck [documentation](https://sourceforge.net/projects/mageck/files/libraries/)
 
-- 'HT-29_counts.tsv' and 'KY_Library_v1.1.tsv' are both from the [CRISPRcleanR R library](https://github.com/francescojm/CRISPRcleanR/tree/master/data)
+- the 'brunello_target_sequence.txt' file is used for the mageck count module and is taken from the mageck [documentation](https://media.addgene.org/cms/filer_public/8b/4c/8b4c89d9-eac1-44b2-bb2f-8fea95672705/broadgpp-brunello-library-contents.txt). Only target transcript,sgRNA Target,Sequence   Target and Gene Symbol are kept as columns.
 
-- 'design_matrix.txt' is the design matrix to run mageck mle and is tailored to the 'count_table.csv'
+- 'design_matrix.txt' is the design matrix to run mageck mle and is tailored to the output created by samplesheet_test.csv and mageck count.
 
-- 'count_table.csv' is the count matrix to run mageck mle. It is taken from [leukemia.new.csv](https://sourceforge.net/projects/mageck/files/example/)
+- 'count_table.csv' is the count matrix to run MAGeCK MLE. It is taken from [leukemia.new.csv](https://sourceforge.net/projects/mageck/files/example/)
 
   ```
 

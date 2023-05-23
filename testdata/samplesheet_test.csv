@@ -1,3 +1,4 @@
 sample,fastq_1,fastq_2,condition
-ERR376998,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/ERR376998.small.fastq.gz,,control
-ERR376999,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/ERR376999.small.fastq.gz,,treatment
+SRR8983579,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/SRR8983579.small.fastq.gz,,control
+SRR8983580,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/SRR8983580.small.fastq.gz,,treatment
+
