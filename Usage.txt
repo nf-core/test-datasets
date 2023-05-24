@@ -1,0 +1,80 @@
+Once the input file is automatically detected it sets up an internal params.step to conditionally performs the required tools.
+
+######################
+Start from "fastq" files.
+This step starts from FastQ files and goes through all the steps (preprocessing, mapping, etc). The CSV must contain at least the columns sample, lane, fastq_1/fastq_2, strandness, condition. (the order of the columns is not relevant)
+Examples
+Sample_sheet file:
+sample,lane,fastq_1,fastq_2,strandness,condition
+patient1,lane_1,test1_1.fastq.gz,test1_2.fastq.gz,reverse,treatment
+patient2,lane_1,test2_1.fastq.gz,test2_2.fastq.gz,reverse,treatmnet
+patient3,lane_1,test3_1.fastq.gz,test3_2.fastq.gz,reverse,control
+patient4,lane_1,test4_1.fastq.gz,test4_2.fastq.gz,reverse,control
+
+The splicing tools that can be selected/used starting from this configuration are:
+DexSeq_exon: --
+EdgeR: --
+rMATS: --
+DexTranscripts: --
+SUPPA: --
+
+The typical command for running the pipeline from this configuration is as follows:
+nextflow run main.nf --input samplesheet.csv --fasta X.fa.gz --gtf genes_chrX.gtf --outdir test \\
+-profile docker -work-dir work --edger_exon true \\
+--skip_alignment false --rmats false --dexseq_exon false --dexseq_dtu false --suppa false --sashimi_plot false --skip_bigwig true
+
+This will launch the pipeline starting from fastq files and applying the edgeR algorithm for rna splicing analysis.
+
+#####################
+Start from  "bam" files.
+This step starts from aligned bam files as those derived from splicing aware mapper (STAR, HiSat, etc), outputs of other pipes (RNA-Seq) o RNAsplice intermediate files.
+The CSV must contain at least the columns sample,bam,condition. (the order of the columns is not relevant)
+Examples
+Sample_sheet file:
+sample,condition,bam
+patient1,patient1.bam,treatment
+patient2,patient2.bam,treatment
+patient3,patient3.bam,control
+patient4,patient4.bam,control
+
+The only possible splicing tools that can be lunched starting from this configuration are:
+DexSeq_exon: --
+EdgeR: --
+rMATS: --
+
+
+The typical command for running the pipeline is as follows:
+nextflow run main.nf --input samplesheet_bam.csv --fasta X.fa.gz --gtf genes_chrX.gtf --outdir test_bam \\
+-profile docker -work-dir work --edger_exon true \\
+--rmats false --dexseq_exon false --dexseq_dtu false --suppa false --sashimi_plot false --skip_bigwig true
+
+This will launch the pipeline starting from bam files and execute the analysis using edgeR tool.
+
+
+
+#####################
+Start from bam + transcriptome
+This step starts from aligned bam files and associated transcriptome bam as those derived from splicing aware mapper (STAR, HiSat, etc), other pipes (RNA-Seq) o RNAsplice intermediate files.
+The CSV must contain the columns sample,condition,bam,transcriptome (the order of the columns is not relevant)
+Examples
+Sample_sheet file:
+sample,condition,bam,transcriptome
+patient1,treatment,patient1.bam,patient1.transcriptome.bam
+patient2,treatment,patient2.bam,patient2.transcriptome.bam
+patient3,control,patient3.bam,patient3.transcriptome.bam
+patient4,control,patient4.bam,patient4.transcriptome.bam
+
+The splicing tools that can be used starting from from this configuration are:
+DexSeq_exon: --
+EdgeR: --
+rMATS: --
+DexTranscripts: --
+SUPPA: --
+
+
+The typical command for running the pipeline is as follows:
+nextflow run main.nf --input samplesheet_bam_transcriptome.csv --fasta X.fa.gz --gtf genes_chrX.gtf --outdir test_transcriptome \\
+-profile docker -work-dir work \\
+--rmats false --dexseq_exon false --edger_exon false --dexseq_dtu false --suppa true --sashimi_plot false --skip_bigwig true
+
+This will launch the pipeline starting from bam + transcriptome files and execute the analysis using SUPPA2 tool.
