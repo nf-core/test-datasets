@@ -35,6 +35,6 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
 
 `database cache` contains the IMGT and Igblast db human and mouse database caches for running the pipeline tests.
 
-### Reveal test data
+### Assembled test data
 
-`testdata-reveal` contains test data needed to run the AIRR-seq workflow Reveal. Further details can be found in the README.md file inside the folder.
+`testdata-assembled` contains test data needed to run the AIRR-seq assembled workflow (`--mode assembled`). Further details can be found in the README.md file inside the folder.
