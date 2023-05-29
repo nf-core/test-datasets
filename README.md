@@ -107,6 +107,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'purecn_ex1.bam': Example BAM file used to test PureCN
       - 'purecn_ex1.bam.bai': BAM index for 'purecn_ex1.bam'
       - 'purecn_ex1_intervals.txt': File containing genomic intervals to be used for testing PureCN
+      - 'purecn_ex1_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
+      - 'purecn_ex2_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
+      - 'purecn_normalpanel.vcf.gz': Example normal VCF to be used for testing PureCN/normaldb
+      - 'purecn_normalpanel.vcf.gz.tbi': Index file for 'purecn_normalpanel.vcf.gz'
     - bedgraph
       - 'test.bedgraph'
     - bigwig
