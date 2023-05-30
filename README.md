@@ -104,9 +104,13 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.single_end.bam': alignment (unsorted) of the 'test_1.fastq.gz' reads against test_genomic.fasta using minimap2
       - 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
       - 'read_group_settings.txt': a simple textfile containing the readgroup settings '1 paired' primarily used for the atlas/splitmerge module
-      - 'purecn_ex1.bam': Example BAM file used to test PureCN
+      - 'purecn_ex1.bam': Example BAM file used to test PureCN/coverage
       - 'purecn_ex1.bam.bai': BAM index for 'purecn_ex1.bam'
-      - 'purecn_ex1_intervals.txt': File containing genomic intervals to be used for testing PureCN
+      - 'purecn_ex1_intervals.txt': File containing genomic intervals to be used for testing PureCN/coverage
+      - 'purecn_ex1_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
+      - 'purecn_ex2_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
+      - 'purecn_normalpanel.vcf.gz': Example normal VCF to be used for testing PureCN/normaldb
+      - 'purecn_normalpanel.vcf.gz.tbi': Index file for 'purecn_normalpanel.vcf.gz'
     - bedgraph
       - 'test.bedgraph'
     - bigwig
