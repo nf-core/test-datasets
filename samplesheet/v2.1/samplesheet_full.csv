@@ -1,0 +1,7 @@
+sample,fastq_1,fastq_2,replicate
+GM12878_STD,s3://ngi-igenomes/test-data/atacseq/SRX2717909_T1_1.fastq.gz,s3://ngi-igenomes/test-data/atacseq/SRX2717909_T1_2.fastq.gz,1
+GM12878_STD,s3://ngi-igenomes/test-data/atacseq/SRX2717910_T1_1.fastq.gz,s3://ngi-igenomes/test-data/atacseq/SRX2717910_T1_2.fastq.gz,2
+GM12878_OMNI,s3://ngi-igenomes/test-data/atacseq/SRX2717911_T1_1.fastq.gz,s3://ngi-igenomes/test-data/atacseq/SRX2717911_T1_2.fastq.gz,1
+GM12878_OMNI,s3://ngi-igenomes/test-data/atacseq/SRX2717912_T1_1.fastq.gz,s3://ngi-igenomes/test-data/atacseq/SRX2717912_T1_2.fastq.gz,2
+GM12878_FAST,s3://ngi-igenomes/test-data/atacseq/SRX2717913_T1_1.fastq.gz,s3://ngi-igenomes/test-data/atacseq/SRX2717913_T1_2.fastq.gz,1
+GM12878_FAST,s3://ngi-igenomes/test-data/atacseq/SRX2717914_T1_1.fastq.gz,s3://ngi-igenomes/test-data/atacseq/SRX2717914_T1_2.fastq.gz,2
