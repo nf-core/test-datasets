@@ -1,8 +1,6 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
-
 ## Introduction
 
 nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
@@ -16,20 +14,17 @@ nf-core/test-datasets comes with documentation in the `docs/` directory:
 01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
 02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
-## Downloading test data
+## Data generation
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
+We use `SB26` as a test dataset from [_Keren-Shaul et al., Nat Prot. 2019_](https://tanaylab.github.io/old_resources/pages/672.html). We subset it only for Amplification batch `AB339` as shown below. The helper script is part of the [nf-core/marsseq](https://github.com/nf-core/marsseq) pipeline.
 
 ```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
+bin/split_amp_batch.py <SERVER>/SB26 ./testdata/SB26 --amp_batch AB339
 ```
+
+## Citations
+
+Keren-Shaul, H., Kenigsberg, E., Jaitin, D.A. et al. MARS-seq2.0: an experimental and analytical pipeline for indexed sorting combined with single-cell RNA sequencing. Nat Protoc 14, 1841–1862 (2019). [https://doi.org/10.1038/s41596-019-0164-4](https://doi.org/10.1038/s41596-019-0164-4)
 
 ## Support
 
