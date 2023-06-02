@@ -1,0 +1,13 @@
+RCC_FILE,RCC_FILE_NAME,SAMPLE_ID,TIME,TREATMENT,INCLUDE,OTHER_METADATA
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_01_01.RCC,salmon_01_01.RCC,salmon_01,1,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_02_02.RCC,salmon_02_02.RCC,salmon_02,2,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_03_03.RCC,salmon_03_03.RCC,salmon_03,3,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_04_04.RCC,salmon_04_04.RCC,salmon_04,4,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_05_05.RCC,salmon_05_05.RCC,salmon_05,5,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_06_06.RCC,salmon_06_06.RCC,salmon_06,6,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_07_07.RCC,salmon_07_07.RCC,salmon_07,7,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_08_08.RCC,salmon_08_08.RCC,salmon_08,8,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_09_09.RCC,salmon_09_09.RCC,salmon_09,9,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_10_10.RCC,salmon_10_10.RCC,salmon_10,10,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_11_11.RCC,salmon_11_11.RCC,salmon_11,11,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_12_12.RCC,salmon_12_12.RCC,salmon_12,12,0,1,test case

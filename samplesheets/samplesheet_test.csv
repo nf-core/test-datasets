@@ -1,0 +1,5 @@
+RCC_FILE,RCC_FILE_NAME,SAMPLE_ID,TIME,TREATMENT,INCLUDE,OTHER_METADATA
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_01_01.RCC,salmon_01_01.RCC,salmon_01,1,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_02_02.RCC,salmon_02_02.RCC,salmon_02,2,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_03_03.RCC,salmon_03_03.RCC,salmon_03,3,0,1,test case
+https://raw.githubusercontent.com/nf-core/test-datasets/nanostring/RCC_files/salmon_04_04.RCC,salmon_04_04.RCC,salmon_04,4,0,1,test case
