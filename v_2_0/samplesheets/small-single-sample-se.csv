@@ -1,2 +1,2 @@
 group,replicate,fastq_1,fastq_2
-sample_1,1,./tests/data/ERR3988069-yeast-quarter.fastq.gz,
+sample_1,1,https://raw.githubusercontent.com/nf-core/test-datasets/clipseq/v_2_0/fastq/ERR3988069-yeast-quarter.fastq.gz,
