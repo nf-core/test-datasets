@@ -1,0 +1,2 @@
+group,replicate,fastq_1,fastq_2
+sample_1,1,./tests/data/ERR3988069-yeast-quarter.fastq.gz,
