@@ -1,0 +1,143 @@
+<Header>
+FileVersion,1.7
+SoftwareVersion,4.0.0.3
+</Header>
+
+<Sample_Attributes>
+ID,11
+Owner,
+Comments,
+Date,20191218
+GeneRLF,PS_Ssalar
+SystemAPF,n6_vDV1
+</Sample_Attributes>
+
+<Lane_Attributes>
+ID,11
+FovCount,555
+FovCounted,522
+ScannerID,Y2019M12D18
+StagePosition,1
+BindingDensity,0.22
+CartridgeID,salmon_20191218
+CartridgeBarcode,201912181759
+</Lane_Attributes>
+
+<Code_Summary>
+CodeClass,Name,Accession,Count
+Positive,POS_6,ERCC_00002.1,1797
+Positive,POS_4,ERCC_00002.1,1848
+Positive,POS_7,ERCC_00002.1,1362
+Positive,POS_3,ERCC_00002.1,999
+Positive,POS_1,ERCC_00002.1,1639
+Positive,POS_5,ERCC_00002.1,1743
+Positive,POS_2,ERCC_00002.1,1062
+Positive,POS_8,ERCC_00002.1,1196
+Negative,NEG_5,ERCC_00019.1,1
+Negative,NEG_2,ERCC_00019.1,0
+Negative,NEG_8,ERCC_00019.1,1
+Negative,NEG_1,ERCC_00019.1,0
+Negative,NEG_3,ERCC_00019.1,1
+Negative,NEG_6,ERCC_00019.1,0
+Negative,NEG_4,ERCC_00019.1,1
+Negative,NEG_7,ERCC_00019.1,0
+Endogenous,CIGSSA_067743,XM_014138027.1,211
+Endogenous,POMC A1,AB462418.1,3
+Endogenous,CIGSSA_089531,CIGSSA_089531.1,2
+Endogenous,CIGSSA_073031,CIGSSA_073031.1,237
+Endogenous,CIGSSA_069709,CIGSSA_069709.1,1
+Endogenous,TSHb,NM_001123528.1,1
+Endogenous,mineralocorticoid receptor-like,XM_014209388.1,3
+Endogenous,CIGSSA_090437,CIGSSA_090437.1,3
+Endogenous,RH2,NM_001123707.1,1
+Endogenous,POMC B,NM_001128604.1,4
+Endogenous,CIGSSA_061410,XM_014130329.1,9562
+Endogenous,GnRH b,XM_014154458.1,2
+Endogenous,leptinB2,KC464487.1,1
+Endogenous,CIGSSA_032692,CIGSSA_032692.1,1
+Endogenous,TRPV1,NM_001140498.1,0
+Endogenous,CIGSSA_095471,CIGSSA_095471.1,1
+Endogenous,leptinB1,NM_001279134.1,1
+Endogenous,GH R1,NM_001123576.1,2
+Endogenous,CIGSSA_108514,CIGSSA_108514.1,1
+Endogenous,CIGSSA_029481,CIGSSA_029481.1,1
+Endogenous,PRL,XM_014192393.1,0
+Endogenous,CIGSSA_106427,CIGSSA_106427.1,1
+Endogenous,hpso70,XM_014137172.1,480
+Endogenous,IGF-1a,EU861008.1,8
+Endogenous,CIGSSA_024176,XM_014195900.1,3
+Endogenous,opsin 1 short wave,NM_001123708.1,3
+Endogenous,CIGSSA_016941,NM_001123676.1,5
+Endogenous,CIGSSA_079681,XM_014143428.1,4667
+Endogenous,CB-2,CIGSSA_029344.1,763
+Endogenous,CIGSSA_056424,XM_014127661.1,103
+Endogenous,CIGSSA_106850,CIGSSA_106850.1,1
+Endogenous,CRF,NM_001141590.1,3
+Endogenous,CIGSSA_109543,CIGSSA_109543.1,0
+Endogenous,TRH,NM_001141172.1,3
+Endogenous,POMC A2,AB462420.1,2
+Endogenous,CIGSSA_017107,CIGSSA_017107.1,96
+Endogenous,CIGSSA_039183,CIGSSA_039183.1,1
+Endogenous,kissR,XM_014140074.1,0
+Endogenous,GnRH a,NM_001123667.1,0
+Endogenous,CIGSSA_072651,CIGSSA_072651.1,0
+Endogenous,MT1,XM_014213248.1,1
+Endogenous,TH-R beta,NM_001123700.1,14
+Endogenous,CIGSSA_034288,XM_014204292.1,166
+Endogenous,CIGSSA_125493.t1,XM_014180467.1,62
+Endogenous,CIGSSA_033999,CIGSSA_033999.1,4
+Endogenous,NM_001123656.1,NM_001123656.1,3591
+Endogenous,cry1,XM_014125353.1,5
+Endogenous,rod opsin retina,NM_001123537.1,3
+Endogenous,MCR4,XM_014140480.1,4
+Endogenous,CIGSSA_063836,CIGSSA_063836.1,1
+Endogenous,CCK-N,NM_001139522.1,4
+Endogenous,HNF4,XM_014181658.1,1
+Endogenous,CB-1,XM_014210154.1,0
+Endogenous,TRPV4,XM_014160768.1,2
+Endogenous,AANAT 1a,XM_014177714.1,0
+Endogenous,CYP19,AY049958.1,0
+Endogenous,CIGSSA_032361,CIGSSA_032361.1,1
+Endogenous,hcrtr2,XM_014180132.1,0
+Endogenous,CCK-L,NM_001139521.1,2
+Endogenous,LWS,NM_001123705.1,13
+Endogenous,CIGSSA_005176,XM_014202021.1,3
+Endogenous,cry2,JT834448.1,0
+Endogenous,mel1c,XM_014196791.1,0
+Endogenous,CIGSSA_113985,CIGSSA_113985.1,24
+Endogenous,agouti-RP 2,NM_001146678.1,0
+Endogenous,CIGSSA_062509,XM_014133714.1,5
+Endogenous,ASMT (HIOMT),XM_014173895.1,3
+Endogenous,neuropeptide Y,NM_001146681.1,0
+Endogenous,IGF-1b,EU861006.1,2
+Endogenous,orexin,XM_014204313.1,1
+Endogenous,CIGSSA_067996,CIGSSA_067996.1,0
+Endogenous,MT2,XM_014163127.1,4
+Endogenous,hspa8,NM_001139607.1,309
+Endogenous,CIGSSA_017153,CIGSSA_017153.1,0
+Endogenous,CIGSSA_003707,CIGSSA_003707.1,7
+Endogenous,CIGSSA_051281,XM_014125413.1,1
+Endogenous,CIGSSA_032365,XM_021556277.1,8
+Endogenous,DIO 2b,KP851705.1,0
+Endogenous,agouti-RP 1,NM_001146677.1,3
+Endogenous,CIGSSA_022313.t2,XM_014194688.1,3
+Endogenous,opsin 2 short wave,NM_001123706.1,5
+Endogenous,CIGSSA_116839,CIGSSA_116839.1,4
+Endogenous,adrenocorticotropic hormone,XM_014183837.1,1
+Endogenous,GHRL-1,NM_001142709.1,2
+Endogenous,AMH,NM_001123585.1,0
+Endogenous,CIGSSA_056358,CIGSSA_056358.1,4
+Endogenous,glucocorticoid receptor-like,XM_014213196.1,2
+Endogenous,CART,NM_001146680.1,0
+Housekeeping,RNAPOLII,JT818166.1,2
+Housekeeping,HPRTI,BT043501.1,7
+Housekeeping,BT050045,NM_001123561.1,290
+Housekeeping,G6PDH,NM_001141724.1,1
+Housekeeping,B-actin,XM_014194537.1,1756
+Housekeeping,EF1AA,AF321836.1,386
+Housekeeping,AY953432,XM_014180600.1,1
+</Code_Summary>
+
+<Messages>
+</Messages>
+
