@@ -1,2 +1,3 @@
 group,replicate,fastq_1,fastq_2
 sample_1,1,https://github.com/luslab/test-datasets/raw/clipseq/v_2_0/fastq/ERR3988069-yeast-quarter.fastq.gz,
+sample_1,1,https://github.com/luslab/test-datasets/raw/clipseq/v_2_0/fastq/ERR3988069-yeast-quarter-2.fastq.gz,
