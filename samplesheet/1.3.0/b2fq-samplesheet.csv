@@ -1,0 +1,2 @@
+id,samplesheet,lane,flowcell
+sim-data,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/sim-data/RunManifest.csv,,https://github.com/nf-core/test-datasets/raw/demultiplex/testdata/sim-data/sim-data.tar.gz
