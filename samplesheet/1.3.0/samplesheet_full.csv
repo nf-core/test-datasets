@@ -1,0 +1,2 @@
+id,samplesheet,lane,flowcell
+35147139,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/miseq_35147139/miseq_35147139_samplesheet.csv,1,s3://ngi-igenomes/test-data/demultiplex/miseq_35147139.tar.gz
