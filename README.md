@@ -36,3 +36,17 @@ git fetch
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+
+# Data Description
+
+## genomics
+- sarscov2
+  - illumina
+    - fastq
+      - 'test2_{1,2}.fastq.gz' sarscov2 paired-end sequencing reads
+
+   - pacbio
+     - fastq
+       - 'test_2.fastq.gz' sarscov2 single-end sequencing reads
+## delete_me
+- [refseq_virus.tar.gz](https://metabuli.steineggerlab.workers.dev/): gzipped version of pre-built viral database. Plan is to replace it with a custom database of just a few viral entries in the future.
