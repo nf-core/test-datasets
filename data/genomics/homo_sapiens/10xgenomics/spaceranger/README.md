@@ -22,7 +22,8 @@ curl -O https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_O
 # Extract
 tar xvf Visium_FFPE_Human_Ovarian_Cancer_fastqs.tar
 
-# Create subsampled dataset
+# Create subsampled dataset with ImageMagick
+# https://imagemagick.org/index.php
 mkdir subsampled
 convert Visium_FFPE_Human_Ovarian_Cancer_image.jpg -resize 1500x1500 subsampled/Visium_FFPE_Human_Ovarian_Cancer_image.jpg
 for f in Visium_FFPE_Human_Ovarian_Cancer_fastqs/*L001*R*; do; gzip -cdf $f | head -n 40000 | gzip -c > subsampled/$(basename $f); done
