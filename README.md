@@ -37,3 +37,6 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
 
+## Data Description
+
+A minimal metabuli database was created using the refseq genomes *NC_034440.1*, *NC_045512*, *NC_045512.2* and saved as data/genomics/sarscov2/db/sarscov_db.tar.gz.
