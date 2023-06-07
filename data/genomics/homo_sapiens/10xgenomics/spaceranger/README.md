@@ -49,5 +49,5 @@ tar xvf CytAssist_11mm_FFPE_Human_Glioblastoma_fastqs
 mkdir subsampled
 # cytassist only takes original image... 24M is still manageable, even for a test dataset
 cp CytAssist_11mm_FFPE_Human_Glioblastoma_image.tif subsampled/
-for f in CytAssist_11mm_FFPE_Human_Glioblastoma_fastqs/*S1*L001*R*; do; gzip -cdf $f | head -n 40000 | gzip -c > subsampled/$(basename $f); done
+for f in CytAssist_11mm_FFPE_Human_Glioblastoma_fastqs/*S1*L00{1,2}*R*; do; gzip -cdf $f | head -n 40000 | gzip -c > subsampled/$(basename $f); done
 ```
