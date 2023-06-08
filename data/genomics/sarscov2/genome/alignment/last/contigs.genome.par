@@ -1,0 +1,193 @@
+# lastal version: 1219
+# maximum percent identity: 100
+# scale of score parameters: 4.5512
+# scale used while training: 91.024
+
+# lastal -j7 -S1 -P2 -r5 -q5 -a15 -b3 lastdb/genome /scratch/tmpcl1bfke7
+
+# aligned letter pairs: 30213
+# deletes: 22.677
+# inserts: 21.568
+# delOpens: 12.576
+# insOpens: 11.817
+# alignments: 5
+# mean delete size: 1.8032
+# mean insert size: 1.82517
+# matchProb: 0.998995
+# delOpenProb: 0.000415826
+# insOpenProb: 0.00039073
+# delExtendProb: 0.445429
+# insExtendProb: 0.452105
+
+# substitution percent identity: 99.8304
+
+# count matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 9635.3         3.2713         4.6482         6.4057
+# C 3.3863         5708.8         1.6877         6.5981
+# G 5.0651         2.8593         5810.6         4.309
+# T 6.2861         3.84           2.9931         9067.9
+
+# probability matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 0.31827        0.000108057    0.000153538    0.000211591
+# C 0.000111855    0.188571       5.57476e-05    0.000217946
+# G 0.000167309    9.44475e-05    0.191934       0.000142334
+# T 0.000207641    0.000126842    9.88672e-05    0.299528
+
+# delExistCost: 688
+# insExistCost: 697
+# delExtendCost: 74
+# insExtendCost: 72
+
+# score matrix (query letters = columns, reference letters = rows):
+#        A      C      G      T
+# A    104   -576   -545   -557
+# C   -572    151   -590   -506
+# G   -537   -542    150   -547
+# T   -558   -555   -580    109
+
+# lastal -j7 -S1 -P2 -t90.9397 -p- lastdb/genome /scratch/tmpcl1bfke7
+
+# aligned letter pairs: 30134
+# deletes: 2.010467
+# inserts: 2.012042
+# delOpens: 1.005643
+# insOpens: 1.006911
+# alignments: 5
+# mean delete size: 1.99919
+# mean insert size: 1.99823
+# matchProb: 0.999734
+# delOpenProb: 3.33635e-05
+# insOpenProb: 3.34056e-05
+# delExtendProb: 0.499796
+# insExtendProb: 0.499558
+
+# substitution percent identity: 99.9403
+
+# count matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 9626.8         1.00762024787  2.01070020028  1.0043952335
+# C 1.0013054513   5703           1.0000002817   2.00003674
+# G 2.00000218057  1.00000007199  5797.8         1.0000034648
+# T 3.00000744078  2.00000362599  1.00000051724  9056.6
+
+# probability matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 0.318745       3.33625e-05    6.65746e-05    3.32557e-05
+# C 3.31534e-05    0.188827       3.31102e-05    6.62215e-05
+# G 6.62204e-05    3.31101e-05    0.191966       3.31103e-05
+# T 9.93307e-05    6.62204e-05    3.31102e-05    0.299865
+
+# delExistCost: 938
+# insExistCost: 938
+# delExtendCost: 63
+# insExtendCost: 63
+
+# score matrix (query letters = columns, reference letters = rows):
+#        A      C      G      T
+# A    104   -683   -621   -725
+# C   -683    152   -637   -615
+# G   -622   -637    150   -679
+# T   -625   -615   -679    110
+
+# lastal -j7 -S1 -P2 -t91.1783 -p- lastdb/genome /scratch/tmpcl1bfke7
+
+# aligned letter pairs: 30134
+# deletes: 2.0008987
+# inserts: 2.0010557
+# delOpens: 1.00041212
+# insOpens: 1.00053722
+# alignments: 5
+# mean delete size: 2.00007
+# mean insert size: 1.99998
+# matchProb: 0.999735
+# delOpenProb: 3.319e-05
+# insOpenProb: 3.31941e-05
+# delExtendProb: 0.500019
+# insExtendProb: 0.499995
+
+# substitution percent identity: 99.9404
+
+# count matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 9626.8         1.00242000802  2.00477001427  1.00070607524
+# C 1.00039105138  5703           1.00000001313  2.0000025637
+# G 2.00000006436  1.00000000313  5797.8         1.00000008435
+# T 3.00000048439  2.00000048908  1.00000001311  9056.6
+
+# probability matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 0.318745       3.31903e-05    6.63783e-05    3.31335e-05
+# C 3.31231e-05    0.188827       3.31102e-05    6.62204e-05
+# G 6.62203e-05    3.31102e-05    0.191966       3.31102e-05
+# T 9.93305e-05    6.62203e-05    3.31102e-05    0.299865
+
+# delExistCost: 939
+# insExistCost: 939
+# delExtendCost: 63
+# insExtendCost: 63
+
+# score matrix (query letters = columns, reference letters = rows):
+#        A      C      G      T
+# A    104   -683   -621   -725
+# C   -683    152   -637   -615
+# G   -622   -637    150   -679
+# T   -625   -615   -679    110
+
+# lastal -j7 -S1 -P2 -t91.1782 -p- lastdb/genome /scratch/tmpcl1bfke7
+
+# aligned letter pairs: 30134
+# deletes: 2.0008885
+# inserts: 2.0010435
+# delOpens: 1.00040746
+# insOpens: 1.00053066
+# alignments: 5
+# mean delete size: 2.00007
+# mean insert size: 1.99998
+# matchProb: 0.999735
+# delOpenProb: 3.31898e-05
+# insOpenProb: 3.31939e-05
+# delExtendProb: 0.500018
+# insExtendProb: 0.499996
+
+# substitution percent identity: 99.9404
+
+# count matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 9626.8         1.00242000793  2.00476001411  1.00070607442
+# C 1.00039105137  5703           1.00000001302  2.0000025626
+# G 2.00000006366  1.00000000308  5797.8         1.00000008344
+# T 3.00000048339  2.00000048882  1.00000001289  9056.6
+
+# probability matrix (query letters = columns, reference letters = rows):
+#   A              C              G              T
+# A 0.318745       3.31903e-05    6.63779e-05    3.31335e-05
+# C 3.31231e-05    0.188827       3.31102e-05    6.62204e-05
+# G 6.62203e-05    3.31102e-05    0.191966       3.31102e-05
+# T 9.93305e-05    6.62203e-05    3.31102e-05    0.299865
+
+# delExistCost: 939
+# insExistCost: 939
+# delExtendCost: 63
+# insExtendCost: 63
+
+# score matrix (query letters = columns, reference letters = rows):
+#        A      C      G      T
+# A    104   -683   -621   -725
+# C   -683    152   -637   -615
+# G   -622   -637    150   -679
+# T   -625   -615   -679    110
+
+#last -t4.51421
+#last -a 47
+#last -A 47
+#last -b 3
+#last -B 3
+#last -S 1
+# score matrix (query letters = columns, reference letters = rows):
+       A      C      G      T
+A      5    -34    -31    -36
+C    -34      8    -32    -31
+G    -31    -32      8    -34
+T    -31    -31    -34      5

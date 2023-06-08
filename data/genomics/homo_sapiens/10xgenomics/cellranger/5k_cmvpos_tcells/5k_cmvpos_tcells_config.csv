@@ -1,0 +1,18 @@
+[gene-expression]
+ref,/references/refdata-gex-GRCh38-2020-A
+expect-cells,1000
+chemistry,SC5P-R2
+no-bam,true
+no-secondary,true
+
+[vdj]
+ref,/genomics/homo_sapiens/illumina/10xgenomics/cellranger/references/vdj/refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0
+
+[feature]
+ref,/genomics/homo_sapiens/illumina/10xgenomics/cellranger/5k_cmvpos_tcells/5k_human_antiCMV_T_TBNK_connect_Multiplex_count_feature_reference.csv
+
+[libraries]
+fastq_id,fastqs,lanes,physical_library_id,feature_types,subsample_rate
+subsampled_5k_human_antiCMV_T_TBNK_connect_GEX_1,/genomics/homo_sapiens/illumina/10xgenomics/cellranger/5k_cmvpos_tcells/fastqs/gex_1,,gex,gene expression,
+subsampled_5k_human_antiCMV_T_TBNK_connect_AB,/genomics/homo_sapiens/illumina/10xgenomics/cellranger/5k_cmvpos_tcells/fastqs/ab,,ab,antibody capture,
+subsampled_5k_human_antiCMV_T_TBNK_connect_VDJ,/genomics/homo_sapiens/illumina/10xgenomics/cellranger/5k_cmvpos_tcells/fastqs/vdj,,vdj,vdj-t,

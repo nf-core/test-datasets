@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2
+Test_Sample,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/srst2/Test_Sample_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/srst2/Test_Sample_R2.fastq.gz
