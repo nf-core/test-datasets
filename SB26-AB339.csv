@@ -1,0 +1,2 @@
+batch,fastq_1,fastq_2,amp_batches,seq_batches,well_cells
+SB26_AB339,https://raw.githubusercontent.com/nf-core/test-datasets/marsseq/testdata/SB26-AB339/AB339_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/marsseq/testdata/SB26-AB339/AB339_R2.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/marsseq/testdata/SB26-AB339/amp_batches.xlsx,https://raw.githubusercontent.com/nf-core/test-datasets/marsseq/testdata/SB26-AB339/seq_batches.xlsx,https://raw.githubusercontent.com/nf-core/test-datasets/marsseq/testdata/SB26-AB339/wells_cells.xlsx
