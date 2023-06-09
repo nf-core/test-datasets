@@ -41,5 +41,9 @@ This branch contains test data for the [nf-core/crisprseq](https://github.com/nf
 
 - 'count_table.csv' is the count matrix to run MAGeCK MLE. It is taken from [leukemia.new.csv](https://sourceforge.net/projects/mageck/files/example/)
 
+- the folder 'full_test' contains all the necessary files to run the full AWS tests. 
+- `samplesheet_full.csv` contains the input samplesheet file to run the pipeline. Data is obtained from ENA project [PRJNA540212](https://www.ebi.ac.uk/ena/browser/view/PRJNA540212) obtained by [Tyner JW et al. 2019](https://doi.org/10.1158/2159-8290.CD-19-0125). 
+- the design matrices were manually created.
+
   ```
 
