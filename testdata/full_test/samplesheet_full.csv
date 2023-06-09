@@ -1,6 +1,6 @@
-﻿sample;fastq_1;fastq_2;condition
-SRR8983579;s3://ngi-igenomes/test-data/crisprseq/SRR8983579.fastq.gz;;control_A
-SRR8983580;s3://ngi-igenomes/test-data/crisprseq/SRR8983580.fastq.gz;;control_B
-SRR8983581;s3://ngi-igenomes/test-data/crisprseq/SRR8983581.fastq.gz;;drugA
-SRR8983582;s3://ngi-igenomes/test-data/crisprseq/SRR8983582.fastq.gz;;drugB
-SRR8983583;s3://ngi-igenomes/test-data/crisprseq/SRR8983583.fastq.gz;;drugC
+﻿sample,fastq_1,fastq_2,condition
+SRR8983579,s3://ngi-igenomes/test-data/crisprseq/SRR8983579.fastq.gz,,control_A
+SRR8983580,s3://ngi-igenomes/test-data/crisprseq/SRR8983580.fastq.gz,,control_B
+SRR8983581,s3://ngi-igenomes/test-data/crisprseq/SRR8983581.fastq.gz,,drugA
+SRR8983582,s3://ngi-igenomes/test-data/crisprseq/SRR8983582.fastq.gz,,drugB
+SRR8983583,s3://ngi-igenomes/test-data/crisprseq/SRR8983583.fastq.gz,,drugC
