@@ -1,0 +1,6 @@
+Samples	baseline	drugA_drugB
+control_A	1	0
+control_B	1	0
+drugA	1	1
+drugB	1	1
+drugC	1	0
