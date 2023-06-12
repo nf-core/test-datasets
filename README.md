@@ -553,6 +553,16 @@ You then will need to find the location of the downloaded file in the mOTUs inst
 <conda_installion>/envs/motus/lib/python3.9/site-packages/motus/db_mOTU/
 ```
 
+#### ganon
+
+Create directory, then run command. Note taxonomy files will be automatically downloaded for you.
+
+```
+mkdir -p meslier2022/ganon
+
+ganon build-custom --threads 4 --input meslier2022_fasta/ncbi_dataset/data/GCA_*/*.fna --db-prefix meslier2022/ganon/ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa --input-target sequence
+```
+
 ## Database Archive Creation
 
 To make the compressed TAR, we must make sure all symlinks are followed as necessary. It is recommended to run the cleanup commands below _prior_ to archiving, however it is critical that Bracken archiving is performed BEFORE running the Kraken2 cleanup.
