@@ -1,2 +1,2 @@
 sample,fastq_dir,image,slide,area,manual_alignment,slidefile
-Visium_FFPE_Human_Ovarian_Cancer,./test-datasets/data/genomics/homo_sapiens/10xgenomics/spaceranger/human-ovarian-cancer-1-standard_v1_ffpe,test-datasets/testdata/human-ovarian-cancer-1-standard_v1_ffpe/Visium_FFPE_Human_Ovarian_Cancer_image.jpg,V10L13-020,D1,,https://s3.us-west-2.amazonaws.com/10x.spatial-slides/gpr/V10L13/V10L13-020.gpr
+Visium_FFPE_Human_Ovarian_Cancer,test-datasets/testdata/human-ovarian-cancer-1-standard_v1_ffpe,test-datasets/testdata/human-ovarian-cancer-1-standard_v1_ffpe/Visium_FFPE_Human_Ovarian_Cancer_image.jpg,V10L13-020,D1,,https://s3.us-west-2.amazonaws.com/10x.spatial-slides/gpr/V10L13/V10L13-020.gpr
