@@ -247,6 +247,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - genome.fasta.gz.gzi: index file for 'genome.fasta.gz'
     - genome2.fasta: Reference fasta based on chr22:16600000-16800000
     - genome_motifs.txt: TF motifs used for cellranger-atac
+    - genome.NC_012920_1.gb: Contains mtDNA reference genome in Genbank format
     - transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     - gff3: Encode GFF3 file downsampled based on reference position
     - gtf: Encode GTF file downsampled based on reference position
@@ -262,7 +263,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - index
       - salmon: salmon index created with `transcriptome.fasta`
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
-    - NC_012920.1.gb: Contains mtDNA reference genome in Genbank format
   - illumina
 
     - bam:
