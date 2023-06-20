@@ -262,7 +262,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - index
       - salmon: salmon index created with `transcriptome.fasta`
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
-    - NC_012920.1.gb: Contains mtDNA reference genome in Genbank format
   - illumina
 
     - bam:
@@ -276,7 +275,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'example_hla_pe.sorted.bam': Sorted BAM file for HLATyping workflow / OptiType module.
       - 'example_hla_pe.sorted.bam.bai': Sorted BAM file index for HLATyping workflow / OptiType module.
       - mitochon_standin.recalibrated.sorted: copy of the old, smaller test2.paired_end.recalibrated.sorted, this is to be used to test mutect2's mitochondria mode, as the current recal bams are far too big. This should be replaced once rarediseases obtain an actual mitochondria sample.
-      - test_illumina_mt: bam file containing mt data, to test eklipse
       - 'test3.single_end.markduplicates.sorted.bam': Mapped, sorted, and duplicate removed reads from ancient DNA across all human chromosomes on the hs37d5 human reference. Data from [ERR2857053](https://www.ebi.ac.uk/ena/browser/view/ERR2857053) downsampled to 10% of original reads.
       - 'test.rna.paired_end.bam': STAR-aligned, unsorted, paired-end RNAseq bam file from the test*rnaseq*{1,2}.fastq.gz: chr22 of sample GM12878 (SRA accession: SRX2900878)
         - 'test.rna.paired_end.sorted.bam': STAR-aligned, sorted, paired-end RNAseq bam file based on test.rna.Aligned.unsorted.bam
