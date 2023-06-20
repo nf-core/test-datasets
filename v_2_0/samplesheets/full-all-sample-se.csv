@@ -1,0 +1,10 @@
+group,replicate,fastq_1,fastq_2
+TDP43_1,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR1530360.fastq.gz,
+TDP43_2,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR1530361.fastq.gz,
+MATR3_1,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR2210802.fastq.gz,
+MATR3_2,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR2210803.fastq.gz,
+PTBP1_1,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR2214592.fastq.gz,
+PTBP1_2,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR2214593.fastq.gz,
+PTBP1_siMATR3_1,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR2214594.fastq.gz,
+PTBP1_siMATR3_2,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR2214595.fastq.gz,
+STAU1_1,1,s3://nf-core-awsmegatests/clipseq/input_data/fastq/ERR605258.fastq.gz,
