@@ -7,10 +7,10 @@ INPUT_VEH,s3://ngi-igenomes/test-data/chipseq/SRX747767_T1.fastq.gz,,1,,,
 INPUT_VEH,s3://ngi-igenomes/test-data/chipseq/SRX747768_T1.fastq.gz,,2,,,
 INPUT_E2,s3://ngi-igenomes/test-data/chipseq/SRX747769_T1.fastq.gz,,1,,,
 INPUT_E2,s3://ngi-igenomes/test-data/chipseq/SRX747770_T1.fastq.gz,,2,,,
-EZH2_IP_NTKO,s3://ngi-igenomes/test-data/chipseq/SRX541384_T1.fastq.gz,,1,EZH2,INPUT_NTKO_REP1
-EZH2_IP_NTKO,s3://ngi-igenomes/test-data/chipseq/SRX541385_T1.fastq.gz,,2,EZH2,INPUT_NTKO_REP2
-EZH2_IP_TKO,s3://ngi-igenomes/test-data/chipseq/SRX541386_T1.fastq.gz,,1,EZH2,INPUT_TKO_REP1
-EZH2_IP_TKO,s3://ngi-igenomes/test-data/chipseq/SRX541387_T1.fastq.gz,,2,EZH2,INPUT_TKO_REP2
+EZH2_IP_NTKO,s3://ngi-igenomes/test-data/chipseq/SRX541384_T1.fastq.gz,,1,EZH2,INPUT_NTKO,1
+EZH2_IP_NTKO,s3://ngi-igenomes/test-data/chipseq/SRX541385_T1.fastq.gz,,2,EZH2,INPUT_NTKO,2
+EZH2_IP_TKO,s3://ngi-igenomes/test-data/chipseq/SRX541386_T1.fastq.gz,,1,EZH2,INPUT_TKO,1
+EZH2_IP_TKO,s3://ngi-igenomes/test-data/chipseq/SRX541387_T1.fastq.gz,,2,EZH2,INPUT_TKO,2
 INPUT_NTKO,s3://ngi-igenomes/test-data/chipseq/SRX541388_T1.fastq.gz,,1,,,
 INPUT_NTKO,s3://ngi-igenomes/test-data/chipseq/SRX541389_T1.fastq.gz,,2,,,
 INPUT_TKO,s3://ngi-igenomes/test-data/chipseq/SRX541390_T1.fastq.gz,,1,,,
