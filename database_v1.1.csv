@@ -9,3 +9,4 @@ kaiju,db5,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/databas
 diamond,db1,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/diamond/testdb-diamond.dmnd
 ganon,db1,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/ganon/test-db-ganon.tar.gz
 metaphlan,db6,,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
+kmcp,db1,,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kmcp/test-db-kmcp.tar.gz
