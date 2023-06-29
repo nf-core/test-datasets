@@ -23,6 +23,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - homo_sapiens
 - sarscov2
 - galaxea_fascicularis
+- deilephila_porcellus (mitochondrion)
 
 The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
@@ -488,9 +489,16 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - fastq
         - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
 
-- galaxea_fascicularis
-  - hic
-    - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
+- eukaryotes
+  - galaxea_fascicularis
+    - hic
+      - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
+  - deilephila_porcellus
+    - mito
+      - 'ilDeiPorc1.contigs.fa': test dataset for mitochondrial contigs for Deilephila porcellus
+      - 'ilDeiPorc1.HiFi.reads.fa':  test dataset for reads for Deilephila porcellus
+      - 'MW539688.1.fasta': sequence of the mitochondrial reference genome for Deilephila porcellus
+      - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
 
 ### pangenomics
 
