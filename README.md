@@ -522,7 +522,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 
 - maxquant
 
-  - 'mqpar.xml': MaxQuant parameters file.
+  - 'MaxQuant_contrasts.csv': Contrast file for the MaxQuant test dataset.
+  - 'MaxQuant_proteinGroups.txt': MaxQuant proteinGroups file containing intensity values for different protein groups.
+  - 'MaxQuant_samplesheet.tsv: Samplesheet for the MaxQuant test dataset.
 
 - Bos_taurus
   - idxml:
