@@ -262,6 +262,10 @@ and the file:
 
 This advice also applies to test_pon_genomicsdb, which is generated using the vcf files in pon_mutect2_calls directory.
 
+#### Varlocripator
+
+Example scenario was retrieved from the [manual](https://varlociraptor.github.io/docs/calling/).
+
 ### 10X genomics scRNA-seq data
 10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
 Data generation:
