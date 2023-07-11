@@ -382,6 +382,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test.rnaseq.bed: Plink binaries obtained using test.rnaseq.vcf with plink tool
       - test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
       - test.rnaseq.fam: Plink binaries obtained using test.rnaseq.vcf with plink tool
+    - varlociraptor:
+      - scenarios.yml: Yaml file containing a simple germline scenario
     - vcf:
       - test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
       - test.genome_21.somatic_sv.vcf: Indels VCF corresponding to `test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta

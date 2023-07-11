@@ -1,0 +1,8 @@
+samples:
+  normal:
+    resolution: 0.1
+    universe: "0.0 | 0.5 | 1.0 | ]0.0,0.5["
+
+events:
+  germline:
+    "normal:0.5 | normal:1.0"
