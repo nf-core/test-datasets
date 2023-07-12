@@ -208,7 +208,8 @@ It was generated using the nf-core/module KRAKENUNIQ_BUILD module.
 ganon version 1.5.1
 
 ```bash
-ganon build-custom --threads 4 --input *.fa --db-prefix test-db-ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa
+ln -s GCF_000146045.2_R64_genomic.fna GCF_000146045.2_R64_genomic.fa
+ganon build-custom --threads 4 --input *.fa --db-prefix test-db-ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa --input-target sequence
 ```
 
 ## Taxprofiler AWS Full Test specific-information
