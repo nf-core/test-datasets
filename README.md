@@ -11,9 +11,7 @@ This branch contains test data to be used for automated testing with the nf-core
 
 `testdata/*.fastq.gz`: Minimal single-end gridion test dataset
 
-`samplesheet/samplesheet.csv`: samplesheet file for minimal test dataset
-
-`samplesheet/samplesheet_full.csv`: samplesheet file for full test dataset
+`samplesheet/samplesheet_test.csv`: samplesheet file for minimal test dataset
 
 ## Minimal test dataset origin
 
