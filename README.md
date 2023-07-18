@@ -83,6 +83,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - genome
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     - 'genome.fasta.gz': bgzipped version of 'genome.fasta'
+    - 'genome.fasta.txt.gz': gzipped version of 'genome.fasta' in tabular text format
+    - 'genome.fasta.txt.zst': zstd-compressed version of 'genome.fasta' in tabular text format
     - 'genome.dict': GATK dict for 'genome.fasta'
     - 'genome_strtablefile.zip': An StrTableFile zip folder for 'genome.fasta'
     - 'genome.fasta.fai': fasta index for 'genome.fasta'
@@ -123,6 +125,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - fastq
       - 'test\_{1,2}.fastq.gz' sarscov2 paired-end sequencing reads
       - 'test_interleaved.fastq.gz': Interleaved version of the above
+      - 'text_1.fastq.txt.gz' gzipped compressed version of 'test_1.fastq.gz' in tabular text format
+      - 'text_1.fastq.txt.zst' zstd-compressed version of 'test_1.fastq.gz' in tabular text format
       - 'test\_{1,2}.2.fastq.gz‘: copies of the above reads
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
     - gatk
