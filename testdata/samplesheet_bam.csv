@@ -1,0 +1,2 @@
+sample,lane,bam,sex,phenotype,paternal_id,maternal_id,case_id
+hugelymodelbat,1,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/hugelymodelbat_sorted_md_downsampled.bam,1,2,0,0,justhusky
