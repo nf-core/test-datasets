@@ -1,0 +1,6 @@
+sample_id	library_id	lane	colour_chemistry	pairment	strandedness	damage_treatment	r1	r2	bam	bam_reference_id
+JK2782	JK2782	7	4	paired	double	full	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/fastq/JK2782_TGGCCGATCAACGA_L007_R1_001.fastq.gz.tengrand.fq.gz	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/fastq/JK2782_TGGCCGATCAACGA_L007_R2_001.fastq.gz.tengrand.fq.gz	NA	NA
+JK2782	JK2782	8	4	paired	double	full	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/fastq/JK2782_TGGCCGATCAACGA_L008_R1_001.fastq.gz.tengrand.fq.gz	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/fastq/JK2782_TGGCCGATCAACGA_L008_R2_001.fastq.gz.tengrand.fq.gz	NA	NA
+JK2802	JK2802_PE	7	4	paired	double	full	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/fastq/JK2802_AGAATAACCTACCA_L007_R1_001.fastq.gz.tengrand.fq.gz	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/fastq/JK2802_AGAATAACCTACCA_L007_R2_001.fastq.gz.tengrand.fq.gz	NA	NA
+JK2802	JK2802_SE	8	2	single	double	full	https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/fastq/JK2802_AGAATAACCTACCA_L008_R1_001.fastq.gz.tengrand.fq.gz	NA	NA	NA
+JK2067	JK2067	1	4	single	double	full	NA	NA	https://github.com/nf-core/test-datasets/raw/eager/testdata/Human/bam/JK2067.bam	hs37d5_chr21-MT
