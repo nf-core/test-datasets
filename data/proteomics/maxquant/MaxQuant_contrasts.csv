@@ -1,4 +1,4 @@
 id,variable,reference,target,blocking
 genotype_celltype_t1_t2,Celltype,T1,T2,
 genotype_celltype_t1_FoB,Celltype,T1,FoB,
-genotype_celltype_t1_MZ,Celltype,T1,MZ
+genotype_celltype_t1_MZ_fakeBatch,Celltype,T1,MZ,fakeBatch
