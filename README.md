@@ -218,7 +218,7 @@ The [file](https://github.com/nf-core/test-datasets/blob/modules/data/genomics/s
 
 ```bash
 kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-n10-l150 NC_045512.2.fasta
-kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp 
+kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp
 ```
 
 
@@ -572,6 +572,65 @@ Create directory, then run command. Note taxonomy files will be automatically do
 mkdir -p meslier2022/ganon
 
 ganon build-custom --threads 4 --input meslier2022_fasta/ncbi_dataset/data/GCA_*/*.fna --db-prefix meslier2022/ganon/ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa --input-target sequence
+```
+
+#### kmcp
+
+Create directory, then copy the input files to the directory and rename them.
+
+```
+mkdir -p meslier2022/kmcp
+cd kmcp
+cp meslier2022_fasta/ncbi_dataset/data/GCA_*/*.fna .
+```
+
+Open an empty file `rename_files.sh` and add the following piece of code:
+
+```bash
+#!/bin/bash
+rename_fna_files_in_directory() {
+    local dir="$1"
+
+    # Iterate through .fna files in the directory
+    for file in "$dir"/*/*_genomic.fna; do
+        if [[ -f "$file" ]]; then
+            new_name="${file%_ASM*}.fna"
+            mv "$file" "$new_name"
+        fi
+    done
+}
+
+# Iterate through subdirectories
+for folder in */; do
+    if [[ -d "$folder" ]]; then
+        rename_fna_files_in_directory "$folder"
+    fi
+done
+```
+
+```
+chmod +x rename_files.sh
+./rename_files.sh
+```
+
+After the files have been renamed, gather the filenames in a text file. You will need those in otder to run the `kmcp compute`
+
+```bash
+ls *.fna > list.txt
+
+## The names.dmp, nodes.dmp and seqid2taxid.map are needed for kmcp profile step
+cp meslier2022/kraken2/seqid2taxid.map .
+
+mkdir taxdump
+
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.zip
+unzip new_taxdump.zip
+
+cp names.dmp taxdump/
+cp nodes.dmp taxdump/
+
+kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-210-l150 -i list.txt
+kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp
 ```
 
 ## Database Archive Creation
