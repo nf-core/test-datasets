@@ -201,7 +201,7 @@ KrakenUniq version 1.0.0
 
 This database includes the SARS-CoV2 genome used on the nf-core/modules test-datasets repository (NCBI Accession: MT192765.1).
 
-It was generated using the nf-core/module KRAKENUNIQ_BUILD module.  
+It was generated using the nf-core/module KRAKENUNIQ_BUILD module.
 
 #### ganon
 
@@ -210,6 +210,17 @@ ganon version 1.5.1
 ```bash
 ganon build-custom --threads 4 --input *.fa --db-prefix test-db-ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa --input-target sequence
 ```
+
+#### kmcp
+
+kmcp version 0.9.1
+The [file](https://github.com/nf-core/test-datasets/blob/modules/data/genomics/sarscov2/genome/genome.fasta) has been used to build the minimum test dataset for kmcp and renamed to match the seqid2taxid.map file.
+
+```bash
+kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-n10-l150 NC_045512.2.fasta
+kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp 
+```
+
 
 ## Taxprofiler AWS Full Test specific-information
 
@@ -390,7 +401,7 @@ Make a working directory
 mkdir -p meslier2022/diamond
 ```
 
-Download and unpack the required taxonomy files. 
+Download and unpack the required taxonomy files.
 
 > ⚠️ The accession2taxid file is very large!
 
@@ -429,13 +440,13 @@ Combine all reference sequences into a single FASTA
 cat meslier2022_fasta/ncbi_dataset/data/*/*.fna > centrifuge_sequences.fna
 ```
 
-Run the build command using the saved Kraken2 `seqid2taxid.map` file from the corresponding section above 
+Run the build command using the saved Kraken2 `seqid2taxid.map` file from the corresponding section above
 
 ```bash
 centrifuge-build -p 32 --conversion-table seqid2taxid.map --taxonomy-tree nodes.dmp --name-table names.dmp centrifuge_sequences.fna meslier2022/centrifuge/centrifuge
 ```
 
-#### Kaiju 
+#### Kaiju
 
 The following steps were performed used Kaiju (v1.9.2).
 
@@ -468,8 +479,8 @@ First we extract all the Kaiju headers
 
 ```bash
 cut -d ' ' -f1 kaiju_sequences.faa > kaiju_sequences_accession.faa
-grep ">" kaiju_sequences_accession.faa > kaiju_sequences_accession.txt 
-sed -i 's/>//g' kaiju_sequences_accession.txt 
+grep ">" kaiju_sequences_accession.faa > kaiju_sequences_accession.txt
+sed -i 's/>//g' kaiju_sequences_accession.txt
 ```
 
 We then use the following R (v4.2.2) commands with the taxonomizr package (0.7.1) to pull the NCBI Taxonomic ID from the NCBI Protein accession IDs in the FASTA file.
@@ -481,7 +492,7 @@ install.packages("taxonomizr")
 library(taxonomizr)
 ```
 
-Download the necessary nodes and names files from NCBI 
+Download the necessary nodes and names files from NCBI
 
 ```r
 getNamesAndNodes()
@@ -513,7 +524,7 @@ quit()
 We can then create a new FASTA with the correct numeric IDs using AWK
 
 ```bash
-paste kaiju_sequences_accession.txt kaiju_sequences_taxId.txt >  kaiju_accession_taxid.txt 
+paste kaiju_sequences_accession.txt kaiju_sequences_taxId.txt >  kaiju_accession_taxid.txt
 awk 'FNR==NR {f2[$1]=$2;next} /^>/ { for (i in f2) { if (index(substr($1,2), i)) { print ">"f2[i]; next } } }1' kaiju_accession_taxid.txt kaiju_sequences_accession.faa > kaiju_sequences.faa
 ```
 
