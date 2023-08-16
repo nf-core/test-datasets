@@ -9,3 +9,4 @@ malt,malt-db,,s3://ngi-igenomes/test-data/taxprofiler/malt.tar.gz
 metaphlan,metaphlan3-db,--mpa3,s3://ngi-igenomes/test-data/taxprofiler/metaphlan3.tar.gz
 motus,motus-db,,s3://ngi-igenomes/test-data/taxprofiler/db_mOTU.tar.gz
 ganon,ganon-db,,s3://ngi-igenomes/test-data/taxprofiler/ganon.tar.gz
+kmcp,kmcp_db,,s3://ngi-igenomes/test-data/taxprofiler/kmcp.tar.gz
