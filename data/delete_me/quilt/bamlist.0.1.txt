@@ -1,0 +1,3 @@
+package_2021_01_15A/NA12878.haplotagged.0.1.bam
+package_2021_01_15A/NA12878.ont.0.1.bam
+package_2021_01_15A/NA12878.illumina.0.1.bam
