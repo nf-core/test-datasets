@@ -240,6 +240,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - tsv
       - functional_genomics.counts.tsv : functional genomics count table for CNV correction
       - library_functional_genomics.tsv : functional genomics library for CNV correction
+      - dbsnp_146.hg38.biallelic_snps.tsv  : biallelic snp positions and alleles. Generated with `bcftools query -i 'TYPE=="SNP" & N_ALT==1' -f '%CHROM\t%POS\t%REF\t%ALT'`.
     - genome_config.json: json config file for cellranger-atac or cellranger-arc  
     - genome.ploidy_model.tar.gz: tar gzipped directory containing the ploidy model files
     - genome.ploidy_calls.tar.gz: tar gzipped directory containing the ploidy call files
