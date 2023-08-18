@@ -218,6 +218,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - .gtf
         - .cnn: copy number reference file for chr_21
         - .snp: Eigenstrat snp file of 1240k snps on chr 21
+        - dbsnp_138.hg38.first_10_biallelic_sites.tsv: first 10 biallelic snp positions and alleles for use with the stitch module
       - germlineresources: directory containing several germline resource vcfs and tbis, including:
         - 1000G_omni2.5
         - 1000G_phase1.snps
@@ -240,7 +241,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - tsv
       - functional_genomics.counts.tsv : functional genomics count table for CNV correction
       - library_functional_genomics.tsv : functional genomics library for CNV correction
-      - dbsnp_146.hg38.biallelic_snps.tsv  : biallelic snp positions and alleles. Generated with `bcftools query -i 'TYPE=="SNP" & N_ALT==1' -f '%CHROM\t%POS\t%REF\t%ALT'`.
     - genome_config.json: json config file for cellranger-atac or cellranger-arc  
     - genome.ploidy_model.tar.gz: tar gzipped directory containing the ploidy model files
     - genome.ploidy_calls.tar.gz: tar gzipped directory containing the ploidy call files
