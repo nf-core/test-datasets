@@ -613,7 +613,7 @@ chmod +x rename_files.sh
 ./rename_files.sh
 ```
 
-After the files have been renamed, gather the filenames in a text file. You will need those in otder to run the `kmcp compute`
+After the files have been renamed, gather the filenames in a text file. You will need those in order to run the `kmcp compute`
 
 ```bash
 ls *.fna > list.txt
