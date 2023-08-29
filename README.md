@@ -214,11 +214,17 @@ ganon build-custom --threads 4 --input *.fa --db-prefix test-db-ganon --verbose 
 #### kmcp
 
 kmcp version 0.9.1
-The [file](https://github.com/nf-core/test-datasets/blob/modules/data/genomics/sarscov2/genome/genome.fasta) has been used to build the minimum test dataset for kmcp and renamed to match the seqid2taxid.map file.
 
 ```bash
-kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-n10-l150 NC_045512.2.fasta
-kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp
+mkdir gtdb-genomes
+
+## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder gtdb-genomes.
+
+## Rename the file for Penicillium roqueforti to match the seqid2taxid.map file
+mv GCF_015533775.1_ASM1553377v1_genomic.fna.gz NW_024067565.1.fna.gz 
+
+kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-n10-l150 -I gtdb-genomes
+kmcp index -f 0.3 -n 1 -j 32 -I tmp-k21-n10-l150 -O gtdb.kmcp 
 ```
 
 
