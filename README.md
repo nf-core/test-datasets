@@ -1,16 +1,23 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `radseq`
 
-## Introduction
+This branch contains test data for [nf-core/radseq](blah) pipeline
 
-nf-core is a collection of high quality Nextflow pipelines.
+## Content of this repository
 
-## Documentation
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+`testdata/PRJNA386062`: ezRAD sequences from...
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+### For Reference Based Approach Or Denovo
+
+#### Simulated Horseshoe Crab Data
+
+`testdata/Lpolyphemus/ddrad_sbfi_mluci_chr26/hsc_Chr26.fasta` chromosome 26 of Atlantic Horseshoe Crab
+
+`testdata/Lpolyphemus/ddrad_sbfi_mluci_chr26/msp_[0..9].{1,2}.fq.gz` simulated ddRAD reads
+
+`testdata/Lpolyphemus/ddrad_sbfi_mluci_chr26/popmap.txt` id and corresponding population
+
+`samplesheet/samplesheet_test_lpolyphemus_ddrad_sbfi_mluci_chr26.csv` input sample sheet for this dataset
 
 ## Support
 
-For further information or help, don't hesitate to get in touch on our [Gitter channel](https://gitter.im/nf-core/Lobby)
+For further information or help, don't hesitate to get in touch on our [Slack `#radseq` channel](https://nfcore.slack.com/channels/radseq) (you can join with [this invite](https://nf-co.re/join/slack)).

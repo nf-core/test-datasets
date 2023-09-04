@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2,umi_barcodes
+msp_00,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_00.1.fq.gz,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_00.2.fq.gz,false
+msp_01,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_01.1.fq.gz,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_01.2.fq.gz,false
+msp_02,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_02.1.fq.gz,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_02.2.fq.gz,false
+msp_03,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_03.1.fq.gz,https://raw.githubusercontent.com/Gabriel-A-Barrett/test-datasets/radseq/testdata/Lpolyphemus/ddrad_sbfi_mluci/msp_03.2.fq.gz,false
