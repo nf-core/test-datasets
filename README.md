@@ -1,4 +1,37 @@
+# test-datasets: rangeland
+
+This branch contains test data to be used for automated testing with the nf-core/rangeland pipeline.
+
+## Data description
+
+The dataset comprises a collection of Landsat data
+derived based on the [Landsat Collection 2](https://www.usgs.gov/landsat-missions/landsat-collection-2) scenes native to the 181036 Landsat tile and acquired
+between 01-01-1987 and 31-12-1989. This data is located at `Landsat_collection2/`.
+
+Additionally, the dataset contains the followind data:
+
+- `dem/`: digital elevation model derived from [copernicus](https://www.copernicus.eu/en)
+- `endmember/`: endmember definition, obtained by [Hostert et al.](<https://doi.org/10.1016/S0034-4257(03)00145-7>)
+- `wvp/`: water vapor database obtained [here](https://zenodo.org/record/4468701)
+- `vector/`: vector data representing the targeted area
+- `datacube/`: datacube definition
+- `reference/` reference data for pipeline results
+
+The data included in this repository conforms with the naming conventions of their respective products.
+However, the spatial extend of each dataset is only a spatial subset of the original scene.
+As such, the datasets in question should not be treated as 'real data' and _must not_
+be used for research activities going beyond workflow testing.
+
+The authors of this dataset accepts no responsibility for errors or omissions in this work
+and shall not be liable for any damage caused by these.
+
+## Funding Information
+
+This dataset was developed as a part of research activity supported by  
+the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – Project-ID 414984028 – SFB 1404 FONDA.
+
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+
 Test data to be used for automated testing with the nf-core pipelines
 
 > ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
@@ -13,8 +46,8 @@ The principle for nf-core test data is as small as possible, as large as necessa
 
 nf-core/test-datasets comes with documentation in the `docs/` directory:
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
+2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
 ## Downloading test data
 
