@@ -1,0 +1,7 @@
+sample,design,panel,panel_file,fastq_1,fastq_2
+Uropod_CD54_fixed_MCP1_stimulated,D21,human-sc-immunology-spatial-proteomics,,Uropod_CD54_fixed_MCP1_stimulated_R1_001.fastq.gz,Uropod_CD54_fixed_MCP1_stimulated_R2_001.fastq.gz
+Uropod_CD54_fixed,D21,human-sc-immunology-spatial-proteomics,,Uropod_CD54_fixed_R1_001.fastq.gz,Uropod_CD54_fixed_R2_001.fastq.gz
+Uropod_CD54_fixed_RANTES_stimulated,D21,human-sc-immunology-spatial-proteomics,,Uropod_CD54_fixed_RANTES_stimulated_R1_001.fastq.gz,Uropod_CD54_fixed_RANTES_stimulated_R2_001.fastq.gz
+Uropod_control_MCP1_stimulated,D21,human-sc-immunology-spatial-proteomics,,Uropod_control_MCP1_stimulated_R1_001.fastq.gz,Uropod_control_MCP1_stimulated_R2_001.fastq.gz
+Uropod_control,D21,human-sc-immunology-spatial-proteomics,,Uropod_control_R1_001.fastq.gz,Uropod_control_R2_001.fastq.gz
+Uropod_control_RANTES_stimulated,D21,human-sc-immunology-spatial-proteomics,,Uropod_control_RANTES_stimulated_R1_001.fastq.gz,Uropod_control_RANTES_stimulated_R2_001.fastq.gz
