@@ -1,38 +1,40 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `scnanoseq`
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+<!---
+TODO: add link to scnanoseq pipeline when ready
+-->
+This branch contains test data to be used for automated testing with the nf-core/scnanoseq pipeline.
 
-## Introduction
+## Content of this repository
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+`reference/`: Sub-sampled genome reference files
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+`testdata/*.fastq.gz`: Minimal single-end gridion test dataset
 
-## Documentation
+`samplesheet/samplesheet_test.csv`: samplesheet file for minimal test dataset
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+## Minimal test dataset origin
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+*H. sapiens* single-end gridion single-cell transciptome data was obtained from:
+>You, Y., Prawer, Y.D.J., De Paoli-Iseppi, R. et al. Identification of cell barcodes from long-read single-cell RNA-seq with BLAZE. Genome Biol 24, 66 (2023). https://doi.org/10.1186/s13059-023-02907-y
 
-## Downloading test data
+### Sampling information
+| run_accession | experiment_alias | read_count | sample_title   |
+|---------------|------------------|------------|----------------|
+| ERR9958133    | ERX9501002       | 3423062    | Q20 Gridion    |
+| ERR9958134    | ERX9501002       | 7521667    | LSK110 Gridion |
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+### Sampling procedure
 
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+Fastq files were subsetted to about 5000 reads using the below commands.
+```
+seqtk sample -s123 ERR9958133.fastq 5000 > ERR9958133_sub.fastq
+seqtk sample -s123 ERR9958134.fastq 5000 > ERR9958134_sub.fastq
+
+gzip ERR9958133_sub.fastq
+gzip ERR9958133_sub.fastq
 ```
 
-To subsequently clone other branches[^1]
+### Reference procedure
 
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+The test data in this repository is derived from *H. sapiens* data. Due to size of the reference files needed for this pipeline (fasta and gtf), they are beyond the scope of what is needed for testing these pipelines and bears unnecessary overhead for storage. To alleviate this burden, the reference files (which are GENCODE GRCh38 v40) have been filtered down to only contain information from chromosome 21.
