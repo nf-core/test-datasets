@@ -1,0 +1,9 @@
+contig_id	contig_length	provirus	proviral_length	gene_count	viral_genes	host_genes	checkv_quality	miuvig_quality	completeness	completeness_method	contamination	kmer_freq	warnings
+k141_1	4610	No	NA	4	0	3	Not-determined	Genome-fragment	NA	NA	0.0	1.0	Should pass (length)
+k141_2	788	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	1.0	Should not pass
+k141_44	2152	No	NA	44	1	29	Low-quality	Genome-fragment	50.92	HMM-based (lower-bound)	0.0	1.0	Should pass (completeness)
+k141_136	5589	No	NA	4	0	4	Low-quality	Genome-fragment	3.01	AAI-based (medium-confidence)	0.0	1.0	contig >1.5x longer than expected genome length; should not pass (warning)
+k141_270	4000	No	NA	1	0	1	Not-determined	Genome-fragment	NA	NA	0.0	2.0	Should not pass (kmer)
+k141_186|provirus_2_6000	5744	Yes	4367	7	2	3	Low-quality	Genome-fragment	5.65	HMM-based (lower-bound)	23.97	1.0	Provirus should pass (length)
+k141_86	9446	Yes	2257	11	3	4	Low-quality	Genome-fragment	50.07	AAI-based (high-confidence)	65.52	1.0	Provirus should pass (completeness)
+k141_147	1964	Yes	796	3	1	1	Low-quality	Genome-fragment	0.37	HMM-based (lower-bound)	59.47	1.0	Provirus should not pass
