@@ -1,0 +1,2 @@
+ID	R1	R2	LongFastQ	Fast5	GenomeSize
+TestMe	NA	NA	https://github.com/nf-core/test-datasets/raw/bacass/nanopore/subset350.fq.gz	NA	2.8m
