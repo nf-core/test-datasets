@@ -1,38 +1,35 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: rangeland
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+This branch contains test data to be used for automated testing with the nf-core/rangeland pipeline.
 
-## Introduction
+## Data description
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+The dataset comprises a collection of Landsat data
+derived based on the [Landsat Collection 2](https://www.usgs.gov/landsat-missions/landsat-collection-2) scenes native to the 181036 Landsat tile and acquired
+between 01-01-1987 and 31-12-1989.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+Many remote sensing workflows rely on information encoded in the file structure. This workflow is no exception and thus, three tar archives are provided in this repository. These archives contains files that are strictly organized to follow the pipelines requirements. The archives are located at:
 
-## Documentation
+- `Landsat_collection2/Landsat_data.tar.gz`: Landsat collection 2 imagery.
+- `dem/dem.tar.gz`: digital elevation model derived from [copernicus](https://www.copernicus.eu/en).
+- `wvp/wvdb.tar.gz`: water vapor database obtained [here](https://zenodo.org/record/4468701).
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+Additionally, the dataset contains the following data:
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+- `endmember/`: endmember definition, obtained by [Hostert et al.](<https://doi.org/10.1016/S0034-4257(03)00145-7>).
+- `vector/`: vector data representing the area of interest.
+- `datacube/`: datacube definition.
+- `reference/` reference data for pipeline results.
 
-## Downloading test data
+The data included in this repository conforms with the naming conventions of their respective products.
+However, the spatial extend of each dataset is only a spatial subset of the original scene.
+As such, the datasets in question should not be treated as 'real data' and _must not_
+be used for research activities going beyond workflow testing.
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+The authors of this dataset accepts no responsibility for errors or omissions in this work
+and shall not be liable for any damage caused by these.
 
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
+## Funding Information
 
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+This dataset was developed as a part of research activity supported by  
+the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – Project-ID 414984028 – SFB 1404 FONDA.
