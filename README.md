@@ -8,11 +8,11 @@ The dataset comprises a collection of Landsat data
 derived based on the [Landsat Collection 2](https://www.usgs.gov/landsat-missions/landsat-collection-2) scenes native to the 181036 Landsat tile and acquired
 between 01-01-1987 and 31-12-1989.
 
-Many remote sensing tools rely on information encoded in the file structure. This workflow is no exception and thus, we provide the `landsat_dem_wvp.tar.gz` archive. This archive contains:
+Many remote sensing workflows rely on information encoded in the file structure. This workflow is no exception and thus, three tar archives are provided in this repository. These archives contains files that are strictly organized to follow the pipelines requirements. The archives are located at:
 
-- `Landsat_collection2/`: Landsat collection 2 imagery.
-- `dem/`: digital elevation model derived from [copernicus](https://www.copernicus.eu/en).
-- `wvp/`: water vapor database obtained [here](https://zenodo.org/record/4468701).
+- `Landsat_collection2/Landsat_data.tar.gz`: Landsat collection 2 imagery.
+- `dem/dem.tar.gz`: digital elevation model derived from [copernicus](https://www.copernicus.eu/en).
+- `wvp/wvdb.tar.gz`: water vapor database obtained [here](https://zenodo.org/record/4468701).
 
 Additionally, the dataset contains the following data:
 
