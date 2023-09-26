@@ -1,0 +1,6 @@
+sampleID	forwardReads	reverseReads
+sampleID_1a	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/1a_S103_L001_R1_001.fastq.gz	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/1a_S103_L001_R2_001.fastq.gz
+sampleID_1a_failed	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/1a_S103_L001_R1_001.failed.fastq.gz	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/1a_S103_L001_R2_001.failed.fastq.gz
+sampleID_1	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/1_S103_L001_R1_001.fastq.gz	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/1_S103_L001_R2_001.fastq.gz
+sampleID_2a	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/2a_S115_L001_R1_001.fastq.gz	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/2a_S115_L001_R2_001.fastq.gz
+sampleID_2	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/2_S115_L001_R1_001.fastq.gz	/Users/sminot/Documents/GitHub/nfcore-test-datasets/testdata/2_S115_L001_R2_001.fastq.gz
