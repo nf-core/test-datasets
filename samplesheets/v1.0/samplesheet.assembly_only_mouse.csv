@@ -1,0 +1,3 @@
+condition,type,microbiome_path,alleles,weights_path
+cond_1,assembly,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contigs.fa.gz,H2-Db,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contig_weights.cond_1.tsv
+cond_2,assembly,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contigs.fa.gz,H2-Db H2-Ld,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contig_weights.cond_2.tsv
