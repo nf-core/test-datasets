@@ -1,0 +1,5 @@
+condition,type,microbiome_path,alleles,weights_path
+assembly_cond_1,assembly,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contigs.fa.gz,A*01:01 B*07:02,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contig_weights.cond_1.tsv
+assembly_cond_2,assembly,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contigs.fa.gz,A*01:01 B*07:02,https://github.com/nf-core/test-datasets/raw/metapep/testdata/assembly.contig_weights.cond_2.tsv
+bin_cond_1,bins,https://github.com/nf-core/test-datasets/raw/metapep/testdata/bins.tar.gz,A*01:01,https://github.com/nf-core/test-datasets/raw/metapep/testdata/bin_weights.cond_1.tsv
+bin_cond_2,bins,https://github.com/nf-core/test-datasets/raw/metapep/testdata/bins.tar.gz,A*01:01,https://github.com/nf-core/test-datasets/raw/metapep/testdata/bin_weights.cond_2.tsv

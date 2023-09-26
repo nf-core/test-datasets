@@ -1,3 +1,0 @@
-condition,type,microbiome_path,alleles,weights_path
-C_G0_T0,assembly,https://github.com/nf-core/test-datasets/raw/metapep/testdata/fullsize_CAMISIM_SPAdes.G0_T0.top300000.fasta.gz,H2-Kb H2-Db,https://github.com/nf-core/test-datasets/raw/metapep/testdata/fullsize_CAMISIM_SPAdes.G0_T0_depths.top300000.tsv
-C_G0_T1,assembly,https://github.com/nf-core/test-datasets/raw/metapep/testdata/fullsize_CAMISIM_SPAdes.G0_T1.top300000.fasta.gz,H2-Kb H2-Db,https://github.com/nf-core/test-datasets/raw/metapep/testdata/fullsize_CAMISIM_SPAdes.G0_T1_depths.top300000.tsv

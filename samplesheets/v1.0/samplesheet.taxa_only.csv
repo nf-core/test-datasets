@@ -1,0 +1,3 @@
+condition,type,microbiome_path,alleles,weights_path
+cond_1,taxa,https://github.com/nf-core/test-datasets/raw/metapep/testdata/taxids.cond1.tsv,A*01:01,
+cond_2,taxa,https://github.com/nf-core/test-datasets/raw/metapep/testdata/taxids.cond2.tsv,A*01:01 B*07:02,
