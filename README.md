@@ -106,6 +106,15 @@ zcat test.22Jul22.46e.vcf.gz | cut -f1-9,191-200 | gzip > target.22Jul22.46e.vcf
 wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip
 ```
 
+### For Stitch
+
+The only additional file generated for this tool is the posfile, generated using bcftools from files already present in the modules branch. The resulting test file has been also put in the modules branch.
+```
+wget https://github.com/nf-core/test-datasets/raw/modules/data/genomics/homo_sapiens/genome/vcf/dbsnp_146.hg38.vcf.gz
+
+bcftools query -i 'TYPE=="SNP" & N_ALT==1' -f '%CHROM\t%POS\t%REF\t%ALT' > dbsnp_146.hg38.biallelic_snps.tsv
+```
+
 ## Files size
 To get the size of all the files inside the git repository use the following command
 ```
