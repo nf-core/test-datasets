@@ -38,9 +38,13 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
 
 ## How data has been acquired
+
 ### For GLIMPSE
+
 #### Initial data
+
 For CHR 21
+
 ```
 wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr21.filtered.shapeit2-duohmm-phased.vcf.gz -O data/panel/panel_2020-08-05_chr21.phased.vcf.gz
 wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr21.filtered.shapeit2-duohmm-phased.vcf.gz.tbi -O data/panel/panel_2020-08-05_chr21.phased.vcf.gz.tbi
@@ -48,6 +52,7 @@ wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr21.fa.gz -
 ```
 
 For CHR 22
+
 ```
 wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr22.filtered.shapeit2-duohmm-phased.vcf.gz -O data/panel/panel_2020-08-05_chr22.phased.vcf.gz
 wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr22.filtered.shapeit2-duohmm-phased.vcf.gz.tbi -O data/panel/panel_2020-08-05_chr22.phased.vcf.gz.tbi
@@ -55,47 +60,61 @@ wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz -
 ```
 
 Individual data, beware can be long to download
+
 ```
 wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram -O data/NA12878/NA12878.final.cram
 wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram.crai -O data/NA12878/NA12878.final.cram.crai
 ```
 
 SNP array value
+
 ```
 wget -c https://api.gdc.cancer.gov/data/9bd7cbce-80f9-449e-8007-ddc9b1e89dfb data/affi/snp6.txt.gz
 gunzip data/affi/snp6.txt.gz
 ```
+
 #### Environment
+
 To use the different script below you need bcftools, samtools and tabix.
 You can install everything with conda by using the following commands:
+
 ```
 conda env create --name env_tools --file environment.yml
 conda activate env_tools
 ```
+
 #### Preparation of the different panel files
+
 1) Filter the region of interest of the panel file
 2) Filter the region of interest of the validation file gnomAD
 3) Normalise the panel and filter out related individual to NA12878
 4) Select only the SNPS
 5) Convert to TSV
+
 ```
 . get_panel_s.sh
 ```
 
 #### Preparation and downsampling of the individual file validation and test file
+
 1) Filter out the region of interest and format to BAM
 2) Get the genotype likelihood based on the panel for the validation file
 3) Downsampling the individual data to 1X
+
 ```
 . get_ind_1x
 ```
 
 #### Compute the genotype likelihood for the individual data 
+
 1) Compute genotype likelihood based on the panel
+
 ```
 . get_ind_gl.sh
 ```
+
 ### For Beagle
+
 ```
 wget http://faculty.washington.edu/browning/beagle/test.22Jul22.46e.vcf.gz
 
@@ -116,7 +135,8 @@ bcftools query -i 'TYPE=="SNP" & N_ALT==1' -f '%CHROM\t%POS\t%REF\t%ALT' > dbsnp
 ```
 
 ## Files size
+
 To get the size of all the files inside the git repository use the following command
 ```
-git ls-files | xargs -r du -h | sort
+git ls-files | xargs -r du -h | sort -h
 ```
