@@ -540,6 +540,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - 'MaxQuant_contrasts.csv': Contrast file for the MaxQuant test dataset.
   - 'MaxQuant_proteinGroups.txt': MaxQuant proteinGroups file containing intensity values for different protein groups.
   - 'MaxQuant_samplesheet.tsv': Samplesheet for the MaxQuant test dataset.
+  - 'proteus.raw_MaxQuant_proteingroups_tab.tsv': Abundance matrix produced from this dataset with the Proteus R package.
 
 - Bos_taurus
   - idxml:
