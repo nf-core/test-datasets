@@ -22,16 +22,16 @@ To test some downstream modules, the proteus R package was used to read the prot
 
 '''
 library(proteus)
-sample.sheet <- read.table("MaxQuant_samplesheet.tsv", header=T, sep="\t")
+sample.sheet <- read.table("MaxQuant_samplesheet.tsv", header=T, sep="\t") # https://github.com/nf-core/test-datasets/raw/modules/data/proteomics/maxquant/MaxQuant_samplesheet.tsv
 sample.sheet$sample <- sample.sheet[["Experiment"]]
 sample.sheet$condition <- sample.sheet[["Celltype"]]
 measure.cols <- setNames(paste0("LFQ intensity ", sample.sheet[["Experiment"]]), sample.sheet[["Experiment"]])
-proteinGroups <- readProteinGroups(file="MaxQuant_proteinGroups.txt", meta=sample.sheet, measure.cols=measure.cols, data.cols=proteus::proteinColumns)
+proteinGroups <- readProteinGroups(file="MaxQuant_proteinGroups.txt", meta=sample.sheet, measure.cols=measure.cols, data.cols=proteus::proteinColumns) # https://github.com/nf-core/test-datasets/raw/modules/data/proteomics/maxquant/MaxQuant_proteinGroups.txt
 proteinGroups$tab <- round(log2(proteinGroups$tab), digits=3)
 out_df <- data.frame(proteinGroups$tab, check.names = FALSE)
 out_df[["Majority protein IDs"]] <- rownames(proteinGroups$tab)
 out_df <- out_df[c("Majority protein IDs", colnames(out_df)[colnames(out_df) != "Majority protein IDs"])]
-write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.names = FALSE, sep = '\t', quote = FALSE)
+write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.names = FALSE, sep = '\t', quote = FALSE) # https://github.com/nf-core/test-datasets/raw/modules/data/proteomics/maxquant/proteus.raw_MaxQuant_proteingroups_tab.tsv
 '''
 
 ## msspectra
