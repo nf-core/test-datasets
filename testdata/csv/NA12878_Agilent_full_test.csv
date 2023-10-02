@@ -1,0 +1,3 @@
+patient,status,sample,lane,fastq_1,fastq_2
+NA12878_200M,0,NA12878_200M,1,https://zenodo.org/record/6513789/files/A006850052_NA12878_200M_R1.fq.gz,https://zenodo.org/record/6513789/files/A006850052_NA12878_200M_R2.fq.gz
+NA12878_75M,0,NA12878_75M,1,https://zenodo.org/record/6513789/files/A006850052_NA12878_75M_R1.fq.gz,https://zenodo.org/record/6513789/files/A006850052_NA12878_75M_R2.fq.gz
