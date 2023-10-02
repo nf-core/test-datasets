@@ -1,0 +1,2 @@
+sample,group,fastq_1,fastq_2,fasta
+test1,test,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fastq/test1_1.fastq.gz,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fastq/test1_2.fastq.gz,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fasta/test1.contigs.fa.gz
