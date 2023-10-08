@@ -1,0 +1,6 @@
+sample,level,type,msfile
+test1,MS1,normal,https://raw.githubusercontent.com/nf-core/test-datasets/metaboigniter/mzML_POS_Quant/X2_Rep1.mzML
+test2,MS1,normal,https://raw.githubusercontent.com/nf-core/test-datasets/metaboigniter/mzML_POS_Quant/X3_Rep1.mzML
+test3,MS1,normal,https://raw.githubusercontent.com/nf-core/test-datasets/metaboigniter/mzML_POS_Quant/X6_Rep1.mzML
+ID1,MS2,normal,https://raw.githubusercontent.com/nf-core/test-datasets/metaboigniter/mzML_POS_ID/Pilot_MS_Control_2_peakpicked.mzML
+ID2,MS2,normal,https://raw.githubusercontent.com/nf-core/test-datasets/metaboigniter/mzML_POS_ID/Pilot_MS_Pool_2_peakpicked.mzML
