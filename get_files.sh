@@ -26,6 +26,8 @@ git checkout origin/modules -- data/genomics/homo_sapiens/genome/vcf/gnomAD.r2.1
 git checkout origin/modules -- data/genomics/homo_sapiens/genome/chr21/germlineresources/mills_and_1000G.indels.hg38.vcf.gz
 #  params.test_data['homo_sapiens']['genome']['mills_and_1000g_indels_vcf_gz']
 git checkout origin/modules -- data/genomics/homo_sapiens/genome/vcf/mills_and_1000G.indels.vcf.gz
+#  params.test_data['homo_sapiens']['genome']['ngscheckmate_bed']
+git checkout origin/modules -- data/genomics/homo_sapiens/genome/chr21/germlineresources/SNP_GRCh38_hg38_wChr.bed
 
 # TEST DATA
 
