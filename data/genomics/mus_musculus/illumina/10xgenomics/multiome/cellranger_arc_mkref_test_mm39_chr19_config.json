@@ -1,0 +1,6 @@
+{
+    organism: "mm39"
+    genome: ["GRCm39"]
+    input_fasta: ["chr19.fa"]
+    input_gtf: ["chr19.gtf.gz"]
+}

@@ -65,6 +65,8 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
 
 4. justhusky_minimal.vcf.gz and associated files justhusky_minimal.vcf.gz.tbi and justhusky.ped is a subsampled minimal example vcf/ped combination made for testing family-related modules. justhusky_minimal.vcf.gz.tbi was generated with tabix.
 
+5. `vcf/chr21/simulated_sv.vcf.gz` and `vcf/chr21/simulated2_sv.vcf.gz` are simulated with `SURVIVOR simSV ../../../genome/chr21/genomes.fasta parameters.txt 0 0 $FILE_PREFIX`. The parameters file was created with `SURVIVOR simSV parameters.txt` and adjusted to create 15 duplications, 5 indels, 26 inversions, 20 inversion deletions and 15 inversion duplications. The headers were adjusted to be compatible with most tools (added a samplename and some missing fields), sorted with `bcftools`, bgzipped with `bgzip` and indexed with `tabix`.
+
 ### Fasta
 
 As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes/chr22.fasta` was used.
@@ -296,6 +298,10 @@ and the file:
 /test_genomicsdb/chr22$1$40001/genomicsdb_meta_dir/genomicsdb_meta_2b25a6c2-cb94-4a4a-9005-acb7c595d322.json change with each run, but the contents of the file and directory will remain the same. Rename them to the above values to keep tests passing.
 
 This advice also applies to test_pon_genomicsdb, which is generated using the vcf files in pon_mutect2_calls directory.
+
+#### Varlocripator
+
+Example scenario was retrieved from the [manual](https://varlociraptor.github.io/docs/calling/).
 
 ### 10X genomics scRNA-seq data
 
