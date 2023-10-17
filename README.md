@@ -1,38 +1,23 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+# test-datasets: `sammyseq`
 
-## Introduction
+This branch contains data to be used for automated testing with the [nf-core/sammyseq](https://github.com/daisymut/sammyseq) pipeline.
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+## Content of this repository
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+`testdata/CTRL004_S*_chr22only.fq.gz`: Human fibroblast single-end test data for pipeline sub-sampled to map on part of chr22.
 
-## Documentation
+## Minimal test dataset origin
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+_H. sapiens_ fibroblast, 50bp single-end 3-fraction SAMMY-seq sequences was obtained from:
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+> Sebestyén, E., Marullo, F., Lucini, F. et al. SAMMY-seq reveals early alteration of heterochromatin and deregulation of bivalent genes in Hutchinson-Gilford Progeria Syndrome. Nat Commun 11, 6274 (2020). https://doi.org/10.1038/s41467-020-20048-9. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/33293552/) [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE118633)
 
-## Downloading test data
+### Sampling information
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+| GEO_sample | run_accession | read_count | SRA_experiment | sample_title         |
+| ---------- | ------------- | ---------- | -------------- | -------------------- |
+| GSM3335763 | SRR7610706    | 78683296   | SRX4475555     | CTRL004 SAMMY-seq S2 |
+| GSM3335764 | SRR7610707    | 60438514   | SRX4475554     | CTRL004 SAMMY-seq S3 |
+| GSM3335765 | SRR7610708    | 54864540   | SRX4475553     | CTRL004 SAMMY-seq S4 |
