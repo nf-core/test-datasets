@@ -2,7 +2,8 @@ Test data to be used for automated testing with the nf-core pipelines
 
 
 ## Introduction
-The folder contain three test data files for the module, est-sfs:
+The folder contain three test data files for the module, est-sfs
+
 1). config-JC.txt : This file consists of three lines of text in the following order:
 n_outgroup [1, 2, or 3]
 model [0, 1 or 2]
