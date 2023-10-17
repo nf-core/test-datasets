@@ -6,7 +6,7 @@ This branch contains data to be used for automated testing with the [nf-core/sam
 
 ## Content of this repository
 
-`testdata/CTRL004_S*_chr22only.fq.gz`: Human fibroblast single-end test data for pipeline sub-sampled to map on chr22 only
+`testdata/CTRL004_S*_chr22only.fq.gz`: Human fibroblast single-end test data for pipeline sub-sampled to map on part of chr22.
 
 ## Minimal test dataset origin
 
