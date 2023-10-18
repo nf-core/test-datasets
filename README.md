@@ -36,3 +36,19 @@ git fetch
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+
+## nf-core/readsimulator test data
+- `samplesheet/`
+    - `test_samplesheet.csv`: Sample sheet for nf-core/readsimulator test profiles
+
+- `testdata/`
+    - `GCF_024334085.1_ASM2433408v1_genomic.fna.gz`: Fasta file to be used with test_target_capture profile. 
+        Downloaded from NCBI with:
+        ```bash 
+        curl -OJX GET "https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/accession/GCF_024334085.1/download?include_annotation_type=GENOME_FASTA&filename=GCF_024334085.1.zip" -H "Accept: application/zip"
+        ```
+        Downsampled with:
+        ```bash
+        head GCF_024334085.1_ASM2433408v1_genomic.fna -n 900 > GCF_024334085.1_ASM2433408v1_genomic.fna
+        gzip GCF_024334085.1_ASM2433408v1_genomic.fna
+        ```
