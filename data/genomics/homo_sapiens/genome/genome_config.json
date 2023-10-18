@@ -1,0 +1,7 @@
+{
+    organism: "homo_sapiens"
+    genome: ["cellrangeratac_reference"]
+    input_fasta: ["genome.fasta"]
+    input_gtf: ["genome.gtf"]
+    input_motifs: "genome_motifs.txt"
+}
