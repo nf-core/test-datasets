@@ -84,17 +84,20 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - genome
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     - 'genome.fasta.gz': bgzipped version of 'genome.fasta'
+    - 'genome.fasta.fai': fasta index for 'genome.fasta'
     - 'genome.fasta.txt.gz': gzipped version of 'genome.fasta' in tabular text format
     - 'genome.fasta.txt.zst': zstd-compressed version of 'genome.fasta' in tabular text format
     - 'genome.dict': GATK dict for 'genome.fasta'
-    - 'genome_strtablefile.zip': An StrTableFile zip folder for 'genome.fasta'
-    - 'genome.fasta.fai': fasta index for 'genome.fasta'
-    - 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
-    - 'transcriptome.paf': PAF file for MT192765.1 genome
-    - 'genome.gtf': GTF for MT192765.1 genome
     - 'genome.gff3': GFF for MT192765.1 genome
     - 'genome.gff3.gz': bgzipped-version
+    - 'genome.gtf': GTF for MT192765.1 genome
+    - 'genome.paf': genome PAF for MT192765.1 genome
     - 'genome.sizes': genome size for the MT192765.1 genome
+    - 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
+    - 'transcriptome.paf': transcriptome PAF file for MT192765.1 genome
+    - 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
+    - 'proteome.fasta': 12 proteins from the ASM985889v3 assembly of the MN908947.3 reference genome
+    - 'proteome.fasta.gz': gzipped version of 'proteome.fasta'
     - graphtyper: files for testing graphtyper‚
       - regions.txt: chromosome names and positions for MT192765.1 genome
     - PRG_test: zipped directory to build a test Population Reference Graph‚
@@ -199,6 +202,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test_scATAC_S1_L001_R\{1,3\}_001.fastq.gz: Read 1 and 2 of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R2_001.fastq.gz: Dual index i5 read (16 bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
   - genome
+    - 'genome_strtablefile.zip': An StrTableFile zip folder for 'genome.fasta'
     - BUSCO
       - 'chr22_odb10.tar.gz': BUSCO database 'primates_odb10.2021-02-19.tar.gz' purged of entries not matching 'genome.fasta'.
     - chr1: directory for reference files using chr1 rather than 22, used for cellranger-atac
