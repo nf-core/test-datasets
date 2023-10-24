@@ -95,7 +95,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'genome.sizes': genome size for the MT192765.1 genome
     - 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
     - 'transcriptome.paf': transcriptome PAF file for MT192765.1 genome
-    - 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
     - 'proteome.fasta': 12 proteins from the ASM985889v3 assembly of the MN908947.3 reference genome
     - 'proteome.fasta.gz': gzipped version of 'proteome.fasta'
     - graphtyper: files for testing graphtyper‚
