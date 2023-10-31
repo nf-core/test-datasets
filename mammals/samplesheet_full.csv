@@ -1,4 +1,3 @@
 sample,fastq_1,fastq_2,barcode_details
-midbrain_rep3,https://sra-testdata.s3.amazonaws.com/SRR23262566/midbrain_rep3_R1.fastq.gz,,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/barcode_details.json
-hindbrain_rep3,https://sra-testdata.s3.amazonaws.com/SRR23262567/hindbrain_rep3_R1.fastq.gz,,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/barcode_details.json
-cortex_rep3,https://sra-testdata.s3.amazonaws.com/SRR23262568/cortex_rep3_R1.fastq.gz,,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/barcode_details.json
+midbrain_rep3,s3://sra-testdata/SRR23262566/midbrain_rep3_R1.fastq.gz,,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/barcode_details.json
+hindbrain_rep3,s3://sra-testdata/SRR23262567/hindbrain_rep3_R1.fastq.gz,,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/mammals/barcode_details.json
