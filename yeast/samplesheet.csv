@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,barcode_details
+run_6177,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/yeast/run_6177_sample_R1.fastq.gz,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/yeast/run_6177_sample_R2.fastq.gz,https://raw.githubusercontent.com/cmatKhan/test-datasets/callingcards/yeast/run_6177_barcode_details.json
