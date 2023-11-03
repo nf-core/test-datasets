@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2
+ERR978612,s3://ngi-igenomes/test-data/metatdenovo/ERR978612_1.fastq.gz,s3://ngi-igenomes/test-data/metatdenovo/ERR978612_2.fastq.gz
+ERR978614,s3://ngi-igenomes/test-data/metatdenovo/ERR978614_1.fastq.gz,s3://ngi-igenomes/test-data/metatdenovo/ERR978614_2.fastq.gz
+ERR978615,s3://ngi-igenomes/test-data/metatdenovo/ERR978615_1.fastq.gz,s3://ngi-igenomes/test-data/metatdenovo/ERR978615_2.fastq.gz
+ERR978616,s3://ngi-igenomes/test-data/metatdenovo/ERR978616_1.fastq.gz,s3://ngi-igenomes/test-data/metatdenovo/ERR978616_2.fastq.gz
