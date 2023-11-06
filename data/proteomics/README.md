@@ -7,6 +7,7 @@
 - [maxquant](#maxquant)
 - [msspectra](#msspectra)
 - [parameter](#parameter)
+- [pdb](#pdb)
 
 ## bos_taurus
 
@@ -37,3 +38,8 @@ write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.nam
 ## msspectra
 
 ## parameter
+
+## pdb
+
+The pdb folder contains protein structure files in .PDB format. Files 1tim.pdb and 8tim.pdb are part of the example datasets used in the foldseek tool (https://github.com/steineggerlab/foldseek).
+They describe chicken muscle proteins (engineered and breast respectively) and their structures were determined through X-ray diffraction.
