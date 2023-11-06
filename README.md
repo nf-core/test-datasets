@@ -534,16 +534,13 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 ### proteomics
 
 - msspectra
-
   - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
   - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
 
 - database
-
   - 'yeast_UPS.fasta': FASTA database for Yeast organism.
 
 - maxquant
-
   - 'MaxQuant_contrasts.csv': Contrast file for the MaxQuant test dataset.
   - 'MaxQuant_proteinGroups.txt': MaxQuant proteinGroups file containing intensity values for different protein groups.
   - 'MaxQuant_samplesheet.tsv': Samplesheet for the MaxQuant test dataset.
@@ -554,6 +551,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
   - raw:
     - 'BSA_QC_file.raw': spectra file for Bovine (BSA) organism.
+   
+- pdb
+  - 1tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Engineered)
+  - 8tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Breast)
 
 ### spatialomics
 
