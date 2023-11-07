@@ -1,3 +1,3 @@
 Samples baseline treatment
-SRR8983579 1 0
-SRR8983580	1	1
+control 1 0
+treatment	1	1
