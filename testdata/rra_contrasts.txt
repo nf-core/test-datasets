@@ -1,2 +1,2 @@
 treatment;reference
-SRR8983579;SRR8983580
+control;treatment
