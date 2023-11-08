@@ -379,6 +379,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test{,2}.genome.vcf.gz: Bgzipped file based on `test{,2}.genome.vcf` file
       - test{,2}.genome.vcf.gz.tbi: Tbi index based on `test{,2}.genome.vcf.gz` file
       - test{,2}.genome.vcf.idx: Index feature file based on `test{,2}.genome.vcf` file
+    - interop_bcl2fastqstats:
+      - test_flowcell_stats.tar.gz: Minimal flowcell with Interop files and bcl2fastq statistics files (no bcl files)
     - mpileup:
       - test.mpileup.gz: Pileup file correspongind to `test_paired_end_recalibrated_sorted_bam` (normal) generate with `samtools mpileup`
       - test2.mpileup.gz: Pileup file correspongind to `test2_paired_end_recalibrated_sorted_bam` (tumor) generate with `samtools mpileup`
