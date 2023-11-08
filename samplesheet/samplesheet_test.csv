@@ -1,3 +1,3 @@
-sample,fastq_1,fastq_2
-ERR9958133,https://raw.githubusercontent.com/nf-core/test-datasets/scnanoseq/fastq/sub_ERR9958133.fastq.gz,
-ERR9958134,https://raw.githubusercontent.com/nf-core/test-datasets/scnanoseq/fastq/sub_ERR9958134.fastq.gz,
+sample,fastq,cell_count
+ERR9958133,https://raw.githubusercontent.com/nf-core/test-datasets/scnanoseq/fastq/sub_ERR9958133.fastq.gz,1000
+ERR9958134,https://raw.githubusercontent.com/nf-core/test-datasets/scnanoseq/fastq/sub_ERR9958134.fastq.gz,1000
