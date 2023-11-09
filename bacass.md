@@ -10,3 +10,9 @@ done
 
 mv downsampled/* .
 rm ERR044595_1.fastq.gz ERR044595_2.fastq.gz ERR064912_1.fastq.gz ERR064912_2.fastq.gz
+
+## DOWNLOAD Short and Long Read Sequences from VIM-1 producing *Klebsiella pneumoniae* (Availablea at: https://zenodo.org/records/10079186):
+
+wget -nd https://zenodo.org/records/10079186/files/A1403KPN.fq.gz
+wget -nd https://zenodo.org/records/10079186/files/A1403KPN_R1.fastq.gz
+wget -nd https://zenodo.org/records/10079186/files/A1403KPN_R2.fastq.gz

@@ -1,0 +1,2 @@
+ID	R1	R2	LongFastQ	Fast5	GenomeSize
+A1403KPN	https://github.com/nf-core/test-datasets/raw/bacass/A1403KPN_R1.fastq.gz	https://github.com/nf-core/test-datasets/raw/bacass/A1403KPN_R2.fastq.gz	https://github.com/nf-core/test-datasets/raw/bacass/nanopore/A1403KPN.fq.gz	NA	NA
