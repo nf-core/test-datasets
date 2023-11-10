@@ -5,26 +5,39 @@ Test data to be used for automated testing with the nf-core pipelines
 
 ## Introduction
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+This branch contains new test data and references for the 
+[nf-core/rnadnavar](https://github.com/nf-core/rnadnavar) 
+pipeline.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+## Content
 
-## Documentation
+>*Any content in this repo is to be used for testing 
+purposes only.*
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+- `data/tcrb` contains minified fastq files from the 
+  [Texas Cancer Research Biobank (TCRB)](http://stegg.hgsc.bcm.edu/open.html). We thank the TCRB and the 
+  Texas cancer patient who donated their samples to make 
+  open research truly accesible to everyone[^1]. By using 
+  this data you agree to not attempt to re-identify 
+  participants. The data is only to be used for testing purposes.
+- `reference/chr7_hg38` contains reference files for 
+  the analysis of a region in chromosome 7.
+- `resources/vep` contains files for vep cache. This 
+  cache has been modified to be as small as possible, 
+  thus shouldn't be used for actual annotation, only for 
+  testing purposes.
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
 ## Downloading test data
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+Due the large number of large files in the test-datasets 
+repository for each pipeline, we highly recommend cloning only the branches you would use.
 
 ```bash
 git clone <url> --single-branch --branch <pipeline/modules/branch_name>
 ```
 
-To subsequently clone other branches[^1]
+To subsequently clone other branches[^2]
 
 ```bash
 git remote set-branches --add origin [remote-branch]
@@ -33,6 +46,12 @@ git fetch
 
 ## Support
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+For further information or help, don't hesitate to get 
+in touch on our [Slack organisation](https://nf-co.
+re/join/slack) (a tool for instant messaging). There is 
+a dedicated channel to ask about #test-data and for 
+#rnadnavar
 
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+[^1]: See publication [here](https://www.nature.com/articles/sdata201610)
+[^2]: From [stackoverflow](https://stackoverflow.
+com/a/60846265/11502856)
