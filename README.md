@@ -47,11 +47,9 @@ git fetch
 ## Support
 
 For further information or help, don't hesitate to get 
-in touch on our [Slack organisation](https://nf-co.
-re/join/slack) (a tool for instant messaging). There is 
+in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging). There is 
 a dedicated channel to ask about #test-data and for 
 #rnadnavar
 
 [^1]: See publication [here](https://www.nature.com/articles/sdata201610)
-[^2]: From [stackoverflow](https://stackoverflow.
-com/a/60846265/11502856)
+[^2]: From [stackoverflow](https://stackoverflow. com/a/60846265/11502856)
