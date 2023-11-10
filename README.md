@@ -48,8 +48,8 @@ git fetch
 
 For further information or help, don't hesitate to get 
 in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging). There is 
-a dedicated channel to ask about #test-data and for 
-#rnadnavar
+a dedicated channel to ask about [#test-data](https://join.slack.com/share/enQtNjE3MDg2MDc3Mzc4Mi01MjBhNTdmYzYyNzEzZjExMGMxYTA1YWY4ZWVkMjc3YzI4ZmRiOTE2YWI5ZDYxYjU5OGU0NTMxMDZiNTg0MDZh) and for 
+[#rnadnavar](https://join.slack.com/share/enQtNjE3MDg2MDc3Mzc4Mi01MjBhNTdmYzYyNzEzZjExMGMxYTA1YWY4ZWVkMjc3YzI4ZmRiOTE2YWI5ZDYxYjU5OGU0NTMxMDZiNTg0MDZh)
 
 [^1]: See publication [here](https://www.nature.com/articles/sdata201610)
-[^2]: From [stackoverflow](https://stackoverflow. com/a/60846265/11502856)
+[^2]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
