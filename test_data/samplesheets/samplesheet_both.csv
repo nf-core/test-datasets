@@ -1,3 +1,3 @@
 sample,nuclear_image,spot_table,membrane_image
-nuclear,'https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/nuclear.tiff','https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/spots.txt',
-membrane,'https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/nuclear.tiff','https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/spots.txt','https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/membrane.tiff'
+nuclear,https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/nuclear.tiff,https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/spots.txt,
+membrane,https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/nuclear.tiff,https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/spots.txt,https://raw.githubusercontent.com/nf-core/test-datasets/molkart/test_data/input_data/membrane.tiff
