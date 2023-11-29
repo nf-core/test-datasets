@@ -415,8 +415,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}\_001.fastq.gz and D3_S1_L001_R{1,2}\_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
   - nanopore
       - bam
-        - 'bc_anchored_10_reads.sorted.bam'
-        - 'bc_anchored_10_reads.sorted.bam.bai'
+        - 'bc_anchored_10_reads.sorted.bam': contains 10 human reads from test data pulled from [modkit/pileup](https://github.com/nanoporetech/modkit/) repository.
+        - 'bc_anchored_10_reads.sorted.bam.bai': campanion index for 'bc_anchored_10_reads.sorted.bam' found in [modkit/pileup](https://github.com/nanoporetech/modkit/) repository. 
   - pacbio:
 
     - bam:
