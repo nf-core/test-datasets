@@ -132,6 +132,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'text_1.fastq.txt.zst' zstd-compressed version of 'test_1.fastq.gz' in tabular text format
       - 'test\_{1,2}.2.fastq.gz‘: copies of the above reads
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
+    - fastqc
+      - `test_fastqc.html` - FastQC HTML output from `test_1.fastq.gz` FASTQ
+      - `test_fastqc.zip` - FastQC zip output from `test_1.fastq.gz` FASTQ
     - gatk
       - 'test.baserecalibrator.table': Recalibration table generated with gatk4 BaseRecalibrator from 'test_paired_end.sorted.bam', using 'test.vcf.gz' as known sites.
       - 'test_paired_end_sorted_dragstrmodel.txt': The DRAGEN STR model of 'test_paired_end.sorted.bam'.
