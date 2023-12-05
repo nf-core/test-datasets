@@ -1,2 +1,2 @@
 sample,fastq_1,fastq_2,condition
-SRR23101364,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/SRR23101364_1.small.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/SRR23101364_1.small.fastq.gz,test
+SRR23101364,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/SRR23101364_1.small.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/crisprseq/testdata/SRR23101364_2.small.fastq.gz,test
