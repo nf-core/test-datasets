@@ -180,6 +180,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'seqid2taxid.map': taxonomy mapping file of the SARS-CoV2 genome genbank ID with NCBI taxonomy ID, originally generated for KrakenUniq
     - 'nodes_dmp': file including sars-cov-2 taxonomy nodes, originally originated for Kaiju
     - 'names_dmp': file with sars-cov-2 taxonomy names, originally generated for Kaiju
+    - 'prot_names.dmp': sars-cov-2 dmp name file used for associating protein with tax ID (tested with DIAMOND). Subset from NCBI taxdmp names.dmp.
+    - 'prot_nodes.dmp': sars-cov-2 dmp node file used for associated protein with tax ID (tested with DIAMOND). Subset from NCBI taxdmp nodes.dmp.
+    - 'prot.accession2taxid.gz': sars-cov-2 ORF1ab polyprotein accession ID to tax id file, to match sars-cov-2 proteome.fasta 
 
 - homo_sapiens
   - 10xgenomics
