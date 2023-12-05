@@ -28,10 +28,16 @@ This branch contains test data for the [nf-core/crisprseq](https://github.com/nf
 
 `testdata` contains the a minimal test dataset needed to run the pipeline for the analysis of CRISPR functional screenings.
 
-- `samplesheet_test.csv` contains the input samplesheet file to run the pipeline. Data is obtained from ENA project [PRJNA540212](https://www.ebi.ac.uk/ena/browser/view/PRJNA540212) obtained by [Tyner JW et al. 2019](https://doi.org/10.1158/2159-8290.CD-19-0125) and subsampled to with seqtk and a seed of 100.
+- `samplesheet_test.csv` contains the input samplesheet file to run the pipeline with single-end data. Data is obtained from ENA project [PRJNA540212](https://www.ebi.ac.uk/ena/browser/view/PRJNA540212) obtained by [Tyner JW et al. 2019](https://doi.org/10.1158/2159-8290.CD-19-0125) and subsampled to with seqtk and a seed of 100.
   ```
     seqtk sample -s100 SRR8983580.fastq.gz 1529806 > SRR8983580.small.fastq.gz
     seqtk sample -s100 SRR8983579.fastq.gz 1529806 > SRR8983579.small.fastq.gz
+  ```
+
+- `samplesheet_test_paired.csv` contains the input samplesheet file to run the pipeline with paired-end data. Data is obtained from ENA project [PRJNA924808](https://www.ebi.ac.uk/ena/browser/view/PRJNA924808) obtained by [Yangfan Zhou et al. 2019](https://doi.org/10.1038/s41598-023-38810-6) and subsampled to with seqtk and a seed of 100.
+  ```
+    seqtk sample -s SEED SRR23101364_1.fastq.gz 0.25 > SRR23101364_1.small.fastq.gz
+    seqtk sample -s SEED SRR23101364_2.fastq.gz 0.25 > SRR23101364_2.small.fastq.gz
   ```
 
 
