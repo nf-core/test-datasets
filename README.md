@@ -4,21 +4,24 @@ This branch contains test data and non-free software for the epitopeprediction p
 
 ## Input data
 
+  The pipeline accepts three sources of inputs specified in the `filename` column of the samplesheet to predict (neo-)epitopes:
 * `variants/`
 
-  Input files to be provided to the pipeline via `--input`
+  `SnpEff`/`VEP`-annotated `vcf` file containing information about SNPs and indels. Mandatory to predict neo-epitopes.
+
 * `proteins/`
 
-  Alternative input files to be provided to the pipeline via `--proteins`
+  Fasta file containing protein sequences. Each peptide of the protein is considered for MHC-binding prediction.
+
 * `peptides/`
 
-  Alternative input files to be provided to the pipeline via `--peptides`
+  Tab-separated file with mandatory header `id` and `sequence` containing peptides considered for MHC-binding prediction.
 
 ## Additional data
 
 * `alleles/`
 
-  Allele lists to be provided to the pipeline via `--alleles`
+  Allele list or `.txt` file to be provided in the `alleles` column of the samplesheet.
 
 ## Software
 
