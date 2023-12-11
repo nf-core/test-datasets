@@ -1,6 +1,6 @@
 sample,alleles,mhc_class,filename
 sample1,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/alleles/alleles.txt,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/variants/variants.vcf
-sample2,A*02:01,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/variants/variants.tsv
+sample2,A*02:01,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/variants/variants.vcf.gz
 sample3,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/alleles/alleles.txt,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/proteins/proteins.fasta
 sample4,A*01:01;A*02:01,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/peptides/peptides.tsv
 sample5,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/alleles/alleles.DRB1_01_01.txt,II,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/peptides/peptides_MHC_II.tsv
