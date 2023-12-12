@@ -1,0 +1,3 @@
+checkv_id	contig_id	source	reference	length	genomad_virus_score	genomad_plasmid_score	genomad_chrom_score	genomad_virus_hallmarks	genomad_plasmid_hallmarks	viralverify_prediction	viralverify_score	checkv_viral_genes	checkv_host_genes	genomad_taxonomy
+CheckV-008674	DTR_143176	DTR	doi:10.1038/s41587-020-00774-7	44000	0.9777	0.0145	0.0077	6	0	Virus	41.13	12	1	Viruses;Duplodnaviria;Heunggongvirae;Uroviricota;Caudoviricetes
+CheckV-054975	GCA_004875545.1	NCBI GenBank		12041	0.9764	0.0162	0.0074	3	0	Virus	12.21	9	0	Viruses;Duplodnaviria;Heunggongvirae;Uroviricota;Caudoviricetes

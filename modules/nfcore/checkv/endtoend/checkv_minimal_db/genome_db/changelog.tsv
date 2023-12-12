@@ -1,0 +1,1911 @@
+checkv_id	contig_id	version	action	reason
+CheckV-051978	GCA_003498905.1	v1.5	removed	short Caudovirales
+CheckV-051976	GCA_003498865.1	v1.5	removed	short Caudovirales
+CheckV-051980	GCA_003498965.1	v1.5	removed	short Caudovirales
+CheckV-051966	GCA_003498625.1	v1.5	removed	short Caudovirales
+CheckV-051953	GCA_003498305.1	v1.5	removed	short Caudovirales
+CheckV-051969	GCA_003498685.1	v1.5	removed	short Caudovirales
+CheckV-051989	GCA_003499145.1	v1.5	removed	short Caudovirales
+CheckV-051975	GCA_003498825.1	v1.5	removed	short Caudovirales
+CheckV-051997	GCA_003502145.1	v1.5	removed	short Caudovirales
+CheckV-051999	GCA_003502205.1	v1.5	removed	short Caudovirales
+CheckV-051990	GCA_003499205.1	v1.5	removed	short Caudovirales
+CheckV-051984	GCA_003499045.1	v1.5	removed	short Caudovirales
+CheckV-011299	DTR_190440	v1.5	removed	short Caudovirales
+CheckV-054422	GCA_004776765.1	v1.5	removed	short Caudovirales
+CheckV-054320	GCA_004773865.1	v1.5	removed	short Caudovirales
+CheckV-003721	DTR_020353	v1.5	removed	short Caudovirales
+CheckV-054359	GCA_004774845.1	v1.5	removed	short Caudovirales
+CheckV-054417	GCA_004776465.1	v1.5	removed	short Caudovirales
+CheckV-054343	GCA_004774425.1	v1.5	removed	short Caudovirales
+CheckV-054397	GCA_004775765.1	v1.5	removed	short Caudovirales
+CheckV-022396	DTR_385154	v1.5	removed	short Caudovirales
+CheckV-054428	GCA_004776885.1	v1.5	removed	short Caudovirales
+CheckV-054419	GCA_004776605.1	v1.5	removed	short Caudovirales
+CheckV-054413	GCA_004776385.1	v1.5	removed	short Caudovirales
+CheckV-051967	GCA_003498645.1	v1.5	removed	short Caudovirales
+CheckV-054416	GCA_004776445.1	v1.5	removed	short Caudovirales
+CheckV-009752	DTR_167384	v1.5	removed	short Caudovirales
+CheckV-054403	GCA_004776045.1	v1.5	removed	short Caudovirales
+CheckV-054355	GCA_004774745.1	v1.5	removed	short Caudovirales
+CheckV-038149	DTR_866197	v1.5	removed	short Caudovirales
+CheckV-041775	DTR_893133	v1.5	removed	short Caudovirales
+CheckV-017700	DTR_292340	v1.5	removed	short Caudovirales
+CheckV-040433	DTR_890063	v1.5	removed	short Caudovirales
+CheckV-003701	DTR_019791	v1.5	removed	short Caudovirales
+CheckV-054313	GCA_004773725.1	v1.5	removed	short Caudovirales
+CheckV-017153	DTR_284168	v1.5	removed	short Caudovirales
+CheckV-054395	GCA_004775705.1	v1.5	removed	short Caudovirales
+CheckV-051957	GCA_003498405.1	v1.5	removed	short Caudovirales
+CheckV-003702	DTR_019792	v1.5	removed	short Caudovirales
+CheckV-054465	GCA_004777885.1	v1.5	removed	short Caudovirales
+CheckV-054439	GCA_004777205.1	v1.5	removed	short Caudovirales
+CheckV-040816	DTR_891066	v1.5	removed	short Caudovirales
+CheckV-054438	GCA_004777185.1	v1.5	removed	short Caudovirales
+CheckV-054481	GCA_004778385.1	v1.5	removed	short Caudovirales
+CheckV-003706	DTR_019816	v1.5	removed	short Caudovirales
+CheckV-003718	DTR_020264	v1.5	removed	short Caudovirales
+CheckV-054382	GCA_004775385.1	v1.5	removed	short Caudovirales
+CheckV-054312	GCA_004773685.1	v1.5	removed	short Caudovirales
+CheckV-054437	GCA_004777145.1	v1.5	removed	short Caudovirales
+CheckV-054271	GCA_004772655.1	v1.5	removed	short Caudovirales
+CheckV-013044	DTR_230184	v1.5	removed	short Caudovirales
+CheckV-016618	DTR_274952	v1.5	removed	short Caudovirales
+CheckV-029952	DTR_632477	v1.5	removed	short Caudovirales
+CheckV-054409	GCA_004776285.1	v1.5	removed	short Caudovirales
+CheckV-054374	GCA_004775205.1	v1.5	removed	short Caudovirales
+CheckV-054337	GCA_004774285.1	v1.5	removed	short Caudovirales
+CheckV-041597	DTR_892759	v1.5	removed	short Caudovirales
+CheckV-003502	DTR_016515	v1.5	removed	short Caudovirales
+CheckV-040605	DTR_890564	v1.5	removed	short Caudovirales
+CheckV-054360	GCA_004774865.1	v1.5	removed	short Caudovirales
+CheckV-040521	DTR_890319	v1.5	removed	short Caudovirales
+CheckV-004261	DTR_035603	v1.5	removed	short Caudovirales
+CheckV-054431	GCA_004776945.1	v1.5	removed	short Caudovirales
+CheckV-054412	GCA_004776365.1	v1.5	removed	short Caudovirales
+CheckV-030215	DTR_639248	v1.5	removed	short Caudovirales
+CheckV-054284	GCA_004772995.1	v1.5	removed	short Caudovirales
+CheckV-003485	DTR_015818	v1.5	removed	short Caudovirales
+CheckV-041776	DTR_893134	v1.5	removed	short Caudovirales
+CheckV-013043	DTR_230153	v1.5	removed	short Caudovirales
+CheckV-054436	GCA_004777045.1	v1.5	removed	short Caudovirales
+CheckV-003619	DTR_018789	v1.5	removed	short Caudovirales
+CheckV-054319	GCA_004773845.1	v1.5	removed	short Caudovirales
+CheckV-054262	GCA_004772375.1	v1.5	removed	short Caudovirales
+CheckV-051979	GCA_003498925.1	v1.5	removed	short Caudovirales
+CheckV-054466	GCA_004777925.1	v1.5	removed	short Caudovirales
+CheckV-021793	DTR_363453	v1.5	removed	short Caudovirales
+CheckV-016656	DTR_275656	v1.5	removed	short Caudovirales
+CheckV-003500	DTR_016504	v1.5	removed	short Caudovirales
+CheckV-054268	GCA_004772535.1	v1.5	removed	short Caudovirales
+CheckV-003499	DTR_016502	v1.5	removed	short Caudovirales
+CheckV-018152	DTR_296846	v1.5	removed	short Caudovirales
+CheckV-013226	DTR_232860	v1.5	removed	short Caudovirales
+CheckV-054445	GCA_004777365.1	v1.5	removed	short Caudovirales
+CheckV-003699	DTR_019789	v1.5	removed	short Caudovirales
+CheckV-054363	GCA_004774925.1	v1.5	removed	short Caudovirales
+CheckV-005029	DTR_051161	v1.5	removed	short Caudovirales
+CheckV-041784	DTR_893173	v1.5	removed	short Caudovirales
+CheckV-054263	GCA_004772395.1	v1.5	removed	short Caudovirales
+CheckV-003528	DTR_017275	v1.5	removed	short Caudovirales
+CheckV-003525	DTR_017222	v1.5	removed	short Caudovirales
+CheckV-016567	DTR_274352	v1.5	removed	short Caudovirales
+CheckV-003700	DTR_019790	v1.5	removed	short Caudovirales
+CheckV-054399	GCA_004775845.1	v1.5	removed	short Caudovirales
+CheckV-054367	GCA_004775005.1	v1.5	removed	short Caudovirales
+CheckV-054265	GCA_004772475.1	v1.5	removed	short Caudovirales
+CheckV-054362	GCA_004774905.1	v1.5	removed	short Caudovirales
+CheckV-026989	DTR_545526	v1.5	removed	short Caudovirales
+CheckV-054239	GCA_004771495.1	v1.5	removed	short Caudovirales
+CheckV-054426	GCA_004776845.1	v1.5	removed	short Caudovirales
+CheckV-054401	GCA_004775885.1	v1.5	removed	short Caudovirales
+CheckV-054487	GCA_004778505.1	v1.5	removed	short Caudovirales
+CheckV-054245	GCA_004771795.1	v1.5	removed	short Caudovirales
+CheckV-054369	GCA_004775065.1	v1.5	removed	short Caudovirales
+CheckV-054260	GCA_004772315.1	v1.5	removed	short Caudovirales
+CheckV-054329	GCA_004774085.1	v1.5	removed	short Caudovirales
+CheckV-054250	GCA_004771935.1	v1.5	removed	short Caudovirales
+CheckV-054345	GCA_004774465.1	v1.5	removed	short Caudovirales
+CheckV-006186	DTR_076772	v1.5	removed	short Caudovirales
+CheckV-004218	DTR_034891	v1.5	removed	short Caudovirales
+CheckV-030400	DTR_639848	v1.5	removed	short Caudovirales
+CheckV-003626	DTR_018821	v1.5	removed	short Caudovirales
+CheckV-054251	GCA_004771955.1	v1.5	removed	short Caudovirales
+CheckV-054415	GCA_004776425.1	v1.5	removed	short Caudovirales
+CheckV-054435	GCA_004777025.1	v1.5	removed	short Caudovirales
+CheckV-016942	DTR_281549	v1.5	removed	short Caudovirales
+CheckV-054247	GCA_004771855.1	v1.5	removed	short Caudovirales
+CheckV-016545	DTR_273447	v1.5	removed	short Caudovirales
+CheckV-028849	DTR_609679	v1.5	removed	short Caudovirales
+CheckV-032501	DTR_699039	v1.5	removed	short Caudovirales
+CheckV-019773	DTR_325680	v1.5	removed	short Caudovirales
+CheckV-054292	GCA_004773235.1	v1.5	removed	short Caudovirales
+CheckV-040435	DTR_890068	v1.5	removed	short Caudovirales
+CheckV-054267	GCA_004772515.1	v1.5	removed	short Caudovirales
+CheckV-054259	GCA_004772295.1	v1.5	removed	short Caudovirales
+CheckV-041950	DTR_893522	v1.5	removed	short Caudovirales
+CheckV-007021	DTR_103179	v1.5	removed	short Caudovirales
+CheckV-054341	GCA_004774365.1	v1.5	removed	short Caudovirales
+CheckV-006907	DTR_101665	v1.5	removed	short Caudovirales
+CheckV-009757	DTR_167419	v1.5	removed	short Caudovirales
+CheckV-054408	GCA_004776245.1	v1.5	removed	short Caudovirales
+CheckV-017527	DTR_289522	v1.5	removed	short Caudovirales
+CheckV-003419	DTR_013846	v1.5	removed	short Caudovirales
+CheckV-054255	GCA_004772135.1	v1.5	removed	short Caudovirales
+CheckV-054420	GCA_004776645.1	v1.5	removed	short Caudovirales
+CheckV-014888	DTR_254670	v1.5	removed	short Caudovirales
+CheckV-054264	GCA_004772435.1	v1.5	removed	short Caudovirales
+CheckV-014875	DTR_254617	v1.5	removed	short Caudovirales
+CheckV-018298	DTR_300497	v1.5	removed	short Caudovirales
+CheckV-054253	GCA_004772035.1	v1.5	removed	short Caudovirales
+CheckV-054309	GCA_004773625.1	v1.5	removed	short Caudovirales
+CheckV-029765	DTR_629252	v1.5	removed	short Caudovirales
+CheckV-052211	GCA_003653225.1	v1.5	removed	short Caudovirales
+CheckV-014220	DTR_245324	v1.5	removed	short Caudovirales
+CheckV-028826	DTR_608965	v1.5	removed	short Caudovirales
+CheckV-014483	DTR_248281	v1.5	removed	short Caudovirales
+CheckV-004195	DTR_034252	v1.5	removed	short Caudovirales
+CheckV-049986	GCA_002990085.1	v1.5	removed	short Caudovirales
+CheckV-021470	DTR_357606	v1.5	removed	short Caudovirales
+CheckV-014532	DTR_248888	v1.5	removed	short Caudovirales
+CheckV-006019	DTR_074209	v1.5	removed	short Caudovirales
+CheckV-034466	DTR_733312	v1.5	removed	short Caudovirales
+CheckV-028950	DTR_611523	v1.5	removed	short Caudovirales
+CheckV-008187	DTR_129033	v1.5	removed	short Caudovirales
+CheckV-029005	DTR_612429	v1.5	removed	short Caudovirales
+CheckV-029436	DTR_621589	v1.5	removed	short Caudovirales
+CheckV-022369	DTR_383975	v1.5	removed	short Caudovirales
+CheckV-021365	DTR_356010	v1.5	removed	short Caudovirales
+CheckV-029357	DTR_620787	v1.5	removed	short Caudovirales
+CheckV-036818	DTR_821173	v1.5	removed	short Caudovirales
+CheckV-035864	DTR_790068	v1.5	removed	short Caudovirales
+CheckV-024827	DTR_461891	v1.5	removed	short Caudovirales
+CheckV-011118	DTR_185873	v1.5	removed	short Caudovirales
+CheckV-021364	DTR_355999	v1.5	removed	short Caudovirales
+CheckV-008196	DTR_129507	v1.5	removed	short Caudovirales
+CheckV-028854	DTR_609748	v1.5	removed	short Caudovirales
+CheckV-025230	DTR_487649	v1.5	removed	short Caudovirales
+CheckV-004271	DTR_035682	v1.5	removed	short Caudovirales
+CheckV-000030	136630	v1.5	removed	non-viral score
+CheckV-000054	178447	v1.5	removed	non-viral score
+CheckV-000075	226407	v1.5	removed	non-viral score
+CheckV-000160	3300000976|BBAY71_10000190	v1.5	removed	non-viral score
+CheckV-000438	3300014205|Ga0172380_10000574	v1.5	removed	non-viral score
+CheckV-000682	3300022719|Ga0248485_1000019	v1.5	removed	non-viral score
+CheckV-000697	3300023202|Ga0255825_1000386	v1.5	removed	non-viral score
+CheckV-000788	3300028840|Ga0309773_1000015	v1.5	removed	non-viral score
+CheckV-001722	3300046517|Ga0495630_0000004	v1.5	removed	non-viral score
+CheckV-003082	CEPX01412995.1	v1.5	removed	non-viral score
+CheckV-003128	DTR_004119	v1.5	removed	non-viral score
+CheckV-003180	DTR_006022	v1.5	removed	non-viral score
+CheckV-003191	DTR_006395	v1.5	removed	non-viral score
+CheckV-003192	DTR_006405	v1.5	removed	non-viral score
+CheckV-003201	DTR_006546	v1.5	removed	non-viral score
+CheckV-003203	DTR_006562	v1.5	removed	non-viral score
+CheckV-003205	DTR_006565	v1.5	removed	non-viral score
+CheckV-003207	DTR_006715	v1.5	removed	non-viral score
+CheckV-003209	DTR_006821	v1.5	removed	non-viral score
+CheckV-003221	DTR_007548	v1.5	removed	non-viral score
+CheckV-003222	DTR_007549	v1.5	removed	non-viral score
+CheckV-003254	DTR_008992	v1.5	removed	non-viral score
+CheckV-003272	DTR_009758	v1.5	removed	non-viral score
+CheckV-003302	DTR_010717	v1.5	removed	non-viral score
+CheckV-003368	DTR_011951	v1.5	removed	non-viral score
+CheckV-003379	DTR_012391	v1.5	removed	non-viral score
+CheckV-003385	DTR_012412	v1.5	removed	non-viral score
+CheckV-003386	DTR_012413	v1.5	removed	non-viral score
+CheckV-003436	DTR_014579	v1.5	removed	non-viral score
+CheckV-003470	DTR_015157	v1.5	removed	non-viral score
+CheckV-003471	DTR_015158	v1.5	removed	non-viral score
+CheckV-003486	DTR_015821	v1.5	removed	non-viral score
+CheckV-003487	DTR_016017	v1.5	removed	non-viral score
+CheckV-003488	DTR_016162	v1.5	removed	non-viral score
+CheckV-003491	DTR_016286	v1.5	removed	non-viral score
+CheckV-003509	DTR_016646	v1.5	removed	non-viral score
+CheckV-003510	DTR_016717	v1.5	removed	non-viral score
+CheckV-003514	DTR_016864	v1.5	removed	non-viral score
+CheckV-003518	DTR_017011	v1.5	removed	non-viral score
+CheckV-003531	DTR_017304	v1.5	removed	non-viral score
+CheckV-003543	DTR_017366	v1.5	removed	non-viral score
+CheckV-003551	DTR_017436	v1.5	removed	non-viral score
+CheckV-003556	DTR_017764	v1.5	removed	non-viral score
+CheckV-003558	DTR_017915	v1.5	removed	non-viral score
+CheckV-003561	DTR_017927	v1.5	removed	non-viral score
+CheckV-003562	DTR_017961	v1.5	removed	non-viral score
+CheckV-003567	DTR_018142	v1.5	removed	non-viral score
+CheckV-003568	DTR_018151	v1.5	removed	non-viral score
+CheckV-003569	DTR_018158	v1.5	removed	non-viral score
+CheckV-003574	DTR_018264	v1.5	removed	non-viral score
+CheckV-003575	DTR_018308	v1.5	removed	non-viral score
+CheckV-003576	DTR_018318	v1.5	removed	non-viral score
+CheckV-003579	DTR_018366	v1.5	removed	non-viral score
+CheckV-003589	DTR_018469	v1.5	removed	non-viral score
+CheckV-003599	DTR_018573	v1.5	removed	non-viral score
+CheckV-003603	DTR_018610	v1.5	removed	non-viral score
+CheckV-003607	DTR_018666	v1.5	removed	non-viral score
+CheckV-003613	DTR_018709	v1.5	removed	non-viral score
+CheckV-003616	DTR_018762	v1.5	removed	non-viral score
+CheckV-003623	DTR_018802	v1.5	removed	non-viral score
+CheckV-003630	DTR_018853	v1.5	removed	non-viral score
+CheckV-003647	DTR_019031	v1.5	removed	non-viral score
+CheckV-003652	DTR_019089	v1.5	removed	non-viral score
+CheckV-003675	DTR_019370	v1.5	removed	non-viral score
+CheckV-003680	DTR_019446	v1.5	removed	non-viral score
+CheckV-003683	DTR_019457	v1.5	removed	non-viral score
+CheckV-003690	DTR_019575	v1.5	removed	non-viral score
+CheckV-003692	DTR_019627	v1.5	removed	non-viral score
+CheckV-003704	DTR_019808	v1.5	removed	non-viral score
+CheckV-003716	DTR_020056	v1.5	removed	non-viral score
+CheckV-003720	DTR_020350	v1.5	removed	non-viral score
+CheckV-003725	DTR_020780	v1.5	removed	non-viral score
+CheckV-003726	DTR_020843	v1.5	removed	non-viral score
+CheckV-003727	DTR_020876	v1.5	removed	non-viral score
+CheckV-003730	DTR_021110	v1.5	removed	non-viral score
+CheckV-003748	DTR_022009	v1.5	removed	non-viral score
+CheckV-003750	DTR_022025	v1.5	removed	non-viral score
+CheckV-003764	DTR_022408	v1.5	removed	non-viral score
+CheckV-003768	DTR_022508	v1.5	removed	non-viral score
+CheckV-003771	DTR_022533	v1.5	removed	non-viral score
+CheckV-003772	DTR_022536	v1.5	removed	non-viral score
+CheckV-003773	DTR_022543	v1.5	removed	non-viral score
+CheckV-003785	DTR_023168	v1.5	removed	non-viral score
+CheckV-003804	DTR_023869	v1.5	removed	non-viral score
+CheckV-003808	DTR_023920	v1.5	removed	non-viral score
+CheckV-003809	DTR_023922	v1.5	removed	non-viral score
+CheckV-003810	DTR_023924	v1.5	removed	non-viral score
+CheckV-003816	DTR_023941	v1.5	removed	non-viral score
+CheckV-003817	DTR_023988	v1.5	removed	non-viral score
+CheckV-003828	DTR_024139	v1.5	removed	non-viral score
+CheckV-003927	DTR_025586	v1.5	removed	non-viral score
+CheckV-003995	DTR_027769	v1.5	removed	non-viral score
+CheckV-003999	DTR_027904	v1.5	removed	non-viral score
+CheckV-004002	DTR_027918	v1.5	removed	non-viral score
+CheckV-004004	DTR_027948	v1.5	removed	non-viral score
+CheckV-004005	DTR_027955	v1.5	removed	non-viral score
+CheckV-004012	DTR_028199	v1.5	removed	non-viral score
+CheckV-004017	DTR_028422	v1.5	removed	non-viral score
+CheckV-004056	DTR_029695	v1.5	removed	non-viral score
+CheckV-004057	DTR_029699	v1.5	removed	non-viral score
+CheckV-004073	DTR_030830	v1.5	removed	non-viral score
+CheckV-004076	DTR_030962	v1.5	removed	non-viral score
+CheckV-004078	DTR_030967	v1.5	removed	non-viral score
+CheckV-004080	DTR_031004	v1.5	removed	non-viral score
+CheckV-004088	DTR_031200	v1.5	removed	non-viral score
+CheckV-004119	DTR_032156	v1.5	removed	non-viral score
+CheckV-004120	DTR_032157	v1.5	removed	non-viral score
+CheckV-004121	DTR_032158	v1.5	removed	non-viral score
+CheckV-004124	DTR_032173	v1.5	removed	non-viral score
+CheckV-004127	DTR_032202	v1.5	removed	non-viral score
+CheckV-004131	DTR_032236	v1.5	removed	non-viral score
+CheckV-004134	DTR_032242	v1.5	removed	non-viral score
+CheckV-004135	DTR_032243	v1.5	removed	non-viral score
+CheckV-004136	DTR_032244	v1.5	removed	non-viral score
+CheckV-004137	DTR_032247	v1.5	removed	non-viral score
+CheckV-004187	DTR_034114	v1.5	removed	non-viral score
+CheckV-004193	DTR_034243	v1.5	removed	non-viral score
+CheckV-004194	DTR_034245	v1.5	removed	non-viral score
+CheckV-004196	DTR_034253	v1.5	removed	non-viral score
+CheckV-004198	DTR_034255	v1.5	removed	non-viral score
+CheckV-004201	DTR_034259	v1.5	removed	non-viral score
+CheckV-004210	DTR_034650	v1.5	removed	non-viral score
+CheckV-004211	DTR_034652	v1.5	removed	non-viral score
+CheckV-004219	DTR_034907	v1.5	removed	non-viral score
+CheckV-004220	DTR_034918	v1.5	removed	non-viral score
+CheckV-004228	DTR_035005	v1.5	removed	non-viral score
+CheckV-004231	DTR_035012	v1.5	removed	non-viral score
+CheckV-004232	DTR_035013	v1.5	removed	non-viral score
+CheckV-004237	DTR_035219	v1.5	removed	non-viral score
+CheckV-004238	DTR_035306	v1.5	removed	non-viral score
+CheckV-004240	DTR_035358	v1.5	removed	non-viral score
+CheckV-004241	DTR_035359	v1.5	removed	non-viral score
+CheckV-004242	DTR_035360	v1.5	removed	non-viral score
+CheckV-004247	DTR_035422	v1.5	removed	non-viral score
+CheckV-004248	DTR_035424	v1.5	removed	non-viral score
+CheckV-004249	DTR_035425	v1.5	removed	non-viral score
+CheckV-004253	DTR_035453	v1.5	removed	non-viral score
+CheckV-004262	DTR_035604	v1.5	removed	non-viral score
+CheckV-004265	DTR_035631	v1.5	removed	non-viral score
+CheckV-004267	DTR_035633	v1.5	removed	non-viral score
+CheckV-004270	DTR_035644	v1.5	removed	non-viral score
+CheckV-004276	DTR_035796	v1.5	removed	non-viral score
+CheckV-004277	DTR_035797	v1.5	removed	non-viral score
+CheckV-004302	DTR_038230	v1.5	removed	non-viral score
+CheckV-004322	DTR_039532	v1.5	removed	non-viral score
+CheckV-004334	DTR_039873	v1.5	removed	non-viral score
+CheckV-004358	DTR_040775	v1.5	removed	non-viral score
+CheckV-004452	DTR_042116	v1.5	removed	non-viral score
+CheckV-004553	DTR_043208	v1.5	removed	non-viral score
+CheckV-004661	DTR_045047	v1.5	removed	non-viral score
+CheckV-004662	DTR_045048	v1.5	removed	non-viral score
+CheckV-004721	DTR_045907	v1.5	removed	non-viral score
+CheckV-004762	DTR_046961	v1.5	removed	non-viral score
+CheckV-004781	DTR_047370	v1.5	removed	non-viral score
+CheckV-004782	DTR_047376	v1.5	removed	non-viral score
+CheckV-004979	DTR_050255	v1.5	removed	non-viral score
+CheckV-005032	DTR_051362	v1.5	removed	non-viral score
+CheckV-005102	DTR_052679	v1.5	removed	non-viral score
+CheckV-005103	DTR_052681	v1.5	removed	non-viral score
+CheckV-005109	DTR_052804	v1.5	removed	non-viral score
+CheckV-005212	DTR_053597	v1.5	removed	non-viral score
+CheckV-005216	DTR_053660	v1.5	removed	non-viral score
+CheckV-005217	DTR_053674	v1.5	removed	non-viral score
+CheckV-005218	DTR_053694	v1.5	removed	non-viral score
+CheckV-005287	DTR_056599	v1.5	removed	non-viral score
+CheckV-005291	DTR_056850	v1.5	removed	non-viral score
+CheckV-005302	DTR_057150	v1.5	removed	non-viral score
+CheckV-005304	DTR_057291	v1.5	removed	non-viral score
+CheckV-005309	DTR_057628	v1.5	removed	non-viral score
+CheckV-005316	DTR_057746	v1.5	removed	non-viral score
+CheckV-005319	DTR_057879	v1.5	removed	non-viral score
+CheckV-005320	DTR_058000	v1.5	removed	non-viral score
+CheckV-005325	DTR_058195	v1.5	removed	non-viral score
+CheckV-005332	DTR_058230	v1.5	removed	non-viral score
+CheckV-005333	DTR_058234	v1.5	removed	non-viral score
+CheckV-005335	DTR_058238	v1.5	removed	non-viral score
+CheckV-005336	DTR_058245	v1.5	removed	non-viral score
+CheckV-005338	DTR_058261	v1.5	removed	non-viral score
+CheckV-005341	DTR_058344	v1.5	removed	non-viral score
+CheckV-005398	DTR_059651	v1.5	removed	non-viral score
+CheckV-005408	DTR_060268	v1.5	removed	non-viral score
+CheckV-005429	DTR_060794	v1.5	removed	non-viral score
+CheckV-005461	DTR_061465	v1.5	removed	non-viral score
+CheckV-005477	DTR_062142	v1.5	removed	non-viral score
+CheckV-005583	DTR_064502	v1.5	removed	non-viral score
+CheckV-005584	DTR_064525	v1.5	removed	non-viral score
+CheckV-005670	DTR_066059	v1.5	removed	non-viral score
+CheckV-005717	DTR_066640	v1.5	removed	non-viral score
+CheckV-005775	DTR_067351	v1.5	removed	non-viral score
+CheckV-005776	DTR_067354	v1.5	removed	non-viral score
+CheckV-005777	DTR_067364	v1.5	removed	non-viral score
+CheckV-005844	DTR_069040	v1.5	removed	non-viral score
+CheckV-005845	DTR_069041	v1.5	removed	non-viral score
+CheckV-005846	DTR_069045	v1.5	removed	non-viral score
+CheckV-005848	DTR_069060	v1.5	removed	non-viral score
+CheckV-005896	DTR_070494	v1.5	removed	non-viral score
+CheckV-005903	DTR_070561	v1.5	removed	non-viral score
+CheckV-005904	DTR_070577	v1.5	removed	non-viral score
+CheckV-005917	DTR_070794	v1.5	removed	non-viral score
+CheckV-005918	DTR_070880	v1.5	removed	non-viral score
+CheckV-005928	DTR_070989	v1.5	removed	non-viral score
+CheckV-005958	DTR_071300	v1.5	removed	non-viral score
+CheckV-005962	DTR_071554	v1.5	removed	non-viral score
+CheckV-005965	DTR_072391	v1.5	removed	non-viral score
+CheckV-005979	DTR_073593	v1.5	removed	non-viral score
+CheckV-005984	DTR_073783	v1.5	removed	non-viral score
+CheckV-005997	DTR_074011	v1.5	removed	non-viral score
+CheckV-006007	DTR_074139	v1.5	removed	non-viral score
+CheckV-006012	DTR_074145	v1.5	removed	non-viral score
+CheckV-006013	DTR_074146	v1.5	removed	non-viral score
+CheckV-006025	DTR_074255	v1.5	removed	non-viral score
+CheckV-006033	DTR_074285	v1.5	removed	non-viral score
+CheckV-006045	DTR_074732	v1.5	removed	non-viral score
+CheckV-006046	DTR_074733	v1.5	removed	non-viral score
+CheckV-006047	DTR_074738	v1.5	removed	non-viral score
+CheckV-006057	DTR_074862	v1.5	removed	non-viral score
+CheckV-006058	DTR_074863	v1.5	removed	non-viral score
+CheckV-006085	DTR_075363	v1.5	removed	non-viral score
+CheckV-006097	DTR_075491	v1.5	removed	non-viral score
+CheckV-006098	DTR_075493	v1.5	removed	non-viral score
+CheckV-006100	DTR_075516	v1.5	removed	non-viral score
+CheckV-006102	DTR_075521	v1.5	removed	non-viral score
+CheckV-006103	DTR_075561	v1.5	removed	non-viral score
+CheckV-006121	DTR_075797	v1.5	removed	non-viral score
+CheckV-006129	DTR_075810	v1.5	removed	non-viral score
+CheckV-006130	DTR_075812	v1.5	removed	non-viral score
+CheckV-006137	DTR_075872	v1.5	removed	non-viral score
+CheckV-006138	DTR_075875	v1.5	removed	non-viral score
+CheckV-006141	DTR_075882	v1.5	removed	non-viral score
+CheckV-006144	DTR_075891	v1.5	removed	non-viral score
+CheckV-006172	DTR_076576	v1.5	removed	non-viral score
+CheckV-006310	DTR_079188	v1.5	removed	non-viral score
+CheckV-006311	DTR_079360	v1.5	removed	non-viral score
+CheckV-006312	DTR_079384	v1.5	removed	non-viral score
+CheckV-006313	DTR_081573	v1.5	removed	non-viral score
+CheckV-006314	DTR_081692	v1.5	removed	non-viral score
+CheckV-006315	DTR_081781	v1.5	removed	non-viral score
+CheckV-006316	DTR_081782	v1.5	removed	non-viral score
+CheckV-006317	DTR_082759	v1.5	removed	non-viral score
+CheckV-006321	DTR_083951	v1.5	removed	non-viral score
+CheckV-006323	DTR_083993	v1.5	removed	non-viral score
+CheckV-006367	DTR_087712	v1.5	removed	non-viral score
+CheckV-006397	DTR_088692	v1.5	removed	non-viral score
+CheckV-006404	DTR_088892	v1.5	removed	non-viral score
+CheckV-006405	DTR_088895	v1.5	removed	non-viral score
+CheckV-006422	DTR_089329	v1.5	removed	non-viral score
+CheckV-006448	DTR_090188	v1.5	removed	non-viral score
+CheckV-006496	DTR_091535	v1.5	removed	non-viral score
+CheckV-006520	DTR_093671	v1.5	removed	non-viral score
+CheckV-006521	DTR_093731	v1.5	removed	non-viral score
+CheckV-006530	DTR_094318	v1.5	removed	non-viral score
+CheckV-006531	DTR_094381	v1.5	removed	non-viral score
+CheckV-006532	DTR_094405	v1.5	removed	non-viral score
+CheckV-006534	DTR_094452	v1.5	removed	non-viral score
+CheckV-006536	DTR_094537	v1.5	removed	non-viral score
+CheckV-006538	DTR_094845	v1.5	removed	non-viral score
+CheckV-006539	DTR_094847	v1.5	removed	non-viral score
+CheckV-006543	DTR_094910	v1.5	removed	non-viral score
+CheckV-006547	DTR_094939	v1.5	removed	non-viral score
+CheckV-006548	DTR_094954	v1.5	removed	non-viral score
+CheckV-006550	DTR_095037	v1.5	removed	non-viral score
+CheckV-006553	DTR_095159	v1.5	removed	non-viral score
+CheckV-006592	DTR_096071	v1.5	removed	non-viral score
+CheckV-006694	DTR_097800	v1.5	removed	non-viral score
+CheckV-006698	DTR_097911	v1.5	removed	non-viral score
+CheckV-006699	DTR_097913	v1.5	removed	non-viral score
+CheckV-006701	DTR_097937	v1.5	removed	non-viral score
+CheckV-006707	DTR_098062	v1.5	removed	non-viral score
+CheckV-006714	DTR_098998	v1.5	removed	non-viral score
+CheckV-006912	DTR_101695	v1.5	removed	non-viral score
+CheckV-007054	DTR_103634	v1.5	removed	non-viral score
+CheckV-007090	DTR_104685	v1.5	removed	non-viral score
+CheckV-007101	DTR_105367	v1.5	removed	non-viral score
+CheckV-007103	DTR_105375	v1.5	removed	non-viral score
+CheckV-007124	DTR_105884	v1.5	removed	non-viral score
+CheckV-007127	DTR_105889	v1.5	removed	non-viral score
+CheckV-007130	DTR_105895	v1.5	removed	non-viral score
+CheckV-007131	DTR_105896	v1.5	removed	non-viral score
+CheckV-007148	DTR_106286	v1.5	removed	non-viral score
+CheckV-007149	DTR_106298	v1.5	removed	non-viral score
+CheckV-007159	DTR_106414	v1.5	removed	non-viral score
+CheckV-007191	DTR_107204	v1.5	removed	non-viral score
+CheckV-007193	DTR_107267	v1.5	removed	non-viral score
+CheckV-007231	DTR_107810	v1.5	removed	non-viral score
+CheckV-007265	DTR_108617	v1.5	removed	non-viral score
+CheckV-007324	DTR_109530	v1.5	removed	non-viral score
+CheckV-007337	DTR_109676	v1.5	removed	non-viral score
+CheckV-007339	DTR_109684	v1.5	removed	non-viral score
+CheckV-007353	DTR_109802	v1.5	removed	non-viral score
+CheckV-007356	DTR_109807	v1.5	removed	non-viral score
+CheckV-007358	DTR_109818	v1.5	removed	non-viral score
+CheckV-007440	DTR_110497	v1.5	removed	non-viral score
+CheckV-007532	DTR_111663	v1.5	removed	non-viral score
+CheckV-007595	DTR_112438	v1.5	removed	non-viral score
+CheckV-007624	DTR_112581	v1.5	removed	non-viral score
+CheckV-007636	DTR_112694	v1.5	removed	non-viral score
+CheckV-007642	DTR_112754	v1.5	removed	non-viral score
+CheckV-007643	DTR_112758	v1.5	removed	non-viral score
+CheckV-007651	DTR_112866	v1.5	removed	non-viral score
+CheckV-007652	DTR_112874	v1.5	removed	non-viral score
+CheckV-007653	DTR_112875	v1.5	removed	non-viral score
+CheckV-007707	DTR_113416	v1.5	removed	non-viral score
+CheckV-007716	DTR_113776	v1.5	removed	non-viral score
+CheckV-007723	DTR_113886	v1.5	removed	non-viral score
+CheckV-007727	DTR_114097	v1.5	removed	non-viral score
+CheckV-007732	DTR_114364	v1.5	removed	non-viral score
+CheckV-007737	DTR_114593	v1.5	removed	non-viral score
+CheckV-007743	DTR_114871	v1.5	removed	non-viral score
+CheckV-007744	DTR_114891	v1.5	removed	non-viral score
+CheckV-007745	DTR_114904	v1.5	removed	non-viral score
+CheckV-007747	DTR_114940	v1.5	removed	non-viral score
+CheckV-007767	DTR_115495	v1.5	removed	non-viral score
+CheckV-007769	DTR_115498	v1.5	removed	non-viral score
+CheckV-007771	DTR_115501	v1.5	removed	non-viral score
+CheckV-007778	DTR_115959	v1.5	removed	non-viral score
+CheckV-007780	DTR_115995	v1.5	removed	non-viral score
+CheckV-007781	DTR_115997	v1.5	removed	non-viral score
+CheckV-007785	DTR_116326	v1.5	removed	non-viral score
+CheckV-007799	DTR_116541	v1.5	removed	non-viral score
+CheckV-007804	DTR_116663	v1.5	removed	non-viral score
+CheckV-007805	DTR_116664	v1.5	removed	non-viral score
+CheckV-007806	DTR_116665	v1.5	removed	non-viral score
+CheckV-007808	DTR_116749	v1.5	removed	non-viral score
+CheckV-007810	DTR_116752	v1.5	removed	non-viral score
+CheckV-007811	DTR_116756	v1.5	removed	non-viral score
+CheckV-007819	DTR_116961	v1.5	removed	non-viral score
+CheckV-007820	DTR_116975	v1.5	removed	non-viral score
+CheckV-007821	DTR_116980	v1.5	removed	non-viral score
+CheckV-007856	DTR_117569	v1.5	removed	non-viral score
+CheckV-007876	DTR_117990	v1.5	removed	non-viral score
+CheckV-007884	DTR_118327	v1.5	removed	non-viral score
+CheckV-007887	DTR_118398	v1.5	removed	non-viral score
+CheckV-007897	DTR_118593	v1.5	removed	non-viral score
+CheckV-007903	DTR_118799	v1.5	removed	non-viral score
+CheckV-007909	DTR_119243	v1.5	removed	non-viral score
+CheckV-007911	DTR_119261	v1.5	removed	non-viral score
+CheckV-007938	DTR_119963	v1.5	removed	non-viral score
+CheckV-007939	DTR_119965	v1.5	removed	non-viral score
+CheckV-007940	DTR_119966	v1.5	removed	non-viral score
+CheckV-007942	DTR_120049	v1.5	removed	non-viral score
+CheckV-007954	DTR_120780	v1.5	removed	non-viral score
+CheckV-007955	DTR_120783	v1.5	removed	non-viral score
+CheckV-008002	DTR_121435	v1.5	removed	non-viral score
+CheckV-008022	DTR_121968	v1.5	removed	non-viral score
+CheckV-008024	DTR_122068	v1.5	removed	non-viral score
+CheckV-008053	DTR_122229	v1.5	removed	non-viral score
+CheckV-008057	DTR_122787	v1.5	removed	non-viral score
+CheckV-008102	DTR_125667	v1.5	removed	non-viral score
+CheckV-008103	DTR_125669	v1.5	removed	non-viral score
+CheckV-008118	DTR_126222	v1.5	removed	non-viral score
+CheckV-008126	DTR_127120	v1.5	removed	non-viral score
+CheckV-008140	DTR_127778	v1.5	removed	non-viral score
+CheckV-008169	DTR_128643	v1.5	removed	non-viral score
+CheckV-008185	DTR_129020	v1.5	removed	non-viral score
+CheckV-008204	DTR_130533	v1.5	removed	non-viral score
+CheckV-008205	DTR_130547	v1.5	removed	non-viral score
+CheckV-008234	DTR_132649	v1.5	removed	non-viral score
+CheckV-008240	DTR_132806	v1.5	removed	non-viral score
+CheckV-008332	DTR_133956	v1.5	removed	non-viral score
+CheckV-008357	DTR_134989	v1.5	removed	non-viral score
+CheckV-008490	DTR_140314	v1.5	removed	non-viral score
+CheckV-008501	DTR_140657	v1.5	removed	non-viral score
+CheckV-008503	DTR_140895	v1.5	removed	non-viral score
+CheckV-008526	DTR_141464	v1.5	removed	non-viral score
+CheckV-008561	DTR_141941	v1.5	removed	non-viral score
+CheckV-008562	DTR_141974	v1.5	removed	non-viral score
+CheckV-008567	DTR_142152	v1.5	removed	non-viral score
+CheckV-008596	DTR_142389	v1.5	removed	non-viral score
+CheckV-008655	DTR_143047	v1.5	removed	non-viral score
+CheckV-008690	DTR_143220	v1.5	removed	non-viral score
+CheckV-008705	DTR_143374	v1.5	removed	non-viral score
+CheckV-008730	DTR_143502	v1.5	removed	non-viral score
+CheckV-008734	DTR_143791	v1.5	removed	non-viral score
+CheckV-008848	DTR_144401	v1.5	removed	non-viral score
+CheckV-009018	DTR_151246	v1.5	removed	non-viral score
+CheckV-009144	DTR_152255	v1.5	removed	non-viral score
+CheckV-009217	DTR_153796	v1.5	removed	non-viral score
+CheckV-009229	DTR_154107	v1.5	removed	non-viral score
+CheckV-009243	DTR_154378	v1.5	removed	non-viral score
+CheckV-009293	DTR_155050	v1.5	removed	non-viral score
+CheckV-009347	DTR_156144	v1.5	removed	non-viral score
+CheckV-009358	DTR_156437	v1.5	removed	non-viral score
+CheckV-009368	DTR_156558	v1.5	removed	non-viral score
+CheckV-009371	DTR_156568	v1.5	removed	non-viral score
+CheckV-009374	DTR_156575	v1.5	removed	non-viral score
+CheckV-009380	DTR_156726	v1.5	removed	non-viral score
+CheckV-009383	DTR_156734	v1.5	removed	non-viral score
+CheckV-009394	DTR_156984	v1.5	removed	non-viral score
+CheckV-009408	DTR_157661	v1.5	removed	non-viral score
+CheckV-009409	DTR_157678	v1.5	removed	non-viral score
+CheckV-009426	DTR_157978	v1.5	removed	non-viral score
+CheckV-009433	DTR_158053	v1.5	removed	non-viral score
+CheckV-009436	DTR_158089	v1.5	removed	non-viral score
+CheckV-009456	DTR_158357	v1.5	removed	non-viral score
+CheckV-009457	DTR_158359	v1.5	removed	non-viral score
+CheckV-009489	DTR_159493	v1.5	removed	non-viral score
+CheckV-009506	DTR_159970	v1.5	removed	non-viral score
+CheckV-009566	DTR_161413	v1.5	removed	non-viral score
+CheckV-009578	DTR_161822	v1.5	removed	non-viral score
+CheckV-009589	DTR_162102	v1.5	removed	non-viral score
+CheckV-009603	DTR_162122	v1.5	removed	non-viral score
+CheckV-009605	DTR_162124	v1.5	removed	non-viral score
+CheckV-009616	DTR_162687	v1.5	removed	non-viral score
+CheckV-009624	DTR_163257	v1.5	removed	non-viral score
+CheckV-009661	DTR_163952	v1.5	removed	non-viral score
+CheckV-009685	DTR_164674	v1.5	removed	non-viral score
+CheckV-009696	DTR_165672	v1.5	removed	non-viral score
+CheckV-009732	DTR_167121	v1.5	removed	non-viral score
+CheckV-009738	DTR_167259	v1.5	removed	non-viral score
+CheckV-009753	DTR_167396	v1.5	removed	non-viral score
+CheckV-009758	DTR_167427	v1.5	removed	non-viral score
+CheckV-009759	DTR_167432	v1.5	removed	non-viral score
+CheckV-009785	DTR_167809	v1.5	removed	non-viral score
+CheckV-009786	DTR_167810	v1.5	removed	non-viral score
+CheckV-009875	DTR_168567	v1.5	removed	non-viral score
+CheckV-009876	DTR_168568	v1.5	removed	non-viral score
+CheckV-009904	DTR_168692	v1.5	removed	non-viral score
+CheckV-009938	DTR_168998	v1.5	removed	non-viral score
+CheckV-009939	DTR_168999	v1.5	removed	non-viral score
+CheckV-009946	DTR_169071	v1.5	removed	non-viral score
+CheckV-009954	DTR_169151	v1.5	removed	non-viral score
+CheckV-009956	DTR_169186	v1.5	removed	non-viral score
+CheckV-009958	DTR_169319	v1.5	removed	non-viral score
+CheckV-009961	DTR_169382	v1.5	removed	non-viral score
+CheckV-009973	DTR_169519	v1.5	removed	non-viral score
+CheckV-010042	DTR_170334	v1.5	removed	non-viral score
+CheckV-010044	DTR_170342	v1.5	removed	non-viral score
+CheckV-010070	DTR_170491	v1.5	removed	non-viral score
+CheckV-010099	DTR_170753	v1.5	removed	non-viral score
+CheckV-010100	DTR_170754	v1.5	removed	non-viral score
+CheckV-010103	DTR_170817	v1.5	removed	non-viral score
+CheckV-010105	DTR_170849	v1.5	removed	non-viral score
+CheckV-010109	DTR_170879	v1.5	removed	non-viral score
+CheckV-010116	DTR_170940	v1.5	removed	non-viral score
+CheckV-010127	DTR_171084	v1.5	removed	non-viral score
+CheckV-010135	DTR_171189	v1.5	removed	non-viral score
+CheckV-010143	DTR_171393	v1.5	removed	non-viral score
+CheckV-010144	DTR_171397	v1.5	removed	non-viral score
+CheckV-010145	DTR_171398	v1.5	removed	non-viral score
+CheckV-010152	DTR_171408	v1.5	removed	non-viral score
+CheckV-010154	DTR_171410	v1.5	removed	non-viral score
+CheckV-010155	DTR_171411	v1.5	removed	non-viral score
+CheckV-010158	DTR_171426	v1.5	removed	non-viral score
+CheckV-010176	DTR_171493	v1.5	removed	non-viral score
+CheckV-010178	DTR_171496	v1.5	removed	non-viral score
+CheckV-010225	DTR_171943	v1.5	removed	non-viral score
+CheckV-010234	DTR_172284	v1.5	removed	non-viral score
+CheckV-010243	DTR_172432	v1.5	removed	non-viral score
+CheckV-010246	DTR_172447	v1.5	removed	non-viral score
+CheckV-010253	DTR_172682	v1.5	removed	non-viral score
+CheckV-010264	DTR_173330	v1.5	removed	non-viral score
+CheckV-010276	DTR_173475	v1.5	removed	non-viral score
+CheckV-010294	DTR_173702	v1.5	removed	non-viral score
+CheckV-010409	DTR_175851	v1.5	removed	non-viral score
+CheckV-010410	DTR_175855	v1.5	removed	non-viral score
+CheckV-010412	DTR_175874	v1.5	removed	non-viral score
+CheckV-010414	DTR_175877	v1.5	removed	non-viral score
+CheckV-010425	DTR_176217	v1.5	removed	non-viral score
+CheckV-010442	DTR_177388	v1.5	removed	non-viral score
+CheckV-010451	DTR_177627	v1.5	removed	non-viral score
+CheckV-010523	DTR_178245	v1.5	removed	non-viral score
+CheckV-010525	DTR_178374	v1.5	removed	non-viral score
+CheckV-010526	DTR_178375	v1.5	removed	non-viral score
+CheckV-010580	DTR_179302	v1.5	removed	non-viral score
+CheckV-010590	DTR_179473	v1.5	removed	non-viral score
+CheckV-010603	DTR_179698	v1.5	removed	non-viral score
+CheckV-010685	DTR_180766	v1.5	removed	non-viral score
+CheckV-010691	DTR_180835	v1.5	removed	non-viral score
+CheckV-010692	DTR_180842	v1.5	removed	non-viral score
+CheckV-010697	DTR_180858	v1.5	removed	non-viral score
+CheckV-010699	DTR_180892	v1.5	removed	non-viral score
+CheckV-010702	DTR_180924	v1.5	removed	non-viral score
+CheckV-010724	DTR_182372	v1.5	removed	non-viral score
+CheckV-010727	DTR_182429	v1.5	removed	non-viral score
+CheckV-011089	DTR_185029	v1.5	removed	non-viral score
+CheckV-011154	DTR_186091	v1.5	removed	non-viral score
+CheckV-011208	DTR_187292	v1.5	removed	non-viral score
+CheckV-011221	DTR_187689	v1.5	removed	non-viral score
+CheckV-011224	DTR_187738	v1.5	removed	non-viral score
+CheckV-011261	DTR_189067	v1.5	removed	non-viral score
+CheckV-011262	DTR_189068	v1.5	removed	non-viral score
+CheckV-011281	DTR_189940	v1.5	removed	non-viral score
+CheckV-011284	DTR_189965	v1.5	removed	non-viral score
+CheckV-011319	DTR_191143	v1.5	removed	non-viral score
+CheckV-011346	DTR_191460	v1.5	removed	non-viral score
+CheckV-011348	DTR_191548	v1.5	removed	non-viral score
+CheckV-011372	DTR_191869	v1.5	removed	non-viral score
+CheckV-011395	DTR_192290	v1.5	removed	non-viral score
+CheckV-011397	DTR_192296	v1.5	removed	non-viral score
+CheckV-011398	DTR_192304	v1.5	removed	non-viral score
+CheckV-011400	DTR_192309	v1.5	removed	non-viral score
+CheckV-011410	DTR_192442	v1.5	removed	non-viral score
+CheckV-011442	DTR_192874	v1.5	removed	non-viral score
+CheckV-011447	DTR_192930	v1.5	removed	non-viral score
+CheckV-011457	DTR_193366	v1.5	removed	non-viral score
+CheckV-011459	DTR_193594	v1.5	removed	non-viral score
+CheckV-011477	DTR_193760	v1.5	removed	non-viral score
+CheckV-011478	DTR_193776	v1.5	removed	non-viral score
+CheckV-011514	DTR_195871	v1.5	removed	non-viral score
+CheckV-011581	DTR_196639	v1.5	removed	non-viral score
+CheckV-011602	DTR_197014	v1.5	removed	non-viral score
+CheckV-011647	DTR_197545	v1.5	removed	non-viral score
+CheckV-011654	DTR_197680	v1.5	removed	non-viral score
+CheckV-011655	DTR_197752	v1.5	removed	non-viral score
+CheckV-011701	DTR_200050	v1.5	removed	non-viral score
+CheckV-011801	DTR_200619	v1.5	removed	non-viral score
+CheckV-012059	DTR_203568	v1.5	removed	non-viral score
+CheckV-012107	DTR_206972	v1.5	removed	non-viral score
+CheckV-012108	DTR_206991	v1.5	removed	non-viral score
+CheckV-012277	DTR_210229	v1.5	removed	non-viral score
+CheckV-012299	DTR_212710	v1.5	removed	non-viral score
+CheckV-012408	DTR_217481	v1.5	removed	non-viral score
+CheckV-012444	DTR_218892	v1.5	removed	non-viral score
+CheckV-012445	DTR_218893	v1.5	removed	non-viral score
+CheckV-012446	DTR_218905	v1.5	removed	non-viral score
+CheckV-012447	DTR_218952	v1.5	removed	non-viral score
+CheckV-012448	DTR_218969	v1.5	removed	non-viral score
+CheckV-012451	DTR_219126	v1.5	removed	non-viral score
+CheckV-012519	DTR_223649	v1.5	removed	non-viral score
+CheckV-012522	DTR_223652	v1.5	removed	non-viral score
+CheckV-012533	DTR_223735	v1.5	removed	non-viral score
+CheckV-012535	DTR_223764	v1.5	removed	non-viral score
+CheckV-012544	DTR_223888	v1.5	removed	non-viral score
+CheckV-012616	DTR_224583	v1.5	removed	non-viral score
+CheckV-012705	DTR_225410	v1.5	removed	non-viral score
+CheckV-013001	DTR_229210	v1.5	removed	non-viral score
+CheckV-013009	DTR_229529	v1.5	removed	non-viral score
+CheckV-013054	DTR_230330	v1.5	removed	non-viral score
+CheckV-013057	DTR_230455	v1.5	removed	non-viral score
+CheckV-013106	DTR_231239	v1.5	removed	non-viral score
+CheckV-013135	DTR_231804	v1.5	removed	non-viral score
+CheckV-013159	DTR_232188	v1.5	removed	non-viral score
+CheckV-013161	DTR_232223	v1.5	removed	non-viral score
+CheckV-013169	DTR_232338	v1.5	removed	non-viral score
+CheckV-013229	DTR_232933	v1.5	removed	non-viral score
+CheckV-013236	DTR_233056	v1.5	removed	non-viral score
+CheckV-013242	DTR_233114	v1.5	removed	non-viral score
+CheckV-013280	DTR_233465	v1.5	removed	non-viral score
+CheckV-013302	DTR_233677	v1.5	removed	non-viral score
+CheckV-013319	DTR_233842	v1.5	removed	non-viral score
+CheckV-013340	DTR_233961	v1.5	removed	non-viral score
+CheckV-013345	DTR_234077	v1.5	removed	non-viral score
+CheckV-013393	DTR_234952	v1.5	removed	non-viral score
+CheckV-013400	DTR_235091	v1.5	removed	non-viral score
+CheckV-013454	DTR_236234	v1.5	removed	non-viral score
+CheckV-013493	DTR_236788	v1.5	removed	non-viral score
+CheckV-013541	DTR_237048	v1.5	removed	non-viral score
+CheckV-013542	DTR_237049	v1.5	removed	non-viral score
+CheckV-013543	DTR_237051	v1.5	removed	non-viral score
+CheckV-013548	DTR_237239	v1.5	removed	non-viral score
+CheckV-013561	DTR_237343	v1.5	removed	non-viral score
+CheckV-013562	DTR_237345	v1.5	removed	non-viral score
+CheckV-013788	DTR_239502	v1.5	removed	non-viral score
+CheckV-013789	DTR_239505	v1.5	removed	non-viral score
+CheckV-013809	DTR_240779	v1.5	removed	non-viral score
+CheckV-013845	DTR_241557	v1.5	removed	non-viral score
+CheckV-013855	DTR_241790	v1.5	removed	non-viral score
+CheckV-014297	DTR_246065	v1.5	removed	non-viral score
+CheckV-014372	DTR_246437	v1.5	removed	non-viral score
+CheckV-014374	DTR_247136	v1.5	removed	non-viral score
+CheckV-014537	DTR_248941	v1.5	removed	non-viral score
+CheckV-014739	DTR_251257	v1.5	removed	non-viral score
+CheckV-014740	DTR_251258	v1.5	removed	non-viral score
+CheckV-014758	DTR_251588	v1.5	removed	non-viral score
+CheckV-014811	DTR_253597	v1.5	removed	non-viral score
+CheckV-014925	DTR_254807	v1.5	removed	non-viral score
+CheckV-014940	DTR_254837	v1.5	removed	non-viral score
+CheckV-014977	DTR_255297	v1.5	removed	non-viral score
+CheckV-014997	DTR_255621	v1.5	removed	non-viral score
+CheckV-015056	DTR_256518	v1.5	removed	non-viral score
+CheckV-015065	DTR_256611	v1.5	removed	non-viral score
+CheckV-015136	DTR_257226	v1.5	removed	non-viral score
+CheckV-015138	DTR_257255	v1.5	removed	non-viral score
+CheckV-015139	DTR_257284	v1.5	removed	non-viral score
+CheckV-015150	DTR_257527	v1.5	removed	non-viral score
+CheckV-015159	DTR_257626	v1.5	removed	non-viral score
+CheckV-015182	DTR_257955	v1.5	removed	non-viral score
+CheckV-015204	DTR_258153	v1.5	removed	non-viral score
+CheckV-015251	DTR_258570	v1.5	removed	non-viral score
+CheckV-015417	DTR_260215	v1.5	removed	non-viral score
+CheckV-015480	DTR_261236	v1.5	removed	non-viral score
+CheckV-015491	DTR_261417	v1.5	removed	non-viral score
+CheckV-015522	DTR_261582	v1.5	removed	non-viral score
+CheckV-015574	DTR_262386	v1.5	removed	non-viral score
+CheckV-015620	DTR_262605	v1.5	removed	non-viral score
+CheckV-015766	DTR_264316	v1.5	removed	non-viral score
+CheckV-015781	DTR_264404	v1.5	removed	non-viral score
+CheckV-015785	DTR_264424	v1.5	removed	non-viral score
+CheckV-015786	DTR_264433	v1.5	removed	non-viral score
+CheckV-015819	DTR_264576	v1.5	removed	non-viral score
+CheckV-015820	DTR_264596	v1.5	removed	non-viral score
+CheckV-015821	DTR_264605	v1.5	removed	non-viral score
+CheckV-015831	DTR_264860	v1.5	removed	non-viral score
+CheckV-015832	DTR_264953	v1.5	removed	non-viral score
+CheckV-015878	DTR_266071	v1.5	removed	non-viral score
+CheckV-016179	DTR_269321	v1.5	removed	non-viral score
+CheckV-016406	DTR_271239	v1.5	removed	non-viral score
+CheckV-016417	DTR_271350	v1.5	removed	non-viral score
+CheckV-016546	DTR_273468	v1.5	removed	non-viral score
+CheckV-016547	DTR_273502	v1.5	removed	non-viral score
+CheckV-016550	DTR_273567	v1.5	removed	non-viral score
+CheckV-016551	DTR_273625	v1.5	removed	non-viral score
+CheckV-016556	DTR_273857	v1.5	removed	non-viral score
+CheckV-016557	DTR_273858	v1.5	removed	non-viral score
+CheckV-016575	DTR_274593	v1.5	removed	non-viral score
+CheckV-016607	DTR_274873	v1.5	removed	non-viral score
+CheckV-016610	DTR_274879	v1.5	removed	non-viral score
+CheckV-016611	DTR_274880	v1.5	removed	non-viral score
+CheckV-016613	DTR_274902	v1.5	removed	non-viral score
+CheckV-016619	DTR_274976	v1.5	removed	non-viral score
+CheckV-016648	DTR_275562	v1.5	removed	non-viral score
+CheckV-016679	DTR_276595	v1.5	removed	non-viral score
+CheckV-016694	DTR_277064	v1.5	removed	non-viral score
+CheckV-016741	DTR_278156	v1.5	removed	non-viral score
+CheckV-016783	DTR_278658	v1.5	removed	non-viral score
+CheckV-016821	DTR_278995	v1.5	removed	non-viral score
+CheckV-016936	DTR_281504	v1.5	removed	non-viral score
+CheckV-017053	DTR_283191	v1.5	removed	non-viral score
+CheckV-017054	DTR_283193	v1.5	removed	non-viral score
+CheckV-017240	DTR_285318	v1.5	removed	non-viral score
+CheckV-017257	DTR_285686	v1.5	removed	non-viral score
+CheckV-017328	DTR_287059	v1.5	removed	non-viral score
+CheckV-017341	DTR_287238	v1.5	removed	non-viral score
+CheckV-017358	DTR_287549	v1.5	removed	non-viral score
+CheckV-017434	DTR_288294	v1.5	removed	non-viral score
+CheckV-017476	DTR_288790	v1.5	removed	non-viral score
+CheckV-017578	DTR_290416	v1.5	removed	non-viral score
+CheckV-017579	DTR_290448	v1.5	removed	non-viral score
+CheckV-017676	DTR_291730	v1.5	removed	non-viral score
+CheckV-017690	DTR_291936	v1.5	removed	non-viral score
+CheckV-017692	DTR_292048	v1.5	removed	non-viral score
+CheckV-017698	DTR_292330	v1.5	removed	non-viral score
+CheckV-017702	DTR_292361	v1.5	removed	non-viral score
+CheckV-017778	DTR_292917	v1.5	removed	non-viral score
+CheckV-017779	DTR_292928	v1.5	removed	non-viral score
+CheckV-017780	DTR_292942	v1.5	removed	non-viral score
+CheckV-017782	DTR_293034	v1.5	removed	non-viral score
+CheckV-017783	DTR_293039	v1.5	removed	non-viral score
+CheckV-017784	DTR_293040	v1.5	removed	non-viral score
+CheckV-017788	DTR_293051	v1.5	removed	non-viral score
+CheckV-017790	DTR_293058	v1.5	removed	non-viral score
+CheckV-017793	DTR_293062	v1.5	removed	non-viral score
+CheckV-017794	DTR_293063	v1.5	removed	non-viral score
+CheckV-017795	DTR_293066	v1.5	removed	non-viral score
+CheckV-017798	DTR_293073	v1.5	removed	non-viral score
+CheckV-017800	DTR_293075	v1.5	removed	non-viral score
+CheckV-017909	DTR_294147	v1.5	removed	non-viral score
+CheckV-017978	DTR_294796	v1.5	removed	non-viral score
+CheckV-018061	DTR_295679	v1.5	removed	non-viral score
+CheckV-018110	DTR_296206	v1.5	removed	non-viral score
+CheckV-018111	DTR_296208	v1.5	removed	non-viral score
+CheckV-018113	DTR_296226	v1.5	removed	non-viral score
+CheckV-018132	DTR_296439	v1.5	removed	non-viral score
+CheckV-018155	DTR_296864	v1.5	removed	non-viral score
+CheckV-018159	DTR_296913	v1.5	removed	non-viral score
+CheckV-018178	DTR_297315	v1.5	removed	non-viral score
+CheckV-018179	DTR_297391	v1.5	removed	non-viral score
+CheckV-018221	DTR_298783	v1.5	removed	non-viral score
+CheckV-018229	DTR_299102	v1.5	removed	non-viral score
+CheckV-018243	DTR_299414	v1.5	removed	non-viral score
+CheckV-018248	DTR_299444	v1.5	removed	non-viral score
+CheckV-018348	DTR_301479	v1.5	removed	non-viral score
+CheckV-018395	DTR_302683	v1.5	removed	non-viral score
+CheckV-018398	DTR_302971	v1.5	removed	non-viral score
+CheckV-018403	DTR_303276	v1.5	removed	non-viral score
+CheckV-018412	DTR_303563	v1.5	removed	non-viral score
+CheckV-018415	DTR_303568	v1.5	removed	non-viral score
+CheckV-018418	DTR_303671	v1.5	removed	non-viral score
+CheckV-018444	DTR_304311	v1.5	removed	non-viral score
+CheckV-018450	DTR_304477	v1.5	removed	non-viral score
+CheckV-018454	DTR_304483	v1.5	removed	non-viral score
+CheckV-018459	DTR_304674	v1.5	removed	non-viral score
+CheckV-018464	DTR_304882	v1.5	removed	non-viral score
+CheckV-018467	DTR_304985	v1.5	removed	non-viral score
+CheckV-018493	DTR_305884	v1.5	removed	non-viral score
+CheckV-018497	DTR_306036	v1.5	removed	non-viral score
+CheckV-018506	DTR_306724	v1.5	removed	non-viral score
+CheckV-018518	DTR_308016	v1.5	removed	non-viral score
+CheckV-018519	DTR_308017	v1.5	removed	non-viral score
+CheckV-018521	DTR_308020	v1.5	removed	non-viral score
+CheckV-018534	DTR_308413	v1.5	removed	non-viral score
+CheckV-018536	DTR_308444	v1.5	removed	non-viral score
+CheckV-018565	DTR_308757	v1.5	removed	non-viral score
+CheckV-018569	DTR_308829	v1.5	removed	non-viral score
+CheckV-018585	DTR_309072	v1.5	removed	non-viral score
+CheckV-018602	DTR_309305	v1.5	removed	non-viral score
+CheckV-018603	DTR_309306	v1.5	removed	non-viral score
+CheckV-018604	DTR_309308	v1.5	removed	non-viral score
+CheckV-018610	DTR_309360	v1.5	removed	non-viral score
+CheckV-018612	DTR_309398	v1.5	removed	non-viral score
+CheckV-018635	DTR_309759	v1.5	removed	non-viral score
+CheckV-018642	DTR_309892	v1.5	removed	non-viral score
+CheckV-018643	DTR_309893	v1.5	removed	non-viral score
+CheckV-018644	DTR_309894	v1.5	removed	non-viral score
+CheckV-018647	DTR_309972	v1.5	removed	non-viral score
+CheckV-018649	DTR_310044	v1.5	removed	non-viral score
+CheckV-018654	DTR_310145	v1.5	removed	non-viral score
+CheckV-018658	DTR_310321	v1.5	removed	non-viral score
+CheckV-018660	DTR_310350	v1.5	removed	non-viral score
+CheckV-018665	DTR_310505	v1.5	removed	non-viral score
+CheckV-018667	DTR_310511	v1.5	removed	non-viral score
+CheckV-018685	DTR_310613	v1.5	removed	non-viral score
+CheckV-018690	DTR_310765	v1.5	removed	non-viral score
+CheckV-018693	DTR_310794	v1.5	removed	non-viral score
+CheckV-018694	DTR_310874	v1.5	removed	non-viral score
+CheckV-018695	DTR_310888	v1.5	removed	non-viral score
+CheckV-018699	DTR_311073	v1.5	removed	non-viral score
+CheckV-018703	DTR_311119	v1.5	removed	non-viral score
+CheckV-018726	DTR_311456	v1.5	removed	non-viral score
+CheckV-018727	DTR_311460	v1.5	removed	non-viral score
+CheckV-018732	DTR_311530	v1.5	removed	non-viral score
+CheckV-018742	DTR_311618	v1.5	removed	non-viral score
+CheckV-018746	DTR_311721	v1.5	removed	non-viral score
+CheckV-018754	DTR_311919	v1.5	removed	non-viral score
+CheckV-018756	DTR_312010	v1.5	removed	non-viral score
+CheckV-018765	DTR_312342	v1.5	removed	non-viral score
+CheckV-018798	DTR_312817	v1.5	removed	non-viral score
+CheckV-018824	DTR_313043	v1.5	removed	non-viral score
+CheckV-018840	DTR_313531	v1.5	removed	non-viral score
+CheckV-018841	DTR_313534	v1.5	removed	non-viral score
+CheckV-018842	DTR_313535	v1.5	removed	non-viral score
+CheckV-018843	DTR_313539	v1.5	removed	non-viral score
+CheckV-018890	DTR_313961	v1.5	removed	non-viral score
+CheckV-018936	DTR_314391	v1.5	removed	non-viral score
+CheckV-019006	DTR_314682	v1.5	removed	non-viral score
+CheckV-019103	DTR_315300	v1.5	removed	non-viral score
+CheckV-019110	DTR_315409	v1.5	removed	non-viral score
+CheckV-019186	DTR_315779	v1.5	removed	non-viral score
+CheckV-019188	DTR_315796	v1.5	removed	non-viral score
+CheckV-019216	DTR_315966	v1.5	removed	non-viral score
+CheckV-019289	DTR_316510	v1.5	removed	non-viral score
+CheckV-019290	DTR_316519	v1.5	removed	non-viral score
+CheckV-019410	DTR_317637	v1.5	removed	non-viral score
+CheckV-019439	DTR_317853	v1.5	removed	non-viral score
+CheckV-019541	DTR_318878	v1.5	removed	non-viral score
+CheckV-019619	DTR_321496	v1.5	removed	non-viral score
+CheckV-019627	DTR_321788	v1.5	removed	non-viral score
+CheckV-019634	DTR_321882	v1.5	removed	non-viral score
+CheckV-019657	DTR_322281	v1.5	removed	non-viral score
+CheckV-019662	DTR_324211	v1.5	removed	non-viral score
+CheckV-019676	DTR_324442	v1.5	removed	non-viral score
+CheckV-019715	DTR_324760	v1.5	removed	non-viral score
+CheckV-019716	DTR_324761	v1.5	removed	non-viral score
+CheckV-019717	DTR_324764	v1.5	removed	non-viral score
+CheckV-019748	DTR_325118	v1.5	removed	non-viral score
+CheckV-019750	DTR_325143	v1.5	removed	non-viral score
+CheckV-019791	DTR_326044	v1.5	removed	non-viral score
+CheckV-019794	DTR_326112	v1.5	removed	non-viral score
+CheckV-019796	DTR_326141	v1.5	removed	non-viral score
+CheckV-019823	DTR_326828	v1.5	removed	non-viral score
+CheckV-019824	DTR_326878	v1.5	removed	non-viral score
+CheckV-019825	DTR_326890	v1.5	removed	non-viral score
+CheckV-019852	DTR_327609	v1.5	removed	non-viral score
+CheckV-019862	DTR_328050	v1.5	removed	non-viral score
+CheckV-019868	DTR_328171	v1.5	removed	non-viral score
+CheckV-019945	DTR_329560	v1.5	removed	non-viral score
+CheckV-020095	DTR_330808	v1.5	removed	non-viral score
+CheckV-020118	DTR_331198	v1.5	removed	non-viral score
+CheckV-020135	DTR_331385	v1.5	removed	non-viral score
+CheckV-020183	DTR_331551	v1.5	removed	non-viral score
+CheckV-020213	DTR_331646	v1.5	removed	non-viral score
+CheckV-020216	DTR_331661	v1.5	removed	non-viral score
+CheckV-020217	DTR_331662	v1.5	removed	non-viral score
+CheckV-020219	DTR_331672	v1.5	removed	non-viral score
+CheckV-020220	DTR_331673	v1.5	removed	non-viral score
+CheckV-020224	DTR_331695	v1.5	removed	non-viral score
+CheckV-020226	DTR_331699	v1.5	removed	non-viral score
+CheckV-020227	DTR_331700	v1.5	removed	non-viral score
+CheckV-020241	DTR_331761	v1.5	removed	non-viral score
+CheckV-020259	DTR_331857	v1.5	removed	non-viral score
+CheckV-020262	DTR_331868	v1.5	removed	non-viral score
+CheckV-020324	DTR_333020	v1.5	removed	non-viral score
+CheckV-020357	DTR_334217	v1.5	removed	non-viral score
+CheckV-020368	DTR_334773	v1.5	removed	non-viral score
+CheckV-020405	DTR_343984	v1.5	removed	non-viral score
+CheckV-020406	DTR_344019	v1.5	removed	non-viral score
+CheckV-020439	DTR_344454	v1.5	removed	non-viral score
+CheckV-020483	DTR_344752	v1.5	removed	non-viral score
+CheckV-020499	DTR_345020	v1.5	removed	non-viral score
+CheckV-020530	DTR_345475	v1.5	removed	non-viral score
+CheckV-020531	DTR_345476	v1.5	removed	non-viral score
+CheckV-020533	DTR_345478	v1.5	removed	non-viral score
+CheckV-020569	DTR_346408	v1.5	removed	non-viral score
+CheckV-020570	DTR_346421	v1.5	removed	non-viral score
+CheckV-020579	DTR_346604	v1.5	removed	non-viral score
+CheckV-020605	DTR_347071	v1.5	removed	non-viral score
+CheckV-020606	DTR_347074	v1.5	removed	non-viral score
+CheckV-020608	DTR_347081	v1.5	removed	non-viral score
+CheckV-020609	DTR_347082	v1.5	removed	non-viral score
+CheckV-020624	DTR_347149	v1.5	removed	non-viral score
+CheckV-020893	DTR_351261	v1.5	removed	non-viral score
+CheckV-021221	DTR_353904	v1.5	removed	non-viral score
+CheckV-021222	DTR_353960	v1.5	removed	non-viral score
+CheckV-021242	DTR_354444	v1.5	removed	non-viral score
+CheckV-021575	DTR_358840	v1.5	removed	non-viral score
+CheckV-021650	DTR_360446	v1.5	removed	non-viral score
+CheckV-021651	DTR_360529	v1.5	removed	non-viral score
+CheckV-021682	DTR_360890	v1.5	removed	non-viral score
+CheckV-021694	DTR_361308	v1.5	removed	non-viral score
+CheckV-021700	DTR_361502	v1.5	removed	non-viral score
+CheckV-021709	DTR_361843	v1.5	removed	non-viral score
+CheckV-021718	DTR_362048	v1.5	removed	non-viral score
+CheckV-021756	DTR_362655	v1.5	removed	non-viral score
+CheckV-021791	DTR_363407	v1.5	removed	non-viral score
+CheckV-021792	DTR_363436	v1.5	removed	non-viral score
+CheckV-021794	DTR_363464	v1.5	removed	non-viral score
+CheckV-022583	DTR_386233	v1.5	removed	non-viral score
+CheckV-023082	DTR_388189	v1.5	removed	non-viral score
+CheckV-023161	DTR_391407	v1.5	removed	non-viral score
+CheckV-023390	DTR_405316	v1.5	removed	non-viral score
+CheckV-023465	DTR_407355	v1.5	removed	non-viral score
+CheckV-023616	DTR_411409	v1.5	removed	non-viral score
+CheckV-024786	DTR_461283	v1.5	removed	non-viral score
+CheckV-024817	DTR_461701	v1.5	removed	non-viral score
+CheckV-025188	DTR_484860	v1.5	removed	non-viral score
+CheckV-025587	DTR_498670	v1.5	removed	non-viral score
+CheckV-026075	DTR_511135	v1.5	removed	non-viral score
+CheckV-027415	DTR_558358	v1.5	removed	non-viral score
+CheckV-027416	DTR_558364	v1.5	removed	non-viral score
+CheckV-027419	DTR_558510	v1.5	removed	non-viral score
+CheckV-027420	DTR_558511	v1.5	removed	non-viral score
+CheckV-027422	DTR_558513	v1.5	removed	non-viral score
+CheckV-027997	DTR_577228	v1.5	removed	non-viral score
+CheckV-028000	DTR_577240	v1.5	removed	non-viral score
+CheckV-028001	DTR_577243	v1.5	removed	non-viral score
+CheckV-028003	DTR_577245	v1.5	removed	non-viral score
+CheckV-028008	DTR_577311	v1.5	removed	non-viral score
+CheckV-028012	DTR_577373	v1.5	removed	non-viral score
+CheckV-028013	DTR_577375	v1.5	removed	non-viral score
+CheckV-028015	DTR_577379	v1.5	removed	non-viral score
+CheckV-028017	DTR_577384	v1.5	removed	non-viral score
+CheckV-028019	DTR_577387	v1.5	removed	non-viral score
+CheckV-028169	DTR_578587	v1.5	removed	non-viral score
+CheckV-028201	DTR_578770	v1.5	removed	non-viral score
+CheckV-028263	DTR_584646	v1.5	removed	non-viral score
+CheckV-028276	DTR_585303	v1.5	removed	non-viral score
+CheckV-028277	DTR_585305	v1.5	removed	non-viral score
+CheckV-028278	DTR_585333	v1.5	removed	non-viral score
+CheckV-028281	DTR_585372	v1.5	removed	non-viral score
+CheckV-028288	DTR_585438	v1.5	removed	non-viral score
+CheckV-028301	DTR_585619	v1.5	removed	non-viral score
+CheckV-028302	DTR_585660	v1.5	removed	non-viral score
+CheckV-028308	DTR_585728	v1.5	removed	non-viral score
+CheckV-028309	DTR_585729	v1.5	removed	non-viral score
+CheckV-028316	DTR_585771	v1.5	removed	non-viral score
+CheckV-028317	DTR_585773	v1.5	removed	non-viral score
+CheckV-028318	DTR_585775	v1.5	removed	non-viral score
+CheckV-028596	DTR_601206	v1.5	removed	non-viral score
+CheckV-028665	DTR_605014	v1.5	removed	non-viral score
+CheckV-028671	DTR_605215	v1.5	removed	non-viral score
+CheckV-028674	DTR_605250	v1.5	removed	non-viral score
+CheckV-028678	DTR_605397	v1.5	removed	non-viral score
+CheckV-028687	DTR_605571	v1.5	removed	non-viral score
+CheckV-028710	DTR_605912	v1.5	removed	non-viral score
+CheckV-028711	DTR_605918	v1.5	removed	non-viral score
+CheckV-028719	DTR_606278	v1.5	removed	non-viral score
+CheckV-028720	DTR_606337	v1.5	removed	non-viral score
+CheckV-028734	DTR_606666	v1.5	removed	non-viral score
+CheckV-028761	DTR_607285	v1.5	removed	non-viral score
+CheckV-028763	DTR_607368	v1.5	removed	non-viral score
+CheckV-028766	DTR_607443	v1.5	removed	non-viral score
+CheckV-028809	DTR_608514	v1.5	removed	non-viral score
+CheckV-028810	DTR_608572	v1.5	removed	non-viral score
+CheckV-028811	DTR_608595	v1.5	removed	non-viral score
+CheckV-028813	DTR_608617	v1.5	removed	non-viral score
+CheckV-028815	DTR_608697	v1.5	removed	non-viral score
+CheckV-028830	DTR_609124	v1.5	removed	non-viral score
+CheckV-028831	DTR_609161	v1.5	removed	non-viral score
+CheckV-028835	DTR_609457	v1.5	removed	non-viral score
+CheckV-028856	DTR_609826	v1.5	removed	non-viral score
+CheckV-028865	DTR_610037	v1.5	removed	non-viral score
+CheckV-028867	DTR_610100	v1.5	removed	non-viral score
+CheckV-028868	DTR_610145	v1.5	removed	non-viral score
+CheckV-028871	DTR_610181	v1.5	removed	non-viral score
+CheckV-028880	DTR_610454	v1.5	removed	non-viral score
+CheckV-029052	DTR_613314	v1.5	removed	non-viral score
+CheckV-029066	DTR_613517	v1.5	removed	non-viral score
+CheckV-029364	DTR_620847	v1.5	removed	non-viral score
+CheckV-029675	DTR_627971	v1.5	removed	non-viral score
+CheckV-029734	DTR_628842	v1.5	removed	non-viral score
+CheckV-029752	DTR_629072	v1.5	removed	non-viral score
+CheckV-029773	DTR_629359	v1.5	removed	non-viral score
+CheckV-029780	DTR_629475	v1.5	removed	non-viral score
+CheckV-029786	DTR_629573	v1.5	removed	non-viral score
+CheckV-029801	DTR_629913	v1.5	removed	non-viral score
+CheckV-029832	DTR_630416	v1.5	removed	non-viral score
+CheckV-029888	DTR_631275	v1.5	removed	non-viral score
+CheckV-029889	DTR_631276	v1.5	removed	non-viral score
+CheckV-029904	DTR_631716	v1.5	removed	non-viral score
+CheckV-029976	DTR_632849	v1.5	removed	non-viral score
+CheckV-029977	DTR_632891	v1.5	removed	non-viral score
+CheckV-029978	DTR_632896	v1.5	removed	non-viral score
+CheckV-029980	DTR_632916	v1.5	removed	non-viral score
+CheckV-029982	DTR_633009	v1.5	removed	non-viral score
+CheckV-029989	DTR_633093	v1.5	removed	non-viral score
+CheckV-030004	DTR_633376	v1.5	removed	non-viral score
+CheckV-030079	DTR_634346	v1.5	removed	non-viral score
+CheckV-030080	DTR_634401	v1.5	removed	non-viral score
+CheckV-030081	DTR_634412	v1.5	removed	non-viral score
+CheckV-030150	DTR_639002	v1.5	removed	non-viral score
+CheckV-030152	DTR_639005	v1.5	removed	non-viral score
+CheckV-030153	DTR_639006	v1.5	removed	non-viral score
+CheckV-030155	DTR_639008	v1.5	removed	non-viral score
+CheckV-030157	DTR_639011	v1.5	removed	non-viral score
+CheckV-030159	DTR_639020	v1.5	removed	non-viral score
+CheckV-030161	DTR_639061	v1.5	removed	non-viral score
+CheckV-030163	DTR_639098	v1.5	removed	non-viral score
+CheckV-030203	DTR_639184	v1.5	removed	non-viral score
+CheckV-030207	DTR_639219	v1.5	removed	non-viral score
+CheckV-030218	DTR_639256	v1.5	removed	non-viral score
+CheckV-030224	DTR_639283	v1.5	removed	non-viral score
+CheckV-030260	DTR_639466	v1.5	removed	non-viral score
+CheckV-030279	DTR_639527	v1.5	removed	non-viral score
+CheckV-030280	DTR_639533	v1.5	removed	non-viral score
+CheckV-030318	DTR_639636	v1.5	removed	non-viral score
+CheckV-030569	DTR_640225	v1.5	removed	non-viral score
+CheckV-030574	DTR_640258	v1.5	removed	non-viral score
+CheckV-030575	DTR_640259	v1.5	removed	non-viral score
+CheckV-030649	DTR_640413	v1.5	removed	non-viral score
+CheckV-030782	DTR_640662	v1.5	removed	non-viral score
+CheckV-030783	DTR_640665	v1.5	removed	non-viral score
+CheckV-030787	DTR_640672	v1.5	removed	non-viral score
+CheckV-030788	DTR_640675	v1.5	removed	non-viral score
+CheckV-030789	DTR_640677	v1.5	removed	non-viral score
+CheckV-030790	DTR_640680	v1.5	removed	non-viral score
+CheckV-030793	DTR_640687	v1.5	removed	non-viral score
+CheckV-030794	DTR_640691	v1.5	removed	non-viral score
+CheckV-030798	DTR_640756	v1.5	removed	non-viral score
+CheckV-030800	DTR_640765	v1.5	removed	non-viral score
+CheckV-030802	DTR_640770	v1.5	removed	non-viral score
+CheckV-030804	DTR_640775	v1.5	removed	non-viral score
+CheckV-030806	DTR_640827	v1.5	removed	non-viral score
+CheckV-030813	DTR_640934	v1.5	removed	non-viral score
+CheckV-030820	DTR_641017	v1.5	removed	non-viral score
+CheckV-030823	DTR_641023	v1.5	removed	non-viral score
+CheckV-030825	DTR_641027	v1.5	removed	non-viral score
+CheckV-030829	DTR_641146	v1.5	removed	non-viral score
+CheckV-030831	DTR_641158	v1.5	removed	non-viral score
+CheckV-030833	DTR_641161	v1.5	removed	non-viral score
+CheckV-030842	DTR_641335	v1.5	removed	non-viral score
+CheckV-030844	DTR_641384	v1.5	removed	non-viral score
+CheckV-030848	DTR_641399	v1.5	removed	non-viral score
+CheckV-030853	DTR_641441	v1.5	removed	non-viral score
+CheckV-030857	DTR_641616	v1.5	removed	non-viral score
+CheckV-030858	DTR_641618	v1.5	removed	non-viral score
+CheckV-030860	DTR_641623	v1.5	removed	non-viral score
+CheckV-030863	DTR_641636	v1.5	removed	non-viral score
+CheckV-030866	DTR_641641	v1.5	removed	non-viral score
+CheckV-030869	DTR_641649	v1.5	removed	non-viral score
+CheckV-030872	DTR_641759	v1.5	removed	non-viral score
+CheckV-030874	DTR_641772	v1.5	removed	non-viral score
+CheckV-030905	DTR_642751	v1.5	removed	non-viral score
+CheckV-030935	DTR_643034	v1.5	removed	non-viral score
+CheckV-030970	DTR_644220	v1.5	removed	non-viral score
+CheckV-031018	DTR_645311	v1.5	removed	non-viral score
+CheckV-031023	DTR_645542	v1.5	removed	non-viral score
+CheckV-031215	DTR_648655	v1.5	removed	non-viral score
+CheckV-031220	DTR_648738	v1.5	removed	non-viral score
+CheckV-031248	DTR_649068	v1.5	removed	non-viral score
+CheckV-031325	DTR_651057	v1.5	removed	non-viral score
+CheckV-031329	DTR_651064	v1.5	removed	non-viral score
+CheckV-031356	DTR_653415	v1.5	removed	non-viral score
+CheckV-031462	DTR_657944	v1.5	removed	non-viral score
+CheckV-031466	DTR_658112	v1.5	removed	non-viral score
+CheckV-031532	DTR_660717	v1.5	removed	non-viral score
+CheckV-031545	DTR_661051	v1.5	removed	non-viral score
+CheckV-031551	DTR_661100	v1.5	removed	non-viral score
+CheckV-031572	DTR_662433	v1.5	removed	non-viral score
+CheckV-031593	DTR_663148	v1.5	removed	non-viral score
+CheckV-032037	DTR_684352	v1.5	removed	non-viral score
+CheckV-032241	DTR_691005	v1.5	removed	non-viral score
+CheckV-032283	DTR_696266	v1.5	removed	non-viral score
+CheckV-032315	DTR_696561	v1.5	removed	non-viral score
+CheckV-032397	DTR_697235	v1.5	removed	non-viral score
+CheckV-032399	DTR_697258	v1.5	removed	non-viral score
+CheckV-032427	DTR_697849	v1.5	removed	non-viral score
+CheckV-032428	DTR_697850	v1.5	removed	non-viral score
+CheckV-032430	DTR_697945	v1.5	removed	non-viral score
+CheckV-032446	DTR_698120	v1.5	removed	non-viral score
+CheckV-032457	DTR_698341	v1.5	removed	non-viral score
+CheckV-032474	DTR_698612	v1.5	removed	non-viral score
+CheckV-032475	DTR_698619	v1.5	removed	non-viral score
+CheckV-032481	DTR_698715	v1.5	removed	non-viral score
+CheckV-032482	DTR_698723	v1.5	removed	non-viral score
+CheckV-032484	DTR_698729	v1.5	removed	non-viral score
+CheckV-032495	DTR_699004	v1.5	removed	non-viral score
+CheckV-032497	DTR_699008	v1.5	removed	non-viral score
+CheckV-032499	DTR_699012	v1.5	removed	non-viral score
+CheckV-032506	DTR_699220	v1.5	removed	non-viral score
+CheckV-032507	DTR_699310	v1.5	removed	non-viral score
+CheckV-032508	DTR_699374	v1.5	removed	non-viral score
+CheckV-032519	DTR_699734	v1.5	removed	non-viral score
+CheckV-032623	DTR_702464	v1.5	removed	non-viral score
+CheckV-032652	DTR_702817	v1.5	removed	non-viral score
+CheckV-032745	DTR_704118	v1.5	removed	non-viral score
+CheckV-032746	DTR_704184	v1.5	removed	non-viral score
+CheckV-032761	DTR_704516	v1.5	removed	non-viral score
+CheckV-032762	DTR_704518	v1.5	removed	non-viral score
+CheckV-032763	DTR_704529	v1.5	removed	non-viral score
+CheckV-032764	DTR_704534	v1.5	removed	non-viral score
+CheckV-032782	DTR_705054	v1.5	removed	non-viral score
+CheckV-032791	DTR_705251	v1.5	removed	non-viral score
+CheckV-032792	DTR_705253	v1.5	removed	non-viral score
+CheckV-032796	DTR_705363	v1.5	removed	non-viral score
+CheckV-032803	DTR_705598	v1.5	removed	non-viral score
+CheckV-032818	DTR_706009	v1.5	removed	non-viral score
+CheckV-032902	DTR_713386	v1.5	removed	non-viral score
+CheckV-032968	DTR_715822	v1.5	removed	non-viral score
+CheckV-033003	DTR_715951	v1.5	removed	non-viral score
+CheckV-033040	DTR_716327	v1.5	removed	non-viral score
+CheckV-033041	DTR_716329	v1.5	removed	non-viral score
+CheckV-033043	DTR_716347	v1.5	removed	non-viral score
+CheckV-033073	DTR_716640	v1.5	removed	non-viral score
+CheckV-033157	DTR_717612	v1.5	removed	non-viral score
+CheckV-033220	DTR_718284	v1.5	removed	non-viral score
+CheckV-033298	DTR_719901	v1.5	removed	non-viral score
+CheckV-033335	DTR_722281	v1.5	removed	non-viral score
+CheckV-033340	DTR_722291	v1.5	removed	non-viral score
+CheckV-033343	DTR_722329	v1.5	removed	non-viral score
+CheckV-033364	DTR_723817	v1.5	removed	non-viral score
+CheckV-033388	DTR_725293	v1.5	removed	non-viral score
+CheckV-033560	DTR_729913	v1.5	removed	non-viral score
+CheckV-034955	DTR_739744	v1.5	removed	non-viral score
+CheckV-035025	DTR_742312	v1.5	removed	non-viral score
+CheckV-035330	DTR_757975	v1.5	removed	non-viral score
+CheckV-036358	DTR_805956	v1.5	removed	non-viral score
+CheckV-036855	DTR_822929	v1.5	removed	non-viral score
+CheckV-037097	DTR_830635	v1.5	removed	non-viral score
+CheckV-037995	DTR_859348	v1.5	removed	non-viral score
+CheckV-039018	DTR_882143	v1.5	removed	non-viral score
+CheckV-039506	DTR_887303	v1.5	removed	non-viral score
+CheckV-039678	DTR_888599	v1.5	removed	non-viral score
+CheckV-039704	DTR_888661	v1.5	removed	non-viral score
+CheckV-039729	DTR_888706	v1.5	removed	non-viral score
+CheckV-039870	DTR_888967	v1.5	removed	non-viral score
+CheckV-039993	DTR_889228	v1.5	removed	non-viral score
+CheckV-039997	DTR_889234	v1.5	removed	non-viral score
+CheckV-040193	DTR_889589	v1.5	removed	non-viral score
+CheckV-040353	DTR_889935	v1.5	removed	non-viral score
+CheckV-040436	DTR_890076	v1.5	removed	non-viral score
+CheckV-040446	DTR_890104	v1.5	removed	non-viral score
+CheckV-040449	DTR_890112	v1.5	removed	non-viral score
+CheckV-040485	DTR_890220	v1.5	removed	non-viral score
+CheckV-040523	DTR_890334	v1.5	removed	non-viral score
+CheckV-040540	DTR_890404	v1.5	removed	non-viral score
+CheckV-040573	DTR_890475	v1.5	removed	non-viral score
+CheckV-040575	DTR_890495	v1.5	removed	non-viral score
+CheckV-040614	DTR_890607	v1.5	removed	non-viral score
+CheckV-040630	DTR_890657	v1.5	removed	non-viral score
+CheckV-040765	DTR_890974	v1.5	removed	non-viral score
+CheckV-040767	DTR_890979	v1.5	removed	non-viral score
+CheckV-040821	DTR_891093	v1.5	removed	non-viral score
+CheckV-040833	DTR_891115	v1.5	removed	non-viral score
+CheckV-040946	DTR_891319	v1.5	removed	non-viral score
+CheckV-041002	DTR_891437	v1.5	removed	non-viral score
+CheckV-041060	DTR_891543	v1.5	removed	non-viral score
+CheckV-041199	DTR_891820	v1.5	removed	non-viral score
+CheckV-041200	DTR_891845	v1.5	removed	non-viral score
+CheckV-041202	DTR_891858	v1.5	removed	non-viral score
+CheckV-041220	DTR_891907	v1.5	removed	non-viral score
+CheckV-041252	DTR_892009	v1.5	removed	non-viral score
+CheckV-041563	DTR_892693	v1.5	removed	non-viral score
+CheckV-041627	DTR_892826	v1.5	removed	non-viral score
+CheckV-041629	DTR_892830	v1.5	removed	non-viral score
+CheckV-041707	DTR_892980	v1.5	removed	non-viral score
+CheckV-041750	DTR_893048	v1.5	removed	non-viral score
+CheckV-041751	DTR_893054	v1.5	removed	non-viral score
+CheckV-041753	DTR_893057	v1.5	removed	non-viral score
+CheckV-041756	DTR_893084	v1.5	removed	non-viral score
+CheckV-041764	DTR_893110	v1.5	removed	non-viral score
+CheckV-041767	DTR_893116	v1.5	removed	non-viral score
+CheckV-041777	DTR_893135	v1.5	removed	non-viral score
+CheckV-041911	DTR_893425	v1.5	removed	non-viral score
+CheckV-041946	DTR_893507	v1.5	removed	non-viral score
+CheckV-041949	DTR_893519	v1.5	removed	non-viral score
+CheckV-042048	DTR_893746	v1.5	removed	non-viral score
+CheckV-047983	GCA_002603685.1	v1.5	removed	non-viral score
+CheckV-048635	GCA_002630245.1	v1.5	removed	non-viral score
+CheckV-049010	GCA_002755775.1	v1.5	removed	non-viral score
+CheckV-049622	GCA_002921395.1	v1.5	removed	non-viral score
+CheckV-050238	GCA_003033635.1	v1.5	removed	non-viral score
+CheckV-050273	GCA_003047595.1	v1.5	removed	non-viral score
+CheckV-050274	GCA_003047615.1	v1.5	removed	non-viral score
+CheckV-050275	GCA_003047635.1	v1.5	removed	non-viral score
+CheckV-050276	GCA_003047655.1	v1.5	removed	non-viral score
+CheckV-050280	GCA_003047915.1	v1.5	removed	non-viral score
+CheckV-050977	GCA_003143455.1	v1.5	removed	non-viral score
+CheckV-051996	GCA_003502125.1	v1.5	removed	non-viral score
+CheckV-052013	GCA_003502865.1	v1.5	removed	non-viral score
+CheckV-052040	GCA_003528735.1	v1.5	removed	non-viral score
+CheckV-052093	GCA_003540075.1	v1.5	removed	non-viral score
+CheckV-052099	GCA_003540555.1	v1.5	removed	non-viral score
+CheckV-052333	GCA_003726295.1	v1.5	removed	non-viral score
+CheckV-052347	GCA_003727255.1	v1.5	removed	non-viral score
+CheckV-053326	GCA_003971865.1	v1.5	removed	non-viral score
+CheckV-054291	GCA_004773215.1	v1.5	removed	non-viral score
+CheckV-058574	GCA_014083765.1	v1.5	removed	non-viral score
+CheckV-059089	GCA_016811725.1	v1.5	removed	non-viral score
+CheckV-059298	GCA_018361445.1	v1.5	removed	non-viral score
+CheckV-059607	GCA_018987015.1	v1.5	removed	non-viral score
+CheckV-059610	GCA_018987055.1	v1.5	removed	non-viral score
+CheckV-062411	LAZR01002459.1	v1.5	removed	non-viral score
+CheckV-062412	LAZR01003390.1	v1.5	removed	non-viral score
+CheckV-062414	MDVT01000002.1	v1.5	removed	non-viral score
+CheckV-062416	MGMR01000078.1	v1.5	removed	non-viral score
+CheckV-000025	1223541	v1.5	removed	non-viral >=2 tools
+CheckV-000038	1453014	v1.5	removed	non-viral >=2 tools
+CheckV-000058	191671	v1.5	removed	non-viral >=2 tools
+CheckV-000086	2537562115|AOUB01000242	v1.5	removed	non-viral >=2 tools
+CheckV-000190	3300003272|Cyano_1000228	v1.5	removed	non-viral >=2 tools
+CheckV-000225	3300005686|Ga0074435_100014	v1.5	removed	non-viral >=2 tools
+CheckV-000321	3300009788|Ga0114923_10000068	v1.5	removed	non-viral >=2 tools
+CheckV-000740	3300027733|Ga0209297_1000004	v1.5	removed	non-viral >=2 tools
+CheckV-000775	3300028610|Ga0309788_100048	v1.5	removed	non-viral >=2 tools
+CheckV-000789	3300028840|Ga0309773_1000045	v1.5	removed	non-viral >=2 tools
+CheckV-001001	3300033141|Ga0366833_1000271	v1.5	removed	non-viral >=2 tools
+CheckV-001121	3300033153|Ga0366824_1000500	v1.5	removed	non-viral >=2 tools
+CheckV-001236	3300037067|Ga0378408_0000189	v1.5	removed	non-viral >=2 tools
+CheckV-001372	3300037851|Ga0394877_0000403	v1.5	removed	non-viral >=2 tools
+CheckV-001393	3300038417|Ga0427931_0000516	v1.5	removed	non-viral >=2 tools
+CheckV-001475	3300042542|Ga0453075_0000001	v1.5	removed	non-viral >=2 tools
+CheckV-002068	406886	v1.5	removed	non-viral >=2 tools
+CheckV-002131	453188	v1.5	removed	non-viral >=2 tools
+CheckV-002132	453542	v1.5	removed	non-viral >=2 tools
+CheckV-002251	535067	v1.5	removed	non-viral >=2 tools
+CheckV-002301	574285	v1.5	removed	non-viral >=2 tools
+CheckV-002317	579893	v1.5	removed	non-viral >=2 tools
+CheckV-002327	587248	v1.5	removed	non-viral >=2 tools
+CheckV-002454	67117	v1.5	removed	non-viral >=2 tools
+CheckV-002520	705085	v1.5	removed	non-viral >=2 tools
+CheckV-002601	734041	v1.5	removed	non-viral >=2 tools
+CheckV-002603	734116	v1.5	removed	non-viral >=2 tools
+CheckV-002657	770924	v1.5	removed	non-viral >=2 tools
+CheckV-002679	789565	v1.5	removed	non-viral >=2 tools
+CheckV-002770	862408	v1.5	removed	non-viral >=2 tools
+CheckV-002888	900472	v1.5	removed	non-viral >=2 tools
+CheckV-004448	DTR_042068	v1.5	removed	non-viral >=2 tools
+CheckV-006207	DTR_077360	v1.5	removed	non-viral >=2 tools
+CheckV-007071	DTR_103908	v1.5	removed	non-viral >=2 tools
+CheckV-011286	DTR_189991	v1.5	removed	non-viral >=2 tools
+CheckV-016175	DTR_269254	v1.5	removed	non-viral >=2 tools
+CheckV-023085	DTR_388252	v1.5	removed	non-viral >=2 tools
+CheckV-057252	GCA_012942875.1	v1.5	removed	non-viral >=2 tools
+CheckV-007597	DTR_112443	v1.5	removed	insufficient viral evidence
+CheckV-007655	DTR_112895	v1.5	removed	insufficient viral evidence
+CheckV-007656	DTR_112907	v1.5	removed	insufficient viral evidence
+CheckV-007719	DTR_113881	v1.5	removed	insufficient viral evidence
+CheckV-007721	DTR_113883	v1.5	removed	insufficient viral evidence
+CheckV-007724	DTR_113911	v1.5	removed	insufficient viral evidence
+CheckV-007757	DTR_115402	v1.5	removed	insufficient viral evidence
+CheckV-007761	DTR_115474	v1.5	removed	insufficient viral evidence
+CheckV-007776	DTR_115828	v1.5	removed	insufficient viral evidence
+CheckV-007794	DTR_116526	v1.5	removed	insufficient viral evidence
+CheckV-007796	DTR_116531	v1.5	removed	insufficient viral evidence
+CheckV-007798	DTR_116536	v1.5	removed	insufficient viral evidence
+CheckV-007800	DTR_116549	v1.5	removed	insufficient viral evidence
+CheckV-025240	DTR_488058	v1.5	removed	insufficient viral evidence
+CheckV-025304	DTR_489879	v1.5	removed	insufficient viral evidence
+CheckV-006989	DTR_102696	v1.5	removed	insufficient viral evidence
+CheckV-007069	DTR_103863	v1.5	removed	insufficient viral evidence
+CheckV-007102	DTR_105374	v1.5	removed	insufficient viral evidence
+CheckV-007104	DTR_105376	v1.5	removed	insufficient viral evidence
+CheckV-007120	DTR_105622	v1.5	removed	insufficient viral evidence
+CheckV-007125	DTR_105885	v1.5	removed	insufficient viral evidence
+CheckV-007126	DTR_105888	v1.5	removed	insufficient viral evidence
+CheckV-007129	DTR_105894	v1.5	removed	insufficient viral evidence
+CheckV-007140	DTR_106007	v1.5	removed	insufficient viral evidence
+CheckV-007141	DTR_106046	v1.5	removed	insufficient viral evidence
+CheckV-016334	DTR_270527	v1.5	removed	insufficient viral evidence
+CheckV-009873	DTR_168556	v1.5	removed	insufficient viral evidence
+CheckV-009903	DTR_168690	v1.5	removed	insufficient viral evidence
+CheckV-009942	DTR_169004	v1.5	removed	insufficient viral evidence
+CheckV-009943	DTR_169006	v1.5	removed	insufficient viral evidence
+CheckV-009944	DTR_169010	v1.5	removed	insufficient viral evidence
+CheckV-009945	DTR_169013	v1.5	removed	insufficient viral evidence
+CheckV-009955	DTR_169178	v1.5	removed	insufficient viral evidence
+CheckV-009990	DTR_169909	v1.5	removed	insufficient viral evidence
+CheckV-010110	DTR_170882	v1.5	removed	insufficient viral evidence
+CheckV-010113	DTR_170910	v1.5	removed	insufficient viral evidence
+CheckV-010115	DTR_170915	v1.5	removed	insufficient viral evidence
+CheckV-010132	DTR_171181	v1.5	removed	insufficient viral evidence
+CheckV-010133	DTR_171185	v1.5	removed	insufficient viral evidence
+CheckV-010134	DTR_171186	v1.5	removed	insufficient viral evidence
+CheckV-010138	DTR_171195	v1.5	removed	insufficient viral evidence
+CheckV-010153	DTR_171409	v1.5	removed	insufficient viral evidence
+CheckV-010164	DTR_171445	v1.5	removed	insufficient viral evidence
+CheckV-010180	DTR_171510	v1.5	removed	insufficient viral evidence
+CheckV-010201	DTR_171641	v1.5	removed	insufficient viral evidence
+CheckV-010202	DTR_171667	v1.5	removed	insufficient viral evidence
+CheckV-010210	DTR_171791	v1.5	removed	insufficient viral evidence
+CheckV-010211	DTR_171792	v1.5	removed	insufficient viral evidence
+CheckV-010223	DTR_171934	v1.5	removed	insufficient viral evidence
+CheckV-010230	DTR_172232	v1.5	removed	insufficient viral evidence
+CheckV-010233	DTR_172270	v1.5	removed	insufficient viral evidence
+CheckV-019185	DTR_315768	v1.5	removed	insufficient viral evidence
+CheckV-019284	DTR_316437	v1.5	removed	insufficient viral evidence
+CheckV-019319	DTR_316791	v1.5	removed	insufficient viral evidence
+CheckV-019332	DTR_317013	v1.5	removed	insufficient viral evidence
+CheckV-019399	DTR_317499	v1.5	removed	insufficient viral evidence
+CheckV-019400	DTR_317509	v1.5	removed	insufficient viral evidence
+CheckV-019401	DTR_317510	v1.5	removed	insufficient viral evidence
+CheckV-019402	DTR_317512	v1.5	removed	insufficient viral evidence
+CheckV-015416	DTR_260213	v1.5	removed	insufficient viral evidence
+CheckV-015528	DTR_261666	v1.5	removed	insufficient viral evidence
+CheckV-015676	DTR_263139	v1.5	removed	insufficient viral evidence
+CheckV-021363	DTR_355982	v1.5	removed	insufficient viral evidence
+CheckV-011279	DTR_189553	v1.5	removed	insufficient viral evidence
+CheckV-011345	DTR_191453	v1.5	removed	insufficient viral evidence
+CheckV-011371	DTR_191867	v1.5	removed	insufficient viral evidence
+CheckV-011422	DTR_192600	v1.5	removed	insufficient viral evidence
+CheckV-011436	DTR_192833	v1.5	removed	insufficient viral evidence
+CheckV-011441	DTR_192872	v1.5	removed	insufficient viral evidence
+CheckV-011456	DTR_193324	v1.5	removed	insufficient viral evidence
+CheckV-011458	DTR_193542	v1.5	removed	insufficient viral evidence
+CheckV-021033	DTR_351853	v1.5	removed	insufficient viral evidence
+CheckV-013214	DTR_232772	v1.5	removed	insufficient viral evidence
+CheckV-013228	DTR_232913	v1.5	removed	insufficient viral evidence
+CheckV-013230	DTR_232937	v1.5	removed	insufficient viral evidence
+CheckV-013235	DTR_233052	v1.5	removed	insufficient viral evidence
+CheckV-013241	DTR_233093	v1.5	removed	insufficient viral evidence
+CheckV-013243	DTR_233122	v1.5	removed	insufficient viral evidence
+CheckV-013244	DTR_233124	v1.5	removed	insufficient viral evidence
+CheckV-013254	DTR_233211	v1.5	removed	insufficient viral evidence
+CheckV-013257	DTR_233271	v1.5	removed	insufficient viral evidence
+CheckV-013258	DTR_233275	v1.5	removed	insufficient viral evidence
+CheckV-013263	DTR_233328	v1.5	removed	insufficient viral evidence
+CheckV-013303	DTR_233681	v1.5	removed	insufficient viral evidence
+CheckV-013311	DTR_233737	v1.5	removed	insufficient viral evidence
+CheckV-013312	DTR_233742	v1.5	removed	insufficient viral evidence
+CheckV-013315	DTR_233807	v1.5	removed	insufficient viral evidence
+CheckV-013316	DTR_233810	v1.5	removed	insufficient viral evidence
+CheckV-013317	DTR_233811	v1.5	removed	insufficient viral evidence
+CheckV-013360	DTR_234227	v1.5	removed	insufficient viral evidence
+CheckV-013370	DTR_234324	v1.5	removed	insufficient viral evidence
+CheckV-013383	DTR_234799	v1.5	removed	insufficient viral evidence
+CheckV-013386	DTR_234858	v1.5	removed	insufficient viral evidence
+CheckV-013387	DTR_234859	v1.5	removed	insufficient viral evidence
+CheckV-013394	DTR_234954	v1.5	removed	insufficient viral evidence
+CheckV-013457	DTR_236311	v1.5	removed	insufficient viral evidence
+CheckV-014684	DTR_250522	v1.5	removed	insufficient viral evidence
+CheckV-014685	DTR_250525	v1.5	removed	insufficient viral evidence
+CheckV-014763	DTR_251743	v1.5	removed	insufficient viral evidence
+CheckV-014767	DTR_251763	v1.5	removed	insufficient viral evidence
+CheckV-018095	DTR_296030	v1.5	removed	insufficient viral evidence
+CheckV-018096	DTR_296031	v1.5	removed	insufficient viral evidence
+CheckV-018131	DTR_296433	v1.5	removed	insufficient viral evidence
+CheckV-018141	DTR_296529	v1.5	removed	insufficient viral evidence
+CheckV-018167	DTR_297199	v1.5	removed	insufficient viral evidence
+CheckV-012521	DTR_223651	v1.5	removed	insufficient viral evidence
+CheckV-012523	DTR_223653	v1.5	removed	insufficient viral evidence
+CheckV-012782	DTR_226570	v1.5	removed	insufficient viral evidence
+CheckV-016888	DTR_280198	v1.5	removed	insufficient viral evidence
+CheckV-016889	DTR_280199	v1.5	removed	insufficient viral evidence
+CheckV-016890	DTR_280322	v1.5	removed	insufficient viral evidence
+CheckV-034841	DTR_735849	v1.5	removed	insufficient viral evidence
+CheckV-009163	DTR_152331	v1.5	removed	insufficient viral evidence
+CheckV-009253	DTR_154478	v1.5	removed	insufficient viral evidence
+CheckV-009360	DTR_156468	v1.5	removed	insufficient viral evidence
+CheckV-009369	DTR_156560	v1.5	removed	insufficient viral evidence
+CheckV-009379	DTR_156724	v1.5	removed	insufficient viral evidence
+CheckV-009410	DTR_157681	v1.5	removed	insufficient viral evidence
+CheckV-009412	DTR_157693	v1.5	removed	insufficient viral evidence
+CheckV-009419	DTR_157892	v1.5	removed	insufficient viral evidence
+CheckV-009420	DTR_157893	v1.5	removed	insufficient viral evidence
+CheckV-009435	DTR_158087	v1.5	removed	insufficient viral evidence
+CheckV-009464	DTR_158579	v1.5	removed	insufficient viral evidence
+CheckV-009470	DTR_158697	v1.5	removed	insufficient viral evidence
+CheckV-026127	DTR_513530	v1.5	removed	insufficient viral evidence
+CheckV-027773	DTR_570695	v1.5	removed	insufficient viral evidence
+CheckV-027994	DTR_577205	v1.5	removed	insufficient viral evidence
+CheckV-027998	DTR_577230	v1.5	removed	insufficient viral evidence
+CheckV-028004	DTR_577248	v1.5	removed	insufficient viral evidence
+CheckV-028011	DTR_577357	v1.5	removed	insufficient viral evidence
+CheckV-005905	DTR_070584	v1.5	removed	insufficient viral evidence
+CheckV-005906	DTR_070586	v1.5	removed	insufficient viral evidence
+CheckV-005960	DTR_071525	v1.5	removed	insufficient viral evidence
+CheckV-005971	DTR_072479	v1.5	removed	insufficient viral evidence
+CheckV-005977	DTR_072925	v1.5	removed	insufficient viral evidence
+CheckV-006003	DTR_074072	v1.5	removed	insufficient viral evidence
+CheckV-006004	DTR_074075	v1.5	removed	insufficient viral evidence
+CheckV-006008	DTR_074140	v1.5	removed	insufficient viral evidence
+CheckV-006009	DTR_074142	v1.5	removed	insufficient viral evidence
+CheckV-006022	DTR_074245	v1.5	removed	insufficient viral evidence
+CheckV-006024	DTR_074248	v1.5	removed	insufficient viral evidence
+CheckV-006031	DTR_074281	v1.5	removed	insufficient viral evidence
+CheckV-006034	DTR_074286	v1.5	removed	insufficient viral evidence
+CheckV-006035	DTR_074287	v1.5	removed	insufficient viral evidence
+CheckV-006036	DTR_074296	v1.5	removed	insufficient viral evidence
+CheckV-006051	DTR_074793	v1.5	removed	insufficient viral evidence
+CheckV-006088	DTR_075370	v1.5	removed	insufficient viral evidence
+CheckV-006104	DTR_075562	v1.5	removed	insufficient viral evidence
+CheckV-006116	DTR_075772	v1.5	removed	insufficient viral evidence
+CheckV-006123	DTR_075800	v1.5	removed	insufficient viral evidence
+CheckV-006128	DTR_075809	v1.5	removed	insufficient viral evidence
+CheckV-006131	DTR_075816	v1.5	removed	insufficient viral evidence
+CheckV-006143	DTR_075886	v1.5	removed	insufficient viral evidence
+CheckV-021082	DTR_352814	v1.5	removed	insufficient viral evidence
+CheckV-032472	DTR_698563	v1.5	removed	insufficient viral evidence
+CheckV-032479	DTR_698705	v1.5	removed	insufficient viral evidence
+CheckV-032480	DTR_698706	v1.5	removed	insufficient viral evidence
+CheckV-032483	DTR_698725	v1.5	removed	insufficient viral evidence
+CheckV-032639	DTR_702728	v1.5	removed	insufficient viral evidence
+CheckV-035542	DTR_772917	v1.5	removed	insufficient viral evidence
+CheckV-035671	DTR_778805	v1.5	removed	insufficient viral evidence
+CheckV-006460	DTR_090391	v1.5	removed	insufficient viral evidence
+CheckV-006461	DTR_090396	v1.5	removed	insufficient viral evidence
+CheckV-006466	DTR_090862	v1.5	removed	insufficient viral evidence
+CheckV-006641	DTR_097165	v1.5	removed	insufficient viral evidence
+CheckV-006677	DTR_097592	v1.5	removed	insufficient viral evidence
+CheckV-006688	DTR_097738	v1.5	removed	insufficient viral evidence
+CheckV-006703	DTR_097940	v1.5	removed	insufficient viral evidence
+CheckV-006836	DTR_100316	v1.5	removed	insufficient viral evidence
+CheckV-006837	DTR_100319	v1.5	removed	insufficient viral evidence
+CheckV-006868	DTR_100983	v1.5	removed	insufficient viral evidence
+CheckV-006918	DTR_101748	v1.5	removed	insufficient viral evidence
+CheckV-017487	DTR_288966	v1.5	removed	insufficient viral evidence
+CheckV-017532	DTR_289555	v1.5	removed	insufficient viral evidence
+CheckV-017533	DTR_289557	v1.5	removed	insufficient viral evidence
+CheckV-017636	DTR_291289	v1.5	removed	insufficient viral evidence
+CheckV-017789	DTR_293056	v1.5	removed	insufficient viral evidence
+CheckV-026442	DTR_528066	v1.5	removed	insufficient viral evidence
+CheckV-026559	DTR_533582	v1.5	removed	insufficient viral evidence
+CheckV-026620	DTR_535414	v1.5	removed	insufficient viral evidence
+CheckV-016555	DTR_273833	v1.5	removed	insufficient viral evidence
+CheckV-016795	DTR_278759	v1.5	removed	insufficient viral evidence
+CheckV-016839	DTR_279169	v1.5	removed	insufficient viral evidence
+CheckV-020258	DTR_331855	v1.5	removed	insufficient viral evidence
+CheckV-020326	DTR_333080	v1.5	removed	insufficient viral evidence
+CheckV-020379	DTR_342503	v1.5	removed	insufficient viral evidence
+CheckV-020440	DTR_344455	v1.5	removed	insufficient viral evidence
+CheckV-031025	DTR_645549	v1.5	removed	insufficient viral evidence
+CheckV-031027	DTR_645697	v1.5	removed	insufficient viral evidence
+CheckV-035824	DTR_787269	v1.5	removed	insufficient viral evidence
+CheckV-036005	DTR_794777	v1.5	removed	insufficient viral evidence
+CheckV-020536	DTR_345596	v1.5	removed	insufficient viral evidence
+CheckV-020551	DTR_345767	v1.5	removed	insufficient viral evidence
+CheckV-020568	DTR_346398	v1.5	removed	insufficient viral evidence
+CheckV-020571	DTR_346427	v1.5	removed	insufficient viral evidence
+CheckV-020623	DTR_347148	v1.5	removed	insufficient viral evidence
+CheckV-020635	DTR_347226	v1.5	removed	insufficient viral evidence
+CheckV-020637	DTR_347238	v1.5	removed	insufficient viral evidence
+CheckV-020716	DTR_348312	v1.5	removed	insufficient viral evidence
+CheckV-020717	DTR_348335	v1.5	removed	insufficient viral evidence
+CheckV-020744	DTR_348665	v1.5	removed	insufficient viral evidence
+CheckV-020781	DTR_348980	v1.5	removed	insufficient viral evidence
+CheckV-036856	DTR_822986	v1.5	removed	insufficient viral evidence
+CheckV-016237	DTR_269658	v1.5	removed	insufficient viral evidence
+CheckV-004973	DTR_050095	v1.5	removed	insufficient viral evidence
+CheckV-004976	DTR_050184	v1.5	removed	insufficient viral evidence
+CheckV-005001	DTR_050534	v1.5	removed	insufficient viral evidence
+CheckV-005014	DTR_050774	v1.5	removed	insufficient viral evidence
+CheckV-005031	DTR_051323	v1.5	removed	insufficient viral evidence
+CheckV-031333	DTR_651201	v1.5	removed	insufficient viral evidence
+CheckV-031504	DTR_658651	v1.5	removed	insufficient viral evidence
+CheckV-031546	DTR_661068	v1.5	removed	insufficient viral evidence
+CheckV-031548	DTR_661082	v1.5	removed	insufficient viral evidence
+CheckV-031549	DTR_661098	v1.5	removed	insufficient viral evidence
+CheckV-031550	DTR_661099	v1.5	removed	insufficient viral evidence
+CheckV-031552	DTR_661103	v1.5	removed	insufficient viral evidence
+CheckV-031554	DTR_661123	v1.5	removed	insufficient viral evidence
+CheckV-031562	DTR_662139	v1.5	removed	insufficient viral evidence
+CheckV-024542	DTR_449643	v1.5	removed	insufficient viral evidence
+CheckV-012101	DTR_206223	v1.5	removed	insufficient viral evidence
+CheckV-012104	DTR_206861	v1.5	removed	insufficient viral evidence
+CheckV-012106	DTR_206915	v1.5	removed	insufficient viral evidence
+CheckV-005104	DTR_052682	v1.5	removed	insufficient viral evidence
+CheckV-005211	DTR_053593	v1.5	removed	insufficient viral evidence
+CheckV-005215	DTR_053610	v1.5	removed	insufficient viral evidence
+CheckV-005219	DTR_053717	v1.5	removed	insufficient viral evidence
+CheckV-005261	DTR_054447	v1.5	removed	insufficient viral evidence
+CheckV-005299	DTR_057025	v1.5	removed	insufficient viral evidence
+CheckV-005310	DTR_057635	v1.5	removed	insufficient viral evidence
+CheckV-005337	DTR_058260	v1.5	removed	insufficient viral evidence
+CheckV-005342	DTR_058378	v1.5	removed	insufficient viral evidence
+CheckV-005399	DTR_059671	v1.5	removed	insufficient viral evidence
+CheckV-005405	DTR_060192	v1.5	removed	insufficient viral evidence
+CheckV-005409	DTR_060272	v1.5	removed	insufficient viral evidence
+CheckV-005410	DTR_060276	v1.5	removed	insufficient viral evidence
+CheckV-032194	DTR_686642	v1.5	removed	insufficient viral evidence
+CheckV-026676	DTR_536805	v1.5	removed	insufficient viral evidence
+CheckV-029292	DTR_619396	v1.5	removed	insufficient viral evidence
+CheckV-029302	DTR_619827	v1.5	removed	insufficient viral evidence
+CheckV-009548	DTR_161251	v1.5	removed	insufficient viral evidence
+CheckV-009588	DTR_162097	v1.5	removed	insufficient viral evidence
+CheckV-009600	DTR_162118	v1.5	removed	insufficient viral evidence
+CheckV-009631	DTR_163468	v1.5	removed	insufficient viral evidence
+CheckV-009687	DTR_164804	v1.5	removed	insufficient viral evidence
+CheckV-009847	DTR_168459	v1.5	removed	insufficient viral evidence
+CheckV-029975	DTR_632832	v1.5	removed	insufficient viral evidence
+CheckV-029979	DTR_632897	v1.5	removed	insufficient viral evidence
+CheckV-030151	DTR_639003	v1.5	removed	insufficient viral evidence
+CheckV-030164	DTR_639100	v1.5	removed	insufficient viral evidence
+CheckV-030255	DTR_639432	v1.5	removed	insufficient viral evidence
+CheckV-030258	DTR_639456	v1.5	removed	insufficient viral evidence
+CheckV-030269	DTR_639502	v1.5	removed	insufficient viral evidence
+CheckV-030363	DTR_639720	v1.5	removed	insufficient viral evidence
+CheckV-030779	DTR_640653	v1.5	removed	insufficient viral evidence
+CheckV-030780	DTR_640654	v1.5	removed	insufficient viral evidence
+CheckV-030781	DTR_640661	v1.5	removed	insufficient viral evidence
+CheckV-030784	DTR_640667	v1.5	removed	insufficient viral evidence
+CheckV-030807	DTR_640879	v1.5	removed	insufficient viral evidence
+CheckV-030811	DTR_640932	v1.5	removed	insufficient viral evidence
+CheckV-030835	DTR_641254	v1.5	removed	insufficient viral evidence
+CheckV-030843	DTR_641349	v1.5	removed	insufficient viral evidence
+CheckV-030845	DTR_641390	v1.5	removed	insufficient viral evidence
+CheckV-030868	DTR_641647	v1.5	removed	insufficient viral evidence
+CheckV-030870	DTR_641703	v1.5	removed	insufficient viral evidence
+CheckV-033147	DTR_717375	v1.5	removed	insufficient viral evidence
+CheckV-033187	DTR_718002	v1.5	removed	insufficient viral evidence
+CheckV-033199	DTR_718184	v1.5	removed	insufficient viral evidence
+CheckV-033253	DTR_718621	v1.5	removed	insufficient viral evidence
+CheckV-024773	DTR_461185	v1.5	removed	insufficient viral evidence
+CheckV-024774	DTR_461187	v1.5	removed	insufficient viral evidence
+CheckV-024796	DTR_461397	v1.5	removed	insufficient viral evidence
+CheckV-024816	DTR_461671	v1.5	removed	insufficient viral evidence
+CheckV-024820	DTR_461731	v1.5	removed	insufficient viral evidence
+CheckV-024826	DTR_461883	v1.5	removed	insufficient viral evidence
+CheckV-024831	DTR_461971	v1.5	removed	insufficient viral evidence
+CheckV-004764	DTR_046983	v1.5	removed	insufficient viral evidence
+CheckV-004780	DTR_047355	v1.5	removed	insufficient viral evidence
+CheckV-025625	DTR_499642	v1.5	removed	insufficient viral evidence
+CheckV-003269	DTR_009492	v1.5	removed	insufficient viral evidence
+CheckV-003274	DTR_009825	v1.5	removed	insufficient viral evidence
+CheckV-003367	DTR_011946	v1.5	removed	insufficient viral evidence
+CheckV-003381	DTR_012395	v1.5	removed	insufficient viral evidence
+CheckV-003382	DTR_012396	v1.5	removed	insufficient viral evidence
+CheckV-003519	DTR_017062	v1.5	removed	insufficient viral evidence
+CheckV-003573	DTR_018258	v1.5	removed	insufficient viral evidence
+CheckV-003577	DTR_018357	v1.5	removed	insufficient viral evidence
+CheckV-003635	DTR_018915	v1.5	removed	insufficient viral evidence
+CheckV-003637	DTR_018923	v1.5	removed	insufficient viral evidence
+CheckV-003733	DTR_021327	v1.5	removed	insufficient viral evidence
+CheckV-003744	DTR_021985	v1.5	removed	insufficient viral evidence
+CheckV-003745	DTR_021997	v1.5	removed	insufficient viral evidence
+CheckV-003746	DTR_022000	v1.5	removed	insufficient viral evidence
+CheckV-003747	DTR_022004	v1.5	removed	insufficient viral evidence
+CheckV-003749	DTR_022012	v1.5	removed	insufficient viral evidence
+CheckV-003781	DTR_022948	v1.5	removed	insufficient viral evidence
+CheckV-003812	DTR_023931	v1.5	removed	insufficient viral evidence
+CheckV-003813	DTR_023934	v1.5	removed	insufficient viral evidence
+CheckV-003818	DTR_024007	v1.5	removed	insufficient viral evidence
+CheckV-059724	GCA_019893255.1	v1.5	removed	insufficient viral evidence
+CheckV-008560	DTR_141930	v1.5	removed	insufficient viral evidence
+CheckV-008654	DTR_143038	v1.5	removed	insufficient viral evidence
+CheckV-008772	DTR_144005	v1.5	removed	insufficient viral evidence
+CheckV-038114	DTR_864525	v1.5	removed	insufficient viral evidence
+CheckV-012233	DTR_208522	v1.5	removed	insufficient viral evidence
+CheckV-012258	DTR_210048	v1.5	removed	insufficient viral evidence
+CheckV-012282	DTR_210405	v1.5	removed	insufficient viral evidence
+CheckV-012283	DTR_210554	v1.5	removed	insufficient viral evidence
+CheckV-012410	DTR_217499	v1.5	removed	insufficient viral evidence
+CheckV-012411	DTR_217506	v1.5	removed	insufficient viral evidence
+CheckV-012413	DTR_217756	v1.5	removed	insufficient viral evidence
+CheckV-012418	DTR_217925	v1.5	removed	insufficient viral evidence
+CheckV-012449	DTR_218985	v1.5	removed	insufficient viral evidence
+CheckV-012450	DTR_219124	v1.5	removed	insufficient viral evidence
+CheckV-012459	DTR_219509	v1.5	removed	insufficient viral evidence
+CheckV-012466	DTR_219957	v1.5	removed	insufficient viral evidence
+CheckV-015746	DTR_264097	v1.5	removed	insufficient viral evidence
+CheckV-015852	DTR_265592	v1.5	removed	insufficient viral evidence
+CheckV-015855	DTR_265664	v1.5	removed	insufficient viral evidence
+CheckV-026342	DTR_523129	v1.5	removed	insufficient viral evidence
+CheckV-021578	DTR_358919	v1.5	removed	insufficient viral evidence
+CheckV-021607	DTR_359707	v1.5	removed	insufficient viral evidence
+CheckV-021619	DTR_359820	v1.5	removed	insufficient viral evidence
+CheckV-021626	DTR_359921	v1.5	removed	insufficient viral evidence
+CheckV-021646	DTR_360391	v1.5	removed	insufficient viral evidence
+CheckV-021688	DTR_361137	v1.5	removed	insufficient viral evidence
+CheckV-021733	DTR_362330	v1.5	removed	insufficient viral evidence
+CheckV-021740	DTR_362540	v1.5	removed	insufficient viral evidence
+CheckV-021789	DTR_363310	v1.5	removed	insufficient viral evidence
+CheckV-021821	DTR_364207	v1.5	removed	insufficient viral evidence
+CheckV-021846	DTR_365294	v1.5	removed	insufficient viral evidence
+CheckV-029676	DTR_627972	v1.5	removed	insufficient viral evidence
+CheckV-029707	DTR_628363	v1.5	removed	insufficient viral evidence
+CheckV-029727	DTR_628601	v1.5	removed	insufficient viral evidence
+CheckV-029903	DTR_631715	v1.5	removed	insufficient viral evidence
+CheckV-029916	DTR_632020	v1.5	removed	insufficient viral evidence
+CheckV-035440	DTR_766118	v1.5	removed	insufficient viral evidence
+CheckV-005490	DTR_062657	v1.5	removed	insufficient viral evidence
+CheckV-005491	DTR_062666	v1.5	removed	insufficient viral evidence
+CheckV-005493	DTR_062681	v1.5	removed	insufficient viral evidence
+CheckV-005495	DTR_062723	v1.5	removed	insufficient viral evidence
+CheckV-005509	DTR_063166	v1.5	removed	insufficient viral evidence
+CheckV-005645	DTR_065771	v1.5	removed	insufficient viral evidence
+CheckV-033329	DTR_722193	v1.5	removed	insufficient viral evidence
+CheckV-033330	DTR_722194	v1.5	removed	insufficient viral evidence
+CheckV-033338	DTR_722288	v1.5	removed	insufficient viral evidence
+CheckV-033344	DTR_722330	v1.5	removed	insufficient viral evidence
+CheckV-033383	DTR_724608	v1.5	removed	insufficient viral evidence
+CheckV-033386	DTR_725095	v1.5	removed	insufficient viral evidence
+CheckV-033390	DTR_725426	v1.5	removed	insufficient viral evidence
+CheckV-033407	DTR_726440	v1.5	removed	insufficient viral evidence
+CheckV-033895	DTR_730943	v1.5	removed	insufficient viral evidence
+CheckV-035000	DTR_741239	v1.5	removed	insufficient viral evidence
+CheckV-035132	DTR_747535	v1.5	removed	insufficient viral evidence
+CheckV-032740	DTR_704036	v1.5	removed	insufficient viral evidence
+CheckV-032741	DTR_704037	v1.5	removed	insufficient viral evidence
+CheckV-032742	DTR_704040	v1.5	removed	insufficient viral evidence
+CheckV-032744	DTR_704053	v1.5	removed	insufficient viral evidence
+CheckV-032747	DTR_704188	v1.5	removed	insufficient viral evidence
+CheckV-032748	DTR_704190	v1.5	removed	insufficient viral evidence
+CheckV-032751	DTR_704305	v1.5	removed	insufficient viral evidence
+CheckV-032754	DTR_704406	v1.5	removed	insufficient viral evidence
+CheckV-032757	DTR_704416	v1.5	removed	insufficient viral evidence
+CheckV-032760	DTR_704515	v1.5	removed	insufficient viral evidence
+CheckV-032769	DTR_704686	v1.5	removed	insufficient viral evidence
+CheckV-032772	DTR_704760	v1.5	removed	insufficient viral evidence
+CheckV-032774	DTR_704943	v1.5	removed	insufficient viral evidence
+CheckV-032776	DTR_704993	v1.5	removed	insufficient viral evidence
+CheckV-032778	DTR_705021	v1.5	removed	insufficient viral evidence
+CheckV-032779	DTR_705022	v1.5	removed	insufficient viral evidence
+CheckV-023521	DTR_408938	v1.5	removed	insufficient viral evidence
+CheckV-022242	DTR_379532	v1.5	removed	insufficient viral evidence
+CheckV-022263	DTR_380482	v1.5	removed	insufficient viral evidence
+CheckV-022325	DTR_382661	v1.5	removed	insufficient viral evidence
+CheckV-028690	DTR_605606	v1.5	removed	insufficient viral evidence
+CheckV-028844	DTR_609597	v1.5	removed	insufficient viral evidence
+CheckV-028857	DTR_609843	v1.5	removed	insufficient viral evidence
+CheckV-028889	DTR_610556	v1.5	removed	insufficient viral evidence
+CheckV-029002	DTR_612357	v1.5	removed	insufficient viral evidence
+CheckV-029030	DTR_612897	v1.5	removed	insufficient viral evidence
+CheckV-029045	DTR_613199	v1.5	removed	insufficient viral evidence
+CheckV-029048	DTR_613272	v1.5	removed	insufficient viral evidence
+CheckV-017834	DTR_293454	v1.5	removed	insufficient viral evidence
+CheckV-017966	DTR_294691	v1.5	removed	insufficient viral evidence
+CheckV-012832	DTR_227192	v1.5	removed	insufficient viral evidence
+CheckV-012861	DTR_227795	v1.5	removed	insufficient viral evidence
+CheckV-013003	DTR_229239	v1.5	removed	insufficient viral evidence
+CheckV-013005	DTR_229389	v1.5	removed	insufficient viral evidence
+CheckV-013055	DTR_230376	v1.5	removed	insufficient viral evidence
+CheckV-013086	DTR_230871	v1.5	removed	insufficient viral evidence
+CheckV-019826	DTR_326895	v1.5	removed	insufficient viral evidence
+CheckV-019901	DTR_328789	v1.5	removed	insufficient viral evidence
+CheckV-019924	DTR_329041	v1.5	removed	insufficient viral evidence
+CheckV-019926	DTR_329132	v1.5	removed	insufficient viral evidence
+CheckV-019989	DTR_329987	v1.5	removed	insufficient viral evidence
+CheckV-020027	DTR_330346	v1.5	removed	insufficient viral evidence
+CheckV-020075	DTR_330549	v1.5	removed	insufficient viral evidence
+CheckV-020085	DTR_330600	v1.5	removed	insufficient viral evidence
+CheckV-020086	DTR_330601	v1.5	removed	insufficient viral evidence
+CheckV-020096	DTR_330820	v1.5	removed	insufficient viral evidence
+CheckV-011479	DTR_193802	v1.5	removed	insufficient viral evidence
+CheckV-011511	DTR_195643	v1.5	removed	insufficient viral evidence
+CheckV-011518	DTR_196166	v1.5	removed	insufficient viral evidence
+CheckV-011609	DTR_197267	v1.5	removed	insufficient viral evidence
+CheckV-011624	DTR_197397	v1.5	removed	insufficient viral evidence
+CheckV-011646	DTR_197543	v1.5	removed	insufficient viral evidence
+CheckV-011652	DTR_197649	v1.5	removed	insufficient viral evidence
+CheckV-011653	DTR_197652	v1.5	removed	insufficient viral evidence
+CheckV-011677	DTR_198359	v1.5	removed	insufficient viral evidence
+CheckV-011678	DTR_198496	v1.5	removed	insufficient viral evidence
+CheckV-022397	DTR_385157	v1.5	removed	insufficient viral evidence
+CheckV-022408	DTR_385423	v1.5	removed	insufficient viral evidence
+CheckV-007247	DTR_108211	v1.5	removed	insufficient viral evidence
+CheckV-007256	DTR_108289	v1.5	removed	insufficient viral evidence
+CheckV-007266	DTR_108680	v1.5	removed	insufficient viral evidence
+CheckV-007268	DTR_108716	v1.5	removed	insufficient viral evidence
+CheckV-007340	DTR_109685	v1.5	removed	insufficient viral evidence
+CheckV-007354	DTR_109803	v1.5	removed	insufficient viral evidence
+CheckV-007357	DTR_109817	v1.5	removed	insufficient viral evidence
+CheckV-007430	DTR_110397	v1.5	removed	insufficient viral evidence
+CheckV-029373	DTR_620893	v1.5	removed	insufficient viral evidence
+CheckV-029424	DTR_621465	v1.5	removed	insufficient viral evidence
+CheckV-029433	DTR_621564	v1.5	removed	insufficient viral evidence
+CheckV-029453	DTR_621820	v1.5	removed	insufficient viral evidence
+CheckV-029481	DTR_622166	v1.5	removed	insufficient viral evidence
+CheckV-029484	DTR_622216	v1.5	removed	insufficient viral evidence
+CheckV-027021	DTR_546593	v1.5	removed	insufficient viral evidence
+CheckV-003199	DTR_006542	v1.5	removed	insufficient viral evidence
+CheckV-003200	DTR_006544	v1.5	removed	insufficient viral evidence
+CheckV-003218	DTR_007511	v1.5	removed	insufficient viral evidence
+CheckV-003233	DTR_008059	v1.5	removed	insufficient viral evidence
+CheckV-004226	DTR_035003	v1.5	removed	insufficient viral evidence
+CheckV-004227	DTR_035004	v1.5	removed	insufficient viral evidence
+CheckV-004252	DTR_035444	v1.5	removed	insufficient viral evidence
+CheckV-004256	DTR_035518	v1.5	removed	insufficient viral evidence
+CheckV-004263	DTR_035626	v1.5	removed	insufficient viral evidence
+CheckV-004264	DTR_035628	v1.5	removed	insufficient viral evidence
+CheckV-004273	DTR_035702	v1.5	removed	insufficient viral evidence
+CheckV-004274	DTR_035705	v1.5	removed	insufficient viral evidence
+CheckV-004305	DTR_038781	v1.5	removed	insufficient viral evidence
+CheckV-004329	DTR_039770	v1.5	removed	insufficient viral evidence
+CheckV-004447	DTR_042049	v1.5	removed	insufficient viral evidence
+CheckV-006308	DTR_078915	v1.5	removed	insufficient viral evidence
+CheckV-006325	DTR_084205	v1.5	removed	insufficient viral evidence
+CheckV-006332	DTR_086539	v1.5	removed	insufficient viral evidence
+CheckV-006333	DTR_086606	v1.5	removed	insufficient viral evidence
+CheckV-006334	DTR_086641	v1.5	removed	insufficient viral evidence
+CheckV-006357	DTR_087235	v1.5	removed	insufficient viral evidence
+CheckV-006360	DTR_087387	v1.5	removed	insufficient viral evidence
+CheckV-006362	DTR_087456	v1.5	removed	insufficient viral evidence
+CheckV-006369	DTR_087859	v1.5	removed	insufficient viral evidence
+CheckV-006403	DTR_088885	v1.5	removed	insufficient viral evidence
+CheckV-006412	DTR_089130	v1.5	removed	insufficient viral evidence
+CheckV-006419	DTR_089226	v1.5	removed	insufficient viral evidence
+CheckV-039489	DTR_886435	v1.5	removed	insufficient viral evidence
+CheckV-027441	DTR_563185	v1.5	removed	insufficient viral evidence
+CheckV-007899	DTR_118679	v1.5	removed	insufficient viral evidence
+CheckV-007901	DTR_118689	v1.5	removed	insufficient viral evidence
+CheckV-007910	DTR_119252	v1.5	removed	insufficient viral evidence
+CheckV-007941	DTR_120017	v1.5	removed	insufficient viral evidence
+CheckV-008001	DTR_121422	v1.5	removed	insufficient viral evidence
+CheckV-008003	DTR_121452	v1.5	removed	insufficient viral evidence
+CheckV-008004	DTR_121454	v1.5	removed	insufficient viral evidence
+CheckV-008116	DTR_126205	v1.5	removed	insufficient viral evidence
+CheckV-008117	DTR_126217	v1.5	removed	insufficient viral evidence
+CheckV-008144	DTR_127797	v1.5	removed	insufficient viral evidence
+CheckV-008183	DTR_129016	v1.5	removed	insufficient viral evidence
+CheckV-018917	DTR_314109	v1.5	removed	insufficient viral evidence
+CheckV-023162	DTR_391442	v1.5	removed	insufficient viral evidence
+CheckV-011069	DTR_184407	v1.5	removed	insufficient viral evidence
+CheckV-011070	DTR_184426	v1.5	removed	insufficient viral evidence
+CheckV-011071	DTR_184427	v1.5	removed	insufficient viral evidence
+CheckV-011090	DTR_185030	v1.5	removed	insufficient viral evidence
+CheckV-011091	DTR_185036	v1.5	removed	insufficient viral evidence
+CheckV-011100	DTR_185231	v1.5	removed	insufficient viral evidence
+CheckV-011160	DTR_186103	v1.5	removed	insufficient viral evidence
+CheckV-019494	DTR_318079	v1.5	removed	insufficient viral evidence
+CheckV-019497	DTR_318280	v1.5	removed	insufficient viral evidence
+CheckV-019540	DTR_318877	v1.5	removed	insufficient viral evidence
+CheckV-019608	DTR_319670	v1.5	removed	insufficient viral evidence
+CheckV-019625	DTR_321664	v1.5	removed	insufficient viral evidence
+CheckV-019798	DTR_326185	v1.5	removed	insufficient viral evidence
+CheckV-028157	DTR_578524	v1.5	removed	insufficient viral evidence
+CheckV-028275	DTR_585273	v1.5	removed	insufficient viral evidence
+CheckV-028280	DTR_585359	v1.5	removed	insufficient viral evidence
+CheckV-028284	DTR_585387	v1.5	removed	insufficient viral evidence
+CheckV-028287	DTR_585429	v1.5	removed	insufficient viral evidence
+CheckV-028290	DTR_585455	v1.5	removed	insufficient viral evidence
+CheckV-028291	DTR_585466	v1.5	removed	insufficient viral evidence
+CheckV-028294	DTR_585523	v1.5	removed	insufficient viral evidence
+CheckV-028297	DTR_585589	v1.5	removed	insufficient viral evidence
+CheckV-028298	DTR_585609	v1.5	removed	insufficient viral evidence
+CheckV-028299	DTR_585610	v1.5	removed	insufficient viral evidence
+CheckV-028300	DTR_585615	v1.5	removed	insufficient viral evidence
+CheckV-028304	DTR_585700	v1.5	removed	insufficient viral evidence
+CheckV-028305	DTR_585714	v1.5	removed	insufficient viral evidence
+CheckV-028306	DTR_585717	v1.5	removed	insufficient viral evidence
+CheckV-028307	DTR_585724	v1.5	removed	insufficient viral evidence
+CheckV-028311	DTR_585736	v1.5	removed	insufficient viral evidence
+CheckV-028313	DTR_585745	v1.5	removed	insufficient viral evidence
+CheckV-028315	DTR_585762	v1.5	removed	insufficient viral evidence
+CheckV-028321	DTR_585842	v1.5	removed	insufficient viral evidence
+CheckV-023084	DTR_388206	v1.5	removed	insufficient viral evidence
+CheckV-023086	DTR_388347	v1.5	removed	insufficient viral evidence
+CheckV-013513	DTR_236840	v1.5	removed	insufficient viral evidence
+CheckV-013521	DTR_236870	v1.5	removed	insufficient viral evidence
+CheckV-013536	DTR_236973	v1.5	removed	insufficient viral evidence
+CheckV-013545	DTR_237165	v1.5	removed	insufficient viral evidence
+CheckV-013546	DTR_237168	v1.5	removed	insufficient viral evidence
+CheckV-013563	DTR_237350	v1.5	removed	insufficient viral evidence
+CheckV-015149	DTR_257437	v1.5	removed	insufficient viral evidence
+CheckV-015258	DTR_258598	v1.5	removed	insufficient viral evidence
+CheckV-008897	DTR_144585	v1.5	removed	insufficient viral evidence
+CheckV-008991	DTR_150269	v1.5	removed	insufficient viral evidence
+CheckV-009027	DTR_151337	v1.5	removed	insufficient viral evidence
+CheckV-009065	DTR_151723	v1.5	removed	insufficient viral evidence
+CheckV-008203	DTR_130152	v1.5	removed	insufficient viral evidence
+CheckV-008206	DTR_130552	v1.5	removed	insufficient viral evidence
+CheckV-008233	DTR_132646	v1.5	removed	insufficient viral evidence
+CheckV-008235	DTR_132651	v1.5	removed	insufficient viral evidence
+CheckV-008333	DTR_133961	v1.5	removed	insufficient viral evidence
+CheckV-008351	DTR_134801	v1.5	removed	insufficient viral evidence
+CheckV-008431	DTR_137366	v1.5	removed	insufficient viral evidence
+CheckV-008453	DTR_138579	v1.5	removed	insufficient viral evidence
+CheckV-036485	DTR_809826	v1.5	removed	insufficient viral evidence
+CheckV-018411	DTR_303524	v1.5	removed	insufficient viral evidence
+CheckV-018413	DTR_303564	v1.5	removed	insufficient viral evidence
+CheckV-018414	DTR_303566	v1.5	removed	insufficient viral evidence
+CheckV-018435	DTR_304144	v1.5	removed	insufficient viral evidence
+CheckV-018451	DTR_304478	v1.5	removed	insufficient viral evidence
+CheckV-018468	DTR_304987	v1.5	removed	insufficient viral evidence
+CheckV-018484	DTR_305440	v1.5	removed	insufficient viral evidence
+CheckV-018488	DTR_305507	v1.5	removed	insufficient viral evidence
+CheckV-018498	DTR_306046	v1.5	removed	insufficient viral evidence
+CheckV-018510	DTR_307175	v1.5	removed	insufficient viral evidence
+CheckV-018566	DTR_308781	v1.5	removed	insufficient viral evidence
+CheckV-018611	DTR_309396	v1.5	removed	insufficient viral evidence
+CheckV-018632	DTR_309661	v1.5	removed	insufficient viral evidence
+CheckV-018639	DTR_309888	v1.5	removed	insufficient viral evidence
+CheckV-018645	DTR_309897	v1.5	removed	insufficient viral evidence
+CheckV-018650	DTR_310054	v1.5	removed	insufficient viral evidence
+CheckV-018651	DTR_310056	v1.5	removed	insufficient viral evidence
+CheckV-018653	DTR_310142	v1.5	removed	insufficient viral evidence
+CheckV-018666	DTR_310509	v1.5	removed	insufficient viral evidence
+CheckV-018702	DTR_311115	v1.5	removed	insufficient viral evidence
+CheckV-018737	DTR_311609	v1.5	removed	insufficient viral evidence
+CheckV-018738	DTR_311610	v1.5	removed	insufficient viral evidence
+CheckV-031653	DTR_667092	v1.5	removed	insufficient viral evidence
+CheckV-010570	DTR_178968	v1.5	removed	insufficient viral evidence
+CheckV-010579	DTR_179301	v1.5	removed	insufficient viral evidence
+CheckV-010583	DTR_179321	v1.5	removed	insufficient viral evidence
+CheckV-010586	DTR_179332	v1.5	removed	insufficient viral evidence
+CheckV-010686	DTR_180768	v1.5	removed	insufficient viral evidence
+CheckV-010687	DTR_180772	v1.5	removed	insufficient viral evidence
+CheckV-010688	DTR_180773	v1.5	removed	insufficient viral evidence
+CheckV-010689	DTR_180774	v1.5	removed	insufficient viral evidence
+CheckV-010700	DTR_180895	v1.5	removed	insufficient viral evidence
+CheckV-013837	DTR_241449	v1.5	removed	insufficient viral evidence
+CheckV-013849	DTR_241656	v1.5	removed	insufficient viral evidence
+CheckV-013850	DTR_241662	v1.5	removed	insufficient viral evidence
+CheckV-013854	DTR_241789	v1.5	removed	insufficient viral evidence
+CheckV-010245	DTR_172442	v1.5	removed	insufficient viral evidence
+CheckV-010255	DTR_172954	v1.5	removed	insufficient viral evidence
+CheckV-010277	DTR_173482	v1.5	removed	insufficient viral evidence
+CheckV-010293	DTR_173701	v1.5	removed	insufficient viral evidence
+CheckV-010309	DTR_173846	v1.5	removed	insufficient viral evidence
+CheckV-010340	DTR_174046	v1.5	removed	insufficient viral evidence
+CheckV-010421	DTR_176122	v1.5	removed	insufficient viral evidence
+CheckV-010422	DTR_176138	v1.5	removed	insufficient viral evidence
+CheckV-010487	DTR_177870	v1.5	removed	insufficient viral evidence
+CheckV-010510	DTR_178138	v1.5	removed	insufficient viral evidence
+CheckV-010527	DTR_178376	v1.5	removed	insufficient viral evidence
+CheckV-003925	DTR_025504	v1.5	removed	insufficient viral evidence
+CheckV-003926	DTR_025511	v1.5	removed	insufficient viral evidence
+CheckV-003929	DTR_025735	v1.5	removed	insufficient viral evidence
+CheckV-004010	DTR_028193	v1.5	removed	insufficient viral evidence
+CheckV-004013	DTR_028217	v1.5	removed	insufficient viral evidence
+CheckV-004081	DTR_031102	v1.5	removed	insufficient viral evidence
+CheckV-004083	DTR_031113	v1.5	removed	insufficient viral evidence
+CheckV-004132	DTR_032237	v1.5	removed	insufficient viral evidence
+CheckV-004143	DTR_032486	v1.5	removed	insufficient viral evidence
+CheckV-004192	DTR_034242	v1.5	removed	insufficient viral evidence
+CheckV-004205	DTR_034564	v1.5	removed	insufficient viral evidence
+CheckV-064788	UHGV-0012468	v1.5	removed	removed uhgv
+CheckV-064789	UHGV-0014172	v1.5	removed	removed uhgv
+CheckV-064790	UHGV-0016178	v1.5	removed	removed uhgv
+CheckV-064791	UHGV-0016696	v1.5	removed	removed uhgv
+CheckV-064792	UHGV-0021687	v1.5	removed	removed uhgv
+CheckV-064793	UHGV-0023714	v1.5	removed	removed uhgv
+CheckV-064794	UHGV-0023799	v1.5	removed	removed uhgv
+CheckV-064795	UHGV-0027438	v1.5	removed	removed uhgv
+CheckV-064796	UHGV-0027613	v1.5	removed	removed uhgv
+CheckV-064797	UHGV-0029050	v1.5	removed	removed uhgv
+CheckV-064798	UHGV-0029785	v1.5	removed	removed uhgv
+CheckV-064799	UHGV-0036074	v1.5	removed	removed uhgv
+CheckV-064800	UHGV-0036319	v1.5	removed	removed uhgv
+CheckV-064801	UHGV-0036682	v1.5	removed	removed uhgv
+CheckV-064802	UHGV-0040368	v1.5	removed	removed uhgv
+CheckV-064803	UHGV-0247086	v1.5	removed	removed uhgv
+CheckV-064804	UHGV-0277313	v1.5	removed	removed uhgv
+CheckV-064805	UHGV-0286546	v1.5	removed	removed uhgv
