@@ -526,6 +526,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'ilDeiPorc1.HiFi.reads.fa':  test dataset for reads for Deilephila porcellus
       - 'MW539688.1.fasta': sequence of the mitochondrial reference genome for Deilephila porcellus
       - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
+  - arabidopsis_thaliana
+    - plastid
+      - 'ddAraThal4.HiFi.reads.fasta': test dataset for plastid reads for Arabidopsis thaliana
 
 ### pangenomics
 
