@@ -1,0 +1,10 @@
+tree,args_tree,aligner,args_aligner
+FAMSA,-gt upgma -parttree,FAMSA,
+,,MAFFT,--anysymbol --quiet --dpparttree
+,,MUSCLE5,
+,,LEARNMSA,
+,,KALIGN,
+CLUSTALO,,CLUSTALO,
+,,TCOFFEE,
+,,3DCOFFEE,-method TMalign_pair
+,,REGRESSIVE,-reg_nseq 3
