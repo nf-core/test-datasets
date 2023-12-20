@@ -1,0 +1,11 @@
+id,fasta,reference,structures,template
+gluts-ref,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/gluts-ref.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/gluts.ref,s3://ngi-igenomes/test-data/multiplesequencealign/structures/gluts-ref.tar.gz,
+toxin-ref,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/toxin-ref.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/toxin.ref,s3://ngi-igenomes/test-data/multiplesequencealign/structures/toxin-ref.tar.gz,
+asp-ref,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/asp-ref.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/asp.ref,s3://ngi-igenomes/test-data/multiplesequencealign/structures/asp-ref.tar.gz,
+glob-ref,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/glob-ref.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/glob.ref,s3://ngi-igenomes/test-data/multiplesequencealign/structures/glob-ref.tar.gz,
+proteasome-ref,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/proteasome-ref.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/proteasome.ref,s3://ngi-igenomes/test-data/multiplesequencealign/structures/proteasome-ref.tar.gz,
+seatoxin-ref,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/seatoxin-ref.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/seatoxin.ref,s3://ngi-igenomes/test-data/multiplesequencealign/structures/seatoxin-ref.tar.gz,
+annexin,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/annexin.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/annexin.ref,,
+cah,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/cah.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/cah.ref,,
+egf,s3://ngi-igenomes/test-data/multiplesequencealign/input_fasta/egf.fa,s3://ngi-igenomes/test-data/multiplesequencealign/reference_aln/egf.ref,,
+
