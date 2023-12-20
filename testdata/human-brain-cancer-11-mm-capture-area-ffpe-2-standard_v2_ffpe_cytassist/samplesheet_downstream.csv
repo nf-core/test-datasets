@@ -1,3 +1,3 @@
 sample,spaceranger_dir
-CytAssist_11mm_FFPE_Human_Glioblastoma_2,https://raw.githubusercontent.com/fasterius/test-datasets/spatialtranscriptomics/testdata/human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/outs.tar.gz
-CytAssist_11mm_FFPE_Human_Glioblastoma_2.2,https://raw.githubusercontent.com/fasterius/test-datasets/spatialtranscriptomics/testdata/human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/outs.tar.gz
+CytAssist_11mm_FFPE_Human_Glioblastoma_2,https://raw.githubusercontent.com/nf-core/test-datasets/spatialtranscriptomics/testdata/human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/outs.tar.gz
+CytAssist_11mm_FFPE_Human_Glioblastoma_2.2,https://raw.githubusercontent.com/nf-core/test-datasets/spatialtranscriptomics/testdata/human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/outs.tar.gz
