@@ -20,6 +20,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `reference/genome.germline_cnv_model.tar.gz`: tar gzipped directory containing the cnv model files
 
+`reference/mobile_elemement_references.tsv`: tsv file with paths to the mobile element locations on chromosome 21
+
 ### For Mitochondrial subworkflow
 
 `reference/Homo_sapiens_assembly38_chr20_chrM.fasta`: chr20 and chrM hg38 reference fasta file
