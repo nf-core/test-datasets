@@ -1,0 +1,5 @@
+type	path
+L1	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/grch37_g1k_l1_21.bed
+SVA	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/grch37_g1k_sva_21.bed
+ALU	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/grch37_g1k_alu_21.bed
+HERV	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/grch37_g1k_herv_21.bed
