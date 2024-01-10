@@ -545,25 +545,24 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 
 ### proteomics
 
-- msspectra
-  - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
-  - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
-
 - database
   - 'yeast_UPS.fasta': FASTA database for Yeast organism.
-
+  - 'UP000005640_9606.fasta': Human proteome (Swissprot)
 - maxquant
   - 'MaxQuant_contrasts.csv': Contrast file for the MaxQuant test dataset.
   - 'MaxQuant_proteinGroups.txt': MaxQuant proteinGroups file containing intensity values for different protein groups.
   - 'MaxQuant_samplesheet.tsv': Samplesheet for the MaxQuant test dataset.
   - 'proteus.raw_MaxQuant_proteingroups_tab.tsv': Abundance matrix produced from this dataset with the Proteus R package.
-
-- Bos_taurus
-  - idxml:
-    - 'BSA_QC_file.idXML': identifications file for Bovine (BSA) organism coming from an OMSSA search engine.
-  - raw:
-    - 'BSA_QC_file.raw': spectra file for Bovine (BSA) organism.
-   
+- msspectra
+  - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
+  - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
+  - 'PXD012083_e005640_II.raw': Thermo RAW mass spectra file from PXD012083 study
+  - 'peakpicker_tutorial_1.mzML': Profile mass spectra file
+- openms
+  - 'HepG2_rep1_small.idXML': Identification file in idXML format
+  - 'HepG2_rep2_small.idXML': Identification file in idXML format 
+- parameter
+  - 'mqpar.xml': MaxQuant parameter file
 - pdb
   - 1tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Engineered)
   - 8tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Breast)
