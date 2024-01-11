@@ -81,6 +81,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
       - 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
     - 'mmseqs.tar.gz': mmseqs DB archive
+    - 'resfinder.tar.gz': resfinder DB archive
   - genome
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     - 'genome.fasta.gz': bgzipped version of 'genome.fasta'
