@@ -12,3 +12,10 @@ This folder contains data from a MiSeq run. The data has been trimmed to only
 keep the first tile in each cycle. To demultiplex this data, you will need to
 use `--tiles s_1_1101` with `bcl2fasq` or `--first-tile-only true` with
 `bclconvert`.
+
+#### NovaSeq 6000
+
+This folder contains data from a NovaSeq 6000 run. The data has been trimmed to
+only keep the first tile in each cycle. To demultiplex this data, you will need
+to use `--tiles s_1_2101` with `bcl2fasq` or `--first-tile-only true` with
+`bclconvert`.
