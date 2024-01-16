@@ -1,0 +1,7 @@
+vep_files
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/LoFtool_scores.txt
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/spliceai_21_scores_raw_indel_-v1.3-.vcf.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/spliceai_21_scores_raw_snv_-v1.3-.vcf.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/pLI_values_107.txt
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/spliceai_21_scores_raw_indel_-v1.3-.vcf.gz.tbi
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/reference/spliceai_21_scores_raw_snv_-v1.3-.vcf.gz.tbi
