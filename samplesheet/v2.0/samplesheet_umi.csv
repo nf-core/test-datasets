@@ -1,4 +1,3 @@
 sample,fastq_1
 SRX8195117_SRR11631013,s3://ngi-igenomes/testdata/nf-core/pipelines/smrnaseq/2.3.0/fastq/SRX8195117_SRR11631013_1.subsamp.fastq.gz
 SRX8195118_SRR11631014,s3://ngi-igenomes/testdata/nf-core/pipelines/smrnaseq/2.3.0/fastq/SRX8195118_SRR11631014_1.subsamp.fastq.gz
-
