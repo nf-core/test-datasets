@@ -1,36 +1,21 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+
 Test data to be used for automated testing with the nf-core pipelines
 
-## Introduction
+## Test data for Demultiplex
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+### Illumina Runfolders
 
-The principle for nf-core test data is as small as possible, as large as necessary. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+#### MiSeq
 
-## Documentation
+This folder contains data from a MiSeq run. The data has been trimmed to only
+keep the first tile in each cycle. To demultiplex this data, you will need to
+use `--tiles s_1_1101` with `bcl2fasq` or `--first-tile-only true` with
+`bclconvert`.
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+#### NovaSeq 6000
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+This folder contains data from a NovaSeq 6000 run. The data has been trimmed to
+only keep the first tile in each cycle. To demultiplex this data, you will need
+to use `--tiles s_1_2101` with `bcl2fasq` or `--first-tile-only true` with
+`bclconvert`.
