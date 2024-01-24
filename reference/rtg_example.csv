@@ -1,0 +1,3 @@
+samplename,vcf,bedregions,evaluationregions
+hugelymodelbat,grch37_nist_hg002_-na24385_v4.2.1-.vcf.gz,,grch37_nist_hg002_-na24385_v4.2.1-evaluation.bed
+slowlycivilbuck,grch37_nist_hg004_-na24143_v4.2.1-.vcf.gz,grch37_nist_hg004_-na24143_v4.2.1-.bed,
