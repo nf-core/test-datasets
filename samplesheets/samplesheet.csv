@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2,fastq_3
+test_paired-end_plus_long-reads,https://github.com/jannikseidelQBiC/nf-core-test-datasets/raw/detaxizer/test_data/test_minigut_hg38host_R1.fastq.gz,https://github.com/jannikseidelQBiC/nf-core-test-datasets/raw/detaxizer/test_data/test_minigut_hg38host_R2.fastq.gz,https://github.com/jannikseidelQBiC/nf-core-test-datasets/raw/detaxizer/test_data/minigut_reads.fastq.gz
+test_paired-end,https://github.com/jannikseidelQBiC/nf-core-test-datasets/raw/detaxizer/test_data/test_minigut_sample2_hg38host_R1.fastq.gz,https://github.com/jannikseidelQBiC/nf-core-test-datasets/raw/detaxizer/test_data/test_minigut_sample2_hg38host_R2.fastq.gz,
+test_single-end_short,https://github.com/jannikseidelQBiC/nf-core-test-datasets/raw/detaxizer/test_data/test_minigut_sample2_hg38host_R1.fastq.gz,,
+test_single-end_long,,,https://github.com/jannikseidelQBiC/nf-core-test-datasets/raw/detaxizer/test_data/minigut_reads.fastq.gz
