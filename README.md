@@ -242,6 +242,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - dbNSFP4.1a.21: Created from dbNSFP database. Chromosome 21 extracted from main file and posterior subsampling of first 100K lines.
         - SNP_GRCh38_hg38_wChr.bed: Common heterozygous SNPs, used to determine if samples match in the NGSCheckMate tool (chr21 only)
       - chromosomes.tar.gz: compressed directory containing the fasta genome file renamed to chr21 (needed for ControlFREEC)
+    - chr22: directory for reference files using chr22, for bbsplit
+      - sequence/chr22_23800000-23980000.fa: Fasta file containing a section of chr22
     - vcf
       - dbsnp: DBSnp file downsampled based on reference position
       - gnomAD: gnomAD file downsampled based on reference position
