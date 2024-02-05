@@ -1,5 +1,5 @@
 ---
-title: "Test notebook (`.qmd`)"
+title: "Test notebook (R)"
 format:
     html:
         embed-resources: true
@@ -8,8 +8,8 @@ params:
     input_dir: NULL
     artifact_dir: NULL
     cpus: 1
-    input_filename: NULL
     n_iter: 10
+    input_filename: NULL
 ---
 
 # Running from Nextflow
