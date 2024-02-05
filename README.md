@@ -117,6 +117,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'purecn_ex2_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
       - 'purecn_normalpanel.vcf.gz': Example normal VCF to be used for testing PureCN/normaldb
       - 'purecn_normalpanel.vcf.gz.tbi': Index file for 'purecn_normalpanel.vcf.gz'
+    - bcl
+      - '200624_A00834_0183_BHMTFYDRXX.tar.gz': NovaSeq 6000 flowcell. Only the first tile of the first lane has been kept to reduce the size of the dataset
+      - 'SampleSheet.csv': The corresponding samplesheet.
     - bedgraph
       - 'test.bedgraph'
     - bigwig
