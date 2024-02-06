@@ -24,6 +24,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - sarscov2
 - galaxea_fascicularis
 - deilephila_porcellus (mitochondrion)
+- saccharomyces_cerevisiae
 
 The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
@@ -532,6 +533,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - arabidopsis_thaliana
     - plastid
       - 'ddAraThal4.HiFi.reads.fasta': test dataset for plastid reads for Arabidopsis thaliana
+  - saccharomyces_cerevisiae
+    - kallisto_results.tar.gz: archive of the kallisto results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,  
+    - genome_gfp.gtf: merged gtf file taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,  
 
 ### pangenomics
 
