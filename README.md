@@ -537,6 +537,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - plastid
       - 'ddAraThal4.HiFi.reads.fasta': test dataset for plastid reads for Arabidopsis thaliana
   - saccharomyces_cerevisiae
+    - samplesheet.csv: sample sheet as used by the nf-core/rnaseq test profile
     - kallisto_results.tar.gz: archive of the kallisto results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,  
     - salmon_results.tar.gz: archive of the salmon results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner salmon' set,  
     - genome_gfp.gtf: merged gtf file taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,  
