@@ -1,20 +1,21 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
-
 ## Introduction
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+This branch contains test data for [nf-core/detaxizer](https://nf-co.re/detaxizer/) pipeline.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+## Full-size test data 
+The `samplesheet.full.csv` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. *Nature Biotechnology* (2019)](https://doi.org/10.1038/s41587-019-0191-2). This dataset is used by [nf-core/mag](https://nf-co.re/mag/) as a full test and is now also used for nf-core/detaxizer.
 
-## Documentation
+| SAMPLE    | ILLUMINA READS: ENA ID | ONT READs: ENA ID |
+|-----------|------------------------|-------------------|
+| CAPES S11 | ERR3201918             | ERR3201942        |
+| CAPES S21 | ERR3201928             | ERR3201952        |
+| CAPES S7  | ERR3201914             | ERR3201938        |
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+## Test data
+For a functionality test of nf-core/detaxizer the small test data sets of nf-core/mag (paired-end short reads: `test_minigut_*`) and [nf-core/bacass](https://nf-co.re/bacass) (long reads: `subset350.fq.gz`) are used together with the `minigut_kraken.tgz` of nf-core/mag as `kraken2` database and the host reference (`genome.hg38.chr21_10000bp_region.fa`) also from nf-core/mag test data set.
 
 ## Downloading test data
 
