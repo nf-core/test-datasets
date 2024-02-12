@@ -539,7 +539,11 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - saccharomyces_cerevisiae
     - kallisto_results.tar.gz: archive of the kallisto results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,  
     - salmon_results.tar.gz: archive of the salmon results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner salmon' set,  
-    - genome_gfp.gtf: merged gtf file taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,  
+    - genome_gfp.gtf: merged gtf file taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set
+  - actinidia_chinensis
+    - genome
+      - chr1
+        - genome.fasta.gz: Chr1 bases 1 to 7 million acquired from [Zenodo/10.5281/zenodo.5717386](https://zenodo.org/doi/10.5281/zenodo.5717386)
 
 ### pangenomics
 
