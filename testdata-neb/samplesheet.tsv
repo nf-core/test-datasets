@@ -1,0 +1,2 @@
+sample_id	filename_R1	filename_R2	subject_id	species	pcr_target_locus	tissue	sex	age	biomaterial_provider	single_cell
+SRR4026043	SRR4026043_1.fastq.gz	SRR4026043_2.fastq.gz	subj1	human	IG	PBMC	NA	NA	test	FALSE

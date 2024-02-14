@@ -28,6 +28,9 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
   sequencing data. The I1 / UMI barcode field in the metadata file is left empty
   in this case.
 
+`testdata-clontech` contains the test data needed to run the pipeline on data generated with the clontech-bcr-umi protocol. The first 25K reads of the SRR23055142 sample were downloaded.
+`testdata-neb` contains the test data needed to run the pipeline on data generated with the neb-bcr-umi protocol. The first 25K reads of the SRR4026043 sample were downloaded.
+
 ### TCR test data
 
 `testdata-tcr` contains the test data needed to run the pipeline for TCRseq data.
