@@ -72,7 +72,7 @@ Join the hits.fa and sub_nohits.fa to the dataset
 1. dataset 01 contains all 120 hits plus 1200 non-hit contigs
 2. dataset 02 contains only 60 hits plus 3000 non-hit contigs
 
-In addition prokka annotated files were added for both test-datasets.
+In addition prokka annotated files were added for both test-datasets using nf-core funcscan 1.2dev, running with prokka.
 
 ## HMM Models
 
