@@ -178,6 +178,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test_2.fastq.gz'
     - sequencing_summary
       - 'test.sequencing_summary.txt'
+      - 'updated.test.sequencing_summary.txt' : A tab-delimited text file containing useful information for each read analysed during basecalling of nanopore sequencing data. 
   - metagenome
     - 'test_1.kraken2.reads.txt': kraken classification of each input read of test file `test_1.fastq.gz`
     - 'test_1.kraken2.report.txt': kraken report after classification of test file `test_1.fastq.gz`
