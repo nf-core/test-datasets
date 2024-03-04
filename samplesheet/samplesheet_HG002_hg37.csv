@@ -1,0 +1,5 @@
+test_vcf,caller,vartype
+"https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/HG002_delly_SV_hg19.chr21.vcf.gz",delly,sv
+"https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/HG002_lumpy_SV_hg19.sorted.chr21.vcf.gz",lumpy,sv
+"https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/HG002_manta_SV_hg19_genotype2.chr21.vcf.gz",manta,sv
+"https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/full.svaba.germline.sv.chr21.vcf.gz",svaba,sv
