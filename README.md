@@ -290,6 +290,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
       - aligned_reads
+        - SRX11780887_chr20.bam filtered and trimmed reads from SRX11780887, aligned to human Chr20
+        - SRX11780887_chr20.bam.bai index for filtered and trimmed reads from SRX11780887, aligned to human Chr20
         - SRX11780888_chr20.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20
         - SRX11780888_chr20.bam.bai index for filtered and trimmed reads from SRX11780888, aligned to human Chr20
   - illumina
