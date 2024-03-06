@@ -38,13 +38,13 @@ for fastq_file in $FASTQ_DIR/*_1.fastq.gz; do
 
     if [ -e "$r1" ]; then
 	echo "Subsetting $r1 by $seq_selection"
-	zcat "$r1" | head -n 40000000 | seqtk subseq - "$seq_selection" | gzip > "$OUT_DIR/${base_name}_chr20_1.fastq.gz"
+	zcat "$r1" | seqtk subseq - "$seq_selection" | head -n 2000000 | gzip > "$OUT_DIR/${base_name}_chr20_1.fastq.gz"
     else
 	echo "$r1 does not exist"
     fi
     if [ -e "$r2" ]; then
 	echo "Subsetting $r2 by $seq_selection"
-	zcat "$r2" | head -n 40000000 | seqtk subseq - "$seq_selection" | gzip > "$OUT_DIR/${base_name}_chr20_2.fastq.gz"
+	zcat "$r2" | seqtk subseq - "$seq_selection" | head -n 2000000 | gzip > "$OUT_DIR/${base_name}_chr20_2.fastq.gz"
     fi
 done
 
