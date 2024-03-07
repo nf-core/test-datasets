@@ -2,13 +2,24 @@
 conda init bash
 conda activate env_tools
 
+# Region of interest
 CHR=22
+REGION=chr${CHR}:16600000-16800000
+
+# Panel files
 PANEL_LOC=./data/panel/${CHR}/
 PANEL_ORIGIN=${PANEL_LOC}panel_2020-08-05_chr${CHR}.phased.vcf.gz
 PANEL_NAME=${PANEL_LOC}1000GP.chr${CHR}
 PANEL_S=${PANEL_NAME}.noNA12878.s
 
-REGION=chr${CHR}:16600000-16800000
+# Reference genome
+REF_FASTA=./data/reference_genome/hs38DH.chr${CHR}
+
+# Extract only necessary region from fasta
+echo 'Extract region from fasta'
+gunzip ${REF_FASTA}.fa.gz
+samtools faidx ${REF_FASTA}.fa ${REGION} --output  ${REF_FASTA}.s.fa
+samtools faidx ${REF_FASTA}.s.fa
 
 # Filter the region of interest of the panel file
 echo 'Filter region of panel'
@@ -21,8 +32,8 @@ bcftools norm -m -any ${PANEL_S}.vcf.gz -Ou --threads 4 |
 bcftools view -m 2 -M 2 -v snps -s ^NA12878,NA12891,NA12892 --threads 4 -Ob -o ${PANEL_S}.bcf
 bcftools index -f ${PANEL_S}.bcf --threads 4
 
-# Select only the SNPS
-echo 'Select only SNPs'
+# Select only the SNPS and drop Genotypes
+echo 'Select only SNPs and drop Genotypes'
 bcftools view -G -m 2 -M 2 -v snps ${PANEL_S}.bcf -Oz -o ${PANEL_S}.sites.vcf.gz
 bcftools index -f ${PANEL_S}.sites.vcf.gz
 
