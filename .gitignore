@@ -1,6 +1,7 @@
 slurm*.out
 *.log
-data/NA12878/NA12878.final.cram*
+*.cram*
+*.zip
 data/NA12878/*/NA12878.chr*.s.1x.c*
 data/panel/*/panel_2020-08-05_chr*.phased.*
 data/affi/snp6.txt
