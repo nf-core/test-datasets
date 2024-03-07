@@ -46,6 +46,7 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 For CHR 21
 
 ```
+mkdir -p data/reference_genome
 wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr21.filtered.shapeit2-duohmm-phased.vcf.gz -O data/panel/panel_2020-08-05_chr21.phased.vcf.gz
 wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr21.filtered.shapeit2-duohmm-phased.vcf.gz.tbi -O data/panel/panel_2020-08-05_chr21.phased.vcf.gz.tbi
 wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr21.fa.gz -O data/reference_genome/hs38DH.chr21.fa.gz
@@ -59,17 +60,28 @@ wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_hi
 wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz -O data/reference_genome/hs38DH.chr22.fa.gz
 ```
 
-Individual data, beware can be long to download
+Individuals data, beware can be long to download
+Individual NA12878 is from the Glimpse tutorial, NA19401 is one with only one relationship with a PI_HAT > 0.2
+To find the corresponding folder use :
 
 ```
+lftp -e "find;quit" ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323 > listing.txt
+```
+
+We can now download the corresponding folder:
+
+```
+mkdir -p data/NA12878 data/NA19401
 wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram -O data/NA12878/NA12878.final.cram
 wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram.crai -O data/NA12878/NA12878.final.cram.crai
+wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239749/NA19401.final.cram -O data/NA19401/NA19401.final.cram
+wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239749/NA19401.final.cram.crai -O data/NA19401/NA19401.final.cram.crai
 ```
 
 SNP array value
 
 ```
-wget -c https://api.gdc.cancer.gov/data/9bd7cbce-80f9-449e-8007-ddc9b1e89dfb data/affi/snp6.txt.gz
+wget -c https://api.gdc.cancer.gov/data/9bd7cbce-80f9-449e-8007-ddc9b1e89dfb -O data/affi/snp6.txt.gz
 gunzip data/affi/snp6.txt.gz
 ```
 

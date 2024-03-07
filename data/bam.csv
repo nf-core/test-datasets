@@ -1,0 +1,3 @@
+sample,bam,bai
+NA12878,https://raw.githubusercontent.com/nf-core/test-datasets/imputation/data/NA12878/21/NA12878.chr21.s.1x.bam,https://raw.githubusercontent.com/nf-core/test-datasets/imputation/data/NA12878/21/NA12878.chr21.s.1x.bam.bai
+NA12878_2,https://raw.githubusercontent.com/nf-core/test-datasets/imputation/data/NA12878/21/NA12878.chr21.s.1x.bam,https://raw.githubusercontent.com/nf-core/test-datasets/imputation/data/NA12878/21/NA12878.chr21.s.1x.bam.bai
