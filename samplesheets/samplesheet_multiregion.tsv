@@ -1,0 +1,4 @@
+sampleID	forwardReads	reverseReads
+set1	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/multiregion1_1.fq.gz	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/multiregion1_2.fq.gz
+set2	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/multiregion2_1.fq.gz	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/multiregion2_2.fq.gz
+set3	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/multiregion3_1.fq.gz	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/multiregion3_2.fq.gz
