@@ -10,3 +10,7 @@ dependencies:
   - bioconda::tabix
   - bioconda::shapeit5
   - bioconda::htslib
+  - bioconda::plink
+  - conda-forge::r-base>=4
+  - conda-forge::r-essentials
+  - conda-forge::r-optparse

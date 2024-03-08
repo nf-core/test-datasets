@@ -2,7 +2,14 @@ slurm*.out
 *.log
 *.cram*
 *.zip
-data/NA12878/*/NA12878.chr*.s.1x.c*
-data/panel/*/panel_2020-08-05_chr*.phased.*
+*.csv
+*.bed
+*.bim
+*.fam
+*.nosex
+analysis/1000GP*
+data/panel/21
+data/panel/22
+data/panel/21_22/1000GP.chr21_22.vcf.gz*
 data/affi/snp6.txt
 data/reference_genome/*
