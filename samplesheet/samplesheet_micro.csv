@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,strandedness
+test,SRR6357070_1.fastq.gz,SRR6357070_2.fastq.gz,auto
