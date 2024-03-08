@@ -1,2 +1,2 @@
 sample,fastq_1,fastq_2,strandedness
-test,SRR6357070_1.fastq.gz,SRR6357070_2.fastq.gz,auto
+test,s3://ngi-igenomes/testdata/nf-core/pipelines/rnaseq/3.15/genomics/sarscov2/illumina/fastq/test_1.fastq.gz,s3://ngi-igenomes/testdata/nf-core/pipelines/rnaseq/3.15/genomics/sarscov2/illumina/fastq/test_2.fastq.gz,auto
