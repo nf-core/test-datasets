@@ -24,11 +24,11 @@ The files created with the previous command are generated in PLINK binary format
 In order to convert them to VCF the following command has been used
 
 ```{bash}
-plink --bfile plink_simulated --recode vcf --out plink_simulated
+plink --bfile plink_simulated --recode vcf bgz --out plink_simulated
 ```
 
 And to convert them to BCF the following command has been used
 
 ```{bash}
-plink --bfile plink_simulated --recode bcf --out plink_simulated
+bcftools view -O b -o plink_simulated.bcf.gz plink_simulated.vcf.gz
 ```
