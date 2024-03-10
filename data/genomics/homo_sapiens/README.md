@@ -364,6 +364,11 @@ This test data contains:
    - test.cram.crai => The index of the CRAM file
    - test.bed => A BED file containing only the regions from chr11
 
+### Popgen data
+
+Population genetics simulated data (case-control) in PLINK binary format, compressed VCF and compressed BCF formats.
+For details about their simulation, see the specific README file.
+
 ## Limitations
 
 1. Reads do not cover chromosome 6
