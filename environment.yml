@@ -1,16 +1,16 @@
 name: env_tools
 channels:
+  - conda-forge
   - bioconda
   - anaconda
-  - conda-forge
   - defaults
 dependencies:
-  - bioconda::samtools
-  - bioconda::bcftools
-  - bioconda::tabix
-  - bioconda::shapeit5
-  - bioconda::htslib
-  - bioconda::plink
-  - conda-forge::r-base>=4
-  - conda-forge::r-essentials
-  - conda-forge::r-optparse
+  - samtools
+  - bcftools
+  - tabix
+  - shapeit5
+  - htslib
+  - plink
+  - r-base>=4
+  - r-essentials
+  - r-optparse
