@@ -7,7 +7,6 @@ CHR=22
 REGION=chr${CHR}:16600000-16800000
 
 # Concatenate the panel files
-
 PANEL_CHR21=./data/panel/21/1000GP.chr21.noNA12878.s
 PANEL_CHR22=./data/panel/22/1000GP.chr22.noNA12878.s
 PANEL_S=./data/panel/21_22/1000GP.chr21_22.noNA12878.s
