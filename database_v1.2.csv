@@ -6,7 +6,7 @@ kraken2,db2,--quick,short,https://github.com/nf-core/test-datasets/raw/taxprofil
 kraken2,db3,--quick,long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kraken2/testdb-kraken2.tar.gz
 kraken2,db4,--quick,both,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kraken2/testdb-kraken2.tar.gz
 centrifuge,db3,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/centrifuge/test-db-centrifuge.tar.gz
-kaiju,db5,,sort,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kaiju/kaiju.tar.gz
+kaiju,db5,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kaiju/kaiju.tar.gz
 diamond,db1,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/diamond/testdb-diamond.dmnd
 ganon,db1,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/ganon/test-db-ganon.tar.gz
 metaphlan,metaphlan3,--mpa3,short,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan_database.tar.gz
