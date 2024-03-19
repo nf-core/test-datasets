@@ -1,0 +1,7 @@
+SampleNumber	1
+SampleName	Sample1
+L1T1101	100
+
+### Most Popular Unknown Index Sequences
+### Columns: Index_Sequence Hit_Count
+unknown	617020

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stats>
+  <Flowcell flowcell-id="000000000-K9H97">
+    <Project name="default">
+      <Sample name="Sample1">
+        <Barcode name="unknown">
+          <Lane number="1">
+            <BarcodeCount>617038</BarcodeCount>
+            <PerfectBarcodeCount>617038</PerfectBarcodeCount>
+          </Lane>
+        </Barcode>
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>617038</BarcodeCount>
+            <PerfectBarcodeCount>617038</PerfectBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+      <Sample name="all">
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>617038</BarcodeCount>
+            <PerfectBarcodeCount>617038</PerfectBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+    </Project>
+    <Project name="all">
+      <Sample name="all">
+        <Barcode name="all">
+          <Lane number="1">
+            <BarcodeCount>617038</BarcodeCount>
+            <PerfectBarcodeCount>617038</PerfectBarcodeCount>
+          </Lane>
+        </Barcode>
+      </Sample>
+    </Project>
+  </Flowcell>
+</Stats>

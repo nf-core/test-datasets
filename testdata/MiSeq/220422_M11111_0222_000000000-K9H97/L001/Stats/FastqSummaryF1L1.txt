@@ -1,0 +1,2 @@
+SampleNumber	Tile	NumberOfReadsRaw	NumberOfReadsPF
+1	1101	673257	617038
