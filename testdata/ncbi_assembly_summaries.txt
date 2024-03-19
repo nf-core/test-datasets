@@ -1,0 +1,2 @@
+https://github.com/nf-core/test-datasets/raw/magmap/testdata/assembly_summary_genbank.txt
+https://github.com/nf-core/test-datasets/raw/magmap/testdata/assembly_summary_refseq.txt
