@@ -1,7 +1,7 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-##Test data for SeqInspector
+## Test data for SeqInspector
 
 ### Illumina Runfolders
 This folder contains demultiplexed data generated from the test data for the demultiplex pipeline. Both MiSeq and NovaSeq6000 datasets were demultiplexed using bcl2fastq.
