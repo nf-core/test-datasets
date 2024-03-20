@@ -8,9 +8,18 @@ slurm*.out
 *.fam
 *.nosex
 analysis/1000GP*
-data/panel/21
-data/panel/22
+
+## Source files
+
+### 1000GP
+data/panel/21/1000GP.chr21.vcf.gz*
+data/panel/22/1000GP.chr22.vcf.gz*
 data/panel/21_22/1000GP.chr21_22.vcf.gz*
+## 1000GP with related
+data/panel/21/1000GP.chr21.s.vcf.gz*
+data/panel/22/1000GP.chr22.s.vcf.gz*
+data/panel/21_22/1000GP.chr21_22.s.vcf.gz*
+
 data/affi/snp6.txt
-data/reference_genome/21
-data/reference_genome/22
+data/reference_genome/21/*.fa*
+data/reference_genome/22/*.fa*
