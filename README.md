@@ -84,7 +84,8 @@ gunzip data/affi/snp6.txt.gz
 
 ##### Merging
 
-Most of the time datas aren't separated by chromosome. Hence we will aggregated both chr21 and chr22 into one.
+Datas can be separated by chromosome or not.
+Hence we will aggregated both chr21 and chr22 into one.
 
 ```bash
 # Merge the panel file
@@ -153,10 +154,24 @@ We can now download the corresponding folder:
 5) Convert to TSV
 
 ```bash
-. get_panel_s.sh \
-    data/panel/21_22/1000GP.chr21_22 \
-    data/reference_genome/21_22/hs38DH.chr21_22 \
-    data/reference_genome/GRCh38 \
+for chr in 21 22 21_22; do
+    echo $chr
+    . get_panel_s.sh \
+        data/panel/$chr/1000GP.chr$chr \
+        data/reference_genome/$chr/hs38DH.chr$chr \
+        data/reference_genome/GRCh38 \
+        data/affi/snp6 \
+        region.lst
+done
+```
+
+6) Extract the SNP position present in the SNP chip array
+7) Get the map file for the reference genome
+
+```bash
+. get_map_snp.sh \
+    data/reference_genome/ \
+    GRCh38 \
     data/affi/snp6 \
     region.lst
 ```

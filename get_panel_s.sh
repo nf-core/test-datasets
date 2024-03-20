@@ -54,31 +54,5 @@ tabix -s1 -b2 -e2 ${PANEL_NOREL}.tsv.gz
 
 # Get phased haplotypes
 #echo 'Get phased haplotypes'
-#SHAPEIT5_phase_common -I ${PANEL_S}.bcf -T 4 -O ${PANEL_S}.phased.vcf.gz -R ${REGION}
-#bcftools index -f ${PANEL_S}.phased.vcf.gz
-
-# Get SNP file
-echo 'Extracting region from SNP array file'
-
-# For each line in the region file, extract the SNPs and map file
-
-# Initialize the SNP and map file
-> ${SNP_FILE}.s.map
-> ${REF_MAP}.s.map
-
-while IFS=':' read -r CHR REGION; do
-    # Use col1 and col2 as arguments
-    START=$(echo $REGION | awk -F'-' '{print $1}')
-    END=$(echo $REGION | awk -F'-' '{print $2}')
-    CHR_NUM=$(echo $CHR | sed 's/chr//g')
-    echo "$CHR: $START - $END"
-    # Extract the SNPs
-    cat ${SNP_FILE}.txt | \
-        awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' && $3 >='"$START"' && $3 <= '"$END"' { print "chr"$2":"$3}' \
-        >> ${SNP_FILE}.s.map
-    # Unzip the map file and keep only the chromosome file
-    unzip -p ${REF_MAP}.map.zip plink.${CHR}.GRCh38.map | \
-        awk -v OFS='\t' -F' ' '$4 >='"$START"' && $4 <= '"$END"' { print $1, $3, $4}' \
-    >> ${REF_MAP}.s.map
-done < $REGION_LST
-unzip -p ${REF_MAP}.zip plink.${CHR}.GRCh38.map > test.map
+#SHAPEIT5_phase_common -I ${PANEL_NOREL}.bcf -T 4 -O ${PANEL_NOREL}.phased.vcf.gz -R ${REGION}
+#bcftools index -f ${PANEL_NOREL}.phased.vcf.gz
