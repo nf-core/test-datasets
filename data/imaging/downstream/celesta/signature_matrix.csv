@@ -1,0 +1,9 @@
+﻿,Lineage_level,vimentin,CD4,CD20,CD8a,pcna,ck5,ck8,CD206
+Stroma,1_0_1,1,0,0,0,0,0,0,0
+Cancer_cells_pcna,1_0_2,1,0,0,0,1,0,0,0
+Cancer_cells_CK5,1_0_3,0,0,0,0,0,1,0,0
+Cancer_cells_CK8,1_0_4,0,0,0,0,0,0,1,0
+CD4_T_cells,1_0_5,0,1,0,0,0,0,0,0
+CD8_T_cells,1_0_6,0,0,0,1,0,0,0,0
+B_cells,1_0_7,0,0,1,0,0,0,0,0
+Macrophages,1_0_8,0,0,0,0,0,0,0,1
