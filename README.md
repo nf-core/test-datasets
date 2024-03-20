@@ -61,6 +61,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'informative_sites.fas'
   - bed
     - 'test.bed': exemplary bed file for the MT192765.1 genome (fasta/test_genomic.fasta)
+    - 'test.bedpe': reformatted columns of 'test.bed' to comply with the BEDPE file format
     - 'test2.bed': slightly modified copy of the above file
     - 'test.bed.gz': gzipped version
     - 'baits.bed'
