@@ -528,12 +528,17 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - fasta
         - 'test1.contigs.fa.gz': _de novo_ assembled contigs of the test\minigut_sample_1 FASTQ files by MEGAHIT, generated with nf-core/mag (2.1.0) on default settings
       - bam
+        - 'test1_contigs.sorted.bam': 'test1\_{1,2}.fastq.gz' aligned with bowtie2 on 'test1.contigs.fa.gz'
         - 'test1.bam': 'test1\_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
         - 'test1.sorted.bam': sorted 'test1.bam'
         - 'test1.sorted.bai': index of 'test1.sorted.bam'
         - 'test2.bam': 'test2\_{1,2}.fastq.gz' file aligned with bowtie2 on 'genome.fna.gz'
         - 'test2.sorted.bam': sorted 'test2.bam'
         - 'test2.sorted.bai': index of 'test2.sorted.bam'
+      - tsv
+        - 'contig_id.tsv': Sequence IDs (one per line) of all contigs in 'test1.contigs.fa.gz'
+      - coverage
+        - 'test1_contigs.coverage.stats.txt': tab-separated file with 2 columns: sequence ID (from 'test1.contigs.fa.gz') and coverage (from 'test1_contigs.sorted.bam')
     - nanopore
       - fastq
         - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
