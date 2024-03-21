@@ -1,0 +1,47 @@
+[
+    {
+        "sourceFiles": {
+            "source1": "s3://your-bucket/HG00100.chrom20.ILLUMINA.bwa.GBR.low_coverage.20101123.bam"
+        },
+        "sourceFileType": "BAM",
+        "subjectId": "mySubject",
+        "sampleId": "mySample",
+        "name": "HG00100",
+        "description": "BAM for HG00100",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://your-bucket/SRR233106_1.filt.fastq.gz",
+            "source2": "s3://your-bucket/SRR233106_2.filt.fastq.gz"
+        },
+        "sourceFileType": "FASTQ",
+        "subjectId": "mySubject",
+        "sampleId": "mySample",
+        "name": "HG00146",
+        "description": "FASTQ for HG00146",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://your-bucket/HG00096.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram"
+        },
+        "sourceFileType": "CRAM",
+        "subjectId": "mySubject",
+        "sampleId": "mySample",
+        "name": "HG00096",
+        "description": "CRAM for HG00096",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://your-bucket/NA12878_A.bam"
+        },
+        "sourceFileType": "UBAM",
+        "subjectId": "mySubject",
+        "sampleId": "mySample",
+        "name": "NA12878_A",
+        "description": "uBAM for NA12878",
+        "generatedFrom": "GATK Test Data"
+    }
+]

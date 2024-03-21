@@ -1,0 +1,94 @@
+[
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R1_001.fastq.gz",
+            "source2": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R2_001.fastq.gz"
+        },
+        "sourceFileType": "FASTQ",
+        "subjectId": "NA12878",
+        "sampleId": "Sample_U0a",
+        "name": "NA12878 Sample_U0a 1",
+        "description": "FASTQ for NA12878",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R1_002.fastq.gz",
+            "source2": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R2_002.fastq.gz"
+        },
+        "sourceFileType": "FASTQ",
+        "subjectId": "NA12878",
+        "sampleId": "Sample_U0a",
+        "name": "NA12878 Sample_U0a 2",
+        "description": "FASTQ for NA12878",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R1_003.fastq.gz",
+            "source2": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R2_003.fastq.gz"
+        },
+        "sourceFileType": "FASTQ",
+        "subjectId": "NA12878",
+        "sampleId": "Sample_U0a",
+        "name": "NA12878 Sample_U0a 3",
+        "description": "FASTQ for NA12878",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R1_004.fastq.gz",
+            "source2": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/fastq/NA12878/Sample_U0a/U0a_CGATGT_L001_R2_004.fastq.gz"
+        },
+        "sourceFileType": "FASTQ",
+        "subjectId": "NA12878",
+        "sampleId": "Sample_U0a",
+        "name": "NA12878 Sample_U0a 4",
+        "description": "FASTQ for NA12878",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/cram/ERR3988761/HG00405.final.cram"
+        },
+        "sourceFileType": "CRAM",
+        "subjectId": "HG00405",
+        "sampleId": "ERR3988761",
+        "name": "HG00405",
+        "description": "CRAM for HG00405",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/cram/ERR3988762/HG00408.final.cram"
+        },
+        "sourceFileType": "CRAM",
+        "subjectId": "HG00408",
+        "sampleId": "ERR3988762",
+        "name": "HG00408",
+        "description": "CRAM for HG00408",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/cram/ERR3988763/HG00418.final.cram"
+        },
+        "sourceFileType": "CRAM",
+        "subjectId": "HG00418",
+        "sampleId": "ERR3988763",
+        "name": "HG00418",
+        "description": "CRAM for HG00418",
+        "generatedFrom": "1000 Genomes"
+    },
+    {
+        "sourceFiles": {
+            "source1": "s3://aws-genomics-static-us-east-1/omics-tutorials/data/cram/ERR3988764/HG00420.final.cram"
+        },
+        "sourceFileType": "CRAM",
+        "subjectId": "HG00420",
+        "sampleId": "ERR3988764",
+        "name": "HG00420",
+        "description": "CRAM for HG00420",
+        "generatedFrom": "1000 Genomes"
+    }
+]

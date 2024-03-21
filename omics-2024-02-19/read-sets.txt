@@ -1,0 +1,196 @@
+{
+    "readSets": [
+        {
+            "id": "5091960702",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/5091960702",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "HG00405",
+            "sampleId": "ERR3988761",
+            "status": "ACTIVE",
+            "name": "HG00405",
+            "description": "CRAM for HG00405",
+            "referenceArn": "arn:aws:omics:us-east-1:850787717197:referenceStore/8277373997/reference/2881303957",
+            "fileType": "CRAM",
+            "sequenceInformation": {
+                "totalReadCount": 730496712,
+                "totalBaseCount": 109574506800,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "ALIGNED"
+            },
+            "creationTime": "2024-03-13T00:30:36.968000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "CRAM_MD5up",
+                "source1": "2a9519c926cefcafdedad79e108e7113"
+            }
+        },
+        {
+            "id": "2064528039",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/2064528039",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "HG00408",
+            "sampleId": "ERR3988762",
+            "status": "ACTIVE",
+            "name": "HG00408",
+            "description": "CRAM for HG00408",
+            "referenceArn": "arn:aws:omics:us-east-1:850787717197:referenceStore/8277373997/reference/2881303957",
+            "fileType": "CRAM",
+            "sequenceInformation": {
+                "totalReadCount": 755902162,
+                "totalBaseCount": 113385324300,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "ALIGNED"
+            },
+            "creationTime": "2024-03-13T00:34:06.891000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "CRAM_MD5up",
+                "source1": "84b228f2f480029a52cac060e7c1daec"
+            }
+        },
+        {
+            "id": "7215782560",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/7215782560",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "HG00418",
+            "sampleId": "ERR3988763",
+            "status": "ACTIVE",
+            "name": "HG00418",
+            "description": "CRAM for HG00418",
+            "referenceArn": "arn:aws:omics:us-east-1:850787717197:referenceStore/8277373997/reference/2881303957",
+            "fileType": "CRAM",
+            "sequenceInformation": {
+                "totalReadCount": 759570554,
+                "totalBaseCount": 113935583100,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "ALIGNED"
+            },
+            "creationTime": "2024-03-13T00:34:48.979000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "CRAM_MD5up",
+                "source1": "1abb39974ccf2b9ab7c4d65fc3a7b77c"
+            }
+        },
+        {
+            "id": "9840381353",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/9840381353",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "HG00420",
+            "sampleId": "ERR3988764",
+            "status": "ACTIVE",
+            "name": "HG00420",
+            "description": "CRAM for HG00420",
+            "referenceArn": "arn:aws:omics:us-east-1:850787717197:referenceStore/8277373997/reference/2881303957",
+            "fileType": "CRAM",
+            "sequenceInformation": {
+                "totalReadCount": 734622878,
+                "totalBaseCount": 110193431700,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "ALIGNED"
+            },
+            "creationTime": "2024-03-13T00:33:21.737000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "CRAM_MD5up",
+                "source1": "1226ee8c29df0684b3293e9004d59617"
+            }
+        },
+        {
+            "id": "4485594728",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/4485594728",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "NA12878",
+            "sampleId": "Sample_U0a",
+            "status": "ACTIVE",
+            "name": "NA12878 Sample_U0a 1",
+            "description": "FASTQ for NA12878",
+            "fileType": "FASTQ",
+            "sequenceInformation": {
+                "totalReadCount": 8000000,
+                "totalBaseCount": 1184000000,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "UNALIGNED"
+            },
+            "creationTime": "2024-03-12T23:46:48.353000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "FASTQ_MD5up",
+                "source1": "7f136a6d0e705ee4c518202ec051a985",
+                "source2": "c7bea480c4244f05b76fa8f3ce62ef47"
+            }
+        },
+        {
+            "id": "1583905461",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/1583905461",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "NA12878",
+            "sampleId": "Sample_U0a",
+            "status": "ACTIVE",
+            "name": "NA12878 Sample_U0a 2",
+            "description": "FASTQ for NA12878",
+            "fileType": "FASTQ",
+            "sequenceInformation": {
+                "totalReadCount": 8000000,
+                "totalBaseCount": 1184000000,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "UNALIGNED"
+            },
+            "creationTime": "2024-03-12T23:46:57.983000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "FASTQ_MD5up",
+                "source1": "697fd4681d4c5ab8453c97576fbfa26b",
+                "source2": "fcbfffe005d5be055ac0b5743b118db0"
+            }
+        },
+        {
+            "id": "1888015708",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/1888015708",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "NA12878",
+            "sampleId": "Sample_U0a",
+            "status": "ACTIVE",
+            "name": "NA12878 Sample_U0a 3",
+            "description": "FASTQ for NA12878",
+            "fileType": "FASTQ",
+            "sequenceInformation": {
+                "totalReadCount": 8000000,
+                "totalBaseCount": 1184000000,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "UNALIGNED"
+            },
+            "creationTime": "2024-03-12T23:46:55.623000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "FASTQ_MD5up",
+                "source1": "611aa212be45a68118e9ab90791072fc",
+                "source2": "88ad36578ead07ba2b61c7ed3750bc58"
+            }
+        },
+        {
+            "id": "5447294294",
+            "arn": "arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048/readSet/5447294294",
+            "sequenceStoreId": "1867753048",
+            "subjectId": "NA12878",
+            "sampleId": "Sample_U0a",
+            "status": "ACTIVE",
+            "name": "NA12878 Sample_U0a 4",
+            "description": "FASTQ for NA12878",
+            "fileType": "FASTQ",
+            "sequenceInformation": {
+                "totalReadCount": 3710320,
+                "totalBaseCount": 549127360,
+                "generatedFrom": "1000 Genomes",
+                "alignment": "UNALIGNED"
+            },
+            "creationTime": "2024-03-12T23:46:43.318000+00:00",
+            "creationType": "IMPORT",
+            "etag": {
+                "algorithm": "FASTQ_MD5up",
+                "source1": "b2fbaa6d8d8a03e3f696caefe8b2b5c1",
+                "source2": "b83f61f6c701b436f309e85853d49551"
+            }
+        }
+    ]
+}
