@@ -6,4 +6,4 @@ https://raw.githubusercontent.com/biocore/sortmerna/v4.3.4/data/rRNA_databases/s
 https://raw.githubusercontent.com/biocore/sortmerna/v4.3.4/data/rRNA_databases/silva-bac-23s-id98.fasta
 https://raw.githubusercontent.com/biocore/sortmerna/v4.3.4/data/rRNA_databases/silva-euk-18s-id95.fasta
 https://raw.githubusercontent.com/biocore/sortmerna/v4.3.4/data/rRNA_databases/silva-euk-28s-id98.fasta
-https://raw.githubusercontent.com/nf-core/test-datasets/riboseq/testdata/hg38-mature-tRNAs-dna.fasta 
+https://raw.githubusercontent.com/nf-core/test-datasets/riboseq/testdata/hg38-mature-tRNAs-dna.fasta
