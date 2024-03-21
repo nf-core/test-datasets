@@ -1,2 +1,2 @@
 sample,lane,project,fastq_1,fastq_2,rundir
-SAMPLE_PAIRED_END,1,P001,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/MiSeq/220422_M11111_0222_000000000-K9H97/Sample1_S1_L001_R1_001.fastq.gz,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/MiSeq/220422_M11111_0222_000000000-K9H97.tar.gz
+SAMPLE_SINGLE_END,1,P001,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/MiSeq/220422_M11111_0222_000000000-K9H97/Sample1_S1_L001_R1_001.fastq.gz,,

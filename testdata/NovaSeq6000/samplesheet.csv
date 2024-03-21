@@ -1,6 +1,6 @@
 sample,lane,project,fastq_1,fastq_2,rundir
-Sample1,1,S1,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Sample1_S1_L001_R1_001.fastq.gz,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX.tar.gz
-SampleA,1,S2,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/SampleA_S2_L001_R1_001.fastq.gz,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX.tar.gz
-Sample23,1,S2,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Sample23_S3_L001_R1_001.fastq.gz,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX.tar.gz
-sampletest,1,S4,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/sampletest_S4_L001_R1_001.fastq.gz,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX.tar.gz
-Undetermined,1,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Undetermined_S0_L001_R1_001.fastq.gz,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX.tar.gz
+Sample1,1,S1,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Sample1_S1_L001_R1_001.fastq.gz,,
+SampleA,1,S2,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/SampleA_S2_L001_R1_001.fastq.gz,,
+Sample23,1,S2,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Sample23_S3_L001_R1_001.fastq.gz,,
+sampletest,1,S4,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/sampletest_S4_L001_R1_001.fastq.gz,,
+Undetermined,1,,https://github.com/KarNair/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Undetermined_S0_L001_R1_001.fastq.gz,,
