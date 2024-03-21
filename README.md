@@ -1,6 +1,10 @@
 ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+
 Test data to be used for automated testing with the nf-core pipelines
 
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
 - [Test data for SeqInspector](#test-data-for-seqinspector)
   - [Illumina](#illumina)
     - [MiSeq](#miseq)
@@ -35,6 +39,10 @@ This folder contains input samplesheet and single-end demultiplexed fastq files 
 #### 20230505_1857_1B_PAO99309_94e07fab
 Single-sample run, accessed via `aws s3 ls --no-sign-request s3://ont-open-data/giab_2023.05/flowcells/hg001/20230505_1857_1B_PAO99309_94e07fab/`
 
-Downsampled to single fastq
+Passed and failed `fastq` files were derived from
+- `pod5_passed/PAO99309_pass__94e07fab_c3641428_1.pod5` 
+- `pod5_fail/PAO99309_fail__94e07fab_c3641428_1.pod5`
 
-Oxford Nanopore Technologies Benchmark Datasets was accessed on 2024-03-20 from https://registry.opendata.aws/ont-open-data.
+Both files were basecalled via `Dorado` (hac) and coverted to `fastq` via `samtools`.
+
+Oxford Nanopore Technologies Benchmark Datasets was accessed on 2024-03-21 from https://registry.opendata.aws/ont-open-data.
