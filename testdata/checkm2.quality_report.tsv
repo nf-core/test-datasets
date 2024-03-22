@@ -1,0 +1,3 @@
+Name	Completeness	Contamination	Completeness_Model_Used	Translation_Table_Used	Coding_Density	Contig_N50	Average_Gene_Length	Genome_Size	GC_Content	Total_Coding_Sequences	Additional_Notes
+GCA_000022305.1	100.0	0.06	Neural Network (Specific Model)	11	0.9	3796573	323.2524106636415	3796573	0.67	3526	None
+GCA_002688505.1	94.23	0.16	Neural Network (Specific Model)	4	0.896	271175	315.7548638132296	271175	0.15	257	None
