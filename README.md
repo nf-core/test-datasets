@@ -70,6 +70,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - cnn
     - 'reference.cnn': exemplary copy-number reference file for MT192765.1 genome
   - db
+    - 'blast': BLAST formatted DB files and list of FASTA entries
     - 'kaiju': Kaiju DB. Database created from ORF1ab polyprotein UNJ12943.1 and taxonomic ID 2697049
     - 'kraken2': kraken2 DB
     - 'kraken2.tar.gz': kraken2 DB archive
