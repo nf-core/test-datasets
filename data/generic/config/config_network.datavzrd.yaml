@@ -1,0 +1,15 @@
+datasets:
+  network:
+    path: network.tsv
+    separator: "\t"
+views:
+  network:
+    dataset: network
+    render-table:
+      columns:
+        source:
+          display-mode: normal
+        target:
+          display-mode: normal
+        weight:
+          display-mode: normal
