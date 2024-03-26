@@ -169,6 +169,23 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.wig.gz'
     - picard
       - 'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads
+  - lexogen
+    -idemux
+      - 'i1_read_1.fastq.gz': first read pair containing i1 indices
+      - 'i1_read_2.fastq.gz': second read pair containing i1 indices
+      - 'i1_sample_sheet.csv': sample sheet for demultiplexing via full i1
+      - 'i5_i1_read_1.fastq.gz': first read pair containing both i5 and i1 indices
+      - 'i5_i1_read_2.fastq.gz': second read pair containing both i5 and i1 indices
+      - 'i5_i1_sample_sheet.csv': sample sheet for demultiplexing via full i5, i1
+      - 'i7_i1_read_1.fastq.gz': first read pair containing both i7 and i1 indices
+      - 'i7_i1_read_2.fastq.gz': second read pair containing both i7 and i1 indices
+      - 'i7_i1_sample_sheet.csv': sample sheet for demultiplexing via full i7, i1
+      - 'i7_i5_i1_read_1.fastq.gz': first read pair containing i7, i5 and i1 indices
+      - 'i7_i5_i1_read_2.fastq.gz': second read pair containing i7, i5 and i1 indices
+      - 'i7_i5_i1_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5, i1 (go to option for QuantSeq-Pool)
+      - 'i7_i5_read_1.fastq.gz': first read pair containing both i7 and i5 indices
+      - 'i7_i5_read_2.fastq.gz': second read pair containing both i7 and i5 indices
+      - 'i7_i5_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5
   - nanopore
     - bam
       - 'test.sorted.bam'
