@@ -69,3 +69,7 @@ AWS_PROFILE=sales aws s3api get-object --bucket 850787717197-1867753-fepwgrx9iuj
 AWS_PROFILE=sales aws s3api list-objects-v2 --bucket 850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias 
 
 AWS_PROFILE=sales aws s3api list-object-versions --bucket 850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias --key 850787717197/sequenceStore/1867753048/readSet/5091960702/HG00405.final.cram.crai
+
+## Packaging
+
+venv/bin/python3 ./package-s3.py --registry s3://850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias --path 850787717197/sequenceStore/1867753048/readSet/5447294294/
