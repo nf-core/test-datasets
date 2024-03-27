@@ -1,0 +1,27 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "S3DirectAccess",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:GetObjectVersion",
+                "s3:ListBucket",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "s3:DataAccessPointArn": "arn:aws:s3:us-east-1:559620149354:accesspoint/850787717197-1867753048"
+                }
+            }
+        },
+        {
+            "Sid": "DefaultSequenceStoreKMSDecrypt",
+            "Effect": "Allow",
+            "Action": "kms:Decrypt",
+            "Resource": "arn:aws:kms:us-east-1:559620149354:key/c46b5818-b660-4e2b-ad4a-721b24d60d3b"
+        }
+    ]
+}
