@@ -38,6 +38,6 @@ Passed and failed `fastq` files were derived from
 - `pod5_passed/PAO99309_pass__94e07fab_c3641428_1.pod5` 
 - `pod5_fail/PAO99309_fail__94e07fab_c3641428_1.pod5`
 
-Both files were basecalled via `Dorado` (hac) and coverted to `fastq` via `samtools`.
+Both files were basecalled via `Dorado` (hac), coverted to `fastq` via `samtools` and randomly subsampled with `seqtk sample -s100` to 50 passed and 10 failed reads.
 
 Oxford Nanopore Technologies Benchmark Datasets was accessed on 2024-03-21 from https://registry.opendata.aws/ont-open-data.
