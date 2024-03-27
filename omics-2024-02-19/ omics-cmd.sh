@@ -38,4 +38,12 @@ arn:aws:omics:us-east-1:850787717197:sequenceStore/1867753048
 AWS_PROFILE=sales aws omics get-sequence-store --id 1867753048
 AWS_PROFILE=sales aws omics list-read-sets --sequence-store-id 1867753048
 AWS_PROFILE=sales aws omics get-read-set-metadata --id 5091960702 --sequence-store-id 1867753048 | jq -r .files.source1.s3Access.s3Uri
-AWS_PROFILE=sales aws s3 ls s3://850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias/850787717197/sequenceStore/1867753048
+AWS_PROFILE=sales aws s3 ls s3://850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias/850787717197/sequenceStore/1867753048/readSet/5091960702
+
+AWS_PROFILE=sales aws s3 ls s3://850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias/850787717197/sequenceStore/1867753048/readSet/5091960702/HG00405.final.cram
+
+## S3API
+
+AWS_PROFILE=sales aws s3api get-object --bucket 850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias --key 850787717197/sequenceStore/1867753048/readSet/5091960702/HG00405.final.cram HG00405.final.cram
+
+AWS_PROFILE=sales aws s3api list-object-versions --bucket 850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias --key 850787717197/sequenceStore/1867753048/readSet/5091960702/HG00405.final.cram
