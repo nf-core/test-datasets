@@ -1,4 +1,4 @@
 {"version": "v0", "user_meta": {"source": "s3 clone"}, "message": "S3 Clone"}
-{"logical_key": ".fastq.gz", "physical_keys": ["s3://850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias/850787717197/sequenceStore/1867753048/readSet/5447294294/U0a_CGATGT_L001_R1_004.fastq.gz?5gMOaqcXAL9H9pYJIobTOudSH0x_hC4m
+{"logical_key": "U0a_CGATGT_L001_R1_004.fastq.gz", "physical_keys": ["s3://850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias/850787717197/sequenceStore/1867753048/readSet/5447294294/U0a_CGATGT_L001_R1_004.fastq.gz?5gMOaqcXAL9H9pYJIobTOudSH0x_hC4m
 "], "size": 225803169, "hash": {"type": "sha2-256-chunked", "value": "qKEKbjZU7v7QquE5r6/AJVhHD/2nV/m8CtDHbv4qk9g="}, "meta": {}}
 {"logical_key": "U0a_CGATGT_L001_R2_004.fastq.gz", "physical_keys": ["s3://850787717197-1867753-fepwgrx9iujr5b9pkjudkhpgxwbuhuse1b-s3alias/850787717197/sequenceStore/1867753048/readSet/5447294294/U0a_CGATGT_L001_R2_004.fastq.gz?R62nn0rPU7BbVhuUYToncMt4VZK1Rl9T"], "size": 245026681, "hash": {"type": "sha2-256-chunked", "value": "ywBNOQVyJluHRKbDXIKlcxjF1cW1+Ggf+SwySNrIXrE="}, "meta": {}}
