@@ -525,13 +525,16 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - illumina
       - ???
     - nanopore
-      - - ???
+      - ???
   - haemophilus_influenzae
     - genome
       - genome.aln.gz: Aligned FASTA file of genomes of various strains of _Haemophilus influenzae_
       - genome.aln.nwk: A newick format phylogeny file of genomes of various strains of _Haemophilus influenzae_
       - genome.fna.gz: _Haemophilus influenzae_ reference genome (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
   - metagenome
+    - fasta
+      - haemophilus_influenzae.fna.gz: Multi-chromosomed reference genome file (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
+      - SARS-sarscov2.fasta: Reference genome file for SARS-CoV-2 (MT192765.1 Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/PC00101P/2020)
     - taxonomy
       - accession2taxid
         - nucl_gb.accession2taxid: A decompressed NCBI nucl_gb.accession2taxid.tar.gz file from 2024-02-03 filtered to just the SARS-CoV2 and _Haemophilus influenzae_ genomes under `metagenome/fasta/`
