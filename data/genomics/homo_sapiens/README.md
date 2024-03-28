@@ -351,6 +351,12 @@ samtools view -h alz.1perc.subreads.bam|head -n 1006|samtools view -bh > alz.bam
 
 The lima, refine, clustered, singletons and gene models datasets were generated using the isoseq3 framework and TANA collapse.
 
+The mini dataset was generated from the public pacbio dataset [pbmc singlecell mini](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2022_pbmc_singlecell_mini/ccs.bam) where the primers where removed with LIMA following [this](https://isoseq.how/umi/examples.html) example from the official isoseq documentation. Then the reads were subsampled using samtools.
+
+```
+samtools view --subsample 0.01 --subsample-seed 42 -b output.5p--3p.bam > mini.5p--3p.bam
+```
+
 ### Scramble test dataset
 
 This folder contains test data containing soft-clipped clusters. The data was fetched from the official [repository](https://github.com/GeneDx/scramble/tree/master/validation) of the tool
@@ -363,6 +369,11 @@ This test data contains:
    - test.cram => The converted CRAM from the BAM file
    - test.cram.crai => The index of the CRAM file
    - test.bed => A BED file containing only the regions from chr11
+
+### Popgen data
+
+Population genetics simulated data (case-control) in PLINK binary format, compressed VCF and compressed BCF formats.
+For details about their simulation, see the specific README file.
 
 ## Limitations
 
