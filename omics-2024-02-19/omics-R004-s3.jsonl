@@ -1,0 +1,3 @@
+{"version": "v0", "user_meta": {"source": "s3 clone"}, "message": "S3 Clone"}
+{"logical_key": ".fastq.gz", "physical_keys": ["s3://quilt-sales-raw/test/omics/U0a_CGATGT_L001_R1_004.fastq.gz?versionId=4jouLqwqjtJmCz9qJsgCU0a_CGATGT_L001_R1_004hj1wXMAKBVI."], "size": 225803169, "hash": {"type": "sha2-256-chunked", "value": "qKEKbjZU7v7QquE5r6/AJVhHD/2nV/m8CtDHbv4qk9g="}, "meta": {}}
+{"logical_key": "U0a_CGATGT_L001_R2_004.fastq.gz", "physical_keys": ["s3://quilt-sales-raw/test/omics/U0a_CGATGT_L001_R2_004.fastq.gz?versionId=YihD8hM_2SzjGrQOis6WpvrmAMxltik3"], "size": 245026681, "hash": {"type": "sha2-256-chunked", "value": "ywBNOQVyJluHRKbDXIKlcxjF1cW1+Ggf+SwySNrIXrE="}, "meta": {}}
