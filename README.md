@@ -127,6 +127,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.bedgraph'
     - bigwig
       - 'test.bw'
+    - csv
+      - 'samplesheet_micro.csv': a trivial sample sheet to use with test_1.fastq.gz and test_2.fastq.gz
     - deeptools
       - 'test.computeMatrix.mat.gz': matrix generated with deeptools computeMatrix using 'test.bw'
     - fasta
