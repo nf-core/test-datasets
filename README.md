@@ -16,7 +16,7 @@ Test data to be used for automated testing with the nf-core pipelines
 
 # Test data for SeqInspector
 
-This folder contains demultiplexed data generated from the test data for the [demultiplex pipeline](https://github.com/nf-core/test-datasets/tree/demultiplex). Both MiSeq and NovaSeq6000 datasets were demultiplexed using bcl2fastq.
+This folder contains demultiplexed data generated from the test data for the [demultiplex pipeline](https://github.com/nf-core/test-datasets/tree/demultiplex). Both MiSeq and NovaSeq6000 datasets were demultiplexed using bcl2fastq, and randomly subsampled with `seqtk sample -s100`
 
 ## MiSeq
 This folder contains input samplesheet and single-end demultiplexed fastq files generated from a MiSeq run.
