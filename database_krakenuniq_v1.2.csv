@@ -1,0 +1,4 @@
+tool,db_name,db_params,db_type,db_path
+krakenuniq,db1,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/krakenuniq/testdb-krakenuniq.tar.gz
+krakenuniq,db2,--hll-precision 15,long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/krakenuniq/testdb-krakenuniq.tar.gz
+krakenuniq,db3,--quick,both,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/krakenuniq/testdb-krakenuniq.tar.gz
