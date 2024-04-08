@@ -498,6 +498,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - plink_simulated.bim: case-control simulated variants dataset in PLINK binary format
     - plink_simulated.vcf.gz: case-control simulated variants dataset in compressed VCF format
     - plink_simulated.bcf.gz: case-control simulated variants dataset in compressed BCF format
+    - plink_simulated.pgen: case-control simulated variants dataset in PLINK 2 binary format
+    - plink_simulated.psam: case-control simulated variants dataset in PLINK 2 binary format
+    - plink_simulated.pvar: case-control simulated variants dataset in PLINK 2 binary format
 
   - cooler:
 
