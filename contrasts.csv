@@ -1,0 +1,2 @@
+id,variable,reference,target,batch,pair
+treated_vs_control,treatment,control,treated,,pair
