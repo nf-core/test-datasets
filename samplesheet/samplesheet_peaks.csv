@@ -1,7 +1,7 @@
 sample,condition,assay,peak_file
-L1_H3K27ac_R1,L1,H3K27ac,data/peaks/L1/H3K27ac/WT_L1_H3K27ac_R1_peaks.broadPeak
-L1_H3K27ac_R3,L1,H3K27ac,data/peaks/L1/H3K27ac/WT_L1_H3K27ac_R3_peaks.broadPeak
-L1_H3K4me3_R2,L1,H3K4me3,data/peaks/L1/H3K4me3/WT_L1_H3K4me3_R2_peaks.broadPeak
-L10_H3K27ac_R2,L10,H3K27ac,data/peaks/L10/H3K27ac/WT_L10_H3K27ac_R2_peaks.broadPeak
-p6_H3K27ac_R2,p6,H3K27ac,data/peaks/p6/H3K27ac/WT_p6_H3K27ac_R2_peaks.broadPeak
-p6_H3K4me3_R1,p6,H3K4me3,data/peaks/p6/H3K4me3/WT_p6_H3K4me3_R1_peaks.broadPeak
+L1_H3K27ac_R1,L1,H3K27ac,https://raw.githubusercontent.com/nictru/test-datasets/tfactivity/peaks/L1/H3K27ac/WT_L1_H3K27ac_R1_peaks.broadPeak
+L1_H3K27ac_R3,L1,H3K27ac,https://raw.githubusercontent.com/nictru/test-datasets/tfactivity/peaks/L1/H3K27ac/WT_L1_H3K27ac_R3_peaks.broadPeak
+L1_H3K4me3_R2,L1,H3K4me3,https://raw.githubusercontent.com/nictru/test-datasets/tfactivity/peaks/L1/H3K4me3/WT_L1_H3K4me3_R2_peaks.broadPeak
+L10_H3K27ac_R2,L10,H3K27ac,https://raw.githubusercontent.com/nictru/test-datasets/tfactivity/peaks/L10/H3K27ac/WT_L10_H3K27ac_R2_peaks.broadPeak
+p6_H3K27ac_R2,p6,H3K27ac,https://raw.githubusercontent.com/nictru/test-datasets/tfactivity/peaks/p6/H3K27ac/WT_p6_H3K27ac_R2_peaks.broadPeak
+p6_H3K4me3_R1,p6,H3K4me3,https://raw.githubusercontent.com/nictru/test-datasets/tfactivity/peaks/p6/H3K4me3/WT_p6_H3K4me3_R1_peaks.broadPeak
