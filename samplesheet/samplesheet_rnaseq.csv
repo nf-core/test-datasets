@@ -1,0 +1,11 @@
+sample,condition,batch,counts_file
+L1-WT1,L1,1,/home/nico/Software/tfactivity/testing/data/rna-seq/L1/L1_WT1-count.txt
+L1-WT2,L1,1,/home/nico/Software/tfactivity/testing/data/rna-seq/L1/L1_WT2-count.txt
+L1-WT4,L1,1,/home/nico/Software/tfactivity/testing/data/rna-seq/L1/L1_WT4-count.txt
+L10-WT1,L10,1,/home/nico/Software/tfactivity/testing/data/rna-seq/L10/L10_WT1-count.txt
+L10-WT2,L10,1,/home/nico/Software/tfactivity/testing/data/rna-seq/L10/L10_WT2-count.txt
+L10-WT3,L10,1,/home/nico/Software/tfactivity/testing/data/rna-seq/L10/L10_WT3-count.txt
+L10-WT4,L10,1,/home/nico/Software/tfactivity/testing/data/rna-seq/L10/L10_WT4-count.txt
+p6-WT1,p6,1,/home/nico/Software/tfactivity/testing/data/rna-seq/p6/p6_WT1-count.txt
+p6-WT2,p6,1,/home/nico/Software/tfactivity/testing/data/rna-seq/p6/p6_WT2-count.txt
+p6-WT4,p6,1,/home/nico/Software/tfactivity/testing/data/rna-seq/p6/p6_WT4-count.txt
