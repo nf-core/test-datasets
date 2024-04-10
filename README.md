@@ -27,6 +27,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - homo_sapiens
 - sarscov2
 - saccharomyces_cerevisiae
+- actinidia_chinensis
 
 Additionally there is a special subfolder for metagenome related files
 
@@ -625,6 +626,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - genome
       - chr1
         - genome.fasta.gz: Chr1 bases 1 to 7 million acquired from [Zenodo/10.5281/zenodo.5717386](https://zenodo.org/doi/10.5281/zenodo.5717386)
+        - genome.gff3.gz: Gene models predicted by BRAKER3 pipeline on genome.fasta.gz and formatted by GenomeTools `gt gff3 -tidy -retainids` tool
+        - genome.gtf.gz: genome.gff3.gz converted to GTF format with `agat_convert_sp_gff2gtf.pl` script
+        - genome.hints.gff.gz: Hints file produced by BRAKER3 pipeline
 
 ### pangenomics
 
