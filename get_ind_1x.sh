@@ -17,15 +17,15 @@ REGION_LST=$4
 # Selected individuals
 INDS=($(cat ./analysis/selected_individuals.txt))
 
+# Set region file to bcftools format
+REGION_CSV=${REGION_LST}.csv
+awk -v OFS='\t' -F':' '{split($2, coords, "-"); print $1, coords[1], coords[2]}' ${REGION_LST} > ${REGION_CSV}
+
 while IFS="," read IND; do
     echo "Individuals: ${IND}"
     IND_LOC=./data/individuals/${IND}/
     IND_CRAM=${IND_LOC}${IND}.final.cram
     IND_S=${IND_LOC}${IND}.s
-
-    # Set region file to bcftools format
-    REGION_CSV=${REGION_LST}.csv
-    awk -v OFS='\t' -F':' '{split($2, coords, "-"); print $1, coords[1], coords[2]}' ${REGION_LST} > ${REGION_CSV}
 
     # Filter out the region of interest and format to BAM
     echo 'Filter out the region of interest and format to BAM'
