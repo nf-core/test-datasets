@@ -16,6 +16,7 @@ The parameter file was created with the following characteristics
 200 null 0.05 0.8 1 1
 20 dis 0.01 0.08 2 3
 ```
+
 Details about the format of this file can be found [here](https://www.cog-genomics.org/plink/1.9/input#simulate).
 
 ## Format conversion
@@ -31,4 +32,10 @@ And to convert them to BCF the following command has been used
 
 ```{bash}
 bcftools view -O b -o plink_simulated.bcf.gz plink_simulated.vcf.gz
+```
+
+And to convert them to PLINK 2 binary the following command has been used
+
+```{bash}
+plink2 --bfile plink_simulated --make-pgen --out plink_simulated
 ```
