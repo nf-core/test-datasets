@@ -19,7 +19,12 @@ data/panel/21_22/1000GP.chr21_22.vcf.gz*
 data/panel/21/1000GP.chr21.s.vcf.gz*
 data/panel/22/1000GP.chr22.s.vcf.gz*
 data/panel/21_22/1000GP.chr21_22.s.vcf.gz*
-
+data/panel/*/*.bin
+## Reference genome
 data/affi/snp6.txt
 data/reference_genome/21/*.fa*
 data/reference_genome/22/*.fa*
+
+## Individuals intermediate files
+data/individuals/*/*_chr*imputed*
+data/individuals/*/*.s_list.txt

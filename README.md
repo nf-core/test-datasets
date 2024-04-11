@@ -119,9 +119,9 @@ plink --vcf ${PANEL_21_22} \
     --genome --out analysis/1000GP_chr21_22 
 
 # Select the individuals to remove from the reference panel
-Rscript --vanilla analysis/relationship_analysis.R \
-    --input  analysis/1000GP_chr21_22.genome \
-    --output analysis
+Rscript --vanilla ./analysis/relationship_analysis.R \
+    --input  ./analysis/1000GP_chr21_22.genome \
+    --output ./analysis
 ```
 
 #### Individuals data
@@ -188,6 +188,15 @@ done
     data/panel/21_22/1000GP.chr21_22.s.norel \
     data/reference_genome/21_22/hs38DH.chr21_22.fa \
     data/affi/snp6.s.map \
+    region.lst
+```
+
+#### Impute with glimpse
+
+```bash
+. get_ind_imputed.sh \
+    data/panel/21_22/1000GP.chr21_22.s.norel \
+    data/reference_genome/21_22/hs38DH.chr21_22.fa \
     region.lst
 ```
 
