@@ -42,7 +42,8 @@ while IFS="," read IND; do
     bcftools mpileup -f ${REF_FASTA} \
         -I -E -a 'FORMAT/DP' -T ${VCF} \
         ${IND_S}.bam -Ou | \
-        bcftools call -Aim -C alleles -T ${TSV} -Ob -o ${IND_S}.bcf
+        bcftools call -Aim -C alleles -T ${TSV} | \
+        bcftools annotate --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' -Ob -o ${IND_S}.bcf
     bcftools index -f ${IND_S}.bcf
 
     # Downsampling the individual data to 1X
