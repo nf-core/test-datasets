@@ -29,8 +29,10 @@ awk -v OFS='\t' -F':' '{split($2, coords, "-"); print $1, coords[1], coords[2]}'
 
 echo 'Filter region of panel'
 bcftools view ${PANEL_NAME}.vcf.gz \
-    --regions-file ${REGION_CSV} \
-    -Oz -o ${PANEL_NAME}.s.vcf.gz
+    --regions-file ${REGION_CSV} | \
+    bcftools annotate \
+        --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' \
+        -Oz -o ${PANEL_NAME}.s.vcf.gz
 bcftools index -f ${PANEL_NAME}.s.vcf.gz --threads 4
 
 # Normalise the panel and filter out related individual to selected individuals
