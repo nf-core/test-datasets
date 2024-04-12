@@ -1,4 +1,0 @@
-sample,bam,bai
-NA12878,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/individuals/NA12878/NA12878.s.1x.bam,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/individuals/NA12878/NA12878.s.1x.bam.bai
-NA19401,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/individuals/NA19401/NA19401.s.1x.bam,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/individuals/NA19401/NA19401.s.1x.bam.bai
-NA20359,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/individuals/NA20359/NA20359.s.1x.bam,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/individuals/NA20359/NA20359.s.1x.bam.bai
