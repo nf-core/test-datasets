@@ -48,13 +48,3 @@ while IFS="," read IND; do
         ls -1v ${IND_S}_*_imputed.bcf >  ${IND_S}_list.txt
         GLIMPSE2_ligate --input ${IND_S}_list.txt --output ${IND_S}_imputed.bcf
 done < ./analysis/selected_individuals.txt
-
-printf "chr21:16650000-16700000 ${PANEL_NAME}.bcf ${IND_S}.bcf ${IND_S}_imputed.bcf" > input.txt
-
-GLIMPSE2_concordance \
-        --bins 0 0.01 0.05 0.1 0.2 0.5 \
-        --min-val-gl 0.9 \
-        --min-val-dp 5 \
-        --input input.txt \
-        --thread 2 \
-        --output NA12878
