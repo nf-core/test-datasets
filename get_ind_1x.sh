@@ -63,7 +63,8 @@ while IFS="," read IND; do
     bcftools mpileup -f ${REF_FASTA} \
         -I -E -a 'FORMAT/DP' -T ${VCF} \
         --regions-file ${REGION_CSV} ${IND_S}.1x.bam -Ou |
-    bcftools call -Aim -C alleles -T ${TSV} -Ob -o ${IND_S}.1x.bcf
+        bcftools call -Aim -C alleles -T ${TSV} | \
+        bcftools annotate --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' -Ob -o ${IND_S}.1x.bcf
     bcftools index -f ${IND_S}.1x.bcf
 
     # Get individual SNP
@@ -72,7 +73,10 @@ while IFS="," read IND; do
         --allow-extra-chr \
         --geno 0 \
         --make-bed --out ${IND_S}
+    # Replace all variants id by .
+    awk '{$2 = "."; print}' ${IND_S}.bim > ${IND_S}_NID.bim
     plink --bfile ${IND_S} \
+        --bim ${IND_S}_NID.bim \
         --allow-extra-chr \
         --set-missing-var-ids chr@:# \
         --extract ${SNP_FILE} \
