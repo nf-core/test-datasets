@@ -37,7 +37,7 @@ while IFS="\t" read REGION; do
         IND_S="./data/individuals/${IND}/${IND}.s"
         BAM="${IND_S}.1x.bam"
         # Impute with glimpse
-        GLIMPSE2_phase --bam-file ${BAM} --reference ${PANEL_NAME}_split_${REGIONN}.bin --output ${IND_S}_${REGIONN}_imputed.bcf
+        GLIMPSE2_phase --bam-file ${BAM} --ind-name ${IND} --reference ${PANEL_NAME}_split_${REGIONN}.bin --output ${IND_S}_${REGIONN}_imputed.bcf
     done < ./analysis/selected_individuals.txt
 
 done < ${REGION_LST}
