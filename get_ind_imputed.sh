@@ -29,12 +29,10 @@ TSV=${PANEL_NAME}.tsv.gz
 echo 'Chunk panel file'
 while IFS="\t" read REGION; do
     echo "Chunk: ${REGION}"
-    echo "${PANEL_NAME}.bcf"
     GLIMPSE2_split_reference \
         --reference ${PANEL_NAME}.bcf --input-region ${REGION} --output-region ${REGION} \
         --output ${PANEL_NAME}_split
     REGIONN=$(echo ${REGION} | sed 's/:/_/' | sed 's/-/_/')
-    echo "$REGIONN"
     while IFS="," read IND; do
         IND_S="./data/individuals/${IND}/${IND}.s"
         BAM="${IND_S}.1x.bam"
