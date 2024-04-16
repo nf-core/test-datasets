@@ -231,6 +231,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test_scATAC_S1_L001_I1_001.fastq.gz: Dual index i7 read (8bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R\{1,3\}_001.fastq.gz: Read 1 and 2 of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R2_001.fastq.gz: Dual index i5 read (16 bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
+  - demultiplexing
+    - barcode.tsv: A list of barcodes used for demultiplexing the test data.
+    - chr21.bam: A BAM file containing reads from chromosome 21.
+    - donor_genotype_chr21.vcf: A VCF file containing the genotype of the donor for chromosome 21.
   - genome
     - 'genome_strtablefile.zip': An StrTableFile zip folder for 'genome.fasta'
     - BUSCO
