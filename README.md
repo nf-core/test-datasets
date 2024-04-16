@@ -82,6 +82,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'kraken2.tar.gz': kraken2 DB archive
     - 'kraken2_bracken': kraken2 & Bracken DB
     - 'kraken2_bracken.tar.gz': kraken2 & Bracken DB archive
+    - 'kraken2_intermediate.tar.gz': a kraken2 database that includes intermediate files retained (required e.g. for bracken2 database builds)
     - kofamscan: kofamscan DB files
       - 'ko_list.gz': compressed text file list of KO terms
       - 'profiles.tar.gz': directory archive with HMMER profiles
