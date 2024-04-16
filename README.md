@@ -40,6 +40,14 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
 - `C_primers.fasta` and `linker.fasta` are the primer sequences, and linker sequences for the 5' RACE amplification of the TCR.
 - The `fastq` files are random samples of a human TCRseq 5'RACE sequencing data produced with the TAKARA protocol, for 2 different samples.
 
+### single-cell test data
+
+`testdata-sc` contains the test data needed to run the pipeline for 10xGenomics derived single-cell AIRR-seq data, currently only test data wit TCR sequences are available.
+
+- `10x_sc_raw.tsv` contains the paths to the sc test data.
+- `refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz` is the 10xGenomics reference dataset.
+- The `fastq` files are subsampled samples from a healthy donor made publically available by 10xGenomics ([dataset](https://www.10xgenomics.com/datasets/human-t-cells-from-a-healthy-donor-1-k-cells-multi-v-2-2-standard-5-0-0)).
+
 ## Database cache
 
 `database cache` contains the IMGT and Igblast db human and mouse database caches for running the pipeline tests.
