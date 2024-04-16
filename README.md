@@ -17,16 +17,22 @@ The `generic` folder contains generic files that currently cannot be associated 
 
 ### genomics
 
-The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available:
+The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available in various places:
 
 - bacteroides_fragilis
+- candidatus_portiera_aleyrodidarum
+- deilephila_porcellus (mitochondrion)
+- galaxea_fascicularis
+- haemophilus_influenzae
 - homo_sapiens
 - sarscov2
-- galaxea_fascicularis
-- deilephila_porcellus (mitochondrion)
 - saccharomyces_cerevisiae
 
-The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
+Additionally there is a special subfolder for metagenome related files
+
+- metagenome
+
+All folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
 ### imaging
@@ -127,6 +133,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.bedgraph'
     - bigwig
       - 'test.bw'
+    - csv
+      - 'samplesheet_micro.csv': a trivial sample sheet to use with test_1.fastq.gz and test_2.fastq.gz
     - deeptools
       - 'test.computeMatrix.mat.gz': matrix generated with deeptools computeMatrix using 'test.bw'
     - fasta
@@ -571,6 +579,31 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - nanopore
       - fastq
         - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+  - candidatus_portiera_aleyrodidarum
+    - genome
+      - ???
+    - illumina
+      - ???
+    - nanopore
+      - ???
+  - haemophilus_influenzae
+    - genome
+      - genome.aln.gz: Aligned FASTA file of genomes of various strains of _Haemophilus influenzae_
+      - genome.aln.nwk: A newick format phylogeny file of genomes of various strains of _Haemophilus influenzae_
+      - genome.fna.gz: _Haemophilus influenzae_ reference genome (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
+  - metagenome
+    - fasta
+      - haemophilus_influenzae.fna.gz: Multi-chromosomed reference genome file (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
+      - SARS-sarscov2.fasta: Reference genome file for SARS-CoV-2 (MT192765.1 Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/PC00101P/2020)
+    - taxonomy
+      - accession2taxid
+        - nucl_gb.accession2taxid: A decompressed NCBI nucl_gb.accession2taxid.tar.gz file from 2024-02-03 filtered to just the SARS-CoV2 and _Haemophilus influenzae_ genomes under `metagenome/fasta/`
+      - misc
+        - nucl2tax.map: A simplified variant of nucl_gb.accession2taxid, required by tools such as CENTRIFUGE
+      - taxdump
+        - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
+        - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
+
 
 - eukaryotes
   - galaxea_fascicularis
