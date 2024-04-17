@@ -1,7 +1,7 @@
 ﻿# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 
 This branch contains test datasets as well as various files for CI and unit
-testing for the [`nf-core/spatialtranscriptomics`](https://github.com/nf-core/spatialtranscriptomics)
+testing for the [`nf-core/spatialvi`](https://github.com/nf-core/spatialvi)
 pipeline. The test datasets comes from two separate samples obtained from the
 official 10x Genomics website, which have subsequently been sub-sampled for
 testing purposes.
