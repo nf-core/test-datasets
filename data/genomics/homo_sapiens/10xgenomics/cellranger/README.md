@@ -9,6 +9,7 @@ This folder contains test datasets from 10X Genomics for reference and testing i
 |5k_cmvpos_tcells | [Integrated GEX, TotalSeq™-C, and TCR Analysis of Chromium Connect Generated Library from 5k CMV+ T cells](https://www.10xgenomics.com/resources/datasets/integrated-gex-totalseqc-and-tcr-analysis-of-connect-generated-library-from-5k-cmv-t-cells-2-standard) | GEX, TCR, Antibody Capture | `count`, `vdj`, `multi` | 
 |10k_pbmc | [Human PBMC from a Healthy Donor, 10k cells - multi (v2)](https://www.10xgenomics.com/resources/datasets/human-pbmc-from-a-healthy-donor-10-k-cells-multi-v-2-2-standard-5-0-0) | GEX, Fixed RNA Profiling, V(D)J-B, V(D)J-T, Antibody Capture | `count`, `vdj`, `multi` |
 | 10k_pbmc_cmo | [10k Human PBMCs Stained with TotalSeq™-B Human Universal Cocktail, Singleplex Sample](https://www.10xgenomics.com/resources/datasets/10k-human-pbmcs-stained-with-totalseq-b-human-universal-cocktail-singleplex-sample-1-standard) | GEX, Cell Multiplexing | `count`, `multi` |
+| 4plex_scFFPE | [Mixture of Healthy and Cancer FFPE Tissues Dissociated using Miltenyi FFPE Tissue Dissociation Kit, Multiplexed Samples, 4 Probe Barcodes](https://www.10xgenomics.com/datasets/mixture-of-healthy-and-cancer-ffpe-tissues-dissociated-using-miltenyi-ffpe-tissue-dissociation-kit-multiplexed-samples-4-probe-barcodes-1-standard) | GEX, FFPE, Cell Multiplexing | `multi` |
 
 # Subsampling
 
@@ -48,6 +49,15 @@ Unless stated otherwise, FASTQs were naively subsampled to 10,000 reads by readi
 |   |       `-- subsampled_5k_human_antiCMV_T_TBNK_connect_VDJ_S1_L001_R2_001.fastq.gz
 |   `-- 5k_cmvpos_tcells_config.csv
 |-- README.md
+|-- 10k_pbmc
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L001_R1_001.subsampled.fastq.gz
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L001_R2_001.subsampled.fastq.gz
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L002_R1_001.subsampled.fastq.gz
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L002_R2_001.subsampled.fastq.gz
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L003_R1_001.subsampled.fastq.gz
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L003_R2_001.subsampled.fastq.gz
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L004_R1_001.subsampled.fastq.gz
+|   -- 4plex_human_liver_colorectal_ovarian_panc_scFFPE_multiplex_S1_L004_R2_001.subsampled.fastq.gz
 |-- 10k_pbmc
 |   |-- fastqs
 |   |   |-- 5gex
