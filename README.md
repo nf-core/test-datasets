@@ -1,38 +1,43 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+
 Test data to be used for automated testing with the nf-core pipelines
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+# Table of Contents
 
-## Introduction
+- [Table of Contents](#table-of-contents)
+- [Test data for SeqInspector](#test-data-for-seqinspector)
+  - [MiSeq](#miseq)
+    - [220422\_M11111\_0222\_000000000-K9H97](#220422_m11111_0222_000000000-k9h97)
+  - [NovaSeq6000](#novaseq6000)
+    - [200624\_A00834\_0183\_BHMTFYDRXX](#200624_a00834_0183_bhmtfydrxx)
+  - [PromethION](#promethion)
+    - [20230505\_1857\_1B\_PAO99309\_94e07fab](#20230505_1857_1b_pao99309_94e07fab)
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+# Test data for SeqInspector
 
-## Documentation
+This folder contains demultiplexed data generated from the test data for the [demultiplex pipeline](https://github.com/nf-core/test-datasets/tree/demultiplex). Both MiSeq and NovaSeq6000 datasets were demultiplexed using bcl2fastq, and randomly subsampled with `seqtk sample -s100`
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+## MiSeq
+This folder contains input samplesheet and single-end demultiplexed fastq files generated from a MiSeq run.
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+### 220422_M11111_0222_000000000-K9H97
 
-## Downloading test data
+## NovaSeq6000
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+This folder contains input samplesheet and single-end demultiplexed fastq files generated from a NovaSeq6000 run.
 
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
+### 200624_A00834_0183_BHMTFYDRXX
 
-To subsequently clone other branches[^1]
+## PromethION
 
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
+### 20230505_1857_1B_PAO99309_94e07fab
+Single-sample run, accessed via `aws s3 ls --no-sign-request s3://ont-open-data/giab_2023.05/flowcells/hg001/20230505_1857_1B_PAO99309_94e07fab/`
 
-## Support
+Passed and failed `fastq` files were derived from
+- `pod5_passed/PAO99309_pass__94e07fab_c3641428_1.pod5` 
+- `pod5_fail/PAO99309_fail__94e07fab_c3641428_1.pod5`
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+Both files were basecalled via `Dorado` (hac), coverted to `fastq` via `samtools` and randomly subsampled with `seqtk sample -s100` to 50 passed and 10 failed reads.
 
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+Oxford Nanopore Technologies Benchmark Datasets was accessed on 2024-03-21 from https://registry.opendata.aws/ont-open-data.

@@ -1,0 +1,2 @@
+sample,lane,project,fastq_1,fastq_2,rundir
+hg001,,r10p41_e8p2_human_runs_jkw,https://github.com/nf-core/test-datasets/raw/seqinspector/testdata/PromethION/20230505_1857_1B_PAO99309_94e07fab/fastq_pass/PAO99309_pass__94e07fab_c3641428_1.fastq,,
