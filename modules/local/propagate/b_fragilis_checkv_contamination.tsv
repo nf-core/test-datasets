@@ -1,0 +1,5 @@
+contig_id	contig_length	total_genes	viral_genes	host_genes	provirus	proviral_length	host_length	region_types	region_lengths	region_coords_bp	region_coords_genes	region_viral_genes	region_host_genes
+k141_126	3500	6	4	2	Yes	2000	1500	viral,host,viral	1000,1500,1000	1-1000,1001-2500,2501-3500	1-2,3-4,5-6	2,0,2	0,2,0
+k141_248	1000	3	1	2	Yes	500	500	host,viral,host	250,500,250	1-250,251-750,751-1000	1,2,3	0,1,0	1,0,1
+k141_50	1000	6	0	0	No	NA	NA	NA	NA	NA	NA	NA	NA
+k141_203	843	2	1	1	Yes	500	343	viral,host	500,343	1-500,501-843	1,2	1,0	0,1

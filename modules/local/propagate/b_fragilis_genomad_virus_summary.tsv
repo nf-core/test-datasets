@@ -1,0 +1,5 @@
+seq_name	length	topology	coordinates	n_genes	genetic_code	virus_score	fdr	n_hallmarks	marker_enrichment	taxonomy
+k141_126	3970	Provirus	1-3500	6	11	0.8408	0.0833	0	1.5749	Unclassified
+k141_248	3153	Provirus	1000-2000	3	11	0.7912	0.1337	0	1.7183	Viruses;Duplodnaviria;Heunggongvirae;Uroviricota;Caudoviricetes
+k141_50	3219	Provirus	1-1000	6	11	0.6643	0.1798	2	2.7775	Viruses;Duplodnaviria;Heunggongvirae;Uroviricota;Caudoviricetes
+k141_203	843	No terminal repeats	NA	2	11	0.9925	0.0075	1	3.0763	Viruses;Duplodnaviria;Heunggongvirae;Uroviricota;Caudoviricetes
