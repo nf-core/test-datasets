@@ -326,6 +326,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - SRX11780887_chr20.bam.bai index for filtered and trimmed reads from SRX11780887, aligned to human Chr20
         - SRX11780888_chr20.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20
         - SRX11780888_chr20.bam.bai index for filtered and trimmed reads from SRX11780888, aligned to human Chr20
+        - SRX11780887.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780887, aligned to human Chr20, transcriptomic coordinates
+        - SRX11780888.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20, transcriptomic coordinates
       - salmon.merged.gene_counts_length_scaled.tsv: Example matrix containing both Riboseq and RNA-seq runs, suitable for translational efficiency analysis
       - samplesheet.csv: Sample sheet corresponding to salmon.merged.gene_counts_length_scaled.tsv
   - illumina
