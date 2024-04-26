@@ -76,6 +76,8 @@ Contains database for MALT, built with MALT v041, containing
   - A human mitochondrial genome (NCBI Accession: NC_012920.1)
   - A boa constrictor mitochondrial genome (NCBI Accession: AB177354.1)
 
+The database is also available as a tar.gz file
+
 
 #### Kraken
 
