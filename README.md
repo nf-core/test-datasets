@@ -1,38 +1,23 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `tfactivity`
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+This branch contains test data to be used for automated testing with the [nf-core/tfactivity](https://github.com/nf-core/tfactivity) pipeline.
 
-## Introduction
+## Content of this repository
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+`reference/`: Sub-sampled genome-specific files. Based on mouse genome mm10, but only chromosome 1 is included.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+`peaks`: Peak files for testing the pipeline. Based on HM ChIP-seq data, but only chromosome 1 is included.
+`rna-seq`: RNA-seq count files for testing the pipeline.
+`bams`: BAM files that are only used in the `test_full` pipeline test.
 
-## Documentation
+`samplesheet`: Sample sheets for each of `peaks`, `rna-seq`, and `bams` folders.
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+## Test dataset origin
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+*M. musculus* dataset was obtained from:
 
-## Downloading test data
+> Lee HK, Willi M, Kuhns T, Liu C, Hennighausen L. Redundant and non-redundant cytokine-activated enhancers control Csn1s2b expression in the lactating mouse mammary gland. Nat Commun. 2021 Apr 14;12(1):2239. doi: 10.1038/s41467-021-22500-w. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/33854063/) [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161620)
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+### Test dataset pre-processing
+The RNA-Seq data was processed using the `nf-core/rnaseq` pipeline. 
+The ChIP-Seq data was processed using the `nf-core/chipseq` pipeline.
