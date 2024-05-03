@@ -1,4 +1,4 @@
-sample,lane,project,fastq_1,fastq_2,rundir
+sample,lane,group,fastq_1,fastq_2,rundir
 Sample1,1,S1,https://github.com/nf-core/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Sample1_S1_L001_R1_001.fastq.gz,,
 SampleA,1,S2,https://github.com/nf-core/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/SampleA_S2_L001_R1_001.fastq.gz,,
 Sample23,1,S2,https://github.com/nf-core/test-datasets/raw/seqinspector/testdata/NovaSeq6000/200624_A00834_0183_BHMTFYDRXX/Sample23_S3_L001_R1_001.fastq.gz,,
