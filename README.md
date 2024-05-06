@@ -83,6 +83,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'kraken2_bracken': kraken2 & Bracken DB
     - 'kraken2_bracken.tar.gz': kraken2 & Bracken DB archive
     - 'kraken2_intermediate.tar.gz': a kraken2 database that includes intermediate files retained (required e.g. for bracken2 database builds)
+    - 'krakenuniq.tar.gz': a krakenuniq (v1.0.4) database that was built with the SARS-CoV-2 genome only, with a taxonomy of just SARS-CoV-2 with just required KrakenUniq database files
+    - 'krakenuniq_intermediate.tar.gz': a krakenuniq (v1.0.4) database that was built with the SARS-CoV-2 genome only, with a taxonomy of just SARS-CoV-2 including the required and intermediate build files (i.e., no clean up)
     - kofamscan: kofamscan DB files
       - 'ko_list.gz': compressed text file list of KO terms
       - 'profiles.tar.gz': directory archive with HMMER profiles
