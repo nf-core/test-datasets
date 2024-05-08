@@ -1,0 +1,3 @@
+id,fasta
+ste2,https://raw.githubusercontent.com/nf-core/test-datasets/reportho/testdata/sequences/ste2.fa
+ste3,https://raw.githubusercontent.com/nf-core/test-datasets/reportho/testdata/sequences/ste3.fa
