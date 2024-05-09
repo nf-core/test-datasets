@@ -1,0 +1,2 @@
+sample,id,single_end,fastq_1,fastq_2,read_structure
+SRR6109255,SRR6109255,false,https://raw.githubusercontent.com/nf-core/test-datasets/fastquorum/testdata/duplex-seq/tiny/SRR6109255_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/fastquorum/testdata/duplex-seq/tiny/SRR6109255_2.fastq.gz,10M1S+T 10M1S+T
