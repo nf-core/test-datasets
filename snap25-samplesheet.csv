@@ -1,0 +1,3 @@
+sample,fasta
+snap25a,https://raw.githubusercontent.com/nf-core/test-datasets/kmerseek/testdata/snap25a_mxe_exon_human.fa
+snap25b,https://raw.githubusercontent.com/nf-core/test-datasets/kmerseek/testdata/snap25b_mxe_exon_human.fa
