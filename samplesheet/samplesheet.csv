@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2
+puerulus_H4,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/minimal/SRX9161265_SRR12681119_2k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/minimal/SRX9161265_SRR12681119_2k_2.fastq.gz
+Juvenile_K1,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/minimal/SRX9161275_SRR12681109_2k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/minimal/SRX9161275_SRR12681109_2k_2.fastq.gz
