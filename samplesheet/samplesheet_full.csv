@@ -1,0 +1,7 @@
+sample,fastq_1,fastq_2
+puerulus_H4,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161265_SRR12681119_80k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161265_SRR12681119_80k_2.fastq.gz
+puerulus_H5,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161266_SRR12681118_80k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161266_SRR12681118_80k_2.fastq.gz
+puerulus_H6,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161267_SRR12681117_80k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161267_SRR12681117_80k_2.fastq.gz
+Juvenile_K1,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161275_SRR12681109_80k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161275_SRR12681109_80k_2.fastq.gz
+Juvenile_K2,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161276_SRR12681108_80k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161276_SRR12681108_80k_2.fastq.gz
+Juvenile_K3,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161277_SRR12681107_80k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/denovotranscript/data/full/SRX9161277_SRR12681107_80k_2.fastq.gz
