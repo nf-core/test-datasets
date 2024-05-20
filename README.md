@@ -31,8 +31,7 @@ The full contents are shown below:
 │   ├── chr17.fa.bwt
 │   ├── chr17.fa.fai
 │   ├── chr17.fa.pac
-│   ├── chr17.fa.sa
-│   └── samplesheet.csv
+│   └── chr17.fa.sa
 └── testdata
     ├── fastqs
     │   ├── full
@@ -44,19 +43,19 @@ The full contents are shown below:
     │       ├── SRR6109255_1.fastq.gz
     │       ├── SRR6109255_2.fastq.gz
     │       ├── SRR6109255_3.fastq.gz
-    │       ├── SRR6109255_4.fastq.gz -> SRR6109255_3.fastq.gz
+    │       ├── SRR6109255_4.fastq.gz
     │       └── lanes
     │           ├── SRR6109255_S1_L001_R1_001.fastq.gz
     │           ├── SRR6109255_S1_L001_R2_001.fastq.gz
     │           ├── SRR6109255_S1_L002_R1_001.fastq.gz
     │           ├── SRR6109255_S1_L002_R2_001.fastq.gz
     │           ├── SRR6109255_S1_L003_R1_001.fastq.gz
-    │           ├── SRR6109255_S1_L003_R2_001.fastq.gz
-    │           └── mv.sh
+    │           └── SRR6109255_S1_L003_R2_001.fastq.gz
     └── samplesheets
         ├── samplesheet.full.csv
         ├── samplesheet.multi_fastq.csv
         ├── samplesheet.multi_lanes.csv
+        ├── samplesheet.single_fastq.csv
         └── samplesheet.tiny.csv
 ```
 

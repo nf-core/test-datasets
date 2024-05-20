@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,fastq_3,fastq_4,read_structure
+SRR6109255_one_fastq,https://raw.githubusercontent.com/nf-core/test-datasets/fastquorum/testdata/fastqs/tiny/SRR6109255_1.fastq.gz,,,,10M1S+T
