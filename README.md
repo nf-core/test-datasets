@@ -318,7 +318,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - ploidy_priors.tsv: Contains contig ploidy priors for gatk4's DetermineGermlineContigPloidy
     - preprocessed_intervals.counts.tsv: Contains the intervals of the genome excluding problematic regions and the respective read counts
     - preprocessed_intervals.interval_list: Contains the intervals of the genome excluding problematic regions
-    - PRODH_chr22_chr22_KI270734v1_random.fa.gz: Contains chr22 and chr22_KI270734v1_random from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N. 
+    - PRODH_chr22_chr22_KI270734v1_random.fa.gz: Bgzipped reference containing chr22 and chr22_KI270734v1_random from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N. 
     - index
       - salmon: salmon index created with `transcriptome.fasta`
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
