@@ -703,6 +703,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 
 ### generic
 
+- config
+  - paraphase_config.yaml: Minimal paraphase config for PRODH
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - notebooks
