@@ -1,0 +1,2 @@
+sample_id	filename_R1	filename_R2	subject_id	species	pcr_target_locus	sex	age	biomaterial_provider	tissue	single_cell
+sc_test	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-sc/subsampled_S1_L001_R1_001.fastq.gz	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-sc/subsampled_S1_L001_R2_001.fastq.gz	sc_01	human	TR	NA	NA	NA	NA	TRUE

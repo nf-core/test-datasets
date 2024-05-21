@@ -42,11 +42,19 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
 
 ### single-cell test data
 
-`testdata-sc` contains the test data needed to run the pipeline for 10xGenomics derived single-cell AIRR-seq data, currently only test data wit TCR sequences are available.
+`testdata-sc` contains the test data required to run the pipeline for 10xGenomics derived single-cell AIRR-seq data, currently only test data wit TCR sequences are available.
 
 - `10x_sc_raw.tsv` contains the paths to the sc test data.
 - `refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz` is the 10xGenomics reference dataset.
 - The `fastq` files are subsampled samples from a healthy donor made publically available by 10xGenomics ([dataset](https://www.10xgenomics.com/datasets/human-t-cells-from-a-healthy-donor-1-k-cells-multi-v-2-2-standard-5-0-0)).
+
+### RNA-seq test data
+
+`testdata-rnaseq` contains the test data required to run the pipeline from raw RNA-seq data, both for bulk and single-cell derived FASTQ files.
+
+- `rnaseq_metadata.tsv` contains the paths to the RNA-seq test data
+- `IMGT+C.fa` is the reference file downloaded from the IMGT website using TRUST4's `BuildImgtAnnot.pl` script ([docs](https://github.com/liulab-dfci/TRUST4?tab=readme-ov-file#build-custom-vjc-gene-database-files-for--f-and---ref))
+- The bulk `fastq` files are derived from [TRUST4's example data](https://github.com/liulab-dfci/TRUST4/tree/master/example)
 
 ## Database cache
 

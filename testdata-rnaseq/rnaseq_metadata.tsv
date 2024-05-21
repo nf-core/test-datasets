@@ -1,0 +1,2 @@
+sample_id	filename_R1	filename_R2	subject_id	species	pcr_target_locus	sex	age	biomaterial_provider	tissue	single_cell
+Sample01	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-rnaseq/bulk_example_1.fq.gz	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-rnaseq/bulk_example_2.fq.gz	Patient01	human	IG	NA	NA	NA	NA	FALSE
