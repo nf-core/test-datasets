@@ -1,4 +1,4 @@
-sgRNA,Gene,HL60.initial,KBM7.initial,HL60.final,KBM7.final
+sgRNA,Gene,control,treatment,control1,treatment1
 A1CF_m52595977,A1CF,213,274,883,175
 A1CF_m52596017,A1CF,294,412,1554,1891
 A1CF_m52596056,A1CF,421,368,566,759
