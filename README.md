@@ -19,6 +19,7 @@ The `generic` folder contains generic files that currently cannot be associated 
 
 The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available in various places:
 
+- actinidia_chinensis
 - bacteroides_fragilis
 - candidatus_portiera_aleyrodidarum
 - deilephila_porcellus (mitochondrion)
@@ -27,7 +28,6 @@ The genomics folder contains subfolders for all organisms for which test data is
 - homo_sapiens
 - sarscov2
 - saccharomyces_cerevisiae
-- actinidia_chinensis
 
 Additionally there is a special subfolder for metagenome related files
 
