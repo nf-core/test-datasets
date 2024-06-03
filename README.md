@@ -17,16 +17,23 @@ The `generic` folder contains generic files that currently cannot be associated 
 
 ### genomics
 
-The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available:
+The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available in various places:
 
+- actinidia_chinensis
 - bacteroides_fragilis
+- candidatus_portiera_aleyrodidarum
+- deilephila_porcellus (mitochondrion)
+- galaxea_fascicularis
+- haemophilus_influenzae
 - homo_sapiens
 - sarscov2
-- galaxea_fascicularis
-- deilephila_porcellus (mitochondrion)
 - saccharomyces_cerevisiae
 
-The folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
+Additionally there is a special subfolder for metagenome related files
+
+- metagenome
+
+All folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
 ### imaging
@@ -76,6 +83,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'kraken2.tar.gz': kraken2 DB archive
     - 'kraken2_bracken': kraken2 & Bracken DB
     - 'kraken2_bracken.tar.gz': kraken2 & Bracken DB archive
+    - 'kraken2_intermediate.tar.gz': a kraken2 database that includes intermediate files retained (required e.g. for bracken2 database builds)
+    - 'krakenuniq.tar.gz': a krakenuniq (v1.0.4) database that was built with the SARS-CoV-2 genome only, with a taxonomy of just SARS-CoV-2 with just required KrakenUniq database files (`--kmer-len 15 --minimizer-len 13`)
+    - 'krakenuniq_intermediate.tar.gz': a krakenuniq (v1.0.4) database that was built with the SARS-CoV-2 genome only, with a taxonomy of just SARS-CoV-2 including the required and intermediate build files (i.e., no clean up) (`--kmer-len 15 --minimizer-len 13`)
     - kofamscan: kofamscan DB files
       - 'ko_list.gz': compressed text file list of KO terms
       - 'profiles.tar.gz': directory archive with HMMER profiles
@@ -127,6 +137,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.bedgraph'
     - bigwig
       - 'test.bw'
+    - csv
+      - 'samplesheet_micro.csv': a trivial sample sheet to use with test_1.fastq.gz and test_2.fastq.gz
     - deeptools
       - 'test.computeMatrix.mat.gz': matrix generated with deeptools computeMatrix using 'test.bw'
     - fasta
@@ -231,6 +243,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test_scATAC_S1_L001_I1_001.fastq.gz: Dual index i7 read (8bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R\{1,3\}_001.fastq.gz: Read 1 and 2 of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R2_001.fastq.gz: Dual index i5 read (16 bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
+  - demultiplexing
+    - barcode.tsv: A list of barcodes used for demultiplexing the test data.
+    - chr21.bam: A BAM file containing reads from chromosome 21.
+    - donor_genotype_chr21.vcf: A VCF file containing the genotype of the donor for chromosome 21.
   - genome
     - 'genome_strtablefile.zip': An StrTableFile zip folder for 'genome.fasta'
     - BUSCO
@@ -268,6 +284,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - chromosomes.tar.gz: compressed directory containing the fasta genome file renamed to chr21 (needed for ControlFREEC)
     - chr22: directory for reference files using chr22, for bbsplit
       - sequence/chr22_23800000-23980000.fa: Fasta file containing a section of chr22
+    - chr22_chr22_KI270734v1_random: directory for reference files using chr22 and chr22_KI270734v1_random, for paraphase
+       - sequence/genome.fa.gz: Gzipped fasta file from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N. 
     - vcf
       - dbsnp: DBSnp file downsampled based on reference position
       - gnomAD: gnomAD file downsampled based on reference position
@@ -313,6 +331,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - SRX11780887_chr20.bam.bai index for filtered and trimmed reads from SRX11780887, aligned to human Chr20
         - SRX11780888_chr20.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20
         - SRX11780888_chr20.bam.bai index for filtered and trimmed reads from SRX11780888, aligned to human Chr20
+        - SRX11780887.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780887, aligned to human Chr20, transcriptomic coordinates
+        - SRX11780888.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20, transcriptomic coordinates
+      - salmon.merged.gene_counts_length_scaled.tsv: Example matrix containing both Riboseq and RNA-seq runs, suitable for translational efficiency analysis
+      - samplesheet.csv: Sample sheet corresponding to salmon.merged.gene_counts_length_scaled.tsv
   - illumina
     - bam:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test{,.umi}*{1,2}` (normal)
@@ -469,6 +491,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned.bam: transcripts and singletons aligned on genome2.fa
       - alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned.bam.bai: index file generated with samtools index
       - mini.5p--3p.bam: subsample of hifi reads from the public pacbio dataset [pbmc singlecell mini](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2022_pbmc_singlecell_mini/ccs.bam) where the primers where removed with LIMA.
+      - test.sorted.bam: 35 reads from a [public PacBio Revio dataset of HG002](https://downloads.pacbcloud.com/public/revio/2022Q4/HG002-rep1/analysis/HG002.m84011_220902_175841_s1.GRCh38.bam) aligned to GRCh38.
+      - test.sorted.bam.bai: BAM index for 'test.sorted.bam'
     - bed:
       - alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.bed: first set of gene models generated by TAMA collapse
       - alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.2.bed: first set of gene models generated by TAMA collapse
@@ -488,6 +512,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - plink_simulated.bim: case-control simulated variants dataset in PLINK binary format
     - plink_simulated.vcf.gz: case-control simulated variants dataset in compressed VCF format
     - plink_simulated.bcf.gz: case-control simulated variants dataset in compressed BCF format
+    - plink_simulated.pgen: case-control simulated variants dataset in PLINK 2 binary format
+    - plink_simulated.psam: case-control simulated variants dataset in PLINK 2 binary format
+    - plink_simulated.pvar: case-control simulated variants dataset in PLINK 2 binary format
 
   - cooler:
 
@@ -530,6 +557,22 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - gene_set_analysis:
     - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023
     - Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip Ensembl ID to gene symbol mapping in Broad's 'chip' format, suitable for passing to GSEA when using matrices keyed by Ensembl Gene ID. Downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations/mouse/Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip) 5/1/2023
+  - rna_velocity:
+    - gencode.vM19.annotation.chr19.gtf genome annotation file in GTF format from nf-core/scrnaseq test datasets. 
+    - mm10_rmsk.chr19.gt repeat mask optional file generated following the instructions at http://velocyto.org/velocyto.py/tutorial/cli.html#preparation.
+    - barcodes.tsv.gz barcodes generated by nf-core/scrnaseq test dataset
+    - possorted_genome_bam.bam file generated using the nf-core/scrnaseq test config (Sample_X) and subsampled with samtools (`-s 0.25`)
+    - cellsorted_possorted_genome_bam.bam presorted bam file generated with `samtools sort -t CB -O BAM -o cellsorted_possorted_genome_bam.bam possorted_genome_bam.bam`
+  - rnaseq_expression
+    - README.md: Explanatory notes for RNA-seq example data
+    - SRP254919.contrasts.csv: An example file defining contrasts between experiment sample groups 
+    - SRP254919.gene_meta.tsv: A simple two-column table of id/ symbol mappings for genes, useful in downstream tools expecting gene annotation.
+    - SRP254919.salmon.merged.deseq2.results.tsv: Result file generated by running DESeq2 with the count file in this dir
+    - SRP254919.salmon.merged.gene_counts.top1000cov.tsv: Count matrix derived by running rnaseq workflow against the mouse genome GRCm38 with default parameters
+    - SRP254919.samplesheet.csv: Sample sheet and FASTQ files derived by running fetchngs workflow with accession SRP254919
+    - SRP254919.spikes.tsv: Spoofed spikes file generated by fetching 50 gene IDs from SRP254919.salmon.merged.gene_counts.top1000cov.tsv
+    - SRP254919.spoofed_lengths.tsv: Spoofed file of transcript lengths
+
 - prokaryotes
 
   - bacteroides_fragilis
@@ -560,6 +603,31 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - nanopore
       - fastq
         - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
+  - candidatus_portiera_aleyrodidarum
+    - genome
+      - ???
+    - illumina
+      - ???
+    - nanopore
+      - ???
+  - haemophilus_influenzae
+    - genome
+      - genome.aln.gz: Aligned FASTA file of genomes of various strains of _Haemophilus influenzae_
+      - genome.aln.nwk: A newick format phylogeny file of genomes of various strains of _Haemophilus influenzae_
+      - genome.fna.gz: _Haemophilus influenzae_ reference genome (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
+  - metagenome
+    - fasta
+      - haemophilus_influenzae.fna.gz: Multi-chromosomed reference genome file (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
+      - SARS-sarscov2.fasta: Reference genome file for SARS-CoV-2 (MT192765.1 Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/PC00101P/2020)
+    - taxonomy
+      - accession2taxid
+        - nucl_gb.accession2taxid: A decompressed NCBI nucl_gb.accession2taxid.tar.gz file from 2024-02-03 filtered to just the SARS-CoV2 and _Haemophilus influenzae_ genomes under `metagenome/fasta/`
+      - misc
+        - nucl2tax.map: A simplified variant of nucl_gb.accession2taxid, required by tools such as CENTRIFUGE
+      - taxdump
+        - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
+        - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
+
 
 - eukaryotes
   - galaxea_fascicularis
@@ -583,6 +651,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - genome
       - chr1
         - genome.fasta.gz: Chr1 bases 1 to 7 million acquired from [Zenodo/10.5281/zenodo.5717386](https://zenodo.org/doi/10.5281/zenodo.5717386)
+        - genome.gff3.gz: Gene models predicted by BRAKER3 pipeline on genome.fasta.gz and formatted by GenomeTools `gt gff3 -tidy -retainids` tool
+        - genome.gtf.gz: genome.gff3.gz converted to GTF format with `agat_convert_sp_gff2gtf.pl` script
+        - genome.hints.gff.gz: Hints file produced by BRAKER3 pipeline
 
 ### pangenomics
 
@@ -637,6 +708,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 
 ### generic
 
+- config
+  - paraphase_config.yaml: Minimal paraphase config for PRODH
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - notebooks

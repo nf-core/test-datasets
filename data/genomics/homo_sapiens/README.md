@@ -303,6 +303,14 @@ This advice also applies to test_pon_genomicsdb, which is generated using the vc
 
 Example scenario was retrieved from the [manual](https://varlociraptor.github.io/docs/calling/).
 
+#### MuSE
+
+Test file for `MuSE sump` was created by running MuSE locally on data from this repository:
+
+```bash
+MuSE/MuSE call -f genomics/homo_sapiens/genome/chr21/sequence/genome.fasta -O MuSE-call.chr21.hg38.paired_end.recal.MuSE genomics/homo_sapiens/illumina/bam/test2.paired_end.recalibrated.sorted.bam genomics/homo_sapiens/illumina/bam/test.paired_end.recalibrated.sorted.bam
+```
+
 ### 10X genomics scRNA-seq data
 
 10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
