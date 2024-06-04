@@ -8,3 +8,7 @@ CLUSTALO,,CLUSTALO,
 ,,TCOFFEE,
 ,,3DCOFFEE,-method TMalign_pair
 ,,REGRESSIVE,-reg_nseq 3
+,,MAGUS,
+,,MTMALIGN,
+FAMSA,-gt upgma -parttree,MAGUS,
+,,FAMSA,
