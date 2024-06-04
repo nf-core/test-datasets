@@ -28,6 +28,7 @@ This branch contains data used for automated testing of [nf-core/reportho](https
 ### FASTA samplesheet
 
 Sequences are sourced from the Uniprot entry.
+
 | Sample ID | Description                   | Uniprot                                                   |
 |-----------|-------------------------------|-----------------------------------------------------------|
 | STE2      | Yeast pheromone receptor STE2 | [Uniprot](https://www.uniprot.org/uniprotkb/D6VTK4/entry) |
