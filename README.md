@@ -17,7 +17,9 @@ This branch contains data used for automated testing of [nf-core/reportho](https
   - `ste2.fa`, `ste3.fa` – FASTA sequences
  
 ## ID and sequence information
+
 ### Uniprot samplesheet
+
 | Sample ID | Description                   | Uniprot                                                   |
 |-----------|-------------------------------|-----------------------------------------------------------|
 | BicD2     | Human bicaudal protein D2     | [Uniprot](https://www.uniprot.org/uniprotkb/Q8TD16/entry) |
