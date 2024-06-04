@@ -24,7 +24,9 @@ This branch contains data used for automated testing of [nf-core/reportho](https
 |-----------|-------------------------------|-----------------------------------------------------------|
 | BicD2     | Human bicaudal protein D2     | [Uniprot](https://www.uniprot.org/uniprotkb/Q8TD16/entry) |
 | HBB       | Human hemoglobin subunit beta | [Uniprot](https://www.uniprot.org/uniprotkb/P68871/entry) |
+
 ### FASTA samplesheet
+
 Sequences are sourced from the Uniprot entry.
 | Sample ID | Description                   | Uniprot                                                   |
 |-----------|-------------------------------|-----------------------------------------------------------|
