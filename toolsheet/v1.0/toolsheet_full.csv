@@ -14,4 +14,4 @@ tree,args_tree,aligner,args_aligner
 ,,3DCOFFEE,-method TMalign_pair
 FAMSA,-gt upgma -medoidtree,FAMSA,
 FAMSA,,MAGUS,
-CLUSTALO,,REGRESSIVE
+CLUSTALO,,REGRESSIVE,
