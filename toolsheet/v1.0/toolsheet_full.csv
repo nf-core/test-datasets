@@ -1,16 +1,17 @@
 tree,args_tree,aligner,args_aligner
-FAMSA,-gt upgma -parttree,FAMSA,
-,,MAFFT,--anysymbol --quiet --dpparttree
-,,MUSCLE5,
-,,LEARNMSA,
-,,KALIGN,
-,,TCOFFEE,
-,,3DCOFFEE,-method TMalign_pair
-,,REGRESSIVE,-reg_nseq 3
-,,MAGUS,
-,,MTMALIGN,
-FAMSA,-gt upgma -parttree,MAGUS,
-,,FAMSA,
 ,,CLUSTALO,
-MAGUS,,FAMSA,
+,,FAMSA,
+,,KALIGN,
+,,MAGUS,
+,,MAFFT,
+,,MAFFT, --dpparttree
+,,MUSCLE5,
+,,MTMALIGN,
+,,REGRESSIVE,
+,,REGRESSIVE,-reg_nseq 3
+,,TCOFFEE,
+,,3DCOFFEE,
+,,3DCOFFEE,-method TMalign_pair
+FAMSA,-gt upgma -medoidtree,FAMSA,
+FAMSA,,MAGUS,
 CLUSTALO,,REGRESSIVE,
