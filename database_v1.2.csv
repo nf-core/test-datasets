@@ -13,4 +13,4 @@ diamond,db3,,both,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/
 ganon,db1,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/ganon/test-db-ganon.tar.gz
 metaphlan,metaphlan3,--mpa3,short,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan_database.tar.gz
 metaphlan,metaphlan4,,short,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
-kmcp,db1,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kmcp/test-db-kmcp.tar.gz
+kmcp,db1,-m 0,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kmcp/test-db-kmcp.tar.gz
