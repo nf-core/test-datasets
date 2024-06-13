@@ -1,3 +1,4 @@
 sample,file
 Sample_X,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/Sample_X_raw_matrix.h5ad
+Sample_X_csv,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/Sample_X_raw_matrix.csv
 Sample_Y,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/Sample_Y_raw_matrix.rds
