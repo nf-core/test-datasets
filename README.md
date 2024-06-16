@@ -9,7 +9,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Test dataset origin
 
-The test dataset is the output of the test configuration of the [nf-core/scrnaseq](https://github.com/nf-core/scrnaseq) pipeline. For more information on the test dataset, please refer to the [documentation of the nf-core/scrnaseq test data](https://github.com/nf-core/test-datasets/tree/scrnaseq).
+The data used in this test dataset is a subset of the data from the study by [He et al. (2020)](https://doi.org/10.1016/j.jaci.2020.01.042). The data was downloaded from the [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/) with the accession number [GSE147424](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147424).
 
 ### Test dataset pre-processing
 The scRNA-Seq data was processed using the `nf-core/scrnaseq` pipeline. 
