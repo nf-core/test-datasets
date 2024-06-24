@@ -311,6 +311,10 @@ Test file for `MuSE sump` was created by running MuSE locally on data from this 
 MuSE/MuSE call -f genomics/homo_sapiens/genome/chr21/sequence/genome.fasta -O MuSE-call.chr21.hg38.paired_end.recal.MuSE genomics/homo_sapiens/illumina/bam/test2.paired_end.recalibrated.sorted.bam genomics/homo_sapiens/illumina/bam/test.paired_end.recalibrated.sorted.bam
 ```
 
+#### Ascat
+
+Loci and allele files were taken from [VanLoo-lab/ascat](https://github.com/VanLoo-lab/ascat/tree/master/ReferenceFiles/WGS).
+
 ### 10X genomics scRNA-seq data
 
 10X Genomics (v3) FastQ files covering chr22 are contained in `illumina/10xgenomics`
