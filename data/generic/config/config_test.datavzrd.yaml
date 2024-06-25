@@ -1,0 +1,17 @@
+datasets:
+  test:
+    path: test.csv
+    separator: ','
+views:
+  test:
+    dataset: test
+    render-table:
+      columns:
+        id:
+          display-mode: normal
+        first_name:
+          display-mode: normal
+        last_name:
+          display-mode: normal
+        username:
+          display-mode: normal
