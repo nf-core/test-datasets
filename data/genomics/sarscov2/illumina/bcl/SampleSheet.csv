@@ -15,3 +15,4 @@ Lane,Sample_ID,Sample_Type,Index_ID,Index,Index2
 1,SampleA,PatientSample,UDP0002,AGGTCAGATA,CTACAAGATA
 1,Sample23,PatientSample,UDP0003,CGTCTCATAT,TATAGTAGCT
 1,sampletest,PatientSample,UDP0004,ATTCCATAAG,TGCCTGGTGG
+1,SampleZ,PatientSample,UDP0005,AAAATTTTGG,GGCCCCAAAA
