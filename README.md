@@ -714,6 +714,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 ### generic
 
 - config
+  - agat_config.yaml: AGAT config file for v1.4.0 taken from <https://raw.githubusercontent.com/NBISweden/AGAT/v1.4.0/share/agat_config.yaml>
+  - ncbi_user_settings.mkfg: Minimal NCBI user settings
   - paraphase_config.yaml: Minimal paraphase config for PRODH
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
