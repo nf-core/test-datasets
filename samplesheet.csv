@@ -1,3 +1,3 @@
-sample,file,raw
+sample,filtered,unfiltered
 SAMN14430799,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430799_custom_emptydrops_filter_matrix.h5ad,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430799_raw_matrix.h5ad
 SAMN14430801,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430801_custom_emptydrops_filter_matrix.rds,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430801_raw_matrix.rds
