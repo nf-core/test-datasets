@@ -481,6 +481,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - 'bc_anchored_10_reads.sorted.bam.bai': campanion index for 'bc_anchored_10_reads.sorted.bam' found in [modkit/pileup](https://github.com/nanoporetech/modkit/) repository. 
         - test.sorted.bam: 24 reads from HG002_R1041_UL_dorado0.4.0_sup4.1.0_5mCG_5hmCG sorted and mapped to genome.fasta (chr22:16570000-16610000)
         - test.sorted.bam.bai: Index for test.sorted.bam
+        - test2.sorted.bam: 193 reads downsampled from s3://ont-open-data/colo829_2024.03/wf_somatic_variation/sup/COLO829_tumor.ht.cram sorted and mapped to genome.fasta (chr22:16570000-16610000)
+        - test2.sorted.bam.bai: Index for test2.sorted.bam
         - test.sorted.phased.bam: Haplotagged version of test.sorted.bam
         - test.sorted.phased.bam.bai: Index for test.sorted.phased.bam
   - pacbio:
