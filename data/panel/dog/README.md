@@ -17,6 +17,6 @@ wget -c http://gong_lab.hzau.edu.cn/static/imputeDB/download/species/dog/panel/c
 wget -c http://gong_lab.hzau.edu.cn/static/imputeDB/download/species/dog/panel/chr22_dog_impute.vcf.gz -O data/dog/panel/22/652_dog.chr22.vcf.gz
 
 gunzip data/dog/reference_genome/canFam3.fa.gz | \
-samtools faidx --region-file region.lst --output data/dog/reference_genome/canFam3.s.fa
-samtools faidx ${REF_FASTA}.s.fa
+samtools faidx data/dog/reference_genome/canFam3.fa --region-file region.lst --output data/dog/reference_genome/canFam3.s.fa
+samtools faidx data/dog/reference_genome/canFam3.s.fa
 ```
