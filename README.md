@@ -159,8 +159,6 @@ for chr in 21 22 21_22; do
     . get_panel_s.sh \
         data/panel/$chr/1000GP.chr$chr \
         data/reference_genome/$chr/hs38DH.chr$chr \
-        data/reference_genome/GRCh38 \
-        data/affi/snp6 \
         region.lst
 done
 ```

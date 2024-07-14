@@ -11,9 +11,7 @@ conda activate env_tools
 
 PANEL_NAME=$1
 REF_FASTA=$2
-REF_MAP=$3
-SNP_FILE=$4
-REGION_LST=$5
+REGION_LST=$3
 PANEL_NOREL=${PANEL_NAME}.s.norel
 
 # Extract only necessary region from fasta
