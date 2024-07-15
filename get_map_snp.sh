@@ -29,14 +29,11 @@ while IFS=':' read -r CHR REGION; do
     CHR_NUM=$(echo $CHR | sed 's/chr//g')
     echo "$CHR: $START - $END"
     # Extract the SNPs
-    cat ${SNP_FILE}.txt | \
-        awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' && $3 >='"$START"' && $3 <= '"$END"' { print "chr"$2":"$3}' \
+    zcat ${SNP_FILE}.txt.gz | \
+        awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' { print $2":"$3}' \
         >> ${SNP_FILE}.s.map
     # Unzip the map file and keep only the chromosome file
     unzip -p ${REF_MAP}${REF_GEN}.map.zip plink.${CHR}.${REF_GEN}.map | \
         awk -v OFS='\t' -F' ' '{ print $1, $3, $4 }' \
-        >  ${REF_MAP}$CHR_NUM/${REF_GEN}_$CHR.map
-    cat ${REF_MAP}/$CHR_NUM/${REF_GEN}_$CHR.map | \
-        awk -v OFS='\t' -F' ' '$3 >='"$START"' && $3 <= '"$END"' { print $1, $2, $3}' \
-    > ${REF_MAP}/$CHR_NUM/${REF_GEN}_$CHR.s.map
+        >  ${REF_MAP}/${REF_GEN}_${CHR_NUM}.map
 done < $REGION_LST

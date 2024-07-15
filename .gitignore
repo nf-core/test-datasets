@@ -2,37 +2,24 @@ slurm*.out
 *.log
 *.cram*
 *.zip
-*.csv
 *.bed
 *.bim
 *.fam
 *.nosex
+*.bgz*
 analysis/1000GP*
 
 ## Source files
 
-### 1000GP
-data/panel/21/1000GP.chr21.vcf.gz*
-data/panel/22/1000GP.chr22.vcf.gz*
-data/panel/21_22/1000GP.chr21_22.vcf.gz*
-## 1000GP with related
-data/panel/21/1000GP.chr21.s.vcf.gz*
-data/panel/22/1000GP.chr22.s.vcf.gz*
-data/panel/21_22/1000GP.chr21_22.s.vcf.gz*
-data/panel/*/*.bin
-## Reference genome
+### 1000GP original and not normalized
+hum_data/panel/chr2[21]/1000GP.chr2[21].vcf.gz*
+
+## Affimetrix data
 data/affi/snp6.txt
-data/reference_genome/21/*.fa*
-data/reference_genome/22/*.fa*
 
 ## Individuals intermediate files
 data/individuals/*/*_chr*imputed*
 data/individuals/*/*.s_list.txt
 
-## Dog reference genome
-data/dog/reference_genome/canFam3.fa.fai
-data/dog/reference_genome/canFam3.fa
-
-## Dog panel
-data/dog/panel/21/*.vcf.gz*
-data/dog/panel/22/*.vcf.gz*
+## Dog panel original and not normalized
+dog_data/panel/2[21]/*2[21].vcf.gz*

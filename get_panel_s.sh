@@ -9,50 +9,59 @@
 conda init bash
 conda activate env_tools
 
-PANEL_NAME=$1
-REF_FASTA=$2
-REGION_LST=$3
-PANEL_NOREL=${PANEL_NAME}.s.norel
+PANEL_DIR=$1
+PANEL_NAME=$2
+REF_FASTA=$3
+REGION_LST=$4
+PREFIX=$5
 
 # Extract only necessary region from fasta
 echo 'Extract region from fasta'
-samtools faidx ${REF_FASTA}.fa \
+samtools faidx ${REF_FASTA}.fa.bgz \
     --region-file ${REGION_LST} --output ${REF_FASTA}.s.fa
 samtools faidx ${REF_FASTA}.s.fa
 
 # Filter the region of interest of the panel file
-## Convert REGION_LST to tab delimited format
-REGION_CSV=${REGION_LST}.csv
-awk -v OFS='\t' -F':' '{split($2, coords, "-"); print $1, coords[1], coords[2]}' ${REGION_LST} > ${REGION_CSV}
-
 echo 'Filter region of panel'
-bcftools view ${PANEL_NAME}.vcf.gz \
-    --regions-file ${REGION_CSV} | \
+
+for REGION in $( cat $REGION_LST );
+do
+    if [ "$PREFIX" == "nochr" ]; then
+        REGION=$(echo $REGION | sed 's/chr//')
+    fi
+    echo $REGION
+    CHR=$(echo $REGION | cut -d':' -f1)
+    PANEL_FILE=${PANEL_DIR}/${CHR}/${PANEL_NAME}.${CHR}
+    REL_IND=$(cat ./analysis/all_rel_individuals.txt | tr '\n' ',' | sed 's/,$//')
+
+    # Filter the panel file
+    # Select the region of interest, annotate the variants, normalise the panel and filter out related individual to selected individuals
+    bcftools view ${PANEL_FILE}.vcf.gz \
+        --regions $REGION -m 2 -M 2 -v snps -s ^${REL_IND} --force-samples --threads 4 | \
     bcftools annotate \
-        --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' \
-        -Oz -o ${PANEL_NAME}.s.vcf.gz
-bcftools index -f ${PANEL_NAME}.s.vcf.gz --threads 4
+        --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
+    bcftools norm -m -any --threads 4 -Ob -o ${PANEL_FILE}.s.norel.bcf
 
-# Normalise the panel and filter out related individual to selected individuals
-# Read the all the related individuals
-REL_IND=$(cat ./analysis/all_rel_individuals.txt | tr '\n' ',' | sed 's/,$//')
+    # Index the panel file
+    bcftools index -f ${PANEL_FILE}.s.norel.bcf --threads 4
 
-echo 'Normalise panel and take out related individual'
-bcftools norm -m -any ${PANEL_NAME}.s.vcf.gz -Ou --threads 4 |
-bcftools view -m 2 -M 2 -v snps -s ^${REL_IND} --threads 4 -Ob -o ${PANEL_NOREL}.bcf
-bcftools index -f ${PANEL_NOREL}.bcf --threads 4
+    # Get phased haplotypes
+    #echo 'Get phased haplotypes'
+    #SHAPEIT5_phase_common -I ${PANEL_FILE}.norel.bcf -T 4 -O ${PANEL_FILE}.phased.vcf.gz -R ${REGION}
+    #bcftools index -f ${PANEL_FILE}.phased.vcf.gz
 
-# Select only the SNPS and drop Genotypes
-echo 'Select only SNPs and drop Genotypes'
-bcftools view -G -m 2 -M 2 -v snps ${PANEL_NOREL}.bcf -Oz -o ${PANEL_NOREL}.sites.vcf.gz
-bcftools index -f ${PANEL_NOREL}.sites.vcf.gz
+    echo "Chunk: ${REGION}"
+    GLIMPSE2_chunk \
+        --input ${PANEL_FILE}.s.norel.bcf --region ${REGION} \
+        --sequential --window-mb 0.005 --window-cm 0.005 --window-count 100 --buffer-mb 0.002 --buffer-cm 0.002 --buffer-count 10 \
+        --output ${PANEL_FILE}_chunks.txt
 
-# Convert to TSV
-echo 'Convert to TSV'
-bcftools query -f'%CHROM\t%POS\t%REF,%ALT\n' ${PANEL_NOREL}.sites.vcf.gz | bgzip -c > ${PANEL_NOREL}.tsv.gz
-tabix -s1 -b2 -e2 ${PANEL_NOREL}.tsv.gz
+    # Select only the SNPS and drop Genotypes
+    echo 'Select only SNPs and drop Genotypes'
+    bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.s.norel.bcf -Oz -o ${PANEL_FILE}.sites.vcf.gz
+    bcftools index -f ${PANEL_FILE}.sites.vcf.gz
 
-# Get phased haplotypes
-#echo 'Get phased haplotypes'
-#SHAPEIT5_phase_common -I ${PANEL_NOREL}.bcf -T 4 -O ${PANEL_NOREL}.phased.vcf.gz -R ${REGION}
-#bcftools index -f ${PANEL_NOREL}.phased.vcf.gz
+    # Convert to hap legend format
+    echo 'Convert to hap legend format'
+    bcftools convert --haplegendsample ${PANEL_NAME}.s.norel ${PANEL_FILE}.s.norel.bcf -Oz -o ${PANEL_FILE}
+done

@@ -62,48 +62,26 @@ conda activate env_tools
 You first need to download the reference genome and phase panel for each chromosome.
 
 ```bash
-for CHR in 21 22; do
-    mkdir -p data/reference_genome/${CHR} data/panel/${CHR}
-    # Download reference genome GRCh38
-    wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr${CHR}.fa.gz -O data/reference_genome/${CHR}/hs38DH.chr${CHR}.fa.gz
+for CHR in chr21 chr22; do
+    mkdir -p hum_data/panel/${CHR}
     # Download phased panel
-    wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr${CHR}.filtered.shapeit2-duohmm-phased.vcf.gz -O data/panel/${CHR}/1000GP.chr${CHR}.vcf.gz
+    wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_${CHR}.filtered.shapeit2-duohmm-phased.vcf.gz -O hum_data/panel/${CHR}/1000GP.${CHR}.vcf.gz
     # Download phased panel index
-    wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr${CHR}.filtered.shapeit2-duohmm-phased.vcf.gz.tbi -O data/panel/${CHR}/1000GP.chr${CHR}.vcf.gz.tbi
+    wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_${CHR}.filtered.shapeit2-duohmm-phased.vcf.gz.tbi -O hum_data/panel/${CHR}/1000GP.${CHR}.vcf.gz.tbi
 done
 
-wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O data/reference_genome/GRCh38.map.zip
+# Download reference genome GRCh38
+mkdir -p hum_data/reference_genome/
+wget -c -O- https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz | gunzip | bgzip  > hum_data/reference_genome/GRCh38.fa.bgz
+
+# Download the reference genome map
+wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O hum_data/reference_genome/GRCh38.map.zip
 ```
 
 The affimetrix SNP array is also to be downloaded with
 
 ```bash
-wget -c https://api.gdc.cancer.gov/data/9bd7cbce-80f9-449e-8007-ddc9b1e89dfb -O data/affi/snp6.txt.gz
-gunzip data/affi/snp6.txt.gz
-```
-
-##### Merging
-
-Datas can be separated by chromosome or not.
-Hence we will aggregated both chr21 and chr22 into one.
-
-```bash
-# Merge the panel file
-PANEL_21=./data/panel/21/1000GP.chr21.vcf.gz
-PANEL_22=./data/panel/21_22/1000GP.chr21.vcf.gz
-PANEL_21_22=./data/panel/21_22/1000GP.chr21_22.vcf.gz
-
-bcftools concat -Oz -o ${PANEL_21_22} ${PANEL_21} ${PANEL_22}
-bcftools index -f ${PANEL_21_22} --threads 4
-
-# Merge the fasta file
-FASTA_21=./data/reference_genome/21/hs38DH.chr21.fa
-FASTA_22=./data/reference_genome/22/hs38DH.chr22.fa
-FASTA_21_22=./data/reference_genome/21_22/hs38DH.chr21_22.fa
-gunzip $FASTA_21.gz
-gunzip $FASTA_22.gz
-mkdir -p data/reference_genome/21_22
-cat ${FASTA_21} ${FASTA_22} > ${FASTA_21_22}
+wget -c https://api.gdc.cancer.gov/data/9bd7cbce-80f9-449e-8007-ddc9b1e89dfb -O hum_data/affi/snp6.txt.gz
 ```
 
 ##### Relationship analysis
@@ -113,14 +91,15 @@ To do so we will perform with plink a relationship analysis with the `--genome` 
 
 ```bash
 mkdir -p analysis
-# Compute the relationship analysis with both chr21 and chr22
-plink --vcf ${PANEL_21_22} \
+# Compute the relationship analysis on chr21 (takes a few minutes)
+plink --vcf hum_data/panel/chr21/1000GP.chr21.vcf.gz \
     --mind 0.20 --geno 0.2 --maf 0.01 \
-    --genome --out analysis/1000GP_chr21_22 
+    --genome --out analysis/1000GP_chr21 
 
 # Select the individuals to remove from the reference panel
 Rscript --vanilla ./analysis/relationship_analysis.R \
-    --input  ./analysis/1000GP_chr21_22.genome \
+    --input  ./analysis/1000GP_chr21.genome \
+    --ind_sel ./ind_sel.txt \
     --output ./analysis
 ```
 
@@ -141,26 +120,27 @@ We can now download the corresponding folder:
 
 ```bash
 . download_ind.sh \
-    analysis/selected_individuals.txt \
-    analysis/ERR323_listing.txt
+    ind_sel.lst \
+    hum_data/individuals \
+    analysis/ERR323_listing.txt \
+    ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323
 ```
 
 #### Preparation of the different reference files
 
 1) Filter the region of interest from the fasta and the panel files
-2) Filter the region of interest of the validation file gnomAD
-3) Normalise the panel and filter out related individual to selected individuals
-4) Select only the SNPS
-5) Convert to TSV
+2) Normalise the panel and filter out related individual to selected individuals
+3) Chunks the chromosomes
+4) Create the sites file
+5) Convert to haplegend format
 
 ```bash
-for chr in 21 22 21_22; do
-    echo $chr
-    . get_panel_s.sh \
-        data/panel/$chr/1000GP.chr$chr \
-        data/reference_genome/$chr/hs38DH.chr$chr \
-        region.lst
-done
+. get_panel_s.sh \
+    hum_data/panel \
+    1000GP \
+    hum_data/reference_genome/GRCh38 \
+    region.lst \
+    chr
 ```
 
 6) Extract the SNP position present in the SNP chip array
@@ -168,24 +148,34 @@ done
 
 ```bash
 . get_map_snp.sh \
-    data/reference_genome/ \
+    hum_data/reference_genome/ \
     GRCh38 \
-    data/affi/snp6 \
+    hum_data/affi/snp6 \
     region.lst
 ```
 
 #### Preparation and downsampling of the individual file validation and test file
 
 1) Filter out the region of interest and format to BAM
-2) Get the genotype likelihood based on the panel for the validation file and simulated file
-3) Downsampling the individual data to 1X
-4) Extract from the validation file the SNP position present in the SNP chip array
+2) Downsampling the individual data to 1X
 
 ```bash
 . get_ind_1x.sh \
-    data/panel/21_22/1000GP.chr21_22.s.norel \
-    data/reference_genome/21_22/hs38DH.chr21_22.fa \
-    data/affi/snp6.s.map \
+    hum_data/individuals \
+    hum_data/reference_genome/GRCh38.s.fa \
+    ind_sel.lst \
+    region.lst
+```
+
+3) Get the genotype likelihood based on the panel for the validation file and simulated file
+4) Extract from the validation file the SNP position present in the SNP chip array
+
+```bash
+. get_ind_snp.sh \
+    hum_data/individuals \
+    hum_data/panel \
+    hum_data/reference_genome/GRCh38.s.fa \
+    ind_sel.lst \
     region.lst
 ```
 
@@ -193,8 +183,8 @@ done
 
 ```bash
 . get_ind_imputed.sh \
-    data/panel/21_22/1000GP.chr21_22.s.norel \
-    data/reference_genome/21_22/hs38DH.chr21_22.fa \
+    hum_data/panel \
+    hum_data/reference_genome/GRCh38.s.fa \
     region.lst
 ```
 
@@ -206,16 +196,6 @@ wget http://faculty.washington.edu/browning/beagle/test.22Jul22.46e.vcf.gz -O da
 echo "*** Creating test files: ref.22Jul22.46e.vcf.gz target.22Jul22.46e.vcf.gz ***"
 zcat data/beagle/test.22Jul22.46e.vcf.gz | cut -f1-190 | tr '/' '|' | gzip > data/beagle/ref.22Jul22.46e.vcf.gz
 zcat data/beagle/test.22Jul22.46e.vcf.gz | cut -f1-9,191-200 | gzip > data/beagle/target.22Jul22.46e.vcf.gz
-```
-
-### For Stitch
-
-The only additional file generated for this tool is the posfile, generated using bcftools from files already present in the modules branch. The resulting test file has been also put in the modules branch.
-
-```bash
-wget https://github.com/nf-core/test-datasets/raw/modules/data/genomics/homo_sapiens/genome/vcf/dbsnp_146.hg38.vcf.gz
-
-bcftools query -i 'TYPE=="SNP" & N_ALT==1' -f '%CHROM\t%POS\t%REF\t%ALT' > dbsnp_146.hg38.biallelic_snps.tsv
 ```
 
 ## Files size
