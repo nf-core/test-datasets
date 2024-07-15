@@ -162,7 +162,7 @@ We can now download the corresponding folder:
 ```bash
 . get_ind_1x.sh \
     hum_data/individuals \
-    hum_data/reference_genome/GRCh38.s.fa \
+    hum_data/reference_genome/GRCh38.s.fa.gz \
     ind_sel.lst \
     region.lst
 ```
