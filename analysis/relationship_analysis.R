@@ -37,8 +37,6 @@ df_ind <- df[df$FID1 %in% ind_selected & df$PI_HAT > 0.25, c("IID1", "IID2", "PI
 df_ind
 
 # Write the output
-write.csv(df_ind, file = paste0(opt$output, "/rel_ind_sel.csv"), row.names = F)
-
 write.table(
   unique(c(ind_selected, as.character(df_ind$IID2))),
   file = paste0(opt$output, "/all_rel_individuals.lst"),
