@@ -21,7 +21,7 @@ analysis/1000GP*
 hum_data/panel/chr2[21]/1000GP.chr2[21].vcf.gz*
 
 ## Affimetrix data
-data/affi/snp6.txt
+data/affi/snp6.txt.gz
 
 ## Individuals intermediate files
 data/individuals/*/*_chr*imputed*
