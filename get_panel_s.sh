@@ -17,9 +17,12 @@ PREFIX=$5
 
 # Extract only necessary region from fasta
 echo 'Extract region from fasta'
+# Keep only chr
+cat ${REGION_LST} | cut -d':' -f1 | sort | uniq > ${REGION_LST}.chr
 samtools faidx ${REF_FASTA}.fa.bgz \
-    --region-file ${REGION_LST} --output ${REF_FASTA}.s.fa
-samtools faidx ${REF_FASTA}.s.fa
+    --region-file ${REGION_LST}.chr --output ${REF_FASTA}.s.fa
+bgzip -f ${REF_FASTA}.s.fa
+samtools faidx ${REF_FASTA}.s.fa.gz
 
 # Filter the region of interest of the panel file
 echo 'Filter region of panel'

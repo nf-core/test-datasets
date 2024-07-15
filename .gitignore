@@ -5,8 +5,9 @@ slurm*.out
 *.bed
 *.bim
 *.fam
-*.nosex
 *.bgz*
+*.lst.chr
+*.nosex
 analysis/1000GP*
 
 ## Source files
