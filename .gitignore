@@ -8,7 +8,12 @@ slurm*.out
 *.bgz*
 *.lst.chr
 *.nosex
+
+## Analysis files
 analysis/1000GP*
+
+## Temporary files
+*data/individuals/*/tmp/*
 
 ## Source files
 

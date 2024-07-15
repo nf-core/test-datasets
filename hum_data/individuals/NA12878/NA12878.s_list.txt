@@ -1,2 +1,0 @@
-./data/individuals/NA12878/NA12878.s_chr21_16570000_16610000_imputed.bcf
-./data/individuals/NA12878/NA12878.s_chr22_16570000_16610000_imputed.bcf

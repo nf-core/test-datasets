@@ -30,7 +30,7 @@ while IFS=':' read -r CHR REGION; do
     echo "$CHR: $START - $END"
     # Extract the SNPs
     zcat ${SNP_FILE}.txt.gz | \
-        awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' { print $2":"$3}' \
+        awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' { print "chr"$2":"$3}' \
         >> ${SNP_FILE}.s.map
     # Unzip the map file and keep only the chromosome file
     unzip -p ${REF_MAP}${REF_GEN}.map.zip plink.${CHR}.${REF_GEN}.map | \

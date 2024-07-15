@@ -40,21 +40,22 @@ while IFS="," read IND; do
 
     bcftools mpileup -f ${REF_FASTA} \
         -I -E -a 'FORMAT/DP' -T ${TSV} \
-        ${IND_S}.bam -Ou | \
+        ${IND_S}.bam | \
         bcftools call -Aim -C alleles -T ${TSV} | \
         bcftools annotate --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' -Ob -o ${IND_S}.bcf
+
     bcftools index -f ${IND_S}.bcf
 
     # Get individual SNP
     echo 'Get individual SNP'
+    mkdir -p ${IND_DIR}/tmp
     plink --bcf ${IND_S}.bcf \
         --allow-extra-chr \
         --geno 0 \
-        --make-bed --out ${IND_S}/tmp/${IND}
+        --make-bed --out ${IND_DIR}/tmp/${IND}
 
-    # Replace all variants id by .
-    mkdir -p ${IND_DIR}/tmp
-    awk '{$2 = "."; print}' ${IND_DIR}/tmp/${IND} > ${IND_DIR}/tmp/${IND}_NID.bim
+    # Replace all variants id by . to filter them with snp array
+    awk '{$2 = "."; print}' ${IND_DIR}/tmp/${IND}.bim > ${IND_DIR}/tmp/${IND}_NID.bim
     plink --bfile ${IND_DIR}/tmp/${IND} \
         --bim ${IND_DIR}/tmp/${IND}_NID.bim \
         --allow-extra-chr \

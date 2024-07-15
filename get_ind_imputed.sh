@@ -11,40 +11,41 @@
 
 echo 'Get imputed individual data'
 
-PANEL_NAME=$1
-REF_FASTA=$2
-REGION_LST=$3
-
-# Selected individuals
-INDS=($(cat ./analysis/selected_individuals.txt))
-
-# Set region file to bcftools format
-REGION_CSV=${REGION_LST}.csv
-awk -v OFS='\t' -F':' '{split($2, coords, "-"); print $1, coords[1], coords[2]}' ${REGION_LST} > ${REGION_CSV}
-
-VCF=${PANEL_NAME}.sites.vcf.gz
-TSV=${PANEL_NAME}.tsv.gz
+PANEL_DIR=$1
+PANEL_NAME=$2
+DIR_IND=$3
+REF_FASTA=$4
+REGION_LST=$5
+IND_LST=$6
 
 # Chunk panel file
 echo 'Chunk panel file'
-while IFS="\t" read REGION; do
-    echo "Chunk: ${REGION}"
-    GLIMPSE2_split_reference \
-        --reference ${PANEL_NAME}.bcf --input-region ${REGION} --output-region ${REGION} \
-        --output ${PANEL_NAME}_split
-    REGIONN=$(echo ${REGION} | sed 's/:/_/' | sed 's/-/_/')
-    while IFS="," read IND; do
-        IND_S="./data/individuals/${IND}/${IND}.s"
-        BAM="${IND_S}.1x.bam"
-        # Impute with glimpse
-        GLIMPSE2_phase --bam-file ${BAM} --ind-name ${IND} --reference ${PANEL_NAME}_split_${REGIONN}.bin --output ${IND_S}_${REGIONN}_imputed.bcf
-    done < ./analysis/selected_individuals.txt
-
-done < ${REGION_LST}
 
 while IFS="," read IND; do
-        IND_S="./data/individuals/${IND}/${IND}.s"
-        # Impute with glimpse
-        ls -1v ${IND_S}_*_imputed.bcf >  ${IND_S}_list.txt
-        GLIMPSE2_ligate --input ${IND_S}_list.txt --output ${IND_S}_imputed.bcf
-done < ./analysis/selected_individuals.txt
+    echo "Individual: ${IND}"
+    IND_S="${DIR_IND}/${IND}/${IND}.s"
+    IND_TMP="${DIR_IND}/${IND}/tmp"
+    BAM="${IND_S}.1x.bam"
+    while IFS="\t" read REGION; do
+        echo "Region: ${REGION}"
+        CHR=$(echo $REGION | cut -d':' -f1)
+        echo "Chromosome: ${CHR}"
+        mkdir -p ${IND_TMP}/${CHR}
+        PANEL_FILE=${PANEL_DIR}/${CHR}/${PANEL_NAME}.${CHR}.s.norel.bcf
+        awk -v OFS='\t' '{print $1,$3,$4}' ${PANEL_DIR}/${CHR}/${PANEL_NAME}.${CHR}_chunks.txt > ${IND_TMP}/${IND}_${CHR}_chunks.txt
+        while IFS=$'\t' read REG INPUT OUTPUT; do
+            echo "Chunk: reg:${REG} in:${INPUT} out:${OUTPUT}"
+            # Impute with glimpse
+            GLIMPSE2_phase --bam-file ${BAM} --ind-name ${IND} \
+                --reference ${PANEL_FILE} --input-region ${INPUT} --output-region ${OUTPUT} \
+                --keep-monomorphic-ref-sites \
+                --output ${IND_TMP}/${CHR}/${IND}_${REG}_imputed.bcf
+        done < ${IND_TMP}/${IND}_${CHR}_chunks.txt
+         # Impute with glimpse
+        ls -1v ${IND_TMP}/${CHR}/${IND}_*_imputed.bcf >  ${IND_TMP}/${IND}_${CHR}_list.txt
+        GLIMPSE2_ligate --input ${IND_TMP}/${IND}_${CHR}_list.txt --output ${IND_TMP}/${IND}_${CHR}_imputed.bcf
+    done < ${REGION_LST}
+    # Merge all regions
+    ls -1v ${IND_TMP}/${IND}_chr*_imputed.bcf >  ${IND_TMP}/${IND}_list.txt
+    GLIMPSE2_ligate --input ${IND_TMP}/${IND}_list.txt --output ${IND_S}_imputed.bcf
+done < ${IND_LST}

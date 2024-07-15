@@ -175,19 +175,22 @@ We can now download the corresponding folder:
     hum_data/individuals \
     hum_data/panel \
     1000GP \
+    hum_data/reference_genome/GRCh38.s.fa.gz \
     hum_data/affi/snp6.s.map \
-    hum_data/reference_genome/GRCh38.s.fa \
     ind_sel.lst \
     region.lst
 ```
 
-#### Impute with glimpse
+#### Impute with Glimpse2
 
 ```bash
 . get_ind_imputed.sh \
     hum_data/panel \
-    hum_data/reference_genome/GRCh38.s.fa \
-    region.lst
+    1000GP \
+    hum_data/individuals \
+    hum_data/reference_genome/GRCh38.s.fa.gz \
+    region.lst \
+    ind_sel_1.lst
 ```
 
 ### For Beagle

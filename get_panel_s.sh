@@ -18,11 +18,11 @@ PREFIX=$5
 # Extract only necessary region from fasta
 echo 'Extract region from fasta'
 # Keep only chr
-cat ${REGION_LST} | cut -d':' -f1 | sort | uniq > ${REGION_LST}.chr
-samtools faidx ${REF_FASTA}.fa.bgz \
-    --region-file ${REGION_LST}.chr --output ${REF_FASTA}.s.fa
-bgzip -f ${REF_FASTA}.s.fa
-samtools faidx ${REF_FASTA}.s.fa.gz
+#cat ${REGION_LST} | cut -d':' -f1 | sort | uniq > ${REGION_LST}.chr
+#samtools faidx ${REF_FASTA}.fa.bgz \
+#    --region-file ${REGION_LST}.chr --output ${REF_FASTA}.s.fa
+#bgzip -f ${REF_FASTA}.s.fa
+#samtools faidx ${REF_FASTA}.s.fa.gz
 
 # Filter the region of interest of the panel file
 echo 'Filter region of panel'
@@ -43,10 +43,11 @@ do
         --regions $REGION -m 2 -M 2 -v snps -s ^${REL_IND} --force-samples --threads 4 | \
     bcftools annotate \
         --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
-    bcftools norm -m -any --threads 4 -Ob -o ${PANEL_FILE}.s.norel.bcf
+    bcftools norm -m -any --threads 4 -Ov | \
+    vcffixup - | bgzip -c > ${PANEL_FILE}.s.norel.vcf.gz
 
     # Index the panel file
-    bcftools index -f ${PANEL_FILE}.s.norel.bcf --threads 4
+    bcftools index -f ${PANEL_FILE}.s.norel.vcf.gz --threads 4
 
     # Get phased haplotypes
     #echo 'Get phased haplotypes'
@@ -56,7 +57,7 @@ do
     echo "Chunk: ${REGION}"
     GLIMPSE2_chunk \
         --input ${PANEL_FILE}.s.norel.bcf --region ${REGION} \
-        --sequential --window-mb 0.005 --window-cm 0.005 --window-count 100 --buffer-mb 0.002 --buffer-cm 0.002 --buffer-count 10 \
+        --sequential --window-mb 0.01 --window-cm 0.01 --window-count 100 --buffer-mb 0.005 --buffer-cm 0.005 --buffer-count 10 \
         --output ${PANEL_FILE}_chunks.txt
 
     # Select only the SNPS and drop Genotypes
