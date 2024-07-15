@@ -174,6 +174,8 @@ We can now download the corresponding folder:
 . get_ind_snp.sh \
     hum_data/individuals \
     hum_data/panel \
+    1000GP \
+    hum_data/affi/snp6.s.map \
     hum_data/reference_genome/GRCh38.s.fa \
     ind_sel.lst \
     region.lst
