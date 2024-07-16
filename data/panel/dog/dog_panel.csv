@@ -1,2 +1,0 @@
-panel,chr,vcf,index
-dog_panel,chr1,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/panel/dog/dog_chr1_impute.vcf.gz,https://raw.githubusercontent.com/nf-core/test-datasets/phaseimpute/data/panel/dog/dog_chr1_impute.vcf.gz.tbi

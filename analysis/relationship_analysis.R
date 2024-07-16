@@ -4,6 +4,7 @@ library(optparse)
 ## Parse the arguments
 option_list <- list(
   make_option(c("-i", "--input"), type="character", default=NULL, help="Input file (plink.genome)"),
+  make_option(c("-s", "--ind_sel"), type="character", default=NULL, help="Selected individuals files"),
   make_option(c("-o", "--output"), type="character", default=NULL, help="Output directory (analysis)")
 )
 
@@ -26,7 +27,8 @@ print("Individuals with the lowest number of individuals with PI_HAT > 0.25")
 head(df_ind[order(df_ind$count, decreasing = F),],20)
 
 # Selection of the individuals
-ind_selected <- c("NA12878", "NA19401", "NA20359")
+print(paste("Reading file:", opt$ind_sel))
+ind_selected <- read.table(opt$ind_sel, header = F)$V1
 print(paste("Selected individuals:", paste(ind_selected, collapse = ", ")))
 
 # Show the individuals with PI_HAT > 0.25 for the selected individuals
@@ -35,14 +37,8 @@ df_ind <- df[df$FID1 %in% ind_selected & df$PI_HAT > 0.25, c("IID1", "IID2", "PI
 df_ind
 
 # Write the output
-write.csv(df_ind, file = paste0(opt$output, "/rel_ind_sel.csv"), row.names = F)
 write.table(
-  ind_selected,
-  file = paste0(opt$output, "/selected_individuals.txt"),
-  row.names = F, col.names = F, quote = F
-)
-write.table(
-  unique(c(ind_selected, df_ind$IID2)),
-  file = paste0(opt$output, "/all_rel_individuals.txt"),
+  unique(c(ind_selected, as.character(df_ind$IID2))),
+  file = paste0(opt$output, "/all_rel_individuals.lst"),
   row.names = F, col.names = F, quote = F
 )

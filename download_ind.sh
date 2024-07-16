@@ -6,18 +6,14 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=10G
 
-# Selected individuals
-FL_IND=$1
-
-# Location in the listing file
-FL_LST=$2
-
-# FTP server
-FTP="ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323"
+FL_IND=$1 # Selected individuals
+DIR_IND=$2 # Directory to save the individuals
+FL_LST=$3 # Location of the listing file
+FTP=$4 # FTP server
 
 # Download the selected individuals
 while read -r IND; do
     echo $IND
-    mkdir -p data/individuals/$IND
-    grep -w $IND $FL_LST | xargs -I {} wget -c ${FTP}/{} -O data/individuals/$IND/$IND.{cram,cram.crai}
+    mkdir -p $DIR_IND/$IND
+    grep -w $IND $FL_LST | xargs -I {} wget -c ${FTP}/{} -O $DIR_IND/$IND/$IND.{cram,cram.crai}
 done < $FL_IND

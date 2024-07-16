@@ -14,3 +14,5 @@ dependencies:
   - r-base>=4
   - r-essentials
   - r-optparse
+  - bioconda::vcflib=1.0
+  - bioconda::glimpse-bio=2.0.0
