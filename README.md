@@ -192,7 +192,7 @@ We can now download the corresponding folder:
     hum_data/individuals \
     hum_data/reference_genome/GRCh38.s.fa.gz \
     region.lst \
-    ind_sel_1.lst
+    ind_sel.lst
 ```
 
 ### For Beagle

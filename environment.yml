@@ -14,5 +14,6 @@ dependencies:
   - r-base>=4
   - r-essentials
   - r-optparse
-  - bioconda::vcflib=1.0
+  - bioconda::vcflib=1.0.3
   - bioconda::glimpse-bio=2.0.0
+  - tabixpp=1.1.0

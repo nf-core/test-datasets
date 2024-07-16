@@ -36,7 +36,7 @@ while IFS="," read IND; do
     echo 'Get the genotype likelihood based on the panel for the validation file'
 
     IND_DIR=${DIR_IND}/${IND}
-    IND_FILE=${IND_DIR}/${IND}.s
+    IND_S=${IND_DIR}/${IND}.s
 
     bcftools mpileup -f ${REF_FASTA} \
         -I -E -a 'FORMAT/DP' -T ${TSV} \
