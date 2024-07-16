@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunInfo Version="5">
+	<Run Id="200624_A00834_0183_BHMTFYDRXX" Number="183">
+		<Flowcell>HMTFYDRXX</Flowcell>
+		<Instrument>A00834</Instrument>
+		<Date>6/24/2020 4:30:24 PM</Date>
+		<Reads>
+			<Read Number="1" NumCycles="36" IsIndexedRead="N"/>
+			<Read Number="2" NumCycles="10" IsIndexedRead="Y"/>
+			<Read Number="3" NumCycles="10" IsIndexedRead="Y"/>
+		</Reads>
+		<FlowcellLayout LaneCount="2" SurfaceCount="2" SwathCount="2" TileCount="78" FlowcellSide="2">
+			<TileSet TileNamingConvention="FourDigit">
+				<Tiles>
+					<Tile>1_2101</Tile>
+				</Tiles>
+			</TileSet>
+		</FlowcellLayout>
+		<AlignToPhiX/>
+		<ImageDimensions Width="3200" Height="3607"/>
+		<ImageChannels>
+			<Name>RED</Name>
+			<Name>GREEN</Name>
+		</ImageChannels>
+	</Run>
+</RunInfo>

@@ -1,0 +1,925 @@
+<?xml version="1.0"?>
+<Recipe xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FragmentVersion="&lt;not installed&gt;">
+  <Version>0</Version>
+  <Protocol Version="v8.0">
+    <ChemistryRef Description="OBCG Part1" ChemistryName="OBCG Part1" />
+    <ChemistryRef Description="OBEM Boost" ChemistryName="OBEM Boost" />
+    <ChemistryRef Description="OBCG Part2" ChemistryName="OBCG Part2" />
+    <ReadRef Description="Read #1" ReadName="Read1" />
+    <ChemistryRef Description="End Deblock" ChemistryName="EndDeblock" />
+    <ChemistryRef Description="Index Preparation i7" ChemistryName="IndexPreparation-i7" />
+    <ReadRef Description="IndexRead i7" ReadName="IndexRead1" />
+    <ChemistryRef Description="End Deblock before Deprotection" ChemistryName="EndDeblock_Pre-Deprotection" />
+    <ChemistryRef Description="Index Preparation i5 PE" ChemistryName="IndexPreparation-i5-PE" />
+    <ChemistryRef Description="Skip index cycle 1" ChemistryName="FirstBase" />
+    <ChemistryRef Description="Skip index cycle 2" ChemistryName="CompleteCycleReuse" />
+    <ChemistryRef Description="Skip index cycle 3" ChemistryName="CompleteCycleReuse" />
+    <ChemistryRef Description="Skip index cycle 4" ChemistryName="CompleteCycleReuse" />
+    <ChemistryRef Description="Skip index cycle 5" ChemistryName="CompleteCycleReuse" />
+    <ChemistryRef Description="Skip index cycle 6" ChemistryName="CompleteCycleReuse" />
+    <ChemistryRef Description="Skip index cycle 7" ChemistryName="CompleteCycleReuse" />
+    <ReadRef Description="IndexRead i5" ReadName="IndexRead2" />
+    <ChemistryRef Description="Safe State" ChemistryName="SafeState" />
+  </Protocol>
+  <ChemistryDefinitions Name="S1 FC-Xp workflow;Bleach PostRunWash_S1 FC" Version="Chewbacca 12.2;4.0">
+    <Definitions>
+      <ChemistryDefinition Name="CompleteCycleReuse" Type="Basic">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Deblock" Repeat="1" IsDeblock="true" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="55" Verify="false" />
+          <Dispense PumpPort="I" DispenseDelay="2000" DispenseRate="2000" Volume="185" ReagentName="VSM" Solution="0" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="3300" Solution="0" Volume="160" AspirateDelay="6000" />
+          <Aspirate PumpPort="I" ReagentName="VCM" AspirationRate="2900" Solution="0" Volume="235" AspirateDelay="1000" />
+          <Wait Duration="20000" />
+          <Dispense PumpPort="I" DispenseDelay="1000" DispenseRate="2300" Volume="155" ReagentName="VCM" Solution="0" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Buffer Wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="true">
+          <Temp Duration="0" Temperature="60" Verify="false" />
+          <Aspirate PumpPort="I" ReagentName="VB8" AspirationRate="2400" Solution="0" Volume="300" AspirateDelay="6000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="2500" Solution="0" Volume="225" AspirateDelay="1000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Incorporation" Repeat="1" IsDeblock="false" IsIncorporation="true" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="60" Verify="true" />
+          <Aspirate PumpPort="I" ReagentName="VIM" AspirationRate="2500" Solution="0" Volume="305" AspirateDelay="1000" />
+          <Wait Duration="22000" />
+          <Dispense PumpPort="I" DispenseDelay="1000" DispenseRate="3000" Volume="33" ReagentName="VIM" Solution="0" />
+          <Wait Duration="18000" />
+          <Temp Duration="0" Temperature="25" Verify="false" />
+          <Dispense PumpPort="I" DispenseDelay="2000" DispenseRate="2400" Volume="150" ReagentName="VIM" Solution="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VB2" AspirationRate="2600" Solution="0" DispenseRate="15000" Volume="225" />
+        </ChemistryStep>
+        <ChemistryStep Description="Prepare for scanning" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="I" ReagentName="VSM" AspirationRate="2000" Solution="0" Volume="305" AspirateDelay="3000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="FirstBase" Type="Basic">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Incorporation" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="2500" Solution="0" Volume="225" AspirateDelay="5000" />
+          <Temp Duration="0" Temperature="60" Verify="true" />
+          <Aspirate PumpPort="I" ReagentName="VIM" AspirationRate="2500" Solution="0" Volume="500" AspirateDelay="1000" />
+          <Wait Duration="22000" />
+          <Dispense PumpPort="I" DispenseDelay="1000" DispenseRate="3000" Volume="33" ReagentName="VIM" Solution="0" />
+          <Wait Duration="18000" />
+          <Temp Duration="0" Temperature="25" Verify="false" />
+          <Dispense PumpPort="I" DispenseDelay="2000" DispenseRate="2400" Volume="150" ReagentName="VIM" Solution="0" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="2200" Solution="0" Volume="300" AspirateDelay="2000" />
+          <DispenseToWaste DispenseDelay="3000" DispenseRate="15000" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Prepare for Scanning" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="I" ReagentName="VSM" AspirationRate="1200" Solution="0" Volume="500" AspirateDelay="4000" />
+          <Temp Duration="0" Temperature="25" Verify="true" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="Start" Type="Basic">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Start" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1600" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1600" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="End" Type="Basic">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="End" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="SafeState" Type="Basic">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Safe State" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="3000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB2" AspirationRate="3000" Solution="0" Volume="200" AspirateDelay="2000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Safe State" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1800" Solution="0" Volume="200" AspirateDelay="2000" />
+          <Aspirate PumpPort="I" ReagentName="Plug" AspirationRate="1600" Solution="0" Volume="0" AspirateDelay="2000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="EndDeblock_Pre-Deprotection" Type="Basic">
+        <ChemistryStep Description="Deblock" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <Temp Duration="0" Temperature="55" Verify="true" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="160" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VCM" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="235" />
+          <Wait Duration="30000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Buffer Wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="155" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB8" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="300" />
+          <Temp Duration="0" Temperature="38" Verify="true" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="225" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="EndDeblock" Type="Basic">
+        <ChemistryStep Description="Deblock" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <Temp Duration="0" Temperature="55" Verify="true" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="160" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VCM" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="235" />
+          <Wait Duration="10000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Buffer Wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="155" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB8" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="300" />
+          <Temp Duration="0" Temperature="20" Verify="true" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="225" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="IndexPreparation-i7" Type="Basic">
+        <ChemistryStep Description="IndexPreparation-i7" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="LDR" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="I" ReagentName="LDR" AspirationRate="500" Solution="0" Volume="270" AspirateDelay="1000" />
+          <Temp Duration="60000" Temperature="60" Verify="false" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1800" Solution="0" Volume="235" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="BP12" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="BP12" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Wait Duration="30000" />
+          <Aspirate PumpPort="I" ReagentName="BP12" AspirationRate="1000" Solution="0" Volume="158" AspirateDelay="1000" />
+          <Temp Duration="30000" Temperature="40" Verify="false" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1600" Solution="0" Volume="395" AspirateDelay="5000" />
+          <Wait Duration="5000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Temp Duration="0" Temperature="20" Verify="true" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="IndexPreparation-i5-PE" Type="Basic">
+        <ChemistryStep Description="IndexPreparation-i5-PE" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="I" ReagentName="LDR" AspirationRate="500" Solution="0" Volume="360" AspirateDelay="1000" />
+          <Temp Duration="60000" Temperature="60" Verify="false" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1600" Solution="0" Volume="400" AspirateDelay="1000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Wait Duration="30000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="500" Solution="0" Volume="160" AspirateDelay="1000" />
+          <Temp Duration="0" Temperature="38" Verify="true" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="500" Solution="0" Volume="160" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Deprotection" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="38" Verify="true" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="VRM" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="1000" DispenseDelay="0" ReagentName="VRM" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Wait Duration="65000" />
+          <Aspirate PumpPort="I" ReagentName="VRM" AspirationRate="1000" Solution="0" Volume="140" AspirateDelay="1000" />
+          <Wait Duration="65000" />
+          <Aspirate PumpPort="I" ReagentName="VRM" AspirationRate="1000" Solution="0" Volume="75" AspirateDelay="1000" />
+          <Wait Duration="65000" />
+          <Aspirate PumpPort="I" ReagentName="VRM" AspirationRate="1000" Solution="0" Volume="75" AspirateDelay="1000" />
+          <Wait Duration="65000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1600" Solution="0" Volume="280" AspirateDelay="5000" />
+          <Temp Duration="0" Temperature="55" Verify="true" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="PETurnaround_v2" Type="PairedEndTurnaround">
+        <ChemistryStep Description="Pre-resynthesis_wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="55" Verify="true" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="B" ReagentName="VAM" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VAM" AspirationRate="500" Solution="0" DispenseRate="15000" Volume="270" />
+          <Wait Duration="120000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Resynthesis" Repeat="11" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="I" ReagentName="LDR" AspirationRate="500" Solution="0" Volume="100" AspirateDelay="5000" />
+          <Aspirate PumpPort="I" ReagentName="VB3" AspirationRate="500" Solution="0" Volume="100" AspirateDelay="1000" />
+          <Aspirate PumpPort="I" ReagentName="VAM" AspirationRate="500" Solution="0" Volume="240" AspirateDelay="1000" />
+          <Wait Duration="40000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Post-resynthesis_wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="38" Verify="true" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="360" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VSM" AspirationRate="1500" Solution="0" DispenseRate="15000" Volume="360" />
+        </ChemistryStep>
+        <ChemistryStep Description="Linearisation 2" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="VLM2" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VLM2" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Aspirate PumpPort="I" ReagentName="VLM2" AspirationRate="1000" Solution="0" Volume="140" AspirateDelay="1000" />
+          <Wait Duration="90000" />
+          <Aspirate PumpPort="I" ReagentName="VLM2" AspirationRate="1000" Solution="0" Volume="75" AspirateDelay="1000" />
+          <Wait Duration="105000" />
+          <Aspirate PumpPort="I" ReagentName="VLM2" AspirationRate="1000" Solution="0" Volume="75" AspirateDelay="1000" />
+          <Wait Duration="105000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VSM" AspirationRate="1500" Solution="0" DispenseRate="15000" Volume="360" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1800" Solution="0" Volume="420" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Rehybridisation" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="I" ReagentName="LDR" AspirationRate="500" Solution="0" Volume="320" AspirateDelay="1000" />
+          <Temp Duration="60000" Temperature="60" Verify="false" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1800" Solution="0" Volume="240" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="B" ReagentName="BP11" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="BP11" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Wait Duration="30000" />
+          <Aspirate PumpPort="I" ReagentName="BP11" AspirationRate="1000" Solution="0" Volume="160" AspirateDelay="1000" />
+          <Temp Duration="30000" Temperature="40" Verify="false" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1600" Solution="0" Volume="400" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="OBCG Part1" Type="OnBoardClusterGeneration">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="ExAmp" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="38" Verify="true" />
+          <Wait Duration="450000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="OBEM Boost" Type="OnBoardExAmpMixing">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Prime/Deprime" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <MoveSMA Position="MixDown" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB2" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="134" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX2" AspirationRate="250" Solution="0" Volume="128" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="250" Solution="0" Volume="129" AspirateDelay="30000" />
+          <MoveSMA Position="MixUp" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="250" Solution="0" Volume="100" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="3000" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Transfer" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <MoveSMA Position="MixDown" />
+          <Aspirate PumpPort="B" ReagentName="VB2" AspirationRate="2500" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="10000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="2500" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="10000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="250" Solution="0" Volume="113" AspirateDelay="5000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="250" Volume="113" ReagentName="TMP" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="31" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="200" Solution="0" Volume="16" AspirateDelay="35000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="31" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="200" Solution="0" Volume="16" AspirateDelay="35000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="26" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="200" Solution="0" Volume="16" AspirateDelay="35000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="26" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="200" Solution="0" Volume="17" AspirateDelay="35000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="26" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="200" Solution="0" Volume="17" AspirateDelay="35000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="26" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="200" Solution="0" Volume="17" AspirateDelay="35000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="26" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="200" Solution="0" Volume="16" AspirateDelay="35000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="250" Solution="0" Volume="28" AspirateDelay="5000" />
+          <Aspirate PumpPort="B" ReagentName="VCX2" AspirationRate="200" Solution="0" Volume="23" AspirateDelay="20000" />
+          <Dispense PumpPort="B" DispenseDelay="30000" DispenseRate="250" Volume="247" ReagentName="TMP" Solution="0" />
+          <Dispense PumpPort="B" DispenseDelay="15000" DispenseRate="250" Volume="0" ReagentName="Waste" Solution="0" />
+          <CommonLineSelection Position="0" ReagentName="AirBypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="250" Solution="0" Volume="162" AspirateDelay="5000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="100" Volume="112" ReagentName="TMP" Solution="0" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Wash/Deprime" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <MoveSMA Position="MixUp" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="250" Solution="0" Volume="158" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <Aspirate PumpPort="B" ReagentName="VB2" AspirationRate="4000" Solution="0" Volume="750" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <Aspirate PumpPort="B" ReagentName="VB2" AspirationRate="4000" Solution="0" Volume="750" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="4000" Solution="0" Volume="1000" AspirateDelay="1000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="4000" Solution="0" Volume="1000" AspirateDelay="1000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Mix" Repeat="4" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <MoveSMA Position="MixDown" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="500" Solution="0" Volume="425" AspirateDelay="30000" />
+          <Dispense PumpPort="B" DispenseDelay="60000" DispenseRate="6000" Volume="425" ReagentName="TMP" Solution="0" />
+          <Dispense PumpPort="B" DispenseDelay="15000" DispenseRate="250" Volume="0" ReagentName="Waste" Solution="0" />
+          <CommonLineSelection Position="0" ReagentName="AirBypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="4500" Solution="0" Volume="50" AspirateDelay="5000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="500" Volume="50" ReagentName="TMP" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Rewet and Prime for OBCG" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <MoveSMA Position="MixDown" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="4000" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="4000" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="250" Solution="0" Volume="90" AspirateDelay="7000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="500" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="5000" />
+          <MoveSMA Position="MixUp" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="OBCG Part2" Type="OnBoardClusterGeneration">
+        <ChemistryStep Description="Dispense OBCG part1" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="ExAmp" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="1500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="1500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="I" ReagentName="TMP" AspirationRate="250" Solution="0" Volume="220" AspirateDelay="8000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <Wait Duration="1200000" />
+          <Aspirate PumpPort="I" ReagentName="TMP" AspirationRate="250" Solution="0" Volume="75" AspirateDelay="8000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="VB3 Backflush" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="8000" DispenseDelay="5000" ReagentName="TMP" AspirationRate="250" Solution="0" DispenseRate="15000" Volume="250" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="2500" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="2500" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="250" Solution="0" Volume="400" AspirateDelay="5000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="250" Volume="400" ReagentName="TMP" Solution="0" />
+          <Wait Duration="300000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="SBS Prime" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VIM" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VIM" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VIM" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB8" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB8" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB8" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB8" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VSM" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VSM" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VSM" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VSM" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VSM" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VSM" AspirationRate="3500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB3" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB3" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VCM" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VCM" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VCM" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VCM" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB2" AspirationRate="3800" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="5000" DispenseDelay="5000" ReagentName="VB2" AspirationRate="3800" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Dispense OBCG part2" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="2000" ReagentName="VB2" AspirationRate="500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="2000" ReagentName="VB2" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Buffer Back flush to ExAmp" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="500" Volume="1000" ReagentName="TMP" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="500" Volume="1000" ReagentName="VCX1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="500" Volume="1000" ReagentName="VCX2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="5000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="500" Volume="1000" ReagentName="VCX3" Solution="0" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="2000" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="500" />
+        </ChemistryStep>
+        <ChemistryStep Description="Conditioning" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="VEX" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VEX" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Wait Duration="25000" />
+          <Aspirate PumpPort="I" ReagentName="VEX" AspirationRate="1000" Solution="0" Volume="55" AspirateDelay="5000" />
+          <Wait Duration="25000" />
+          <Aspirate PumpPort="I" ReagentName="VEX" AspirationRate="1000" Solution="0" Volume="55" AspirateDelay="5000" />
+          <Wait Duration="25000" />
+          <Aspirate PumpPort="I" ReagentName="VEX" AspirationRate="1000" Solution="0" Volume="55" AspirateDelay="5000" />
+          <Wait Duration="25000" />
+          <Aspirate PumpPort="I" ReagentName="VEX" AspirationRate="1000" Solution="0" Volume="55" AspirateDelay="5000" />
+          <Wait Duration="25000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1800" Solution="0" Volume="400" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <Temp Duration="120000" Temperature="55" Verify="false" />
+        </ChemistryStep>
+        <ChemistryStep Description="Pre-resynthesis_wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="LDR" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="I" ReagentName="LDR" AspirationRate="500" Solution="0" Volume="270" AspirateDelay="5000" />
+          <Wait Duration="10000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="VAM" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VAM" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Wait Duration="300000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Post-resynthesis_wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="46" Verify="true" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="360" />
+        </ChemistryStep>
+        <ChemistryStep Description="Linearisation 1" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="VLM1" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VLM1" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Aspirate PumpPort="I" ReagentName="VLM1" AspirationRate="1000" Solution="0" Volume="140" AspirateDelay="5000" />
+          <Wait Duration="100000" />
+          <Aspirate PumpPort="I" ReagentName="VLM1" AspirationRate="1000" Solution="0" Volume="75" AspirateDelay="5000" />
+          <Wait Duration="100000" />
+          <Aspirate PumpPort="I" ReagentName="VLM1" AspirationRate="1000" Solution="0" Volume="75" AspirateDelay="5000" />
+          <Wait Duration="100000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1800" Solution="0" Volume="275" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Hybridisation" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="I" ReagentName="LDR" AspirationRate="500" Solution="0" Volume="320" AspirateDelay="5000" />
+          <Temp Duration="60000" Temperature="60" Verify="false" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1000" Solution="0" Volume="240" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="BP10" AspirationRate="2000" Solution="0" Volume="215" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="BP10" AspirationRate="1000" Solution="0" DispenseRate="15000" Volume="270" />
+          <Wait Duration="30000" />
+          <Aspirate PumpPort="I" ReagentName="BP10" AspirationRate="1000" Solution="0" Volume="160" AspirateDelay="5000" />
+          <Temp Duration="30000" Temperature="40" Verify="false" />
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1800" Solution="0" Volume="400" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="5000" DispenseRate="15000" />
+          <Temp Duration="0" Temperature="20" Verify="true" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="ThermalCycle" Type="Basic">
+        <ChemistryStep Description="Thermal Cycle before starting the sequncing run" Repeat="1" IsDeblock="true" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Temp Duration="0" Temperature="20" Verify="true" />
+          <Wait Duration="10000" />
+          <Temp Duration="0" Temperature="60" Verify="true" />
+          <Wait Duration="30000" />
+          <Temp Duration="0" Temperature="20" Verify="true" />
+          <Wait Duration="45000" />
+          <Temp Duration="0" Temperature="60" Verify="true" />
+          <Wait Duration="30000" />
+          <Temp Duration="0" Temperature="20" Verify="true" />
+          <Wait Duration="45000" />
+          <Temp Duration="0" Temperature="60" Verify="true" />
+          <Wait Duration="30000" />
+          <Temp Duration="0" Temperature="20" Verify="true" />
+          <Wait Duration="45000" />
+          <Temp Duration="0" Temperature="60" Verify="true" />
+          <Wait Duration="30000" />
+          <Temp Duration="0" Temperature="20" Verify="true" />
+          <Wait Duration="45000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="FirstDeblock" Type="Basic">
+        <ChemistryStep Description="Set Valve States" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="1000" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Deblock" Repeat="1" IsDeblock="true" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="0" ReagentName="VB2" AspirationRate="1800" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1500" Solution="0" Volume="162" AspirateDelay="5000" />
+          <Temp Duration="0" Temperature="55" Verify="true" />
+          <Aspirate PumpPort="I" ReagentName="VCM" AspirationRate="1500" Solution="0" Volume="260" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="2000" DispenseRate="15000" />
+          <Wait Duration="10000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Buffer Wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1500" Solution="0" Volume="160" AspirateDelay="5000" />
+          <Aspirate PumpPort="I" ReagentName="VB8" AspirationRate="1500" Solution="0" Volume="300" AspirateDelay="5000" />
+          <Aspirate PumpPort="I" ReagentName="VB2" AspirationRate="1500" Solution="0" Volume="230" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="2000" DispenseRate="15000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+      <ChemistryDefinition Name="PostRunWash" Type="PostRunWash">
+        <ChemistryStep Description="Purging_PE" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR2" NonWasteReagentSolution="0" />
+          <CommonLineSelection Position="0" ReagentName="AirBypass" NonCommonLineReagentPos="0" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="500" Solution="0" Volume="250" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="B" ReagentName="VRM" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <Aspirate PumpPort="B" ReagentName="VLM2" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="LDR" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <Aspirate PumpPort="B" ReagentName="VAM" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="BP12" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <Aspirate PumpPort="B" ReagentName="BP11" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="BP10" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <Aspirate PumpPort="B" ReagentName="VEX" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="VLM1" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <Aspirate PumpPort="B" ReagentName="CP3" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="CP2" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <Aspirate PumpPort="B" ReagentName="CP1" AspirationRate="5500" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="2000" Solution="0" Volume="400" AspirateDelay="3000" />
+          <Aspirate PumpPort="B" ReagentName="VCX2" AspirationRate="2000" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="2000" Solution="0" Volume="400" AspirateDelay="3000" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Purging_SBS" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VIM" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VIM" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VSM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VSM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VSM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VSM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="500" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VCM" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VCM" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="2000" DispenseDelay="3000" ReagentName="VCM" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="500" />
+        </ChemistryStep>
+        <ChemistryStep Description="Bypass-PreWash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="CommonLine-PreWash and Priming" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="4000" ReagentName="VEX" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="300" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valves" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Bleach Dilution with VB3" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="4500" Solution="0" Volume="825" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="4000" DispenseRate="3600" Volume="825" ReagentName="TMP" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VEX" AspirationRate="4000" Solution="0" Volume="925" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="4000" DispenseRate="3600" Volume="925" ReagentName="TMP" Solution="0" />
+          <Wait Duration="5000" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="3500" Solution="0" Volume="1000" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="4000" DispenseRate="3800" Volume="1000" ReagentName="TMP" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="BleachWash-PEChemistry" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="3500" Solution="0" Volume="850" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="850" ReagentName="VCX1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="3500" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="900" ReagentName="VCX1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="4500" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="900" ReagentName="VCX1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="4500" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="900" ReagentName="VCX1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="4500" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="2000" Volume="900" ReagentName="VCX2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX1" AspirationRate="4500" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="3000" Volume="900" ReagentName="VCX2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX2" AspirationRate="4000" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4000" Volume="900" ReagentName="VCX2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX2" AspirationRate="4000" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4000" Volume="900" ReagentName="VCX2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX2" AspirationRate="4300" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="1000" Volume="900" ReagentName="VCX3" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX2" AspirationRate="4300" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="3000" Volume="900" ReagentName="VCX3" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="4000" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="3000" Volume="900" ReagentName="VCX3" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VCX3" AspirationRate="4000" Solution="0" Volume="900" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4000" Volume="900" ReagentName="VCX3" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VCX3" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="900" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VCX3" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="900" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="4500" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="4500" Solution="0" Volume="1000" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4000" Volume="1000" ReagentName="VCX1" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VCX1" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="4500" Solution="0" Volume="1000" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="3000" Volume="1000" ReagentName="VCX2" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VCX2" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="4500" Solution="0" Volume="1000" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="2000" Volume="1000" ReagentName="VCX3" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VCX3" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Bleach Dilution with VB3" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5000" Solution="0" Volume="600" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="4000" DispenseRate="3600" Volume="600" ReagentName="TMP" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VEX" AspirationRate="4000" Solution="0" Volume="750" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="4000" DispenseRate="3600" Volume="750" ReagentName="TMP" Solution="0" />
+          <Wait Duration="5000" />
+          <Aspirate PumpPort="B" ReagentName="TMP" AspirationRate="3500" Solution="0" Volume="1000" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="4000" DispenseRate="3800" Volume="1000" ReagentName="TMP" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="BleachWash-CommonLine-PostLine" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <Aspirate PumpPort="I" ReagentName="TMP" AspirationRate="1800" Solution="0" Volume="500" AspirateDelay="5000" />
+          <Aspirate PumpPort="I" ReagentName="TMP" AspirationRate="1800" Solution="0" Volume="500" AspirateDelay="5000" />
+          <DispenseToWaste DispenseDelay="3000" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="5000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Bleach Positions Buffer Wash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VEX" AspirationRate="3000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="3700" Volume="1000" ReagentName="VEX" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VEX" AspirationRate="3000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="3700" Volume="1000" ReagentName="VEX" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VEX" AspirationRate="3000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="4000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="3800" Volume="1000" ReagentName="VCX1" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VCX1" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="3600" Volume="1000" ReagentName="VCX2" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VCX2" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="3600" Volume="1000" ReagentName="VCX3" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VCX3" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="TMP" AspirationRate="3800" Solution="0" DispenseRate="15000" Volume="350" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="3200" Volume="1000" ReagentName="TMP" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="4000" ReagentName="TMP" AspirationRate="3800" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="3000" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="5000" DispenseRate="3100" Volume="1000" ReagentName="TMP" Solution="0" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="TMP" AspirationRate="3800" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="3000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valves" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="PostRunWash-PEChemistry" Repeat="3" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="560" ReagentName="VRM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4500" Volume="560" ReagentName="VLM2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="510" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="510" ReagentName="LDR" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="510" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="510" ReagentName="LDR" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="510" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="3700" Volume="510" ReagentName="VAM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="510" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="3700" Volume="510" ReagentName="VAM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4600" Volume="560" ReagentName="BP12" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4400" Volume="560" ReagentName="BP11" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="510" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4700" Volume="510" ReagentName="BP10" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="510" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4700" Volume="510" ReagentName="BP10" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="500" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4300" Volume="500" ReagentName="VEX" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="500" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4400" Volume="500" ReagentName="VEX" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4400" Volume="560" ReagentName="VLM1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4200" Volume="560" ReagentName="CP3" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4400" Volume="560" ReagentName="CP2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="560" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="4400" Volume="560" ReagentName="CP1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="540" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="3500" Volume="540" ReagentName="VCX3" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="540" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="3500" Volume="540" ReagentName="VCX2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="540" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="3500" Volume="540" ReagentName="VCX1" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="540" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="2000" DispenseRate="3300" Volume="540" ReagentName="TMP" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valves" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="PostRunWash-SBS Wash1" Repeat="5" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4900" Volume="1000" ReagentName="VIM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="700" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4700" Volume="700" ReagentName="VSM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="700" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4700" Volume="700" ReagentName="VSM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4900" Volume="1000" ReagentName="VCM" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="PostRunWash-SBS-To-Waste" Repeat="2" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="4000" ReagentName="VIM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="4000" ReagentName="VSM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="700" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="4000" ReagentName="VSM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="700" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="4000" ReagentName="VCM" AspirationRate="4000" Solution="0" DispenseRate="15000" Volume="1000" />
+        </ChemistryStep>
+        <ChemistryStep Description="PostRunWash-SBS Wash2" Repeat="2" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4900" Volume="1000" ReagentName="VIM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="700" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4700" Volume="700" ReagentName="VSM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="700" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4700" Volume="700" ReagentName="VSM" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="4900" Volume="1000" ReagentName="VCM" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valves" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="PostRunWash" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="5200" Volume="1000" ReagentName="VB2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="5200" Volume="1000" ReagentName="VB2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="5200" Volume="1000" ReagentName="VB2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="5200" Volume="1000" ReagentName="VB2" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="5200" Volume="1000" ReagentName="VB8" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="5200" Volume="1000" ReagentName="VB8" Solution="0" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5500" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="5200" Volume="1000" ReagentName="VB8" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Set Valves" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="Waste Line" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5000" Solution="0" Volume="1000" AspirateDelay="3000" />
+          <Dispense PumpPort="B" DispenseDelay="3000" DispenseRate="3000" Volume="1000" ReagentName="Waste" Solution="0" />
+        </ChemistryStep>
+        <ChemistryStep Description="PostRunWash-BypassLine" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="Bypass" NonCommonLineReagentPos="0" />
+          <WasteSelection Position="0" ReagentName="SOUR1" NonWasteReagentSolution="0" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="B" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="5000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="B" ReagentName="VB3" AspirationRate="5000" Solution="0" Volume="200" AspirateDelay="4000" />
+        </ChemistryStep>
+        <ChemistryStep Description="PostLine Wash_Commonline" Repeat="1" IsDeblock="false" IsIncorporation="false" AllowStaggeredStartAfter="false">
+          <CommonLineSelection Position="0" ReagentName="B" NonCommonLineReagentPos="0" />
+          <DispenseToWaste DispenseDelay="0" DispenseRate="15000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <PumpToFlowcell PumpPort="I" AspirateDelay="3000" DispenseDelay="2000" ReagentName="VB3" AspirationRate="2000" Solution="0" DispenseRate="15000" Volume="1000" />
+          <Aspirate PumpPort="I" ReagentName="VB3" AspirationRate="2500" Solution="0" Volume="200" AspirateDelay="3000" />
+        </ChemistryStep>
+      </ChemistryDefinition>
+    </Definitions>
+  </ChemistryDefinitions>
+  <ReadDefinitions Name="Production" Version="7.0">
+    <Definitions>
+      <ReadDefinition IsIndexed="False" Type="Read1" Name="Read1">
+        <Imaging ChemistryName="FirstBase" MinimumRemainingVolume="0" Cycles="1" />
+        <Imaging ChemistryName="CompleteCycleReuse" MinimumRemainingVolume="0" Cycles="NumCycles - 1" />
+        <Chemistry ChemistryName="End" />
+      </ReadDefinition>
+      <ReadDefinition IsIndexed="True" Type="IndexRead1" Name="IndexRead1">
+        <Imaging ChemistryName="FirstBase" MinimumRemainingVolume="0" Cycles="1" />
+        <Imaging ChemistryName="CompleteCycleReuse" MinimumRemainingVolume="0" Cycles="NumCycles - 1" />
+        <Chemistry ChemistryName="End" />
+      </ReadDefinition>
+      <ReadDefinition IsIndexed="True" Type="IndexRead2" Name="IndexRead2">
+        <Imaging ChemistryName="CompleteCycleReuse" MinimumRemainingVolume="0" Cycles="NumCycles" />
+        <Chemistry ChemistryName="End" />
+      </ReadDefinition>
+      <ReadDefinition IsIndexed="False" Type="Read2" Name="Read2">
+        <Imaging ChemistryName="FirstBase" MinimumRemainingVolume="0" Cycles="1" />
+        <Imaging ChemistryName="CompleteCycleReuse" MinimumRemainingVolume="0" Cycles="NumCycles - 1" />
+        <Chemistry ChemistryName="End" />
+      </ReadDefinition>
+    </Definitions>
+  </ReadDefinitions>
+  <Reagents Name="Local reagents-Production" Version="1.0">
+    <ReagentValve>
+      <Reagent Name="VRM" Description="Resynthesis Mix" SelectorValvePosition="1" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VLM2" Description="Linearization Mix 2" SelectorValvePosition="2" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VB3" Description="Amp Premix" SelectorValvePosition="3" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="LDR" Description="Denaturation Mix" SelectorValvePosition="4" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VAM" Description="Amplification Mix" SelectorValvePosition="5" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="Plug" Description="Plug" SelectorValvePosition="6" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="BP12" Description="Primer Mix" SelectorValvePosition="7" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="BP11" Description="Primer Mix, Read 2" SelectorValvePosition="8" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="BP10" Description="Primer Mix, Read 1" SelectorValvePosition="9" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VEX" Description="Conditioning" SelectorValvePosition="10" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VLM1" Description="Linearization Mix 1" SelectorValvePosition="11" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VIM" Description="Incorporation Mix" SelectorValvePosition="12" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VB8" Description="SBS Buffer 8" SelectorValvePosition="13" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VSM" Description="Scan Mix" SelectorValvePosition="14" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VB2" Description="SBS Buffer 2" SelectorValvePosition="15" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VCM" Description="Cleavage Mix" SelectorValvePosition="16" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="Waste" Description="Waste" SelectorValvePosition="17" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="CP3" Description="Custom Primer Mix 3" SelectorValvePosition="18" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="CP2" Description="Custom Primer Mix 2" SelectorValvePosition="19" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="CP1" Description="Custom Primer Mix 1" SelectorValvePosition="20" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VCX3" Description="ExAmp Buffer 3" SelectorValvePosition="21" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VCX2" Description="ExAmp Buffer 2" SelectorValvePosition="22" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="VCX1" Description="ExAmp Buffer 1" SelectorValvePosition="23" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="TMP" Description=" Template" SelectorValvePosition="24" DispenseDelay="5000" AspirateDelay="5000" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+    </ReagentValve>
+    <CommonLineValve>
+      <Reagent Name="A" Description="A" SelectorValvePosition="23" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="B" Description="B" SelectorValvePosition="22" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="AB" Description="AB" SelectorValvePosition="1" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="ABDx" Description="AB-Dx" SelectorValvePosition="1" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="Bypass" Description="Bypass" SelectorValvePosition="4" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="AirFlowcell" Description="Air-Flowcell" SelectorValvePosition="13" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="AirFlowcellB" Description="Air-Flowcell-B" SelectorValvePosition="13" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+      <Reagent Name="AirBypass" Description="Air-Bypass" SelectorValvePosition="20" DispenseDelay="0" AspirateDelay="0" AspirateDelaySlope="0" AspirateDelayOffset="0" RequiresPriming="true" />
+    </CommonLineValve>
+    <WasteValve />
+  </Reagents>
+  <Primers>
+    <ReadOne Default="BP10" Custom="CP1" />
+    <ReadTwo Default="BP11" Custom="CP2" />
+    <IndexOne Default="BP12" Custom="CP3" />
+  </Primers>
+  <Name>NovaSeq Xp</Name>
+</Recipe>
