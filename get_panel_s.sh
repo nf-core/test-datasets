@@ -39,11 +39,12 @@ do
 
     # Filter the panel file
     # Select the region of interest, annotate the variants, normalise the panel and filter out related individual to selected individuals
+    bcftools norm -m +any ${PANEL_FILE}.vcf.gz \
+        --regions $REGION --threads 4 -Ov \
     bcftools view ${PANEL_FILE}.vcf.gz \
-        --regions $REGION -m 2 -M 2 -v snps -s ^${REL_IND} --force-samples --threads 4 | \
-    bcftools annotate \
+        -m 2 -M 2 -v snps -s ^${REL_IND} --force-samples --threads 4 | \
+    bcftools annotate --threads 4 -Ov \
         --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
-    bcftools norm -m -any --threads 4 -Ov | \
     vcffixup - | bgzip -c > ${PANEL_FILE}.s.norel.vcf.gz
 
     # Index the panel file
