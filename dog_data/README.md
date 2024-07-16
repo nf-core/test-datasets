@@ -17,6 +17,10 @@ wget -c -O- http://hgdownload.soe.ucsc.edu/goldenPath/canFam3/bigZips/canFam3.fa
 wget -c -O- http://gong_lab.hzau.edu.cn/static/imputeDB/download/species/dog/panel/chr21_dog_impute.vcf.gz | gunzip | bgzip > dog_data/panel/21/658_dog.21.vcf.gz
 wget -c -O- http://gong_lab.hzau.edu.cn/static/imputeDB/download/species/dog/panel/chr22_dog_impute.vcf.gz | gunzip | bgzip > dog_data/panel/22/658_dog.22.vcf.gz
 
+bcftools index dog_data/panel/21/658_dog.21.vcf.gz
+bcftools index dog_data/panel/22/658_dog.22.vcf.gz
+
+
 # Subset the files
 . get_panel_s.sh \
     dog_data/panel \
