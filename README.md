@@ -60,6 +60,8 @@ conda activate env_tools
 ##### Downloading
 
 You first need to download the reference genome and phase panel for each chromosome.
+Bcftools and Samtools used in the next steps require compressed files to be in [bgzip](https://www.htslib.org/doc/bgzip.html) format, not gzip.
+Therefore, any files compressed with gzip need to be decompressed and then recompressed with bgzip. This process is carried out on the fly during file download.
 
 ```bash
 for CHR in chr21 chr22; do
