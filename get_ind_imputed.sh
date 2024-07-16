@@ -31,7 +31,7 @@ while IFS="," read IND; do
         CHR=$(echo $REGION | cut -d':' -f1)
         echo "Chromosome: ${CHR}"
         mkdir -p ${IND_TMP}/${CHR}
-        PANEL_FILE=${PANEL_DIR}/${CHR}/${PANEL_NAME}.${CHR}.s.norel.bcf
+        PANEL_FILE=${PANEL_DIR}/${CHR}/${PANEL_NAME}.${CHR}.s.norel.vcf.gz
         awk -v OFS='\t' '{print $1,$3,$4}' ${PANEL_DIR}/${CHR}/${PANEL_NAME}.${CHR}_chunks.txt > ${IND_TMP}/${IND}_${CHR}_chunks.txt
         while IFS=$'\t' read REG INPUT OUTPUT; do
             echo "Chunk: reg:${REG} in:${INPUT} out:${OUTPUT}"

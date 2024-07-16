@@ -40,8 +40,8 @@ do
     # Filter the panel file
     # Select the region of interest, annotate the variants, normalise the panel and filter out related individual to selected individuals
     bcftools norm -m +any ${PANEL_FILE}.vcf.gz \
-        --regions $REGION --threads 4 -Ov \
-    bcftools view ${PANEL_FILE}.vcf.gz \
+        --regions $REGION --threads 4 -Ov | \
+    bcftools view \
         -m 2 -M 2 -v snps -s ^${REL_IND} --force-samples --threads 4 | \
     bcftools annotate --threads 4 -Ov \
         --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
@@ -57,16 +57,16 @@ do
 
     echo "Chunk: ${REGION}"
     GLIMPSE2_chunk \
-        --input ${PANEL_FILE}.s.norel.bcf --region ${REGION} \
+        --input ${PANEL_FILE}.s.norel.vcf.gz --region ${REGION} \
         --sequential --window-mb 0.01 --window-cm 0.01 --window-count 100 --buffer-mb 0.005 --buffer-cm 0.005 --buffer-count 10 \
         --output ${PANEL_FILE}_chunks.txt
 
     # Select only the SNPS and drop Genotypes
     echo 'Select only SNPs and drop Genotypes'
-    bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.s.norel.bcf -Oz -o ${PANEL_FILE}.sites.vcf.gz
+    bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.s.norel.vcf.gz -Oz -o ${PANEL_FILE}.sites.vcf.gz
     bcftools index -f ${PANEL_FILE}.sites.vcf.gz
 
     # Convert to hap legend format
     echo 'Convert to hap legend format'
-    bcftools convert --haplegendsample ${PANEL_NAME}.s.norel ${PANEL_FILE}.s.norel.bcf -Oz -o ${PANEL_FILE}
+    bcftools convert --haplegendsample ${PANEL_NAME}.s.norel ${PANEL_FILE}.s.norel.vcf.gz -Oz -o ${PANEL_FILE}
 done
