@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageAnalysis xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Run Name="Intensities">
+    <Cycles First="1" Last="8" Number="8" />
+    <ImageParameters>
+      <AutoOffsetFlag>0</AutoOffsetFlag>
+      <AutoSizeFlag>0</AutoSizeFlag>
+      <Fwhm>0</Fwhm>
+      <RemappingDistance>0</RemappingDistance>
+      <Threshold>0</Threshold>
+    </ImageParameters>
+    <RunParameters>
+      <AutoCycleFlag>0</AutoCycleFlag>
+      <BasecallFlag>0</BasecallFlag>
+      <Deblocked>0</Deblocked>
+      <DebugFlag>0</DebugFlag>
+      <FirstRunOnlyFlag>0</FirstRunOnlyFlag>
+      <ImagingReads Index="1">
+        <FirstCycle>1</FirstCycle>
+        <LastCycle>8</LastCycle>
+        <RunFolder>220422_M01101_0222_000000000-K9H97</RunFolder>
+      </ImagingReads>
+      <Instrument>MISEQ</Instrument>
+      <IterativeMatrixFlag>0</IterativeMatrixFlag>
+      <MakeFlag>0</MakeFlag>
+      <MaxCycle>0</MaxCycle>
+      <MinCycle>0</MinCycle>
+      <Reads Index="1">
+        <FirstCycle>1</FirstCycle>
+        <LastCycle>8</LastCycle>
+        <RunFolder>220422_M01101_0222_000000000-K9H97</RunFolder>
+      </Reads>
+      <RunFolder>220422_M01101_0222_000000000-K9H97</RunFolder>
+      <RunFolderDate>220422</RunFolderDate>
+      <RunFolderId>0222</RunFolderId>
+      <RunFlowcellId>000000000-K9H97</RunFlowcellId>
+      <QTableVersion>V8</QTableVersion>
+    </RunParameters>
+    <Software Name="RTA" Version="1.18.54.4" />
+    <TileSelection>
+      <Lane Index="1">
+        <Sample>s</Sample>
+        <Tile>1101</Tile>
+        <Tile>1103</Tile>
+        <Tile>1105</Tile>
+        <Tile>1107</Tile>
+        <Tile>1109</Tile>
+        <Tile>1102</Tile>
+        <Tile>1111</Tile>
+        <Tile>1104</Tile>
+        <Tile>1113</Tile>
+        <Tile>1106</Tile>
+        <Tile>1115</Tile>
+        <Tile>1108</Tile>
+        <Tile>1117</Tile>
+        <Tile>1110</Tile>
+        <Tile>1119</Tile>
+        <Tile>1112</Tile>
+        <Tile>2102</Tile>
+        <Tile>1114</Tile>
+        <Tile>2104</Tile>
+        <Tile>1116</Tile>
+        <Tile>2106</Tile>
+        <Tile>1118</Tile>
+        <Tile>2108</Tile>
+        <Tile>2101</Tile>
+        <Tile>2110</Tile>
+        <Tile>2103</Tile>
+        <Tile>2112</Tile>
+        <Tile>2105</Tile>
+        <Tile>2114</Tile>
+        <Tile>2107</Tile>
+        <Tile>2116</Tile>
+        <Tile>2109</Tile>
+        <Tile>2118</Tile>
+        <Tile>2111</Tile>
+        <Tile>2113</Tile>
+        <Tile>2115</Tile>
+        <Tile>2117</Tile>
+        <Tile>2119</Tile>
+      </Lane>
+    </TileSelection>
+    <Time />
+    <User />
+  </Run>
+</ImageAnalysis>

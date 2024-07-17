@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<RunInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2">
+  <Run Id="220422_M11111_0222_000000000-K9H97" Number="222">
+    <Flowcell>000000000-K9H97</Flowcell>
+    <Instrument>M11111</Instrument>
+    <Date>220422</Date>
+    <Reads>
+      <Read Number="1" NumCycles="110" IsIndexedRead="N" />
+    </Reads>
+    <FlowcellLayout LaneCount="1" SurfaceCount="2" SwathCount="1" TileCount="19" />
+  </Run>
+</RunInfo>
