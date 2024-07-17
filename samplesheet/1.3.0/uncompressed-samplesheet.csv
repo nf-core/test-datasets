@@ -1,0 +1,3 @@
+id,samplesheet,lane,flowcell
+uncompressed,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/MiSeq/SampleSheet.csv,1,https://github.com/nf-core/test-datasets/raw/demultiplex/testdata/MiSeq/220422_M11111_0222_000000000-K9H97/
+
