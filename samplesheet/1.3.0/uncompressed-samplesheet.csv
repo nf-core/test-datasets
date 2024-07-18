@@ -1,3 +1,3 @@
 id,samplesheet,lane,flowcell
-uncompressed,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/MiSeq/SampleSheet.csv,1,s3://ngi-igenomes/testdata/nf-core/pipelines/demultiplex/1.5/
+uncompressed,https://raw.githubusercontent.com/nf-core/test-datasets/demultiplex/testdata/MiSeq/SampleSheet.csv,1,s3://ngi-igenomes/testdata/nf-core/pipelines/demultiplex/1.5/MiSeq/220422_M11111_0222_000000000-K9H97/
 
