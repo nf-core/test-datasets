@@ -1,0 +1,2 @@
+id,samplesheet,lane,flowcell
+PE_Sample,https://github.com/nf-core/test-datasets/raw/demultiplex/testdata/MiSeq/SampleSheet_pe.csv,1,https://github.com/nf-core/test-datasets/raw/demultiplex/testdata/MiSeq/YYMMDD_M11111_0222_000000000-K9H97.tar.gz
