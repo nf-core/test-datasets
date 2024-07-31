@@ -1,0 +1,4 @@
+group_id,subject_id,sample_id,sample_type,sequence_type,filetype,info,filepath
+subject_a,subject_a,subject_a.tumor,tumor,dna,fastq,library_id:library_1;lane:001,temp/subject_a.tumor.dna.R1.fastq.gz;temp/subject_a.tumor.dna.R2.fastq.gz
+subject_a,subject_a,subject_a.normal,normal,dna,fastq,library_id:library_1;lane:001,temp/subject_a.normal.dna.R1.fastq.gz;temp/subject_a.normal.dna.R2.fastq.gz
+subject_a,subject_a,subject_a.tumor_rna,tumor,rna,fastq,library_id:library_1;lane:001,temp/subject_a.tumor.rna.R1.fastq.gz;temp/subject_a.tumor.rna.R2.fastq.gz
