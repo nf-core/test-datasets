@@ -1,0 +1,4 @@
+group_id,subject_id,sample_id,sample_type,sequence_type,filetype,info,filepath
+subject_a,subject_a,subject_a.tumor,tumor,dna,bam,,temp/subject_a.tumor.dna.bam
+subject_a,subject_a,subject_a.normal,normal,dna,bam,,temp/subject_a.normal.dna.bam
+subject_a,subject_a,subject_a.tumor_rna,tumor,rna,bam,,temp/subject_a.tumor.rna.bam
