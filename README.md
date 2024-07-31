@@ -16,23 +16,14 @@ nf-core/test-datasets comes with documentation in the `docs/` directory:
 01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
 02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
-## Downloading test data
+## Downloading oncoanalyser test data
 
 Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
 
 ```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
+git clone https://github.com/nf-core/test-datasets.git --single-branch --branch oncoanalyser
 ```
 
 ## Support
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+For further information or help, don't hesitate to get in touch on the [Slack `#oncoanalyser` channel](https://nfcore.slack.com/channels/oncoanalyser) (you can join with [this invite](https://nf-co.re/join/slack)), or contact us: [Stephen Watts](mailto:stephen.watts@umccr.org?subject=[GitHub]%20oncoanalyser%20nf-core/test-datasets)
