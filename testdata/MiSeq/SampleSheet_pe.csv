@@ -5,6 +5,8 @@
 110
 
 [Settings]
+Adapter,CTGTCTCTTATACACATCT,,,,,,,,
+,,,,,,,,,
 
 [Data]
 Sample_ID,Sample_Name,Description,Sample_Project
