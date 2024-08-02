@@ -1,3 +1,0 @@
-Bin Id	Marker lineage	# genomes	# markers	# marker sets	Completeness	Contamination	Strain heterogeneity	Genome size (bp)	# ambiguous bases	# scaffolds	# contigs	N50 (scaffolds)	N50 (contigs)	Mean scaffold length (bp)	Mean contig length (bp)	Longest scaffold (bp)	Longest contig (bp)	GC	GC std (scaffolds > 1kbp)	Coding density	Translation table	# predicted genes	0	1	2	3	4	5+
-GCA_002688505.1_ASM268850v1_genomic	k__Bacteria (UID2495)	2993	136	80	77.08	0.00	0.00	271175	2	1	1	271175	271173	271175	271173	271175	271173	15.4	0.00	89.63	4	257	20	116	0	0	0	0
-GCF_004296495.1_ASM429649v1_genomic	k__Bacteria (UID2495)	2993	136	80	64.89	0.00	0.00	200316	0	1	1	200316	200316	200316	200316	200316	200316	15.3	0.00	93.12	11	198	33	103	0	0	0	0
