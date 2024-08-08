@@ -1,5 +1,5 @@
 accno,genome_fna,genome_gff
-GCF_000026065.1,s3://ngi-igenomes/testdata/nf-core/pipelines/magmap/1.0/genomes/GCF_000026065.1_ASM2606v1_genomic.fna.gz,
-GCF_000196855.1,s3://ngi-igenomes/testdata/nf-core/pipelines/magmap/1.0/genomes/GCF_000196855.1_ASM19685v1_genomic.fna.gz,
-GCF_000219805.1,s3://ngi-igenomes/testdata/nf-core/pipelines/magmap/1.0/genomes/GCF_000219805.1_ASM21980v1_genomic.fna.gz,
-GCF_009913915.1,s3://ngi-igenomes/testdata/nf-core/pipelines/magmap/1.0/genomes/GCF_009913915.1_ASM991391v1_genomic.fna.gz,
+GCF_000026065.1,s3://ngi-igenomes/test-data/magmap/GCF_000026065.1_ASM2606v1_genomic.fna.gz,
+GCF_000196855.1,s3://ngi-igenomes/test-data/magmap/GCF_000196855.1_ASM19685v1_genomic.fna.gz,
+GCF_000219805.1,s3://ngi-igenomes/test-data/magmap/GCF_000219805.1_ASM21980v1_genomic.fna.gz,
+GCF_009913915.1,s3://ngi-igenomes/test-data/magmap/GCF_009913915.1_ASM991391v1_genomic.fna.gz,

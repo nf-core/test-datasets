@@ -1,4 +1,4 @@
 sample,fastq_1
-s0,s3://ngi-igenomes/testdata/nf-core/pipelines/magmap/1.0/reads/SRR443366.fastq.gz
-s1,s3://ngi-igenomes/testdata/nf-core/pipelines/magmap/1.0/reads/SRR443367.fastq.gz
-s2,s3://ngi-igenomes/testdata/nf-core/pipelines/magmap/1.0/reads/SRR443368.fastq.gz
+sample1,s3://ngi-igenomes/test-data/magmap/SRR443366.fastq.gz
+sample2,s3://ngi-igenomes/test-data/magmap/SRR443367.fastq.gz
+sample3,s3://ngi-igenomes/test-data/magmap/SRR443368.fastq.gz
