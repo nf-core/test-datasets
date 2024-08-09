@@ -86,6 +86,12 @@ Contains database for Kraken2, built with Kraken 2.0.8-beta, containing
   - A human mitochondrial genome (NCBI Accession: NC_012920.1)
   - A boa constrictor mitochondrial genome (NCBI Accession: AB177354.1)
 
+#### Krakenuniq
+
+Copied from the taxprofiler branch (https://github.com/nf-core/test-datasets/tree/taxprofiler/data/database/krakenuniq)
+
+Contains a tarred database for KrakenUniq, built with KrakenUniq v1.0.3. Content:
+  - The microbial metagenomics benchmarking dataset published in Meslier V., 2022 (10.1038/s41597-022-01762-z)
 
 #### MetaPhlAn4
 
