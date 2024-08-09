@@ -85,3 +85,8 @@ Contains database for Kraken2, built with Kraken 2.0.8-beta, containing
   - A mammoth mitochondrial genome (NCBI Accession: NC_007596.2) 
   - A human mitochondrial genome (NCBI Accession: NC_012920.1)
   - A boa constrictor mitochondrial genome (NCBI Accession: AB177354.1)
+
+
+#### MetaPhlAn4
+
+Copied from general test datasets of nf-core
