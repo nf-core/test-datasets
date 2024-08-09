@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+sample1,s3://ngi-igenomes/test-data/magmap/SRR443366.fastq.gz
+sample2,s3://ngi-igenomes/test-data/magmap/SRR443367.fastq.gz
+sample3,s3://ngi-igenomes/test-data/magmap/SRR443368.fastq.gz
