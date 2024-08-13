@@ -1,0 +1,13 @@
+[Header]
+
+[Reads]
+110
+110
+
+[Settings]
+Adapter,CTGTCTCTTATACACATCT,,,,,,,,
+,,,,,,,,,
+
+[Data]
+Sample_ID,Sample_Name,Description,Sample_Project
+Sample1,Sample1,,
