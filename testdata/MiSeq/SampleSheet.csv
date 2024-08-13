@@ -1,0 +1,10 @@
+[Header]
+
+[Reads]
+110
+
+[Settings]
+
+[Data]
+Sample_ID,Sample_Name,Description,Sample_Project
+Sample1,Sample1,,
