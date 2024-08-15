@@ -1,0 +1,5 @@
+sample,fastq_1
+Clone1_N1,s3://ngi-igenomes/test-data/smrnaseq/C1-N1-R1_S4_L001_R1_001.fastq.gz
+Clone1_N1,s3://ngi-igenomes/test-data/smrnaseq/C1-N3-R1_S6_L001_R1_001.fastq.gz
+Clone9_N3,s3://ngi-igenomes/test-data/smrnaseq/C9-N3-R1_S9_L001_R1_001.fastq.gz
+Control_N1,s3://ngi-igenomes/test-data/smrnaseq/Ctl-N1-R1_S1_L001_R1_001.fastq.gz
