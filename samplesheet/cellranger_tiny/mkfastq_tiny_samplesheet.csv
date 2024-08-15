@@ -1,0 +1,2 @@
+id,samplesheet,lane,flowcell
+cellranger-tiny-bcl-simple,https://cf.10xgenomics.com/supp/cell-exp/cellranger-tiny-bcl-samplesheet-1.2.0.csv,1,https://cf.10xgenomics.com/supp/cell-exp/cellranger-tiny-bcl-1.2.0.tar.gz
