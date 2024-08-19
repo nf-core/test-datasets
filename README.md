@@ -4,12 +4,15 @@ Test data to be used for automated testing with the nf-core isoseq pipelines
 
 ## Test dataset
 The test dataset is composed of:
-- A samplesheet listing and pointing to sample data: `samplesheet.csv`
+- A samplesheet pointing to sample data: `samplesheet.csv`
+- A samplesheet pointing to full size data: `samplesheet_full.csv`
+- A samplesheet pointing to long read sequences to test the mapping entrypoint of the pipeline: `samplesheet_map_entrypoint.csv`
 - A sample genome sequence: `Homo_sapiens.GRCh38.dna.chromosome.19.fasta`
 - The reference annotation of the sample genome sequence: `Homo_sapiens.GRCh38.104.chr.13_18_19.gtf`
 - The raw isoseq subreads: `alz.1perc.subreads.10000.bam`
 - The isoseq PacBio Index for raw subreads: `alz.1perc.subreads.10000.bam.pbi`
 - The primers sequences use for preparing the library: `primers.fasta`
+- The long read sequences in fasta format and gziped: `long_reads.fa.gz`
 
 The [alz dataset](https://www.pacb.com/general/data-release-alzheimer-brain-isoform-sequencing-iso-seq-dataset/) is a public isoseq library. The provided bam files are the result of the extraction of the 10000 first lines of the alz fullset.
 

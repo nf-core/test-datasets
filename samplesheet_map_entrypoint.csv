@@ -1,0 +1,2 @@
+sample,bam,pbi,reads
+alz,None,None,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/long_reads.fa.gz
