@@ -20,3 +20,5 @@ withName: '.*:FASTQ_FASTQC_UMITOOLS_FASTP:FASTP' {
         ]
     }
 ```
+
+Size was reduced with: `zcat Clone1_N3.fastp.fastq.gz | head -n 4000000 | gzip > small_Clone1_N3.fastp.fastq.gz`
