@@ -2,6 +2,7 @@ tree,args_tree,aligner,args_aligner
 ,,CLUSTALO,
 ,,FAMSA,
 ,,KALIGN,
+,,LEARNMSA,
 ,,MAGUS,
 ,,MAFFT,
 ,,MAFFT, --dpparttree
