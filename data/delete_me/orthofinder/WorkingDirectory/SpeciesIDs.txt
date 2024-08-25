@@ -1,0 +1,2 @@
+0: candidatus_portiera_aleyrodidarum.fasta
+1: sarscov2.fasta
