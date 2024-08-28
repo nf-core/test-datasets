@@ -1,6 +1,7 @@
 tree,args_tree,aligner,args_aligner
 ,,CLUSTALO,
 ,,FAMSA,
+,,FOLDMASON,
 ,,KALIGN,
 ,,MAGUS,
 ,,MAFFT,
