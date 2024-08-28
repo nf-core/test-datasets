@@ -1,0 +1,5 @@
+sample,fastq_1
+Clone1_N1,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/split/C1-N1-R1_S4_L001_R1_001_split1.fastq.gz
+Clone1_N1,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/split/C1-N1-R1_S4_L001_R1_001_split2.fastq.gz
+Clone1_N1_trimmed,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/trimmed/small_Clone1_N1.fastp.fastq.gz
+Clone1_N3_trimmed,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/trimmed/small_Clone1_N3.fastp.fastq.gz
