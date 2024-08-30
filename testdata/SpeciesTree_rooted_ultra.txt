@@ -1,1 +1,0 @@
-(Mycoplasmoides_fastidiosum:1,(Mycoplasmoides_gallisepticum:0.5567380339,(Mycoplasmoides_genitalium:0.1793124883,Mycoplasmoides_pneumoniae:0.1793124883)N2:0.3774255457)N1:0.4432619661)N0;
