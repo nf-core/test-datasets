@@ -1,4 +1,4 @@
-id,fasta,reference,structures,template
+id,fasta,reference,dependencies,template
 gluts-ref,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/input_fasta/gluts-ref.fa,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/reference_aln/gluts.ref,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/structures/gluts-ref.tar.gz,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/structures/templates/gluts-ref_template.txt
 toxin-ref,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/input_fasta/toxin-ref.fa,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/reference_aln/toxin.ref,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/structures/toxin-ref.tar.gz,
 asp-ref,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/input_fasta/asp-ref.fa,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/reference_aln/asp.ref,s3://ngi-igenomes/testdata/nf-core/pipelines/multiplesequencealign/1.0.0/structures/asp-ref.tar.gz,
