@@ -5,3 +5,4 @@ sample,run_accession,instrument_platform,fastq_1,fastq_2,fasta
 2612,ERR5766180,ILLUMINA,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474936_ERR5766180_1.fastq.gz,,
 2613,ERR5766181,ILLUMINA,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474937_ERR5766181_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474937_ERR5766181_2.fastq.gz,
 ERR3201952,ERR3201952,OXFORD_NANOPORE,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERR3201952.fastq.gz,,
+2614,ERR5766174,OXFORD_NANOPORE,,,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fasta/ERX5474930_ERR5766174_1.fa.gz
