@@ -1,0 +1,11 @@
+tree,args_tree,aligner,args_aligner
+,,CLUSTALO,
+,,FAMSA,
+,,MAGUS,
+,,MAFFT,
+,,MUSCLE5,
+,,REGRESSIVE,-reg_nseq 3
+,,TCOFFEE,
+,,3DCOFFEE,-method TMalign_pair
+FAMSA,-gt upgma -medoidtree,FAMSA,
+CLUSTALO,,REGRESSIVE,
