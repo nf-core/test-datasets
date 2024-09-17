@@ -10,6 +10,7 @@ tree,args_tree,aligner,args_aligner
 ,,REGRESSIVE,
 ,,REGRESSIVE,-reg_nseq 3
 ,,TCOFFEE,
+,,UPP,
 ,,3DCOFFEE,
 ,,3DCOFFEE,-method TMalign_pair
 FAMSA,-gt upgma -medoidtree,FAMSA,
