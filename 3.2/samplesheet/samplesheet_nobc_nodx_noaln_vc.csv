@@ -1,0 +1,2 @@
+group,replicate,barcode,input_file
+NA12878,1,,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/bam/NA12878.bam
