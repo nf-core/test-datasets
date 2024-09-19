@@ -1,2 +1,2 @@
 sample,bam,pbi
-sample1,https://github.com/tanyasarkjain/test-datasets/raw/refs/heads/pacvar/pacbio_data/1_D01/hifi_reads/m84127_240712_175808_s4.hifi_reads.bam, https://github.com/tanyasarkjain/test-datasets/raw/refs/heads/pacvar/pacbio_data/1_D01/hifi_reads/m84127_240712_175808_s4.hifi_reads.bam.pbi
+sample1,https://github.com/tanyasarkjain/test-datasets/raw/refs/heads/pacvar/pacbio_data/1_D01/hifi_reads/subset.hifi_reads.bam, https://github.com/tanyasarkjain/test-datasets/raw/refs/heads/pacvar/pacbio_data/1_D01/hifi_reads/subset.hifi_reads.bam.pbi
