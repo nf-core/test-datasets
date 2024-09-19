@@ -1,0 +1,2 @@
+group,replicate,barcode,input_file
+MCF7,1,1,https://raw.githubusercontent.com/nf-core/test-datasets/nanoseq/pod5/
