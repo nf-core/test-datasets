@@ -1,4 +1,4 @@
-sample,file,family_id,paternal_id,maternal_id,sex,phenotype
-HG002_ONT_A,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_ONT.bam,FAM,0,0,1,2
-HG002_ONT_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_ONT.bam,FAM,0,0,1,1
-HG002_ONT_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_ONT_copy.bam,FAM,0,0,1,1
+project,sample,file,family_id,paternal_id,maternal_id,sex,phenotype
+test,HG002_ONT_A,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_ONT.bam,FAM,0,0,1,2
+test,HG002_ONT_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_ONT.bam,FAM,0,0,1,1
+test,HG002_ONT_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_ONT_copy.bam,FAM,0,0,1,1

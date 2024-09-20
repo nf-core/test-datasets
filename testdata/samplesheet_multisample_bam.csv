@@ -1,4 +1,4 @@
-sample,file,family_id,paternal_id,maternal_id,sex,phenotype
-HG002_Revio_A,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_PacBio_Revio.bam,FAM,0,0,0,2
-HG002_Revio_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_PacBio_Revio.bam,FAM,0,0,1,1
-HG002_Revio_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_PacBio_Revio_copy.bam,FAM,0,0,1,1
+project,sample,file,family_id,paternal_id,maternal_id,sex,phenotype
+test,HG002_Revio_A,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_PacBio_Revio.bam,FAM,0,0,0,2
+test,HG002_Revio_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_PacBio_Revio.bam,FAM,0,0,1,1
+test,HG002_Revio_B,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/testdata/HG002_PacBio_Revio_copy.bam,FAM,0,0,1,1
