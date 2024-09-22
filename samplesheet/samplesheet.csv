@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2,strandedness,condition
+ERR188383,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188383_chrX_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188383_chrX_2.fastq.gz,unstranded,GBR
+ERR188428,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188428_chrX_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188428_chrX_2.fastq.gz,unstranded,GBR
+ERR188454,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188454_chrX_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR188454_chrX_2.fastq.gz,unstranded,YRI
+ERR204916,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR204916_chrX_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/testdata/ERR204916_chrX_2.fastq.gz,unstranded,YRI

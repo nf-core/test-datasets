@@ -1,0 +1,22 @@
+{
+    "read_files": "[ ERR188428_1_val_1.fq.gz, ERR188428_2_val_2.fq.gz]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 46173,
+    "num_assigned_fragments": 46173,
+    "num_frags_with_concordant_consistent_mappings": 44218,
+    "num_frags_with_inconsistent_or_orphan_mappings": 2224,
+    "strand_mapping_bias": 0.5009046089827672,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 22149,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 22069,
+    "SF": 1219,
+    "SR": 1005,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}

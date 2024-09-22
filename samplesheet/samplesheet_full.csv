@@ -1,0 +1,7 @@
+sample,fastq_1,fastq_2,strandedness,condition
+SRR536350,s3://ngi-igenomes/test-data/rnasplice/SRR536350_PC3E_sample_1.fastq.gz,s3://ngi-igenomes/test-data/rnasplice/SRR536350_PC3E_sample_2.fastq.gz,unstranded,PC3E
+SRR536348,s3://ngi-igenomes/test-data/rnasplice/SRR536348_PC3E_sample_1.fastq.gz,s3://ngi-igenomes/test-data/rnasplice/SRR536348_PC3E_sample_2.fastq.gz,unstranded,PC3E
+SRR536352,s3://ngi-igenomes/test-data/rnasplice/SRR536352_PC3E_sample_1.fastq.gz,s3://ngi-igenomes/test-data/rnasplice/SRR536352_PC3E_sample_2.fastq.gz,unstranded,PC3E
+SRR536346,s3://ngi-igenomes/test-data/rnasplice/SRR536346_GS689.Li_sample_1.fastq.gz,s3://ngi-igenomes/test-data/rnasplice/SRR536346_GS689.Li_sample_2.fastq.gz,unstranded,GS689
+SRR536342,s3://ngi-igenomes/test-data/rnasplice/SRR536342_GS689.Li_sample_1.fastq.gz,s3://ngi-igenomes/test-data/rnasplice/SRR536342_GS689.Li_sample_2.fastq.gz,unstranded,GS689
+SRR536344,s3://ngi-igenomes/test-data/rnasplice/SRR536344_GS689.Li_sample_1.fastq.gz,s3://ngi-igenomes/test-data/rnasplice/SRR536344_GS689.Li_sample_2.fastq.gz,unstranded,GS689
