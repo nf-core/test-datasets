@@ -1,7 +1,3 @@
-##gff-version 2
-##source-version rtracklayer 1.62.0
-##date 2024-09-23
-##genome-build .	hg19
 chr7	rtracklayer	sequence_feature	149597	154868	.	+	.	 tx_id 27862; tx_name "uc003sio.1"
 chr7	rtracklayer	sequence_feature	149744	154868	.	+	.	 tx_id 27863; tx_name "uc010kry.1"
 chr7	rtracklayer	sequence_feature	192969	300740	.	+	.	gene_id "56975"; tx_id 27864; tx_name "uc003sip.3"
