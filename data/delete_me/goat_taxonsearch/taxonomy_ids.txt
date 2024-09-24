@@ -1,5 +1,0 @@
-Saccharomyces cerevisiae
-Arabidopsis thaliana
-Caenorhabditis elegans
-Drosophila melanogaster
-Mus musculus

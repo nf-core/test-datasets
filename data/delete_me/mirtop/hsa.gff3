@@ -1,0 +1,24 @@
+##gff-version 3
+##date 2014-6-22
+#
+# Chromosomal coordinates of Homo sapiens microRNAs
+# microRNAs:               miRBase v21
+# genome-build-id:         GRCh38
+# genome-build-accession:  NCBI_Assembly:GCA_000001405.15
+#
+# Hairpin precursor sequences have type "miRNA_primary_transcript". 
+# Note, these sequences do not represent the full primary transcript, 
+# rather a predicted stem-loop portion that includes the precursor 
+# miRNA. Mature sequences have type "miRNA".
+#
+chr11	.	miRNA_primary_transcript	122146522	122146593	.	-	.	ID=MI0000061;Alias=MI0000061;Name=hsa-let-7a-2
+chr11	.	miRNA	122146568	122146589	.	-	.	ID=MIMAT0000062;Alias=MIMAT0000062;Name=hsa-let-7a-5p;Derives_from=MI0000061
+chr11	.	miRNA	122146523	122146544	.	-	.	ID=MIMAT0010195;Alias=MIMAT0010195;Name=hsa-let-7a-2-3p;Derives_from=MI0000061
+chr22	.	miRNA_primary_transcript	46112749	46112822	.	+	.	ID=MI0000062;Alias=MI0000062;Name=hsa-let-7a-3
+chr22	.	miRNA	46112752	46112773	.	+	.	ID=MIMAT0000062_1;Alias=MIMAT0000062;Name=hsa-let-7a-5p;Derives_from=MI0000062
+chr22	.	miRNA	46112800	46112820	.	+	.	ID=MIMAT0004481;Alias=MIMAT0004481;Name=hsa-let-7a-3p;Derives_from=MI0000062
+chr9	.	miRNA_primary_transcript	94175957	94176036	.	+	.	ID=MI0000060;Alias=MI0000060;Name=hsa-let-7a-1
+chr9	.	miRNA	94175962	94175983	.	+	.	ID=MIMAT0000062_2;Alias=MIMAT0000062;Name=hsa-let-7a-5p;Derives_from=MI0000060
+chr9	.	miRNA	94176013	94176033	.	+	.	ID=MIMAT0004481_1;Alias=MIMAT0004481;Name=hsa-let-7a-3p;Derives_from=MI0000060
+chr9	.	miRNA_primary_transcript	94176347	94176433	.	+	.	ID=MI0000067;Alias=MI0000067;Name=hsa-let-7f-1
+chr9	.	miRNA	94176409	94176430	.	+	.	ID=MIMAT0004486;Alias=MIMAT0004486;Name=hsa-let-7f-1-3p;Derives_from=MI0000067

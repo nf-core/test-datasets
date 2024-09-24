@@ -94,6 +94,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'taxon_list.txt': text file of list NCBI sarscov2 species IDs primarily used for MaltExtract
       - 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
     - 'mmseqs.tar.gz': mmseqs DB archive
+    - 'pangolin-data.v1.29.tar.gz': pangolin-dataset used by pangolin for lineage assignment, version 1.29
+        - 'data/alias_key.json' : alias key file
+        - 'data/lineageTree.pb' : UShER Mutation Annotated Tree protobuf file
+        - 'data/lineages.hash.csv' : lineage hash file
     - 'resfinder.tar.gz': resfinder DB archive
   - genome
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
@@ -111,6 +115,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'transcriptome.paf': transcriptome PAF file for MT192765.1 genome
     - 'proteome.fasta': 12 proteins from the ASM985889v3 assembly of the MN908947.3 reference genome
     - 'proteome.fasta.gz': gzipped version of 'proteome.fasta'
+    - 'proteome.hmm.gz': A HMM file from Pfam SARS-CoV-2.
     - graphtyper: files for testing graphtyper‚
       - regions.txt: chromosome names and positions for MT192765.1 genome
     - PRG_test: zipped directory to build a test Population Reference Graph‚
@@ -209,7 +214,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test_2.fastq.gz'
     - sequencing_summary
       - 'test.sequencing_summary.txt'
-      - 'test2.sequencing_summary.txt' : A tab-delimited text file containing useful information for each read analysed during basecalling of nanopore sequencing data. 
+      - 'test2.sequencing_summary.txt' : A tab-delimited text file containing useful information for each read analysed during basecalling of nanopore sequencing data.
   - metagenome
     - 'test_1.kraken2.reads.txt': kraken classification of each input read of test file `test_1.fastq.gz`
     - 'test_1.kraken2.report.txt': kraken report after classification of test file `test_1.fastq.gz`
@@ -219,7 +224,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'names_dmp': file with sars-cov-2 taxonomy names, originally generated for Kaiju
     - 'prot_names.dmp': sars-cov-2 dmp name file used for associating protein with tax ID (tested with DIAMOND). Subset from NCBI taxdmp names.dmp.
     - 'prot_nodes.dmp': sars-cov-2 dmp node file used for associated protein with tax ID (tested with DIAMOND). Subset from NCBI taxdmp nodes.dmp.
-    - 'prot.accession2taxid.gz': sars-cov-2 ORF1ab polyprotein accession ID to tax id file, to match sars-cov-2 proteome.fasta 
+    - 'prot.accession2taxid.gz': sars-cov-2 ORF1ab polyprotein accession ID to tax id file, to match sars-cov-2 proteome.fasta
 
 - homo_sapiens
   - 10xgenomics
@@ -285,7 +290,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - chr22: directory for reference files using chr22, for bbsplit
       - sequence/chr22_23800000-23980000.fa: Fasta file containing a section of chr22
     - chr22_chr22_KI270734v1_random: directory for reference files using chr22 and chr22_KI270734v1_random, for paraphase
-       - sequence/genome.fa.gz: Gzipped fasta file from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N. 
+       - sequence/genome.fa.gz: Gzipped fasta file from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N.
     - vcf
       - dbsnp: DBSnp file downsampled based on reference position
       - gnomAD: gnomAD file downsampled based on reference position
@@ -296,7 +301,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - tsv
       - functional_genomics.counts.tsv : functional genomics count table for CNV correction
       - library_functional_genomics.tsv : functional genomics library for CNV correction
-    - genome_config.json: json config file for cellranger-atac or cellranger-arc  
+    - genome_config.json: json config file for cellranger-atac or cellranger-arc
     - genome.ploidy_model.tar.gz: tar gzipped directory containing the ploidy model files
     - genome.ploidy_calls.tar.gz: tar gzipped directory containing the ploidy call files
     - genome.germline_cnv_model.tar.gz: tar gzipped directory containing the cnv model files
@@ -477,7 +482,13 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - nanopore
       - bam
         - 'bc_anchored_10_reads.sorted.bam': contains 10 human reads from test data pulled from [modkit/pileup](https://github.com/nanoporetech/modkit/) repository.
-        - 'bc_anchored_10_reads.sorted.bam.bai': campanion index for 'bc_anchored_10_reads.sorted.bam' found in [modkit/pileup](https://github.com/nanoporetech/modkit/) repository. 
+        - 'bc_anchored_10_reads.sorted.bam.bai': campanion index for 'bc_anchored_10_reads.sorted.bam' found in [modkit/pileup](https://github.com/nanoporetech/modkit/) repository.
+        - test.sorted.bam: 24 reads from HG002_R1041_UL_dorado0.4.0_sup4.1.0_5mCG_5hmCG sorted and mapped to genome.fasta (chr22:16570000-16610000)
+        - test.sorted.bam.bai: Index for test.sorted.bam
+        - test2.sorted.bam: 193 reads downsampled from s3://ont-open-data/colo829_2024.03/wf_somatic_variation/sup/COLO829_tumor.ht.cram sorted and mapped to genome.fasta (chr22:16570000-16610000)
+        - test2.sorted.bam.bai: Index for test2.sorted.bam
+        - test.sorted.phased.bam: Haplotagged version of test.sorted.bam
+        - test.sorted.phased.bam.bai: Index for test.sorted.phased.bam
   - pacbio:
 
     - bam:
@@ -558,14 +569,14 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023
     - Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip Ensembl ID to gene symbol mapping in Broad's 'chip' format, suitable for passing to GSEA when using matrices keyed by Ensembl Gene ID. Downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations/mouse/Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip) 5/1/2023
   - rna_velocity:
-    - gencode.vM19.annotation.chr19.gtf genome annotation file in GTF format from nf-core/scrnaseq test datasets. 
+    - gencode.vM19.annotation.chr19.gtf genome annotation file in GTF format from nf-core/scrnaseq test datasets.
     - mm10_rmsk.chr19.gt repeat mask optional file generated following the instructions at http://velocyto.org/velocyto.py/tutorial/cli.html#preparation.
     - barcodes.tsv.gz barcodes generated by nf-core/scrnaseq test dataset
     - possorted_genome_bam.bam file generated using the nf-core/scrnaseq test config (Sample_X) and subsampled with samtools (`-s 0.25`)
     - cellsorted_possorted_genome_bam.bam presorted bam file generated with `samtools sort -t CB -O BAM -o cellsorted_possorted_genome_bam.bam possorted_genome_bam.bam`
   - rnaseq_expression
     - README.md: Explanatory notes for RNA-seq example data
-    - SRP254919.contrasts.csv: An example file defining contrasts between experiment sample groups 
+    - SRP254919.contrasts.csv: An example file defining contrasts between experiment sample groups
     - SRP254919.gene_meta.tsv: A simple two-column table of id/ symbol mappings for genes, useful in downstream tools expecting gene annotation.
     - SRP254919.salmon.merged.deseq2.results.tsv: Result file generated by running DESeq2 with the count file in this dir
     - SRP254919.salmon.merged.gene_counts.top1000cov.tsv: Count matrix derived by running rnaseq workflow against the mouse genome GRCm38 with default parameters
@@ -644,8 +655,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'ddAraThal4.HiFi.reads.fasta': test dataset for plastid reads for Arabidopsis thaliana
   - saccharomyces_cerevisiae
     - samplesheet.csv: sample sheet as used by the nf-core/rnaseq test profile
-    - kallisto_results.tar.gz: archive of the kallisto results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,  
-    - salmon_results.tar.gz: archive of the salmon results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner salmon' set,  
+    - kallisto_results.tar.gz: archive of the kallisto results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set,
+    - salmon_results.tar.gz: archive of the salmon results folder taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner salmon' set,
     - genome_gfp.gtf: merged gtf file taken from a run of nf-core/rnaseq (a53a004) with the test profile and '--pseudo_aligner kallisto' set
   - actinidia_chinensis
     - genome
@@ -688,7 +699,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - 'peakpicker_tutorial_1.mzML': Profile mass spectra file
 - openms
   - 'HepG2_rep1_small.idXML': Identification file in idXML format
-  - 'HepG2_rep2_small.idXML': Identification file in idXML format 
+  - 'HepG2_rep2_small.idXML': Identification file in idXML format
 - parameter
   - 'mqpar.xml': MaxQuant parameter file
 - pdb
@@ -709,6 +720,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 ### generic
 
 - config
+  - agat_config.yaml: AGAT config file for v1.4.0 taken from <https://raw.githubusercontent.com/NBISweden/AGAT/v1.4.0/share/agat_config.yaml>
+  - ncbi_user_settings.mkfg: Minimal NCBI user settings
   - paraphase_config.yaml: Minimal paraphase config for PRODH
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
@@ -722,6 +735,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - txt
   - 'hello.txt': one-line txt file
+  - 'taxonomy_ids.txt': contains species names, to be used as input for [goat-cli taxon search tool](https://github.com/genomehubs/goat-cli).
 - tar
   - 'hello.tar.gz': gzipped tar archive containing a single file without a directory
 
