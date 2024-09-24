@@ -1,0 +1,1 @@
+sample1ss_R2.fastq.gz was created by writing the reverse complement of sample1ss.fastq.gz using this script: https://github.com/nf-core/test-datasets/raw/refs/heads/demultiplex/testdata/MiSeq/pe_gen.py
