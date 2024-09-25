@@ -1,4 +1,4 @@
-sample,fastq_1
-sample1,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/nextflex/sample1ss.fastq.gz
+sample,fastq_1,fastq_2
+sample1,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/nextflex/sample1ss.fastq.gz,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/nextflex/sample1ss_R2.fastq.gz
 sample2,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/nextflex/sample2ss.fastq.gz
 sample3,https://github.com/nf-core/test-datasets/raw/smrnaseq/testdata/nextflex/sample3ss.fastq.gz
