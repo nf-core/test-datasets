@@ -1,0 +1,15 @@
+sampleId	sampleName	location	outlier	sampleSet_sourceId	Lab_Source_ID	Species	Tissue	Treatment	Donor_ID	Platform	Diagnosis
+GSM1841068	GSM1841068	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841068	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_minus	HC_A	Illumina_NextSeq_500	Healthy_control
+GSM1841069	GSM1841069	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841069	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_plus	HC_A	Illumina_NextSeq_500	Healthy_control
+GSM1841070	GSM1841070	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841070	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_minus	HC_B	Illumina_NextSeq_500	Healthy_control
+GSM1841071	GSM1841071	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841071	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_plus	HC_B	Illumina_NextSeq_500	Healthy_control
+GSM1841072	GSM1841072	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841072	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_minus	HC_C	Illumina_NextSeq_500	Healthy_control
+GSM1841073	GSM1841073	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841073	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_plus	HC_C	Illumina_NextSeq_500	Healthy_control
+GSM1841074	GSM1841074	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841074	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_minus	HC_D	Illumina_NextSeq_500	Healthy_control
+GSM1841075	GSM1841075	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841075	0	Peripheral_Blood	NA	Homo sapiens	Peripheral_Blood	JQ1_plus	HC_D	Illumina_NextSeq_500	Healthy_control
+GSM1841076	GSM1841076	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841076	0	Synovial_Fluid	NA	Homo sapiens	Synovial_Fluid	JQ1_minus	JIA_A	Illumina_NextSeq_500	JIA_patient
+GSM1841077	GSM1841077	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841077	0	Synovial_Fluid	NA	Homo sapiens	Synovial_Fluid	JQ1_plus	JIA_A	Illumina_NextSeq_500	JIA_patient
+GSM1841078	GSM1841078	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841078	0	Synovial_Fluid	NA	Homo sapiens	Synovial_Fluid	JQ1_minus	JIA_B	Illumina_NextSeq_500	JIA_patient
+GSM1841079	GSM1841079	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841079	0	Synovial_Fluid	NA	Homo sapiens	Synovial_Fluid	JQ1_plus	JIA_B	Illumina_NextSeq_500	JIA_patient
+GSM1841080	GSM1841080	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841080	0	Synovial_Fluid	NA	Homo sapiens	Synovial_Fluid	JQ1_minus	JIA_C	Illumina_NextSeq_500	JIA_patient
+GSM1841081	GSM1841081	/data/gcbds/users/smigas/CBSP/CGET-D_run/data_mixed/data_cget_output/counts/GSM1841081	0	Synovial_Fluid	NA	Homo sapiens	Synovial_Fluid	JQ1_plus	JIA_C	Illumina_NextSeq_500	JIA_patient
