@@ -391,7 +391,7 @@ This dataset contains:
       -  22:42512500-42551883
       -  22:42512500-42551883
    - illumina/bam/test.PGx.CYP2D6.bam.bai => The index of the BAM file
-   - genome/GRCh37_chr22.fasta.gz => A reference GRCh37 genome fasta file (bgzipped) containing chromosome 22
+   - genome/genome.GRCh37.chr22.fasta.gz => A reference GRCh37 genome fasta file (bgzipped) containing chromosome 22
    
 ## Limitations
 
