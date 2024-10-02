@@ -383,6 +383,17 @@ This test data contains:
 Population genetics simulated data (case-control) in PLINK binary format, compressed VCF and compressed BCF formats.
 For details about their simulation, see the specific README file.
 
+### PyPGx data
+
+This folder contains test data containing specific loci for the pharmacogentics gene CYP2D6 and pseudogene CYP2D7 on GRCh37.
+This test data contains:
+   - HG00436_cyp2d6.bam => Reads belonging to human genome project sample HG00436 mapped to the CYP2D6 and CYP2D7 loci
+      -  22:42512500-42551883
+      -  22:42512500-42551883
+   - HG00436_cyp2d6.bam => The index of the BAM file
+   - GRCh37_chr22.fasta => A reference GRCh37 genome fasta file containing chromosome 22
+   - GRCh37_chr22.fasta.fai => The index of the reference fasta file
+
 ## Limitations
 
 1. Reads do not cover chromosome 6
