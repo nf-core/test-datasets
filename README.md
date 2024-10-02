@@ -105,6 +105,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'genome.fasta.fai': fasta index for 'genome.fasta'
     - 'genome.fasta.txt.gz': gzipped version of 'genome.fasta' in tabular text format
     - 'genome.fasta.txt.zst': zstd-compressed version of 'genome.fasta' in tabular text format
+    - 'genome.GRCh37.chr22.fasta.gz': bgzipped fasta of GRCh37 chr22 (GCA_000001405.1)
     - 'genome.dict': GATK dict for 'genome.fasta'
     - 'genome.gff3': GFF for MT192765.1 genome
     - 'genome.gff3.gz': bgzipped-version
@@ -127,6 +128,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.paired_end.name.sorted.bam': Paired-end bam file sorted by name
       - 'test.single_end.bam': alignment (unsorted) of the 'test_1.fastq.gz' reads against test_genomic.fasta using minimap2
       - 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
+      - 'test.PGx.CYP2D6.bam': Paired-end mapped reads mapped to pharmacogenomics genes CYP2D6 and CYP2D7 on GRCh37 (HG00436)
+      - 'test.PGx.CYP2D6.bam.bai': BAM index for 'test.PGx.CYP2D6.bam'
       - 'read_group_settings.txt': a simple textfile containing the readgroup settings '1 paired' primarily used for the atlas/splitmerge module
       - 'purecn_ex1.bam': Example BAM file used to test PureCN/coverage
       - 'purecn_ex1.bam.bai': BAM index for 'purecn_ex1.bam'
