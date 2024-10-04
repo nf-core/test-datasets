@@ -85,21 +85,36 @@ seqtk subseq /data/shared/reference_genomes/GRCh38_no_alt_analysis_set.fasta chr
 
 # Subsample to reduce size
 samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed HG002_PACBIO_REVIO.bam -h -O BAM > hg002_somalier_small_revio.bam
+samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed /media/hgst_12tb_1/felix/HG003_phased.bam -h -O BAM > hg003_somalier_small_revio.bam
+samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed /media/hgst_12tb_1/felix/HG004_phased.bam -h -O BAM > hg004_somalier_small_revio.bam
+
 samtools view -@ 36 -s 0.5 -M -L test_somalier_small.bed hg002.haplotagged.bam -h -O BAM > hg002_somalier_small_ont.bam
+
 # Make fastq
 samtools fastq -T \* -@ 36 hg002_somalier_small_revio.bam | pigz -p 36 > hg002_somalier_small_revio.fastq.gz
 samtools fastq -T \* -@ 36 hg002_somalier_small_ont.bam |chopper --maxlength 200000| pigz -p 36 > hg002_somalier_small_ont.fastq.gz
 
+echo "reads Revio HG002, HG003, HG004:"
 samtools view hg002_somalier_small_revio.bam|wc -l
+samtools view hg003_somalier_small_revio.bam|wc -l
+samtools view hg004_somalier_small_revio.bam|wc -l
+echo "reads ONT HG002, HG003, HG004:"
 samtools view hg002_somalier_small_ont.bam|wc -l
 
+# 6. Create a SVDB file from https://zenodo.org/records/11511513/files/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz 
+bcftools view -R test_somalier_small.bed  CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz --output-type z --output colorsdb.test_data.vcf.gz
 
-# 6. Copy files, and make one copy smaller
+# 7. Copy files, and make one copy smaller
+cp colorsdb.test_data.vcf.gz /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/reference/colorsdb.test_data.vcf.gz
 cp hg38.test.fa.gz /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/reference/hg38.test.fa.gz
 cp test_somalier_small.bed /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/reference/test_data.bed
 
 cp hg002_somalier_small_revio.bam /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG002_PacBio_Revio.bam
+cp hg003_somalier_small_revio.bam /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG003_PacBio_Revio.bam
+cp hg004_somalier_small_revio.bam /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG004_PacBio_Revio.bam
 samtools index /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG002_PacBio_Revio.bam
+samtools index /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG003_PacBio_Revio.bam
+samtools index /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG004_PacBio_Revio.bam
 cp hg002_somalier_small_revio.fastq.gz /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG002_PacBio_Revio.fastq.gz
 samtools view -@ 36 -s 0.01 -h -O BAM hg002_somalier_small_revio.bam > /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG002_PacBio_Revio_copy.bam
 samtools index /media/ssd_4tb/felix/projects/genomic-medicine-sweden/test-datasets/testdata/HG002_PacBio_Revio_copy.bam
