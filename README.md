@@ -1,38 +1,24 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: `genomeqc`
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+This branch contains test data to be used for automated testing with the [nf-core/genomeqc](https://github.com/nf-core/genomeqc) pipeline.
 
-## Introduction
+Currently this is in a temporary repo:
+[Eco-Flow/genomeqc](https://github.com/Eco-Flow/genomeqc).
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+## Content of this repository
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+- `testdata/` : subsampled genome fasta files and annotations (gff).
+- `samplesheet/input_bacteria.csv`: Minimal test dataset, whole mycoplasma genomes. Just links to input Refseq IDs (which downloads the data in first process).
+- `samplesheet/input_myco_tiny.csv`: Minimal test dataset (actual data in this repo), partial mycoplasma genomes and their annotations, taking only the first 300 line of the GFF (or nearest to include whole genes), for two species only (Mycoplasmoides_fastidiosum, Mycoplasmoides_genitalium).
 
-## Documentation
+## Test datasets origin
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+NCBI:
 
 ```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+Mycoplasmoides_fastidiosum,GCF_024498275.1
+Mycoplasmoides_gallisepticum,GCF_017654545.1
+Mycoplasmoides_pneumoniae,GCF_000733995.1
+Mycoplasmoides_genitalium,GCF_000027325.1
 ```
 
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
