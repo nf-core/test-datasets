@@ -1,6 +1,8 @@
 # 60k Human PBMCs Multiplexed, 4 CMOs
 
 Peripheral blood mononuclear cells (PBMCs). Samples originate from two healthy donors (Donor 1 & 2), and from two patients diagnosed with Acute Lymphocytic Leukemia (Donor 3 & 4). Samples from donor 1,2, and 4 consist of peripheral blood mononuclear cells (PBMCs), while the sample from donor 3 consists of Bone Marrow Mononuclear Cells (BMMCs).
+Samples stained with TotalSeq-C antibodies both for cell surface protein (CSP) feature barcoding, but also for cell hashing, ie mimicing 3' cell multiplexing oligos (CMO). 
+Samples were pooled in a 1:1 ratio.
 
 Libraries were prepared following the Single Cell V(D)J Reagent Kits User Guide CG000424 (5' v2 HT) and sequenced on Illumina NovaSeq 6000.
 
