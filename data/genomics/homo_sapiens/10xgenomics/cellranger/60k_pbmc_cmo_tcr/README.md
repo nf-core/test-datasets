@@ -189,6 +189,19 @@ The cell multiplexing libraries require more generous subsampling to yield suffi
 Test data use the first 3,500,000 lines of each of the lane 1 FASTQs.
 
 ```bash
-$ zcat ../SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K/SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K_1_multiplexing_capture/SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K_1_multiplexing_capture_S1_L001_R1_001.fastq.gz | head -n 3500000 | gzip -c > subsampled_SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K_1_multiplexing_capture_S1_L001_R1_001.fastq.gz
-$ zcat ../SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K/SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K_1_multiplexing_capture/SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K_1_multiplexing_capture_S1_L001_R2_001.fastq.gz | head -n 3500000 | gzip -c > subsampled_SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10K_1_multiplexing_capture_S1_L001_R2_001.fastq.gz
+#!/usr/bin/env bash
+
+ft_type=$1
+
+old="raw/fastq/${ft_type}/${ft_type}-PBMC-Control-1"
+for of in "${old}_"*.fastq.gz; do
+    new="raw_sub/fastqs/${ft_type}/subsampled_sc5p_PBMC_60k_${ft_type}"
+    nf=${of/$old/$new}
+    echo $of
+    echo $nf
+
+    zcat "$of" | \
+        head -n 3500000 | \
+        gzip - > $nf
+done
 ```
