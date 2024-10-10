@@ -240,6 +240,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test_10x_10k_pbmc_cmo_cmo_fastq_\{1,2\}_gz: 3' V3 Cell Multiplexing FASTQs from 10k PBMC data with Cell Multiplexing
       - test_10x_10k_pbmc_cmo_gex\{1,2\}_fastq_\{1,2\}_gz: 3' V3 gene expression FASTQs from 10k PBMC data with Cell Multiplexing
       - test_10x_10k_pbmc_cmo_feature_ref_csv: Feature Barcode reference for the 10k PBMC data with Cell Multiplexing
+      - test_10x_60k_pbmc_cmo_tcr_gex_fastq_\{1,2\}_gz: 5' V2 HT gene expression FASTQs from 60k PBMC data with Cell Multiplexing
+      - test_10x_60k_pbmc_cmo_tcr_ab_fastq_\{1,2\}_gz: 5' V2 HT Feature Barcode & Cell Multiplexing FASTQs from 60k PBMC data (files contain both)
+      - test_10x_60k_pbmc_cmo_tcr_tcr_fastq_\{1,2\}_gz: 5' V2 HT T-cell V(D)J FASTQs from 60k PBMC data with Cell Multiplexing
       - test_10x_5k_cmvpos_tcells_ab_fastq_\{1,2\}_gz: Antibody Capture FASTQs from the 5k CMV+ T-cell dataset
       - test_10x_5k_cmvpos_tcells_gex1_fastq_\{1,2\}_gz: Gene expression FASTQs from the 5k CMV+ T-cell dataset
       - test_10x_5k_cmvpos_tcells_vdj_fastq_\{1,2\}_gz: V(D)J FASTQs from the 5k CMV+ T-cell dataset
