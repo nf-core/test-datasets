@@ -1,38 +1,25 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# test-datasets: `fastqrepair`
+
+This branch contains test data to be used for automated testing with the [nf-core/fastqrepair](https://github.com/nf-core/fastqrepair) pipeline.
+
+## Content of this repository
 Test data to be used for automated testing with the nf-core pipelines
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+### Custom test-dataset
 
-## Introduction
+>`testdata/test_30reads_R[1/2].fastq.gz`: 30 paired-end reads with `R1` corrupted and `R2` not corrupted and where:
+##### R1
+- The quality string of the first read (`@NS500299:185:HK57NBGXG:1:11101:16144:1046 2:N:0:CGAGGCTG`) has two nucleaotides less than the sequence string
+- Three are blank lines among the first three reads (not an error tough)
+- The third read's name begins with "test " instead of "@" (`test @NS500299:185:HK57NBGXG:1:11101:18734:1046 2:N:0:CGAGGCTG`)
+##### R2
+- It does not contains the first four reads (i.e., `@NS500299:185:HK57NBGXG:1:11101:16144:1046 2:N:0:CGAGGCTG`, `@NS500299:185:HK57NBGXG:1:11101:19673:1046 2:N:0:CGAGGCTG`, `@NS500299:185:HK57NBGXG:1:11101:18734:1046 2:N:0:CGAGGCTG`, `@NS500299:185:HK57NBGXG:1:11101:16513:1046 2:N:0:CGAGGCTG`)
+- Fifth and sixth reads are exchanged (if compared with `R1`'s reads order)
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+### [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE))
+>`testdata/quality_mismatch.fastq`: fastq where 2nd read has len(sequence) != len(quality)
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+>`testdata/truncated_clean.fastq`: fastq where 3rd read is truncated right after the sequence
 
-## Documentation
-
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+>`testdata/truncated_halfway.fastq`: fastq where 2nd read is truncatd half-way through the sequence
