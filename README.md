@@ -179,7 +179,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test2.targets.tsv.gz' from 'test2.vcf.gz' using bcftools query and bgzip
       - 'sv_query.vcf.gz': a VCF file containing structural variants in chromosome 22
       - 'sv_query.vcf.gz.tbi': The index of the sv_query.vcf.gz file
-      - '\*.gz': generated from VCF files using bgzip
+      - '\*.vcf.gz': generated from VCF files using bgzip
+      - 'test.bcf.gz': generated from test.vcf using bcftools
       - '.tbi': generated from '.vcf.gz' files using `tabix -p vcf -f <file>`
       - ped
         - 'justhusky_minimal.vcf.gz': minimal combination example of VCF/PED file
