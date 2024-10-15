@@ -1,0 +1,133 @@
+9606	|	Homo sapiens Linnaeus, 1758	|		|	authority	|
+9606	|	Homo sapiens	|		|	scientific name	|
+9606	|	human	|		|	genbank common name	|
+9605	|	Homo Linnaeus, 1758	|		|	authority	|
+9605	|	Homo	|		|	scientific name	|
+9605	|	humans	|		|	common name	|
+207598	|	Homininae	|		|	scientific name	|
+207598	|	Homo/Pan/Gorilla group	|		|	synonym	|
+9604	|	great apes	|		|	genbank common name	|
+9604	|	Hominidae Gray, 1825	|		|	authority	|
+9604	|	Hominidae	|		|	scientific name	|
+9604	|	Pongidae	|		|	synonym	|
+314295	|	ape	|	ape <primates>	|	common name	|
+314295	|	apes	|		|	genbank common name	|
+314295	|	Hominoidea	|		|	scientific name	|
+9526	|	Catarrhini	|		|	scientific name	|
+314293	|	Anthropoidea	|		|	synonym	|
+314293	|	Simiiformes	|		|	scientific name	|
+376913	|	Haplorrhini	|		|	scientific name	|
+9443	|	Primata	|		|	synonym	|
+9443	|	primate	|		|	equivalent name	|
+9443	|	primates	|		|	blast name	|
+9443	|	Primates Linnaeus, 1758	|		|	authority	|
+9443	|	Primates	|		|	scientific name	|
+314146	|	Euarchontoglires	|		|	scientific name	|
+1437010	|	Boreoeutheria	|		|	scientific name	|
+1437010	|	Boreotheria	|		|	synonym	|
+9347	|	eutherian mammals	|		|	common name	|
+9347	|	Eutheria	|		|	scientific name	|
+9347	|	Placentalia	|		|	synonym	|
+9347	|	placental mammals	|		|	common name	|
+9347	|	placentals	|	placentals <blast name>	|	blast name	|
+9347	|	placentals	|	placentals <genbank common name>	|	genbank common name	|
+32525	|	Theria Parker & Haswell, 1897	|		|	authority	|
+32525	|	Theria	|	Theria <mammals>	|	scientific name	|
+40674	|	Mammalia	|		|	scientific name	|
+40674	|	mammals	|	mammals <blast name>	|	blast name	|
+40674	|	mammals	|	mammals <genbank common name>	|	genbank common name	|
+32524	|	Amniota	|		|	scientific name	|
+32524	|	amniotes	|		|	genbank common name	|
+32523	|	Tetrapoda	|		|	scientific name	|
+32523	|	tetrapods	|		|	genbank common name	|
+1338369	|	Dipnotetrapodomorpha	|		|	scientific name	|
+8287	|	Sarcopterygii	|		|	scientific name	|
+117571	|	bony vertebrates	|		|	genbank common name	|
+117571	|	Euteleostomi	|		|	scientific name	|
+117570	|	Teleostomi	|		|	scientific name	|
+7776	|	Gnathostomata	|	Gnathostomata <vertebrates>	|	scientific name	|
+7776	|	jawed vertebrates	|		|	genbank common name	|
+7742	|	Vertebrata Cuvier, 1812	|		|	authority	|
+7742	|	Vertebrata	|	Vertebrata <vertebrates>	|	scientific name	|
+7742	|	vertebrates	|	vertebrates <blast name>	|	blast name	|
+7742	|	vertebrates	|	vertebrates <genbank common name>	|	genbank common name	|
+89593	|	Craniata	|	Craniata <chordates>	|	scientific name	|
+7711	|	Chordata	|		|	scientific name	|
+7711	|	chordates	|	chordates <blast name>	|	blast name	|
+7711	|	chordates	|	chordates <genbank common name>	|	genbank common name	|
+33511	|	deuterostomes	|		|	common name	|
+33511	|	Deuterostomia	|		|	scientific name	|
+33213	|	Bilateria	|		|	scientific name	|
+6072	|	Eumetazoa	|		|	scientific name	|
+33208	|	Animalia	|		|	synonym	|
+33208	|	animals	|		|	blast name	|
+33208	|	metazoans	|		|	genbank common name	|
+33208	|	Metazoa	|		|	scientific name	|
+33208	|	multicellular animals	|		|	common name	|
+33154	|	Fungi/Metazoa group	|		|	synonym	|
+33154	|	Opisthokonta Cavalier-Smith 1987	|		|	authority	|
+33154	|	Opisthokonta	|		|	scientific name	|
+33154	|	opisthokonts	|		|	synonym	|
+2759	|	Eucarya	|		|	synonym	|
+2759	|	Eucaryotae	|		|	synonym	|
+2759	|	eucaryotes	|		|	genbank common name	|
+2759	|	Eukarya	|		|	synonym	|
+2759	|	Eukaryotae	|		|	synonym	|
+2759	|	Eukaryota	|		|	scientific name	|
+2759	|	eukaryotes	|	eukaryotes <blast name>	|	blast name	|
+2759	|	eukaryotes	|	eukaryotes <common name>	|	common name	|
+131567	|	biota	|		|	synonym	|
+131567	|	cellular organisms	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|
+5082	|	ATCC 10110	|	ATCC 10110 <culture from type material>	|	type material	|
+5082	|	CBS 221.30	|	CBS 221.30 <culture from neotype>	|	type material	|
+5082	|	CECT 2905	|	CECT 2905 <culture from type material>	|	type material	|
+5082	|	IMI 24313	|	IMI 24313 <type material>	|	type material	|
+5082	|	NRRL 849	|	NRRL 849 <culture from type material>	|	type material	|
+5082	|	Penicillium roqueforti	|		|	scientific name	|
+5082	|	Penicillium roqueforti Sopp, 1912	|		|	authority	|
+5082	|	QM 1937	|	QM 1937 <culture from type material>	|	type material	|
+5073	|	Eupenicillium	|		|	synonym	|
+5073	|	Penicillium Link, 1809	|		|	authority	|
+5073	|	Penicillium	|		|	scientific name	|
+1131492	|	Aspergillaceae Link, 1826	|		|	authority	|
+1131492	|	Aspergillaceae	|		|	scientific name	|
+5042	|	Elaphomycetales	|		|	synonym	|
+5042	|	Eurotiales	|		|	scientific name	|
+5042	|	green and blue molds	|		|	genbank common name	|
+451871	|	Eurotiomycetidae	|		|	scientific name	|
+147545	|	bitunicate ascomycetes	|	bitunicate ascomycetes <Eurotiomycetes>	|	in-part	|
+147545	|	Chaetothyriomycetes	|		|	includes	|
+147545	|	Eurotiomycetes	|		|	scientific name	|
+147545	|	Loculoascomycetes	|	Loculoascomycetes <Eurotiomycetes>	|	in-part	|
+147545	|	Plectomycetes	|	Plectomycetes <ascomycete fungi,Eurotiomycetes>	|	in-part	|
+716546	|	leotiomyceta	|		|	scientific name	|
+147538	|	Euascomycota	|		|	synonym	|
+147538	|	filamentous ascomycetes	|		|	genbank common name	|
+147538	|	Pezizomycotina	|		|	scientific name	|
+716545	|	saccharomyceta	|		|	scientific name	|
+4890	|	ascomycete fungi	|		|	blast name	|
+4890	|	ascomycetes	|		|	genbank common name	|
+4890	|	Ascomycota	|		|	scientific name	|
+4890	|	sac fungi	|		|	common name	|
+451864	|	Dikarya	|		|	scientific name	|
+4751	|	fungi	|		|	blast name	|
+4751	|	Fungi	|		|	scientific name	|
+4751	|	Mycota	|		|	synonym	|
+33154	|	Fungi/Metazoa group	|		|	synonym	|
+33154	|	Opisthokonta Cavalier-Smith 1987	|		|	authority	|
+33154	|	Opisthokonta	|		|	scientific name	|
+33154	|	opisthokonts	|		|	synonym	|
+2759	|	Eucarya	|		|	synonym	|
+2759	|	Eucaryotae	|		|	synonym	|
+2759	|	eucaryotes	|		|	genbank common name	|
+2759	|	Eukarya	|		|	synonym	|
+2759	|	Eukaryotae	|		|	synonym	|
+2759	|	Eukaryota	|		|	scientific name	|
+2759	|	eukaryotes	|	eukaryotes <blast name>	|	blast name	|
+2759	|	eukaryotes	|	eukaryotes <common name>	|	common name	|
+131567	|	biota	|		|	synonym	|
+131567	|	cellular organisms	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|

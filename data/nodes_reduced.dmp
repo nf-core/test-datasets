@@ -1,0 +1,48 @@
+9606	|	9605	|	species	|	HS	|	5	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|	code compliant; specified	|
+9605	|	207598	|	genus	|		|	5	|	1	|	1	|	1	|	2	|	1	|	0	|	0	|	code compliant	|
+207598	|	9604	|	subfamily	|		|	5	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|	code compliant	|
+9604	|	314295	|	family	|		|	5	|	1	|	1	|	1	|	2	|	1	|	0	|	0	|	code compliant	|
+314295	|	9526	|	superfamily	|		|	5	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|	code compliant	|
+9526	|	314293	|	parvorder	|		|	5	|	1	|	1	|	1	|	2	|	1	|	0	|	0	|	code compliant	|
+314293	|	376913	|	infraorder	|		|	5	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|	code compliant	|
+376913	|	9443	|	suborder	|		|	5	|	1	|	1	|	1	|	2	|	1	|	0	|	0	|	code compliant	|
+9443	|	314146	|	order	|		|	5	|	0	|	1	|	1	|	2	|	1	|	0	|	0	|	code compliant	|
+314146	|	1437010	|	superorder	|		|	2	|	1	|	1	|	1	|	2	|	1	|	0	|	0	|	code compliant	|
+1437010	|	9347	|	clade	|		|	2	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|		|
+9347	|	32525	|	clade	|		|	2	|	1	|	1	|	1	|	2	|	1	|	0	|	0	|		|
+32525	|	40674	|	clade	|		|	2	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|		|
+40674	|	32524	|	class	|		|	2	|	0	|	1	|	1	|	2	|	1	|	0	|	0	|	code compliant	|
+32524	|	32523	|	clade	|		|	10	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|		|
+32523	|	1338369	|	clade	|		|	10	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|		|
+1338369	|	8287	|	clade	|		|	10	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|		|
+8287	|	117571	|	superclass	|		|	10	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|	code compliant	|
+117571	|	117570	|	clade	|		|	10	|	1	|	1	|	1	|	2	|	1	|	0	|	0	|		|
+117570	|	7776	|	clade	|		|	10	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|		|
+7776	|	7742	|	clade	|		|	10	|	1	|	1	|	1	|	2	|	1	|	1	|	0	|		|
+7742	|	89593	|	clade	|		|	10	|	0	|	1	|	1	|	2	|	1	|	0	|	0	|		|
+89593	|	7711	|	subphylum	|		|	10	|	0	|	1	|	1	|	2	|	0	|	0	|	0	|	code compliant	|
+7711	|	33511	|	phylum	|		|	1	|	1	|	1	|	1	|	5	|	1	|	0	|	0	|	code compliant	|
+33511	|	33213	|	clade	|		|	1	|	1	|	1	|	1	|	5	|	1	|	1	|	0	|		|
+33213	|	6072	|	clade	|		|	1	|	1	|	1	|	1	|	5	|	1	|	1	|	0	|		|
+6072	|	33208	|	clade	|		|	1	|	1	|	1	|	1	|	5	|	0	|	1	|	0	|		|
+33208	|	33154	|	kingdom	|		|	1	|	0	|	1	|	1	|	1	|	1	|	0	|	0	|	code compliant	|
+33154	|	2759	|	clade	|		|	4	|	0	|	1	|	1	|	1	|	1	|	1	|	0	|		|
+2759	|	131567	|	superkingdom	|		|	1	|	0	|	1	|	0	|	1	|	0	|	0	|	0	|		|
+131567	|	1	|	no rank	|		|	8	|	1	|	1	|	1	|	0	|	1	|	1	|	0	|		|
+1	|	1	|	no rank	|		|	8	|	0	|	1	|	0	|	0	|	0	|	0	|	0	|		|
+5082	|	5073	|	species	|	PR	|	4	|	1	|	1	|	1	|	4	|	1	|	1	|	0	|	code compliant; specified	|
+5073	|	1131492	|	genus	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+1131492	|	5042	|	family	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+5042	|	451871	|	order	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+451871	|	147545	|	subclass	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+147545	|	716546	|	class	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+716546	|	147538	|	clade	|		|	4	|	1	|	1	|	1	|	4	|	1	|	1	|	0	|		|
+147538	|	716545	|	subphylum	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+716545	|	4890	|	clade	|		|	4	|	1	|	1	|	1	|	4	|	1	|	1	|	0	|		|
+4890	|	451864	|	phylum	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+451864	|	4751	|	subkingdom	|		|	4	|	1	|	1	|	1	|	4	|	1	|	0	|	0	|	code compliant	|
+4751	|	33154	|	kingdom	|		|	4	|	0	|	1	|	1	|	4	|	0	|	0	|	0	|	code compliant	|
+33154	|	2759	|	clade	|		|	4	|	0	|	1	|	1	|	1	|	1	|	1	|	0	|		|
+2759	|	131567	|	superkingdom	|		|	1	|	0	|	1	|	0	|	1	|	0	|	0	|	0	|		|
+131567	|	1	|	no rank	|		|	8	|	1	|	1	|	1	|	0	|	1	|	1	|	0	|		|
+1	|	1	|	no rank	|		|	8	|	0	|	1	|	0	|	0	|	0	|	0	|	0	|		|
