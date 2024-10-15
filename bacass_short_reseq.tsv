@@ -1,0 +1,4 @@
+ID	R1	R2	LongFastQ	Fast5	GenomeSize
+ERR044595	https://github.com/nf-core/test-datasets/raw/bacass/ERR044595_1M_1.fastq.gz	https://github.com/nf-core/test-datasets/raw/bacass/ERR044595_1M_2.fastq.gz	NA	NA	2.8m
+ERR064912	https://github.com/nf-core/test-datasets/raw/bacass/ERR064912_1M_1.fastq.gz	https://github.com/nf-core/test-datasets/raw/bacass/ERR064912_1M_2.fastq.gz	NA	NA	2.8m
+ERR044595	https://github.com/nf-core/test-datasets/raw/bacass/r-ERR044595_1M_1.fastq.gz	https://github.com/nf-core/test-datasets/raw/bacass/r-ERR044595_1M_2.fastq.gz	NA	NA	2.8m
