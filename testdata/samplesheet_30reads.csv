@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2
+test_30reads,https://raw.githubusercontent.com/nf-core/test-datasets/fastqrepair/testdata/test_30reads_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/fastqrepair/testdata/test_30reads_R2.fastq.gz

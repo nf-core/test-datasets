@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+quality_mismatch,https://raw.githubusercontent.com/nf-core/test-datasets/fastqrepair/testdata/quality_mismatch.fastq,
+truncated_clean,https://raw.githubusercontent.com/nf-core/test-datasets/fastqrepair/testdata/truncated_clean.fastq,
+truncated_halfway,https://raw.githubusercontent.com/nf-core/test-datasets/fastqrepair/testdata/truncated_halfway.fastq,
