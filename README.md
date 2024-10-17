@@ -1,4 +1,5 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+
 Test data to be used for automated testing with the nf-core pipelines
 
 > ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
@@ -13,8 +14,8 @@ The principle for nf-core test data is as small as possible, as large as necessa
 
 nf-core/test-datasets comes with documentation in the `docs/` directory:
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
+2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
 ## Downloading test data
 
@@ -41,15 +42,26 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 
 ### FASTA files
 
-FASTA reference files used for building databases are copies of the nf-core/modules test dataset files (`sarscov2` and `haemophilus_influenzae` files) as of December 2023. 
+FASTA reference files used for building databases are copies of the nf-core/modules test dataset files (`sarscov2` and `haemophilus_influenzae` files) as of December 2023.
 
 - [sarscov2.fasta](https://github.com/nf-core/test-datasets/blob/0d5006780e17a3b11a36437d220c372c2e6e4ed0/data/genomics/sarscov2/genome/genome.fasta)
 - [sarscov2.faa](https://github.com/nf-core/test-datasets/blob/89f6476aa0006451c1e9ea789ce4e4173c892319/data/genomics/sarscov2/genome/proteome.fasta)
 - [haemophilus_influenzae.fna.gz](https://github.com/nf-core/test-datasets/blob/575e27aa850e186d4bcf85afc5572648aa35f2f4/data/genomics/prokaryotes/haemophilus_influenzae/genome/genome.fna.gz)
-
 
 ### taxonomy files
 
 These are NCBI taxdump re-constructed files, where the entries only include those of the two FASTA files above (rather than the entire tax dump).
 
 - Prot taxdump: as of December 2023
+
+## Broken Samplesheets
+
+To help improve schema checking, we've taking then main `test.csv`, and added a few variants which have various errors.
+
+Each file _should_ fail and give an error message from nf-schema.
+
+- `samplesheets/broken/test_duplicate_id_and_path.csv`: has cells in both `id` and `fasta_aa` duplicated when they should be unique
+- `samplesheets/broken/test_duplicate_id_only.csv`: has cells in only `id` duplicated, when all cells should be unique
+- `samplesheets/broken/test_missing_both_paths.csv`: has a row where both required `fasta_dna` and `fasta_aa` paths are missing
+- `samplesheets/broken/test_missing_required_column.csv`: missing the required `taxid` column
+- `samplesheets/broken/test_non_existent_file.csv`: has a path to a `fasta_dna` filepath that doesn't exist

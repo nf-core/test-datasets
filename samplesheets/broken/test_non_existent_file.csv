@@ -1,0 +1,3 @@
+id,taxid,fasta_dna,fasta_aa
+Severe_acute_respiratory_syndrome_coronavirus_2,2697049,https://raw.githubusercontent.com/nf-core/test-datasets/createtaxdb/data/fasta/sarscov2.fasta,https://raw.githubusercontent.com/nf-core/test-datasets/createtaxdb/data/fasta/sarscov2.faa
+Haemophilus_influenzae,727,https://raw.githubusercontent.com/nf-core/test-datasets/createtaxdb/data/fasta/haemophilus_influenzaexxxxxx.fna.gz,
