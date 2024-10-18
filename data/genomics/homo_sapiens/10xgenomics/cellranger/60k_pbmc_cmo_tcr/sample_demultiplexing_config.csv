@@ -1,0 +1,15 @@
+[gene-expression]
+reference,/path/to/cellranger/prebuilt/human/refdata-gex-GRCh38-2020-A/
+cmo-set,/path/to/working-directory/demultiplexing/5p_hashing_demux_cmo-set.csv
+
+[libraries]
+fastq_id,fastqs,feature_types
+PBMC-ALL_60k_universal_HashAB1-4_BL_4tags_Rep1_gex,Path/to/GEX/FASTQs,Gene Expression
+PBMC-ALL_60k_universal_HashAB1-4_BL_4tags_Rep1_ab,Path/to/AB/FASTQs,Multiplexing Capture
+
+[samples]
+sample_id,cmo_ids
+Donor1_healthy,Hash-tag1
+Donor2_healthy,Hash-tag2
+Donor3_ALLpatient,Hash-tag3
+Donor4_ALLpatient,Hash-tag4

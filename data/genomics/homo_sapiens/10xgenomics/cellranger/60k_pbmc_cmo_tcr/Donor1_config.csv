@@ -1,0 +1,17 @@
+[gene-expression]
+reference,working-directory/refdata-gex-GRCh38-2020-A/
+force-cells,11638
+check-library-compatibility,false
+
+[feature]
+reference,working-directory/final-analysis/feature_ref.csv
+
+[vdj]
+reference,working-directory/final-analysis/refdata-cellranger-vdj-GRCh38-alts-ensembl-7.0.0
+
+[libraries]
+fastq_id,fastqs,feature_types
+bamtofastq,working-directory/bamtofastq/Donor1_healthy/demultiplexed_samples_0_1_HW7KMDSX3,Gene Expression
+PBMC_60k_10x_4tags_Rep1_Ab,working-directory/fastqs/ab_fastq,Antibody Capture
+PBMC_60k_10x_4tags_Rep1_TCR,working-directory/fastqs/tcr_fastq,VDJ-T
+PBMC_60k_10x_4tags_Rep1_BCR,working-directory/fastqs/bcr_fastq,VDJ-B
