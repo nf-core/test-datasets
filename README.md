@@ -639,6 +639,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - nucl_gb.accession2taxid: A decompressed NCBI nucl_gb.accession2taxid.tar.gz file from 2024-02-03 filtered to just the SARS-CoV2 and _Haemophilus influenzae_ genomes under `metagenome/fasta/`
       - misc
         - nucl2tax.map: A simplified variant of nucl_gb.accession2taxid, required by tools such as CENTRIFUGE
+        - sink_taxid.csv: csv TAXID table single sample, directly from https://raw.githubusercontent.com/maxibor/sourcepredict/master/data/test/dog_test_sink_sample.csv
+        - sources_taxid.csv: csv TAXID table of 20 samples, subsampled from https://raw.githubusercontent.com/maxibor/sourcepredict/master/data/modern_gut_microbiomes_sources.csv
+        - sources_labels.csv: csv table with sample ids and sample source, subsampled from https://raw.githubusercontent.com/maxibor/sourcepredict/master/data/modern_gut_microbiomes_labels.csv
       - taxdump
         - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
         - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
