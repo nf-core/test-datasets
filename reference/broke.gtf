@@ -1,0 +1,13 @@
+chr1	source	gene	1000	5000	.	+	.	gene_id "gene1";
+chr1	source	transcript	1000	5000	.	+	.	gene_id "gene1"; transcript_id "transcript1";
+chr1	source	exon	1000	2000	.	+	.	gene_id "gene1"; transcript_id "transcript1"; exon_number "1";
+chr1	source	exon	1500	2500	.	+	.	gene_id "gene1"; transcript_id "transcript1"; exon_number "2";
+chr1	source	CDS	1000	1500	.	+	0	gene_id "gene1"; transcript_id "transcript1"; exon_number "1";
+chr1	source	CDS	1500	2000	.	+	0	gene_id "gene1"; transcript_id "transcript1"; exon_number "2";
+
+chr1	source	gene	6000	9000	.	+	.	gene_id "gene2";
+chr1	source	transcript	6000	9000	.	+	.	gene_id "gene2"; transcript_id "transcript2";
+chr1	source	exon	6000	7000	.	+	.	gene_id "gene2"; transcript_id "transcript2"; exon_number "1";
+chr1	source	exon	6500	8000	.	+	.	gene_id "gene2"; transcript_id "transcript2"; exon_number "2";
+chr1	source	CDS	6000	6500	.	+	0	gene_id "gene2"; transcript_id "transcript2"; exon_number "1";
+chr1	source	CDS	6500	7000	.	+	0	gene_id "gene2"; transcript_id "transcript2"; exon_number "2";
