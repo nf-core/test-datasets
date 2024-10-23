@@ -525,7 +525,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - txt:
       - filelist.txt: A TAMA merge filelist file. It's a 4 columns (bed file, cap status, merging order, id) file listing bed files to merge. The file listed are alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.bed alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.2.bed.
     - vcf:
-      - NA03697B2_new.pbmm2.repeats.vcf.gz: VCF file associated with the NA03697B2_downsampled.pbmm2.repeats.bam BAM file, generated from PacBio PBSV
+      - NA03697B2_new.pbmm2.repeats.vcf.gz: VCF file associated with the NA03697B2_downsampled.pbmm2.repeats.bam BAM file, generated from PacBio PBSV (version 2.9.0 - default settings) 
       - NA03697B2_downsampled.pbmm2.repeats.vcf.gz: Index for NA03697B2_downsampled.pbmm2.repeats.vcf.gz
    - popgen:
     - plink_simulated.bed: case-control simulated variants dataset in PLINK binary format
