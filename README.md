@@ -648,6 +648,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - sink_taxid.csv: csv TAXID table single sample, directly from https://github.com/maxibor/sourcepredict/blob/bcaf000c3d91d0aaf9fbe25c7218348174a2e0b3/data/test/dog_test_sink_sample.csv
         - sources_taxid.csv: csv TAXID table of 20 samples, subsampled from https://github.com/maxibor/sourcepredict/blob/bcaf000c3d91d0aaf9fbe25c7218348174a2e0b3/data/modern_gut_microbiomes_sources.csv
         - sources_labels.csv: csv table with sample ids and sample source, subsampled from https://github.com/maxibor/sourcepredict/blob/bcaf000c3d91d0aaf9fbe25c7218348174a2e0b3/data/modern_gut_microbiomes_labels.csv
+        - taxa_sqlite.xz: taxa.sqlite database file downloaded with ete3 (v3.1.3), compressed with xz
+        - taxa_sqlite_traverse.pkl: taxa.sqlite.traverse.pkl file downloaded with ete3 (v3.1.3)
       - taxdump
         - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
         - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
