@@ -1,0 +1,5 @@
+id,name,read,pattern,sequence,feature_type
+Hash-tag1,Hash-tag1,R2,^NNNNNNNNNN(BC)NNNNNNNNN,GTCAACTCTTTAGCG,Multiplexing Capture
+Hash-tag2,Hash-tag2,R2,^NNNNNNNNNN(BC)NNNNNNNNN,TGATGGCCTATTGGG,Multiplexing Capture
+Hash-tag3,Hash-tag3,R2,^NNNNNNNNNN(BC)NNNNNNNNN,TTCCGCCTCTCTTTG,Multiplexing Capture
+Hash-tag4,Hash-tag4,R2,^NNNNNNNNNN(BC)NNNNNNNNN,AGTAAGTTCAGCGTA,Multiplexing Capture
