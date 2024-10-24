@@ -197,7 +197,7 @@ rm *dmp *txt *gz *prt *zip
 
 KrakenUniq version 1.0.0
 
-> ⚠️  This database _does not_ use the specified files used in the other databases, as this built into a database that was tool large.
+> ⚠️ This database _does not_ use the specified files used in the other databases, as this built into a database that was tool large.
 
 This database includes the SARS-CoV2 genome used on the nf-core/modules test-datasets repository (NCBI Accession: MT192765.1).
 
@@ -221,12 +221,11 @@ mkdir gtdb-genomes
 ## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder gtdb-genomes.
 
 ## Rename the file for Penicillium roqueforti to match the seqid2taxid.map file
-mv GCF_015533775.1_ASM1553377v1_genomic.fna.gz NW_024067565.1.fna.gz 
+mv GCF_015533775.1_ASM1553377v1_genomic.fna.gz NW_024067565.1.fna.gz
 
 kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-n10-l150 -I gtdb-genomes
-kmcp index -f 0.3 -n 1 -j 32 -I tmp-k21-n10-l150 -O gtdb.kmcp 
+kmcp index -f 0.3 -n 1 -j 32 -I tmp-k21-n10-l150 -O gtdb.kmcp
 ```
-
 
 ## Taxprofiler AWS Full Test specific-information
 
@@ -237,13 +236,13 @@ The main AWS full test data used for nf-core/taxprofiler is from [Meslier et al.
 They were selected as a benchmarking dataset containing a semi-complex microbial community with strains that have known reference genomes, and with multiple sequencing runs one of sample of the Illumina dataset. ENA Experiment IDs are as follows
 
 - ONT MiniION R9
-    - ERX9314125
-    - ERX9314126
-    - ERR9765782
+  - ERX9314125
+  - ERX9314126
+  - ERR9765782
 - Illumina HiSeq 3000
-    - ERX9314116
-    - ERX9314117
-    - ERX9314118 (x2 runs)
+  - ERX9314116
+  - ERX9314117
+  - ERX9314118 (x2 runs)
 
 FASTQ files for the `samplesheet_full.tsv` are stored on the [EBI ENA servers](https://www.ebi.ac.uk/ena/browser/view/PRJEB52977)
 
@@ -536,7 +535,6 @@ awk 'FNR==NR {f2[$1]=$2;next} /^>/ { for (i in f2) { if (index(substr($1,2), i))
 
 We can copy the previously downloaded NCBI taxonomy files into the Kaiju working directory
 
-
 ```bash
 cp nodes.dmp names.dmp meslier2022/kaiju/
 ```
@@ -688,6 +686,23 @@ KAIJU
 ```bash
 rm meslier2022/kaiju/*.{bwt,sa}
 ```
+
+## Broken Samplesheets
+
+We also hold 'broken' samplesheets for testing input schema validation.
+
+- `broken_samplesheets/test_database_duplicate_tool_db_name.csv`: duplicated rows to test the unique entires of `tool` and `db_name`
+- `broken_samplesheets/test_samplesheet_duplicate_fasta.csv`: duplicated FASTA file to test the unique entry of `fasta`
+- `broken_samplesheets/test_samplesheet_duplicate_fastq.csv`: duplicated FASTQ file to test the unique entried of `fastq_1` or `fastq_2`
+- `broken_samplesheets/test_samplesheet_duplicate_sample_run_accession.csv`: duplicated row to test the unique entries of `sample` and `run_accession`
+- `broken_samplesheets/test_samplesheet_sample_with_space.csv`: add a space to the `sample` entry
+- `broken_samplesheets/test_database_missing_tool.csv`: missing `tool` entry in the database
+- `broken_samplesheets/test_database_missing_db_name.csv`: missing `db_name` entry in the database
+- `broken_samplesheets/test_database_missing_db_path.csv`: missing `db_path` entry in the database
+- `broken_samplesheets/test_database_missing_db_type.csv`: missing `db_type` entry to test empty values in the database
+- `broken_samplesheets/test_samplesheet_missing_sample.csv`: missing `sample` entry in the samplesheet
+- `broken_samplesheets/test_samplesheet_missing_run_accession.csv`: missing `run_accession.csv` entry in the samplesheet
+- `broken_samplesheets/test_samplesheet_missing_instrument_platform.csv`: missing `instrument_platform` column in the samplesheet
 
 ## Support
 
