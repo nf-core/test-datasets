@@ -693,7 +693,7 @@ We also hold 'broken' samplesheets for testing input schema validation.
 
 - `broken_samplesheets/test_database_duplicate_tool_db_name.csv`: duplicated rows to test the unique entires of `tool` and `db_name`
 - `broken_samplesheets/test_samplesheet_duplicate_fasta.csv`: duplicated FASTA file to test the unique entry of `fasta`
-- `broken_samplesheets/test_samplesheet_duplicate_fastq.csv`: duplicated FASTQ file to test the unique entried of `fastq_1` or `fastq_2`
+- `broken_samplesheets/test_samplesheet_duplicate_fastq.csv`: duplicated FASTQ file to test the unique entries of `fastq_1` or `fastq_2`
 - `broken_samplesheets/test_samplesheet_duplicate_sample_run_accession.csv`: duplicated row to test the unique entries of `sample` and `run_accession`
 - `broken_samplesheets/test_samplesheet_sample_with_space.csv`: add a space to the `sample` entry
 - `broken_samplesheets/test_database_missing_tool.csv`: missing `tool` entry in the database
