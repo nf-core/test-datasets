@@ -1,0 +1,25 @@
+{
+    "experiment": "DnaToFloatExperiment",
+    "transform": [
+        {
+            "column_name": "hello:input:dna",
+            "name": "UniformTextMasker",
+            "params": {"probability": 0.1, "seed": 0}
+        },
+        {
+            "column_name": "hola:label:float",
+            "name": "GaussianNoise",
+            "params": {"mean": 0.5, "std": 0.1, "seed": 0}
+        },
+        {
+            "column_name": "hello:input:dna",
+            "name": "ReverseComplement",
+            "params": {}
+        }
+    ],
+    "split": {
+        "name": "RandomSplitter",
+        "params": {"split": [0.5, 0.5, 0], "seed": 0}
+    }
+}
+
