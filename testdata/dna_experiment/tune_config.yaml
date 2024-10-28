@@ -1,0 +1,46 @@
+model_params:
+  kernel_size:
+    space: [3]
+    mode: choice
+  pool_size:
+    space: [2]
+    mode: choice
+
+optimizer_params:
+  method:
+      space: ['Adam']
+      mode: choice
+  lr:
+    space: [0.0001, 0.1]
+    mode: loguniform
+
+data_params:
+  batch_size:
+    space: [8, 16]
+    mode: choice
+
+loss_params:
+  loss_fn1:
+    space: ['MSELoss']
+    mode: choice
+  loss_fn2:
+    space: ['SmoothL1Loss']
+    mode: choice
+
+tune:
+  config_name: "tune_config"
+  tune_params:
+    metric: "val_loss"
+    mode: "min"
+    num_samples: 3
+  scheduler:
+    name: "FIFOScheduler"
+    params: {}
+  run_params:
+    stop:
+      training_iteration: 3
+  step_size: 1
+  gpu_per_trial: 0
+  cpu_per_trial: 1
+
+seed: 42
