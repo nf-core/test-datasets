@@ -1,5 +1,5 @@
-species,refseq,fasta,gff
-Mycoplasmoides_fastidiosum,GCF_024498275.1,,
-Mycoplasmoides_gallisepticum,GCF_017654545.1,,
-Mycoplasmoides_pneumoniae,GCF_000733995.1,,
-Mycoplasmoides_genitalium,GCF_000027325.1,,
+species,refseq,fasta,gff,fastq
+Mycoplasmoides_fastidiosum,GCF_024498275.1,,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/fastq/GCF_024498275.1_ASM2449827v1_genomic.fna.fq.gz
+Mycoplasmoides_gallisepticum,GCF_017654545.1,,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/fastq/GCF_017654545.1_ASM1765454v1_genomic.fna.fq.gz
+Mycoplasmoides_pneumoniae,GCF_000733995.1,,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/fastq/GCF_000733995.1_ASM73399v1_genomic.fna.fq.gz
+Mycoplasmoides_genitalium,GCF_000027325.1,,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/fastq/GCF_000027325.1_ASM2732v1_genomic.fna.fq.gz
