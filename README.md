@@ -1,38 +1,26 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# Test data set provenance
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+This test data set was generated as test data for the NBISweden/Earth-Biogenome-Project-pilot 
+pipeline, located at
+https://github.com/NBISweden/Earth-Biogenome-Project-pilot/tree/main/tests/data/tiny
 
-## Introduction
+## Authors
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+- Guilherme Dias
+- Martin Pippel
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+## Provenance
 
-## Documentation
+- species: _Drosophila melanogaster_
+- PacBio HiFi data was downloaded from NBCI´s SRA [SRR10238607](https://www.ncbi.nlm.nih.gov/sra/SRR10238607)
+- Illumina HiC data was downloaded from NBCI´s SRA [SRR10512944](https://www.ncbi.nlm.nih.gov/sra/SRR10512944)
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+- PacBio HiFi data were randomly subsampled to 15X read coverage and assembled with [hifiasm version 0.19.8](https://github.com/chhylp123/hifiasm)
+- PacBio reads were mapped back to the genome assembly with minimap2
+- Illumina HiC reads were mapped back to the genome assembly with bwa mem
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+- PacBio and HiC reads were extracted from the alignment bam files:
+   - from a 2Mb region within a 28Mb contig
+   - a 20Kb gap was introduces at Position 1Mb and all PacBio and HiC reads that mapped into that region were filtered out
+   - HiC reads were further filtered down to 50%, representing a 38X coverage
 
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
