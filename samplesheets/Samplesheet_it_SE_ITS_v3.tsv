@@ -1,0 +1,4 @@
+sample	fastq_1
+it1	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/it-its_1.fastq.gz
+it2	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/it-its_2.fastq.gz
+it3	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/it-its_3.fastq.gz
