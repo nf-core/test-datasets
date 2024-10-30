@@ -10,11 +10,6 @@
             "column_name": "hola:label:float",
             "name": "GaussianNoise",
             "params": {"mean": 0.5, "std": 0.1, "seed": 0}
-        },
-        {
-            "column_name": "hello:input:dna",
-            "name": "ReverseComplement",
-            "params": {}
         }
     ],
     "split": {
