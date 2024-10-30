@@ -1,4 +1,4 @@
 ID	Sample	Condition	ReplicateFileName
-1	HepG2	1	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep1_small.mzML
-2	HepG2	1	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep2_small.mzML
-3	HepG2	1	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep3_small.mzML
+1	HepG2	A	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep1_small.mzML
+2	HepG2	A	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep2_small.mzML
+3	HepG2	A	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep3_small.mzML
