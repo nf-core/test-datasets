@@ -536,6 +536,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - plink_simulated.pgen: case-control simulated variants dataset in PLINK 2 binary format
     - plink_simulated.psam: case-control simulated variants dataset in PLINK 2 binary format
     - plink_simulated.pvar: case-control simulated variants dataset in PLINK 2 binary format
+  - svsig:
+    - NA03697B2_new.pbmm2.repeats.svsig.gz: structural variant file for NA03697B2_new.pbmm2.repeats.bam, created with PBSV discover version (2.9.0 default settings)
 
   - cooler:
 
