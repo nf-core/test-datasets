@@ -49,56 +49,58 @@ kraken2-build --db kraken2_hs22 --build
 
 #### `NC_045512.2/`
 
-* `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz)
-* `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz)
-* `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gtf.gz)
-* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the NC_045512.2 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
+-   `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz)
+-   `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gff.gz)
+-   `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.gtf.gz)
+-   `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the NC_045512.2 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
 
 #### `MN908947.3/`
 
-* `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.fna.gz)
-* `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gff.gz)
-* `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gtf.gz)
-* `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the MN908947.3 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
+-   `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.fna.gz)
+-   `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.gff.gz`: SARS-CoV2 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gff.gz)
+-   `GCA_009858895.3_ASM985889v3_genomic.<DOWNLOAD_DATE>.gtf.gz`: SARS-CoV2 genome GTF2.2 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/858/895/GCA_009858895.3_ASM985889v3/GCA_009858895.3_ASM985889v3_genomic.gtf.gz)
+-   `amplicon/`: ARTIC [V1](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V1), [V2](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V2) and [V3](https://github.com/artic-network/artic-ncov2019/tree/master/primer_schemes/nCoV-2019/V3) primer schema files relative to the MN908947.3 assembly. Files ending in `*.primer.fasta` were generated from the `.tsv` files in the repo.
+-   `nextclade_sars-cov-2_MN908947_2024-10-17--16_48_48Z.tar.gz`: A set of input data files required for Nextclade to run an analysis on SARS-CoV2. Previous format did not require `pathogen.json` file but from v3+ it is required. File was created with `nextclade dataset get -n sars-cov-2 --tag 2024-10-17--16-48-48Z`.
 
 #### `NC_063383.1`
 
-* `GCF_014621545.1_ASM1462154v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/621/545/GCF_014621545.1_ASM1462154v1/GCF_014621545.1_ASM1462154v1_genomic.fna.gz)
-* `GCF_014621545.1_ASM1462154v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/621/545/GCF_014621545.1_ASM1462154v1/GCF_014621545.1_ASM1462154v1_genomic.gff.gz)
+-   `GCF_014621545.1_ASM1462154v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/621/545/GCF_014621545.1_ASM1462154v1/GCF_014621545.1_ASM1462154v1_genomic.fna.gz)
+-   `GCF_014621545.1_ASM1462154v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/014/621/545/GCF_014621545.1_ASM1462154v1/GCF_014621545.1_ASM1462154v1_genomic.gff.gz)
+-   `nextclade_hMPXV_NC_063383.1_2024-08-27--21-28-04Z.tar.gz`: A set of input data files required for Nextclade to run an analysis on MPOX. Previous format did not require `pathogen.json` file but from v3+ it is required. File was created with `nextclade dataset get -n MPXV --tag 2024-08-27--21-28-04Z`.
 
 #### `ON563414.3`
 
-* `GCA_023516015.3_ASM2351601v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/516/015/GCA_023516015.3_ASM2351601v1/GCA_023516015.3_ASM2351601v1_genomic.fna.gz)
-* `GCA_023516015.3_ASM2351601v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/516/015/GCA_023516015.3_ASM2351601v1/GCA_023516015.3_ASM2351601v1_genomic.gff.gz)
+-   `GCA_023516015.3_ASM2351601v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/516/015/GCA_023516015.3_ASM2351601v1/GCA_023516015.3_ASM2351601v1_genomic.fna.gz)
+-   `GCA_023516015.3_ASM2351601v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/023/516/015/GCA_023516015.3_ASM2351601v1/GCA_023516015.3_ASM2351601v1_genomic.gff.gz)
 
 #### `MT903344.1`
 
-* `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.fna.gz)
-* `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.gff.gz)
+-   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.fna.gz)
+-   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.gff.gz)
 
 ### `fastq/illumina_sispa/`
 
-| file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
-|-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
-| SRR11140744_R1.fastq.gz |   10,092 |  2,284,737 |     100 |   175.5 |     251 |      747K | PE Illumina | Metagenomics       |
-| SRR11140744_R2.fastq.gz |   10,092 |  2,260,970 |     100 |   175.5 |     251 |      783K | PE Illumina | Metagenomics       |
-| SRR11140746_R1.fastq.gz |    7,196 |  1,609,884 |     100 |   175.5 |     251 |      554K | PE Illumina | Metagenomics       |
-| SRR11140746_R2.fastq.gz |    7,196 |  1,594,703 |     100 |   175.5 |     251 |      580K | PE Illumina | Metagenomics       |
-| SRR11140748_R1.fastq.gz |    8,447 |  1,918,541 |     100 |   175.5 |     251 |      650K | PE Illumina | Metagenomics       |
-| SRR11140748_R2.fastq.gz |    8,447 |  1,903,781 |     100 |   175.5 |     251 |      683K | PE Illumina | Metagenomics       |
-| SRR11140750_R1.fastq.gz |      369 |     81,898 |     100 |   175.5 |     251 |       40K | PE Illumina | Metagenomics       |
-| SRR11140750_R2.fastq.gz |      369 |     80,344 |     102 |   176.5 |     251 |       41K | PE Illumina | Metagenomics       |
+| file                    | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
+| ----------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
+| SRR11140744_R1.fastq.gz | 10,092   | 2,284,737 | 100     | 175.5   | 251     | 747K      | PE Illumina | Metagenomics  |
+| SRR11140744_R2.fastq.gz | 10,092   | 2,260,970 | 100     | 175.5   | 251     | 783K      | PE Illumina | Metagenomics  |
+| SRR11140746_R1.fastq.gz | 7,196    | 1,609,884 | 100     | 175.5   | 251     | 554K      | PE Illumina | Metagenomics  |
+| SRR11140746_R2.fastq.gz | 7,196    | 1,594,703 | 100     | 175.5   | 251     | 580K      | PE Illumina | Metagenomics  |
+| SRR11140748_R1.fastq.gz | 8,447    | 1,918,541 | 100     | 175.5   | 251     | 650K      | PE Illumina | Metagenomics  |
+| SRR11140748_R2.fastq.gz | 8,447    | 1,903,781 | 100     | 175.5   | 251     | 683K      | PE Illumina | Metagenomics  |
+| SRR11140750_R1.fastq.gz | 369      | 81,898    | 100     | 175.5   | 251     | 40K       | PE Illumina | Metagenomics  |
+| SRR11140750_R2.fastq.gz | 369      | 80,344    | 102     | 176.5   | 251     | 41K       | PE Illumina | Metagenomics  |
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
 ### `fastq/illumina_amplicon/`
 
-| file                    | num_seqs | sum_len    | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource      |
-|-------------------------|----------|------------|---------|---------|---------|-----------|-------------|--------------------|
-| sample1_R1.fastq.gz     |   27,721 |  8,285,732 |      35 |     168 |     301 |        4M | PE Illumina | Metagenomics       |
-| sample1_R2.fastq.gz     |   27,721 |  8,285,900 |      35 |     168 |     301 |        4M | PE Illumina | Metagenomics       |
-| sample2_R1.fastq.gz     |   21,481 |  6,416,734 |      35 |     168 |     301 |        3M | PE Illumina | Metagenomics       |
-| sample2_R2.fastq.gz     |   21,481 |  6,416,265 |      35 |     168 |     301 |        3M | PE Illumina | Metagenomics       |
+| file                | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
+| ------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
+| sample1_R1.fastq.gz | 27,721   | 8,285,732 | 35      | 168     | 301     | 4M        | PE Illumina | Metagenomics  |
+| sample1_R2.fastq.gz | 27,721   | 8,285,900 | 35      | 168     | 301     | 4M        | PE Illumina | Metagenomics  |
+| sample2_R1.fastq.gz | 21,481   | 6,416,734 | 35      | 168     | 301     | 3M        | PE Illumina | Metagenomics  |
+| sample2_R2.fastq.gz | 21,481   | 6,416,265 | 35      | 168     | 301     | 3M        | PE Illumina | Metagenomics  |
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
