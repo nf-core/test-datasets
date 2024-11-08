@@ -570,6 +570,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
+  
+  - scrnaseq:
+    - h5ad:
+      - pbmc1k.h5ad: Downloaded with `scanpy.datasets.pbmc3k()` and subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
 
 - mus_musculus
   - mageck
