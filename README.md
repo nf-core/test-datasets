@@ -527,7 +527,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - vcf:
       - NA03697B2_new.pbmm2.repeats.vcf.gz: VCF file associated with the NA03697B2_downsampled.pbmm2.repeats.bam BAM file, generated from PacBio PBSV (version 2.9.0 - default settings) 
       - NA03697B2_downsampled.pbmm2.repeats.vcf.gz: Index for NA03697B2_downsampled.pbmm2.repeats.vcf.gz
-   - popgen:
+  - popgen:
     - plink_simulated.bed: case-control simulated variants dataset in PLINK binary format
     - plink_simulated.fam: case-control simulated variants dataset in PLINK binary format
     - plink_simulated.bim: case-control simulated variants dataset in PLINK binary format
@@ -570,6 +570,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
+  
+  - scrnaseq:
+    - h5ad:
+      - pbmc1k.h5ad: Downloaded with `scanpy.datasets.pbmc3k()` and subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
 
 - mus_musculus
   - mageck
