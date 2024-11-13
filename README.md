@@ -61,9 +61,9 @@ Can't determine percentage of methylated Cs in unknown context (CN or CHN) if va
 
 Bismark completed in 0d 0h 0m 12s
 ```
-# The reference genomes of the lambda phage and pUC19
+# The reference sequences of the lambda phage and pUC19
 
-Apart from test data, this branch also contains the reference genomes and corresponding indexes for the Enterobacteria phage lambda and the pUC19 vector to be used by the [nf-core/methylseq](https://github.com/nf-core/methylseq) pipeline.
+Apart from test data, this branch also contains the reference sequences and corresponding indexes for the Enterobacteria phage lambda virus and the pUC19 vector to be used by the [nf-core/methylseq](https://github.com/nf-core/methylseq) pipeline.
 
 The lambda virus genome and pUC19 plasmid are used as unmethylated and fully methylated controls, respectively, to assess the efficiency of cytosine conversion (e.g., bisulfite or enzymatic) within the [nf-core/methylseq](https://github.com/nf-core/methylseq) pipeline.
 
