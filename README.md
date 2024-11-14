@@ -95,9 +95,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'ncbi_taxmap.zip': mini-NCBI taxonomy map prmiarily used for MaltExtract
     - 'mmseqs.tar.gz': mmseqs DB archive
     - 'pangolin-data.v1.29.tar.gz': pangolin-dataset used by pangolin for lineage assignment, version 1.29
-        - 'data/alias_key.json' : alias key file
-        - 'data/lineageTree.pb' : UShER Mutation Annotated Tree protobuf file
-        - 'data/lineages.hash.csv' : lineage hash file
+      - 'data/alias_key.json' : alias key file
+      - 'data/lineageTree.pb' : UShER Mutation Annotated Tree protobuf file
+      - 'data/lineages.hash.csv' : lineage hash file
     - 'resfinder.tar.gz': resfinder DB archive
   - genome
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
@@ -122,11 +122,13 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - PRG_test: zipped directory to build a test Population Reference Graph‚
   - illumina
     - bam
-      - 'test.paired_end.{,methylated}.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
-      - 'test.paired_end.{,methylated}.sorted.bam': sorted version of the above bam file
-      - 'test.paired_end.{,methylated}.bam.sorted.bam.bai': bam index for the sorted bam file
+      - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
+      - 'test.paired_end.methylated.sorted.bam': sorted version of the above bam file
+      - 'test.paired_end.methylated.bam.sorted.bam.bai': bam index for the sorted bam file
       - 'test.paired_end.name.sorted.bam': Paired-end bam file sorted by name
+      - 'test.paired_end.umi.sorted.bam' : Position sorted alignment of 'test.umi_extract\_{1,2}.fastq.gz'
       - 'test.single_end.bam': alignment (unsorted) of the 'test_1.fastq.gz' reads against test_genomic.fasta using minimap2
+      - 'test.single_end.umi.sorted.bam' : Position sorted alignment of 'test.umi_extract_single.fastq.gz'
       - 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
       - 'test.PGx.CYP2D6.bam': Paired-end mapped reads mapped to pharmacogenomics genes CYP2D6 and CYP2D7 on GRCh37 (HG00436)
       - 'test.PGx.CYP2D6.bam.bai': BAM index for 'test.PGx.CYP2D6.bam'
@@ -155,6 +157,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - fastq
       - 'test\_{1,2}.fastq.gz' sarscov2 paired-end sequencing reads
       - 'test_interleaved.fastq.gz': Interleaved version of the above
+      - 'test.umi_extract\_{1,2}.fastq.gz' sarscov2 paired-end sequencing reads processed with `umi-tools extract --bc-pattern="NNNN" --bc-pattern2="NNNN"`
+      - 'test.umi_extract_single.fastq.gz' sarscov2 sequencing reads processed with `umi-tools extract --bc-pattern="NNNN"`.
       - 'text_1.fastq.txt.gz' gzipped compressed version of 'test_1.fastq.gz' in tabular text format
       - 'text_1.fastq.txt.zst' zstd-compressed version of 'test_1.fastq.gz' in tabular text format
       - 'test\_{1,2}.2.fastq.gz‘: copies of the above reads
@@ -192,21 +196,21 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.single_end.bam.readlist.txt': text file of a list of two read IDs primarily for picard FilterSamReads
   - lexogen
     -idemux
-      - 'i1_read_1.fastq.gz': first read pair containing i1 indices
-      - 'i1_read_2.fastq.gz': second read pair containing i1 indices
-      - 'i1_sample_sheet.csv': sample sheet for demultiplexing via full i1
-      - 'i5_i1_read_1.fastq.gz': first read pair containing both i5 and i1 indices
-      - 'i5_i1_read_2.fastq.gz': second read pair containing both i5 and i1 indices
-      - 'i5_i1_sample_sheet.csv': sample sheet for demultiplexing via full i5, i1
-      - 'i7_i1_read_1.fastq.gz': first read pair containing both i7 and i1 indices
-      - 'i7_i1_read_2.fastq.gz': second read pair containing both i7 and i1 indices
-      - 'i7_i1_sample_sheet.csv': sample sheet for demultiplexing via full i7, i1
-      - 'i7_i5_i1_read_1.fastq.gz': first read pair containing i7, i5 and i1 indices
-      - 'i7_i5_i1_read_2.fastq.gz': second read pair containing i7, i5 and i1 indices
-      - 'i7_i5_i1_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5, i1 (go to option for QuantSeq-Pool)
-      - 'i7_i5_read_1.fastq.gz': first read pair containing both i7 and i5 indices
-      - 'i7_i5_read_2.fastq.gz': second read pair containing both i7 and i5 indices
-      - 'i7_i5_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5
+    - 'i1_read_1.fastq.gz': first read pair containing i1 indices
+    - 'i1_read_2.fastq.gz': second read pair containing i1 indices
+    - 'i1_sample_sheet.csv': sample sheet for demultiplexing via full i1
+    - 'i5_i1_read_1.fastq.gz': first read pair containing both i5 and i1 indices
+    - 'i5_i1_read_2.fastq.gz': second read pair containing both i5 and i1 indices
+    - 'i5_i1_sample_sheet.csv': sample sheet for demultiplexing via full i5, i1
+    - 'i7_i1_read_1.fastq.gz': first read pair containing both i7 and i1 indices
+    - 'i7_i1_read_2.fastq.gz': second read pair containing both i7 and i1 indices
+    - 'i7_i1_sample_sheet.csv': sample sheet for demultiplexing via full i7, i1
+    - 'i7_i5_i1_read_1.fastq.gz': first read pair containing i7, i5 and i1 indices
+    - 'i7_i5_i1_read_2.fastq.gz': second read pair containing i7, i5 and i1 indices
+    - 'i7_i5_i1_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5, i1 (go to option for QuantSeq-Pool)
+    - 'i7_i5_read_1.fastq.gz': first read pair containing both i7 and i5 indices
+    - 'i7_i5_read_2.fastq.gz': second read pair containing both i7 and i5 indices
+    - 'i7_i5_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5
   - nanopore
     - bam
       - 'test.sorted.bam'
@@ -231,26 +235,27 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'prot.accession2taxid.gz': sars-cov-2 ORF1ab polyprotein accession ID to tax id file, to match sars-cov-2 proteome.fasta
 
 - homo_sapiens
+
   - 10xgenomics
     - cellranger
-      - test_10x_10k_pbmc_5fb_fastq_\{1,2\}_gz: 5' V2 Feature Barcode FASTQs from 10k PBMC data
-      - test_10x_10k_pbmc_5gex_fastq_\{1,2\}_gz: 5' V2 gene expression FASTQs from 10k PBMC data
-      - test_10x_10k_pbmc_b_fastq_\{1,2\}_gz: 5' V2 B-cell FASTQs from 10k PBMC data
-      - test_10x_10k_pbmc_t_fastq_\{1,2\}_gz: 5' V2 T-cell FASTQs from 10K PBMC data
+      - test*10x_10k_pbmc_5fb_fastq*\{1,2\}\_gz: 5' V2 Feature Barcode FASTQs from 10k PBMC data
+      - test*10x_10k_pbmc_5gex_fastq*\{1,2\}\_gz: 5' V2 gene expression FASTQs from 10k PBMC data
+      - test*10x_10k_pbmc_b_fastq*\{1,2\}\_gz: 5' V2 B-cell FASTQs from 10k PBMC data
+      - test*10x_10k_pbmc_t_fastq*\{1,2\}\_gz: 5' V2 T-cell FASTQs from 10K PBMC data
       - test_10x_10k_pbmc_feature_ref_csv: Feature Barcode reference for the 10k PBMC
-      - test_10x_10k_pbmc_cmo_cmo_fastq_\{1,2\}_gz: 3' V3 Cell Multiplexing FASTQs from 10k PBMC data with Cell Multiplexing
-      - test_10x_10k_pbmc_cmo_gex\{1,2\}_fastq_\{1,2\}_gz: 3' V3 gene expression FASTQs from 10k PBMC data with Cell Multiplexing
+      - test*10x_10k_pbmc_cmo_cmo_fastq*\{1,2\}\_gz: 3' V3 Cell Multiplexing FASTQs from 10k PBMC data with Cell Multiplexing
+      - test*10x_10k_pbmc_cmo_gex\{1,2\}\_fastq*\{1,2\}\_gz: 3' V3 gene expression FASTQs from 10k PBMC data with Cell Multiplexing
       - test_10x_10k_pbmc_cmo_feature_ref_csv: Feature Barcode reference for the 10k PBMC data with Cell Multiplexing
-      - test_10x_5k_cmvpos_tcells_ab_fastq_\{1,2\}_gz: Antibody Capture FASTQs from the 5k CMV+ T-cell dataset
-      - test_10x_5k_cmvpos_tcells_gex1_fastq_\{1,2\}_gz: Gene expression FASTQs from the 5k CMV+ T-cell dataset
-      - test_10x_5k_cmvpos_tcells_vdj_fastq_\{1,2\}_gz: V(D)J FASTQs from the 5k CMV+ T-cell dataset
+      - test*10x_5k_cmvpos_tcells_ab_fastq*\{1,2\}\_gz: Antibody Capture FASTQs from the 5k CMV+ T-cell dataset
+      - test*10x_5k_cmvpos_tcells_gex1_fastq*\{1,2\}\_gz: Gene expression FASTQs from the 5k CMV+ T-cell dataset
+      - test*10x_5k_cmvpos_tcells_vdj_fastq*\{1,2\}\_gz: V(D)J FASTQs from the 5k CMV+ T-cell dataset
       - test_10x_5k_cmvpos_tcells_feature_ref_csv: Feature Barcode reference for the 5k CMV+ T-cell dataset
       - test_10x_vdj_ref_json: JSON from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
       - test_10x_vdj_ref_fasta: FASTA file of V(D)J sequences from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
       - test_10x_vdj_ref_suppfasta: Supplemental FASTA file from version 5 of the 10X-curated human V(D)J reference using GRCh38 and Ensembl 94
     - cellranger-atac
       - test_scATAC_S1_L001_I1_001.fastq.gz: Dual index i7 read (8bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
-      - test_scATAC_S1_L001_R\{1,3\}_001.fastq.gz: Read 1 and 2 of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
+      - test_scATAC_S1_L001_R\{1,3\}\_001.fastq.gz: Read 1 and 2 of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R2_001.fastq.gz: Dual index i5 read (16 bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
   - demultiplexing
     - barcode.tsv: A list of barcodes used for demultiplexing the test data.
@@ -294,7 +299,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - chr22: directory for reference files using chr22, for bbsplit
       - sequence/chr22_23800000-23980000.fa: Fasta file containing a section of chr22
     - chr22_chr22_KI270734v1_random: directory for reference files using chr22 and chr22_KI270734v1_random, for paraphase
-       - sequence/genome.fa.gz: Gzipped fasta file from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N.
+      - sequence/genome.fa.gz: Gzipped fasta file from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N.
     - vcf
       - dbsnp: DBSnp file downsampled based on reference position
       - gnomAD: gnomAD file downsampled based on reference position
@@ -346,6 +351,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - salmon.merged.gene_counts_length_scaled.tsv: Example matrix containing both Riboseq and RNA-seq runs, suitable for translational efficiency analysis
       - samplesheet.csv: Sample sheet corresponding to salmon.merged.gene_counts_length_scaled.tsv
   - illumina
+
     - bam:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test{,.umi}*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test{,.umi}*{1,2}` (normal)
@@ -484,16 +490,17 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - yak:
       - test.yak: Yak kmer index of 1000 of paternal paired-end reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D2_S1_L001_R{1,2}\_001.fastq.gz and D2_S1_L001_R{1,2}\_002.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
       - test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}\_001.fastq.gz and D3_S1_L001_R{1,2}\_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
+
   - nanopore
-      - bam
-        - 'bc_anchored_10_reads.sorted.bam': contains 10 human reads from test data pulled from [modkit/pileup](https://github.com/nanoporetech/modkit/) repository.
-        - 'bc_anchored_10_reads.sorted.bam.bai': campanion index for 'bc_anchored_10_reads.sorted.bam' found in [modkit/pileup](https://github.com/nanoporetech/modkit/) repository.
-        - test.sorted.bam: 24 reads from HG002_R1041_UL_dorado0.4.0_sup4.1.0_5mCG_5hmCG sorted and mapped to genome.fasta (chr22:16570000-16610000)
-        - test.sorted.bam.bai: Index for test.sorted.bam
-        - test2.sorted.bam: 193 reads downsampled from s3://ont-open-data/colo829_2024.03/wf_somatic_variation/sup/COLO829_tumor.ht.cram sorted and mapped to genome.fasta (chr22:16570000-16610000)
-        - test2.sorted.bam.bai: Index for test2.sorted.bam
-        - test.sorted.phased.bam: Haplotagged version of test.sorted.bam
-        - test.sorted.phased.bam.bai: Index for test.sorted.phased.bam
+    - bam
+      - 'bc_anchored_10_reads.sorted.bam': contains 10 human reads from test data pulled from [modkit/pileup](https://github.com/nanoporetech/modkit/) repository.
+      - 'bc_anchored_10_reads.sorted.bam.bai': campanion index for 'bc_anchored_10_reads.sorted.bam' found in [modkit/pileup](https://github.com/nanoporetech/modkit/) repository.
+      - test.sorted.bam: 24 reads from HG002_R1041_UL_dorado0.4.0_sup4.1.0_5mCG_5hmCG sorted and mapped to genome.fasta (chr22:16570000-16610000)
+      - test.sorted.bam.bai: Index for test.sorted.bam
+      - test2.sorted.bam: 193 reads downsampled from s3://ont-open-data/colo829_2024.03/wf_somatic_variation/sup/COLO829_tumor.ht.cram sorted and mapped to genome.fasta (chr22:16570000-16610000)
+      - test2.sorted.bam.bai: Index for test2.sorted.bam
+      - test.sorted.phased.bam: Haplotagged version of test.sorted.bam
+      - test.sorted.phased.bam.bai: Index for test.sorted.phased.bam
   - pacbio:
 
     - bam:
@@ -525,8 +532,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - txt:
       - filelist.txt: A TAMA merge filelist file. It's a 4 columns (bed file, cap status, merging order, id) file listing bed files to merge. The file listed are alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.bed alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.2.bed.
     - vcf:
-      - NA03697B2_new.pbmm2.repeats.vcf.gz: VCF file associated with the NA03697B2_downsampled.pbmm2.repeats.bam BAM file, generated from PacBio PBSV (version 2.9.0 - default settings) 
+      - NA03697B2_new.pbmm2.repeats.vcf.gz: VCF file associated with the NA03697B2_downsampled.pbmm2.repeats.bam BAM file, generated from PacBio PBSV (version 2.9.0 - default settings)
       - NA03697B2_downsampled.pbmm2.repeats.vcf.gz: Index for NA03697B2_downsampled.pbmm2.repeats.vcf.gz
+
   - popgen:
     - plink_simulated.bed: case-control simulated variants dataset in PLINK binary format
     - plink_simulated.fam: case-control simulated variants dataset in PLINK binary format
@@ -537,6 +545,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - plink_simulated.psam: case-control simulated variants dataset in PLINK 2 binary format
     - plink_simulated.pvar: case-control simulated variants dataset in PLINK 2 binary format
   - svsig:
+
     - NA03697B2_new.pbmm2.repeats.svsig.gz: structural variant file for NA03697B2_new.pbmm2.repeats.bam, created with PBSV discover version (2.9.0 default settings)
 
   - cooler:
@@ -570,12 +579,12 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
-  
   - scrnaseq:
     - h5ad:
       - pbmc1k.h5ad: Downloaded with `scanpy.datasets.pbmc3k()` and subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
 
 - mus_musculus
+
   - mageck
     - ERR376998.small.fastq.gz and ERR376999.small.fastq.gz downloaded from sourceforge mageck documentation, shortened to only 10k reads
     - design_matrix.txt taken from the mageck documentation tutorial
@@ -648,7 +657,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - SARS-sarscov2.fasta: Reference genome file for SARS-CoV-2 (MT192765.1 Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/PC00101P/2020)
     - taxonomy
       - accession2taxid
-        - nucl_gb.accession2taxid: A decompressed NCBI nucl_gb.accession2taxid.tar.gz file from 2024-02-03 filtered to just the SARS-CoV2 and _Haemophilus influenzae_ genomes under `metagenome/fasta/`
+        - nucl*gb.accession2taxid: A decompressed NCBI nucl_gb.accession2taxid.tar.gz file from 2024-02-03 filtered to just the SARS-CoV2 and \_Haemophilus influenzae* genomes under `metagenome/fasta/`
       - misc
         - nucl2tax.map: A simplified variant of nucl_gb.accession2taxid, required by tools such as CENTRIFUGE
         - sink_taxid.csv: csv TAXID table single sample, directly from https://github.com/maxibor/sourcepredict/blob/bcaf000c3d91d0aaf9fbe25c7218348174a2e0b3/data/test/dog_test_sink_sample.csv
@@ -660,7 +669,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
         - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
         - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
 
-
 - eukaryotes
   - galaxea_fascicularis
     - hic
@@ -668,7 +676,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
   - deilephila_porcellus
     - mito
       - 'ilDeiPorc1.contigs.fa': test dataset for mitochondrial contigs for Deilephila porcellus
-      - 'ilDeiPorc1.HiFi.reads.fa':  test dataset for reads for Deilephila porcellus
+      - 'ilDeiPorc1.HiFi.reads.fa': test dataset for reads for Deilephila porcellus
       - 'MW539688.1.fasta': sequence of the mitochondrial reference genome for Deilephila porcellus
       - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
   - arabidopsis_thaliana
