@@ -446,8 +446,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - test_genomicsdb: Output workspace (directory) from GenomicsdbImport, generated from test.genome.vcf in the gvcf subdirectory, used to test GenotypeGVCFs, directory has been tar archived to make downloading for tests easier.
     - gvcf:
       - test.genome.vcf: Genome vcf corresponding to `test{,.umi}_{1,2}` (normal) reads
+      - test.genome.g.vcf: copy of `test.genome.vcf` with filename adhering to parabricks naming convention
       - test2.genome.vcf: Genome vcf corresponding to `test2{,.umi}_{1,2}` (tumor) reads
       - test{,2}.genome.vcf.gz: Bgzipped file based on `test{,2}.genome.vcf` file
+      - test.genome.g.vcf.gz: copy of `test.genome.vcf.gz` with filename adhering to parabricks naming convention
       - test{,2}.genome.vcf.gz.tbi: Tbi index based on `test{,2}.genome.vcf.gz` file
       - test{,2}.genome.vcf.idx: Index feature file based on `test{,2}.genome.vcf` file
     - interop_bcl2fastqstats:
