@@ -1,0 +1,112 @@
+Name	CodeClass	salmon_01_01.RCC	salmon_02_02.RCC	salmon_03_03.RCC	salmon_04_04.RCC
+POS_6	Positive	2973	3715	3302	2649
+POS_4	Positive	2879	3850	3628	2508
+POS_7	Positive	2487	3309	2776	2069
+POS_3	Positive	1856	2539	2151	1503
+POS_1	Positive	2928	3888	3946	2514
+POS_5	Positive	2756	3892	3443	2290
+POS_2	Positive	1743	2333	1981	1415
+POS_8	Positive	1912	2801	2449	1640
+NEG_5	Negative	0	0	0	0
+NEG_2	Negative	0	0	0	0
+NEG_8	Negative	0	0	0	0
+NEG_1	Negative	0	0	0	0
+NEG_3	Negative	0	0	0	0
+NEG_6	Negative	0	0	0	0
+NEG_4	Negative	0	0	0	0
+NEG_7	Negative	0	0	0	0
+CIGSSA_067743	Endogenous	512	446	811	547
+POMC A1	Endogenous	9	5	10	7
+CIGSSA_089531	Endogenous	6	5	9	1
+CIGSSA_073031	Endogenous	988	673	1118	1044
+CIGSSA_069709	Endogenous	1	1	0	0
+TSHb	Endogenous	1	2	0	5
+mineralocorticoid receptor-like	Endogenous	28	11	16	25
+CIGSSA_090437	Endogenous	3	3	3	0
+RH2	Endogenous	33	23	26	54
+POMC B	Endogenous	9	9	16	4
+CIGSSA_061410	Endogenous	29740	23806	29821	25076
+GnRH b	Endogenous	6	5	2	9
+leptinB2	Endogenous	5	6	10	4
+CIGSSA_032692	Endogenous	4	13	7	2
+TRPV1	Endogenous	10	12	3	18
+CIGSSA_095471	Endogenous	3	1	0	0
+leptinB1	Endogenous	0	1	0	0
+GH R1	Endogenous	42	18	37	45
+CIGSSA_108514	Endogenous	0	1	2	1
+CIGSSA_029481	Endogenous	3	0	0	4
+PRL	Endogenous	4	10	3	4
+CIGSSA_106427	Endogenous	5	7	12	1
+hpso70	Endogenous	4486	2691	5300	6035
+IGF-1a	Endogenous	22	29	35	28
+CIGSSA_024176	Endogenous	5	2	2	4
+opsin 1 short wave	Endogenous	84	45	59	76
+CIGSSA_016941	Endogenous	10	6	7	6
+CIGSSA_079681	Endogenous	23503	13305	18649	19907
+CB-2	Endogenous	4177	4013	4705	3766
+CIGSSA_056424	Endogenous	670	1178	1688	1049
+CIGSSA_106850	Endogenous	1	0	0	1
+CRF	Endogenous	4	4	3	5
+CIGSSA_109543	Endogenous	1	0	2	2
+TRH	Endogenous	7	4	9	9
+POMC A2	Endogenous	5	6	19	1
+CIGSSA_017107	Endogenous	384	509	405	300
+CIGSSA_039183	Endogenous	1	0	0	2
+kissR	Endogenous	3	1	0	2
+GnRH a	Endogenous	1	2	3	0
+CIGSSA_072651	Endogenous	1	0	5	6
+MT1	Endogenous	0	5	3	0
+TH-R beta	Endogenous	29	25	19	25
+CIGSSA_034288	Endogenous	1878	2389	2329	1709
+CIGSSA_125493.t1	Endogenous	209	159	241	162
+CIGSSA_033999	Endogenous	9	13	7	2
+NM_001123656.1	Endogenous	10597	10671	13448	10495
+cry1	Endogenous	17	12	24	30
+rod opsin retina	Endogenous	715	662	610	735
+MCR4	Endogenous	3	10	10	1
+CIGSSA_063836	Endogenous	0	2	0	0
+CCK-N	Endogenous	8	7	0	7
+HNF4	Endogenous	3	6	3	4
+CB-1	Endogenous	1	3	2	1
+TRPV4	Endogenous	10	5	7	10
+AANAT 1a	Endogenous	0	2	0	2
+CYP19	Endogenous	5	14	2	10
+CIGSSA_032361	Endogenous	1	1	2	4
+hcrtr2	Endogenous	1	0	0	1
+CCK-L	Endogenous	7	12	7	2
+LWS	Endogenous	119	108	115	122
+CIGSSA_005176	Endogenous	16	20	9	26
+cry2	Endogenous	1	0	0	0
+mel1c	Endogenous	1	2	0	0
+CIGSSA_113985	Endogenous	75	44	86	100
+agouti-RP 2	Endogenous	3	1	5	1
+CIGSSA_062509	Endogenous	38	17	24	34
+ASMT (HIOMT)	Endogenous	3	9	2	1
+neuropeptide Y	Endogenous	2	5	3	2
+IGF-1b	Endogenous	24	20	9	12
+orexin	Endogenous	4	18	7	7
+CIGSSA_067996	Endogenous	3	4	0	0
+MT2	Endogenous	9	12	10	4
+hspa8	Endogenous	3386	2218	3075	3819
+CIGSSA_017153	Endogenous	0	5	0	0
+CIGSSA_003707	Endogenous	46	34	63	22
+CIGSSA_051281	Endogenous	5	0	0	0
+CIGSSA_032365	Endogenous	36	30	37	42
+DIO 2b	Endogenous	2	4	0	0
+agouti-RP 1	Endogenous	0	10	2	1
+CIGSSA_022313.t2	Endogenous	7	5	9	9
+opsin 2 short wave	Endogenous	31	32	37	43
+CIGSSA_116839	Endogenous	6	6	10	9
+adrenocorticotropic hormone	Endogenous	1	1	2	1
+GHRL-1	Endogenous	5	7	5	7
+AMH	Endogenous	1	1	9	1
+CIGSSA_056358	Endogenous	2	15	2	7
+glucocorticoid receptor-like	Endogenous	3	5	2	5
+CART	Endogenous	8	12	2	10
+RNAPOLII	Housekeeping	7	15	19	14
+HPRTI	Housekeeping	86	51	108	85
+BT050045	Housekeeping	450	421	412	256
+G6PDH	Housekeeping	20	23	10	14
+B-actin	Housekeeping	8302	10039	10982	8023
+EF1AA	Housekeeping	2592	2243	3202	3212
+AY953432	Housekeeping	22	16	9	27
