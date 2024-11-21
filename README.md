@@ -211,6 +211,9 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'i7_i5_read_1.fastq.gz': first read pair containing both i7 and i5 indices
     - 'i7_i5_read_2.fastq.gz': second read pair containing both i7 and i5 indices
     - 'i7_i5_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5
+  - mgi
+    - 'fc01.zip': zip file contains fastq files (paired-end) and run information.
+    - 'fc01_sample_sheet.csv': sample sheet for demultiplexing 
   - nanopore
     - bam
       - 'test.sorted.bam'
