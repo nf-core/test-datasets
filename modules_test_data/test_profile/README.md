@@ -20,3 +20,6 @@ nextflow run nf-core/nanostring -r 8efb6b1412805cbd056aee16b6cf504c6a1b716a -pro
 
 2. **`counts_Norm_GEX_ENDO.tsv`**
    - Extracted from the outputs of the process `CREATE_ANNOTATED_TABLES`.
+     
+3. **`genes_to_filter.yml`**
+   - Extracted short list of genes from `normalized_counts.tsv`
