@@ -150,7 +150,65 @@ The salmon index (`homo_sapiens/genome/index/salmon`) was created with the follo
 salmon index -t transcriptome.fasta -k 31 -i salmon
 ```
 
+### Genome map
+
+The genome map of GRCh38 has been generated as follow
+
+```bash
+# Download the reference genome map
+MAP_GRCH38=data/genomics/homo_sapiens/genome/genome.GRCh38
+wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O ${MAP_GRCH38}.map.zip
+unzip -p ${MAP_GRCH38}.map.zip plink.chr22.GRCh38.map | \
+   awk -v OFS='\t' -F' ' '{ print $1, $3, $4 }' \
+   >  ${MAP_GRCH38}.chr22.map
+```
+
 ## Output data generation
+
+### Illumina data
+
+Some individual data are also needed. The following comes from the 1000 Genome Project and 'Genome in a Bottle'.
+We focus on the sample GM12878 also known as NA12878 or HG001 depending on the projects.
+
+We need its data in different format for the chromosome 22.
+
+```bash
+REGION=chr22:16570000-16610000
+DIR_IND=data/genomics/homo_sapiens/illumina
+# Beware huge initial file
+wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/{} -O $DIR_IND/NA12878.{cram,cram.crai}
+
+# Keep only the wanted region
+samtools view \
+   -bo $DIR_IND/bam/NA12878.chr22.bam $DIR_IND/NA12878.cram \
+   ${REGION}
+samtools index $DIR_IND/bam/NA12878.chr22.bam
+
+# Compute depth on region
+MEAN_DEPTH=$(samtools coverage $DIR_IND/bam/NA12878.chr22.bam -r ${REGION} | \
+   awk -F'\t' '(NR==2){ print $7}')
+FRAC_DEPTH=$(echo "scale=5; 1/$MEAN_DEPTH" | bc)
+
+# Downsample the file to 1X
+samtools view \
+   -s 1${FRAC_DEPTH} \
+   -bo $DIR_IND/bam/NA12878.chr22.1X.bam $DIR_IND/bam/NA12878.chr22.bam
+samtools index $DIR_IND/bam/NA12878.chr22.1X.bam
+
+# Variants benchmarking
+wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz -O $DIR_IND/NA12878.vcf.gz
+wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi -O $DIR_IND/NA12878.vcf.gz.tbi
+
+# Normalize and keep only rename variants ID
+bcftools norm -m +any $DIR_IND/NA12878.vcf.gz \
+      --regions ${REGION} --threads 4 -Ov | \
+   bcftools annotate --threads 4 -Oz \
+      --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' \
+      -o $DIR_IND/vcf/NA12878.chr22.vcf.gz
+
+# Index the file
+bcftools index -f $DIR_IND/vcf/NA12878.chr22.vcf.gz --threads 4
+```
 
 ### Plink data generations
 
@@ -160,7 +218,6 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 
 ```bash
 pplink --file test.rnaseq --make-bed --out test.rnaseq
-
 ```
 
 ### Sarek pipeline generation
@@ -248,7 +305,7 @@ The cram files were generated with
 
 `test_test2_paired_mutect2_calls.artifact-prior.tar.gz`:
 
-```
+```bash
 gatk LearnReadOrientationModel -I ..illumina/gatk/paired_mutect2_calls/test_test2_paired_mutect2_calls.f1r2.tar.gz -O test_test2_paired_mutect2_calls.artifact-prior.tar.gz
 ```
 
@@ -280,7 +337,7 @@ output files from VariantRecalibrator, contains recal, index and tranches files 
 
 #### GenomicsDB
 
-```
+```bash
 gatk GenomicsDBImport -V ../gvcf/test.genome.vcf --genomicsdb-workspace-path test_genomicsdb -L ../../genome/genome.interval_list
 ```
 
@@ -328,7 +385,7 @@ The raw data were downloaded from https://github.com/open2c/cooler/tree/master/t
 
 The first 1000 raw reads were extracted from the [public Alzheimer dataset](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2020_Alzheimer8M_subset/alz.1perc.subreads.bam) using samtools.
 
-```
+```bash
 samtools view -h alz.1perc.subreads.bam|head -n 1006|samtools view -bh > alz.bam
 ```
 
@@ -347,15 +404,49 @@ This test data contains:
    - test.cram.crai => The index of the CRAM file
    - test.bed => A BED file containing only the regions from chr11
 
-## Limitations
+## Variation test dataset
 
-1. Reads do not cover chromosome 6
+This folder contains the data from the [1000 Genome Project](https://www.internationalgenome.org/).
+The data are phased and can be used as a panel of normal.
+
+The data has been generated as follow :
+
+```bash
+# Download phased panel
+wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr22.filtered.shapeit2-duohmm-phased.vcf.gz -O data/genomics/homo_sapiens/variation/1000GP.chr22.full.vcf.gz
+
+PANEL_FILE=data/genomics/homo_sapiens/variation/1000GP.chr22
+REGION=chr22:16570000-16610000
+# Normalize, select the region, keep only biallelic SNPs, rename variants ID and compute allele frequency
+bcftools norm -m +any ${PANEL_FILE}.full.vcf.gz \
+        --regions ${REGION} --threads 4 -Ov | \
+    bcftools view \
+        -m 2 -M 2 -v snps --threads 4 | \
+    bcftools annotate --threads 4 -Ov \
+        --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
+    vcffixup - | bgzip -c > ${PANEL_FILE}.vcf.gz
+
+# Index the panel file
+bcftools index -f ${PANEL_FILE}.vcf.gz --threads 4
+
+# Convert to hap legend samples file set
+bcftools convert --haplegendsample 1000GP.chr22 ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}
+
+# Keep only variants informations
+bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}.sites.vcf.gz
+bcftools index -f ${PANEL_FILE}.sites.vcf.gz
+
+# Chunk the panel for easy parallelization
+GLIMPSE_chunk \
+   --input ${PANEL_FILE}.vcf.gz --region ${REGION} \
+   --window-size 10000 --window-count 400 --buffer-size 5000 --buffer-count 30 \
+   --output ${PANEL_FILE}.chunks.txt
+```
 
 ### Missing files
 
 1. Single-end reads
 2. Methylated bams
 3. Unaligned bams
-4. Panel of Normals
-5. Ploidy files for ASCAT
-6. Mappability files for CONTROLFREEC
+4. Ploidy files for ASCAT
+5. Mappability files for CONTROLFREEC
