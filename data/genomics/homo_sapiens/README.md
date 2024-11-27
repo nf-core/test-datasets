@@ -158,7 +158,65 @@ The salmon index (`homo_sapiens/genome/index/salmon`) was created with the follo
 salmon index -t transcriptome.fasta -k 31 -i salmon
 ```
 
+### Genome map
+
+The genome map of GRCh38 has been generated as follow
+
+```bash
+# Download the reference genome map
+MAP_GRCH38=data/genomics/homo_sapiens/genome/genome.GRCh38
+wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O ${MAP_GRCH38}.map.zip
+unzip -p ${MAP_GRCH38}.map.zip plink.chr22.GRCh38.map | \
+   awk -v OFS='\t' -F' ' '{ print $1, $3, $4 }' \
+   >  ${MAP_GRCH38}.chr22.map
+```
+
 ## Output data generation
+
+### Illumina data
+
+Some individual data are also needed. The following comes from the 1000 Genome Project and 'Genome in a Bottle'.
+We focus on the sample GM12878 also known as NA12878 or HG001 depending on the projects.
+
+We need its data in different format for the chromosome 22.
+
+```bash
+REGION=chr22:16570000-16610000
+DIR_IND=data/genomics/homo_sapiens/illumina
+# Beware huge initial file
+wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/{} -O $DIR_IND/NA12878.{cram,cram.crai}
+
+# Keep only the wanted region
+samtools view \
+   -bo $DIR_IND/bam/NA12878.chr22.bam $DIR_IND/NA12878.cram \
+   ${REGION}
+samtools index $DIR_IND/bam/NA12878.chr22.bam
+
+# Compute depth on region
+MEAN_DEPTH=$(samtools coverage $DIR_IND/bam/NA12878.chr22.bam -r ${REGION} | \
+   awk -F'\t' '(NR==2){ print $7}')
+FRAC_DEPTH=$(echo "scale=5; 1/$MEAN_DEPTH" | bc)
+
+# Downsample the file to 1X
+samtools view \
+   -s 1${FRAC_DEPTH} \
+   -bo $DIR_IND/bam/NA12878.chr22.1X.bam $DIR_IND/bam/NA12878.chr22.bam
+samtools index $DIR_IND/bam/NA12878.chr22.1X.bam
+
+# Variants benchmarking
+wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz -O $DIR_IND/NA12878.vcf.gz
+wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi -O $DIR_IND/NA12878.vcf.gz.tbi
+
+# Normalize and keep only rename variants ID
+bcftools norm -m +any $DIR_IND/NA12878.vcf.gz \
+      --regions ${REGION} --threads 4 -Ov | \
+   bcftools annotate --threads 4 -Oz \
+      --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' \
+      -o $DIR_IND/vcf/NA12878.chr22.vcf.gz
+
+# Index the file
+bcftools index -f $DIR_IND/vcf/NA12878.chr22.vcf.gz --threads 4
+```
 
 ### Plink data generations
 
@@ -168,7 +226,6 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 
 ```bash
 pplink --file test.rnaseq --make-bed --out test.rnaseq
-
 ```
 
 ### Sarek pipeline generation
@@ -256,7 +313,7 @@ The cram files were generated with
 
 `test_test2_paired_mutect2_calls.artifact-prior.tar.gz`:
 
-```
+```bash
 gatk LearnReadOrientationModel -I ..illumina/gatk/paired_mutect2_calls/test_test2_paired_mutect2_calls.f1r2.tar.gz -O test_test2_paired_mutect2_calls.artifact-prior.tar.gz
 ```
 
@@ -288,7 +345,7 @@ output files from VariantRecalibrator, contains recal, index and tranches files 
 
 #### GenomicsDB
 
-```
+```bash
 gatk GenomicsDBImport -V ../gvcf/test.genome.vcf --genomicsdb-workspace-path test_genomicsdb -L ../../genome/genome.interval_list
 ```
 
@@ -353,7 +410,7 @@ with the exception of `frag.bed` that is crafted for the pairtools/restrict test
 
 The first 1000 raw reads were extracted from the [public Alzheimer dataset](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2020_Alzheimer8M_subset/alz.1perc.subreads.bam) using samtools.
 
-```
+```bash
 samtools view -h alz.1perc.subreads.bam|head -n 1006|samtools view -bh > alz.bam
 ```
 
@@ -381,6 +438,7 @@ This test data contains:
 ### Popgen data
 
 Population genetics simulated data (case-control) in PLINK binary format, compressed VCF and compressed BCF formats.
+Phased reference panel for imputation and phasing.
 For details about their simulation, see the specific README file.
 
 ### PyPGx data
@@ -393,15 +451,10 @@ This dataset contains:
    - illumina/bam/test.PGx.CYP2D6.bam.bai => The index of the BAM file
    - genome/genome.GRCh37.chr22.fasta.gz => A reference GRCh37 genome fasta file (bgzipped) containing chromosome 22
    
-## Limitations
-
-1. Reads do not cover chromosome 6
-
 ### Missing files
 
 1. Single-end reads
 2. Methylated bams
 3. Unaligned bams
-4. Panel of Normals
-5. Ploidy files for ASCAT
-6. Mappability files for CONTROLFREEC
+4. Ploidy files for ASCAT
+5. Mappability files for CONTROLFREEC
