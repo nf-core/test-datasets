@@ -57,6 +57,12 @@ CAT_pack prepare --db_fasta input_files/sequence_fixedheaders.txt --names input_
 CAT_pack contigs -c SPAdes-test_minigut_sample2.scaffolds.fa -d ../../../cat_fakedb/test/db/ -t ../../../cat_fakedb/test2/tax/ --no_stars --force
 ```
 
+Which resulted in a last line of the log as
+
+```console
+[2024-11-28 16:05:33] CAT is done! 658/5,223 contigs (12.60%) have taxonomy assigned.
+```
+
 And then the `test/` directory was tarred to create `minigut_cat.tar.gz`.
 
 ## Broken samplesheets
