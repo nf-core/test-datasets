@@ -39,7 +39,7 @@ We have also generated tiny versions of databases for tools that normally requir
 
 For CAT of CAT_pack we did the following, and using CAT_pack (v6.0):
 
-```
+```bash
 ## Download the FASTA of coding sequences FASTA AA of B. fragilis
 curl "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=fasta_cds_aa&id=1992822979&extrafeat=null&conwithfeat=on&hide-cdd=on&ncbi_phid=CE8C15326D6BB8C10000000006490560" -o sequence.txt
 
@@ -51,11 +51,13 @@ bash ~/bin/accession2taxid_filter.sh 817 ## for accessions
 sed 's/lcl|//g;s/_/ /2' sequence.txt > sequence_fixedheaders.txt
 
 ## Generate database using CAT_pack prepare
-CAT_pack prepare --db_fasta input_files/sequence_fixedheaders.txt --names input_files/names_reduced.dmp --nodes  input_files/nodes_reduced.dmp --acc2tax input_files/accession2taxid_reduced.dmp --db_dir test2/
+CAT_pack prepare --db_fasta input_files/sequence_fixedheaders.txt --names input_files/names_reduced.dmp --nodes  input_files/nodes_reduced.dmp --acc2tax input_files/accession2taxid_reduced.dmp --db_dir test/
 
 ## Test using uncompressed contigs from metaspades assembly (note: --no_stars was required for some reason but seesms to only occur when we have a single genome in there possible..)
-CAT_pack contigs -c SPAdes-test_minigut_sample2.scaffolds.fa -d ../../../cat_fakedb/test2/db/ -t ../../../cat_fakedb/test2/tax/ --no_stars --force
+CAT_pack contigs -c SPAdes-test_minigut_sample2.scaffolds.fa -d ../../../cat_fakedb/test/db/ -t ../../../cat_fakedb/test2/tax/ --no_stars --force
 ```
+
+And then the `test/` directory was tarred to create `minigut_cat.tar.gz`.
 
 ## Broken samplesheets
 
