@@ -2,6 +2,7 @@
 
 The following input FASTQ samplesheets files are all broken in ways that are described in the file name.
 Each one should give a valid and understandable error message as reported by nf-schema.
+The first file `01` corresponds to a valid working sheet, thus not included here.
 
 - `02-samplesheet_v3_doublesinglestrandednotuniquesampleid.tsv`
 - `03-samplesheet_v3_wrongheadername.tsv`
