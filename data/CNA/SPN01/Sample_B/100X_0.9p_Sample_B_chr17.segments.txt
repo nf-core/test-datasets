@@ -1,0 +1,4 @@
+sample	chr	startpos	endpos	nMajor	nMinor
+100X_0.9p_Sample_B_vs_normal_sample.tumour	17	151035	51794383	1	1
+100X_0.9p_Sample_B_vs_normal_sample.tumour	17	51794980	78768063	1	0
+100X_0.9p_Sample_B_vs_normal_sample.tumour	17	78775957	83204151	1	1
