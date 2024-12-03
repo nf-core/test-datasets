@@ -1,6 +1,7 @@
 # Population Genetics Test Files
 
 Files in this folder as primarily intended to test population genetics applications.
+It also contains a phased panel of reference that can be used for imputation and phasing.
 
 ## Simulated data
 
@@ -38,4 +39,43 @@ And to convert them to PLINK 2 binary the following command has been used
 
 ```{bash}
 plink2 --bfile plink_simulated --make-pgen --out plink_simulated
+```
+
+## Phased dataset
+
+This folder contains the data from the [1000 Genome Project](https://www.internationalgenome.org/).
+The data are phased and can be used as a panel of normal.
+
+The data has been generated as follow :
+
+```bash
+# Download phased panel
+wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr22.filtered.shapeit2-duohmm-phased.vcf.gz -O data/genomics/homo_sapiens/popgen/1000GP.chr22.full.vcf.gz
+
+PANEL_FILE=data/genomics/homo_sapiens/popgen/1000GP.chr22
+REGION=chr22:16570000-16610000
+# Normalize, select the region, keep only biallelic SNPs, rename variants ID and compute allele frequency
+bcftools norm -m +any ${PANEL_FILE}.full.vcf.gz \
+        --regions ${REGION} --threads 4 -Ov | \
+    bcftools view \
+        -m 2 -M 2 -v snps --threads 4 | \
+    bcftools annotate --threads 4 -Ov \
+        --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
+    vcffixup - | bgzip -c > ${PANEL_FILE}.vcf.gz
+
+# Index the panel file
+bcftools index -f ${PANEL_FILE}.vcf.gz --threads 4
+
+# Convert to hap legend samples file set
+bcftools convert --haplegendsample 1000GP.chr22 ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}
+
+# Keep only variants informations
+bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}.sites.vcf.gz
+bcftools index -f ${PANEL_FILE}.sites.vcf.gz
+
+# Chunk the panel for easy parallelization
+GLIMPSE_chunk \
+   --input ${PANEL_FILE}.vcf.gz --region ${REGION} \
+   --window-size 10000 --window-count 400 --buffer-size 5000 --buffer-count 30 \
+   --output ${PANEL_FILE}.chunks.txt
 ```
