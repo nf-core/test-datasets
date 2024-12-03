@@ -169,6 +169,7 @@ wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.
 unzip -p ${MAP_GRCH38}.map.zip plink.chr22.GRCh38.map | \
    awk -v OFS='\t' -F' ' '{ print $1, $3, $4 }' \
    >  ${MAP_GRCH38}.chr22.map
+gzip ${MAP_GRCH38}.chr22.map
 ```
 
 ## Output data generation
@@ -203,19 +204,36 @@ samtools view \
    -bo $DIR_IND/bam/NA12878.chr22.1X.bam $DIR_IND/bam/NA12878.chr22.bam
 samtools index $DIR_IND/bam/NA12878.chr22.1X.bam
 
+# Impute the data with GLIMPSE2
+PANEL_FILE=data/genomics/homo_sapiens/popgen/1000GP.chr22
+MAP_GRCH38=data/genomics/homo_sapiens/genome/genome.GRCh38
+GLIMPSE2_phase \
+   --bam-file $DIR_IND/bam/NA12878.chr22.1X.bam \
+   --ind-name NA12878 \
+   --input-region $REGION \
+   --output-region $REGION \
+   --reference $PANEL_FILE.vcf.gz \
+   --output $DIR_IND/vcf/NA12878.chr22.1X.vcf.gz
+
+bcftools index $DIR_IND/vcf/NA12878.chr22.1X.vcf.gz
+
 # Variants benchmarking
 wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz -O $DIR_IND/NA12878.vcf.gz
 wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi -O $DIR_IND/NA12878.vcf.gz.tbi
 
+# Renaming sample file
+echo "HG001 NA12878" > sample_renaming.txt
+
 # Normalize and keep only rename variants ID
 bcftools norm -m +any $DIR_IND/NA12878.vcf.gz \
       --regions ${REGION} --threads 4 -Ov | \
+   bcftools reheader --samples sample_renaming.txt | \
    bcftools annotate --threads 4 -Oz \
       --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' \
-      -o $DIR_IND/vcf/NA12878.chr22.vcf.gz
+      -o $DIR_IND/vcf/NA12878_GIAB.chr22.vcf.gz
 
 # Index the file
-bcftools index -f $DIR_IND/vcf/NA12878.chr22.vcf.gz --threads 4
+bcftools index -f $DIR_IND/vcf/NA12878_GIAB.chr22.vcf.gz --threads 4
 ```
 
 ### Plink data generations
