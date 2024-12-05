@@ -30,6 +30,9 @@ To subsequently clone other branches[^1]
 git remote set-branches --add origin [remote-branch]
 git fetch
 ```
+## samplesheets
+
+-`samplesheets/samplesheet.long_read.csv`: Sample sheet for testing running mag with only long read input
 
 ## Broken samplesheets
 
