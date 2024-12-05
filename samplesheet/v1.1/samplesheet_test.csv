@@ -1,0 +1,3 @@
+id,fasta,reference,optional_data
+seatoxin-ref,https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/setoxin-ref.fa,https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/setoxin.ref,https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/structures/seatoxin-ref.tar.gz
+toxin-ref,https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/toxin-ref.fa,https://raw.githubusercontent.com/nf-core/test-datasets/multiplesequencealign/testdata/toxin.ref,

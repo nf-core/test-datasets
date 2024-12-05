@@ -18,4 +18,5 @@ tree,args_tree,aligner,args_aligner
 FAMSA,-gt upgma -medoidtree,FAMSA,
 FAMSA,,MAGUS,
 CLUSTALO,,REGRESSIVE,
-MAFFT,,FAMSA,
+MAFFT,,FOLDMASON,
+
