@@ -1,0 +1,11 @@
+FASTQWIPER SUMMARY:
+
+Total lines: 6177
+Well-formed lines: 6172 (99.92%)
+Clean reads: 1543
+Bad headers or misplaced lines: 4 (0.06%) of which 0 fixed
+BAD SEQ lines: 1 (0.02%)
+BAD '+' lines: 0 (0.0%)
+BAD QUAL lines: 0 (0.0%)
+Reads discarded because len(SEQ) neq len(QUAL): 0
+Blank lines: 0 (0.0%)
