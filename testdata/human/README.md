@@ -1,5 +1,9 @@
 # README
 
+This directory contains:
+- Reads files from FusionCatcher (see description below)
+- Output files from `fusionreport` (see description inside directory)
+
 ## NOTE: This dataset and results were taken from project [Fusioncatcher](https://github.com/ndaniel/fusioncatcher/tree/master/test).
 
 The files:
