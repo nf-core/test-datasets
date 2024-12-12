@@ -23,6 +23,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - bacteroides_fragilis
 - candidatus_portiera_aleyrodidarum
 - deilephila_porcellus (mitochondrion)
+- escherichia_coli
 - galaxea_fascicularis
 - haemophilus_influenzae
 - homo_sapiens
