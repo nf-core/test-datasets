@@ -141,6 +141,10 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'purecn_ex2_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
       - 'purecn_normalpanel.vcf.gz': Example normal VCF to be used for testing PureCN/normaldb
       - 'purecn_normalpanel.vcf.gz.tbi': Index file for 'purecn_normalpanel.vcf.gz'
+      - 'test_quality_mismatch.fastq: 2nd read has len(sequence) != len(quality)'
+      - 'test_truncated_clean.fastq: 3rd read is truncated right after the sequence' (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - 'test_truncated_halfway.fastq: 2nd read is truncatd half-way through the sequence' (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - 'test_corrupted_30reads_R[1/2].fastq.gz: 30 paired-end reads with R1 corrupted and R2 not corrupted' (Details in [fastqrepair](https://github.com/nf-core/test-datasets/blob/fastqrepair/README.md))
     - bcl
       - '200624_A00834_0183_BHMTFYDRXX.tar.gz': NovaSeq 6000 flowcell. Only the first tile of the first lane has been kept to reduce the size of the dataset
       - 'SampleSheet.csv': The corresponding samplesheet.
@@ -214,7 +218,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - 'i7_i5_sample_sheet.csv': sample sheet for demultiplexing via full i7, i5
   - mgi
     - 'fc01.zip': zip file contains fastq files (paired-end) and run information.
-    - 'fc01_sample_sheet.csv': sample sheet for demultiplexing 
+    - 'fc01_sample_sheet.csv': sample sheet for demultiplexing
   - nanopore
     - bam
       - 'test.sorted.bam'
