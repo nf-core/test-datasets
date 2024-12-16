@@ -347,6 +347,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
     - index
       - salmon: salmon index created with `transcriptome.fasta`
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
+    - vep_cache_113.tar.gz: Compressed VEP cache version 113 containing info.txt and synonyms of chr22 only. No annotations included.
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
       - aligned_reads
