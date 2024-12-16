@@ -1,0 +1,2 @@
+id,samplesheet,lane,flowcell
+test-fc01,s3://ngi-igenomes/testdata/nf-core/pipelines/demultiplex/1.5/mgi/fc01/fc01_sample_sheet.csv,1,s3://ngi-igenomes/testdata/nf-core/pipelines/demultiplex/1.5/mgi/fc01/
