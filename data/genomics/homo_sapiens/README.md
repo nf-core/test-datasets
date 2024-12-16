@@ -148,6 +148,8 @@ Downloaded the gtf and gff3 files from Ensembl:
 1. The contents should be `homo_sapiens/106_GRCh38/chr_synonyms.txt` and `homo_sapiens/106_GRCh38/info.txt`
 1. A tar was generated from the VEP cache folder using `tar -czvf vep/`.
 
+A similar process was done for the `vep_cache_113.tar.gz` file.
+
 ## Index files
 
 ### salmon index
