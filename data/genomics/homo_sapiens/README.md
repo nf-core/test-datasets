@@ -238,6 +238,12 @@ bcftools norm -m +any $DIR_IND/NA12878.vcf.gz \
 bcftools index -f $DIR_IND/vcf/NA12878_GIAB.chr22.vcf.gz --threads 4
 ```
 
+#### `CNVKIT` data
+
+From `illumina/cram/test2.paired_end.sorted.cram` and `illumina/cram/test.paired_end.sorted.cram`
+and using the `CNVKIT_BATCH` modules the `illumina/cram/test2.paired_end.sorted.cnr` and
+`illumina/cram/test2.paired_end.sorted.cns` was created.
+
 ### Plink data generations
 
 1. Used plink: 1.9
