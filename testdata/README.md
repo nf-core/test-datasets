@@ -1,0 +1,3 @@
+*.contrasts.yaml : These are files created from the original csv contrasts files converted into YAML format.
+MaxQuant_contrasts.yaml created from https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/proteomics/maxquant/MaxQuant_contrasts.csv
+SRP254919.contrasts.yaml created from https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/mus_musculus/rnaseq_expression/SRP254919.contrasts.csv

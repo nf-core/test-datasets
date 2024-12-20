@@ -1,0 +1,13 @@
+contrasts:
+  - id: genotype_celltype_t1_t2
+    comparison: ["Celltype", "T1", "T2"]
+
+  - id: genotype_celltype_t1_FoB
+    comparison: ["Celltype", "T1", "FoB"]
+
+  - id: genotype_celltype_t1_MZ_fakeBatch
+    comparison: ["Celltype", "T1", "MZ"]
+    blocking_factors: ["fakeBatch"]
+
+  - id: fakebatch_fakeBatch_b1_b2
+    comparison: ["fakeBatch", "b1", "b2"]
