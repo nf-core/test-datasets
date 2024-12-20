@@ -36,7 +36,7 @@ For both gene expression and CRISPR FASTQ files, only lanes 1 and 2 files were k
 
 In the `SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference.csv` file, the older gene symbol *H2AFY* was replaced by the newer gene symbol *MACROH2A1* designating the same gene for compatibility with newer genome references.
 
-In order to enable testing on a smaller genomic interval, a copy of this file was created keeping sgRNAs against the two consecutive target genes spanning the smallest genomic interval (*RBBP4* and *HDAC1*, spanning the interval chr1:32250000-32750000), as well as non-targeting control sgRNAs (file `SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference_chr1_32250000_32750000.csv`).
+In order to enable testing on a smaller genomic interval, a copy of this file was created keeping sgRNAs against the two consecutive target genes spanning the smallest genomic interval (*RBBP4* and *HDAC1*, spanning the interval chr1:32292083-32686211), as well as non-targeting control sgRNAs (file `SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference_chr1_32292083_32686211.csv`).
 
 ## Genomic reference files
 
