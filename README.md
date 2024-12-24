@@ -167,7 +167,7 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - `test_quality_mismatch.fastq`: (test of FASTQ format compliance) 2nd read has len(sequence) != len(quality)
       - `test_truncated_clean.fastq`: (test of FASTQ format compliance) 3rd read is truncated right after the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
       - `test_truncated_halfway.fastq`: (test of FASTQ format compliance) 2nd read is truncatd half-way through the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
-      - `test2_1_corrupted_10kb.fastq.gz`: 100 KB of test2_1.fastq.gz and manually corrupted in the first sectors
+      - `test2_1_corrupted_10kb.fastq.gz`: 10 KB of test2_1.fastq.gz and manually corrupted in the first sectors
     - fastqc
       - `test_fastqc.html` - FastQC HTML output from `test_1.fastq.gz` FASTQ
       - `test_fastqc.zip` - FastQC zip output from `test_1.fastq.gz` FASTQ
