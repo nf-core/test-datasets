@@ -141,10 +141,6 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'purecn_ex2_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
       - 'purecn_normalpanel.vcf.gz': Example normal VCF to be used for testing PureCN/normaldb
       - 'purecn_normalpanel.vcf.gz.tbi': Index file for 'purecn_normalpanel.vcf.gz'
-      - 'test_quality_mismatch.fastq: 2nd read has len(sequence) != len(quality)'
-      - 'test_truncated_clean.fastq: 3rd read is truncated right after the sequence' (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
-      - 'test_truncated_halfway.fastq: 2nd read is truncatd half-way through the sequence' (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
-      - 'test_corrupted_30reads_R[1/2].fastq.gz: 30 paired-end reads with R1 corrupted and R2 not corrupted' (Details in [fastqrepair](https://github.com/nf-core/test-datasets/blob/fastqrepair/README.md))
     - bcl
       - '200624_A00834_0183_BHMTFYDRXX.tar.gz': NovaSeq 6000 flowcell. Only the first tile of the first lane has been kept to reduce the size of the dataset
       - 'SampleSheet.csv': The corresponding samplesheet.
@@ -166,8 +162,12 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
       - 'test.umi_extract_single.fastq.gz' sarscov2 sequencing reads processed with `umi-tools extract --bc-pattern="NNNN"`.
       - 'text_1.fastq.txt.gz' gzipped compressed version of 'test_1.fastq.gz' in tabular text format
       - 'text_1.fastq.txt.zst' zstd-compressed version of 'test_1.fastq.gz' in tabular text format
-      - 'test\_{1,2}.2.fastq.gz‘: copies of the above reads
+      - 'test2\_{1,2}.fastq.gz‘: copies of the above reads
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
+      - `test_quality_mismatch.fastq`: (test of FASTQ format compliance) 2nd read has len(sequence) != len(quality)
+      - `test_truncated_clean.fastq`: (test of FASTQ format compliance) 3rd read is truncated right after the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - `test_truncated_halfway.fastq`: (test of FASTQ format compliance) 2nd read is truncatd half-way through the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - `test2_1_corrupted_10kb.fastq.gz`: 10 KB of test2_1.fastq.gz and manually corrupted in the first sectors
     - fastqc
       - `test_fastqc.html` - FastQC HTML output from `test_1.fastq.gz` FASTQ
       - `test_fastqc.zip` - FastQC zip output from `test_1.fastq.gz` FASTQ
