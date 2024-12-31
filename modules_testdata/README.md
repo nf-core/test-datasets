@@ -35,3 +35,9 @@ nextflow run nf-core/differentialabundance -r  9a84f4bf1e581425c0fcb7edcec772998
 - `study.filtered.tsv` was extracted from the channel `CUSTOM_MATRIXFILTER.out.filtered`.
 
 - `Condition_genotype_WT_KO.deseq2.results_filtered.tsv` was extracted from the channel `CUSTOM_FILTERDIFFERENTIALTABLE.out.filtered`.
+
+- `Condition_genotype_WT_KO.cls` was extracted from the channel `CUSTOM_TABULARTOGSEACLS.out.cls`.
+
+- `Condition_treatment_Control_Treated.gct` was extracted from the channel `CUSTOM_TABULARTOGSEAGCT.out.gct`.
+
+- `Mus_musculus.anno.feature_metadata.chip` was extracted from the channel `TABULAR_TO_GSEA_CHIP.out.chip`.
