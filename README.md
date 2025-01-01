@@ -8,11 +8,11 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `samplesheet/samplesheet_full.csv`: Samplesheet for reads for full test dataset
 
-`data/minimal/*.fastq.gz`: Subsampled fastq files of RNA-seq reads containing 2 000 reads each
+`data/minimal/*.fastq.gz`: Subsampled FASTQ files of RNA-seq reads containing 2 000 reads each
 
 `data/minimal/*.fa`: Assembled transcriptome generated from the minimal test dataset
 
-`data/full/*.fastq.gz`: Subsampled fastq files of RNA-seq reads containing 80 000 reads each
+`data/full/*.fastq.gz`: Subsampled FASTQ files of RNA-seq reads containing 80 000 reads each
 
 `data/full/*.fa`: Assembled transcriptome generated from the full test dataset
 
@@ -41,7 +41,7 @@ The following samples were chosen for the test dataset:
 | K2     | Juvenile | Post-molt       | 0              | SRX9161276    | SRR12681108   |
 | K3     | Juvenile | Post-molt       | 0              | SRX9161277    | SRR12681107   |
 
-For the minimal test dataset, 2 000 reads were sampled from each fastq file using BBMap's (v39.01) `reformat.sh`. For the full dataset 80 000 reads were sampled from each fastq file.
+For the minimal test dataset, 2 000 reads were sampled from each FASTQ file using BBMap's (v39.01) `reformat.sh`. For the full dataset 80 000 reads were sampled from each FASTQ file.
 
 Example of command used for subsampling reads:
 
