@@ -54,6 +54,12 @@ The pangenomics folder contains subfolders for all organisms for which test data
 
 The folder is structured in the following way: Any nonspecific-pangenome file is located in `pangenome` (e.g. PAF, GFA, ...) and software specific binary files in the `odgi` subfolder. `Pangenomics` contains all typical data required for pangenomics modules, such as PAF, GFA files including the binary formats ODGI, and LAY. Every folder in `pangenomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder. All files in the `pangenomics` folder originates from a [PGGB](https://github.com/pangenome/pggb) run using the [HLA V-352962 gene FASTA](https://github.com/pangenome/pggb/blob/master/data/HLA/V-352962.fa.gz).
 
+### spatial_omics
+
+The spatial_omics folder contains subfolders for different platforms in the emerging field of spatial biology. Some technolgies also provide image-data and this can be found on the 'imaging' folder. This folder includes, on the other hand, includes tabular data. Test datasets from the following technologies are available:
+
+- xenium (10xgenomics)
+
 ## Data Description
 
 ### genomics
@@ -756,6 +762,8 @@ The folder is structured in the following way: Any nonspecific-pangenome file is
 - ilp
   - 'plant_wga.multicut.ilp' : Ilastik project file for multicut. Output format is set to tiff.
   - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5
+- csv
+  - 'spatial_gene_expression.csv' : Cropped csv file from a Xenium homo sapiens breast cancer dataset. 
 
 ### generic
 
