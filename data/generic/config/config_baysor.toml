@@ -1,0 +1,11 @@
+[data]
+x = "x_location" # Name of the x column in the input data. Default: "x"
+y = "y_location" # Name of the y column in the input data. Default: "y"
+z = "z_location" # Name of the z column in the input data. Default: "z"
+gene = "feature_name" # Name of gene column in the input data. Default: "gene"
+force_2d = true #whatever. Default: true
+min_molecules_per_cell = 1 # Min. Default: 1
+min_molecules_per_gene = 3 # Min Molecules. Default: 1
+
+[segmentation]
+scale = 24 # Scale
