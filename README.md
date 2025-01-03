@@ -1,8 +1,6 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
-
 ## Introduction
 
 nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
@@ -30,6 +28,16 @@ To subsequently clone other branches[^1]
 git remote set-branches --add origin [remote-branch]
 git fetch
 ```
+
+## Test data for nf-core/proteinfamilies
+
+This branch contains test data for the [nf-core/proteinfamilies](https://github.com/nf-core/proteinfamilies) pipeline, in the test_data folder.
+
+* **mgnifams_input_small.fa**: An amino acid fasta file of metagenomics derived sequences called from the MGnify analysis pipelines. The file contains 50K sequences, a size that allows the pipeline to execute both fast and also create enough clusters/families to sufficiently test all modules of the proteinfamilies pipeline. Called by samplesheets samplesheet.csv and samplesheet_multi_sample_with_gz.csv. It is used in the default, minimal and multi-sample/compressed test configurations.
+* **mgnifams_input_small_copy.fa.gz**: A compressed copy of mgnifams_input_small.fa. Called by samplesheet samplesheet_multi_sample_with_gz to simultaneously test for the functionality of both multi-sample and compressed fasta inputs.
+* **mgnifams_extra.fa**: An amino acid fasta file of another 50K sequences. Called by samplesheets samplesheet_update.csv and samplesheet_full.csv to test the functionality of the update families mechanism. Sequences that match existing families are processed along those families, which are then updated. Non-hit sequences will go through the basic family generation workflow.
+* **existing_hmms.tar.gz**: A compressed archive containing 5 HMM files (.hmm.gz) of previously generated families (from mgnifams_input_small.fa). Called by samplesheets samplesheet_update.csv and samplesheet_full.csv to test the functionality of the update families mechanism.
+* **existing_msas.tar.gz**: A compressed archive containing 5 MSA files (.aln) of previously generated families (from mgnifams_input_small.fa). Called by samplesheets samplesheet_update.csv and samplesheet_full.csv to test the functionality of the update families mechanism. The files in the archive are the same in number as those in the HMM archive, and their base file names are matching.
 
 ## Support
 
