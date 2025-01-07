@@ -404,6 +404,8 @@ The spatial_omics folder contains subfolders for different platforms in the emer
       - test2.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test2*{1,2}` (tumor)
       - test2.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor)
       - test3.paired*end.recalibrated.sorted: Mapped, sorted, duplicate marked, and recalibrated reads based on `test2*{1,2}` (tumor) Sample is renamed to allow multi-sample testing
+      - test.rna.paired_end.sorted.cram: CRAM conversion of `test.rna.paired_end.sorted.bam`
+      - test.rna.paired_end.sorted.cram.crai: The index of `test.rna.paired_end.sorted.cram`
     - fastq:
 
       - test\_{1,2}: reads corresponding to normal sample
