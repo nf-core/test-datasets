@@ -12,7 +12,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 - `samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset.
 - `samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset.
 - `samplesheet/samplesheet_v2.csv`: Experiment design file for minimal test dataset using the v2 panel.
-- `samplesheet/samplesheet_mpx_scsp_v1_immunology_v1.csv` : Experiment design file for minimal test dataset using the same data as the local module tests
+- `samplesheet/samplesheet_mpx_scsp_v1_immunology1.csv` : Experiment design file for minimal test dataset using the same data as the local module tests
 
 ## Test datasets origin
 
