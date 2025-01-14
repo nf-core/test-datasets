@@ -74,7 +74,6 @@ import numpy as np
 import dnaio
 from pixelator import read
 import itertools
-import polars as pl
 import pandas as pd
 from pathlib import Path
 from pixelator.utils import reverse_complement
@@ -132,7 +131,7 @@ sorted_parts = np.array(sorted(parts.items(), key=(lambda t: t[1].shape[0]), rev
 
 # Subset last 10 components and join the data frame
 indices = np.random.randint(0, len(sorted_parts), 5)
-component_subset = pl.concat(v for k, v in sorted_parts[indices])
+component_subset = pd.concat(v for k, v in sorted_parts[indices])
 
 # Collect umis
 unique_umi_upia = component_subset[["umi", "upia"]].unique()
