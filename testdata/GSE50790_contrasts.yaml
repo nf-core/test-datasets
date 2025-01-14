@@ -1,0 +1,4 @@
+contrasts:
+  - id: phenotype_uninvolved_lesional
+    comparison: ["phenotype", "uninvolved", "lesional"]
+    blocking_factors: ["patient"]
