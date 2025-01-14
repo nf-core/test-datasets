@@ -1,0 +1,14 @@
+{
+    "cli": {
+        "command": "pixelator single-cell demux",
+        "options": {
+            "--mismatches": 0.1,
+            "--min-length": null,
+            "--panel": "human-sc-immunology-spatial-proteomics",
+            "--anchored": null,
+            "--rev-complement": null,
+            "--output": ".",
+            "--design": "D21"
+        }
+    }
+}
