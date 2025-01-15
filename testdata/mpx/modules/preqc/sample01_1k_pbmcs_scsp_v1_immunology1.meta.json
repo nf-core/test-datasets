@@ -1,0 +1,17 @@
+{
+    "cli": {
+        "command": "pixelator single-cell preqc",
+        "options": {
+            "--trim-front": 0,
+            "--trim-tail": 0,
+            "--max-length": null,
+            "--min-length": null,
+            "--max-n-bases": 0,
+            "--avg-qual": 20,
+            "--dedup": false,
+            "--remove-polyg": false,
+            "--output": ".",
+            "--design": "D21"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "cli": {
+        "command": "pixelator single-cell collapse",
+        "options": {
+            "--markers-ignore": null,
+            "--algorithm": "adjacency",
+            "--max-neighbours": 60,
+            "--mismatches": 2,
+            "--min-count": 2,
+            "--panel": "human-sc-immunology-spatial-proteomics",
+            "--output": ".",
+            "--design": "D21"
+        }
+    }
+}

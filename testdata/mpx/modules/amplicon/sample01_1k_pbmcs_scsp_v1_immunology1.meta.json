@@ -1,0 +1,11 @@
+{
+    "cli": {
+        "command": "pixelator single-cell amplicon",
+        "options": {
+            "--sample-name": null,
+            "--skip-input-checks": false,
+            "--output": ".",
+            "--design": "D21"
+        }
+    }
+}
