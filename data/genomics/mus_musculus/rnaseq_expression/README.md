@@ -21,6 +21,10 @@ An example file we might use to define contrasts over the above experiment. Vari
  * The value of the sample sheet contrast column used to identify target/ treatment samples.
  * A comma-separated list of other columns to use as blocking variables (can empty)
 
+### SRP254919.contrasts.yaml
+
+The same example contrasts file as `SRP254919.contrasts.csv` converted to .yaml format.
+
 ### SRP254919.salmon.merged.gene_counts.top1000cov.tsv
 
 Count matrix derived by running [rnaseq](https://nf-co.re/rnaseq) against the mouse genome GRCm38 with default parameters. The top 1000 most variable genes were selected from `salmon.merged.gene_counts` in R as follows: 
