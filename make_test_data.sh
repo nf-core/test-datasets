@@ -84,11 +84,12 @@ bedtools merge -i test_somalier_small.sorted.bed -d 999999999| awk -v OFS='\t' '
 seqtk subseq /data/shared/reference_genomes/GRCh38_no_alt_analysis_set.fasta chr16X.bed|seqtk seq -c -M test_somalier_small.bed | sed '/^>/ s/:.*//' | cat - extra_chr.fa | pigz -p 36 > hg38.test.fa.gz
 
 # Subsample to reduce size
-samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed HG002_PACBIO_REVIO.bam -h -O BAM > hg002_somalier_small_revio.bam
-samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed /media/hgst_12tb_1/felix/HG003_phased.bam -h -O BAM > hg003_somalier_small_revio.bam
-samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed /media/hgst_12tb_1/felix/HG004_phased.bam -h -O BAM > hg004_somalier_small_revio.bam
+samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed HG002_PACBIO_REVIO.bam -h -O BAM | samtools calmd -b - GRCh38_no_alt_analysis_set.fasta > hg002_somalier_small_revio.bam
 
-samtools view -@ 36 -s 0.5 -M -L test_somalier_small.bed hg002.haplotagged.bam -h -O BAM > hg002_somalier_small_ont.bam
+samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed /media/hgst_12tb_1/felix/HG003_phased.bam -h -O BAM | samtools calmd -b - GRCh38_no_alt_analysis_set.fasta > hg003_somalier_small_revio.bam
+samtools view -@ 36 -s 0.8 -M -L test_somalier_small.bed /media/hgst_12tb_1/felix/HG004_phased.bam -h -O BAM | samtools calmd -b - GRCh38_no_alt_analysis_set.fasta > hg004_somalier_small_revio.bam
+
+samtools view -@ 36 -s 0.5 -M -L test_somalier_small.bed hg002.haplotagged.bam -h -O BAM | samtools calmd -b - GRCh38_no_alt_analysis_set.fasta > hg002_somalier_small_ont.bam
 
 # Make fastq
 samtools fastq -T \* -@ 36 hg002_somalier_small_revio.bam | pigz -p 36 > hg002_somalier_small_revio.fastq.gz
