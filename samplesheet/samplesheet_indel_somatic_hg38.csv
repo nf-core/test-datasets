@@ -1,0 +1,3 @@
+id,test_vcf,caller,subsample
+test1,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/HCC1395T_vs_HCC1395N.freebayes.chr21.vcf.gz,freebayes,
+test2,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/HCC1395T_vs_HCC1395N.strelka.somatic_indels.vcf.gz,strelka,"TUMOR"

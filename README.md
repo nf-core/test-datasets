@@ -41,8 +41,12 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 
 samplesheet/
 
-samplesheet_HG002_hg37.csv: Sample sheet for nf-core/variantbenchmarking test profiles for hg37
-samplesheet_HG002_hg38.csv: Sample sheet for nf-core/variantbenchmarking test profiles for hg38
+samplesheet_small_germline_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 small (snvs and indels) variants from germline sample HG002
+samplesheet_sv_germline_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 structural variants from germline sample HG002
+samplesheet_indel_somatic_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 indel variants from somatic sample SEQC2
+samplesheet_snv_somatic_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 snv variants from somatic sample SEQC2
+samplesheet_sv_somatic_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 stuctural variants from somatic sample SEQC2
+samplesheet_sv_somatic_hg37_liftover: Sample sheet for nf-core/variantbenchmarking test profiles for hg37 stuctural variants from HG002 sample for lifting over variants
 
 
 testdata/
@@ -65,16 +69,18 @@ manta sample is from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/da
 
 lumpy sample is from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/BU_GRCh38_SVs_06252018/ajtrio.lumpy.svtyper.HG002.md.sorted.recal.vcf.gz
 
+HCC1395T_vs_HC1395N analysis is the results of nf-core/sarek (v3.4.2) with hg38 for SEQC2 tests.
+
 - truth cases:
 
 -- hg37 
 
 data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_SVs_Integration_v0.6/ 
 
-downsized to chr21
-
 -- hg38 
 
-data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_SV_benchmark_v0.01/ 
+HG002 data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_SV_benchmark_v0.01/ 
 
-downsized to chr21
+SEQC2 data is downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/release/latest/
+
+Note that all the original files are downsized to chromosome 21 for test purposes. 
