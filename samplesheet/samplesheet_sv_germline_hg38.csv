@@ -1,4 +1,4 @@
 id,test_vcf,caller,pctsize,pctseq,pctovl,refdist,chunksize,normshift,normdist,normsizediff,maxdist,typeignore,evaluationmode
-test1,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/manta.HG002.chr21.vcf.gz,manta,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
-test2,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/Ashkenazim_HG002.filtered.sv.chr21.vcf.gz,merged,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
-test3,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/HG002_DRAGEN_SV_hg19.chr21.vcf.gz,dragen,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
+test1,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/germline/manta.HG002.chr21.vcf.gz,manta,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
+test2,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/germline/Ashkenazim_HG002.filtered.sv.chr21.vcf.gz,merged,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
+test3,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/germline/HG002_DRAGEN_SV_hg19.chr21.vcf.gz,dragen,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
