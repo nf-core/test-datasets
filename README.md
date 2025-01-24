@@ -1,4 +1,4 @@
-# ![nfcore/test-datasets/methylong]
+# Test data for methylong pipeline
 
 This branch contains test data for testing the pipeline `methylong` 
 
