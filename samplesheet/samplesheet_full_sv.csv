@@ -1,0 +1,3 @@
+id,test_vcf,caller,refdist,chunksize,normshift,normdist,normsizediff,maxdist,typeignore,dup_to_ins,pctsize,pctseq,pctovl,evaluationmode,subsample
+test1,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NIST_SV_v0.6/GIAB_Evaluations/BoutrosLab-SV_curation_GIABv0.6/manta_GIABv0.6/diploidSV_PASS_DUPtoINS.vcf.gz",manta,100000,100000,0.3,0.3,0.3,100000,true,true,0.3,0,0,cts,
+test2,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NIST_SV_v0.6/GIAB_Evaluations/BoutrosLab-SV_curation_GIABv0.6/delly_GIABv0.6/norm_recall_HG002.merged__filt_DUPtoINS.vcf.gz",delly,100000,100000,0.3,0.3,0.3,100000,true,true,0.3,0,0,cts,

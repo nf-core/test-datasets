@@ -1,0 +1,3 @@
+id,test_vcf,caller,refdist,chunksize,normshift,normdist,normsizediff,maxdist,typeignore,dup_to_ins,pctsize,pctseq,pctovl,evaluationmode,subsample
+test1,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/SevenBridges_GraphGATKRefine_05052017/HG002-NA24385-50x.union_170414.split.vcf.gz",graph,,,,,,,,,,,,,
+test2,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/HG002-HG003-HG004.jointVC.filter.vcf",gatk,,,,,,,,,,,,,"Sample_Diag-excap51-HG002-EEogPU"
