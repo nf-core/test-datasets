@@ -1,3 +1,4 @@
 species,refseq,fasta,gff,fastq
 Mycoplasmoides_fastidiosum,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/GCF_000027325.1_ASM2732v1_genomic.tiny.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/GCF_000027325.1_ASM2732v1_genomic.tiny.gff.gz,
 Mycoplasmoides_genitalium,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/GCF_024498275.1_ASM2449827v1_genomic.tiny.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/GCF_024498275.1_ASM2449827v1_genomic.tiny.gff.gz,
+Mycoplasmoides_gallisepticum,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/GCF_900476085.1_50569_G01_genomic.tiny.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/genomeqc/testdata/GCF_900476085.1_50569_G01_genomic.tiny.gff.gz,
