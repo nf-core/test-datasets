@@ -93,6 +93,13 @@ Copied from the taxprofiler branch (https://github.com/nf-core/test-datasets/tre
 Contains a tarred database for KrakenUniq, built with KrakenUniq v1.0.3. Content:
   - The microbial metagenomics benchmarking dataset published in Meslier V., 2022 (10.1038/s41597-022-01762-z)
 
+
+*eager3-mammoth-minimal*: Database for krakenuniq, built with Krakenuniq 1.0.2, containing
+  - A mammoth mitochondrial genome (NCBI Accession: NC_007596.2)
+  - A human mitochondrial genome (NCBI Accession: NC_012920.1)
+  - A boa constrictor mitochondrial genome (NCBI Accession: AB177354.1)
+
+
 #### MetaPhlAn4
 
 Copied from general test datasets of nf-core (https://raw.githubusercontent.com/nf-core/test-datasets/409834b927c3a4e9314691b1125acee1434f7dd8/data/delete_me/metaphlan4_database.tar.gz)
