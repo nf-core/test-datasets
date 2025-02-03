@@ -9,7 +9,7 @@ Currently this is in a temporary repo:
 
 - `testdata/` : subsampled genome fasta files and annotations (gff).
 - `samplesheet/input_bacteria.csv`: Minimal test dataset, whole mycoplasma genomes. Just links to input Refseq IDs (which downloads the data in first process).
-- `samplesheet/input_myco_tiny.csv`: Minimal test dataset (actual data in this repo), partial mycoplasma genomes and their annotations, taking only the first 300 line of the GFF (or nearest to include whole genes), for two species only (Mycoplasmoides_fastidiosum, Mycoplasmoides_genitalium).
+- `samplesheet/input_myco_tiny.csv`: Minimal test dataset (actual data in this repo), partial mycoplasma genomes and their annotations, taking only the first 300 line of the GFF (or nearest to include whole genes), for two species only (Mycoplasmoides_fastidiosum, Mycoplasmoides_genitalium). Then the equivalent region of the genome is also taken.
 
 ## Test datasets origin
 
