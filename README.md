@@ -695,6 +695,7 @@ The spatial_omics folder contains subfolders for different platforms in the emer
       - emu
         - species_taxid.fasta: List of sequences id containing steptococcus agalactiae.
         - taxonomy.tsv: tsv file with tax lineage for streptococcus agalactiae.
+      - emu.tar.gz: emu DB archive
     - nanopore
        - fastq
         - test.fastg.gz: Öong-read sequencing reads of the genome steptococcus agalactiae.
