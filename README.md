@@ -29,6 +29,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - homo_sapiens
 - sarscov2
 - saccharomyces_cerevisiae
+- streptococcus_agalactiae
 
 Additionally there is a special subfolder for metagenome related files
 
@@ -689,6 +690,15 @@ The spatial_omics folder contains subfolders for different platforms in the emer
       - taxdump
         - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
         - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
+  - streptococcus_agalactiae
+    - genome
+      - emu
+        - species_taxid.fasta: List of sequences id containing steptococcus agalactiae.
+        - taxonomy.tsv: tsv file with tax lineage for streptococcus agalactiae.
+    - nanopore
+       - fastq
+        - test.fastg.gz: Öong-read sequencing reads of the genome steptococcus agalactiae.
+
 
 - eukaryotes
   - galaxea_fascicularis
@@ -767,7 +777,7 @@ The spatial_omics folder contains subfolders for different platforms in the emer
   - 'plant_wga.multicut.ilp' : Ilastik project file for multicut. Output format is set to tiff.
   - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5
 - csv
-  - 'spatial_gene_expression.csv' : Cropped csv file from a Xenium homo sapiens breast cancer dataset. 
+  - 'spatial_gene_expression.csv' : Cropped csv file from a Xenium homo sapiens breast cancer dataset.
 
 ### generic
 
