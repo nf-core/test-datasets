@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/modules/data/genomics/sarscov2/genome/ska/sarscov2_reduced.skf
+https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/modules/data/genomics/eukaryotes/plasmodium_falciparum/ska/plasmodium_reduced.skf

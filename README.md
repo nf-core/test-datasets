@@ -27,6 +27,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - galaxea_fascicularis
 - haemophilus_influenzae
 - homo_sapiens
+- plasmodium_falciparum
 - sarscov2
 - saccharomyces_cerevisiae
 - streptococcus_agalactiae
@@ -186,6 +187,8 @@ The spatial_omics folder contains subfolders for different platforms in the emer
       - 'assembly.gfa.bgz': compressed with block-compressed GZIP (BGZF)
       - 'assembly.gfa.gz': compressed with GZIP
       - 'assembly.gfa.zst': compressed with Zstandard (zstd)
+    - ska
+      - 'sarscov2_reduced.skf': SKA sketch file generated from a small fragment of the genome
     - sra
       - `SRR13255544.tar.gz`: Tar archive containing SRA file obtained from SRR13255544.
       - `SRR11140744.tar.gz`: Tar archive containing SRA file obtained from SRR11140744.
@@ -726,6 +729,9 @@ The spatial_omics folder contains subfolders for different platforms in the emer
         - genome.gff3.gz: Gene models predicted by BRAKER3 pipeline on genome.fasta.gz and formatted by GenomeTools `gt gff3 -tidy -retainids` tool
         - genome.gtf.gz: genome.gff3.gz converted to GTF format with `agat_convert_sp_gff2gtf.pl` script
         - genome.hints.gff.gz: Hints file produced by BRAKER3 pipeline
+  - plasmodium_falciparum
+    - ska
+      - 'plasmodium_reduced.ska': SKA sketch file generated from a small fragment of the P. falciparum reference genome
 
 ### pangenomics
 
