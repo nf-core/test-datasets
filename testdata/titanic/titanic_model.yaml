@@ -1,0 +1,46 @@
+network_params:
+  nb_neurons_intermediate_layer:
+    space: [7,15]
+    mode: randint
+  nb_intermediate_layers:
+    space: [1,5]
+    mode: randint
+  nb_classes:
+    space: [2]
+    mode: choice
+
+optimizer_params:
+  method:
+      space: ['Adam', 'SGD']
+      mode: choice
+  lr:
+    space: [0.0001, 0.1]
+    mode: loguniform
+
+loss_params:
+  loss_fn:
+    space: ['CrossEntropyLoss']
+    mode: choice
+
+data_params:
+  batch_size:
+    space: [16, 32, 64, 128, 256]
+    mode: choice
+
+tune:
+  config_name: "tune_config"
+  tune_params:
+    metric: "val_loss"
+    mode: "min"
+    num_samples: 3
+  scheduler:
+    name: "FIFOScheduler"
+    params: {}
+  run_params:
+    stop:
+      training_iteration: 5
+  step_size: 1
+  gpu_per_trial: 0
+  cpu_per_trial: 1
+
+seed: 123
