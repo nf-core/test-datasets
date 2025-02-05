@@ -27,7 +27,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - galaxea_fascicularis
 - haemophilus_influenzae
 - homo_sapiens
-- plasomdium_falciparum
+- plasmodium_falciparum
 - sarscov2
 - saccharomyces_cerevisiae
 
