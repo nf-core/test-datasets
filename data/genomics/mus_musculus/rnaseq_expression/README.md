@@ -72,6 +72,8 @@ nextflow run nf-core/differentialabundance -r 9a84f4bf1e581425c0fcb7edcec7729982
 
 - `treatment_mCherry_hND6_.deseq2.results.tsv` was extracted from the channel `DESEQ2_DIFFERENTIAL.out.results`.
 
+- `treatment_mCherry_hND6_.deseq2.results_filtered.tsv` was extracted from the channel `CUSTOM_FILTERDIFFERENTIALTABLE.out.filtered`.
+
 
 ### Test full profile output data
 
