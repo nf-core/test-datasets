@@ -1,0 +1,2 @@
+sample_id,img_directory,parameter_file
+TEST1,https://raw.githubusercontent.com/CaroAMN/test-datasets/lsmquant/test_data/images/,https://raw.githubusercontent.com/CaroAMN/test-datasets/lsmquant/test_data/parameterfiles/params_TEST1_lsmquant.csv
