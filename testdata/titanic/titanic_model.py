@@ -47,12 +47,19 @@ class ModelTitanic(torch.nn.Module):
     ) -> torch.Tensor:
         """Forward pass of the model.
 
-        It should return the output as a dictionary, with the same keys as `y`.
+        Args:
+            pclass: Tensor of shape [batch_size, 1]
+            sex: Tensor of shape [batch_size, 1]
+            ...etc
 
-        NOTE that the final `x` is a torch.Tensor with shape (batch_size, nb_classes).
-        Here nb_classes = 2, so the output is a tensor with two columns, meaning the probabilities for not survived | survived.
+        Returns:
+            Tensor of shape [batch_size, nb_classes] containing class probabilities
         """
-        x = torch.stack((pclass, sex, age, sibsp, parch, fare, embarked), dim=1).float()
+        # Stack features and remove the extra dimension
+        x = torch.stack((pclass, sex, age, sibsp, parch, fare, embarked), dim=1).float()  # [batch_size, 7, 1]
+        x = x.squeeze(-1)  # [batch_size, 7]
+
+        # Pass through layers
         x = self.relu(self.input_layer(x))
         for layer in self.intermediate:
             x = self.relu(layer(x))
@@ -61,11 +68,17 @@ class ModelTitanic(torch.nn.Module):
     def compute_loss(self, output: torch.Tensor, survived: torch.Tensor, loss_fn: Callable) -> torch.Tensor:
         """Compute the loss.
 
-        `output` is the output tensor of the forward pass.
-        `survived` is the target tensor -> label column name.
-        `loss_fn` is the loss function to be used.
+        Args:
+            output: Model output tensor of shape [batch_size, nb_classes]
+            survived: Target tensor of shape [batch_size, 1]
+            loss_fn: Loss function (CrossEntropyLoss)
+
+        Returns:
+            Loss value
         """
-        return loss_fn(output, survived)
+        # Squeeze the extra dimension from the target tensor and ensure long dtype
+        target = survived.squeeze(-1).long()
+        return loss_fn(output, target)
 
     def batch(
         self,
