@@ -1,0 +1,4 @@
+tree,args_tree,aligner,args_aligner
+FAMSA,,FAMSA,
+,,MAFFT,--dpparttree
+
