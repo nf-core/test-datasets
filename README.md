@@ -42,17 +42,69 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 
 ### FASTA files
 
-FASTA reference files used for building databases are copies of the nf-core/modules test dataset files (`sarscov2` and `haemophilus_influenzae` files) as of December 2023.
+FASTA reference files used are as follows (where possible using the same as in nf-core modules test-datasets, which are all except the human mitochondrial genome):
 
-- [sarscov2.fasta](https://github.com/nf-core/test-datasets/blob/0d5006780e17a3b11a36437d220c372c2e6e4ed0/data/genomics/sarscov2/genome/genome.fasta)
-- [sarscov2.faa](https://github.com/nf-core/test-datasets/blob/89f6476aa0006451c1e9ea789ce4e4173c892319/data/genomics/sarscov2/genome/proteome.fasta)
-- [haemophilus_influenzae.fna.gz](https://github.com/nf-core/test-datasets/blob/575e27aa850e186d4bcf85afc5572648aa35f2f4/data/genomics/prokaryotes/haemophilus_influenzae/genome/genome.fna.gz)
+| Name                                     | TaxID  | Accession     | GenBank/Refseq Assembly | GenBank ID         |
+| ---------------------------------------- | ------ | ------------- | ----------------------- | ------------------ |
+| Human RCS Mitochondrial genome           | 9606   | NC_012920.1   | GCF_000001405           | J01415             |
+| SARS-CoV-2 genome                        | 694009 | MT192765.1    | GCA_011545545.1         | MT192765           |
+| Bacteroides fragilis genome              | 817    | NZ_CP069563.1 | GCF_016889925.1         | CP069563, CP069564 |
+| Candidatus portiera aleyrodidarum genome | 91844  | NC_018507.1   | GCF_000292685.1         | CP003708           |
+| Streptococcus agalactiae genome          | 1311   | NZ_CP019811   | GCF_002881355.1         | CP019811           |
+| Haemophilus influenzae genome            | 727    | NZ_LS483480.1 | GCF_900478275.1         | LS483480           |
+
+The nucleotide FASTA and protein FASTA files were downloaded using `ncbi-datasets-cli` with
+
+```bash
+## Human MT genome must be extracted from the whole assembly
+## Don't include coding sequences as resulting file is too large
+datasets download genome accession GCF_000001405 --include genome --filename NC_012920.1.zip --chromosomes 'MT'
+
+for i in  GCA_011545545.1 GCF_016889925.1 GCF_000292685.1 GCF_002881355.1 GCF_900478275.1; do
+    datasets download genome accession --include genome,protein $i --filename $i.zip
+done
+
+for i in *.zip; do
+    unzip $i
+    fnaname=$(basename $(find ncbi_dataset -name '*.fna'))
+    mv ncbi_dataset/data/*/*.fna .
+    mv ncbi_dataset/data/*/*.faa ${fnaname%.fna}.faa
+    rm -r ncbi_dataset md5sum.txt README.md
+done
+
+rm *.zip
+gzip -k * ## to have both gzipped and uncompressed versions
+```
 
 ### taxonomy files
 
-These are NCBI taxdump re-constructed files, where the entries only include those of the two FASTA files above (rather than the entire tax dump).
+These are NCBI taxdump re-constructed files, where the entries only include those of the FASTA list files above (rather than the entire tax dump).
 
-- Prot taxdump: as of December 2023
+- Downloaded NCBI [`taxdmp.tar.gz`](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) from Feb. 2024 and ran [this script](https://gist.github.com/jfy133/56228de5e0bb666b6c980593e5da6a58):
+
+  ```bash
+  for i in 9606 694009 817 91844 1311 727; do
+      taxdmp_filter.sh $i
+  done
+  ```
+
+- Downloaded [`nucl_gb.accession2taxid.gz`](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/) from Feb. 2024, and ran
+
+  ```bash
+  accession2taxid_filter.sh 'J01415|MT192765|CP069563|CP069564|CP003708|CP019811|LS483480'
+  ```
+
+- Manually made `nucl2tax.map` file based on column 2/3 of the above
+
+- Downloaded [`prot.accession2taxid.FULL.gz`](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/) from Feb. 2024, and ran
+
+  ```bash
+  ## Running *.faa results in  a too large regex error, so go by file despite how long it takes
+  for i in *.faa; do
+      echo $i
+      zgrep -P "^$(grep --no-filename '>' $i | cut -d ' ' -f 1 | sed 's/>//g' | tr '\n' '|')" ~/cache/databases/acc2taxid/prot.accession2taxid.FULL.gz >> protaccession2taxid_reduced.dmp
+  done
+  ```
 
 ## Broken Samplesheets
 
@@ -65,3 +117,7 @@ Each file _should_ fail and give an error message from nf-schema.
 - `samplesheets/broken/test_missing_both_paths.csv`: has a row where both required `fasta_dna` and `fasta_aa` paths are missing
 - `samplesheets/broken/test_missing_required_column.csv`: missing the required `taxid` column
 - `samplesheets/broken/test_non_existent_file.csv`: has a path to a `fasta_dna` filepath that doesn't exist
+
+```
+
+```

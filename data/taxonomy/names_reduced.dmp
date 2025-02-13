@@ -1,0 +1,373 @@
+9606	|	Homo sapiens Linnaeus, 1758	|		|	authority	|
+9606	|	Homo sapiens	|		|	scientific name	|
+9606	|	human	|		|	genbank common name	|
+9605	|	Homo Linnaeus, 1758	|		|	authority	|
+9605	|	Homo	|		|	scientific name	|
+9605	|	humans	|		|	common name	|
+207598	|	Homininae	|		|	scientific name	|
+207598	|	Homo/Pan/Gorilla group	|		|	synonym	|
+9604	|	great apes	|		|	genbank common name	|
+9604	|	Hominidae Gray, 1825	|		|	authority	|
+9604	|	Hominidae	|		|	scientific name	|
+9604	|	Pongidae	|		|	synonym	|
+314295	|	ape	|	ape <primates>	|	common name	|
+314295	|	apes	|		|	genbank common name	|
+314295	|	Hominoidea	|		|	scientific name	|
+9526	|	Catarrhini	|		|	scientific name	|
+314293	|	Anthropoidea	|		|	synonym	|
+314293	|	Simiiformes	|		|	scientific name	|
+376913	|	Haplorrhini	|		|	scientific name	|
+9443	|	Primata	|		|	synonym	|
+9443	|	primate	|		|	equivalent name	|
+9443	|	primates	|		|	blast name	|
+9443	|	Primates Linnaeus, 1758	|		|	authority	|
+9443	|	Primates	|		|	scientific name	|
+314146	|	Euarchontoglires	|		|	scientific name	|
+1437010	|	Boreoeutheria	|		|	scientific name	|
+1437010	|	Boreotheria	|		|	synonym	|
+9347	|	eutherian mammals	|		|	common name	|
+9347	|	Eutheria	|		|	scientific name	|
+9347	|	Placentalia	|		|	synonym	|
+9347	|	placental mammals	|		|	common name	|
+9347	|	placentals	|	placentals <blast name>	|	blast name	|
+9347	|	placentals	|	placentals <genbank common name>	|	genbank common name	|
+32525	|	Theria Parker & Haswell, 1897	|		|	authority	|
+32525	|	Theria	|	Theria <mammals>	|	scientific name	|
+40674	|	Mammalia	|		|	scientific name	|
+40674	|	mammals	|	mammals <blast name>	|	blast name	|
+40674	|	mammals	|	mammals <genbank common name>	|	genbank common name	|
+32524	|	Amniota	|		|	scientific name	|
+32524	|	amniotes	|		|	genbank common name	|
+32523	|	Tetrapoda	|		|	scientific name	|
+32523	|	tetrapods	|		|	genbank common name	|
+1338369	|	Dipnotetrapodomorpha	|		|	scientific name	|
+8287	|	Sarcopterygii	|		|	scientific name	|
+117571	|	bony vertebrates	|		|	genbank common name	|
+117571	|	Euteleostomi	|		|	scientific name	|
+117570	|	Teleostomi	|		|	scientific name	|
+7776	|	Gnathostomata	|	Gnathostomata <vertebrates>	|	scientific name	|
+7776	|	jawed vertebrates	|		|	genbank common name	|
+7742	|	Vertebrata Cuvier, 1812	|		|	authority	|
+7742	|	Vertebrata	|	Vertebrata <vertebrates>	|	scientific name	|
+7742	|	vertebrates	|	vertebrates <blast name>	|	blast name	|
+7742	|	vertebrates	|	vertebrates <genbank common name>	|	genbank common name	|
+89593	|	Craniata	|	Craniata <chordates>	|	scientific name	|
+7711	|	Chordata	|		|	scientific name	|
+7711	|	chordates	|	chordates <blast name>	|	blast name	|
+7711	|	chordates	|	chordates <genbank common name>	|	genbank common name	|
+33511	|	deuterostomes	|		|	common name	|
+33511	|	Deuterostomia	|		|	scientific name	|
+33213	|	Bilateria	|		|	scientific name	|
+6072	|	Eumetazoa	|		|	scientific name	|
+33208	|	Animalia	|		|	synonym	|
+33208	|	animals	|		|	blast name	|
+33208	|	metazoans	|		|	genbank common name	|
+33208	|	Metazoa	|		|	scientific name	|
+33208	|	multicellular animals	|		|	common name	|
+33154	|	Fungi/Metazoa group	|		|	synonym	|
+33154	|	Opisthokonta Cavalier-Smith 1987	|		|	authority	|
+33154	|	Opisthokonta	|		|	scientific name	|
+33154	|	opisthokonts	|		|	synonym	|
+2759	|	Eucarya	|		|	synonym	|
+2759	|	Eucaryotae	|		|	synonym	|
+2759	|	eucaryotes	|		|	genbank common name	|
+2759	|	Eukarya	|		|	synonym	|
+2759	|	Eukaryotae	|		|	synonym	|
+2759	|	Eukaryota	|		|	scientific name	|
+2759	|	eukaryotes	|	eukaryotes <blast name>	|	blast name	|
+2759	|	eukaryotes	|	eukaryotes <common name>	|	common name	|
+131567	|	biota	|		|	synonym	|
+131567	|	cellular organisms	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|
+694009	|	HCoV-SARS	|		|	acronym	|
+694009	|	Human coronavirus (strain SARS)	|		|	equivalent name	|
+694009	|	SARS	|		|	acronym	|
+694009	|	SARS-like coronavirus	|		|	equivalent name	|
+694009	|	SARSr-CoV	|		|	acronym	|
+694009	|	SARSrCoV	|		|	acronym	|
+694009	|	SARS-related coronavirus	|		|	equivalent name	|
+694009	|	Severe acute respiratory syndrome-related coronavirus	|		|	scientific name	|
+2509511	|	Sarbecovirus	|		|	scientific name	|
+694002	|	Betacoronavirus	|		|	scientific name	|
+694002	|	Coronavirus	|	Coronavirus <Betacoronavirus>	|	in-part	|
+694002	|	Coronavirus group 2	|		|	equivalent name	|
+694002	|	Group 2 species	|		|	equivalent name	|
+2501931	|	Orthocoronavirinae	|		|	scientific name	|
+11118	|	Coronaviridae	|		|	scientific name	|
+2499399	|	Cornidovirineae	|		|	scientific name	|
+76804	|	Nidovirales	|		|	scientific name	|
+2732506	|	Pisoniviricetes	|		|	scientific name	|
+2732408	|	Pisuviricota	|		|	scientific name	|
+2732396	|	Orthornavirae	|		|	scientific name	|
+2559587	|	Riboviria	|		|	scientific name	|
+2559587	|	RNA viruses and viroids	|		|	common name	|
+2559587	|	RNA viruses	|		|	common name	|
+10239	|	Vira	|		|	synonym	|
+10239	|	Viridae	|		|	synonym	|
+10239	|	viruses	|		|	blast name	|
+10239	|	Viruses	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|
+817	|	ATCC 25285	|	ATCC 25285 <type strain>	|	type material	|
+817	|	Bacillus fragilis	|		|	synonym	|
+817	|	Bacillus fragilis Veillon and Zuber 1898	|		|	authority	|
+817	|	Bacteroides fragilis	|		|	scientific name	|
+817	|	Bacteroides fragilis (Veillon and Zuber 1898) Castellani and Chalmers 1919 (Approved Lists 1980) emend. Hahnke et al. 2016	|		|	authority	|
+817	|	"Bacteroides inaequalis" Eggerth and Gagnon 1933	|		|	authority	|
+817	|	Bacteroides inaequalis	|		|	synonym	|
+817	|	"Bacteroides incommunis" Eggerth and Gagnon 1933	|		|	authority	|
+817	|	Bacteroides incommunis	|		|	synonym	|
+817	|	Bacteroides sp. 2_1_16	|		|	includes	|
+817	|	Bacteroides sp. 2_1_56FAA	|		|	includes	|
+817	|	"Bacteroides uncatus" Eggerth and Gagnon 1933	|		|	authority	|
+817	|	Bacteroides uncatus	|		|	synonym	|
+817	|	CCUG 4856	|	CCUG 4856 <type strain>	|	type material	|
+817	|	CIP 77.16	|	CIP 77.16 <type strain>	|	type material	|
+817	|	DSM 2151	|	DSM 2151 <type strain>	|	type material	|
+817	|	Fusiformis fragilis	|		|	synonym	|
+817	|	"Fusiformis fragilis" Topley and Wilson 1929	|		|	authority	|
+817	|	JCM 11019	|	JCM 11019 <type strain>	|	type material	|
+817	|	LMG 10263	|	LMG 10263 <type strain>	|	type material	|
+817	|	LMG:10263	|	LMG:10263 <type strain>	|	type material	|
+817	|	NCTC 9343	|	NCTC 9343 <type strain>	|	type material	|
+817	|	"Pseudobacterium fragilis" Krasil'nikov 1949	|		|	authority	|
+817	|	Pseudobacterium fragilis	|		|	synonym	|
+817	|	"Pseudobacterium inaequalis" (Eggerth and Gagnon 1933) Krasil'nikov 1949	|		|	authority	|
+817	|	Pseudobacterium inaequalis	|		|	synonym	|
+817	|	"Pseudobacterium incommunis" (Eggerth and Gagnon 1933) Krasil'nikov 1949	|		|	authority	|
+817	|	Pseudobacterium incommunis	|		|	synonym	|
+817	|	"Pseudobacterium uncatum" (Eggerth and Gagnon 1933) Krasil'nikov 1949	|		|	authority	|
+817	|	Pseudobacterium uncatum	|		|	synonym	|
+817	|	"Ristella fragilis" Prevot 1938	|		|	authority	|
+817	|	Ristella fragilis	|		|	synonym	|
+817	|	"Ristella incommunis" (Eggerth and Gagnon 1933) Prevot 1938	|		|	authority	|
+817	|	Ristella incommunis	|		|	synonym	|
+817	|	"Ristella uncata" (Eggerth and Gagnon 1933) Prevot 1938	|		|	authority	|
+817	|	Ristella uncata	|		|	synonym	|
+817	|	"Sphaerophorus inaequalis" (Eggerth and Gagnon 1933) Prevot 1938	|		|	authority	|
+817	|	Sphaerophorus inaequalis	|		|	synonym	|
+817	|	"Sphaerophorus intermedius" Bergan and Hovig 1968	|		|	authority	|
+817	|	Sphaerophorus intermedius	|		|	synonym	|
+816	|	Bacteroides Castellani and Chalmers 1919 (Approved Lists 1980) emend. Shah and Collins 1989	|		|	authority	|
+816	|	Bacteroides	|		|	scientific name	|
+816	|	Capsularis Prevot 1938 (Approved Lists 1980)	|		|	authority	|
+816	|	Capsularis	|		|	synonym	|
+816	|	"Ristella" Prevot 1938	|		|	authority	|
+816	|	Ristella	|	Ristella <CFB group bacteria>	|	synonym	|
+815	|	Bacteroidaceae Pribram 1933	|		|	authority	|
+815	|	Bacteroidaceae	|		|	scientific name	|
+171549	|	Bacteroidales Krieg 2012 emend. Pikuta et al. 2017	|		|	authority	|
+171549	|	Bacteroidales	|		|	scientific name	|
+200643	|	Bacteroidetes	|	Bacteroidetes <Bacteroidia>	|	synonym	|
+200643	|	Bacteroidia Krieg 2012	|		|	authority	|
+200643	|	Bacteroidia	|		|	scientific name	|
+976	|	Bacteroides-Cytophaga-Flexibacter group	|		|	common name	|
+976	|	Bacteroidetes	|	Bacteroidetes <Bacteroidota>	|	synonym	|
+976	|	"Bacteroidetes" Krieg et al. 2012	|		|	authority	|
+976	|	Bacteroidota corrig. Krieg et al. 2021	|		|	authority	|
+976	|	Bacteroidota	|		|	scientific name	|
+976	|	"Bacteroidota" Whitman et al. 2018	|		|	synonym	|
+976	|	BCF group	|		|	equivalent name	|
+976	|	CFB group bacteria	|		|	blast name	|
+976	|	CFB group	|		|	equivalent name	|
+976	|	Cytophaga-Flexibacter-Bacteroides phylum	|		|	common name	|
+976	|	"Sphingobacteria" Cavalier-Smith 2002	|		|	authority	|
+976	|	Sphingobacteria	|		|	synonym	|
+68336	|	Bacteroidetes/Chlorobi group	|		|	equivalent name	|
+68336	|	Bacteroidota/Chlorobiota group	|		|	scientific name	|
+68336	|	CFB/Chlorobi group	|		|	synonym	|
+68336	|	CFB/Green sulfur bacteria group	|		|	synonym	|
+68336	|	Cytophagales/Green sulfur bacteria group	|		|	synonym	|
+1783270	|	FCB group	|		|	scientific name	|
+1783270	|	Fibrobacter/Acidobacteria group	|	Fibrobacter/Acidobacteria group <FCB group>	|	in-part	|
+1783270	|	Fibrobacteres/Acidobacteria group	|	Fibrobacteres/Acidobacteria group <FCB group>	|	in-part	|
+1783270	|	Fibrobacteres-Chlorobi-Bacteroidetes superphylum	|		|	synonym	|
+2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
+2	|	bacteria	|		|	blast name	|
+2	|	eubacteria	|		|	genbank common name	|
+2	|	Monera	|	Monera <bacteria>	|	in-part	|
+2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
+2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
+2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
+2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
+2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
+131567	|	biota	|		|	synonym	|
+131567	|	cellular organisms	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|
+91844	|	Bemisia tabaci primary endosymbiont	|		|	synonym	|
+91844	|	Candidatus Portiera aleyrodidarum	|		|	scientific name	|
+91844	|	"Candidatus Portiera aleyrodidarum" Thao and Baumann 2004	|		|	authority	|
+91844	|	Portiera aleyrodidarum	|		|	equivalent name	|
+91844	|	primary endosymbiont of Bemisia tabaci	|		|	synonym	|
+235572	|	Candidatus Portiera	|		|	equivalent name	|
+235572	|	"Candidatus Portiera" Thao and Baumann 2004	|		|	authority	|
+235572	|	Portiera	|		|	scientific name	|
+235572	|	whitefly endosymbionts	|		|	synonym	|
+114403	|	Zymobacter group	|		|	scientific name	|
+28256	|	Alcanivorax/Fundibacter group	|	Alcanivorax/Fundibacter group <Halomonadaceae>	|	in-part	|
+28256	|	gamma-3 proteobacteria	|	gamma-3 proteobacteria <g-proteobacteria,Halomonadaceae>	|	in-part	|
+28256	|	Halomonadaceae Franzmann et al. 1989 emend. Ben Ali Gam et al. 2007	|		|	authority	|
+28256	|	Halomonadaceae Franzmann et al. 1989 emend. Dobson and Franzmann 1996	|		|	authority	|
+28256	|	Halomonadaceae Franzmann et al. 1989 emend. Ntougias et al. 2007	|		|	authority	|
+28256	|	Halomonadaceae	|		|	scientific name	|
+135619	|	Oceanospirillales Garrity et al. 2005	|		|	authority	|
+135619	|	Oceanospirillales	|		|	scientific name	|
+135619	|	Oceanospirillum/Halomonas group	|		|	synonym	|
+1236	|	Gammaproteobacteria Garrity et al. 2005 emend. Williams and Kelly 2013	|		|	authority	|
+1236	|	Gammaproteobacteria	|		|	scientific name	|
+1236	|	gamma proteobacteria	|		|	synonym	|
+1236	|	gamma subdivision	|		|	synonym	|
+1236	|	gamma subgroup	|		|	synonym	|
+1236	|	g-proteobacteria	|		|	blast name	|
+1236	|	Proteobacteria gamma subdivision	|		|	synonym	|
+1236	|	"Pseudomonadia" Oren et al. 2016	|		|	authority	|
+1236	|	Pseudomonadia	|		|	synonym	|
+1236	|	Purple bacteria, gamma subdivision	|		|	synonym	|
+1224	|	Alphaproteobacteriota	|		|	synonym	|
+1224	|	"Alphaproteobacteriota" Whitman et al. 2018	|		|	synonym	|
+1224	|	proteobacteria	|		|	blast name	|
+1224	|	"Proteobacteria" Garrity et al. 2005	|		|	authority	|
+1224	|	Proteobacteria Stackebrandt et al. 1988	|		|	authority	|
+1224	|	Proteobacteria	|		|	synonym	|
+1224	|	"Proteobacteriota" Panda et al. 2022	|		|	authority	|
+1224	|	Proteobacteriota	|		|	synonym	|
+1224	|	Pseudomonadota corrig. Garrity et al. 2021	|		|	authority	|
+1224	|	Pseudomonadota	|		|	scientific name	|
+1224	|	purple photosynthetic bacteria and relatives	|		|	common name	|
+2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
+2	|	bacteria	|		|	blast name	|
+2	|	eubacteria	|		|	genbank common name	|
+2	|	Monera	|	Monera <bacteria>	|	in-part	|
+2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
+2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
+2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
+2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
+2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
+131567	|	biota	|		|	synonym	|
+131567	|	cellular organisms	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|
+1311	|	ATCC 13813	|	ATCC 13813 <type strain>	|	type material	|
+1311	|	ATCC 51487 [[Streptococcus difficilis corrig. Eldar et al. 1995]]	|	ATCC 51487 [[Streptococcus difficilis corrig. Eldar et al. 1995]] <type strain>	|	type material	|
+1311	|	CCUG 4208	|	CCUG 4208 <type strain>	|	type material	|
+1311	|	CIP 103227	|	CIP 103227 <type strain>	|	type material	|
+1311	|	CIP 103768 [[Streptococcus difficilis corrig. Eldar et al. 1995]]	|	CIP 103768 [[Streptococcus difficilis corrig. Eldar et al. 1995]] <type strain>	|	type material	|
+1311	|	DSM 2134	|	DSM 2134 <type strain>	|	type material	|
+1311	|	JCM 5671	|	JCM 5671 <type strain>	|	type material	|
+1311	|	LMG 14694	|	LMG 14694 <type strain>	|	type material	|
+1311	|	LMG:14694	|	LMG:14694 <type strain>	|	type material	|
+1311	|	LMG 15977 [[Streptococcus difficilis corrig. Eldar et al. 1995]]	|	LMG 15977 [[Streptococcus difficilis corrig. Eldar et al. 1995]] <type strain>	|	type material	|
+1311	|	LMG:15977 [[Streptococcus difficilis corrig. Eldar et al. 1995]]	|	LMG:15977 [[Streptococcus difficilis corrig. Eldar et al. 1995]] <type strain>	|	type material	|
+1311	|	NCTC 8181	|	NCTC 8181 <type strain>	|	type material	|
+1311	|	strain ND 2-22 [[Streptococcus difficilis corrig. Eldar et al. 1995]]	|	strain ND 2-22 [[Streptococcus difficilis corrig. Eldar et al. 1995]] <type strain>	|	type material	|
+1311	|	"Streptoccocus de la mammite" Nocard and Mollereau 1887	|		|	authority	|
+1311	|	Streptoccocus de la mammite	|		|	synonym	|
+1311	|	"Streptococcus agalactiae contagiosae" Kitt 1893	|		|	authority	|
+1311	|	Streptococcus agalactiae contagiosae	|		|	synonym	|
+1311	|	Streptococcus agalactiae Lehmann and Neumann 1896	|		|	authority	|
+1311	|	Streptococcus agalactiae	|		|	scientific name	|
+1311	|	Streptococcus difficile	|		|	synonym	|
+1311	|	Streptococcus difficilis corrig. Eldar et al. 1995	|		|	authority	|
+1311	|	Streptococcus difficilis	|		|	synonym	|
+1311	|	"Streptococcus mastitidis" Migula 1900	|		|	authority	|
+1311	|	Streptococcus mastitidis	|		|	synonym	|
+1301	|	Streptococcus Rosenbach 1884 (Approved Lists 1980)	|		|	authority	|
+1301	|	Streptococcus	|		|	scientific name	|
+1300	|	Streptococcaceae Deibel and Seeley 1974	|		|	authority	|
+1300	|	Streptococcaceae	|		|	scientific name	|
+186826	|	Lactobacillales Ludwig et al. 2010	|		|	authority	|
+186826	|	Lactobacillales	|		|	scientific name	|
+91061	|	Bacilli Ludwig et al. 2010	|		|	authority	|
+91061	|	Bacilli	|		|	scientific name	|
+91061	|	Bacillus/Lactobacillus/Streptococcus group	|		|	synonym	|
+91061	|	Firmibacteria Murray 1988	|		|	authority	|
+91061	|	Firmibacteria	|		|	synonym	|
+1239	|	"Bacillaeota" Oren et al. 2015	|		|	authority	|
+1239	|	Bacillaeota	|		|	synonym	|
+1239	|	Bacillota corrig. Gibbons and Murray 2021	|		|	synonym	|
+1239	|	Bacillota	|		|	scientific name	|
+1239	|	Bacillus/Clostridium group	|		|	synonym	|
+1239	|	clostridial firmicutes	|		|	synonym	|
+1239	|	Clostridium group firmicutes	|		|	synonym	|
+1239	|	"Firmicuteota" Panda et al. 2022	|		|	authority	|
+1239	|	Firmicuteota	|		|	synonym	|
+1239	|	firmicutes	|		|	blast name	|
+1239	|	"Firmicutes" corrig. Gibbons and Murray 1978 (Approved Lists 1980)	|		|	synonym	|
+1239	|	Firmicutes	|		|	equivalent name	|
+1239	|	Low G+C firmicutes	|		|	synonym	|
+1239	|	low GC Gram+	|		|	common name	|
+1239	|	low G+C Gram-positive bacteria	|		|	common name	|
+1783272	|	Terrabacteria group	|		|	scientific name	|
+2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
+2	|	bacteria	|		|	blast name	|
+2	|	eubacteria	|		|	genbank common name	|
+2	|	Monera	|	Monera <bacteria>	|	in-part	|
+2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
+2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
+2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
+2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
+2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
+131567	|	biota	|		|	synonym	|
+131567	|	cellular organisms	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|
+727	|	ATCC 33391	|	ATCC 33391 <type strain>	|	type material	|
+727	|	"Bacterium influenzae" Lehmann and Neumann 1896	|		|	authority	|
+727	|	Bacterium influenzae	|		|	synonym	|
+727	|	CCUG 23945	|	CCUG 23945 <type strain>	|	type material	|
+727	|	CIP 102514	|	CIP 102514 <type strain>	|	type material	|
+727	|	"Coccobacillus pfeifferi" Neveu-Lemaire 1921	|		|	authority	|
+727	|	Coccobacillus pfeifferi	|		|	synonym	|
+727	|	DSM 4690	|	DSM 4690 <type strain>	|	type material	|
+727	|	Haemophilus influenzae (Lehmann and Neumann 1896) Winslow et al. 1917	|		|	authority	|
+727	|	Haemophilus influenzae	|		|	scientific name	|
+727	|	"Haemophilus meningitidis" (Martins) Hauduroy et al. 1937	|		|	authority	|
+727	|	Haemophilus meningitidis	|		|	synonym	|
+727	|	"Influenza-bacillus" Pfeiffer 1892	|		|	authority	|
+727	|	Influenza-bacillus	|		|	synonym	|
+727	|	"Mycobacterium influenzae" (Lehmann and Neumann 1896) Chester 1901	|		|	authority	|
+727	|	Mycobacterium influenzae	|		|	synonym	|
+727	|	NCTC 8143	|	NCTC 8143 <type strain>	|	type material	|
+724	|	Haemophilus	|		|	scientific name	|
+724	|	Haemophilus Winslow et al. 1917	|		|	authority	|
+712	|	Pasteurellaceae Pohl 1981	|		|	authority	|
+712	|	Pasteurellaceae	|		|	scientific name	|
+135625	|	Pasteruellaceae group	|		|	synonym	|
+135625	|	Pasteurellales Garrity et al. 2005	|		|	authority	|
+135625	|	Pasteurellales	|		|	scientific name	|
+1236	|	Gammaproteobacteria Garrity et al. 2005 emend. Williams and Kelly 2013	|		|	authority	|
+1236	|	Gammaproteobacteria	|		|	scientific name	|
+1236	|	gamma proteobacteria	|		|	synonym	|
+1236	|	gamma subdivision	|		|	synonym	|
+1236	|	gamma subgroup	|		|	synonym	|
+1236	|	g-proteobacteria	|		|	blast name	|
+1236	|	Proteobacteria gamma subdivision	|		|	synonym	|
+1236	|	"Pseudomonadia" Oren et al. 2016	|		|	authority	|
+1236	|	Pseudomonadia	|		|	synonym	|
+1236	|	Purple bacteria, gamma subdivision	|		|	synonym	|
+1224	|	Alphaproteobacteriota	|		|	synonym	|
+1224	|	"Alphaproteobacteriota" Whitman et al. 2018	|		|	synonym	|
+1224	|	proteobacteria	|		|	blast name	|
+1224	|	"Proteobacteria" Garrity et al. 2005	|		|	authority	|
+1224	|	Proteobacteria Stackebrandt et al. 1988	|		|	authority	|
+1224	|	Proteobacteria	|		|	synonym	|
+1224	|	"Proteobacteriota" Panda et al. 2022	|		|	authority	|
+1224	|	Proteobacteriota	|		|	synonym	|
+1224	|	Pseudomonadota corrig. Garrity et al. 2021	|		|	authority	|
+1224	|	Pseudomonadota	|		|	scientific name	|
+1224	|	purple photosynthetic bacteria and relatives	|		|	common name	|
+2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
+2	|	bacteria	|		|	blast name	|
+2	|	eubacteria	|		|	genbank common name	|
+2	|	Monera	|	Monera <bacteria>	|	in-part	|
+2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
+2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
+2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
+2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
+2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
+131567	|	biota	|		|	synonym	|
+131567	|	cellular organisms	|		|	scientific name	|
+1	|	all	|		|	synonym	|
+1	|	root	|		|	scientific name	|
