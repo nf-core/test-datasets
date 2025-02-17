@@ -114,6 +114,11 @@ These are NCBI taxdump re-constructed files, where the entries only include thos
   rm *_protaccessions.txt
   ```
 
+  > ![WARNING]
+  > This is not an official prot.accession2taxid file, and is only used for testing purposes.
+  > It uses RefSeq IDs rather than GenBank/INDSC accession numbers for mapping to taxonomy IDs
+  > as the downloaded FAA files do not have the latter.
+
 ## Broken Samplesheets
 
 To help improve schema checking, we've taking then main `test.csv`, and added a few variants which have various errors.
