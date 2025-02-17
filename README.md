@@ -96,14 +96,22 @@ These are NCBI taxdump re-constructed files, where the entries only include thos
 
 - Manually made `nucl2tax.map` file based on column 2/3 of the above
 
-- Downloaded [`prot.accession2taxid.FULL.gz`](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/) from Feb. 2024, and ran
+- We semi-manually make a 'custom' `prot2accession` file based on the RefSeq prot accessions in the `.faa`
 
   ```bash
-  ## Running *.faa results in  a too large regex error, so go by file despite how long it takes
   for i in *.faa; do
-      echo $i
-      zgrep -P "^$(grep --no-filename '>' $i | cut -d ' ' -f 1 | sed 's/>//g' | tr '\n' '|')" ~/cache/databases/acc2taxid/prot.accession2taxid.FULL.gz >> protaccession2taxid_reduced.dmp
+      echo "accession.version	taxid" > "$i"_protaccessions.txt
+      grep '>' $i | cut -d '>' -f 2 | cut -d ' ' -f 1 >> "$i"_protaccessions.txt
   done
+
+  sed -i '1!s/$/\t694009/g' GCA_011545545.1_ASM1154554v1_genomic.faa_protaccessions.txt
+  sed -i '1!s/$/\t91844/g' GCF_000292685.1_ASM29268v1_genomic.faa_protaccessions.txt
+  sed -i '1!s/$/\t1311/g' GCF_002881355.1_ASM288135v1_genomic.faa_protaccessions.txt
+  sed -i '1!s/$/\t817/g' GCF_016889925.1_ASM1688992v1_genomic.faa_protaccessions.txt
+  sed -i '1!s/$/\t727/g' GCF_900478275.1_34211_D02_genomic.faa_protaccessions.txt
+
+  cat *_protaccessions.txt | sort | uniq > prot.accession2taxid_custom
+  rm *_protaccessions.txt
   ```
 
 ## Broken Samplesheets
