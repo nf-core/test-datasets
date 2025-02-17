@@ -120,6 +120,7 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - 'genome.gtf': GTF for MT192765.1 genome
     - 'genome.paf': genome PAF for MT192765.1 genome
     - 'genome.sizes': genome size for the MT192765.1 genome
+    - 'genome-embl.fasta': fasta file in EMBL format
     - 'transcriptome.fasta': coding sequencing from MT192765.1 genome (transcripts)
     - 'transcriptome.paf': transcriptome PAF file for MT192765.1 genome
     - 'proteome.fasta': 12 proteins from the ASM985889v3 assembly of the MN908947.3 reference genome
