@@ -1,0 +1,8 @@
+contrasts:
+  - id: treatment_mCherry_hND6_
+    formula: "~ treatment"
+    comparison: ["treatment", "mCherry", "hND6"]
+  - id: treatment_mCherry_hND6_sample_number
+    formula: "~ treatment + sample_number"
+    comparison: ["treatment", "mCherry", "hND6"]
+    blocking_factors: ["sample_number"]

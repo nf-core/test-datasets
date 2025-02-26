@@ -1,0 +1,5 @@
+contrasts:
+  - id: phenotype_uninvolved_lesional
+    formula: ~ phenotype + patient
+    comparison: ["phenotype", "uninvolved", "lesional"]
+

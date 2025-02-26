@@ -1,0 +1,17 @@
+contrasts:
+  - id: genotype_celltype_t1_t2
+    formula: "~ Celltype"
+    comparison: ["Celltype", "T1", "T2"]
+
+  - id: genotype_celltype_t1_FoB
+    formula: "~ Celltype"
+    comparison: ["Celltype", "T1", "FoB"]
+
+  - id: genotype_celltype_t1_MZ_fakeBatch
+    formula: "~ Celltype + fakeBatch"
+    comparison: ["Celltype", "T1", "MZ"]
+    blocking_factors: ["fakeBatch"]
+
+  - id: fakebatch_fakeBatch_b1_b2
+    formula: "~ fakeBatch"
+    comparison: ["fakeBatch", "b1", "b2"]

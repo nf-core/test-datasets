@@ -1,0 +1,8 @@
+contrasts:
+  - id: Condition_treatment_Control_Treated
+    formula: "~ `Condition treatment`"
+    comparison: ["Condition treatment", "Control", "Treated"]
+  - id: Condition_genotype_WT_KO
+    formula: "~ `Condition genotype` + batch"
+    comparison: ["Condition genotype", "WT", "KO"]
+    blocking_factors: ["batch"]
