@@ -53,7 +53,7 @@ FASTA reference files used are as follows (where possible using the same as in n
 | Streptococcus agalactiae genome          | 1311   | NZ_CP019811   | GCF_002881355.1         | CP019811           |
 | Haemophilus influenzae genome            | 727    | NZ_LS483480.1 | GCF_900478275.1         | LS483480           |
 
-> ![NOTE]
+> [!NOTE]
 > Some reference documentation for what each accession is from:
 >
 > - General: https://support.nlm.nih.gov/kbArticle/?pn=KA-03434
