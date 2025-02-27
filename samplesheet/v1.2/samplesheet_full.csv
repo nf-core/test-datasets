@@ -1,0 +1,9 @@
+sample,fastq_1,fastq_2
+GM12878_REP1,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603629_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603629_T1_2.fastq.gz
+GM12878_REP2,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603630_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603630_T1_2.fastq.gz
+K562_REP1,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603392_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603392_T1_2.fastq.gz
+K562_REP2,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603393_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX1603393_T1_2.fastq.gz
+MCF7_REP1,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370490_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370490_T1_2.fastq.gz
+MCF7_REP2,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370491_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370491_T1_2.fastq.gz
+H1_REP1,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370468_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370468_T1_2.fastq.gz
+H1_REP2,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370469_T1_1.fastq.gz,s3://nf-core-awsmegatests/rnaseq/input_data/SRX2370469_T1_2.fastq.gz
