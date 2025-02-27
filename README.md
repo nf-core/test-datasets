@@ -234,7 +234,7 @@ After unzipping the downloaded files:
 sylph sketch *
 ```
 
-This generates a database file ```database.syldb```. If you want to use a custom database name, you can use ```sylph sketch * -o custom_name.syldb```
+This generates a database file `database.syldb`. If you want to use a custom database name, you can use `sylph sketch * -o custom_name.syldb`
 
 ## Taxprofiler AWS Full Test specific-information
 
