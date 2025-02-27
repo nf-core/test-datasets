@@ -105,8 +105,8 @@ These are NCBI taxdump re-constructed files, where the entries only include thos
 
   > ![WARNING]
   > This appeared not to be correct - the accessions (first column) in this file needs
-  > to refer to the assembly accession, not the individual sequences, according to Kraken2
-  > So I manually replaced the original CP numbers with NC*/NZ* suffixed numbers
+  > to refer to the assembly accession, not the individual sequences, according to Kraken2 errors.
+  > So I manually replaced the original CP numbers with NC*/NZ* suffixed numbers.
 
 - Manually made `nucl2tax.map` file based on column 2/3 of the above
 
@@ -144,7 +144,3 @@ Each file _should_ fail and give an error message from nf-schema.
 - `samplesheets/broken/test_missing_both_paths.csv`: has a row where both required `fasta_dna` and `fasta_aa` paths are missing
 - `samplesheets/broken/test_missing_required_column.csv`: missing the required `taxid` column
 - `samplesheets/broken/test_non_existent_file.csv`: has a path to a `fasta_dna` filepath that doesn't exist
-
-```
-
-```
