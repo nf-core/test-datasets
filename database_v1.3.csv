@@ -14,4 +14,4 @@ ganon,db1,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/d
 metaphlan,metaphlan3,--mpa3,short,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan_database.tar.gz
 metaphlan,metaphlan4,,short,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
 kmcp,db1,;-m 0,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kmcp/test-db-kmcp.tar.gz
-sylph,db1,,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sylph/test-db-sylph.tar.gz
+sylph,db1,,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sylph/testdb-sylph.syldb
