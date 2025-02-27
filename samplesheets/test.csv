@@ -1,3 +1,7 @@
 id,taxid,fasta_dna,fasta_aa
-Severe_acute_respiratory_syndrome_coronavirus_2,2697049,https://raw.githubusercontent.com/nf-core/test-datasets/createtaxdb/data/fasta/sarscov2.fasta,https://raw.githubusercontent.com/nf-core/test-datasets/createtaxdb/data/fasta/sarscov2.faa
-Haemophilus_influenzae,727,https://raw.githubusercontent.com/nf-core/test-datasets/createtaxdb/data/fasta/haemophilus_influenzae.fna.gz,
+Human_Mitochondrial_genome,9606,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/chrMT.fna,
+SARS-CoV-2_genome,694009https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCA_011545545.1_ASM1154554v1_genomic.fna.gz.https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCA_011545545.1_ASM1154554v1_genomic.faa.gz
+Bacteroides_fragilis_genome,817,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCF_016889925.1_ASM1688992v1_genomic.fna.gz,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCF_016889925.1_ASM1688992v1_genomic.faa.gz
+Candidatus_portiera_aleyrodidarum_genome,91844,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCF_000292685.1_ASM29268v1_genomic.fna,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCF_000292685.1_ASM29268v1_genomic.faa
+Haemophilus_influenzae_genome,727,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCF_900478275.1_34211_D02_genomic.fna,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCF_900478275.1_34211_D02_genomic.faa,
+Streptococcus_agalactiae_genome,1311,,https://github.com/jfy133/nf-core-test-datasets/raw/refs/heads/createtaxdb-new/data/fasta/GCF_002881355.1_ASM288135v1_genomic.faa

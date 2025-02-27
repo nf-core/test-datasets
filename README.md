@@ -46,12 +46,21 @@ FASTA reference files used are as follows (where possible using the same as in n
 
 | Name                                     | TaxID  | Accession     | GenBank/Refseq Assembly | GenBank ID         |
 | ---------------------------------------- | ------ | ------------- | ----------------------- | ------------------ |
-| Human RCS Mitochondrial genome           | 9606   | NC_012920.1   | GCF_000001405           | J01415             |
+| Human Mitochondrial genome               | 9606   | NC_012920.1   | GCF_000001405           | J01415             |
 | SARS-CoV-2 genome                        | 694009 | MT192765.1    | GCA_011545545.1         | MT192765           |
 | Bacteroides fragilis genome              | 817    | NZ_CP069563.1 | GCF_016889925.1         | CP069563, CP069564 |
 | Candidatus portiera aleyrodidarum genome | 91844  | NC_018507.1   | GCF_000292685.1         | CP003708           |
 | Streptococcus agalactiae genome          | 1311   | NZ_CP019811   | GCF_002881355.1         | CP019811           |
 | Haemophilus influenzae genome            | 727    | NZ_LS483480.1 | GCF_900478275.1         | LS483480           |
+
+> ![NOTE]
+> Some reference documentation for what each accession is from:
+>
+> - General: https://support.nlm.nih.gov/kbArticle/?pn=KA-03434
+> - GenBank: https://support.nlm.nih.gov/kbArticle/?pn=KA-03436 - [two-letter alphabetical prefix][six digits][.][version number]
+> - RefSeq: https://support.nlm.nih.gov/kbArticle/?pn=KA-03437 - [two-letter alphabetical prefix][ _ ][series of digits or alphanumerical characters][.][version number]
+> - Assembly: https://support.nlm.nih.gov/kbArticle/?pn=KA-03451 - [ GC{A,F} ][ _ ][nine digits][.][version number]
+> - Protein: https://support.nlm.nih.gov/kbArticle/?pn=KA-03389 - [three-letter alphabetical prefix][five digits][.][version number]
 
 The nucleotide FASTA and protein FASTA files were downloaded using `ncbi-datasets-cli` with
 
@@ -93,6 +102,11 @@ These are NCBI taxdump re-constructed files, where the entries only include thos
   ```bash
   accession2taxid_filter.sh 'J01415|MT192765|CP069563|CP069564|CP003708|CP019811|LS483480'
   ```
+
+  > ![WARNING]
+  > This appeared not to be correct - the accessions (first column) in this file needs
+  > to refer to the assembly accession, not the individual sequences, according to Kraken2
+  > So I manually replaced the original CP numbers with NC*/NZ* suffixed numbers
 
 - Manually made `nucl2tax.map` file based on column 2/3 of the above
 
