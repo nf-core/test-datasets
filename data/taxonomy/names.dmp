@@ -1,114 +1,43 @@
-9606	|	Homo sapiens Linnaeus, 1758	|		|	authority	|
-9606	|	Homo sapiens	|		|	scientific name	|
-9606	|	human	|		|	genbank common name	|
-9605	|	Homo Linnaeus, 1758	|		|	authority	|
-9605	|	Homo	|		|	scientific name	|
-9605	|	humans	|		|	common name	|
-207598	|	Homininae	|		|	scientific name	|
-207598	|	Homo/Pan/Gorilla group	|		|	synonym	|
-9604	|	great apes	|		|	genbank common name	|
-9604	|	Hominidae Gray, 1825	|		|	authority	|
-9604	|	Hominidae	|		|	scientific name	|
-9604	|	Pongidae	|		|	synonym	|
-314295	|	ape	|	ape <primates>	|	common name	|
-314295	|	apes	|		|	genbank common name	|
-314295	|	Hominoidea	|		|	scientific name	|
-9526	|	Catarrhini	|		|	scientific name	|
-314293	|	Anthropoidea	|		|	synonym	|
-314293	|	Simiiformes	|		|	scientific name	|
-376913	|	Haplorrhini	|		|	scientific name	|
-9443	|	Primata	|		|	synonym	|
-9443	|	primate	|		|	equivalent name	|
-9443	|	primates	|		|	blast name	|
-9443	|	Primates Linnaeus, 1758	|		|	authority	|
-9443	|	Primates	|		|	scientific name	|
-314146	|	Euarchontoglires	|		|	scientific name	|
-1437010	|	Boreoeutheria	|		|	scientific name	|
-1437010	|	Boreotheria	|		|	synonym	|
-9347	|	eutherian mammals	|		|	common name	|
-9347	|	Eutheria	|		|	scientific name	|
-9347	|	Placentalia	|		|	synonym	|
-9347	|	placental mammals	|		|	common name	|
-9347	|	placentals	|	placentals <blast name>	|	blast name	|
-9347	|	placentals	|	placentals <genbank common name>	|	genbank common name	|
-32525	|	Theria Parker & Haswell, 1897	|		|	authority	|
-32525	|	Theria	|	Theria <mammals>	|	scientific name	|
-40674	|	Mammalia	|		|	scientific name	|
-40674	|	mammals	|	mammals <blast name>	|	blast name	|
-40674	|	mammals	|	mammals <genbank common name>	|	genbank common name	|
-32524	|	Amniota	|		|	scientific name	|
-32524	|	amniotes	|		|	genbank common name	|
-32523	|	Tetrapoda	|		|	scientific name	|
-32523	|	tetrapods	|		|	genbank common name	|
-1338369	|	Dipnotetrapodomorpha	|		|	scientific name	|
-8287	|	Sarcopterygii	|		|	scientific name	|
-117571	|	bony vertebrates	|		|	genbank common name	|
-117571	|	Euteleostomi	|		|	scientific name	|
-117570	|	Teleostomi	|		|	scientific name	|
-7776	|	Gnathostomata	|	Gnathostomata <vertebrates>	|	scientific name	|
-7776	|	jawed vertebrates	|		|	genbank common name	|
-7742	|	Vertebrata Cuvier, 1812	|		|	authority	|
-7742	|	Vertebrata	|	Vertebrata <vertebrates>	|	scientific name	|
-7742	|	vertebrates	|	vertebrates <blast name>	|	blast name	|
-7742	|	vertebrates	|	vertebrates <genbank common name>	|	genbank common name	|
-89593	|	Craniata	|	Craniata <chordates>	|	scientific name	|
-7711	|	Chordata	|		|	scientific name	|
-7711	|	chordates	|	chordates <blast name>	|	blast name	|
-7711	|	chordates	|	chordates <genbank common name>	|	genbank common name	|
-33511	|	deuterostomes	|		|	common name	|
-33511	|	Deuterostomia	|		|	scientific name	|
-33213	|	Bilateria	|		|	scientific name	|
-6072	|	Eumetazoa	|		|	scientific name	|
-33208	|	Animalia	|		|	synonym	|
-33208	|	animals	|		|	blast name	|
-33208	|	metazoans	|		|	genbank common name	|
-33208	|	Metazoa	|		|	scientific name	|
-33208	|	multicellular animals	|		|	common name	|
-33154	|	Fungi/Metazoa group	|		|	synonym	|
-33154	|	Opisthokonta Cavalier-Smith 1987	|		|	authority	|
-33154	|	Opisthokonta	|		|	scientific name	|
-33154	|	opisthokonts	|		|	synonym	|
-2759	|	Eucarya	|		|	synonym	|
-2759	|	Eucaryotae	|		|	synonym	|
-2759	|	eucaryotes	|		|	genbank common name	|
-2759	|	Eukarya	|		|	synonym	|
-2759	|	Eukaryotae	|		|	synonym	|
-2759	|	Eukaryota	|		|	scientific name	|
-2759	|	eukaryotes	|	eukaryotes <blast name>	|	blast name	|
-2759	|	eukaryotes	|	eukaryotes <common name>	|	common name	|
-131567	|	biota	|		|	synonym	|
-131567	|	cellular organisms	|		|	scientific name	|
 1	|	all	|		|	synonym	|
 1	|	root	|		|	scientific name	|
-694009	|	HCoV-SARS	|		|	acronym	|
-694009	|	Human coronavirus (strain SARS)	|		|	equivalent name	|
-694009	|	SARS	|		|	acronym	|
-694009	|	SARS-like coronavirus	|		|	equivalent name	|
-694009	|	SARSr-CoV	|		|	acronym	|
-694009	|	SARSrCoV	|		|	acronym	|
-694009	|	SARS-related coronavirus	|		|	equivalent name	|
-694009	|	Severe acute respiratory syndrome-related coronavirus	|		|	scientific name	|
-2509511	|	Sarbecovirus	|		|	scientific name	|
-694002	|	Betacoronavirus	|		|	scientific name	|
-694002	|	Coronavirus	|	Coronavirus <Betacoronavirus>	|	in-part	|
-694002	|	Coronavirus group 2	|		|	equivalent name	|
-694002	|	Group 2 species	|		|	equivalent name	|
-2501931	|	Orthocoronavirinae	|		|	scientific name	|
-11118	|	Coronaviridae	|		|	scientific name	|
-2499399	|	Cornidovirineae	|		|	scientific name	|
-76804	|	Nidovirales	|		|	scientific name	|
-2732506	|	Pisoniviricetes	|		|	scientific name	|
-2732408	|	Pisuviricota	|		|	scientific name	|
-2732396	|	Orthornavirae	|		|	scientific name	|
-2559587	|	Riboviria	|		|	scientific name	|
-2559587	|	RNA viruses and viroids	|		|	common name	|
-2559587	|	RNA viruses	|		|	common name	|
-10239	|	Vira	|		|	synonym	|
-10239	|	Viridae	|		|	synonym	|
-10239	|	viruses	|		|	blast name	|
-10239	|	Viruses	|		|	scientific name	|
-1	|	all	|		|	synonym	|
-1	|	root	|		|	scientific name	|
+2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
+2	|	bacteria	|		|	blast name	|
+2	|	eubacteria	|		|	genbank common name	|
+2	|	Monera	|	Monera <bacteria>	|	in-part	|
+2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
+2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
+2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
+2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
+2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
+712	|	Pasteurellaceae Pohl 1981	|		|	authority	|
+712	|	Pasteurellaceae	|		|	scientific name	|
+724	|	Haemophilus	|		|	scientific name	|
+724	|	Haemophilus Winslow et al. 1917	|		|	authority	|
+727	|	ATCC 33391	|	ATCC 33391 <type strain>	|	type material	|
+727	|	"Bacterium influenzae" Lehmann and Neumann 1896	|		|	authority	|
+727	|	Bacterium influenzae	|		|	synonym	|
+727	|	CCUG 23945	|	CCUG 23945 <type strain>	|	type material	|
+727	|	CIP 102514	|	CIP 102514 <type strain>	|	type material	|
+727	|	"Coccobacillus pfeifferi" Neveu-Lemaire 1921	|		|	authority	|
+727	|	Coccobacillus pfeifferi	|		|	synonym	|
+727	|	DSM 4690	|	DSM 4690 <type strain>	|	type material	|
+727	|	Haemophilus influenzae (Lehmann and Neumann 1896) Winslow et al. 1917	|		|	authority	|
+727	|	Haemophilus influenzae	|		|	scientific name	|
+727	|	"Haemophilus meningitidis" (Martins) Hauduroy et al. 1937	|		|	authority	|
+727	|	Haemophilus meningitidis	|		|	synonym	|
+727	|	"Influenza-bacillus" Pfeiffer 1892	|		|	authority	|
+727	|	Influenza-bacillus	|		|	synonym	|
+727	|	"Mycobacterium influenzae" (Lehmann and Neumann 1896) Chester 1901	|		|	authority	|
+727	|	Mycobacterium influenzae	|		|	synonym	|
+727	|	NCTC 8143	|	NCTC 8143 <type strain>	|	type material	|
+815	|	Bacteroidaceae Pribram 1933	|		|	authority	|
+815	|	Bacteroidaceae	|		|	scientific name	|
+816	|	Bacteroides Castellani and Chalmers 1919 (Approved Lists 1980) emend. Shah and Collins 1989	|		|	authority	|
+816	|	Bacteroides	|		|	scientific name	|
+816	|	Capsularis Prevot 1938 (Approved Lists 1980)	|		|	authority	|
+816	|	Capsularis	|		|	synonym	|
+816	|	"Ristella" Prevot 1938	|		|	authority	|
+816	|	Ristella	|	Ristella <CFB group bacteria>	|	synonym	|
 817	|	ATCC 25285	|	ATCC 25285 <type strain>	|	type material	|
 817	|	Bacillus fragilis	|		|	synonym	|
 817	|	Bacillus fragilis Veillon and Zuber 1898	|		|	authority	|
@@ -149,19 +78,6 @@
 817	|	Sphaerophorus inaequalis	|		|	synonym	|
 817	|	"Sphaerophorus intermedius" Bergan and Hovig 1968	|		|	authority	|
 817	|	Sphaerophorus intermedius	|		|	synonym	|
-816	|	Bacteroides Castellani and Chalmers 1919 (Approved Lists 1980) emend. Shah and Collins 1989	|		|	authority	|
-816	|	Bacteroides	|		|	scientific name	|
-816	|	Capsularis Prevot 1938 (Approved Lists 1980)	|		|	authority	|
-816	|	Capsularis	|		|	synonym	|
-816	|	"Ristella" Prevot 1938	|		|	authority	|
-816	|	Ristella	|	Ristella <CFB group bacteria>	|	synonym	|
-815	|	Bacteroidaceae Pribram 1933	|		|	authority	|
-815	|	Bacteroidaceae	|		|	scientific name	|
-171549	|	Bacteroidales Krieg 2012 emend. Pikuta et al. 2017	|		|	authority	|
-171549	|	Bacteroidales	|		|	scientific name	|
-200643	|	Bacteroidetes	|	Bacteroidetes <Bacteroidia>	|	synonym	|
-200643	|	Bacteroidia Krieg 2012	|		|	authority	|
-200643	|	Bacteroidia	|		|	scientific name	|
 976	|	Bacteroides-Cytophaga-Flexibacter group	|		|	common name	|
 976	|	Bacteroidetes	|	Bacteroidetes <Bacteroidota>	|	synonym	|
 976	|	"Bacteroidetes" Krieg et al. 2012	|		|	authority	|
@@ -174,57 +90,6 @@
 976	|	Cytophaga-Flexibacter-Bacteroides phylum	|		|	common name	|
 976	|	"Sphingobacteria" Cavalier-Smith 2002	|		|	authority	|
 976	|	Sphingobacteria	|		|	synonym	|
-68336	|	Bacteroidetes/Chlorobi group	|		|	equivalent name	|
-68336	|	Bacteroidota/Chlorobiota group	|		|	scientific name	|
-68336	|	CFB/Chlorobi group	|		|	synonym	|
-68336	|	CFB/Green sulfur bacteria group	|		|	synonym	|
-68336	|	Cytophagales/Green sulfur bacteria group	|		|	synonym	|
-1783270	|	FCB group	|		|	scientific name	|
-1783270	|	Fibrobacter/Acidobacteria group	|	Fibrobacter/Acidobacteria group <FCB group>	|	in-part	|
-1783270	|	Fibrobacteres/Acidobacteria group	|	Fibrobacteres/Acidobacteria group <FCB group>	|	in-part	|
-1783270	|	Fibrobacteres-Chlorobi-Bacteroidetes superphylum	|		|	synonym	|
-2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
-2	|	bacteria	|		|	blast name	|
-2	|	eubacteria	|		|	genbank common name	|
-2	|	Monera	|	Monera <bacteria>	|	in-part	|
-2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
-2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
-2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
-2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
-2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
-131567	|	biota	|		|	synonym	|
-131567	|	cellular organisms	|		|	scientific name	|
-1	|	all	|		|	synonym	|
-1	|	root	|		|	scientific name	|
-91844	|	Bemisia tabaci primary endosymbiont	|		|	synonym	|
-91844	|	Candidatus Portiera aleyrodidarum	|		|	scientific name	|
-91844	|	"Candidatus Portiera aleyrodidarum" Thao and Baumann 2004	|		|	authority	|
-91844	|	Portiera aleyrodidarum	|		|	equivalent name	|
-91844	|	primary endosymbiont of Bemisia tabaci	|		|	synonym	|
-235572	|	Candidatus Portiera	|		|	equivalent name	|
-235572	|	"Candidatus Portiera" Thao and Baumann 2004	|		|	authority	|
-235572	|	Portiera	|		|	scientific name	|
-235572	|	whitefly endosymbionts	|		|	synonym	|
-114403	|	Zymobacter group	|		|	scientific name	|
-28256	|	Alcanivorax/Fundibacter group	|	Alcanivorax/Fundibacter group <Halomonadaceae>	|	in-part	|
-28256	|	gamma-3 proteobacteria	|	gamma-3 proteobacteria <g-proteobacteria,Halomonadaceae>	|	in-part	|
-28256	|	Halomonadaceae Franzmann et al. 1989 emend. Ben Ali Gam et al. 2007	|		|	authority	|
-28256	|	Halomonadaceae Franzmann et al. 1989 emend. Dobson and Franzmann 1996	|		|	authority	|
-28256	|	Halomonadaceae Franzmann et al. 1989 emend. Ntougias et al. 2007	|		|	authority	|
-28256	|	Halomonadaceae	|		|	scientific name	|
-135619	|	Oceanospirillales Garrity et al. 2005	|		|	authority	|
-135619	|	Oceanospirillales	|		|	scientific name	|
-135619	|	Oceanospirillum/Halomonas group	|		|	synonym	|
-1236	|	Gammaproteobacteria Garrity et al. 2005 emend. Williams and Kelly 2013	|		|	authority	|
-1236	|	Gammaproteobacteria	|		|	scientific name	|
-1236	|	gamma proteobacteria	|		|	synonym	|
-1236	|	gamma subdivision	|		|	synonym	|
-1236	|	gamma subgroup	|		|	synonym	|
-1236	|	g-proteobacteria	|		|	blast name	|
-1236	|	Proteobacteria gamma subdivision	|		|	synonym	|
-1236	|	"Pseudomonadia" Oren et al. 2016	|		|	authority	|
-1236	|	Pseudomonadia	|		|	synonym	|
-1236	|	Purple bacteria, gamma subdivision	|		|	synonym	|
 1224	|	Alphaproteobacteriota	|		|	synonym	|
 1224	|	"Alphaproteobacteriota" Whitman et al. 2018	|		|	synonym	|
 1224	|	proteobacteria	|		|	blast name	|
@@ -236,19 +101,35 @@
 1224	|	Pseudomonadota corrig. Garrity et al. 2021	|		|	authority	|
 1224	|	Pseudomonadota	|		|	scientific name	|
 1224	|	purple photosynthetic bacteria and relatives	|		|	common name	|
-2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
-2	|	bacteria	|		|	blast name	|
-2	|	eubacteria	|		|	genbank common name	|
-2	|	Monera	|	Monera <bacteria>	|	in-part	|
-2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
-2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
-2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
-2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
-2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
-131567	|	biota	|		|	synonym	|
-131567	|	cellular organisms	|		|	scientific name	|
-1	|	all	|		|	synonym	|
-1	|	root	|		|	scientific name	|
+1236	|	Gammaproteobacteria Garrity et al. 2005 emend. Williams and Kelly 2013	|		|	authority	|
+1236	|	Gammaproteobacteria	|		|	scientific name	|
+1236	|	gamma proteobacteria	|		|	synonym	|
+1236	|	gamma subdivision	|		|	synonym	|
+1236	|	gamma subgroup	|		|	synonym	|
+1236	|	g-proteobacteria	|		|	blast name	|
+1236	|	Proteobacteria gamma subdivision	|		|	synonym	|
+1236	|	"Pseudomonadia" Oren et al. 2016	|		|	authority	|
+1236	|	Pseudomonadia	|		|	synonym	|
+1236	|	Purple bacteria, gamma subdivision	|		|	synonym	|
+1239	|	"Bacillaeota" Oren et al. 2015	|		|	authority	|
+1239	|	Bacillaeota	|		|	synonym	|
+1239	|	Bacillota corrig. Gibbons and Murray 2021	|		|	synonym	|
+1239	|	Bacillota	|		|	scientific name	|
+1239	|	Bacillus/Clostridium group	|		|	synonym	|
+1239	|	clostridial firmicutes	|		|	synonym	|
+1239	|	Clostridium group firmicutes	|		|	synonym	|
+1239	|	"Firmicuteota" Panda et al. 2022	|		|	authority	|
+1239	|	Firmicuteota	|		|	synonym	|
+1239	|	firmicutes	|		|	blast name	|
+1239	|	"Firmicutes" corrig. Gibbons and Murray 1978 (Approved Lists 1980)	|		|	synonym	|
+1239	|	Firmicutes	|		|	equivalent name	|
+1239	|	Low G+C firmicutes	|		|	synonym	|
+1239	|	low GC Gram+	|		|	common name	|
+1239	|	low G+C Gram-positive bacteria	|		|	common name	|
+1300	|	Streptococcaceae Deibel and Seeley 1974	|		|	authority	|
+1300	|	Streptococcaceae	|		|	scientific name	|
+1301	|	Streptococcus Rosenbach 1884 (Approved Lists 1980)	|		|	authority	|
+1301	|	Streptococcus	|		|	scientific name	|
 1311	|	ATCC 13813	|	ATCC 13813 <type strain>	|	type material	|
 1311	|	ATCC 51487 [[Streptococcus difficilis corrig. Eldar et al. 1995]]	|	ATCC 51487 [[Streptococcus difficilis corrig. Eldar et al. 1995]] <type strain>	|	type material	|
 1311	|	CCUG 4208	|	CCUG 4208 <type strain>	|	type material	|
@@ -273,101 +154,469 @@
 1311	|	Streptococcus difficilis	|		|	synonym	|
 1311	|	"Streptococcus mastitidis" Migula 1900	|		|	authority	|
 1311	|	Streptococcus mastitidis	|		|	synonym	|
-1301	|	Streptococcus Rosenbach 1884 (Approved Lists 1980)	|		|	authority	|
-1301	|	Streptococcus	|		|	scientific name	|
-1300	|	Streptococcaceae Deibel and Seeley 1974	|		|	authority	|
-1300	|	Streptococcaceae	|		|	scientific name	|
-186826	|	Lactobacillales Ludwig et al. 2010	|		|	authority	|
-186826	|	Lactobacillales	|		|	scientific name	|
+2759	|	Eucarya	|		|	synonym	|
+2759	|	Eucaryotae	|		|	synonym	|
+2759	|	eucaryotes	|		|	genbank common name	|
+2759	|	Eukarya	|		|	synonym	|
+2759	|	Eukaryotae	|		|	synonym	|
+2759	|	Eukaryota	|		|	scientific name	|
+2759	|	eukaryotes	|	eukaryotes <blast name>	|	blast name	|
+2759	|	eukaryotes	|	eukaryotes <common name>	|	common name	|
+6072	|	Eumetazoa	|		|	scientific name	|
+7711	|	Chordata	|		|	scientific name	|
+7711	|	chordates	|	chordates <blast name>	|	blast name	|
+7711	|	chordates	|	chordates <genbank common name>	|	genbank common name	|
+7742	|	Vertebrata Cuvier, 1812	|		|	authority	|
+7742	|	Vertebrata	|	Vertebrata <vertebrates>	|	scientific name	|
+7742	|	vertebrates	|	vertebrates <blast name>	|	blast name	|
+7742	|	vertebrates	|	vertebrates <genbank common name>	|	genbank common name	|
+7776	|	Gnathostomata	|	Gnathostomata <vertebrates>	|	scientific name	|
+7776	|	jawed vertebrates	|		|	genbank common name	|
+8287	|	Sarcopterygii	|		|	scientific name	|
+9347	|	eutherian mammals	|		|	common name	|
+9347	|	Eutheria	|		|	scientific name	|
+9347	|	Placentalia	|		|	synonym	|
+9347	|	placental mammals	|		|	common name	|
+9347	|	placentals	|	placentals <blast name>	|	blast name	|
+9347	|	placentals	|	placentals <genbank common name>	|	genbank common name	|
+9443	|	Primata	|		|	synonym	|
+9443	|	primate	|		|	equivalent name	|
+9443	|	primates	|		|	blast name	|
+9443	|	Primates Linnaeus, 1758	|		|	authority	|
+9443	|	Primates	|		|	scientific name	|
+9526	|	Catarrhini	|		|	scientific name	|
+9604	|	great apes	|		|	genbank common name	|
+9604	|	Hominidae Gray, 1825	|		|	authority	|
+9604	|	Hominidae	|		|	scientific name	|
+9604	|	Pongidae	|		|	synonym	|
+9605	|	Homo Linnaeus, 1758	|		|	authority	|
+9605	|	Homo	|		|	scientific name	|
+9605	|	humans	|		|	common name	|
+9606	|	Homo sapiens Linnaeus, 1758	|		|	authority	|
+9606	|	Homo sapiens	|		|	scientific name	|
+9606	|	human	|		|	genbank common name	|
+10239	|	Vira	|		|	synonym	|
+10239	|	Viridae	|		|	synonym	|
+10239	|	viruses	|		|	blast name	|
+10239	|	Viruses	|		|	scientific name	|
+11118	|	Coronaviridae	|		|	scientific name	|
+28256	|	Alcanivorax/Fundibacter group	|	Alcanivorax/Fundibacter group <Halomonadaceae>	|	in-part	|
+28256	|	gamma-3 proteobacteria	|	gamma-3 proteobacteria <g-proteobacteria,Halomonadaceae>	|	in-part	|
+28256	|	Halomonadaceae Franzmann et al. 1989 emend. Ben Ali Gam et al. 2007	|		|	authority	|
+28256	|	Halomonadaceae Franzmann et al. 1989 emend. Dobson and Franzmann 1996	|		|	authority	|
+28256	|	Halomonadaceae Franzmann et al. 1989 emend. Ntougias et al. 2007	|		|	authority	|
+28256	|	Halomonadaceae	|		|	scientific name	|
+32523	|	Tetrapoda	|		|	scientific name	|
+32523	|	tetrapods	|		|	genbank common name	|
+32524	|	Amniota	|		|	scientific name	|
+32524	|	amniotes	|		|	genbank common name	|
+32525	|	Theria Parker & Haswell, 1897	|		|	authority	|
+32525	|	Theria	|	Theria <mammals>	|	scientific name	|
+33154	|	Fungi/Metazoa group	|		|	synonym	|
+33154	|	Opisthokonta Cavalier-Smith 1987	|		|	authority	|
+33154	|	Opisthokonta	|		|	scientific name	|
+33154	|	opisthokonts	|		|	synonym	|
+33208	|	Animalia	|		|	synonym	|
+33208	|	animals	|		|	blast name	|
+33208	|	metazoans	|		|	genbank common name	|
+33208	|	Metazoa	|		|	scientific name	|
+33208	|	multicellular animals	|		|	common name	|
+33213	|	Bilateria	|		|	scientific name	|
+33511	|	deuterostomes	|		|	common name	|
+33511	|	Deuterostomia	|		|	scientific name	|
+40674	|	Mammalia	|		|	scientific name	|
+40674	|	mammals	|	mammals <blast name>	|	blast name	|
+40674	|	mammals	|	mammals <genbank common name>	|	genbank common name	|
+68336	|	Bacteroidetes/Chlorobi group	|		|	equivalent name	|
+68336	|	Bacteroidota/Chlorobiota group	|		|	scientific name	|
+68336	|	CFB/Chlorobi group	|		|	synonym	|
+68336	|	CFB/Green sulfur bacteria group	|		|	synonym	|
+68336	|	Cytophagales/Green sulfur bacteria group	|		|	synonym	|
+76804	|	Nidovirales	|		|	scientific name	|
+89593	|	Craniata	|	Craniata <chordates>	|	scientific name	|
 91061	|	Bacilli Ludwig et al. 2010	|		|	authority	|
 91061	|	Bacilli	|		|	scientific name	|
 91061	|	Bacillus/Lactobacillus/Streptococcus group	|		|	synonym	|
 91061	|	Firmibacteria Murray 1988	|		|	authority	|
 91061	|	Firmibacteria	|		|	synonym	|
-1239	|	"Bacillaeota" Oren et al. 2015	|		|	authority	|
-1239	|	Bacillaeota	|		|	synonym	|
-1239	|	Bacillota corrig. Gibbons and Murray 2021	|		|	synonym	|
-1239	|	Bacillota	|		|	scientific name	|
-1239	|	Bacillus/Clostridium group	|		|	synonym	|
-1239	|	clostridial firmicutes	|		|	synonym	|
-1239	|	Clostridium group firmicutes	|		|	synonym	|
-1239	|	"Firmicuteota" Panda et al. 2022	|		|	authority	|
-1239	|	Firmicuteota	|		|	synonym	|
-1239	|	firmicutes	|		|	blast name	|
-1239	|	"Firmicutes" corrig. Gibbons and Murray 1978 (Approved Lists 1980)	|		|	synonym	|
-1239	|	Firmicutes	|		|	equivalent name	|
-1239	|	Low G+C firmicutes	|		|	synonym	|
-1239	|	low GC Gram+	|		|	common name	|
-1239	|	low G+C Gram-positive bacteria	|		|	common name	|
-1783272	|	Terrabacteria group	|		|	scientific name	|
-2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
-2	|	bacteria	|		|	blast name	|
-2	|	eubacteria	|		|	genbank common name	|
-2	|	Monera	|	Monera <bacteria>	|	in-part	|
-2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
-2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
-2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
-2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
-2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
+91844	|	Bemisia tabaci primary endosymbiont	|		|	synonym	|
+91844	|	Candidatus Portiera aleyrodidarum	|		|	scientific name	|
+91844	|	"Candidatus Portiera aleyrodidarum" Thao and Baumann 2004	|		|	authority	|
+91844	|	Portiera aleyrodidarum	|		|	equivalent name	|
+91844	|	primary endosymbiont of Bemisia tabaci	|		|	synonym	|
+114403	|	Zymobacter group	|		|	scientific name	|
+117570	|	Teleostomi	|		|	scientific name	|
+117571	|	bony vertebrates	|		|	genbank common name	|
+117571	|	Euteleostomi	|		|	scientific name	|
 131567	|	biota	|		|	synonym	|
 131567	|	cellular organisms	|		|	scientific name	|
-1	|	all	|		|	synonym	|
-1	|	root	|		|	scientific name	|
-727	|	ATCC 33391	|	ATCC 33391 <type strain>	|	type material	|
-727	|	"Bacterium influenzae" Lehmann and Neumann 1896	|		|	authority	|
-727	|	Bacterium influenzae	|		|	synonym	|
-727	|	CCUG 23945	|	CCUG 23945 <type strain>	|	type material	|
-727	|	CIP 102514	|	CIP 102514 <type strain>	|	type material	|
-727	|	"Coccobacillus pfeifferi" Neveu-Lemaire 1921	|		|	authority	|
-727	|	Coccobacillus pfeifferi	|		|	synonym	|
-727	|	DSM 4690	|	DSM 4690 <type strain>	|	type material	|
-727	|	Haemophilus influenzae (Lehmann and Neumann 1896) Winslow et al. 1917	|		|	authority	|
-727	|	Haemophilus influenzae	|		|	scientific name	|
-727	|	"Haemophilus meningitidis" (Martins) Hauduroy et al. 1937	|		|	authority	|
-727	|	Haemophilus meningitidis	|		|	synonym	|
-727	|	"Influenza-bacillus" Pfeiffer 1892	|		|	authority	|
-727	|	Influenza-bacillus	|		|	synonym	|
-727	|	"Mycobacterium influenzae" (Lehmann and Neumann 1896) Chester 1901	|		|	authority	|
-727	|	Mycobacterium influenzae	|		|	synonym	|
-727	|	NCTC 8143	|	NCTC 8143 <type strain>	|	type material	|
-724	|	Haemophilus	|		|	scientific name	|
-724	|	Haemophilus Winslow et al. 1917	|		|	authority	|
-712	|	Pasteurellaceae Pohl 1981	|		|	authority	|
-712	|	Pasteurellaceae	|		|	scientific name	|
+135619	|	Oceanospirillales Garrity et al. 2005	|		|	authority	|
+135619	|	Oceanospirillales	|		|	scientific name	|
+135619	|	Oceanospirillum/Halomonas group	|		|	synonym	|
 135625	|	Pasteruellaceae group	|		|	synonym	|
 135625	|	Pasteurellales Garrity et al. 2005	|		|	authority	|
 135625	|	Pasteurellales	|		|	scientific name	|
-1236	|	Gammaproteobacteria Garrity et al. 2005 emend. Williams and Kelly 2013	|		|	authority	|
-1236	|	Gammaproteobacteria	|		|	scientific name	|
-1236	|	gamma proteobacteria	|		|	synonym	|
-1236	|	gamma subdivision	|		|	synonym	|
-1236	|	gamma subgroup	|		|	synonym	|
-1236	|	g-proteobacteria	|		|	blast name	|
-1236	|	Proteobacteria gamma subdivision	|		|	synonym	|
-1236	|	"Pseudomonadia" Oren et al. 2016	|		|	authority	|
-1236	|	Pseudomonadia	|		|	synonym	|
-1236	|	Purple bacteria, gamma subdivision	|		|	synonym	|
-1224	|	Alphaproteobacteriota	|		|	synonym	|
-1224	|	"Alphaproteobacteriota" Whitman et al. 2018	|		|	synonym	|
-1224	|	proteobacteria	|		|	blast name	|
-1224	|	"Proteobacteria" Garrity et al. 2005	|		|	authority	|
-1224	|	Proteobacteria Stackebrandt et al. 1988	|		|	authority	|
-1224	|	Proteobacteria	|		|	synonym	|
-1224	|	"Proteobacteriota" Panda et al. 2022	|		|	authority	|
-1224	|	Proteobacteriota	|		|	synonym	|
-1224	|	Pseudomonadota corrig. Garrity et al. 2021	|		|	authority	|
-1224	|	Pseudomonadota	|		|	scientific name	|
-1224	|	purple photosynthetic bacteria and relatives	|		|	common name	|
-2	|	Bacteria	|	Bacteria <bacteria>	|	scientific name	|
-2	|	bacteria	|		|	blast name	|
-2	|	eubacteria	|		|	genbank common name	|
-2	|	Monera	|	Monera <bacteria>	|	in-part	|
-2	|	Procaryotae	|	Procaryotae <bacteria>	|	in-part	|
-2	|	Prokaryotae	|	Prokaryotae <bacteria>	|	in-part	|
-2	|	Prokaryota	|	Prokaryota <bacteria>	|	in-part	|
-2	|	prokaryote	|	prokaryote <bacteria>	|	in-part	|
-2	|	prokaryotes	|	prokaryotes <bacteria>	|	in-part	|
-131567	|	biota	|		|	synonym	|
-131567	|	cellular organisms	|		|	scientific name	|
-1	|	all	|		|	synonym	|
-1	|	root	|		|	scientific name	|
+171549	|	Bacteroidales Krieg 2012 emend. Pikuta et al. 2017	|		|	authority	|
+171549	|	Bacteroidales	|		|	scientific name	|
+186826	|	Lactobacillales Ludwig et al. 2010	|		|	authority	|
+186826	|	Lactobacillales	|		|	scientific name	|
+200643	|	Bacteroidetes	|	Bacteroidetes <Bacteroidia>	|	synonym	|
+200643	|	Bacteroidia Krieg 2012	|		|	authority	|
+200643	|	Bacteroidia	|		|	scientific name	|
+207598	|	Homininae	|		|	scientific name	|
+207598	|	Homo/Pan/Gorilla group	|		|	synonym	|
+227860	|	SARS coronavirus Vietnam	|		|	scientific name	|
+227861	|	SARS coronavirus Taiwan	|		|	scientific name	|
+227984	|	SARS coronavirus Tor2	|		|	scientific name	|
+227984	|	SARS Tor2	|		|	acronym	|
+227984	|	Severe acute respiratory syndrome-related coronavirus Tor2	|		|	equivalent name	|
+227998	|	SARS coronavirus Hong Kong/03/2003	|		|	scientific name	|
+228330	|	SARS coronavirus strain Urbani	|		|	equivalent name	|
+228330	|	SARS coronavirus Urbani	|		|	scientific name	|
+228330	|	SARS-CoV (Urbani strain)	|		|	equivalent name	|
+228404	|	SARS coronavirus HKU-39849	|		|	scientific name	|
+228406	|	SARS coronavirus BJ02	|		|	scientific name	|
+228407	|	SARS coronavirus BJ01	|		|	scientific name	|
+228409	|	SARS coronavirus BJ03	|		|	scientific name	|
+228415	|	SARS coronavirus CUHK-W1	|		|	scientific name	|
+228607	|	SARS coronavirus BJ04	|		|	scientific name	|
+229206	|	SARS coronavirus CUHK-Su10	|		|	scientific name	|
+229992	|	SARS coronavirus Frankfurt 1	|		|	scientific name	|
+229993	|	SARS coronavirus TW1	|		|	scientific name	|
+230471	|	SARS coronavirus ZJ01	|		|	scientific name	|
+230522	|	SARS coronavirus Taiwan JC-2003	|		|	scientific name	|
+231513	|	Civet SARS-CoV/SZ3/2003	|		|	equivalent name	|
+231513	|	Civet SARS CoV SZ3/2003	|		|	scientific name	|
+231513	|	SARS coronavirus SZ3	|		|	equivalent name	|
+231514	|	SARS coronavirus SZ13	|		|	scientific name	|
+231515	|	Civet SARS-CoV/SZ16/2003	|		|	equivalent name	|
+231515	|	Civet SARS CoV SZ16/2003	|		|	scientific name	|
+231515	|	SARS coronavirus SZ16	|		|	equivalent name	|
+231516	|	SARS coronavirus SZ1	|		|	scientific name	|
+231517	|	SARS coronavirus GZ43	|		|	scientific name	|
+231518	|	SARS coronavirus GZ60	|		|	scientific name	|
+231519	|	SARS coronavirus HKU-36871	|		|	scientific name	|
+231520	|	SARS coronavirus HKU-65806	|		|	scientific name	|
+231521	|	SARS coronavirus HKU-66078	|		|	scientific name	|
+231522	|	SARS coronavirus GZ50	|		|	scientific name	|
+233044	|	SARS coronavirus GD01	|		|	scientific name	|
+233872	|	SARS coronavirus TWC	|		|	scientific name	|
+235088	|	SARS coronavirus HSR 1	|		|	scientific name	|
+235173	|	SARS coronavirus Hong Kong ZY-2003	|		|	equivalent name	|
+235173	|	SARS coronavirus Shanhgai LY	|		|	scientific name	|
+235410	|	SARS coronavirus Sin2774	|		|	scientific name	|
+235411	|	SARS coronavirus Sin2748	|		|	scientific name	|
+235412	|	SARS coronavirus Sin2679	|		|	scientific name	|
+235413	|	SARS coronavirus Sin2677	|		|	scientific name	|
+235414	|	SARS coronavirus Sin2500	|		|	scientific name	|
+235572	|	Candidatus Portiera	|		|	equivalent name	|
+235572	|	"Candidatus Portiera" Thao and Baumann 2004	|		|	authority	|
+235572	|	Portiera	|		|	scientific name	|
+235572	|	whitefly endosymbionts	|		|	synonym	|
+237639	|	SARS coronavirus Taiwan TC1	|		|	scientific name	|
+237639	|	SARS coronavirus TC1	|		|	equivalent name	|
+237640	|	SARS coronavirus Taiwan TC2	|		|	scientific name	|
+237640	|	SARS coronavirus TC2	|		|	equivalent name	|
+239241	|	SARS coronavirus CUHK-AG01	|		|	scientific name	|
+239242	|	SARS coronavirus CUHK-AG02	|		|	scientific name	|
+239243	|	SARS coronavirus CUHK-AG03	|		|	scientific name	|
+239758	|	SARS coronavirus Taiwan TC3	|		|	scientific name	|
+240273	|	SARS coronavirus ZMY 1	|		|	scientific name	|
+240549	|	SARS coronavirus TWH	|		|	scientific name	|
+240550	|	SARS coronavirus TWJ	|		|	scientific name	|
+240551	|	SARS coronavirus TWK	|		|	scientific name	|
+240552	|	SARS coronavirus TWS	|		|	scientific name	|
+240553	|	SARS coronavirus TWY	|		|	scientific name	|
+241183	|	SARS coronavirus BJ2232	|		|	scientific name	|
+241628	|	SARS coronavirus TWC2	|		|	scientific name	|
+241629	|	SARS coronavirus TWC3	|		|	scientific name	|
+242743	|	SARS coronavirus FRA	|		|	scientific name	|
+243925	|	SARS coronavirus HPZ-2003	|		|	scientific name	|
+247149	|	SARS coronavirus WHU	|		|	scientific name	|
+248485	|	SARS coronavirus AS	|		|	scientific name	|
+249062	|	SARS coronavirus GZ-A	|		|	scientific name	|
+249063	|	SARS coronavirus GZ-B	|		|	scientific name	|
+249064	|	SARS coronavirus GZ-C	|		|	scientific name	|
+249065	|	SARS coronavirus GZ-D	|		|	scientific name	|
+249066	|	SARS coronavirus HGZ8L1-A	|		|	scientific name	|
+249067	|	SARS coronavirus HGZ8L1-B	|		|	scientific name	|
+249068	|	SARS coronavirus HSZ2-A	|		|	scientific name	|
+249069	|	SARS coronavirus HSZ-A	|		|	scientific name	|
+249070	|	SARS coronavirus HSZ-Bb	|		|	scientific name	|
+249071	|	SARS coronavirus HSZ-Cb	|		|	scientific name	|
+249072	|	SARS coronavirus HZS2-Fb	|		|	scientific name	|
+249073	|	SARS coronavirus JMD	|		|	scientific name	|
+249074	|	SARS coronavirus HZS2-D	|		|	scientific name	|
+249075	|	SARS coronavirus HZS2-E	|		|	scientific name	|
+249076	|	SARS coronavirus HZS2-Fc	|		|	scientific name	|
+249077	|	SARS coronavirus HZS2-C	|		|	scientific name	|
+249078	|	SARS coronavirus HGZ8L2	|		|	scientific name	|
+249079	|	SARS coronavirus HSZ-Bc	|		|	scientific name	|
+249080	|	SARS coronavirus HSZ-Cc	|		|	scientific name	|
+249081	|	SARS coronavirus ZS-B	|		|	scientific name	|
+249082	|	SARS coronavirus ZS-A	|		|	scientific name	|
+249083	|	SARS coronavirus LC1	|		|	scientific name	|
+249084	|	SARS coronavirus LC2	|		|	scientific name	|
+249085	|	SARS coronavirus LC3	|		|	scientific name	|
+249086	|	SARS coronavirus LC4	|		|	scientific name	|
+249087	|	SARS coronavirus LC5	|		|	scientific name	|
+249088	|	SARS coronavirus ZS-C	|		|	scientific name	|
+249089	|	SARS coronavirus HZS2-Bb	|		|	scientific name	|
+252654	|	SARS coronavirus BJ302	|		|	scientific name	|
+253433	|	SARS coronavirus PUMC01	|		|	scientific name	|
+253434	|	SARS coronavirus PUMC02	|		|	scientific name	|
+253435	|	SARS coronavirus PUMC03	|		|	scientific name	|
+253634	|	SARS coronavirus HB	|		|	scientific name	|
+255194	|	SARS coronavirus SoD	|		|	scientific name	|
+255729	|	SARS coronavirus Sino3-11	|		|	scientific name	|
+255730	|	SARS coronavirus Sino1-11	|		|	scientific name	|
+256753	|	SARS coronavirus GZ02	|		|	scientific name	|
+258445	|	SARS coronavirus GD69	|		|	scientific name	|
+258507	|	SARS coronavirus ShanghaiQXC1	|		|	scientific name	|
+258508	|	SARS coronavirus ShanghaiQXC2	|		|	scientific name	|
+258963	|	SARS coronavirus TW10	|		|	scientific name	|
+258964	|	SARS coronavirus TW11	|		|	scientific name	|
+258965	|	SARS coronavirus TW2	|		|	scientific name	|
+258966	|	SARS coronavirus TW3	|		|	scientific name	|
+258967	|	SARS coronavirus TW4	|		|	scientific name	|
+258968	|	SARS coronavirus TW5	|		|	scientific name	|
+258969	|	SARS coronavirus TW6	|		|	scientific name	|
+258970	|	SARS coronavirus TW7	|		|	scientific name	|
+258971	|	SARS coronavirus TW8	|		|	scientific name	|
+258972	|	SARS coronavirus TW9	|		|	scientific name	|
+260069	|	SARS coronavirus HC/SZ/61/03	|		|	scientific name	|
+260069	|	SARS coronavirus SZ61	|		|	equivalent name	|
+260550	|	SARS coronavirus CUHK-L2	|		|	scientific name	|
+260743	|	SARS coronavirus NS-1	|		|	scientific name	|
+260743	|	SARS coronavirus strain NS-1	|		|	equivalent name	|
+262338	|	SARS coronavirus GD03T0013	|		|	scientific name	|
+264370	|	SARS coronavirus TW	|		|	scientific name	|
+264371	|	SARS coronavirus TW-HP1	|		|	scientific name	|
+264372	|	SARS coronavirus TW-HP2	|		|	scientific name	|
+264373	|	SARS coronavirus TW-HP3	|		|	scientific name	|
+264374	|	SARS coronavirus TW-HP4	|		|	scientific name	|
+264375	|	SARS coronavirus TW-JC2	|		|	scientific name	|
+264376	|	SARS coronavirus TW-KC1	|		|	scientific name	|
+264377	|	SARS coronavirus TW-KC3	|		|	scientific name	|
+264378	|	SARS coronavirus TW-GD1	|		|	scientific name	|
+264379	|	SARS coronavirus TW-GD2	|		|	scientific name	|
+264380	|	SARS coronavirus TW-GD3	|		|	scientific name	|
+264381	|	SARS coronavirus TW-GD4	|		|	scientific name	|
+264382	|	SARS coronavirus TW-GD5	|		|	scientific name	|
+264383	|	SARS coronavirus TW-YM1	|		|	scientific name	|
+264384	|	SARS coronavirus TW-YM2	|		|	scientific name	|
+264385	|	SARS coronavirus TW-YM3	|		|	scientific name	|
+264386	|	SARS coronavirus TW-YM4	|		|	scientific name	|
+264387	|	SARS coronavirus TW-PH1	|		|	scientific name	|
+264388	|	SARS coronavirus TW-PH2	|		|	scientific name	|
+264988	|	SARS coronavirus sf099	|		|	scientific name	|
+264989	|	SARS coronavirus cw049	|		|	scientific name	|
+264990	|	SARS coronavirus sf098	|		|	scientific name	|
+265124	|	SARS coronavirus cw037	|		|	scientific name	|
+265125	|	SARS coronavirus xw002	|		|	scientific name	|
+266147	|	SARS coronavirus Sin0409	|		|	scientific name	|
+266148	|	SARS coronavirus Sin_WNV	|		|	scientific name	|
+267383	|	SARS coronavirus Sin842	|		|	scientific name	|
+267384	|	SARS coronavirus Sin852	|		|	scientific name	|
+267385	|	SARS coronavirus Sin3408	|		|	scientific name	|
+267386	|	SARS coronavirus Sin3765V	|		|	scientific name	|
+267387	|	SARS coronavirus Sin848	|		|	scientific name	|
+267388	|	SARS coronavirus Sin849	|		|	scientific name	|
+267389	|	SARS coronavirus Sin3725V	|		|	scientific name	|
+267390	|	SARS coronavirus SinP1	|		|	scientific name	|
+267391	|	SARS coronavirus SinP2	|		|	scientific name	|
+267392	|	SARS coronavirus SinP3	|		|	scientific name	|
+267393	|	SARS coronavirus SinP4	|		|	scientific name	|
+267394	|	SARS coronavirus SinP5	|		|	scientific name	|
+267395	|	SARS coronavirus Sin845	|		|	scientific name	|
+267396	|	SARS coronavirus Sin846	|		|	scientific name	|
+267397	|	SARS coronavirus Sin847	|		|	scientific name	|
+267398	|	SARS coronavirus Sin850	|		|	scientific name	|
+267399	|	SARS coronavirus Sin3408L	|		|	scientific name	|
+273522	|	SARS coronavirus LLJ-2004	|		|	scientific name	|
+281976	|	SARS coronavirus GZ0401	|		|	scientific name	|
+284672	|	SARS coronavirus TJF	|		|	scientific name	|
+285267	|	SARS coronavirus HHS-2004	|		|	scientific name	|
+285945	|	Civet SARS-CoV/007/2004	|		|	equivalent name	|
+285945	|	Civet SARS CoV 007/2004	|		|	scientific name	|
+285945	|	SARS coronavirus civet007	|		|	equivalent name	|
+285946	|	SARS coronavirus civet010	|		|	scientific name	|
+285947	|	SARS coronavirus civet014	|		|	scientific name	|
+285948	|	SARS coronavirus civet019	|		|	scientific name	|
+285949	|	SARS coronavirus civet020	|		|	scientific name	|
+291613	|	SARS coronavirus GD322	|		|	scientific name	|
+292360	|	SARS Coronavirus CDC#200301157	|		|	scientific name	|
+293319	|	SARS coronavirus PC4-127	|		|	scientific name	|
+293320	|	SARS coronavirus PC4-205	|		|	scientific name	|
+293321	|	SARS coronavirus GZ0403	|		|	scientific name	|
+293933	|	SARS coronavirus GZ0402	|		|	scientific name	|
+293934	|	SARS coronavirus PC4-13	|		|	scientific name	|
+293935	|	SARS coronavirus PC4-136	|		|	scientific name	|
+293936	|	SARS coronavirus PC4-227	|		|	scientific name	|
+296837	|	SARS coronavirus PC4-115	|		|	scientific name	|
+296838	|	SARS coronavirus PC4-137	|		|	scientific name	|
+296839	|	SARS coronavirus PC4-145	|		|	scientific name	|
+296840	|	SARS coronavirus PC4-199	|		|	scientific name	|
+296841	|	SARS coronavirus PC4-241	|		|	scientific name	|
+299335	|	SARS coronavirus B039	|		|	scientific name	|
+304858	|	SARS coronavirus A022	|		|	scientific name	|
+305401	|	SARS coronavirus A001	|		|	scientific name	|
+305402	|	SARS coronavirus A013	|		|	scientific name	|
+305403	|	SARS coronavirus A021	|		|	scientific name	|
+305404	|	SARS coronavirus A030	|		|	scientific name	|
+305405	|	SARS coronavirus A031	|		|	scientific name	|
+305406	|	SARS coronavirus B012	|		|	scientific name	|
+305407	|	SARS coronavirus B024	|		|	scientific name	|
+305408	|	SARS coronavirus B029	|		|	scientific name	|
+305409	|	SARS coronavirus B033	|		|	scientific name	|
+305410	|	SARS coronavirus B040	|		|	scientific name	|
+305411	|	SARS coronavirus C013	|		|	scientific name	|
+305412	|	SARS coronavirus C014	|		|	scientific name	|
+305413	|	SARS coronavirus C017	|		|	scientific name	|
+305414	|	SARS coronavirus C018	|		|	scientific name	|
+305415	|	SARS coronavirus C019	|		|	scientific name	|
+305416	|	SARS coronavirus C025	|		|	scientific name	|
+305417	|	SARS coronavirus C028	|		|	scientific name	|
+305418	|	SARS coronavirus C029	|		|	scientific name	|
+312027	|	SARS coronavirus WH20	|		|	scientific name	|
+314146	|	Euarchontoglires	|		|	scientific name	|
+314293	|	Anthropoidea	|		|	synonym	|
+314293	|	Simiiformes	|		|	scientific name	|
+314295	|	ape	|	ape <primates>	|	common name	|
+314295	|	apes	|		|	genbank common name	|
+314295	|	Hominoidea	|		|	scientific name	|
+321147	|	SARS coronavirus BJ162	|		|	scientific name	|
+321149	|	SARS coronavirus BJ202	|		|	scientific name	|
+333387	|	Bat SARS coronavirus HKU3-1	|		|	scientific name	|
+333387	|	SARS-CoV HKU3-1	|		|	equivalent name	|
+338605	|	Bat SARS coronavirus HKU3-2	|		|	scientific name	|
+338606	|	Bat SARS coronavirus HKU3-3	|		|	scientific name	|
+344702	|	SARS coronavirus ZJ0301	|		|	scientific name	|
+347536	|	Bat SARS coronavirus Rm1	|		|	equivalent name	|
+347536	|	Bat SARS-CoV/Rm1/2004	|		|	equivalent name	|
+347536	|	Bat SARS CoV Rm1/2004	|		|	scientific name	|
+347537	|	Bat SARS coronavirus Rf1	|		|	equivalent name	|
+347537	|	Bat SARS-CoV/Rf1/2004	|		|	equivalent name	|
+347537	|	Bat SARS CoV Rf1/2004	|		|	scientific name	|
+349342	|	Bat SARS coronavirus Rp1	|		|	scientific name	|
+349343	|	Bat SARS coronavirus Rp2	|		|	scientific name	|
+349344	|	Bat SARS coronavirus Rp3	|		|	equivalent name	|
+349344	|	Bat SARS-CoV/Rp3/2004	|		|	equivalent name	|
+349344	|	Bat SARS CoV Rp3/2004	|		|	scientific name	|
+353145	|	SARS coronavirus ZJ02	|		|	scientific name	|
+376913	|	Haplorrhini	|		|	scientific name	|
+385683	|	SARS coronavirus CS21	|		|	scientific name	|
+385684	|	SARS coronavirus CS24	|		|	scientific name	|
+385685	|	SARS coronavirus ES191	|		|	scientific name	|
+385686	|	SARS coronavirus ES260	|		|	scientific name	|
+385687	|	SARS coronavirus WF188	|		|	scientific name	|
+388737	|	SARS coronavirus GDH-BJH01	|		|	scientific name	|
+389166	|	Bat coronavirus (BtCoV/273/2005)	|		|	equivalent name	|
+389166	|	Bat CoV 273/2005	|		|	scientific name	|
+389166	|	BtCoV/273/2005	|		|	equivalent name	|
+389167	|	Bat coronavirus (BtCoV/279/2005)	|		|	equivalent name	|
+389167	|	Bat CoV 279/2005	|		|	scientific name	|
+391355	|	SARS coronavirus Frankfurt1-v01	|		|	scientific name	|
+421444	|	SARS coronavirus strain TJ01	|		|	equivalent name	|
+421444	|	SARS coronavirus TJ01	|		|	scientific name	|
+442736	|	Bat coronavirus HKU3	|		|	equivalent name	|
+442736	|	Bat SARS coronavirus HKU3	|		|	scientific name	|
+442736	|	SARS-related bat coronavirus HKU3	|		|	equivalent name	|
+511429	|	SARS coronavirus BJ182-12	|		|	scientific name	|
+511430	|	SARS coronavirus BJ182-4	|		|	scientific name	|
+511431	|	SARS coronavirus BJ182-8	|		|	scientific name	|
+511432	|	SARS coronavirus BJ182a	|		|	scientific name	|
+511433	|	SARS coronavirus BJ182b	|		|	scientific name	|
+627440	|	SARS coronavirus ExoN1	|		|	scientific name	|
+627442	|	SARS coronavirus P2	|		|	scientific name	|
+627442	|	SARS coronavirus strain P2	|		|	equivalent name	|
+633137	|	SARS coronavirus MA15	|		|	scientific name	|
+633137	|	SARS coronavirus strain MA15	|		|	synonym	|
+633137	|	Urbani derived	|		|	equivalent name	|
+633140	|	SARS coronavirus MA15 ExoN1	|		|	scientific name	|
+633140	|	SARS coronavirus strain MA15 ExoN1	|		|	equivalent name	|
+694002	|	Betacoronavirus	|		|	scientific name	|
+694002	|	Coronavirus	|	Coronavirus <Betacoronavirus>	|	in-part	|
+694002	|	Coronavirus group 2	|		|	equivalent name	|
+694002	|	Group 2 species	|		|	equivalent name	|
+694009	|	HCoV-SARS	|		|	acronym	|
+694009	|	Human coronavirus (strain SARS)	|		|	equivalent name	|
+694009	|	SARS	|		|	acronym	|
+694009	|	SARS-like coronavirus	|		|	equivalent name	|
+694009	|	SARSr-CoV	|		|	acronym	|
+694009	|	SARSrCoV	|		|	acronym	|
+694009	|	SARS-related coronavirus	|		|	equivalent name	|
+694009	|	Severe acute respiratory syndrome-related coronavirus	|		|	scientific name	|
+698398	|	recombinant SARSr-CoV	|		|	scientific name	|
+698419	|	SARS coronavirus wtic-MB	|		|	scientific name	|
+722424	|	Bat SARS coronavirus Rs_672/2006	|		|	equivalent name	|
+722424	|	Bat SARS CoV Rs672/2006	|		|	equivalent name	|
+722424	|	SARS coronavirus Rs_672/2006	|		|	scientific name	|
+741997	|	Bat SARS coronavirus HKU3-10	|		|	scientific name	|
+741998	|	Bat SARS coronavirus HKU3-11	|		|	scientific name	|
+741999	|	Bat SARS coronavirus HKU3-12	|		|	scientific name	|
+742000	|	Bat SARS coronavirus HKU3-13	|		|	scientific name	|
+742001	|	Bat SARS coronavirus HKU3-4	|		|	scientific name	|
+742002	|	Bat SARS coronavirus HKU3-5	|		|	scientific name	|
+742003	|	Bat SARS coronavirus HKU3-6	|		|	scientific name	|
+742004	|	Bat SARS coronavirus HKU3-7	|		|	scientific name	|
+742005	|	Bat SARS coronavirus HKU3-8	|		|	scientific name	|
+742006	|	Bat SARS coronavirus HKU3-9	|		|	scientific name	|
+1283332	|	Bat coronavirus Rp/Shaanxi2011	|		|	scientific name	|
+1283332	|	Bat Rp-coronavirus/Shaanxi2011	|		|	equivalent name	|
+1283333	|	Bat coronavirus Cp/Yunnan2011	|		|	scientific name	|
+1283333	|	Bat Cp-coronavirus/Yunnan2011	|		|	equivalent name	|
+1338369	|	Dipnotetrapodomorpha	|		|	scientific name	|
+1415834	|	Bat SARS-like coronavirus Rs3367	|		|	scientific name	|
+1415851	|	Bat SARS-like coronavirus RsSHC014	|		|	scientific name	|
+1415852	|	Bat SARS-like coronavirus WIV1	|		|	scientific name	|
+1431340	|	Bat SARS coronavirus	|		|	equivalent name	|
+1431340	|	SARS bat coronavirus	|		|	scientific name	|
+1437010	|	Boreoeutheria	|		|	scientific name	|
+1437010	|	Boreotheria	|		|	synonym	|
+1487703	|	Rhinolophus affinis coronavirus	|		|	scientific name	|
+1503296	|	BtRf-BetaCoV/HeB2013	|		|	scientific name	|
+1503299	|	BtRf-BetaCoV/JL2012	|		|	scientific name	|
+1503300	|	BtRf-BetaCoV/SX2013	|		|	scientific name	|
+1503301	|	BtRs-BetaCoV/GX2013	|		|	scientific name	|
+1503302	|	BtRs-BetaCoV/HuB2013	|		|	scientific name	|
+1503303	|	BtRs-BetaCoV/YN2013	|		|	scientific name	|
+1508227	|	Bat Betacoronavirus SARS related virus	|		|	equivalent name	|
+1508227	|	Bat SARS-like coronavirus	|		|	scientific name	|
+1508227	|	Bat SARS-related coronavirus	|		|	equivalent name	|
+1508227	|	SARS-related bat coronavirus	|		|	equivalent name	|
+1699360	|	Bat SARS-like coronavirus YNLF_31C	|		|	scientific name	|
+1699361	|	Bat SARS-like coronavirus YNLF_34C	|		|	scientific name	|
+1783270	|	FCB group	|		|	scientific name	|
+1783270	|	Fibrobacter/Acidobacteria group	|	Fibrobacter/Acidobacteria group <FCB group>	|	in-part	|
+1783270	|	Fibrobacteres/Acidobacteria group	|	Fibrobacteres/Acidobacteria group <FCB group>	|	in-part	|
+1783270	|	Fibrobacteres-Chlorobi-Bacteroidetes superphylum	|		|	synonym	|
+1783272	|	Terrabacteria group	|		|	scientific name	|
+2042697	|	SARS-related bat coronavirus RsSHC014	|		|	scientific name	|
+2042698	|	SARS-related betacoronavirus Rp3/2004	|		|	scientific name	|
+2499399	|	Cornidovirineae	|		|	scientific name	|
+2501931	|	Orthocoronavirinae	|		|	scientific name	|
+2509511	|	Sarbecovirus	|		|	scientific name	|
+2559587	|	Riboviria	|		|	scientific name	|
+2559587	|	RNA viruses and viroids	|		|	common name	|
+2559587	|	RNA viruses	|		|	common name	|
+2697049	|	2019-nCoV	|		|	equivalent name	|
+2697049	|	COVID-19 virus	|		|	equivalent name	|
+2697049	|	HCoV-19	|		|	equivalent name	|
+2697049	|	Human coronavirus 2019	|		|	equivalent name	|
+2697049	|	SARS-2	|		|	equivalent name	|
+2697049	|	SARS2	|		|	equivalent name	|
+2697049	|	SARS-CoV-2	|		|	acronym	|
+2697049	|	SARS-CoV2	|		|	equivalent name	|
+2697049	|	Severe acute respiratory syndrome coronavirus 2	|		|	scientific name	|
+2709072	|	Bat coronavirus isolate RaTG13	|		|	equivalent name	|
+2709072	|	Bat coronavirus Ra4991	|		|	equivalent name	|
+2709072	|	Bat coronavirus RaTG13	|		|	scientific name	|
+2732396	|	Orthornavirae	|		|	scientific name	|
+2732408	|	Pisuviricota	|		|	scientific name	|
+2732506	|	Pisoniviricetes	|		|	scientific name	|
+2901879	|	SARS coronavirus	|		|	equivalent name	|
+2901879	|	SARS-CoV	|		|	acronym	|
+2901879	|	SARS virus	|		|	equivalent name	|
+2901879	|	Severe acute respiratory syndrome coronavirus	|		|	scientific name	|
+3092168	|	SARS-CoV-2 pseudovirus	|		|	scientific name	|
