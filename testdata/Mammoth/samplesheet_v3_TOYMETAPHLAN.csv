@@ -1,0 +1,2 @@
+sample_id,library_id,lane,colour_chemistry,pairment,strandedness,damage_treatment,r1,r2,bam,bam_reference_id
+JK2782_METAPHLAN,JK2782_TGGCCGATCAACGA_BAM,8,4,single,double,half,,,https://github.com/nf-core/test-datasets/raw/eager/testdata/Mammoth/bam/Mammoth_MT_Krause_TOYMETAPHLAN.bam,Mammoth_MT_Krause

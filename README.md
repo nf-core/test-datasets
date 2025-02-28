@@ -39,6 +39,8 @@ This contains two paired end samples which are the default test samples.
 
 Already clipped, merged and mapped BAM files of the two paired-end FASTQ files as described above in `fastq`.
 
+For metaphlan-tests: A BAM file TOYMETAPHLAN that contains the Mammoth fastq-files (see above) + the sequences used to construct the Metaphlan test database
+
 **vcf**
 
 `JK2772_*`: An additional VCF for another Mammoth MT capture library that was previously processed in nf-core/eager and genotyped via UnifiedGenotyper (~10K reads after merging, [Fellows Yates 2017 et al._Sci. Rep._](https://doi.org/10.1038/s41598-017-17723-1))
