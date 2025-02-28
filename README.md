@@ -89,12 +89,16 @@ gzip -k * ## to have both gzipped and uncompressed versions
 
 These are NCBI taxdump re-constructed files, where the entries only include those of the FASTA list files above (rather than the entire tax dump).
 
-- Downloaded NCBI [`taxdmp.tar.gz`](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) from Feb. 2024 and ran [this script](https://gist.github.com/jfy133/56228de5e0bb666b6c980593e5da6a58):
+- Downloaded NCBI [`taxdmp.tar.gz`](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/) from Feb. 2024 and used taxonkit and csvkit to filter the files to use the lineages of interest
 
   ```bash
-  for i in 9606 694009 817 91844 1311 727; do
-      taxdmp_filter.sh $i
-  done
+  taxonkit list --ids 9606,694009,817,91844,1311,727 | taxonkit filter -E species | taxonkit lineage -t |  cut -f 3 | sed -s 's/;/\n/g' > taxids.txt
+  echo 1 >> taxids.txt
+  mkdir subset
+  csvtk grep -Ht -f 1 -P taxids.txt /<PATH>/<TO>/nodes.dmp > subset/nodes.dmp
+  cat /<PATH>/<TO>/names.dmp | csvtk fix-quotes -t | csvtk grep -Ht -f 1 -P taxids.txt | csvtk del-quotes -t > subset/names.dmp
+  ## To verify
+  taxonkit list --ids 1 --data-dit subset/ -nr
   ```
 
 - Downloaded [`nucl_gb.accession2taxid.gz`](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/) from Feb. 2024, and ran
