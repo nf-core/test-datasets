@@ -252,6 +252,7 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - 'prot_names.dmp': sars-cov-2 dmp name file used for associating protein with tax ID (tested with DIAMOND). Subset from NCBI taxdmp names.dmp.
     - 'prot_nodes.dmp': sars-cov-2 dmp node file used for associated protein with tax ID (tested with DIAMOND). Subset from NCBI taxdmp nodes.dmp.
     - 'prot.accession2taxid.gz': sars-cov-2 ORF1ab polyprotein accession ID to tax id file, to match sars-cov-2 proteome.fasta
+    - 'prot_seqid2taxid.map': taxonomy mapping file of the SARS-CoV2 proteome accession ID to the NCBI taxonomy ID
 
 - homo_sapiens
 
