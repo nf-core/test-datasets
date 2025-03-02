@@ -174,6 +174,34 @@ unzip -p ${MAP_GRCH38}.map.zip plink.chr22.GRCh38.map | \
 gzip ${MAP_GRCH38}.chr22.map
 ```
 
+## Alleles, Loci, GC and RT for `ASCAT`
+
+The reference files for ASCAT are obtained as follow
+
+```bash
+ASCAT_PATH=data/genomics/homo_sapiens/genome/ascat/
+wget https://zenodo.org/records/14008443/files/G1000_loci_WGS_hg38.zip -O ${ASCAT_PATH}G1000_loci_WGS_hg38.zip
+unzip ${ASCAT_PATH}G1000_loci_WGS_hg38.zip G1000_loci_hg38_chr21.txt -d ${ASCAT_PATH}
+unzip ${ASCAT_PATH}G1000_loci_WGS_hg38.zip G1000_loci_hg38_chr22.txt -d ${ASCAT_PATH}
+# Rename to chr
+for i in 21 22; do
+   cp ${ASCAT_PATH}G1000_loci_hg38_chr${i}.txt ${ASCAT_PATH}G1000_loci_hg38_${i}.txt
+   sed -i 's/^/chr/' ${ASCAT_PATH}G1000_loci_hg38_chr${i}.txt
+done 
+
+wget https://zenodo.org/records/14008443/files/G1000_alleles_WGS_hg38.zip -O ${ASCAT_PATH}G1000_alleles_WGS_hg38.zip
+unzip ${ASCAT_PATH}G1000_alleles_WGS_hg38.zip G1000_alleles_hg38_chr21.txt -d ${ASCAT_PATH}
+unzip ${ASCAT_PATH}G1000_alleles_WGS_hg38.zip G1000_alleles_hg38_chr22.txt -d ${ASCAT_PATH}
+
+wget https://zenodo.org/records/14008443/files/GC_G1000_WGS_hg38.zip -O ${ASCAT_PATH}GC_G1000_WGS_hg38.zip
+unzip -p ${ASCAT_PATH}GC_G1000_WGS_hg38.zip GC_G1000_hg38.txt | awk 'NR==1 || $2 == 21' > ${ASCAT_PATH}GC_G1000_hg38_21.txt
+unzip -p ${ASCAT_PATH}GC_G1000_WGS_hg38.zip GC_G1000_hg38.txt | awk 'NR==1 || $2 == 22' > ${ASCAT_PATH}GC_G1000_hg38_22.txt
+
+wget https://zenodo.org/records/14008443/files/RT_G1000_WGS_hg38.zip -O ${ASCAT_PATH}RT_G1000_WGS_hg38.zip
+unzip -p ${ASCAT_PATH}RT_G1000_WGS_hg38.zip RT_G1000_hg38.txt | awk 'NR==1 || $2 == 21' > ${ASCAT_PATH}RT_G1000_hg38_21.txt
+unzip -p ${ASCAT_PATH}RT_G1000_WGS_hg38.zip RT_G1000_hg38.txt | awk 'NR==1 || $2 == 22' > ${ASCAT_PATH}RT_G1000_hg38_22.txt
+```
+
 ## Output data generation
 
 ### Illumina data
