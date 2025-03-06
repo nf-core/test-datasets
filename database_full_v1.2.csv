@@ -1,0 +1,18 @@
+tool,db_name,db_params,db_type,db_path
+bracken,bracken-db,;-r 150,short,s3://ngi-igenomes/test-data/taxprofiler/bracken.tar.gz
+centrifuge,centrifuge-db,,short,s3://ngi-igenomes/test-data/taxprofiler/centrifuge.tar.gz
+diamond,diamond-db1,,short,s3://ngi-igenomes/test-data/taxprofiler/diamond.dmnd
+diamond,diamond-db2,--long-reads,long,s3://ngi-igenomes/test-data/taxprofiler/diamond.dmnd
+diamond,diamond-db3,,short;long,s3://ngi-igenomes/test-data/taxprofiler/diamond.dmnd
+kaiju,kaiju-db1,,short,s3://ngi-igenomes/test-data/taxprofiler/kaiju.tar.gz
+kaiju,kaiju-db2,-m 50,long,s3://ngi-igenomes/test-data/taxprofiler/kaiju.tar.gz
+kaiju,kaiju-db3,,short;long,s3://ngi-igenomes/test-data/taxprofiler/kaiju.tar.gz
+kraken2,kraken2-db,,short,s3://ngi-igenomes/test-data/taxprofiler/kraken2.tar.gz
+krakenuniq,krakenuniq-db,,short,s3://ngi-igenomes/test-data/taxprofiler/krakenuniq.tar.gz
+malt,malt-db,,short,s3://ngi-igenomes/test-data/taxprofiler/malt.tar.gz
+metaphlan,metaphlan3-db,--mpa3,short,s3://ngi-igenomes/test-data/taxprofiler/metaphlan3.tar.gz
+motus,motus-db1,,short,s3://ngi-igenomes/test-data/taxprofiler/db_mOTU.tar.gz
+motus,motus-db2,,long,s3://ngi-igenomes/test-data/taxprofiler/db_mOTU.tar.gz
+motus,motus-db3,,short;long,s3://ngi-igenomes/test-data/taxprofiler/db_mOTU.tar.gz
+ganon,ganon-db,,short,s3://ngi-igenomes/test-data/taxprofiler/ganon.tar.gz
+kmcp,kmcp_db,,short,s3://ngi-igenomes/test-data/taxprofiler/kmcp.tar.gz

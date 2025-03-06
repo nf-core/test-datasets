@@ -197,20 +197,45 @@ rm *dmp *txt *gz *prt *zip
 
 KrakenUniq version 1.0.0
 
-> ⚠️  This database _does not_ use the specified files used in the other databases, as this built into a database that was tool large.
+> ⚠️ This database _does not_ use the specified files used in the other databases, as this built into a database that was tool large.
 
 This database includes the SARS-CoV2 genome used on the nf-core/modules test-datasets repository (NCBI Accession: MT192765.1).
 
-It was generated using the nf-core/module KRAKENUNIQ_BUILD module.  
+It was generated using the nf-core/module KRAKENUNIQ_BUILD module.
 
 #### ganon
 
 ganon version 1.5.1
 
 ```bash
-ln -s GCF_000146045.2_R64_genomic.fna GCF_000146045.2_R64_genomic.fa
 ganon build-custom --threads 4 --input *.fa --db-prefix test-db-ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa --input-target sequence
 ```
+
+#### kmcp
+
+kmcp version 0.9.1
+
+```bash
+mkdir gtdb-genomes
+
+## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder gtdb-genomes.
+
+## Rename the file for Penicillium roqueforti to match the seqid2taxid.map file
+mv GCF_015533775.1_ASM1553377v1_genomic.fna.gz NW_024067565.1.fna.gz
+
+kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-n10-l150 -I gtdb-genomes
+kmcp index -f 0.3 -n 1 -j 32 -I tmp-k21-n10-l150 -O gtdb.kmcp
+```
+
+#### sylph
+
+After unzipping the downloaded files:
+
+```bash
+sylph sketch *
+```
+
+This generates a database file `database.syldb`. If you want to use a custom database name, you can use `sylph sketch * -o custom_name.syldb`
 
 ## Taxprofiler AWS Full Test specific-information
 
@@ -221,13 +246,13 @@ The main AWS full test data used for nf-core/taxprofiler is from [Meslier et al.
 They were selected as a benchmarking dataset containing a semi-complex microbial community with strains that have known reference genomes, and with multiple sequencing runs one of sample of the Illumina dataset. ENA Experiment IDs are as follows
 
 - ONT MiniION R9
-    - ERX9314125
-    - ERX9314126
-    - ERR9765782
+  - ERX9314125
+  - ERX9314126
+  - ERR9765782
 - Illumina HiSeq 3000
-    - ERX9314116
-    - ERX9314117
-    - ERX9314118 (x2 runs)
+  - ERX9314116
+  - ERX9314117
+  - ERX9314118 (x2 runs)
 
 FASTQ files for the `samplesheet_full.tsv` are stored on the [EBI ENA servers](https://www.ebi.ac.uk/ena/browser/view/PRJEB52977)
 
@@ -391,7 +416,7 @@ Make a working directory
 mkdir -p meslier2022/diamond
 ```
 
-Download and unpack the required taxonomy files. 
+Download and unpack the required taxonomy files.
 
 > ⚠️ The accession2taxid file is very large!
 
@@ -430,13 +455,13 @@ Combine all reference sequences into a single FASTA
 cat meslier2022_fasta/ncbi_dataset/data/*/*.fna > centrifuge_sequences.fna
 ```
 
-Run the build command using the saved Kraken2 `seqid2taxid.map` file from the corresponding section above 
+Run the build command using the saved Kraken2 `seqid2taxid.map` file from the corresponding section above
 
 ```bash
 centrifuge-build -p 32 --conversion-table seqid2taxid.map --taxonomy-tree nodes.dmp --name-table names.dmp centrifuge_sequences.fna meslier2022/centrifuge/centrifuge
 ```
 
-#### Kaiju 
+#### Kaiju
 
 The following steps were performed used Kaiju (v1.9.2).
 
@@ -469,8 +494,8 @@ First we extract all the Kaiju headers
 
 ```bash
 cut -d ' ' -f1 kaiju_sequences.faa > kaiju_sequences_accession.faa
-grep ">" kaiju_sequences_accession.faa > kaiju_sequences_accession.txt 
-sed -i 's/>//g' kaiju_sequences_accession.txt 
+grep ">" kaiju_sequences_accession.faa > kaiju_sequences_accession.txt
+sed -i 's/>//g' kaiju_sequences_accession.txt
 ```
 
 We then use the following R (v4.2.2) commands with the taxonomizr package (0.7.1) to pull the NCBI Taxonomic ID from the NCBI Protein accession IDs in the FASTA file.
@@ -482,7 +507,7 @@ install.packages("taxonomizr")
 library(taxonomizr)
 ```
 
-Download the necessary nodes and names files from NCBI 
+Download the necessary nodes and names files from NCBI
 
 ```r
 getNamesAndNodes()
@@ -514,12 +539,11 @@ quit()
 We can then create a new FASTA with the correct numeric IDs using AWK
 
 ```bash
-paste kaiju_sequences_accession.txt kaiju_sequences_taxId.txt >  kaiju_accession_taxid.txt 
+paste kaiju_sequences_accession.txt kaiju_sequences_taxId.txt >  kaiju_accession_taxid.txt
 awk 'FNR==NR {f2[$1]=$2;next} /^>/ { for (i in f2) { if (index(substr($1,2), i)) { print ">"f2[i]; next } } }1' kaiju_accession_taxid.txt kaiju_sequences_accession.faa > kaiju_sequences.faa
 ```
 
 We can copy the previously downloaded NCBI taxonomy files into the Kaiju working directory
-
 
 ```bash
 cp nodes.dmp names.dmp meslier2022/kaiju/
@@ -552,6 +576,75 @@ You then will need to find the location of the downloaded file in the mOTUs inst
 
 ```console
 <conda_installion>/envs/motus/lib/python3.9/site-packages/motus/db_mOTU/
+```
+
+#### ganon
+
+Create directory, then run command. Note taxonomy files will be automatically downloaded for you.
+
+```
+mkdir -p meslier2022/ganon
+
+ganon build-custom --threads 4 --input meslier2022_fasta/ncbi_dataset/data/GCA_*/*.fna --db-prefix meslier2022/ganon/ganon --verbose -x ncbi --write-info-file --ncbi-sequence-info --ncbi-file-info -e fa --input-target sequence
+```
+
+#### kmcp
+
+Create directory, then copy the input files to the directory and rename them.
+
+```
+mkdir -p meslier2022/kmcp
+cd kmcp
+cp meslier2022_fasta/ncbi_dataset/data/GCA_*/*.fna .
+```
+
+Open an empty file `rename_files.sh` and add the following piece of code:
+
+```bash
+#!/bin/bash
+rename_fna_files_in_directory() {
+    local dir="$1"
+
+    # Iterate through .fna files in the directory
+    for file in "$dir"/*/*_genomic.fna; do
+        if [[ -f "$file" ]]; then
+            new_name="${file%_ASM*}.fna"
+            mv "$file" "$new_name"
+        fi
+    done
+}
+
+# Iterate through subdirectories
+for folder in */; do
+    if [[ -d "$folder" ]]; then
+        rename_fna_files_in_directory "$folder"
+    fi
+done
+```
+
+```
+chmod +x rename_files.sh
+./rename_files.sh
+```
+
+After the files have been renamed, gather the filenames in a text file. You will need those in order to run the `kmcp compute`
+
+```bash
+ls *.fna > list.txt
+
+## The names.dmp, nodes.dmp and seqid2taxid.map are needed for kmcp profile step
+cp meslier2022/kraken2/seqid2taxid.map .
+
+mkdir taxdump
+
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.zip
+unzip new_taxdump.zip
+
+cp names.dmp taxdump/
+cp nodes.dmp taxdump/
+
+kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-210-l150 -i list.txt
+kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp
 ```
 
 ## Database Archive Creation
@@ -603,6 +696,23 @@ KAIJU
 ```bash
 rm meslier2022/kaiju/*.{bwt,sa}
 ```
+
+## Broken Samplesheets
+
+We also hold 'broken' samplesheets for testing input schema validation.
+
+- `broken_samplesheets/test_database_duplicate_tool_db_name.csv`: duplicated rows to test the unique entires of `tool` and `db_name`
+- `broken_samplesheets/test_samplesheet_duplicate_fasta.csv`: duplicated FASTA file to test the unique entry of `fasta`
+- `broken_samplesheets/test_samplesheet_duplicate_fastq.csv`: duplicated FASTQ file to test the unique entries of `fastq_1` or `fastq_2`
+- `broken_samplesheets/test_samplesheet_duplicate_sample_run_accession.csv`: duplicated row to test the unique entries of `sample` and `run_accession`
+- `broken_samplesheets/test_samplesheet_sample_with_space.csv`: add a space to the `sample` entry
+- `broken_samplesheets/test_database_missing_tool.csv`: missing `tool` entry in the database
+- `broken_samplesheets/test_database_missing_db_name.csv`: missing `db_name` entry in the database
+- `broken_samplesheets/test_database_missing_db_path.csv`: missing `db_path` entry in the database
+- `broken_samplesheets/test_database_missing_db_type.csv`: missing `db_type` entry to test empty values in the database
+- `broken_samplesheets/test_samplesheet_missing_sample.csv`: missing `sample` entry in the samplesheet
+- `broken_samplesheets/test_samplesheet_missing_run_accession.csv`: missing `run_accession.csv` entry in the samplesheet
+- `broken_samplesheets/test_samplesheet_missing_instrument_platform.csv`: missing `instrument_platform` column in the samplesheet
 
 ## Support
 

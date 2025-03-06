@@ -1,0 +1,12 @@
+tool,db_name,db_params,db_path
+bracken,bracken-db,;-r 150,s3://ngi-igenomes/test-data/taxprofiler/bracken.tar.gz
+centrifuge,centrifuge-db,,s3://ngi-igenomes/test-data/taxprofiler/centrifuge.tar.gz
+diamond,diamond-db,,s3://ngi-igenomes/test-data/taxprofiler/diamond.dmnd
+kaiju,kaiju-db,,s3://ngi-igenomes/test-data/taxprofiler/kaiju.tar.gz
+kraken2,kraken2-db,,s3://ngi-igenomes/test-data/taxprofiler/kraken2.tar.gz
+krakenuniq,krakenuniq-db,,s3://ngi-igenomes/test-data/taxprofiler/krakenuniq.tar.gz
+malt,malt-db,,s3://ngi-igenomes/test-data/taxprofiler/malt.tar.gz
+metaphlan,metaphlan3-db,--mpa3,s3://ngi-igenomes/test-data/taxprofiler/metaphlan3.tar.gz
+motus,motus-db,,s3://ngi-igenomes/test-data/taxprofiler/db_mOTU.tar.gz
+ganon,ganon-db,,s3://ngi-igenomes/test-data/taxprofiler/ganon.tar.gz
+kmcp,kmcp_db,,s3://ngi-igenomes/test-data/taxprofiler/kmcp.tar.gz
