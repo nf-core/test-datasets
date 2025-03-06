@@ -1,0 +1,8 @@
+id,test_vcf,test_regions,caller,evaluationmode,bpDistance,percentThreshold
+test1,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/HCC1395T_vs_HCC1395N.manta.somatic_sv.vcf.gz,,manta,cts,10000000,0.01
+test2,,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/WES_EA_T_1.copynumber.caveman.csv,caveman,,,
+test3,,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/WES_EA_1.call.cns,cnvkit,,,
+test4,,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/WES_EA_1.hatchet.txt,hatchet,,,
+
+
+
