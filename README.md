@@ -228,6 +228,7 @@ kmcp index -f 0.3 -n 1 -j 32 -I tmp-k21-n10-l150 -O gtdb.kmcp
 ```
 
 #### sylph
+
 After unzipping the downloaded files:
 
 ```bash
