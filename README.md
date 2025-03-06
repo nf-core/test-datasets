@@ -49,38 +49,53 @@ samplesheet_sv_somatic_hg38: Sample sheet for nf-core/variantbenchmarking test p
 samplesheet_sv_somatic_hg37_liftover: Sample sheet for nf-core/variantbenchmarking test profiles for hg37 stuctural variants from HG002 sample for lifting over variants
 
 
-testdata/
+## test data
 
-- test cases: 
+### germline 
 
--- hg37 
+HG002 GiAB sample is used for germline benchmarking
 
-delly, lumpy and manta are downloaded from https://zenodo.org/records/10428664 
+-- test case
 
-svaba calls are downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/Broad_svaba_05052017/ 
+*hg37* 
 
--- hg38
+- delly, lumpy and manta are downloaded from https://zenodo.org/records/10428664 
 
-Ashkenaizm result is from https://github.com/CenterForMedicalGeneticsGhent using HG002
+- svaba calls are downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/Broad_svaba_05052017/ 
 
-dragen sample is from https://zenodo.org/records/10428664 
+*hg38*
 
-manta sample is from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/BU_GRCh38_SVs_06252018/manta.HG002.vcf.gz
+- Ashkenaizm result is from https://github.com/CenterForMedicalGeneticsGhent using HG002
 
-lumpy sample is from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/BU_GRCh38_SVs_06252018/ajtrio.lumpy.svtyper.HG002.md.sorted.recal.vcf.gz
+- dragen sample is from https://zenodo.org/records/10428664 
 
-HCC1395T_vs_HC1395N analysis is the results of nf-core/sarek (v3.4.2) with hg38 for SEQC2 tests.
+- manta sample is from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/BU_GRCh38_SVs_06252018/manta.HG002.vcf.gz
 
-- truth cases:
+- lumpy sample is from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/BU_GRCh38_SVs_06252018/ajtrio.lumpy.svtyper.HG002.md.sorted.recal.vcf.gz
 
--- hg37 
 
-data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_SVs_Integration_v0.6/ 
+### somatic
 
--- hg38 
+SEQC2 is used for germline benchmarking
 
-HG002 data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_SV_benchmark_v0.01/ 
+*hg38*
 
-SEQC2 data is downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/release/latest/
+- HCC1395T_vs_HC1395N analysis is the results of nf-core/sarek (v3.4.2) with hg38 for SEQC2 tests.
 
-Note that all the original files are downsized to chromosome 21 for test purposes. 
+- SEQC2 CNV test files are downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/analysis/CNVs/WES/
+
+## truth data
+
+*hg37* 
+
+- data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_SVs_Integration_v0.6/ 
+
+*hg38* 
+
+- HG002 data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_SV_benchmark_v0.01/ 
+
+- SEQC2 data is downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/release/latest/
+
+- SEQC2 CNV benchmarks are downloaded from https://zenodo.org/records/14619054
+
+!Note that all the original files are downsized to chromosome 21 for test purposes. 
