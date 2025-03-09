@@ -162,7 +162,7 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 
 ### Genome map
 
-There is two type of genetic map one with 4 columns (used by Eagle) and another with only 3 (used by Glimpse):
+There is two type of genetic map one with 4 columns (used by Eagle with a header) and another with only 3 (used by Glimpse with no header):
   - chromosome
   - position
   - combined_rate (cM/Mb) (not present in glimpse)
