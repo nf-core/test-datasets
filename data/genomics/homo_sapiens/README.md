@@ -162,16 +162,21 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 
 ### Genome map
 
-The genome map of GRCh38 has been generated as follow
+There is two type of genetic map one with 4 columns (used by Eagle with a header) and another with only 3 (used by Glimpse with no header):
+  - chromosome
+  - position
+  - combined_rate (cM/Mb) (not present in glimpse)
+  - cM
+The genome map of GRCh38 have been generated as follow:
 
 ```bash
 # Download the reference genome map
 MAP_GRCH38=data/genomics/homo_sapiens/genome/genome.GRCh38
-wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O ${MAP_GRCH38}.map.zip
-unzip -p ${MAP_GRCH38}.map.zip plink.chr22.GRCh38.map | \
-   awk -v OFS='\t' -F' ' '{ print $1, $3, $4 }' \
-   >  ${MAP_GRCH38}.chr22.map
-gzip ${MAP_GRCH38}.chr22.map
+wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/tables/genetic_map_hg38_withX.txt.gz -O ${MAP_GRCH38}.map.txt.gz
+zcat ${MAP_GRCH38}.map.txt.gz | awk 'NR==1 { print $0 } NR>1 && /^22/ { print $1, $2, $3, $4 }' > ${MAP_GRCH38}.eagle.22.map
+zcat ${MAP_GRCH38}.map.txt.gz | grep "^22" | awk -F' ' '{ print "chr"$1, $2, $4 }' > ${MAP_GRCH38}.glimpse.chr22.map
+gzip ${MAP_GRCH38}.eagle.22.map
+gzip ${MAP_GRCH38}.glimpse.chr22.map
 ```
 
 ## Alleles, Loci, GC and RT for `ASCAT`
