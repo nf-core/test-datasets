@@ -797,6 +797,8 @@ The spatial_omics folder contains subfolders for different platforms in the emer
   - config_baysor.toml: Sample config file to run the baysor module.
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
+- models
+  - clair3_hifi: folder containing models needed to run clair3 on Hifi data
 - notebooks
   - jupyter
     - 'ipython_notebook.ipynb': exemplary jupyter notebook
