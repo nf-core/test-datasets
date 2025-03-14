@@ -798,7 +798,7 @@ The spatial_omics folder contains subfolders for different platforms in the emer
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - models
-  - clair3_hifi: folder containing models needed to run clair3 on Hifi data
+  - clair3_hifi.tar.gz: gzipped tar folder containing models needed to run clair3 on Hifi data
 - notebooks
   - jupyter
     - 'ipython_notebook.ipynb': exemplary jupyter notebook
