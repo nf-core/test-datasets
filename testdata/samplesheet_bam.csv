@@ -1,0 +1,4 @@
+sample,lane,fastq_1,fastq_2,bam,bai,sex,phenotype,paternal_id,maternal_id,case_id
+earlycasualcaiman,1,,,/home/ramprasad.neethiraj/nextflow/bams/earlycasualcaiman_sorted_md.bam,/home/ramprasad.neethiraj/nextflow/bams/earlycasualcaiman_sorted_md.bam.bai,1,1,0,0,justhusky
+slowlycivilbuck,1,,,/home/ramprasad.neethiraj/nextflow/bams/slowlycivilbuck_sorted_md.bam,/home/ramprasad.neethiraj/nextflow/bams/slowlycivilbuck_sorted_md.bam.bai,2,1,0,0,justhusky
+hugelymodelbat,1,,,/home/ramprasad.neethiraj/nextflow/bams/hugelymodelbat_sorted_md.bam,/home/ramprasad.neethiraj/nextflow/bams/hugelymodelbat_sorted_md.bam.bai,1,2,earlycasualcaiman,slowlycivilbuck,justhusky
