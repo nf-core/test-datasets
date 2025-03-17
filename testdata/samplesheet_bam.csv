@@ -1,4 +1,4 @@
-sample,lane,fastq_1,fastq_2,bam,bai,sex,phenotype,paternal_id,maternal_id,case_id
-earlycasualcaiman,1,,,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/earlycasualcaiman_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/earlycasualcaiman_sorted_md.bam.bai,1,1,0,0,justhusky
-slowlycivilbuck,1,,,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/slowlycivilbuck_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/slowlycivilbuck_sorted_md.bam.bai,2,1,0,0,justhusky
-hugelymodelbat,1,,,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/hugelymodelbat_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/hugelymodelbat_sorted_md.bam.bai,1,2,earlycasualcaiman,slowlycivilbuck,justhusky
+sample,bam,bai,sex,phenotype,paternal_id,maternal_id,case_id
+earlycasualcaiman,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/earlycasualcaiman_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/earlycasualcaiman_sorted_md.bam.bai,1,1,0,0,justhusky
+slowlycivilbuck,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/slowlycivilbuck_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/slowlycivilbuck_sorted_md.bam.bai,2,1,0,0,justhusky
+hugelymodelbat,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/hugelymodelbat_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/testdata/hugelymodelbat_sorted_md.bam.bai,1,2,earlycasualcaiman,slowlycivilbuck,justhusky
