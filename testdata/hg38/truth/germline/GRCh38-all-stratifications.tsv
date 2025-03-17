@@ -1,2 +1,2 @@
-ancestry_AFR	Ancestry/GRCh38_ancestry_AFR.bed.gz
-ancestry_AMR	Ancestry/GRCh38_ancestry_AMR.bed.gz
+TandemRepeats	stratifications/GRCh38_AllTandemRepeats.bed.gz
+SimpleRepeat_diTR_50to149_slop5	stratifications/GRCh38_SimpleRepeat_diTR_50to149_slop5.bed.gz
