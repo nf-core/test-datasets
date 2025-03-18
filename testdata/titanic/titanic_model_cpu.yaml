@@ -1,46 +1,57 @@
+max_batches: 10
+compute_objective_every_n_batches: 1
+n_trials: 5
+
 network_params:
   nb_neurons_intermediate_layer:
-    space: [7,15]
-    mode: randint
+    params:
+      low: 7
+      high: 15
+    mode: int
   nb_intermediate_layers:
-    space: [1,5]
-    mode: randint
+    params:
+      low: 1
+      high: 5
+    mode: int
   nb_classes:
-    space: [2]
-    mode: choice
+    params:
+      choices: [2]
+    mode: categorical
 
 optimizer_params:
   method:
-      space: ['Adam', 'SGD']
-      mode: choice
+    params:
+      choices: ['Adam', 'SGD']
+    mode: categorical
   lr:
-    space: [0.0001, 0.1]
-    mode: loguniform
+    params:
+      low: 0.0001
+      high: 0.1
+      log: true
+    mode: float
 
 loss_params:
   loss_fn:
-    space: ['CrossEntropyLoss']
-    mode: choice
+    params:
+      choices: ['CrossEntropyLoss']
+    mode: categorical
 
 data_params:
   batch_size:
-    space: [16, 32, 64, 128, 256]
-    mode: choice
+    params: 
+      choices: [16, 32, 64, 128, 256]
+    mode: categorical
 
-tune:
-  config_name: "tune_config"
-  tune_params:
-    metric: "val_loss"
-    mode: "min"
-    num_samples: 3
-  scheduler:
-    name: "FIFOScheduler"
-    params: {}
-  run_params:
-    stop:
-      training_iteration: 5
-  step_size: 1
-  gpu_per_trial: 0
-  cpu_per_trial: 1
+pruner:
+  name: MedianPruner
+  params:
+    n_warmup_steps: 10
+    n_startup_trials: 2
 
-seed: 123
+sampler:
+  name: TPESampler
+  params:
+
+objective:
+  metric: val_rocauc
+  direction: maximize
