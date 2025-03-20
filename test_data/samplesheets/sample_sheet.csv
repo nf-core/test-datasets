@@ -1,2 +1,2 @@
 sample_id,img_directory,parameter_file
-TEST1,https://raw.githubusercontent.com/CaroAMN/test-datasets/lsmquant/test_data/images/,https://raw.githubusercontent.com/CaroAMN/test-datasets/lsmquant/test_data/parameterfiles/params_TEST1_lsmquant.csv
+TEST1,https://zenodo.org/records/14916478/files/ctip2_topro.zip,https://raw.githubusercontent.com/CaroAMN/test-datasets/lsmquant/test_data/parameterfiles/params_TEST1_lsmquant.csv
