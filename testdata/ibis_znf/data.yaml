@@ -1,0 +1,48 @@
+global_params:
+  seed: 0
+
+columns:
+  - column_name : "dna"
+    column_type : "input"
+    data_type : str
+    encoder:
+      - name: TextOneHotEncoder
+        params:
+          alphabet: "acgt"
+
+  - column_name : "binding"
+    column_type : "label"
+    data_type : int
+    encoder:
+      - name: NumericEncoder
+        params:
+
+transforms:
+  - transformation_name: 'reverse_complement'
+    columns:
+      - column_name: "dna"
+        transformations:
+          - name: ReverseComplement
+            params:
+  - transformation_name: 'uniform_masker'
+    columns:
+      - column_name: "dna"
+        transformations:
+          - name: UniformTextMasker
+            params:
+              probability: [0.1, 0.2, 0.3]
+  - transformation_name: 'reverse_complement_masked'
+    columns:
+      - column_name: "dna"
+        transformations:
+          - name: ReverseComplement
+            params:
+          - name: UniformTextMasker
+            params:
+              probability: [0.1, 0.2, 0.3]
+
+split:
+  - split_method: RandomSplit
+    split_input_columns: ["binding"]
+    params:
+      split: [0.6, 0.2, 0.2]

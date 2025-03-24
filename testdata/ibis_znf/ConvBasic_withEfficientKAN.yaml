@@ -1,0 +1,52 @@
+model_params:
+  conv_kernel_number:
+    space: [3,10]
+    mode: randint
+  conv_kernel_size:
+    space: [3,10]
+    mode: randint
+  kan_grid_size:
+    space: [5, 10]
+    mode: randint
+  kan_layers_hidden:
+    sample_space: [3, 20]
+    n_space: [1,5]
+    function: sampint
+    mode: sample_from
+
+optimizer_params:
+  method:
+    space: ['Adam', 'SGD']
+    mode: choice
+  lr:
+    space: [0.0001, 0.1]
+    mode: loguniform
+
+loss_params:
+  loss_fn:
+    space: ['BCELoss']
+    mode: choice
+
+data_params:
+  batch_size:
+    space: [16, 32, 64, 128, 256, 512]
+    mode: choice
+
+
+tune:
+  config_name: "tune_config"
+  tune_params:
+    metric: "val_loss"
+    mode: "min"
+    num_samples: 10
+  scheduler:
+    name: "ASHAScheduler"
+    params:
+      max_t: 20
+      grace_period: 1
+  run_params: {}
+  step_size: 1
+  gpu_per_trial: 0
+  cpu_per_trial: 1
+
+seed: 0
