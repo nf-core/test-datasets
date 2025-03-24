@@ -1,0 +1,2 @@
+sample,lane,project,fastq_1,fastq_2,rundir
+SAMPLE_PAIRED_END,1,P001,https://github.com/nf-core/test-datasets/raw/seqinspector/testdata/Miseq_PairedEnd/20241111_SH00016_0114_ASC2060969-SC3/Bpacificus-ATCC10987-rep1-sWGS-MiSeqi100-241111_S1_L001_R1_001.fastq.gz,https://github.com/nf-core/test-datasets/raw/seqinspector/testdata/Miseq_PairedEnd/20241111_SH00016_0114_ASC2060969-SC3/Bpacificus-ATCC10987-rep1-sWGS-MiSeqi100-241111_S1_L001_R2_001.fastq.gz,
