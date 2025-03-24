@@ -1,8 +1,16 @@
+# ruff: noqa: PGH004
+# ruff: noqa
+# mypy: ignore-errors
+"""Efficient KAN model implementation."""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import math
+import logging
 from typing import Callable, List, Tuple, Optional
+
+logger = logging.getLogger(__name__)
 
 
 class KANLinear(torch.nn.Module):
@@ -288,7 +296,7 @@ class KAN(torch.nn.Module):
 
 class Model_ConvBasic_withEfficientKAN(nn.Module):
     def __init__(self,
-        sequence_length: int = 40,
+        sequence_length: int = 300,
         conv_kernel_size: int = 5,
         conv_kernel_number: int = 4,
         kan_layers_hidden: List[int] = [10,1],
@@ -310,15 +318,16 @@ class Model_ConvBasic_withEfficientKAN(nn.Module):
         self.sigmoid = nn.Sigmoid()
 
     def forward(self, dna: torch.Tensor) -> dict:
-        x = dna.permute(0, 2, 1).to(torch.float32)
+        x = dna.permute(0, 1, 3, 2).to(torch.float32)
+        x = x.reshape(x.shape[0], x.shape[2], x.shape[3])
         x = self.conv1d(x)
         x = self.relu(x)
         x = x.reshape(x.shape[0], x.shape[1] * x.shape[2])
         x = self.kan(x)
         x = self.sigmoid(x)
-        x = x.squeeze()
-        if x.dim() == 0:
-            x = x.unsqueeze(0)
+        #x = x.squeeze()
+        #if x.dim() == 0:
+        #    x = x.unsqueeze(0)
         return x
 
     def compute_loss(self, output: torch.Tensor, binding: torch.Tensor, loss_fn: Callable) -> torch.Tensor:
@@ -330,7 +339,7 @@ class Model_ConvBasic_withEfficientKAN(nn.Module):
         binding = y['binding'].float()
 
         # predict
-        output = self(**dna)
+        output = self(dna)
 
         # compute loss and update model
         loss = self.compute_loss(output, binding, loss_fn=loss_fn)
