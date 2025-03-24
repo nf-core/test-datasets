@@ -561,6 +561,9 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - vcf:
       - NA03697B2_new.pbmm2.repeats.vcf.gz: VCF file associated with the NA03697B2_downsampled.pbmm2.repeats.bam BAM file, generated from PacBio PBSV (version 2.9.0 - default settings)
       - NA03697B2_downsampled.pbmm2.repeats.vcf.gz: Index for NA03697B2_downsampled.pbmm2.repeats.vcf.gz
+      - FAM_snvs_annotated_ranked.vcf.gz: VCF file from HG002, only with ch16 generated from deepvariant and GLnexus
+      - FAM.ped: ped file associated with HG002
+      - peddy.sites: peddy standard hg38 sites downsampled to only chr16
 
   - popgen:
     - plink_simulated.bed: case-control simulated variants dataset in PLINK binary format
