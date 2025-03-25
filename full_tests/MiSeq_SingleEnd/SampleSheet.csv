@@ -1,0 +1,8 @@
+sample,fastq_1,fastq_2,rundir,tags
+Undetermined,miseq_single/Fastq/Undetermined_S0_L001_R1_001.fastq.gz,,miseq_single,
+ZymoRep1,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/Fastq/ZymoRep1-E1-UPIP-MiSeqi100-241114_S1_L001_R1_001.fastq.gz,,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/rundir.tar.gz,Zymo
+ZymoRep2,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/Fastq/ZymoRep2-E1-UPIP-MiSeqi100-241114_S2_L001_R1_001.fastq.gz,,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/rundir.tar.gz,Zymo
+ZymoRep3,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/Fastq/ZymoRep3-E1-UPIP-MiSeqi100-241114_S3_L001_R1_001.fastq.gz,,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/rundir.tar.gz,Zymo
+ZymoRep4,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/Fastq/ZymoRep4-E2-UPIP-MiSeqi100-241114_S4_L001_R1_001.fastq.gz,,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/rundir.tar.gz,Zymo
+ZymoRep5,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/Fastq/ZymoRep5-E2-UPIP-MiSeqi100-241114_S5_L001_R1_001.fastq.gz,,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/rundir.tar.gz,Zymo
+ZymoRep6,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/Fastq/ZymoRep6-E2-UPIP-MiSeqi100-241114_S6_L001_R1_001.fastq.gz,,https://github.com/nf-core/test-datasets/raw/seqinspector/full_tests/MiSeq_SingleEnd/rundir.tar.gz,Zymo
