@@ -1,0 +1,844 @@
+sample_id	sample_name	biosample	sample_description	latitude	longitude	geolocation	biome	biome_feature	biome_material	assembly_run_ids	study_id
+SRS976606	PtcB-09	SAMN03792071	Illumina HiSeq1500 shotgun-sequencing	-34.07	-59.07			wastewater treatment plant	activated sludge	"['ERZ794912', 'ERZ842394', 'SRR2107176', 'SRR2107177']"	MGYS00002058
+SRS976079	SwgA-13	SAMN03794762	Illumina HiSeq1500 shotgun-sequencing	-34.82	-58.17			wastewater treatment plant	activated sludge	"['ERZ794919', 'ERZ842397', 'SRR2107212', 'SRR2107213']"	MGYS00002058
+SRS976068	Txt-08	SAMN03794739	Illumina HiSeq1500 shotgun-sequencing	-34.84	-58.2			wastewater treatment plant	activated sludge	"['ERZ794913', 'ERZ794932', 'SRR2107178', 'SRR2107179']"	MGYS00002058
+SRS976082	SwgA-08	SAMN03794758	Illumina HiSeq1500 shotgun-sequencing	-34.82	-58.17			wastewater treatment plant	activated sludge	"['ERZ794914', 'SRR2107210', 'SRR2107211']"	MGYS00002058
+SRS976061	PtcA-09	SAMN03792045	Illumina HiSeq1500 shotgun-sequencing	-34.65	-58.32			wastewater treatment plant	activated sludge	"['ERZ794915', 'ERZ794933']"	MGYS00002058
+SRS976081	Why-11	SAMN03794747	Illumina HiSeq1500 shotgun-sequencing	-30.94	-62.05			wastewater treatment plant	activated sludge	"['ERZ794916', 'SRR2107184', 'SRR2107185']"	MGYS00002058
+SRS976062	PtcB-08	SAMN03792070	Illumina HiSeq1500 shotgun-sequencing	-34.07	-59.07			wastewater treatment plant	activated sludge	['ERZ794917']	MGYS00002058
+SRS976063	PtcA-11	SAMN03792069	Illumina HiSeq1500 shotgun-sequencing	-34.65	-58.32			wastewater treatment plant	activated sludge	"['ERZ794918', 'ERZ794928']"	MGYS00002058
+SRS976080	SwgB-12	SAMN03794764	Illumina HiSeq1500 shotgun-sequencing	-34.47	-58.59			wastewater treatment plant	activated sludge	"['ERZ794920', 'SRR2107216', 'SRR2107215']"	MGYS00002058
+SRS976605	SwgB-13	SAMN03794765	Illumina HiSeq1500 shotgun-sequencing	-34.47	-58.59			wastewater treatment plant	activated sludge	"['ERZ794921', 'ERZ794929', 'SRR2107219', 'SRR2107218']"	MGYS00002058
+SRS976072	Txt-11	SAMN03794741	Illumina HiSeq1500 shotgun-sequencing	-34.84	-58.2			wastewater treatment plant	activated sludge	"['ERZ794930', 'SRR2107181', 'SRR2107180']"	MGYS00002058
+SRS976078	Why-10	SAMN03794746	Illumina HiSeq1500 shotgun-sequencing	-30.94	-62.05			wastewater treatment plant	activated sludge	"['ERZ794931', 'SRR2107182', 'SRR2107183']"	MGYS00002058
+SRS2422719	HS0	SAMN07488724	HS0							['ERZ781404']	MGYS00005011
+SRS2422978	HS5	SAMN07488725	HS5							['ERZ781406']	MGYS00005011
+SRS2422979	HS50	SAMN07488726	HS50							['ERZ781405']	MGYS00005011
+SRS2212571	Gp0115564	SAMN06343852	"Active sludge microbial communities from Klosterneuburg, Austria, studying microevolution and ecology of nitrifiers - Klosterneuburg WWTP active sludge metagenome KNB14_supernatant"	48.3	16.2	Austria: Klosterneuburg				['ERZ795076']	MGYS00004949
+SRS1687471	Gp0138836	SAMN05720170	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Canada - AD_UKC129_MetaG	49.25	-123.1	Canada				['ERZ795381']	MGYS00004983
+SRS1791886	Gp0138786	SAMN05720223	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Hong Kong - AD_UKC111_MetaG	22.28	114.17	Hong Kong				['ERZ764804']	MGYS00003395
+SRS1791882	Gp0138788	SAMN05720164	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Hong Kong - AD_UKC115_MetaG	22.28	114.17	Hong Kong				['ERZ778038']	MGYS00004767
+SRS1791674	Gp0138781	SAMN05720284	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Hong Kong - AD_UKC117_MetaG	22.28	114.17	Hong Kong				['ERZ795053']	MGYS00004926
+SRS1914373	D5	SAMN06216280	Sewage sludge	30.59	121.14	"China:Songjiang, Shanghai"				['ERZ795067']	MGYS00004940
+SRS1060545	ES	SAMN04041125	ES	34.64	119.17	China				['ERZ795009']	MGYS00005006
+SRS1060554	EG	SAMN04041126	EG	34.65	119.17	China				['ERZ795010']	MGYS00005006
+SRS3255898	BPA-DNA-1	SAMN08937787	DNA sample obtained before BPA adding (Phase I)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-0	sludge-water	['ERZ782916']	MGYS00005025
+SRS3255899	BPA-DNA-2	SAMN08937788	DNA sample obtained after BPA added for 14-15hrs	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-14	sludge-water	['ERZ782915']	MGYS00005025
+SRS3255900	BPA-RNA-1	SAMN08937789	RNA sample obtained before BPA adding (Phase I)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-0-1	sludge-water	['ERZ782927']	MGYS00005025
+SRS3255901	BPA-RNA-2	SAMN08937790	RNA sample obtained before BPA adding (Phase I)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-0-2	sludge-water	['ERZ782929']	MGYS00005025
+SRS3255902	BPA-RNA-3	SAMN08937791	RNA sample obtained after BPA added for 2-3 hrs (Phase II)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-2-1	sludge-water	['ERZ782928']	MGYS00005025
+SRS3255903	BPA-RNA-4	SAMN08937792	RNA sample obtained after BPA added for 2-3 hrs (Phase II)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-2-2	sludge-water	['ERZ782923']	MGYS00005025
+SRS3255904	BPA-RNA-5	SAMN08937793	RNA sample obtained after BPA added for 14-15 hrs (Phase III)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-14-1	sludge-water	['ERZ782930']	MGYS00005025
+SRS3255905	BPA-RNA-6	SAMN08937794	RNA sample obtained after BPA added for 14-15 hrs (Phase III)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-14-2	sludge-water	['ERZ782925']	MGYS00005025
+SRS3255906	BPA-RNA-7	SAMN08937795	RNA sample obtained after BPA added for 24-25 hrs (Phase IV)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-24-1	sludge-water	['ERZ782926']	MGYS00005025
+SRS3255907	BPA-RNA-8	SAMN08937796	RNA sample obtained  after BPA added for 24-25 hrs (Phase IV)	22.25	114.1667	China: Hong Kong	bisphenol A culture medium	BPA degrading-24-2	sludge-water	['ERZ782924']	MGYS00005025
+ERS666855	DNA1	SAMEA3270999	DNA1	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR770579']	MGYS00001382
+ERS666856	DNA2	SAMEA3271000	DNA2	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR770580']	MGYS00001382
+ERS666857	DNA3	SAMEA3271001	DNA3	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR770581']	MGYS00001382
+ERS666858	RNA1	SAMEA3271002	RNA1	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR770582']	MGYS00001382
+ERS666859	RNA2	SAMEA3271003	RNA2	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR770583']	MGYS00001382
+ERS666860	RNA3	SAMEA3271004	RNA3	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR770584']	MGYS00001382
+ERS632924	AAW-3-2012	SAMEA3180052	Aalborg West Q3 2012	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERZ1764620']	MGYS00005802
+ERS632917	AAW-4-2010	SAMEA3180045	Aalborg West Q4 2010	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERZ1764613']	MGYS00005802
+ERS632927	EJB-4-2011	SAMEA3180055	Ejby Moelle Q4 2011	55.3995	10.4148	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERZ1764614']	MGYS00005802
+ERS632929	EGA-2-2011	SAMEA3180057	Egaa Q2 2011	56.2131	10.2425	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERZ1764618']	MGYS00005802
+ERS632918	AAW-5-2010-A	SAMEA3180046	Aalborg West Q5 2010 A	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERZ1764622']	MGYS00005802
+ERS632919	AAW-5-2010-B	SAMEA3180047	Aalborg West Q2 2010 B	57.0495	9.8648	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERZ1764624']	MGYS00005802
+SRS1791806	Gp0138806	SAMN05720220	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Japan - AD_JPNNA7_MetaG	37.43	138.83	Japan				['ERZ778037']	MGYS00004766
+SRS1687463	Gp0138833	SAMN05720146	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Japan - AD_JPNAS1_MetaG	43.77	142.37	Japan				['ERZ795030']	MGYS00004911
+SRS1687472	Gp0138835	SAMN05720147	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Japan - AD_JPNAS3_MetaG	43.77	142.37	Japan				['ERZ795049']	MGYS00004922
+SRS1791743	Gp0138834	SAMN05720210	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Japan - AD_JPNAS2_MetaG	43.77	142.37	Japan				['ERZ795058']	MGYS00004931
+SRS1791745	Gp0138803	SAMN05720157	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Japan - AD_JPNMR2_MetaG	36.29	139.38	Japan				['ERZ795060']	MGYS00004933
+ERS918710	Activated sludge samples taken from Kocejve WWTP on the 24th of september 2012	SAMEA3611561	Activated sludge samples taken from Kocejve WWTP on the 24th of september 2012	45.643	14.8619	Slovenia	Urban	Wastewater Treatment Plant	Activated Sludge	"['ERR1076076', 'ERR1076078', 'ERR1076077', 'ERR1076074', 'ERR1076081', 'ERR1076073', 'ERR1076082', 'ERR1076079', 'ERR1076075', 'ERR1076080']"	MGYS00001391
+ERS1162588	SWESTP59	SAMEA3991478	Uppsala-primary/surplus 201	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sludge	['ERR1414267']	MGYS00001110
+ERS1162592	SWESTP63	SAMEA3991482	Kappala-primary 226	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414271']	MGYS00001110
+ERS1162586	SWESTP57	SAMEA3991476	Uppsala-treated 169	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414265']	MGYS00001110
+ERS1162530	Uppsala-primary/surplus 102	SAMEA3991420	Uppsala-primary/surplus 102	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sludge	['ERR1414209']	MGYS00001110
+ERS1162531	Uppsala-primary/surplus 103	SAMEA3991421	Uppsala-primary/surplus 103	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sludge	['ERR1414210']	MGYS00001110
+ERS1162532	Uppsala-primary/surplus 104	SAMEA3991422	Uppsala-primary/surplus 104	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sludge	['ERR1414211']	MGYS00001110
+ERS1162533	Uppsala-surplus 105	SAMEA3991423	Uppsala-surplus 105	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414212']	MGYS00001110
+ERS1162534	Uppsala-surplus 106	SAMEA3991424	Uppsala-surplus 106	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414213']	MGYS00001110
+ERS1162535	Uppsala-surplus 107	SAMEA3991425	Uppsala-surplus 107	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414214']	MGYS00001110
+ERS1162536	Uppsala-surplus 108	SAMEA3991426	Uppsala-surplus 108	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414215']	MGYS00001110
+ERS1162537	Uppsala-digested 109	SAMEA3991427	Uppsala-digested 109	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414216']	MGYS00001110
+ERS1162538	Uppsala-digested 110	SAMEA3991428	Uppsala-digested 110	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414217']	MGYS00001110
+ERS1162539	Uppsala-digested 111	SAMEA3991429	Uppsala-digested 111	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414218']	MGYS00001110
+ERS1162540	Uppsala-digested 112	SAMEA3991430	Uppsala-digested 112	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414219']	MGYS00001110
+ERS1162541	Kappala-digested 113	SAMEA3991431	Kappala-digested 113	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414220']	MGYS00001110
+ERS1162542	Kappala-digested 114	SAMEA3991432	Kappala-digested 114	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414221']	MGYS00001110
+ERS1162543	Kappala-digested 115	SAMEA3991433	Kappala-digested 115	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414222']	MGYS00001110
+ERS1162544	Kappala-kemikond 117	SAMEA3991434	Kappala-kemikond 117	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414223']	MGYS00001110
+ERS1162545	Kappala-kemikond 118	SAMEA3991435	Kappala-kemikond 118	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414224']	MGYS00001110
+ERS1162546	Kappala-kemikond 119	SAMEA3991436	Kappala-kemikond 119	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414225']	MGYS00001110
+ERS1162547	Kappala-surplus 121	SAMEA3991437	Kappala-surplus 121	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414226']	MGYS00001110
+ERS1162548	Kappala-surplus 122	SAMEA3991438	Kappala-surplus 122	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414227']	MGYS00001110
+ERS1162549	Kappala-surplus 123	SAMEA3991439	Kappala-surplus 123	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414228']	MGYS00001110
+ERS1162550	Kappala-surplus 124	SAMEA3991440	Kappala-surplus 124	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414229']	MGYS00001110
+ERS1162551	Henriksdal-surplus 129	SAMEA3991441	Henriksdal-surplus 129	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414230']	MGYS00001110
+ERS1162552	Henriksdal-surplus 130	SAMEA3991442	Henriksdal-surplus 130	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414231']	MGYS00001110
+ERS1162553	Henriksdal-surplus 131	SAMEA3991443	Henriksdal-surplus 131	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414232']	MGYS00001110
+ERS1162554	Henriksdal-digested 137	SAMEA3991444	Henriksdal-digested 137	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414233']	MGYS00001110
+ERS1162555	Henriksdal-digested 138	SAMEA3991445	Henriksdal-digested 138	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414234']	MGYS00001110
+ERS1162556	Henriksdal-digested 139	SAMEA3991446	Henriksdal-digested 139	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414235']	MGYS00001110
+ERS1162557	Henriksdal-digested 140	SAMEA3991447	Henriksdal-digested 140	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414236']	MGYS00001110
+ERS1162558	Henriksdal-influent-HA 141	SAMEA3991448	Henriksdal-influent-HA 141	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414237']	MGYS00001110
+ERS1162559	Henriksdal-influent-HA 142	SAMEA3991449	Henriksdal-influent-HA 142	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414238']	MGYS00001110
+ERS1162560	Uppsala-influent-AD 143	SAMEA3991450	Uppsala-influent-AD 143	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414239']	MGYS00001110
+ERS1162561	Uppsala-influent-AD 144	SAMEA3991451	Uppsala-influent-AD 144	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414240']	MGYS00001110
+ERS1162562	Uppsala-influent-C 145	SAMEA3991452	Uppsala-influent-C 145	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414241']	MGYS00001110
+ERS1162563	Uppsala-influent-C 146	SAMEA3991453	Uppsala-influent-C 146	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414242']	MGYS00001110
+ERS1162564	Kappala-influent 147	SAMEA3991454	Kappala-influent 147	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414243']	MGYS00001110
+ERS1162565	Kappala-influent 148	SAMEA3991455	Kappala-influent 148	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414244']	MGYS00001110
+ERS1162566	Henriksdal-influent-S 149	SAMEA3991456	Henriksdal-influent-S 149	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414245']	MGYS00001110
+ERS1162567	Henriksdal-influent-S 150	SAMEA3991457	Henriksdal-influent-S 150	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414246']	MGYS00001110
+ERS1162568	Henriksdal-influent-HA 151	SAMEA3991458	Henriksdal-influent-HA 151	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414247']	MGYS00001110
+ERS1162569	Henriksdal-influent-HA 152	SAMEA3991459	Henriksdal-influent-HA 152	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414248']	MGYS00001110
+ERS1162570	Uppsala-influent-AD 153	SAMEA3991460	Uppsala-influent-AD 153	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414249']	MGYS00001110
+ERS1162571	Uppsala-influent-AD 154	SAMEA3991461	Uppsala-influent-AD 154	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414250']	MGYS00001110
+ERS1162572	Uppsala-influent-C 155	SAMEA3991462	Uppsala-influent-C 155	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414251']	MGYS00001110
+ERS1162573	Uppsala-influent-C 156	SAMEA3991463	Uppsala-influent-C 156	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414252']	MGYS00001110
+ERS1162574	Kappala-influent 157	SAMEA3991464	Kappala-influent 157	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414253']	MGYS00001110
+ERS1162575	Kappala-influent 158	SAMEA3991465	Kappala-influent 158	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414254']	MGYS00001110
+ERS1162576	Henriksdal-influent-S 159	SAMEA3991466	Henriksdal-influent-S 159	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414255']	MGYS00001110
+ERS1162577	Henriksdal-influent-S 160	SAMEA3991467	Henriksdal-influent-S 160	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	sewage	['ERR1414256']	MGYS00001110
+ERS1162578	Henriksdal-treated 161	SAMEA3991468	Henriksdal-treated 161	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414257']	MGYS00001110
+ERS1162579	Henriksdal-treated 162	SAMEA3991469	Henriksdal-treated 162	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414258']	MGYS00001110
+ERS1162580	Henriksdal-sandfiltered 163	SAMEA3991470	Henriksdal-sandfiltered 163	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414259']	MGYS00001110
+ERS1162581	Henriksdal-sandfiltered 164	SAMEA3991471	Henriksdal-sandfiltered 164	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414260']	MGYS00001110
+ERS1162582	Kappala-treated 165	SAMEA3991472	Kappala-treated 165	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414261']	MGYS00001110
+ERS1162583	Kappala-treated 166	SAMEA3991473	Kappala-treated 166	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414262']	MGYS00001110
+ERS1162584	Kappala-sandfiltered 167	SAMEA3991474	Kappala-sandfiltered 167	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414263']	MGYS00001110
+ERS1162585	Kappala-sandfiltered 168	SAMEA3991475	Kappala-sandfiltered 168	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414264']	MGYS00001110
+ERS1162587	Uppsala-treated 170	SAMEA3991477	Uppsala-treated 170	59.8445	17.6598	Sweden	anthropogenic terrestrial biome	sewage plant	surface water	['ERR1414266']	MGYS00001110
+ERS1162589	Kappala-digested 216	SAMEA3991479	Kappala-digested 216	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414268']	MGYS00001110
+ERS1162590	Kappala-kemikond 220	SAMEA3991480	Kappala-kemikond 220	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	biosolids	['ERR1414269']	MGYS00001110
+ERS1162591	Kappala-primary 225	SAMEA3991481	Kappala-primary 225	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414270']	MGYS00001110
+ERS1162593	Kappala-primary 227	SAMEA3991483	Kappala-primary 227	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414272']	MGYS00001110
+ERS1162594	Kappala-primary 228	SAMEA3991484	Kappala-primary 228	59.3556	18.2271	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414273']	MGYS00001110
+ERS1162595	Henriksdal-surplus 232	SAMEA3991485	Henriksdal-surplus 232	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	activated sludge	['ERR1414274']	MGYS00001110
+ERS1162596	Henriksdal-primary 233	SAMEA3991486	Henriksdal-primary 233	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414275']	MGYS00001110
+ERS1162597	Henriksdal-primary 234	SAMEA3991487	Henriksdal-primary 234	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414276']	MGYS00001110
+ERS1162598	Henriksdal-primary 235	SAMEA3991488	Henriksdal-primary 235	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414277']	MGYS00001110
+ERS1162599	Henriksdal-primary 236	SAMEA3991489	Henriksdal-primary 236	59.3107	18.1084	Sweden	anthropogenic terrestrial biome	sewage plant	raw primary sludge	['ERR1414278']	MGYS00001110
+ERS1110331	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923197	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356697', 'ERR1356696']"	MGYS00000823
+ERS1110333	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923199	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356701', 'ERR1356700']"	MGYS00000823
+ERS1110335	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923201	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356705', 'ERR1356704']"	MGYS00000823
+ERS1110350	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923216	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356734', 'ERR1356735']"	MGYS00000823
+ERS1110352	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923218	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356738', 'ERR1356739']"	MGYS00000823
+ERS1110354	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923220	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356743', 'ERR1356742']"	MGYS00000823
+ERS1110330	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923196	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356695', 'ERR1356694']"	MGYS00000823
+ERS1110332	Unprocessed DNA and RNA sequences from wastewater treatment plant communities	SAMEA3923198	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356699', 'ERR1356698']"	MGYS00000823
+ERS1110351	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923217	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356737', 'ERR1356736']"	MGYS00000823
+ERS1110355	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923221	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356745', 'ERR1356744']"	MGYS00000823
+ERS1110357	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923223	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356748', 'ERR1356749']"	MGYS00000823
+ERS1110358	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923224	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356751', 'ERR1356750']"	MGYS00000823
+ERS1110329	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923195	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356693', 'ERR1356692']"	MGYS00000823
+ERS1110338	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923204	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356710', 'ERR1356711']"	MGYS00000823
+ERS1110339	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923205	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356712', 'ERR1356713']"	MGYS00000823
+ERS1110341	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923207	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356717', 'ERR1356716']"	MGYS00000823
+ERS1110359	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923225	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356752', 'ERR1356753']"	MGYS00000823
+ERS1110340	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923206	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356714', 'ERR1356715']"	MGYS00000823
+ERS1110342	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923208	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356718', 'ERR1356719']"	MGYS00000823
+ERS1110343	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923209	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356721', 'ERR1356720']"	MGYS00000823
+ERS1110344	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923210	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356723', 'ERR1356722']"	MGYS00000823
+ERS1110345	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923211	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356725', 'ERR1356724']"	MGYS00000823
+ERS1110347	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923213	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356729', 'ERR1356728']"	MGYS00000823
+ERS1110346	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923212	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356726', 'ERR1356727']"	MGYS00000823
+ERS1110348	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923214	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356730', 'ERR1356731']"	MGYS00000823
+ERS1110349	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923215	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356733', 'ERR1356732']"	MGYS00000823
+ERS1110363	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923229	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356761', 'ERR1356760']"	MGYS00000823
+ERS1110364	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923230	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356763', 'ERR1356762']"	MGYS00000823
+ERS1110334	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923200	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356703', 'ERR1356702']"	MGYS00000823
+ERS1110336	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923202	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356707', 'ERR1356706']"	MGYS00000823
+ERS1110353	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923219	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356741', 'ERR1356740']"	MGYS00000823
+ERS1110360	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923226	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356754', 'ERR1356755']"	MGYS00000823
+ERS1110361	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923227	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356757', 'ERR1356756']"	MGYS00000823
+ERS1110362	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923228	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356758', 'ERR1356759']"	MGYS00000823
+ERS1110337	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923203	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356709', 'ERR1356708']"	MGYS00000823
+ERS1110356	Unprocessed DNA and RNA from wastewater treatment plant communities	SAMEA3923222	36 samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1356746', 'ERR1356747']"	MGYS00000823
+ERS2640788	B1cR1-1_Exp1	SAMEA4820898	Primer B1 Experiment 1 SRT 1 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729815']	MGYS00001910
+ERS2640789	B1cR1-1_Exp2	SAMEA4820899	Primer B1 Experiment 2 SRT 1 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729816']	MGYS00001910
+ERS2640790	B1cR1-2_Exp1	SAMEA4820900	Primer B1 Experiment 1 SRT 1 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729817']	MGYS00001910
+ERS2640791	B1cR1-2_Exp2	SAMEA4820901	Primer B1 Experiment 2 SRT 1 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729818']	MGYS00001910
+ERS2640792	B1cR1-3_Exp1	SAMEA4820902	Primer B1 Experiment 1 SRT 1 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729819']	MGYS00001910
+ERS2640793	B1cR1-3_Exp2	SAMEA4820903	Primer B1 Experiment 2 SRT 1 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729820']	MGYS00001910
+ERS2640794	B1cR2-1_Exp1	SAMEA4820904	Primer B1 Experiment 1 SRT 3 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729821']	MGYS00001910
+ERS2640795	B1cR2-1_Exp2	SAMEA4820905	Primer B1 Experiment 2 SRT 3 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729822']	MGYS00001910
+ERS2640796	B1cR2-2_Exp1	SAMEA4820906	Primer B1 Experiment 1 SRT 3 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729823']	MGYS00001910
+ERS2640797	B1cR2-2_Exp2	SAMEA4820907	Primer B1 Experiment 2 SRT 3 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729824']	MGYS00001910
+ERS2640798	B1cR2-3_Exp1	SAMEA4820908	Primer B1 Experiment 1 SRT 3 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729825']	MGYS00001910
+ERS2640799	B1cR2-3_Exp2	SAMEA4820909	Primer B1 Experiment 2 SRT 3 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729826']	MGYS00001910
+ERS2640800	B1cR3-1_Exp1	SAMEA4820910	Primer B1 Experiment 1 SRT 5 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729827']	MGYS00001910
+ERS2640801	B1cR3-1_Exp2	SAMEA4820911	Primer B1 Experiment 2 SRT 5 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729828']	MGYS00001910
+ERS2640802	B1cR3-2_Exp1	SAMEA4820912	Primer B1 Experiment 1 SRT 5 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729829']	MGYS00001910
+ERS2640803	B1cR3-2_Exp2	SAMEA4820913	Primer B1 Experiment 2 SRT 5 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729830']	MGYS00001910
+ERS2640804	B1cR3-3_Exp1	SAMEA4820914	Primer B1 Experiment 1 SRT 5 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729831']	MGYS00001910
+ERS2640805	B1cR3-3_Exp2	SAMEA4820915	Primer B1 Experiment 2 SRT 5 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729832']	MGYS00001910
+ERS2640806	B1cR4-1_Exp1	SAMEA4820916	Primer B1 Experiment 1 SRT 7 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729833']	MGYS00001910
+ERS2640807	B1cR4-1_Exp2	SAMEA4820917	Primer B1 Experiment 2 SRT 7 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729834']	MGYS00001910
+ERS2640808	B1cR4-2_Exp1	SAMEA4820918	Primer B1 Experiment 1 SRT 7 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729835']	MGYS00001910
+ERS2640809	B1cR4-2_Exp2	SAMEA4820919	Primer B1 Experiment 2 SRT 7 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729836']	MGYS00001910
+ERS2640810	B1cR4-3_Exp1	SAMEA4820920	Primer B1 Experiment 1 SRT 7 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729837']	MGYS00001910
+ERS2640811	B1cR4-3_Exp2	SAMEA4820921	Primer B1 Experiment 2 SRT 7 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729838']	MGYS00001910
+ERS2640812	B1cR5-1_Exp1	SAMEA4820922	Primer B1 Experiment 1 SRT 10 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729839']	MGYS00001910
+ERS2640813	B1cR5-1_Exp2	SAMEA4820923	Primer B1 Experiment 2 SRT 10 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729840']	MGYS00001910
+ERS2640814	B1cR5-2_Exp1	SAMEA4820924	Primer B1 Experiment 1 SRT 10 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729841']	MGYS00001910
+ERS2640815	B1cR5-2_Exp2	SAMEA4820925	Primer B1 Experiment 2 SRT 10 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729842']	MGYS00001910
+ERS2640816	B1cR5-3_Exp1	SAMEA4820926	Primer B1 Experiment 1 SRT 10 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729843']	MGYS00001910
+ERS2640817	B1cR5-3_Exp2	SAMEA4820927	Primer B1 Experiment 2 SRT 10 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729844']	MGYS00001910
+ERS2640818	B1cR6-1_Exp1	SAMEA4820928	Primer B1 Experiment 1 SRT 15 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729845']	MGYS00001910
+ERS2640819	B1cR6-1_Exp2	SAMEA4820929	Primer B1 Experiment 2 SRT 15 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729846']	MGYS00001910
+ERS2640820	B1cR6-2_Exp1	SAMEA4820930	Primer B1 Experiment 1 SRT 15 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729847']	MGYS00001910
+ERS2640821	B1cR6-2_Exp2	SAMEA4820931	Primer B1 Experiment 2 SRT 15 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729848']	MGYS00001910
+ERS2640822	B1cR6-3_Exp1	SAMEA4820932	Primer B1 Experiment 1 SRT 15 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729849']	MGYS00001910
+ERS2640823	B1cR6-3_Exp2	SAMEA4820933	Primer B1 Experiment 2 SRT 15 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729850']	MGYS00001910
+ERS2640824	B1gR1-1_Exp1	SAMEA4820934	Primer B1 Experiment 1 SRT 1 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729851']	MGYS00001910
+ERS2640825	B1gR1-1_Exp2	SAMEA4820935	Primer B1 Experiment 2 SRT 1 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729852']	MGYS00001910
+ERS2640826	B1gR1-2_Exp1	SAMEA4820936	Primer B1 Experiment 1 SRT 1 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729853']	MGYS00001910
+ERS2640827	B1gR1-2_Exp2	SAMEA4820937	Primer B1 Experiment 2 SRT 1 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729854']	MGYS00001910
+ERS2640828	B1gR1-3_Exp1	SAMEA4820938	Primer B1 Experiment 1 SRT 1 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729855']	MGYS00001910
+ERS2640829	B1gR1-3_Exp2	SAMEA4820939	Primer B1 Experiment 2 SRT 1 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729856']	MGYS00001910
+ERS2640830	B1gR2-1_Exp1	SAMEA4820940	Primer B1 Experiment 1 SRT 3 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729857']	MGYS00001910
+ERS2640831	B1gR2-1_Exp2	SAMEA4820941	Primer B1 Experiment 2 SRT 3 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729858']	MGYS00001910
+ERS2640832	B1gR2-2_Exp1	SAMEA4820942	Primer B1 Experiment 1 SRT 3 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729859']	MGYS00001910
+ERS2640833	B1gR2-2_Exp2	SAMEA4820943	Primer B1 Experiment 2 SRT 3 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729860']	MGYS00001910
+ERS2640834	B1gR2-3_Exp1	SAMEA4820944	Primer B1 Experiment 1 SRT 3 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729861']	MGYS00001910
+ERS2640835	B1gR2-3_Exp2	SAMEA4820945	Primer B1 Experiment 2 SRT 3 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729862']	MGYS00001910
+ERS2640836	B1gR3-1_Exp1	SAMEA4820946	Primer B1 Experiment 1 SRT 5 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729863']	MGYS00001910
+ERS2640837	B1gR3-1_Exp2	SAMEA4820947	Primer B1 Experiment 2 SRT 5 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729864']	MGYS00001910
+ERS2640838	B1gR3-2_Exp1	SAMEA4820948	Primer B1 Experiment 1 SRT 5 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729865']	MGYS00001910
+ERS2640839	B1gR3-2_Exp2	SAMEA4820949	Primer B1 Experiment 2 SRT 5 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729866']	MGYS00001910
+ERS2640840	B1gR3-3_Exp1	SAMEA4820950	Primer B1 Experiment 1 SRT 5 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729867']	MGYS00001910
+ERS2640841	B1gR3-3_Exp2	SAMEA4820951	Primer B1 Experiment 2 SRT 5 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729868']	MGYS00001910
+ERS2640842	B1gR4-1_Exp1	SAMEA4820952	Primer B1 Experiment 1 SRT 7 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729869']	MGYS00001910
+ERS2640843	B1gR4-1_Exp2	SAMEA4820953	Primer B1 Experiment 2 SRT 7 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729870']	MGYS00001910
+ERS2640844	B1gR4-2_Exp1	SAMEA4820954	Primer B1 Experiment 1 SRT 7 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729871']	MGYS00001910
+ERS2640845	B1gR4-2_Exp2	SAMEA4820955	Primer B1 Experiment 2 SRT 7 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729872']	MGYS00001910
+ERS2640846	B1gR4-3_Exp1	SAMEA4820956	Primer B1 Experiment 1 SRT 7 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729873']	MGYS00001910
+ERS2640847	B1gR4-3_Exp2	SAMEA4820957	Primer B1 Experiment 2 SRT 7 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729874']	MGYS00001910
+ERS2640848	B1gR5-1_Exp1	SAMEA4820958	Primer B1 Experiment 1 SRT 10 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729875']	MGYS00001910
+ERS2640849	B1gR5-1_Exp2	SAMEA4820959	Primer B1 Experiment 2 SRT 10 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729876']	MGYS00001910
+ERS2640850	B1gR5-2_Exp1	SAMEA4820960	Primer B1 Experiment 1 SRT 10 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729877']	MGYS00001910
+ERS2640851	B1gR5-2_Exp2	SAMEA4820961	Primer B1 Experiment 2 SRT 10 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729878']	MGYS00001910
+ERS2640852	B1gR5-3_Exp1	SAMEA4820962	Primer B1 Experiment 1 SRT 10 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729879']	MGYS00001910
+ERS2640853	B1gR5-3_Exp2	SAMEA4820963	Primer B1 Experiment 2 SRT 10 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729880']	MGYS00001910
+ERS2640854	B1gR6-1_Exp1	SAMEA4820964	Primer B1 Experiment 1 SRT 15 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729881']	MGYS00001910
+ERS2640855	B1gR6-1_Exp2	SAMEA4820965	Primer B1 Experiment 2 SRT 15 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729882']	MGYS00001910
+ERS2640856	B1gR6-2_Exp1	SAMEA4820966	Primer B1 Experiment 1 SRT 15 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729883']	MGYS00001910
+ERS2640857	B1gR6-2_Exp2	SAMEA4820967	Primer B1 Experiment 2 SRT 15 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729884']	MGYS00001910
+ERS2640858	B1gR6-3_Exp1	SAMEA4820968	Primer B1 Experiment 1 SRT 15 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729885']	MGYS00001910
+ERS2640859	B1gR6-3_Exp2	SAMEA4820969	Primer B1 Experiment 2 SRT 15 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729886']	MGYS00001910
+ERS2640860	B1-NEG_Exp2	SAMEA4820970	Primer B1 Experiment 2 Negative Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729887']	MGYS00001910
+ERS2640861	B1pos-1_Exp1	SAMEA4820971	Primer B1 Experiment 1 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729888']	MGYS00001910
+ERS2640862	B1pos-2_Exp1	SAMEA4820972	Primer B1 Experiment 1 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729889']	MGYS00001910
+ERS2640863	B1pos-3_Exp1	SAMEA4820973	Primer B1 Experiment 1 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729890']	MGYS00001910
+ERS2640864	B2cR1-1_Exp1	SAMEA4820974	Primer B2 Experiment 1 SRT 1 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729891']	MGYS00001910
+ERS2640865	B2cR1-1_Exp2	SAMEA4820975	Primer B2 Experiment 2 SRT 1 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729892']	MGYS00001910
+ERS2640866	B2cR1-2_Exp1	SAMEA4820976	Primer B2 Experiment 1 SRT 1 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729893']	MGYS00001910
+ERS2640867	B2cR1-2_Exp2	SAMEA4820977	Primer B2 Experiment 2 SRT 1 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729894']	MGYS00001910
+ERS2640868	B2cR1-3_Exp1	SAMEA4820978	Primer B2 Experiment 1 SRT 1 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729895']	MGYS00001910
+ERS2640869	B2cR1-3_Exp2	SAMEA4820979	Primer B2 Experiment 2 SRT 1 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729896']	MGYS00001910
+ERS2640870	B2cR2-1_Exp1	SAMEA4820980	Primer B2 Experiment 1 SRT 3 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729897']	MGYS00001910
+ERS2640871	B2cR2-1_Exp2	SAMEA4820981	Primer B2 Experiment 2 SRT 3 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729898']	MGYS00001910
+ERS2640872	B2cR2-2_Exp1	SAMEA4820982	Primer B2 Experiment 1 SRT 3 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729899']	MGYS00001910
+ERS2640873	B2cR2-2_Exp2	SAMEA4820983	Primer B2 Experiment 2 SRT 3 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729900']	MGYS00001910
+ERS2640874	B2cR2-3_Exp1	SAMEA4820984	Primer B2 Experiment 1 SRT 3 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729901']	MGYS00001910
+ERS2640875	B2cR2-3_Exp2	SAMEA4820985	Primer B2 Experiment 2 SRT 3 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729902']	MGYS00001910
+ERS2640876	B2cR3-1_Exp1	SAMEA4820986	Primer B2 Experiment 1 SRT 5 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729903']	MGYS00001910
+ERS2640877	B2cR3-1_Exp2	SAMEA4820987	Primer B2 Experiment 2 SRT 5 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729904']	MGYS00001910
+ERS2640878	B2cR3-2_Exp1	SAMEA4820988	Primer B2 Experiment 1 SRT 5 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729905']	MGYS00001910
+ERS2640879	B2cR3-2_Exp2	SAMEA4820989	Primer B2 Experiment 2 SRT 5 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729906']	MGYS00001910
+ERS2640880	B2cR3-3_Exp1	SAMEA4820990	Primer B2 Experiment 1 SRT 5 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729907']	MGYS00001910
+ERS2640881	B2cR3-3_Exp2	SAMEA4820991	Primer B2 Experiment 2 SRT 5 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729908']	MGYS00001910
+ERS2640882	B2cR4-1_Exp1	SAMEA4820992	Primer B2 Experiment 1 SRT 7 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729909']	MGYS00001910
+ERS2640883	B2cR4-1_Exp2	SAMEA4820993	Primer B2 Experiment 2 SRT 7 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729910']	MGYS00001910
+ERS2640884	B2cR4-2_Exp1	SAMEA4820994	Primer B2 Experiment 1 SRT 7 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729911']	MGYS00001910
+ERS2640885	B2cR4-2_Exp2	SAMEA4820995	Primer B2 Experiment 2 SRT 7 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729912']	MGYS00001910
+ERS2640886	B2cR4-3_Exp1	SAMEA4820996	Primer B2 Experiment 1 SRT 7 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729913']	MGYS00001910
+ERS2640887	B2cR4-3_Exp2	SAMEA4820997	Primer B2 Experiment 2 SRT 7 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729914']	MGYS00001910
+ERS2640888	B2cR5-1_Exp1	SAMEA4820998	Primer B2 Experiment 1 SRT 10 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729915']	MGYS00001910
+ERS2640889	B2cR5-1_Exp2	SAMEA4820999	Primer B2 Experiment 2 SRT 10 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729916']	MGYS00001910
+ERS2640890	B2cR5-2_Exp1	SAMEA4821000	Primer B2 Experiment 1 SRT 10 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729917']	MGYS00001910
+ERS2640891	B2cR5-2_Exp2	SAMEA4821001	Primer B2 Experiment 2 SRT 10 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729918']	MGYS00001910
+ERS2640892	B2cR5-3_Exp1	SAMEA4821002	Primer B2 Experiment 1 SRT 10 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729919']	MGYS00001910
+ERS2640893	B2cR5-3_Exp2	SAMEA4821003	Primer B2 Experiment 2 SRT 10 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729920']	MGYS00001910
+ERS2640894	B2cR6-1_Exp1	SAMEA4821004	Primer B2 Experiment 1 SRT 15 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729921']	MGYS00001910
+ERS2640895	B2cR6-1_Exp2	SAMEA4821005	Primer B2 Experiment 2 SRT 15 day cDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729922']	MGYS00001910
+ERS2640896	B2cR6-2_Exp1	SAMEA4821006	Primer B2 Experiment 1 SRT 15 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729923']	MGYS00001910
+ERS2640897	B2cR6-2_Exp2	SAMEA4821007	Primer B2 Experiment 2 SRT 15 day cDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729924']	MGYS00001910
+ERS2640898	B2cR6-3_Exp1	SAMEA4821008	Primer B2 Experiment 1 SRT 15 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729925']	MGYS00001910
+ERS2640899	B2cR6-3_Exp2	SAMEA4821009	Primer B2 Experiment 2 SRT 15 day cDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729926']	MGYS00001910
+ERS2640900	B2gR1-1_Exp1	SAMEA4821010	Primer B2 Experiment 1 SRT 1 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729927']	MGYS00001910
+ERS2640901	B2gR1-1_Exp2	SAMEA4821011	Primer B2 Experiment 2 SRT 1 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729928']	MGYS00001910
+ERS2640902	B2gR1-2_Exp1	SAMEA4821012	Primer B2 Experiment 1 SRT 1 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729929']	MGYS00001910
+ERS2640903	B2gR1-2_Exp2	SAMEA4821013	Primer B2 Experiment 2 SRT 1 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729930']	MGYS00001910
+ERS2640904	B2gR1-3_Exp1	SAMEA4821014	Primer B2 Experiment 1 SRT 1 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729931']	MGYS00001910
+ERS2640905	B2gR1-3_Exp2	SAMEA4821015	Primer B2 Experiment 2 SRT 1 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729932']	MGYS00001910
+ERS2640906	B2gR2-1_Exp1	SAMEA4821016	Primer B2 Experiment 1 SRT 3 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729933']	MGYS00001910
+ERS2640907	B2gR2-1_Exp2	SAMEA4821017	Primer B2 Experiment 2 SRT 3 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729934']	MGYS00001910
+ERS2640908	B2gR2-2_Exp1	SAMEA4821018	Primer B2 Experiment 1 SRT 3 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729935']	MGYS00001910
+ERS2640909	B2gR2-2_Exp2	SAMEA4821019	Primer B2 Experiment 2 SRT 3 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729936']	MGYS00001910
+ERS2640910	B2gR2-3_Exp1	SAMEA4821020	Primer B2 Experiment 1 SRT 3 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729937']	MGYS00001910
+ERS2640911	B2gR2-3_Exp2	SAMEA4821021	Primer B2 Experiment 2 SRT 3 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729938']	MGYS00001910
+ERS2640912	B2gR3-1_Exp1	SAMEA4821022	Primer B2 Experiment 1 SRT 5 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729939']	MGYS00001910
+ERS2640913	B2gR3-1_Exp2	SAMEA4821023	Primer B2 Experiment 2 SRT 5 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729940']	MGYS00001910
+ERS2640914	B2gR3-2_Exp1	SAMEA4821024	Primer B2 Experiment 1 SRT 5 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729941']	MGYS00001910
+ERS2640915	B2gR3-2_Exp2	SAMEA4821025	Primer B2 Experiment 2 SRT 5 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729942']	MGYS00001910
+ERS2640916	B2gR3-3_Exp1	SAMEA4821026	Primer B2 Experiment 1 SRT 5 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729943']	MGYS00001910
+ERS2640917	B2gR3-3_Exp2	SAMEA4821027	Primer B2 Experiment 2 SRT 5 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729944']	MGYS00001910
+ERS2640918	B2gR4-1_Exp1	SAMEA4821028	Primer B2 Experiment 1 SRT 7 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729945']	MGYS00001910
+ERS2640919	B2gR4-1_Exp2	SAMEA4821029	Primer B2 Experiment 2 SRT 7 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729946']	MGYS00001910
+ERS2640920	B2gR4-2_Exp1	SAMEA4821030	Primer B2 Experiment 1 SRT 7 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729947']	MGYS00001910
+ERS2640921	B2gR4-2_Exp2	SAMEA4821031	Primer B2 Experiment 2 SRT 7 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729948']	MGYS00001910
+ERS2640922	B2gR4-3_Exp1	SAMEA4821032	Primer B2 Experiment 1 SRT 7 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729949']	MGYS00001910
+ERS2640923	B2gR4-3_Exp2	SAMEA4821033	Primer B2 Experiment 2 SRT 7 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729950']	MGYS00001910
+ERS2640924	B2gR5-1_Exp1	SAMEA4821034	Primer B2 Experiment 1 SRT 10 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729951']	MGYS00001910
+ERS2640925	B2gR5-1_Exp2	SAMEA4821035	Primer B2 Experiment 2 SRT 10 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729952']	MGYS00001910
+ERS2640926	B2gR5-2_Exp1	SAMEA4821036	Primer B2 Experiment 1 SRT 10 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729953']	MGYS00001910
+ERS2640927	B2gR5-2_Exp2	SAMEA4821037	Primer B2 Experiment 2 SRT 10 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729954']	MGYS00001910
+ERS2640928	B2gR5-3_Exp1	SAMEA4821038	Primer B2 Experiment 1 SRT 10 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729955']	MGYS00001910
+ERS2640929	B2gR5-3_Exp2	SAMEA4821039	Primer B2 Experiment 2 SRT 10 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729956']	MGYS00001910
+ERS2640930	B2gR6-1_Exp1	SAMEA4821040	Primer B2 Experiment 1 SRT 15 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729957']	MGYS00001910
+ERS2640931	B2gR6-1_Exp2	SAMEA4821041	Primer B2 Experiment 2 SRT 15 day gDNA replicate 1	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729958']	MGYS00001910
+ERS2640932	B2gR6-2_Exp1	SAMEA4821042	Primer B2 Experiment 1 SRT 15 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729959']	MGYS00001910
+ERS2640933	B2gR6-2_Exp2	SAMEA4821043	Primer B2 Experiment 2 SRT 15 day gDNA replicate 2	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729960']	MGYS00001910
+ERS2640934	B2gR6-3_Exp1	SAMEA4821044	Primer B2 Experiment 1 SRT 15 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729961']	MGYS00001910
+ERS2640935	B2gR6-3_Exp2	SAMEA4821045	Primer B2 Experiment 2 SRT 15 day gDNA replicate 3	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729962']	MGYS00001910
+ERS2640936	B2-NEG_Exp2	SAMEA4821046	Primer B2 Experiment 2 Negative Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729963']	MGYS00001910
+ERS2640937	B2pos-1_Exp1	SAMEA4821047	Primer B2 Experiment 1 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729964']	MGYS00001910
+ERS2640938	B2pos-2_Exp1	SAMEA4821048	Primer B2 Experiment 1 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729965']	MGYS00001910
+ERS2640939	B2pos-3_Exp1	SAMEA4821049	Primer B2 Experiment 1 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729966']	MGYS00001910
+ERS2640940	cNegA_Exp2	SAMEA4821050	Primer B2 Experiment 2 Negative Control cDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729967']	MGYS00001910
+ERS2640941	cNegB_Exp2	SAMEA4821051	Primer B2 Experiment 2 Negative Control cDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729968']	MGYS00001910
+ERS2640942	gM1_Exp2	SAMEA4821052	Primer B2 Experiment 2 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729969']	MGYS00001910
+ERS2640943	gM2_Exp2	SAMEA4821053	Primer B2 Experiment 2 Positive Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729970']	MGYS00001910
+ERS2640944	gNegA_Exp2	SAMEA4821054	Primer B2 Experiment 2 Negative Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729971']	MGYS00001910
+ERS2640945	gNegB_Exp2	SAMEA4821055	Primer B2 Experiment 2 Negative Control gDNA	47.4055	8.5976	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2729972']	MGYS00001910
+ERS1864879	Exp1_R1_SRT1	SAMEA104205861	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 1 day. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088984']	MGYS00001910
+ERS1864880	Exp1_R2_SRT3	SAMEA104205862	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 3 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088985']	MGYS00001910
+ERS1864881	Exp1_R3_SRT5	SAMEA104205863	Sequencing batch reactor sludge retention time 5 days	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088986']	MGYS00001910
+ERS1864882	Exp1_R4_SRT7	SAMEA104205864	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 7 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088987']	MGYS00001910
+ERS1864883	Exp1_R5_SRT10	SAMEA104205865	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 10 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088988']	MGYS00001910
+ERS1864884	Exp1_R6_SRT15	SAMEA104205866	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 15 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088989']	MGYS00001910
+ERS1864885	Exp2_R1_SRT1	SAMEA104205867	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 1 day. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088990']	MGYS00001910
+ERS1864886	Exp2_R2_SRT3	SAMEA104205868	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 3 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088991']	MGYS00001910
+ERS1864887	Exp2_R3_SRT5	SAMEA104205869	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 5 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088992']	MGYS00001910
+ERS1864888	Exp2_R4_SRT7	SAMEA104205870	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 7 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088993']	MGYS00001910
+ERS1864889	Exp2_R5_SRT10	SAMEA104205871	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 10 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088994']	MGYS00001910
+ERS1864890	Exp2_R6_SRT15	SAMEA104205872	A sequencing batch reactor operating with sludge originating from the Niderglatt WWTP was operated with a sludge retention time of 15 days. Samples were withdrawn after exposing the reactor to a set of micropollutants.	47.5005	8.4953	Switzerland	wastewater treatment plant	sewage	sludge	['ERR2088995']	MGYS00001910
+											MGYS00001910
+ERS2488841	CROATIA1	SAMEA4668225	Croatian wastewater treatment sludge	45.7897	16.0823	Croatia	Sludge	Wastewater treatment plant	sludge	['ERR2586215']	MGYS00002383
+ERS2488842	CROATIA2	SAMEA4668226	Croatian wastewater treatment sludge	45.7897	16.0823	Croatia	Sludge	Wastewater treatment plant	sludge	['ERR2586216']	MGYS00002383
+ERS2488843	CROATIA3	SAMEA4668227	Croatian wastewater treatment sludge	45.7897	16.0823	Croatia	Sludge	Wastewater treatment plant	sludge	['ERR2586217']	MGYS00002383
+ERS2488844	CROATIA4	SAMEA4668228	Croatian wastewater treatment sludge	45.7897	16.0823	Croatia	Sludge	Wastewater treatment plant	sludge	['ERR2586218']	MGYS00002383
+ERS2488845	CROATIA5	SAMEA4668229	Croatian wastewater treatment sludge	45.7897	16.0823	Croatia	Sludge	Wastewater treatment plant	sludge	['ERR2586219']	MGYS00002383
+ERS2488846	CROATIA6	SAMEA4668230	Croatian wastewater treatment sludge	45.7897	16.0823	Croatia	Sludge	Wastewater treatment plant	sludge	['ERR2586220']	MGYS00002383
+SRS1791804	Gp0138812	SAMN05720167	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from USA - AD_UKC075_MetaG	37.8	-122.27	USA				['ERZ778036']	MGYS00004765
+SRS1687462	Gp0138811	SAMN05720219	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from USA - AD_UKC073_MetaG	37.8	-122.27	USA				['ERZ795029']	MGYS00004910
+SRS1791740	Gp0138830	SAMN05720227	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from USA - AD_UKC052_MetaG	42.12	-87.65	USA				['ERZ795056']	MGYS00004929
+SRS1791744	Gp0138819	SAMN05720168	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from USA - AD_UKC045_MetaG	40.12	-87.63	USA				['ERZ795059']	MGYS00004932
+SRS1792068	Gp0141809	SAMN05720189	"Anaerobic biogas reactor microbial communites from Washington, USA - Biogas_R1 time_0 SIP DNA"	47.6525	-122.3049	"USA:Washington, USA"				['ERZ795066']	MGYS00004939
+ERS1048982	AOBNOB1	SAMEA3861848	AOBNOB1			Australia	Wastewater	Activated Sludge	Reactor	['ERR1233629']	MGYS00000606
+ERS1545891	MP_reactors	SAMEA80832418	MP_reactors	50.9	4.7	Belgium	anaerobic reactor	mesophilic anaerobic reactor	wastewater	['ERR1823510']	MGYS00001453
+ERS1545892	MP_reactors	SAMEA80833168	MP_reactors	50.9	4.7	Belgium	anaerobic reactor	mesophilic anaerobic reactor	wastewater	['ERR1823511']	MGYS00001453
+ERS1545893	MP_reactors	SAMEA80833918	MP_reactors	50.9	4.7	Belgium	anaerobic reactor	mesophilic anaerobic reactor	wastewater	['ERR1823512']	MGYS00001453
+ERS1833119	b2forensics1	SAMEA104174101	wastewater sample collected on november 1st 2016	48.698	2.1795	France				['ERR2041951']	MGYS00001903
+ERS2597319	DTU2017_MG_100_EC_GA	SAMEA4777371	DTU2017_MG_100_EC_GA	-0.908	-89.6029	Ecuador				['ERR2683114']	MGYS00003139
+ERS2597320	DTU2017_MG_101_MW_KA	SAMEA4777372	DTU2017_MG_101_MW_KA	-13.051	33.8039	Malawi				['ERR2683115']	MGYS00003139
+ERS2597323	DTU2017_MG_104_MW_BL	SAMEA4777375	DTU2017_MG_104_MW_BL	-15.4703	35.02	Malawi				['ERR2683118']	MGYS00003139
+ERS2597326	DTU2017_MG_107_NG_IL_a	SAMEA4777378	DTU2017_MG_107_NG_IL_a	8.4804	4.6739	Nigeria				['ERR2683121']	MGYS00003139
+ERS2597329	DTU2017_MG_110_NG_IL_d	SAMEA4777381	DTU2017_MG_110_NG_IL_d	8.4808	4.672	Nigeria				['ERR2683124']	MGYS00003139
+ERS2597333	DTU2017_MG_114_NG_IB_a	SAMEA4777385	DTU2017_MG_114_NG_IB_a	7.4419	3.8966	Nigeria				['ERR2683128']	MGYS00003139
+ERS2597334	DTU2017_MG_115_NG_IB_b	SAMEA4777386	DTU2017_MG_115_NG_IB_b	7.4419	3.8966	Nigeria				['ERR2683129']	MGYS00003139
+ERS2597338	DTU2017_MG_119_NI_MS	SAMEA4777390	DTU2017_MG_119_NI_MS	11.9842	-86.1056	Nicaragua				['ERR2683133']	MGYS00003139
+ERS2597341	DTU2017_MG_121_EE_TA	SAMEA4777393	DTU2017_MG_121_EE_TA	58.34	26.7372	Estonia				['ERR2683136']	MGYS00003139
+ERS2597342	DTU2017_MG_122_EE_TL	SAMEA4777394	DTU2017_MG_122_EE_TL	59.466	24.7022	Estonia				['ERR2683137']	MGYS00003139
+ERS2597343	DTU2017_MG_123_EE_PR	SAMEA4777395	DTU2017_MG_123_EE_PR	58.3871	24.4537	Estonia				['ERR2683138']	MGYS00003139
+ERS2597345	DTU2017_MG_125_TH_PA	SAMEA4777397	DTU2017_MG_125_TH_PA	14.0697	100.6106	Thailand				['ERR2683140']	MGYS00003139
+ERS2597346	DTU2017_MG_126_GE_KU	SAMEA4777398	DTU2017_MG_126_GE_KU	42.2393	42.6758	Georgia				['ERR2683141']	MGYS00003139
+ERS2597348	DTU2017_MG_128_ZA_PR	SAMEA4777400	DTU2017_MG_128_ZA_PR	-25.7344	28.1779	South Africa				['ERR2683143']	MGYS00003139
+ERS2597349	DTU2017_MG_129_LU_LU	SAMEA4777401	DTU2017_MG_129_LU_LU	49.651	6.13	Luxembourg				['ERR2683144']	MGYS00003139
+ERS2597350	DTU2017_MG_12_MY_KG	SAMEA4777402	DTU2017_MG_12_MY_KG	3.0047	101.4342	Malaysia				['ERR2683145']	MGYS00003139
+ERS2597351	DTU2017_MG_130_IT_RO	SAMEA4777403	DTU2017_MG_130_IT_RO	41.8193	12.4281	Italy				['ERR2683146']	MGYS00003139
+ERS2597352	DTU2017_MG_131_KR_GW	SAMEA4777404	DTU2017_MG_131_KR_GW	35.1559	126.8355	South Korea				['ERR2683147']	MGYS00003139
+ERS2597365	DTU2017_MG_143_UG_KA	SAMEA4777417	DTU2017_MG_143_UG_KA	0.3193	32.6061	Uganda				['ERR2683160']	MGYS00003139
+ERS2597375	DTU2017_MG_152_NP_KA	SAMEA4777427	DTU2017_MG_152_NP_KA	27.7008	85.3001	Nepal				['ERR2683170']	MGYS00003139
+ERS2597377	DTU2017_MG_154_GT_GU	SAMEA4777429	DTU2017_MG_154_GT_GU	14.5786	-90.5594	Guatemala				['ERR2683172']	MGYS00003139
+ERS2597378	DTU2017_MG_155_LT_VI	SAMEA4777430	DTU2017_MG_155_LT_VI	54.7097	25.2212	Lithuania				['ERR2683173']	MGYS00003139
+ERS2597379	DTU2017_MG_156_KE_NA	SAMEA4777431	DTU2017_MG_156_KE_NA	-1.2561	37.0118	Kenya				['ERR2683174']	MGYS00003139
+ERS2597382	DTU2017_MG_159_MK_SK	SAMEA4777434	DTU2017_MG_159_MK_SK	41.9906	21.4758	Macedonia				['ERR2683177']	MGYS00003139
+ERS2597384	DTU2017_MG_160_GH_TA	SAMEA4777436	DTU2017_MG_160_GH_TA	9.4034	-0.8424	Ghana				['ERR2683179']	MGYS00003139
+ERS2597391	DTU2017_MG_167_LK_MA	SAMEA4777443	DTU2017_MG_167_LK_MA	6.9312	79.874	Sri Lanka				['ERR2683186']	MGYS00003139
+ERS2597393	DTU2017_MG_16_BR_BE	SAMEA4777445	DTU2017_MG_16_BR_BE	-1.4283	-48.4921	Brazil				['ERR2683188']	MGYS00003139
+ERS2597394	DTU2017_MG_17_US_PO	SAMEA4777446	DTU2017_MG_17_US_PO	45.5951	-122.7176	USA				['ERR2683189']	MGYS00003139
+ERS2597396	DTU2017_MG_19_MY_AS	SAMEA4777448	DTU2017_MG_19_MY_AS	5.6044	100.5436	Malaysia				['ERR2683191']	MGYS00003139
+ERS2597397	DTU2017_MG_1_TH_BK	SAMEA4777449	DTU2017_MG_1_TH_BK	13.7579	100.4859	Thailand				['ERR2683192']	MGYS00003139
+ERS2597398	DTU2017_MG_20_MY_PG	SAMEA4777450	DTU2017_MG_20_MY_PG	5.4356	100.3091	Malaysia				['ERR2683193']	MGYS00003139
+ERS2597399	DTU2017_MG_21_MY_IP	SAMEA4777451	DTU2017_MG_21_MY_IP	4.5975	101.0901	Malaysia				['ERR2683194']	MGYS00003139
+ERS2597400	DTU2017_MG_22_MY_PB	SAMEA4777452	DTU2017_MG_22_MY_PB	5.438	100.3882	Malaysia				['ERR2683195']	MGYS00003139
+ERS2597401	DTU2017_MG_23_JP_JP	SAMEA4777453	DTU2017_MG_23_JP_JP	36.2048	138.2529	Japan				['ERR2683196']	MGYS00003139
+ERS2597404	DTU2017_MG_26_NL_UT	SAMEA4777456	DTU2017_MG_26_NL_UT	52.1084	5.1112	Netherlands				['ERR2683199']	MGYS00003139
+ERS2597405	DTU2017_MG_27_UY_MV	SAMEA4777457	DTU2017_MG_27_UY_MV	-34.9301	-56.1609	Uruguay				['ERR2683200']	MGYS00003139
+ERS2597408	DTU2017_MG_2_PT_LI	SAMEA4777460	DTU2017_MG_2_PT_LI	38.7221	-9.1746	Portugal				['ERR2683203']	MGYS00003139
+ERS2597409	DTU2017_MG_30_LB_SF	SAMEA4777461	DTU2017_MG_30_LB_SF	34.015	35.6398	Lebanon				['ERR2683204']	MGYS00003139
+ERS2597410	DTU2017_MG_31_LB_RI	SAMEA4777462	DTU2017_MG_31_LB_RI	33.8559	35.9948	Lebanon				['ERR2683205']	MGYS00003139
+ERS2597413	DTU2017_MG_34_LB_SD	SAMEA4777465	DTU2017_MG_34_LB_SD	33.5062	35.3038	Lebanon				['ERR2683208']	MGYS00003139
+ERS2597416	DTU2017_MG_37_GH_AC	SAMEA4777468	DTU2017_MG_37_GH_AC	5.6037	-0.187	Ghana				['ERR2683211']	MGYS00003139
+ERS2597418	DTU2017_MG_39_NZ_CH	SAMEA4777470	DTU2017_MG_39_NZ_CH	-43.5256	172.6997	New Zealand				['ERR2683213']	MGYS00003139
+ERS2597419	DTU2017_MG_3_ES_BA	SAMEA4777471	DTU2017_MG_3_ES_BA	41.4096	2.2228	Spain				['ERR2683214']	MGYS00003139
+ERS2597420	DTU2017_MG_40_PH_QU	SAMEA4777472	DTU2017_MG_40_PH_QU	14.6027	120.9671	Philippines				['ERR2683215']	MGYS00003139
+ERS2597423	DTU2017_MG_43_CH_BR	SAMEA4777475	DTU2017_MG_43_CH_BR	46.9722	7.4285	Switzerland				['ERR2683218']	MGYS00003139
+ERS2597424	DTU2017_MG_44_SI_LJ	SAMEA4777476	DTU2017_MG_44_SI_LJ	46.074	14.6119	Slovenia				['ERR2683219']	MGYS00003139
+ERS2597425	DTU2017_MG_45_SE_UP	SAMEA4777477	DTU2017_MG_45_SE_UP	59.8436	17.6575	Sweden				['ERR2683220']	MGYS00003139
+ERS2597426	DTU2017_MG_46_IT_VE	SAMEA4777478	DTU2017_MG_46_IT_VE	45.9352	8.5596	Italy				['ERR2683221']	MGYS00003139
+ERS2597427	DTU2017_MG_47_IT_CA	SAMEA4777479	DTU2017_MG_47_IT_CA	45.0659	8.6918	Italy				['ERR2683222']	MGYS00003139
+ERS2597428	DTU2017_MG_48_IT_NO	SAMEA4777480	DTU2017_MG_48_IT_NO	45.4218	8.5968	Italy				['ERR2683223']	MGYS00003139
+ERS2597430	DTU2017_MG_4_GR_AT	SAMEA4777482	DTU2017_MG_4_GR_AT	37.9417	23.5893	Greece				['ERR2683225']	MGYS00003139
+ERS2597432	DTU2017_MG_51_SN_DA	SAMEA4777484	DTU2017_MG_51_SN_DA	14.7462	-17.4266	Senegal				['ERR2683227']	MGYS00003139
+ERS2597433	DTU2017_MG_52_ME_PO	SAMEA4777485	DTU2017_MG_52_ME_PO	42.4342	19.2355	Montenegro				['ERR2683228']	MGYS00003139
+ERS2597436	DTU2017_MG_55_FI_TU	SAMEA4777488	DTU2017_MG_55_FI_TU	60.4438	22.2379	Finland				['ERR2683231']	MGYS00003139
+ERS2597437	DTU2017_MG_56_FI_OU	SAMEA4777489	DTU2017_MG_56_FI_OU	65.0544	25.4122	Finland				['ERR2683232']	MGYS00003139
+ERS2597438	DTU2017_MG_57_FI_HE	SAMEA4777490	DTU2017_MG_57_FI_HE	60.2261	24.9916	Finland				['ERR2683233']	MGYS00003139
+ERS2597443	DTU2017_MG_61_TZ_MO	SAMEA4777495	DTU2017_MG_61_TZ_MO	-6.7866	37.6735	Tanzania				['ERR2683238']	MGYS00003139
+ERS2597446	DTU2017_MG_64_BB_BR	SAMEA4777498	DTU2017_MG_64_BB_BR	13.1008	-59.6212	Barbados				['ERR2683241']	MGYS00003139
+ERS2597449	DTU2017_MG_67_US_AU	SAMEA4777501	DTU2017_MG_67_US_AU	30.209	-97.6045	USA				['ERR2683244']	MGYS00003139
+ERS2597450	DTU2017_MG_68_US_HO_a	SAMEA4777502	DTU2017_MG_68_US_HO_a	29.7058	-95.5649	USA				['ERR2683245']	MGYS00003139
+ERS2597451	DTU2017_MG_69_BD_DH	SAMEA4777503	DTU2017_MG_69_BD_DH	23.6834	90.4514	Bangladesh				['ERR2683246']	MGYS00003139
+ERS2597454	DTU2017_MG_71_SK_BR	SAMEA4777506	DTU2017_MG_71_SK_BR	48.2591	17.3591	Slovakia				['ERR2683249']	MGYS00003139
+ERS2597456	DTU2017_MG_73_LV_RI	SAMEA4777508	DTU2017_MG_73_LV_RI	56.5067	25.9096	Latvia				['ERR2683251']	MGYS00003139
+ERS2597457	DTU2017_MG_74_LV_LI	SAMEA4777509	DTU2017_MG_74_LV_LI	56.5167	21.0167	Latvia				['ERR2683252']	MGYS00003139
+ERS2597459	DTU2017_MG_76_MU_PL	SAMEA4777511	DTU2017_MG_76_MU_PL	-20.7321	57.4338	Mauritius				['ERR2683254']	MGYS00003139
+ERS2597460	DTU2017_MG_77_IL_BE	SAMEA4777512	DTU2017_MG_77_IL_BE	31.253	34.7914	Israel				['ERR2683255']	MGYS00003139
+ERS2597462	DTU2017_MG_79_AU_MA	SAMEA4777514	DTU2017_MG_79_AU_MA		134.2294	Australia				['ERR2683257']	MGYS00003139
+ERS2597464	DTU2017_MG_80_AU_DD	SAMEA4777516	DTU2017_MG_80_AU_DD	-12.3646	130.909	Australia				['ERR2683259']	MGYS00003139
+ERS2597466	DTU2017_MG_82_MT_MN	SAMEA4777518	DTU2017_MG_82_MT_MN	35.9675	14.3378	Malta				['ERR2683261']	MGYS00003139
+ERS2597469	DTU2017_MG_85_SA_KA	SAMEA4777521	DTU2017_MG_85_SA_KA	22.2987	39.1186	Saudi Arabia				['ERR2683264']	MGYS00003139
+ERS2597470	DTU2017_MG_86_LC_CA	SAMEA4777522	DTU2017_MG_86_LC_CA	14.0158	-60.9916	Saint Lucia				['ERR2683265']	MGYS00003139
+ERS2597473	DTU2017_MG_89_TG_LO	SAMEA4777525	DTU2017_MG_89_TG_LO	6.126	1.2184	Togo				['ERR2683268']	MGYS00003139
+ERS2597478	DTU2017_MG_93_TW_TA	SAMEA4777530	DTU2017_MG_93_TW_TA	25.0664	121.5744	Taiwan				['ERR2683273']	MGYS00003139
+ERS2597481	DTU2017_MG_96_EC_QU	SAMEA4777533	DTU2017_MG_96_EC_QU	-0.1853	-78.4172	Ecuador				['ERR2683276']	MGYS00003139
+ERS2597482	DTU2017_MG_97_PE_PI	SAMEA4777534	DTU2017_MG_97_PE_PI	-5.1576	-80.6858	Peru				['ERR2683277']	MGYS00003139
+ERS2597488	DTU2017_MG_169_NC_A	SAMEA4777540	extraction_control	66.9425	-53.6531	Denmark				['ERR2683525']	MGYS00003139
+ERS2597490	DTU2017_MG_171_NC_C	SAMEA4777542	extraction_control	66.9425	-53.6531	Denmark				['ERR2683527']	MGYS00003139
+ERS2597491	DTU2017_MG_172_NC_D	SAMEA4777543	extraction_control	66.9425	-53.6531	Denmark				['ERR2683528']	MGYS00003139
+ERS2597492	DTU2017_MG_173_NC_E	SAMEA4777544	extraction_control	66.9425	-53.6531	Denmark				['ERR2683529']	MGYS00003139
+ERS2597497	DTU2017_MG_178_NC_J	SAMEA4777549	extraction_control	66.9425	-53.6531	Denmark				['ERR2683534']	MGYS00003139
+ERS2597498	DTU2017_MG_179_NC_K	SAMEA4777550	extraction_control	66.9425	-53.6531	Denmark				['ERR2683535']	MGYS00003139
+ERS2597321	DTU2017_MG_102_MW_MZ	SAMEA4777373	DTU2017_MG_102_MW_MZ	-11.7634	34.0252	Malawi				['ERR2683116']	MGYS00003139
+ERS2597322	DTU2017_MG_103_MW_ZO	SAMEA4777374	DTU2017_MG_103_MW_ZO	-15.4528	35.5025	Malawi				['ERR2683117']	MGYS00003139
+ERS2597324	DTU2017_MG_105_IS_RE	SAMEA4777376	DTU2017_MG_105_IS_RE	64.1558	-21.8723	Iceland				['ERR2683119']	MGYS00003139
+ERS2597325	DTU2017_MG_106_PL_PL	SAMEA4777377	DTU2017_MG_106_PL_PL	51.448	21.9518	Poland				['ERR2683120']	MGYS00003139
+ERS2597327	DTU2017_MG_108_NG_IL_b	SAMEA4777379	DTU2017_MG_108_NG_IL_b	8.4807	4.672	Nigeria				['ERR2683122']	MGYS00003139
+ERS2597328	DTU2017_MG_10_CI_YA	SAMEA4777380	DTU2017_MG_10_CI_YA	6.8075	-5.2751	Cote d&apos;Ivoire				['ERR2683123']	MGYS00003139
+ERS2597330	DTU2017_MG_111_NG_ZA_a	SAMEA4777382	DTU2017_MG_111_NG_ZA_a	11.1358	7.6637	Nigeria				['ERR2683125']	MGYS00003139
+ERS2597331	DTU2017_MG_112_NG_ZA_b	SAMEA4777383	DTU2017_MG_112_NG_ZA_b	11.1459	7.6586	Nigeria				['ERR2683126']	MGYS00003139
+ERS2597332	DTU2017_MG_113_NG_ZA_c	SAMEA4777384	DTU2017_MG_113_NG_ZA_c	11.1459	7.6587	Nigeria				['ERR2683127']	MGYS00003139
+ERS2597335	DTU2017_MG_116_NI_MN	SAMEA4777387	DTU2017_MG_116_NI_MN	12.1639	-86.2236	Nicaragua				['ERR2683130']	MGYS00003139
+ERS2597336	DTU2017_MG_117_NI_MT	SAMEA4777388	DTU2017_MG_117_NI_MT	12.9147	-85.94	Nicaragua				['ERR2683131']	MGYS00003139
+ERS2597337	DTU2017_MG_118_NI_GR	SAMEA4777389	DTU2017_MG_118_NI_GR	11.9136	-85.9328	Nicaragua				['ERR2683132']	MGYS00003139
+ERS2597339	DTU2017_MG_11_MY_KL	SAMEA4777391	DTU2017_MG_11_MY_KL	3.1831	101.7111	Malaysia				['ERR2683134']	MGYS00003139
+ERS2597340	DTU2017_MG_120_TZ_MS	SAMEA4777392	DTU2017_MG_120_TZ_MS	-3.3745	37.427	Tanzania				['ERR2683135']	MGYS00003139
+ERS2597344	DTU2017_MG_124_EE_NA	SAMEA4777396	DTU2017_MG_124_EE_NA	59.3598	28.1829	Estonia				['ERR2683139']	MGYS00003139
+ERS2597347	DTU2017_MG_127_HR_ZA	SAMEA4777399	DTU2017_MG_127_HR_ZA	45.7877	16.0791	Croatia				['ERR2683142']	MGYS00003139
+ERS2597353	DTU2017_MG_132_GR_TH	SAMEA4777405	DTU2017_MG_132_GR_TH	40.6637	22.8333	Greece				['ERR2683148']	MGYS00003139
+ERS2597354	DTU2017_MG_133_AU_ME	SAMEA4777406	DTU2017_MG_133_AU_ME	-37.9145	144.6432	Australia				['ERR2683149']	MGYS00003139
+ERS2597355	DTU2017_MG_134_PT_PO	SAMEA4777407	DTU2017_MG_134_PT_PO	41.1579	-8.6291	Portugal				['ERR2683150']	MGYS00003139
+ERS2597356	DTU2017_MG_135_GB_ED	SAMEA4777408	DTU2017_MG_135_GB_ED	55.9701	-3.1449	United Kingdom				['ERR2683151']	MGYS00003139
+ERS2597357	DTU2017_MG_136_CA_RE	SAMEA4777409	DTU2017_MG_136_CA_RE	50.4411	-104.7558	Canada				['ERR2683152']	MGYS00003139
+ERS2597358	DTU2017_MG_137_CA_VA	SAMEA4777410	DTU2017_MG_137_CA_VA	49.1654	-122.9506	Canada				['ERR2683153']	MGYS00003139
+ERS2597359	DTU2017_MG_138_CA_CA	SAMEA4777411	DTU2017_MG_138_CA_CA	51.0131	-114.0246	Canada				['ERR2683154']	MGYS00003139
+ERS2597360	DTU2017_MG_139_CA_OT	SAMEA4777412	DTU2017_MG_139_CA_OT	45.4599	-75.5853	Canada				['ERR2683155']	MGYS00003139
+ERS2597361	DTU2017_MG_13_CM_YA	SAMEA4777413	DTU2017_MG_13_CM_YA	3.8706	11.4845	Cameroon				['ERR2683156']	MGYS00003139
+ERS2597362	DTU2017_MG_140_BG_SO	SAMEA4777414	DTU2017_MG_140_BG_SO	42.7509	23.3665	Bulgaria				['ERR2683157']	MGYS00003139
+ERS2597363	DTU2017_MG_141_GB_NC	SAMEA4777415	DTU2017_MG_141_GB_NC	54.9901	-1.4796	United Kingdom				['ERR2683158']	MGYS00003139
+ERS2597364	DTU2017_MG_142_CA_TO	SAMEA4777416	DTU2017_MG_142_CA_TO	43.6313	-79.4806	Canada				['ERR2683159']	MGYS00003139
+ERS2597366	DTU2017_MG_144_IN_MP	SAMEA4777418	DTU2017_MG_144_IN_MP	13.3576	74.7427	India				['ERR2683161']	MGYS00003139
+ERS2597367	DTU2017_MG_145_NO_OS	SAMEA4777419	DTU2017_MG_145_NO_OS	59.7934	10.4994	Norway				['ERR2683162']	MGYS00003139
+ERS2597368	DTU2017_MG_146_PK_KA	SAMEA4777420	DTU2017_MG_146_PK_KA	24.8537	67.0751	Pakistan				['ERR2683163']	MGYS00003139
+ERS2597369	DTU2017_MG_147_PK_HY	SAMEA4777421	DTU2017_MG_147_PK_HY	25.3746	68.3633	Pakistan				['ERR2683164']	MGYS00003139
+ERS2597370	DTU2017_MG_148_BF_OU	SAMEA4777422	DTU2017_MG_148_BF_OU	12.4272	-1.4807	Burkina Faso				['ERR2683165']	MGYS00003139
+ERS2597371	DTU2017_MG_149_BF_BO	SAMEA4777423	DTU2017_MG_149_BF_BO	11.2055	-4.2758	Burkina Faso				['ERR2683166']	MGYS00003139
+ERS2597372	DTU2017_MG_14_HK_HK	SAMEA4777424	DTU2017_MG_14_HK_HK	22.4039	114.2125	Hong Kong				['ERR2683167']	MGYS00003139
+ERS2597373	DTU2017_MG_150_SG_JU	SAMEA4777425	DTU2017_MG_150_SG_JU	1.3521	103.8198	Singapore				['ERR2683168']	MGYS00003139
+ERS2597374	DTU2017_MG_151_PY_CO	SAMEA4777426	DTU2017_MG_151_PY_CO	-25.276	-57.6334	Paraguay				['ERR2683169']	MGYS00003139
+ERS2597376	DTU2017_MG_153_KH_PP	SAMEA4777428	DTU2017_MG_153_KH_PP	11.5226	104.9026	Cambodia				['ERR2683171']	MGYS00003139
+ERS2597380	DTU2017_MG_157_KZ_AL	SAMEA4777432	DTU2017_MG_157_KZ_AL	43.4039	76.8889	Kazakhstan				['ERR2683175']	MGYS00003139
+ERS2597381	DTU2017_MG_158_US_CH	SAMEA4777433	DTU2017_MG_158_US_CH			USA				['ERR2683176']	MGYS00003139
+ERS2597383	DTU2017_MG_15_VN_HO	SAMEA4777435	DTU2017_MG_15_VN_HO	20.9756	105.8658	Viet Nam				['ERR2683178']	MGYS00003139
+ERS2597385	DTU2017_MG_161_IR_TH	SAMEA4777437	DTU2017_MG_161_IR_TH	35.5686	51.439	Iran				['ERR2683180']	MGYS00003139
+ERS2597386	DTU2017_MG_162_MA_CA	SAMEA4777438	DTU2017_MG_162_MA_CA	33.6343	-7.5088	Morocco				['ERR2683181']	MGYS00003139
+ERS2597387	DTU2017_MG_163_LK_RA	SAMEA4777439	DTU2017_MG_163_LK_RA	7.1421	79.8971	Sri Lanka				['ERR2683182']	MGYS00003139
+ERS2597388	DTU2017_MG_164_LK_MO	SAMEA4777440	DTU2017_MG_164_LK_MO	6.8059	79.8852	Sri Lanka				['ERR2683183']	MGYS00003139
+ERS2597389	DTU2017_MG_165_LK_BO	SAMEA4777441	DTU2017_MG_165_LK_BO	6.9116	79.8799	Sri Lanka				['ERR2683184']	MGYS00003139
+ERS2597390	DTU2017_MG_166_LK_CO	SAMEA4777442	DTU2017_MG_166_LK_CO	6.9132	79.8513	Sri Lanka				['ERR2683185']	MGYS00003139
+ERS2597392	DTU2017_MG_168_IR_SH	SAMEA4777444	DTU2017_MG_168_IR_SH	29.5453	52.6354	Iran				['ERR2683187']	MGYS00003139
+ERS2597395	DTU2017_MG_18_GL_SI	SAMEA4777447	DTU2017_MG_18_GL_SI	66.9425	-53.6531	Denmark				['ERR2683190']	MGYS00003139
+ERS2597402	DTU2017_MG_24_DK_AV	SAMEA4777454	DTU2017_MG_24_DK_AV	55.6405	12.5058	Denmark				['ERR2683197']	MGYS00003139
+ERS2597403	DTU2017_MG_25_NL_AM	SAMEA4777455	DTU2017_MG_25_NL_AM	52.3985	4.7942	Netherlands				['ERR2683198']	MGYS00003139
+ERS2597406	DTU2017_MG_28_LB_TR	SAMEA4777458	DTU2017_MG_28_LB_TR	34.4443	35.8144	Lebanon				['ERR2683201']	MGYS00003139
+ERS2597407	DTU2017_MG_29_LB_JZ	SAMEA4777459	DTU2017_MG_29_LB_JZ	33.5422	35.5831	Lebanon				['ERR2683202']	MGYS00003139
+ERS2597411	DTU2017_MG_32_LB_KO	SAMEA4777463	DTU2017_MG_32_LB_KO	34.3646	35.7837	Lebanon				['ERR2683206']	MGYS00003139
+ERS2597412	DTU2017_MG_33_LB_SA	SAMEA4777464	DTU2017_MG_33_LB_SA	33.5641	35.37	Lebanon				['ERR2683207']	MGYS00003139
+ERS2597414	DTU2017_MG_35_DE_DR	SAMEA4777466	DTU2017_MG_35_DE_DR	51.071	13.6809	Germany				['ERR2683209']	MGYS00003139
+ERS2597415	DTU2017_MG_36_AL_TI	SAMEA4777467	DTU2017_MG_36_AL_TI	41.3571	19.7709	Albania				['ERR2683210']	MGYS00003139
+ERS2597417	DTU2017_MG_38_GH_KU	SAMEA4777469	DTU2017_MG_38_GH_KU	6.6653	-1.5761	Ghana				['ERR2683212']	MGYS00003139
+ERS2597421	DTU2017_MG_41_FR_NA	SAMEA4777473	DTU2017_MG_41_FR_NA	47.1919	-1.5826	France				['ERR2683216']	MGYS00003139
+ERS2597422	DTU2017_MG_42_FR_AU	SAMEA4777474	DTU2017_MG_42_FR_AU	47.5991	-2.9808	France				['ERR2683217']	MGYS00003139
+ERS2597429	DTU2017_MG_49_IE_GA	SAMEA4777481	DTU2017_MG_49_IE_GA	53.2536	-9.0547	Ireland				['ERR2683224']	MGYS00003139
+ERS2597431	DTU2017_MG_50_AT_VI	SAMEA4777483	DTU2017_MG_50_AT_VI	48.174	16.4632	Austria				['ERR2683226']	MGYS00003139
+ERS2597434	DTU2017_MG_53_ET_AD	SAMEA4777486	DTU2017_MG_53_ET_AD	8.9191	38.7574	Ethiopia				['ERR2683229']	MGYS00003139
+ERS2597435	DTU2017_MG_54_RS_BE	SAMEA4777487	DTU2017_MG_54_RS_BE	44.8302	20.4634	Serbia				['ERR2683230']	MGYS00003139
+ERS2597439	DTU2017_MG_58_CZ_PR	SAMEA4777491	DTU2017_MG_58_CZ_PR	50.1128	14.3985	Czech Republic				['ERR2683234']	MGYS00003139
+ERS2597440	DTU2017_MG_59_CZ_BR	SAMEA4777492	DTU2017_MG_59_CZ_BR	49.1313	16.6295	Czech Republic				['ERR2683235']	MGYS00003139
+ERS2597441	DTU2017_MG_5_GB_FA	SAMEA4777493	DTU2017_MG_5_GB_FA	50.1505	-5.0479	United Kingdom				['ERR2683236']	MGYS00003139
+ERS2597442	DTU2017_MG_60_TZ_MW	SAMEA4777494	DTU2017_MG_60_TZ_MW	-2.4711	32.911	Tanzania				['ERR2683237']	MGYS00003139
+ERS2597444	DTU2017_MG_62_PY_SL	SAMEA4777496	DTU2017_MG_62_PY_SL	-25.3288	-57.4893	Paraguay				['ERR2683239']	MGYS00003139
+ERS2597445	DTU2017_MG_63_PY_AS	SAMEA4777497	DTU2017_MG_63_PY_AS	-25.2623	-57.5924	Paraguay				['ERR2683240']	MGYS00003139
+ERS2597447	DTU2017_MG_65_BB_WO	SAMEA4777499	DTU2017_MG_65_BB_WO	13.1489	-59.6247	Barbados				['ERR2683242']	MGYS00003139
+ERS2597448	DTU2017_MG_66_US_WA	SAMEA4777500	DTU2017_MG_66_US_WA	31.5171	-97.0659	USA				['ERR2683243']	MGYS00003139
+ERS2597452	DTU2017_MG_6_GB_CA	SAMEA4777504	DTU2017_MG_6_GB_CA	50.2299	-5.3221	United Kingdom				['ERR2683247']	MGYS00003139
+ERS2597453	DTU2017_MG_70_US_HO_b	SAMEA4777505	DTU2017_MG_70_US_HO_b	29.7003	-95.2665	USA				['ERR2683248']	MGYS00003139
+ERS2597455	DTU2017_MG_72_SE_GO	SAMEA4777507	DTU2017_MG_72_SE_GO	57.6975	11.891	Sweden				['ERR2683250']	MGYS00003139
+ERS2597458	DTU2017_MG_75_DE_BE	SAMEA4777510	DTU2017_MG_75_DE_BE	52.5313	13.223	Germany				['ERR2683253']	MGYS00003139
+ERS2597461	DTU2017_MG_78_BA_BL	SAMEA4777513	DTU2017_MG_78_BA_BL	44.7703	17.2083	Bosnia and Herzegovina				['ERR2683256']	MGYS00003139
+ERS2597463	DTU2017_MG_7_TD_ND	SAMEA4777515	DTU2017_MG_7_TD_ND	12.1348	15.0557	Chad				['ERR2683258']	MGYS00003139
+ERS2597465	DTU2017_MG_81_MT_MS	SAMEA4777517	DTU2017_MG_81_MT_MS	35.8806	14.5544	Malta				['ERR2683260']	MGYS00003139
+ERS2597467	DTU2017_MG_83_MT_GO	SAMEA4777519	DTU2017_MG_83_MT_GO	36.0197	14.2775	Malta				['ERR2683262']	MGYS00003139
+ERS2597468	DTU2017_MG_84_HU_BU	SAMEA4777520	DTU2017_MG_84_HU_BU	47.5692	19.0746	Hungary				['ERR2683263']	MGYS00003139
+ERS2597471	DTU2017_MG_87_LC_GR	SAMEA4777523	DTU2017_MG_87_LC_GR	14.0761		Saint Lucia				['ERR2683266']	MGYS00003139
+ERS2597472	DTU2017_MG_88_IN_CO	SAMEA4777524	DTU2017_MG_88_IN_CO	9.7914	76.3051	India				['ERR2683267']	MGYS00003139
+ERS2597474	DTU2017_MG_8_CI_AB	SAMEA4777526	DTU2017_MG_8_CI_AB	5.3414	-4.0164	Cote d&apos;Ivoire				['ERR2683269']	MGYS00003139
+ERS2597475	DTU2017_MG_90_NG_LA	SAMEA4777527	DTU2017_MG_90_NG_LA	6.6156	3.2628	Nigeria				['ERR2683270']	MGYS00003139
+ERS2597476	DTU2017_MG_91_CI_BO_b	SAMEA4777528	DTU2017_MG_91_CI_BO_b	7.7202	-5.0499	Cote d&apos;Ivoire				['ERR2683271']	MGYS00003139
+ERS2597477	DTU2017_MG_92_BW_GA	SAMEA4777529	DTU2017_MG_92_BW_GA	-24.6074	25.9635	Botswana				['ERR2683272']	MGYS00003139
+ERS2597479	DTU2017_MG_94_US_SE	SAMEA4777531	DTU2017_MG_94_US_SE	47.6619	-122.4313	USA				['ERR2683274']	MGYS00003139
+ERS2597480	DTU2017_MG_95_US_WO	SAMEA4777532	DTU2017_MG_95_US_WO	47.7897	-122.1405	USA				['ERR2683275']	MGYS00003139
+ERS2597483	DTU2017_MG_98_EC_GY	SAMEA4777535	DTU2017_MG_98_EC_GY	-2.1739	-79.9106	Ecuador				['ERR2683278']	MGYS00003139
+ERS2597484	DTU2017_MG_99_EC_CU	SAMEA4777536	DTU2017_MG_99_EC_CU	-2.8775	-78.9439	Ecuador				['ERR2683279']	MGYS00003139
+ERS2597485	DTU2017_MG_9_CI_BO_a	SAMEA4777537	DTU2017_MG_9_CI_BO_a	7.6959	-5.0326	Cote d&apos;Ivoire				['ERR2683280']	MGYS00003139
+ERS2597489	DTU2017_MG_170_NC_B	SAMEA4777541	extraction_control	66.9425	-53.6531	Denmark				['ERR2683526']	MGYS00003139
+ERS2597493	DTU2017_MG_174_NC_F	SAMEA4777545	extraction_control	66.9425	-53.6531	Denmark				['ERR2683530']	MGYS00003139
+ERS2597494	DTU2017_MG_175_NC_G	SAMEA4777546	extraction_control	66.9425	-53.6531	Denmark				['ERR2683531']	MGYS00003139
+ERS2597495	DTU2017_MG_176_NC_H	SAMEA4777547	extraction_control	66.9425	-53.6531	Denmark				['ERR2683532']	MGYS00003139
+ERS2597496	DTU2017_MG_177_NC_I	SAMEA4777548	extraction_control	66.9425	-53.6531	Denmark				['ERR2683533']	MGYS00003139
+ERS2597499	DTU2017_MG_180_NC_L	SAMEA4777551	extraction_control	66.9425	-53.6531	Denmark				['ERR2683536']	MGYS00003139
+ERS2597500	DTU2017_MG_181_NC_M	SAMEA4777552	extraction_control	66.9425	-53.6531	Denmark				['ERR2683537']	MGYS00003139
+ERS2597501	DTU2017_MG_182_NC_N	SAMEA4777553	extraction_control	66.9425	-53.6531	Denmark				['ERR2683538']	MGYS00003139
+											MGYS00003139
+SRS2278348	EF_VA	SAMN07190887	effluent of sewage treatment plant in Hong Hong	37.14	-80.41	"USA: Christiansburg, Virginia"				"['ERZ724506', 'ERZ724508', 'ERZ724509', 'ERZ724511', 'ERZ724530', 'ERZ724535', 'ERZ724547', 'ERZ724548', 'ERZ724555']"	MGYS00005035
+SRS2278349	IN_HK	SAMN07190885	influent of sewage treatment plant in Hong Hong	22.4	114.21	Hong Kong				"['ERZ724502', 'ERZ724503', 'ERZ724515', 'ERZ724518', 'ERZ724531', 'ERZ724534', 'ERZ724540', 'ERZ724553', 'ERZ724558']"	MGYS00005035
+SRS2278350	AS_VA	SAMN07190886	activated sludge of sewage treatment plant in Hong Hong	37.14	-80.41	"USA: Christiansburg, Virginia"				"['ERZ724516', 'ERZ724517', 'ERZ724520', 'ERZ724527', 'ERZ724529', 'ERZ724533', 'ERZ724539', 'ERZ724546', 'ERZ724551', 'ERZ724556', 'ERZ724559']"	MGYS00005035
+SRS2278351	IN_VA	SAMN07190888	influent of sewage treatment plant in Hong Hong	37.14	-80.41	"USA: Christiansburg, Virginia"				"['ERZ724504', 'ERZ724510', 'ERZ724523', 'ERZ724524', 'ERZ724525', 'ERZ724536', 'ERZ724537', 'ERZ724542', 'ERZ724554']"	MGYS00005035
+SRS2278352	AS_HK	SAMN07190883	activated sludge of sewage treatment plant in Hong Hong	22.4	114.21	Hong Kong				"['ERZ724507', 'ERZ724512', 'ERZ724513', 'ERZ724514', 'ERZ724519', 'ERZ724521', 'ERZ724526', 'ERZ724541', 'ERZ724545', 'ERZ724550', 'ERZ724557']"	MGYS00005035
+SRS2278353	EF_HK	SAMN07190884	effluent of sewage treatment plant in Hong Hong	22.4	114.21	Hong Kong				"['ERZ724505', 'ERZ724522', 'ERZ724528', 'ERZ724532', 'ERZ724538', 'ERZ724543', 'ERZ724544', 'ERZ724549', 'ERZ724552']"	MGYS00005035
+ERS3348413	KHAJOD1	SAMEA5546360	"Wastewater (or waste water) is any water that has been affected by human use. Wastewater is &quot;used water from any combination of domestic, industrial, commercial or agricultural activities, surface runoff or stormwater, and any sewer inflow or sewer infiltration&quot;."	21.1161	72.788	India				['ERR3258496']	MGYS00004715
+DRS034400	DRS034400	SAMD00056903	DRS034400	35.6693	139.4257	"Japan:Tokyo, Hachioji"		thermophilic anaerobic methanogenic reactor	water	['DRR066655']	MGYS00001851
+DRS034401	DRS034401	SAMD00056904	DRS034401	35.6693	139.4257	"Japan:Tokyo, Hachioji"		thermophilic anaerobic methanogenic reactor	biofilm	"['DRR066667', 'DRR066656']"	MGYS00001851
+DRS034402	DRS034402	SAMD00056905	DRS034402	35.6693	139.4257	"Japan:Tokyo, Hachioji"		thermophilic anaerobic methanogenic reactor	water	['DRR066657']	MGYS00001851
+DRS034403	DRS034403	SAMD00056906	DRS034403	35.6693	139.4257	"Japan:Tokyo, Hachioji"		thermophilic anaerobic methanogenic reactor	biofilm	"['DRR066668', 'DRR066658']"	MGYS00001851
+DRS034404	DRS034404	SAMD00056907	DRS034404	35.6693	139.4257	"Japan:Tokyo, Hachioji"		thermophilic anaerobic methanogenic reactor	water	['DRR066659']	MGYS00001851
+DRS034405	DRS034405	SAMD00056908	DRS034405	35.6693	139.4257	"Japan:Tokyo, Hachioji"		thermophilic anaerobic methanogenic reactor	biofilm	['DRR066660']	MGYS00001851
+ERS223627	palm oil mill effluent (POME) metagenome	SAMEA2163750	palm oil mill effluent (POME) metagenome	2	101	Malaysia	palm oil mill effluent	closed biodigester	sludge	['ERR276848']	MGYS00001389
+ERS1572689	Black Water Project	SAMEA100930918	Black Water			Netherlands				['ERR1857181']	MGYS00001566
+ERS1572690	Black Water Project	SAMEA100931668	Black Water			Netherlands				['ERR1857182']	MGYS00001566
+ERS1572691	Black Water Project	SAMEA100932418	Black Water			Netherlands				['ERR1857183']	MGYS00001566
+ERS1572692	Black Water Project	SAMEA100933168	Black Water			Netherlands				['ERR1857184']	MGYS00001566
+ERS1572693	Black Water Project	SAMEA100933918	Black Water			Netherlands				['ERR1857185']	MGYS00001566
+ERS1572694	Black Water Project	SAMEA100934668	Black Water			Netherlands				['ERR1857186']	MGYS00001566
+ERS1572695	Black Water Project	SAMEA100935418	Black Water			Netherlands				['ERR1857187']	MGYS00001566
+ERS1572696	Black Water Project	SAMEA100936168	Black Water			Netherlands				['ERR1857188']	MGYS00001566
+ERS1572697	Black Water Project	SAMEA100936918	Black Water			Netherlands				['ERR1857189']	MGYS00001566
+ERS1572698	Black Water Project	SAMEA100937668	Sludge UASB			Netherlands				['ERR1857190']	MGYS00001566
+ERS1572699	Black Water Project	SAMEA100938418	Sludge UASB			Netherlands				['ERR1857191']	MGYS00001566
+ERS1572700	Black Water Project	SAMEA100939168	Sludge UASB			Netherlands				['ERR1857192']	MGYS00001566
+ERS1572701	Black Water Project	SAMEA100939918	Sludge UASB			Netherlands				['ERR1857193']	MGYS00001566
+ERS1572702	Black Water Project	SAMEA100940668	Sludge UASB			Netherlands				['ERR1857194']	MGYS00001566
+ERS1572703	Black Water Project	SAMEA100941418	Sludge UASB			Netherlands				['ERR1857195']	MGYS00001566
+ERS1572704	Black Water Project	SAMEA100942168	Sludge UASB			Netherlands				['ERR1857196']	MGYS00001566
+ERS1572705	Black Water Project	SAMEA100942918	Sludge UASB			Netherlands				['ERR1857197']	MGYS00001566
+ERS1572706	Black Water Project	SAMEA100943668	Sludge UASB			Netherlands				['ERR1857198']	MGYS00001566
+ERS1572707	Black Water Project	SAMEA100944418	Effluent UASB			Netherlands				['ERR1857199']	MGYS00001566
+ERS1572708	Black Water Project	SAMEA100945168	Effluent UASB			Netherlands				['ERR1857200']	MGYS00001566
+ERS1572709	Black Water Project	SAMEA100945918	Effluent UASB			Netherlands				['ERR1857201']	MGYS00001566
+ERS1572710	Black Water Project	SAMEA100946668	Effluent UASB			Netherlands				['ERR1857202']	MGYS00001566
+ERS1572711	Black Water Project	SAMEA100947418	Effluent UASB			Netherlands				['ERR1857203']	MGYS00001566
+ERS1572712	Black Water Project	SAMEA100948168	Effluent UASB			Netherlands				['ERR1857204']	MGYS00001566
+ERS1572713	Black Water Project	SAMEA100948918	Effluent UASB			Netherlands				['ERR1857205']	MGYS00001566
+ERS1572714	Black Water Project	SAMEA100949668	Effluent UASB			Netherlands				['ERR1857206']	MGYS00001566
+ERS1572715	Black Water Project	SAMEA100950418	Effluent UASB			Netherlands				['ERR1857207']	MGYS00001566
+ERS1572716	Black Water Project	SAMEA100951168	Effluent PBR			Netherlands				['ERR1857208']	MGYS00001566
+ERS1572717	Black Water Project	SAMEA100951918	Effluent PBR			Netherlands				['ERR1857209']	MGYS00001566
+ERS1572718	Black Water Project	SAMEA100952668	Effluent PBR			Netherlands				['ERR1857210']	MGYS00001566
+ERS1572719	Black Water Project	SAMEA100953418	Effluent PBR			Netherlands				['ERR1857211']	MGYS00001566
+ERS1572720	Black Water Project	SAMEA100954168	Effluent PBR			Netherlands				['ERR1857212']	MGYS00001566
+ERS1572721	Black Water Project	SAMEA100954918	Effluent PBR			Netherlands				['ERR1857213']	MGYS00001566
+ERS1572722	Black Water Project	SAMEA100955668	Effluent PBR			Netherlands				['ERR1857214']	MGYS00001566
+ERS1572723	Black Water Project	SAMEA100956418	Effluent PBR			Netherlands				['ERR1857215']	MGYS00001566
+ERS1572724	Black Water Project	SAMEA100957168	Effluent PBR			Netherlands				['ERR1857216']	MGYS00001566
+ERS2758580	TG.INF_W56.READ1 Taxonomy ID:256318	SAMEA4939797	TG.INF_W56.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814645']	MGYS00005056
+ERS2758581	FD.INF_W64.READ2 Taxonomy ID:256318	SAMEA4939798	FD.INF_W64.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814646']	MGYS00005056
+ERS2758582	MN.INF_W54.READ1 Taxonomy ID:256318	SAMEA4939799	MN.INF_W54.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814647']	MGYS00005056
+ERS2758583	WT.INF_W60.READ2 Taxonomy ID:256318	SAMEA4939800	WT.INF_W60.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814648']	MGYS00005056
+ERS2758584	ZR.INF_W62.READ2 Taxonomy ID:256318	SAMEA4939801	ZR.INF_W62.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814649']	MGYS00005056
+ERS2758585	ZR.INF_W62.READ1 Taxonomy ID:256318	SAMEA4939802	ZR.INF_W62.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814650']	MGYS00005056
+ERS2758586	AH.INF_W74.READ1 Taxonomy ID:256318	SAMEA4939803	AH.INF_W74.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814651']	MGYS00005056
+ERS2758587	AD.INF_W66.READ1 Taxonomy ID:256318	SAMEA4939804	AD.INF_W66.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814652']	MGYS00005056
+ERS2758588	FR.INF_W72.READ2 Taxonomy ID:256318	SAMEA4939805	FR.INF_W72.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814653']	MGYS00005056
+ERS2758589	FR.INF_W72.READ1 Taxonomy ID:256318	SAMEA4939806	FR.INF_W72.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814654']	MGYS00005056
+ERS2758590	EM.INF_W52.READ2 Taxonomy ID:256318	SAMEA4939807	EM.INF_W52.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814655']	MGYS00005056
+ERS2758591	TU.INF_W68.READ2 Taxonomy ID:256318	SAMEA4939808	TU.INF_W68.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814656']	MGYS00005056
+ERS2758592	TE.INF_W58.READ2 Taxonomy ID:256318	SAMEA4939809	TE.INF_W58.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814657']	MGYS00005056
+ERS2758593	AD.INF_W66.READ2 Taxonomy ID:256318	SAMEA4939810	AD.INF_W66.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814658']	MGYS00005056
+ERS2758594	AH.INF_W74.READ2 Taxonomy ID:256318	SAMEA4939811	AH.INF_W74.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814659']	MGYS00005056
+ERS2758595	FD.INF_W64.READ1 Taxonomy ID:256318	SAMEA4939812	FD.INF_W64.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814660']	MGYS00005056
+ERS2758596	TU.INF_W68.READ1 Taxonomy ID:256318	SAMEA4939813	TU.INF_W68.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814661']	MGYS00005056
+ERS2758597	WT.INF_W60.READ1 Taxonomy ID:256318	SAMEA4939814	WT.INF_W60.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814662']	MGYS00005056
+ERS2758598	TG.INF_W56.READ2 Taxonomy ID:256318	SAMEA4939815	TG.INF_W56.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814663']	MGYS00005056
+ERS2758599	MN.INF_W54.READ2 Taxonomy ID:256318	SAMEA4939816	MN.INF_W54.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814664']	MGYS00005056
+ERS2758600	BE.INF_W70.READ2 Taxonomy ID:256318	SAMEA4939817	BE.INF_W70.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814665']	MGYS00005056
+ERS2758601	BE.INF_W70.READ1 Taxonomy ID:256318	SAMEA4939818	BE.INF_W70.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814666']	MGYS00005056
+ERS2758602	TE.INF_W58.READ1 Taxonomy ID:256318	SAMEA4939819	TE.INF_W58.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814667']	MGYS00005056
+ERS2758603	EM.INF_W52.READ1 Taxonomy ID:256318	SAMEA4939820	EM.INF_W52.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2814668']	MGYS00005056
+ERS2967391	TG.EFF_W57.READ2 Taxonomy ID:256318	SAMEA5159662	TG.EFF_W57.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985255']	MGYS00005058
+ERS2967392	MN.EFF_W55.READ2 Taxonomy ID:256318	SAMEA5159663	MN.EFF_W55.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985256']	MGYS00005058
+ERS2967393	AH.EFF_W75.READ1 Taxonomy ID:256318	SAMEA5159664	AH.EFF_W75.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985257']	MGYS00005058
+ERS2967394	TE.EFF_W59.READ1 Taxonomy ID:256318	SAMEA5159665	TE.EFF_W59.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985258']	MGYS00005058
+ERS2967395	FD.EFF_W65.READ1 Taxonomy ID:256318	SAMEA5159666	FD.EFF_W65.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985259']	MGYS00005058
+ERS2967396	AD.EFF_W67.READ1 Taxonomy ID:256318	SAMEA5159667	AD.EFF_W67.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985260']	MGYS00005058
+ERS2967397	EM.EFF_W53.READ2 Taxonomy ID:256318	SAMEA5159669	EM.EFF_W53.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985261']	MGYS00005058
+ERS2967398	MN.EFF_W55.READ1 Taxonomy ID:256318	SAMEA5159670	MN.EFF_W55.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985262']	MGYS00005058
+ERS2967399	ZR.EFF_W63.READ2 Taxonomy ID:256318	SAMEA5159671	ZR.EFF_W63.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985263']	MGYS00005058
+ERS2967400	FD.EFF_W65.READ2 Taxonomy ID:256318	SAMEA5159672	FD.EFF_W65.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985264']	MGYS00005058
+ERS2967401	AD.EFF_W67.READ2 Taxonomy ID:256318	SAMEA5159673	AD.EFF_W67.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985265']	MGYS00005058
+ERS2967402	ZR.EFF_W63.READ1 Taxonomy ID:256318	SAMEA5159674	ZR.EFF_W63.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985266']	MGYS00005058
+ERS2967403	WT.EFF_W61.READ2 Taxonomy ID:256318	SAMEA5159675	WT.EFF_W61.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985267']	MGYS00005058
+ERS2967404	TG.EFF_W57.READ1 Taxonomy ID:256318	SAMEA5159676	TG.EFF_W57.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985268']	MGYS00005058
+ERS2967405	TU.EFF_W69.READ2 Taxonomy ID:256318	SAMEA5159677	TU.EFF_W69.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985269']	MGYS00005058
+ERS2967406	AH.EFF_W75.READ2 Taxonomy ID:256318	SAMEA5159678	AH.EFF_W75.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985270']	MGYS00005058
+ERS2967407	TE.EFF_W59.READ2 Taxonomy ID:256318	SAMEA5159679	TE.EFF_W59.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985271']	MGYS00005058
+ERS2967408	BE.EFF_W71.READ1 Taxonomy ID:256318	SAMEA5159680	BE.EFF_W71.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985272']	MGYS00005058
+ERS2967409	BE.EFF_W71.READ2 Taxonomy ID:256318	SAMEA5159681	BE.EFF_W71.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985273']	MGYS00005058
+ERS2967410	WT.EFF_W61.READ1 Taxonomy ID:256318	SAMEA5159682	WT.EFF_W61.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985274']	MGYS00005058
+ERS2967411	FR.EFF_W73.READ2 Taxonomy ID:256318	SAMEA5159683	FR.EFF_W73.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985275']	MGYS00005058
+ERS2967412	EM.EFF_W53.READ1 Taxonomy ID:256318	SAMEA5159684	EM.EFF_W53.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985276']	MGYS00005058
+ERS2967413	TU.EFF_W69.READ1 Taxonomy ID:256318	SAMEA5159685	TU.EFF_W69.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985277']	MGYS00005058
+ERS2967414	FR.EFF_W73.READ1 Taxonomy ID:256318	SAMEA5159686	FR.EFF_W73.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2985278']	MGYS00005058
+ERS946133	AS95Spen15102014	SAMEA3638984	AS95Spen15102014	54.7149	-1.614	United Kingdom	Freshwater biome	Wastewater treatment plant	Sewage	['ERR1101751']	MGYS00000555
+SRS1791885	Gp0138790	SAMN05720209	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from China - AD_SCU002_MetaG	30.66	104.06	China				"['ERZ1756056', 'OFEK01']"	MGYS00002316
+											MGYS00002316
+SRS1692508	Gp0138787	SAMN05720207	Active sludge microbial communities of municipal wastewater-treating anaerobic digesters from Hong Kong - AD_UKC113_MetaG	22.28	114.17	Hong Kong				['ERZ724020']	MGYS00003512
+ERS805486	MBR Sludge	SAMEA3498337	MBR Sludge	57.05	9.8654	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR977407']	MGYS00001392
+ERS805487	MBR Sludge	SAMEA3498338	MBR Sludge	57.05	9.8654	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	"['ERR977409', 'ERR977408']"	MGYS00001392
+ERS805488	MBR Sludge	SAMEA3498339	MBR Sludge	57.05	9.8654	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR977410']	MGYS00001392
+ERS805489	MBR Sludge	SAMEA3498340	MBR Sludge	57.05	9.8654	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR977423']	MGYS00001392
+ERS805490	MBR Sludge	SAMEA3498341	MBR Sludge	57.05	9.8654	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR977424']	MGYS00001392
+ERS805491	MBR Sludge	SAMEA3498342	MBR Sludge	57.05	9.8654	Denmark	wastewater treatment plant	wastewater treatment plant	activated sludge	['ERR977425']	MGYS00001392
+ERS805492	ENR4_A	SAMEA3498343	ENR4_A	43.3792	43.7239	Russia	oil well	oil well	biofilm material	['ERR977403']	MGYS00001392
+ERS805493	ENR4_E	SAMEA3498344	ENR4_E	43.3792	43.7239	Russia	oil well	oil well	biofilm material	['ERR977404']	MGYS00001392
+ERS805494	ENR4_F	SAMEA3498345	ENR4_F	43.3792	43.7239	Russia	oil well	oil well	biofilm material	['ERR977405']	MGYS00001392
+ERS805495	ENR6_N3	SAMEA3498346	ENR6_N3	43.3792	43.7239	Russia	oil well	oil well	biofilm material	['ERR977406']	MGYS00001392
+ERS805496	Vetmed_Pskit	SAMEA3498347	Vetmed_Pskit	48.2549	16.4293	Austria	wastewater treatment plant	wastewater treatment plant	activated sludge	"['ERR977411', 'ERR977413', 'ERR977412']"	MGYS00001392
+ERS805497	Vetmed_23	SAMEA3498348	Vetmed_23	48.2549	16.4293	Austria	wastewater treatment plant	wastewater treatment plant	activated sludge	"['ERR977415', 'ERR977416', 'ERR977414']"	MGYS00001392
+ERS805498	GWW_HP_F1	SAMEA3498349	GWW_HP_F1	52.1489	10.5428	Germany	water well	water well	biofilm material	"['ERR977417', 'ERR977419', 'ERR977418']"	MGYS00001392
+ERS805499	GWW_HP_D	SAMEA3498350	GWW_HP_D	52.1489	10.5428	Germany	water well	water well	biofilm material	"['ERR977421', 'ERR977420', 'ERR977422']"	MGYS00001392
+ERS1107870	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920736	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352952', 'ERR1352951']"	MGYS00000777
+ERS1107871	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920737	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352953', 'ERR1352954']"	MGYS00000777
+ERS1107872	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920738	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352955', 'ERR1352956']"	MGYS00000777
+ERS1107873	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920739	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352957', 'ERR1352958']"	MGYS00000777
+ERS1107874	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920740	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352959', 'ERR1352960']"	MGYS00000777
+ERS1107875	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920741	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352962', 'ERR1352961']"	MGYS00000777
+ERS1107846	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920712	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352903', 'ERR1352904']"	MGYS00000777
+ERS1107847	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920713	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352906', 'ERR1352905']"	MGYS00000777
+ERS1107848	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920714	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352907', 'ERR1352908']"	MGYS00000777
+ERS1107849	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920715	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352909', 'ERR1352910']"	MGYS00000777
+ERS1107860	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920726	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352932', 'ERR1352931']"	MGYS00000777
+ERS1107861	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920727	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352934', 'ERR1352933']"	MGYS00000777
+ERS1107862	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920728	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352935', 'ERR1352936']"	MGYS00000777
+ERS1107863	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920729	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352937', 'ERR1352938']"	MGYS00000777
+ERS1107864	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920730	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352940', 'ERR1352939']"	MGYS00000777
+ERS1107865	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920731	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352942', 'ERR1352941']"	MGYS00000777
+ERS1107866	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920732	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352944', 'ERR1352943']"	MGYS00000777
+ERS1107867	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920733	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352946', 'ERR1352945']"	MGYS00000777
+ERS1107850	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920716	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352911', 'ERR1352912']"	MGYS00000777
+ERS1107851	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920717	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352914', 'ERR1352913']"	MGYS00000777
+ERS1107858	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920724	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352928', 'ERR1352927']"	MGYS00000777
+ERS1107859	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920725	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352929', 'ERR1352930']"	MGYS00000777
+ERS1107868	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920734	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352948', 'ERR1352947']"	MGYS00000777
+ERS1107869	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920735	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352949', 'ERR1352950']"	MGYS00000777
+ERS1107852	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920718	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352915', 'ERR1352916']"	MGYS00000777
+ERS1107853	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920719	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352918', 'ERR1352917']"	MGYS00000777
+ERS1107854	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920720	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352920', 'ERR1352919']"	MGYS00000777
+ERS1107855	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920721	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352922', 'ERR1352921']"	MGYS00000777
+ERS1107856	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920722	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352924', 'ERR1352923']"	MGYS00000777
+ERS1107857	Processed metagenomic and transcriptomic activated sludge samples	SAMEA3920723	Processed metagenomic and transcriptomic activated sludge samples	47.4048	8.6097	Switzerland	wastewater	wastewater treatment plant	activated sludge	"['ERR1352925', 'ERR1352926']"	MGYS00000777
+ERS1215575	DTU2016-1135-PRJ1066-RL-Sewage-63_S3_L001	SAMEA4044465	Danish sewage	55.695	12.615	Denmark				"['ERZ1023632', 'ERR1467143']"	MGYS00001135
+ERS1215578	DTU2016-1138-PRJ1066-RD-Sewage-72_S6_L001	SAMEA4044468	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023647', 'ERR1467146']"	MGYS00001135
+ERS1215586	DTU2016-1146-PRJ1066-RL-Sewage-80_S14_L001	SAMEA4044476	Danish sewage	55.695	12.615	Denmark				"['ERZ1023685', 'ERR1467154']"	MGYS00001135
+ERS1217118	DTU2016-1166-PRJ1066-RD-Sewage-69_S8_L001	SAMEA4046008	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023726', 'ERR1470829']"	MGYS00001135
+ERS1230337	DTU2016-1169-PRJ1066-RL-Sewage-82_S11_L001	SAMEA4059227	Danish sewage	55.695	12.615	Denmark				"['ERZ1023741', 'ERR1512985']"	MGYS00001135
+ERS1230347	DTU2016-1492-PRJ1066-RL-Sewage-55_S5_L001	SAMEA4059237	Danish sewage	55.695	12.615	Denmark				"['ERZ1023769', 'ERR1512995']"	MGYS00001135
+ERS1230365	DTU2016-1536-PRJ1066-RL-Sewage-90_S3_L001	SAMEA4059255	Danish sewage	55.695	12.615	Denmark				"['ERZ1023794', 'ERR1513004']"	MGYS00001135
+ERS1230366	DTU2016-1537-PRJ1066-RD-Sewage-91_S4_L001	SAMEA4059256	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023799', 'ERR1513005']"	MGYS00001135
+ERS1230367	DTU2016-1538-PRJ1066-RL-Sewage-92_S5_L001	SAMEA4059257	Danish sewage	55.695	12.615	Denmark				"['ERZ1023802', 'ERR1513006']"	MGYS00001135
+ERS1243510	DTU2016-1601-PRJ1066-RD-Sewage-97_S1	SAMEA4072400	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023831', 'ERR1525434']"	MGYS00001135
+ERS1243512	DTU2016-1605-PRJ1066-RD-Sewage-101_S5	SAMEA4072402	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023836', 'ERR1525436']"	MGYS00001135
+ERS1243515	DTU2016-1610-PRJ1066-RA-Sewage-105_S9	SAMEA4072405	Danish sewage	55.6085	12.4505	Denmark				"['ERZ1023847', 'ERR1525439']"	MGYS00001135
+ERS1243522	DTU2016-1617-PRJ1066-RL-Sewage-49_S16	SAMEA4072412	Danish sewage	55.695	12.615	Denmark				"['ERZ1023879', 'ERR1525446']"	MGYS00001135
+ERS1215584	DTU2016-1144-PRJ1066-RL-Sewage-78_S12_L001	SAMEA4044474	Danish sewage	55.695	12.615	Denmark				"['ERZ1023675', 'ERR1467152']"	MGYS00001135
+ERS1217114	DTU2016-1162-PRJ1066-RL-Sewage-60_S4_L001	SAMEA4046004	Danish sewage	55.695	12.615	Denmark				"['ERZ1023705', 'ERR1470825']"	MGYS00001135
+ERS1217116	DTU2016-1164-PRJ1066-RD-Sewage-67_S6_L001	SAMEA4046006	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023716', 'ERR1470827']"	MGYS00001135
+ERS1217119	DTU2016-1167-PRJ1066-RD-Sewage-70_S9_L001	SAMEA4046009	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023731', 'ERR1470830']"	MGYS00001135
+ERS1230340	DTU2016-1173-PRJ1066-RA-Sewage-86_S15_L001	SAMEA4059230	Danish sewage	55.6085	12.4505	Denmark				"['ERZ1023755', 'ERR1512988']"	MGYS00001135
+ERS1230345	DTU2016-1490-PRJ1066-RA-Sewage-52_S3_L001	SAMEA4059235	Danish sewage	55.6085	12.4505	Denmark				"['ERZ1023760', 'ERR1512993']"	MGYS00001135
+ERS1234045	DTU2016-1571-PRJ1066-RD-Sewage-96_S12_L001	SAMEA4062935	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023821', 'ERR1514429']"	MGYS00001135
+ERS1243513	DTU2016-1606-PRJ1066-RL-Sewage-102_S6	SAMEA4072403	Danish sewage	55.695	12.615	Denmark				"['ERZ1023840', 'ERR1525437']"	MGYS00001135
+ERS1243514	DTU2016-1609-PRJ1066-RD-Sewage-104_S8	SAMEA4072404	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023844', 'ERR1525438']"	MGYS00001135
+ERS1243516	DTU2016-1611-PRJ1066-RL-Sewage-106_S10	SAMEA4072406	Danish sewage	55.695	12.615	Denmark				"['ERZ1023851', 'ERR1525440']"	MGYS00001135
+ERS1243520	DTU2016-1615-PRJ1066-RL-Sewage-50_S14	SAMEA4072410	Danish sewage	55.695	12.615	Denmark				"['ERZ1023868', 'ERR1525444']"	MGYS00001135
+ERS1230339	DTU2016-1171-PRJ1066-RD-Sewage-84_S13_L001	SAMEA4059229	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023750', 'ERR1512987']"	MGYS00001135
+ERS1230350	DTU2016-1496-PRJ1066-RL-Sewage-87_S9_L001	SAMEA4059240	Danish sewage	55.695	12.615	Denmark				"['ERZ1023777', 'ERR1512998']"	MGYS00001135
+ERS1215574	DTU2016-1134-PRJ1066-RL-Sewage-62_S2_L001	SAMEA4044464	Danish sewage	55.695	12.615	Denmark				"['ERZ1023628', 'ERR1467142']"	MGYS00001135
+ERS1215580	DTU2016-1140-PRJ1066-RD-Sewage-74_S8_L001	SAMEA4044470	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023656', 'ERR1467148']"	MGYS00001135
+ERS1215581	DTU2016-1141-PRJ1066-RD-Sewage-75_S9_L001	SAMEA4044471	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023661', 'ERR1467149']"	MGYS00001135
+ERS1230336	DTU2016-1168-PRJ1066-RD-Sewage-71_S10_L001	SAMEA4059226	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023737', 'ERR1512984']"	MGYS00001135
+ERS1234044	DTU2016-1570-PRJ1066-RL-Sewage-95_S11_L001	SAMEA4062934	Danish sewage	55.695	12.615	Denmark				"['ERZ1023815', 'ERR1514428']"	MGYS00001135
+ERS1243519	DTU2016-1614-PRJ1066-RD-Sewage-31_S13	SAMEA4072409	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023864', 'ERR1525443']"	MGYS00001135
+ERS1215582	DTU2016-1142-PRJ1066-RD-Sewage-76_S10_L001	SAMEA4044472	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023667', 'ERR1467150']"	MGYS00001135
+ERS1217113	DTU2016-1161-PRJ1066-RL-Sewage-59_S3_L001	SAMEA4046003	Danish sewage	55.695	12.615	Denmark				"['ERZ1023700', 'ERR1470824']"	MGYS00001135
+ERS1234046	DTU2016-1578-PRJ1066-RD-Sewage-103_S19_L001	SAMEA4062936	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023827', 'ERR1514430']"	MGYS00001135
+ERS1243521	DTU2016-1616-PRJ1066-RA-Sewage-8_S15	SAMEA4072411	Danish sewage	55.6085	12.4505	Denmark				"['ERZ1023875', 'ERR1525445']"	MGYS00001135
+ERS1230349	DTU2016-1494-PRJ1066-RD-Sewage-66_S7_L001	SAMEA4059239	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023773', 'ERR1512997']"	MGYS00001135
+ERS1234043	DTU2016-1569-PRJ1066-RD-Sewage-94_S10_L001	SAMEA4062933	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023811', 'ERR1514427']"	MGYS00001135
+ERS1215576	DTU2016-1136-PRJ1066-RL-Sewage-64_S4_L001	SAMEA4044466	Danish sewage	55.695	12.615	Denmark				"['ERZ1023637', 'ERR1467144']"	MGYS00001135
+ERS1215577	DTU2016-1137-PRJ1066-RL-Sewage-65_S5_L001	SAMEA4044467	Danish sewage	55.695	12.615	Denmark				"['ERZ1023642', 'ERR1467145']"	MGYS00001135
+ERS1215583	DTU2016-1143-PRJ1066-RD-Sewage-77_S11_L001	SAMEA4044473	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023671', 'ERR1467151']"	MGYS00001135
+ERS1217111	DTU2016-1159-PRJ1066-RL-Sewage-57_S1_L001	SAMEA4046001	Danish sewage	55.695	12.615	Denmark				"['ERZ1023689', 'ERR1470822']"	MGYS00001135
+ERS1217117	DTU2016-1165-PRJ1066-RD-Sewage-68_S7_L001	SAMEA4046007	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023721', 'ERR1470828']"	MGYS00001135
+ERS1230364	DTU2016-1535-PRJ1066-RD-Sewage-89_S2_L001	SAMEA4059254	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023787', 'ERR1513003']"	MGYS00001135
+ERS1230338	DTU2016-1170-PRJ1066-RD-Sewage-83_S12_L001	SAMEA4059228	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023745', 'ERR1512986']"	MGYS00001135
+ERS1230346	DTU2016-1491-PRJ1066-RA-Sewage-53_S4_L001	SAMEA4059236	Danish sewage	55.6085	12.4505	Denmark				"['ERZ1023765', 'ERR1512994']"	MGYS00001135
+ERS1230368	DTU2016-1539-PRJ1066-RD-Sewage-93_S6_L001	SAMEA4059258	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023806', 'ERR1513007']"	MGYS00001135
+ERS1243517	DTU2016-1612-PRJ1066-RL-Sewage-107_S11	SAMEA4072407	Danish sewage	55.695	12.615	Denmark				"['ERZ1023856', 'ERR1525441']"	MGYS00001135
+ERS1243518	DTU2016-1613-PRJ1066-RD-Sewage-108_S12	SAMEA4072408	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023860', 'ERR1525442']"	MGYS00001135
+ERS1215579	DTU2016-1139-PRJ1066-RD-Sewage-73_S7_L001	SAMEA4044469	Danish sewage	55.6405	12.5058	Denmark				"['ERZ1023652', 'ERR1467147']"	MGYS00001135
+ERS1215585	DTU2016-1145-PRJ1066-RL-Sewage-79_S13_L001	SAMEA4044475	Danish sewage	55.695	12.615	Denmark				"['ERZ1023681', 'ERR1467153']"	MGYS00001135
+ERS1217115	DTU2016-1163-PRJ1066-RL-Sewage-61_S5_L001	SAMEA4046005	Danish sewage	55.695	12.615	Denmark				"['ERZ1023710', 'ERR1470826']"	MGYS00001135
+ERS1217112	DTU2016-1160-PRJ1066-RL-Sewage-58_S2_L001	SAMEA4046002	Danish sewage	55.695	12.615	Denmark				"['ERZ1023696', 'ERR1470823']"	MGYS00001135
+ERS1215573	DTU2016-1133-PRJ1066-RA-Sewage-54_S1_L001	SAMEA4044463	Danish sewage	55.6085	12.4505	Denmark				"['ERZ1023622', 'ERR1467141']"	MGYS00001135
+ERS1230348	Danish sewage	SAMEA4059238	Danish sewage	55.695	12.615	Denmark				['ERR1512996']	MGYS00001135
+ERS1230363	Danish sewage	SAMEA4059253	Danish sewage	55.695	12.615	Denmark				['ERR1513002']	MGYS00001135
+ERS1230341	Danish sewage	SAMEA4059231	"Negative control sample for samples 57 - 61, 67-71, 82-86"	55.695	12.615	Denmark				['ERR1512989']	MGYS00001135
+ERS1230342	Danish sewage	SAMEA4059232	Danish sewage	55.695	12.615	Denmark				['ERR1512990']	MGYS00001135
+ERS1230343	Danish sewage	SAMEA4059233	Danish sewage	55.6405	12.5058	Denmark				['ERR1512991']	MGYS00001135
+ERS1230344	Danish sewage	SAMEA4059234	Danish sewage	55.695	12.615	Denmark				['ERR1512992']	MGYS00001135
+ERS1230351	Danish sewage	SAMEA4059241	"Negative control for samples; 32, 51-53, 55-56, 66, 87-93"	55.6405	12.5058	Denmark				['ERR1512999']	MGYS00001135
+ERS1230352	Danish sewage	SAMEA4059242	"Negative control for samples; 32, 51-53, 55-56, 66, 87-93"	55.6405	12.5058	Denmark				['ERR1513000']	MGYS00001135
+ERS1230353	Danish sewage	SAMEA4059243	Danish sewage	55.6405	12.5058	Denmark				['ERR1513001']	MGYS00001135
+ERS1243511	Danish sewage	SAMEA4072401	Danish sewage	55.695	12.615	Denmark				['ERR1525435']	MGYS00001135
+ERS1426778	wastewater metagenome	SAMEA4527599	"Tirana, Albania"	41.327	9.818	Albania				"['ERR1725938', 'ERR2592244', 'ERR1713331', 'ERR1713331']"	MGYS00001312
+ERS1426779	wastewater metagenome	SAMEA4527600	"Woden, Australia"	35.345	149.095	Australia				"['ERR2592245', 'ERR1713332', 'ERR1725939', 'ERR1725940', 'ERR2592328', 'ERR1713332']"	MGYS00001312
+ERS1426780	wastewater metagenome	SAMEA4527601	"Melbourne, Australia"	37.914	144.643	Australia				"['ERR1725942', 'ERR1725943', 'ERR1725941', 'ERR1713333', 'ERR1725944', 'ERR1713333']"	MGYS00001312
+ERS1426781	wastewater metagenome	SAMEA4527602	"Vienna, Austria"	48.208	16.373	Austria				"['ERR1725945', 'ERR1713334', 'ERR2592246', 'ERR1725946', 'ERR1713334']"	MGYS00001312
+ERS1426782	wastewater metagenome	SAMEA4527603	"Sofia, Bulgaria"	42.697	23.321	Bulgaria				"['ERR2592247', 'ERR1725947', 'ERR1725948', 'ERR1713335', 'ERR1713335']"	MGYS00001312
+ERS1426783	wastewater metagenome	SAMEA4527604	"Belem, Brasil"	1.455	48.49	Brazil				"['ERR1725949', 'ERR2592248', 'ERR1713336', 'ERR1713336']"	MGYS00001312
+ERS1426784	wastewater metagenome	SAMEA4527605	"Belem, Brasil"	1.455	48.49	Brazil				"['ERR1713337', 'ERR1725950', 'ERR1725951', 'ERR1713337']"	MGYS00001312
+ERS1426785	wastewater metagenome	SAMEA4527606	"Palapye, Botswana"	22.551	27.114	Botswana				"['ERR1725952', 'ERR1725953', 'ERR1713338', 'ERR2592249', 'ERR1713338']"	MGYS00001312
+ERS1426786	wastewater metagenome	SAMEA4527607	"Regina, Canada"	50.445	104.618	Canada				"['ERR2592329', 'ERR1725954', 'ERR1713339', 'ERR1713339']"	MGYS00001312
+ERS1426787	wastewater metagenome	SAMEA4527608	"Calgary, Canada"	51.048	114.07	Canada				"['ERR1725956', 'ERR1725957', 'ERR1725958', 'ERR1713340', 'ERR1725955', 'ERR1713340']"	MGYS00001312
+ERS1426788	wastewater metagenome	SAMEA4527609	"Toronto, Canada"	43.653	79.383	Canada				"['ERR2592250', 'ERR1725960', 'ERR1725959', 'ERR1713341', 'ERR1713341']"	MGYS00001312
+ERS1426789	wastewater metagenome	SAMEA4527610	"Ottawa, Canada"	45.421	75.697	Canada				"['ERR1713342', 'ERR1713342']"	MGYS00001312
+ERS1426790	wastewater metagenome	SAMEA4527611	"Herrenschwanden, Switzerland"	46.948	7.447	Switzerland				"['ERR1725963', 'ERR2592331', 'ERR1725961', 'ERR1725964', 'ERR2592251', 'ERR1713343', 'ERR1725962', 'ERR1713343']"	MGYS00001312
+ERS1426791	wastewater metagenome	SAMEA4527612	"Guangzhou, China"	23.129	113.264	China				"['ERR1713344', 'ERR1713344']"	MGYS00001312
+ERS1426792	wastewater metagenome	SAMEA4527613	"Abidjan, Cote d''Ivoire"	5.36	4.008	Cote d'Ivoire				"['ERR2592252', 'ERR1725965', 'ERR1713345', 'ERR1713345']"	MGYS00001312
+ERS1426793	wastewater metagenome	SAMEA4527614	"Mosquera, Colombia"	4.706	74.23	Colombia				"['ERR1713346', 'ERR1713346']"	MGYS00001312
+ERS1426794	wastewater metagenome	SAMEA4527615	"Brno, Czech Republic"	49.195	16.606	Czech Republic				"['ERR2592253', 'ERR1725966', 'ERR1713347', 'ERR1713347']"	MGYS00001312
+ERS1426795	wastewater metagenome	SAMEA4527616	"Berlin, Germany"	52.52	13.405	Germany				"['ERR1725968', 'ERR2592254', 'ERR2592332', 'ERR1725967', 'ERR1713348', 'ERR1713348']"	MGYS00001312
+ERS1426796	wastewater metagenome	SAMEA4527617	"Copenhagen, Denmark"	55.676	12.568	Denmark				"['ERR1713349', 'ERR1713349']"	MGYS00001312
+ERS1426797	wastewater metagenome	SAMEA4527618	"Copenhagen, Denmark"	55.676	12.568	Denmark				"['ERR1713350', 'ERR1713350']"	MGYS00001312
+ERS1426798	wastewater metagenome	SAMEA4527619	"Copenhagen, Denmark"	55.676	12.568	Denmark				"['ERR1713351', 'ERR1713351']"	MGYS00001312
+ERS1426799	wastewater metagenome	SAMEA4527620	"Quito, Ecuador"	0.18	78.467	Ecuador				"['ERR1713352', 'ERR1713352']"	MGYS00001312
+ERS1426800	wastewater metagenome	SAMEA4527621	"San Cristobal Island, Galapagos, Ecuador"	0.867	89.436	Ecuador				"['ERR1713353', 'ERR2592333', 'ERR1713353']"	MGYS00001312
+ERS1426801	wastewater metagenome	SAMEA4527622	"Barcelona, Spain"	41.385	2.173	Spain				"['ERR2592334', 'ERR1725971', 'ERR1725970', 'ERR1725972', 'ERR1713354', 'ERR1725969', 'ERR1713354']"	MGYS00001312
+ERS1426802	wastewater metagenome	SAMEA4527623	"Addis Ababa, Ethiopia"	8.98	38.757	Ethiopia				"['ERR1713355', 'ERR1713355']"	MGYS00001312
+ERS1426803	wastewater metagenome	SAMEA4527624	"Helsinki, Finland"	60.169	24.938	Finland				"['ERR1713356', 'ERR1725973', 'ERR2592255', 'ERR1713356']"	MGYS00001312
+ERS1426804	wastewater metagenome	SAMEA4527625	"Tbilisi, Georgia"	41.715	44.827	Georgia				"['ERR1713357', 'ERR1725974', 'ERR1725975', 'ERR2592256', 'ERR1713357']"	MGYS00001312
+ERS1426805	wastewater metagenome	SAMEA4527626	"Tamale, Ghana"	9.432	0.848	Ghana				"['ERR1713358', 'ERR1713358']"	MGYS00001312
+ERS1426806	wastewater metagenome	SAMEA4527627	"Banjul, Gambia"	13.454	16.579	Gambia				"['ERR1713359', 'ERR1713359']"	MGYS00001312
+ERS1426807	wastewater metagenome	SAMEA4527628	"Zagreb, Croatia"	45.815	15.981	Croatia				"['ERR1713360', 'ERR1725977', 'ERR1725976', 'ERR2592257', 'ERR2592335', 'ERR1713360']"	MGYS00001312
+ERS1426808	wastewater metagenome	SAMEA4527629	"Budapest, Hungary"	47.497	19.04	Hungary				"['ERR1713361', 'ERR1713361']"	MGYS00001312
+ERS1426809	wastewater metagenome	SAMEA4527630	"Cochin, India"	9.931	76.267	India				"['ERR1725978', 'ERR2592258', 'ERR1713362', 'ERR1713362']"	MGYS00001312
+ERS1426810	wastewater metagenome	SAMEA4527631	"Galway, Ireland"	53.27	9.056	Ireland				"['ERR1725979', 'ERR1725980', 'ERR1713363', 'ERR1713363']"	MGYS00001312
+ERS1426811	wastewater metagenome	SAMEA4527632	"Tehran, Iran"	35.689	51.389	Iran				"['ERR2592259', 'ERR1713364', 'ERR1725981', 'ERR1713364']"	MGYS00001312
+ERS1426812	wastewater metagenome	SAMEA4527633	"Reykjavik, Iceland"	64.126	21.817	Iceland				"['ERR1725982', 'ERR1713365', 'ERR2592260', 'ERR1713365']"	MGYS00001312
+ERS1426813	wastewater metagenome	SAMEA4527634	"Jerusalem, Israel"	31.768	35.213	Israel				"['ERR1725984', 'ERR1713366', 'ERR1725983', 'ERR1713366']"	MGYS00001312
+ERS1426814	wastewater metagenome	SAMEA4527635	"Rome, Italy"	41.902	12.496	Italy				"['ERR1713367', 'ERR1713367']"	MGYS00001312
+ERS1426815	wastewater metagenome	SAMEA4527636	"Almaty, Kazakhstan"	43.222	76.851	Kazakhstan				"['ERR1713368', 'ERR1713368']"	MGYS00001312
+ERS1426816	wastewater metagenome	SAMEA4527637	"Nairobi, Kenya"	1.292	36.821	Kenya				"['ERR1713369', 'ERR1725986', 'ERR2592261', 'ERR1725985', 'ERR1713369']"	MGYS00001312
+ERS1426817	wastewater metagenome	SAMEA4527638	"Phnom Penh, Cambodia"	11.544	104.892	Cambodia				"['ERR1713370', 'ERR1713370']"	MGYS00001312
+ERS1426818	wastewater metagenome	SAMEA4527639	"Colombo, Sri Lanka"	6.927	79.861	Sri Lanka				"['ERR1713371', 'ERR1713371']"	MGYS00001312
+ERS1426819	wastewater metagenome	SAMEA4527640	"Belvaux, Luxembourg"	49.509	5.922	Luxembourg				"['ERR1713372', 'ERR1713372']"	MGYS00001312
+ERS1426820	wastewater metagenome	SAMEA4527641	"Riga, Latvia"	56.949	24.105	Latvia				"['ERR1725987', 'ERR1713373', 'ERR2592262', 'ERR2592336', 'ERR1713373']"	MGYS00001312
+ERS1426821	wastewater metagenome	SAMEA4527642	"Chisinau, Moldova"	47.01	28.863	Moldova				"['ERR1725988', 'ERR1713374', 'ERR1725989', 'ERR1713374']"	MGYS00001312
+ERS1426822	wastewater metagenome	SAMEA4527643	"Skopje, Republic of Macedonia"	41.997	21.428	Macedonia				"['ERR2592263', 'ERR1725990', 'ERR1713375', 'ERR1725991', 'ERR1713375']"	MGYS00001312
+ERS1426823	wastewater metagenome	SAMEA4527644	"St. Venera, Malta"	35.89	14.476	Malta				"['ERR1725992', 'ERR1725993', 'ERR1713376', 'ERR1713376']"	MGYS00001312
+ERS1426824	wastewater metagenome	SAMEA4527645	"Bedong, Malaysia"	5.728	100.507	Malaysia				"['ERR2592264', 'ERR1713377', 'ERR2592337', 'ERR1725995', 'ERR1725994', 'ERR1713377']"	MGYS00001312
+ERS1426825	wastewater metagenome	SAMEA4527646	"Ibadan, Nigeria"	7.377	3.947	Nigeria				"['ERR2592265', 'ERR1713378', 'ERR1725996', 'ERR1713378']"	MGYS00001312
+ERS1426826	wastewater metagenome	SAMEA4527647	"Bilthoven, The Netherlands"	52.136	5.21	Netherlands				"['ERR1725998', 'ERR2592338', 'ERR2592266', 'ERR1713379', 'ERR1725997', 'ERR1713379']"	MGYS00001312
+ERS1426827	wastewater metagenome	SAMEA4527648	"Oslo, Norway"	59.913	10.752	Norway				"['ERR2592267', 'ERR1713380', 'ERR1725999', 'ERR1713380']"	MGYS00001312
+ERS1426828	wastewater metagenome	SAMEA4527649	"Kathmandu, Nepal"	27.717	85.324	Nepal				"['ERR1713381', 'ERR1713381']"	MGYS00001312
+ERS1426829	wastewater metagenome	SAMEA4527650	"Dunedin, New Zealand"	45.878	170.502	New Zealand				"['ERR1713382', 'ERR1713382']"	MGYS00001312
+ERS1426830	wastewater metagenome	SAMEA4527651	"Pulawy, Poland"	51.416	21.969	Poland				"['ERR1713383', 'ERR1726000', 'ERR2592268', 'ERR1713383']"	MGYS00001312
+ERS1426831	wastewater metagenome	SAMEA4527652	"Karachi, Pakistan"	24.861	67.009	Pakistan				"['ERR1713384', 'ERR1713384']"	MGYS00001312
+ERS1426832	wastewater metagenome	SAMEA4527653	"Lima, Peru"	12.046	77.042	Peru				"['ERR1713385', 'ERR1713385']"	MGYS00001312
+ERS1426833	wastewater metagenome	SAMEA4527654	"Dakar, Senegal"	14.764	17.366	Senegal				"['ERR1713386', 'ERR1713386']"	MGYS00001312
+ERS1426834	wastewater metagenome	SAMEA4527655	"Singapore, Singapore"	1.352	103.819	Singapore				"['ERR1713387', 'ERR1726001', 'ERR2592269', 'ERR1713387']"	MGYS00001312
+ERS1426835	wastewater metagenome	SAMEA4527656	"Belgrade, Serbia"	44.786	20.448	Serbia				"['ERR1726002', 'ERR1713388', 'ERR2592270', 'ERR1713388']"	MGYS00001312
+ERS1426836	wastewater metagenome	SAMEA4527657	"Bratislava, Slovakia"	48.148	17.107	Slovakia				"['ERR1713389', 'ERR1726003', 'ERR1713389']"	MGYS00001312
+ERS1426837	wastewater metagenome	SAMEA4527658	"Ljubljana, Slovenia"	46.056	14.505	Slovenia				"['ERR1713390', 'ERR2592271', 'ERR1726004', 'ERR1713390']"	MGYS00001312
+ERS1426838	wastewater metagenome	SAMEA4527659	"Uppsala, Sweden"	59.858	17.638	Sweden				"['ERR1713391', 'ERR1713391']"	MGYS00001312
+ERS1426839	wastewater metagenome	SAMEA4527660	"Gotheborg, Sweden"	57.708	11.974	Sweden				"['ERR1726005', 'ERR1713392', 'ERR1726006', 'ERR1713392']"	MGYS00001312
+ERS1426840	wastewater metagenome	SAMEA4527661	"N''Djamena, Chad"	12.134	15.055	Chad				"['ERR2592272', 'ERR1726008', 'ERR1713393', 'ERR2592339', 'ERR1726007', 'ERR1713393']"	MGYS00001312
+ERS1426841	wastewater metagenome	SAMEA4527662	"Lome, Togo"	6.172	1.231	Togo				"['ERR1713394', 'ERR1713394']"	MGYS00001312
+ERS1426842	wastewater metagenome	SAMEA4527663	"Ankara, Turkey"	39.933	32.859	Turkey				"['ERR2592273', 'ERR1713395', 'ERR1726009', 'ERR1713395']"	MGYS00001312
+ERS1426843	wastewater metagenome	SAMEA4527664	"Moshi, Tanzania"	3.343	37.329	Tanzania				"['ERR1713396', 'ERR1713396']"	MGYS00001312
+ERS1426844	wastewater metagenome	SAMEA4527665	"Atlanta, GA, USA"	33.749	84.388	USA				"['ERR1713397', 'ERR1713397']"	MGYS00001312
+ERS1426845	wastewater metagenome	SAMEA4527666	"Seattle,WA, USA"	47.606	122.332	USA				"['ERR1726010', 'ERR1713398', 'ERR1726011', 'ERR2592274', 'ERR1713398']"	MGYS00001312
+ERS1426846	wastewater metagenome	SAMEA4527667	"Chicago, IL, USA"	41.878	87.629	USA				"['ERR1726014', 'ERR2592340', 'ERR1726012', 'ERR1713399', 'ERR1726015', 'ERR1726013', 'ERR2592275', 'ERR1713399']"	MGYS00001312
+ERS1426847	wastewater metagenome	SAMEA4527668	"Portland,OR, USA"	37.09	95.712	USA				"['ERR2592276', 'ERR1713400', 'ERR1713400']"	MGYS00001312
+ERS1426848	wastewater metagenome	SAMEA4527669	"El Paso, TX, USA"	31.761	106.485	USA				"['ERR1713401', 'ERR1726017', 'ERR2592277', 'ERR1726016', 'ERR1713401']"	MGYS00001312
+ERS1426849	wastewater metagenome	SAMEA4527670	"El Paso, TX, USA"	31.761	106.485	USA				"['ERR1713402', 'ERR1726018', 'ERR1726019', 'ERR2592278', 'ERR1713402']"	MGYS00001312
+ERS1426850	wastewater metagenome	SAMEA4527671	"El Paso, TX, USA"	31.761	106.485	USA				"['ERR1726023', 'ERR1726022', 'ERR2592341', 'ERR2592279', 'ERR1726021', 'ERR1713403', 'ERR1726020', 'ERR1713403']"	MGYS00001312
+ERS1426851	wastewater metagenome	SAMEA4527672	"El Paso, TX, USA"	31.761	106.485	USA				"['ERR2592280', 'ERR1726028', 'ERR1726027', 'ERR1726025', 'ERR1713404', 'ERR1726026', 'ERR1726029', 'ERR2592342', 'ERR1726024', 'ERR1713404']"	MGYS00001312
+ERS1426852	wastewater metagenome	SAMEA4527673	"South Adams County, CO, USA"	39.887	104.828	USA				"['ERR1713405', 'ERR1713405']"	MGYS00001312
+ERS1426853	wastewater metagenome	SAMEA4527674	"Boulder, CO, USA"	40.015	105.27	USA				"['ERR1713406', 'ERR1713406']"	MGYS00001312
+ERS1426854	wastewater metagenome	SAMEA4527675	"Ho Chi Minh, Vietnam"	10.823	106.629	Viet Nam				"['ERR1713407', 'ERR1713407']"	MGYS00001312
+ERS1426855	wastewater metagenome	SAMEA4527676	"Pristina, Kosovo"	42.662	42.662	Kosovo				"['ERR1713408', 'ERR1713408']"	MGYS00001312
+ERS1426856	wastewater metagenome	SAMEA4527677	"Johannesburg, South Africa"	26.204	28.047	South Africa				"['ERR1713409', 'ERR2592281', 'ERR1726030', 'ERR1713409']"	MGYS00001312
+ERS1426857	wastewater metagenome	SAMEA4527678	"Lusaka, Zambia"	15.387	28.322	Zambia				"['ERR1726031', 'ERR2592282', 'ERR1713410', 'ERR1713410']"	MGYS00001312
+ERS1426858	wastewater metagenome	SAMEA4527679	"Kitwe, Zambia"	12.823	28.217	Zambia				"['ERR1726033', 'ERR1726034', 'ERR1713411', 'ERR2592343', 'ERR2592283', 'ERR1726032', 'ERR1726035', 'ERR1713411']"	MGYS00001312
+ERS1100423	sewage sludge soil	SAMEA3913289	sewage sludge soil	120.5	30.5	China	sewage sludge	sewage sludge	sewage sludge	['ERR1341804']	MGYS00000648
+ERS1100422	sewage sludge soil	SAMEA3913288	sewage sludge soil	120.5	30.5	China	sewage sludge	sewage sludge	sewage sludge	['ERR1341803']	MGYS00000648
+ERS2753749	AD.NFC_W90.READ1 Taxonomy ID:256318	SAMEA4934959	AD.NFC_W90.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808645']	MGYS00005055
+ERS2753750	WT.NFC_W84.READ1 Taxonomy ID:256318	SAMEA4934960	WT.NFC_W84.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808646']	MGYS00005055
+ERS2753751	AD.NFC_W90.READ2 Taxonomy ID:256318	SAMEA4934961	AD.NFC_W90.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808647']	MGYS00005055
+ERS2753752	TE.NFC_W82.READ1 Taxonomy ID:256318	SAMEA4934962	TE.NFC_W82.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808648']	MGYS00005055
+ERS2753753	TU.NFC_W92.READ2 Taxonomy ID:256318	SAMEA4934963	TU.NFC_W92.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808649']	MGYS00005055
+ERS2753754	TE.NFC_W82.READ2 Taxonomy ID:256318	SAMEA4934964	TE.NFC_W82.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808650']	MGYS00005055
+ERS2753755	AH.NFC_W97.READ2 Taxonomy ID:256318	SAMEA4934965	AH.NFC_W97.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808651']	MGYS00005055
+ERS2753756	ZR.NFC_W86.READ1 Taxonomy ID:256318	SAMEA4934966	ZR.NFC_W86.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808652']	MGYS00005055
+ERS2753757	MN.NFC_W78.READ2 Taxonomy ID:256318	SAMEA4934967	MN.NFC_W78.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808653']	MGYS00005055
+ERS2753758	BE.NFC_W94.READ2 Taxonomy ID:256318	SAMEA4934968	BE.NFC_W94.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808654']	MGYS00005055
+ERS2753759	TG.NFC_W80.READ2 Taxonomy ID:256318	SAMEA4934969	TG.NFC_W80.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808655']	MGYS00005055
+ERS2753760	FD.NFC_W88.READ2 Taxonomy ID:256318	SAMEA4934970	FD.NFC_W88.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808656']	MGYS00005055
+ERS2753761	TG.NFC_W80.READ1 Taxonomy ID:256318	SAMEA4934971	TG.NFC_W80.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808657']	MGYS00005055
+ERS2753762	ZR.NFC_W86.READ2 Taxonomy ID:256318	SAMEA4934972	ZR.NFC_W86.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808658']	MGYS00005055
+ERS2753763	FR.NFC_W95.READ2 Taxonomy ID:256318	SAMEA4934973	FR.NFC_W95.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808659']	MGYS00005055
+ERS2753764	AH.NFC_W97.READ1 Taxonomy ID:256318	SAMEA4934974	AH.NFC_W97.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808660']	MGYS00005055
+ERS2753765	WT.NFC_W84.READ2 Taxonomy ID:256318	SAMEA4934975	WT.NFC_W84.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808661']	MGYS00005055
+ERS2753766	FD.NFC_W88.READ1 Taxonomy ID:256318	SAMEA4934976	FD.NFC_W88.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808662']	MGYS00005055
+ERS2753767	EM.NFC_W76.READ2 Taxonomy ID:256318	SAMEA4934977	EM.NFC_W76.READ2 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808663']	MGYS00005055
+ERS2753768	TU.NFC_W92.READ1 Taxonomy ID:256318	SAMEA4934978	TU.NFC_W92.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808664']	MGYS00005055
+ERS2753769	EM.NFC_W76.READ1 Taxonomy ID:256318	SAMEA4934979	EM.NFC_W76.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808665']	MGYS00005055
+ERS2753770	FR.NFC_W95.READ1 Taxonomy ID:256318	SAMEA4934980	FR.NFC_W95.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808666']	MGYS00005055
+ERS2753771	MN.NFC_W78.READ1 Taxonomy ID:256318	SAMEA4934981	MN.NFC_W78.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808667']	MGYS00005055
+ERS2753772	BE.NFC_W94.READ1 Taxonomy ID:256318	SAMEA4934982	BE.NFC_W94.READ1 Taxonomy ID:256318	46.8182	8.2275	Switzerland	aquatic biome	wastewater treatment plant	water	['ERR2808668']	MGYS00005055
