@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+ERR3201918,s3://ngi-igenomes/test-data/mag/ERR3201918_1.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201918_2.fastq.gz
+ERR3201928,s3://ngi-igenomes/test-data/mag/ERR3201928_1.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201928_2.fastq.gz
+ERR3201914,s3://ngi-igenomes/test-data/mag/ERR3201914_1.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201914_2.fastq.gz
