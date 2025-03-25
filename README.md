@@ -647,6 +647,54 @@ kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-210-l150 -i list.txt
 kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp
 ```
 
+#### sylph
+
+For the full test dataset, a custom taxonomy file was created.
+
+Assign the corresponding taxids to the full test dataset using the script
+
+```
+#!/bin/bash
+
+echo -e "Acession\tTaxID" > "$taxid_results.tsv"
+
+for dir in /path/to/GCA_*; do
+    accession=$(basename "$dir")
+
+    # Query NCBI for the taxid
+    taxid=$(esearch -db assembly -query "$accession" | efetch -format docsum | xtract -pattern DocumentSummary -element Taxid)
+
+    # Handle cases where taxid is empty
+    if [[ -z "$taxid" ]]; then
+        taxid="NA"
+    fi
+
+    # Append result to file
+    echo -e "${accession}\t${taxid}" >> "$taxid_results"
+done
+```
+
+Download the taxdump:
+
+```
+wget http://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
+```
+
+Prepare the taxonomy file:
+
+```
+cat taxid_results.tsv | awk '{print $2}' | taxonkit lineage > lineage.txt
+awk 'NR==FNR {a[$1] = $0; next} $2 in a {print $0, a[$2]}' lineage.txt taxid_results.tsv > merged.txt
+awk '{$2=$3=""; print $0}' merged.txt > custom_taxonomy.tsv
+```
+
+ Make sure there is one tab in the final taxonomy file
+
+```
+ sed 's/  */\t/g' custom_taxonomy.tsv > sylph_taxonomy.tsv
+```
+
+
 ## Database Archive Creation
 
 To make the compressed TAR, we must make sure all symlinks are followed as necessary. It is recommended to run the cleanup commands below _prior_ to archiving, however it is critical that Bracken archiving is performed BEFORE running the Kraken2 cleanup.
