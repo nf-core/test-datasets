@@ -4,18 +4,18 @@ global_params:
 columns:
   - column_name : "dna"
     column_type : "input"
-    data_type : str
     encoder:
       - name: TextOneHotEncoder
         params:
           alphabet: "acgt"
+          dtype: str
 
   - column_name : "binding"
     column_type : "label"
-    data_type : int
     encoder:
       - name: NumericEncoder
         params:
+          dtype: int8
 
 transforms:
   - transformation_name: 'reverse_complement'
