@@ -738,6 +738,12 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - ska
       - 'plasmodium_reduced.ska': SKA sketch file generated from a small fragment of the P. falciparum reference genome
 
+
+### imaging
+- staging
+  - '8_cycle1/*.tif': Synthetic image data simulating the naming nomenclature of MACSIma platform. Intensity was created using ```numpy.uint16( 65535* numpy.random.rand(256,256) )```. File names and xml metadata comment were transplanted from real MACSIma files.
+
+
 ### pangenomics
 
 - homo_sapiens
@@ -777,10 +783,6 @@ The spatial_omics folder contains subfolders for different platforms in the emer
 - pdb
   - 1tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Engineered)
   - 8tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Breast)
-
-### imaging
-- staging
-  - '8_cycle1/*.tif': Synthetic image data simulating the naming nomenclature of MACSIma platform. Intensity was created using ```numpy.uint16( 65535* numpy.random.rand(256,256) )```. File names and xml metadata comment were transplanted from real MACSIma files.
 
 ### spatialomics
 
