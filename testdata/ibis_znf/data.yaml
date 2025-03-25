@@ -8,7 +8,7 @@ columns:
       - name: TextOneHotEncoder
         params:
           alphabet: "acgt"
-          dtype: str
+          dtype: float32
 
   - column_name : "binding"
     column_type : "label"
