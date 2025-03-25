@@ -4,48 +4,15 @@
   variable: 'tf_name'
   target: 'ZNF367'
   background: 'LEUTX,ZNF395'
-- id: LEUTX_aliens
-  protocol: 'ibis'
-  background_type: 'aliens'
-  variable: 'tf_name'
-  target: 'LEUTX'
-  background: 'ZNF367,ZNF395'
-- id: ZNF395_aliens
-  protocol: 'ibis'
-  background_type: 'aliens'
-  variable: 'tf_name'
-  target: 'ZNF395'
-  background: 'ZNF367,LEUTX'
 - id: ZNF367_shade
   protocol: 'ibis'
   background_type: 'shade'
   variable: 'tf_name'
   target: 'ZNF367'
   shade_args: '-s 300'
-- id: LEUTX_shade
-  protocol: 'ibis'
-  background_type: 'shade'
-  variable: 'tf_name'
-  target: 'LEUTX'
-  shade_args: '-s 300'
-- id: ZNF395_shade
-  protocol: 'ibis'
-  background_type: 'shade'
-  variable: 'tf_name'
-  target: 'ZNF395'
-  shade_args: '-s 300'
 - id: ZNF367_shuffle
   protocol: 'ibis'
   background_type: 'shuffle'
   variable: 'tf_name'
   target: 'ZNF367'
-- id: LEUTX_shuffle
-  protocol: 'ibis'
-  background_type: 'shuffle'
-  variable: 'tf_name'
-  target: 'LEUTX'
-- id: ZNF395_shuffle
-  protocol: 'ibis'
-  background_type: 'shuffle'
-  variable: 'tf_name'
-  target: 'ZNF395'
+  
