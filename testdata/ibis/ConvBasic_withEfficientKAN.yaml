@@ -1,6 +1,6 @@
-max_samples: 1000
-compute_objective_every_n_samples: 100
-n_trials: 5
+max_samples: 10000
+compute_objective_every_n_samples: 160
+n_trials: 10
 
 network_params:
   sequence_length: 
@@ -70,5 +70,5 @@ sampler:
   params:
 
 objective:
-  metric: val_rocauc
-  direction: maximize
+  metric: val_loss
+  direction: minimize
