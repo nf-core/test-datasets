@@ -1,1 +1,0 @@
-Optional description for section.
