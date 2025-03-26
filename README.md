@@ -14,7 +14,6 @@ The principle for nf-core test data is as small as possible, as large as necessa
 nf-core/test-datasets comes with documentation in the `docs/` directory:
 
 01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
 ## Downloading test data
 
