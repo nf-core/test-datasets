@@ -1,0 +1,12 @@
+- id: SP140_shade
+  protocol: 'ibis'
+  background_type: 'shade'
+  variable: 'tf_name'
+  target: 'SP140'
+  shade_args: '-s 40'
+- id: SP140_shuffle
+  protocol: 'ibis'
+  background_type: 'shuffle'
+  variable: 'tf_name'
+  target: 'SP140'
+  
