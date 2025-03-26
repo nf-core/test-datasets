@@ -1,0 +1,4 @@
+sampleID	forwardReads	reverseReads	run
+sample_1	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/plant_ts_1_R1.fastq.gz	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/plant_ts_1_R2.fastq.gz	1
+sample_2	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/plant_ts_2_R1.fastq.gz	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/plant_ts_2_R2.fastq.gz	2
+
