@@ -132,24 +132,26 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - PRG_test: zipped directory to build a test Population Reference Graph‚
   - illumina
     - bam
+      - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.sorted.bam': sorted version of the above bam file
-      - 'test.paired_end.methylated.bam.sorted.bam.bai': bam index for the sorted bam file
+      - 'test.paired_end.methylated.sorted.bam.bai': bam index for the sorted bam file
+      - 'test.paired_end.methylated.sorted.bam.csi': csi index for the sorted bam file
       - 'test.paired_end.name.sorted.bam': Paired-end bam file sorted by name
-      - 'test.paired_end.umi.sorted.bam' : Position sorted alignment of 'test.umi_extract\_{1,2}.fastq.gz'
-      - 'test.single_end.bam': alignment (unsorted) of the 'test_1.fastq.gz' reads against test_genomic.fasta using minimap2
-      - 'test.single_end.umi.sorted.bam' : Position sorted alignment of 'test.umi_extract_single.fastq.gz'
+      - 'test.paired_end.sorted.bam': Paired-end bam file
+      - 'test.paired_end.sorted.bam.bai': bam index for the sorted bam file 
+      - 'test.paired_end.sorted.bam.csi': csi index for the sorted bam file 
+      - 'test.paired_end.umi.sorted.bam': Position sorted alignment of 'test.umi_extract\_{1,2}.fastq.gz'
+      - 'test.paired_end.umi.sorted.bam.bai': bam index for the sorted bam file
+      - 'test.paired_end.umi.sorted.bam.csi': csi index for the sorted bam file
+      - 'test.single_end.bam': Single end bam file
+      - 'test.single_end.sorted.bam': Sorted single end bam file
+      - 'test.single_end.sorted.bam.bai': bam index for the sorted bam file
+      - 'test.single_end.sorted.bam.csi': csi index for the sorted bam file
+      - 'test.single_end.umi.sorted.bam': Position sorted alignment of 'test.umi_extract_1.fastq.gz'
+      - 'test.single_end.umi.sorted.bam.bai': bam index for the sorted bam file
+      - 'test.single_end.umi.sorted.bam.csi': csi index for the sorted bam file
       - 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
-      - 'test.PGx.CYP2D6.bam': Paired-end mapped reads mapped to pharmacogenomics genes CYP2D6 and CYP2D7 on GRCh37 (HG00436)
-      - 'test.PGx.CYP2D6.bam.bai': BAM index for 'test.PGx.CYP2D6.bam'
-      - 'read_group_settings.txt': a simple textfile containing the readgroup settings '1 paired' primarily used for the atlas/splitmerge module
-      - 'purecn_ex1.bam': Example BAM file used to test PureCN/coverage
-      - 'purecn_ex1.bam.bai': BAM index for 'purecn_ex1.bam'
-      - 'purecn_ex1_intervals.txt': File containing genomic intervals to be used for testing PureCN/coverage
-      - 'purecn_ex1_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
-      - 'purecn_ex2_normal.txt.gz': Example normal coverage file used to test PureCN/normaldb
-      - 'purecn_normalpanel.vcf.gz': Example normal VCF to be used for testing PureCN/normaldb
-      - 'purecn_normalpanel.vcf.gz.tbi': Index file for 'purecn_normalpanel.vcf.gz'
     - bcl
       - '200624_A00834_0183_BHMTFYDRXX.tar.gz': NovaSeq 6000 flowcell. Only the first tile of the first lane has been kept to reduce the size of the dataset
       - 'SampleSheet.csv': The corresponding samplesheet.
