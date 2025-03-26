@@ -3,7 +3,10 @@ compute_objective_every_n_samples: 100
 n_trials: 5
 
 network_params:
-  sequence_length: 40
+  sequence_length: 
+    params:
+      choices: [40]
+    mode: categorical
   conv_kernel_number:
     params:
       low: 3
