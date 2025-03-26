@@ -130,6 +130,13 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - graphtyper: files for testing graphtyper‚
       - regions.txt: chromosome names and positions for MT192765.1 genome
     - PRG_test: zipped directory to build a test Population Reference Graph‚
+  - gsmr
+    - 'sumstats.tsv': GWAS Summary statistics of variants from a subset of chr6, in the GCTA-Cojo format
+    - 'sumstats_copy.tsv': A copy of sumstats.tsv file, to be used as an outcome file
+    - bfile
+	- 'bfile.bed': plink bed file with variants matching the sumstats file
+	- 'bfile.bim': plink bim file with variants matching the sumstats file
+	- 'bfile.fam': plink fam file with variants matching the sumstats file
   - illumina
     - bam
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
