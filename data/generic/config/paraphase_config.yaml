@@ -1,0 +1,8 @@
+PRODH:
+  genes: PRODH
+  realign_region: chr22:18912281-18936793
+  extract_regions: chr22:18912282-18936793 chr22_KI270734v1_random:137587-162092
+  left_boundary: 18912283
+  right_boundary: 18936792
+  expect_cn2: True
+  noisy_region: [[18913128, 18913160], [18921716, 18921743]]

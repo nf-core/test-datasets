@@ -1,0 +1,80 @@
+[
+    {
+      "variantType": "Duplication",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 500,
+      "percentDistance": 0.25,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "Deletion",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 500,
+      "percentDistance": 0.25,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "CopyNumberGain",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 500,
+      "percentDistance": 0.25,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "CopyNumberLoss",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 500,
+      "percentDistance": 0.25,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "CopyNumberReference",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 500,
+      "percentDistance": 0.25,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "Inversion",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 500,
+      "percentDistance": 0.25,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "IntraChromosomeBreakend",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 500,
+      "percentDistance": 0.25,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "Insertion",
+      "includeBed": "",
+      "binSizes": "1000,10000",
+      "bpDistance": 100,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    },
+    {
+      "variantType": "TranslocationBreakend",
+      "includeBed": "",
+      "bpDistance": 500,
+      "includedFilters": "PASS",
+      "excludedFilters": ""
+    }
+  ]

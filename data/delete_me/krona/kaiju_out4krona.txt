@@ -1,0 +1,9 @@
+1	root	cellular organisms	Bacteria	Terrabacteria group	Actinobacteria	Coriobacteriia	Coriobacteriales	Coriobacteriaceae	Collinsella	unclassified Collinsella	Collinsella sp. An307
+2	root	cellular organisms	Bacteria	Terrabacteria group	Firmicutes	Bacilli	Bacillales	Staphylococcaceae	Staphylococcus	Staphylococcus aureus
+1	root	cellular organisms	Bacteria	Terrabacteria group	Actinobacteria	Actinomycetia	Streptomycetales	Streptomycetaceae	Streptomyces	Streptomyces avidinii
+1	root	cellular organisms	Bacteria	FCB group	Bacteroidetes/Chlorobi group	Bacteroidetes	Sphingobacteriia	Sphingobacteriales	unclassified Sphingobacteriales
+1	root	cellular organisms	Bacteria	Terrabacteria group	Firmicutes	Bacilli	Bacillales	Staphylococcaceae	Staphylococcus
+1	root	cellular organisms	Bacteria	Terrabacteria group	Firmicutes	Bacilli	Bacillales	Staphylococcaceae
+5	root	cellular organisms	Bacteria	Terrabacteria group	Firmicutes	Bacilli	Bacillales
+1	root	cellular organisms	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	unclassified Sphingomonas
+8	root	cellular organisms	Bacteria

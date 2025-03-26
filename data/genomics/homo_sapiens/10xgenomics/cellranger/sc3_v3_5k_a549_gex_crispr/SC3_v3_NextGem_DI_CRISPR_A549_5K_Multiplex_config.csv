@@ -1,0 +1,12 @@
+[gene-expression]
+reference,/path/to/references/refdata-gex-GRCh38-2020-A
+expect-cells,5000
+
+[feature]
+reference,/path/to/feature_refs/SC3P_CellPlex_Set_A_millipore_pool_v2_jul_2020.csv
+
+[libraries]
+fastq_id,fastqs,lanes,physical_library_id,feature_types,subsample_rate
+SC3_v3_NextGem_DI_CRISPR_A549_5K_gex,/path/to/fastqs/SC3_v3_NextGem_DI_CRISPR_A549_5K/SC3_v3_NextGem_DI_CRISPR_A549_5K_gex,any,CRISPR_A549_5K_gex,gene expression,
+SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr,/path/to/fastqs/SC3_v3_NextGem_DI_CRISPR_A549_5K/SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr,any,CRISPR_A549_5K_crispr,Crispr Guide Capture,
+

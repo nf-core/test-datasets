@@ -1,0 +1,3 @@
+#<METADATA>SAMPLE=tumour
+contig	start	end	minor_allele_fraction
+chr21	15825227	44259057	0.11578047329359388

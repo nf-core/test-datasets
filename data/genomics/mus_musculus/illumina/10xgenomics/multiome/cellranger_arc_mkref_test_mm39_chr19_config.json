@@ -1,0 +1,7 @@
+{
+    organism: "mm39"
+    genome: ["cellrangerarc_reference"]
+    input_fasta: ["chr19.fa"]
+    input_gtf: ["chr19.filtered.gtf.gz"]
+    input_motifs: "genome_motifs.txt"
+}

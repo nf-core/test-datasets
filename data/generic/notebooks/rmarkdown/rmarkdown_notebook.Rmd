@@ -1,0 +1,53 @@
+---
+title: "Test notebook"
+output: html_document
+params:
+  meta: NULL
+  input_dir: NULL
+  artifact_dir: NULL
+  cpus: 1 
+  input_filename: NULL
+  n_iter: 10
+---
+
+## Running from Nextflow
+
+ * input_dir = `r params$input_dir`
+ * artifact_dir = `r params$artifact_dir`
+ * cpus = `r params$cpus`
+ * n_iter = `r params$n`
+ * input_filename = `r params$input_filename`
+ * meta.id = `r params$meta$id`
+ 
+ 
+## Read an input file
+
+```{r}
+if(!is.null(params$input_dir)) {
+  file_content = readLines(file.path(params$input_dir, params$input_filename))
+  cat(file_content)
+}
+```
+
+
+## Print "Hello World" `n` times: 
+```{r}
+for(i in 1:params$n_iter) {
+  print(paste0("Hello World ", i))
+}
+```
+
+## Include a plot
+
+```{r}
+plot(1:10)
+```
+
+## Write an output file
+
+```{r}
+if(!is.null(params$artifact_dir)) {
+  cat("Hello World", file=file.path(params$artifact_dir, "artifact.txt"))
+}
+```
+

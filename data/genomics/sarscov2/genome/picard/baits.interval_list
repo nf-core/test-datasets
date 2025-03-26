@@ -1,0 +1,7 @@
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:MT192765.1	LN:29829	M5:c95f3e5592d0ad9974e41e7f0ea14eb0	UR:https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/sarscov2/genome/genome.dict
+MT192765.1	1099	1127	+	.
+MT192765.1	4191	4255	+	.
+MT192765.1	5698	5716	+	.
+MT192765.1	5799	5807	+	.
+MT192765.1	11218	11253	+	.

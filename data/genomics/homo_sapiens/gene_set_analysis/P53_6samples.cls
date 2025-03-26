@@ -1,0 +1,4 @@
+6 2 1
+#MUT WT
+MUT MUT MUT WT WT WT
+

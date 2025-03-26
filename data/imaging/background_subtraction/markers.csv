@@ -1,0 +1,9 @@
+channel,cycle,marker_name,exposure,background,remove
+1,1,DNA 1,100,,
+2,1,Na/K ATPase,100,,
+3,1,CD3,100,,
+4,1,CD45RO,100,,
+5,2,DNA 2,100,,TRUE
+6,2,Antigen Ki67,100,Na/K ATPase,
+7,2,Pan-cytokeratin,100,CD3,
+8,2,Aortic smooth muscle actin,100,CD45RO,

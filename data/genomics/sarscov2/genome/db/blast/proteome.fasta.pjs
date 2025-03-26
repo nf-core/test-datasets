@@ -1,0 +1,24 @@
+{
+  "version": "1.2",
+  "dbname": "proteome.fasta",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "proteome.fasta",
+  "number-of-letters": 14149,
+  "number-of-sequences": 12,
+  "last-updated": "2024-03-20T17:02:00",
+  "number-of-volumes": 1,
+  "bytes-total": 68234,
+  "bytes-to-cache": 14362,
+  "files": [
+    "proteome.fasta.pdb",
+    "proteome.fasta.phr",
+    "proteome.fasta.pin",
+    "proteome.fasta.pog",
+    "proteome.fasta.pos",
+    "proteome.fasta.pot",
+    "proteome.fasta.psq",
+    "proteome.fasta.ptf",
+    "proteome.fasta.pto"
+  ]
+}

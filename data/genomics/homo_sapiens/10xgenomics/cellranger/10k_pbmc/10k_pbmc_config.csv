@@ -1,0 +1,13 @@
+[gene-expression]
+reference,/path/to/references/refdata-gex-GRCh38-2020-A
+expect-cells,10000
+[vdj]
+reference,/path/to/references/refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0
+[feature]
+reference,/path/to/feature_references/sc5p_v2_hs_PBMC_10k_feature_ref.csv
+[libraries]
+fastq_id,fastqs,lanes,feature_types,subsample_rate
+sc5p_v2_hs_PBMC_10k_5gex,/path/to/fastqs/gex/sc5p_v2_hs_PBMC_10k_5gex_5fb_fastqs/sc5p_v2_hs_PBMC_10k_5gex_fastqs,1|2,gene expression,
+sc5p_v2_hs_PBMC_10k_5fb,/path/to/fastqs/gex/sc5p_v2_hs_PBMC_10k_5gex_5fb_fastqs/sc5p_v2_hs_PBMC_10k_5fb_fastqs,1|2,antibody capture,
+sc5p_v2_hs_PBMC_10k_b,/path/to/fastqs/vdj/sc5p_v2_hs_PBMC_10k_b_fastqs,1|2,vdj-b,
+sc5p_v2_hs_PBMC_10k_t,/path/to/fastqs/vdj/sc5p_v2_hs_PBMC_10k_t_fastqs,1|2,vdj-t,

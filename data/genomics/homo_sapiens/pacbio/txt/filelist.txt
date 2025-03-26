@@ -1,0 +1,2 @@
+alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.bed	capped	1,1,1	GM1
+alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.2.bed	capped	1,1,1	GM2

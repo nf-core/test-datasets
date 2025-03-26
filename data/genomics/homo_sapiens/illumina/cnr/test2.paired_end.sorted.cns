@@ -1,0 +1,2 @@
+chromosome	start	end	gene	log2	depth	probes	weight	ci_lo	ci_hi
+chr22	0	6666	-	0	98.0404	2	1.99714	-0.0226836	0.0184352
