@@ -1,0 +1,6 @@
+channel_number,cycle_number,marker_name,background,exposure
+1,1,DAPI,,20
+2,1,Cy5,,200
+3,1,TRITC,,200
+4,2,TNNT2,Cy5,200
+5,2,WGA,TRITC,200
