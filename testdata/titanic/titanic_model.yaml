@@ -1,6 +1,6 @@
 max_samples: 1400
 compute_objective_every_n_samples: 32
-n_trials: 10
+n_trials: 2
 
 network_params:
   nb_neurons_intermediate_layer:
