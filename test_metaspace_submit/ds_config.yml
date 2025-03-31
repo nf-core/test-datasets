@@ -1,8 +1,5 @@
 #Please check https://metaspace2020.org/upload for more information on the fields and their values
 
-User_info:
-  API_key: "Y8WzgMaGC1dy" # your Metaspace API key
-
 Dataset_name: "Test metaspace submit nf-core module" # Name of the dataset
 
 Sample_Information:
