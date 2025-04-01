@@ -1,3 +1,3 @@
-sample,fasta
+id,fasta
 snap25,https://raw.githubusercontent.com/nf-core/test-datasets/kmerseek/reference/snap25_isoforms_human_P60880.fasta
 
