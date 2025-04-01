@@ -18,4 +18,3 @@ List of regulator genes for which the regulon network will be created. `/data/re
 ## Expression Data Matrix
 
 Gene (rows) expression TPMs per sample (column). `/data/expression_matrix.tsv` was generated from taking 5 first samples (columns) from the tool's repo [`exp_mat.txt.gz`](https://github.com/califano-lab/ARACNe3/blob/3d8791a23e3bd8fd0d74f3b8d48f912e81d00f14/data/exp_mat.txt.gz) file.
-
