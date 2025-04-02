@@ -674,24 +674,19 @@ for dir in /path/to/GCA_*; do
 done
 ```
 
-Download the taxdump:
+To get the taxonomy with the prefixes, please run the following command:
 
 ```
-wget http://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
-```
+tail -n +2 taxid_results.tsv   | while read accession taxid; do taxonomy=$(echo "$taxid" | taxonkit reformat2 -I 1 -f "{domain|superkingdom}\t{phylum}\t{class}\t{or
+        | csvtk replace -Ht -f 2 -p ^ -r d__ \
+        | csvtk replace -Ht -f 3 -p ^ -r p__ \
+        | csvtk replace -Ht -f 4 -p ^ -r c__ \
+        | csvtk replace -Ht -f 5 -p ^ -r o__ \
+        | csvtk replace -Ht -f 6 -p ^ -r f__ \
+        | csvtk replace -Ht -f 7 -p ^ -r g__ \
+        | csvtk replace -Ht -f 8 -p ^ -r s__  \
+        | sed 's/\t/;/g' | sed 's/;/\t/');     echo -e "$accession\t$taxonomy"; done  > sylph_taxonomy.tsv
 
-Prepare the taxonomy file:
-
-```
-cat taxid_results.tsv | awk '{print $2}' | taxonkit lineage > lineage.txt
-awk 'NR==FNR {a[$1] = $0; next} $2 in a {print $0, a[$2]}' lineage.txt taxid_results.tsv > merged.txt
-awk '{$2=$3=""; print $0}' merged.txt > custom_taxonomy.tsv
-```
-
- Make sure there is one tab in the final taxonomy file
-
-```
- sed 's/  */\t/g' custom_taxonomy.tsv > sylph_taxonomy.tsv
 ```
 
 
