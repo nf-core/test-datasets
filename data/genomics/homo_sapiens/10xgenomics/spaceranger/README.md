@@ -75,9 +75,6 @@ tar xvf Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_fastqs.tar
 
 # Create subsampled dataset with ImageMagick
 # https://imagemagick.org/index.php
-mkdir subsampled
-convert Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf -compress JPEG -quality 1 subsampled/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf
-cp Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_image.tif subsampled/
 
 # Untar the reference genome
 tar xvfz refdata-gex-GRCh38-2020-A.tar.gz
@@ -101,4 +98,8 @@ spaceranger count \
 # Subsample the bam file to get a smaller test dataset, based on a set of barcodes
 subset-bam --bam ./outs/possorted_genome_bam.bam --cell-barcodes ./filtered_barcodes.csv --out-bam ./outs/cropped_bam.bam
 bamtofastq ./outs/cropped_bam.bam ./subsampled
+
+convert Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf -compress JPEG -quality 1 subsampled/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf
+cp Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_image.tif subsampled/
+cp Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_probe_set.csv subsampled/
 ```
