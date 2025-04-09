@@ -67,3 +67,51 @@ genes, which are:
 - NPM1-ALK  (short reads from [8])
 - CIC-DUX4  (short reads from [9])
 
+## STAR output
+
+The following files have been created using the following star command (with the [star index](https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/homo_sapiens/genome/index/star/star.tar.gz) fetched from the modules branch):
+
+```bash
+STAR \
+     --genomeDir star \
+     --readFilesIn reads_1.fq.gz reads_2.fq.gz \
+     --outFileNamePrefix test. \
+     --outReadsUnmapped None  \
+     --outSAMstrandField intronMotif \
+     --chimOutJunctionFormat 1 \
+     --twopassMode None \
+     --outFilterMultimapNmax 50 \
+     --chimMultimapNmax 50 \
+     --quantMode GeneCounts \
+     --outSAMunmapped Within \
+     --readFilesCommand zcat  \
+     --alignSJstitchMismatchNmax 5 -1 5 5 \
+     --outSAMtype BAM SortedByCoordinate \
+     --chimSegmentMin 10 \
+     --peOverlapNbasesMin 10 \
+     --alignSplicedMateMapLminOverLmate 0.5 \
+     --chimJunctionOverhangMin 10 \
+     --chimScoreJunctionNonGTAG 0 \
+     --chimScoreDropMax 30 \
+     --chimScoreSeparation 1  \
+     --chimSegmentReadGapMax 3 \
+     --chimOutType Junctions WithinBAM \
+     --outSAMattrRGline 'ID:test' 'SM:test'
+```
+
+`reads_1.fq.gz` and `reads_2.fq.gz` are the fastq files present in this branch (`rnafusion`)
+
+- `test.Aligned.sortedByCoord.out.bam`
+     - output from STAR
+- `test.Aligned.sortedByCoord.out.bam.bai`
+     - created with `samtools index test.Aligned.sortedByCoord.out.bam`
+- `test.Aligned.sortedByCoord.out.cram`
+     - created with `samtools view -C -T <path_to_fasta_in_modules_branch> --output test.Aligned.sortedByCoord.out.cram test.Aligned.sortedByCoord.out.bam`
+- `test.Aligned.sortedByCoord.out.cram.crai`
+     - created with `samtools index test.Aligned.sortedByCoord.out.cram`
+- `test.Chimeric.out.junction`
+     - output from STAR
+- `test.SJ.out.tab`
+     - output from STAR
+
+
