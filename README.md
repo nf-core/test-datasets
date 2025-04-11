@@ -39,6 +39,12 @@ Additionally there is a special subfolder for metagenome related files
 All folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
+There is also one folder for test-datasets that accompany scaffolding tools:
+
+- scaffolding
+
+This folder contains the test-data provided with [links](https://github.com/bcgsc/LINKS/) and [longstitch](https://github.com/bcgsc/LongStitch/)
+
 ### imaging
 
 The imaging folder contains data related to the analysis of highly-multiplexed imaging data, such as image preprocessing, cell segmentation, signal quantification and others. The files are organized by their respective data type.
