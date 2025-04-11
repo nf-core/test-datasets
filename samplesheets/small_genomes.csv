@@ -1,0 +1,20 @@
+sample_id,description,ncbi_accession,enabled,color_by,report_group_ids,ploidy,ref_ncbi_accession,ref_primary_usage,ref_contextual_usage,ref_description,taxon
+LF1,Should be L. fermentum,SRR18850314,TRUE,taxon,all;lactobacillaceae,1,,,,,Limosilactobacillus fermentum
+LF2,Should be L. fermentum,SRR18850310,TRUE,taxon,all;lactobacillaceae,1,,,,,Limosilactobacillus fermentum
+LF3,Should be L. fermentum,ERR13427439,TRUE,taxon,all;lactobacillaceae,1,,,,,Limosilactobacillus fermentum
+PF1,Should be P. falciparum,SRR29695256,TRUE,taxon,all,1,GCF_000002765.6,exclusive,exclusive,Plasmodium falciparum (GCF_000002765.6),Plasmodium falciparum
+PF2,Should be P. falciparum,SRR29397006,TRUE,taxon,all,1,GCF_000002765.6,exclusive,exclusive,Plasmodium falciparum (GCF_000002765.6),Plasmodium falciparum
+PF3,Should be P. falciparum,SRR27942447,TRUE,taxon,all,1,GCF_000002765.6,exclusive,exclusive,Plasmodium falciparum (GCF_000002765.6),Plasmodium falciparum
+OT1,Should be O. tauri,ERR5421722 ,TRUE,taxon,all,1,GCF_000214015.3,exclusive,exclusive,Ostreococcus tauri (GCF_000214015.3),Ostreococcus tauri
+OT2,Should be O. tauri,ERR5421720,TRUE,taxon,all,1,GCF_000214015.3,exclusive,exclusive,Ostreococcus tauri (GCF_000214015.3),Ostreococcus tauri
+OT3,Should be O. tauri,ERR5421720,TRUE,taxon,all,1,GCF_000214015.3,exclusive,exclusive,Ostreococcus tauri (GCF_000214015.3),Ostreococcus tauri
+LF4,Should be L. fermentum,SRR22981583,TRUE,taxon,all;lactobacillaceae,1,,,,,Limosilactobacillus fermentum
+LF5,Should be L. fermentum,SRR18214308,TRUE,taxon,all;lactobacillaceae,1,,,,,Limosilactobacillus fermentum
+LR1,Should be L. reuteri,SRR27638645,TRUE,taxon,all;lactobacillaceae,1,,,,,Limosilactobacillus reuteri
+LR2,Should be L. reuteri,SRR9047313 ,TRUE,taxon,all;lactobacillaceae,1,,,,,Limosilactobacillus reuteri
+FF1,Should be F. fructosus,ERR3283837,TRUE,taxon,all;lactobacillaceae,1,GCF_963580325.1,optional,required,Fructobacillus fructosus (GCF_963580325.1),Fructobacillus fructosus
+LM1,Should be L. mesenteroides,ERR13247297 ,TRUE,taxon,all;lactobacillaceae,1,,,,,Leuconostoc mesenteroides
+LW1,Should be L. welshimeri,SRR31459783,TRUE,taxon,all,1,,,,,Listeria welshimeri
+VC1,Should be V. cholerae,SRR32268234,TRUE,taxon,all,1,,,,,Vibrio cholerae
+VC2,Should be V. cholerae,SRR32238343 ,TRUE,taxon,all,1,,,,,Vibrio cholerae
+VC3,Should be V. cholerae,SRR32209849,TRUE,taxon,all,1,,,,,Vibrio cholerae
