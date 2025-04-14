@@ -11,6 +11,7 @@ This folder contains test datasets from 10X Genomics for reference and testing i
 | 10k_pbmc_cmo | [10k Human PBMCs Stained with TotalSeq™-B Human Universal Cocktail, Singleplex Sample](https://www.10xgenomics.com/resources/datasets/10k-human-pbmcs-stained-with-totalseq-b-human-universal-cocktail-singleplex-sample-1-standard) | GEX, Cell Multiplexing | `count`, `multi` |
 | 4plex_scFFPE | [Mixture of Healthy and Cancer FFPE Tissues Dissociated using Miltenyi FFPE Tissue Dissociation Kit, Multiplexed Samples, 4 Probe Barcodes](https://www.10xgenomics.com/datasets/mixture-of-healthy-and-cancer-ffpe-tissues-dissociated-using-miltenyi-ffpe-tissue-dissociation-kit-multiplexed-samples-4-probe-barcodes-1-standard) | GEX, FFPE, Cell Multiplexing | `multi` |
 | sc3_v3_5k_a549_gex_crispr | [5k A549, Lung Carcinoma Cells, No Treatment Transduced with a CRISPR Pool](https://www.10xgenomics.com/datasets/5-k-a-549-lung-carcinoma-cells-no-treatment-transduced-with-a-crispr-pool-3-1-standard-6-0-0) | GEX, CRISPR | `count`, `multi` |
+| sc5p_v2_hs_PBMC_1k_bcr | [AIRR rearrangement (TSV) from Single Cell Immune Profiling Dataset](https://support.10xgenomics.com/single-cell-vdj/datasets/4.0.0/sc5p_v2_hs_PBMC_1k) | BCR, AIRR rearrangement | `vdj` |
 
 # Subsampling
 
@@ -99,19 +100,26 @@ Unless stated otherwise, FASTQs were naively subsampled to 10,000 reads by readi
 │           │   ├── regions.fa
 │           │   └── supp_regions.fa
 │           └── reference.json
-└── sc3_v3_5k_a549_gex_crispr
-    ├── README.md
-    ├── SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_config.csv
-    ├── SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference.csv
-    └── fastqs
-        ├── crispr
-        │   ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L001_R1_001.fastq.gz
-        │   ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L001_R2_001.fastq.gz
-        │   ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L002_R1_001.fastq.gz
-        │   └── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L002_R2_001.fastq.gz
-        └── gex
-            ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz
-            ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz
-            ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L002_R1_001.fastq.gz
-            └── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L002_R2_001.fastq.gz
+├── sc3_v3_5k_a549_gex_crispr
+│   ├── fastqs
+│   │   ├── crispr
+│   │   │   ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L001_R1_001.fastq.gz
+│   │   │   ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L001_R2_001.fastq.gz
+│   │   │   ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L002_R1_001.fastq.gz
+│   │   │   └── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_crispr_S4_L002_R2_001.fastq.gz
+│   │   └── gex
+│   │       ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R1_001.fastq.gz
+│   │       ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L001_R2_001.fastq.gz
+│   │       ├── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L002_R1_001.fastq.gz
+│   │       └── subsampled_SC3_v3_NextGem_DI_CRISPR_A549_5K_gex_S5_L002_R2_001.fastq.gz
+│   ├── README.md
+│   ├── reference
+│   │   ├── genes_chr1_32292083_32686211.gtf
+│   │   └── genome_chr1_32292083_32686211.fa
+│   ├── SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_config.csv
+│   ├── SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference_chr1_32292083_32686211.csv
+│   └── SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference.csv
+└── sc5p_v2_hs_PBMC_1k_bcr
+    └── sc5p_v2_hs_PBMC_1k_b_airr_rearrangement.tsv
+
 ```
