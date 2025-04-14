@@ -1,0 +1,5 @@
+sample,filtered
+deng,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/deng.h5ad
+gao,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/gao.h5ad
+mistry,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/mistry.h5ad
+wilhelm-b,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/wilhelm-b.h5ad
