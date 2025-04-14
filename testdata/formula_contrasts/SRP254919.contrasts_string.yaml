@@ -10,4 +10,4 @@ contrasts:
     formula: "~ 0 + treatment + sample_number"
     comparison: ["treatment", "mCherry", "hND6"]
     blocking_factors: ["sample_number"]
-    make_contrast_string: "treatmenthND6 - treatmentmCherry"
+    make_contrasts_str: "treatmenthND6 - treatmentmCherry"
