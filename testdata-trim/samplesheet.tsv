@@ -1,0 +1,2 @@
+sample_id	filename_R1	filename_R2	subject_id	species	pcr_target_locus	treatment	tissue
+Sample1	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-trim/Sample1_R1.fastq.gz	https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-trim/Sample1_R2.fastq.gz	Sample1	mouse	IG	treatment	blood
