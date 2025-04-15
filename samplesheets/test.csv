@@ -1,0 +1,8 @@
+sample_id,description,ncbi_accession,enabled,color_by,report_group_ids,ploidy,ref_ncbi_accession,ref_primary_usage,ref_contextual_usage,ref_description,taxon
+LF1,Should be L. fermentum,SRR18850314,TRUE,taxon,all,1,,,,,Limosilactobacillus fermentum
+LF2,Should be L. fermentum,SRR18850310,TRUE,taxon,all;limosilactobacillus,1,,,,,Limosilactobacillus fermentum
+LF3,Should be L. fermentum,ERR13427439,TRUE,taxon,all;limosilactobacillus,1,,,,,Limosilactobacillus fermentum
+LF4,Should be L. fermentum,SRR22981583,TRUE,taxon,all;limosilactobacillus,1,,,,,Limosilactobacillus fermentum
+PF1,Should be P. falciparum,SRR29695256,TRUE,taxon,all;plasmodium,1,GCF_000002765.6,exclusive,exclusive,Plasmodium falciparum (GCF_000002765.6),Plasmodium falciparum
+PF3,Should be P. falciparum,SRR29397006,TRUE,taxon,all;plasmodium,1,GCF_000002765.6,exclusive,exclusive,Plasmodium falciparum (GCF_000002765.6),Plasmodium falciparum
+PF3,Should be P. falciparum,SRR27942447,TRUE,taxon,all;plasmodium,1,GCF_000002765.6,exclusive,exclusive,Plasmodium falciparum (GCF_000002765.6),Plasmodium falciparum

@@ -1,0 +1,2 @@
+ref_group_ids,ref_path,ref_ncbi_accession,ref_primary_usage,ref_contextual_usage,enable
+Salmonella_enterica_GCF_039778255_1,,GCF_039778255.1,exclusive,excluded,TRUE
