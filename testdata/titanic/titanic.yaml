@@ -123,16 +123,11 @@ columns:
 transforms:
   - transformation_name: "noise"
     columns:
-      - column_name: "Age"
+      - column_name: "Survived"
         transformations:
           - name: GaussianNoise
             params:
-              std: [0.1, 0.2, 0.3]
-      - column_name: "Fare"
-        transformations:
-          - name: GaussianNoise
-            params:
-              std: [0.1, 0.2, 0.3]
+              std: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
 split:
   - split_method: RandomSplit
