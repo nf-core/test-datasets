@@ -369,6 +369,9 @@ The spatial_omics folder contains subfolders for different platforms in the emer
       - salmon: salmon index created with `transcriptome.fasta`
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
     - vep_cache_113.tar.gz: Compressed VEP cache version 113 containing info.txt and synonyms of chr22 only. No annotations included.
+    - CTAT_HumanFusionLib.mini.dat.gz: A small fusion annotation library used in STAR-Fusion module.
+    - minigenome.fa: A small genome sequence consisting of ~750 genes used in STAR-Fusion module with fusion annotation library.
+    - minigenome.gtf: Transcript structure annotations of genes present in the minigenome used in STAR-Fusion module with fusion annotation library .
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
       - aligned_reads
