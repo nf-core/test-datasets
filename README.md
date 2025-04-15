@@ -8,12 +8,21 @@ This repository contains data for the Pixelgen Technologies Molecular Pixelation
 Proximity Network Technology(PNA) assays. The data for the respective assay lives in the
 subdirectories `mpx` and `pna`.
 
+The data is organized as follows:
+
 - `mpx/testdata/` :
     - `mpx/modules` : Testdata for pipeline local module tests
     - `mpx/fastq` : Input fastq files for pipeline level tests
 - `mpx/panels/`: panel files to test passing custom panels
 
-- `mpx/samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset.
-- `mpx/samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset.
-- `mpx/samplesheet/samplesheet_v2.csv`: Experiment design file for minimal test dataset using the v2 panel.
-- `mpx/samplesheet/samplesheet_mpx_scsp_v1_immunology1.csv` : Experiment design file for minimal test dataset using the same data as the local module tests
+- `mpx/samplesheets/samplesheet.csv`: Experiment design file for minimal test dataset.
+- `mpx/samplesheets/samplesheet_full.csv`: Experiment design file for full test dataset.
+- `mpx/samplesheets/samplesheet_v2.csv`: Experiment design file for minimal test dataset using the v2 panel.
+- `mpx/samplesheets/samplesheet_mpx_scsp_v1_immunology1.csv` : Experiment design file for minimal test dataset using the same data as the local module tests
+
+
+- `pna/testdata/`:
+    - `pna/full_run`: Testdata having been generated into the different stages from a pipeline run, used for local module tests
+    - `pna/reports`: Report json files that can be used to test the report staged
+- `pna/samplesheets/samplesheet_pna.csv` : Experiment design file for minimal test dataset.
+
