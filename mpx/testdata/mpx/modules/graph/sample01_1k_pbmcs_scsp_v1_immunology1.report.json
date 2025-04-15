@@ -1,0 +1,28 @@
+{
+    "sample_id": "sample01",
+    "component_count": 549,
+    "molecule_count": 24416,
+    "read_count": 76016,
+    "marker_count": 80,
+    "read_count_per_molecule_stats": {
+        "mean": 3.113368283093054,
+        "std": 1.3993099514121836,
+        "min": 2.0,
+        "q1": 2.0,
+        "q2": 3.0,
+        "q3": 4.0,
+        "max": 15.0,
+        "count": 24416,
+        "iqr": 2.0
+    },
+    "a_pixel_count": 8685,
+    "b_pixel_count": 3736,
+    "fraction_molecules_in_largest_component": 0.037925950196592395,
+    "fraction_pixels_in_largest_component": 0.02230094195314387,
+    "edges_with_colliding_upi_count": 0,
+    "edges_removed_in_multiplet_recovery_first_iteration": 2846,
+    "edges_removed_in_multiplet_recovery_refinement": 0,
+    "fraction_edges_removed_in_refinement": 0.0,
+    "a_pixel_b_pixel_ratio": 2.324678800856531,
+    "pixel_count": 12421
+}

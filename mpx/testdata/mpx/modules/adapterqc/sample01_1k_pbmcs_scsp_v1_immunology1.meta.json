@@ -1,0 +1,10 @@
+{
+    "cli": {
+        "command": "pixelator single-cell adapterqc",
+        "options": {
+            "--mismatches": 0.1,
+            "--output": ".",
+            "--design": "D21"
+        }
+    }
+}

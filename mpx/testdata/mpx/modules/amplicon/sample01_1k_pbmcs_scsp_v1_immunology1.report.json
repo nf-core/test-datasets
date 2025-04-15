@@ -1,0 +1,10 @@
+{
+    "sample_id": "sample01",
+    "fraction_q30": 0.9662870853742703,
+    "fraction_q30_bc": 0.97099,
+    "fraction_q30_pbs1": 0.9744162084789136,
+    "fraction_q30_pbs2": 0.951330625,
+    "fraction_q30_umi": 0.973125,
+    "fraction_q30_upia": 0.9700296,
+    "fraction_q30_upib": 0.97029885999383
+}

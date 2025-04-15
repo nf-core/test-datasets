@@ -1,0 +1,3 @@
+sample,design,panel,panel_file,fastq_1,fastq_2
+uropod_control,D21,human-sc-immunology-spatial-proteomics,,uropod_control_300k_R1_001.fastq.gz,uropod_control_300k_R2_001.fastq.gz
+pbmcs_unstimulated,D21,human-sc-immunology-spatial-proteomics,,Sample01_human_pbmcs_unstimulated_200k_R1_001.fastq.gz,Sample01_human_pbmcs_unstimulated_200k_R2_001.fastq.gz
