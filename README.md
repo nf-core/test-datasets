@@ -375,6 +375,7 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - preprocessed_intervals.interval_list: Contains the intervals of the genome excluding problematic regions
     - index
       - salmon: salmon index created with `transcriptome.fasta`
+      - igblast: igblast index created with imgt BCR and TCR human reference data.
     - vep.tar.gz: Compressed VEP cache containing info.txt and synonyms of chr22 only. No annotations included.
     - vep_cache_113.tar.gz: Compressed VEP cache version 113 containing info.txt and synonyms of chr22 only. No annotations included.
     - riboseq_expression
