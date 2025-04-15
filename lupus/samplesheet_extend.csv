@@ -1,3 +1,3 @@
-sample,filtered,batch_col
-wilhelm-pbmc,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/wilhelm-pbmc.h5ad,sample
-sarin,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/sarin.h5ad,sample
+sample,filtered,batch_col,min_genes
+wilhelm-pbmc,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/wilhelm-pbmc.h5ad,sample,50
+sarin,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/sarin.h5ad,sample,50
