@@ -2,78 +2,133 @@ global_params:
   seed: 42
 
 columns:
-  - column_name: "passenger_id"
-    column_type: "meta"
-    encoder:
-      - name: NumericEncoder
-        params:
-          dtype: "int32"
-
-  - column_name: "survived"
+  - column_name: "Survived"
     column_type: "label" 
     encoder:
       - name: NumericEncoder
         params:
-          dtype: "int8"
+          dtype: "float32"
 
-  - column_name: "pclass" 
-    column_type: "input"
-    encoder:
-      - name: NumericEncoder
-        params:
-          dtype: "int8"
-
-  - column_name: "sex"
-    column_type: "input"
-    encoder:
-      - name: StrClassificationEncoder
-        params:
-          dtype: "int8"
-
-  - column_name: "age"
-    column_type: "input"
-    encoder:
-      - name: NumericEncoder
-        params:
-          dtype: "int8"
-
-  - column_name: "sibsp"
-    column_type: "input"
-    encoder:
-      - name: NumericEncoder
-        params:
-          dtype: "int8"
-
-  - column_name: "parch"
-    column_type: "input"
-    encoder:
-      - name: NumericEncoder
-        params:
-          dtype: "int8"
-
-  - column_name: "fare"
+  - column_name: "Pclass" 
     column_type: "input"
     encoder:
       - name: NumericEncoder
         params:
           dtype: "float32"
 
-  - column_name: "embarked"
+  - column_name: "Sex"
     column_type: "input"
     encoder:
-      - name: StrClassificationEncoder
+      - name: NumericEncoder
         params:
-          dtype: "int8"
+          dtype: "float32"
 
+  - column_name: "Age"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "SibSp"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Parch"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Fare"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Family_Size"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Embarked_C"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Embarked_Q"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Embarked_S"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Title_Dr"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Title_Master"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Title_Miss"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Title_Mr"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Title_Mrs"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
+
+  - column_name: "Title_Rev"
+    column_type: "input"
+    encoder:
+      - name: NumericEncoder
+        params:
+          dtype: "float32"
 transforms:
   - transformation_name: "noise"
     columns:
-      - column_name: "age"
+      - column_name: "Age"
         transformations:
           - name: GaussianNoise
             params:
               std: [0.1, 0.2, 0.3]
-      - column_name: "fare"
+      - column_name: "Fare"
         transformations:
           - name: GaussianNoise
             params:
@@ -81,6 +136,6 @@ transforms:
 
 split:
   - split_method: RandomSplit
-    split_input_columns: ["age"]
+    split_input_columns: ["Age"]
     params:
-      split: [0.7, 0.15, 0.15]
+      split: [0.8, 0.1, 0.1]
