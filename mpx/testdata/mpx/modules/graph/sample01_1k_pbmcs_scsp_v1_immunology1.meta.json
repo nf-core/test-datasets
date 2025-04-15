@@ -1,6 +1,6 @@
 {
     "cli": {
-        "command": "pixelator single-cell graph",
+        "command": "pixelator single-cell-mpx graph",
         "options": {
             "--multiplet-recovery": true,
             "--max-refinement-recursion-depth": 5,

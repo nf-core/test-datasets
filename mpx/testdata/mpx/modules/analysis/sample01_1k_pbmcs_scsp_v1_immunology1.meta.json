@@ -1,6 +1,6 @@
 {
     "cli": {
-        "command": "pixelator single-cell analysis",
+        "command": "pixelator single-cell-mpx analysis",
         "options": {
             "--compute-polarization": true,
             "--compute-colocalization": true,

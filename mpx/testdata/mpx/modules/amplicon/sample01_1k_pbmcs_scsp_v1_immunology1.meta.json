@@ -1,6 +1,6 @@
 {
     "cli": {
-        "command": "pixelator single-cell amplicon",
+        "command": "pixelator single-cell-mpx amplicon",
         "options": {
             "--sample-name": null,
             "--skip-input-checks": false,

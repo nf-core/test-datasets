@@ -1,6 +1,6 @@
 {
     "cli": {
-        "command": "pixelator single-cell adapterqc",
+        "command": "pixelator single-cell-mpx adapterqc",
         "options": {
             "--mismatches": 0.1,
             "--output": ".",

@@ -1,6 +1,6 @@
 {
     "cli": {
-        "command": "pixelator single-cell collapse",
+        "command": "pixelator single-cell-mpx collapse",
         "options": {
             "--markers-ignore": null,
             "--algorithm": "adjacency",
