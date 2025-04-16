@@ -1,0 +1,37 @@
+{
+    "sample_id": "PNA055_Sample07_filtered_S7",
+    "product_id": "single-cell-pna",
+    "report_type": "amplicon",
+    "input_reads": 230997,
+    "output_reads": 205569,
+    "passed_missing_uei_reads": 53838,
+    "passed_partial_uei_reads": 3094,
+    "passed_missing_lbs1_anchor": 21901,
+    "failed_too_many_n_reads": 7767,
+    "failed_partial_upi1_umi1_reads": 0,
+    "failed_partial_upi2_umi2_reads": 0,
+    "failed_missing_upi1_umi1_reads": 11708,
+    "failed_missing_upi2_umi2_reads": 5953,
+    "total_failed_reads": 25428,
+    "q30_statistics": {
+        "total": 0.948687067758244,
+        "umi1": 0.9744142217107499,
+        "pid1": 0.9816567673141379,
+        "lbs1": 0.9206859103644013,
+        "uei": 0.7151428474137638,
+        "lbs2": 0.8339489114560501,
+        "pid2": 0.9671969022566632,
+        "umi2": 0.9662044304901448
+    },
+    "basepair_counts": {
+        "input": 28181634,
+        "input_read1": 10163868,
+        "input_read2": 18017766,
+        "quality_trimmed": 319914,
+        "quality_trimmed_read1": 228548,
+        "quality_trimmed_read2": 91366,
+        "output": 29190798
+    },
+    "failed_invalid_amplicon_reads": 17661,
+    "fraction_discarded_reads": 0.11007935167989194
+}

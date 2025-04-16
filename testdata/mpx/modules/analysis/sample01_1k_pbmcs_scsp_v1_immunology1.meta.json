@@ -1,0 +1,19 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-mpx analysis",
+        "options": {
+            "--compute-polarization": true,
+            "--compute-colocalization": true,
+            "--use-full-bipartite": true,
+            "--polarization-transformation": "log1p",
+            "--polarization-n-permutations": 50,
+            "--polarization-min-marker-count": 5,
+            "--colocalization-transformation": "rate-diff",
+            "--colocalization-neighbourhood-size": 1,
+            "--colocalization-n-permutations": 10,
+            "--colocalization-min-region-count": 0,
+            "--colocalization-min-marker-count": 5,
+            "--output": "."
+        }
+    }
+}

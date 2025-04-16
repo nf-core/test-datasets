@@ -6,23 +6,15 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 This repository contains data for the Pixelgen Technologies Molecular Pixelation (PNA) and
 Proximity Network Technology(PNA) assays. The data for the respective assay lives in the
-subdirectories `mpx` and `pna`.
+subdirectories `mpx` and `pna` under `testdata/` and `samplesheet`.
 
-The data is organized as follows:
+For more information about the different test datasets, please refer to the README files in the respective directories.
 
-- `mpx/testdata/` :
-    - `mpx/modules` : Testdata for pipeline local module tests
-    - `mpx/fastq` : Input fastq files for pipeline level tests
-- `mpx/panels/`: panel files to test passing custom panels
-
-- `mpx/samplesheets/samplesheet.csv`: Experiment design file for minimal test dataset.
-- `mpx/samplesheets/samplesheet_full.csv`: Experiment design file for full test dataset.
-- `mpx/samplesheets/samplesheet_v2.csv`: Experiment design file for minimal test dataset using the v2 panel.
-- `mpx/samplesheets/samplesheet_mpx_scsp_v1_immunology1.csv` : Experiment design file for minimal test dataset using the same data as the local module tests
+- `samplesheet/mpx/samplesheet.csv`: Experiment design file for minimal MPX test dataset.
+- `samplesheet/mpx/samplesheet_full.csv`: Experiment design file for full MPX test dataset.
+- `samplesheet/mpx/samplesheet_v2.csv`: Experiment design file for minimal MPX test dataset using the v2 panel.
+- `samplesheet/mpx/samplesheet_mpx_scsp_v1_immunology1.csv` : Experiment design file for minimal MPX test dataset using the same data as the local module tests
+- `samplesheet/pna/samplesheet_pna.csv` : experiment design file for minimal test PNA dataset 
 
 
-- `pna/testdata/`:
-    - `pna/full_run`: Testdata having been generated into the different stages from a pipeline run, used for local module tests
-    - `pna/reports`: Report json files that can be used to test the report staged
-- `pna/samplesheets/samplesheet_pna.csv` : Experiment design file for minimal test dataset.
 
