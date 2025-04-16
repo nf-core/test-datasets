@@ -1,6 +1,6 @@
 {
     "cli": {
-        "command": "pixelator single-cell layout",
+        "command": "pixelator single-cell-mpx layout",
         "options": {
             "--no-node-marker-counts": false,
             "--layout-algorithm": [
