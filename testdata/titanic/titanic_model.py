@@ -126,4 +126,4 @@ class ModelTitanicPerformance(torch.nn.Module):
             optimizer.step()
 
         accuracy = self.compute_accuracy(output, **y)
-        return loss, {"accuracy": accuracy}
+        return loss, {"accuracy": accuracy, "predictions": output}
