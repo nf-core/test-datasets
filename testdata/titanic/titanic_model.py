@@ -99,7 +99,7 @@ class ModelTitanicPerformance(torch.nn.Module):
         self,
         x: dict[str, torch.Tensor],
         y: dict[str, torch.Tensor],
-        loss_fn: Callable,
+        loss_fn: Callable = torch.nn.MSELoss,
         optimizer: Optional[torch.optim.Optimizer] = None,
     ) -> tuple[torch.Tensor, dict[str, torch.Tensor]]:
         """Perform one batch step.
