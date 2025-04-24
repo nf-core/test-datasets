@@ -1,0 +1,3 @@
+sample,modbam,ref,method
+homo_sapiens,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/homo_sapiens/nanopore/bam/test.sorted.bam,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/modules/data/genomics/homo_sapiens/genome/genome.fasta,ont
+Col_0,https://raw.githubusercontent.com/nf-core/test-datasets/methylong/test_data/test_modbam/ont_Col-0_tets_data_Chr1_5mb_7mb.bam,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/Col-CEN_v1.2.Chr1_5MB-7MB.fasta.gz,ont
