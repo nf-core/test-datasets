@@ -1,38 +1,13 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
-Test data to be used for automated testing with the nf-core pipelines
+# test-datasets: mcmicro
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+This branch contains test data to be used for automated testing with the [nf-core/mcmicro](https://github.com/nf-core/mcmicro) pipeline.
 
-## Introduction
+## Content of this repository
+`samplesheets/markers-test.csv`: Markersheet file for minimal test<br>
+`samplesheets/samplesheet-test.csv`: Samplesheet file for minimal test<br>
+`samplesheets/markers-test_full.csv`: Markersheet file for full test<br>
+`samplesheets/samplesheet-test_full.csv`: Samplesheet file for full test<br>
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+### Test dataset origin
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
-
-## Documentation
-
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+The image files referenced in the samplesheets are human tonsil section 5 μm thick, imaged in four-channel immunofluorescence over three rounds of bleaching and re-staining with different antibodies. Published in https://doi.org/10.1038/s41592-021-01308-y (slide WD-75684-02). These image files each contain a 3 x 3 grid of overlapping four-channel image tiles with dimensions 220 x 180 pixels. The tiles were cropped from a single raw tile taken from one of the original data files. A Python script (https://github.com/labsyspharm/nf-core-test-datasets-build/blob/main/tonsil-cycif/tonsil-cycif.py) was written to extract the synthetic tile fields from an "interesting" region of the single raw tile, generate stage position metadata with random perturbations to approximate the behavior of a real-world microscope stage, and save the images and metadata as an OME-TIFF file.
