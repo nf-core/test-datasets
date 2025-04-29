@@ -1,0 +1,4 @@
+sample,group,short_reads_1,short_reads_2,long_reads
+CAPES_S11,0,s3://ngi-igenomes/test-data/mag/ERR3201918_1.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201918_2.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201942.fastq.gz
+CAPES_S21,0,s3://ngi-igenomes/test-data/mag/ERR3201928_1.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201928_2.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201952.fastq.gz
+CAPES_S7,0,s3://ngi-igenomes/test-data/mag/ERR3201914_1.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201914_2.fastq.gz,s3://ngi-igenomes/test-data/mag/ERR3201938.fastq.gz
