@@ -1,0 +1,2 @@
+sample,group,short_reads_1,short_reads_2,long_reads_platform,long_reads
+minigut,0,,,OXFORD_NANOPORE,https://github.com/nf-core/test-datasets/raw/mag/test_data/minigut_reads.fastq.gz

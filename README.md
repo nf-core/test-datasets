@@ -34,6 +34,8 @@ git fetch
 
 -`samplesheets/samplesheet.long_read.csv`: Sample sheet for testing running mag with only long read input
 
+The samplesheet with the suffix `v4` (e.g., `samplesheet.long_read.v4.csv`) is intended for the v4.0.0 release of mag. In this version, samplesheets must include the `short_reads_platform` or `long_reads_platform` fields to specify the sequencing platform for short and long reads, respectively.
+
 ## Databases
 
 We have also generated tiny versions of databases for tools that normally require very large databases
