@@ -137,6 +137,51 @@ These are NCBI taxdump re-constructed files, where the entries only include thos
   > It uses RefSeq IDs rather than GenBank/INDSC accession numbers for mapping to taxonomy IDs
   > as the downloaded FAA files do not have the latter.
 
+- Created a MEGAN/MALT `.db` file from the `nucl.accession2taxid_custom` file using the following `sqllite` commands:
+
+  ```bash
+  cd data/taxonomy/
+  sqlite3 megan-map-custom.db
+  ```
+
+  Then within `sqlite3` create the tables (WARNING: go step by step, copy paste whole block often leads to problems reading `.` commands):
+
+  ```sql
+  -- CREATE INFO
+  CREATE TABLE info (id TEXT PRIMARY KEY, info_string TEXT, size INTEGER);
+  INSERT INTO info VALUES ( "general", "Created 2025-05-05 10:30:00", 8 );
+  INSERT INTO info VALUES ( "Taxonomy", "Source: nucl_gb.accession2taxid (custom)", 8 );
+
+  -- VERIFY INFO
+  SELECT * FROM info;
+
+  -- CREATE MAPPINGS
+  CREATE TABLE mappings (Accession TEXT PRIMARY KEY NOT NULL, Taxonomy INTEGER);
+  CREATE TABLE mappings_import (accession ANY PRIMARY KEY NOT NULL, accession_version ANY, taxid INTEGER, gi INTEGER);
+
+  -- CONFIGURATION
+  .mode tabs
+  .import --skip 1 nucl_gb.accession2taxid mappings_import
+  SELECT * FROM mappings_import;
+
+  INSERT INTO mappings (Accession, Taxonomy) SELECT accession, taxid FROM mappings_import;
+
+  -- VERIFY MAPPINGS
+  SELECT * FROM mappings;
+
+  -- CLEANUP
+  DROP TABLE mappings_import;
+
+  .quit
+  ```
+
+  To verify
+
+  ```sql
+  SELECT * FROM info;
+  SELECT * FROM mappings;
+  ```
+
 ## Broken Samplesheets
 
 To help improve schema checking, we've taking then main `test.csv`, and added a few variants which have various errors.
@@ -148,3 +193,13 @@ Each file _should_ fail and give an error message from nf-schema.
 - `samplesheets/broken/test_missing_both_paths.csv`: has a row where both required `fasta_dna` and `fasta_aa` paths are missing
 - `samplesheets/broken/test_missing_required_column.csv`: missing the required `taxid` column
 - `samplesheets/broken/test_non_existent_file.csv`: has a path to a `fasta_dna` filepath that doesn't exist
+
+## Test Full Data
+
+The test full input samplesheet is based on the 2024-04-02 release of Ben Langmead's [Kraken2 'Standard' IndexZone](https://benlangmead.github.io/aws-indexes/k2) dataset.
+
+The files `inspect.txt` and `library_report.tsv` files under `misc/fulltest` provide taxonomic and source information for the genomes that go into the 'Standard' database (Refseq archaea, bacteria, viral, plasmic, human, UniVec_Core).
+
+We used this information to prepare the `test_full.csv` samplesheet using the following steps:
+
+While read
