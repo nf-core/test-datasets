@@ -1,6 +1,5 @@
 contrasts:
-  - id: treatment_effect
-    formula: "~ treatment"
+  - id: treatment_effect_classic_comparison
     comparison: ["treatment", "Control", "Treated"]
 
   - id: treatment_plus_genotype
