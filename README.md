@@ -70,6 +70,13 @@ Which resulted in a last line of the log as
 
 And then the `test/` directory was tarred to create `minigut_cat.tar.gz`.
 
+### GTDB-Tk
+
+We have uploaded a copy of the official [GTDB-Tk mock database](https://data.gtdb.ecogenomic.org/releases/latest/auxillary_files/gtdbtk_package/mockup_db/) to this repository for use while testing mag and the nf-core GTDB modules - this significantly improves the run-time of tests as the GTDB server can be very slow.
+
+The database is available as a gzipped tarball at:
+- `databases/gtdbtk/gtdbtk_mockup_20250422.tar.gz`
+
 ## Broken samplesheets
 
 For testing input validation, the `samplesheets` directory contains the `broken/` subdirectory containing samplesheets with errors that should be caught by the pipeline.
