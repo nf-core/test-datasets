@@ -1,0 +1,15 @@
+contrasts:
+  - id: treatment_effect_classic_comparison
+    comparison: ["treatment", "Control", "Treated"]
+
+  - id: treatment_plus_genotype
+    formula: "~ treatment + genotype"
+    make_contrasts_str: "treatmentTreated"
+
+  - id: interaction_genotype_treatment
+    formula: "~ genotype * treatment"
+    make_contrasts_str: "genotypeWT.treatmentTreated"
+
+  - id: full_model_with_interactions
+    formula: "~ genotype * treatment * time"
+    make_contrasts_str: "genotypeWT.treatmentTreated.time"
