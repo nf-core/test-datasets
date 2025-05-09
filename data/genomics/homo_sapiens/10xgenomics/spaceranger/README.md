@@ -52,3 +52,54 @@ mkdir subsampled
 cp CytAssist_11mm_FFPE_Human_Glioblastoma_image.tif subsampled/
 for f in CytAssist_11mm_FFPE_Human_Glioblastoma_fastqs/*S1*L00{1,2}*R*; do; gzip -cdf $f | head -n 40000 | gzip -c > subsampled/$(basename $f); done
 ```
+
+## Human lung cancer, FFPE cytassist, HD only
+
+Source: https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-human-lung-cancer-post-xenium-expt
+
+The example data has been downloaded and subsampled using the following bash script:
+
+```bash
+DIR=visium-hd-human-lung-cancer-hd-ffpe-2-standard_v2_ffpe_cytassist
+mkdir -p $DIR && cd $DIR
+
+# Input Files
+curl -O https://cf.10xgenomics.com/samples/spatial-exp/3.0.0/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_image.tif
+curl -O https://cf.10xgenomics.com/samples/spatial-exp/3.0.0/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf
+curl -O https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/3.0.0/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_fastqs.tar
+curl -O https://cf.10xgenomics.com/samples/spatial-exp/3.0.0/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_probe_set.csv
+url -O https://cf.10xgenomics.com/supp/spatial-exp/refdata-gex-GRCh38-2020-A.tar.gz
+
+# Extract
+tar xvf Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_fastqs.tar
+
+# Create subsampled dataset with ImageMagick
+# https://imagemagick.org/index.php
+
+# Untar the reference genome
+tar xvfz refdata-gex-GRCh38-2020-A.tar.gz
+
+# Run spaceranger count to get bam file
+spaceranger count \
+          --id "Visium_HD_Human_Lung_Cancer_HD_Only_D" \
+          --sample "Visium_HD_Human_Lung_Cancer_HD_Only_D" \
+          --fastqs="./Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_fastqs" \
+          --slide "H1-84QJZFR" \
+          --area "D1" \
+          --transcriptome="./refdata-gex-GRCh38-2020-A" \
+          --probe-set="Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_probe_set.csv" \
+          --image="Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf" \
+          --cytaimage="Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_image.tif" \
+          --create-bam true \
+          --output-dir "./outs"
+
+# Create filtered_barcodes.csv from loupe output for cropping subregion.
+
+# Subsample the bam file to get a smaller test dataset, based on a set of barcodes
+subset-bam --bam ./outs/possorted_genome_bam.bam --cell-barcodes ./filtered_barcodes.csv --out-bam ./outs/cropped_bam.bam
+bamtofastq ./outs/cropped_bam.bam ./subsampled
+
+convert Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf -compress JPEG -quality 1 subsampled/Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_tissue_image.btf
+cp Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_image.tif subsampled/
+cp Visium_HD_Human_Lung_Cancer_HD_Only_Experiment2_probe_set.csv subsampled/
+```
