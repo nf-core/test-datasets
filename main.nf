@@ -6,7 +6,7 @@ include { CHUNK_VCFS } from './modules/chunk_vcfs.nf'
 include { CONCAT_CHUNKED_VCFS } from './modules/concat_chunked_vcfs.nf'
 include { EXTRACT_SAMPLE_IDS } from './modules/extract_sample_ids.nf'
 include { GENERATE_PHENO_COV } from './modules/generate_pheno_cov.nf'
-
+include { INDEX_CHUNKED_VCFS } from './modules/index_chunked_vcfs.nf'
 workflow {
     // Run the download process
     GENERATE_EXAMPLE_GENOTYPES_VCFS()
@@ -25,4 +25,5 @@ workflow {
     chr1_ch = channel.fromPath('./results/chunked_vcfs/chr1_chunked.vcf.gz')
     EXTRACT_SAMPLE_IDS(chr1_ch)
     GENERATE_PHENO_COV(EXTRACT_SAMPLE_IDS.out.sample_ids)
+    INDEX_CHUNKED_VCFS(CHUNK_VCFS.out.chunked_vcfs)
 }

@@ -26,22 +26,17 @@ git clone -b gwas --single-branch git@github.com:USERNAME/test-datasets.git
 nf-core/test-datasets comes with documentation in the `docs/` directory and scripts to generate the example data in the `scripts/` directory.
 
 ## Example data organisation
-nf-core/test-datasets generated test data is located in the `data/` directory.
+nf-core/test-datasets generated test data is located in the `results/` directory.
 
 ```
 .
-├── data_phenotypes_and_covariates
-│   ├── example1.covar
-│   └── example1.pheno
-├── data_shrink_chunk_4500
-│   ├── chr10.vcf.bgz
-│   ├── chr10.vcf.bgz.tbi
-│   ├── chr11.vcf.bgz
-│   ├── chr11.vcf.bgz.tbi
-│
-└── data_shrink_combined_4500
-    ├── chr1_to_22_and_X.vcf.bgz
-    └── chr1_to_22_and_X.vcf.bgz.tbi
+├── chunked_vcfs
+│   ├── 
+│   └── 
+├── pheno_cov
+│   ├── example.covar
+│   ├── example.pheno│
+
 ```
 
 ## Support
