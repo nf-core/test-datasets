@@ -239,114 +239,34 @@ This generates a database file `database.syldb`. If you want to use a custom dat
 
 #### melon
 
-The following metadata was used and they were subsetted from the sequences in the paper:
+Create minimal dataset of Bacteroides fragilis as test database for melon.
 
-| accession | superkingdom | phylum | class | order | family | genus | species |
-|-----------|--------------|--------|-------|-------|--------|-------|---------|
-| NC_000853.1 | 2\|Bacteria | 200918\|Thermotogota | 188708\|Thermotogae | 2419\|Thermotogales | 188709\|Thermotogaceae | 2335\|Thermotoga | 2336\|Thermotoga maritima |
-| NC_003228.3 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NC_006347.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NC_016776.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_AKBY01000001.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_AKBY01000008.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CAAKNW010000040.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CAAKNW010000090.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CAAKNW010000143.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CABJEQ010000008.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CAEUHN010000012.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CDQM01000130.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CDQM01000276.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CDQM01000351.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CDQM01000371.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP012706.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP018937.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP036539.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP036542.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP036546.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP036550.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP036553.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP036555.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP037440.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP043610.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP044428.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP069563.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP072257.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP080295.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP080296.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP083688.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP114371.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP117955.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_CP133097.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_EQ973213.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_EQ973218.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_GG705213.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_GL945044.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_GL945049.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JABAGK010000002.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JABAGK010000007.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JABAGK010000009.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JABAGK010000011.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JABFHU010000005.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JABFHU010000013.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JABFHU010000018.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACENG010000023.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACENG010000024.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSS010000010.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFST010000001.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFST010000007.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFST010000009.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFST010000012.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFST010000014.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSU010000004.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSU010000014.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSV010000025.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSW010000010.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSX010000003.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSY010000003.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACFSY010000005.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACLQC010000003.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACLQC010000006.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACLQC010000008.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACLQC010000013.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACSWE010000006.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACSWE010000007.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACSWE010000015.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACSWF010000009.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACSWF010000012.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACSWF010000015.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACWLM010000001.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JACWLM010000002.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADDIJ010000003.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADDIJ010000006.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADDIJ010000007.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADDIJ010000025.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADDIJ010000055.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMPD010000005.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMPD010000006.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMPD010000008.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMPD010000014.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMPD010000027.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMRZ010000006.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMRZ010000008.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMRZ010000013.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMRZ010000018.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JADMRZ010000028.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAX010000008.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAX010000011.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAX010000015.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAY010000007.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAY010000018.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAZ010000004.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAZ010000008.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAZ010000009.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAZ010000012.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUAZ010000017.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUBA010000014.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUBB010000005.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUBB010000007.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUBB010000010.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUBB010000018.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|Bacteroides fragilis |
-| NZ_JAPUBC010000016.1 | 2\|Bacteria | 976\|Bacteroidota | 200643\|Bacteroidia | 171549\|Bacteroidales | 815\|Bacteroidaceae | 816\|Bacteroides | 817\|
+1. Get all the accessions from the melon DB for Bacteroides fragilis
+	- `tail -n +2 metadata.tsv | cut -f1 > accessions.txt` 
+	- Adjust metadata.tsv `head -n1 metadata.tsv > fragmini/metadata.tsv && grep -f frag_mini.txt metadata.tsv >> fragmini/metadata.tsv` 
+2. Fetch all sequences from the database .fa files
+	- `seqkit grep -r -f fragilis_ids.txt database/nucl.bacteria.*.fa -o database/combined_fragilis.fa`
+    
+    ```bash
+	for f in nucl.*.fa; do echo "Processing $f..."; seqkit grep -r -f ../fragilis_db/fragilis_ids.txt "$f" -o "fragdb/$f"; done
+	```
+
+3. From those extracted .fa files extract the annotation string
+	- `grep -o ":[+-] .*" combined_fragilis.fa | cut -d' ' -f2- > fragilis_annotations.txt`
+4. Fetch those sequences from the protein .fa file for the diamond index
+	- `seqkit grep -n -f database/fragilis_annotations.txt database/prot.fa -o database/fragilis_prot.fa`
+5. Create the test_db
+
+```bash
+diamond makedb --in fragilis_db/fragilis_prot.fa --db fragilis_db/fragilis_prot --quiet 
+ls minimi/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
+	filename=${1%.fa*};
+	filename=${filename##*/};
+	minimap2 -x map-ont -d minimi/$filename.mmi ${1} 2> /dev/null;
+	echo "Indexed <minimi/$filename.fa>.";' - {}
+```
+
+Note: Each gene is in a seperate fa file. Check if all are needed and fetch for each gene the one for Bacteroides fragilis 
 
 ## Taxprofiler AWS Full Test specific-information
 
