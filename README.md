@@ -23,21 +23,32 @@ git clone -b gwas --single-branch git@github.com:USERNAME/test-datasets.git
 
 ## Documentation
 
-nf-core/test-datasets comes with documentation in the `docs/` directory and scripts to generate the example data in the `scripts/` directory.
+This test data comes from the 1000 Genomes Project phase3 release of variant calls. VCF files have been 'chunked' to include only the first 4,500 variants to reduce file sizes. Chromosome Y is excluded. Please see the datasets [README](https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/README_phase3_callset_20150220) for more details.
+
+nf-core/test-datasets comes with documentation in the `docs/` directory and the data can be generated running main.nf.
 
 ## Example data organisation
-nf-core/test-datasets generated test data is located in the `results/` directory.
+nf-core/test-datasets generated test data is located in the `results/` directory and includes the following structure.
 
 ```
-.
-├── chunked_vcfs
-│   ├── 
-│   └── 
-├── pheno_cov
-│   ├── example.covar
-│   ├── example.pheno│
+results/
+├── chunked_vcfs/
+│   ├── chr1_chunked.vcf.gz
+│   ├── chr1_chunked.vcf.gz.tbi
+│   ├── chr2_chunked.vcf.gz
+│   ├── chr2_chunked.vcf.gz.tbi
+│   ├── ...
+│   ├── chrX_chunked.vcf.gz
+│   ├── chrX_chunked.vcf.gz.tbi
+│   ├── combined_chunked.vcf.gz
+│   └── combined_chunked.vcf.gz.tbi
+├── pheno_cov/
+│   ├── example.pheno
+│   └── example.covar
 
 ```
+Each chromosome-specific VCF file (chr*.vcf.gz) is accompanied by its corresponding tabix index (.vcf.gz.tbi), enabling efficient querying. A combined VCF and index are also included for downstream association tests or visualization.
+
 
 ## Support
 
