@@ -196,10 +196,117 @@ Each file _should_ fail and give an error message from nf-schema.
 
 ## Test Full Data
 
-The test full input samplesheet is based on the 2024-04-02 release of Ben Langmead's [Kraken2 'Standard' IndexZone](https://benlangmead.github.io/aws-indexes/k2) dataset.
+The test full input samplesheet is based on the 2025-05-08 release of [NCBI's RefSeq genome](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/) collection.
 
-The files `inspect.txt` and `library_report.tsv` files under `misc/fulltest` provide taxonomic and source information for the genomes that go into the 'Standard' database (Refseq archaea, bacteria, viral, plasmic, human, UniVec_Core).
+We first install `ncbi-datasets`
 
-We used this information to prepare the `test_full.csv` samplesheet using the following steps:
+```bash
+$ conda create -n ncbi-datasets -c conda-forge ncbi-datasets-cli -y
+$ conda activate ncbi-datasets
+$ datasets --version
+datasets version: 18.0.5
+```
 
-While read
+> ![WARNING]
+> The download commands utilising `datasets` are assume you are using [an NCBI API key](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/api-keys/) for increase queries!
+> export NCBI_API_KEY=<PUT_YOUR_API_KEY_HERE>
+
+Then we download the assembly summary files for the relevant taxa from the NCBI FTP site.
+
+```bash
+curl -o assembly_summary_archaea.txt  https://ftp.ncbi.nlm.nih.gov/genomes/refseq/archaea/assembly_summary.txt
+curl -o assembly_summary_bacteria.txt  https://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/assembly_summary.txt
+curl -o assembly_summary_viral.txt https://ftp.ncbi.nlm.nih.gov/genomes/refseq/viral/assembly_summary.txt
+```
+
+We condense the files to make them smaller (bacteria is 178MB!)
+
+```bash
+for i in archaea bacteria viral; do
+  ## Make taxprofiler-like file
+  awk -F'\t' '{if ($12 == "Complete Genome") {print $8 "\t" $6 "\t" $1"_"$16 "\t"} }' assembly_summary_$i.txt | sed 's/ /_/g' > samplesheet_"$i".txt;
+  ## Make accession list file
+    cut -f 3 samplesheet_$i.txt | cut -d '_' -f 1-2 >> accessionlist_$i.txt
+done
+
+rm assembly_summary_*.txt
+```
+
+<!-- TODO CAN'T USE $16 IS ITS BROKEN FOR SOME ENTRIES - N EED TO RELY PURELY ON THE GCF_ CODES -> UPDATE DOWNSTREAM STEPS -->
+
+We can then use NCBI datasets to download the relevant files.
+
+To estimate the size of each download
+
+```bash
+for i in archaea viral bacteria; do
+  echo "$i will be"
+  datasets download genome accession --inputfile accessionlist_$i.txt --assembly-level complete --include genome,protein --no-progressbar --filename assembly_$i.zip --preview
+done
+```
+
+The total will be approximately the sum of the FASTA `all_genomic_fasta` and `prot_fasta` `size_mb` entries.
+
+Then to execute (recommended in a screen/tmux session)
+
+```bash
+## Get 'dehydrated' versions of the files
+for i in archaea viral bacteria ; do
+  datasets download genome accession --inputfile accessionlist_$i.txt --assembly-level complete --include genome,protein --filename assembly_$i.zip --dehydrated
+done
+
+## Then 'hydrate' to generate the actual FASTA files
+for i in archaea viral bacteria ; do
+  unzip assembly_$i.zip -d assembly_$i/
+  datasets rehydrate --directory assembly_$i/
+done
+```
+
+Annoyingly the protein version of each fasta are named just `protein.faa`.
+
+We can rename these to replicate the genomic FASTA name with the correct protein suffix.
+
+```bash
+for type in archaea viral bacteria; do
+  while read fasta; do
+    fnaname=$(basename $fasta)
+    base=${fnaname%%_genomic.fna}
+    mv $(dirname $fasta)/protein.faa $(dirname $fasta)/"$base"_protein.faa
+  done < <(find assembly_$type/ -name '*.fna' -type f)
+done
+```
+
+To prepare the samplesheet we can the do a string replacement to get the path on the system.
+
+```bash
+for type in archaea viral bacteria ; do
+  if [[ -f samplesheet_"$type"_localpaths.csv ]]; then
+    echo samplesheet_"$type"_localpaths.csv exists, exiting
+    break
+  else
+    echo "samplesheet_$type.txt does not exist, generating"
+  fi
+  echo "id,taxid,fasta_dna,fasta_aa" > samplesheet_"$type"_localpaths.csv
+  awk -v type="$type" -F'\t' '{split($3,acc,"_"); print $1 "," $2 "," "/mnt/archgen/microbiome_sciences/reference_databases/source/refseq/genomes/2025-05-08/assembly_"type"/ncbi_dataset/data/"acc[1]"_"acc[2]"/"$3"_genomic.fna" "," "/mnt/archgen/microbiome_sciences/reference_databases/source/refseq/genomes/2025-05-08/assembly_"type"/ncbi_dataset/data/"acc[1]"_"acc[2]"/"$3"_protein.faa"}' samplesheet_$type.txt >> samplesheet_"$type"_localpaths.csv
+done
+```
+
+Some (particularly) virus genomes do not have protein sequences, so we need to remove these from the samplesheet.
+
+```bash
+for type in archaea viral bacteria ; do
+  echo "Reading samplesheet_"$type"_localpaths.csv"
+  while read line; do
+    filepathfna=$(echo $line | cut -f 3 -d ',')
+    if [[ ! -f $filepathfna ]]; then
+      echo $filepathfna
+      echo $filepathfna >> missing_fna_"$type".txt
+    fi
+    filepathfaa=$(echo $line | cut -f 4 -d ',')
+    if [[ ! -f $filepathfaa ]]; then
+      echo $filepathfaa
+      echo $filepathfaa >> missing_fna_"$type".txt
+    fi
+  done < <(cat samplesheet_"$type"_localpaths.csv)
+done
+```
