@@ -276,9 +276,47 @@ for type in archaea viral bacteria; do
 done
 ```
 
-To prepare the samplesheet we can the do a string replacement to get the path on the system.
+We can then prepare a 'cache' of all the full paths to the nucleotide FASTA files, which will be used in the samplesheet.
 
 ```bash
+find ~+ -type f -name "*.fna" > allfna.txt
+find ~+ -type f -name "*.faa" > allfaa.txt
+```
+
+Now we can reconstruct the useable sample sheet sheet based on the original samplesheet and searching through the list of FASTA files.
+
+```bash
+for type in archaea viral bacteria ; do
+  if [[ -f samplesheet_"$type"_localpaths.csv ]]; then
+    echo samplesheet_"$type"_localpaths.csv exists, exiting
+    break
+  else
+    echo "samplesheet_$type.txt does not exist, generating"
+  fi
+  echo "id,taxid,fasta_dna,fasta_aa" > samplesheet_"$type"_localpaths.csv
+  while read line; do
+      genomename=$(echo $line | cut -d ' ' -f 1)
+      taxid=$(echo $line | cut -d ' ' -f 2)
+      accnum=$(echo $line | cut -d ' ' -f 3 | cut -d '_' -f 1-2)
+      fna=$(grep -e "$accnum" allfna.txt)
+      faa=$(grep -e "$accnum" allfaa.txt)
+      echo "$genomename,$taxid,$fna,$faa" >> samplesheet_"$type"_localpaths.csv
+  done < <(cat samplesheet_$type.txt)
+done
+```
+
+Note that this will allow that some genomes do not have protein sequences, so they will only be built with the nucleotide based profilers.
+
+In some cases, the NCBI datasets appears to download genomes that do not have any available sequences.
+
+<!--CHECK MISSING, OR REMOVE. TO SEE WHICH: `cat samplesheet_bacteria_localpaths.csv | grep ',,'  >
+
+<!--
+
+```bash
+To prepare the samplesheet we can the do a string replacement to get the path on the system.
+
+
 for type in archaea viral bacteria ; do
   if [[ -f samplesheet_"$type"_localpaths.csv ]]; then
     echo samplesheet_"$type"_localpaths.csv exists, exiting
@@ -309,4 +347,5 @@ for type in archaea viral bacteria ; do
     fi
   done < <(cat samplesheet_"$type"_localpaths.csv)
 done
-```
+
+-->
