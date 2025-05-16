@@ -1,0 +1,34 @@
+Test_subset:
+- - BTG3
+  - GATD3B
+  - PKNOX1
+  - APP
+  - RRP1
+  - WRB-SH3BGR
+  - SLC19A1
+  - HMGN1
+  - PRMT2
+  - VPS26C
+  - IL10RB
+  - U2AF1
+  - HLCS
+  - U2AF1L5
+  - GATD3A
+  - AP000311.1
+  - URB1
+  - CLDN14
+  - SLC5A3
+  - WRB
+Sample_specific_genes:
+  HG00103:
+  - CLIC6
+  - ATP5PO
+  - WRB
+  - ETS2
+  - HLCS
+  HG00096:
+  - PIGP
+  - CFAP410
+  - TEKT4P2
+  - MRPS6
+  - PRMT2
