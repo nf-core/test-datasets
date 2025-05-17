@@ -1,0 +1,10 @@
+sample,count,skewness,kolmogorov_smirnov_to_uniform_dist_pvalue
+URR029909,1,1,1
+URR029910,2,2,2
+URR029911,3,2,3
+URR029912,4,4,4
+URR029913,5,5,5
+URR029914,6,6,3
+URR029915,7,7,7
+URR029916,8,8,8
+URR029917,9,9,9

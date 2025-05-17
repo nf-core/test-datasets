@@ -1,0 +1,10 @@
+sample,count,skewness,kolmogorov_smirnov_to_uniform_dist_pvalue
+ERR029909,1,1,1
+ERR029910,2,2,2
+ERR029911,3,3,3
+ERR029912,4,9,4
+ERR029913,5,5,5
+ERR029914,6,6,6
+ERR029915,7,7,7
+ERR029916,8,8,1
+ERR029917,9,9,9

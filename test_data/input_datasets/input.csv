@@ -1,0 +1,3 @@
+counts,design,platform,normalised
+tests/test_data/custom_datasets/microarray.normalised.csv,tests/test_data/custom_datasets/microarray.normalised.design.csv,microarray,true
+tests/test_data/custom_datasets/rnaseq.raw.csv,tests/test_data/custom_datasets/rnaseq.raw.design.csv,rnaseq,false
