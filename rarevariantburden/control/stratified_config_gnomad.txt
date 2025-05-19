@@ -1,0 +1,7 @@
+controlAC controlAN controlAA caseGroup
+AC_nfe AN_nfe nhomalt_nfe nfe
+AC_afr AN_afr nhomalt_afr afr
+AC_amr AN_amr nhomalt_amr amr
+AC_eas AN_eas nhomalt_eas eas
+AC_fin AN_fin nhomalt_fin fin
+AC_sas AN_sas nhomalt_sas sas
