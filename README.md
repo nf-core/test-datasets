@@ -300,7 +300,18 @@ for type in archaea viral bacteria ; do
       accnum=$(echo $line | cut -d ' ' -f 3 | cut -d '_' -f 1-2)
       fna=$(grep -e "$accnum" allfna.txt)
       faa=$(grep -e "$accnum" allfaa.txt)
-      echo "$genomename,$taxid,$fna,$faa" >> samplesheet_"$type"_localpaths.csv
+      if [[ -z "$fna" && -z "$faa" ]]; then
+        echo "missing BOTH: $genomename $accnum";
+        echo "$genomename $accnum" >> missing_fnafaa_"$type".txt
+      elif [[ -z "$fna" && -n "$faa" ]]; then
+        echo "missing FNA: $genomename $accnum"
+        echo "$genomename $accnum" >> missing_fna_"$type".txt
+      elif [[ -n "$fna" && -z "$faa" ]]; then
+        echo "missing FAA: $genomename $accnum"
+        echo "$genomename $accnum" >> missing_faa_"$type".txt
+      else
+        echo "${genomename}_${accnum},$taxid,$fna,$faa" >> samplesheet_"$type"_localpaths.csv
+      fi
   done < <(cat samplesheet_$type.txt)
 done
 ```
@@ -308,8 +319,27 @@ done
 Note that this will allow that some genomes do not have protein sequences, so they will only be built with the nucleotide based profilers.
 
 In some cases, the NCBI datasets appears to download genomes that do not have any available sequences.
+Here it was only for taxa in the bacteria list.
 
-<!--CHECK MISSING, OR REMOVE. TO SEE WHICH: `cat samplesheet_bacteria_localpaths.csv | grep ',,'  >
+CHECK MISSING, OR REMOVE. TO SEE WHICH: `cat samplesheet_bacteria_localpaths.csv | grep ',,'
+
+```bash
+for type in archaea viral bacteria; do
+  for dir in assembly_"$type"/ncbi_dataset/data/G_*; do
+    if [[ $(du --inodes $dir) -lt 3 ]]; then
+      echo $dir >> missing_"$type"_inode.txt
+    fi
+  done
+done
+```
+
+```bash
+while read line; do
+  taxon=$(echo $line | cut -d ',' -f 1)
+  echo $taxon
+  grep -e "$taxon" samplesheet_bacteria.txt
+done < <(cat samplesheet_bacteria_localpaths.csv | grep ',,')
+```
 
 <!--
 
