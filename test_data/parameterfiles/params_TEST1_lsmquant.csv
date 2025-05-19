@@ -91,16 +91,16 @@ count_method,3dunet
 int_threshold,200
 model_file,/home/schwitalla/Documents/numorph_3dunet/src/numorph_3dunet/models/075_121_model.h5
 gpu,0
-chunk_size,
-chunk_overlap,
-pred_threshold,
-normalize_intensity,
-resample_chunks,
-tree_radius,
-acquired_img_resolution,
-trained_img_resolution,
-measure_coloc,
-n_channels,
-use_mask,
+chunk_size,112, 112, 32
+chunk_overlap,16, 16, 8
+pred_threshold,0.5
+normalize_intensity,True
+resample_chunks,False
+tree_radius,2
+acquired_img_resolution,0.75, 0.75, 4
+trained_img_resolution,0.75, 0.75, 2.5
+measure_coloc,False
+n_channels,1
+use_mask,False
 mask_file,
-resample_resolution,
+resample_resolution,25
