@@ -57,7 +57,7 @@ resolution,1.2100;1.2100;4
 overlap,0.15
 orientation,ail
 hemisphere,both
-channel_alignment,true
+channel_alignment,update
 adjust_intensity,true
 stitch_images,true
 use_processed_images,false
@@ -88,26 +88,19 @@ points_file,
 save_registered_images,true
 mask_cerebellum_olfactory,true
 count_method,3dunet 
-min_intensity,200
-model_file,075_121_model.h5
+int_threshold,200
+model_file,/home/schwitalla/Documents/numorph_3dunet/src/numorph_3dunet/models/075_121_model.h5
 gpu,0
-chunk_size,1000;1000;32
-chunk_overlap,25;25;8
-average_nuc_diameter,11
-classify_method,threshold
-classify_channels,
-contains_nuclear_channel,true
-remeasure_centroids,false
-intensity_thresholds,
-intensity_expression,1*mode + 3*mad
-z_normalization,true
-load_patches,true
-load_groups,
-keep_classes,1;2;3;4
-patch_size,50;6
-n_patches,1000
-min_class_thresh,0.5                   		
-img_directory, ""
-output_directory, ""
-sample,TEST1
-sample_id,TEST1
+chunk_size,112, 112, 32
+chunk_overlap,16, 16, 8
+pred_threshold,0.5
+normalize_intensity,True
+resample_chunks,False
+tree_radius,2
+acquired_img_resolution,0.75, 0.75, 4
+trained_img_resolution,0.75, 0.75, 2.5
+measure_coloc,False
+n_channels,1
+use_mask,False
+mask_file,
+resample_resolution,25
