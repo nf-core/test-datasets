@@ -3,13 +3,13 @@
 This branch contains test data to be used for automated testing with the [nf-core/rarevariantburden](https://github.com/nf-core/rarevariantburden) pipeline.
 
 ## Content of this repository
-`case/`: input files needed for the pipeline from the case/patiant cohort
+`case/`: Input files needed for the pipeline from the case/patient cohort
 
-`case/samples.1KG.chr21-22.vcf.gz`: joined called and VQSR applied vcf file from the case cohort, here we have a very small subset of joined called vcf file containg part of chr 21 and chr 22 exome region. Here we used 25 test samples from 1000 Genomes Project (build GRCh37) as case data. This is the input of pipeline parameter `caseJointVCF`
+`case/samples.1KG.chr21-22.vcf.gz`: Joined called and VQSR applied vcf file from the case cohort, here we have a very small subset of joined called vcf file containg part of chr 21 and chr 22 exome region. Here we used 25 test samples from 1000 Genomes Project (build GRCh37) as case data. This is the input of pipeline parameter `caseJointVCF`
 
-`case/samples.1KG.chr21-22.vcf.gz.tbi`: the tabix index file for the joined called vcf file
+`case/samples.1KG.chr21-22.vcf.gz.tbi`: The tabix index file for the joined called vcf file
 
-`case/samples.txt`: one column text file containing list of samples, one sample ID per line. Here we used 25 test samples from 1000 Genomes Project (build GRCh37) as case data. This is the input of pipeline parameter `caseSample`
+`case/samples.txt`: One column text file containing list of samples, one sample ID per line. Here we used 25 test samples from 1000 Genomes Project (build GRCh37) as case data. This is the input of pipeline parameter `caseSample`
 
 `case/21.annotated.vcf.gz`: Pre-annotated case VCF file for chr 21, we used the pre-annotated file to skip the annotation steps in the pipelie for testing purpose. This is the input of pipeline parameter `caseAnnotatedVCFPrefix` and `caseAnnotatedVCFSuffix`
 
@@ -29,7 +29,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `case/casePopulation.txt`: The predicted ancestry for each sample, if not specified pipeline will estimate the ancestry/ethnicity of each sample using gnomAD classifier. This is the input of pipeline parameter `casePopulation`
 
-`control/`: input files needed for the pipeline from the control dataset (here we used gnomAD v2 exome data as control dataset)
+`control/`: Input files needed for the pipeline from the control dataset (here we used gnomAD v2 exome data as control dataset)
 
 `control/annotation/chr21.annovar.vep.vcf.gz.gds`: The pre-annotated and GDS converted VCF file from gnomAD v2 exome. Here we used a small exome region for chr 21 as the control data.
 
