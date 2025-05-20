@@ -1,5 +1,5 @@
 sample,fasta
-Homo_sapiens_GCA_000001405.29,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.29_GRCh38.p14/GCA_000001405.29_GRCh38.p14_genomic.fna.gz
+Homo_sapiens_GCA_009914755.4,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/914/755/GCA_009914755.4_T2T-CHM13v2.0/GCA_009914755.4_T2T-CHM13v2.0_genomic.fna.gz
 Callithrix_jacchus_GCA_000004665.1,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/004/665/GCA_000004665.1_Callithrix_jacchus-3.2/GCA_000004665.1_Callithrix_jacchus-3.2_genomic.fna.gz
 Cercopithecus_mitis_GCA_028627265.1,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/028/627/265/GCA_028627265.1_Cercopithecus_mitis_HiC/GCA_028627265.1_Cercopithecus_mitis_HiC_genomic.fna.gz
 Chlorocebus_sabaeus_GCA_000409795.2,https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/409/795/GCA_000409795.2_Chlorocebus_sabeus_1.1/GCA_000409795.2_Chlorocebus_sabeus_1.1_genomic.fna.gz
