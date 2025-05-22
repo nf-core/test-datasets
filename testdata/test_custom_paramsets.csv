@@ -1,0 +1,4 @@
+analysis_name,study_type,differential_method,functional_method,observations_name_col,filtering_min_abundance,exploratory_main_variable,deseq2_vst_nsub,gsea_rnd_seed,round_digits
+deseq2,rnaseq,deseq2,,sample,10,contrasts,500,'10',3
+gsea,rnaseq,deseq2,gsea,sample,10,contrasts,500,'10',3
+gprofiler2,rnaseq,deseq2,gprofiler2,sample,10,contrasts,500,'10',3
