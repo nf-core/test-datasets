@@ -1,4 +1,4 @@
-sampleID	bamFile	PAIRED_END	STRAND
+sampleID	bamFile	pairedEnd	strand
 HG00096	HG00096_ncbi.bam	TRUE	no
 HG00103	HG00103.bam	TRUE	no
 HG00106	HG00106.bam	TRUE	no
