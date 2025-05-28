@@ -456,6 +456,11 @@ Data generation:
    seqtk sample -s100 pbmc_R2.fastq 100 > test_2.fastq
    ```
 
+#### universc
+
+The reference genome was processed using the cellranger v3.0.2.9001 available in the `nf-core/universc:1.2.5.1` container.
+It is now available in `10xgenomics/universc/` as `homo_sapiens_chr22_reference.tar.gz`.
+
 ### cooler test dataset
 
 The raw data were downloaded from https://github.com/open2c/cooler/tree/master/tests/data
