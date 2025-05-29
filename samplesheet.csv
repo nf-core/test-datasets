@@ -1,3 +1,4 @@
 sample,filtered,unfiltered
-SAMN14430799,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430799_custom_emptydrops_filter_matrix.h5ad,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430799_raw_matrix.h5ad
-SAMN14430801,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430801_custom_emptydrops_filter_matrix.rds,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/samples/SAMN14430801_raw_matrix.rds
+sample_X,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/scrnaseq/Sample_X/Sample_X_filtered_matrix.h5ad,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/scrnaseq/Sample_X/Sample_X_raw_matrix.h5ad
+sample_Y_sce,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/scrnaseq/Sample_Y/Sample_Y_filtered_matrix.sce.rds,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/scrnaseq/Sample_Y/Sample_Y_raw_matrix.sce.rds
+sample_Y_seurat,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/scrnaseq/Sample_Y/Sample_Y_filtered_matrix.seurat.rds,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/scrnaseq/Sample_Y/Sample_Y_raw_matrix.seurat.rds
