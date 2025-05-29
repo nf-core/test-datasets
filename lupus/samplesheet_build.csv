@@ -1,5 +1,0 @@
-sample,filtered,batch_col,min_genes
-deng,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/deng.h5ad,batch,50
-gao,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/gao.h5ad,batch,50
-mistry,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/mistry.h5ad,batch,50
-wilhelm-b,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/lupus/samples/wilhelm-b.h5ad,batch,50
