@@ -299,6 +299,10 @@ The spatial_omics folder contains subfolders for different platforms in the emer
       - test_scATAC_S1_L001_I1_001.fastq.gz: Dual index i7 read (8bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R\{1,3\}\_001.fastq.gz: Read 1 and 2 of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
       - test_scATAC_S1_L001_R2_001.fastq.gz: Dual index i5 read (16 bp) of a downsamples version of the cellranger-atac-tiny-bcl-simple-1.0.0.csv data (chr1).
+    
+    - universc
+      - homo_sapiens_chr22_reference.tar.gz: reference genome processed using the cellranger v3.0.2.9001
+
   - demultiplexing
     - barcode.tsv: A list of barcodes used for demultiplexing the test data.
     - chr21.bam: A BAM file containing reads from chromosome 21.
