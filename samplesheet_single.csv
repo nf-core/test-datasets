@@ -1,0 +1,2 @@
+sample,filtered,unfiltered
+SRR28679759,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/pbmc/SRR28679759_filtered_matrix.h5ad,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/pbmc/SRR28679759_raw_matrix.h5ad
