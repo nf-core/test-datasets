@@ -196,6 +196,74 @@ Each file _should_ fail and give an error message from nf-schema.
 
 ## Test Full Data
 
+The full test data here is designed to correspond to the test data used for the full test run of [nf-core/taxprofiler](https://nf-co.re/taxprofiler).
+
+FASTA files for use in database construction are taken from Supp. Table 1 from [Meslier (2022)](https://doi.org/10.1038/s41597-022-01762-z).
+The list of genomes were copy-pasted from the Excel document into an empty tsv file called `41597_2022_1762_MOESM1_ESM.tsv`.
+
+NCBI Datasets package (v18.05) was then used to download the reference genomes and protein translations of each strain from the file.
+
+```bash
+awk -F'\t' '{print $4}' 41597_2022_1762_MOESM1_ESM.tsv | tail -n +2 > download_urls.txt
+
+datasets download genome accession --inputfile download_urls.txt --include genome,protein --no-progressbar --filename meslier_2022.zip --preview
+```
+
+To download
+
+```bash
+datasets download genome accession --inputfile download_urls.txt --include genome,protein --no-progressbar --filename meslier_2022.zip
+```
+
+To unpack
+
+```bash
+unzip meslier_2022.zip
+```
+
+Annoyingly the protein version of each fasta are named just `protein.faa`.
+
+We can rename these to replicate the genomic FASTA name with the correct protein suffix.
+
+```bash
+while read fasta; do
+  fnaname=$(basename $fasta)
+  base=${fnaname%%_genomic.fna}
+  mv $(dirname $fasta)/protein.faa $(dirname $fasta)/"$base"_protein.faa
+done < <(find ncbi_dataset/ -name '*.fna' -type f)
+```
+
+During this renaming, two files were reported as missing.
+
+```bash
+mv: cannot stat 'ncbi_dataset/data/GCA_000308215.1/protein.faa': No such file or directory
+mv: cannot stat 'ncbi_dataset/data/GCA_002563335.1/protein.faa': No such file or directory
+```
+
+Therefore I manually downloaded these from the NCBI ftp site:
+
+```bash
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/308/215/GCF_000308215.1_ASM30821v1/GCF_000308215.1_ASM30821v1_protein.faa.gz
+wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/563/335/GCF_002563335.1_ASM256333v1/GCF_002563335.1_ASM256333v1_protein.faa.gz
+gunzip *.faa.gz
+```
+
+<!-- TODO MOVE TO RIGHT PLACE -->
+
+In this case I had one failure for assembly `GCA_000009225.1`, which has since been replaced with `GCA_931907645.1`, which was downloaded manually using the command above. A further five accessions have been suppressed with no replacement, and thus these were not included in the databases.
+
+Once downloaded, we need to unpack the `datasets` and rename the protein translation for each file to make them unique.
+
+```bash
+for i in meslier2022_fasta/*zip; do
+    f_basename=$(basename $i)
+    unzip $i ncbi_dataset/data/*/*.f* -d meslier2022_fasta/
+    mv meslier2022_fasta/ncbi_dataset/data/${f_basename%%.zip}/protein.faa meslier2022_fasta/ncbi_dataset/data/${f_basename%%.zip}/${f_basename%%.zip}.faa
+done
+```
+
+<!-- OLD VERSION - DO NOT USE TOO BIG
+
 The test full input samplesheet is based on the 2025-05-08 release of [NCBI's RefSeq genome](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/) collection.
 
 We first install `ncbi-datasets`
@@ -232,7 +300,7 @@ done
 rm assembly_summary_*.txt
 ```
 
-<!-- TODO CAN'T USE $16 IS ITS BROKEN FOR SOME ENTRIES - N EED TO RELY PURELY ON THE GCF_ CODES -> UPDATE DOWNSTREAM STEPS -->
+TODO CAN'T USE $16 IS ITS BROKEN FOR SOME ENTRIES - N EED TO RELY PURELY ON THE GCF_ CODES -> UPDATE DOWNSTREAM STEPS
 
 We can then use NCBI datasets to download the relevant files.
 
@@ -319,9 +387,10 @@ done
 Note that this will allow that some genomes do not have protein sequences, so they will only be built with the nucleotide based profilers.
 
 In some cases, the NCBI datasets appears to download genomes that do not have any available sequences.
-Here it was only for taxa in the bacteria list.
 
-CHECK MISSING, OR REMOVE. TO SEE WHICH: `cat samplesheet_bacteria_localpaths.csv | grep ',,'
+We can check these by checking the number of filesystem objects in each of the directories.
+We expect 3: the directory itself, then a FNA and FAA file.
+Anything less than this indicates that at least one of the files is missing.
 
 ```bash
 for type in archaea viral bacteria; do
@@ -333,49 +402,128 @@ for type in archaea viral bacteria; do
 done
 ```
 
+We can then re-run the above steps above in a condensed manner to re-download for missing files.
+
+For missing FAA files, we can use the NCBI datasets API to check if the protein FASTA files actually do exist
+
 ```bash
 while read line; do
-  taxon=$(echo $line | cut -d ',' -f 1)
-  echo $taxon
-  grep -e "$taxon" samplesheet_bacteria.txt
-done < <(cat samplesheet_bacteria_localpaths.csv | grep ',,')
-```
+  query=$(echo $line | cut -d ' ' -f 2)
+  baseurl=$(curl --silent -X GET "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/$query/links"  -H 'accept: application/json' | jq '.[] | .[0] |.resource_link')
+  assembly=$(echo $baseurl | rev | cut -d '/' -f 1 | rev)
+  fullurl=${baseurl//\"/}/${assembly//\"/}_protein.faa.gz
 
-<!--
-
-```bash
-To prepare the samplesheet we can the do a string replacement to get the path on the system.
-
-
-for type in archaea viral bacteria ; do
-  if [[ -f samplesheet_"$type"_localpaths.csv ]]; then
-    echo samplesheet_"$type"_localpaths.csv exists, exiting
-    break
+  if curl --output /dev/null --silent --head --fail "$fullurl"; then
+    echo "valid: $fullurl" >> missing_faa_viral_validation.txt
   else
-    echo "samplesheet_$type.txt does not exist, generating"
+    echo "missing: $fullurl" >> missing_faa_viral_validation.txt
   fi
-  echo "id,taxid,fasta_dna,fasta_aa" > samplesheet_"$type"_localpaths.csv
-  awk -v type="$type" -F'\t' '{split($3,acc,"_"); print $1 "," $2 "," "/mnt/archgen/microbiome_sciences/reference_databases/source/refseq/genomes/2025-05-08/assembly_"type"/ncbi_dataset/data/"acc[1]"_"acc[2]"/"$3"_genomic.fna" "," "/mnt/archgen/microbiome_sciences/reference_databases/source/refseq/genomes/2025-05-08/assembly_"type"/ncbi_dataset/data/"acc[1]"_"acc[2]"/"$3"_protein.faa"}' samplesheet_$type.txt >> samplesheet_"$type"_localpaths.csv
+
+done < missing_faa_viral.txt
+
+## These should be redownloaded
+grep 'valid:' missing_faa_viral_validation.txt
+```
+
+In this case all of those genomes do not have protein sequences, so we can ignore them assuming we want a truly comparable dataset across all profiling databases.
+
+We can also double check files from species where both FNA and FAA are truly missing
+
+```bash
+while read line; do
+  query=$(echo $line | cut -d ' ' -f 2)
+  ls -l assembly_bacteria/ncbi_dataset/data/$query/*
+done < missing_fnafaa_bacteria.txt
+```
+
+For missing FNA/FAA files, we can use the NCBI datasets API to check if the genomic FASTA files actually do exist
+
+```bash
+while read line; do
+  query=$(echo $line | cut -d ' ' -f 2)
+  baseurl=$(curl --silent -X GET "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/$query/links"  -H 'accept: application/json' | jq '.[] | .[0] |.resource_link')
+  assembly=$(echo $baseurl | rev | cut -d '/' -f 1 | rev)
+  fullurlfna=${baseurl//\"/}/${assembly//\"/}_genomic.fna.gz
+  fullurlfaa=${baseurl//\"/}/${assembly//\"/}_protein.faa.gz
+
+  if curl --output /dev/null --silent --head --fail "$fullurlfna"; then
+    echo "valid: $fullurlfna" >> missing_fnafaa_bacteria_validation.txt
+  else
+    echo "missing: $fullurlfna" >> missing_fnafaa_bacteria_validation.txt
+  fi
+
+  if curl --output /dev/null --silent --head --fail "$fullurlfaa"; then
+    echo "valid: $fullurlfaa" >> missing_fnafaa_bacteria_validation.txt
+  else
+    echo "missing: $fullurlfaa" >> missing_fnafaa_bacteria_validation.txt
+  fi
+
+done < missing_fnafaa_bacteria.txt
+
+## These should be redownloaded
+cat missing_fnafaa_bacteria_validation.txt | grep valid
+```
+
+We can manually download these with:
+
+```bash
+for i in $(cat missing_fnafaa_bacteria_validation.txt | grep valid | cut -d ' ' -f 2); do
+  dirname=$(echo $i | rev | cut -d '/' -f 2 | rev | cut -d '_' -f 1-2 )
+  mkdir -p missing/assembly_bacteria/ncbi_dataset/data/$dirname
+  wget $i -P missing/assembly_bacteria/ncbi_dataset/data/$dirname/
+done
+
+cd
+find -name '*.gz' -type f -exec gunzip {} \;
+```
+
+Retrieve the lists of re-downloaded files and place them in the correct directory.
+
+```bash
+cd missing/
+find -name '*.gz' -type f -exec gunzip {} \;
+find ~+ -type f -name "*.fna" > ../allfna_redownloaded.txt
+find ~+ -type f -name "*.faa" > ../allfaa_redownloaded.txt
+mv assembly_bacteria/ncbi_dataset/data/* ../assembly_bacteria/ncbi_dataset/data/
+sed -i 's#missing/##g' ../allfna_redownloaded.txt
+sed -i 's#missing/##g' ../allfaa_redownloaded.txt
+cd ../
+```
+
+To reappend the re-downloaded files to the samplesheet, we can use the following script.
+
+```bash
+for type in  bacteria ; do
+  while read line; do
+      genomename=$(echo $line | cut -d ' ' -f 1)
+      accnum=$(echo $line | cut -d ' ' -f 2)
+      taxid=$(grep $accnum samplesheet_$type.txt | cut -f 2)
+      fna=$(grep -e "$accnum" allfna_redownloaded.txt)
+      faa=$(grep -e "$accnum" allfaa_redownloaded.txt)
+      if [[ -z "$fna" && -z "$faa" ]]; then
+        echo "missing BOTH: $genomename $accnum";
+        echo "$genomename $accnum" >> missing_fnafaa_"$type"_redownloaded.txt
+      elif [[ -z "$fna" && -n "$faa" ]]; then
+        echo "missing FNA: $genomename $accnum"
+        echo "$genomename $accnum" >> missing_fna_"$type"_redownloaded.txt
+      elif [[ -n "$fna" && -z "$faa" ]]; then
+        echo "missing FAA: $genomename $accnum"
+        echo "$genomename $accnum" >> missing_faa_"$type"_redownloaded.txt
+      else
+        echo "${genomename}_${accnum},$taxid,$fna,$faa" >> samplesheet_"$type"_localpaths.csv
+      fi
+  done < <(cat missing_fnafaa_bacteria.txt)
 done
 ```
 
-Some (particularly) virus genomes do not have protein sequences, so we need to remove these from the samplesheet.
+Finally, we can combine the three samplesheets into one.
 
 ```bash
-for type in archaea viral bacteria ; do
-  echo "Reading samplesheet_"$type"_localpaths.csv"
-  while read line; do
-    filepathfna=$(echo $line | cut -f 3 -d ',')
-    if [[ ! -f $filepathfna ]]; then
-      echo $filepathfna
-      echo $filepathfna >> missing_fna_"$type".txt
-    fi
-    filepathfaa=$(echo $line | cut -f 4 -d ',')
-    if [[ ! -f $filepathfaa ]]; then
-      echo $filepathfaa
-      echo $filepathfaa >> missing_fna_"$type".txt
-    fi
-  done < <(cat samplesheet_"$type"_localpaths.csv)
-done
+cat samplesheet_bacteria_localpaths.csv > samplesheet.csv
+tail -n +2 samplesheet_viral_localpaths.csv >> samplesheet.csv
+tail -n +2 samplesheet_archaea_localpaths.csv >> samplesheet.csv
+```
+
+TODO: DO SUBSAMPLING OF INITIAL CSV
 
 -->
