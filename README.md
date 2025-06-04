@@ -640,8 +640,21 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
   - scrnaseq:
+    - csv:
+      - SRR28679756_filtered_matrix.csv: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 100 cells and 100 genes.
     - h5ad:
-      - pbmc1k.h5ad: Downloaded with `scanpy.datasets.pbmc3k()` and subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
+      - pbmc3k.h5ad: Standard scanpy test dataset obtained using `scanpy.datasets.pbmc3k()`.
+      - pbmc1k.h5ad: `pbmc3k.h5ad` subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
+      - combined_filtered_matrix.h5ad: Combined filtered matrix from SRR28679756, SRR28679757, SRR28679758 and SRR28679759, generated with nf-core/scrnaseq v4.0.0, subsetted to 10k genes.
+      - SRR28679756_filtered_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes.
+      - SRR28679756_raw_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes and 300k cells.
+      - SRR28679759_filtered_matrix.h5ad: SRR28679759 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes.
+      - SRR28679759_raw_matrix.h5ad: SRR28679759 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes and 300k cells.
+    - rds:
+      - SRR28679757_filtered_matrix.sce.rds: SRR28679757 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a SingleCellExperiment RDS object.
+      - SRR28679757_raw_matrix.sce.rds: SRR28679757 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a SingleCellExperiment RDS object.
+      - SRR28679758_filtered_matrix.seurat.rds: SRR28679758 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a Seurat RDS object.
+      - SRR28679758_raw_matrix.seurat.rds: SRR28679758 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a Seurat RDS object.
 
 - mus_musculus
 
