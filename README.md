@@ -619,6 +619,7 @@ The spatial_omics folder contains subfolders for different platforms in the emer
     - merge:
       - toy:
         - toy.symm.upper.2.cool, toy.symm.upper.2.cp2.cool: test file for cooler_merge. Downloaded from [open2c/cooler](https://github.com/open2c/cooler/master/tests/data/toy.symm.upper.2.cool)
+        - toy.symm.upper.balanced.2.cool: test file for the cooltools/insulation module. Balanced copy of toy.symm.upper.2.cool, generated with cooler balance.
 
   - gene_set_analysis:
 
