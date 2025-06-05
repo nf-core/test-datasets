@@ -277,7 +277,9 @@ We then download the relevant taxonomy files from NCBI, which are used by nf-cor
 ```bash
 ## NCBI accession2taxid files
 wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz
-wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.gz ## 464617.pts-70.bionc21
+unzip nucl_gb.accession2taxid.gz ## Kraken2 needs this to be unzipped otherwise gives a `build_db: error opening taxonomy//nodes.dmp` error
+
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.gz
 
 ## NCBI taxdmp files
 wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
