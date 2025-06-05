@@ -206,20 +206,31 @@ NCBI Datasets package (v18.05) was then used to download the reference genomes a
 ```bash
 awk -F'\t' '{print $4}' 41597_2022_1762_MOESM1_ESM.tsv | tail -n +2 > download_urls.txt
 
-datasets download genome accession --inputfile download_urls.txt --include genome,protein --no-progressbar --filename meslier_2022.zip --preview
+datasets download genome accession --inputfile download_urls.txt --include genome,protein --filename meslier_2022.zip --preview
 ```
 
 To download
 
 ```bash
-datasets download genome accession --inputfile download_urls.txt --include genome,protein --no-progressbar --filename meslier_2022.zip
+datasets download genome accession --inputfile download_urls.txt --include genome,protein --filename meslier_2022.zip --dehydrated
 ```
 
-To unpack
+To unpack and retrieve genomes
 
 ```bash
 unzip meslier_2022.zip
+datasets rehydrate --directory .
 ```
+
+We can validate the number of genome files downloaded with:
+
+```bash
+find -name '*.fna' -type f | wc -l ## 89, expecting 91
+find -name '*.faa' -type f | wc -l ## 87, expecting 91
+```
+
+The 2 fna discordance is because we assume the assemblies have been suppressed by NCBI, and thus not available for download.
+Thus we continue with what we have.
 
 Annoyingly the protein version of each fasta are named just `protein.faa`.
 
@@ -240,27 +251,61 @@ mv: cannot stat 'ncbi_dataset/data/GCA_000308215.1/protein.faa': No such file or
 mv: cannot stat 'ncbi_dataset/data/GCA_002563335.1/protein.faa': No such file or directory
 ```
 
-Therefore I manually downloaded these from the NCBI ftp site:
+Again, not sure why.
+But indeed on the NCBI FTP server ([GCA_000308215.1](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/308/215/GCA_000308215.1_ASM30821v1/), [GCA_002563335.1](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/563/335/GCA_002563335.1_ASM256333v1/)) there is no protein translation for the these GenBank assemblies (they appear to exist for the RefSeq versions, but we will stay with GenBank for consistency. Maybe submitted assemblies were not originally annotated and RefSeq did it for them.).
+
+We can then prepare a samplesheet of all the FASTA files, which will be used as input to the pipeline.
 
 ```bash
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/308/215/GCF_000308215.1_ASM30821v1/GCF_000308215.1_ASM30821v1_protein.faa.gz
-wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/563/335/GCF_002563335.1_ASM256333v1/GCF_002563335.1_ASM256333v1_protein.faa.gz
-gunzip *.faa.gz
+echo "id,taxid,fasta_dna,fasta_aa" > samplesheet.csv
+while read accession; do
+  echo "Preparing: $accession"
+  taxid=$(datasets summary genome accession $accession | jq '.reports[0].organism.tax_id')
+  fna=$(find ~+ -name "*${accession}*.fna" -type f)
+  faa=$(find ~+ -name "*${accession}*.faa" -type f)
+  if [[ -z "$fna" && -z "$faa" ]]; then
+    echo "missing BOTH: $accession"
+    echo "$accession" >> missing_fnafaa.txt
+  else
+    echo "$accession,$taxid,$fna,$faa" >>  samplesheet.csv
+  fi
+done < download_urls.txt
+```
+
+We then download the relevant taxonomy files from NCBI, which are used by nf-core/createtaxdb.
+
+```bash
+## NCBI accession2taxid files
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession2taxid.gz
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.gz ## 464617.pts-70.bionc21
+
+## NCBI taxdmp files
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
+tar xvzf taxdump.tar.gz
+```
+
+We can reconstruct the 'non-standard' taxonomy files from the above with:
+
+```bash
+## Command borrowed from from https://github.com/khyox/recentrifuge/wiki/Centrifuge-nt#step-by-step-instructions
+gunzip -c nucl_gb.accession2taxid.gz | awk -v OFS='\t' '{print $2, $3}' >> nucl2taxid.map
+gunzip -c prot.accession2taxid.gz | awk -v OFS='\t' '{print $2, $3}' >> prot2taxid.map
+```
+
+We will also download the relevant MALT files:
+
+```bash
+wget https://software-ab.cs.uni-tuebingen.de/download/megan6/nucl_acc2tax-Jul2019.abin.zip
+unzip nucl_acc2tax-Jul2019.abin.zip
+```
+
+Test command (to be replaced with config):
+
+```bash
+nextflow run nf-core/createtaxdb -r dev -profile mpcdf_viper --input samplesheet_viper.csv --outdir ./results --dbname test_full --accession2taxid nucl_gb.accession2taxid.gz --prot2taxid prot2taxid.map --nucl2taxid nucl2taxid.map --nodesdmp nodes.dmp --namesdmp names.dmp --malt_mapdb nucl_acc2tax-Jul2019.abin --malt_mapdb_format a2t --build_bracken --build_centrifuge --build_diamond --build_ganon --build_kaiju --build_kraken2 --build_krakenuniq --krakenuniq_build_options '--jellyfish-bin $(which jellyfish)' --build_malt --build_kmcp --generate_tar_archive --generate_pipeline_samplesheets taxprofiler --generate_samplesheet_dbtype tar --unzip_batch_size 100 -c custom.config
 ```
 
 <!-- TODO MOVE TO RIGHT PLACE -->
-
-In this case I had one failure for assembly `GCA_000009225.1`, which has since been replaced with `GCA_931907645.1`, which was downloaded manually using the command above. A further five accessions have been suppressed with no replacement, and thus these were not included in the databases.
-
-Once downloaded, we need to unpack the `datasets` and rename the protein translation for each file to make them unique.
-
-```bash
-for i in meslier2022_fasta/*zip; do
-    f_basename=$(basename $i)
-    unzip $i ncbi_dataset/data/*/*.f* -d meslier2022_fasta/
-    mv meslier2022_fasta/ncbi_dataset/data/${f_basename%%.zip}/protein.faa meslier2022_fasta/ncbi_dataset/data/${f_basename%%.zip}/${f_basename%%.zip}.faa
-done
-```
 
 <!-- OLD VERSION - DO NOT USE TOO BIG
 
