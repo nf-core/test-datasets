@@ -1,4 +1,4 @@
 id,species,segment,samples,definition,selection,sequence
-MN908947,SARS-COV-2,Wuhan-hu-1,group1;group2,Original Wuhan strain sequenced in 2019,false,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/genomes/MN908947.fasta
-BA2,,,group1,,false,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/genomes/MN908947.fasta
+MN908947,SARS-COV-2,Wuhan-hu-1,group1;group2,Original Wuhan strain sequenced in 2019,false,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/genomes/MN908947.3.fasta
+BA2,,,group1,,false,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/genomes/MN908947.3.fasta
 BA24,covid19,,,,true,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/db/sarscov2.fasta
