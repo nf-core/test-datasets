@@ -1,0 +1,4 @@
+sample,group,fastq_1,fastq_2
+SRR11140744,group1,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/illumina/SRR11140744_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/illumina/SRR11140744_R2.fastq.gz
+SRR11140748,group1,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/illumina/SRR11140748_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/illumina/SRR11140748_R2.fastq.gz
+SRR11140748.2,group2,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/illumina/SRR11140748_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/illumina/SRR11140748_R2.fastq.gz
