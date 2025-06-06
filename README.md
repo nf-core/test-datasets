@@ -53,6 +53,7 @@ The imaging folder contains data related to the analysis of highly-multiplexed i
 - ilp: ilastik specific project files
 - ome-tiff: OME-TIFF image files
 - tiff: TIFF image files
+- ome-zarr: OME-Zarr image files as tar archive
 
 ### pangenomics
 
@@ -786,6 +787,9 @@ The spatial_omics folder contains subfolders for different platforms in the emer
 ### imaging
 - staging
   - '8_cycle1/*.tif': Synthetic image data simulating the naming nomenclature of MACSIma platform. Intensity was created using ```numpy.uint16( 65535* numpy.random.rand(256,256) )```. File names and xml metadata comment were transplanted from real MACSIma files.
+
+- ome-zarr
+  - zarr array from a 2D single-channel 16-bit `.tif` image from the [NuMorph test dataset](https://zenodo.org/records/14916478). The image is a single tile single z-slice (Z0600) of a WT mouse brain using a fluorescent antibody for Ctip2. Imaged with the Ultramicroscope II (Miltenyi).
 
 
 ### pangenomics
