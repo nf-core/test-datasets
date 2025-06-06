@@ -284,6 +284,9 @@ wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2ta
 ## NCBI taxdmp files
 wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz
 tar xvzf taxdump.tar.gz
+
+## genomesizes files
+wget https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/species_genome_size.txt.gz
 ```
 
 We can reconstruct the 'non-standard' taxonomy files from the above with:
