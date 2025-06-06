@@ -1,2 +1,2 @@
 id	species	segment	sequence
-NC001460	hadv-a	s12	https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/genomes/hadv-a-reference.fasta
+NC001460	hadv-a	s12	https://raw.githubusercontent.com/nf-core/test-datasets/viralmetagenome/genomes/hadv-a.fasta
