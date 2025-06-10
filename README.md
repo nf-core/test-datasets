@@ -50,7 +50,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
     kraken2-build --build --db $DBNAME
     ```
 
-3. (OPTIONAL) Download publicly available fastq files with [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline (see [docs](https://nf-co.re/rnaseq/3.0/usage#direct-download-of-public-repository-data)). This also auto-generates a samplesheet that can be easily re-formatted to work as input with nf-core/viralrecon in the following next step:
+3. (OPTIONAL) Download publicly available fastq files with [nf-core/rnaseq](https://github.com/nf-core/rnaseq) pipeline (see [docs](https://nf-co.re/rnaseq/3.0/docs/usage/#direct-download-of-public-repository-data)). This also auto-generates a samplesheet that can be easily re-formatted to work as input with nf-core/viralrecon in the following next step:
 
     ```console
     nextflow run nf-core/rnaseq \
