@@ -2,3 +2,4 @@ id,test_vcf,caller,pctsize,pctseq,pctovl,refdist,chunksize,normshift,normdist,no
 test1,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/germline/HG002_manta_SV_hg19_genotype.chr21.vcf.gz,manta,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
 test2,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/germline/HG002_lumpy_SV_hg19.sorted.vcf.gz,lumpy,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
 test3,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/germline/HG002_delly_SV_hg19.chr21.vcf.gz,delly,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
+test4,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg37/test/germline/full.svaba.germline.sv.chr21.vcf.gz,svaba,0.3,0,0,100000,100000,0.3,0.3,0.3,100000,true,cts
