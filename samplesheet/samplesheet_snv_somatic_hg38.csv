@@ -1,4 +1,4 @@
 id,test_vcf,caller,subsample
 test8,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/HCC1395T_vs_HCC1395N.freebayes.chr21.vcf.gz,freebayes,
-test9,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/HCC1395T_vs_HCC1395N.manta.somatic_sv.vcf.gz,manta,"HCC1395_HCC1395T"
+test9,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/HCC1395T_vs_HCC1395N.mutect2.filtered.chr21.vcf.gz,mutect2,
 test10,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/HCC1395T_vs_HCC1395N.strelka.somatic_snvs.vcf.gz,strelka,"TUMOR"
