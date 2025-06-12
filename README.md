@@ -69,6 +69,10 @@ The spatial_omics folder contains subfolders for different platforms in the emer
 
 - xenium (10xgenomics)
 
+### earth_sciences
+
+The earth sciences folder contain subfolders for different data formats encountered in the earth sciences. Subfolders names indicate the type of data. If lower level subfolder exist, their names indicate file formats. 
+
 ## Data Description
 
 ### genomics
@@ -869,6 +873,19 @@ The spatial_omics folder contains subfolders for different platforms in the emer
   - 'taxonomy_ids.txt': contains species names, to be used as input for [goat-cli taxon search tool](https://github.com/genomehubs/goat-cli).
 - tar
   - 'hello.tar.gz': gzipped tar archive containing a single file without a directory
+
+### earth sciences
+
+- datacubes
+  - datacube-definition.prj: A datacube definition file in [FORCE syntax](https://force-eo.readthedocs.io/en/latest/howto/datacube.html#where-is-the-datacube-definition-stored).
+- vector
+  - gpkg
+    - crete.gpkg: Geopackage file describing the island of Crete, Greece.
+  - shp
+    - denmark.dbf: Attribute table for a shapefile for denmark from [geoBoundaries](https://www.geoboundaries.org).
+    - denmark.prj: Projection for a shapefile for denmark from [geoBoundaries](https://www.geoboundaries.org)..
+    - denmark.shp: Geometry for a shapefile for denmark from [geoBoundaries](https://www.geoboundaries.org)..
+    - denmark.shx: Shape index for a shapefile for denmark from [geoBoundaries](https://www.geoboundaries.org)..
 
 ### Uncategorized
 
