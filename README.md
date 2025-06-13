@@ -145,6 +145,14 @@ We also hold 'broken' samplesheets for testing input schema validation.
 - `broken_samplesheets/samplesheet_preannotated_missingprotein.csv`: missing `protein` file when `gbk` also given
 - `broken_samplesheets/samplesheet_preannotated_missingsample.csv`: missing sample entry and space in string
 
+## Databases
+
+### antismash
+
+The `antismash_trimmed.tar.gz` archive is a mini version of the full antiSMASH database containing a handful of BGC sequences.
+
+Kindly made and shared by @mberacochea from the EBI-metagenomics team and the [assembly-analysis-pipeline](https://github.com/EBI-Metagenomics/assembly-analysis-pipeline).
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
