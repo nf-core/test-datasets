@@ -1,0 +1,3 @@
+sample,fasta
+sample_1,https://raw.githubusercontent.com/nf-core/test-datasets/funcscan/sample_1_hits.fasta.gz
+sample_2,https://raw.githubusercontent.com/nf-core/test-datasets/funcscan/sample_2_hits.fasta.gz
