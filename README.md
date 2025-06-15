@@ -310,7 +310,6 @@ Test command (to be replaced with config):
 nextflow run nf-core/createtaxdb -r dev -profile mpcdf_viper --input samplesheet_viper.csv --outdir ./results --dbname test_full --accession2taxid nucl_gb.accession2taxid.gz --prot2taxid prot2taxid.map --nucl2taxid nucl2taxid.map --nodesdmp nodes.dmp --namesdmp names.dmp --malt_mapdb nucl_acc2tax-Jul2019.abin --malt_mapdb_format a2t --build_bracken --build_centrifuge --build_diamond --build_ganon --build_kaiju --build_kraken2 --build_krakenuniq --krakenuniq_build_options '--jellyfish-bin $(which jellyfish)' --build_malt --build_kmcp --generate_tar_archive --generate_pipeline_samplesheets taxprofiler --generate_samplesheet_dbtype tar --unzip_batch_size 100 -c custom.config
 ```
 
-<!-- TODO MOVE TO RIGHT PLACE -->
 
 <!-- OLD VERSION - DO NOT USE TOO BIG
 
