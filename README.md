@@ -311,7 +311,7 @@ nextflow run nf-core/createtaxdb -r dev -profile mpcdf_viper --input samplesheet
 ```
 
 
-<!-- OLD VERSION - DO NOT USE TOO BIG
+<!-- OLD VERSION - TOO BIG - CONSIDER REGENERATING BUT MORE FILTERED IN THE FUTURE
 
 The test full input samplesheet is based on the 2025-05-08 release of [NCBI's RefSeq genome](https://ftp.ncbi.nlm.nih.gov/genomes/refseq/) collection.
 
