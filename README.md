@@ -11,25 +11,35 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `case/samples.txt`: One column text file containing list of samples, one sample ID per line. Here we used 25 test samples from 1000 Genomes Project (build GRCh37) as case data. This is the input of pipeline parameter `caseSample`
 
-`case/21.annotated.vcf.gz`: Pre-annotated case VCF file for chr 21, we used the pre-annotated file to skip the annotation steps in the pipelie for testing purpose. This is the input of pipeline parameter `caseAnnotatedVCFPrefix` and `caseAnnotatedVCFSuffix`
+`case/annotationFiles.csv`: List of annotated files for test profile. This is the input of pipeline parameter `caseAnnotatedVCFFileList`
+
+`case/annotationGDSFiles.csv`: List of annotated GDS files for test profile. This is the input of pipeline parameter `caseAnnotationGDSFileList`
+
+`case/genotypeGDSFiles.csv`: List of genotype GDS files for test profile. This is the input of pipeline parameter `caseGenotypeGDSFileList`
+
+`case/21.annotated.vcf.gz`: Pre-annotated case VCF file for chr 21, we used the pre-annotated file to skip the annotation steps in the pipelie for testing purpose.
 
 `case/21.annotated.vcf.gz.tbi`: The tabix index file for the pre-annotated case VCF file for chr 21
 
-`case/21.annotated.vcf.gz.gds`: The GDS format file for the pre-annotated case VCF file for chr 21, we used the GDS file to skip the VCF to GDS conversion steps in the pipelie for testing purpose. This is the input of pipeline parameter `caseAnnotationGDSPrefix` and `caseAnnotationGDSSuffix`
+`case/21.annotated.vcf.gz.gds`: The GDS format file for the pre-annotated case VCF file for chr 21, we used the GDS file to skip the VCF to GDS conversion steps in the pipelie for testing purpose.
 
-`case/22.annotated.vcf.gz`: Pre-annotated case VCF file for chr 22, we used the pre-annotated file to skip the annotation steps in the pipelie for testing purpose. This is the input of pipeline parameter `caseAnnotatedVCFPrefix` and `caseAnnotatedVCFSuffix`
+`case/22.annotated.vcf.gz`: Pre-annotated case VCF file for chr 22, we used the pre-annotated file to skip the annotation steps in the pipelie for testing purpose.
 
 `case/22.annotated.vcf.gz.tbi`: The tabix index file for the pre-annotated case VCF file for chr 22
 
-`case/22.annotated.vcf.gz.gds`: The GDS format file for the pre-annotated case VCF file for chr 22, we used the GDS file to skip the VCF to GDS conversion steps in the pipelie for testing purpose. This is the input of pipeline parameter `caseAnnotationGDSPrefix` and `caseAnnotationGDSSuffix`
+`case/22.annotated.vcf.gz.gds`: The GDS format file for the pre-annotated case VCF file for chr 22, we used the GDS file to skip the VCF to GDS conversion steps in the pipelie for testing purpose.
 
-`case/21.biallelic.leftnorm.ABCheck.vcf.gz.gds`: The GDS format for the left normalized case VCF file for chr 21, we used this to skip the normalization and convert nomalized VCF file to GDS format steps in the pipeline. This is the input of pipeline parameter `caseGenotypeGDSPrefix` and `caseGenotypeGDSSuffix`
+`case/21.biallelic.leftnorm.ABCheck.vcf.gz.gds`: The GDS format for the left normalized case VCF file for chr 21, we used this to skip the normalization and convert nomalized VCF file to GDS format steps in the pipeline.
 
-`case/22.biallelic.leftnorm.ABCheck.vcf.gz.gds`: The GDS format for the left normalized case VCF file for chr 22, we used this to skip the normalization and convert nomalized VCF file to GDS format steps in the pipeline. This is the input of pipeline parameter `caseGenotypeGDSPrefix` and `caseGenotypeGDSSuffix`
+`case/22.biallelic.leftnorm.ABCheck.vcf.gz.gds`: The GDS format for the left normalized case VCF file for chr 22, we used this to skip the normalization and convert nomalized VCF file to GDS format steps in the pipeline.
 
 `case/casePopulation.txt`: The predicted ancestry for each sample, if not specified pipeline will estimate the ancestry/ethnicity of each sample using gnomAD classifier. This is the input of pipeline parameter `casePopulation`
 
 `control/`: Input files needed for the pipeline from the control dataset (here we used gnomAD v2 exome data as control dataset)
+
+`control/controlAnnotationGDS.csv`: List of pre-annotated and GDS converted VCF file from gnomAD v2 exome.
+
+`control/controlGenotypeGDS.csv`: List of normalized and GDS converted VCF file from gnomAD v2 exome.
 
 `control/annotation/chr21.annovar.vep.vcf.gz.gds`: The pre-annotated and GDS converted VCF file from gnomAD v2 exome. Here we used a small exome region for chr 21 as the control data.
 

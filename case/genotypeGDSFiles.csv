@@ -1,0 +1,3 @@
+chr,gds
+21,https://raw.githubusercontent.com/nf-core/test-datasets/rarevariantburden/case/21.biallelic.leftnorm.ABCheck.vcf.gz.gds
+22,https://raw.githubusercontent.com/nf-core/test-datasets/rarevariantburden/case/22.biallelic.leftnorm.ABCheck.vcf.gz.gds
