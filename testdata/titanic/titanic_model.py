@@ -40,6 +40,7 @@ class ModelTitanicPerformance(torch.nn.Module):
         Title_Mr: torch.Tensor,
         Title_Mrs: torch.Tensor,
         Title_Rev: torch.Tensor,
+        **kwargs: torch.Tensor,  # noqa: ARG002
     ):
         x = torch.stack(
             [
@@ -73,14 +74,23 @@ class ModelTitanicPerformance(torch.nn.Module):
         Args:
             output: Model output tensor of shape [batch_size, nb_classes]
             survived: Target tensor of shape [batch_size, 1]
-            loss_fn: Loss function (CrossEntropyLoss)
+            loss_fn: Loss function (BCEWithLogitsLoss)
 
         Returns:
             Loss value
         """
-        # Squeeze the extra dimension from the target tensor and ensure long dtype
-        target = Survived.squeeze(-1)
-        return loss_fn(output, target)
+        # Ensure both tensors have compatible shapes
+        target = Survived.view(-1).float()  # Flatten and ensure float type
+        output = output.view(-1).float()            # Flatten output as well
+        
+        # Ensure they have the same size
+        if output.size(0) != target.size(0):
+            raise RuntimeError(f"Size mismatch: output has {output.size(0)} elements, target has {target.size(0)} elements")
+        
+        try:
+            return loss_fn(output, target)
+        except (ValueError, RuntimeError) as e:
+            raise RuntimeError(f"Error computing loss: {e}, output shape: {output.shape}, target shape: {target.shape}") from e
 
     def compute_accuracy(self, output: torch.Tensor, Survived: torch.Tensor) -> torch.Tensor:
         """Compute the accuracy.
@@ -90,34 +100,30 @@ class ModelTitanicPerformance(torch.nn.Module):
             survived: Target tensor of shape [batch_size, 1]
         """
         # Squeeze the extra dimension from the target tensor and ensure long dtype
-        target = Survived.squeeze(-1)
+        target = Survived.view(-1)
         # Compute the accuracy
         accuracy = ((output > 0) == target).float().mean()
         return accuracy
 
     def batch(
         self,
-        x: dict[str, torch.Tensor],
-        y: dict[str, torch.Tensor],
-        loss_fn: Callable = torch.nn.MSELoss,
+        batch: dict[str, torch.Tensor],
+        loss_fn: Callable = torch.nn.BCEWithLogitsLoss(),
         optimizer: Optional[torch.optim.Optimizer] = None,
     ) -> tuple[torch.Tensor, dict[str, torch.Tensor]]:
         """Perform one batch step.
 
-        Args:
-            x: Input tensor of shape [batch_size, in_features]
-            y: Target tensor of shape [batch_size, out_features]
-            loss_fn: Loss function
-            optimizer: Optimizer
+        `batch` is a dictionary with the input and label tensors.
+        `loss_fn` is the loss function to be used.
 
-        Returns:
-            Tuple of (loss, metrics)
+        If `optimizer` is passed, it will perform the optimization step -> training step
+        Otherwise, only return the forward pass output and loss -> evaluation step
         """
         # Forward pass
-        output = self.forward(**x).squeeze(-1)
+        output = self.forward(**batch).squeeze(-1)
 
         # Compute loss
-        loss = self.compute_loss(output, **y, loss_fn=loss_fn)
+        loss = self.compute_loss(output, batch["Survived"], loss_fn=loss_fn)
 
         # Backward pass and optimization
         if optimizer is not None:
@@ -125,5 +131,5 @@ class ModelTitanicPerformance(torch.nn.Module):
             loss.backward()
             optimizer.step()
 
-        accuracy = self.compute_accuracy(output, **y)
+        accuracy = self.compute_accuracy(output, batch["Survived"])
         return loss, {"accuracy": accuracy, "predictions": output}
