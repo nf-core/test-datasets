@@ -261,6 +261,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'test.sorted.bam.bai'
     - fast5
       - 'fast5.tar.gz': compressed `fast5` folder with the following structure: `fast5/100read_fast5/*.fast5`
+    - pod5
+      - 'test.pod5': test data in pod5 format (converted from the fast5 data with [pod5](https://github.com/nanoporetech/pod5-file-format) package.)
     - fastq
       - 'test.fastq.gz'
       - 'test_2.fastq.gz'
