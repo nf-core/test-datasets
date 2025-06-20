@@ -81,6 +81,13 @@ class ModelTitanicPerformance(torch.nn.Module):
         """
         # Squeeze the extra dimension from the target tensor and ensure long dtype
         target = Survived.squeeze(-1)
+        
+        # Ensure both tensors have the same shape and dimensionality
+        if output.dim() == 0:
+            output = output.unsqueeze(0)
+        if target.dim() == 0:
+            target = target.unsqueeze(0)
+        
         return loss_fn(output, target)
 
     def compute_accuracy(self, output: torch.Tensor, Survived: torch.Tensor) -> torch.Tensor:
