@@ -3,7 +3,7 @@
 # mypy: ignore-errors
 """This file contains the PyTorch model for the performance test of the Titanic dataset."""
 
-from typing import Callable, Optional
+from typing import Callable
 
 import torch
 
@@ -74,23 +74,14 @@ class ModelTitanicPerformance(torch.nn.Module):
         Args:
             output: Model output tensor of shape [batch_size, nb_classes]
             survived: Target tensor of shape [batch_size, 1]
-            loss_fn: Loss function (BCEWithLogitsLoss)
+            loss_fn: Loss function (CrossEntropyLoss)
 
         Returns:
             Loss value
         """
-        # Ensure both tensors have compatible shapes
-        target = Survived.view(-1).float()  # Flatten and ensure float type
-        output = output.view(-1).float()            # Flatten output as well
-        
-        # Ensure they have the same size
-        if output.size(0) != target.size(0):
-            raise RuntimeError(f"Size mismatch: output has {output.size(0)} elements, target has {target.size(0)} elements")
-        
-        try:
-            return loss_fn(output, target)
-        except (ValueError, RuntimeError) as e:
-            raise RuntimeError(f"Error computing loss: {e}, output shape: {output.shape}, target shape: {target.shape}") from e
+        # Squeeze the extra dimension from the target tensor and ensure long dtype
+        target = Survived.squeeze(-1)
+        return loss_fn(output, target)
 
     def compute_accuracy(self, output: torch.Tensor, Survived: torch.Tensor) -> torch.Tensor:
         """Compute the accuracy.
@@ -100,24 +91,22 @@ class ModelTitanicPerformance(torch.nn.Module):
             survived: Target tensor of shape [batch_size, 1]
         """
         # Squeeze the extra dimension from the target tensor and ensure long dtype
-        target = Survived.view(-1)
+        target = Survived.squeeze(-1)
         # Compute the accuracy
         accuracy = ((output > 0) == target).float().mean()
         return accuracy
 
-    def batch(
+    def train_batch(
         self,
         batch: dict[str, torch.Tensor],
-        loss_fn: Callable = torch.nn.BCEWithLogitsLoss(),
-        optimizer: Optional[torch.optim.Optimizer] = None,
+        optimizer: torch.optim.Optimizer,
+        loss_fn: Callable,
     ) -> tuple[torch.Tensor, dict[str, torch.Tensor]]:
-        """Perform one batch step.
+        """Perform one training batch step.
 
         `batch` is a dictionary with the input and label tensors.
-        `loss_fn` is the loss function to be used.
-
-        If `optimizer` is passed, it will perform the optimization step -> training step
-        Otherwise, only return the forward pass output and loss -> evaluation step
+        `optimizer` is the optimizer for the training step.
+        **kwargs contains the loss functions.
         """
         # Forward pass
         output = self.forward(**batch).squeeze(-1)
@@ -126,10 +115,28 @@ class ModelTitanicPerformance(torch.nn.Module):
         loss = self.compute_loss(output, batch["Survived"], loss_fn=loss_fn)
 
         # Backward pass and optimization
-        if optimizer is not None:
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+        accuracy = self.compute_accuracy(output, batch["Survived"])
+        return loss, {"accuracy": accuracy, "predictions": output}
+
+    def inference(
+        self,
+        batch: dict[str, torch.Tensor],
+        loss_fn: Callable,
+    ) -> tuple[torch.Tensor, dict[str, torch.Tensor]]:
+        """Perform one inference batch step.
+
+        `batch` is a dictionary with the input and label tensors.
+        **kwargs contains the loss functions.
+        """
+        # Forward pass only
+        output = self.forward(**batch).squeeze(-1)
+
+        # Compute loss
+        loss = self.compute_loss(output, batch["Survived"], loss_fn=loss_fn)
 
         accuracy = self.compute_accuracy(output, batch["Survived"])
         return loss, {"accuracy": accuracy, "predictions": output}
