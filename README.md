@@ -837,6 +837,8 @@ The earth sciences folder contain subfolders for different data formats encounte
 - pdb
   - 1tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Engineered)
   - 8tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Breast)
+- hhsuite
+  - pfam.tar.gz: An hh-suite formatted mini test database, containing PF00001.26 and PF00002.29 from pfam version 37.4.
 
 ### spatialomics
 
