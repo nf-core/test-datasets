@@ -860,6 +860,7 @@ The earth sciences folder contain subfolders for different data formats encounte
   - ncbi_user_settings.mkfg: Minimal NCBI user settings
   - paraphase_config.yaml: Minimal paraphase config for PRODH
   - config_baysor.toml: Sample config file to run the baysor module.
+  - config_template.yte.yaml: YTE compatible exemplary config file
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - models
