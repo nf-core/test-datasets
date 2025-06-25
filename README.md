@@ -534,7 +534,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test.rnaseq.bim: Plink binaries obtained using test.rnaseq.vcf with plink tool
       - test.rnaseq.fam: Plink binaries obtained using test.rnaseq.vcf with plink tool
     - varlociraptor:
-      - scenarios.yml: Yaml file containing a simple germline scenario
+      - normal.yml: Yaml file containing a simple germline scenario
+      - tn_with_priors.yml: Yaml file containing tumor-normal scenario with priors
     - vcf:
       - test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
       - test.genome_21.somatic_sv.vcf: Indels VCF corresponding to `test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
