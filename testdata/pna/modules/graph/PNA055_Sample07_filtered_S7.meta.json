@@ -16,7 +16,7 @@
             "--min-component-size-to-prune": 100,
             "--component-size-max-threshold": null,
             "--component-size-min-threshold": 100,
-            "--panel": "pna-rnd-158plex-final",
+            "--panel": "proxiome-immuno-155",
             "--output": "."
         }
     }
