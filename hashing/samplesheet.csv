@@ -1,4 +1,4 @@
 sample,rna_matrix,hto_matrix
-test1,/home/nico/Software/nf-core/hadge/data/hashing/rna_converted,/home/nico/Software/nf-core/hadge/data/hashing/hto_converted
-test2,/home/nico/Software/nf-core/hadge/data/hashing/rna_converted,/home/nico/Software/nf-core/hadge/data/hashing/hto_converted
-test3,/home/nico/Software/nf-core/hadge/data/hashing/rna_converted,/home/nico/Software/nf-core/hadge/data/hashing/hto_converted
+test1,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/hashing/rna.tar.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/hashing/hto.tar.gz
+test2,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/hashing/rna.tar.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/hashing/hto.tar.gz
+test3,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/hashing/rna.tar.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/hashing/hto.tar.gz
