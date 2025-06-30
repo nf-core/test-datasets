@@ -1,0 +1,4 @@
+sample,bam,vcf,n_samples,barcodes
+test1,/home/nico/Software/nf-core/hadge/data/genetic/chr21.bam,/home/nico/Software/nf-core/hadge/data/genetic/donor_genotype_chr21.vcf,2,/home/nico/Software/nf-core/hadge/data/genetic/barcodes.tsv
+test2,/home/nico/Software/nf-core/hadge/data/genetic/chr21.bam,/home/nico/Software/nf-core/hadge/data/genetic/donor_genotype_chr21.vcf,2,/home/nico/Software/nf-core/hadge/data/genetic/barcodes.tsv
+test3,/home/nico/Software/nf-core/hadge/data/genetic/chr21.bam,/home/nico/Software/nf-core/hadge/data/genetic/donor_genotype_chr21.vcf,2,/home/nico/Software/nf-core/hadge/data/genetic/barcodes.tsv

@@ -1,0 +1,4 @@
+sample,rna_matrix,hto_matrix
+test1,/home/nico/Software/nf-core/hadge/data/hashing/rna_converted,/home/nico/Software/nf-core/hadge/data/hashing/hto_converted
+test2,/home/nico/Software/nf-core/hadge/data/hashing/rna_converted,/home/nico/Software/nf-core/hadge/data/hashing/hto_converted
+test3,/home/nico/Software/nf-core/hadge/data/hashing/rna_converted,/home/nico/Software/nf-core/hadge/data/hashing/hto_converted
