@@ -1,6 +1,7 @@
 # Nextflow logs and metadata
 *.nextflow.log*
 /.nextflow/
+.nextflow/**
 
 # SLURM or scheduler logs
 *.out
@@ -14,7 +15,7 @@
 # Work and results/vcfs
 /work/
 /results/vcfs/
-.nf-test/*
+.nf-test/tests/**
 
 # Nextflow temporary execution files
 *.command.*
