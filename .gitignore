@@ -3,8 +3,10 @@
 /.nextflow/
 
 # SLURM or scheduler logs
-test-datasets-*.out
-test-datasets-*.err
+*.out
+*.err
+*.out
+*.err
 
 # Shell scripts (optional, if not versioning run.sh)
 *.sh
@@ -12,6 +14,7 @@ test-datasets-*.err
 # Work and results/vcfs
 /work/
 /results/vcfs/
+.nf-test/*
 
 # Nextflow temporary execution files
 *.command.*

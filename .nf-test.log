@@ -1,0 +1,11 @@
+Jun-30 13:51:29.919 [main] INFO  com.askimed.nf.test.App - nf-test 0.9.2
+Jun-30 13:51:29.938 [main] INFO  com.askimed.nf.test.App - Arguments: [test, tests/modules/generate_example_genotypes_vcfs.nf.test, --verbose]
+Jun-30 13:51:30.918 [main] INFO  com.askimed.nf.test.App - Nextflow Version: 25.04.2
+Jun-30 13:51:30.919 [main] INFO  com.askimed.nf.test.commands.RunTestsCommand - Load config from file /projects/academic/rpili/test-datasets/nf-test.config...
+Jun-30 13:51:33.133 [main] INFO  com.askimed.nf.test.lang.dependencies.DependencyResolver - Loaded 18 files from directory /projects/academic/rpili/test-datasets in 1.816 sec
+Jun-30 13:51:33.136 [main] INFO  com.askimed.nf.test.lang.dependencies.DependencyResolver - Found 1 files containing tests.
+Jun-30 13:51:33.137 [main] DEBUG com.askimed.nf.test.lang.dependencies.DependencyResolver - Found files: [/projects/academic/rpili/test-datasets/tests/modules/generate_example_genotypes_vcfs.nf.test]
+Jun-30 13:51:33.703 [main] INFO  com.askimed.nf.test.commands.RunTestsCommand - Found 2 tests to execute.
+Jun-30 13:51:33.704 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Started test plan
+Jun-30 13:51:33.704 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Running testsuite 'Test Process GENERATE_EXAMPLE_GENOTYPES_VCFS' from file '/projects/academic/rpili/test-datasets/tests/modules/generate_example_genotypes_vcfs.nf.test'.
+Jun-30 13:51:33.704 [main] INFO  com.askimed.nf.test.core.TestExecutionEngine - Run test '83b0efa6: Should have accessible vcfs from 1000 Genomes'. type: com.askimed.nf.test.lang.process.ProcessTest

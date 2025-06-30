@@ -1,0 +1,63 @@
+{
+    "Should run without failures and produce proper size chunked vcfs": {
+        "content": [
+            {
+                "0": [
+                    "chr10_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr11_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr12_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr13_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr14_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr15_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr16_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr17_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr18_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr19_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr1_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr20_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr21_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr22_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr2_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr3_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr4_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr5_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr6_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr7_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr8_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr9_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chrX_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e"
+                ],
+                "chunked_vcfs": [
+                    "chr10_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr11_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr12_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr13_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr14_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr15_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr16_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr17_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr18_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr19_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr1_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr20_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr21_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr22_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr2_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr3_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr4_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr5_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr6_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr7_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr8_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chr9_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
+                    "chrX_chunked.vcf.gz:md5,d41d8cd98f00b204e9800998ecf8427e"
+                ]
+            }
+        ],
+        "meta": {
+            "nf-test": "0.9.2",
+            "nextflow": "25.04.2"
+        },
+        "timestamp": "2025-06-25T20:13:44.118080212"
+    }
+}

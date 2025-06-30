@@ -1,0 +1,37 @@
+nextflow_process {
+
+    name "Test Process CHUNK_VCFS"
+    script "modules/chunk_vcfs.nf"
+    process "CHUNK_VCFS"
+
+    setup {
+	// run the stub of GENERATE_EXAMPLE_GENOTYPES_VCFS
+	run("GENERATE_EXAMPLE_GENOTYPES_VCFS", "modules/generate_example_genotypes_vcfs.nf") {
+		options "-stub"
+		params {
+			outdir_vcfs = "test_results/vcfs"
+		}
+		process {
+			"""
+			// No inputs
+			"""
+		}
+	}
+    }
+
+    test("Should run without failures - chunk vcfs to variants") {
+
+        when {
+            process {
+                """
+                // input[0] = GENERATE_EXAMPLE_GENOTYPES_VCFS.out.vcfs
+                """
+            }
+        }
+
+        then {
+            assert process.success
+            assert process.exitStatus == 0
+	}
+    }
+}
