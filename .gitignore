@@ -16,6 +16,7 @@
 /work/
 /results/vcfs/
 .nf-test/tests/**
+.nf-test*
 
 # Nextflow temporary execution files
 *.command.*
