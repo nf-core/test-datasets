@@ -6,14 +6,11 @@ process CONCAT_CHUNKED_VCFS {
 	path vcf_files
 
 	output:
-	path "combined_chunked.vcf.gz"
-	path "combined_chunked.vcf.gz.tbi"
+	path "combined_chunked.vcf.gz", emit: combined_vcf
+	path "combined_chunked.vcf.gz.tbi", emit: combined_vcf_tbi
 
 	script:
 	"""
-	echo "VCFs to concat:" > concat_debug.txt
-	ls -lh ${vcf_files} >> concat_debug.txt
-
 	bcftools concat -Oz -o combined_chunked.vcf.gz ${vcf_files.join(' ')}
 	tabix -p vcf combined_chunked.vcf.gz	
 	"""

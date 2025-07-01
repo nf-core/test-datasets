@@ -10,7 +10,9 @@ process CHUNK_VCFS {
 
 	script:
 	"""
-	bcftools view ${vcfs} | awk 'BEGIN {h=1; n=4500} /^#/ {print; next} {if (h <= n) {print; h++}}' | bgzip >${chr}_chunked.vcf.gz
-	tabix -p vcf ${chr}_chunked.vcf.gz
+    # Proper VCF chunking with bcftools
+    bcftools view -H ${vcfs} | head -n 4500 > variants.txt
+    bcftools view -h ${vcfs} > header.txt
+    cat header.txt variants.txt | bgzip > ${chr}_chunked.vcf.gz
 	"""
 }

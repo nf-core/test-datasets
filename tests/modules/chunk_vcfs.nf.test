@@ -1,30 +1,19 @@
+import java.nio.file.Paths
+
 nextflow_process {
 
     name "Test Process CHUNK_VCFS"
     script "modules/chunk_vcfs.nf"
     process "CHUNK_VCFS"
 
-    setup {
-	// run the stub of GENERATE_EXAMPLE_GENOTYPES_VCFS
-	run("GENERATE_EXAMPLE_GENOTYPES_VCFS", "modules/generate_example_genotypes_vcfs.nf") {
-		options "-stub"
-		params {
-			outdir_vcfs = "test_results/vcfs"
-		}
-		process {
-			"""
-			// No inputs
-			"""
-		}
-	}
-    }
-
-    test("Should run without failures - chunk vcfs to variants") {
-
+    test("Should run without failures - chunk vcfs to 4500 variants") {
         when {
             process {
                 """
-                // input[0] = GENERATE_EXAMPLE_GENOTYPES_VCFS.out.vcfs
+                input[0] = Channel.fromList([
+                    tuple('10', file("${projectDir}/tests/data/chunk_vcfs_input/ALL.chr10.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.subset.vcf.gz")),
+                    tuple('11', file("${projectDir}/tests/data/chunk_vcfs_input/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.subset.vcf.gz"))
+                ])
                 """
             }
         }
@@ -32,6 +21,15 @@ nextflow_process {
         then {
             assert process.success
             assert process.exitStatus == 0
-	}
+            with(process.out.chunked_vcfs) {
+                assert size() == 2, "Expected 2 chunked VCFs, got ${size()}"
+                def firstVcf = path(get(0)).vcf
+                def secondVcf = path(get(1)).vcf
+                println("First chunked VCF: ${firstVcf}")
+                println("Second chunked VCF: ${secondVcf}")
+                assert firstVcf.variantCount == 4500 : "Expected 4500 variants in first chunked VCF but found ${firstVcf.variantCount}"
+                assert secondVcf.variantCount == 4500 : "Expected 4500 variants in second chunked VCF but found ${secondVcf.variantCount}"
+            }
+        }
     }
 }

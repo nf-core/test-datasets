@@ -1,8 +1,8 @@
 nextflow_pipeline {
     
     name "Test Workflow main.nf"
-    script "main.nf"    
-
+    script "main.nf"
+    
     test("Should run successfully with correct number of processes") {
 
 	when {

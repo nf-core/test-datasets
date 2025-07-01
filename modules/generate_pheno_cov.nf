@@ -6,8 +6,8 @@ process GENERATE_PHENO_COV {
 	path sample_ids
 
 	output:
-	path "example.pheno"
-	path "example.covar"
+	path "example.pheno", emit: pheno
+	path "example.covar", emit: covar
 
 	script:
 	"""
