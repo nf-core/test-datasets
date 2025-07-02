@@ -14,8 +14,16 @@ jobs:
     strategy:
       matrix:
         NXF_VER:
-          - "23.04.0"
-          - ""
+          - "25.04.6"
+          - "edge"
+        TEST_FILE:
+          - tests/modules/generate_example_genotypes_vcfs.nf.test
+          - tests/modules/concat_chunked_vcfs.nf.test
+          - tests/modules/generate_pheno_cov.nf.test
+          - tests/modules/extract_sample_ids.nf.test
+          - tests/modules/chunk_vcfs.nf.test
+          - tests/modules/index_chunked_vcfs.nf.test
+          - tests/main.nf.test
     steps:
       - name: Check out pipeline code
         uses: actions/checkout@v4
@@ -30,7 +38,7 @@ jobs:
 
       - name: Run nf-test
         run: |
-          nf-test test --profile test
+          nf-test test ${{ matrix.TEST_FILE }} --profile test
 
       - name: Upload test results
         if: always()
