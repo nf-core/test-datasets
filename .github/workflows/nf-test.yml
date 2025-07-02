@@ -15,7 +15,6 @@ jobs:
       matrix:
         NXF_VER:
           - "25.04.6"
-          - "edge"
         TEST_FILE:
           - tests/modules/generate_example_genotypes_vcfs.nf.test
           - tests/modules/concat_chunked_vcfs.nf.test
