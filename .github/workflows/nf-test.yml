@@ -1,0 +1,44 @@
+name: nf-test
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        NXF_VER:
+          - "23.04.0"
+          - ""
+    steps:
+      - name: Check out pipeline code
+        uses: actions/checkout@v4
+
+      - name: Install Nextflow
+        uses: nf-core/setup-nextflow@v2
+        with:
+          version: "${{ matrix.NXF_VER }}"
+
+      - name: Install nf-test
+        uses: nf-core/setup-nf-test@v1
+
+      - name: Run nf-test
+        run: |
+          nf-test test --profile docker
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nf-test-results-${{ matrix.NXF_VER }}
+          path: |
+            .nf-test/reports/
+            .nf-test.log
