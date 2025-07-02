@@ -3,12 +3,10 @@ name: nf-test
 on:
   push:
     branches:
-      - main
-      - dev
+      - gwas
   pull_request:
     branches:
-      - main
-      - dev
+      - gwas
 
 jobs:
   test:
