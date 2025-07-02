@@ -4,7 +4,7 @@ nextflow_process {
     script "modules/extract_sample_ids.nf"
     process "EXTRACT_SAMPLE_IDS"
 
-    test("Should run without failures") {
+    test("Should run extract sample IDs from one of the vcfs") {
 
         when {
             params {

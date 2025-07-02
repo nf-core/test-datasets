@@ -20,10 +20,10 @@ workflow {
 
     // Feed the tuples into the chunking process
     CHUNK_VCFS(vcfs_with_chr)
-    CHUNK_VCFS.out.chunked_vcfs.collect().set {all_chunked_vcfs}
-    CONCAT_CHUNKED_VCFS(all_chunked_vcfs)
-    chr1_ch = channel.fromPath('./results/chunked_vcfs/chr1_chunked.vcf.gz')
-    EXTRACT_SAMPLE_IDS(chr1_ch)
+    chr1_chunked = CHUNK_VCFS.out.chunked_vcfs.filter { chr, file -> chr == 'chr1'}.map { chr, file -> file }
+    EXTRACT_SAMPLE_IDS(chr1_chunked)
     GENERATE_PHENO_COV(EXTRACT_SAMPLE_IDS.out.sample_ids)
     INDEX_CHUNKED_VCFS(CHUNK_VCFS.out.chunked_vcfs)
+    all_chunked_vcfs = CHUNK_VCFS.out.chunked_vcfs.map { chr, file -> file }.collect()
+    CONCAT_CHUNKED_VCFS(all_chunked_vcfs)
 }

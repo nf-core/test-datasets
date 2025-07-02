@@ -29,6 +29,7 @@ nextflow_process {
                 def combinedVcf = path(get(0)).vcf
                 println("Combined VCF: ${combinedVcf}")
                 assert combinedVcf.variantCount == 9000 : "Expected 9000 variants in combined chunked VCF but found ${combined_chunked_vcf.variantCount}"
+                assert combinedVcf.sampleCount == 2504 : "Expected 2504 samples in combined chunked VCF but found ${combined_chunked_vcf.sampleCount}"
             }
             assert process.out.combined_vcf_tbi.size() == 1, "Expected 1 TBI file, got ${process.out.combined_vcf_tbi.size()}"
         }

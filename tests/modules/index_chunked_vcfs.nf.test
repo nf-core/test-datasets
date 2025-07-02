@@ -4,7 +4,7 @@ nextflow_process {
     script "modules/index_chunked_vcfs.nf"
     process "INDEX_CHUNKED_VCFS"
 
-    test("Should run without failures") {
+    test("Should index chunked VCFs") {
 
         when {
             params {
@@ -13,20 +13,27 @@ nextflow_process {
             }
             process {
                 """
-                input[0] = file("${projectDir}/tests/data/concat_chunked_vcfs_input/10_chunked.vcf.gz")
+                input[0] = Channel.fromList([
+                    tuple('10', file("${projectDir}/tests/data/concat_chunked_vcfs_input/10_chunked.vcf.gz")),
+                    tuple('11', file("${projectDir}/tests/data/concat_chunked_vcfs_input/11_chunked.vcf.gz"))
+                ])
                 """
             }
         }
 
         then {
             assert process.success
-            with(process.out.indexed_vcfs) {
-                assert size() == 1, "Expected 1 indexed VCF file, got ${size()}"
-                def indexedVcf = get(0)
-                def indexedVcfPath = path(indexedVcf).toString()
-                println("Indexed VCF: ${indexedVcfPath}")
-                assert indexedVcfPath.endsWith('.tbi'), "Expected indexed VCF to have .tbi extension but found ${indexedVcfPath}"
-            }
+            println("Output channel: ${process.out.indexed_vcfs}")
+            def chr10 = process.out.indexed_vcfs.get(0)
+            def chr11 = process.out.indexed_vcfs.get(1)
+            def chr10_vcf_idx = chr10.get(1)
+            def chr11_vcf_idx = chr11.get(1)
+            def chr10_vcf_idx_path = path(chr10_vcf_idx).toString()
+            def chr11_vcf_idx_path = path(chr11_vcf_idx).toString()
+            assertAll(
+                { assert chr10_vcf_idx_path.endsWith('.tbi'), "Expected indexed VCF for chr10 to have .tbi extension but found ${chr10_vcf_idx_path}" },
+                { assert chr11_vcf_idx_path.endsWith('.tbi'), "Expected indexed VCF for chr11 to have .tbi extension but found ${chr11_vcf_idx_path}" }
+            )
         }
 
     }

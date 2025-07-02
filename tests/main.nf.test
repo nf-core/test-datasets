@@ -1,17 +1,55 @@
 nextflow_pipeline {
-    
     name "Test Workflow main.nf"
     script "main.nf"
-    
-    test("Should run successfully with correct number of processes") {
+    options "-stub"
 
-	when {
-	}
-
-        then {
-            assert workflow.success
-            assert workflow.trace.tasks().size() == 50
+    test("-profile test") {
+        when {
+            params {
+                outdir = "${workDir}"
+            }
         }
+        then {
+            println("Work directory: ${workDir}")
 
+            // Assert that the workflow completed successfully
+            assert workflow.success
+
+            // Assert that the workflow exited with status 0 (no error)
+            assert workflow.exitStatus == 0
+
+            // Assert that exactly 8 processes were run in the workflow
+            assert workflow.trace.tasks().size() == 8, "Expected 8 processes, got ${workflow.trace.tasks().size()}"
+
+            // Snapshot test: capture the relative paths of all files produced in the workDir
+            // - path("${workDir}").list() lists all files/directories in the work directory
+            // - .collect { getRecursiveFileNames(it) } recursively collects all file paths, stripping out the random Nextflow hash directories
+            // - .flatten() flattens the nested list structure into a single list
+            // - .sort() ensures the file list is in a consistent order for comparison
+            // - .match("relative paths") compares the current file structure to the stored snapshot named "relative paths"
+            assert snapshot(
+                path("${workDir}")
+                    .list()
+                    .collect { getRecursiveFileNames(it) }
+                    .flatten()
+                    .sort() // Sort the list to ensure consistent order
+            ).match("relative paths")
+        }
     }
+}
+
+// Recursively collects all file paths under a directory, stripping out Nextflow's random work hash directories
+def getRecursiveFileNames(fileOrDir) {
+    def pathStr = fileOrDir.toString()
+    // Regex to match and strip the /work/XX/XXXXXX/ hash directory prefix, capturing the file's relative path inside the hash dir
+    def match = pathStr =~ /.*\/work\/[a-z0-9]{2}\/[a-z0-9]{6,}\/(.*)/
+    if (match.matches()) {
+        pathStr = match[0][1] // Use only the relative path inside the hash dir
+    }
+    // If this is a directory, recursively collect file names from its contents
+    if (file(fileOrDir.toString()).isDirectory()) {
+        return fileOrDir.list().collect { getRecursiveFileNames(it) }
+    }
+    // Otherwise, return the (possibly stripped) file path
+    return pathStr
 }

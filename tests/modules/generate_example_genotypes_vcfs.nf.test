@@ -5,15 +5,22 @@ nextflow_process {
     process "GENERATE_EXAMPLE_GENOTYPES_VCFS"
     options "-stub" // Use stub mode to avoid actual downloads  
     //* Test 1: Check accessibility of example 1000 Genomes VCFs
-    test("Should have accessible vcfs from 1000 Genomes") {
+    test("Should create valid test vcfs for chr1 and chrX in 1000 genomes format") {
         options "-stub"
 
         when {
         }
 
         then {
-            assert process.success
-            assert process.exitStatus == 0
+            def vcf_files = process.out.vcfs.flatten()
+            def firstVcf = path(vcf_files.get(0)).vcf
+            def secondVcf = path(vcf_files.get(1)).vcf
+            assertAll(
+                { assert process.success },
+                { assert vcf_files.size() == 2, "Expected 2 VCF files, got ${vcf_files.size()}" },
+                { assert firstVcf.variantCount == 4600, "Expected 4600 variants in first VCF but found ${firstVcf.variantCount}" },
+                { assert secondVcf.variantCount == 4600, "Expected 4600 variants in second VCF but found ${secondVcf.variantCount}" }
+            )
         }
     }
 }

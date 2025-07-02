@@ -3,13 +3,13 @@ process INDEX_CHUNKED_VCFS {
 	publishDir params.outdir_chunked_vcfs, mode: 'copy'
 
 	input:
-	path vcf_files
+	tuple val(chr), path(vcf_file)
 
 	output:
-	path "*.vcf.gz.tbi", emit: indexed_vcfs
+	tuple val(chr), path("*.vcf.gz.tbi"), emit: indexed_vcfs
 
 	script:
 	"""
-	tabix -p vcf ${vcf_files}
+	tabix -p vcf ${vcf_file}
 	"""
 }

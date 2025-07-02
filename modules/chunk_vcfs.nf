@@ -6,7 +6,7 @@ process CHUNK_VCFS {
 	tuple val(chr), path(vcfs)
 
 	output:
-	path("${chr}_chunked.vcf.gz"), emit: chunked_vcfs
+	tuple val(chr), path("${chr}_chunked.vcf.gz"), emit: chunked_vcfs
 
 	script:
 	"""

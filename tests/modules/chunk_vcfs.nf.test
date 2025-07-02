@@ -19,17 +19,21 @@ nextflow_process {
         }
 
         then {
-            assert process.success
-            assert process.exitStatus == 0
-            with(process.out.chunked_vcfs) {
-                assert size() == 2, "Expected 2 chunked VCFs, got ${size()}"
-                def firstVcf = path(get(0)).vcf
-                def secondVcf = path(get(1)).vcf
-                println("First chunked VCF: ${firstVcf}")
-                println("Second chunked VCF: ${secondVcf}")
-                assert firstVcf.variantCount == 4500 : "Expected 4500 variants in first chunked VCF but found ${firstVcf.variantCount}"
-                assert secondVcf.variantCount == 4500 : "Expected 4500 variants in second chunked VCF but found ${secondVcf.variantCount}"
-            }
+            println("Output channel: ${process.out.chunked_vcfs}")
+            def chr10_vcf = process.out.chunked_vcfs.get(0)
+            def chr11_vcf = process.out.chunked_vcfs.get(1)
+            def chr10_vcf_file = path(chr10_vcf.get(1)).vcf
+            println("chunked chr10 VCF: ${chr10_vcf_file}")
+            def chr11_vcf_file = path(chr11_vcf.get(1)).vcf
+            println("chunked chr11 VCF: ${chr11_vcf_file}")
+            assertAll(
+                { assert process.success },
+                { assert process.exitStatus == 0 },
+                { assert chr10_vcf_file.variantCount == 4500, "Expected 4500 variants in chr10 chunked VCF but found ${chr10_vcf_file.variantCount}" },
+                { assert chr11_vcf_file.variantCount == 4500, "Expected 4500 variants in chr11 chunked VCF but found ${chr11_vcf_file.variantCount}" },
+                { assert chr10_vcf_file.sampleCount == 2504, "Expected 2504 samples in chr10 chunked VCF but found ${chr10_vcf_file.sampleCount}" },
+                { assert chr11_vcf_file.sampleCount == 2504, "Expected 2504 samples in chr11 chunked VCF but found ${chr11_vcf_file.sampleCount}" }                //{ assert process.out.chunked_vcfs.size() == 2, "Expected 2 chunked VCFs, got ${process.out.chunked_vcfs.size()}" }
+            )
         }
     }
 }
