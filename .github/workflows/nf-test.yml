@@ -30,7 +30,7 @@ jobs:
 
       - name: Run nf-test
         run: |
-          nf-test test --profile docker
+          nf-test test --profile test
 
       - name: Upload test results
         if: always()
