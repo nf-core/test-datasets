@@ -396,7 +396,10 @@ The earth sciences folder contain subfolders for different data formats encounte
     - vep_cache_113.tar.gz: Compressed VEP cache version 113 containing info.txt and synonyms of chr22 only. No annotations included.
     - CTAT_HumanFusionLib.mini.dat.gz: A small fusion annotation library used in STAR-Fusion module.
     - minigenome.fa: A small genome sequence consisting of ~750 genes used in STAR-Fusion module with fusion annotation library.
-    - minigenome.gtf: Transcript structure annotations of genes present in the minigenome used in STAR-Fusion module with fusion annotation library .
+    - minigenome.gtf: Transcript structure annotations of genes present in the minigenome used in STAR-Fusion module with fusion annotation library.
+    - arriba.tsv: File contains fusions which pass all of Arriba's filters
+    - starfusion.tsv: Fusion events from STAR-fusion.
+    - fusioncatcher.txt: Detected gene fusions from fusioncatcher module.
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
       - aligned_reads
