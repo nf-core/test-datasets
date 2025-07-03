@@ -13,7 +13,6 @@ on:
     types: [published]
 
 jobs:
-
   Prettier:
     runs-on: ubuntu-latest
     steps:
