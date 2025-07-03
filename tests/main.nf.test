@@ -3,7 +3,7 @@ nextflow_pipeline {
     script "main.nf"
     options "-stub"
 
-    test("Should run the main workflow without failures and genereated files should not change") {
+    test("Should run the main workflow without failures and directory structure should not change") {
         when {
             params {
                 outdir = "${workDir}"

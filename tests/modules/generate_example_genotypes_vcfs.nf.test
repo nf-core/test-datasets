@@ -4,7 +4,17 @@ nextflow_process {
     script "modules/generate_example_genotypes_vcfs.nf"
     process "GENERATE_EXAMPLE_GENOTYPES_VCFS"
     options "-stub" // Use stub mode to avoid actual downloads  
-    //* Test 1: Check accessibility of example 1000 Genomes VCFs
+    test("Check accessibility of 1000 genomes FTP server for chrX VCF") {
+
+        then {
+            def url = "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chrX.phase3_shapeit2_mvncall_integrated_v1c.20130502.genotypes.vcf.gz"
+            def connection = url.toURL().openConnection()
+            connection.setRequestMethod("HEAD")
+            connection.connect()
+            def responseCode = connection.responseCode
+            assert responseCode == 200 : "URL is not accessible, got HTTP ${responseCode}"
+        }
+    }
     test("Should create valid test vcfs for chr1 and chrX in 1000 genomes format") {
         options "-stub"
 

@@ -1,0 +1,36 @@
+name: nf-core linting
+# This workflow is triggered on pushes and PRs to the repository.
+# It runs the `nf-core lint` and markdown lint tests to ensure
+# that the code meets the nf-core guidelines.
+on:
+  push:
+    branches:
+      - gwas
+  pull_request:
+    branches:
+      - gwas
+  release:
+    types: [published]
+
+jobs:
+
+  Prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+
+      - name: Install Prettier
+        run: npm install -g prettier
+
+      - name: Run Prettier --check
+        run: prettier --check .
+
+  PythonBlack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check code lints with Black
+        uses: psf/black@stable

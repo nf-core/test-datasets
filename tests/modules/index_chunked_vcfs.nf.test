@@ -23,13 +23,14 @@ nextflow_process {
 
         then {
             assert process.success
-            println("Output channel: ${process.out.indexed_vcfs}")
             def chr10 = process.out.indexed_vcfs.get(0)
             def chr11 = process.out.indexed_vcfs.get(1)
             def chr10_vcf_idx = chr10.get(1)
             def chr11_vcf_idx = chr11.get(1)
             def chr10_vcf_idx_path = path(chr10_vcf_idx).toString()
             def chr11_vcf_idx_path = path(chr11_vcf_idx).toString()
+            println("Indexed VCF for chr10: ${chr10_vcf_idx_path}")
+            println("Indexed VCF for chr11: ${chr11_vcf_idx_path}")
             assertAll(
                 { assert chr10_vcf_idx_path.endsWith('.tbi'), "Expected indexed VCF for chr10 to have .tbi extension but found ${chr10_vcf_idx_path}" },
                 { assert chr11_vcf_idx_path.endsWith('.tbi'), "Expected indexed VCF for chr11 to have .tbi extension but found ${chr11_vcf_idx_path}" }

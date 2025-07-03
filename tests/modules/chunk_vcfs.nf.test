@@ -19,7 +19,6 @@ nextflow_process {
         }
 
         then {
-            println("Output channel: ${process.out.chunked_vcfs}")
             def chr10_vcf = process.out.chunked_vcfs.get(0)
             def chr11_vcf = process.out.chunked_vcfs.get(1)
             def chr10_vcf_file = path(chr10_vcf.get(1)).vcf
