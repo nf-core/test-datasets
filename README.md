@@ -657,7 +657,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - pbmc3k.h5ad: Standard scanpy test dataset obtained using `scanpy.datasets.pbmc3k()`.
       - pbmc1k.h5ad: `pbmc3k.h5ad` subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
       - combined_filtered_matrix.h5ad: Combined filtered matrix from SRR28679756, SRR28679757, SRR28679758 and SRR28679759, generated with nf-core/scrnaseq v4.0.0, subsetted to 10k genes.
-      - SRR28679756_filtered_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes.
+      - SRR28679756_filtered_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes. Contains an additional layer `counts` and a column `symbols` in `adata.var`.
       - SRR28679756_raw_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes and 300k cells.
       - SRR28679759_filtered_matrix.h5ad: SRR28679759 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes.
       - SRR28679759_raw_matrix.h5ad: SRR28679759 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes and 300k cells.
