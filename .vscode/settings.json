@@ -4,6 +4,6 @@
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": ["--line-length=120"],
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   }
 }
