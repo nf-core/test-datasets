@@ -1,0 +1,17 @@
+[33mNextflow 25.04.6 is available - Please consider updating your version to it(B[m
+
+ N E X T F L O W   ~  version 25.04.4
+
+Launching `main.nf` [special_hamilton] DSL2 - revision: 0ed85844b6
+
+[-        ] GEN…ATE_EXAMPLE_GENOTYPES_VCFS -
+[-        ] CHUNK_VCFS                     -
+[-        ] EXTRACT_SAMPLE_IDS             -
+
+[-        ] GEN…ATE_EXAMPLE_GENOTYPES_VCFS -
+[-        ] CHUNK_VCFS                     -
+[-        ] EXTRACT_SAMPLE_IDS             -
+[-        ] GENERATE_PHENO_COV             -
+[-        ] INDEX_CHUNKED_VCFS             -
+[-        ] CONCAT_CHUNKED_VCFS            -
+

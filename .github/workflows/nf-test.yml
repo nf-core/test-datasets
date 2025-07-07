@@ -1,0 +1,61 @@
+name: nf-test
+
+on:
+  push:
+    branches:
+      - gwas
+  pull_request:
+    branches:
+      - gwas
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        NXF_VER:
+          - "25.04.6"
+        TEST_FILE:
+          - tests/modules/generate_example_genotypes_vcfs.nf.test
+          - tests/modules/concat_chunked_vcfs.nf.test
+          - tests/modules/generate_pheno_cov.nf.test
+          - tests/modules/extract_sample_ids.nf.test
+          - tests/modules/chunk_vcfs.nf.test
+          - tests/modules/index_chunked_vcfs.nf.test
+          - tests/main.nf.test
+    steps:
+      - name: Check out pipeline code
+        uses: actions/checkout@v4
+
+      - name: Install Nextflow
+        uses: nf-core/setup-nextflow@v2
+        with:
+          version: "${{ matrix.NXF_VER }}"
+
+      - name: Install nf-test
+        uses: nf-core/setup-nf-test@v1
+
+      - name: Run nf-test
+        run: |
+          mkdir -p reports
+          nf-test test ${{ matrix.TEST_FILE }} --profile test --verbose --tap reports/test-results-${{ strategy.job-index }}.tap
+
+      - name: List files for debugging
+        run: ls -l .
+
+      - name: Upload TAP reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tap-reports-${{ matrix.NXF_VER }}-${{ strategy.job-index }}
+          path: |
+            reports/*.tap
+          if-no-files-found: warn
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nf-test-results-${{ matrix.NXF_VER }}
+          path: |
+            .nf-test.log

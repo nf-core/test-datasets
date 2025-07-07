@@ -1,0 +1,45 @@
+nextflow_process {
+
+    name "Test Process GENERATE_PHENO_COV"
+    script "modules/generate_pheno_cov.nf"
+    process "GENERATE_PHENO_COV"
+
+    test("Should run without failures and produce proper pheno and covar files") {
+
+        when {
+            params {
+                // define parameters here. Example:
+                // outdir = "tests/results"
+            }
+            process {
+                """
+                input[0] = file("${projectDir}/tests/data/generate_pheno_cov_input/sample_ids.txt")
+                """
+            }
+        }
+
+        then {
+            assert process.success
+            with(process.out.pheno) {
+                assert size() == 1, "Expected 1 pheno file, got ${size()}"
+                def phenoFile = get(0)
+                def pheno_lineCount = path(phenoFile).readLines().size()
+                assert pheno_lineCount == 2504, "Expected 2504 lines in pheno file but found ${pheno_lineCount}"
+                def pheno_first_line = path(phenoFile).readLines()[0]
+                def pheno_column_count = pheno_first_line.split('\t').size()
+                assert pheno_column_count == 3, "Expected 3 columns in pheno file, but found ${pheno_column_count}"
+            }
+            with(process.out.covar) {
+                assert size() == 1, "Expected 1 covar file, got ${size()}"
+                def covarFile = get(0)
+                def covar_lineCount = path(covarFile).readLines().size()
+                assert covar_lineCount == 2504, "Expected 2504 lines in covar file but found ${lineCount}"
+                def covar_first_line = path(covarFile).readLines()[0]
+                def covar_column_count = covar_first_line.split('\t').size()
+                assert covar_column_count == 4, "Expected 4 columns in covar file, but found ${covar_column_count}"
+            }
+        }
+
+    }
+
+}

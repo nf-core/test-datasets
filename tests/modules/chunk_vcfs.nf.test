@@ -1,0 +1,38 @@
+import java.nio.file.Paths
+
+nextflow_process {
+
+    name "Test Process CHUNK_VCFS"
+    script "modules/chunk_vcfs.nf"
+    process "CHUNK_VCFS"
+
+    test("Should run without failures - chunk vcfs to 4500 variants") {
+        when {
+            process {
+                """
+                input[0] = Channel.fromList([
+                    tuple('10', file("${projectDir}/tests/data/chunk_vcfs_input/ALL.chr10.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.subset.vcf.gz")),
+                    tuple('11', file("${projectDir}/tests/data/chunk_vcfs_input/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.subset.vcf.gz"))
+                ])
+                """
+            }
+        }
+
+        then {
+            def chr10_vcf = process.out.chunked_vcfs.get(0)
+            def chr11_vcf = process.out.chunked_vcfs.get(1)
+            def chr10_vcf_file = path(chr10_vcf.get(1)).vcf
+            println("chunked chr10 VCF: ${chr10_vcf_file}")
+            def chr11_vcf_file = path(chr11_vcf.get(1)).vcf
+            println("chunked chr11 VCF: ${chr11_vcf_file}")
+            assertAll(
+                { assert process.success },
+                { assert process.exitStatus == 0 },
+                { assert chr10_vcf_file.variantCount == 4500, "Expected 4500 variants in chr10 chunked VCF but found ${chr10_vcf_file.variantCount}" },
+                { assert chr11_vcf_file.variantCount == 4500, "Expected 4500 variants in chr11 chunked VCF but found ${chr11_vcf_file.variantCount}" },
+                { assert chr10_vcf_file.sampleCount == 2504, "Expected 2504 samples in chr10 chunked VCF but found ${chr10_vcf_file.sampleCount}" },
+                { assert chr11_vcf_file.sampleCount == 2504, "Expected 2504 samples in chr11 chunked VCF but found ${chr11_vcf_file.sampleCount}" }                //{ assert process.out.chunked_vcfs.size() == 2, "Expected 2 chunked VCFs, got ${process.out.chunked_vcfs.size()}" }
+            )
+        }
+    }
+}

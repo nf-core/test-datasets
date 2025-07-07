@@ -1,0 +1,37 @@
+nextflow_process {
+
+    name "Test Process CONCAT_CHUNKED_VCFS"
+    script "modules/concat_chunked_vcfs.nf"
+    process "CONCAT_CHUNKED_VCFS"
+
+    test("Verify concatenation of chunked VCFs and indexing") {
+
+        when {
+            params {
+                // define parameters here. Example:
+                // outdir = "tests/results"
+            }
+            process {
+                """
+                input[0] = Channel.of([
+                    file("${projectDir}/tests/data/concat_chunked_vcfs_input/10_chunked.vcf.gz"),
+                    file("${projectDir}/tests/data/concat_chunked_vcfs_input/11_chunked.vcf.gz")
+                ])
+                """
+            }
+        }
+
+        then {
+            assert process.success
+            assert process.exitStatus == 0
+            with(process.out.combined_vcf) {
+                assert size() == 1, "Expected 1 VCF file, got ${size()}"
+                def combinedVcf = path(get(0)).vcf
+                println("Combined VCF: ${combinedVcf}")
+                assert combinedVcf.variantCount == 9000 : "Expected 9000 variants in combined chunked VCF but found ${combined_chunked_vcf.variantCount}"
+                assert combinedVcf.sampleCount == 2504 : "Expected 2504 samples in combined chunked VCF but found ${combined_chunked_vcf.sampleCount}"
+            }
+            assert process.out.combined_vcf_tbi.size() == 1, "Expected 1 TBI file, got ${process.out.combined_vcf_tbi.size()}"
+        }
+    }
+}

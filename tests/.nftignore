@@ -1,0 +1,37 @@
+# Create tests/.nftignore - focused on truly unstable files
+cat > tests/.nftignore << 'EOF'
+# Log files (contain timestamps, paths, process IDs)
+**/*.log
+**/*.out
+**/*.err
+**/nextflow.log
+**/.nextflow.log
+
+# Temporary files
+**/.nextflow/**
+**/tmp/**
+
+# Pipeline execution reports with timestamps
+**/*.html
+**/*.json
+**/*.xml
+**/*.trace
+**/*.timeline
+**/*.report
+**/pipeline_info/**
+
+# Index files that may have timestamps in metadata
+**/*.vcf.gz.tbi
+**/*.tbi
+**/*.bai
+**/*.csi
+
+# Version files that might change
+**/versions.yml
+**/software_versions.yml
+
+# Any backup or temporary files
+**/*~
+**/*.bak
+**/*.tmp
+EOF

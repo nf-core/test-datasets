@@ -1,0 +1,31 @@
+nextflow_process {
+
+    name "Test Process EXTRACT_SAMPLE_IDS"
+    script "modules/extract_sample_ids.nf"
+    process "EXTRACT_SAMPLE_IDS"
+
+    test("Should run extract sample IDs from one of the vcfs") {
+
+        when {
+            params {
+                // define parameters here. Example:
+                // outdir = "tests/results"
+            }
+            process {
+                """
+                input[0] = file("${projectDir}/tests/data/concat_chunked_vcfs_input/10_chunked.vcf.gz")
+                """
+            }
+        }
+
+        then {
+            assert process.success
+            with(process.out.sample_ids) {
+                assert size() == 1, "Expected 1 sample_ids file, got ${size()}"
+                def sample_ids = get(0)
+                def line_count = path(sample_ids).readLines().size()
+                assert line_count == 2504, "Expected 2504 sample IDs but found ${line_count}"
+            }
+        }
+    }
+}

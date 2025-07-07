@@ -1,0 +1,36 @@
+nextflow_process {
+
+    name "Test Process GENERATE_EXAMPLE_GENOTYPES_VCFS"
+    script "modules/generate_example_genotypes_vcfs.nf"
+    process "GENERATE_EXAMPLE_GENOTYPES_VCFS"
+    options "-stub" // Use stub mode to avoid actual downloads  
+    test("Check accessibility of 1000 genomes FTP server for chrX VCF") {
+
+        then {
+            def url = "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chrX.phase3_shapeit2_mvncall_integrated_v1c.20130502.genotypes.vcf.gz"
+            def connection = url.toURL().openConnection()
+            connection.setRequestMethod("HEAD")
+            connection.connect()
+            def responseCode = connection.responseCode
+            assert responseCode == 200 : "URL is not accessible, got HTTP ${responseCode}"
+        }
+    }
+    test("Should create valid test vcfs for chr1 and chrX in 1000 genomes format") {
+        options "-stub"
+
+        when {
+        }
+
+        then {
+            def vcf_files = process.out.vcfs.flatten()
+            def firstVcf = path(vcf_files.get(0)).vcf
+            def secondVcf = path(vcf_files.get(1)).vcf
+            assertAll(
+                { assert process.success },
+                { assert vcf_files.size() == 2, "Expected 2 VCF files, got ${vcf_files.size()}" },
+                { assert firstVcf.variantCount == 4600, "Expected 4600 variants in first VCF but found ${firstVcf.variantCount}" },
+                { assert secondVcf.variantCount == 4600, "Expected 4600 variants in second VCF but found ${secondVcf.variantCount}" }
+            )
+        }
+    }
+}
