@@ -45,5 +45,4 @@ jobs:
         with:
           name: nf-test-results-${{ matrix.NXF_VER }}
           path: |
-            .nf-test/reports/
             .nf-test.log
