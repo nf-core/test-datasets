@@ -37,10 +37,20 @@ jobs:
 
       - name: Run nf-test
         run: |
-          nf-test test ${{ matrix.TEST_FILE }} --profile test --verbose
+          mkdir -p reports
+          nf-test test ${{ matrix.TEST_FILE }} --profile test --verbose --tap reports/test-results-${{ strategy.job-index }}.tap
 
       - name: List files for debugging
         run: ls -l .
+
+      - name: Upload TAP reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tap-reports-${{ matrix.NXF_VER }}-${{ strategy.job-index }}
+          path: |
+            reports/*.tap
+          if-no-files-found: warn
 
       - name: Upload test results
         if: always()
