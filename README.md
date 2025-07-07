@@ -6,6 +6,20 @@ Test data to be used for automated testing with the nf-core pipelines
 
 This is the gwas example-data branch, part of the nf-core collection of high quality Nextflow pipelines.
 
+## Workflow DAG
+
+Below is a diagram of the workflow steps as a Directed Acyclic Graph (DAG):
+
+```mermaid
+graph TD
+    A[GENERATE_EXAMPLE_GENOTYPES_VCFS] --> B[CHUNK_VCFS]
+    B --> C[INDEX_CHUNKED_VCFS]
+    B --> D[CONCAT_CHUNKED_VCFS]
+    B --> E[chr1_chunked]
+    E[chr1_chunked] --> F[EXTRACT_SAMPLE_IDS]
+    F --> G[GENERATE_PHENO_COV]
+```
+
 ## Git clone the gwas pipeline test data
 
 If you want to get a local copy of the test data, you can either git clone the whole test data material, including all test data for all nf-core pipelnies, or if you want to save storage space you can clone the example data for one specific pipeline.
