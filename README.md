@@ -15,8 +15,7 @@ graph TD
     A[GENERATE_EXAMPLE_GENOTYPES_VCFS] --> B[CHUNK_VCFS]
     B --> C[INDEX_CHUNKED_VCFS]
     B --> D[CONCAT_CHUNKED_VCFS]
-    B --> E[chr1_chunked]
-    E[chr1_chunked] --> F[EXTRACT_SAMPLE_IDS]
+    B --> F[EXTRACT_SAMPLE_IDS]
     F --> G[GENERATE_PHENO_COV]
 ```
 
