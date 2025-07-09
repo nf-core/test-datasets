@@ -42,5 +42,5 @@ while IFS=':' read -r CHR REGION; do
             if ($1 !~ /^chr/) $1 = "chr" $1
             print $1, $2, $3, $4 
         }' \
-        >  ${REF_MAP}/plink.${CHR}.${REF_GEN}.map
+        >  ${REF_MAP}/${REF_GEN}.${CHR}.plink.map
 done < $REGION_LST
