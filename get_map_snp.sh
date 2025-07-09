@@ -36,4 +36,11 @@ while IFS=':' read -r CHR REGION; do
     unzip -p ${REF_MAP}${REF_GEN}.map.zip plink.${CHR}.${REF_GEN}.map | \
         awk -v OFS='\t' -F' ' '{ print $1, $3, $4 }' \
         >  ${REF_MAP}/${REF_GEN}_${CHR_NUM}.map
+    # Unzip the map file and keep all 4 PLINK columns + add chr prefix
+    unzip -p ${REF_MAP}${REF_GEN}.map.zip plink.${CHR}.${REF_GEN}.map | \
+        awk -v OFS='\t' -F' ' '{ 
+            if ($1 !~ /^chr/) $1 = "chr" $1
+            print $1, $2, $3, $4 
+        }' \
+        >  ${REF_MAP}/plink.${CHR}.${REF_GEN}.map
 done < $REGION_LST
