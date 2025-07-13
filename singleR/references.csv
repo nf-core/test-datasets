@@ -1,0 +1,5 @@
+id,label,reference,version
+hpca_celldex,label.main,hpca,2024-02-26
+immune_celldex,label.fine,monaco_immune,2024-02-26
+hpca_direct,label.main,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/singleR/celldex_hpca__2024-02-26_h5_se.tar,
+immune_direct,label.fine,https://raw.githubusercontent.com/nf-core/test-datasets/scdownstream/singleR/celldex_monaco_immune__2024-02-26_h5_se.tar,
