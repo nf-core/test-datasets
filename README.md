@@ -379,7 +379,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - genome.NC_012920_1.gb: Contains mtDNA reference genome in Genbank format
     - transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     - gff3: Encode GFF3 file downsampled based on reference position
-    - gtf: Encode GTF file downsampled based on reference position
+    - gtf: Encode GTF file downsampled based on reference position, `genome_minimal.gtf` is a minimal version containing only the standard fields
     - sizes
     - .bed
     - multi_intervals.bed: Contains the interval from `interval.list` split into two parts
