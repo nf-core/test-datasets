@@ -237,6 +237,38 @@ sylph sketch *
 
 This generates a database file `database.syldb`. If you want to use a custom database name, you can use `sylph sketch * -o custom_name.syldb`
 
+#### melon
+
+
+Create minimal dataset of Bacteroides fragilis as test database for melon to run nf-test.
+
+1. Get all the accessions from the melon DB for Bacteroides fragilis
+	- `tail -n +2 metadata.tsv | cut -f1 > accessions.txt` 
+	- Adjust metadata.tsv `head -n1 metadata.tsv > fragmini/metadata.tsv && grep -f frag_mini.txt metadata.tsv >> fragmini/metadata.tsv` 
+2. Fetch all sequences from the database .fa files
+	- `seqkit grep -r -f fragilis_ids.txt database/nucl.bacteria.*.fa -o database/combined_fragilis.fa`
+	
+	```bash
+	for f in nucl.*.fa; do echo "Processing $f..."; seqkit grep -r -f ../fragilis_db/fragilis_ids.txt "$f" -o "fragdb/$f"; done
+	```
+	
+3. From those extracted .fa files extract the annotation string
+	- `grep -o ":[+-] .*" combined_fragilis.fa | cut -d' ' -f2- > fragilis_annotations.txt`
+4. Fetch those sequences from the protein .fa file for the diamond index
+	- `seqkit grep -n -f database/fragilis_annotations.txt database/prot.fa -o database/fragilis_prot.fa`
+5. Create the test_db
+
+```bash
+diamond makedb --in fragilis_db/fragilis_prot.fa --db fragilis_db/fragilis_prot --quiet 
+ls minimi/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
+	filename=${1%.fa*};
+	filename=${filename##*/};
+	minimap2 -x map-ont -d minimi/$filename.mmi ${1} 2> /dev/null;
+	echo "Indexed <minimi/$filename.fa>.";' - {}
+```
+
+Note: Each gene is in a seperate fa file. Check if all are needed and fetch for each gene the one for Bacteroides fragilis 
+
 ## Taxprofiler AWS Full Test specific-information
 
 ### FASTQ
