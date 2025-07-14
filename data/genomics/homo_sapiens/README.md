@@ -140,6 +140,8 @@ Downloaded the gtf and gff3 files from Ensembl:
 6. Replace spaces with tabs
 7. The coordinates in `genome.gtf` were adapted to start from 1, and the last entries that ended in coordinates >40000 were adapted to end at coordinate 40000.
 
+`genome_minimal.gtf` is a small subset of the GTF containing only the standard fields.
+
 ### VEP cache
 
 1. The Homo sapiens GRCh38 VEP cache was downloaded from the [VEP FTP site](http://ftp.ensembl.org/pub/release-106/variation/indexed_vep_cache/homo_sapiens_merged_vep_106_GRCh38.tar.gz) (see [Ensembl VEP Cache](https://www.ensembl.org/info/docs/tools/vep/script/vep_cache.html#cache) page for latest release).
