@@ -269,6 +269,24 @@ ls minimi/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
 
 Note: Each gene is in a seperate fa file. Check if all are needed and fetch for each gene the one for Bacteroides fragilis 
 
+#### metacache
+
+Download the NCBI’s taxonomy with an included helper script:
+
+```bash
+download-ncbi-taxonomy ncbi_taxonomy
+```
+This downloads the taxonomy and puts it in a folder called `ncbi_taxonomy`.
+
+```bash
+mkdir metacache
+
+## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder metacache. 
+
+metacache build test-db-metacache metacache/ -taxonomy ncbi_taxonomy
+```
+
+
 ## Taxprofiler AWS Full Test specific-information
 
 ### FASTQ
@@ -720,6 +738,7 @@ tail -n +2 taxid_results.tsv   | while read accession taxid; do taxonomy=$(echo 
         | sed 's/\t/;/g' | sed 's/;/\t/');     echo -e "$accession\t$taxonomy"; done  > sylph_taxonomy.tsv
 
 ```
+
 
 
 ## Database Archive Creation
