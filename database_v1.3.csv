@@ -15,3 +15,4 @@ metaphlan,metaphlan3,--mpa3,short,https://raw.githubusercontent.com/nf-core/test
 metaphlan,metaphlan4,,short,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
 kmcp,db1,;-m 0,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kmcp/test-db-kmcp.tar.gz
 sylph,db1,-m 60,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sylph/testdb-sylph.syldb
+melon,db1,,long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/melon/melon_db.tar.gz
