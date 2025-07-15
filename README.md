@@ -6,6 +6,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/UP000005640_9606.fasta`: Human proteome reference database
 
+`testdata/2025_02_human_swissprot.fasta`: Humann proteome reference database (2025)
+
 `testdata/HepG2_rep1|2|3_small.mzML`: MS files containing subsets of cell line HepG2 immunopeptidome runs
 
 `testdata/HepG2_sample_sheet.tsv`: Sample sheet of HepG2 cell line runs
