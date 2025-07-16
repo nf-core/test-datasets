@@ -689,6 +689,13 @@ tail -n +2 taxid_results.tsv   | while read accession taxid; do taxonomy=$(echo 
 
 ```
 
+#### melon
+
+1. Extract the first column of the `metadata.tsv` file
+   
+   `cut -f1 metadata.tsv > ncbi_ids.txt`
+
+
 
 ## Database Archive Creation
 
