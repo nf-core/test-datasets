@@ -17,4 +17,4 @@ motus,motus-db3,,short;long,s3://ngi-igenomes/test-data/taxprofiler/db_mOTU.tar.
 ganon,ganon-db,,short,s3://ngi-igenomes/test-data/taxprofiler/ganon.tar.gz
 kmcp,kmcp_db,,short,s3://ngi-igenomes/test-data/taxprofiler/kmcp.tar.gz
 sylph,sylph_db,,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sylph/database.syldb
-melon,melon_db,,long,s3://ngi-igenomes/test-data/taxprofiler/melon.tar.gz
+melon,melon_db,,long,s3://nf-core-awsmegatests/taxprofiler/input/melon.tar.gz
