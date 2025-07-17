@@ -153,6 +153,27 @@ The `antismash_trimmed.tar.gz` archive is a mini version of the full antiSMASH d
 
 Kindly made and shared by @mberacochea from the EBI-metagenomics team and the [assembly-analysis-pipeline](https://github.com/EBI-Metagenomics/assembly-analysis-pipeline).
 
+## GFF File Generation with Pyrodigal
+
+The GFF files for `sample_1.fasta.gz` and `sample_2.fasta.gz` were generated using the [`pyrodigal v3.6.3`](https://github.com/althonos/pyrodigal) tool for gene prediction and annotation.
+
+### Command Used (e.g., `sample_1.fasta.gz`)
+
+```bash
+pigz -cdf sample_1.fasta.gz > pigz_fasta.fna
+
+pyrodigal -i pigz_fasta.fna -f gff -o sample_1.pyrodigal.gff
+```
+
+### Generated Files
+
+This process generated the following files for the two samples:
+
+- `sample_1.pyrodigal.gff`: `sample_1` gene predictions and annotations
+- `sample_2.pyrodigal.gff`: `sample_2` gene predictions and annotations.
+
+The generated two GFF files are used for downstream functional annotation and screening workflows in the [nf-core/funcscan](https://github.com/nf-core/funcscan) pipeline testing.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
