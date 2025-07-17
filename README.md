@@ -739,6 +739,85 @@ tail -n +2 taxid_results.tsv   | while read accession taxid; do taxonomy=$(echo 
 
 ```
 
+#### melon
+
+Before building the melon database, we need to do some preprocessing steps:
+
+Add the genbank assembly names in a file, named `gca_list.txt`
+
+Run following command: `python ncbi_scientific_name.py gca_list.txt > results_scientific_names.txt`
+
+```
+import os
+import sys
+from Bio import Entrez
+
+Entrez.email = "your.email@example.com"  # <-- Replace with your email
+
+def gca_to_scientific_name(gca):
+    try:
+        handle = Entrez.esearch(db="assembly", term=gca)
+        record = Entrez.read(handle)
+        handle.close()
+        if not record['IdList']:
+            return None
+
+        uid = record['IdList'][0]
+        handle = Entrez.esummary(db="assembly", id=uid)
+        summary = Entrez.read(handle)
+        handle.close()
+
+        docsum = summary['DocumentSummarySet']['DocumentSummary'][0]
+        return docsum['Organism']
+    except Exception as e:
+        print(f"[!] Error fetching scientific name for {gca}: {e}")
+        return None
+
+def read_gca_list(file_path):
+    with open(file_path) as f:
+        return [line.strip() for line in f if line.strip()]
+
+def main(input_arg):
+    if os.path.isfile(input_arg):
+        gca_list = read_gca_list(input_arg)
+    else:
+        gca_list = input_arg.split()
+
+    for gca in gca_list:
+        name = gca_to_scientific_name(gca)
+        if name:
+            print(f"{gca}\t{name}")
+        else:
+            print(f"{gca}\t[Scientific name not found]")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage:\n  python gca_to_name.py gca_list.txt\n  OR\n  python gca_to_name.py \"GCA_000007565.2 GCA_000001405.28\"")
+        sys.exit(1)
+
+    input_arg = sys.argv[1]
+    main(input_arg)
+```
+
+```
+cut -f2 results_scientific_names.txt | awk '{print $1, $2}' > species_names.txt
+grep -Ff species_names.txt metadata.tsv > matched_metadata.tsv
+cut -f1 matched_metadata.tsv > all_ids.txt
+
+seqkit grep -r -f all_ids.txt database/nucl.bacteria.*.fa -o database/combined_all.fa
+for f in database/nucl.*.fa; do echo "Processing $f..."; seqkit grep -r -f all_ids.txt "$f" -o "fulldb/$f"; done
+
+grep -o ":[+-] .*" database/combined_all.fa | cut -d' ' -f2- > database/all_annotations.txt
+
+seqkit grep -n -f database/all_annotations.txt database/prot.fa -o database/all_prot.fa
+
+diamond makedb --in database_melon_all_files/all_prot.fa --db database_melon_all_files/prot --quiet
+ls database_melon_all_files/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
+        filename=${1%.fa*};
+        filename=${filename##*/};
+        minimap2 -x map-ont -d database_melon_all_files/$filename.mmi ${1} 2> /dev/null;
+        echo "Indexed <minimi/$filename.fa>.";' - {}
+```
 
 
 ## Database Archive Creation
