@@ -1,0 +1,1564 @@
+##gff-version  3
+# Sequence Data: seqnum=1;seqlen=258;seqhdr="NODE_882919_length_258_cov_0.935961"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_882919_length_258_cov_0.935961	pyrodigal_v3.6.3	CDS	149	256	14.7	-	0	ID=NODE_882919_length_258_cov_0.935961_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.639;conf=96.68;score=14.66;cscore=11.45;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=10;seqlen=231;seqhdr="NODE_1188960_length_231_cov_2.159091"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1188960_length_231_cov_2.159091	pyrodigal_v3.6.3	CDS	23	229	0.6	+	0	ID=NODE_1188960_length_231_cov_2.159091_1;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.386;conf=53.55;score=0.62;cscore=4.88;sscore=-4.26;rscore=-0.14;uscore=-5.13;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=17;seqlen=269;seqhdr="NODE_737435_length_269_cov_0.887850"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_737435_length_269_cov_0.887850	pyrodigal_v3.6.3	CDS	3	269	40.6	-	0	ID=NODE_737435_length_269_cov_0.887850_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.622;conf=99.99;score=40.56;cscore=38.95;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=21;seqlen=278;seqhdr="NODE_635976_length_278_cov_1.210762"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_635976_length_278_cov_1.210762	pyrodigal_v3.6.3	CDS	1	90	13.4	-	0	ID=NODE_635976_length_278_cov_1.210762_1;partial=10;start_type=GTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=3-4bp;gc_cont=0.356;conf=95.60;score=13.40;cscore=4.60;sscore=8.80;rscore=2.51;uscore=5.28;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=25;seqlen=343;seqhdr="NODE_400371_length_343_cov_1.656250"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_400371_length_343_cov_1.656250	pyrodigal_v3.6.3	CDS	229	342	2.2	+	0	ID=NODE_400371_length_343_cov_1.656250_1;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.395;conf=62.48;score=2.22;cscore=3.39;sscore=-1.17;rscore=-0.14;uscore=-2.04;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=29;seqlen=242;seqhdr="NODE_1075758_length_242_cov_1.016043"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1075758_length_242_cov_1.016043	pyrodigal_v3.6.3	CDS	3	179	11.0	+	0	ID=NODE_1075758_length_242_cov_1.016043_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.429;conf=92.65;score=11.02;cscore=7.80;sscore=3.22;rscore=0.00;uscore=3.22;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=31;seqlen=282;seqhdr="NODE_609642_length_282_cov_0.696035"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_609642_length_282_cov_0.696035	pyrodigal_v3.6.3	CDS	2	76	9.2	-	0	ID=NODE_609642_length_282_cov_0.696035_1;partial=10;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=11-12bp;gc_cont=0.653;conf=89.31;score=9.23;cscore=7.45;sscore=1.79;rscore=1.30;uscore=-0.35;tscore=1.49;
+NODE_609642_length_282_cov_0.696035	pyrodigal_v3.6.3	CDS	141	281	18.1	+	0	ID=NODE_609642_length_282_cov_0.696035_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.596;conf=98.45;score=18.06;cscore=18.08;sscore=-0.02;rscore=-0.14;uscore=-1.36;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=41;seqlen=282;seqhdr="NODE_607606_length_282_cov_1.224670"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_607606_length_282_cov_1.224670	pyrodigal_v3.6.3	CDS	3	281	45.6	+	0	ID=NODE_607606_length_282_cov_1.224670_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.649;conf=100.00;score=45.60;cscore=43.99;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=48;seqlen=234;seqhdr="NODE_1159044_length_234_cov_1.592179"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1159044_length_234_cov_1.592179	pyrodigal_v3.6.3	CDS	125	232	6.5	-	0	ID=NODE_1159044_length_234_cov_1.592179_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.528;conf=81.59;score=6.48;cscore=3.26;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=49;seqlen=231;seqhdr="NODE_1196419_length_231_cov_1.079545"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1196419_length_231_cov_1.079545	pyrodigal_v3.6.3	CDS	1	231	17.7	+	0	ID=NODE_1196419_length_231_cov_1.079545_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.416;conf=98.32;score=17.69;cscore=16.08;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=54;seqlen=372;seqhdr="NODE_326560_length_372_cov_1.498423"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_326560_length_372_cov_1.498423	pyrodigal_v3.6.3	CDS	2	223	0.4	+	0	ID=NODE_326560_length_372_cov_1.498423_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.473;conf=52.38;score=0.41;cscore=-2.31;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_326560_length_372_cov_1.498423	pyrodigal_v3.6.3	CDS	310	372	2.4	+	0	ID=NODE_326560_length_372_cov_1.498423_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.444;conf=63.53;score=2.41;cscore=3.04;sscore=-0.62;rscore=-0.14;uscore=-1.97;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=58;seqlen=282;seqhdr="NODE_609595_length_282_cov_0.704846"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_609595_length_282_cov_0.704846	pyrodigal_v3.6.3	CDS	3	281	50.4	+	0	ID=NODE_609595_length_282_cov_0.704846_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.717;conf=100.00;score=50.41;cscore=48.80;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=65;seqlen=579;seqhdr="NODE_95343_length_579_cov_1.080153"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_95343_length_579_cov_1.080153	pyrodigal_v3.6.3	CDS	2	577	34.8	+	0	ID=NODE_95343_length_579_cov_1.080153_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.418;conf=99.97;score=34.80;cscore=33.19;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=70;seqlen=238;seqhdr="NODE_1119342_length_238_cov_1.038251"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=78;seqlen=258;seqhdr="NODE_882140_length_258_cov_0.935961"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=82;seqlen=553;seqhdr="NODE_107949_length_553_cov_2.202811"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_107949_length_553_cov_2.202811	pyrodigal_v3.6.3	CDS	3	317	8.4	+	0	ID=NODE_107949_length_553_cov_2.202811_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.594;conf=87.31;score=8.39;cscore=5.17;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=85;seqlen=254;seqhdr="NODE_930319_length_254_cov_0.954774"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_930319_length_254_cov_0.954774	pyrodigal_v3.6.3	CDS	1	252	41.3	+	0	ID=NODE_930319_length_254_cov_0.954774_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.635;conf=99.99;score=41.32;cscore=39.71;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=2;seqlen=218;seqhdr="NODE_1312277_length_218_cov_1.165644"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=3;seqlen=230;seqhdr="NODE_1199462_length_230_cov_2.171429"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=5;seqlen=240;seqhdr="NODE_1097036_length_240_cov_1.027027"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=9;seqlen=285;seqhdr="NODE_589692_length_285_cov_1.513043"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_589692_length_285_cov_1.513043	pyrodigal_v3.6.3	CDS	1	285	28.7	+	0	ID=NODE_589692_length_285_cov_1.513043_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.698;conf=99.86;score=28.73;cscore=27.12;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=15;seqlen=211;seqhdr="NODE_1366555_length_211_cov_1.217949"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1366555_length_211_cov_1.217949	pyrodigal_v3.6.3	CDS	2	211	25.2	+	0	ID=NODE_1366555_length_211_cov_1.217949_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.576;conf=99.69;score=25.17;cscore=23.56;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=19;seqlen=411;seqhdr="NODE_248593_length_411_cov_0.994382"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_248593_length_411_cov_0.994382	pyrodigal_v3.6.3	CDS	3	128	2.1	+	0	ID=NODE_248593_length_411_cov_0.994382_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.603;conf=62.08;score=2.14;cscore=-0.57;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_248593_length_411_cov_0.994382	pyrodigal_v3.6.3	CDS	68	409	28.6	-	0	ID=NODE_248593_length_411_cov_0.994382_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.629;conf=99.86;score=28.58;cscore=25.36;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=24;seqlen=240;seqhdr="NODE_1101746_length_240_cov_0.864865"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1101746_length_240_cov_0.864865	pyrodigal_v3.6.3	CDS	34	240	47.5	-	0	ID=NODE_1101746_length_240_cov_0.864865_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.744;conf=100.00;score=47.51;cscore=44.29;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=33;seqlen=450;seqhdr="NODE_192227_length_450_cov_1.800000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_192227_length_450_cov_1.800000	pyrodigal_v3.6.3	CDS	1	450	26.7	+	0	ID=NODE_192227_length_450_cov_1.800000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.740;conf=99.79;score=26.73;cscore=25.13;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=44;seqlen=334;seqhdr="NODE_424988_length_334_cov_1.939068"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_424988_length_334_cov_1.939068	pyrodigal_v3.6.3	CDS	57	332	37.0	+	0	ID=NODE_424988_length_334_cov_1.939068_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.641;conf=99.98;score=37.04;cscore=36.03;sscore=1.01;rscore=-0.14;uscore=-0.34;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=51;seqlen=532;seqhdr="NODE_120031_length_532_cov_2.056604"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_120031_length_532_cov_2.056604	pyrodigal_v3.6.3	CDS	74	184	0.3	-	0	ID=NODE_120031_length_532_cov_2.056604_1;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.432;conf=51.54;score=0.27;cscore=2.44;sscore=-2.18;rscore=-0.32;uscore=-1.85;tscore=0.64;
+NODE_120031_length_532_cov_2.056604	pyrodigal_v3.6.3	CDS	284	532	9.6	+	0	ID=NODE_120031_length_532_cov_2.056604_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.353;conf=90.10;score=9.61;cscore=13.15;sscore=-3.54;rscore=-0.14;uscore=-4.89;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=57;seqlen=562;seqhdr="NODE_103412_length_562_cov_1.426036"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_103412_length_562_cov_1.426036	pyrodigal_v3.6.3	CDS	1	225	29.0	-	0	ID=NODE_103412_length_562_cov_1.426036_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.502;conf=99.87;score=29.04;cscore=29.90;sscore=-0.86;rscore=-0.14;uscore=-2.20;tscore=1.49;
+NODE_103412_length_562_cov_1.426036	pyrodigal_v3.6.3	CDS	397	561	4.6	-	0	ID=NODE_103412_length_562_cov_1.426036_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.485;conf=74.02;score=4.55;cscore=1.33;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=64;seqlen=342;seqhdr="NODE_403195_length_342_cov_1.655052"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_403195_length_342_cov_1.655052	pyrodigal_v3.6.3	CDS	2	340	39.1	+	0	ID=NODE_403195_length_342_cov_1.655052_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.664;conf=99.99;score=39.14;cscore=37.53;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=66;seqlen=213;seqhdr="NODE_1348630_length_213_cov_2.405063"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1348630_length_213_cov_2.405063	pyrodigal_v3.6.3	CDS	3	212	31.2	-	0	ID=NODE_1348630_length_213_cov_2.405063_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.648;conf=99.92;score=31.18;cscore=29.57;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=71;seqlen=245;seqhdr="NODE_1032430_length_245_cov_2.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=73;seqlen=736;seqhdr="NODE_49493_length_736_cov_2.417034"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_49493_length_736_cov_2.417034	pyrodigal_v3.6.3	CDS	176	736	110.4	-	0	ID=NODE_49493_length_736_cov_2.417034_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.622;conf=100.00;score=110.36;cscore=107.14;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=83;seqlen=261;seqhdr="NODE_844846_length_261_cov_0.902913"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_844846_length_261_cov_0.902913	pyrodigal_v3.6.3	CDS	1	261	13.4	-	0	ID=NODE_844846_length_261_cov_0.902913_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.697;conf=95.61;score=13.40;cscore=11.79;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=88;seqlen=455;seqhdr="NODE_187077_length_455_cov_0.860000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_187077_length_455_cov_0.860000	pyrodigal_v3.6.3	CDS	1	327	32.5	-	0	ID=NODE_187077_length_455_cov_0.860000_1;partial=10;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.486;conf=99.94;score=32.54;cscore=31.31;sscore=1.23;rscore=1.02;uscore=-1.28;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=4;seqlen=377;seqhdr="NODE_315767_length_377_cov_1.062112"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_315767_length_377_cov_1.062112	pyrodigal_v3.6.3	CDS	15	377	79.4	-	0	ID=NODE_315767_length_377_cov_1.062112_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.645;conf=100.00;score=79.42;cscore=76.20;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=7;seqlen=260;seqhdr="NODE_858713_length_260_cov_0.839024"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_858713_length_260_cov_0.839024	pyrodigal_v3.6.3	CDS	144	260	2.4	+	0	ID=NODE_858713_length_260_cov_0.839024_1;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.487;conf=63.47;score=2.40;cscore=4.39;sscore=-1.99;rscore=-0.14;uscore=-2.86;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=13;seqlen=403;seqhdr="NODE_261583_length_403_cov_1.433908"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=16;seqlen=390;seqhdr="NODE_286765_length_390_cov_1.262687"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_286765_length_390_cov_1.262687	pyrodigal_v3.6.3	CDS	1	390	58.3	-	0	ID=NODE_286765_length_390_cov_1.262687_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.754;conf=100.00;score=58.33;cscore=56.72;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=23;seqlen=245;seqhdr="NODE_1034673_length_245_cov_1.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1034673_length_245_cov_1.000000	pyrodigal_v3.6.3	CDS	2	244	24.0	+	0	ID=NODE_1034673_length_245_cov_1.000000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.617;conf=99.60;score=24.02;cscore=22.41;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=28;seqlen=239;seqhdr="NODE_1104391_length_239_cov_1.548913"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1104391_length_239_cov_1.548913	pyrodigal_v3.6.3	CDS	3	77	1.7	+	0	ID=NODE_1104391_length_239_cov_1.548913_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.427;conf=59.87;score=1.74;cscore=-0.98;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_1104391_length_239_cov_1.548913	pyrodigal_v3.6.3	CDS	96	239	3.9	+	0	ID=NODE_1104391_length_239_cov_1.548913_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.465;conf=71.23;score=3.94;cscore=2.74;sscore=1.21;rscore=-0.14;uscore=-1.22;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=35;seqlen=270;seqhdr="NODE_729668_length_270_cov_0.883721"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_729668_length_270_cov_0.883721	pyrodigal_v3.6.3	CDS	3	269	19.9	-	0	ID=NODE_729668_length_270_cov_0.883721_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.592;conf=98.98;score=19.89;cscore=18.28;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=38;seqlen=275;seqhdr="NODE_673633_length_275_cov_0.863636"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_673633_length_275_cov_0.863636	pyrodigal_v3.6.3	CDS	1	273	38.2	+	0	ID=NODE_673633_length_275_cov_0.863636_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.667;conf=99.98;score=38.16;cscore=36.55;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=42;seqlen=478;seqhdr="NODE_162194_length_478_cov_1.347518"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_162194_length_478_cov_1.347518	pyrodigal_v3.6.3	CDS	32	478	66.1	-	0	ID=NODE_162194_length_478_cov_1.347518_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.546;conf=100.00;score=66.10;cscore=62.88;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=47;seqlen=289;seqhdr="NODE_565909_length_289_cov_1.623932"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_565909_length_289_cov_1.623932	pyrodigal_v3.6.3	CDS	3	287	39.7	-	0	ID=NODE_565909_length_289_cov_1.623932_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.684;conf=99.99;score=39.73;cscore=38.12;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=52;seqlen=326;seqhdr="NODE_448279_length_326_cov_1.372694"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_448279_length_326_cov_1.372694	pyrodigal_v3.6.3	CDS	3	326	38.7	+	0	ID=NODE_448279_length_326_cov_1.372694_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.525;conf=99.99;score=38.69;cscore=37.08;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=59;seqlen=481;seqhdr="NODE_159465_length_481_cov_1.213615"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_159465_length_481_cov_1.213615	pyrodigal_v3.6.3	CDS	91	480	15.1	+	0	ID=NODE_159465_length_481_cov_1.213615_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.369;conf=96.99;score=15.10;cscore=13.70;sscore=1.40;rscore=-0.14;uscore=0.05;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=69;seqlen=255;seqhdr="NODE_919509_length_255_cov_0.950000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_919509_length_255_cov_0.950000	pyrodigal_v3.6.3	CDS	1	255	4.6	-	0	ID=NODE_919509_length_255_cov_0.950000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.459;conf=74.01;score=4.55;cscore=2.94;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=76;seqlen=1360;seqhdr="NODE_10786_length_1360_cov_2.065134"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_10786_length_1360_cov_2.065134	pyrodigal_v3.6.3	CDS	172	690	48.4	-	0	ID=NODE_10786_length_1360_cov_2.065134_1;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.682;conf=100.00;score=48.43;cscore=42.91;sscore=5.51;rscore=1.02;uscore=3.01;tscore=1.49;
+NODE_10786_length_1360_cov_2.065134	pyrodigal_v3.6.3	CDS	822	1358	86.7	-	0	ID=NODE_10786_length_1360_cov_2.065134_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.650;conf=100.00;score=86.73;cscore=83.51;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=81;seqlen=218;seqhdr="NODE_1312962_length_218_cov_1.165644"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1312962_length_218_cov_1.165644	pyrodigal_v3.6.3	CDS	1	216	34.3	+	0	ID=NODE_1312962_length_218_cov_1.165644_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.606;conf=99.96;score=34.26;cscore=32.65;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=86;seqlen=485;seqhdr="NODE_155783_length_485_cov_1.190698"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_155783_length_485_cov_1.190698	pyrodigal_v3.6.3	CDS	3	485	100.6	-	0	ID=NODE_155783_length_485_cov_1.190698_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.683;conf=100.00;score=100.58;cscore=98.97;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=91;seqlen=689;seqhdr="NODE_59239_length_689_cov_0.949527"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_59239_length_689_cov_0.949527	pyrodigal_v3.6.3	CDS	3	689	116.0	-	0	ID=NODE_59239_length_689_cov_0.949527_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.718;conf=100.00;score=116.04;cscore=114.43;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=6;seqlen=218;seqhdr="NODE_1312921_length_218_cov_1.165644"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1312921_length_218_cov_1.165644	pyrodigal_v3.6.3	CDS	2	217	28.9	-	0	ID=NODE_1312921_length_218_cov_1.165644_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.593;conf=99.87;score=28.89;cscore=27.28;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=12;seqlen=553;seqhdr="NODE_108059_length_553_cov_1.728916"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_108059_length_553_cov_1.728916	pyrodigal_v3.6.3	CDS	2	553	32.4	+	0	ID=NODE_108059_length_553_cov_1.728916_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.377;conf=99.94;score=32.42;cscore=30.81;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=20;seqlen=287;seqhdr="NODE_577819_length_287_cov_1.637931"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_577819_length_287_cov_1.637931	pyrodigal_v3.6.3	CDS	3	287	19.9	-	0	ID=NODE_577819_length_287_cov_1.637931_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.393;conf=98.99;score=19.93;cscore=18.32;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=22;seqlen=394;seqhdr="NODE_279380_length_394_cov_1.017699"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_279380_length_394_cov_1.017699	pyrodigal_v3.6.3	CDS	2	394	67.1	+	0	ID=NODE_279380_length_394_cov_1.017699_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.623;conf=100.00;score=67.06;cscore=65.45;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=30;seqlen=253;seqhdr="NODE_946577_length_253_cov_0.944444"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_946577_length_253_cov_0.944444	pyrodigal_v3.6.3	CDS	3	251	38.4	-	0	ID=NODE_946577_length_253_cov_0.944444_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.639;conf=99.99;score=38.37;cscore=36.76;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=36;seqlen=233;seqhdr="NODE_1175085_length_233_cov_1.067416"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1175085_length_233_cov_1.067416	pyrodigal_v3.6.3	CDS	2	232	32.0	+	0	ID=NODE_1175085_length_233_cov_1.067416_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.576;conf=99.94;score=32.03;cscore=30.42;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=40;seqlen=290;seqhdr="NODE_558741_length_290_cov_2.829787"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_558741_length_290_cov_2.829787	pyrodigal_v3.6.3	CDS	50	289	11.1	+	0	ID=NODE_558741_length_290_cov_2.829787_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.458;conf=92.83;score=11.14;cscore=13.67;sscore=-2.53;rscore=-0.14;uscore=-3.88;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=43;seqlen=273;seqhdr="NODE_692673_length_273_cov_0.871560"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_692673_length_273_cov_0.871560	pyrodigal_v3.6.3	CDS	3	272	49.7	+	0	ID=NODE_692673_length_273_cov_0.871560_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.722;conf=100.00;score=49.68;cscore=48.07;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=50;seqlen=538;seqhdr="NODE_116738_length_538_cov_1.180124"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_116738_length_538_cov_1.180124	pyrodigal_v3.6.3	CDS	1	537	7.5	+	0	ID=NODE_116738_length_538_cov_1.180124_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.317;conf=84.88;score=7.51;cscore=5.90;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=56;seqlen=233;seqhdr="NODE_1176102_length_233_cov_1.067416"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1176102_length_233_cov_1.067416	pyrodigal_v3.6.3	CDS	2	232	16.9	+	0	ID=NODE_1176102_length_233_cov_1.067416_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.515;conf=97.99;score=16.91;cscore=15.30;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=61;seqlen=246;seqhdr="NODE_1029530_length_246_cov_0.910995"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1029530_length_246_cov_0.910995	pyrodigal_v3.6.3	CDS	3	107	12.7	-	0	ID=NODE_1029530_length_246_cov_0.910995_1;partial=10;start_type=GTG;rbs_motif=GGA/GAG/AGG;rbs_spacer=3-4bp;gc_cont=0.619;conf=94.87;score=12.69;cscore=13.16;sscore=-0.47;rscore=2.51;uscore=-3.99;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=67;seqlen=255;seqhdr="NODE_912453_length_255_cov_1.900000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_912453_length_255_cov_1.900000	pyrodigal_v3.6.3	CDS	3	254	35.9	-	0	ID=NODE_912453_length_255_cov_1.900000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.718;conf=99.97;score=35.87;cscore=34.26;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=72;seqlen=250;seqhdr="NODE_979866_length_250_cov_0.974359"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=79;seqlen=464;seqhdr="NODE_176234_length_464_cov_1.721271"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_176234_length_464_cov_1.721271	pyrodigal_v3.6.3	CDS	3	464	8.5	-	0	ID=NODE_176234_length_464_cov_1.721271_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.455;conf=87.56;score=8.49;cscore=6.88;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=89;seqlen=254;seqhdr="NODE_933030_length_254_cov_0.954774"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_933030_length_254_cov_0.954774	pyrodigal_v3.6.3	CDS	2	253	27.5	-	0	ID=NODE_933030_length_254_cov_0.954774_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.679;conf=99.82;score=27.53;cscore=25.92;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=94;seqlen=259;seqhdr="NODE_868783_length_259_cov_0.931373"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_868783_length_259_cov_0.931373	pyrodigal_v3.6.3	CDS	1	78	12.6	-	0	ID=NODE_868783_length_259_cov_0.931373_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.590;conf=94.72;score=12.56;cscore=9.78;sscore=2.78;rscore=-0.14;uscore=-2.87;tscore=1.49;
+NODE_868783_length_259_cov_0.931373	pyrodigal_v3.6.3	CDS	75	257	19.9	-	0	ID=NODE_868783_length_259_cov_0.931373_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.617;conf=98.98;score=19.90;cscore=16.68;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=98;seqlen=318;seqhdr="NODE_470706_length_318_cov_1.444867"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_470706_length_318_cov_1.444867	pyrodigal_v3.6.3	CDS	1	318	57.2	+	0	ID=NODE_470706_length_318_cov_1.444867_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.638;conf=100.00;score=57.19;cscore=55.58;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=8;seqlen=297;seqhdr="NODE_537278_length_297_cov_0.859504"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_537278_length_297_cov_0.859504	pyrodigal_v3.6.3	CDS	3	206	2.4	+	0	ID=NODE_537278_length_297_cov_0.859504_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.407;conf=63.61;score=2.43;cscore=-0.29;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=11;seqlen=265;seqhdr="NODE_785351_length_265_cov_0.904762"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_785351_length_265_cov_0.904762	pyrodigal_v3.6.3	CDS	3	263	31.8	-	0	ID=NODE_785351_length_265_cov_0.904762_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.540;conf=99.93;score=31.78;cscore=30.17;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=18;seqlen=270;seqhdr="NODE_726080_length_270_cov_0.883721"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_726080_length_270_cov_0.883721	pyrodigal_v3.6.3	CDS	6	269	26.6	-	0	ID=NODE_726080_length_270_cov_0.883721_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.693;conf=99.78;score=26.60;cscore=23.38;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=27;seqlen=237;seqhdr="NODE_1128691_length_237_cov_1.043956"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1128691_length_237_cov_1.043956	pyrodigal_v3.6.3	CDS	1	237	26.3	-	0	ID=NODE_1128691_length_237_cov_1.043956_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.624;conf=99.76;score=26.28;cscore=24.67;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=32;seqlen=248;seqhdr="NODE_1005683_length_248_cov_0.974093"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1005683_length_248_cov_0.974093	pyrodigal_v3.6.3	CDS	2	247	55.0	+	0	ID=NODE_1005683_length_248_cov_0.974093_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.699;conf=100.00;score=55.04;cscore=53.43;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=34;seqlen=217;seqhdr="NODE_1320448_length_217_cov_1.172840"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1320448_length_217_cov_1.172840	pyrodigal_v3.6.3	CDS	2	217	31.8	-	0	ID=NODE_1320448_length_217_cov_1.172840_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.690;conf=99.93;score=31.75;cscore=30.14;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=39;seqlen=307;seqhdr="NODE_502491_length_307_cov_13.087302"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_502491_length_307_cov_13.087302	pyrodigal_v3.6.3	CDS	3	305	27.4	-	0	ID=NODE_502491_length_307_cov_13.087302_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.604;conf=99.82;score=27.39;cscore=25.78;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=45;seqlen=230;seqhdr="NODE_1200022_length_230_cov_1.628571"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1200022_length_230_cov_1.628571	pyrodigal_v3.6.3	CDS	3	230	35.9	-	0	ID=NODE_1200022_length_230_cov_1.628571_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.711;conf=99.97;score=35.95;cscore=34.34;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=53;seqlen=281;seqhdr="NODE_610623_length_281_cov_1.699115"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_610623_length_281_cov_1.699115	pyrodigal_v3.6.3	CDS	3	281	31.3	-	0	ID=NODE_610623_length_281_cov_1.699115_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.530;conf=99.93;score=31.30;cscore=29.69;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=60;seqlen=258;seqhdr="NODE_874918_length_258_cov_1.596059"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_874918_length_258_cov_1.596059	pyrodigal_v3.6.3	CDS	1	258	16.1	+	0	ID=NODE_874918_length_258_cov_1.596059_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.457;conf=97.61;score=16.15;cscore=14.54;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=63;seqlen=504;seqhdr="NODE_139880_length_504_cov_1.011136"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_139880_length_504_cov_1.011136	pyrodigal_v3.6.3	CDS	3	503	62.8	+	0	ID=NODE_139880_length_504_cov_1.011136_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.515;conf=100.00;score=62.82;cscore=61.21;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=68;seqlen=250;seqhdr="NODE_976110_length_250_cov_1.025641"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_976110_length_250_cov_1.025641	pyrodigal_v3.6.3	CDS	3	248	28.8	-	0	ID=NODE_976110_length_250_cov_1.025641_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.581;conf=99.87;score=28.76;cscore=27.15;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=74;seqlen=371;seqhdr="NODE_328674_length_371_cov_1.803797"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=77;seqlen=260;seqhdr="NODE_851512_length_260_cov_0.926829"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_851512_length_260_cov_0.926829	pyrodigal_v3.6.3	CDS	3	215	0.2	-	0	ID=NODE_851512_length_260_cov_0.926829_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.446;conf=51.00;score=0.17;cscore=1.95;sscore=-1.78;rscore=-0.14;uscore=-3.13;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=80;seqlen=338;seqhdr="NODE_413917_length_338_cov_2.014134"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_413917_length_338_cov_2.014134	pyrodigal_v3.6.3	CDS	248	337	10.1	+	0	ID=NODE_413917_length_338_cov_2.014134_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.578;conf=91.00;score=10.06;cscore=14.00;sscore=-3.94;rscore=-0.14;uscore=-5.29;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=84;seqlen=291;seqhdr="NODE_556256_length_291_cov_1.576271"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_556256_length_291_cov_1.576271	pyrodigal_v3.6.3	CDS	1	291	48.8	+	0	ID=NODE_556256_length_291_cov_1.576271_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.725;conf=100.00;score=48.79;cscore=47.18;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=90;seqlen=362;seqhdr="NODE_350912_length_362_cov_1.547231"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_350912_length_362_cov_1.547231	pyrodigal_v3.6.3	CDS	2	361	61.7	+	0	ID=NODE_350912_length_362_cov_1.547231_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.697;conf=100.00;score=61.74;cscore=60.13;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=14;seqlen=322;seqhdr="NODE_458452_length_322_cov_2.134831"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_458452_length_322_cov_2.134831	pyrodigal_v3.6.3	CDS	13	321	65.6	-	0	ID=NODE_458452_length_322_cov_2.134831_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.634;conf=100.00;score=65.55;cscore=62.33;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=26;seqlen=231;seqhdr="NODE_1192032_length_231_cov_1.079545"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1192032_length_231_cov_1.079545	pyrodigal_v3.6.3	CDS	2	229	22.8	-	0	ID=NODE_1192032_length_231_cov_1.079545_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.662;conf=99.48;score=22.84;cscore=21.23;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=37;seqlen=646;seqhdr="NODE_70594_length_646_cov_1.284264"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_70594_length_646_cov_1.284264	pyrodigal_v3.6.3	CDS	81	644	34.0	-	0	ID=NODE_70594_length_646_cov_1.284264_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.349;conf=99.96;score=34.03;cscore=30.81;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=46;seqlen=357;seqhdr="NODE_364789_length_357_cov_0.963576"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_364789_length_357_cov_0.963576	pyrodigal_v3.6.3	CDS	2	322	37.6	+	0	ID=NODE_364789_length_357_cov_0.963576_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.717;conf=99.98;score=37.65;cscore=34.43;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=55;seqlen=222;seqhdr="NODE_1279441_length_222_cov_1.137725"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1279441_length_222_cov_1.137725	pyrodigal_v3.6.3	CDS	1	111	2.3	+	0	ID=NODE_1279441_length_222_cov_1.137725_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.613;conf=62.88;score=2.29;cscore=-0.43;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_1279441_length_222_cov_1.137725	pyrodigal_v3.6.3	CDS	117	221	2.8	+	0	ID=NODE_1279441_length_222_cov_1.137725_2;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.676;conf=65.55;score=2.80;cscore=6.02;sscore=-3.22;rscore=-0.14;uscore=-5.31;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=62;seqlen=329;seqhdr="NODE_440169_length_329_cov_1.182482"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_440169_length_329_cov_1.182482	pyrodigal_v3.6.3	CDS	2	328	49.2	-	0	ID=NODE_440169_length_329_cov_1.182482_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.709;conf=100.00;score=49.16;cscore=47.55;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=75;seqlen=257;seqhdr="NODE_886313_length_257_cov_1.881188"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_886313_length_257_cov_1.881188	pyrodigal_v3.6.3	CDS	2	256	40.2	-	0	ID=NODE_886313_length_257_cov_1.881188_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.580;conf=99.99;score=40.24;cscore=38.63;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=87;seqlen=235;seqhdr="NODE_1148741_length_235_cov_1.583333"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1148741_length_235_cov_1.583333	pyrodigal_v3.6.3	CDS	2	235	38.3	+	0	ID=NODE_1148741_length_235_cov_1.583333_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.598;conf=99.98;score=38.30;cscore=36.69;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=97;seqlen=364;seqhdr="NODE_346316_length_364_cov_1.307443"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_346316_length_364_cov_1.307443	pyrodigal_v3.6.3	CDS	204	362	8.3	-	0	ID=NODE_346316_length_364_cov_1.307443_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.579;conf=87.17;score=8.33;cscore=5.12;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=106;seqlen=219;seqhdr="NODE_1306415_length_219_cov_1.134146"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=108;seqlen=268;seqhdr="NODE_750513_length_268_cov_0.892019"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_750513_length_268_cov_0.892019	pyrodigal_v3.6.3	CDS	21	266	44.7	-	0	ID=NODE_750513_length_268_cov_0.892019_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.646;conf=100.00;score=44.73;cscore=41.51;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=116;seqlen=212;seqhdr="NODE_1357596_length_212_cov_1.815287"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1357596_length_212_cov_1.815287	pyrodigal_v3.6.3	CDS	2	211	21.4	+	0	ID=NODE_1357596_length_212_cov_1.815287_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.705;conf=99.27;score=21.38;cscore=19.77;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=124;seqlen=256;seqhdr="NODE_911293_length_256_cov_0.676617"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_911293_length_256_cov_0.676617	pyrodigal_v3.6.3	CDS	2	256	29.9	-	0	ID=NODE_911293_length_256_cov_0.676617_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.671;conf=99.90;score=29.90;cscore=28.29;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=133;seqlen=279;seqhdr="NODE_628809_length_279_cov_0.848214"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_628809_length_279_cov_0.848214	pyrodigal_v3.6.3	CDS	1	186	30.3	+	0	ID=NODE_628809_length_279_cov_0.848214_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.677;conf=99.90;score=30.25;cscore=27.04;sscore=3.22;rscore=0.00;uscore=3.22;tscore=0.00;
+NODE_628809_length_279_cov_0.848214	pyrodigal_v3.6.3	CDS	180	278	8.6	+	0	ID=NODE_628809_length_279_cov_0.848214_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.758;conf=87.92;score=8.64;cscore=17.28;sscore=-8.65;rscore=-0.14;uscore=-11.26;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=148;seqlen=346;seqhdr="NODE_392938_length_346_cov_1.305842"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_392938_length_346_cov_1.305842	pyrodigal_v3.6.3	CDS	1	153	9.9	-	0	ID=NODE_392938_length_346_cov_1.305842_1;partial=10;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.320;conf=90.69;score=9.90;cscore=2.73;sscore=7.17;rscore=5.98;uscore=-0.30;tscore=1.49;
+NODE_392938_length_346_cov_1.305842	pyrodigal_v3.6.3	CDS	234	344	1.3	-	0	ID=NODE_392938_length_346_cov_1.305842_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.396;conf=57.56;score=1.33;cscore=-1.39;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=158;seqlen=227;seqhdr="NODE_1236414_length_227_cov_0.947674"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=171;seqlen=258;seqhdr="NODE_883450_length_258_cov_0.935961"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_883450_length_258_cov_0.935961	pyrodigal_v3.6.3	CDS	1	258	38.1	-	0	ID=NODE_883450_length_258_cov_0.935961_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.628;conf=99.98;score=38.07;cscore=36.46;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=93;seqlen=499;seqhdr="NODE_143872_length_499_cov_1.159910"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_143872_length_499_cov_1.159910	pyrodigal_v3.6.3	CDS	2	499	60.6	+	0	ID=NODE_143872_length_499_cov_1.159910_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.671;conf=100.00;score=60.61;cscore=59.00;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=96;seqlen=493;seqhdr="NODE_148880_length_493_cov_1.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_148880_length_493_cov_1.000000	pyrodigal_v3.6.3	CDS	55	492	11.5	-	0	ID=NODE_148880_length_493_cov_1.000000_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.719;conf=93.31;score=11.46;cscore=8.24;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=109;seqlen=311;seqhdr="NODE_492258_length_311_cov_1.113281"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=111;seqlen=216;seqhdr="NODE_1325593_length_216_cov_1.770186"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1325593_length_216_cov_1.770186	pyrodigal_v3.6.3	CDS	3	215	27.1	+	0	ID=NODE_1325593_length_216_cov_1.770186_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.775;conf=99.80;score=27.11;cscore=25.50;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=120;seqlen=458;seqhdr="NODE_183630_length_458_cov_0.885856"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_183630_length_458_cov_0.885856	pyrodigal_v3.6.3	CDS	1	105	9.4	+	0	ID=NODE_183630_length_458_cov_0.885856_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.733;conf=89.70;score=9.41;cscore=6.19;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_183630_length_458_cov_0.885856	pyrodigal_v3.6.3	CDS	121	456	32.3	-	0	ID=NODE_183630_length_458_cov_0.885856_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.688;conf=99.94;score=32.27;cscore=29.05;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=128;seqlen=394;seqhdr="NODE_277877_length_394_cov_2.297935"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_277877_length_394_cov_2.297935	pyrodigal_v3.6.3	CDS	1	393	77.1	-	0	ID=NODE_277877_length_394_cov_2.297935_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.730;conf=100.00;score=77.11;cscore=75.50;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=132;seqlen=297;seqhdr="NODE_535707_length_297_cov_1.458678"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_535707_length_297_cov_1.458678	pyrodigal_v3.6.3	CDS	3	296	39.2	-	0	ID=NODE_535707_length_297_cov_1.458678_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.745;conf=99.99;score=39.24;cscore=37.63;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=138;seqlen=237;seqhdr="NODE_1133190_length_237_cov_1.043956"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1133190_length_237_cov_1.043956	pyrodigal_v3.6.3	CDS	1	237	41.1	+	0	ID=NODE_1133190_length_237_cov_1.043956_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.747;conf=99.99;score=41.14;cscore=39.53;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=143;seqlen=686;seqhdr="NODE_59797_length_686_cov_2.028526"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_59797_length_686_cov_2.028526	pyrodigal_v3.6.3	CDS	2	538	111.8	-	0	ID=NODE_59797_length_686_cov_2.028526_1;partial=10;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.657;conf=100.00;score=111.80;cscore=99.72;sscore=12.08;rscore=9.30;uscore=-12.29;tscore=1.49;
+NODE_59797_length_686_cov_2.028526	pyrodigal_v3.6.3	CDS	535	684	21.5	-	0	ID=NODE_59797_length_686_cov_2.028526_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.653;conf=99.29;score=21.51;cscore=18.29;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=146;seqlen=233;seqhdr="NODE_1172049_length_233_cov_1.067416"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1172049_length_233_cov_1.067416	pyrodigal_v3.6.3	CDS	1	231	34.0	+	0	ID=NODE_1172049_length_233_cov_1.067416_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.671;conf=99.96;score=34.05;cscore=32.44;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=157;seqlen=376;seqhdr="NODE_318213_length_376_cov_1.009346"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_318213_length_376_cov_1.009346	pyrodigal_v3.6.3	CDS	1	375	4.3	-	0	ID=NODE_318213_length_376_cov_1.009346_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.365;conf=72.99;score=4.32;cscore=2.71;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=160;seqlen=650;seqhdr="NODE_69293_length_650_cov_2.235294"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_69293_length_650_cov_2.235294	pyrodigal_v3.6.3	CDS	1	648	109.4	-	0	ID=NODE_69293_length_650_cov_2.235294_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.630;conf=100.00;score=109.42;cscore=107.81;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=164;seqlen=220;seqhdr="NODE_1294261_length_220_cov_1.151515"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1294261_length_220_cov_1.151515	pyrodigal_v3.6.3	CDS	3	218	39.5	-	0	ID=NODE_1294261_length_220_cov_1.151515_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.694;conf=99.99;score=39.51;cscore=37.90;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=169;seqlen=278;seqhdr="NODE_638293_length_278_cov_0.852018"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_638293_length_278_cov_0.852018	pyrodigal_v3.6.3	CDS	3	278	18.8	+	0	ID=NODE_638293_length_278_cov_0.852018_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.627;conf=98.69;score=18.79;cscore=17.18;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=176;seqlen=251;seqhdr="NODE_966928_length_251_cov_0.969388"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_966928_length_251_cov_0.969388	pyrodigal_v3.6.3	CDS	1	249	43.6	-	0	ID=NODE_966928_length_251_cov_0.969388_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.711;conf=100.00;score=43.62;cscore=42.01;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=180;seqlen=415;seqhdr="NODE_240762_length_415_cov_2.647222"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_240762_length_415_cov_2.647222	pyrodigal_v3.6.3	CDS	80	415	10.8	+	0	ID=NODE_240762_length_415_cov_2.647222_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.583;conf=92.23;score=10.76;cscore=12.19;sscore=-1.43;rscore=-0.14;uscore=-2.78;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=193;seqlen=215;seqhdr="NODE_1339023_length_215_cov_1.143750"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1339023_length_215_cov_1.143750	pyrodigal_v3.6.3	CDS	2	214	45.3	+	0	ID=NODE_1339023_length_215_cov_1.143750_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.671;conf=100.00;score=45.34;cscore=43.73;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=92;seqlen=245;seqhdr="NODE_1038976_length_245_cov_1.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1038976_length_245_cov_1.000000	pyrodigal_v3.6.3	CDS	2	244	13.8	+	0	ID=NODE_1038976_length_245_cov_1.000000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.691;conf=95.96;score=13.78;cscore=12.17;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=99;seqlen=235;seqhdr="NODE_1152939_length_235_cov_1.055556"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1152939_length_235_cov_1.055556	pyrodigal_v3.6.3	CDS	70	234	18.9	+	0	ID=NODE_1152939_length_235_cov_1.055556_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.509;conf=98.73;score=18.95;cscore=18.65;sscore=0.30;rscore=-0.14;uscore=-1.05;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=105;seqlen=356;seqhdr="NODE_366867_length_356_cov_1.262458"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_366867_length_356_cov_1.262458	pyrodigal_v3.6.3	CDS	1	354	48.2	-	0	ID=NODE_366867_length_356_cov_1.262458_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.757;conf=100.00;score=48.16;cscore=46.55;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=114;seqlen=289;seqhdr="NODE_565624_length_289_cov_1.623932"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=117;seqlen=425;seqhdr="NODE_226605_length_425_cov_1.027027"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_226605_length_425_cov_1.027027	pyrodigal_v3.6.3	CDS	2	118	6.2	-	0	ID=NODE_226605_length_425_cov_1.027027_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.709;conf=80.46;score=6.16;cscore=10.77;sscore=-4.61;rscore=-0.14;uscore=-5.96;tscore=1.49;
+NODE_226605_length_425_cov_1.027027	pyrodigal_v3.6.3	CDS	211	423	24.7	-	0	ID=NODE_226605_length_425_cov_1.027027_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.718;conf=99.66;score=24.70;cscore=21.48;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=125;seqlen=217;seqhdr="NODE_1324174_length_217_cov_0.845679"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1324174_length_217_cov_0.845679	pyrodigal_v3.6.3	CDS	2	133	4.8	+	0	ID=NODE_1324174_length_217_cov_0.845679_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.523;conf=75.05;score=4.79;cscore=1.57;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=130;seqlen=210;seqhdr="NODE_1374872_length_210_cov_1.225806"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1374872_length_210_cov_1.225806	pyrodigal_v3.6.3	CDS	1	210	37.7	+	0	ID=NODE_1374872_length_210_cov_1.225806_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.671;conf=99.98;score=37.67;cscore=36.06;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=135;seqlen=241;seqhdr="NODE_1083242_length_241_cov_1.021505"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=142;seqlen=271;seqhdr="NODE_714447_length_271_cov_0.879630"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_714447_length_271_cov_0.879630	pyrodigal_v3.6.3	CDS	1	270	6.8	+	0	ID=NODE_714447_length_271_cov_0.879630_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.385;conf=82.56;score=6.76;cscore=5.15;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=149;seqlen=443;seqhdr="NODE_201613_length_443_cov_1.115979"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_201613_length_443_cov_1.115979	pyrodigal_v3.6.3	CDS	1	441	61.0	-	0	ID=NODE_201613_length_443_cov_1.115979_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.603;conf=100.00;score=60.96;cscore=59.35;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=153;seqlen=272;seqhdr="NODE_699316_length_272_cov_1.811060"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_699316_length_272_cov_1.811060	pyrodigal_v3.6.3	CDS	1	270	40.5	+	0	ID=NODE_699316_length_272_cov_1.811060_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.641;conf=99.99;score=40.54;cscore=38.93;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=159;seqlen=226;seqhdr="NODE_1242026_length_226_cov_1.111111"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1242026_length_226_cov_1.111111	pyrodigal_v3.6.3	CDS	1	225	29.3	-	0	ID=NODE_1242026_length_226_cov_1.111111_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.591;conf=99.88;score=29.34;cscore=27.73;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=163;seqlen=243;seqhdr="NODE_1058293_length_243_cov_1.319149"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1058293_length_243_cov_1.319149	pyrodigal_v3.6.3	CDS	3	242	40.4	+	0	ID=NODE_1058293_length_243_cov_1.319149_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.775;conf=99.99;score=40.36;cscore=38.75;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=172;seqlen=218;seqhdr="NODE_1313371_length_218_cov_1.165644"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1313371_length_218_cov_1.165644	pyrodigal_v3.6.3	CDS	1	216	31.3	+	0	ID=NODE_1313371_length_218_cov_1.165644_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.745;conf=99.92;score=31.29;cscore=29.68;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=179;seqlen=405;seqhdr="NODE_257855_length_405_cov_1.628571"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_257855_length_405_cov_1.628571	pyrodigal_v3.6.3	CDS	89	403	40.1	+	0	ID=NODE_257855_length_405_cov_1.628571_1;partial=01;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.625;conf=99.99;score=40.10;cscore=28.98;sscore=11.11;rscore=9.30;uscore=0.33;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=185;seqlen=324;seqhdr="NODE_455079_length_324_cov_0.940520"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_455079_length_324_cov_0.940520	pyrodigal_v3.6.3	CDS	1	324	51.1	-	0	ID=NODE_455079_length_324_cov_0.940520_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.698;conf=100.00;score=51.15;cscore=49.54;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=190;seqlen=220;seqhdr="NODE_1298921_length_220_cov_0.975758"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1298921_length_220_cov_0.975758	pyrodigal_v3.6.3	CDS	2	220	22.6	+	0	ID=NODE_1298921_length_220_cov_0.975758_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.635;conf=99.45;score=22.65;cscore=21.04;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=95;seqlen=271;seqhdr="NODE_709951_length_271_cov_2.199074"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=100;seqlen=332;seqhdr="NODE_430821_length_332_cov_1.714801"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_430821_length_332_cov_1.714801	pyrodigal_v3.6.3	CDS	2	331	31.9	-	0	ID=NODE_430821_length_332_cov_1.714801_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.503;conf=99.93;score=31.91;cscore=30.30;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=104;seqlen=237;seqhdr="NODE_1128685_length_237_cov_1.043956"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1128685_length_237_cov_1.043956	pyrodigal_v3.6.3	CDS	3	236	41.0	+	0	ID=NODE_1128685_length_237_cov_1.043956_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.684;conf=99.99;score=41.04;cscore=39.43;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=112;seqlen=287;seqhdr="NODE_579058_length_287_cov_1.228448"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_579058_length_287_cov_1.228448	pyrodigal_v3.6.3	CDS	2	265	50.8	-	0	ID=NODE_579058_length_287_cov_1.228448_1;partial=10;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.655;conf=100.00;score=50.82;cscore=43.18;sscore=7.64;rscore=9.30;uscore=-3.15;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=121;seqlen=370;seqhdr="NODE_330762_length_370_cov_2.409524"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_330762_length_370_cov_2.409524	pyrodigal_v3.6.3	CDS	2	370	71.0	+	0	ID=NODE_330762_length_370_cov_2.409524_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.656;conf=100.00;score=70.99;cscore=69.38;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=123;seqlen=225;seqhdr="NODE_1255481_length_225_cov_0.605882"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1255481_length_225_cov_0.605882	pyrodigal_v3.6.3	CDS	2	223	30.0	+	0	ID=NODE_1255481_length_225_cov_0.605882_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.766;conf=99.90;score=29.99;cscore=28.38;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=129;seqlen=215;seqhdr="NODE_1333288_length_215_cov_2.375000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1333288_length_215_cov_2.375000	pyrodigal_v3.6.3	CDS	3	215	12.3	+	0	ID=NODE_1333288_length_215_cov_2.375000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.305;conf=94.36;score=12.26;cscore=10.65;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=136;seqlen=256;seqhdr="NODE_902025_length_256_cov_1.253731"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_902025_length_256_cov_1.253731	pyrodigal_v3.6.3	CDS	22	255	15.3	+	0	ID=NODE_902025_length_256_cov_1.253731_1;partial=01;start_type=TTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.667;conf=97.09;score=15.25;cscore=25.45;sscore=-10.20;rscore=-0.14;uscore=-1.57;tscore=-8.48;
+##gff-version  3
+# Sequence Data: seqnum=141;seqlen=210;seqhdr="NODE_1375574_length_210_cov_1.225806"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1375574_length_210_cov_1.225806	pyrodigal_v3.6.3	CDS	1	147	19.3	+	0	ID=NODE_1375574_length_210_cov_1.225806_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.578;conf=98.83;score=19.29;cscore=16.07;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=144;seqlen=277;seqhdr="NODE_643475_length_277_cov_2.567568"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_643475_length_277_cov_2.567568	pyrodigal_v3.6.3	CDS	64	276	5.2	+	0	ID=NODE_643475_length_277_cov_2.567568_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.380;conf=76.92;score=5.24;cscore=8.91;sscore=-3.67;rscore=-0.14;uscore=-5.02;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=151;seqlen=474;seqhdr="NODE_165906_length_474_cov_1.680191"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_165906_length_474_cov_1.680191	pyrodigal_v3.6.3	CDS	3	473	14.4	+	0	ID=NODE_165906_length_474_cov_1.680191_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.418;conf=96.45;score=14.36;cscore=12.75;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=154;seqlen=235;seqhdr="NODE_1148989_length_235_cov_1.583333"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1148989_length_235_cov_1.583333	pyrodigal_v3.6.3	CDS	3	233	17.4	+	0	ID=NODE_1148989_length_235_cov_1.583333_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.610;conf=98.18;score=17.35;cscore=15.74;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=156;seqlen=212;seqhdr="NODE_1356918_length_212_cov_2.420382"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1356918_length_212_cov_2.420382	pyrodigal_v3.6.3	CDS	2	211	14.1	+	0	ID=NODE_1356918_length_212_cov_2.420382_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.719;conf=96.26;score=14.13;cscore=12.52;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=162;seqlen=302;seqhdr="NODE_519451_length_302_cov_1.384615"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_519451_length_302_cov_1.384615	pyrodigal_v3.6.3	CDS	66	302	25.7	-	0	ID=NODE_519451_length_302_cov_1.384615_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.574;conf=99.73;score=25.67;cscore=22.45;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=166;seqlen=227;seqhdr="NODE_1228354_length_227_cov_2.209302"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=170;seqlen=276;seqhdr="NODE_655073_length_276_cov_2.108597"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_655073_length_276_cov_2.108597	pyrodigal_v3.6.3	CDS	3	275	40.6	+	0	ID=NODE_655073_length_276_cov_2.108597_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.696;conf=99.99;score=40.60;cscore=38.99;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=174;seqlen=266;seqhdr="NODE_774698_length_266_cov_0.900474"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_774698_length_266_cov_0.900474	pyrodigal_v3.6.3	CDS	2	109	19.1	-	0	ID=NODE_774698_length_266_cov_0.900474_1;partial=10;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.537;conf=98.78;score=19.12;cscore=10.36;sscore=8.75;rscore=5.98;uscore=-3.66;tscore=1.49;
+NODE_774698_length_266_cov_0.900474	pyrodigal_v3.6.3	CDS	109	264	2.2	-	0	ID=NODE_774698_length_266_cov_0.900474_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.564;conf=62.63;score=2.25;cscore=-0.47;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=101;seqlen=227;seqhdr="NODE_1230662_length_227_cov_1.104651"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1230662_length_227_cov_1.104651	pyrodigal_v3.6.3	CDS	7	225	17.4	-	0	ID=NODE_1230662_length_227_cov_1.104651_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.443;conf=98.19;score=17.37;cscore=14.16;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=103;seqlen=301;seqhdr="NODE_522813_length_301_cov_1.288618"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_522813_length_301_cov_1.288618	pyrodigal_v3.6.3	CDS	2	301	49.7	+	0	ID=NODE_522813_length_301_cov_1.288618_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.680;conf=100.00;score=49.68;cscore=48.07;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=107;seqlen=257;seqhdr="NODE_891329_length_257_cov_0.940594"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_891329_length_257_cov_0.940594	pyrodigal_v3.6.3	CDS	2	256	10.7	-	0	ID=NODE_891329_length_257_cov_0.940594_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.408;conf=92.09;score=10.68;cscore=9.07;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=110;seqlen=282;seqhdr="NODE_604543_length_282_cov_2.092511"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_604543_length_282_cov_2.092511	pyrodigal_v3.6.3	CDS	2	166	3.6	+	0	ID=NODE_604543_length_282_cov_2.092511_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.600;conf=69.75;score=3.63;cscore=0.42;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_604543_length_282_cov_2.092511	pyrodigal_v3.6.3	CDS	173	280	16.2	+	0	ID=NODE_604543_length_282_cov_2.092511_2;partial=01;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.611;conf=97.66;score=16.24;cscore=11.42;sscore=4.82;rscore=5.98;uscore=-3.86;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=118;seqlen=234;seqhdr="NODE_1158374_length_234_cov_2.122905"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1158374_length_234_cov_2.122905	pyrodigal_v3.6.3	CDS	1	234	6.7	-	0	ID=NODE_1158374_length_234_cov_2.122905_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.274;conf=82.42;score=6.72;cscore=5.11;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=119;seqlen=387;seqhdr="NODE_292614_length_387_cov_1.596386"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=126;seqlen=853;seqhdr="NODE_33509_length_853_cov_1.547619"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_33509_length_853_cov_1.547619	pyrodigal_v3.6.3	CDS	1	183	23.1	+	0	ID=NODE_33509_length_853_cov_1.547619_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.596;conf=99.50;score=23.06;cscore=19.84;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_33509_length_853_cov_1.547619	pyrodigal_v3.6.3	CDS	626	853	24.0	+	0	ID=NODE_33509_length_853_cov_1.547619_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.636;conf=99.60;score=24.04;cscore=27.58;sscore=-3.53;rscore=-0.14;uscore=-4.23;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=131;seqlen=765;seqhdr="NODE_44699_length_765_cov_1.501408"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_44699_length_765_cov_1.501408	pyrodigal_v3.6.3	CDS	1	261	20.0	-	0	ID=NODE_44699_length_765_cov_1.501408_1;partial=10;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.709;conf=99.01;score=20.02;cscore=12.70;sscore=7.31;rscore=9.30;uscore=-2.82;tscore=1.49;
+NODE_44699_length_765_cov_1.501408	pyrodigal_v3.6.3	CDS	670	765	15.0	+	0	ID=NODE_44699_length_765_cov_1.501408_2;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.760;conf=96.92;score=15.00;cscore=12.70;sscore=2.30;rscore=-0.14;uscore=-5.09;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=139;seqlen=259;seqhdr="NODE_864290_length_259_cov_0.931373"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_864290_length_259_cov_0.931373	pyrodigal_v3.6.3	CDS	3	257	17.3	+	0	ID=NODE_864290_length_259_cov_0.931373_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.678;conf=98.16;score=17.30;cscore=15.69;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=147;seqlen=573;seqhdr="NODE_98118_length_573_cov_1.204633"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_98118_length_573_cov_1.204633	pyrodigal_v3.6.3	CDS	1	573	98.2	+	0	ID=NODE_98118_length_573_cov_1.204633_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.686;conf=100.00;score=98.19;cscore=96.58;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=152;seqlen=573;seqhdr="NODE_97901_length_573_cov_1.810811"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_97901_length_573_cov_1.810811	pyrodigal_v3.6.3	CDS	1	573	124.2	-	0	ID=NODE_97901_length_573_cov_1.810811_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.709;conf=100.00;score=124.20;cscore=122.59;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=161;seqlen=262;seqhdr="NODE_822872_length_262_cov_1.473430"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_822872_length_262_cov_1.473430	pyrodigal_v3.6.3	CDS	2	262	17.3	-	0	ID=NODE_822872_length_262_cov_1.473430_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.410;conf=98.15;score=17.27;cscore=15.66;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=167;seqlen=739;seqhdr="NODE_49089_length_739_cov_1.178363"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_49089_length_739_cov_1.178363	pyrodigal_v3.6.3	CDS	1	171	18.4	+	0	ID=NODE_49089_length_739_cov_1.178363_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.556;conf=98.56;score=18.38;cscore=15.16;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_49089_length_739_cov_1.178363	pyrodigal_v3.6.3	CDS	350	739	38.9	+	0	ID=NODE_49089_length_739_cov_1.178363_2;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.626;conf=99.99;score=38.93;cscore=39.94;sscore=-1.01;rscore=-0.14;uscore=-1.23;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=175;seqlen=211;seqhdr="NODE_1370297_length_211_cov_1.166667"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1370297_length_211_cov_1.166667	pyrodigal_v3.6.3	CDS	2	211	44.5	-	0	ID=NODE_1370297_length_211_cov_1.166667_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.662;conf=100.00;score=44.54;cscore=42.93;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=183;seqlen=601;seqhdr="NODE_86087_length_601_cov_1.093407"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_86087_length_601_cov_1.093407	pyrodigal_v3.6.3	CDS	3	599	67.4	+	0	ID=NODE_86087_length_601_cov_1.093407_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.633;conf=100.00;score=67.37;cscore=65.76;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=186;seqlen=238;seqhdr="NODE_1115088_length_238_cov_2.076503"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1115088_length_238_cov_2.076503	pyrodigal_v3.6.3	CDS	2	142	18.2	+	0	ID=NODE_1115088_length_238_cov_2.076503_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.645;conf=98.49;score=18.19;cscore=14.97;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_1115088_length_238_cov_2.076503	pyrodigal_v3.6.3	CDS	139	237	21.6	+	0	ID=NODE_1115088_length_238_cov_2.076503_2;partial=01;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.717;conf=99.30;score=21.55;cscore=9.47;sscore=12.08;rscore=9.30;uscore=-10.79;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=196;seqlen=397;seqhdr="NODE_273682_length_397_cov_0.833333"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_273682_length_397_cov_0.833333	pyrodigal_v3.6.3	CDS	1	162	35.7	-	0	ID=NODE_273682_length_397_cov_0.833333_1;partial=10;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.698;conf=99.97;score=35.67;cscore=40.04;sscore=-4.37;rscore=-0.14;uscore=-4.58;tscore=1.01;
+NODE_273682_length_397_cov_0.833333	pyrodigal_v3.6.3	CDS	334	396	8.5	+	0	ID=NODE_273682_length_397_cov_0.833333_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.746;conf=87.69;score=8.54;cscore=5.76;sscore=2.78;rscore=-0.14;uscore=-9.79;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=102;seqlen=257;seqhdr="NODE_892397_length_257_cov_0.940594"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_892397_length_257_cov_0.940594	pyrodigal_v3.6.3	CDS	1	255	26.1	-	0	ID=NODE_892397_length_257_cov_0.940594_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.596;conf=99.75;score=26.08;cscore=24.47;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=113;seqlen=214;seqhdr="NODE_1341175_length_214_cov_2.389937"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=115;seqlen=274;seqhdr="NODE_679840_length_274_cov_1.301370"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_679840_length_274_cov_1.301370	pyrodigal_v3.6.3	CDS	1	273	4.7	+	0	ID=NODE_679840_length_274_cov_1.301370_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.579;conf=74.54;score=4.67;cscore=3.06;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=122;seqlen=214;seqhdr="NODE_1346914_length_214_cov_1.150943"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1346914_length_214_cov_1.150943	pyrodigal_v3.6.3	CDS	3	212	19.7	+	0	ID=NODE_1346914_length_214_cov_1.150943_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.624;conf=98.94;score=19.73;cscore=18.12;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=127;seqlen=253;seqhdr="NODE_947396_length_253_cov_0.873737"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_947396_length_253_cov_0.873737	pyrodigal_v3.6.3	CDS	29	253	23.9	-	0	ID=NODE_947396_length_253_cov_0.873737_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.640;conf=99.59;score=23.94;cscore=20.72;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=134;seqlen=271;seqhdr="NODE_714208_length_271_cov_0.879630"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_714208_length_271_cov_0.879630	pyrodigal_v3.6.3	CDS	2	271	27.4	-	0	ID=NODE_714208_length_271_cov_0.879630_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.537;conf=99.82;score=27.39;cscore=25.78;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=137;seqlen=296;seqhdr="NODE_541118_length_296_cov_0.713693"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_541118_length_296_cov_0.713693	pyrodigal_v3.6.3	CDS	1	294	46.8	-	0	ID=NODE_541118_length_296_cov_0.713693_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.694;conf=100.00;score=46.77;cscore=45.16;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=140;seqlen=353;seqhdr="NODE_375351_length_353_cov_0.956376"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_375351_length_353_cov_0.956376	pyrodigal_v3.6.3	CDS	2	352	61.1	-	0	ID=NODE_375351_length_353_cov_0.956376_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.652;conf=100.00;score=61.07;cscore=59.46;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=145;seqlen=352;seqhdr="NODE_377653_length_352_cov_1.033670"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=150;seqlen=343;seqhdr="NODE_400038_length_343_cov_1.979167"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_400038_length_343_cov_1.979167	pyrodigal_v3.6.3	CDS	2	343	14.7	-	0	ID=NODE_400038_length_343_cov_1.979167_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.602;conf=96.72;score=14.71;cscore=13.10;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=155;seqlen=254;seqhdr="NODE_934027_length_254_cov_0.954774"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_934027_length_254_cov_0.954774	pyrodigal_v3.6.3	CDS	1	252	31.2	+	0	ID=NODE_934027_length_254_cov_0.954774_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.722;conf=99.92;score=31.23;cscore=29.63;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=165;seqlen=216;seqhdr="NODE_1327526_length_216_cov_1.180124"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1327526_length_216_cov_1.180124	pyrodigal_v3.6.3	CDS	1	216	25.1	+	0	ID=NODE_1327526_length_216_cov_1.180124_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.611;conf=99.69;score=25.13;cscore=23.52;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=168;seqlen=272;seqhdr="NODE_699970_length_272_cov_1.751152"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_699970_length_272_cov_1.751152	pyrodigal_v3.6.3	CDS	2	130	4.3	-	0	ID=NODE_699970_length_272_cov_1.751152_1;partial=10;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.465;conf=72.98;score=4.32;cscore=0.66;sscore=3.66;rscore=5.98;uscore=-4.77;tscore=1.49;
+NODE_699970_length_272_cov_1.751152	pyrodigal_v3.6.3	CDS	159	272	9.3	-	0	ID=NODE_699970_length_272_cov_1.751152_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.430;conf=89.45;score=9.30;cscore=6.08;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=173;seqlen=221;seqhdr="NODE_1291044_length_221_cov_0.566265"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1291044_length_221_cov_0.566265	pyrodigal_v3.6.3	CDS	3	221	36.9	+	0	ID=NODE_1291044_length_221_cov_0.566265_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.662;conf=99.98;score=36.94;cscore=35.33;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=177;seqlen=255;seqhdr="NODE_918831_length_255_cov_0.950000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_918831_length_255_cov_0.950000	pyrodigal_v3.6.3	CDS	144	254	1.1	+	0	ID=NODE_918831_length_255_cov_0.950000_1;partial=01;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=3-4bp;gc_cont=0.685;conf=56.25;score=1.09;cscore=2.26;sscore=-1.16;rscore=2.51;uscore=-5.16;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=182;seqlen=217;seqhdr="NODE_1317217_length_217_cov_2.129630"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1317217_length_217_cov_2.129630	pyrodigal_v3.6.3	CDS	2	217	38.5	-	0	ID=NODE_1317217_length_217_cov_2.129630_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.653;conf=99.99;score=38.55;cscore=36.94;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=189;seqlen=270;seqhdr="NODE_724924_length_270_cov_0.902326"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_724924_length_270_cov_0.902326	pyrodigal_v3.6.3	CDS	3	269	7.6	-	0	ID=NODE_724924_length_270_cov_0.902326_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.419;conf=85.24;score=7.63;cscore=6.02;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=181;seqlen=246;seqhdr="NODE_1030266_length_246_cov_0.832461"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1030266_length_246_cov_0.832461	pyrodigal_v3.6.3	CDS	2	244	29.6	-	0	ID=NODE_1030266_length_246_cov_0.832461_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.712;conf=99.89;score=29.60;cscore=27.99;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=188;seqlen=267;seqhdr="NODE_753418_length_267_cov_3.584906"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=194;seqlen=272;seqhdr="NODE_698621_length_272_cov_3.410138"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_698621_length_272_cov_3.410138	pyrodigal_v3.6.3	CDS	3	206	32.2	-	0	ID=NODE_698621_length_272_cov_3.410138_1;partial=10;start_type=ATG;rbs_motif=AGxAG;rbs_spacer=11-12bp;gc_cont=0.588;conf=99.94;score=32.17;cscore=28.35;sscore=3.83;rscore=3.94;uscore=-1.60;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=200;seqlen=330;seqhdr="NODE_437199_length_330_cov_1.218182"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_437199_length_330_cov_1.218182	pyrodigal_v3.6.3	CDS	1	330	63.4	+	0	ID=NODE_437199_length_330_cov_1.218182_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.667;conf=100.00;score=63.40;cscore=61.79;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=207;seqlen=240;seqhdr="NODE_1095814_length_240_cov_1.027027"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1095814_length_240_cov_1.027027	pyrodigal_v3.6.3	CDS	37	240	37.9	-	0	ID=NODE_1095814_length_240_cov_1.027027_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.618;conf=99.98;score=37.89;cscore=34.67;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=216;seqlen=1433;seqhdr="NODE_9545_length_1433_cov_3.427431"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_9545_length_1433_cov_3.427431	pyrodigal_v3.6.3	CDS	11	1150	41.1	-	0	ID=NODE_9545_length_1433_cov_3.427431_1;partial=00;start_type=TTG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.341;conf=99.99;score=41.12;cscore=43.13;sscore=-2.02;rscore=5.98;uscore=0.48;tscore=-8.48;
+##gff-version  3
+# Sequence Data: seqnum=226;seqlen=277;seqhdr="NODE_646790_length_277_cov_1.283784"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=234;seqlen=233;seqhdr="NODE_1172701_length_233_cov_1.067416"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1172701_length_233_cov_1.067416	pyrodigal_v3.6.3	CDS	3	233	22.4	+	0	ID=NODE_1172701_length_233_cov_1.067416_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.701;conf=99.42;score=22.38;cscore=20.77;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=245;seqlen=319;seqhdr="NODE_467119_length_319_cov_2.159091"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_467119_length_319_cov_2.159091	pyrodigal_v3.6.3	CDS	2	319	55.3	-	0	ID=NODE_467119_length_319_cov_2.159091_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.698;conf=100.00;score=55.29;cscore=53.68;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=255;seqlen=333;seqhdr="NODE_429722_length_333_cov_0.953237"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_429722_length_333_cov_0.953237	pyrodigal_v3.6.3	CDS	1	333	7.8	-	0	ID=NODE_429722_length_333_cov_0.953237_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.595;conf=85.80;score=7.83;cscore=6.22;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=276;seqlen=224;seqhdr="NODE_1263229_length_224_cov_1.076923"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1263229_length_224_cov_1.076923	pyrodigal_v3.6.3	CDS	2	91	0.8	-	0	ID=NODE_1263229_length_224_cov_1.076923_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.356;conf=54.51;score=0.79;cscore=2.72;sscore=-1.93;rscore=-0.14;uscore=-2.63;tscore=1.49;
+NODE_1263229_length_224_cov_1.076923	pyrodigal_v3.6.3	CDS	139	222	2.7	+	0	ID=NODE_1263229_length_224_cov_1.076923_2;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.488;conf=65.15;score=2.72;cscore=3.02;sscore=-0.30;rscore=-0.14;uscore=-1.17;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=286;seqlen=408;seqhdr="NODE_253520_length_408_cov_1.019830"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_253520_length_408_cov_1.019830	pyrodigal_v3.6.3	CDS	1	408	87.0	-	0	ID=NODE_253520_length_408_cov_1.019830_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.642;conf=100.00;score=87.01;cscore=85.40;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=297;seqlen=258;seqhdr="NODE_881123_length_258_cov_0.935961"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_881123_length_258_cov_0.935961	pyrodigal_v3.6.3	CDS	2	82	7.4	-	0	ID=NODE_881123_length_258_cov_0.935961_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.494;conf=84.71;score=7.45;cscore=7.36;sscore=0.09;rscore=-0.14;uscore=-1.26;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=298;seqlen=215;seqhdr="NODE_1334024_length_215_cov_1.781250"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1334024_length_215_cov_1.781250	pyrodigal_v3.6.3	CDS	3	215	11.3	+	0	ID=NODE_1334024_length_215_cov_1.781250_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.606;conf=93.09;score=11.31;cscore=9.70;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=302;seqlen=220;seqhdr="NODE_1297440_length_220_cov_1.151515"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1297440_length_220_cov_1.151515	pyrodigal_v3.6.3	CDS	2	220	14.8	-	0	ID=NODE_1297440_length_220_cov_1.151515_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.767;conf=96.76;score=14.77;cscore=13.16;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=308;seqlen=260;seqhdr="NODE_850400_length_260_cov_1.160976"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_850400_length_260_cov_1.160976	pyrodigal_v3.6.3	CDS	3	260	28.7	+	0	ID=NODE_850400_length_260_cov_1.160976_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.558;conf=99.86;score=28.65;cscore=27.04;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=312;seqlen=239;seqhdr="NODE_1106375_length_239_cov_1.032609"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1106375_length_239_cov_1.032609	pyrodigal_v3.6.3	CDS	1	237	6.0	+	0	ID=NODE_1106375_length_239_cov_1.032609_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.342;conf=79.83;score=5.99;cscore=4.38;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=178;seqlen=225;seqhdr="NODE_1248767_length_225_cov_1.482353"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1248767_length_225_cov_1.482353	pyrodigal_v3.6.3	CDS	2	223	38.6	-	0	ID=NODE_1248767_length_225_cov_1.482353_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.707;conf=99.99;score=38.55;cscore=36.94;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=184;seqlen=260;seqhdr="NODE_849521_length_260_cov_1.390244"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_849521_length_260_cov_1.390244	pyrodigal_v3.6.3	CDS	1	258	5.4	+	0	ID=NODE_849521_length_260_cov_1.390244_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.597;conf=77.67;score=5.42;cscore=3.81;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=187;seqlen=712;seqhdr="NODE_54220_length_712_cov_1.286149"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_54220_length_712_cov_1.286149	pyrodigal_v3.6.3	CDS	2	259	13.4	+	0	ID=NODE_54220_length_712_cov_1.286149_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.659;conf=95.57;score=13.36;cscore=10.14;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_54220_length_712_cov_1.286149	pyrodigal_v3.6.3	CDS	256	552	30.2	+	0	ID=NODE_54220_length_712_cov_1.286149_2;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.663;conf=99.90;score=30.21;cscore=21.44;sscore=8.76;rscore=5.98;uscore=-10.00;tscore=1.49;
+NODE_54220_length_712_cov_1.286149	pyrodigal_v3.6.3	CDS	542	712	21.0	+	0	ID=NODE_54220_length_712_cov_1.286149_3;partial=01;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.655;conf=99.20;score=20.98;cscore=14.38;sscore=6.59;rscore=9.30;uscore=-5.41;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=195;seqlen=239;seqhdr="NODE_1110144_length_239_cov_1.032609"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1110144_length_239_cov_1.032609	pyrodigal_v3.6.3	CDS	1	237	36.1	-	0	ID=NODE_1110144_length_239_cov_1.032609_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.561;conf=99.98;score=36.14;cscore=34.53;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=198;seqlen=262;seqhdr="NODE_823019_length_262_cov_1.376812"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_823019_length_262_cov_1.376812	pyrodigal_v3.6.3	CDS	3	260	10.4	-	0	ID=NODE_823019_length_262_cov_1.376812_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.488;conf=91.69;score=10.45;cscore=8.84;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=203;seqlen=246;seqhdr="NODE_1027762_length_246_cov_0.994764"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1027762_length_246_cov_0.994764	pyrodigal_v3.6.3	CDS	1	246	22.3	+	0	ID=NODE_1027762_length_246_cov_0.994764_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.500;conf=99.41;score=22.30;cscore=20.69;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=211;seqlen=210;seqhdr="NODE_1372458_length_210_cov_2.451613"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1372458_length_210_cov_2.451613	pyrodigal_v3.6.3	CDS	2	208	31.3	+	0	ID=NODE_1372458_length_210_cov_2.451613_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.671;conf=99.92;score=31.26;cscore=29.65;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=215;seqlen=293;seqhdr="NODE_549123_length_293_cov_1.596639"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_549123_length_293_cov_1.596639	pyrodigal_v3.6.3	CDS	1	291	20.9	+	0	ID=NODE_549123_length_293_cov_1.596639_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.529;conf=99.19;score=20.89;cscore=19.28;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=222;seqlen=247;seqhdr="NODE_1014084_length_247_cov_0.989583"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1014084_length_247_cov_0.989583	pyrodigal_v3.6.3	CDS	59	247	3.4	+	0	ID=NODE_1014084_length_247_cov_0.989583_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.466;conf=68.40;score=3.36;cscore=7.15;sscore=-3.79;rscore=-0.14;uscore=-5.14;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=224;seqlen=283;seqhdr="NODE_598339_length_283_cov_3.750000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_598339_length_283_cov_3.750000	pyrodigal_v3.6.3	CDS	1	282	21.6	+	0	ID=NODE_598339_length_283_cov_3.750000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.571;conf=99.30;score=21.55;cscore=19.94;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=229;seqlen=245;seqhdr="NODE_1038477_length_245_cov_1.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1038477_length_245_cov_1.000000	pyrodigal_v3.6.3	CDS	3	245	31.2	+	0	ID=NODE_1038477_length_245_cov_1.000000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.687;conf=99.92;score=31.21;cscore=29.60;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=237;seqlen=208;seqhdr="NODE_1390629_length_208_cov_1.241830"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1390629_length_208_cov_1.241830	pyrodigal_v3.6.3	CDS	3	206	25.1	-	0	ID=NODE_1390629_length_208_cov_1.241830_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.652;conf=99.69;score=25.11;cscore=23.50;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=242;seqlen=255;seqhdr="NODE_921407_length_255_cov_0.950000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_921407_length_255_cov_0.950000	pyrodigal_v3.6.3	CDS	1	165	29.1	-	0	ID=NODE_921407_length_255_cov_0.950000_1;partial=10;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.745;conf=99.88;score=29.08;cscore=26.78;sscore=2.30;rscore=-0.14;uscore=-8.40;tscore=1.01;
+NODE_921407_length_255_cov_0.950000	pyrodigal_v3.6.3	CDS	162	254	7.8	-	0	ID=NODE_921407_length_255_cov_0.950000_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.753;conf=85.72;score=7.79;cscore=4.58;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=248;seqlen=230;seqhdr="NODE_1202007_length_230_cov_1.085714"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1202007_length_230_cov_1.085714	pyrodigal_v3.6.3	CDS	1	228	24.9	+	0	ID=NODE_1202007_length_230_cov_1.085714_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.636;conf=99.68;score=24.92;cscore=23.31;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=256;seqlen=408;seqhdr="NODE_253260_length_408_cov_1.076487"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_253260_length_408_cov_1.076487	pyrodigal_v3.6.3	CDS	3	407	12.5	+	0	ID=NODE_253260_length_408_cov_1.076487_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.405;conf=94.65;score=12.49;cscore=10.88;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=258;seqlen=283;seqhdr="NODE_603810_length_283_cov_0.706140"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_603810_length_283_cov_0.706140	pyrodigal_v3.6.3	CDS	2	283	51.1	+	0	ID=NODE_603810_length_283_cov_0.706140_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.695;conf=100.00;score=51.09;cscore=49.48;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=264;seqlen=329;seqhdr="NODE_439272_length_329_cov_1.711679"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=191;seqlen=228;seqhdr="NODE_1221028_length_228_cov_1.098266"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1221028_length_228_cov_1.098266	pyrodigal_v3.6.3	CDS	72	227	12.4	-	0	ID=NODE_1221028_length_228_cov_1.098266_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.641;conf=94.53;score=12.39;cscore=9.18;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=199;seqlen=263;seqhdr="NODE_811643_length_263_cov_0.913462"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_811643_length_263_cov_0.913462	pyrodigal_v3.6.3	CDS	2	232	5.8	-	0	ID=NODE_811643_length_263_cov_0.913462_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.437;conf=79.12;score=5.80;cscore=4.56;sscore=1.23;rscore=-0.14;uscore=-0.12;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=201;seqlen=243;seqhdr="NODE_1064419_length_243_cov_1.010638"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1064419_length_243_cov_1.010638	pyrodigal_v3.6.3	CDS	3	242	25.7	-	0	ID=NODE_1064419_length_243_cov_1.010638_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.688;conf=99.73;score=25.67;cscore=24.06;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=208;seqlen=294;seqhdr="NODE_547828_length_294_cov_0.744770"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_547828_length_294_cov_0.744770	pyrodigal_v3.6.3	CDS	1	294	4.0	+	0	ID=NODE_547828_length_294_cov_0.744770_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.432;conf=71.68;score=4.04;cscore=2.43;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=213;seqlen=265;seqhdr="NODE_781248_length_265_cov_1.809524"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_781248_length_265_cov_1.809524	pyrodigal_v3.6.3	CDS	102	263	8.2	+	0	ID=NODE_781248_length_265_cov_1.809524_1;partial=01;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=3-4bp;gc_cont=0.401;conf=86.91;score=8.24;cscore=11.42;sscore=-3.18;rscore=2.51;uscore=-7.18;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=219;seqlen=351;seqhdr="NODE_378820_length_351_cov_1.925676"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_378820_length_351_cov_1.925676	pyrodigal_v3.6.3	CDS	1	351	22.0	+	0	ID=NODE_378820_length_351_cov_1.925676_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.425;conf=99.37;score=22.03;cscore=20.42;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=223;seqlen=208;seqhdr="NODE_1394449_length_208_cov_0.535948"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1394449_length_208_cov_0.535948	pyrodigal_v3.6.3	CDS	1	207	34.0	+	0	ID=NODE_1394449_length_208_cov_0.535948_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.729;conf=99.96;score=33.99;cscore=32.38;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=227;seqlen=228;seqhdr="NODE_1225701_length_228_cov_1.098266"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1225701_length_228_cov_1.098266	pyrodigal_v3.6.3	CDS	1	228	37.4	+	0	ID=NODE_1225701_length_228_cov_1.098266_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.693;conf=99.98;score=37.43;cscore=35.82;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=233;seqlen=378;seqhdr="NODE_312034_length_378_cov_2.046440"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_312034_length_378_cov_2.046440	pyrodigal_v3.6.3	CDS	1	378	14.0	-	0	ID=NODE_312034_length_378_cov_2.046440_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.365;conf=96.14;score=13.99;cscore=12.38;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=238;seqlen=260;seqhdr="NODE_853615_length_260_cov_0.926829"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_853615_length_260_cov_0.926829	pyrodigal_v3.6.3	CDS	2	259	41.6	-	0	ID=NODE_853615_length_260_cov_0.926829_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.612;conf=99.99;score=41.61;cscore=40.00;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=246;seqlen=488;seqhdr="NODE_152875_length_488_cov_1.489607"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_152875_length_488_cov_1.489607	pyrodigal_v3.6.3	CDS	3	488	99.7	+	0	ID=NODE_152875_length_488_cov_1.489607_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.646;conf=100.00;score=99.73;cscore=98.12;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=252;seqlen=643;seqhdr="NODE_71362_length_643_cov_1.926871"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_71362_length_643_cov_1.926871	pyrodigal_v3.6.3	CDS	2	643	99.4	-	0	ID=NODE_71362_length_643_cov_1.926871_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.570;conf=100.00;score=99.43;cscore=97.82;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=259;seqlen=351;seqhdr="NODE_378851_length_351_cov_1.925676"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_378851_length_351_cov_1.925676	pyrodigal_v3.6.3	CDS	3	350	58.2	+	0	ID=NODE_378851_length_351_cov_1.925676_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.693;conf=100.00;score=58.21;cscore=56.61;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=262;seqlen=214;seqhdr="NODE_1346832_length_214_cov_1.163522"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1346832_length_214_cov_1.163522	pyrodigal_v3.6.3	CDS	1	213	40.0	-	0	ID=NODE_1346832_length_214_cov_1.163522_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.667;conf=99.99;score=40.01;cscore=38.40;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=267;seqlen=227;seqhdr="NODE_1236160_length_227_cov_0.994186"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1236160_length_227_cov_0.994186	pyrodigal_v3.6.3	CDS	3	227	14.7	+	0	ID=NODE_1236160_length_227_cov_0.994186_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.440;conf=96.74;score=14.75;cscore=13.14;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=271;seqlen=420;seqhdr="NODE_234314_length_420_cov_0.989041"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_234314_length_420_cov_0.989041	pyrodigal_v3.6.3	CDS	2	418	65.5	+	0	ID=NODE_234314_length_420_cov_0.989041_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.597;conf=100.00;score=65.49;cscore=63.88;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=278;seqlen=223;seqhdr="NODE_1273292_length_223_cov_0.863095"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1273292_length_223_cov_0.863095	pyrodigal_v3.6.3	CDS	2	223	29.9	+	0	ID=NODE_1273292_length_223_cov_0.863095_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.577;conf=99.90;score=29.92;cscore=28.31;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=192;seqlen=81;seqhdr="NODE_1413682_length_81_cov_3.038462"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=197;seqlen=1036;seqhdr="NODE_20470_length_1036_cov_1.376147"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_20470_length_1036_cov_1.376147	pyrodigal_v3.6.3	CDS	2	1036	217.7	-	0	ID=NODE_20470_length_1036_cov_1.376147_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.720;conf=99.99;score=217.72;cscore=216.11;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=204;seqlen=259;seqhdr="NODE_860199_length_259_cov_2.245098"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_860199_length_259_cov_2.245098	pyrodigal_v3.6.3	CDS	1	138	0.7	-	0	ID=NODE_860199_length_259_cov_2.245098_1;partial=10;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.435;conf=54.12;score=0.72;cscore=1.52;sscore=-0.80;rscore=-0.14;uscore=-1.67;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=206;seqlen=332;seqhdr="NODE_432634_length_332_cov_0.859206"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_432634_length_332_cov_0.859206	pyrodigal_v3.6.3	CDS	3	203	42.3	-	0	ID=NODE_432634_length_332_cov_0.859206_1;partial=10;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.697;conf=99.99;score=42.28;cscore=37.14;sscore=5.14;rscore=9.30;uscore=-4.51;tscore=1.01;
+NODE_432634_length_332_cov_0.859206	pyrodigal_v3.6.3	CDS	205	330	1.5	+	0	ID=NODE_432634_length_332_cov_0.859206_2;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.746;conf=58.60;score=1.51;cscore=2.59;sscore=-1.08;rscore=-0.14;uscore=-1.95;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=210;seqlen=524;seqhdr="NODE_125624_length_524_cov_0.948827"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_125624_length_524_cov_0.948827	pyrodigal_v3.6.3	CDS	2	208	23.8	-	0	ID=NODE_125624_length_524_cov_0.948827_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.589;conf=99.58;score=23.77;cscore=25.33;sscore=-1.56;rscore=-0.14;uscore=-2.90;tscore=1.49;
+NODE_125624_length_524_cov_0.948827	pyrodigal_v3.6.3	CDS	180	524	25.5	-	0	ID=NODE_125624_length_524_cov_0.948827_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.661;conf=99.72;score=25.51;cscore=22.29;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=217;seqlen=289;seqhdr="NODE_568405_length_289_cov_1.089744"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_568405_length_289_cov_1.089744	pyrodigal_v3.6.3	CDS	2	289	24.7	+	0	ID=NODE_568405_length_289_cov_1.089744_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.653;conf=99.66;score=24.69;cscore=23.08;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=228;seqlen=280;seqhdr="NODE_618617_length_280_cov_1.266667"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_618617_length_280_cov_1.266667	pyrodigal_v3.6.3	CDS	137	280	17.5	+	0	ID=NODE_618617_length_280_cov_1.266667_1;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.708;conf=98.23;score=17.48;cscore=22.85;sscore=-5.37;rscore=-0.14;uscore=-6.72;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=232;seqlen=669;seqhdr="NODE_64134_length_669_cov_1.460912"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_64134_length_669_cov_1.460912	pyrodigal_v3.6.3	CDS	2	667	77.6	+	0	ID=NODE_64134_length_669_cov_1.460912_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.655;conf=100.00;score=77.62;cscore=76.01;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=241;seqlen=247;seqhdr="NODE_1015052_length_247_cov_0.989583"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1015052_length_247_cov_0.989583	pyrodigal_v3.6.3	CDS	7	102	3.7	-	0	ID=NODE_1015052_length_247_cov_0.989583_1;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.427;conf=70.22;score=3.73;cscore=1.37;sscore=2.36;rscore=-0.37;uscore=0.91;tscore=0.55;
+##gff-version  3
+# Sequence Data: seqnum=243;seqlen=207;seqhdr="NODE_1401590_length_207_cov_0.868421"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1401590_length_207_cov_0.868421	pyrodigal_v3.6.3	CDS	1	207	38.0	+	0	ID=NODE_1401590_length_207_cov_0.868421_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.628;conf=99.98;score=38.00;cscore=36.39;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=247;seqlen=305;seqhdr="NODE_509197_length_305_cov_1.900000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_509197_length_305_cov_1.900000	pyrodigal_v3.6.3	CDS	3	305	24.9	+	0	ID=NODE_509197_length_305_cov_1.900000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.554;conf=99.67;score=24.90;cscore=23.29;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=251;seqlen=375;seqhdr="NODE_321039_length_375_cov_0.759375"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=254;seqlen=257;seqhdr="NODE_893808_length_257_cov_0.940594"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_893808_length_257_cov_0.940594	pyrodigal_v3.6.3	CDS	3	203	28.4	+	0	ID=NODE_893808_length_257_cov_0.940594_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.637;conf=99.85;score=28.40;cscore=25.19;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_893808_length_257_cov_0.940594	pyrodigal_v3.6.3	CDS	169	255	0.2	+	0	ID=NODE_893808_length_257_cov_0.940594_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.586;conf=51.03;score=0.18;cscore=0.36;sscore=-0.18;rscore=-0.14;uscore=-1.53;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=260;seqlen=271;seqhdr="NODE_715641_length_271_cov_0.879630"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_715641_length_271_cov_0.879630	pyrodigal_v3.6.3	CDS	2	271	6.1	+	0	ID=NODE_715641_length_271_cov_0.879630_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.659;conf=80.33;score=6.12;cscore=4.51;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=263;seqlen=263;seqhdr="NODE_814121_length_263_cov_0.913462"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_814121_length_263_cov_0.913462	pyrodigal_v3.6.3	CDS	1	261	34.8	+	0	ID=NODE_814121_length_263_cov_0.913462_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.755;conf=99.97;score=34.76;cscore=33.15;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=266;seqlen=240;seqhdr="NODE_1096916_length_240_cov_1.027027"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=269;seqlen=235;seqhdr="NODE_1157383_length_235_cov_0.483333"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1157383_length_235_cov_0.483333	pyrodigal_v3.6.3	CDS	1	234	18.3	+	0	ID=NODE_1157383_length_235_cov_0.483333_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.662;conf=98.54;score=18.32;cscore=16.71;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=205;seqlen=253;seqhdr="NODE_942035_length_253_cov_0.959596"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_942035_length_253_cov_0.959596	pyrodigal_v3.6.3	CDS	3	251	23.1	+	0	ID=NODE_942035_length_253_cov_0.959596_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.614;conf=99.50;score=23.06;cscore=21.45;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=212;seqlen=219;seqhdr="NODE_1305186_length_219_cov_1.158537"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1305186_length_219_cov_1.158537	pyrodigal_v3.6.3	CDS	3	218	34.4	-	0	ID=NODE_1305186_length_219_cov_1.158537_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.611;conf=99.96;score=34.43;cscore=32.82;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=220;seqlen=254;seqhdr="NODE_930103_length_254_cov_0.954774"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_930103_length_254_cov_0.954774	pyrodigal_v3.6.3	CDS	1	252	19.1	-	0	ID=NODE_930103_length_254_cov_0.954774_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.575;conf=98.77;score=19.09;cscore=17.48;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=225;seqlen=236;seqhdr="NODE_1144103_length_236_cov_1.049724"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1144103_length_236_cov_1.049724	pyrodigal_v3.6.3	CDS	1	165	24.3	+	0	ID=NODE_1144103_length_236_cov_1.049724_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.782;conf=99.63;score=24.29;cscore=21.07;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=231;seqlen=235;seqhdr="NODE_1147191_length_235_cov_2.111111"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1147191_length_235_cov_2.111111	pyrodigal_v3.6.3	CDS	2	187	35.8	-	0	ID=NODE_1147191_length_235_cov_2.111111_1;partial=10;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=3-4bp;gc_cont=0.581;conf=99.97;score=35.84;cscore=32.27;sscore=3.58;rscore=2.51;uscore=-0.42;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=235;seqlen=241;seqhdr="NODE_1083446_length_241_cov_1.021505"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1083446_length_241_cov_1.021505	pyrodigal_v3.6.3	CDS	1	240	48.2	+	0	ID=NODE_1083446_length_241_cov_1.021505_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.658;conf=100.00;score=48.19;cscore=46.58;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=239;seqlen=633;seqhdr="NODE_74585_length_633_cov_1.314879"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_74585_length_633_cov_1.314879	pyrodigal_v3.6.3	CDS	66	632	68.2	-	0	ID=NODE_74585_length_633_cov_1.314879_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.732;conf=100.00;score=68.17;cscore=64.96;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=250;seqlen=256;seqhdr="NODE_909503_length_256_cov_0.920398"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_909503_length_256_cov_0.920398	pyrodigal_v3.6.3	CDS	2	256	11.8	-	0	ID=NODE_909503_length_256_cov_0.920398_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.384;conf=93.75;score=11.78;cscore=10.17;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=253;seqlen=265;seqhdr="NODE_785034_length_265_cov_0.904762"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_785034_length_265_cov_0.904762	pyrodigal_v3.6.3	CDS	1	264	16.9	-	0	ID=NODE_785034_length_265_cov_0.904762_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.583;conf=97.96;score=16.85;cscore=15.24;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=257;seqlen=662;seqhdr="NODE_65839_length_662_cov_2.270181"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_65839_length_662_cov_2.270181	pyrodigal_v3.6.3	CDS	106	660	62.2	-	0	ID=NODE_65839_length_662_cov_2.270181_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.618;conf=100.00;score=62.24;cscore=59.02;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=265;seqlen=406;seqhdr="NODE_256001_length_406_cov_1.635328"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_256001_length_406_cov_1.635328	pyrodigal_v3.6.3	CDS	71	406	42.2	+	0	ID=NODE_256001_length_406_cov_1.635328_1;partial=01;start_type=GTG;rbs_motif=AGGAG(G)/GGAGG;rbs_spacer=13-15bp;gc_cont=0.670;conf=99.99;score=42.18;cscore=33.83;sscore=8.35;rscore=9.97;uscore=-2.63;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=272;seqlen=275;seqhdr="NODE_673016_length_275_cov_0.863636"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_673016_length_275_cov_0.863636	pyrodigal_v3.6.3	CDS	3	275	31.7	+	0	ID=NODE_673016_length_275_cov_0.863636_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.696;conf=99.93;score=31.74;cscore=30.13;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=274;seqlen=232;seqhdr="NODE_1178449_length_232_cov_3.220339"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1178449_length_232_cov_3.220339	pyrodigal_v3.6.3	CDS	1	231	46.2	-	0	ID=NODE_1178449_length_232_cov_3.220339_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.675;conf=100.00;score=46.20;cscore=44.59;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=281;seqlen=240;seqhdr="NODE_1092856_length_240_cov_1.540541"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=284;seqlen=590;seqhdr="NODE_90196_length_590_cov_4.057944"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_90196_length_590_cov_4.057944	pyrodigal_v3.6.3	CDS	3	107	4.8	+	0	ID=NODE_90196_length_590_cov_4.057944_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.314;conf=75.07;score=4.80;cscore=1.58;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_90196_length_590_cov_4.057944	pyrodigal_v3.6.3	CDS	340	453	1.4	+	0	ID=NODE_90196_length_590_cov_4.057944_2;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.325;conf=57.88;score=1.38;cscore=0.38;sscore=1.01;rscore=-0.31;uscore=1.31;tscore=0.66;
+##gff-version  3
+# Sequence Data: seqnum=288;seqlen=225;seqhdr="NODE_1246576_length_225_cov_3.176471"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1246576_length_225_cov_3.176471	pyrodigal_v3.6.3	CDS	2	94	16.4	-	0	ID=NODE_1246576_length_225_cov_3.176471_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.591;conf=97.73;score=16.36;cscore=13.58;sscore=2.78;rscore=-0.14;uscore=-6.34;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=292;seqlen=249;seqhdr="NODE_989861_length_249_cov_0.979381"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_989861_length_249_cov_0.979381	pyrodigal_v3.6.3	CDS	1	249	36.0	-	0	ID=NODE_989861_length_249_cov_0.979381_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.679;conf=99.97;score=35.99;cscore=34.38;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=202;seqlen=437;seqhdr="NODE_209013_length_437_cov_1.492147"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_209013_length_437_cov_1.492147	pyrodigal_v3.6.3	CDS	2	436	10.2	+	0	ID=NODE_209013_length_437_cov_1.492147_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.552;conf=91.27;score=10.21;cscore=8.60;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=209;seqlen=346;seqhdr="NODE_393760_length_346_cov_0.979381"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_393760_length_346_cov_0.979381	pyrodigal_v3.6.3	CDS	2	346	27.7	+	0	ID=NODE_393760_length_346_cov_0.979381_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.586;conf=99.83;score=27.73;cscore=26.12;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=214;seqlen=249;seqhdr="NODE_992277_length_249_cov_0.979381"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_992277_length_249_cov_0.979381	pyrodigal_v3.6.3	CDS	2	247	9.3	+	0	ID=NODE_992277_length_249_cov_0.979381_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.528;conf=89.49;score=9.31;cscore=7.71;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=218;seqlen=356;seqhdr="NODE_367905_length_356_cov_0.840532"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_367905_length_356_cov_0.840532	pyrodigal_v3.6.3	CDS	1	354	35.0	+	0	ID=NODE_367905_length_356_cov_0.840532_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.548;conf=99.97;score=34.99;cscore=33.38;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=221;seqlen=264;seqhdr="NODE_803785_length_264_cov_0.909091"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_803785_length_264_cov_0.909091	pyrodigal_v3.6.3	CDS	3	263	38.1	+	0	ID=NODE_803785_length_264_cov_0.909091_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.728;conf=99.98;score=38.11;cscore=36.50;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=230;seqlen=545;seqhdr="NODE_112459_length_545_cov_1.744898"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_112459_length_545_cov_1.744898	pyrodigal_v3.6.3	CDS	2	190	1.5	-	0	ID=NODE_112459_length_545_cov_1.744898_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.503;conf=58.43;score=1.48;cscore=2.27;sscore=-0.79;rscore=-0.14;uscore=-1.48;tscore=1.49;
+NODE_112459_length_545_cov_1.744898	pyrodigal_v3.6.3	CDS	295	543	26.7	+	0	ID=NODE_112459_length_545_cov_1.744898_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.566;conf=99.79;score=26.72;cscore=29.43;sscore=-2.70;rscore=-0.14;uscore=-4.05;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=236;seqlen=286;seqhdr="NODE_586359_length_286_cov_0.805195"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_586359_length_286_cov_0.805195	pyrodigal_v3.6.3	CDS	1	285	56.0	+	0	ID=NODE_586359_length_286_cov_0.805195_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.646;conf=100.00;score=55.97;cscore=54.36;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=240;seqlen=265;seqhdr="NODE_786146_length_265_cov_0.904762"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=244;seqlen=449;seqhdr="NODE_194114_length_449_cov_0.982234"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_194114_length_449_cov_0.982234	pyrodigal_v3.6.3	CDS	2	448	51.5	+	0	ID=NODE_194114_length_449_cov_0.982234_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.459;conf=100.00;score=51.51;cscore=49.90;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=249;seqlen=400;seqhdr="NODE_267400_length_400_cov_1.246377"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_267400_length_400_cov_1.246377	pyrodigal_v3.6.3	CDS	3	398	47.5	+	0	ID=NODE_267400_length_400_cov_1.246377_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.725;conf=100.00;score=47.51;cscore=45.90;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=261;seqlen=456;seqhdr="NODE_185361_length_456_cov_1.518703"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=270;seqlen=250;seqhdr="NODE_980612_length_250_cov_0.974359"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=273;seqlen=542;seqhdr="NODE_114143_length_542_cov_1.895277"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_114143_length_542_cov_1.895277	pyrodigal_v3.6.3	CDS	1	540	36.4	-	0	ID=NODE_114143_length_542_cov_1.895277_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.626;conf=99.98;score=36.42;cscore=34.81;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=279;seqlen=229;seqhdr="NODE_1215747_length_229_cov_1.091954"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1215747_length_229_cov_1.091954	pyrodigal_v3.6.3	CDS	1	228	17.5	+	0	ID=NODE_1215747_length_229_cov_1.091954_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.654;conf=98.26;score=17.54;cscore=15.93;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=287;seqlen=297;seqhdr="NODE_534908_length_297_cov_1.962810"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_534908_length_297_cov_1.962810	pyrodigal_v3.6.3	CDS	1	297	8.7	+	0	ID=NODE_534908_length_297_cov_1.962810_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.428;conf=88.19;score=8.75;cscore=7.14;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=293;seqlen=208;seqhdr="NODE_1391150_length_208_cov_1.241830"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1391150_length_208_cov_1.241830	pyrodigal_v3.6.3	CDS	2	208	29.0	-	0	ID=NODE_1391150_length_208_cov_1.241830_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.614;conf=99.87;score=29.01;cscore=27.40;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=300;seqlen=243;seqhdr="NODE_1062869_length_243_cov_1.010638"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1062869_length_243_cov_1.010638	pyrodigal_v3.6.3	CDS	1	207	1.0	+	0	ID=NODE_1062869_length_243_cov_1.010638_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.531;conf=55.87;score=1.03;cscore=-1.69;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=268;seqlen=255;seqhdr="NODE_922627_length_255_cov_0.875000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_922627_length_255_cov_0.875000	pyrodigal_v3.6.3	CDS	1	255	46.8	+	0	ID=NODE_922627_length_255_cov_0.875000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.725;conf=100.00;score=46.81;cscore=45.20;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=275;seqlen=313;seqhdr="NODE_487450_length_313_cov_0.600775"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_487450_length_313_cov_0.600775	pyrodigal_v3.6.3	CDS	3	311	27.5	+	0	ID=NODE_487450_length_313_cov_0.600775_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.728;conf=99.82;score=27.50;cscore=25.89;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=280;seqlen=384;seqhdr="NODE_299203_length_384_cov_1.443769"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_299203_length_384_cov_1.443769	pyrodigal_v3.6.3	CDS	3	296	7.1	-	0	ID=NODE_299203_length_384_cov_1.443769_1;partial=10;start_type=ATG;rbs_motif=4Base/6BMM;rbs_spacer=13-15bp;gc_cont=0.333;conf=83.79;score=7.15;cscore=8.95;sscore=-1.81;rscore=1.94;uscore=-5.23;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=290;seqlen=692;seqhdr="NODE_58526_length_692_cov_1.244898"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_58526_length_692_cov_1.244898	pyrodigal_v3.6.3	CDS	2	691	119.4	-	0	ID=NODE_58526_length_692_cov_1.244898_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.588;conf=100.00;score=119.36;cscore=117.75;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=305;seqlen=345;seqhdr="NODE_394448_length_345_cov_2.620690"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_394448_length_345_cov_2.620690	pyrodigal_v3.6.3	CDS	3	344	21.2	-	0	ID=NODE_394448_length_345_cov_2.620690_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.564;conf=99.24;score=21.20;cscore=19.59;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=313;seqlen=219;seqhdr="NODE_1303272_length_219_cov_1.158537"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1303272_length_219_cov_1.158537	pyrodigal_v3.6.3	CDS	91	219	10.3	+	0	ID=NODE_1303272_length_219_cov_1.158537_1;partial=01;start_type=GTG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.496;conf=91.44;score=10.30;cscore=4.72;sscore=5.59;rscore=5.98;uscore=-1.41;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=316;seqlen=336;seqhdr="NODE_419511_length_336_cov_2.028470"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_419511_length_336_cov_2.028470	pyrodigal_v3.6.3	CDS	18	335	29.9	-	0	ID=NODE_419511_length_336_cov_2.028470_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.726;conf=99.90;score=29.92;cscore=26.70;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=323;seqlen=245;seqhdr="NODE_1036694_length_245_cov_1.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1036694_length_245_cov_1.000000	pyrodigal_v3.6.3	CDS	3	227	0.1	+	0	ID=NODE_1036694_length_245_cov_1.000000_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.338;conf=50.71;score=0.12;cscore=-2.60;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=337;seqlen=224;seqhdr="NODE_1262957_length_224_cov_1.112426"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1262957_length_224_cov_1.112426	pyrodigal_v3.6.3	CDS	1	222	38.1	-	0	ID=NODE_1262957_length_224_cov_1.112426_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.604;conf=99.98;score=38.10;cscore=36.49;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=346;seqlen=725;seqhdr="NODE_51490_length_725_cov_2.694030"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_51490_length_725_cov_2.694030	pyrodigal_v3.6.3	CDS	1	723	37.7	-	0	ID=NODE_51490_length_725_cov_2.694030_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.438;conf=99.98;score=37.68;cscore=36.07;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=352;seqlen=247;seqhdr="NODE_1016390_length_247_cov_0.989583"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1016390_length_247_cov_0.989583	pyrodigal_v3.6.3	CDS	2	247	41.2	+	0	ID=NODE_1016390_length_247_cov_0.989583_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.699;conf=99.99;score=41.20;cscore=39.59;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=355;seqlen=239;seqhdr="NODE_1107354_length_239_cov_1.032609"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1107354_length_239_cov_1.032609	pyrodigal_v3.6.3	CDS	1	237	28.1	-	0	ID=NODE_1107354_length_239_cov_1.032609_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.709;conf=99.84;score=28.09;cscore=26.48;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=362;seqlen=227;seqhdr="NODE_1228666_length_227_cov_2.209302"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1228666_length_227_cov_2.209302	pyrodigal_v3.6.3	CDS	2	226	22.6	+	0	ID=NODE_1228666_length_227_cov_2.209302_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.573;conf=99.45;score=22.65;cscore=21.04;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=367;seqlen=213;seqhdr="NODE_1352976_length_213_cov_1.202532"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=371;seqlen=214;seqhdr="NODE_1345613_length_214_cov_1.194969"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=373;seqlen=277;seqhdr="NODE_650329_length_277_cov_0.855856"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_650329_length_277_cov_0.855856	pyrodigal_v3.6.3	CDS	2	277	8.3	-	0	ID=NODE_650329_length_277_cov_0.855856_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.471;conf=87.03;score=8.28;cscore=6.67;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=377;seqlen=267;seqhdr="NODE_762619_length_267_cov_0.896226"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=277;seqlen=389;seqhdr="NODE_287909_length_389_cov_2.275449"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_287909_length_389_cov_2.275449	pyrodigal_v3.6.3	CDS	1	387	59.2	+	0	ID=NODE_287909_length_389_cov_2.275449_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.674;conf=100.00;score=59.23;cscore=57.62;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=282;seqlen=243;seqhdr="NODE_1060588_length_243_cov_1.010638"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=285;seqlen=580;seqhdr="NODE_94797_length_580_cov_1.447619"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_94797_length_580_cov_1.447619	pyrodigal_v3.6.3	CDS	2	580	56.2	-	0	ID=NODE_94797_length_580_cov_1.447619_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.290;conf=100.00;score=56.25;cscore=54.64;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=289;seqlen=265;seqhdr="NODE_787009_length_265_cov_0.904762"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_787009_length_265_cov_0.904762	pyrodigal_v3.6.3	CDS	2	124	13.7	+	0	ID=NODE_787009_length_265_cov_0.904762_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.772;conf=95.93;score=13.75;cscore=10.53;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_787009_length_265_cov_0.904762	pyrodigal_v3.6.3	CDS	139	264	20.5	+	0	ID=NODE_787009_length_265_cov_0.904762_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.714;conf=99.12;score=20.53;cscore=24.42;sscore=-3.90;rscore=-0.14;uscore=-6.36;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=295;seqlen=706;seqhdr="NODE_55398_length_706_cov_1.751152"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_55398_length_706_cov_1.751152	pyrodigal_v3.6.3	CDS	2	358	58.7	+	0	ID=NODE_55398_length_706_cov_1.751152_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.751;conf=100.00;score=58.72;cscore=55.50;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_55398_length_706_cov_1.751152	pyrodigal_v3.6.3	CDS	355	705	58.4	+	0	ID=NODE_55398_length_706_cov_1.751152_2;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.715;conf=100.00;score=58.40;cscore=56.10;sscore=2.30;rscore=-0.14;uscore=-6.70;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=299;seqlen=227;seqhdr="NODE_1228436_length_227_cov_2.209302"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=307;seqlen=266;seqhdr="NODE_769147_length_266_cov_1.649289"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_769147_length_266_cov_1.649289	pyrodigal_v3.6.3	CDS	71	160	0.6	-	0	ID=NODE_769147_length_266_cov_1.649289_1;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=3-4bp;gc_cont=0.311;conf=53.68;score=0.64;cscore=-0.95;sscore=1.59;rscore=0.87;uscore=0.70;tscore=0.52;
+##gff-version  3
+# Sequence Data: seqnum=311;seqlen=216;seqhdr="NODE_1331613_length_216_cov_1.043478"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1331613_length_216_cov_1.043478	pyrodigal_v3.6.3	CDS	1	216	44.4	-	0	ID=NODE_1331613_length_216_cov_1.043478_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.662;conf=100.00;score=44.45;cscore=42.84;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=315;seqlen=466;seqhdr="NODE_174756_length_466_cov_0.861314"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_174756_length_466_cov_0.861314	pyrodigal_v3.6.3	CDS	2	103	16.7	+	0	ID=NODE_174756_length_466_cov_0.861314_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.676;conf=97.87;score=16.65;cscore=13.43;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_174756_length_466_cov_0.861314	pyrodigal_v3.6.3	CDS	115	465	60.9	+	0	ID=NODE_174756_length_466_cov_0.861314_2;partial=01;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.678;conf=100.00;score=60.87;cscore=58.56;sscore=2.30;rscore=5.98;uscore=-6.32;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=328;seqlen=231;seqhdr="NODE_1192782_length_231_cov_1.079545"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1192782_length_231_cov_1.079545	pyrodigal_v3.6.3	CDS	2	229	50.2	+	0	ID=NODE_1192782_length_231_cov_1.079545_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.715;conf=100.00;score=50.18;cscore=48.57;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=334;seqlen=220;seqhdr="NODE_1294313_length_220_cov_1.151515"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1294313_length_220_cov_1.151515	pyrodigal_v3.6.3	CDS	3	218	39.7	-	0	ID=NODE_1294313_length_220_cov_1.151515_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.681;conf=99.99;score=39.67;cscore=38.07;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=336;seqlen=238;seqhdr="NODE_1116391_length_238_cov_1.546448"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1116391_length_238_cov_1.546448	pyrodigal_v3.6.3	CDS	3	170	5.1	+	0	ID=NODE_1116391_length_238_cov_1.546448_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.446;conf=76.26;score=5.08;cscore=1.86;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_1116391_length_238_cov_1.546448	pyrodigal_v3.6.3	CDS	150	236	4.8	-	0	ID=NODE_1116391_length_238_cov_1.546448_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.494;conf=74.90;score=4.76;cscore=1.54;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=341;seqlen=363;seqhdr="NODE_349372_length_363_cov_1.058442"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_349372_length_363_cov_1.058442	pyrodigal_v3.6.3	CDS	2	223	21.9	-	0	ID=NODE_349372_length_363_cov_1.058442_1;partial=10;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=3-4bp;gc_cont=0.577;conf=99.35;score=21.91;cscore=17.66;sscore=4.25;rscore=2.51;uscore=-0.59;tscore=1.49;
+NODE_349372_length_363_cov_1.058442	pyrodigal_v3.6.3	CDS	264	362	0.4	-	0	ID=NODE_349372_length_363_cov_1.058442_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.636;conf=52.41;score=0.42;cscore=-2.30;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=350;seqlen=520;seqhdr="NODE_127831_length_520_cov_2.174194"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_127831_length_520_cov_2.174194	pyrodigal_v3.6.3	CDS	1	213	29.9	+	0	ID=NODE_127831_length_520_cov_2.174194_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.643;conf=99.90;score=29.89;cscore=26.67;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_127831_length_520_cov_2.174194	pyrodigal_v3.6.3	CDS	281	520	19.3	+	0	ID=NODE_127831_length_520_cov_2.174194_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.683;conf=98.84;score=19.33;cscore=24.94;sscore=-5.61;rscore=-0.14;uscore=-6.96;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=357;seqlen=270;seqhdr="NODE_727948_length_270_cov_0.883721"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_727948_length_270_cov_0.883721	pyrodigal_v3.6.3	CDS	31	270	21.1	-	0	ID=NODE_727948_length_270_cov_0.883721_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.642;conf=99.23;score=21.13;cscore=17.91;sscore=3.22;rscore=0.00;uscore=3.22;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=363;seqlen=264;seqhdr="NODE_795351_length_264_cov_1.818182"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_795351_length_264_cov_1.818182	pyrodigal_v3.6.3	CDS	3	263	31.6	+	0	ID=NODE_795351_length_264_cov_1.818182_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.651;conf=99.93;score=31.59;cscore=29.98;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=368;seqlen=247;seqhdr="NODE_1010827_length_247_cov_1.296875"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=283;seqlen=395;seqhdr="NODE_276914_length_395_cov_1.117647"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_276914_length_395_cov_1.117647	pyrodigal_v3.6.3	CDS	3	395	84.5	+	0	ID=NODE_276914_length_395_cov_1.117647_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.692;conf=100.00;score=84.49;cscore=82.88;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=291;seqlen=311;seqhdr="NODE_491996_length_311_cov_1.160156"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_491996_length_311_cov_1.160156	pyrodigal_v3.6.3	CDS	1	210	4.9	+	0	ID=NODE_491996_length_311_cov_1.160156_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.743;conf=75.56;score=4.91;cscore=1.69;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_491996_length_311_cov_1.160156	pyrodigal_v3.6.3	CDS	207	311	21.4	+	0	ID=NODE_491996_length_311_cov_1.160156_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.676;conf=99.27;score=21.38;cscore=18.60;sscore=2.78;rscore=-0.14;uscore=-12.73;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=301;seqlen=241;seqhdr="NODE_1087996_length_241_cov_1.021505"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1087996_length_241_cov_1.021505	pyrodigal_v3.6.3	CDS	3	239	30.0	+	0	ID=NODE_1087996_length_241_cov_1.021505_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.700;conf=99.90;score=29.97;cscore=28.36;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=306;seqlen=237;seqhdr="NODE_1131208_length_237_cov_1.043956"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1131208_length_237_cov_1.043956	pyrodigal_v3.6.3	CDS	1	126	3.4	+	0	ID=NODE_1131208_length_237_cov_1.043956_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.667;conf=68.57;score=3.39;cscore=0.17;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=314;seqlen=280;seqhdr="NODE_618447_length_280_cov_1.266667"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_618447_length_280_cov_1.266667	pyrodigal_v3.6.3	CDS	2	280	45.2	-	0	ID=NODE_618447_length_280_cov_1.266667_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.667;conf=100.00;score=45.22;cscore=43.61;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=324;seqlen=304;seqhdr="NODE_513337_length_304_cov_1.144578"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_513337_length_304_cov_1.144578	pyrodigal_v3.6.3	CDS	3	302	50.2	+	0	ID=NODE_513337_length_304_cov_1.144578_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.680;conf=100.00;score=50.21;cscore=48.60;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=330;seqlen=390;seqhdr="NODE_286573_length_390_cov_1.417910"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_286573_length_390_cov_1.417910	pyrodigal_v3.6.3	CDS	2	388	48.2	+	0	ID=NODE_286573_length_390_cov_1.417910_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.592;conf=100.00;score=48.17;cscore=46.56;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=332;seqlen=217;seqhdr="NODE_1324112_length_217_cov_0.876543"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1324112_length_217_cov_0.876543	pyrodigal_v3.6.3	CDS	3	137	14.1	-	0	ID=NODE_1324112_length_217_cov_0.876543_1;partial=10;start_type=GTG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.778;conf=96.28;score=14.15;cscore=10.83;sscore=3.32;rscore=1.02;uscore=-5.59;tscore=1.01;
+NODE_1324112_length_217_cov_0.876543	pyrodigal_v3.6.3	CDS	134	217	7.1	-	0	ID=NODE_1324112_length_217_cov_0.876543_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.726;conf=83.51;score=7.06;cscore=3.84;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=335;seqlen=345;seqhdr="NODE_395798_length_345_cov_1.310345"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_395798_length_345_cov_1.310345	pyrodigal_v3.6.3	CDS	2	232	1.3	+	0	ID=NODE_395798_length_345_cov_1.310345_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.597;conf=57.48;score=1.31;cscore=-1.41;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_395798_length_345_cov_1.310345	pyrodigal_v3.6.3	CDS	229	345	9.1	+	0	ID=NODE_395798_length_345_cov_1.310345_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.615;conf=89.04;score=9.11;cscore=6.33;sscore=2.78;rscore=-0.14;uscore=-9.83;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=343;seqlen=813;seqhdr="NODE_37919_length_813_cov_2.526385"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_37919_length_813_cov_2.526385	pyrodigal_v3.6.3	CDS	2	793	92.1	+	0	ID=NODE_37919_length_813_cov_2.526385_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.731;conf=100.00;score=92.13;cscore=88.91;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=347;seqlen=253;seqhdr="NODE_938025_length_253_cov_1.919192"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=353;seqlen=397;seqhdr="NODE_273780_length_397_cov_0.769006"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_273780_length_397_cov_0.769006	pyrodigal_v3.6.3	CDS	3	395	63.1	-	0	ID=NODE_273780_length_397_cov_0.769006_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.662;conf=100.00;score=63.09;cscore=61.48;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=359;seqlen=268;seqhdr="NODE_745498_length_268_cov_1.338028"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_745498_length_268_cov_1.338028	pyrodigal_v3.6.3	CDS	96	266	11.8	-	0	ID=NODE_745498_length_268_cov_1.338028_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.526;conf=93.78;score=11.80;cscore=8.58;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=366;seqlen=267;seqhdr="NODE_755511_length_267_cov_1.764151"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_755511_length_267_cov_1.764151	pyrodigal_v3.6.3	CDS	2	265	4.4	-	0	ID=NODE_755511_length_267_cov_1.764151_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.568;conf=73.37;score=4.41;cscore=2.80;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=374;seqlen=440;seqhdr="NODE_205677_length_440_cov_0.924675"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_205677_length_440_cov_0.924675	pyrodigal_v3.6.3	CDS	3	428	45.1	+	0	ID=NODE_205677_length_440_cov_0.924675_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.685;conf=100.00;score=45.11;cscore=41.89;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=378;seqlen=401;seqhdr="NODE_265252_length_401_cov_1.378613"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_265252_length_401_cov_1.378613	pyrodigal_v3.6.3	CDS	1	90	1.2	-	0	ID=NODE_265252_length_401_cov_1.378613_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.711;conf=56.80;score=1.19;cscore=0.82;sscore=0.37;rscore=-0.14;uscore=-0.98;tscore=1.49;
+NODE_265252_length_401_cov_1.378613	pyrodigal_v3.6.3	CDS	246	401	8.7	-	0	ID=NODE_265252_length_401_cov_1.378613_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.622;conf=88.02;score=8.67;cscore=5.45;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=380;seqlen=330;seqhdr="NODE_436042_length_330_cov_2.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_436042_length_330_cov_2.000000	pyrodigal_v3.6.3	CDS	24	329	38.0	+	0	ID=NODE_436042_length_330_cov_2.000000_1;partial=01;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.660;conf=99.98;score=38.03;cscore=32.98;sscore=5.05;rscore=9.30;uscore=-5.26;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=294;seqlen=234;seqhdr="NODE_1165351_length_234_cov_1.061453"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=296;seqlen=252;seqhdr="NODE_954987_length_252_cov_0.964467"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_954987_length_252_cov_0.964467	pyrodigal_v3.6.3	CDS	1	105	10.8	-	0	ID=NODE_954987_length_252_cov_0.964467_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.657;conf=92.34;score=10.83;cscore=10.83;sscore=-0.01;rscore=-0.14;uscore=-1.35;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=303;seqlen=265;seqhdr="NODE_782395_length_265_cov_1.790476"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=310;seqlen=263;seqhdr="NODE_819470_length_263_cov_0.841346"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_819470_length_263_cov_0.841346	pyrodigal_v3.6.3	CDS	3	263	23.5	+	0	ID=NODE_819470_length_263_cov_0.841346_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.690;conf=99.55;score=23.53;cscore=21.92;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=321;seqlen=699;seqhdr="NODE_56894_length_699_cov_1.736025"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_56894_length_699_cov_1.736025	pyrodigal_v3.6.3	CDS	3	647	111.3	+	0	ID=NODE_56894_length_699_cov_1.736025_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.650;conf=100.00;score=111.31;cscore=108.09;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=326;seqlen=247;seqhdr="NODE_1016410_length_247_cov_0.989583"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1016410_length_247_cov_0.989583	pyrodigal_v3.6.3	CDS	1	246	17.0	-	0	ID=NODE_1016410_length_247_cov_0.989583_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.516;conf=98.01;score=16.96;cscore=15.35;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=331;seqlen=445;seqhdr="NODE_198125_length_445_cov_2.923077"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_198125_length_445_cov_2.923077	pyrodigal_v3.6.3	CDS	2	436	41.5	+	0	ID=NODE_198125_length_445_cov_2.923077_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.499;conf=99.99;score=41.54;cscore=38.33;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=333;seqlen=557;seqhdr="NODE_105820_length_557_cov_1.892430"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_105820_length_557_cov_1.892430	pyrodigal_v3.6.3	CDS	2	556	80.1	+	0	ID=NODE_105820_length_557_cov_1.892430_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.717;conf=100.00;score=80.10;cscore=78.49;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=340;seqlen=234;seqhdr="NODE_1167057_length_234_cov_0.949721"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1167057_length_234_cov_0.949721	pyrodigal_v3.6.3	CDS	3	152	9.3	+	0	ID=NODE_1167057_length_234_cov_0.949721_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.687;conf=89.37;score=9.26;cscore=6.04;sscore=3.22;rscore=0.00;uscore=3.22;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=344;seqlen=278;seqhdr="NODE_635065_length_278_cov_1.282511"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_635065_length_278_cov_1.282511	pyrodigal_v3.6.3	CDS	1	276	32.0	-	0	ID=NODE_635065_length_278_cov_1.282511_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.562;conf=99.94;score=32.00;cscore=30.39;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=348;seqlen=224;seqhdr="NODE_1263560_length_224_cov_1.023669"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1263560_length_224_cov_1.023669	pyrodigal_v3.6.3	CDS	3	224	40.2	+	0	ID=NODE_1263560_length_224_cov_1.023669_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.725;conf=99.99;score=40.18;cscore=38.57;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=354;seqlen=257;seqhdr="NODE_894081_length_257_cov_0.940594"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=356;seqlen=255;seqhdr="NODE_920390_length_255_cov_0.950000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_920390_length_255_cov_0.950000	pyrodigal_v3.6.3	CDS	50	253	30.6	-	0	ID=NODE_920390_length_255_cov_0.950000_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.725;conf=99.91;score=30.63;cscore=27.41;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=361;seqlen=1648;seqhdr="NODE_7067_length_1648_cov_3.089768"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_7067_length_1648_cov_3.089768	pyrodigal_v3.6.3	CDS	465	1646	90.1	-	0	ID=NODE_7067_length_1648_cov_3.089768_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.465;conf=100.00;score=90.06;cscore=86.84;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=370;seqlen=243;seqhdr="NODE_1063202_length_243_cov_1.010638"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1063202_length_243_cov_1.010638	pyrodigal_v3.6.3	CDS	1	243	42.1	+	0	ID=NODE_1063202_length_243_cov_1.010638_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.708;conf=99.99;score=42.05;cscore=40.44;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=379;seqlen=257;seqhdr="NODE_895553_length_257_cov_0.940594"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=381;seqlen=489;seqhdr="NODE_151547_length_489_cov_3.064516"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_151547_length_489_cov_3.064516	pyrodigal_v3.6.3	CDS	2	94	12.3	-	0	ID=NODE_151547_length_489_cov_3.064516_1;partial=10;start_type=GTG;rbs_motif=AGGAG(G)/GGAGG;rbs_spacer=13-15bp;gc_cont=0.699;conf=94.44;score=12.32;cscore=5.86;sscore=6.46;rscore=9.97;uscore=-4.52;tscore=1.01;
+NODE_151547_length_489_cov_3.064516	pyrodigal_v3.6.3	CDS	116	487	55.3	-	0	ID=NODE_151547_length_489_cov_3.064516_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.685;conf=100.00;score=55.27;cscore=52.05;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=304;seqlen=285;seqhdr="NODE_590637_length_285_cov_1.234783"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=309;seqlen=280;seqhdr="NODE_618031_length_280_cov_1.573333"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_618031_length_280_cov_1.573333	pyrodigal_v3.6.3	CDS	1	279	14.3	-	0	ID=NODE_618031_length_280_cov_1.573333_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.491;conf=96.43;score=14.34;cscore=12.73;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=317;seqlen=251;seqhdr="NODE_967465_length_251_cov_0.969388"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_967465_length_251_cov_0.969388	pyrodigal_v3.6.3	CDS	1	153	6.0	-	0	ID=NODE_967465_length_251_cov_0.969388_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.706;conf=79.82;score=5.98;cscore=8.09;sscore=-2.10;rscore=-0.14;uscore=-3.45;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=320;seqlen=243;seqhdr="NODE_1057466_length_243_cov_1.515957"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1057466_length_243_cov_1.515957	pyrodigal_v3.6.3	CDS	1	243	33.6	-	0	ID=NODE_1057466_length_243_cov_1.515957_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.568;conf=99.96;score=33.64;cscore=32.03;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=322;seqlen=241;seqhdr="NODE_1086220_length_241_cov_1.021505"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1086220_length_241_cov_1.021505	pyrodigal_v3.6.3	CDS	3	239	36.9	+	0	ID=NODE_1086220_length_241_cov_1.021505_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.675;conf=99.98;score=36.91;cscore=35.30;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=327;seqlen=260;seqhdr="NODE_855076_length_260_cov_0.926829"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_855076_length_260_cov_0.926829	pyrodigal_v3.6.3	CDS	1	258	15.3	+	0	ID=NODE_855076_length_260_cov_0.926829_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.725;conf=97.14;score=15.34;cscore=13.73;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=338;seqlen=384;seqhdr="NODE_299474_length_384_cov_1.188450"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_299474_length_384_cov_1.188450	pyrodigal_v3.6.3	CDS	180	383	2.3	-	0	ID=NODE_299474_length_384_cov_1.188450_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.402;conf=63.02;score=2.32;cscore=-0.40;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=345;seqlen=219;seqhdr="NODE_1301140_length_219_cov_1.737805"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=349;seqlen=717;seqhdr="NODE_53203_length_717_cov_1.424471"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_53203_length_717_cov_1.424471	pyrodigal_v3.6.3	CDS	3	257	43.1	+	0	ID=NODE_53203_length_717_cov_1.424471_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.702;conf=100.00;score=43.12;cscore=39.90;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_53203_length_717_cov_1.424471	pyrodigal_v3.6.3	CDS	274	717	93.8	+	0	ID=NODE_53203_length_717_cov_1.424471_2;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.664;conf=100.00;score=93.76;cscore=93.70;sscore=0.06;rscore=-0.14;uscore=-2.39;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=358;seqlen=892;seqhdr="NODE_29773_length_892_cov_1.816010"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_29773_length_892_cov_1.816010	pyrodigal_v3.6.3	CDS	2	892	128.3	+	0	ID=NODE_29773_length_892_cov_1.816010_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.618;conf=100.00;score=128.31;cscore=126.70;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=360;seqlen=247;seqhdr="NODE_1009591_length_247_cov_1.713542"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1009591_length_247_cov_1.713542	pyrodigal_v3.6.3	CDS	1	246	26.1	+	0	ID=NODE_1009591_length_247_cov_1.713542_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.577;conf=99.75;score=26.08;cscore=24.47;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=365;seqlen=271;seqhdr="NODE_712190_length_271_cov_1.500000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_712190_length_271_cov_1.500000	pyrodigal_v3.6.3	CDS	1	270	30.9	+	0	ID=NODE_712190_length_271_cov_1.500000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.648;conf=99.92;score=30.93;cscore=29.33;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=375;seqlen=218;seqhdr="NODE_1312131_length_218_cov_1.165644"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1312131_length_218_cov_1.165644	pyrodigal_v3.6.3	CDS	3	218	36.8	+	0	ID=NODE_1312131_length_218_cov_1.165644_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.676;conf=99.98;score=36.83;cscore=35.22;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=376;seqlen=260;seqhdr="NODE_856880_length_260_cov_0.926829"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=383;seqlen=397;seqhdr="NODE_273223_length_397_cov_1.111111"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_273223_length_397_cov_1.111111	pyrodigal_v3.6.3	CDS	2	397	29.6	+	0	ID=NODE_273223_length_397_cov_1.111111_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.495;conf=99.89;score=29.63;cscore=28.02;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=385;seqlen=223;seqhdr="NODE_1270606_length_223_cov_1.130952"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1270606_length_223_cov_1.130952	pyrodigal_v3.6.3	CDS	3	221	17.0	+	0	ID=NODE_1270606_length_223_cov_1.130952_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.616;conf=98.03;score=17.01;cscore=15.40;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=387;seqlen=243;seqhdr="NODE_1058190_length_243_cov_1.393617"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1058190_length_243_cov_1.393617	pyrodigal_v3.6.3	CDS	1	243	32.4	-	0	ID=NODE_1058190_length_243_cov_1.393617_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.564;conf=99.94;score=32.43;cscore=30.82;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=318;seqlen=320;seqhdr="NODE_464558_length_320_cov_1.766038"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=319;seqlen=255;seqhdr="NODE_923926_length_255_cov_0.365000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_923926_length_255_cov_0.365000	pyrodigal_v3.6.3	CDS	3	254	19.4	-	0	ID=NODE_923926_length_255_cov_0.365000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.766;conf=98.85;score=19.36;cscore=17.75;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=325;seqlen=825;seqhdr="NODE_36500_length_825_cov_1.974026"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_36500_length_825_cov_1.974026	pyrodigal_v3.6.3	CDS	1	825	13.2	-	0	ID=NODE_36500_length_825_cov_1.974026_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.424;conf=95.37;score=13.16;cscore=11.55;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=329;seqlen=304;seqhdr="NODE_511920_length_304_cov_2.341365"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_511920_length_304_cov_2.341365	pyrodigal_v3.6.3	CDS	2	139	19.6	+	0	ID=NODE_511920_length_304_cov_2.341365_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.717;conf=98.90;score=19.56;cscore=16.34;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_511920_length_304_cov_2.341365	pyrodigal_v3.6.3	CDS	144	302	33.2	+	0	ID=NODE_511920_length_304_cov_2.341365_2;partial=01;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.585;conf=99.95;score=33.20;cscore=27.84;sscore=5.36;rscore=9.30;uscore=-6.66;tscore=1.49;
+##gff-version  3
+# Sequence Data: seqnum=339;seqlen=260;seqhdr="NODE_848688_length_260_cov_1.800000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_848688_length_260_cov_1.800000	pyrodigal_v3.6.3	CDS	2	259	35.7	+	0	ID=NODE_848688_length_260_cov_1.800000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.733;conf=99.97;score=35.69;cscore=34.08;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=342;seqlen=271;seqhdr="NODE_715925_length_271_cov_0.879630"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_715925_length_271_cov_0.879630	pyrodigal_v3.6.3	CDS	2	271	62.8	-	0	ID=NODE_715925_length_271_cov_0.879630_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.715;conf=100.00;score=62.84;cscore=61.23;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=351;seqlen=611;seqhdr="NODE_82078_length_611_cov_1.667266"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_82078_length_611_cov_1.667266	pyrodigal_v3.6.3	CDS	1	111	5.0	+	0	ID=NODE_82078_length_611_cov_1.667266_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.640;conf=75.95;score=5.00;cscore=1.78;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+NODE_82078_length_611_cov_1.667266	pyrodigal_v3.6.3	CDS	184	609	36.3	+	0	ID=NODE_82078_length_611_cov_1.667266_2;partial=01;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.660;conf=99.98;score=36.28;cscore=38.37;sscore=-2.09;rscore=-0.14;uscore=-2.96;tscore=1.01;
+##gff-version  3
+# Sequence Data: seqnum=364;seqlen=245;seqhdr="NODE_1031143_length_245_cov_3.000000"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_1031143_length_245_cov_3.000000	pyrodigal_v3.6.3	CDS	1	243	16.5	-	0	ID=NODE_1031143_length_245_cov_3.000000_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.630;conf=97.82;score=16.54;cscore=14.93;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=369;seqlen=249;seqhdr="NODE_993260_length_249_cov_0.979381"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_993260_length_249_cov_0.979381	pyrodigal_v3.6.3	CDS	4	249	0.9	-	0	ID=NODE_993260_length_249_cov_0.979381_1;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.573;conf=55.35;score=0.93;cscore=-1.78;sscore=2.72;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=372;seqlen=287;seqhdr="NODE_579466_length_287_cov_1.202586"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_579466_length_287_cov_1.202586	pyrodigal_v3.6.3	CDS	3	287	40.0	+	0	ID=NODE_579466_length_287_cov_1.202586_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.625;conf=99.99;score=40.02;cscore=38.41;sscore=1.61;rscore=0.00;uscore=1.61;tscore=0.00;
+##gff-version  3
+# Sequence Data: seqnum=382;seqlen=271;seqhdr="NODE_716146_length_271_cov_0.879630"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_716146_length_271_cov_0.879630	pyrodigal_v3.6.3	CDS	3	104	5.5	+	0	ID=NODE_716146_length_271_cov_0.879630_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.588;conf=77.87;score=5.47;cscore=2.25;sscore=3.22;rscore=0.00;uscore=0.00;tscore=3.22;
+##gff-version  3
+# Sequence Data: seqnum=384;seqlen=239;seqhdr="NODE_1105915_length_239_cov_1.032609"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+##gff-version  3
+# Sequence Data: seqnum=386;seqlen=353;seqhdr="NODE_374465_length_353_cov_1.275168"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_374465_length_353_cov_1.275168	pyrodigal_v3.6.3	CDS	1	351	46.2	-	0	ID=NODE_374465_length_353_cov_1.275168_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.578;conf=100.00;score=46.22;cscore=44.61;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=388;seqlen=399;seqhdr="NODE_268354_length_399_cov_2.418605"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_268354_length_399_cov_2.418605	pyrodigal_v3.6.3	CDS	1	399	56.9	-	0	ID=NODE_268354_length_399_cov_2.418605_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.692;conf=100.00;score=56.92;cscore=55.31;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=389;seqlen=289;seqhdr="NODE_569689_length_289_cov_0.735043"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_569689_length_289_cov_0.735043	pyrodigal_v3.6.3	CDS	3	287	46.4	-	0	ID=NODE_569689_length_289_cov_0.735043_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.719;conf=100.00;score=46.39;cscore=44.78;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=390;seqlen=316;seqhdr="NODE_478559_length_316_cov_0.628352"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_478559_length_316_cov_0.628352	pyrodigal_v3.6.3	CDS	1	315	42.9	-	0	ID=NODE_478559_length_316_cov_0.628352_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.613;conf=99.99;score=42.86;cscore=41.25;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
+##gff-version  3
+# Sequence Data: seqnum=391;seqlen=254;seqhdr="NODE_925075_length_254_cov_1.909548"
+# Model Data: version=pyrodigal.v3.6.3;run_type=Single;model="Ab initio";gc_cont=55.49;transl_table=11;uses_sd=1
+NODE_925075_length_254_cov_1.909548	pyrodigal_v3.6.3	CDS	2	253	46.4	-	0	ID=NODE_925075_length_254_cov_1.909548_1;partial=11;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.651;conf=100.00;score=46.41;cscore=44.80;sscore=1.61;rscore=0.00;uscore=0.00;tscore=1.61;
