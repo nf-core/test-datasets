@@ -149,6 +149,8 @@ The earth sciences folder contain subfolders for different data formats encounte
 	- 'bfile.bim': plink bim file with variants matching the sumstats file
 	- 'bfile.fam': plink fam file with variants matching the sumstats file
   - illumina
+    - alignment
+      - `test.dnd`: Guide tree file generated with clustalo/align module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
       - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
