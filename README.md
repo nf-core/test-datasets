@@ -79,6 +79,8 @@ If you cannot find suitable test data on this repository, please contact us on t
     - 'genome.sizes': genome size for the MT192765.1 genome
 
   - illumina
+    - alignment
+      - `test.dnd`: Guide tree file generated with clustalo/align module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
       - 'test.paired_end.{,methylated}.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.{,methylated}.sorted.bam': sorted version of the above bam file
