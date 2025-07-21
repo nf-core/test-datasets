@@ -149,6 +149,8 @@ The earth sciences folder contain subfolders for different data formats encounte
 	- 'bfile.bim': plink bim file with variants matching the sumstats file
 	- 'bfile.fam': plink fam file with variants matching the sumstats file
   - illumina
+    - alignment
+      - `test.dnd`: Guide tree file generated with clustalo/align module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
       - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
@@ -379,7 +381,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - genome.NC_012920_1.gb: Contains mtDNA reference genome in Genbank format
     - transcriptome.fasta: Reference transcriptome based on `genome.fasta`
     - gff3: Encode GFF3 file downsampled based on reference position
-    - gtf: Encode GTF file downsampled based on reference position
+    - gtf: Encode GTF file downsampled based on reference position, `genome_minimal.gtf` is a minimal version containing only the standard fields
     - sizes
     - .bed
     - multi_intervals.bed: Contains the interval from `interval.list` split into two parts
@@ -657,7 +659,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - pbmc3k.h5ad: Standard scanpy test dataset obtained using `scanpy.datasets.pbmc3k()`.
       - pbmc1k.h5ad: `pbmc3k.h5ad` subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
       - combined_filtered_matrix.h5ad: Combined filtered matrix from SRR28679756, SRR28679757, SRR28679758 and SRR28679759, generated with nf-core/scrnaseq v4.0.0, subsetted to 10k genes.
-      - SRR28679756_filtered_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes.
+      - SRR28679756_filtered_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes. Contains an additional layer `counts` and a column `symbols` in `adata.var`.
       - SRR28679756_raw_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes and 300k cells.
       - SRR28679759_filtered_matrix.h5ad: SRR28679759 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes.
       - SRR28679759_raw_matrix.h5ad: SRR28679759 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes and 300k cells.
@@ -863,6 +865,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - ncbi_user_settings.mkfg: Minimal NCBI user settings
   - paraphase_config.yaml: Minimal paraphase config for PRODH
   - config_baysor.toml: Sample config file to run the baysor module.
+  - config_template.yte.yaml: YTE compatible exemplary config file
+  - yte_map_file.yaml: map file to test YTE
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
 - models
