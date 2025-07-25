@@ -1,0 +1,14 @@
+[gene-expression]
+ref,/path/to/references/mRatBN7.2-2024-A
+create-bam,false
+
+[libraries]
+fastq_id,fastqs,lanes,feature_types
+10k_Wistar_Rat_PBMCs_Multiplex_3p_gem-x_Universal_OCM,/path/to/fastqs/10k_Wistar_Rat_PBMCs_Multiplex_3p_gem-x_Universal_OCM_fastqs,1|2|3|4|5|6,Gene Expression,
+
+[samples]
+sample_id,ocm_barcode_ids,description
+2500_Wistar_Rat_PBMCs_gem-x_OB1,OB1,2.5k_Wistar_Rat_PBMCs_gem-x_OB1
+2500_Wistar_Rat_PBMCs_gem-x_OB2,OB2,2.5k_Wistar_Rat_PBMCs_gem-x_OB2
+2500_Wistar_Rat_PBMCs_gem-x_OB3,OB3,2.5k_Wistar_Rat_PBMCs_gem-x_OB3
+2500_Wistar_Rat_PBMCs_gem-x_OB4,OB4,2.5k_Wistar_Rat_PBMCs_gem-x_OB4
