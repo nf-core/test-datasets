@@ -857,6 +857,12 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'plant_wga.pixel_prob.ilp' : Ilastik project file for pixel classification trained on plant_wga.h5
 - csv
   - 'spatial_gene_expression.csv' : Cropped csv file from a Xenium homo sapiens breast cancer dataset.
+- merscope
+  - 'minimal_data.tar.gz': Contains minimal data mimicing MERSCOPE platform output in the expected directory structure. Contains:
+    - 'images/micron_to_mosaic_pixel_transform.csv' : transformation file
+    - 'images/mosaic_DAPI_z3.tif' : identical to 'data/imaging/segmentation/nuclear_image.tif', requires particular naming format
+    - 'images/mosaic_PolyT_z3.tif' : as above, the extra PolyT channel is required downstream to generate a report
+    - 'detected_transcripts.csv' : a minimal detected transcripts file
 
 ### generic
 
