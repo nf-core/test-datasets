@@ -7,6 +7,7 @@
 - [msspectra](#msspectra)
 - [parameter](#parameter)
 - [pdb](#pdb)
+- [hhsuite](#hhsuite)
 
 ## database
 'UP000005640_9606.fasta' is the reviewed human proteome of the [SWISS-PROT](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC102476/) and was downloaded from UniProt.
@@ -41,5 +42,22 @@ write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.nam
 
 ## pdb
 
-The pdb folder contains protein structure files in .PDB format. Files 1tim.pdb and 8tim.pdb are part of the example datasets used in the foldseek tool (https://github.com/steineggerlab/foldseek).
+The pdb folder contains protein structure files in .PDB format.
+Files 1tim.pdb and 8tim.pdb are part of the example datasets used in the [foldseek tool](https://github.com/steineggerlab/foldseek).
 They describe chicken muscle proteins (engineered and breast respectively) and their structures were determined through X-ray diffraction.
+
+## hhsuite
+
+The [HH-suite](https://github.com/soedinglab/hh-suite) is an open-source software package for sensitive protein sequence searching based on the pairwise alignment of hidden Markov models (HMMs).
+The hhsuite test-datasets folder contains a compressed archive of an HH-suite formatted mini test database (pfam.tar.gz).
+The mini database contains protein families PF00001.26 and PF00002.29, from pfam version 37.4, and can be searched by the HHblits and HHsearch tools.
+Such databases usually consist of the following six files, inside a folder, which all start with the name of the database, followed by different extensions:
+```
+<dbname>_cs219.ffdata   packed file with column-state sequences for prefiltering
+<dbname>_cs219.ffindex  index file for packed column-state sequence file
+<dbname>_a3m.ffdata     packed file with MSAs in A3M format
+<dbname>_a3m.ffindex    index file for packed A3M file
+<dbname>_hhm.ffdata     packed file with HHM-formatted HMMs
+<dbname>_hhm.ffindex    index file for packed HHM file
+```
+More information regarding HH-suite format databases can be found [here](https://github.com/soedinglab/hh-suite/wiki#hh-suite-databases).
