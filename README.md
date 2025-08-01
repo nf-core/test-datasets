@@ -150,7 +150,7 @@ The earth sciences folder contain subfolders for different data formats encounte
 	- 'bfile.fam': plink fam file with variants matching the sumstats file
   - illumina
     - alignment
-      - `test.dnd`: Guide tree file generated with clustalo/align module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
+      - `test.dnd`: Guide tree file generated with clustalo/guidetree module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
       - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
@@ -793,6 +793,12 @@ The earth sciences folder contain subfolders for different data formats encounte
   - plasmodium_falciparum
     - ska
       - 'plasmodium_reduced.ska': SKA sketch file generated from a small fragment of the P. falciparum reference genome
+  - anemonia_sulcata
+    - toxines
+      - 'seatoxin-ref.fa': fasta file with toxine sequences (very short protein sequences, useful for testing)
+      - 'seatoxin-ref.aln': multiple sequence alignment of toxine sequences. Generated with magus/align
+      - 'seatoxin-ref.dnd': guide tree of toxine sequences. Generated with famsa/guidetree
+
 
 
 ### imaging
