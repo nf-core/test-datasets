@@ -1,8 +1,26 @@
 # README
 
 This directory contains:
+- Pfam and Dfam files for STAR-Fusion (see description below)
 - Reads files from FusionCatcher (see description below)
 - Output files from `fusionreport` (see description inside directory)
+
+## STAR-Fusion inputs
+
+The files: 
+- test_starfusion_dfam.hmm
+- test_starfusion_dfam.hmm.h3f
+- test_starfusion_dfam.hmm.h3i
+- test_starfusion_dfam.hmm.h3m
+- test_starfusion_dfam.hmm.h3p
+
+contain a subset from the DNA transposable element database [(DFAM)](https://www.dfam.org/home)
+Dfam files: https://www.dfam.org/releases/Dfam_3.8/infrastructure/dfamscan/homo_sapiens_dfam.hmm{,.h3f,.h3i,.h3m,.h3p}.
+Jessica Storer; Robert Hubley; Jeb Rosen; Travis J. Wheeler; Arian F. Smit
+Mobile DNA (2021) 12, Article number: 2. doi: https://doi.org/10.1186/s13100-020-00230-y
+
+- Pfam-A.hmm.gz (Subset of the [Protein families database](https://pfam.xfam.org/) HMM profiles)
+[Pfam 37.4: The protein families database in 2021](https://doi.org/10.1093/nar/gkaa913): J. Mistry, S. Chuguransky, L. Williams, M. Qureshi, G.A. Salazar, E.L.L. Sonnhammer, S.C.E. Tosatto, L. Paladin, S. Raj, L.J. Richardson, R.D. Finn, A. Bateman, Nucleic Acids Research (2021) doi: 10.1093/nar/gkaa913
 
 ## NOTE: This dataset and results were taken from project [Fusioncatcher](https://github.com/ndaniel/fusioncatcher/tree/master/test).
 
