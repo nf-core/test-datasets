@@ -1,0 +1,2 @@
+group,sample,path,ref,method
+test,pacbio_HG002_demo,https://raw.githubusercontent.com/nf-core/test-datasets/methylong/v2.0.0/test_data/test_bam/pacbio_HG002_Chr1_demo.bam,https://raw.githubusercontent.com/nf-core/test-datasets/methylong/v2.0.0/test_data/test_bam/chm13v2.0.Chr1_5MB-10MB.fasta,pacbio
