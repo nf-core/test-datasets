@@ -40,7 +40,7 @@ The dmr data in this repository will be used to test the pipeline with the popul
 
 ## Full-sized data
 
-The full-sized data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the pipeline can be found in [`test_full.config`](https://github.com/nf-core/methylong/blob/master/conf/test_fullconfig).
+The full-sized data in this repository will be used to test the pipeline from end-to-end. The associated parameters and settings to run the pipeline can be found in [`test_full.config`](https://github.com/nf-core/methylong/blob/master/conf/test_full.config).
 
 ### Files
 
