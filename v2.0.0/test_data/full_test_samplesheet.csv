@@ -1,0 +1,3 @@
+group,sample,path,ref,method
+HG003,HG003,s3://nf-core-awsmegatests/methylong/HG003_PacBio-Revio_m84039_230928_220759_s4.hifi_reads.bam,https://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz,pacbio
+HG002,HG002,s3://nf-core-awsmegatests/methylong/HG002_PAW70337_calls.sorted.bam,https://ftp.ensembl.org/pub/release-109/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz,ont
