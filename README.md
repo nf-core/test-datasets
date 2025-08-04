@@ -399,8 +399,12 @@ The earth sciences folder contain subfolders for different data formats encounte
     - CTAT_HumanFusionLib.mini.dat.gz: A small fusion annotation library used in STAR-Fusion module.
     - minigenome.fa: A small genome sequence consisting of ~750 genes used in STAR-Fusion module with fusion annotation library.
     - minigenome.gtf: Transcript structure annotations of genes present in the minigenome used in STAR-Fusion module with fusion annotation library.
+    - test_starfusion_rnaseq_{1,2}.fq.gz: RNA-Seq read files used in STAR-Fusion module.
     - arriba.tsv: File contains fusions which pass all of Arriba's filters
     - starfusion.tsv: Fusion events from STAR-fusion.
+    - Pfam-A.hmm.gz: Subset of Pfam HMM profiles usde in STAR-Fusion module.
+    - test_starfusion_dfam.hmm: Subset of profile HMMs for repetitive elements used in STAR-Fusion module.
+    - test_starfusion_dfam.hmm.{h3f,h3i,h3m,h3p}: Index files for `test_starfusion_dfam.hmm`.
     - fusioncatcher.txt: Detected gene fusions from fusioncatcher module.
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
