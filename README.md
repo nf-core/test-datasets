@@ -445,7 +445,7 @@ The earth sciences folder contain subfolders for different data formats encounte
         - test.paired_end.duplex_umi_mapped_tagged.bam: file originating from `test.paired_end.duplex_umi_unmapped.bam` and `test.paired_end.duplex_umi_mapped.bam`
         - test.paired_end.duplex_umi_grouped.bam: file originating from `test.paired_end.duplex_umi_mapped_tagged.bam`
         - test.paired_end.duplex_umi_duplex_consensus.bam: file originating from `test.paired_end.duplex_umi_grouped.bam`
-        - test.paired_end.umi_in_header.bam: Modification of `test.paired_end.unsorted_tagged.bam` to move the UMIs to the read header, and swap chromosome to entire chr22 rather than chr22:16570000-16610000
+        - test.paired_end.umi_in_header.bam{,.bai}: Modification of `test.paired_end.unsorted_tagged.bam` to move the UMIs to the read header, and swap chromosome to entire chr22 rather than chr22:16570000-16610000. Sorted and indexed.
     - bcl:
       - flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
       - flowcell_samplesheet.csv: SampleSheet for data on flowcell
