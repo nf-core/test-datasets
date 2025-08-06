@@ -150,7 +150,7 @@ The earth sciences folder contain subfolders for different data formats encounte
 	- 'bfile.fam': plink fam file with variants matching the sumstats file
   - illumina
     - alignment
-      - `test.dnd`: Guide tree file generated with clustalo/guidetree module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
+      - `test.dnd`: Guide tree file generated with clustalo/align module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
       - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
@@ -399,12 +399,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - CTAT_HumanFusionLib.mini.dat.gz: A small fusion annotation library used in STAR-Fusion module.
     - minigenome.fa: A small genome sequence consisting of ~750 genes used in STAR-Fusion module with fusion annotation library.
     - minigenome.gtf: Transcript structure annotations of genes present in the minigenome used in STAR-Fusion module with fusion annotation library.
-    - test_starfusion_rnaseq_{1,2}.fq.gz: RNA-Seq read files used in STAR-Fusion module.
     - arriba.tsv: File contains fusions which pass all of Arriba's filters
     - starfusion.tsv: Fusion events from STAR-fusion.
-    - Pfam-A.hmm.gz: Subset of Pfam HMM profiles usde in STAR-Fusion module.
-    - test_starfusion_dfam.hmm: Subset of profile HMMs for repetitive elements used in STAR-Fusion module.
-    - test_starfusion_dfam.hmm.{h3f,h3i,h3m,h3p}: Index files for `test_starfusion_dfam.hmm`.
     - fusioncatcher.txt: Detected gene fusions from fusioncatcher module.
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
@@ -445,6 +441,10 @@ The earth sciences folder contain subfolders for different data formats encounte
         - test.paired_end.duplex_umi_mapped_tagged.bam: file originating from `test.paired_end.duplex_umi_unmapped.bam` and `test.paired_end.duplex_umi_mapped.bam`
         - test.paired_end.duplex_umi_grouped.bam: file originating from `test.paired_end.duplex_umi_mapped_tagged.bam`
         - test.paired_end.duplex_umi_duplex_consensus.bam: file originating from `test.paired_end.duplex_umi_grouped.bam`
+        - test.paired_end.umi_in_header.bam: Modification of `test.paired_end.unsorted_tagged.bam` to move the UMIs to the read header, and swap chromosome to entire chr22 rather than chr22:16570000-16610000
+
+test.paired_end.umi_in_header.bam
+
     - bcl:
       - flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
       - flowcell_samplesheet.csv: SampleSheet for data on flowcell
@@ -462,7 +462,8 @@ The earth sciences folder contain subfolders for different data formats encounte
 
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
-      - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
+      - test\_umi\_cleanname\_{1,2}: test.umi fastq files without "/1" and "/2" in the readnames (so R1 and R2 names match)
+      - test\_duplex\_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
       - test2\_{1,2}: reads corresponding to tumor sample
       - test2.umi\_{1,2}: UMI tagged reads corresponding to tumor sample
       - test\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
@@ -797,12 +798,6 @@ The earth sciences folder contain subfolders for different data formats encounte
   - plasmodium_falciparum
     - ska
       - 'plasmodium_reduced.ska': SKA sketch file generated from a small fragment of the P. falciparum reference genome
-  - anemonia_sulcata
-    - toxines
-      - 'seatoxin-ref.fa': fasta file with toxine sequences (very short protein sequences, useful for testing)
-      - 'seatoxin-ref.aln': multiple sequence alignment of toxine sequences. Generated with magus/align
-      - 'seatoxin-ref.dnd': guide tree of toxine sequences. Generated with famsa/guidetree
-
 
 
 ### imaging
