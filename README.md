@@ -150,7 +150,7 @@ The earth sciences folder contain subfolders for different data formats encounte
 	- 'bfile.fam': plink fam file with variants matching the sumstats file
   - illumina
     - alignment
-      - `test.dnd`: Guide tree file generated with clustalo/align module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
+      - `test.dnd`: Guide tree file generated with clustalo/guidetree module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
       - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
@@ -399,8 +399,12 @@ The earth sciences folder contain subfolders for different data formats encounte
     - CTAT_HumanFusionLib.mini.dat.gz: A small fusion annotation library used in STAR-Fusion module.
     - minigenome.fa: A small genome sequence consisting of ~750 genes used in STAR-Fusion module with fusion annotation library.
     - minigenome.gtf: Transcript structure annotations of genes present in the minigenome used in STAR-Fusion module with fusion annotation library.
+    - test_starfusion_rnaseq_{1,2}.fq.gz: RNA-Seq read files used in STAR-Fusion module.
     - arriba.tsv: File contains fusions which pass all of Arriba's filters
     - starfusion.tsv: Fusion events from STAR-fusion.
+    - Pfam-A.hmm.gz: Subset of Pfam HMM profiles usde in STAR-Fusion module.
+    - test_starfusion_dfam.hmm: Subset of profile HMMs for repetitive elements used in STAR-Fusion module.
+    - test_starfusion_dfam.hmm.{h3f,h3i,h3m,h3p}: Index files for `test_starfusion_dfam.hmm`.
     - fusioncatcher.txt: Detected gene fusions from fusioncatcher module.
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
@@ -442,9 +446,6 @@ The earth sciences folder contain subfolders for different data formats encounte
         - test.paired_end.duplex_umi_grouped.bam: file originating from `test.paired_end.duplex_umi_mapped_tagged.bam`
         - test.paired_end.duplex_umi_duplex_consensus.bam: file originating from `test.paired_end.duplex_umi_grouped.bam`
         - test.paired_end.umi_in_header.bam: Modification of `test.paired_end.unsorted_tagged.bam` to move the UMIs to the read header, and swap chromosome to entire chr22 rather than chr22:16570000-16610000
-
-test.paired_end.umi_in_header.bam
-
     - bcl:
       - flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
       - flowcell_samplesheet.csv: SampleSheet for data on flowcell
@@ -798,6 +799,12 @@ test.paired_end.umi_in_header.bam
   - plasmodium_falciparum
     - ska
       - 'plasmodium_reduced.ska': SKA sketch file generated from a small fragment of the P. falciparum reference genome
+  - anemonia_sulcata
+    - toxines
+      - 'seatoxin-ref.fa': fasta file with toxine sequences (very short protein sequences, useful for testing)
+      - 'seatoxin-ref.aln': multiple sequence alignment of toxine sequences. Generated with magus/align
+      - 'seatoxin-ref.dnd': guide tree of toxine sequences. Generated with famsa/guidetree
+
 
 
 ### imaging
