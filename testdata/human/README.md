@@ -3,6 +3,7 @@
 This directory contains:
 - Pfam and Dfam files for STAR-Fusion (see description below)
 - Reads files from FusionCatcher (see description below)
+- Input files for `vcf_collect` (see description below)
 - Output files from `fusionreport` (see description inside directory)
 
 ## STAR-Fusion inputs
@@ -132,4 +133,24 @@ STAR \
 - `test.SJ.out.tab`
      - output from STAR
 
-
+## VCF_COLLECT input
+Files obtained from running the `nf-core/rnafusion` pipeline as follows:
+First downloaded the references:
+```bash
+aws --no-sign-request s3 sync s3://nf-core-awsmegatests/rnafusion/references/ <path_to_references>
+```
+Then ran the pipeline:
+```bash
+nextflow run main.nf \
+     -profile docker,test_full \
+     --genome GRCh38 \
+     --no_cosmic \
+     --genomes_base <PATH/TO/REFERENCES>
+     --tools starfusion,fusionreport,fusioninspector
+```
+- `test.fusions.csv`
+     - Output from `FUSIONREPORT_DETECT`
+- `test.tsv`
+     - Output from `AGAT_CONVERTSPGFF2TSV`
+- `test.FusionInspector.fusions.abridged.tsv`
+     - Output from `FUSIONINSPECTOR`
