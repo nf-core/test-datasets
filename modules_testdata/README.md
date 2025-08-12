@@ -21,6 +21,8 @@ nextflow run nf-core/differentialabundance -r 9a84f4bf1e581425c0fcb7edcec7729982
 - `all.vst.tsv` was extracted from the channel `DESEQ2_DIFFERENTIAL.out.vst_counts`.
 
 - `treatment_mCherry_hND6_.deseq2.results.tsv` was extracted from the channel `DESEQ2_DIFFERENTIAL.out.results`.
+  
+- `SRP254919.anno.feature_metadata.tsv` was extracted from the channel `GTF_TO_TABLE.out.feature_annotation`.
 
 
 
