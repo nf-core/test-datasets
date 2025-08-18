@@ -89,7 +89,7 @@ save_registered_images,true
 mask_cerebellum_olfactory,true
 count_method,3dunet 
 int_threshold,200
-model_file,/home/schwitalla/Documents/numorph_3dunet/src/numorph_3dunet/models/075_121_model.h5
+model_file,https://zenodo.org/records/16893708/files/075_121_model.h5
 gpu,0
 chunk_size,112, 112, 32
 chunk_overlap,16, 16, 8
