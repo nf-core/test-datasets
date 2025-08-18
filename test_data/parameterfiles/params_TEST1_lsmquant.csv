@@ -98,7 +98,7 @@ normalize_intensity,True
 resample_chunks,False
 tree_radius,2
 acquired_img_resolution,"[0.75, 0.75, 4]"
-trained_img_resolution,["0.75, 0.75, 2.5]"
+trained_img_resolution,"[0.75, 0.75, 2.5]"
 measure_coloc,False
 n_channels,1
 use_mask,False
