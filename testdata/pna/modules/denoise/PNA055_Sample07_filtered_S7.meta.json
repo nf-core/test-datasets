@@ -1,0 +1,12 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna denoise",
+        "options": {
+            "--run-one-core-graph-denoising": true,
+            "--one-core-ratio-threshold": 0.9,
+            "--pval-threshold": 0.05,
+            "--inflate-factor": 1.5,
+            "--output": "."
+        }
+    }
+}

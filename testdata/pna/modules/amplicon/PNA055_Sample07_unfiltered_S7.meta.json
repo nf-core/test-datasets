@@ -1,0 +1,16 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna amplicon",
+        "options": {
+            "--output": ".",
+            "--design": "pna-2",
+            "--sample-name": null,
+            "--mismatches": 0.1,
+            "--remove-polyg": true,
+            "--quality-cutoff": 20,
+            "--skip-input-checks": false,
+            "--force-run": false,
+            "--threads": 4
+        }
+    }
+}

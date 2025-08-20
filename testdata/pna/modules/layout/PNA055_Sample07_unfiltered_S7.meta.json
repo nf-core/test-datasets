@@ -1,0 +1,13 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna layout",
+        "options": {
+            "--layout-algorithm": [
+                "wpmds_3d"
+            ],
+            "--pmds-pivots": 50,
+            "--wpmds-k": 3,
+            "--output": "."
+        }
+    }
+}

@@ -6,7 +6,7 @@
                 "wpmds_3d"
             ],
             "--pmds-pivots": 50,
-            "--wpmds-k": 5,
+            "--wpmds-k": 3,
             "--output": "."
         }
     }

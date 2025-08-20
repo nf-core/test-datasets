@@ -1,0 +1,13 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna collapse",
+        "options": {
+            "--mismatches": 2,
+            "--algorithm": "directional",
+            "--threads": 4,
+            "--design": "pna-2",
+            "--panel": "proxiome-immuno-155",
+            "--output": "."
+        }
+    }
+}
