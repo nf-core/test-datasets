@@ -760,6 +760,16 @@ The earth sciences folder contain subfolders for different data formats encounte
       - taxdump
         - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
         - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
+        - taxdump.tar.gz: A NCBI taxdump.tar.gz file from 2025-08-06 filtered to just include information relevant to tax ids of the SARS-CoV2 and _Haemophilus influenzae_ taxa under `metagenome/fasta/`. Contains:
+            - citations.dmp: Citations associated with remaining tax ids
+            - delnodes.dmp: Deleted tax ids (empty)
+            - division.dmp: Taxonomy database division ids (Bacteria, Unassigned, and Viruses)
+            - gencode.dmp: Genetic codes (Standard and Bacterial, Archaeal and Plant Plastid)
+            - images.dmp: Information about images associated with tax ids (Coronaviridae)
+            - merged.dmp: IDs of merged nodes and resulting nodes (Betacoronavirus and Severe acute respiratory syndrome-related coronavirus ids)
+            - names.dmp: Taxonomy names
+            - nodes.dmp: Taxonomy nodes with associated information
+            - readme.txt: Description of included files and table fields  
   - streptococcus_agalactiae
     - genome
       - emu
