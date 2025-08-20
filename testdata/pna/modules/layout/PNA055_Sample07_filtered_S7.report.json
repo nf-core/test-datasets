@@ -1,3 +1,5 @@
 {
-    "sample_id": "PNA055_Sample07_filtered_S7"
+    "sample_id": "PNA055_Sample07_filtered_S7",
+    "product_id": "single-cell-pna",
+    "report_type": "layout"
 }
