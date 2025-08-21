@@ -1,0 +1,16 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna demux",
+        "options": {
+            "--mismatches": 2,
+            "--output-chunk-reads": 50000,
+            "--output-max-chunks": 8,
+            "--strategy": "independent",
+            "--threads": 4,
+            "--memory": null,
+            "--design": "pna-2",
+            "--panel": "proxiome-immuno-155",
+            "--output": "."
+        }
+    }
+}

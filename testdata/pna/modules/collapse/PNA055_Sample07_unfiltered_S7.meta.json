@@ -1,0 +1,34 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna combine-collapse",
+        "options": {
+            "--parquet": [
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m2.part_001.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m1.part_004.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m1.part_003.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m2.part_000.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m2.part_002.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m2.part_003.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m1.part_000.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m2.part_004.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m1.part_002.parquet",
+                "parquet/PNA055_Sample07_unfiltered_S7.collapse.m1.part_001.parquet"
+            ],
+            "--report": [
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m2.part_001.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m1.part_004.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m1.part_003.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m2.part_000.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m2.part_002.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m2.part_003.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m1.part_000.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m2.part_004.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m1.part_002.report.json",
+                "reports/PNA055_Sample07_unfiltered_S7.collapse.m1.part_001.report.json"
+            ],
+            "--parquet-pattern": null,
+            "--report-pattern": null,
+            "--output": "."
+        }
+    }
+}

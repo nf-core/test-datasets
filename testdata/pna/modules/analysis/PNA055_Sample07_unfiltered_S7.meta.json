@@ -1,0 +1,13 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna analysis",
+        "options": {
+            "--compute-proximity": true,
+            "--proximity-nbr-of-permutations": 100,
+            "--compute-k-cores": true,
+            "--compute-svd-var-explained": true,
+            "--svd-nbr-of-pivots": 50,
+            "--output": "."
+        }
+    }
+}
