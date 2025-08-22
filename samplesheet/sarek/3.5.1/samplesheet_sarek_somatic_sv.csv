@@ -1,3 +1,3 @@
-id,test_vcf,caller,pctsize,pctseq,pctovl,refdist,chunksize,normshift,normdist,normsizediff,maxdist,typeignore,subsample
-test11,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-5fe5cdff171e3baed603b3990cab7f7fd3fcb992/variant_calling/manta/HCC1395T_vs_HCC1395N/HCC1395T_vs_HCC1395N.manta.somatic_sv.vcf.gz,manta,0.5,0,0,1000000,1000000,0.5,0.5,0.5,1000000,true,
-test12,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-5fe5cdff171e3baed603b3990cab7f7fd3fcb992/variant_calling/tiddit/HCC1395T_vs_HCC1395N/HCC1395T_vs_HCC1395N.tiddit_sv_merge.vcf.gz,tiddit,0.5,0,0,1000000,1000000,0.5,0.5,0.5,1000000,true,HCC1395_HCC1395T
+id,test_vcf,caller,pctsize,pctseq,pctovl,refdist,chunksize,normshift,normdist,normsizediff,maxdist,typeignore
+test11,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/manta/HCC1395T_vs_HCC1395N.manta.somatic_sv.vcf.gz,manta,0.5,0,0,1000000,1000000,0.5,0.5,0.5,1000000,true
+test12,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/tiddit/HCC1395T_vs_HCC1395N.tiddit.tumor.vcf.gz,tiddit,0.5,0,0,1000000,1000000,0.5,0.5,0.5,1000000,true
