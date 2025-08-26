@@ -95,7 +95,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'test.bed12'
     - 'bed6alt.as': AutoSQL file to describe an alternative bed 3+3 format
     - 'v3.0.0.primer.bed': Modern (primalscheme V3) formatted BED describing v3.0.0 of the artic SARS-CoV-2 primer scheme
-    - 'v5.3.2.primer.bed':   Modern (primalscheme V3) formatted BED describing v5.3.2 of the artic SARS-CoV-2 primer scheme
+    - 'v5.3.2.primer.bed': Modern (primalscheme V3) formatted BED describing v5.3.2 of the artic SARS-CoV-2 primer scheme
   - cnn
     - 'reference.cnn': exemplary copy-number reference file for MT192765.1 genome
   - db
