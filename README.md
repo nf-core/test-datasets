@@ -94,6 +94,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'baits.bed'
     - 'test.bed12'
     - 'bed6alt.as': AutoSQL file to describe an alternative bed 3+3 format
+    - 'v3.0.0.primer.bed': Modern (primalscheme V3) formatted BED describing v3.0.0 of the artic SARS-CoV-2 primer scheme
+    - 'v5.3.2.primer.bed':   Modern (primalscheme V3) formatted BED describing v5.3.2 of the artic SARS-CoV-2 primer scheme
   - cnn
     - 'reference.cnn': exemplary copy-number reference file for MT192765.1 genome
   - db
@@ -152,6 +154,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - alignment
       - `test.dnd`: Guide tree file generated with clustalo/guidetree module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
+      - 'sars-cov-2_v3.0.0_paired.bam': Paired SC2 reads aligned to the `MN908947.3` reference, generated with the [artic-network v3.0.0 primer scheme](https://labs.primalscheme.com/detail/artic-sars-cov-2/400/v3.0.0/).
+      - 'sars-cov-2_v3.0.0_paired.bam.bai': Samtools index file for 'sars-cov-2_v3.0.0_paired.bam'
       - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.sorted.bam': sorted version of the above bam file
@@ -259,6 +263,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'fc01_sample_sheet.csv': sample sheet for demultiplexing
   - nanopore
     - bam
+	  - 'sars-cov-2_v5.3.2.bam': SC2 reads aligned to the `MN908947.3` reference, generated with the [artic-network v5.3.2 primer scheme](https://labs.primalscheme.com/detail/artic-sars-cov-2/400/v5.3.2/).
+      - 'sars-cov-2_v5.3.2.bam.bai': Samtools index for 'sars-cov-2_v5.3.2.bam'.
       - 'test.sorted.bam'
       - 'test.sorted.bam.bai'
     - fast5
