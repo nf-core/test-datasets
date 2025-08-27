@@ -1,2 +1,2 @@
 group,sample,path,ref,method
-HG002,HG002_demo,https://raw.githubusercontent.com/nf-core/test-datasets/methylong/v2.0.0/test_data/test_pod5/,https://raw.githubusercontent.com/nf-core/test-datasets/methylong/v2.0.0/test_data/test_pod5/chm13v2.0.Chr1_5MB-10MB.fasta,ont
+HG002,HG002_demo,https://raw.githubusercontent.com/nf-core/test-datasets/methylong/v2.0.0/test_data/test_pod5/HG002_Chr1_5mb-7mb.pod5,https://raw.githubusercontent.com/nf-core/test-datasets/methylong/v2.0.0/test_data/test_pod5/chm13v2.0.Chr1_5MB-10MB.fasta,ont
