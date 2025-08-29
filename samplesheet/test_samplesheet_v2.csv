@@ -1,0 +1,6 @@
+sample,strategy,assembler
+test_hifiasm,single,hifiasm
+test_flye,single,flye
+test_hifiasm_ul,hybrid,hifiasm
+test_hifiasm_flye,scaffold,hifiasm_flye
+test_flye_hifiasm,flye_hifiasm
