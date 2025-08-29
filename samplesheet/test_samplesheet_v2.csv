@@ -3,4 +3,4 @@ test_hifiasm,single,hifiasm
 test_flye,single,flye
 test_hifiasm_ul,hybrid,hifiasm
 test_hifiasm_flye,scaffold,hifiasm_flye
-test_flye_hifiasm,flye_hifiasm
+test_flye_hifiasm,scaffold,flye_hifiasm
