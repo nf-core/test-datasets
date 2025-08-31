@@ -199,7 +199,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'text_1.fastq.txt.zst' zstd-compressed version of 'test_1.fastq.gz' in tabular text format
       - 'test2\_{1,2}.fastq.gz‘: copies of the above reads
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
-      - test1_broken.fastq.gz: The six first sequences from `test1.fastq.gz`, with four broken records to test quality check software
+      - test_1_broken.fastq.gz: The six first sequences from `test_1.fastq.gz`, with four broken records to test quality check software
     - fastqc
       - `test_fastqc.html` - FastQC HTML output from `test_1.fastq.gz` FASTQ
       - `test_fastqc.zip` - FastQC zip output from `test_1.fastq.gz` FASTQ
