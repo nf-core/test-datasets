@@ -199,10 +199,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'text_1.fastq.txt.zst' zstd-compressed version of 'test_1.fastq.gz' in tabular text format
       - 'test2\_{1,2}.fastq.gz‘: copies of the above reads
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
-      - `test_quality_mismatch.fastq`: (test of FASTQ format compliance) 2nd read has len(sequence) != len(quality)
-      - `test_truncated_clean.fastq`: (test of FASTQ format compliance) 3rd read is truncated right after the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
-      - `test_truncated_halfway.fastq`: (test of FASTQ format compliance) 2nd read is truncatd half-way through the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
-      - `test2_1_corrupted_10kb.fastq.gz`: 10 KB of test2_1.fastq.gz and manually corrupted in the first sectors
+      - test_1_broken.fastq.gz: The six first sequences from `test_1.fastq.gz`, with four broken records to test quality check software
     - fastqc
       - `test_fastqc.html` - FastQC HTML output from `test_1.fastq.gz` FASTQ
       - `test_fastqc.zip` - FastQC zip output from `test_1.fastq.gz` FASTQ
@@ -466,7 +463,6 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test.rna.paired_end.sorted.cram: CRAM conversion of `test.rna.paired_end.sorted.bam`
       - test.rna.paired_end.sorted.cram.crai: The index of `test.rna.paired_end.sorted.cram`
     - fastq:
-
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
       - test\_umi\_cleanname\_{1,2}: test.umi fastq files without "/1" and "/2" in the readnames (so R1 and R2 names match)
@@ -478,7 +474,10 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test*rnaseq*{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
       - test*airrseq*{umi_R1,R2}.fastq.gz: reads from MiSEQ sequencing of BCR data.
       - rCRS_simulated_test.fq.gz: Synthetic raw mitochondrial reads from the rCRS mitochondrial reference genome for use in testing HaploCart.
-
+      - test_quality_mismatch.fastq: (test of FASTQ format compliance) 2nd read has len(sequence) != len(quality)
+      - test_truncated_clean.fastq: (test of FASTQ format compliance) 3rd read is truncated right after the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - test_truncated_halfway.fastq: (test of FASTQ format compliance) 2nd read is truncatd half-way through the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - test2_1_corrupted_10kb.fastq.gz: 10 KB of test2_1.fastq.gz and manually corrupted in the first sectors
     - gatk:
       - test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       - test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
