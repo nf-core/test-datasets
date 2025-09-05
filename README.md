@@ -70,8 +70,6 @@ Which resulted in a last line of the log as
 
 And then the `test/` directory was tarred to create `minigut_cat.tar.gz`.
 
-### GTDB-Tk
-
 We have uploaded a copy of the official [GTDB-Tk mock database](https://data.gtdb.ecogenomic.org/releases/latest/auxillary_files/gtdbtk_package/mockup_db/) to this repository for use while testing mag and the nf-core GTDB modules - this significantly improves the run-time of tests as the GTDB server can be very slow.
 
 The database is available as a gzipped tarball at:
@@ -93,6 +91,26 @@ For testing input validation, the `samplesheets` directory contains the `broken/
 -`samplesheets/broken/samplesheet_missing_sample.csv`: missing mandatory sample column 
 -`samplesheets/broken/samplesheet_nonunique_sample_run_combination.csv`: has invalid duplicate sample-run combinations 
 -`samplesheets/broken/samplesheet_spaces_in_name.csv`: incorrect sample name with spaces
+
+### GUNC
+
+For GUNC we created a mock database with the following commands:
+
+```bash
+curl "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=fasta_cds_aa&id=1992822979&extrafeat=null&conwithfeat=on&hide-cdd=on&ncbi_phid=CE8C15326D6BB8C10000000006490560" -o sequence.fasta
+diamond makedb --in sequence.fasta -d gunc-mock
+```
+
+Wich resulted in the `gunc-mock.dmnd` database file that can be used this way:
+```bash
+gunc run --db_file gunc-mock.dmnd -i bin.fa.gz
+```
+
+The only caveat is that the output is mostly NaNs
+```tsv
+genome	n_genes_called	n_genes_mapped	n_contigs	taxonomic_level	proportion_genes_retained_in_major_clades	genes_retained_index	clade_separation_score	contamination_portion	n_effective_surplus_clades	mean_hit_identity	reference_representation_score	pass.GUNC
+MEGAHIT-MetaBAT2-test_minigut.1	736	663	76	kingdom	nan	nan	nan	nan	nan	nan	nan	nan
+```
 
 ## Support
 
