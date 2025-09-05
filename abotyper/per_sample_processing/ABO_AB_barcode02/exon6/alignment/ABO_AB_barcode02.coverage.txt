@@ -1,0 +1,2 @@
+#rname	startpos	endpos	numreads	covbases	coverage	meandepth	meanbaseq	meanmapq
+Exon6	1	135	199	135	100	197.37	30.6	59.6
