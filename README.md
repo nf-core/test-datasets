@@ -176,6 +176,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'test.single_end.umi.sorted.bam.bai': bam index for the sorted bam file
       - 'test.single_end.umi.sorted.bam.csi': csi index for the sorted bam file
       - 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
+      - 'test_msisensor2.hg19.bam': bam file for msisensor2. From https://github.com/niu-lab/msisensor2/tree/master/test
+      - 'test_msisensor2.hg19.bam.bai': bam index file for msisensor2. From https://github.com/niu-lab/msisensor2/tree/master/test
     - bcl
       - '200624_A00834_0183_BHMTFYDRXX.tar.gz': NovaSeq 6000 flowcell. Only the first tile of the first lane has been kept to reduce the size of the dataset
       - 'SampleSheet.csv': The corresponding samplesheet.
@@ -258,6 +260,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - mgi
     - 'fc01.zip': zip file contains fastq files (paired-end) and run information.
     - 'fc01_sample_sheet.csv': sample sheet for demultiplexing
+  - msisensor2
+    - 'models_hg19_17sites.tar.gz': Archive containing ML models. From https://github.com/niu-lab/msisensor2/tree/master/test/tmp/models_hg19_17sites
   - nanopore
     - bam
 	  - 'sars-cov-2_v5.3.2.bam': SC2 reads aligned to the `MN908947.3` reference, generated with the [artic-network v5.3.2 primer scheme](https://labs.primalscheme.com/detail/artic-sars-cov-2/400/v5.3.2/).
