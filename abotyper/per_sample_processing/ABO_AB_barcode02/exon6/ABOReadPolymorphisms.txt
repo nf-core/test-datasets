@@ -1,0 +1,5 @@
+(1-based) Position:58, Reference Base=A
+Aligned Read Count:188
+Mat	Mis	Ins	Del	A	G	C	T
+48	52	0	0	48	52	0	0
+
