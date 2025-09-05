@@ -106,11 +106,15 @@ Wich resulted in the `gunc-mock.dmnd` database file that can be used this way:
 gunc run --db_file gunc-mock.dmnd -i bin.fa.gz
 ```
 
-The only caveat is that the output is mostly NaNs
+The only caveat is that the output is mostly NaNs, but it produces an output, so it good enough to test the tool.
 ```tsv
 genome	n_genes_called	n_genes_mapped	n_contigs	taxonomic_level	proportion_genes_retained_in_major_clades	genes_retained_index	clade_separation_score	contamination_portion	n_effective_surplus_clades	mean_hit_identity	reference_representation_score	pass.GUNC
 MEGAHIT-MetaBAT2-test_minigut.1	736	663	76	kingdom	nan	nan	nan	nan	nan	nan	nan	nan
 ```
+
+Versions used for the db creation / testing
+- diamond: 2.0.4
+- GUNC: 1.0.6
 
 ## Support
 
