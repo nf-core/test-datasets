@@ -1,0 +1,35 @@
+Exon 6:
+
+Exon 6 position(1-based): 22
+G nucleotide: A or B blood type.
+Deletion    : O blood type(O1).
+(1-based) Position:22, Reference Base=G
+Aligned Read Count:92 (reads=92, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+# -------- A subtypes variants in exon 6 --------
+
+Exon 6 position(1-based): 27
+C nucleotide: A1 or A3 subtype.
+T nucleotide: A2 subtype.
+(1-based) Position:27, Reference Base=C
+Aligned Read Count:92 (reads=92, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 6 position(1-based): 29
+T nucleotide: A1 or A3 subtype.
+C nucleotide: A2 subtype.
+(1-based) Position:29, Reference Base=T
+Aligned Read Count:92 (reads=92, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 6 position(1-based): 58
+A nucleotide: A1 or A3 subtype.
+G nucleotide: A2 subtype.
+(1-based) Position:58, Reference Base=A
+Aligned Read Count:92 (reads=92, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0

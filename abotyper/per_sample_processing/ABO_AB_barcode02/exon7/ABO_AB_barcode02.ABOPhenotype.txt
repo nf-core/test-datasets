@@ -1,0 +1,100 @@
+Exon 7:
+
+Exon 7 position(1-based): 422
+A nucleotide: B blood type.
+C nucleotide: A or O blood type.
+(1-based) Position:422, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+32	68	0	0	68	0	32	0
+
+Exon 7 position(1-based): 428
+A nucleotide: O blood type (O2).
+G nucleotide: A or B or O blood type.
+(1-based) Position:428, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 429
+G nucleotide: A or O blood type.
+C nucleotide: B blood type.
+(1-based) Position:429, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+31	69	0	0	0	31	67	2
+
+Exon 7 position(1-based): 431
+G nucleotide: O blood type (O3).
+A nucleotide: O blood type (O4).
+T nucleotide: A or B or O blood type.
+(1-based) Position:431, Reference Base=T
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+# -------- A subtypes variants --------
+
+Exon 7 position(1-based): 93
+C nucleotide: A1 subtype.
+T nucleotide: A2 or A3 subtype.
+(1-based) Position:93, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+85	15	0	0	0	0	85	15
+
+Exon 7 position(1-based): 165
+G nucleotide: A1 or A2 subtype.
+A nucleotide: A3 subtype.
+(1-based) Position:165, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 272
+T nucleotide: A1 subtype.
+A nucleotide: A2 subtype.
+(1-based) Position:272, Reference Base=T
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 307
+G nucleotide: A1 or A2 subtype.
+A nucleotide: A3 subtype.
+(1-based) Position:307, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 371
+C nucleotide: A1 or A2 subtype.
+T nucleotide: A3 subtype.
+(1-based) Position:371, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 446
+G nucleotide: A1 or A2 subtype.
+A nucleotide: A3 subtype.
+(1-based) Position:446, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 680
+C nucleotide: A1 or A3 subtype.
+T nucleotide: A2 subtype.
+(1-based) Position:680, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 687
+C nucleotide: A1 subtype.
+Deletion: A2 or A3 subtype (weaker expression).
+(1-based) Position:687, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+98	1	0	0	0	1	98	0

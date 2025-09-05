@@ -1,0 +1,15 @@
+[2025-09-05 02:48:34] INFO: ================================================================================
+[2025-09-05 02:48:34] INFO: ABO Blood Type Prediction Script - Started at 2025-09-05 02:48:34.062654
+[2025-09-05 02:48:34] INFO: ================================================================================
+[2025-09-05 02:48:34] INFO: ============================================================
+[2025-09-05 02:48:34] INFO: Starting ABO phenotype prediction
+[2025-09-05 02:48:34] INFO: ============================================================
+[2025-09-05 02:48:34] INFO: Reading nucleotide frequencies from: ABO_AB_barcode02.AlignmentStatistics.tsv
+[2025-09-05 02:48:34] INFO: Successfully processed 816 positions, max position: 816
+[2025-09-05 02:48:34] INFO: Reading coverage information from: ABO_AB_barcode02.coverage.txt
+[2025-09-05 02:48:34] INFO: Extracted coverage info: numreads=199, coverage=100
+[2025-09-05 02:48:34] INFO: Using explicitly specified exon type: exon7
+[2025-09-05 02:48:34] INFO: Generating exon 7 report to: ABO_AB_barcode02.ABOPhenotype.txt
+[2025-09-05 02:48:34] INFO: ✓ Exon 7 report successfully written to ABO_AB_barcode02.ABOPhenotype.txt
+[2025-09-05 02:48:34] INFO: ✓ ABO phenotype metrics written to: ABO_AB_barcode02.ABOPhenotype.txt
+[2025-09-05 02:48:34] INFO: Script execution completed successfully at: 2025-09-05 02:48:34.144798

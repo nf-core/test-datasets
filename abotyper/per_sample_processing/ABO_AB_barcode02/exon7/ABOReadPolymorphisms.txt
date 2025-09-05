@@ -1,0 +1,40 @@
+(1-based) Position:93, Reference Base=C
+Aligned Read Count:26
+Mat	Mis	Ins	Del	A	G	C	T
+85	15	0	0	0	0	85	15
+
+(1-based) Position:152, Reference Base=C
+Aligned Read Count:30
+Mat	Mis	Ins	Del	A	G	C	T
+24	76	0	0	0	76	24	0
+
+(1-based) Position:283, Reference Base=C
+Aligned Read Count:30
+Mat	Mis	Ins	Del	A	G	C	T
+20	80	0	0	0	0	20	80
+
+(1-based) Position:329, Reference Base=G
+Aligned Read Count:31
+Mat	Mis	Ins	Del	A	G	C	T
+26	74	0	0	74	26	0	0
+
+(1-based) Position:422, Reference Base=C
+Aligned Read Count:35
+Mat	Mis	Ins	Del	A	G	C	T
+32	68	0	0	68	0	32	0
+
+(1-based) Position:429, Reference Base=G
+Aligned Read Count:34
+Mat	Mis	Ins	Del	A	G	C	T
+31	69	0	0	0	31	67	2
+
+(1-based) Position:556, Reference Base=G
+Aligned Read Count:48
+Mat	Mis	Ins	Del	A	G	C	T
+38	62	0	0	62	38	0	0
+
+(1-based) Position:722, Reference Base=G
+Aligned Read Count:59
+Mat	Mis	Ins	Del	A	G	C	T
+49	51	0	0	51	49	0	0
+
