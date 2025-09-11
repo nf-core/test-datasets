@@ -1,0 +1,2 @@
+filename	species	subject_id	sample_id	tissue	sex	age	biomaterial_provider	pcr_target_locus	single_cell
+https://raw.githubusercontent.com/nf-core/test-datasets/airrflow/testdata-reveal/sc5p_v2_hs_PBMC_10s_b_airr_rearrangement.tsv	human	subject_x	sc5p_v2_hs_PBMC_10s_5fb	PBMC	NA	NA	10x Genomics	ig	TRUE
