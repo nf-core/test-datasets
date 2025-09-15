@@ -426,6 +426,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - samplesheet.csv: Sample sheet corresponding to salmon.merged.gene_counts_length_scaled.tsv
   - illumina
 
+    - bigwig:
+      - test_S*.RPKM.bw: RPKM-normalized coverage track from control sample
     - bam:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test{,.umi}*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test{,.umi}*{1,2}` (normal)
