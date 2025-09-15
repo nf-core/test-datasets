@@ -10,7 +10,7 @@ This repository contains subsampled long-read sequencing datasets tailored for r
 - `bam_pass/` – subsampled aligned BAM files for variant calling tests  
 - `spectre/` – VCF files and BED regions for whole-genome CNV testing  
 - `straglr/` – Chromosome 22 STR test regions (BED)  
-- `hificnv/` – CNV test exclude regions (BED)  
+- `main/`    – CNV test exclude regions (BED)  
 - `reference/` – reduced human genome references (e.g. Chromosome 22 intervals)  
 - `samplesheet_*.csv` – metadata and sample sheets for pipeline test runs  
 
