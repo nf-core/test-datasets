@@ -1,7 +1,7 @@
 # Rare Disease Test Datasets  
 
-This repository contains **subsampled long-read sequencing datasets** tailored for **rare disease analysis**.  
-The data is reduced in size to allow **pipeline testing, development, and validation** without requiring large full-scale datasets.  
+This repository contains subsampled long-read sequencing datasets tailored for rare disease analysis.  
+The data is reduced in size to allow pipeline testing, development, and validation without requiring large full-scale datasets.  
 
 ---
 
@@ -27,9 +27,9 @@ The data is reduced in size to allow **pipeline testing, development, and valida
 
 ## Usage  
 
-These datasets are intended for **automated testing** of long-read rare disease pipelines (e.g. [nf-core/longraredisease](https://github.com/nf-core/longraredisease)).  
+These datasets are intended for automated testing of long-read rare disease pipelines (e.g. [nf-core/longraredisease](https://github.com/nf-core/longraredisease)).  
 
-The data in this repository will be used to test the pipeline starting from **aligned BAM files** (using minimap2).  
+The data in this repository will be used to test the pipeline starting from aligned BAM files (using minimap2).  
 The associated parameters and settings to run the pipeline can be found in the provided **`test.config`** file.  
 
 Example run:  
