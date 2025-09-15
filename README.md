@@ -12,7 +12,7 @@ This repository contains subsampled long-read sequencing datasets tailored for r
 - `straglr/` – Chromosome 22 STR test regions  
 - `test.exclude.bed` – CNV test exclude regions  
 - `reference/` – reduced human genome references   
-- `samplesheet_*.csv` – metadata and sample sheets for pipeline test runs  
+- `samplesheet_*.csv` – metadata for pipeline test runs  
 
 ---
 
