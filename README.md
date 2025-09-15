@@ -27,7 +27,7 @@ The data is reduced in size to allow pipeline testing, development, and validati
 
 ## Usage  
 
-These datasets are intended for automated testing of long-read rare disease pipelines (e.g. [nf-core/longraredisease](https://github.com/nf-core/longraredisease)).  
+These datasets are intended for automated testing of long-read rare disease pipeline (https://github.com/nf-core/longraredisease).  
 
 The data in this repository will be used to test the pipeline starting from aligned BAM files (using minimap2).  
 The associated parameters and settings to run the pipeline can be found in the provided **`test.config`** file.  
