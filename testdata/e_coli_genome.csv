@@ -1,0 +1,2 @@
+accno,genome_fna
+ecoli_genome,https://github.com/nf-core/test-datasets/raw/magmap/testdata/e_coli.fna
