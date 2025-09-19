@@ -857,7 +857,10 @@ The earth sciences folder contain subfolders for different data formats encounte
 
 - database
   - 'yeast_UPS.fasta': FASTA database for Yeast organism.
+  - 'yeast_UPS_mini.fasta': Minimal subset (10 sequences) of yeast UPS database for efficient DIA-NN testing.
   - 'UP000005640_9606.fasta': Human proteome (Swissprot)
+- diann
+  - 'diann_config.cfg': Minimal DIA-NN configuration file for in silico spectral library generation.
 - maxquant
   - 'MaxQuant_contrasts.csv': Contrast file for the MaxQuant test dataset.
   - 'MaxQuant_proteinGroups.txt': MaxQuant proteinGroups file containing intensity values for different protein groups.
