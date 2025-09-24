@@ -142,7 +142,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'proteome.hmm.gz': A HMM file from Pfam SARS-CoV-2
     - proteome_test.faa: The first sequence from `proteome.fasta`, duplicated eight times with minor differences, to test quality check software
     - graphtyper: files for testing graphtyper
-      - regions.txt: chromosome names and positions for MT192765.1 genome
+      - 'regions.txt': chromosome names and positions for MT192765.1 genome
     - PRG_test: zipped directory to build a test Population Reference Graph
   - gsmr
     - 'sumstats.tsv': GWAS Summary statistics of variants from a subset of chr6, in the GCTA-Cojo format
