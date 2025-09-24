@@ -140,7 +140,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'proteome.fasta': 12 proteins from the ASM985889v3 assembly of the MN908947.3 reference genome
     - 'proteome.fasta.gz': gzipped version of 'proteome.fasta'
     - 'proteome.hmm.gz': A HMM file from Pfam SARS-CoV-2
-    - proteome_test.faa: The first sequence from `proteome.fasta`, duplicated eight times with minor differences, to test quality check software
+    - 'proteome_test.faa': The first sequence from `proteome.fasta`, duplicated eight times with minor differences, to test quality check software
     - graphtyper: files for testing graphtyper
       - 'regions.txt': chromosome names and positions for MT192765.1 genome
     - PRG_test: zipped directory to build a test Population Reference Graph
