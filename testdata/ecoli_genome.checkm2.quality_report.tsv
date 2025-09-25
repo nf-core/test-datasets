@@ -1,0 +1,2 @@
+Name	Completeness	Contamination	Completeness_Model_Used	Translation_Table_Used	Coding_Density	Contig_N50	Average_Gene_Length	Genome_Size	GC_Content	Total_Coding_Sequences	Additional_Notes
+ecoli_genome	100.0	1.26	Neural Network (Specific Model)	11	0.876	4903501	312.35064659741363	5034834	0.51	4717	None
