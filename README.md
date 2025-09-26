@@ -20,6 +20,7 @@ The `generic` folder contains generic files that currently cannot be associated 
 The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available in various places:
 
 - actinidia_chinensis
+- arabidopsis_thaliana
 - bacteroides_fragilis
 - candidatus_portiera_aleyrodidarum
 - deilephila_porcellus (mitochondrion)
@@ -807,6 +808,9 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'MW539688.1.fasta': sequence of the mitochondrial reference genome for Deilephila porcellus
       - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
   - arabidopsis_thaliana
+    - genome 
+      - 'ont_Col-0_tets_data_Chr1_5mb_7mb.bam': basecalled, unaligned ONT reads from Chromosome 1:5mb-7mb region for Arabidopsis thaliana. 
+      - 'trimmed_ont_Col-0_tets_data_Chr1_5mb_7mb.bam': basecalled, unaligned and trimmed ONT reads from Chromosome 1:5mb-7mb region for Arabidopsis thaliana.
     - plastid
       - 'ddAraThal4.HiFi.reads.fasta': test dataset for plastid reads for Arabidopsis thaliana
   - saccharomyces_cerevisiae
