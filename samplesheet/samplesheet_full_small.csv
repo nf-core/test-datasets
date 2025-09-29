@@ -1,3 +1,4 @@
-id,test_vcf,caller,refdist,chunksize,normshift,normdist,normsizediff,maxdist,typeignore,dup_to_ins,pctsize,pctseq,pctovl,evaluationmode,subsample
-test1,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/SevenBridges_GraphGATKRefine_05052017/HG002-NA24385-50x.union_170414.split.vcf.gz",graph,,,,,,,,,,,,,
-test2,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/OsloUniversityHospital_Exome_GATK_jointVC_11242015/HG002-HG003-HG004.jointVC.filter.vcf",gatk,,,,,,,,,,,,,"Sample_Diag-excap51-HG002-EEogPU"
+id,test_vcf,caller
+test1,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_benchmark_v0.01.00/GRCh37/HG002_GRCh37_difficult_medical_gene_smallvar_benchmark_v0.01.00.vcf.gz",giab_v1
+test2,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_benchmark_v0.02/GRCh37/HG002_GRCh37_difficult_medical_gene_smallvar_benchmark_v0.02.03.vcf.gz","giab_v2"
+test3,"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_v4beta_SmallVariantDraftBenchmark_07192019/GIAB_SmallVariant_Benchmark_v4beta_GRCh37_HG002.vcf.gz","giab_beta"
