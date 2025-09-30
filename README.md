@@ -12,23 +12,45 @@ Sample information sheet required to test the pipeline containing sample names a
 
 #### `samplesheet_test_sra.csv`
 
-Sample information sheet required to test the pipeline containing sample information of one link to a original full FastQ files and two files that must be downloaded from SRA one single-end and one paired-end, respectively. This sample sheet corresponds to Illumina SISPA data.
+Sample information sheet required to test the pipeline containing sample information of one link to a original full FastQ files and two files that must be downloaded from SRA one single-end and one paired-end, respectively.
+
+This sample sheet corresponds to SARS-CoV-2 Illumina SISPA data.
 
 #### `samplesheet_test_illumina_sispa.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina SISPA data.
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
+
+This sample sheet corresponds to SARS-CoV-2 Illumina SISPA data.
 
 #### `samplesheet_test_illumina_amplicon.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to Illumina amplicon data.
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
+
+This sample sheet corresponds to SARS-CoV-2 Illumina amplicon primer enrichment data.
 
 #### `samplesheet_full_illumina_sispa.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina SISPA data.
+Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files.
+
+This sample sheet corresponds to SARS-CoV-2 Illumina SISPA data.
 
 #### `samplesheet_full_illumina_amplicon.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina amplicon data.
+Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files.
+
+This sample sheet corresponds to SARS-CoV-2 Illumina amplicon primer enrichment data.
+
+#### `samplesheet_full_illumina_fragmented.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
+
+This sample sheet corresponds to Crimea Congo data.
+
+#### `v3.0/samplesheet_test_hiv.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
+
+This sample sheet corresponds to HIV Illumina amplicon primer enrichment data from different SRA experiments. For test purposes these will be trated as non amplicon data.
 
 ### `genome/`
 
@@ -78,7 +100,27 @@ kraken2-build --db kraken2_hs22 --build
 -   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.fna.gz)
 -   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.gff.gz)
 
-### `fastq/illumina_sispa/`
+
+#### `crimea_congo`
+
+Crimea Congo is a fragmented genome with three fragments. S, M and L based on the fragment size.
+
+-   `crimea_congo.fasta.gz`: Crimea Congo fasta genome containing S, M and L fragments: KY484036.1, KY484035.1, KY484034.1
+-   `crimea_congo.gff.gz`: Crimea congo genome GFF3 annotation file containing annotation for S, M and L fragments: KY484036.1, KY484035.1, KY484034.1
+
+#### `NC_001802.1`
+
+This reference was chosen based on [Nextclade's](https://clades.nextstrain.org/dataset) HIV reference which states:
+
+```
+This data set uses the NCBI reference sequence NC_001802 based on the HXB2 genome K03455. The primary reason for choosing it is to ensure amino acid substitutions in conserved proteins such as Pol are numbered consistently. Note that this sequence as a few problems, including a premature stop-codon in nef.
+```
+
+-   `NC_001802.1.fasta`: Human immunodeficiency virus 1 genome fasta file downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_001802.1/)
+-   `NC_001802.1.gff`: Human immunodeficiency virus 1 genome GFF3 annotation file downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_001802.1/)
+
+
+### `illumina/sispa/`
 
 | file                    | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
 | ----------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
@@ -93,7 +135,7 @@ kraken2-build --db kraken2_hs22 --build
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
-### `fastq/illumina_amplicon/`
+### `illumina/amplicon`
 
 | file                | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
 | ------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
@@ -104,7 +146,32 @@ kraken2-build --db kraken2_hs22 --build
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
+### `illumina/hiv/`
+
+This dasatet was chosen because it is the example data for [HIVdb Drug Resistance Database](https://hivdb.stanford.edu/hivdb/by-reads/):
+
+- DRR030302: Amplicon Whole Genome sequencing
+- SRR4071760: Amplification of protease-RT genes
+- SRR6937100: Amplification integrase gene
+
+| file                  | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
+| --------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
+| DRR030302_1.fastq.gz  | 10,512   | 2,545,102 | 40      | 242     | 251     | 1.3M      | PE Illumina | Viral RNA     |
+| DRR030302_1.fastq.gz  | 10,512   | 2,545,205 | 40      | 242     | 251     | 1.8M      | PE Illumina | Viral RNA     |
+| SRR4071760_1.fastq.gz | 10,582   | 2,524,863 | 45      | 238     | 251     | 1M        | PE Illumina | Synthetic     |
+| SRR4071760_2.fastq.gz | 10,582   | 2,525,284 | 45      | 238     | 251     | 1.4M      | PE Illumina | Synthetic     |
+| SRR6937100_1.fastq.gz | 10,484   | 1,295,077 | 35      | 123     | 151     | 556K      | PE Illumina | Genomic       |
+| SRR6937100_2.fastq.gz | 10,484   | 1,289,631 | 33      | 123     | 151     | 612K      | PE Illumina | Genomic       |
+
+> Original FastQ files were sub-sampled as explained in [Sampling procedure](#sampling-procedure)
+
+### `illumina/fragmented/`
+
+TBD
+
 ## Sampling procedure
+
+### SARS-CoV-2
 
 Prepare a file `list.txt` with the following SRA accession numbers:
 
@@ -128,6 +195,21 @@ parallel 'seqkit sample -p 0.02 -s 2020 {} | pigz > {.}.fastq.gz' ::: SRR*
 ```
 
 The above tools are available on bioconda.
+
+
+### HIV
+
+The data was downsampled after Human Genome reads removal using different proportions:
+
+- DRR030302: 0.025
+- SRR4071760: 0.11
+- SRR6937100: 0.55
+
+We used the following commands:
+
+```bash
+seqtk sample -s100 <reads> <proportion>
+```
 
 ## Expected output
 
