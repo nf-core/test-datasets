@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+DRR030302,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/hiv/DRR030302_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/hiv/DRR030302_2.fastq.gz
+SRR4071760,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/hiv/SRR4071760_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/hiv/SRR4071760_2.fastq.gz
+SRR6937100,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/hiv/SRR6937100_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/hiv/SRR6937100_2.fastq.gz
