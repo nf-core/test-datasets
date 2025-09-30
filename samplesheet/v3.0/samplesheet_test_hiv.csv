@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+DRR030302,../subsamepling/DRR030302_1.fastq.gz,../subsamepling/DRR030302_2.fastq.gz
+SRR4071760,../subsamepling/SRR4071760_1.fastq.gz,../subsamepling/SRR4071760_2.fastq.gz
+SRR6937100,../subsamepling/SRR6937100_1.fastq.gz,../subsamepling/SRR6937100_2.fastq.gz
