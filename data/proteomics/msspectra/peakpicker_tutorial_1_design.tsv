@@ -1,0 +1,5 @@
+Fraction_Group	Fraction	Spectra_Filepath	Label	Sample
+1	1	peakpicker_tutorial_1.mzML	1	1
+
+Sample	MSstats_Condition	MSstats_BioReplicate
+1	CT=Control;CN=Tutorial;QY=1	1
