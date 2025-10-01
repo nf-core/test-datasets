@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [database](#database)
+- [diann](#diann)
 - [maxquant](#maxquant)
 - [msspectra](#msspectra)
 - [parameter](#parameter)
@@ -11,6 +12,10 @@
 
 ## database
 'UP000005640_9606.fasta' is the reviewed human proteome of the [SWISS-PROT](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC102476/) and was downloaded from UniProt.
+'yeast_UPS_mini.fasta' is a minimal subset of the yeast UPS (Universal Proteomics Standard) dataset containing 10 protein sequences, created for efficient testing of DIA-NN spectral library generation.
+
+## diann
+'diann_config.cfg' is a minimal DIA-NN configuration file containing basic parameters for in silico spectral library generation, including trypsin cleavage rules, peptide length constraints, and mass range settings.
 
 ## maxquant
 
