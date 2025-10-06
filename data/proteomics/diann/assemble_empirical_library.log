@@ -1,0 +1,46 @@
+DIA-NN 1.8.1 (Data-Independent Acquisition by Neural Networks)
+Compiled on Apr 15 2022 08:45:18
+Current date and time: Sun Oct  5 20:59:51 2025
+Logical CPU cores: 10
+diann --f RD139_Narrow_UPS1_0_1fmol_inj1.mzML --lib lib.predicted.speclib --threads 2 --out-lib empirical_library --temp ./quant/ --verbose 3 --rt-profiling --use-quant --gen-spec-lib --individual-mass-acc --individual-windows 
+
+Thread number set to 2
+The spectral library (if generated) will retain the original spectra but will include empirically-aligned RTs
+Existing .quant files will be used
+A spectral library will be generated
+Mass accuracy will be determined separately for different runs
+Scan windows will be inferred separately for different runs
+DIA-NN will optimise the mass accuracy separately for each run in the experiment. This is useful primarily for quick initial analyses, when it is not yet known which mass accuracy setting works best for a particular acquisition scheme.
+
+1 files will be processed
+[0:00] Loading spectral library lib.predicted.speclib
+[0:00] Library annotated with sequence database(s): REF_EColi_K12_UPS1_combined_subset_100.fasta
+[0:00] Gene names missing for some isoforms
+[0:00] Library contains 98 proteins, and 98 genes
+[0:00] Spectral library loaded: 98 protein isoforms, 99 protein groups and 3934 precursors in 3139 elution groups.
+[0:00] Initialising library
+
+[0:00] Cross-run analysis
+[0:00] Reading quantification information: 1 files
+[0:00] Averaged recommended settings for this experiment: Mass accuracy = 10ppm, MS1 accuracy = 4ppm, Scan window = 6
+[0:00] Quantifying peptides
+[0:00] Assembling protein groups
+[0:00] Quantifying proteins
+[0:00] Calculating q-values for protein and gene groups
+[0:00] Calculating global q-values for protein and gene groups
+[0:00] Writing report
+[0:00] Report saved to report.tsv.
+[0:00] Stats report saved to report.stats.tsv
+[0:00] Generating spectral library:
+[0:00] Saving spectral library to empirical_library
+[0:00] 60 precursors saved
+[0:00] Loading the generated library and saving it in the .speclib format
+[0:00] Loading spectral library empirical_library
+[0:00] Spectral library loaded: 25 protein isoforms, 25 protein groups and 60 precursors in 47 elution groups.
+[0:00] Protein names missing for some isoforms
+[0:00] Gene names missing for some isoforms
+[0:00] Library contains 0 proteins, and 0 genes
+[0:00] Saving the library to empirical_library.speclib
+
+Finished
+
