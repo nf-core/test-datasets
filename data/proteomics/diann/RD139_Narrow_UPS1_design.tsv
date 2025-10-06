@@ -1,0 +1,5 @@
+Fraction_Group	Fraction	Spectra_Filepath	Label	Sample
+1	1	RD139_Narrow_UPS1_0_1fmol_inj1.mzML	1	1
+
+Sample	MSstats_Condition	MSstats_BioReplicate
+1	UPS1_0_1fmol	1

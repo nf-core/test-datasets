@@ -1,0 +1,11 @@
+Protein.Group	Protein.Ids	Protein.Names	Genes	First.Protein.Description	RD139_Narrow_UPS1_0_1fmol_inj1.mzML
+P0A6A3	P0A6A3	ACKA_ECOLI	ackA	Acetate kinase	1.03527e+06
+P0A6F5	P0A6F5	CH60_ECOLI	groL	60 kDa chaperonin	2.00966e+07
+P0A9Q7	P0A9Q7	ADHE_ECOLI	adhE	Aldehyde-alcohol dehydrogenase	2.21319e+07
+P0ABD5	P0ABD5	ACCA_ECOLI	accA	Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha	3.97421e+06
+P0AE08	P0AE08	AHPC_ECOLI	ahpC	Alkyl hydroperoxide reductase subunit C	1.52472e+07
+P0AES4	P0AES4	GYRA_ECOLI	gyrA	DNA gyrase subunit A	1.79649e+06
+P0AES6	P0AES6	GYRB_ECOLI	gyrB	DNA gyrase subunit B	1.89303e+06
+P0CE47	P0CE47	EFTU1_ECOLI	tufA	Elongation factor Tu 1	1.57524e+08
+P24182	P24182	ACCC_ECOLI	accC	Biotin carboxylase	1.21825e+07
+P36683	P36683	ACNB_ECOLI	acnB	Aconitate hydratase B	8.04331e+06

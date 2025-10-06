@@ -1,0 +1,7 @@
+# DIA-NN Spectral Library Format
+# This is a minimal test spectral library file
+# Format: PrecursorMz	ProductMz	PrecursorCharge	LibraryIntensity	NormalizedRetentionTime	ProteinId	ModifiedPeptide	UnmodifiedPeptide	StrippedPeptide	FragmentType	FragmentCharge	FragmentSeriesNumber
+400.2000	200.1000	2	1000.0	0.5	P12345	K.TESTPEPTIDE.R	K.TESTPEPTIDE.R	TESTPEPTIDE	b	1	1
+400.2000	300.1500	2	800.0	0.5	P12345	K.TESTPEPTIDE.R	K.TESTPEPTIDE.R	TESTPEPTIDE	y	1	2
+500.2500	250.1250	2	1200.0	0.6	P12346	R.ANOTHERTEST.R	R.ANOTHERTEST.R	ANOTHERTEST	b	1	1
+500.2500	350.1750	2	900.0	0.6	P12346	R.ANOTHERTEST.R	R.ANOTHERTEST.R	ANOTHERTEST	y	1	2
