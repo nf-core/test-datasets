@@ -20,6 +20,7 @@ The `generic` folder contains generic files that currently cannot be associated 
 The genomics folder contains subfolders for all organisms for which test data is available. At the moment, there are these organisms available in various places:
 
 - actinidia_chinensis
+- arabidopsis_thaliana
 - bacteroides_fragilis
 - candidatus_portiera_aleyrodidarum
 - deilephila_porcellus (mitochondrion)
@@ -94,6 +95,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'baits.bed'
     - 'test.bed12'
     - 'bed6alt.as': AutoSQL file to describe an alternative bed 3+3 format
+    - 'v3.0.0.primer.bed': Modern (primalscheme V3) formatted BED describing v3.0.0 of the artic SARS-CoV-2 primer scheme
+    - 'v5.3.2.primer.bed': Modern (primalscheme V3) formatted BED describing v5.3.2 of the artic SARS-CoV-2 primer scheme
   - cnn
     - 'reference.cnn': exemplary copy-number reference file for MT192765.1 genome
   - db
@@ -137,10 +140,11 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'transcriptome.paf': transcriptome PAF file for MT192765.1 genome
     - 'proteome.fasta': 12 proteins from the ASM985889v3 assembly of the MN908947.3 reference genome
     - 'proteome.fasta.gz': gzipped version of 'proteome.fasta'
-    - 'proteome.hmm.gz': A HMM file from Pfam SARS-CoV-2.
-    - graphtyper: files for testing graphtyper‚
-      - regions.txt: chromosome names and positions for MT192765.1 genome
-    - PRG_test: zipped directory to build a test Population Reference Graph‚
+    - 'proteome.hmm.gz': A HMM file from Pfam SARS-CoV-2
+    - 'proteome_test.faa': The first sequence from `proteome.fasta`, duplicated eight times with minor differences, to test quality check software
+    - graphtyper: files for testing graphtyper
+      - 'regions.txt': chromosome names and positions for MT192765.1 genome
+    - PRG_test: zipped directory to build a test Population Reference Graph
   - gsmr
     - 'sumstats.tsv': GWAS Summary statistics of variants from a subset of chr6, in the GCTA-Cojo format
     - 'sumstats_copy.tsv': A copy of sumstats.tsv file, to be used as an outcome file
@@ -152,6 +156,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - alignment
       - `test.dnd`: Guide tree file generated with clustalo/guidetree module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
     - bam
+      - 'sars-cov-2_v3.0.0_paired.bam': Paired SC2 reads aligned to the `MN908947.3` reference, generated with the [artic-network v3.0.0 primer scheme](https://labs.primalscheme.com/detail/artic-sars-cov-2/400/v3.0.0/).
+      - 'sars-cov-2_v3.0.0_paired.bam.bai': Samtools index file for 'sars-cov-2_v3.0.0_paired.bam'
       - 'test.paired_end.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.bam': sarscov2 sequencing reads aligned against test_genomic.fasta using minimap2
       - 'test.paired_end.methylated.sorted.bam': sorted version of the above bam file
@@ -172,6 +178,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'test.single_end.umi.sorted.bam.bai': bam index for the sorted bam file
       - 'test.single_end.umi.sorted.bam.csi': csi index for the sorted bam file
       - 'test.unaligned.bam': unmapped BAM file created from 'test_1.fastq.gz' using GATK4 SamToFastq
+      - 'test_msisensor2.hg19.bam': bam file for msisensor2. From https://github.com/niu-lab/msisensor2/tree/master/test
+      - 'test_msisensor2.hg19.bam.bai': bam index file for msisensor2. From https://github.com/niu-lab/msisensor2/tree/master/test
     - bcl
       - '200624_A00834_0183_BHMTFYDRXX.tar.gz': NovaSeq 6000 flowcell. Only the first tile of the first lane has been kept to reduce the size of the dataset
       - 'SampleSheet.csv': The corresponding samplesheet.
@@ -195,10 +203,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'text_1.fastq.txt.zst' zstd-compressed version of 'test_1.fastq.gz' in tabular text format
       - 'test2\_{1,2}.fastq.gz‘: copies of the above reads
       - 'test.methylated\_{1,2}.fastq.gz' sarscov2 paired-end bisulfite sequencing reads (generated with [Sherman](https://github.com/FelixKrueger/Sherman))
-      - `test_quality_mismatch.fastq`: (test of FASTQ format compliance) 2nd read has len(sequence) != len(quality)
-      - `test_truncated_clean.fastq`: (test of FASTQ format compliance) 3rd read is truncated right after the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
-      - `test_truncated_halfway.fastq`: (test of FASTQ format compliance) 2nd read is truncatd half-way through the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
-      - `test2_1_corrupted_10kb.fastq.gz`: 10 KB of test2_1.fastq.gz and manually corrupted in the first sectors
+      - test_1_broken.fastq.gz: The six first sequences from `test_1.fastq.gz`, with four broken records to test quality check software
     - fastqc
       - `test_fastqc.html` - FastQC HTML output from `test_1.fastq.gz` FASTQ
       - `test_fastqc.zip` - FastQC zip output from `test_1.fastq.gz` FASTQ
@@ -257,8 +262,12 @@ The earth sciences folder contain subfolders for different data formats encounte
   - mgi
     - 'fc01.zip': zip file contains fastq files (paired-end) and run information.
     - 'fc01_sample_sheet.csv': sample sheet for demultiplexing
+  - msisensor2
+    - 'models_hg19_17sites.tar.gz': Archive containing ML models. From https://github.com/niu-lab/msisensor2/tree/master/test/tmp/models_hg19_17sites
   - nanopore
     - bam
+	  - 'sars-cov-2_v5.3.2.bam': SC2 reads aligned to the `MN908947.3` reference, generated with the [artic-network v5.3.2 primer scheme](https://labs.primalscheme.com/detail/artic-sars-cov-2/400/v5.3.2/).
+      - 'sars-cov-2_v5.3.2.bam.bai': Samtools index for 'sars-cov-2_v5.3.2.bam'.
       - 'test.sorted.bam'
       - 'test.sorted.bam.bai'
     - fast5
@@ -419,6 +428,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - samplesheet.csv: Sample sheet corresponding to salmon.merged.gene_counts_length_scaled.tsv
   - illumina
 
+    - bigwig:
+      - test_S*.RPKM.bw: RPKM-normalized coverage track from control sample
     - bam:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test{,.umi}*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test{,.umi}*{1,2}` (normal)
@@ -437,6 +448,7 @@ The earth sciences folder contain subfolders for different data formats encounte
         - 'test.rna.paired_end.sorted.bam.bai': STAR-aligned, sorted paired-end RNAseq bam index file for test.rna.Aligned.sorted.bam
       - 'test.rna.paired_end.sorted.chr6.bam': STAR-aligned, sorted, paired-end sampled RNAseq bam file of chromosome 6 of sample GM12878 (SRA accession: SRX2900878)
       - 'test.rna.paired_end.sorted.chr6.bam.bai': STAR-aligned, sorted, paired-end sampled RNAseq bam index file of chromosome 6 of sample GM12878 (SRA accession: SRX2900878)
+      - 'rsem.transcript.bam': RSEM-aligned transcriptome BAM file based on test_rnaseq_x.fastq.gz from the fastq directory
       - umi:
         - test.paired*end.umi*\*: Files base on `test.umi_{1,2}` (normal)
         - test2.paired*end.umi*\*: Files base on `test2.umi_{1,2}` (tumor)
@@ -460,7 +472,6 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test.rna.paired_end.sorted.cram: CRAM conversion of `test.rna.paired_end.sorted.bam`
       - test.rna.paired_end.sorted.cram.crai: The index of `test.rna.paired_end.sorted.cram`
     - fastq:
-
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
       - test\_umi\_cleanname\_{1,2}: test.umi fastq files without "/1" and "/2" in the readnames (so R1 and R2 names match)
@@ -472,7 +483,10 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test*rnaseq*{1,2}.fastq.gz: reads from chr22 of sample GM12878 (SRA accession: SRX2900878) for transcriptome analysis.
       - test*airrseq*{umi_R1,R2}.fastq.gz: reads from MiSEQ sequencing of BCR data.
       - rCRS_simulated_test.fq.gz: Synthetic raw mitochondrial reads from the rCRS mitochondrial reference genome for use in testing HaploCart.
-
+      - test_quality_mismatch.fastq: (test of FASTQ format compliance) 2nd read has len(sequence) != len(quality)
+      - test_truncated_clean.fastq: (test of FASTQ format compliance) 3rd read is truncated right after the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - test_truncated_halfway.fastq: (test of FASTQ format compliance) 2nd read is truncatd half-way through the sequence (from [Bio Data Zoo](https://github.com/omgenomics/bio-data-zoo) test-dataset ([License](https://github.com/omgenomics/bio-data-zoo/blob/main/LICENSE)))
+      - test2_1_corrupted_10kb.fastq.gz: 10 KB of test2_1.fastq.gz and manually corrupted in the first sectors
     - gatk:
       - test: Recalibration table corresponding to `test{,.umi}_{1,2}` (normal) reads
       - test2: Recalibration table corresponding to `test2{,.umi}_{1,2}` (tumor) reads
@@ -593,6 +607,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test.sorted.bam.bai: BAM index for 'test.sorted.bam'
       - NA03697B2_downsampled.pbmm2.repeats.bam: subsample of puretarget pacbio reads from the [public pacbio dataset](https://downloads.pacbcloud.com/public/dataset/PureTargetRE/Coriell/PBMM2-BAM-Input-For-IGV-And-TRGT/) aligned to genome3.fasta
       - NA03697B2_downsampled.pbmm2.repeats.bai: associated index to NA03697B2_downsampled.pbmm2.repeats.bam
+      - NA037562_downsampled.pbmm2.repeats.bam: subsample of puretarget pacbio reads from the [public pacbio dataset](https://downloads.pacbcloud.com/public/dataset/PureTargetRE/Coriell/PBMM2-BAM-Input-For-IGV-And-TRGT/) aligned to genome3.fasta
+      - NA037562_downsampled.pbmm2.repeats.bai: associated index to NA037562_downsampled.pbmm2.repeats.bam
     - bed:
       - alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.bed: first set of gene models generated by TAMA collapse
       - alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.2.bed: first set of gene models generated by TAMA collapse
@@ -762,6 +778,16 @@ The earth sciences folder contain subfolders for different data formats encounte
       - taxdump
         - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
         - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
+        - taxdump.tar.gz: A NCBI taxdump.tar.gz file from 2025-08-06 filtered to just include information relevant to tax ids of the SARS-CoV2 and _Haemophilus influenzae_ taxa under `metagenome/fasta/`. Contains:
+            - citations.dmp: Citations associated with remaining tax ids
+            - delnodes.dmp: Deleted tax ids (empty)
+            - division.dmp: Taxonomy database division ids (Bacteria, Unassigned, and Viruses)
+            - gencode.dmp: Genetic codes (Standard and Bacterial, Archaeal and Plant Plastid)
+            - images.dmp: Information about images associated with tax ids (Coronaviridae)
+            - merged.dmp: IDs of merged nodes and resulting nodes (Betacoronavirus and Severe acute respiratory syndrome-related coronavirus ids)
+            - names.dmp: Taxonomy names
+            - nodes.dmp: Taxonomy nodes with associated information
+            - readme.txt: Description of included files and table fields  
   - streptococcus_agalactiae
     - genome
       - emu
@@ -784,6 +810,9 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'MW539688.1.fasta': sequence of the mitochondrial reference genome for Deilephila porcellus
       - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
   - arabidopsis_thaliana
+    - genome 
+      - 'ont_Col-0_tets_data_Chr1_5mb_7mb.bam': basecalled, unaligned ONT reads from Chromosome 1:5mb-7mb region for Arabidopsis thaliana. 
+      - 'trimmed_ont_Col-0_tets_data_Chr1_5mb_7mb.bam': basecalled, unaligned and trimmed ONT reads from Chromosome 1:5mb-7mb region for Arabidopsis thaliana.
     - plastid
       - 'ddAraThal4.HiFi.reads.fasta': test dataset for plastid reads for Arabidopsis thaliana
   - saccharomyces_cerevisiae
@@ -837,7 +866,10 @@ The earth sciences folder contain subfolders for different data formats encounte
 
 - database
   - 'yeast_UPS.fasta': FASTA database for Yeast organism.
+  - 'yeast_UPS_mini.fasta': Minimal subset (10 sequences) of yeast UPS database for efficient DIA-NN testing.
   - 'UP000005640_9606.fasta': Human proteome (Swissprot)
+- diann
+  - 'diann_config.cfg': Minimal DIA-NN configuration file for in silico spectral library generation.
 - maxquant
   - 'MaxQuant_contrasts.csv': Contrast file for the MaxQuant test dataset.
   - 'MaxQuant_proteinGroups.txt': MaxQuant proteinGroups file containing intensity values for different protein groups.
