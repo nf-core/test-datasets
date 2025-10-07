@@ -516,7 +516,11 @@ This dataset contains:
       -  22:42512500-42551883
    - illumina/bam/test.PGx.CYP2D6.bam.bai => The index of the BAM file
    - genome/genome.GRCh37.chr22.fasta.gz => A reference GRCh37 genome fasta file (bgzipped) containing chromosome 22
-   
+
+### RNASeq data
+
+This folder contains `AnnotFilterRule.pm` which comes from [The Broad](https://data.broadinstitute.org/Trinity/CTAT_RESOURCE_LIB/AnnotFilterRule.pm) and is used for filtering in `starfusion`. 
+
 ### Missing files
 
 1. Single-end reads
