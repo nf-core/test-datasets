@@ -674,6 +674,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - test.cram: The converted CRAM from the BAM file
     - test.cram.crai: The index of the CRAM file
     - test.bed: A BED file containing only the regions from chr11
+  - rnaseq: 
+    - test_starfusion.annotfilterrule.pm: Filtering rules for `prep_genome_lib.pl` script in starfusion 
   - scrnaseq:
     - csv:
       - SRR28679756_filtered_matrix.csv: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 100 cells and 100 genes.
