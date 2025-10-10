@@ -1,2 +1,2 @@
 sample,fasta,existing_hmms_to_update,existing_msas_to_update
-mgnifams_test,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_input_small.fa,,
+mgnifams_test,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_input_small.faa,,

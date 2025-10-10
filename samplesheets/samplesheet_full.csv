@@ -1,3 +1,3 @@
 sample,fasta,existing_hmms_to_update,existing_msas_to_update
-mgnifams_create,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_extra.fa,,
-mgnifams_update,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_extra.fa,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/existing_hmms.tar.gz,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/existing_msas.tar.gz
+mgnifams_create,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_input_small.faa,,
+mgnifams_update,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_extra.faa,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/existing_hmms.tar.gz,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/existing_msas.tar.gz
