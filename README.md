@@ -632,6 +632,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - FAM_snvs_annotated_ranked.vcf.gz: VCF file from HG002, only with ch16 generated from deepvariant and GLnexus
       - FAM.ped: ped file associated with HG002
       - peddy.sites: peddy standard hg38 sites downsampled to only chr16
+      - SCRI_KT5028_GRCh38_downsampled_on_chr22_pbmm2_snv_hiphased.vcf.gz: VCF file associated with 'SCRI_KT5028_GRCh38_downsampled_on_chr22_pbmm2_snv_hiphased.bam'
+      - SCRI_KT5028_GRCh38_downsampled_on_chr22_pbmm2_snv_hiphased.vcf.gz.tbi: Index file associated 'SCRI_KT5028_GRCh38_downsampled_on_chr22_pbmm2_snv_hiphased.vcf.gz'
 
   - popgen:
     - plink_simulated.bed: case-control simulated variants dataset in PLINK binary format
