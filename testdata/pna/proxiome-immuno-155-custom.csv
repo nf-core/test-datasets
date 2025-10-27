@@ -1,0 +1,165 @@
+# ---
+# name: proxiome-immuno-155-v2-custom
+# description: >-
+#     Panel for the Proxiome Immuno Kit with 155 markers + 3 control markers
+# version: 2.0.0
+# ---
+marker_id,control,nuclear,full_name,alt_id,uniprot_id,sequence_1,conj_id,sequence_2
+HLA-ABC,,,HLA class I histocompatibility antigen,,P04439;P01889;P10321,ACTTCCTAGG,pna_rnd01,ACTTCCTAGG
+B2M,,,Beta-2-microglobulin,,P61769,CCAGGTTCCG,pna_rnd02,CCAGGTTCCG
+CD11b,,,Integrin α-M (ITGAM),ITGAM;Mac-1 α,P11215,CAGCTATGGT,pna_rnd03,CAGCTATGGT
+CD11c,,,Integrin α-X,Integrin αX,P20702,ATATGACGGT,pna_rnd04,ATATGACGGT
+CD18,,,Integrin beta 2,Integrin β2,P05107,GGGTAGGCTG,pna_rnd05,GGGTAGGCTG
+CD82,,,CD82 antigen,Tetraspanin-27,P27701,CCCGTCATGA,pna_rnd06,CCCGTCATGA
+CD8,,,T cell surface glycoprotein CD8 a/b chains,,P01732;P10966,CGGTGGATCA,pna_rnd07,CGGTGGATCA
+TCRab,,,T cell receptor alpha chain constant/beta constant 1,,P01848;P01850,CTGGTAGCAA,pna_rnd08,CTGGTAGCAA
+HLA-DR,,,"HLA class II histocompatibility antigen, DR",,P01903;P01911,TGTTGTCGAA,pna_rnd09,TGTTGTCGAA
+CD45,,,"Receptor-type tyrosine-protein phosphatase C. All 6 isoforms (ABC, AB, BC, B and O)",PTPRC,P08575,TGGAGGCTCT,pna_rnd10,TGGAGGCTCT
+CD14,,,Monocyte differentiation antigen CD14,,P08571,TGGCTATGTA,pna_rnd11,TGGCTATGTA
+CD16,,,Low-affinity immunoglobulin gamma Fc region receptor / III-A and -B,FcγRIII,P08637;O75015,ATAGGTTAGG,pna_rnd12,ATAGGTTAGG
+CD19,,,B-lymphocyte antigen CD19,,P15391,ACGGAATATT,pna_rnd13,ACGGAATATT
+mIgG1,yes,,,,,ATGCTAGTCG,pna_rnd14,ATGCTAGTCG
+CD45RB,,,"Receptor-type tyrosine-protein phosphatase C. Isoform (ABC, AB, BC, and B)",,P08575,GAAGCAGTAT,pna_rnd15,GAAGCAGTAT
+CD44,,,CD44 antigen,,P16070,GTGAGTCAAT,pna_rnd17,GTGAGTCAAT
+CD52,,,CAMPATH-1 antigen,CAMPATH-1,P31358,CTTTAGCAGG,pna_rnd18,CTTTAGCAGG
+CD59,,,CD59 glycoprotein,Protectin;MAC-IP,P13987,GGTGTATGAG,pna_rnd19,GGTGTATGAG
+CD45RA,,,"Receptor-type tyrosine-protein phosphatase C. Isoform (ABC, AB, and A)",,P08575,GGATTCGTGG,pna_rnd20,GGATTCGTGG
+CD36,,,Platelet glycoprotein 4,FAT;SCARB3,P16671,TACCCTGCGA,pna_rnd21,TACCCTGCGA
+CD2,,,T cell surface antigen CD2,,P06729,TGCCGATGCC,pna_rnd22,TGCCGATGCC
+CD29,,,Integrin beta-1,Integrin β1,P05556,TCCAGTGTCT,pna_rnd23,TCCAGTGTCT
+CD5,,,T cell surface glycoprotein CD5,,P06127,CACCCATCAA,pna_rnd24,CACCCATCAA
+CD162,,,P-selectin glycoprotein ligand 1,SELPLG;PSGL-1,Q14242,CTTCGTGGAC,pna_rnd25,CTTCGTGGAC
+CD27,,,CD27 antigen,,P26842,GGTTTGCAAA,pna_rnd26,GGTTTGCAAA
+CR1,,,Complement receptor type 1,CD35,P17927,CGCCACCTTT,pna_rnd27,CGCCACCTTT
+CD26,,,Dipeptidyl peptidase 4,DPP4,P27487,GATTCGCTGT,pna_rnd28,GATTCGCTGT
+CD49d,,,Integrin α-4,Integrin α4,P13612,AACTTAGGTT,pna_rnd29,AACTTAGGTT
+CD37,,,Leukocyte antigen CD37,Tetraspanin-26,P11049,AGAAGAAGAG,pna_rnd30,AGAAGAAGAG
+CD41,,,Integrin α-IIb,Integrin αIIb,P08514,TAAGGCATAA,pna_rnd31,TAAGGCATAA
+CD20,,,B-lymphocyte antigen CD20,,P11836,GCCACACCCA,pna_rnd33,GCCACACCCA
+CD64,,,High affinity immunoglobulin gamma Fc receptor I,FcγRI,P12314,CTTGTATATC,pna_rnd34,CTTGTATATC
+CD22,,,B-cell receptor CD22,,P20273,TGACCCGTTC,pna_rnd35,TGACCCGTTC
+PD-L1,,,Programmed cell death 1 ligand 1 (PDL1),CD274,Q9NZQ7,GCTTGAGATT,pna_rnd36,GCTTGAGATT
+Siglec-7,,,Sialic acid-binding Ig-like lectin 7 (SIGLEC-7),CD328,Q9Y286,TATATGCTGA,pna_rnd37,TATATGCTGA
+CD25,,,Interleukin-2 receptor subunit alpha,IL-2Rα,P01589,AGAGACGAAT,pna_rnd39,AGAGACGAAT
+PD-1,,,Programmed cell death protein 1 (PD-1),CD279,Q15116,TACAGAGCCC,pna_rnd40,TACAGAGCCC
+NKp46,,,Natural cytotoxicity triggering receptor 1 (NKp46),CD335,O76036,ATTACCCGCG,pna_rnd41,ATTACCCGCG
+mIgG2a,yes,,,,,ATTTCCACTA,pna_rnd42,ATTTCCACTA
+mIgG2b,yes,,,,,CTAAATGGCT,pna_rnd43,CTAAATGGCT
+CTLA-4,,,Cytotoxic T-lymphocyte protein 4,CD152,P16410,TTTCTGCATT,pna_rnd44,TTTCTGCATT
+CD86,,,T-lymphocyte activation antigen CD86,B7-2,P42081,ACCATCACTT,pna_rnd45,ACCATCACTT
+CD13,,,Aminopeptidase N,Aminopeptidase N,P15144,GCATGGGTAG,pna_rnd46,GCATGGGTAG
+ADAM10,,,Disintegrin and metalloproteinase domain-containing protein 10,CD156c,O14672,ATAAGTTCCA,pna_rnd47,ATAAGTTCCA
+KIR2DL1,,,Killer cell immunoglobulin-like receptor 2DL1,CD158a,P43626,TGTTACGGTC,pna_rnd48,TGTTACGGTC
+KIR2DL2/DL3,,,Killer cell immunoglobulin-like receptor 2D (p50.3),CD158b,P43627,ACTGCATTGA,pna_rnd49,ACTGCATTGA
+NKG2A,,,NKG2-A/NKG2-B type II integral membrane protein,CD159a,P26715,CGTACACGGT,pna_rnd50,CGTACACGGT
+NKG2C,,,NKG2-C type II integral membrane protein,CD159c,P26717,CAACAGTCGA,pna_rnd51,CAACAGTCGA
+CD163,,,Scavenger receptor cysteine-rich type 1 protein M130,,Q86VB7,GACCGTGATT,pna_rnd52,GACCGTGATT
+CD169,,,Sialoadhesin,Siglec-1,Q9BZZ2,TAATCGCGGG,pna_rnd53,TAATCGCGGG
+CD1a,,,T cell surface glycoprotein CD1a,,P06126,CGACTAATCA,pna_rnd54,CGACTAATCA
+CD1c,,,T cell surface glycoprotein CD1c,,P29017,GTGCACTGTC,pna_rnd55,GTGCACTGTC
+CD206,,,Macrophage mannose receptor 1,Mannose receptor,P22897,TGCCTAATAG,pna_rnd57,TGCCTAATAG
+DNAM-1,,,CD226 antigen,CD226,Q15762,CGGTCATTAA,pna_rnd58,CGGTCATTAA
+PD-L2,,,Programmed cell death 1 ligand 2 (PDL2),CD273,Q9BQ51,ATCGCGAAGC,pna_rnd59,ATCGCGAAGC
+CD28,,,T cell-specific surface glycoprotein CD28,,P10747,CATAACAATC,pna_rnd60,CATAACAATC
+SLAMF6,,,SLAM family member 6,CD352;NTB-A,Q96DU3,TCGGAGACAC,pna_rnd63,TCGGAGACAC
+CD45RO,,,"Receptor-type tyrosine-protein phosphatase C. Isoform (ABC, AB, BC, and B)",,P08575,TTGATGACTC,pna_rnd64,TTGATGACTC
+CD49e,,,Integrin α-5,Integrin α5,P08648,TCTTTAGAAG,pna_rnd65,TCTTTAGAAG
+CD56,,,Neural cell adhesion molecule 1,NCAM,P13591,GTGCGTAAGC,pna_rnd66,GTGCGTAAGC
+CD79a,,,B-cell antigen receptor complex-associated protein alpha chain,MB-1,P11912,TCTCTCTGTT,pna_rnd69,TCTCTCTGTT
+CD80,,,T-lymphocyte activation antigen CD80,B7-1,P33681,AAGACGCGGA,pna_rnd70,AAGACGCGGA
+CD81,,,CD81 antigen,Tetraspanin-28,P60033,TGGGTTATGT,pna_rnd71,TGGGTTATGT
+LILRB1,,,Leukocyte immunoglobulin-like receptor subfamily B member 1,CD85j;ILT-2,Q8NHL6,CCTAAGTCTA,pna_rnd72,CCTAAGTCTA
+CD93,,,Complement component C1q receptor,,Q9NPY3,GCAGCGAACA,pna_rnd73,GCAGCGAACA
+IgD,,,Immunoglobulin delta heavy chain,,P0DOX3,AGATGAGGCA,pna_rnd74,AGATGAGGCA
+IgE,,,Immunoglobulin epsilon heavy chain,,P0DOX4,CGACGGTAAG,pna_rnd75,CGACGGTAAG
+IgM,,,Immunoglobulin mu heavy chain,,P0DOX6,GTGGATCCAA,pna_rnd76,GTGGATCCAA
+KLRG1,,,Killer cell lectin-like receptor subfamily G member 1,,Q96E93,TATACAGACA,pna_rnd77,TATACAGACA
+NKp80,,,Killer cell lectin-like receptor subfamily F member 1,KLRF1,Q9NZS2,CCATCGGATC,pna_rnd78,CCATCGGATC
+TCRgd,,,T cell receptor gamma constant 1 /delta constant,,P0CF51;B7Z8K6,CTTATGACCA,pna_rnd79,CTTATGACCA
+CD10,,,Neprilysin,Neprilysin,P08473,CGCAGGTAGC,pna_rnd80,CGCAGGTAGC
+CD103,,,Integrin alpha-E,Integrin αE,P38570,CCTATGCGAA,pna_rnd81,CCTATGCGAA
+CCR9,,,C-C chemokine receptor type 9,CD199,P51686,ACTCTTTCTG,pna_rnd85,ACTCTTTCTG
+CD1b,,,T cell surface glycoprotein CD1b,,P29016,GACACCACCG,pna_rnd86,GACACCACCG
+CD21,,,Complement receptor type 2,CR2,P20023,GTGGCGTTAA,pna_rnd87,GTGGCGTTAA
+TALLA,,,Tetraspanin-7,CD231;Tetraspanin-7,P41732,CACGATACTT,pna_rnd88,CACGATACTT
+CD277,,,Butyrophilin subfamily 3 member A1,BTN3,O00481,GAGTGATACG,pna_rnd89,GAGTGATACG
+LAIR1,,,Leukocyte-associated immunoglobulin-like receptor 1,CD305,Q6GTX8,GCAATGTGTA,pna_rnd90,GCAATGTGTA
+CD371,,,C-type lectin domain family 12 member A,CLEC12A,Q5QGZ9,AAGGTCCCAT,pna_rnd91,AAGGTCCCAT
+CD89,,,Immunoglobulin alpha Fc receptor,FcαRI;FCAR,P24071,GTATCATAAG,pna_rnd94,GTATCATAAG
+CD90,,,Thy-1 membrane glycoprotein,Thy-1,P04216,TAGCCGATTA,pna_rnd95,TAGCCGATTA
+CD70,,,CD70 antigen,CD27L,P32970,CTCAGCATGC,pna_rnd96,CTCAGCATGC
+GPR56,,,Adhesion G-protein coupled receptor G1,TM7XN1,Q9Y653,GCGTCTCTCT,pna_rnd97,GCGTCTCTCT
+HLA-DQ,,,"HLA class II histocompatibility antigen, DQ",,P01906;P05538;P01920;P01909,ATACTTGAGC,pna_rnd98,ATACTTGAGC
+TCRVd2,,,T cell receptor delta variable 2,,,CCGACCATTC,pna_rnd99,CCGACCATTC
+HLA-DR-DP-DQ,,,HLA class II histocompatibility antigen,,P01903;P20036;P01909,AACAGAGGAA,pna_rnd100,AACAGAGGAA
+Siglec-9,,,Sialic acid-binding Ig-like lectin 9,,Q9Y336,TTAACAAGCA,pna_rnd101,TTAACAAGCA
+TCRVa7.2,,,T cell receptor alpha variable 7,,A0A075B6U4,TCCCAGGTCC,pna_rnd102,TCCCAGGTCC
+Fas,,,Tumor necrosis factor receptor superfamily member 6,CD95,P25445,TACTGTTGGG,pna_rnd103,TACTGTTGGG
+TCRVg9,,,T cell receptor gamma variable 9,,,TCGTTTGTCA,pna_rnd104,TCGTTTGTCA
+CD127,,,Interleukin-7 receptor subunit alpha,IL-7Rα,P16871,TGTTAGAGGA,pna_rnd105,TGTTAGAGGA
+CD141,,,Thrombomodulin,TM,P07204,AATTGTTCGT,pna_rnd106,AATTGTTCGT
+CD31,,,Platelet endothelial cell adhesion molecule,PECAM-1,P16284,GGCAAAGAGC,pna_rnd107,GGCAAAGAGC
+CD6,,,T cell differentiation antigen CD6,,P30203,CTAAGATCTC,pna_rnd108,CTAAGATCTC
+CD57,,,Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 1,,Q9P2W7,ACGACGGGAC,pna_rnd111,ACGACGGGAC
+CD73,,,5’-nucleotidase,NT5E,P21589,ACCAAGGACG,pna_rnd113,ACCAAGGACG
+TIM-3,,,Hepatitis A virus cellular receptor 2,CD366;HAVCR2,Q8TDQ0,CGCCAAGTGG,pna_rnd114,CGCCAAGTGG
+GITR,,,Tumor necrosis factor receptor superfamily member 18,CD357,Q9Y5U5,TGAGTCACTC,pna_rnd115,TGAGTCACTC
+CCR3,,,C-C chemokine receptor type 3,CD193,P51677,CCGTGACCCA,pna_rnd116,CCGTGACCCA
+SLAMF7,,,SLAM family member 7,CD319;CRACC,Q9NQ25,AGGCGGAAAT,pna_rnd117,AGGCGGAAAT
+TIGIT,,,T cell immunoreceptor with Ig and ITIM domains,,Q495A1,ACTGAGTCGC,pna_rnd118,ACTGAGTCGC
+OX40,,,Tumor necrosis factor receptor superfamily member 4,CD134,P43489,CCACTTCCGT,pna_rnd119,CCACTTCCGT
+ICAM-2,,,Intercellular adhesion molecule 2,CD102,P13598,TATCTGGGAT,pna_rnd126,TATCTGGGAT
+CD123,,,Interleukin-3 receptor subunit alpha,IL-3Rα,P26951,TGACTGCTAC,pna_rnd127,TGACTGCTAC
+CD150,,,Signaling lymphocytic activation molecule,SLAMF1,Q13291,TCGAATGGAT,pna_rnd128,TCGAATGGAT
+CD40L,,,CD40 ligand,CD154,P29965,CTAGATTTGC,pna_rnd129,CTAGATTTGC
+KIR,,,Killer cell immunoglobulin-like receptor 2D (p50.3),CD158,Q8N743,TCCTCTCCTG,pna_rnd130,TCCTCTCCTG
+CD161,,,Killer cell lectin-like receptor subfamily B member 1,KLRB1,Q12918,ACTGAACTAC,pna_rnd131,ACTGAACTAC
+CD180,,,CD180 antigen,RP105,Q99467,TGAGCTCCAA,pna_rnd132,TGAGCTCCAA
+CCR1,,,C-C chemokine receptor type 1,CD191,P32246,CCGGTGGTTC,pna_rnd133,CCGGTGGTTC
+CCR2,,,C-C chemokine receptor type 2,CD192,P41597,GGTTCTCCAC,pna_rnd134,GGTTCTCCAC
+CD1d,,,Antigen-presenting glycoprotein CD1d,,P15813,CAACGTCCCA,pna_rnd135,CAACGTCCCA
+CD200,,,OX-2 membrane glycoprotein,,P41217,CGCACGGGTT,pna_rnd136,CGCACGGGTT
+Ly9,,,T-lymphocyte surface antigen Ly-9,CD229;SLAMF3,Q9HBG7,TCGACGAGTG,pna_rnd137,TCGACGAGTG
+CD24,,,Signal transducer CD24,HSA,P25063,TCTTGTTCCC,pna_rnd138,TCTTGTTCCC
+2B4,,,Natural killer cell receptor 2B4,CD244;SLAMF4,Q9BZW8,TCTCAATCAA,pna_rnd139,TCTCAATCAA
+BAFF-R,,,Tumor necrosis factor receptor superfamily member 13C (BAFFR),CD268,Q96RJ3,ACGTAACCGC,pna_rnd140,ACGTAACCGC
+ICOS,,,Inducible T cell co-stimulator,CD278,Q9Y6W8,TTTCGGACAG,pna_rnd141,TTTCGGACAG
+CD32,,,Low-affinity immunoglobulin gamma Fc region receptor II-b,FcγRII,P31994,GATTTCCAGC,pna_rnd142,GATTTCCAGC
+CD33,,,Myeloid cell surface antigen CD33,Siglec-3,P20138,GCGATATAGT,pna_rnd143,GCGATATAGT
+NKp30,,,Natural cytotoxicity triggering receptor 3 (NKp30),CD337,O14931,CTTATCTCTT,pna_rnd144,CTTATCTCTT
+CD38,,,ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1,,P28907,TCCGATCTGG,pna_rnd145,TCCGATCTGG
+CD39,,,Ectonucleoside triphosphate diphosphohydrolase 1,ENTPD1,P49961,TCAGCGCCTT,pna_rnd146,TCAGCGCCTT
+CD40,,,Tumor necrosis factor receptor superfamily member 5,,P25942,TCTGGCGTGG,pna_rnd147,TCTGGCGTGG
+CD48,,,CD48 antigen,SLAMF2;BLAST-1,P09326,AGTACGAAGA,pna_rnd148,AGTACGAAGA
+ICAM-3,,,Intercellular adhesion molecule 3,CD50,P32942,CTCCGCGTTG,pna_rnd149,CTCCGCGTTG
+CD55,,,Complement decay-accelerating factor (DAF),DAF,P08174,TTAGCTAAAC,pna_rnd150,TTAGCTAAAC
+CD58,,,Lymphocyte function-associated antigen 3 (LFA3),LFA-3,P19256,ATGTTATGTG,pna_rnd151,ATGTTATGTG
+CD62P,,,P-selectin,P-selectin,P16109,ACTTAGCGCT,pna_rnd152,ACTTAGCGCT
+CD69,,,Early activation antigen CD69,,Q07108,GAAGGGTCTC,pna_rnd153,GAAGGGTCTC
+CD72,,,B-cell differentiation antigen CD72,Lyb-2,P21854,GCGGTGACTT,pna_rnd154,GCGGTGACTT
+CD84,,,SLAM family member 5,SLAMF5,Q9UIB8,GCCATTGGAA,pna_rnd155,GCCATTGGAA
+CD9,,,CD9 antigen,Tetraspanin-29,P21926,GTCTGGTCAT,pna_rnd156,GTCTGGTCAT
+CD94,,,Natural killer cells antigen CD94,KLRD1,Q13241,CTACAACCTT,pna_rnd157,CTACAACCTT
+TCRVb5,,,T cell receptor beta variable 5,,,GGCCTCAAGT,pna_rnd158,GGCCTCAAGT
+CD3e,,,T cell surface glycoprotein CD3 epsilon chain,,P07766,TGTAGAATTC,pna_rnd159,TGTAGAATTC
+CD4,,,T cell surface glycoprotein CD4,,P01730,GACAACTTCT,pna_rnd160,GACAACTTCT
+CD11a,,,Integrin α-L (LFA-1 α),ITGAL;LFA-1 α,P20701,ACACACTTGA,pna_rnd161,ACACACTTGA
+CD43,,,Leukosialin,Leukosialin,P16150,GAGATTACTA,pna_rnd162,GAGATTACTA
+CD7,,,T cell antigen CD7,,P09564,CTGGGTCCGT,pna_rnd163,CTGGGTCCGT
+CD53,,,Leukocyte surface antigen CD53,Tetraspanin-25,P19397,CAACCCGCTT,pna_rnd164,CAACCCGCTT
+CD302,,,C-type lectin domain family 13 member A,CLEC13A,Q8IX05,TAGACATTGG,pna_rnd166,TAGACATTGG
+VISTA,,,V-type immunoglobulin domain-containing suppressor of T cell activation,VSIR,Q9H7M9,AATGTTAACG,pna_rnd167,AATGTTAACG
+BCMA,,,Tumor necrosis factor receptor superfamily member 17,CD269,Q02223,CTGGACTATG,pna_rnd168,CTGGACTATG
+CD138,,,Syndecan-1,Syndecan-1,P18827,CTGGGCTTAC,pna_rnd169,CTGGGCTTAC
+4-1BB,,,Tumor necrosis factor receptor superfamily member 9,CD137,Q07011,CCAGCTAGAA,pna_rnd170,CCAGCTAGAA
+CD66b,,,Cell adhesion molecule CEACAM8,CEACAM8,P31997,CTAGGCAGTT,pna_rnd172,CTAGGCAGTT
+CX3CR1,,,CX3C chemokine receptor 1,Fractalkine receptor,P49238,TACTCCCGCC,pna_rnd174,TACTCCCGCC
+EpCAM,,,Epithelial cell adhesion molecule,CD326,P16422,CGTTCTTACA,pna_rnd177,CGTTCTTACA
+DC-SIGN,,,CD209 antigen,CD209,Q9NNX6,TGGACGTGAA,pna_rnd178,TGGACGTGAA
+CD34,,,Hematopoietic progenitor cell antigen CD34,,P28906,CCGTCTAGCC,pna_rnd181,CCGTCTAGCC
+Dectin-1,,,C-type lectin domain family 7 member A,CD369;CLEC7A,Q9BXN2,CTGCCAAGAC,pna_rnd184,CTGCCAAGAC
+ICAM-1,,,Intercellular adhesion molecule 1,CD54,P05362,AGCAGCTGAT,pna_rnd185,AGCAGCTGAT
+CD71,,,Transferrin receptor protein 1,Transferrin receptor,P02786,TCAGGACAGA,pna_rnd186,TCAGGACAGA
+CD47,,,Leukocyte surface antigen CD47,Integrin associated protein,Q08722,AGCTACTATT,pna_rnd187,AGCTACTATT
+c-Kit,,,Mast/Stem cell growth factor receptor Kit,CD117,P10721,GCTATAATTG,pna_rnd188,GCTATAATTG
+NKG2D,,,NKG2-D type II integral membrane protein,CD314;KG2DN,P26718,TGGCGCACAC,pna_rnd189,TGGCGCACAC
