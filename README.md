@@ -1,7 +1,8 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 Test data to be used for automated testing with the nf-core pipelines
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+## Test data and references variantprioritization
+This branch contains test data and references for the [nf-core/variantprioritization](https://github.com/nf-core/variantprioritization) pipeline.
 
 ## Introduction
 
