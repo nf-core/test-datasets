@@ -126,6 +126,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'genome.fasta': MT192765.1 genome including (GCA_011545545.1_ASM1154554v1)
     - 'genome.fasta.gz': bgzipped version of 'genome.fasta'
     - 'genome.fasta.fai': fasta index for 'genome.fasta'
+    - 'genome.MN908947.3.fasta': The gold-standard MN908947.3 genome (Wuhan-Hu-1) of SARS-CoV-2
+    - 'genome.MN908947.3.fasta.fai': fasta index for 'genome.MN908947.3.fasta'
     - 'genome.fasta.txt.gz': gzipped version of 'genome.fasta' in tabular text format
     - 'genome.fasta.txt.zst': zstd-compressed version of 'genome.fasta' in tabular text format
     - 'genome.GRCh37.chr22.fasta.gz': bgzipped fasta of GRCh37 chr22 (GCA_000001405.1)
