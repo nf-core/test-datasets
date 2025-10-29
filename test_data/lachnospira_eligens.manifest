@@ -1,0 +1,11 @@
+STUDY	PRJEB41657
+SAMPLE	SAMEA7688044
+ASSEMBLYNAME	lachnospira_eligens
+ASSEMBLY_TYPE	Metagenome-Assembled Genome (MAG)
+COVERAGE	32.07
+PROGRAM	spades_v3.15.5
+PLATFORM	Ion Torrent PGM
+MOLECULETYPE	genomic DNA
+DESCRIPTION	This is a Third Party Annotation (TPA) bin derived from the primary whole genome shotgun (WGS) data set SRP436270. This sample represents a Metagenome-Assembled Genome (MAG) from the metagenomic run SRR24458089.
+RUN_REF	SRR24458089
+FASTA	
