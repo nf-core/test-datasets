@@ -6,7 +6,7 @@ This branch contains test data and references for the [nf-core/variantprioritiza
 
 ## Content of this repository
 
-`test_data/*`: This folder contains minial vcf files with their index and a cna file. 
+`test_data/*`: This folder contains minimal vcf files for chr22 with their index and a cna file. 
 
 `samplesheet/default.csv`: Experiment design file for minimal test dataset.
 
