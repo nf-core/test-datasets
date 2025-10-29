@@ -4,6 +4,12 @@ Test data to be used for automated testing with the nf-core pipelines
 ## Test data and references variantprioritization
 This branch contains test data and references for the [nf-core/variantprioritization](https://github.com/nf-core/variantprioritization) pipeline.
 
+## Content of this repository
+
+`test_data/*`: This folder contains minial vcf files with their index and a cna file. 
+
+`samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset.
+
 ## Introduction
 
 nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
