@@ -8,7 +8,7 @@ This branch contains test data and references for the [nf-core/variantprioritiza
 
 `test_data/*`: This folder contains minial vcf files with their index and a cna file. 
 
-`samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset.
+`samplesheet/default.csv`: Experiment design file for minimal test dataset.
 
 ## Introduction
 
