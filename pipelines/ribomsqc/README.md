@@ -14,5 +14,5 @@ Used by ribomsqc pipeline with `-profile test` for automated CI testing:
 nextflow run nf-core/ribomsqc -profile test,docker --outdir results
 
 ## Data Source
-BSA QC standard file from Proteomics Unit CRG for MS analysis validation.
+BSA QC standard file from internal dataset of Proteomics Unit CRG for MS analysis validation.
 File size optimized for CI testing (2.9MB - fast download/processing).
