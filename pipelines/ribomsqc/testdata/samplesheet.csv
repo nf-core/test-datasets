@@ -1,2 +1,2 @@
 id,raw_file
-BSA_QC_test,BSA_QC_test.raw
+BSA_QC_test,https://raw.githubusercontent.com/nf-core/test-datasets/ribomsqc/pipelines/ribomsqc/testdata/BSA_QC_test.raw
