@@ -30,6 +30,10 @@ Sample information sheet required to test the pipeline containing sample informa
 
 Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files. This sample sheet corresponds to Illumina amplicon data.
 
+#### `samplesheet_test_EV.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to subsampled Illumina metagenomics enterovirus data.
+
 ### `genome/`
 
 #### `kraken2/kraken2_hs22.tar.gz`
@@ -45,6 +49,39 @@ gunzip Homo_sapiens.GRCh38.dna.chromosome.22.fa.gz
 kraken2-build --db kraken2_hs22 --download-taxonomy
 kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromosome.22.fa
 kraken2-build --db kraken2_hs22 --build
+```
+
+#### `blastdb/ev_test_blastdb.tar.gz`
+
+Small custom blast database with containing 8 enterovirus genomes with taxid mapping required to test the pipeline. The steps used to generate the database are:
+
+Prepare a fasta file `genomes.fasta` with genomes from the accession numbers below.
+
+Prepare a file `taxid_map.txt` with one accession number and corresponding tab separated tax id per line:
+
+```
+U22521.1        39054
+AY421764.1      86107
+KC507895.1      31704
+AF162711.1      41846
+AF114383.1      12074
+AF538841.1      12080
+NC_038308.1     42789
+JX393302.1      2749421
+```
+
+Create custom blast database using `makeblastdb`
+
+```bash
+makeblastdb -in genomes.fasta -dbtype nucl -parse_seqids -out ev_test_blastdb -taxid_map taxid_map.txt
+```
+
+Manually download the files `taxdb.bt[id]` from NCBI, through [this link](https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz/) and add to the created blast database folder
+
+Compress using `tar`
+
+```bash
+tar -czvf ev_test_blastdb.tar.gz ev_test_blastdb/
 ```
 
 #### `NC_045512.2/`
@@ -78,6 +115,11 @@ kraken2-build --db kraken2_hs22 --build
 -   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.fna.gz)
 -   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.gff.gz)
 
+#### `NC_002058.3`
+
+-   `NC_002058.3.fasta`: Enterovirus C: Human Poliovirus 1 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.fna.gz)
+-   `NC_002058.3.fasta.gff`: Enterovirus C: Human Poliovirus 1 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.gff.gz)
+
 ### `fastq/illumina_sispa/`
 
 | file                    | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
@@ -104,6 +146,15 @@ kraken2-build --db kraken2_hs22 --build
 
 > All FastQ files were sub-sampled to 0.02% of the original reads.
 
+### `fastq/illumina_enterovirus/`
+
+| file                   | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
+| ---------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
+| SRR13266665_1.fastq.gz | 10,000   | 1,342,331 | 35      | 134.23  | 151     | 508K      | PE Illumina | Metagenomics  |
+| SRR13266665_2.fastq.gz | 10,000   | 1,321,544 | 35      | 132.15  | 151     | 508K      | PE Illumina | Metagenomics  |
+
+> All FastQ files were sub-sampled down to 10,000 reads.
+
 ## Sampling procedure
 
 Prepare a file `list.txt` with the following SRA accession numbers:
@@ -125,6 +176,14 @@ Sub-sampling fastq files with a ratio of 0.02 using `seqkit`
 
 ```bash
 parallel 'seqkit sample -p 0.02 -s 2020 {} | pigz > {.}.fastq.gz' ::: SRR*
+```
+
+For enterovirus:
+Sub-sampling fastq files to 10,000 reads using `seqtk`
+
+```bash
+seqtk sample -s100 SRR13266665_1.fastq 10000 > sub_SRR13266665_1.fastq
+seqtk sample -s100 SRR13266665_2.fastq 10000 > sub_SRR13266665_2.fastq
 ```
 
 The above tools are available on bioconda.
