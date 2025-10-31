@@ -1,0 +1,2 @@
+sample,seq_data,pbi,start_from
+sample1,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/alz.1perc.subreads.10000.bam,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/alz.1perc.subreads.10000.bam.pbi,ccs
