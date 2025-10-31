@@ -1,0 +1,5 @@
+sample,seq_data,pbi,start_from
+sample1,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/alz.1perc.subreads.10000.bam,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/alz.1perc.subreads.10000.bam.pbi,ccs
+sample2,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/homo_sapiens/pacbio/bam/alz.ccs.bam,none,lima
+sample3,assets/alz_lima.fl.NEB_5p--NEB_Clontech_3p.bam,none,refine
+sample4,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/long_reads.fa.gz,none,mapping

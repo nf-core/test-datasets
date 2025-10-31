@@ -1,0 +1,3 @@
+sample,seq_data,pbi,start_from
+sample3,assets/alz_lima.fl.NEB_5p--NEB_Clontech_3p.bam,none,refine
+sample4,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/long_reads.fa.gz,none,mapping
