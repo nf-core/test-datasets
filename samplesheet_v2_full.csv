@@ -1,0 +1,2 @@
+sample,seq_data,pbi,start_from
+30dpf_Muscle,s3://ngi-igenomes/test-data/isoseq/30dpf_Muscle.bam,s3://ngi-igenomes/test-data/isoseq/30dpf_Muscle.bam.pbi,ccs
