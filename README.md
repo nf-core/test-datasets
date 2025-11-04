@@ -119,6 +119,14 @@ This data set uses the NCBI reference sequence NC_001802 based on the HXB2 genom
 -   `NC_001802.1.fasta`: Human immunodeficiency virus 1 genome fasta file downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_001802.1/)
 -   `NC_001802.1.gff`: Human immunodeficiency virus 1 genome GFF3 annotation file downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_001802.1/)
 
+#### `codfreq`
+
+This reference was generated using the [HIV JSON profile](https://github.com/hivdb/codfreq/blob/main/profiles/HIV1.json) from codfreq software.
+
+- `codfreq.fasta`: Was generated from the `"refSequence"` key of the .json file.
+- `codonfreq.gff`: Was manually generated using the information from `"fragmentName"` and `"refRanges"` from `"fragmentConfig"`.
+
+This is the default reference used in the nf-core/viralrecon HIV resistance detection protocol for the resulting codon frequencies and codon coverages to be directly comparable to those produced by [**HIVdb**](https://hivdb.stanford.edu/hivdb/by-reads/), ensuring accurate interpretation of resistance data.
 
 ### `illumina/sispa/`
 
