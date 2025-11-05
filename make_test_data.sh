@@ -90,10 +90,18 @@ EOF
 seqtk subseq data/GRCh38_no_alt_analysis_set.fasta tmp/chromosomes_with_sequence.bed | seqtk seq -c -M tmp/test_somalier_small.bed | sed '/^>/ s/:.*//' | cat - tmp/extra_chr.fa | pigz -p 36 > tmp/hg38.test.fa.gz
 
 # Subsample to reduce size
-samtools view -@ 36 -s 0.8 -M -L tmp/test_somalier_small.bed data/HG002_haplotagged.bam -h -O BAM | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg002_somalier_small_revio.bam
-samtools view -@ 36 -s 0.8 -M -L tmp/test_somalier_small.bed data/HG003_haplotagged.bam -h -O BAM | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg003_somalier_small_revio.bam
-samtools view -@ 36 -s 0.6 -M -L tmp/test_somalier_small.bed data/HG004_haplotagged.bam -h -O BAM | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg004_somalier_small_revio.bam
-samtools view -@ 36 -s 0.5 -M -L tmp/test_somalier_small.bed data/hg002.haplotagged.bam -h -O BAM | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg002_somalier_small_ont.bam
+samtools view -@ 36 -s 0.8 -M -L tmp/test_somalier_small.bed data/HG002_haplotagged.bam -h -O BAM -u -x HP,PS \
+  | samtools ampliconclip -b clipping.bed --both-ends --tolerance 1 -u \
+  | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg002_somalier_small_revio.bam
+samtools view -@ 36 -s 0.8 -M -L tmp/test_somalier_small.bed data/HG003_haplotagged.bam -h -O BAM -u -x HP,PS \
+  | samtools ampliconclip -b clipping.bed --both-ends --tolerance 1 -u \
+  | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg003_somalier_small_revio.bam
+samtools view -@ 36 -s 0.6 -M -L tmp/test_somalier_small.bed data/HG004_haplotagged.bam -h -O BAM -u -x HP,PS \
+  | samtools ampliconclip -b clipping.bed --both-ends --tolerance 1 -u \
+  | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg004_somalier_small_revio.bam
+samtools view -@ 36 -s 0.5 -M -L tmp/test_somalier_small.bed data/hg002.haplotagged.bam -h -O BAM -u -x HP,PS \
+  | samtools ampliconclip -b clipping.bed --both-ends --tolerance 1 -u \
+  | samtools calmd -b - data/GRCh38_no_alt_analysis_set.fasta > tmp/hg002_somalier_small_ont.bam
 
 # Make fastq
 samtools fastq -T \* -@ 36 tmp/hg002_somalier_small_revio.bam | pigz -p 36 > tmp/hg002_somalier_small_revio.fastq.gz
