@@ -122,7 +122,7 @@ This data set uses the NCBI reference sequence NC_001802 based on the HXB2 genom
 
 #### `codfreq`
 
-This reference was generated using the [HIV JSON profile](https://github.com/hivdb/codfreq/blob/main/profiles/HIV1.json) from codfreq software.
+This reference was generated using the [HIV JSON profile](https://github.com/hivdb/codfreq/blob/main/profiles/HIV1.json) from [codfreq](https://github.com/hivdb/codfreq) software.
 
 - `codfreq.fasta`: Was generated from the `"refSequence"` key of the .json file.
 - `codonfreq.gff`: Was manually generated using the information from `"fragmentName"` and `"refRanges"` from `"fragmentConfig"`.
