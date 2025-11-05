@@ -6,51 +6,52 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### `samplesheet/`
 
+This directory contains the sample sheets used to test different test configurations of the `nf-core/viralrecon` pipeline.
+
 #### `samplesheet_test_nanopore.csv`
 
-Sample information sheet required to test the pipeline containing sample names and barcodes for MinION data hosted in this repository. For testing purposes, some barcodes have been appended to this samplesheet that may not necessarily have associated data. The raw data associated with this run can be found in [`nanopore/minion`](nanopore/minion), and has been sub-setted to include a maximum of 3 `fast5`/`fastq`files per barcode.
+Sample sheet for Nanopore test data.  
+Includes SARS-CoV-2 sample names and MinION barcodes hosted in this repository.  
+For testing purposes, some barcodes are included without associated data.  
+Raw data can be found in [`nanopore/minion`](nanopore/minion) and have been subsetted to include a maximum of three `fast5` or `fastq` files per barcode.
 
 #### `samplesheet_test_sra.csv`
 
-Sample information sheet required to test the pipeline containing sample information of one link to a original full FastQ files and two files that must be downloaded from SRA one single-end and one paired-end, respectively.
-
-This sample sheet corresponds to SARS-CoV-2 Illumina SISPA data.
+Sample sheet for SISPA-based Illumina data.  
+Contains SARS-CoV-2 SISPA probe enriched sample information, including one link to original full FastQ files and two datasets to be downloaded from SRA (one single-end and one paired-end).  
+Used to test SRA-based inputs and mixed dataset handling.
 
 #### `samplesheet_test_illumina_sispa.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
-
-This sample sheet corresponds to SARS-CoV-2 Illumina SISPA data.
+Sample sheet for small-scale SISPA test data.  
+Contains SARS-CoV-2 SISPA probe enriched sample information and links to corresponding FastQ files.  
 
 #### `samplesheet_test_illumina_amplicon.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
-
-This sample sheet corresponds to SARS-CoV-2 Illumina amplicon primer enrichment data.
+Sample sheet for small-scale amplicon test data.  
+Includes SARS-CoV-2 amplicon primer enriched sample sample information and links to FastQ files hosted in this repository.  
 
 #### `samplesheet_full_illumina_sispa.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files.
-
-This sample sheet corresponds to SARS-CoV-2 Illumina SISPA data.
+Sample sheet for full-scale SISPA test data.  
+Contains SARS-CoV-2 SISPA probe enriched sample information and links to corresponding FastQ files.  
 
 #### `samplesheet_full_illumina_amplicon.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to original full FastQ files.
-
-This sample sheet corresponds to SARS-CoV-2 Illumina amplicon primer enrichment data.
+Sample sheet for full-scale amplicon test data.  
+Includes SARS-CoV-2 amplicon primer enriched sample sample information and links to FastQ files hosted in this repository.  
 
 #### `samplesheet_full_illumina_fragmented.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
-
-This sample sheet corresponds to Crimea Congo data.
+Sample sheet for fragmented genome tests.  
+Contains Crimean-Congo hemorrhagic fever virus sample information and links to FastQ files stored in this repository.  
+Used to assess pipeline performance on non-contiguous viral genomes.
 
 #### `v3.0/samplesheet_test_hiv.csv`
 
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository.
-
-This sample sheet corresponds to HIV Illumina amplicon primer enrichment data from different SRA experiments. For test purposes these will be trated as non amplicon data.
+Sample sheet for HIV  test data.  
+Contains HIV Illumina amplicon primer enriched sample information and links to FastQ files stored in this repository.  
+Data originate from multiple SRA experiments and are treated as non-amplicon data for testing purposes.
 
 ### `genome/`
 
