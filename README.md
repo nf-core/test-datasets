@@ -113,7 +113,7 @@ Crimea Congo is a fragmented genome with three fragments. S, M and L based on th
 This reference was chosen based on [Nextclade's](https://clades.nextstrain.org/dataset) HIV reference which states:
 
 ```
-This data set uses the NCBI reference sequence NC_001802 based on the HXB2 genome K03455. The primary reason for choosing it is to ensure amino acid substitutions in conserved proteins such as Pol are numbered consistently. Note that this sequence as a few problems, including a premature stop-codon in nef.
+This data set uses the NCBI reference sequence NC_001802 based on the HXB2 genome K03455. The primary reason for choosing it is to ensure amino acid substitutions in conserved proteins such as Pol are numbered consistently. Note that this sequence has a few problems, including a premature stop-codon in nef.
 ```
 
 -   `NC_001802.1.fasta`: Human immunodeficiency virus 1 genome fasta file downloaded from [NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_001802.1/)
