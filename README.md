@@ -156,7 +156,7 @@ This is the default reference used in the nf-core/viralrecon HIV resistance dete
 
 ### `illumina/hiv/`
 
-This dasatet was chosen because it is the example data for [HIVdb Drug Resistance Database](https://hivdb.stanford.edu/hivdb/by-reads/):
+This dataset was chosen because it is the example data for [HIVdb Drug Resistance Database](https://hivdb.stanford.edu/hivdb/by-reads/):
 
 - DRR030302: Amplicon Whole Genome sequencing
 - SRR4071760: Amplification of protease-RT genes
