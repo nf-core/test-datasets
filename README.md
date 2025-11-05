@@ -160,7 +160,7 @@ This dataset was chosen because it is the example data for [HIVdb Drug Resistanc
 
 - DRR030302: Amplicon Whole Genome sequencing
 - SRR4071760: Amplification of protease-RT genes
-- SRR6937100: Amplification integrase gene
+- SRR6937100: Amplification of integrase genes
 
 | file                  | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
 | --------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
