@@ -53,7 +53,7 @@ kraken2-build --db kraken2_hs22 --build
 
 #### `blastdb/ev_test_blastdb.tar.gz`
 
-Small custom blast database with containing 8 enterovirus genomes with taxid mapping required to test the pipeline. The steps used to generate the database are:
+Small custom blast database containing 8 enterovirus genomes with taxid mapping required to test the pipeline. The steps used to generate the database are:
 
 Prepare a fasta file `genomes.fasta` with genomes from the accession numbers below.
 
@@ -73,15 +73,15 @@ JX393302.1      2749421
 Create custom blast database using `makeblastdb`
 
 ```bash
-makeblastdb -in genomes.fasta -dbtype nucl -parse_seqids -out ev_test_blastdb -taxid_map taxid_map.txt
+makeblastdb -in genomes.fasta -dbtype nucl -parse_seqids -out minimal_ev_database -taxid_map taxid_map.txt
 ```
 
-Manually download the files `taxdb.bt[id]` from NCBI, through [this link](https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz/) and add to the created blast database folder
+Manually download the files `taxdb.bt[id]` and `taxonomy4blast.sqlite3` from NCBI, through [this link](https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz/) and add to the created blast database folder
 
 Compress using `tar`
 
 ```bash
-tar -czvf ev_test_blastdb.tar.gz ev_test_blastdb/
+tar -czvf minimal_ev_db.tar.gz minimal_ev_database/
 ```
 
 #### `NC_045512.2/`
@@ -178,8 +178,7 @@ Sub-sampling fastq files with a ratio of 0.02 using `seqkit`
 parallel 'seqkit sample -p 0.02 -s 2020 {} | pigz > {.}.fastq.gz' ::: SRR*
 ```
 
-For enterovirus:
-Sub-sampling fastq files to 10,000 reads using `seqtk`
+For enterovirus: sub-sampling fastq files to 10,000 reads using `seqtk`
 
 ```bash
 seqtk sample -s100 SRR13266665_1.fastq 10000 > sub_SRR13266665_1.fastq
