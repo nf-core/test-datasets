@@ -144,8 +144,8 @@ List of taxids used for testing filtering of blast database using `-taxidlist` o
 
 #### `NC_002058.3`
 
--   `NC_002058.3.fasta`: Enterovirus C: Human Poliovirus 1 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.fna.gz)
--   `NC_002058.3.fasta.gff`: Enterovirus C: Human Poliovirus 1 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.gff.gz)
+-   `GCF_000861165.1_ViralProj15288_genomic.fna.gz`: Enterovirus C: Human Poliovirus 1 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.fna.gz)
+-   `GCF_000861165.1_ViralProj15288_genomic.gff.gz`: Enterovirus C: Human Poliovirus 1 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.gff.gz)
 
 #### `crimea_congo`
 
