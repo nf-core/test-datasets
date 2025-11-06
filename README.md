@@ -53,7 +53,7 @@ Sample sheet for HIV  test data.
 Contains HIV Illumina amplicon primer enriched sample information and links to FastQ files stored in this repository.  
 Data originate from multiple SRA experiments and are treated as non-amplicon data for testing purposes.
 
-#### `samplesheet_test_EV.csv`
+#### `v3.0/samplesheet_test_EV.csv`
 
 Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to subsampled Illumina metagenomics enterovirus data.
 
@@ -223,7 +223,7 @@ This dataset was chosen because it is the example data for [HIVdb Drug Resistanc
 
 TBD
 
-### `fastq/illumina_enterovirus/`
+### `illumina/enterovirus/`
 
 | file                   | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
 | ---------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
