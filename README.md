@@ -74,7 +74,7 @@ kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromos
 kraken2-build --db kraken2_hs22 --build
 ```
 
-#### `blastdb/ev_test_blastdb.tar.gz`
+#### `blastdb/minimal_ev_db.tar.gz`
 
 Small custom blast database containing 8 enterovirus genomes with taxid mapping required to test the pipeline. The steps used to generate the database are:
 
@@ -106,6 +106,10 @@ Compress using `tar`
 ```bash
 tar -czvf minimal_ev_db.tar.gz minimal_ev_database/
 ```
+
+#### `blastdb/ev_taxidlist.txt`
+
+List of taxids used for testing filtering of blast database using `-taxidlist` option in `blastn`.
 
 #### `NC_045512.2/`
 
@@ -274,7 +278,7 @@ seqtk sample -s100 <reads> <proportion>
 The data was sub-sampled to 10,000 reads using `seqtk`
 
 ```bash
-seqtk sample -s100 <read1> 10000 > <output>
+seqtk sample -s100 <reads> 10000 > <output>
 ```
 
 ## Expected output
