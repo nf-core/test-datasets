@@ -143,12 +143,6 @@ tar -czvf minimal_ev_db.tar.gz minimal_ev_database/
 -   `NC_002058.3.fasta`: Enterovirus C: Human Poliovirus 1 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.fna.gz)
 -   `NC_002058.3.fasta.gff`: Enterovirus C: Human Poliovirus 1 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.gff.gz)
 
-#### `NC_002058.3`
-
--   `NC_002058.3.fasta`: Enterovirus C: Human Poliovirus 1 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.fna.gz)
--   `NC_002058.3.fasta.gff`: Enterovirus C: Human Poliovirus 1 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.gff.gz)
-
-
 #### `crimea_congo`
 
 Crimea Congo is a fragmented genome with three fragments. S, M and L based on the fragment size.
@@ -259,15 +253,7 @@ Sub-sampling fastq files with a ratio of 0.02 using `seqkit`
 parallel 'seqkit sample -p 0.02 -s 2020 {} | pigz > {.}.fastq.gz' ::: SRR*
 ```
 
-For enterovirus: sub-sampling fastq files to 10,000 reads using `seqtk`
-
-```bash
-seqtk sample -s100 SRR13266665_1.fastq 10000 > sub_SRR13266665_1.fastq
-seqtk sample -s100 SRR13266665_2.fastq 10000 > sub_SRR13266665_2.fastq
-```
-
 The above tools are available on bioconda.
-
 
 ### HIV
 
@@ -281,6 +267,14 @@ We used the following commands:
 
 ```bash
 seqtk sample -s100 <reads> <proportion>
+```
+
+### Enterovirus
+
+The data was sub-sampled to 10,000 reads using `seqtk`
+
+```bash
+seqtk sample -s100 <read1> 10000 > <output>
 ```
 
 ## Expected output
