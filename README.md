@@ -622,6 +622,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - alz.ccs.fastq: CCS reads generated using pbccs on alz.bam in fastq format
       - alz.ccs.fastq.gz: CCS reads generated using pbccs on alz.bam in gziped fastq format
       - test_hifi.fastq.gz: Reads mapping to a randomly selected contig from the whole genome assembly by [Cheng et al., 2021](https://www.nature.com/articles/s41592-020-01056-5) of the child of the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). The reads were taken from [SRR10382244](https://www.ncbi.nlm.nih.gov/sra/?term=SRR10382244).
+    - tsv:
+      - methbat_background_profile_small.tsv: background profile for methbat, with two regions and three labels based on reads in 'NA037562_downsampled.pbmm2.repeats.phased.bam'.
     - txt:
       - filelist.txt: A TAMA merge filelist file. It's a 4 columns (bed file, cap status, merging order, id) file listing bed files to merge. The file listed are alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.bed alz.ccs.fl.NEB_5p--NEB_Clontech_3p.flnc.clustered.singletons.merged.aligned_tc.2.bed.
     - vcf:
