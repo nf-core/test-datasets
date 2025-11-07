@@ -53,6 +53,10 @@ Sample sheet for HIV  test data.
 Contains HIV Illumina amplicon primer enriched sample information and links to FastQ files stored in this repository.  
 Data originate from multiple SRA experiments and are treated as non-amplicon data for testing purposes.
 
+#### `v3.0/samplesheet_test_EV.csv`
+
+Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to subsampled Illumina metagenomics enterovirus data.
+
 ### `genome/`
 
 #### `kraken2/kraken2_hs22.tar.gz`
@@ -69,6 +73,43 @@ kraken2-build --db kraken2_hs22 --download-taxonomy
 kraken2-build --db kraken2_hs22 --add-to-library Homo_sapiens.GRCh38.dna.chromosome.22.fa
 kraken2-build --db kraken2_hs22 --build
 ```
+
+#### `blastdb/minimal_ev_db.tar.gz`
+
+Small custom blast database containing 8 enterovirus genomes with taxid mapping required to test the pipeline. The steps used to generate the database are:
+
+Prepare a fasta file `genomes.fasta` with genomes from the accession numbers below.
+
+Prepare a file `taxid_map.txt` with one accession number and corresponding tab separated tax id per line:
+
+```
+U22521.1        39054
+AY421764.1      86107
+KC507895.1      31704
+AF162711.1      41846
+AF114383.1      12074
+AF538841.1      12080
+NC_038308.1     42789
+JX393302.1      2749421
+```
+
+Create custom blast database using `makeblastdb`
+
+```bash
+makeblastdb -in genomes.fasta -dbtype nucl -parse_seqids -out minimal_ev_database -taxid_map taxid_map.txt
+```
+
+Manually download the files `taxdb.bt[id]` and `taxonomy4blast.sqlite3` from NCBI, through [this link](https://ftp.ncbi.nlm.nih.gov/blast/db/taxdb.tar.gz/) and add to the created blast database folder
+
+Compress using `tar`
+
+```bash
+tar -czvf minimal_ev_db.tar.gz minimal_ev_database/
+```
+
+#### `blastdb/ev_taxidlist.txt`
+
+List of taxids used for testing filtering of blast database using `-taxidlist` option in `blastn`.
 
 #### `NC_045512.2/`
 
@@ -101,6 +142,10 @@ kraken2-build --db kraken2_hs22 --build
 -   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.fna.gz`: Monkeypox genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.fna.gz)
 -   `GCA_014621585.1_ASM1462158v1_genomic.<DOWNLOAD_DATE>.gff.gz`: Monkeypox genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/621/585/GCA_014621585.1_ASM1462158v1/GCA_014621585.1_ASM1462158v1_genomic.gff.gz)
 
+#### `NC_002058.3`
+
+-   `GCF_000861165.1_ViralProj15288_genomic.fna.gz`: Enterovirus C: Human Poliovirus 1 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.fna.gz)
+-   `GCF_000861165.1_ViralProj15288_genomic.gff.gz`: Enterovirus C: Human Poliovirus 1 genome GFF3 annotation file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/861/165/GCF_000861165.1_ViralProj15288/GCF_000861165.1_ViralProj15288_genomic.gff.gz)
 
 #### `crimea_congo`
 
@@ -178,6 +223,15 @@ This dataset was chosen because it is the example data for [HIVdb Drug Resistanc
 
 TBD
 
+### `illumina/enterovirus/`
+
+| file                   | num_seqs | sum_len   | min_len | avg_len | max_len | file_size | Sequencer   | LibrarySource |
+| ---------------------- | -------- | --------- | ------- | ------- | ------- | --------- | ----------- | ------------- |
+| SRR13266665_1.fastq.gz | 10,000   | 1,342,331 | 35      | 134.23  | 151     | 508K      | PE Illumina | Metagenomics  |
+| SRR13266665_2.fastq.gz | 10,000   | 1,321,544 | 35      | 132.15  | 151     | 508K      | PE Illumina | Metagenomics  |
+
+> All FastQ files were sub-sampled down to 10,000 reads.
+
 ## Sampling procedure
 
 ### SARS-CoV-2
@@ -205,7 +259,6 @@ parallel 'seqkit sample -p 0.02 -s 2020 {} | pigz > {.}.fastq.gz' ::: SRR*
 
 The above tools are available on bioconda.
 
-
 ### HIV
 
 The data was downsampled after Human Genome reads removal using different proportions:
@@ -218,6 +271,14 @@ We used the following commands:
 
 ```bash
 seqtk sample -s100 <reads> <proportion>
+```
+
+### Enterovirus
+
+The data was sub-sampled to 10,000 reads using `seqtk`
+
+```bash
+seqtk sample -s100 <reads> 10000 > <output>
 ```
 
 ## Expected output

@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2
+SRR13266665,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/enterovirus/SRR13266665_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/enterovirus/SRR13266665_2.fastq.gz
