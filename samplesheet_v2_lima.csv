@@ -1,0 +1,2 @@
+sample,seq_data,pbi,start_from
+sample2,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/homo_sapiens/pacbio/bam/alz.ccs.bam,none,lima

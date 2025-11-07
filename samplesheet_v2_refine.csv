@@ -1,0 +1,2 @@
+sample,seq_data,pbi,start_from
+sample3,https://raw.githubusercontent.com/nf-core/test-datasets/isoseq/testdata/alz_lima.fl.NEB_5p--NEB_Clontech_3p.bam,none,refine
