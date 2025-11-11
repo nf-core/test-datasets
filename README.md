@@ -174,7 +174,7 @@ This reference was generated using the [HIV JSON profile](https://github.com/hiv
 
 This is the default reference used in the nf-core/viralrecon HIV resistance detection protocol for the resulting codon frequencies and codon coverages to be directly comparable to those produced by [**HIVdb**](https://hivdb.stanford.edu/hivdb/by-reads/), ensuring accurate interpretation of resistance data.
 
-#### `pangolin_db.tar.gz`
+#### `pangolin_db_v1.36.tar.gz`
 
 Pangolin database downloaded with Pangolin version v4.3.1 with pangolin-data v1.36. Used for pipeline testing consistency.
 
