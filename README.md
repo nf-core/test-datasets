@@ -221,10 +221,10 @@ mkdir gtdb-genomes
 ## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder gtdb-genomes.
 
 ## Rename the file for Penicillium roqueforti to match the seqid2taxid.map file
-mv GCF_015533775.1_ASM1553377v1_genomic.fna.gz NW_024067565.1.fna.gz 
+mv GCF_015533775.1_ASM1553377v1_genomic.fna.gz NW_024067565.1.fna.gz
 
 kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-n10-l150 -I gtdb-genomes
-kmcp index -f 0.3 -n 1 -j 32 -I tmp-k21-n10-l150 -O gtdb.kmcp 
+kmcp index -f 0.3 -n 1 -j 32 -I tmp-k21-n10-l150 -O gtdb.kmcp
 ```
 
 
@@ -688,6 +688,12 @@ KAIJU
 ```bash
 rm meslier2022/kaiju/*.{bwt,sa}
 ```
+
+## Test data for generating input for [gms/metaval](https://github.com/genomic-medicine-sweden/metaval)
+- `samplesheet_metaval.csv`
+- `database_metaval.csv`
+
+The `gms/metaval` workflow only verifies the classification results produced by the three classifiers: `Kraken2`, `Centrifuge`, and `DIAMOND`. Each classifier can only be executed with a single database and the raw read files must be provided as `*.fasta.gz` files.
 
 ## Support
 
