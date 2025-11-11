@@ -1,0 +1,20 @@
+tool,db_name,db_params,db_type,db_path
+bracken,bracken-db,;-r 150,short,s3://nf-core-awsmegatests/taxprofiler/input/bracken.tar.gz
+centrifuge,centrifuge-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/centrifuge.tar.gz
+diamond,diamond-db1,,short,s3://nf-core-awsmegatests/taxprofiler/input/diamond.dmnd
+diamond,diamond-db2,--long-reads,long,s3://nf-core-awsmegatests/taxprofiler/input/diamond.dmnd
+diamond,diamond-db3,,short;long,s3://nf-core-awsmegatests/taxprofiler/input/diamond.dmnd
+kaiju,kaiju-db1,,short,s3://nf-core-awsmegatests/taxprofiler/input/kaiju.tar.gz
+kaiju,kaiju-db2,-m 50,long,s3://nf-core-awsmegatests/taxprofiler/input/kaiju.tar.gz
+kaiju,kaiju-db3,,short;long,s3://nf-core-awsmegatests/taxprofiler/input/kaiju.tar.gz
+kraken2,kraken2-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/kraken2.tar.gz
+krakenuniq,krakenuniq-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/krakenuniq.tar.gz
+malt,malt-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/malt.tar.gz
+metaphlan,metaphlan3-db,--mpa3,short,s3://nf-core-awsmegatests/taxprofiler/input/metaphlan3.tar.gz
+motus,motus-db1,,short,s3://nf-core-awsmegatests/taxprofiler/input/db_mOTU.tar.gz
+motus,motus-db2,,long,s3://nf-core-awsmegatests/taxprofiler/input/db_mOTU.tar.gz
+motus,motus-db3,,short;long,s3://nf-core-awsmegatests/taxprofiler/input/db_mOTU.tar.gz
+ganon,ganon-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/ganon.tar.gz
+kmcp,kmcp_db,,short,s3://nf-core-awsmegatests/taxprofiler/input/kmcp.tar.gz
+sylph,sylph_db,,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sylph/database.syldb
+melon,melon_db,,long,s3://nf-core-awsmegatests/taxprofiler/input/melon.tar.gz
