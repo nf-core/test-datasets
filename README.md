@@ -892,7 +892,9 @@ We also hold 'broken' samplesheets for testing input schema validation.
 - `samplesheet_metaval.csv`
 - `database_metaval.csv`
 
-The `gms/metaval` workflow only verifies the classification results produced by the three classifiers: `Kraken2`, `Centrifuge`, and `DIAMOND`. Each classifier can only be executed with a single database and the raw read files must be provided as `*.fastq.gz` files.
+The `gms/metaval` workflow only verifies the classification results produced by the three classifiers: `Kraken2`, `Centrifuge`, and `DIAMOND`.
+Each classifier must only be executed with a single database and the raw read files must be provided as `*.fastq.gz` files.
+This test requires two files: 
 
 ## Support
 
