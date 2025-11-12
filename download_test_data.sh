@@ -23,5 +23,10 @@ aws s3 cp s3://ont-open-data/giab_2023.05/analysis/variant_calling/hg002_sup_60x
 # data/HG004_aligned_haplotagged.bam.bai
 
 # Download VEP cache
-
 wget https://ftp.ensembl.org/pub/release-110/variation/indexed_vep_cache/homo_sapiens_vep_110_GRCh38.tar.gz -O data/homo_sapiens_vep_110_GRCh38.tar.gz
+
+# Download gnomad
+wget https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/genomes/gnomad.genomes.v4.1.sites.chr16.vcf.bgz -O data/gnomad.genomes.v4.1.sites.chr16.vcf.bgz
+wget https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/genomes/gnomad.genomes.v4.1.sites.chr16.vcf.bgz -O data/gnomad.genomes.v4.1.sites.chr16.vcf.bgz.tbi
+wget https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/genomes/gnomad.genomes.v4.1.sites.chrX.vcf.bgz -O data/gnomad.genomes.v4.1.sites.chrX.vcf.bgz
+wget https://storage.googleapis.com/gcp-public-data--gnomad/release/4.1/vcf/genomes/gnomad.genomes.v4.1.sites.chrX.vcf.bgz -O data/gnomad.genomes.v4.1.sites.chrX.vcf.bgz.tbi
