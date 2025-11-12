@@ -1,0 +1,4 @@
+- counts: https://raw.githubusercontent.com/nf-core/test-datasets/differentialabundance/modules_testdata/SRP254919.salmon.merged.gene_counts.top1000cov.assay.tsv
+  design: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/input_datasets/rnaseq_big.design.csv
+  platform: rnaseq
+  normalised: false
