@@ -1,0 +1,4 @@
+tool,db_name,db_params,db_type,db_path
+kraken2,db1,--quick,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/kraken2/testdb-kraken2.tar.gz
+centrifuge,db2,,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/centrifuge/test-db-centrifuge.tar.gz
+diamond,db3,,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/diamond/testdb-diamond.dmnd

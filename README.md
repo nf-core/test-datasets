@@ -243,15 +243,15 @@ This generates a database file `database.syldb`. If you want to use a custom dat
 Create minimal dataset of Bacteroides fragilis as test database for melon to run nf-test.
 
 1. Get all the accessions from the melon DB for Bacteroides fragilis
-	- `tail -n +2 metadata.tsv | cut -f1 > accessions.txt` 
-	- Adjust metadata.tsv `head -n1 metadata.tsv > fragmini/metadata.tsv && grep -f frag_mini.txt metadata.tsv >> fragmini/metadata.tsv` 
+	- `tail -n +2 metadata.tsv | cut -f1 > accessions.txt`
+	- Adjust metadata.tsv `head -n1 metadata.tsv > fragmini/metadata.tsv && grep -f frag_mini.txt metadata.tsv >> fragmini/metadata.tsv`
 2. Fetch all sequences from the database .fa files
 	- `seqkit grep -r -f fragilis_ids.txt database/nucl.bacteria.*.fa -o database/combined_fragilis.fa`
-	
+
 	```bash
 	for f in nucl.*.fa; do echo "Processing $f..."; seqkit grep -r -f ../fragilis_db/fragilis_ids.txt "$f" -o "fragdb/$f"; done
 	```
-	
+
 3. From those extracted .fa files extract the annotation string
 	- `grep -o ":[+-] .*" combined_fragilis.fa | cut -d' ' -f2- > fragilis_annotations.txt`
 4. Fetch those sequences from the protein .fa file for the diamond index
@@ -259,7 +259,7 @@ Create minimal dataset of Bacteroides fragilis as test database for melon to run
 5. Create the test_db
 
 ```bash
-diamond makedb --in fragilis_db/fragilis_prot.fa --db fragilis_db/fragilis_prot --quiet 
+diamond makedb --in fragilis_db/fragilis_prot.fa --db fragilis_db/fragilis_prot --quiet
 ls minimi/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
 	filename=${1%.fa*};
 	filename=${filename##*/};
@@ -267,7 +267,7 @@ ls minimi/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
 	echo "Indexed <minimi/$filename.fa>.";' - {}
 ```
 
-Note: Each gene is in a seperate fa file. Check if all are needed and fetch for each gene the one for Bacteroides fragilis 
+Note: Each gene is in a seperate fa file. Check if all are needed and fetch for each gene the one for Bacteroides fragilis
 
 #### metacache
 
@@ -281,7 +281,7 @@ This downloads the taxonomy and puts it in a folder called `ncbi_taxonomy`.
 ```bash
 mkdir metacache
 
-## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder metacache. 
+## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder metacache.
 
 metacache build test-db-metacache metacache/ -taxonomy ncbi_taxonomy
 ```
@@ -886,6 +886,16 @@ We also hold 'broken' samplesheets for testing input schema validation.
 - `broken_samplesheets/test_samplesheet_missing_sample.csv`: missing `sample` entry in the samplesheet
 - `broken_samplesheets/test_samplesheet_missing_run_accession.csv`: missing `run_accession.csv` entry in the samplesheet
 - `broken_samplesheets/test_samplesheet_missing_instrument_platform.csv`: missing `instrument_platform` column in the samplesheet
+
+## Test data for generating input for [gms/metaval](https://github.com/genomic-medicine-sweden/metaval)
+
+The `gms/metaval` workflow only verifies the classification results produced by the three classifiers: `Kraken2`, `Centrifuge`, and `DIAMOND`.
+
+Each classifier must only be executed with a single database and the raw read files must be provided as `*.fastq.gz` files.
+
+This test requires two files: 
+- `samplesheet_metaval.csv`
+- `database_metaval.csv`
 
 ## Support
 
