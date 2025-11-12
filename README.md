@@ -77,7 +77,7 @@ mkdir -p hum_data/reference_genome/
 wget -c -O- https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz | gunzip | bgzip  > hum_data/reference_genome/GRCh38.fa.bgz
 
 # Download the reference genome map
-wget https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O hum_data/reference_genome/GRCh38.map.zip
+wget --no-check-certificate https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O hum_data/reference_genome/GRCh38.map.zip
 ```
 
 The affimetrix SNP array is also to be downloaded with
