@@ -1,8 +1,8 @@
-# 🧬 Rare Disease Test Datasets
+# Long Read Rare Disease Test Datasets
 
-This repository provides subsampled long-read sequencing datasets\*\* derived from HG002, designed for testing and validation of long-read rare disease analysis pipelines [nf-core/longraredisease](https://github.com/nf-core/longraredisease).
+This repository provides subsampled long-read sequencing datasets derived from HG002, designed for testing and validation of long-read rare disease analysis pipelines [nf-core/longraredisease](https://github.com/nf-core/longraredisease).
 
-All datasets are restricted to **chromosome 22 (first 50 Mb)** to minimise file sizes and speed up automated test runs.
+All datasets are restricted to **chromosome 22** to minimise file sizes and speed up automated test runs.
 
 ---
 
@@ -35,7 +35,7 @@ Example entry:
 
 ```
 sample_id,input_type,file_path,hpo_terms,sex,family_id,maternal_id,paternal_id
-test,fastq,https://raw.githubusercontent.com/nourmahfel/test-datasets/longraredisease/fastq_file/hg002_subset.fastq.gz,HP:0002721;HP:0002110;HP:0500093;HP:0000717;HP:0001263;HP:0001763;HP:0003298;HP:0002857;HP:0001382,F,family_21,null,null
+test,fastq,https://raw.githubusercontent.com/nourmahfel/test-datasets/longraredisease/fastq_file/hg002_subset.fastq.gz,HP:0002721;HP:0002110;HP:0500093;HP:0000717;HP:0001263;HP:0001763;HP:0003298;HP:0002857;HP:0001382,F,,,
 ```
 
 ---
