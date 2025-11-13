@@ -104,13 +104,11 @@ Output:
 
 ## 📦 Summary of Derived Outputs
 
-| File                             | Description                        | Source           |
-| -------------------------------- | ---------------------------------- | ---------------- |
-| `hg002_subset.fastq.gz`          | Subsampled FASTQ (50 Mb region)    | `chr22_50mb.bam` |
-| `hg002_subset.ubam`              | Unmapped BAM for alignment testing | `chr22_50mb.bam` |
-| `spectre/*.vcf`, `spectre/*.bed` | CNV test data                      | chr22 subset     |
-| `straglr/*.bed`                  | STR test regions                   | chr22 subset     |
-| `reference/chr22.fasta`          | Reduced genome reference           | GRCh38           |
+| File                    | Description                        | Source           |
+| ----------------------- | ---------------------------------- | ---------------- |
+| `hg002_subset.fastq.gz` | Subsampled FASTQ (50 Mb region)    | `chr22_50mb.bam` |
+| `hg002_subset.ubam`     | Unmapped BAM for alignment testing | `chr22_50mb.bam` |
+| `reference/chr22.fasta` | Reduced genome reference           | GRCh38           |
 
 ---
 
