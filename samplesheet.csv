@@ -1,2 +1,0 @@
-sample_id,bam_path,fastq_dir,aligned_bam,methyl_bam,hpo_terms
-test,https://raw.githubusercontent.com/nourmahfel/test-datasets/longraredisease/unmapped_bam/test.bam,,,,HP:0002721;HP:0002110;HP:0500093;HP:0000717;HP:0001263;HP:0001763;HP:0003298;HP:0002857;HP:0001382

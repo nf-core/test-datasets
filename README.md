@@ -7,7 +7,8 @@ This repository contains subsampled long-read sequencing datasets tailored for r
 
 ## Contents  
 
-- `bam_pass/` – subsampled aligned BAM files for variant calling tests  
+- `bam_pass/` – subsampled aligned unmapped BAM files for variant calling tests from HG002 basecalled data
+- `fastq_file/` - subsamples fastq file from HG002 basecalled data
 - `spectre/` – VCF files and BED regions for whole-genome CNV testing  
 - `straglr/` – Chromosome 22 STR test regions  
 - `test.exclude.bed` – CNV test exclude regions  
