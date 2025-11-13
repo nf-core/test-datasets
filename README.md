@@ -1,6 +1,6 @@
 # 🧬 Rare Disease Test Datasets
 
-This repository provides **subsampled Oxford Nanopore long-read sequencing datasets** derived from **HG002**, designed for **testing and validation** of long-read rare disease analysis pipelines such as [nf-core/longraredisease](https://github.com/nf-core/longraredisease).
+This repository provides subsampled long-read sequencing datasets\*\* derived from HG002, designed for testing and validation of long-read rare disease analysis pipelines [nf-core/longraredisease](https://github.com/nf-core/longraredisease).
 
 All datasets are restricted to **chromosome 22 (first 50 Mb)** to minimise file sizes and speed up automated test runs.
 
@@ -56,7 +56,7 @@ The repository includes a `test.config` file containing preset paths and paramet
 
 ## 🧩 Data Generation Workflow
 
-The following steps describe how each dataset was created from **HG002 Oxford Nanopore sequencing data**.
+The following steps describe how each dataset was created from **HG002 data**.
 
 ### 1️⃣ Extract 50 Mb region from chromosome 22
 
