@@ -1,4 +1,4 @@
-sample_id,input_type,file_path,hpo_terms,sex,family_id,maternal_id,paternal_id
-test,fastq,https://raw.githubusercontent.com/nourmahfel/test-datasets/longraredisease/fastq_file/hg002_subset.fastq.gz,HP:0002721;HP:0002110;HP:0500093;HP:0000717;HP:0001263;HP:0001763;HP:0003298;HP:0002857;HP:0001382,F,family_21,null,null
+sample_id,file_path,hpo_terms,sex,family_id,maternal_id,paternal_id
+test,https://raw.githubusercontent.com/nourmahfel/test-datasets/longraredisease/fastq_file/hg002_subset.fastq.gz,HP:0002721;HP:0002110;HP:0500093;HP:0000717;HP:0001263;HP:0001763;HP:0003298;HP:0002857;HP:0001382,F,family_21,null,null
 
 
