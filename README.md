@@ -59,7 +59,9 @@ TSV input versions of BAM files exists for all files below.
 
 #### Benchmarking
 
-There are three test TSV input files that can be used for larger, more 'realistic' shotgun testing with full sized data. This currently covers three main contexts.
+There are three test TSV input files that can be used for larger, more 'realistic' shotgun testing with full sized data.
+This currently covers three main contexts.
+Versions of these TSV files also exist in the new TSV format accepted by nf-core/eager 3+, and are prefixed with `eager3_`.
 
 `benchmarking_human.tsv`: Ancient Fish from [Star et al. 2017](https://doi.org/10.1073/pnas.1710186114)
 `benchmarking_vikingfish.tsv`: Ancient Humans from [Gamba et al. 2014](https://doi.org/10.1073/10.1038/ncomms6257)

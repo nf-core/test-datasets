@@ -1,0 +1,4 @@
+sample_id	library_id	lane	colour_chemistry	pairment	strandedness	damage_treatment	r1	r2	bam	bam_reference_id
+BR1	BR1	0	4	single	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/007/SRR1187907/SRR1187907.fastq.gz			
+NE5	NE5	0	4	single	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/007/SRR1187897/SRR1187897.fastq.gz			
+NE7	NE7	0	4	single	double	none	ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR118/002/SRR1187902/SRR1187902.fastq.gz			
