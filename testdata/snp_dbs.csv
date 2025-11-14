@@ -1,3 +1,3 @@
 sample,file
 cadd,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/reference/cadd.v1.6.hg38.test_data.zip
-
+gnomad,https://raw.githubusercontent.com/genomic-medicine-sweden/test-datasets/nallo/reference/gnomad_af.zip

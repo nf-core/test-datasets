@@ -1,9 +1,9 @@
 # This file contains information on how the nallo testdata files are created.
-# If new regions need to be added, try to keep them in the beginning of the chromosomes. 
+# If new regions need to be added, try to keep them in the beginning of the chromosomes.
 
 mkdir tmp
 
-# 1. From somalier sites (https://github.com/brentp/somalier/files/3412456/sites.hg38.vcf.gz), extract sites to make sex inference work. 
+# 1. From somalier sites (https://github.com/brentp/somalier/files/3412456/sites.hg38.vcf.gz), extract sites to make sex inference work.
 zcat data/sites.hg38.vcf.gz | grep -v "#" | awk -v OFS='\t' '{print $1,$2-1,$2+1}' > tmp/somalier_sites.bed
 cat tmp/somalier_sites.bed | grep "chrX" | head -35 > tmp/chrX.bed
 cat tmp/somalier_sites.bed | grep "chr16" | head -35 > tmp/chr16.bed
@@ -114,7 +114,7 @@ samtools view tmp/hg004_somalier_small_revio.bam|wc -l
 echo "reads ONT HG002"
 samtools view tmp/hg002_somalier_small_ont.bam|wc -l
 
-# 6. Create a SVDB file from https://zenodo.org/records/11511513/files/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz 
+# 6. Create a SVDB file from https://zenodo.org/records/11511513/files/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz
 bcftools view -R tmp/test_somalier_small.bed  data/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz --output-type z --output tmp/colorsdb.test_data.vcf.gz
 
 # 7. Copy files, and make one copy smaller
@@ -140,3 +140,10 @@ cp tmp/hg002_somalier_small_ont.fastq.gz testdata/HG002_ONT.fastq.gz
 
 # 8. Unzip reference file
 gunzip -c reference/hg38.test.fa.gz > reference/hg38.test.fa
+
+# 9. Gnomad test data set
+bcftools view --regions-file tmp/test_data.bed data/gnomad.genomes.v4.1.sites.chr16.vcf.bgz --output-type b --output tmp/gnomad_chr16.test_data.bcf.gz
+bcftools view --regions-file tmp/test_data.bed data/gnomad.genomes.v4.1.sites.chrX.vcf.bgz --output-type b --output tmp/gnomad_chrX.test_data.bcf.gz
+bcftools concat tmp/gnomad_chr16.test_data.bcf.gz tmp/gnomad_chrX.test_data.bcf.gz --output-type b --output tmp/gnomad_chr16_chrX.test_data.bcf.gz
+docker run -v $(pwd):/data docker.io/fellen31/echtvar:0.2.2 echtvar encode /data/tmp/gnomad_af.zip /data/assets/gnomad.json /data/tmp/gnomad_chr16_chrX.test_data.bcf.gz
+cp tmp/gnomad_af.zip reference/gnomad_af.zip

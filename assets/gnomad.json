@@ -1,0 +1,6 @@
+[
+	{   "field": "AF",
+        "alias": "gnomad_af",
+        "multiplier": 1000000
+    }
+]
