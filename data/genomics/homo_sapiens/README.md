@@ -164,21 +164,26 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 
 ### Genome map
 
-There is two type of genetic map one with 4 columns (used by Eagle with a header) and another with only 3 (used by Glimpse with no header):
+There is multiple type of genetic map depending on the softwares.
+They use the following columns separated by a tabulation or a space:
   - chromosome
+  - variant id
   - position
-  - combined_rate (cM/Mb) (not present in glimpse)
+  - combined_rate (cM/Mb)
   - cM
+
 The genome map of GRCh38 have been generated as follow:
 
 ```bash
 # Download the reference genome map
-MAP_GRCH38=data/genomics/homo_sapiens/genome/genome.GRCh38
-wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/tables/genetic_map_hg38_withX.txt.gz -O ${MAP_GRCH38}.map.txt.gz
-zcat ${MAP_GRCH38}.map.txt.gz | awk 'NR==1 { print $0 } NR>1 && /^22/ { print $1, $2, $3, $4 }' > ${MAP_GRCH38}.eagle.22.map
-zcat ${MAP_GRCH38}.map.txt.gz | grep "^22" | awk -F' ' '{ print "chr"$1, $2, $4 }' > ${MAP_GRCH38}.glimpse.chr22.map
-gzip ${MAP_GRCH38}.eagle.22.map
-gzip ${MAP_GRCH38}.glimpse.chr22.map
+PATH_GENOME=data/genomics/homo_sapiens/genome/
+MAP_GRCH38=genome.GRCh38
+wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/tables/genetic_map_hg38_withX.txt.gz -O ${PATH_GENOME}${MAP_GRCH38}.map.txt.gz
+zcat ${PATH_GENOME}${MAP_GRCH38}.map.txt.gz | awk 'NR==1 { print $0 } NR>1 && /^22/ { print $1, $2, $3, $4 }' > ${PATH_GENOME}${MAP_GRCH38}.eagle.22.map
+zcat ${PATH_GENOME}${MAP_GRCH38}.map.txt.gz | grep "^22" | awk -F' ' '{ print "chr"$1, $2, $4 }' > ${PATH_GENOME}${MAP_GRCH38}.glimpse.chr22.map
+gzip ${PATH_GENOME}${MAP_GRCH38}.eagle.22.map
+gzip ${PATH_GENOME}${MAP_GRCH38}.glimpse.chr22.map
+wget https://github.com/rwdavies/QUILT/raw/refs/heads/master/maps/hg38/CEU-chr21-final.b38.txt.gz -O ${PATH_GENOME}chr21/sequence/${MAP_GRCH38}.stitch.chr21.txt.gz
 ```
 
 ## Alleles, Loci, GC and RT for `ASCAT`
