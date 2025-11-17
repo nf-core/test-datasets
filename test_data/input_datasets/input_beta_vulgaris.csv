@@ -1,0 +1,2 @@
+counts,design,platform,normalised
+https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/input_datasets/beta_vulgaris.rnaseq.raw.counts.csv,https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/input_datasets/beta_vulgaris.rnaseq.raw.design.csv,rnaseq,false
