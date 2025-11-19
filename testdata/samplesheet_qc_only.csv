@@ -1,0 +1,2 @@
+sample,type,replicate,file1,file2
+gid1a_1,quality,1,https://raw.githubusercontent.com/BenjaminWehnert1008/test-datasets/dmsqc/dmsqc/pMS190_GID1A_SUNi_S2_1_R1_50k.fastq,https://raw.githubusercontent.com/BenjaminWehnert1008/test-datasets/dmsqc/dmsqc/pMS190_GID1A_SUNi_S2_1_R2_50k.fastq
