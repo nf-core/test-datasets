@@ -113,7 +113,7 @@ List of taxids used for testing filtering of blast database using `-taxidlist` o
 
 #### `blastdb/complete_ev_taxidlist.txt`
 
-Complete list of 1107 Enterovirus taxids used for filtering of a blast database using `-taxidlist` option in `blastn`.
+Complete list of 1107 enterovirus taxids used for filtering of a blast database using `-taxidlist` option in `blastn`, when performing enterovirus typing.
 
 A complete list is retrieved from [NCBI](https://www.ncbi.nlm.nih.gov/taxonomy/?term=txid12059[Organism:noexp]) including all taxids classified under the Enterovirus parent taxid (12059) by downloading `Taxid list`.
 
