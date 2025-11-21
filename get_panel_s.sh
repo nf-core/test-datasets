@@ -71,4 +71,10 @@ do
     # Convert to hap legend format
     echo 'Convert to hap legend format'
     bcftools convert --haplegendsample ${PANEL_NAME}.s.norel ${PANEL_FILE}.s.norel.vcf.gz -Oz -o ${PANEL_FILE}
+
+    # Convert to posfile
+    zcat ${PANEL_FILE}.legend.gz | awk 'NR>1 {
+        split($1,a,/[:_]/);
+        printf "%s\t%s\t%s\t%s\n", a[1], a[2], a[3], a[4]
+    }' > ${PANEL_FILE}.posfile
 done
