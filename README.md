@@ -111,6 +111,12 @@ tar -czvf minimal_ev_db.tar.gz minimal_ev_database/
 
 List of taxids used for testing filtering of blast database using `-taxidlist` option in `blastn`.
 
+#### `blastdb/complete_ev_taxidlist.txt`
+
+Complete list of 1107 Enterovirus taxids used for filtering of a blast database using `-taxidlist` option in `blastn`.
+
+A complete list is retrieved from [NCBI](https://www.ncbi.nlm.nih.gov/taxonomy/?term=txid12059[Organism:noexp]) including all taxids classified under the Enterovirus parent taxid (12059) by downloading `Taxid list`.
+
 #### `NC_045512.2/`
 
 -   `GCF_009858895.2_ASM985889v3_genomic.<DOWNLOAD_DATE>.fna.gz`: SARS-CoV2 genome fasta file downloaded directly via [NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/858/895/GCF_009858895.2_ASM985889v3/GCF_009858895.2_ASM985889v3_genomic.fna.gz)
