@@ -50,7 +50,7 @@ The data has been generated as follow :
 
 ```bash
 # Download phased panel for chr21 - chr22
-for chr in chr21; do
+for chr in chr21 chr22; do
 
     for ext in "" ".tbi"; do
         wget -c \
@@ -75,14 +75,22 @@ for chr in chr21; do
     # Convert to hap legend samples file set
     bcftools convert --haplegendsample 1000GP.$chr ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}
 
+    # Convert to posfile
+    zcat ${PANEL_FILE}.legend.gz | awk 'NR>1 {
+        split($1,a,/[:_]/);
+        printf "%s\t%s\t%s\t%s\n", a[1], a[2], a[3], a[4]
+    }' > ${PANEL_FILE}.posfile
+
     # Keep only variants informations
     bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}.sites.vcf.gz
     bcftools index -f ${PANEL_FILE}.sites.vcf.gz
 
     # Chunk the panel for easy parallelization
     GLIMPSE_chunk \
-    --input ${PANEL_FILE}.vcf.gz --region ${REGION} \
-    --window-size 10000 --window-count 400 --buffer-size 5000 --buffer-count 30 \
-    --output ${PANEL_FILE}.chunks.txt
+        --input ${PANEL_FILE}.vcf.gz --region ${REGION} \
+        --window-size 10000 --window-count 400 --buffer-size 5000 --buffer-count 30 \
+        --output ${PANEL_FILE}.chunks.txt
+
+    rm ${PANEL_FILE}.full.vcf.gz*
 done
 ```
