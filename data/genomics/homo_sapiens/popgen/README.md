@@ -49,33 +49,48 @@ The data are phased and can be used as a panel of normal.
 The data has been generated as follow :
 
 ```bash
-# Download phased panel
-wget -c http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_chr22.filtered.shapeit2-duohmm-phased.vcf.gz -O data/genomics/homo_sapiens/popgen/1000GP.chr22.full.vcf.gz
+# Download phased panel for chr21 - chr22
+for chr in chr21 chr22; do
 
-PANEL_FILE=data/genomics/homo_sapiens/popgen/1000GP.chr22
-REGION=chr22:16570000-16610000
-# Normalize, select the region, keep only biallelic SNPs, rename variants ID and compute allele frequency
-bcftools norm -m +any ${PANEL_FILE}.full.vcf.gz \
-        --regions ${REGION} --threads 4 -Ov | \
-    bcftools view \
-        -m 2 -M 2 -v snps --threads 4 | \
-    bcftools annotate --threads 4 -Ov \
-        --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
-    vcffixup - | bgzip -c > ${PANEL_FILE}.vcf.gz
+    for ext in "" ".tbi"; do
+        wget -c \
+        "http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/CCDG_14151_B01_GRM_WGS_2020-08-05_$chr.filtered.shapeit2-duohmm-phased.vcf.gz${ext}" \
+        -O "data/genomics/homo_sapiens/popgen/1000GP.${chr}.full.vcf.gz${ext}"
+    done
 
-# Index the panel file
-bcftools index -f ${PANEL_FILE}.vcf.gz --threads 4
+    PANEL_FILE=data/genomics/homo_sapiens/popgen/1000GP.$chr
+    REGION=$chr:16570000-16610000
+    # Normalize, select the region, keep only biallelic SNPs, rename variants ID and compute allele frequency
+    bcftools norm -m +any ${PANEL_FILE}.full.vcf.gz \
+            --regions ${REGION} --threads 4 -Ov | \
+        bcftools view \
+            -m 2 -M 2 -v snps --threads 4 -Ov | \
+        bcftools annotate --threads 4 -Ov \
+            --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' | \
+        vcffixup - | bgzip -c > ${PANEL_FILE}.vcf.gz
 
-# Convert to hap legend samples file set
-bcftools convert --haplegendsample 1000GP.chr22 ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}
+    # Index the panel file
+    bcftools index -f ${PANEL_FILE}.vcf.gz --threads 4
 
-# Keep only variants informations
-bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}.sites.vcf.gz
-bcftools index -f ${PANEL_FILE}.sites.vcf.gz
+    # Convert to hap legend samples file set
+    bcftools convert --haplegendsample 1000GP.$chr ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}
 
-# Chunk the panel for easy parallelization
-GLIMPSE_chunk \
-   --input ${PANEL_FILE}.vcf.gz --region ${REGION} \
-   --window-size 10000 --window-count 400 --buffer-size 5000 --buffer-count 30 \
-   --output ${PANEL_FILE}.chunks.txt
+    # Convert to posfile
+    zcat ${PANEL_FILE}.legend.gz | awk 'NR>1 {
+        split($1,a,/[:_]/);
+        printf "%s\t%s\t%s\t%s\n", a[1], a[2], a[3], a[4]
+    }' > ${PANEL_FILE}.posfile
+
+    # Keep only variants informations
+    bcftools view -G -m 2 -M 2 -v snps ${PANEL_FILE}.vcf.gz -Oz -o ${PANEL_FILE}.sites.vcf.gz
+    bcftools index -f ${PANEL_FILE}.sites.vcf.gz
+
+    # Chunk the panel for easy parallelization
+    GLIMPSE_chunk \
+        --input ${PANEL_FILE}.vcf.gz --region ${REGION} \
+        --window-size 10000 --window-count 400 --buffer-size 5000 --buffer-count 30 \
+        --output ${PANEL_FILE}.chunks.txt
+
+    rm ${PANEL_FILE}.full.vcf.gz*
+done
 ```

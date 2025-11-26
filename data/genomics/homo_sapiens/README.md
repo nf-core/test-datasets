@@ -69,14 +69,10 @@ Following 'reference' vcf files are generated. All found in igenomes at `s3://ng
 
 ### Fasta
 
-As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes/chr22.fasta` was used.
+As base reference `s3://ngi-igenomes/igenomes/Homo_sapiens/GATK/GRCh38/Sequence/Chromosomes/chr22.fasta` was used, then compressed and indexed.
 
 ```bash
 samtools faidx chr22.fasta chr22:16570000-16610000  > genome.fasta
-```
-The corresponding compressed fasta and index files:
-
-```bash
 bgzip genome.fasta
 samtools faidx genome.fasta.gz
 ```
@@ -95,8 +91,19 @@ gatk BedToIntervalList -I genome.bed -SD genome.dict -O genome.interval_list
 
 A StrTableFile zip folder was created using GATK4:
 
-````bash
+```bash
 gatk ComposeSTRTableFile --reference genome.fasta --output genome_strtablefile.zip
+```
+
+For parallelization purpose a fasta with both chr21 and chr22 is obtain with
+
+```bash
+REF_PATH="data/genomics/homo_sapiens/genome/genomeGRCh38"
+wget -c -O- https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz | gunzip | bgzip  > ${REF_PATH}.fa.bgz
+samtools faidx ${REF_PATH}.fa.bgz chr21 chr22 | bgzip > ${REF_PATH}_chr21_22.fa.gz
+samtools faidx ${REF_PATH}_chr21_22.fa.gz
+rm ${REF_PATH}.fa.bgz*
+```
 
 ### SDF
 
@@ -105,7 +112,7 @@ An SDF folder of the reference FASTA of chromosome 21 was created using:
 ```bash
 rtg format -o genome_sdf genome.fasta
 tar -czf genome_sdf.tar.gz genome_sdf/
-````
+```
 
 ### GTF/GFF
 
@@ -176,14 +183,37 @@ The genome map of GRCh38 have been generated as follow:
 
 ```bash
 # Download the reference genome map
-PATH_GENOME=data/genomics/homo_sapiens/genome/
-MAP_GRCH38=genome.GRCh38
-wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/tables/genetic_map_hg38_withX.txt.gz -O ${PATH_GENOME}${MAP_GRCH38}.map.txt.gz
-zcat ${PATH_GENOME}${MAP_GRCH38}.map.txt.gz | awk 'NR==1 { print $0 } NR>1 && /^22/ { print $1, $2, $3, $4 }' > ${PATH_GENOME}${MAP_GRCH38}.eagle.22.map
-zcat ${PATH_GENOME}${MAP_GRCH38}.map.txt.gz | grep "^22" | awk -F' ' '{ print "chr"$1, $2, $4 }' > ${PATH_GENOME}${MAP_GRCH38}.glimpse.chr22.map
-gzip ${PATH_GENOME}${MAP_GRCH38}.eagle.22.map
-gzip ${PATH_GENOME}${MAP_GRCH38}.glimpse.chr22.map
-wget https://github.com/rwdavies/QUILT/raw/refs/heads/master/maps/hg38/CEU-chr21-final.b38.txt.gz -O ${PATH_GENOME}chr21/sequence/${MAP_GRCH38}.stitch.chr21.txt.gz
+MAP_GRCH38=data/genomics/homo_sapiens/genome/genetic_map/genome.GRCh38
+wget https://storage.googleapis.com/broad-alkesgroup-public/Eagle/downloads/tables/genetic_map_hg38_withX.txt.gz -O ${MAP_GRCH38}.eagle.map.gz
+wget --no-check-certificate https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O ${MAP_GRCH38}.plink.map.zip
+
+for chr in 21 22; do
+   # Eagle / hapmap format
+   zcat ${MAP_GRCH38}.eagle.map.gz \
+   | awk -v CHR="$chr" 'BEGIN {OFS="\t"} NR==1 {print; next} $1 == CHR {print $1,$2,$3,$4}' \
+   > ${MAP_GRCH38}.${chr}.eagle.map
+
+   # Stitch or quilt format
+   awk 'BEGIN {OFS=" "} {print $2, $3, $4}' ${MAP_GRCH38}.${chr}.eagle.map \
+   > ${MAP_GRCH38}.chr${chr}.stitch.map
+
+   # Plink / bealge5 format
+   unzip -p ${MAP_GRCH38}.plink.map.zip chr_in_chrom_field/plink.chrchr${chr}.GRCh38.map > ${MAP_GRCH38}.chr${chr}.plink.map
+
+   # Minimac format
+   awk 'BEGIN {OFS="\t"} NR==1 {print "#chr", "position", "Genetic_Map(cM)"} NR>1  {print $1, $4, $3}' \
+      ${MAP_GRCH38}.chr${chr}.plink.map > ${MAP_GRCH38}.chr${chr}.minimac.map
+
+   # Glimpse format
+   awk 'BEGIN {OFS="\t"} NR==1 {print "pos", "chr", "cM"} NR>1  {print $4, $1, $3}' \
+      ${MAP_GRCH38}.chr${chr}.plink.map > ${MAP_GRCH38}.chr${chr}.glimpse.map
+
+   # Compress files
+   gzip ${MAP_GRCH38}.${chr}.eagle.map
+done
+
+rm ${MAP_GRCH38}.plink.map.zip
+rm ${MAP_GRCH38}.eagle.map.gz
 ```
 
 ## Alleles, Loci, GC and RT for `ASCAT`
@@ -224,58 +254,82 @@ We focus on the sample GM12878 also known as NA12878 or HG001 depending on the p
 We need its data in different format for the chromosome 22.
 
 ```bash
-REGION=chr22:16570000-16610000
+REGION_STRING="chr21:16570000-16610000 chr22:16570000-16610000"
 DIR_IND=data/genomics/homo_sapiens/illumina
-# Beware huge initial file
-wget -c ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/{} -O $DIR_IND/NA12878.{cram,cram.crai}
 
-# Keep only the wanted region
-samtools view \
-   -bo $DIR_IND/bam/NA12878.chr22.bam $DIR_IND/NA12878.cram \
-   ${REGION}
-samtools index $DIR_IND/bam/NA12878.chr22.bam
+# Keep only the wanted region but might take some time to retrieve
+samtools view -bo $DIR_IND/bam/NA12878.chr21_22.bam \
+   ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239334/NA12878.final.cram \
+   $REGION_STRING
 
-# Compute depth on region
-MEAN_DEPTH=$(samtools coverage $DIR_IND/bam/NA12878.chr22.bam -r ${REGION} | \
-   awk -F'\t' '(NR==2){ print $7}')
-FRAC_DEPTH=$(echo "scale=5; 1/$MEAN_DEPTH" | bc)
+samtools view -bo $DIR_IND/bam/NA19401.chr21_22.bam \
+   ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR323/ERR3239749/NA19401.final.cram \
+   $REGION_STRING
 
-# Downsample the file to 1X
-samtools view \
-   -s 1${FRAC_DEPTH} \
-   -bo $DIR_IND/bam/NA12878.chr22.1X.bam $DIR_IND/bam/NA12878.chr22.bam
-samtools index $DIR_IND/bam/NA12878.chr22.1X.bam
+for sample in NA19401 NA12878; do
 
-# Impute the data with GLIMPSE2
-PANEL_FILE=data/genomics/homo_sapiens/popgen/1000GP.chr22
-MAP_GRCH38=data/genomics/homo_sapiens/genome/genome.GRCh38
-GLIMPSE2_phase \
-   --bam-file $DIR_IND/bam/NA12878.chr22.1X.bam \
-   --ind-name NA12878 \
-   --input-region $REGION \
-   --output-region $REGION \
-   --reference $PANEL_FILE.vcf.gz \
-   --output $DIR_IND/vcf/NA12878.chr22.1X.vcf.gz
+   samtools index $DIR_IND/bam/$sample.chr21_22.bam
 
-bcftools index $DIR_IND/vcf/NA12878.chr22.1X.vcf.gz
+   # Mean depth is approximately of 32X
+   FRAC_DEPTH=$(echo "scale=5; 1/32" | bc)
+   echo "Mean depth: 32X → Downsampling fraction: $FRAC_DEPTH"
+
+   # Downsample the file to 1X
+   samtools view \
+      -s 1${FRAC_DEPTH} \
+      -bo $DIR_IND/bam/$sample.chr21_22.1X.bam $DIR_IND/bam/$sample.chr21_22.bam
+   samtools index $DIR_IND/bam/$sample.chr21_22.1X.bam
+
+   # Impute the data with GLIMPSE2
+   for chr in chr21 chr22; do
+      PANEL_FILE=data/genomics/homo_sapiens/popgen/1000GP.$chr.vcf.gz
+      MAP_GRCH38=data/genomics/homo_sapiens/genome/genetic_map/genome.GRCh38.$chr.glimpse.map
+      GLIMPSE2_phase \
+         --bam-file $DIR_IND/bam/$sample.chr21_22.1X.bam \
+         --ind-name $sample \
+         --input-region $chr:16570000-16610000 \
+         --output-region $chr:16570000-16610000 \
+         --map $MAP_GRCH38 \
+         --reference $PANEL_FILE \
+         --output $DIR_IND/vcf/$sample.$chr.1X.glimpse2.vcf.gz
+
+      bcftools index $DIR_IND/vcf/$sample.$chr.1X.glimpse2.vcf.gz
+   done
+
+   # Concatenate the VCF files
+   bcftools concat -O z -o $DIR_IND/vcf/$sample.1X.glimpse2.vcf.gz \
+      $DIR_IND/vcf/$sample.chr21.1X.glimpse2.vcf.gz \
+      $DIR_IND/vcf/$sample.chr22.1X.glimpse2.vcf.gz
+
+   # Index the combined VCF
+   bcftools index $DIR_IND/vcf/$sample.chr21_22.1X.glimpse2.vcf.gz
+
+   rm $DIR_IND/vcf/$sample.chr*
+done
 
 # Variants benchmarking
+# Download the VCF file
 wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz -O $DIR_IND/NA12878.vcf.gz
+
+# Download the TBI file
 wget -c ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi -O $DIR_IND/NA12878.vcf.gz.tbi
 
 # Renaming sample file
 echo "HG001 NA12878" > sample_renaming.txt
 
+REGION_STRING="chr21:16570000-16610000,chr22:16570000-16610000"
+
 # Normalize and keep only rename variants ID
 bcftools norm -m +any $DIR_IND/NA12878.vcf.gz \
-      --regions ${REGION} --threads 4 -Ov | \
+      -r ${REGION_STRING} --threads 4 -Ov | \
    bcftools reheader --samples sample_renaming.txt | \
    bcftools annotate --threads 4 -Oz \
       --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' \
-      -o $DIR_IND/vcf/NA12878_GIAB.chr22.vcf.gz
+      -o $DIR_IND/vcf/NA12878_GIAB.chr21_22.vcf.gz
 
 # Index the file
-bcftools index -f $DIR_IND/vcf/NA12878_GIAB.chr22.vcf.gz --threads 4
+bcftools index -f $DIR_IND/vcf/NA12878_GIAB.chr21_22.vcf.gz --threads 4
+rm $DIR_IND/NA12878.vcf.gz*
 ```
 
 #### `CNVKIT` data
