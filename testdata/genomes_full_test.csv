@@ -1,4 +1,4 @@
-accno,genome_fna,genome_gff
+accno,genome_fna
 GCA_000153745.1,s3://nf-core-awsmegatests/magmap/input/GCA_000153745.1_ASM15374v1_genomic.fna.gz
 GCA_000383355.1,s3://nf-core-awsmegatests/magmap/input/GCA_000383355.1_ASM38335v1_genomic.fna.gz
 GCA_000761495.1,s3://nf-core-awsmegatests/magmap/input/GCA_000761495.1_Ai_1.0_genomic.fna.gz
