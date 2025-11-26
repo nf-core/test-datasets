@@ -937,6 +937,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - yte_map_file.yaml: map file to test YTE
 - csv
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
+  - 'test2.csv': exemplary comma-separated file with user data (id, first_name, last_name, email)
+  - 'test3.csv': exemplary comma-separated file with email and last_login timestamps
 - models
   - clair3_hifi.tar.gz: gzipped tar folder containing models needed to run clair3 on Hifi data
 - notebooks
