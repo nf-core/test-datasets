@@ -960,6 +960,9 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
   - 'test2.csv': exemplary comma-separated file with user data (id, first_name, last_name, email)
   - 'test3.csv': exemplary comma-separated file with email and last_login timestamps
+- fastq
+  - 'rrna_reads_1.fastq.gz': Synthetic 5.8S rRNA paired-end reads (R1), 10 reads from rfam-5.8s-database-id98 for testing rRNA removal tools
+  - 'rrna_reads_2.fastq.gz': Synthetic 5.8S rRNA paired-end reads (R2), matching R1 file
 - models
   - clair3_hifi.tar.gz: gzipped tar folder containing models needed to run clair3 on Hifi data
 - notebooks
