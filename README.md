@@ -1,4 +1,5 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+
 Test data to be used for automated testing with the nf-core pipelines
 
 > ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
@@ -13,8 +14,8 @@ The principle for nf-core test data is as small as possible, as large as necessa
 
 nf-core/test-datasets comes with documentation in the `docs/` directory:
 
-01. [Add a new  test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-02. [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
+2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
 
 ## Downloading test data
 
