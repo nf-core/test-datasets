@@ -1,6 +1,8 @@
-name: Lint tools code formatting
+name: Run pre-commit hooks
 on:
-  pull_request:
+  push:
+    branches:
+      - "**" # runs on all branches
 
 # Cancel if a newer run is started
 concurrency:
