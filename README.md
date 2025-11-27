@@ -364,6 +364,12 @@ The earth sciences folder contain subfolders for different data formats encounte
       - sequence/chr22_23800000-23980000.fa: Fasta file containing a section of chr22
     - chr22_chr22_KI270734v1_random: directory for reference files using chr22 and chr22_KI270734v1_random, for paraphase
       - sequence/genome.fa.gz: Gzipped fasta file from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N.
+    - genetic_map: directory containing genetic map of GRCh38 in various format
+      - .21/22.eagle.map.gz: tab delimited gzipped map with header: chr (no prefix), position, COMBINED_rate(cM/Mb) Genetic_Map(cM)
+      - .chr21/22.stitch.map: space delimited map with header: position, COMBINED_rate(cM/Mb) Genetic_Map(cM)
+      - .chr21/22.glimpse.map: tab delimited with header: pos (position), chr, cM (centiMorgan)
+      - .chr21/22.plink.map: space delimited map without header: chr, id (all empty "."), centiMorgan, position
+      - .chr21/22.minimac.map: tab delimited with header: #chr, position, chr, Genetic_Map(cM)
     - vcf
       - dbsnp: DBSnp file downsampled based on reference position
       - gnomAD: gnomAD file downsampled based on reference position
@@ -386,6 +392,9 @@ The earth sciences folder contain subfolders for different data formats encounte
     - genome.fasta.gz.gzi: index file for 'genome.fasta.gz'
     - genome2.fasta: Reference fasta based on chr22:16600000-16800000
     - genome3.fasta: Reference fasta based on chr19:45760000-45770300
+    - genomeGRCh38_chr21_22.fa.gz: bgzipped version of GRCh38 fasta file containing whole chr21 and chr22
+    - genomeGRCh38_chr21_22.fa.gz.fai: index file for 'genomeGRCh38_chr21_22.fa.gz'
+    - genomeGRCh38_chr21_22.fa.gz.gzi: index file for 'genomeGRCh38_chr21_22.fa.gz'
     - genome_motifs.txt: TF motifs used for cellranger-atac
     - genome.NC_012920_1.gb: Contains mtDNA reference genome in Genbank format
     - transcriptome.fasta: Reference transcriptome based on `genome.fasta`
@@ -441,6 +450,10 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'example_hla_pe.sorted.bam': Sorted BAM file for HLATyping workflow / OptiType module.
       - 'example_hla_pe.sorted.bam.bai': Sorted BAM file index for HLATyping workflow / OptiType module.
       - mitochon_standin.recalibrated.sorted: copy of the old, smaller test2.paired_end.recalibrated.sorted, this is to be used to test mutect2's mitochondria mode, as the current recal bams are far too big. This should be replaced once rarediseases obtain an actual mitochondria sample.
+      - NA12878.chr21_22.1X.bam{.bai}: Full coverage (32X) bam file of individual NA12878 for chr21 and 22 between position 16570000-16610000 with index.
+      - NA12878.chr21_22.1X.bam{.bai}: Downsampled at 1X bam file of individual NA12878 for chr21 and 22 between position 16570000-16610000 with index.
+      - NA19401.chr21_22.1X.bam{.bai}: Full coverage (32X) bam file of individual NA19401 for chr21 and 22 between position 16570000-16610000 with index.
+      - NA19401.chr21_22.1X.bam{.bai}: Downsampled at 1X bam file of individual NA19401 for chr21 and 22 between position 16570000-16610000 with index.
       - test_illumina_mt: bam file containing mt data, to test eklipse
       - 'test3.single_end.markduplicates.sorted.bam': Mapped, sorted, and duplicate removed reads from ancient DNA across all human chromosomes on the hs37d5 human reference. Data from [ERR2857053](https://www.ebi.ac.uk/ena/browser/view/ERR2857053) downsampled to 10% of original reads.
       - 'test.rna.paired_end.bam': STAR-aligned, unsorted, paired-end RNAseq bam file from the test*rnaseq*{1,2}.fastq.gz: chr22 of sample GM12878 (SRA accession: SRX2900878)
@@ -563,6 +576,9 @@ The earth sciences folder contain subfolders for different data formats encounte
     - vcf:
       - test.rnaseq.vcf: RNAseq vcf corresponding to `test.rnaseq_{1,2}` reads
       - test.genome_21.somatic_sv.vcf: Indels VCF corresponding to `test.paired_end.recalibrated.sorted` and `genome_21.fasta` generated with Manta
+      - NA12878.chr21_22.1X.glimpse2.vcf.gz{.csi}: Imputed variants of NA12878.chr21_22.1X.bam file with glimpse2 for chr21 and 22 between position 16570000-16610000 with index.
+      - NA19401.chr21_22.1X.glimpse2.vcf.gz{.csi}: Imputed variants of NA19401.chr21_22.1X.bam file with glimpse2 for chr21 and 22 between position 16570000-16610000 with index.
+      - NA12878_GIAB.chr21_22.vcf.gz{.csi}: Benchmarking variants file from Genome In A Bottle initiative for individual NA12878 for chr21 and 22 between position 16570000-16610000 with index.
       - NA12878*chrM.vcf.gz: mitochondrial variants corresponding to `testdata/NA12878_mito*{1,2}.fq.gz`from the`rarediseases` branch.
       - empty.vcf.gz: The RNAseq VCF with all variants removed
       - empty.vcf.gz.tbi: The index of the empty vcf
@@ -642,6 +658,11 @@ The earth sciences folder contain subfolders for different data formats encounte
     - plink_simulated.pgen: case-control simulated variants dataset in PLINK 2 binary format
     - plink_simulated.psam: case-control simulated variants dataset in PLINK 2 binary format
     - plink_simulated.pvar: case-control simulated variants dataset in PLINK 2 binary format
+    - 1000GP.chr*.vcf.gz: Reference panel phased VCF of the 1000 Genome Project in various format to be used for imputation for chr21 and 22 between position 16570000-16610000 with index.
+    - 1000GP.chr*.hap/legend/samples.gz: Same as 1000GP.chr*.vcf.gz but converted to hap/legend/samples format with bcftools
+    - 1000GP.chr*.sites.vcf.gz: Variants informations present in 1000GP.chr*.vcf.gz obtain with `bcftools view -G -m 2 -M 2`
+    - 1000GP.chr*.posfile: Variants position in tabulated format without header: chr, position, ref, alt
+    - 1000GP.chr*.chunks.txt: chunks of the chromosome obtain with GLIMPSE_chunk
   - svsig:
 
     - NA03697B2_new.pbmm2.repeats.svsig.gz: structural variant file for NA03697B2_new.pbmm2.repeats.bam, created with PBSV discover version (2.9.0 default settings)
