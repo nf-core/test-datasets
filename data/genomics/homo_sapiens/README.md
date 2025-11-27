@@ -191,8 +191,7 @@ for chr in 21 22; do
    > ${MAP_GRCH38}.${chr}.eagle.map
 
    # Stitch or quilt format
-   awk 'BEGIN {OFS=" "} {print $2, $3, $4}' ${MAP_GRCH38}.${chr}.eagle.map \
-   > ${MAP_GRCH38}.chr${chr}.stitch.map
+   wget https://ftp.ncbi.nlm.nih.gov/hapmap/recombination/latest/rates/genetic_map_chr21_b36.txt -O ${MAP_GRCH38}.chr${chr}.stitch.map
 
    # Plink / bealge5 format
    unzip -p ${MAP_GRCH38}.plink.map.zip chr_in_chrom_field/plink.chrchr${chr}.GRCh38.map > ${MAP_GRCH38}.chr${chr}.plink.map
