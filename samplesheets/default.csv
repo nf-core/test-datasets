@@ -1,4 +1,4 @@
 patient,status,sample,vcf,cna
 HCC1395,1,HCC1395T,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data/HCC1395T_vs_HCC1395N.strelka.somatic_snvs_chr22.vcf.gz,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data//HCC1395T_vs_HCC1395N.segments_chr22.txt
 HCC1395,1,HCC1395T,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data/HCC1395T_vs_HCC1395N.strelka.somatic_indels_chr22.vcf.gz,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data//HCC1395T_vs_HCC1395N.segments_chr22.txt
-HCC1395,1,HCC1395T,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data//HCC1395T_vs_HCC1395N.mutect2.filtered.vcf_chr22.gz,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data//HCC1395T_vs_HCC1395N.segments_chr22.txt
+HCC1395,1,HCC1395T,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data//HCC1395T_vs_HCC1395N.mutect2.filtered_chr22.vcf.gz,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data//HCC1395T_vs_HCC1395N.segments_chr22.txt
