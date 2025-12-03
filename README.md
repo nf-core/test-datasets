@@ -10,6 +10,37 @@ This branch contains test data and references for the [nf-core/variantprioritiza
 
 `samplesheet/default.csv`: Experiment design file for minimal test dataset.
 
+`reference`:
+    - `vep_cache_113_GRCh38_chr22.tar.gz`: VEP Cache downsampled to chr22 and with only 1% of all entries in `all_vars.gz` kept for CI testing.
+
+### Downsampling VEP Cache
+```bash
+curl -O https://ftp.ensembl.org/pub/release-113/variation/indexed_vep_cache/homo_sapiens_vep_113_GRCh38.tar.gz
+tar xzf homo_sapiens_vep_113_GRCh38.tar.gz
+
+mkdir vep_cache_113_GRCh38_chr22
+mkdir vep_cache_113_GRCh38_chr22/homo_sapiens
+mkdir vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/
+
+cp -r homo_sapiens/113_GRCh38/MT vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/
+cp -r homo_sapiens/113_GRCh38/22 vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/
+cp homo_sapiens/113_GRCh38/chr_synonyms.txt vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/
+cp homo_sapiens/113_GRCh38/info.txt vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/
+
+bash subsample_all_vars.sh
+# mamba activate bcf (next script needs bgzip)
+bash index_subsample.sh
+
+rm -rf vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/subsampled_vars
+rm -rf vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/all_vars.gz
+rm -rf vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/all_vars.gz.csi
+
+mv vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/subsampled_vars.sorted.bgz vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/all_vars.gz
+mv vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/subsampled_vars.sorted.bgz.csi vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/all_vars.gz.csi
+
+tar cvf - vep_cache_113_GRCh38_chr22 | gzip -v > vep_cache_113_GRCh38_chr22.tar.gz
+```
+
 ## Introduction
 
 nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
