@@ -76,11 +76,11 @@ do
     zcat ${PANEL_FILE}.legend.gz | awk 'NR>1 {
         split($1,a,/[:_]/);
         printf "%s\t%s\t%s\t%s\n", a[1], a[2], a[3], a[4]
-    }' > ${PANEL_FILE}.posfile
+    }' > ${PANEL_FILE}.posfile.stitch
 
     # Convert to posfile_comma
     zcat ${PANEL_FILE}.legend.gz | awk 'NR>1 {
         split($1,a,/[:_]/);
         printf "%s\t%s\t%s,%s\n", a[1], a[2], a[3], a[4]
-    }' > ${PANEL_FILE}.posfile_comma
+    }' > ${PANEL_FILE}.posfile
 done
