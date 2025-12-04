@@ -16,7 +16,7 @@
             "--min-component-size-to-prune": 100,
             "--component-size-max-threshold": null,
             "--component-size-min-threshold": 100,
-            "--panel": "proxiome-immuno-155",
+            "--panel": "proxiome-immuno-155-v2",
             "--output": "."
         }
     }

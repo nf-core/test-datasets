@@ -1,3 +1,3 @@
 sample,design,panel,panel_file,fastq_1,fastq_2,sample_alias,condition,reference_condition,alternative_condition
-PNA055_Sample07_filtered_S7,pna-2,proxiome-immuno-155,,fastq/PNA055_Sample07_filtered_S7_R1_001.fastq.gz,fastq/PNA055_Sample07_filtered_S7_R2_001.fastq.gz,PNA055_Sample07_filtered_S7,unstim_pbmc,true,false
+PNA055_Sample07_filtered_S7,pna-2,proxiome-immuno-155-v2,,fastq/PNA055_Sample07_filtered_S7_R1_001.fastq.gz,fastq/PNA055_Sample07_filtered_S7_R2_001.fastq.gz,PNA055_Sample07_filtered_S7,unstim_pbmc,true,false
 PNA055_Sample07_unfiltered_S7,pna-2,,proxiome-immuno-155-custom.csv,fastq/PNA055_Sample07_filtered_S7_R1_001.fastq.gz,fastq/PNA055_Sample07_filtered_S7_R2_001.fastq.gz,PNA055_Sample07_unfiltered_S7,stim_pmc,false,true
