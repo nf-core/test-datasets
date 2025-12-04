@@ -12,6 +12,10 @@ This branch contains test data and references for the [nf-core/variantprioritiza
 
 `reference`:
     - `vep_cache_113_GRCh38_chr22.tar.gz`: VEP Cache downsampled to chr22 and with only 1% of all entries in `all_vars.gz` kept for CI testing.
+    - `subsample_all_vars.sh`: Script to reduce entries in all_vars.gz file (for VEP cache)
+    - `index_subsample.sh`: Index and and zip the subsample all_vars file (for VEP cache)
+    - `pcgr_ref_grch38_chr22.tar.gz`: PCGR database dump from `20250314` downsampled to chr22 and with only 0.05% of all entries in all tables kept for CI testing
+    - `downsample_pcgr.sh`: Script to reduce tables to 0.05% (for PCGR database)
 
 ### Downsampling VEP Cache
 ```bash
@@ -39,6 +43,28 @@ mv vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/subsampled_vars.sorted.
 mv vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/subsampled_vars.sorted.bgz.csi vep_cache_113_GRCh38_chr22/homo_sapiens/113_GRCh38/22/all_vars.gz.csi
 
 tar cvf - vep_cache_113_GRCh38_chr22 | gzip -v > vep_cache_113_GRCh38_chr22.tar.gz
+```
+
+### Downsample PCGR database
+```bash
+BUNDLE_VERSION="20250314"
+GENOME="grch38"
+BUNDLE="pcgr_ref_data.${BUNDLE_VERSION}.${GENOME}.tgz"
+wget https://insilico.hpc.uio.no/pcgr/${BUNDLE}
+gzip -dc ${BUNDLE} | tar xvf -
+
+mkdir ${BUNDLE_VERSION}
+mv data/ ${BUNDLE_VERSION}
+
+mkdir chr22/
+mkdir chr22/20250314/
+mkdir chr22/20250314/data/
+mkdir chr22/20250314/data/grch38
+
+bash downsample_pcgr.sh
+
+cd chr22
+tar cvf - 20250314 | gzip -v > pcgr_ref_grch38_chr22.tar.gz
 ```
 
 ## Introduction
