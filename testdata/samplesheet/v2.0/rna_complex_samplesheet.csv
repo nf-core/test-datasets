@@ -1,0 +1,2 @@
+id,fasta
+https://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/rna_complex.fasta
