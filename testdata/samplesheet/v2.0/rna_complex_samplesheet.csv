@@ -1,2 +1,2 @@
 id,fasta
-rna_example,assets/examples/rosettafold2na/rna_complex.fasta
+https://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/rna_complex.fasta

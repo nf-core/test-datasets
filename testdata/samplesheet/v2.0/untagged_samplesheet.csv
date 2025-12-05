@@ -1,2 +1,2 @@
 id,fasta
-untagged_example,assets/examples/rosettafold2na/untagged_complex.fasta
+https://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/untagged_complex.fasta

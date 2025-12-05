@@ -1,2 +1,2 @@
 id,fasta
-dna_ss_example,assets/examples/rosettafold2na/ssdna_complex.fasta
+https://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/ssdna_complex.fasta
