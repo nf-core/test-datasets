@@ -1,5 +1,5 @@
 sample,strategy,assembler,assembler1,assembler2
-test_hifi_hifiasm,single,,,hifiasm,
+test_hifi_hifiasm,single,,,hifiasm
 test_ont_hifiasm,single,,hifiasm,
 test_ont_flye,single,,flye,
 test_hifi_flye,single,,,flye
