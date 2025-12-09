@@ -1,8 +1,8 @@
-sample,strategy,assembler,assembler1,assembler2
-test_hifi_hifiasm,single,,,hifiasm
-test_ont_hifiasm,single,,hifiasm,
-test_ont_flye,single,,flye,
-test_hifi_flye,single,,,flye
-test_hifiasm_ul,hybrid,hifiasm,,
-test_hifiasm_flye,scaffold,hifiasm_flye,,
-test_flye_hifiasm,scaffold,flye_hifiasm,,
+sample,strategy,assembler,assembler1,assembler2,scaffold_links,scaffold_ragtag,scaffold_longstitch,use_ref
+test_hifi_hifiasm,single,,,hifiasm,true,,
+test_ont_hifiasm,single,,hifiasm,,,true,,true
+test_ont_flye,single,,flye,,,,true,
+test_hifi_flye,single,,,flye,,true,,true
+test_hifiasm_ul,hybrid,hifiasm,,,,,true,
+test_hifiasm_flye,scaffold,hifiasm_flye,,,,,,true
+test_flye_hifiasm,scaffold,flye_hifiasm,,,,true,,
