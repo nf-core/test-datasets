@@ -8,9 +8,13 @@ This branch contains test data and references for the [nf-core/variantprioritiza
 
 `test_data/*`: This folder contains minimal vcf files for chr22 with their index and a cna file. 
 
-`samplesheet/default.csv`: Experiment design file for minimal test dataset.
+`test_data_full/*`: This folder contains vcf files with their index and a cna file for the `test_full` profile.
 
-`reference`:
+`samplesheets/`:
+    - `default.csv`: Experiment design file for minimal test dataset.
+    - `test_full.csv`: Experiment design file for full size test dataset.
+
+`reference/`:
     - `vep_cache_113_GRCh38_chr22.tar.gz`: VEP Cache downsampled to chr22 and with only 1% of all entries in `all_vars.gz` kept for CI testing.
     - `subsample_all_vars.sh`: Script to reduce entries in all_vars.gz file (for VEP cache)
     - `index_subsample.sh`: Index and and zip the subsample all_vars file (for VEP cache)
