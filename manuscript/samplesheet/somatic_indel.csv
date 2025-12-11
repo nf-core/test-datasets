@@ -1,0 +1,4 @@
+id,test_vcf,caller
+test7,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-08887a88b66d24167db6633d022a939b1499e199/test_full_aws/variant_calling/freebayes/HCC1395T_vs_HCC1395N/HCC1395T_vs_HCC1395N.freebayes.filtered.vcf.gz,freebayes
+test8,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-08887a88b66d24167db6633d022a939b1499e199/test_full_aws/variant_calling/mutect2/HCC1395T_vs_HCC1395N/HCC1395T_vs_HCC1395N.mutect2.filtered.vcf.gz,mutect2
+test9,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-08887a88b66d24167db6633d022a939b1499e199/test_full_aws/variant_calling/strelka/HCC1395T_vs_HCC1395N/HCC1395T_vs_HCC1395N.strelka.somatic_indels.vcf.gz,strelka
