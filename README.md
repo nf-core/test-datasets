@@ -86,6 +86,19 @@ SEQC2 is used for germline benchmarking
 
 ## truth data
 
+### somatic
+
+*hg38* 
+
+- SEQC2 data for SNVs and INDELs is downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/release/latest/
+    -  a simple GT 1/1 is added to enable usage of benchmarking tools
+
+- SEQC2 CNV benchmarks are downloaded from https://zenodo.org/records/14619054
+
+- We generated SEQC2 SV data using the high confidence SV set found in the supporting files in https://link.springer.com/article/10.1186/s13059-022-02816-6 paper. svconverstion.ipynb can be used to regenerate the vcf file.
+
+### germline
+
 *hg37* 
 
 - data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/NIST_SVs_Integration_v0.6/ 
@@ -94,8 +107,4 @@ SEQC2 is used for germline benchmarking
 
 - HG002 data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_SV_benchmark_v0.01/ 
 
-- SEQC2 data is downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/release/latest/
-
-- SEQC2 CNV benchmarks are downloaded from https://zenodo.org/records/14619054
-
-!Note that all the original files are downsized to chromosome 21 for test purposes. 
+- HG001 truth set is downloadedfrom here https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/genome-stratifications/v3.1/GRCh38/Union/GRCh38_notinalldifficultregions.bed.gz and then simply converted into a vcf file using  bed2vcf.py script.

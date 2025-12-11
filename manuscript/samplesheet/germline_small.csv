@@ -1,0 +1,5 @@
+id,test_vcf,caller
+test1,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-08887a88b66d24167db6633d022a939b1499e199/test_full_germline_aws/variant_calling/deepvariant/NA12878/NA12878.deepvariant.vcf.gz,deepvariant
+test2,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-08887a88b66d24167db6633d022a939b1499e199/test_full_germline_aws/variant_calling/freebayes/NA12878/NA12878.freebayes.filtered.vcf.gz,freebayes
+test3,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-08887a88b66d24167db6633d022a939b1499e199/test_full_germline_aws/variant_calling/haplotypecaller/NA12878/NA12878.haplotypecaller.filtered.vcf.gz,haplotypecaller
+test4,https://nf-core-awsmegatests.s3-eu-west-1.amazonaws.com/sarek/results-08887a88b66d24167db6633d022a939b1499e199/test_full_germline_aws/variant_calling/strelka/NA12878/NA12878.strelka.variants.vcf.gz,strelka
