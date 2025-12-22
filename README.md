@@ -23,6 +23,10 @@ This branch contains test data and non-free software for the epitopeprediction p
 
   Allele list or `.txt` file to be provided in the `alleles` column of the samplesheet.
 
+* `biomart_dumps/`
+
+  CSV/TSV dumps of the Ensembl BioMart data. The dump file can be created by querying the [Ensembl Biomart](https://www.ensembl.org/biomart/martview/) for the relevant database and dataset (e.g. `grch37` or `grch38`) and selecting the attributes Protein stable ID (`ensembl_peptide_id`), RefSeq peptide ID (`refseq_peptide`), UniProtKB/Swiss-Prot ID (`uniprotswissprot`), Transcript stable ID (`ensembl_transcript_id`). You can select other genome versions as described above. A list of currently available archives can be found [here](https://www.ensembl.org/info/website/archives/index.html?redirect=no).
+
 ## Software
 
 * `software/non-free-software.tar.gpg`
