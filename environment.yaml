@@ -1,0 +1,62 @@
+name: make_nallo_test_data
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - bcftools=1.21=h3a4d415_1
+  - bedtools=2.31.1=h13024bc_3
+  - binutils_impl_linux-64=2.43=h4bf12b8_4
+  - bzip2=1.0.8=h4bc722e_7
+  - c-ares=1.34.5=hb9d3cd8_0
+  - ca-certificates=2025.4.26=hbd8a1cb_0
+  - chopper=0.10.0=hcdda2d0_0
+  - clang=20.1.4=default_hfa515fb_0
+  - clang-20=20.1.4=default_h1df26ce_0
+  - gsl=2.7=he838d99_0
+  - htslib=1.21=h566b1c6_1
+  - icu=75.1=he02047a_0
+  - k8=1.2=he8db53b_6
+  - kernel-headers_linux-64=3.10.0=he073ed8_18
+  - keyutils=1.6.1=h166bdaf_0
+  - krb5=1.21.3=h659f571_0
+  - ld_impl_linux-64=2.43=h712a8e2_4
+  - libblas=3.9.0=31_h59b9bed_openblas
+  - libcblas=3.9.0=31_he106b2a_openblas
+  - libclang-cpp20.1=20.1.4=default_h1df26ce_0
+  - libcurl=8.13.0=h332b0f4_0
+  - libdeflate=1.23=h86f0d12_0
+  - libedit=3.1.20250104=pl5321h7949ede_0
+  - libev=4.33=hd590300_2
+  - libgcc=15.1.0=h767d61c_2
+  - libgcc-devel_linux-64=15.1.0=h4c094af_102
+  - libgcc-ng=15.1.0=h69a702a_2
+  - libgfortran=15.1.0=h69a702a_2
+  - libgfortran5=15.1.0=hcea5267_2
+  - libgomp=15.1.0=h767d61c_2
+  - libiconv=1.18=h4ce23a2_1
+  - libllvm20=20.1.4=he9d0ab4_0
+  - liblzma=5.8.1=hb9d3cd8_1
+  - libnghttp2=1.64.0=h161d5f1_0
+  - libopenblas=0.3.29=pthreads_h94d23a6_0
+  - libssh2=1.11.1=hcf80075_0
+  - libstdcxx=15.1.0=h8f9b012_2
+  - libstdcxx-ng=15.1.0=h4852527_2
+  - libxcrypt=4.4.36=hd590300_1
+  - libxml2=2.13.8=h4bc477f_0
+  - libzlib=1.3.1=hb9d3cd8_2
+  - minimap2=2.30=h577a1d6_0
+  - ncurses=6.5=h2d0b736_3
+  - openblas=0.3.29=pthreads_h6ec200e_0
+  - openssl=3.5.0=h7b32b05_1
+  - perl=5.32.1=7_hd590300_perl5
+  - samtools=1.21=h96c455f_1
+  - seqtk=1.4=h577a1d6_3
+  - somalier=0.2.18=hb57907c_0
+  - sysroot_linux-64=2.17=h0157908_18
+  - tzdata=2025b=h78e105d_0
+  - zlib=1.3.1=hb9d3cd8_2
+  - zstd=1.5.7=hb8e6e7a_2
+
+prefix: "/home/felix/.bin/miniforge3/envs/make_nallo_test_data"

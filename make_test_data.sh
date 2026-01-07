@@ -1,3 +1,4 @@
+#!/bin/bash
 # This file contains information on how the nallo testdata files are created.
 # If new regions need to be added, try to keep them in the beginning of the chromosomes.
 
@@ -81,73 +82,69 @@ N
 N
 >chr22
 N
->chrY
+>chrM
 N
->chrMT
+>chrY
 N
 EOF
 
 seqtk subseq data/GRCh38_no_alt_analysis_set.fasta tmp/chromosomes_with_sequence.bed | seqtk seq -c -M tmp/test_somalier_small.bed | sed '/^>/ s/:.*//' | cat - tmp/extra_chr.fa | pigz -p 36 > tmp/hg38.test.fa.gz
 
-minimap2 -d tmp/hg38.test.mmi <(gunzip -c tmp/hg38.test.fa.gz)
-
 # Prepare small bam files by subsampling and remapping
 function prepare_bam {
-  local minimap_preset=$1
-  local in_bam=$2
-  local out_bam=$3
+  local subsample_to_n_reads=$1
+  local minimap_preset=$2
+  local in_bam=$3
+  local out_bam=$4
   local rg_file="tmp/$(basename $out_bam .bam).rg.txt"
 
   # Extract read group information to keep it after remapping
   samtools view -H ${in_bam} | grep "^@RG" > ${rg_file}
 
   # Subsample and remap. We must reheader to keep read group information
-  samtools view -s 0.5 -M -L tmp/test_somalier_small.bed ${in_bam} -h -O BAM -u -x HP,PS,AS,CC,CG,CP,H1,H2,HI,H0,IH,MC,MD,MQ,NM,SA,TS\
+  samtools view -M -L tmp/test_somalier_small.bed ${in_bam} -h -O BAM -u -x HP,PS,AS,CC,CG,CP,H1,H2,HI,H0,IH,MC,MD,MQ,NM,SA,TS \
+    | samtools reset \
+    | samtools sort -n -O SAM \
+    | awk -v n="$subsample_to_n_reads" '/^@/ {print; next} ++c <= n {print} c==n {exit}' \
     | samtools fastq -T '*' \
-    | minimap2 -a -x ${minimap_preset} -y --secondary=no -Y --MD -t 36 tmp/hg38.test.mmi - \
+    | minimap2 -a -x ${minimap_preset} -y --secondary=no -Y --MD -t 36 tmp/hg38.test.fa.gz - \
+    | samtools view -@ 36 -h -O BAM -u - \
     | samtools reheader  -c "cat - ${rg_file}" - \
     | samtools sort -o ${out_bam}
+
+    samtools index ${out_bam}
 }
 
-prepare_bam map-hifi data/HG002_haplotagged.bam tmp/hg002_somalier_small_revio.bam
-prepare_bam map-hifi data/HG003_haplotagged.bam tmp/hg003_somalier_small_revio.bam
-prepare_bam map-hifi data/HG004_haplotagged.bam tmp/hg004_somalier_small_revio.bam
-prepare_bam lr:hq data/hg002_haplotagged.bam tmp/hg002_somalier_small_ont.bam
+prepare_bam 1050 map-hifi data/HG002_haplotagged.bam testdata/HG002_PacBio_Revio.bam
+prepare_bam 690 map-hifi data/HG003_haplotagged.bam testdata/HG003_PacBio_Revio.bam
+prepare_bam 1150 map-hifi data/HG004_haplotagged.bam testdata/HG004_PacBio_Revio.bam
+prepare_bam 1200 lr:hq data/hg002.haplotagged.bam testdata/HG002_ONT.bam
+prepare_bam 11 map-hifi data/HG002_haplotagged.bam data/HG002_PacBio_Revio_copy.bam
+prepare_bam 35 lr:hq data/hg002.haplotagged.bam testdata/HG002_ONT_copy.bam
 
 # Make fastq
-samtools fastq -T \* -@ 36 tmp/hg002_somalier_small_revio.bam | pigz -p 36 > tmp/hg002_somalier_small_revio.fastq.gz
-samtools fastq -T \* -@ 36 tmp/hg002_somalier_small_ont.bam |chopper --maxlength 200000| pigz -p 36 > tmp/hg002_somalier_small_ont.fastq.gz
+samtools fastq -T \* -@ 36 testdata/HG002_PacBio_Revio.bam | pigz -p 36 > testdata/HG002_PacBio_Revio.fastq.gz
+samtools fastq -T \* -@ 36 testdata/HG002_ONT.bam |chopper --maxlength 200000| paste - - - - | sort -k1,1 -S 3G | tr '\t' '\n' | pigz -p 36 > testdata/HG002_ONT.fastq.gz
 
+# 6. Create a SVDB file from https://zenodo.org/records/11511513/files/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz
+bcftools view -R tmp/test_somalier_small.bed  data/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz --output-type z --no-version --output tmp/colorsdb.test_data.vcf.gz
+
+# 7. Copy files
+cp tmp/colorsdb.test_data.vcf.gz reference/colorsdb.test_data.vcf.gz
+cp tmp/hg38.test.fa.gz reference/hg38.test.fa.gz
+cp tmp/test_somalier_small.bed reference/test_data.bed
+
+# Print read counts
 echo "reads Revio HG002, HG003, HG004:"
 samtools view tmp/hg002_somalier_small_revio.bam|wc -l
 samtools view tmp/hg003_somalier_small_revio.bam|wc -l
 samtools view tmp/hg004_somalier_small_revio.bam|wc -l
 echo "reads ONT HG002"
 samtools view tmp/hg002_somalier_small_ont.bam|wc -l
-
-# 6. Create a SVDB file from https://zenodo.org/records/11511513/files/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz
-bcftools view -R tmp/test_somalier_small.bed  data/CoLoRSdb.GRCh38.v1.0.0.pbsv.jasmine.vcf.gz --output-type z --output tmp/colorsdb.test_data.vcf.gz
-
-# 7. Copy files, and make one copy smaller
-cp tmp/colorsdb.test_data.vcf.gz reference/colorsdb.test_data.vcf.gz
-cp tmp/hg38.test.fa.gz reference/hg38.test.fa.gz
-cp tmp/test_somalier_small.bed reference/test_data.bed
-
-cp tmp/hg002_somalier_small_revio.bam testdata/HG002_PacBio_Revio.bam
-cp tmp/hg003_somalier_small_revio.bam testdata/HG003_PacBio_Revio.bam
-cp tmp/hg004_somalier_small_revio.bam testdata/HG004_PacBio_Revio.bam
-samtools index testdata/HG002_PacBio_Revio.bam
-samtools index testdata/HG003_PacBio_Revio.bam
-samtools index testdata/HG004_PacBio_Revio.bam
-cp tmp/hg002_somalier_small_revio.fastq.gz testdata/HG002_PacBio_Revio.fastq.gz
-samtools view -@ 36 -s 0.01 -h -O BAM tmp/hg002_somalier_small_revio.bam > testdata/HG002_PacBio_Revio_copy.bam
-samtools index testdata/HG002_PacBio_Revio_copy.bam
-
-cp tmp/hg002_somalier_small_ont.bam testdata/HG002_ONT.bam
-samtools index testdata/HG002_ONT.bam
-samtools view -@ 36 -s 0.01 -h -O BAM tmp/hg002_somalier_small_ont.bam > testdata/HG002_ONT_copy.bam
-samtools index testdata/HG002_ONT_copy.bam
-cp tmp/hg002_somalier_small_ont.fastq.gz testdata/HG002_ONT.fastq.gz
+echo "Reads in HG002_PacBio_Revio_copy.bam:"
+samtools view testdata/HG002_PacBio_Revio_copy.bam | wc -l
+echo "Reads in HG002_ONT_copy.bam:"
+samtools view testdata/HG002_ONT_copy.bam | wc -l
 
 # 8. Unzip reference file
 gunzip -c reference/hg38.test.fa.gz > reference/hg38.test.fa
