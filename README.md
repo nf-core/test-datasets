@@ -22,6 +22,9 @@ The omics data for TOYv2 is taken from GDSC and heavily subsetted: [preprocessin
 
 ### Original sources (before preprocessing):
 
+#### CTRPv2_sample_test
+Raw sample dose response data for Afatinib and Lapatinib, taken from CTRPv2.
+
 #### TOYv1
 
 |                                                                    | Source                                                                                                                                                                                                                     |
