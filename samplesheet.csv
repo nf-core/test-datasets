@@ -1,0 +1,3 @@
+patient,sample,status,bam,pbi
+Patient_HG008,DS_MT_T,1,https://raw.githubusercontent.com/nf-core/test-datasets/pacsomatic/testdata/HG008_Downsample_MT_tumor.bam,
+Patient_HG008,DS_MT_N,0,https://raw.githubusercontent.com/nf-core/test-datasets/pacsomatic/testdata/HG008_Downsample_MT_normal.bam,
