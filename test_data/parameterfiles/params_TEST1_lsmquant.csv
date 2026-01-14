@@ -28,7 +28,6 @@ resample_s,3;3;1
 hist_match,64
 sift_refinement,true
 load_alignment_params,true
-overlap,0.20
 stitch_sub_stack,
 stitch_sub_channel,
 stitch_start_slice,
