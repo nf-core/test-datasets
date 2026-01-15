@@ -1,0 +1,3 @@
+ID	Sample	Condition	ReplicateFileName	Fasta
+1	PBMC009	A	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC009_msms37.raw	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/UP000005640_9606.fasta
+6	PBMC007	B	ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2019/10/PXD011628/PBMC007_msms29.raw	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/UP000005640_9606.fasta
