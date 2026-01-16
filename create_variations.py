@@ -32,7 +32,7 @@ print(adata_base)
 def save_variation(adata, filename, description=""):
     """Save anndata variation to file."""
     filepath = OUTDIR / filename
-    adata.write_h5ad(filepath)
+    adata.write_h5ad(filepath, compression="gzip")
     if description:
         print(f"  ✓ {filename}: {description}")
 
