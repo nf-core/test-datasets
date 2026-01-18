@@ -213,6 +213,39 @@ adata.obs["cell_type"] = np.random.choice(cell_types, n_cells)
 save_variation(adata, "label_conflict.h5ad", "Both 'label' and 'cell_type' exist (error case)")
 
 # ============================================================================
+# 6b. CONDITION COLUMN VARIATIONS
+# ============================================================================
+print("\n6b. Condition Column Variations")
+
+conditions = ["healthy", "disease", "treated"]
+
+# 6b.1 Condition column exists with different name
+adata = adata_base.copy()
+adata.obs["disease_state"] = np.random.choice(conditions, n_cells)
+save_variation(adata, "condition_different_name.h5ad", "Condition column named 'disease_state'")
+
+# 6b.2 Condition column already named "condition"
+adata = adata_base.copy()
+adata.obs["condition"] = np.random.choice(conditions, n_cells)
+save_variation(adata, "condition_correct_name.h5ad", "Condition column already named 'condition'")
+
+# 6b.3 Condition column missing
+adata = adata_base.copy()
+save_variation(adata, "condition_missing.h5ad", "No condition column in obs")
+
+# 6b.4 Condition column conflict case
+adata = adata_base.copy()
+adata.obs["condition"] = "conflict_condition"
+adata.obs["disease_state"] = np.random.choice(conditions, n_cells)
+save_variation(adata, "condition_conflict.h5ad", "Both 'condition' and 'disease_state' exist (error case)")
+
+# 6b.5 Complete test data with label and condition (for differential expression testing)
+adata = adata_base.copy()
+adata.obs["label"] = np.random.choice(cell_types[:6], n_cells)  # Use cell types without "Unassigned"
+adata.obs["condition"] = np.random.choice(conditions, n_cells)
+save_variation(adata, "with_label_and_condition.h5ad", "Contains both label and condition columns for DE testing")
+
+# ============================================================================
 # 7. MATRIX FORMAT VARIATIONS
 # ============================================================================
 print("\n7. Matrix Format Variations")
