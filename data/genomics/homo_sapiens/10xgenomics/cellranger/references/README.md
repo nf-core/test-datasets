@@ -27,3 +27,11 @@ The reference is found in the official 10X Genomics `cellranger vdj` tutorial:
 curl -O https://cf.10xgenomics.com/supp/cell-vdj/refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz
 tar -xf refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz
 ```
+
+### Flex
+A probeset for use with cellranger Flex (`cellranger multi`) datasets. Filtered to only chr22 to match the reference
+genome files (genomics/homo_sapiens/genome/) with a few extra probes (chosen at random) added to meet cellranger's
+minimum requirement of 10 probes.
+
+#### Source
+Downloaded from: https://www.10xgenomics.com/support/software/cell-ranger/downloads
