@@ -444,6 +444,9 @@ The earth sciences folder contain subfolders for different data formats encounte
         - test_pre_config.txt: P-site configuration file output from ribocode/metaplots for testing ribocode/ribocode module
       - salmon.merged.gene_counts_length_scaled.tsv: Example matrix containing both Riboseq and RNA-seq runs, suitable for translational efficiency analysis
       - samplesheet.csv: Sample sheet corresponding to salmon.merged.gene_counts_length_scaled.tsv
+    - yallhap: Y-chromosome haplogroup classification reference data
+      - yfull_tree.json: YFull phylogenetic tree for Y-chromosome haplogroup classification
+      - ybrowse_snps_grch37.csv: YBrowse SNP database with GRCh37 coordinates for haplogroup-defining variants
   - illumina
 
     - bigwig:
@@ -480,6 +483,7 @@ The earth sciences folder contain subfolders for different data formats encounte
         - test.paired_end.duplex_umi_grouped.bam: file originating from `test.paired_end.duplex_umi_mapped_tagged.bam`
         - test.paired_end.duplex_umi_duplex_consensus.bam: file originating from `test.paired_end.duplex_umi_grouped.bam`
         - test.paired_end.umi_in_header.bam{,.bai}: Modification of `test.paired_end.unsorted_tagged.bam` to move the UMIs to the read header, and swap chromosome to entire chr22 rather than chr22:16570000-16610000. Sorted and indexed.
+      - test_ydna.bam{,.bai}: Y-chromosome BAM file subsetted from ancient Kennewick Man sample (classifies as haplogroup Q-M930) for yallhap module testing
     - bcl:
       - flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
       - flowcell_samplesheet.csv: SampleSheet for data on flowcell
@@ -604,6 +608,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}\_001.fastq.gz and D3_S1_L001_R{1,2}\_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
     - gridss:
       - test.gridss.vcf: First 500 lines of a somatic structural variant vcf file generated using `gridss`, suitable for testing gridds/somaticfilter.
+    - yallhap:
+      - test_ydna.vcf.gz{,.tbi}: Y-chromosome VCF file subsetted from ancient Kennewick Man sample (classifies as haplogroup Q-L472) for yallhap module testing
 
   - nanopore
     - bam
