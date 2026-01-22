@@ -30,6 +30,7 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
 
 `testdata-clontech` contains the test data needed to run the pipeline on data generated with the clontech-bcr-umi protocol. The first 25K reads of the SRR23055142 sample were downloaded.
 `testdata-neb` contains the test data needed to run the pipeline on data generated with the neb-bcr-umi protocol. The first 25K reads of the SRR4026043 sample were downloaded.
+`testdata-genotyping` contains test data with known genotype to test the genotyping workflow.
 
 ### TCR test data
 
