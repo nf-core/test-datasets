@@ -1,0 +1,7 @@
+title = "Vcfanno configuration file"
+
+[[annotation]]
+file="grch37_gnomad_reformated_-r2.1.1-.vcf.gz"
+fields = ["AF", "AF_popmax"]
+ops=["self", "self"]
+names=["GNOMADAF", "GNOMADAF_popmax"]
