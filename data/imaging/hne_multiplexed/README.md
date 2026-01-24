@@ -8,13 +8,13 @@ This dataset consists of **multiplexed and H&E images of human colon tissue** in
 ## Contents
 
 - `multiplexed_image_colon.ome.tif`  
-  Multiplexed image of a human colon section. Contains two channels `0: DAPI`, `1: IgG1` acquired over different staining cycles. Used to test multi-channel image processing, channel extraction and registration.
+  Multiplexed image of a human colon section. Contains two channels `0: DAPI`, `1: IgG1` acquired over different staining cycles. Used to test multi-channel image processing, channel extraction and registration. (666x666, pixel size: 0.51)
 
 - `hne_image_colon.ome.tif`  
-  H&E-stained image of the same human colon tissue section. Used for co-registration with corresponding multiplexed image.
+  H&E-stained image of the same human colon tissue section. Used for co-registration with corresponding multiplexed image. (800x850, pixel size: 0.5023)
 
 - `multiplexed_single_channel_img.ome.tif`  
-  A single-channel version of the multiplexed image `0: DAPI`. Useful for co-registration with corresponding H&E image.
+  A single-channel version of the multiplexed image `0: DAPI`. Useful for co-registration with corresponding H&E image. (666x666, pixel size: 0.51)
 
 - `hne_segmentation_mask.ome.tif`  
   Segmentation mask corresponding to `hne_image_colon.ome.tif`. To be transformed with same transformation for H&E image and useful for overlay, or segmentation-based workflows.
