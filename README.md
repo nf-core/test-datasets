@@ -618,6 +618,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - pacbio:
 
     - bam:
+      - 200080.GRCh38.haplotagged.chrM.downsampled.bam: aligned and downsampled bam file containing only chrM. Original file from [Platinum-Pedigree-Datasets](https://github.com/Platinum-Pedigree-Consortium/Platinum-Pedigree-Datasets)
+      - 200080.GRCh38.haplotagged.chrM.downsampled.bam.bai: index file for 200080.GRCh38.haplotagged.chrM.downsampled.bam
       - alz.bam: raw reads extracted from the [public Alzheimer dataset](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2020_Alzheimer8M_subset/alz.1perc.subreads.bam)
       - alz.bam.pbi: pacbio index generated with pbindex
       - alz.ccs.bam: CCS reads generated using pbccs on alz.bam
@@ -962,6 +964,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - agat_config.yaml: AGAT config file for v1.4.0 taken from <https://raw.githubusercontent.com/NBISweden/AGAT/v1.4.0/share/agat_config.yaml>
   - ncbi_user_settings.mkfg: Minimal NCBI user settings
   - paraphase_config.yaml: Minimal paraphase config for PRODH
+  - pytmb_snpeff.yml: Sample config file for the TMB tool taken from  <https://github.com/bioinfo-pf-curie/TMB/blob/master/config/snpeff.yml>
+  - pytmb_haplotc.yml: Sample config file for the TMB tool for analysing VCF files created with HaplotypeCaller. See also example for mutect2 <https://github.com/bioinfo-pf-curie/TMB/blob/master/config/mutect2.yml>
   - config_baysor.toml: Sample config file to run the baysor module.
   - config_template.yte.yaml: YTE compatible exemplary config file
   - yte_map_file.yaml: map file to test YTE
