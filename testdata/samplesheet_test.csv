@@ -1,2 +1,2 @@
-sample,fastq1,fast2
+sample,fastq_1,fastq_2
 SAMPLE_ID_TO,/testdata/emptyFQ1.fastq.gz,/testdata/emptyFQ2.fastq.gz
