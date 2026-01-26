@@ -1,0 +1,2 @@
+sample,fastq1,fast2
+SAMPLE_ID_TO,/testdata/emptyFQ1.fastq.gz,/testdata/emptyFQ2.fastq.gz
