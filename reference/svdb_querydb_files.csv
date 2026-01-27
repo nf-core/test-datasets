@@ -1,2 +1,2 @@
 filename,in_freq_info_key,in_allele_count_info_key,out_freq_info_key,out_allele_count_info_key,use_in_freq_filter
-https://raw.githubusercontent.com/Clinical-Genomics/test-datasets/oncorefiner/reference/svdb_gnomad_genomes_sv-.vcf,AF,AC,gnomad_svAF,gnomad_svAC,1
+https://raw.githubusercontent.com/Clinical-Genomics/test-datasets/refs/heads/oncorefiner/reference/svdb_gnomad_genomes_sv-.vcf,AF,AC,gnomad_svAF,gnomad_svAC,1
