@@ -8,9 +8,11 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/*.fastq.gz`: Historical single-end test data for pipeline sub-sampled to ~2000 reads
 `testdata/GSE110004/*.fastq.gz`: Paired-end test data for pipeline sub-sampled to 50000 reads
+`testdata/uncompressed/*.fastq`: Uncompressed paired-end test data sub-sampled to 17000 reads for testing uncompressed FASTQ input support
 
-`samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset  
-`samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset  
+`samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset
+`samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset
+`samplesheet/v3.10/samplesheet_test_uncompressed.csv`: Experiment design file with mixed compressed/uncompressed samples  
 
 ## Minimal test dataset origin
 
