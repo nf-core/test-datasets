@@ -819,6 +819,23 @@ ls database_melon_all_files/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
         echo "Indexed <minimi/$filename.fa>.";' - {}
 ```
 
+#### metacache
+
+Download the NCBI’s taxonomy with an included helper script:
+
+```bash
+download-ncbi-taxonomy ncbi_taxonomy
+```
+This downloads the taxonomy and puts it in a folder called `ncbi_taxonomy`.
+
+```bash
+mkdir metacache
+
+## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder metacache.
+
+metacache build test-db-metacache metacache/ -taxonomy ncbi_taxonomy
+```
+
 
 ## Database Archive Creation
 
