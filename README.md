@@ -831,7 +831,7 @@ This downloads the taxonomy and puts it in a folder called `ncbi_taxonomy`.
 ```bash
 mkdir metacache
 
-## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder metacache.
+# Copy the downloaded fasta files for Penicillium roqueforti and human genome mitochondrial to the folder metacache.
 
 metacache build test-db-metacache metacache/ -taxonomy ncbi_taxonomy
 ```
