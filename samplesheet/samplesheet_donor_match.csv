@@ -1,4 +1,4 @@
-sample,n_samples,barcodes
-test1,2,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata/barcodes.tsv
-test2,2,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata/barcodes.tsv
-test3,2,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata/barcodes.tsv
+sample,n_samples
+test1,2
+test2,2
+test3,2
