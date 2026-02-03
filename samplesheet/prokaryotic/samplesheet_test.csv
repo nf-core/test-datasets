@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2,strandedness
+SALM_REP1,https://raw.githubusercontent.com/pinin4fjords/test-datasets/prokaryotic-test-data/testdata/prokaryotic/sample_R1_1.fq.gz,https://raw.githubusercontent.com/pinin4fjords/test-datasets/prokaryotic-test-data/testdata/prokaryotic/sample_R1_2.fq.gz,unstranded
+SALM_REP2,https://raw.githubusercontent.com/pinin4fjords/test-datasets/prokaryotic-test-data/testdata/prokaryotic/sample_R2_1.fq.gz,https://raw.githubusercontent.com/pinin4fjords/test-datasets/prokaryotic-test-data/testdata/prokaryotic/sample_R2_2.fq.gz,unstranded

@@ -4,13 +4,16 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
-`reference/`: Sub-sampled genome reference files (iGenomes **S. cerevisiae** R64-1-1 Ensembl release)   
+`reference/`: Sub-sampled genome reference files (iGenomes **S. cerevisiae** R64-1-1 Ensembl release)
+`reference/prokaryotic/`: Reference files for **S. enterica** Typhimurium SL1344
 
 `testdata/*.fastq.gz`: Historical single-end test data for pipeline sub-sampled to ~2000 reads
 `testdata/GSE110004/*.fastq.gz`: Paired-end test data for pipeline sub-sampled to 50000 reads
+`testdata/prokaryotic/*.fq.gz`: Simulated prokaryotic RNA-seq paired-end reads
 
-`samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset  
-`samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset  
+`samplesheet/samplesheet.csv`: Experiment design file for minimal test dataset
+`samplesheet/samplesheet_full.csv`: Experiment design file for full test dataset
+`samplesheet/prokaryotic/samplesheet_test.csv`: Experiment design file for prokaryotic test dataset  
 
 ## Minimal test dataset origin
 
@@ -116,6 +119,24 @@ The GM12878 and K562 ENCODE data was also used to benchmark RNA-seq quantificati
 | [GSE90237](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90237) | SRR5048100 | GSM2400175 | ENCLB555AQO | Homo sapiens MCF-7 immortalized cell line | Illumina Genome Analyzer IIx | PAIRED | 131814222 | female | [fastq_1](ftp.sra.ebi.ac.uk/vol1/fastq/SRR504/000/SRR5048100/SRR5048100_1.fastq.gz) [fastq_2](ftp.sra.ebi.ac.uk/vol1/fastq/SRR504/000/SRR5048100/SRR5048100_2.fastq.gz) | f7e732c768e4080311a49e6048c4d515;5619f168e72c5ca27b1b805a91de4444 |
 | [GSE90225](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90225) | SRR5048077 | GSM2400152 | ENCLB555AMA | Homo sapiens H1-hESC stem cell male embryo | Illumina Genome Analyzer IIx | PAIRED | 125395196 | male | [fastq_1](ftp.sra.ebi.ac.uk/vol1/fastq/SRR504/007/SRR5048077/SRR5048077_1.fastq.gz) [fastq_2](ftp.sra.ebi.ac.uk/vol1/fastq/SRR504/007/SRR5048077/SRR5048077_2.fastq.gz) | 6beb20b2cd99542433986b8fe844ef09;4f63ef9e16dc9f0f8be159b02d40f0c6 |
 | [GSE90225](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90225) | SRR5048078 | GSM2400153 | ENCLB555AMB | Homo sapiens H1-hESC stem cell male embryo | Illumina Genome Analyzer IIx | PAIRED | 107101340 | male | [fastq_1](ftp.sra.ebi.ac.uk/vol1/fastq/SRR504/008/SRR5048078/SRR5048078_1.fastq.gz) [fastq_2](ftp.sra.ebi.ac.uk/vol1/fastq/SRR504/008/SRR5048078/SRR5048078_2.fastq.gz) | 9c60d407bae58019889b13acb1032116;fc5df7d28daf6df1b212aaac914f1324 |
+
+## Prokaryotic test dataset
+
+`reference/prokaryotic/`: Reference files for *Salmonella enterica* serovar Typhimurium strain SL1344
+`testdata/prokaryotic/`: Simulated paired-end RNA-seq reads
+`samplesheet/prokaryotic/samplesheet_test.csv`: Samplesheet for prokaryotic test dataset
+
+### Prokaryotic test dataset origin
+
+The prokaryotic test data was copied from the [dualrnaseq branch](https://github.com/nf-core/test-datasets/tree/dualrnaseq) of this repository, which contains simulated dual RNA-seq data for human and *Salmonella* Typhimurium.
+
+**Reference genome:** *Salmonella enterica* serovar Typhimurium strain SL1344 (FQ312003.1)
+- `SL1344_sub.fasta`: Subset of the SL1344 genome
+- `SL1344_sub.gff3`: GFF3 annotation (contains CDS features, typical of prokaryotic annotations)
+
+**Simulated reads:** Paired-end reads were simulated using the R package [Polyester (v1.24.0)](https://bioconductor.org/packages/release/bioc/html/polyester.html) from a chimeric human/*Salmonella* transcriptome. When aligned to the *Salmonella* reference only, the human-derived reads do not map, leaving only prokaryotic alignments.
+
+See the [dualrnaseq branch README](https://github.com/nf-core/test-datasets/tree/dualrnaseq) for full details on the read simulation procedure.
 
 ## Create gff from gtf
 
