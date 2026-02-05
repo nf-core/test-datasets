@@ -18,3 +18,4 @@ ganon,ganon-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/ganon.tar.gz
 kmcp,kmcp_db,,short,s3://nf-core-awsmegatests/taxprofiler/input/kmcp.tar.gz
 sylph,sylph_db,,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sylph/database.syldb
 melon,melon_db,,long,s3://nf-core-awsmegatests/taxprofiler/input/melon.tar.gz
+metacache,metacache_db,,long,s3://nf-core-awsmegatests/taxprofiler/input/metacache.tar.gz
