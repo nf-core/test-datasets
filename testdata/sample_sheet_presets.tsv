@@ -1,0 +1,4 @@
+ID	Sample	Condition	ReplicateFileName	SearchPreset
+1	HepG2	ClassI	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep1_small.mzML	qe_class1
+2	HepG2	ClassI	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep2_small.mzML	qe_class1
+3	HepG2	ClassII	https://raw.githubusercontent.com/nf-core/test-datasets/mhcquant/testdata/HepG2_rep3_small.mzML	qe_class2
