@@ -1,0 +1,121 @@
+RNA_ID	RNA_BAM_FILE	RNA_BAI_FILE	DROP_GROUP	GENE_COUNTS_FILE	GENE_ANNOTATION	GENOME
+SRR19762740	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762740.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762740.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762741	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762741.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762741.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762749	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762749.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762749.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762751	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762751.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762751.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762752	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762752.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762752.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762753	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762753.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762753.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762755	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762755.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762755.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762756	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762756.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762756.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762793	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762793.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762793.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762822	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762822.markdup.sorted.bam	s3://nf-core-awsmegatests/drop/inputs/bams/SRR19762822.markdup.sorted.bam.bai	full_test		v44	ncbi
+SRR19762792			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762811			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762743			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762835			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762824			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762747			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762845			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762847			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762782			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762737			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762787			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762757			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762795			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762821			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762768			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762838			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762820			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762796			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762798			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762842			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762840			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762780			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762816			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762736			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762830			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762839			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762790			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762849			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762774			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762764			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762825			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762762			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762769			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762770			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762848			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762744			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762783			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762837			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762850			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762818			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762805			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762812			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762852			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762745			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762773			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762786			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762815			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762766			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762748			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762826			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762846			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762754			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762833			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762803			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762813			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762763			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762775			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762791			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762800			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762772			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762831			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762841			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762788			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762765			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762814			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762834			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762735			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762759			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762799			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762779			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762817			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762767			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762804			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762785			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762758			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762776			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762828			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762829			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762851			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762836			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762746			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762853			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762827			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762802			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762760			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762823			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762797			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762810			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762808			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762784			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762843			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762844			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762777			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762809			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762789			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762742			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762739			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762761			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762832			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762801			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762819			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762738			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762806			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762807			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762734			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762750			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762771			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762781			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762778			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi
+SRR19762794			full_test	s3://nf-core-awsmegatests/drop/counts/1.0.0/geneCounts.tsv.gz	v44	ncbi

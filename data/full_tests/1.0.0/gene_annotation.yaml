@@ -1,0 +1,2 @@
+- name: v44
+  gtf: s3://nf-core-awsmegatests/drop/refs/gencode.v44.chr_patch_hapl_scaff.annotation.gtf
