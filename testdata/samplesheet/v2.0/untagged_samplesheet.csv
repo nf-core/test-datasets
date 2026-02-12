@@ -1,2 +1,2 @@
 id,fasta
-https://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/untagged_complex.fasta
+untagged_complex,https://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/untagged_complex.fasta
