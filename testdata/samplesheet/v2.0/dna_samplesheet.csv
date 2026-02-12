@@ -1,2 +1,2 @@
 id,fasta
-dna_complexhttps://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/dna_complex.fasta
+dna_complex,https://raw.githubusercontent.com/nf-core/test-datasets/proteinfold/testdata/sequences/dna_complex.fasta
