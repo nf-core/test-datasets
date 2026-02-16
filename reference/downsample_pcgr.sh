@@ -115,7 +115,7 @@ filter_tsv_chr22_nosample() {
                 print; next
             }
             $idx == "22" || $idx == "chr22" { print }
-        ' | gzip -c > "$dst_file"
+        ' | bgzip -c > "$dst_file"
     else
         awk -F'\t' -v col="$chrom_col" '
             NR==1 {
@@ -150,7 +150,7 @@ filter_tsv_chr22() {
                 print; next
             }
             ($idx == "22" || $idx == "chr22") && rand()*100 < pct { print }
-        ' | gzip -c > "$dst_file"
+        ' | bgzip -c > "$dst_file"
     else
         awk -F'\t' -v col="$chrom_col" -v pct="$SAMPLE_RATE" '
             BEGIN { srand(42) }
@@ -180,7 +180,7 @@ sample_tsv() {
             BEGIN { srand(42) }
             NR==1 { print; next }
             rand()*100 < pct { print }
-        ' | gzip -c > "$dst_file"
+        ' | bgzip -c > "$dst_file"
     else
         awk -v pct="$pct" '
             BEGIN { srand(42) }
@@ -245,7 +245,7 @@ filter_by_gene_symbol() {
                 print; next
             }
             $idx in genes { print }
-        ' | gzip -c > "$dst_file"
+        ' | bgzip -c > "$dst_file"
     else
         awk -F'\t' -v col="$symbol_col" -v gf="$gene_file" '
             BEGIN {
@@ -291,7 +291,7 @@ filter_by_entrezgene() {
                 print; next
             }
             $idx in genes { print }
-        ' | gzip -c > "$dst_file"
+        ' | bgzip -c > "$dst_file"
     else
         awk -F'\t' -v col="$entrez_col" -v gf="$gene_file" '
             BEGIN {
@@ -418,14 +418,14 @@ echo "  Filtering clinvar_sites by chr22 var_id pattern"
 zcat "$SRC/variant/tsv/clinvar/clinvar_sites.tsv.gz" | awk -F'\t' '
     NR==1 { for(i=1;i<=NF;i++) if($i=="var_id") idx=i; print; next }
     $idx ~ /^22_/ { print }
-' | gzip -c > "$DST/variant/tsv/clinvar/clinvar_sites.tsv.gz"
+' | bgzip -c > "$DST/variant/tsv/clinvar/clinvar_sites.tsv.gz"
 
 # clinvar_oncogenic.tsv.gz - has var_id with chr embedded
 echo "  Filtering clinvar_oncogenic by chr22 var_id pattern"
 zcat "$SRC/variant/tsv/clinvar/clinvar_oncogenic.tsv.gz" | awk -F'\t' '
     NR==1 { for(i=1;i<=NF;i++) if($i=="var_id") idx=i; print; next }
     $idx ~ /^22_/ { print }
-' | gzip -c > "$DST/variant/tsv/clinvar/clinvar_oncogenic.tsv.gz"
+' | bgzip -c > "$DST/variant/tsv/clinvar/clinvar_oncogenic.tsv.gz"
 
 # clinvar_gene_varstats.tsv.gz - filter by chr22 genes
 filter_by_gene_symbol "$SRC/variant/tsv/clinvar/clinvar_gene_varstats.tsv.gz" \
@@ -621,7 +621,7 @@ zcat "$SRC/expression/tsv/depmap/depmap_tpm.tsv.gz" | awk -F'\t' -v sf="$DEPMAP_
         }
         printf "\n"
     }
-' | gzip -c > "$DST/expression/tsv/depmap/depmap_tpm.tsv.gz"
+' | bgzip -c > "$DST/expression/tsv/depmap/depmap_tpm.tsv.gz"
 rm "$DEPMAP_SAMPLES"
 
 # treehouse - sample 10%
@@ -657,7 +657,7 @@ zcat "$SRC/expression/tsv/treehouse/treehouse_tpm.tsv.gz" | awk -F'\t' -v sf="$T
         }
         printf "\n"
     }
-' | gzip -c > "$DST/expression/tsv/treehouse/treehouse_tpm.tsv.gz"
+' | bgzip -c > "$DST/expression/tsv/treehouse/treehouse_tpm.tsv.gz"
 rm "$TREEHOUSE_SAMPLES"
 
 # TCGA - process each cancer type
@@ -705,7 +705,7 @@ for metadata_file in "$SRC"/expression/tsv/tcga/*_sample_metadata.tsv*; do
                         }
                         printf "\n"
                     }
-                ' | gzip -c > "$DST/expression/tsv/tcga/${cancer_type}_tpm.tsv.gz"
+                ' | bgzip -c > "$DST/expression/tsv/tcga/${cancer_type}_tpm.tsv.gz"
             fi
             rm "$TCGA_SAMPLES"
         else
