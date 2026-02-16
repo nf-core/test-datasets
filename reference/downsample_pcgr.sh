@@ -436,6 +436,7 @@ filter_by_gene_symbol "$SRC/variant/tsv/clinvar/clinvar_gene_varstats.tsv.gz" \
 filter_tsv_chr22 "$SRC/variant/tsv/gwas/gwas.tsv.gz" \
                  "$DST/variant/tsv/gwas/gwas.tsv.gz" "chromosome"
 
+
 # ----------------------------------------------------------------------------
 # 6. GENE TSV FILES
 # ----------------------------------------------------------------------------
@@ -791,6 +792,14 @@ if [[ -d "$SRC/misc/bed/ncer" ]]; then
         fi
     done
 fi
+
+# Copy all vcfanno info-tag reference files as-is across the bundle
+echo "  Copying all *.vcfanno.vcf_info_tags.txt files"
+while IFS= read -r -d '' tag_file; do
+    rel_path="${tag_file#$SRC/}"
+    copy_file "$tag_file" "$DST/$rel_path"
+done < <(find "$SRC" -type f -name '*.vcfanno.vcf_info_tags.txt' -print0)
+
 
 # Cleanup
 rm "$CHR22_GENES"
