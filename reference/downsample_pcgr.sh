@@ -40,7 +40,6 @@ mkdir -p "$DST"
 # ============================================================================
 # HELPER FUNCTIONS
 # ============================================================================
-
 # Filter VCF to chromosome 22 only using bcftools, then sample N%
 filter_vcf_chr22() {
     local src_file="$1"
@@ -49,20 +48,31 @@ filter_vcf_chr22() {
     
     mkdir -p "$dst_dir"
     echo "  Filtering VCF to chr22 + sampling ${SAMPLE_RATE}%: $(basename "$src_file")"
-    
-    # Try chr22 first, then 22 (different VCF naming conventions)
-    # bcftools view handles both compressed and uncompressed VCFs
-    # Then sample SAMPLE_RATE% of variants
+
+    # If file name contains "gwas", keep all chr22 variants (no sampling)
+    local src_base_lc
+    src_base_lc="$(basename "$src_file" | tr '[:upper:]' '[:lower:]')"
+    local keep_all_chr22=0
+    [[ "$src_base_lc" == *gwas* ]] && keep_all_chr22=1
+
     if bcftools view -r chr22 "$src_file" 2>/dev/null | grep -v "^#" | head -1 | grep -q .; then
-        bcftools view -r chr22 "$src_file" | \
-            awk -v pct="$SAMPLE_RATE" 'BEGIN{srand(42)} /^#/{print; next} rand()*100 < pct {print}' | \
-            bgzip -c > "$dst_file"
+        if [[ "$keep_all_chr22" -eq 1 ]]; then
+            bcftools view -r chr22 "$src_file" | bgzip -c > "$dst_file"
+        else
+            bcftools view -r chr22 "$src_file" | \
+                awk -v pct="$SAMPLE_RATE" 'BEGIN{srand(42)} /^#/{print; next} rand()*100 < pct {print}' | \
+                bgzip -c > "$dst_file"
+        fi
     else
-        bcftools view -r 22 "$src_file" | \
-            awk -v pct="$SAMPLE_RATE" 'BEGIN{srand(42)} /^#/{print; next} rand()*100 < pct {print}' | \
-            bgzip -c > "$dst_file"
+        if [[ "$keep_all_chr22" -eq 1 ]]; then
+            bcftools view -r 22 "$src_file" | bgzip -c > "$dst_file"
+        else
+            bcftools view -r 22 "$src_file" | \
+                awk -v pct="$SAMPLE_RATE" 'BEGIN{srand(42)} /^#/{print; next} rand()*100 < pct {print}' | \
+                bgzip -c > "$dst_file"
+        fi
     fi
-    
+
     # Create tabix index
     tabix -p vcf "$dst_file" 2>/dev/null || true
 }
@@ -314,7 +324,6 @@ filter_by_entrezgene() {
 # ============================================================================
 # MAIN PROCESSING
 # ============================================================================
-
 # First, extract chr22 genes for filtering gene-based files
 echo ""
 echo "=== Extracting chr22 gene list ==="
@@ -374,6 +383,18 @@ echo "=== Processing BED files (filtering to chr22) ==="
 # misc/bed files
 for bed_dir in "$SRC"/misc/bed/*/; do
     dir_name=$(basename "$bed_dir")
+
+    # Keep cytoband BED files complete (required for CNA annotation)
+    if [[ "$dir_name" == "cytoband" ]]; then
+        for bed_file in "$bed_dir"*.bed.gz; do
+            if [[ -f "$bed_file" ]]; then
+                copy_file "$bed_file" "$DST/misc/bed/$dir_name/$(basename "$bed_file")"
+                copy_index "$bed_file" "$DST/misc/bed/$dir_name/$(basename "$bed_file")"
+            fi
+        done
+        continue
+    fi
+
     for bed_file in "$bed_dir"*.bed.gz; do
         if [[ -f "$bed_file" ]]; then
             filter_bed_chr22 "$bed_file" "$DST/misc/bed/$dir_name/$(basename "$bed_file")"
@@ -383,11 +404,14 @@ done
 
 # gene/bed/gene_transcript_xref
 mkdir -p "$DST/gene/bed/gene_transcript_xref"
+echo "  Copying gene_transcript_xref BED files as-is (no filtering/downsampling)"
 for bed_file in "$SRC"/gene/bed/gene_transcript_xref/*.bed.gz; do
     if [[ -f "$bed_file" ]]; then
-        filter_bed_chr22 "$bed_file" "$DST/gene/bed/gene_transcript_xref/$(basename "$bed_file")"
+        copy_file "$bed_file" "$DST/gene/bed/gene_transcript_xref/$(basename "$bed_file")"
+        copy_index "$bed_file" "$DST/gene/bed/gene_transcript_xref/$(basename "$bed_file")"
     fi
 done
+
 # Copy vcf_info_tags file
 if [[ -f "$SRC/gene/bed/gene_transcript_xref/gene_transcript_xref.vcfanno.vcf_info_tags.txt" ]]; then
     copy_file "$SRC/gene/bed/gene_transcript_xref/gene_transcript_xref.vcfanno.vcf_info_tags.txt" \
@@ -444,13 +468,15 @@ echo ""
 echo "=== Processing gene TSV files ==="
 
 # gene_transcript_xref.tsv.gz - has chrom column
-filter_tsv_chr22 "$SRC/gene/tsv/gene_transcript_xref/gene_transcript_xref.tsv.gz" \
-                 "$DST/gene/tsv/gene_transcript_xref/gene_transcript_xref.tsv.gz" "chrom"
+# filter_tsv_chr22 "$SRC/gene/tsv/gene_transcript_xref/gene_transcript_xref.tsv.gz" \
+#                  "$DST/gene/tsv/gene_transcript_xref/gene_transcript_xref.tsv.gz" "chrom"
 
-# gene_index.tsv.gz - filter by chr22 entrezgene
-filter_by_entrezgene "$SRC/gene/tsv/gene_transcript_xref/gene_index.tsv.gz" \
-                     "$DST/gene/tsv/gene_transcript_xref/gene_index.tsv.gz" \
-                     "$CHR22_GENES" "ENTREZGENE"
+copy_file "$SRC/gene/tsv/gene_transcript_xref/gene_transcript_xref.tsv.gz" \
+          "$DST/gene/tsv/gene_transcript_xref/gene_transcript_xref.tsv.gz"
+
+# gene_index.tsv.gz - keep complete (avoid transcript/gene lookup gaps)
+copy_file "$SRC/gene/tsv/gene_transcript_xref/gene_index.tsv.gz" \
+          "$DST/gene/tsv/gene_transcript_xref/gene_index.tsv.gz"
 
 # gene_transcript_xref_bedmap.tsv.gz - small, copy as-is
 copy_file "$SRC/gene/tsv/gene_transcript_xref/gene_transcript_xref_bedmap.tsv.gz" \
@@ -477,9 +503,9 @@ filter_by_gene_symbol "$SRC/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.g
 echo ""
 echo "=== Processing misc TSV files ==="
 
-# cytoband.tsv.gz - has chrom column
-filter_tsv_chr22 "$SRC/misc/tsv/cytoband/cytoband.tsv.gz" \
-                 "$DST/misc/tsv/cytoband/cytoband.tsv.gz" "chrom"
+# cytoband.tsv.gz - copy as-is because whole file is
+
+copy_file "$SRC/misc/tsv/cytoband/cytoband.tsv.gz" "$DST/misc/tsv/cytoband/cytoband.tsv.gz"
 
 # grantham.tsv - amino acid reference, copy as-is (small)
 copy_file "$SRC/misc/tsv/grantham/grantham.tsv" "$DST/misc/tsv/grantham/grantham.tsv"
@@ -527,17 +553,21 @@ echo "=== Processing biomarker TSV files ==="
 
 mkdir -p "$DST/biomarker/tsv"
 
-# Filter by chr22 genes (symbol column)
-for f in civic.variant.tsv.gz cgi.variant.tsv.gz; do
-    if [[ -f "$SRC/biomarker/tsv/$f" ]]; then
-        filter_by_gene_symbol "$SRC/biomarker/tsv/$f" "$DST/biomarker/tsv/$f" "$CHR22_GENES" "symbol"
+# Keep ALL biomarker TSVs as-is to preserve PCGR-expected column types/schema
+# (prevents bind_rows type mismatch for biomarker_source_datestamp)
+for f in "$SRC"/biomarker/tsv/*.tsv.gz "$SRC"/biomarker/tsv/*.tsv; do
+    if [[ -f "$f" ]]; then
+        copy_file "$f" "$DST/biomarker/tsv/$(basename "$f")"
+        copy_index "$f" "$DST/biomarker/tsv/$(basename "$f")"
     fi
 done
+
+# IMPORTANT: do NOT sample/transform biomarker files after copy.
 
 # Clinical and literature files - sample 10% (complex relationships)
 for f in civic.clinical.tsv.gz civic.literature.tsv.gz cgi.clinical.tsv.gz cgi.literature.tsv.gz; do
     if [[ -f "$SRC/biomarker/tsv/$f" ]]; then
-        sample_tsv "$SRC/biomarker/tsv/$f" "$DST/biomarker/tsv/$f" "$SAMPLE_RATE"
+        copy_file "$SRC/biomarker/tsv/$f" "$DST/biomarker/tsv/$f" #"$SAMPLE_RATE"
     fi
 done
 
@@ -800,6 +830,29 @@ while IFS= read -r -d '' tag_file; do
     copy_file "$tag_file" "$DST/$rel_path"
 done < <(find "$SRC" -type f -name '*.vcfanno.vcf_info_tags.txt' -print0)
 
+# copy tcga_msi_classifier.html
+copy_file "$SRC/misc/other/msi_classification/tcga_msi_classifier.html" \
+          "$DST/misc/other/msi_classification/tcga_msi_classifier.html"
+
+
+echo "Recompressing VCF/BED in variant, misc/bed, gene/bed to BGZF (keep .gz extension)..."
+for root in "$DST/variant" "$DST/misc/bed" "$DST/gene/bed"; do
+    [[ -d "$root" ]] || continue
+    find "$root" -type f \( -name '*.vcf.gz' -o -name '*.bed.gz' \) -print0
+done | while IFS= read -r -d '' f; do
+    tmp="${f}.tmp.bgzip.$$"
+
+    # recompress as BGZF but keep filename suffix as .gz
+    zcat -- "$f" | bgzip -c > "$tmp"
+    mv -f -- "$tmp" "$f"
+
+    # rebuild tabix index
+    rm -f -- "${f}.tbi" "${f}.csi"
+    case "$f" in
+        *.vcf.gz) tabix -f -p vcf "$f" ;;
+        *.bed.gz) tabix -f -p bed "$f" ;;
+    esac
+done
 
 # Cleanup
 rm "$CHR22_GENES"
