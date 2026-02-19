@@ -17,29 +17,36 @@ mkdir -p ./data/database/humann/v3
 checkout 3.6.1 in human repo
 cp -r <path to clone>/humann/humann/data/ ./data/database/humann/v3
 rm -r data/database/humann/v3/misc
+rm -r data/database/humann/v3/pathways
+# rename so it doesn't warn about us using demo databases
 mv ./data/database/humann/v3/chocophlan_DEMO/ ./data/database/humann/v3/chocophlan_nfDEMO/
 mv ./data/database/humann/v3/uniref_DEMO/ ./data/database/humann/v3/uniref_nfDEMO/
-
 
 tar czf data/database/humann/v3/chocophlan_nfDEMO.tar.gz data/database/humann/v3/chocophlan_nfDEMO
 tar czf data/database/humann/v3/uniref_nfDEMO.tar.gz data/database/humann/v3/uniref_nfDEMO
 
 
-# this raw file is 66mb so we subset it to test data size
-#mv data/database/humann/pathways/metacyc_reactions_level4ec_only.uniref.bz data/database/humann/pathways/metacyc_reactions_level4ec_only.uniref.bz2_full
-#bzcat data/database/humann/pathways/metacyc_reactions_level4ec_only.uniref.bz2_full | head -n 250  | bzip2 > data/database/humann/pathways/metacyc_reactions_level4ec_only.uniref.bz2
-#rm data/database/humann/pathways/metacyc_reactions_level4ec_only.uniref.bz2_full
-#tar czf data/database/humann.tar.gz data/database/humann/ && mv data/database/humann.tar.gz data/database/humann/
-
 
 git checkout 4.0.0.alpha.1-final
+
 cp -r ../humann-orig/humann/data/ ./data/database/humann/v4/
 mv  ./data/database/humann/v4/chocophlan_DEMO/ ./data/database/humann/v4/chocophlan_nfDEMO/
 mv ./data/database/humann/v4/uniref_DEMO/ ./data/database/humann/v4/uniref_nfDEMO/
 mv data/database/humann/v4/utility_DEMO/ data/database/humann/v4/utility_nfDEMO/
+
+# strategic shrinking of utility dbs
+mv data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full
+zcat < data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full | head -n 500 | gzip --best > data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz
+rm data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full
+
+mv data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
+zcat < data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full | head -n 500 | gzip --best > data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz
+rm data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
+
+
 tar czf data/database/humann/v4/utility.tar.gz data/database/humann/v4/utility_nfDEMO/
-tar czf data/database/humann/v4/nucleotide.tar.gz data/database/humann/v4/chocophlan_nfDEMO/
-tar czf data/database/humann/v4/protein.tar.gz data/database/humann/v4/uniref_nfDEMO/
+tar czf data/database/humann/v4/chocophlan_nfDEMO.tar.gz data/database/humann/v4/chocophlan_nfDEMO/
+tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz data/database/humann/v4/uniref_nfDEMO/
 
 
 ```
@@ -50,13 +57,21 @@ tar czf data/database/humann/v4/protein.tar.gz data/database/humann/v4/uniref_nf
 ```
 mkdir data/database/fmhfunprofiler/
 
+cd data/database/fmhfunprofiler/
 wget https://zenodo.org/records/10045253/files/KOs_sketched_scaled_1000.sig.zip
 
 unzip KOs_sketched_scaled_1000.sig.zip
 
-# interupt after a few seconds, we only need the first 500
-zip data/database/fmhfunprofiler/KOs_sketched_scaled_1000_demo.sig.zip signatures/*
+# find the 30s ribosomal protein s8 for a nice essential gene to test with
+mkdir -p tmp/signatures
 
+cat SOURMASH-MANIFEST.csv | grep "K02994\|moltype" > tmp/SOURMASH-MANIFEST.csv
+tail -n+2 tmp/SOURMASH-MANIFEST.csv |cut -f 1 -d, |while read x ; do cp $x tmp/signatures/$(basename $x) ; done
+
+cd tmp
+
+zip ../KOs_sketched_scaled_1000_demo.sig.zip SOURMASH-MANIFEST.csv signatures/*
+cd ../../../../
 ```
 
 
@@ -73,3 +88,11 @@ mv broadstreet-v4.0.1.tar.gz data/database/rgi/
 
 
 ```
+
+
+
+<!-- # this raw file is 66mb so we subset it to test data size -->
+<!-- mv data/database/humann/v3/pathways/metacyc_reactions_level4ec_only.uniref.bz2 data/database/humann/v3/pathways/metacyc_reactions_level4ec_only.uniref.bz2_full -->
+<!-- bzcat data/database/humann/v3/pathways/metacyc_reactions_level4ec_only.uniref.bz2_full | head -n 250  | bzip2 > data/database/humann/v3/pathways/metacyc_reactions_level4ec_only.uniref.bz2 -->
+<!-- rm data/database/humann/v3/pathways/metacyc_reactions_level4ec_only.uniref.bz2_full -->
+<!-- tar czf data/database/humann.tar.gz data/database/humann/ && mv data/database/humann.tar.gz data/database/humann/ -->
