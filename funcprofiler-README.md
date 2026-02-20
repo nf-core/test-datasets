@@ -11,21 +11,30 @@ for tag in 3.6.1 3.7 v3.8 v3.9 4.0.0.alpha.1 4.0.0.alpha.1-final ; do git checko
 - Clone the humann repo
 
 ```
-mkdir -p ./data/database/humann/v3/
 mkdir -p ./data/database/humann/v3
+mkdir -p ./data/database/humann/v4
 
-checkout 3.6.1 in human repo
+#checkout 3.6.1 in human repo
 cp -r <path to clone>/humann/humann/data/ ./data/database/humann/v3
-rm -r data/database/humann/v3/misc
 rm -r data/database/humann/v3/pathways
 # rename so it doesn't warn about us using demo databases
 mv ./data/database/humann/v3/chocophlan_DEMO/ ./data/database/humann/v3/chocophlan_nfDEMO/
 mv ./data/database/humann/v3/uniref_DEMO/ ./data/database/humann/v3/uniref_nfDEMO/
 
+# remove excess stuff from the utility database, any file that is not in the full db at https://g-227ca.190ebd.75bc.data.globus.org/humann_data/full_mapping_v201901b.tar.gz
+for f in map_EC_to_triplet_AC_U50_U90_Swissprot_and_Trembl.txt.gz KeggOrgId2OrgNameTable.txt map_infogo1000_uniref50.txt.gz map_infogo1000_uniref90.txt.gz  map_kegg-pwy_name.txt.gz   map_metacyc-pwy_name.txt.gz map_metacyc-rxn_name.txt.gz map_transporter_uniref50.txt.gz mpa_vJan21_CHOCOPhlAnSGB_202103.tsv uniref50-tol-lca.dat.gz uniref90-tol-lca.dat.gz ; do
+rm ./data/database/humann/v3/misc/$f
+done
+
+# shrink the remaining
+find ./data/database/humann/v3/misc/ -name "*.gz" | while read f ; do tmpfile="tmp_$(basename $f)"; mv $f $tmpfile ; zcat < $tmpfile | head -n 100 | gzip --best > $f ; rm $tmpfile ; done
+find ./data/database/humann/v3/misc/ -name "*.bz2" | while read f ; do tmpfile="tmp_$(basename $f)"; mv $f $tmpfile ; bzcat < $tmpfile | head -n 100 | bzip2 --best > $f ; rm $tmpfile ; done
+
+
+
 tar czf data/database/humann/v3/chocophlan_nfDEMO.tar.gz data/database/humann/v3/chocophlan_nfDEMO
 tar czf data/database/humann/v3/uniref_nfDEMO.tar.gz data/database/humann/v3/uniref_nfDEMO
-
-
+tar czf data/database/humann/v3/utility_nfDEMO.tar.gz data/database/humann/v3/misc
 
 git checkout 4.0.0.alpha.1-final
 
