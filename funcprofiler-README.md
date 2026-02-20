@@ -32,9 +32,9 @@ find ./data/database/humann/v3/misc/ -name "*.bz2" | while read f ; do tmpfile="
 
 
 
-tar czf data/database/humann/v3/chocophlan_nfDEMO.tar.gz data/database/humann/v3/chocophlan_nfDEMO
-tar czf data/database/humann/v3/uniref_nfDEMO.tar.gz data/database/humann/v3/uniref_nfDEMO
-tar czf data/database/humann/v3/utility_nfDEMO.tar.gz data/database/humann/v3/misc
+tar czf data/database/humann/v3/chocophlan_nfDEMO.tar.gz -C data/database/humann/v3/chocophlan_nfDEMO .
+tar czf data/database/humann/v3/uniref_nfDEMO.tar.gz -C data/database/humann/v3/uniref_nfDEMO .
+tar czf data/database/humann/v3/utility_nfDEMO.tar.gz -C data/database/humann/v3/misc .
 
 git checkout 4.0.0.alpha.1-final
 
@@ -53,9 +53,9 @@ zcat < data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full | head
 rm data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
 
 
-tar czf data/database/humann/v4/utility_nfDEMO.tar.gz data/database/humann/v4/utility_nfDEMO/
-tar czf data/database/humann/v4/chocophlan_nfDEMO.tar.gz data/database/humann/v4/chocophlan_nfDEMO/
-tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz data/database/humann/v4/uniref_nfDEMO/
+tar czf data/database/humann/v4/utility_nfDEMO.tar.gz -C  data/database/humann/v4/utility_nfDEMO/ .
+tar czf data/database/humann/v4/chocophlan_nfDEMO.tar.gz -C data/database/humann/v4/chocophlan_nfDEMO/ .
+tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz -C data/database/humann/v4/uniref_nfDEMO/ .
 
 
 ```
