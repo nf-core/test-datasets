@@ -53,7 +53,7 @@ zcat < data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full | head
 rm data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
 
 
-tar czf data/database/humann/v4/utility.tar.gz data/database/humann/v4/utility_nfDEMO/
+tar czf data/database/humann/v4/utility_nfDEMO.tar.gz data/database/humann/v4/utility_nfDEMO/
 tar czf data/database/humann/v4/chocophlan_nfDEMO.tar.gz data/database/humann/v4/chocophlan_nfDEMO/
 tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz data/database/humann/v4/uniref_nfDEMO/
 
