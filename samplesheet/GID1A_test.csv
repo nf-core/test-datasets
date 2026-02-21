@@ -1,0 +1,5 @@
+sample,type,replicate,file1,file2
+GID1A,input,1,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_input1_50k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_input1_50k_2.fastq.gz
+GID1A,input,2,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_input2_50k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_input2_50k_2.fastq.gz
+GID1A,output,1,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_output1_50k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_output1_50k_2.fastq.gz
+GID1A,output,2,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_output2_50k_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/deepmutscan/testdata/reads/GID1A_output2_50k_2.fastq.gz
