@@ -6,13 +6,16 @@ This branch contains test data and references for the [nf-core/variantprioritiza
 
 ## Content of this repository
 
-`test_data/*`: This folder contains minimal vcf files for chr22 with their index and a cna file. 
+`test_data/*`: This folder contains minimal somatic vcf files for chr22 with their index and a cna file. 
 
 `test_data_full/*`: This folder contains vcf files with their index and a cna file for the `test_full` profile.
 
+`test_data_cpsr/*`: This folder contains minimal germline vcf for chr22 with their index.
+
 `samplesheets/`:
-    - `default.csv`: Experiment design file for minimal test dataset.
+    - `default.csv`: Experiment design file for minimal somatic test dataset.
     - `test_full.csv`: Experiment design file for full size test dataset.
+    - `cpsr.csv`: Experiment design file for minimal germline test dataset.
 
 `reference/`:
     - `vep_cache_113_GRCh38_chr22.tar.gz`: VEP Cache downsampled to chr22 and with only 1% of all entries in `all_vars.gz` kept for CI testing.
