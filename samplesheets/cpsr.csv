@@ -1,2 +1,4 @@
 patient,status,sample,vcf,cna
 NA12878,0,NA12878N,https://github.com/nf-core/test-datasets/raw/refs/heads/variantprioritization/test_data_cpsr/NA12878.strelka.variants.chr22.vcf.gz,
+NA12878,0,NA12878N,https://github.com/nf-core/test-datasets/raw/refs/heads/variantprioritization/test_data_cpsr/NA12878.deepvariant.chr22.vcf.gz,
+NA12878,0,NA12878N,https://github.com/nf-core/test-datasets/raw/refs/heads/variantprioritization/test_data_cpsr/NA12878.haplotypecaller.chr22.vcf.gz,
