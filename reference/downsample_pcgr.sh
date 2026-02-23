@@ -321,6 +321,97 @@ filter_by_entrezgene() {
     fi
 }
 
+# Filter TSV rows by regex across any column (keeps header)
+filter_tsv_by_regex_anycol() {
+    local src_file="$1"
+    local dst_file="$2"
+    local regex="$3"
+    local dst_dir
+    dst_dir=$(dirname "$dst_file")
+
+    mkdir -p "$dst_dir"
+    echo "  Filtering by regex across all columns: $(basename "$src_file") [/$regex/]"
+
+    if [[ "$src_file" == *.gz ]]; then
+        zcat "$src_file" | awk -v re="$regex" '
+            NR==1 { print; next }
+            tolower($0) ~ re { print }
+        ' | bgzip -c > "$dst_file"
+    else
+        awk -v re="$regex" '
+            NR==1 { print; next }
+            tolower($0) ~ re { print }
+        ' "$src_file" > "$dst_file"
+    fi
+}
+
+# Filter TSV rows by regex in selected columns (header-aware, fallback to whole row)
+filter_tsv_by_regex_columns() {
+    local src_file="$1"
+    local dst_file="$2"
+    local regex="$3"
+    local col_candidates_csv="$4"  # e.g. "term,label,name,phenotype,disease,description"
+    local dst_dir
+    dst_dir=$(dirname "$dst_file")
+
+    mkdir -p "$dst_dir"
+    echo "  Filtering by regex in selected columns: $(basename "$src_file") [/$regex/]"
+
+    if [[ "$src_file" == *.gz ]]; then
+        zcat "$src_file" | awk -F'\t' -v OFS='\t' -v re="$regex" -v cands="$col_candidates_csv" '
+            BEGIN {
+                n=split(cands, wanted, ",")
+                re="(" re ")"
+            }
+            NR==1 {
+                for(i=1;i<=NF;i++) {
+                    h=tolower($i)
+                    for(j=1;j<=n;j++) if(h==tolower(wanted[j])) keep_col[i]=1
+                }
+                has_cols=0
+                for(i in keep_col) { has_cols=1; break }
+                print
+                next
+            }
+            {
+                if(has_cols) {
+                    for(i=1;i<=NF;i++) {
+                        if(keep_col[i] && tolower($i) ~ re) { print; next }
+                    }
+                } else {
+                    if(tolower($0) ~ re) print
+                }
+            }
+        ' | bgzip -c > "$dst_file"
+    else
+        awk -F'\t' -v OFS='\t' -v re="$regex" -v cands="$col_candidates_csv" '
+            BEGIN {
+                n=split(cands, wanted, ",")
+                re="(" re ")"
+            }
+            NR==1 {
+                for(i=1;i<=NF;i++) {
+                    h=tolower($i)
+                    for(j=1;j<=n;j++) if(h==tolower(wanted[j])) keep_col[i]=1
+                }
+                has_cols=0
+                for(i in keep_col) { has_cols=1; break }
+                print
+                next
+            }
+            {
+                if(has_cols) {
+                    for(i=1;i<=NF;i++) {
+                        if(keep_col[i] && tolower($i) ~ re) { print; next }
+                    }
+                } else {
+                    if(tolower($0) ~ re) print
+                }
+            }
+        ' "$src_file" > "$dst_file"
+    fi
+}
+
 # ============================================================================
 # MAIN PROCESSING
 # ============================================================================
@@ -419,8 +510,15 @@ if [[ -f "$SRC/gene/bed/gene_transcript_xref/gene_transcript_xref.vcfanno.vcf_in
 fi
 
 # gene/bed/gene_virtual_panel - filter each panel
+# do not filter 0 and 21 panels (needed for cpsr testing)
 mkdir -p "$DST/gene/bed/gene_virtual_panel"
 for bed_file in "$SRC"/gene/bed/gene_virtual_panel/*.bed.gz; do
+    if [[ "$(basename "$bed_file")" == "0.bed.gz" || "$(basename "$bed_file")" == "21.bed.gz" ]]; then
+        echo "  Copying $(basename "$bed_file") as-is (needed for CPSR testing)"
+        copy_file "$bed_file" "$DST/gene/bed/gene_virtual_panel/$(basename "$bed_file")"
+        copy_index "$bed_file" "$DST/gene/bed/gene_virtual_panel/$(basename "$bed_file")"
+        continue
+    fi
     if [[ -f "$bed_file" ]]; then
         filter_bed_chr22 "$bed_file" "$DST/gene/bed/gene_virtual_panel/$(basename "$bed_file")"
     fi
@@ -492,8 +590,8 @@ filter_by_gene_symbol "$SRC/gene/tsv/gene_cpg/gene_cpg.tsv.gz" \
                       "$DST/gene/tsv/gene_cpg/gene_cpg.tsv.gz" \
                       "$CHR22_GENES" "symbol"
 
-# gene_virtual_panel - filter by chr22 genes
-copy_filel "$SRC/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.gz" \
+# copy complete file
+copy_file "$SRC/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.gz" \
             "$DST/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.gz" 
 
 # ----------------------------------------------------------------------------
@@ -590,9 +688,17 @@ echo "=== Processing phenotype TSV files ==="
 
 mkdir -p "$DST/phenotype/tsv"
 
-# Sample 10% of phenotype files
-sample_tsv "$SRC/phenotype/tsv/phenotype_onco.tsv.gz" "$DST/phenotype/tsv/phenotype_onco.tsv.gz" "$SAMPLE_RATE"
-sample_tsv "$SRC/phenotype/tsv/phenotype_umls.tsv.gz" "$DST/phenotype/tsv/phenotype_umls.tsv.gz" "$SAMPLE_RATE"
+# Keep only ovarian cancer-related phenotype terms/synonyms
+OVARIAN_REGEX='(^|[^a-z])(ovarian|ovary|fallopian|tubo[- ]ovarian)([^a-z]|$)'
+PHENO_TEXT_COLS='cui_name,term,label,name,phenotype,disease,description,concept_name,preferred_name'
+filter_tsv_by_regex_columns "$SRC/phenotype/tsv/phenotype_onco.tsv.gz" \
+                            "$DST/phenotype/tsv/phenotype_onco.tsv.gz" \
+                            "$OVARIAN_REGEX" "$PHENO_TEXT_COLS"
+filter_tsv_by_regex_columns "$SRC/phenotype/tsv/phenotype_umls.tsv.gz" \
+                            "$DST/phenotype/tsv/phenotype_umls.tsv.gz" \
+                            "$OVARIAN_REGEX" "$PHENO_TEXT_COLS"
+
+# TODO: copy them
 
 # ----------------------------------------------------------------------------
 # 11. FUSION TSV FILES
