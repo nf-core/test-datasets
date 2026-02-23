@@ -493,9 +493,8 @@ filter_by_gene_symbol "$SRC/gene/tsv/gene_cpg/gene_cpg.tsv.gz" \
                       "$CHR22_GENES" "symbol"
 
 # gene_virtual_panel - filter by chr22 genes
-filter_by_gene_symbol "$SRC/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.gz" \
-                      "$DST/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.gz" \
-                      "$CHR22_GENES" "symbol"
+copy_filel "$SRC/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.gz" \
+            "$DST/gene/tsv/gene_virtual_panel/gene_virtual_panel.tsv.gz" 
 
 # ----------------------------------------------------------------------------
 # 7. MISC TSV FILES
