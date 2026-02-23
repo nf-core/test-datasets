@@ -60,6 +60,15 @@ tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz -C data/database/humann/v4/
 
 ```
 
+## Metaphlan database for HUMANN4
+```
+mkdir data/database/metaphlan
+cd data/database/metaphlan
+wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
+for i in mpa_vJan21_TOY_CHOCOPhlAnSGB_20210* ; do newid=$(echo $i | sed "s|mpa_vJan21_TOY_CHOCOPhlAnSGB_202103|mpa_vOct22_CHOCOPhlAnSGB_202403|g") ; mv $i $newid ; done
+rm metaphlan4_database.tar.gz
+tar czf metaphlan_demo_for_humann4.tar.gz mpa*
+```
 
 ## fmhfunprofiler
 
