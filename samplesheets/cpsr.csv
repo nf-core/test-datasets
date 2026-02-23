@@ -1,0 +1,2 @@
+patient,status,sample,vcf,cna
+NA12878,0,NA12878N,/home-link/paifb01/nf-core/non-fork/variantprioritization/tests/NA12878.strelka.variants.chr22.vcf.gz,
