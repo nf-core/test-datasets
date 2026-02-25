@@ -36,3 +36,105 @@ git fetch
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+
+
+## Funcprofiler  CI test specific information
+
+### humann
+
+We include two sets of MetaPHlan/HUMAnN databases: one compatible with the HUMAnN 3.6 and one with HUMAnN 4.0a. These are derived from the toy datasets released by the authors, with additional subsetting of the utility databases to further shrink the sizes of the files. The file names themselves are changed as well, as the tools detect the usage of the demo files and issue warnings accordingly.
+
+#### A note about versions
+In order to understand the database compatibility network, the following can be run:
+```
+for tag in 3.6.1 3.7 v3.8 v3.9 4.0.0.alpha.1 4.0.0.alpha.1-final ; do git checkout $tag ; cat humann/config.py | grep -e "metaphlan_v4_db_version\|metaphlan_v3_db_version\|metaphlan_v3_db_matching_uniref\|matching_uniref" | sed "s|^|$tag\t|g" ; done  > version_table
+```
+
+#### Generating the test datasets
+
+The data for HUMAnN v3 is generated as follows:
+```
+mkdir -p ./data/database/humann/v3
+mkdir -p ./data/database/humann/v4
+
+#checkout 3.6.1 in human repo
+cp -r <path to clone of humann repo>/humann/humann/data/ ./data/database/humann/v3
+rm -r data/database/humann/v3/pathways
+# rename so it doesn't warn about us using demo databases
+mv ./data/database/humann/v3/chocophlan_DEMO/ ./data/database/humann/v3/chocophlan_nfDEMO/
+mv ./data/database/humann/v3/uniref_DEMO/ ./data/database/humann/v3/uniref_nfDEMO/
+
+# retain only strictly necessary files (ie any file that is in the full db at https://g-227ca.190ebd.75bc.data.globus.org/humann_data/full_mapping_v201901b.tar.gz)
+for f in map_EC_to_triplet_AC_U50_U90_Swissprot_and_Trembl.txt.gz KeggOrgId2OrgNameTable.txt map_infogo1000_uniref50.txt.gz map_infogo1000_uniref90.txt.gz  map_kegg-pwy_name.txt.gz   map_metacyc-pwy_name.txt.gz map_metacyc-rxn_name.txt.gz map_transporter_uniref50.txt.gz mpa_vJan21_CHOCOPhlAnSGB_202103.tsv uniref50-tol-lca.dat.gz uniref90-tol-lca.dat.gz ; do
+rm ./data/database/humann/v3/misc/$f
+done
+
+# shrink the remaining files
+find ./data/database/humann/v3/misc/ -name "*.gz" | while read f ; do tmpfile="tmp_$(basename $f)"; mv $f $tmpfile ; zcat < $tmpfile | head -n 100 | gzip --best > $f ; rm $tmpfile ; done
+find ./data/database/humann/v3/misc/ -name "*.bz2" | while read f ; do tmpfile="tmp_$(basename $f)"; mv $f $tmpfile ; bzcat < $tmpfile | head -n 100 | bzip2 --best > $f ; rm $tmpfile ; done
+
+
+
+tar czf data/database/humann/v3/chocophlan_nfDEMO.tar.gz -C data/database/humann/v3/chocophlan_nfDEMO .
+tar czf data/database/humann/v3/uniref_nfDEMO.tar.gz -C data/database/humann/v3/uniref_nfDEMO .
+tar czf data/database/humann/v3/utility_nfDEMO.tar.gz -C data/database/humann/v3/misc .
+```
+
+The data for HUMAnN v4 is generated as follows:
+
+```
+git checkout 4.0.0.alpha.1-final
+
+cp -r ../humann-orig/humann/data/ ./data/database/humann/v4/
+mv  ./data/database/humann/v4/chocophlan_DEMO/ ./data/database/humann/v4/chocophlan_nfDEMO/
+mv ./data/database/humann/v4/uniref_DEMO/ ./data/database/humann/v4/uniref_nfDEMO/
+mv data/database/humann/v4/utility_DEMO/ data/database/humann/v4/utility_nfDEMO/
+
+# strategic shrinking of utility dbs
+mv data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full
+zcat < data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full | head -n 500 | gzip --best > data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz
+rm data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full
+
+mv data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
+zcat < data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full | head -n 500 | gzip --best > data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz
+rm data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
+
+
+tar czf data/database/humann/v4/utility_nfDEMO.tar.gz -C  data/database/humann/v4/utility_nfDEMO/ .
+tar czf data/database/humann/v4/chocophlan_nfDEMO.tar.gz -C data/database/humann/v4/chocophlan_nfDEMO/ .
+tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz -C data/database/humann/v4/uniref_nfDEMO/ .
+
+
+```
+
+## Metaphlan database for HUMANN4
+```
+mkdir data/database/metaphlan
+cd data/database/metaphlan
+wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
+for i in mpa_vJan21_TOY_CHOCOPhlAnSGB_20210* ; do newid=$(echo $i | sed "s|mpa_vJan21_TOY_CHOCOPhlAnSGB_202103|mpa_vOct22_CHOCOPhlAnSGB_202403|g") ; mv $i $newid ; done
+rm metaphlan4_database.tar.gz
+tar czf metaphlan_demo_for_humann4.tar.gz mpa*
+```
+
+## fmhfunprofiler
+
+```
+mkdir data/database/fmhfunprofiler/
+
+cd data/database/fmhfunprofiler/
+wget https://zenodo.org/records/10045253/files/KOs_sketched_scaled_1000.sig.zip
+
+unzip KOs_sketched_scaled_1000.sig.zip
+
+# find the 30s ribosomal protein s8 for a nice essential gene to test with
+mkdir -p tmp/signatures
+
+cat SOURMASH-MANIFEST.csv | grep "K02994\|moltype" > tmp/SOURMASH-MANIFEST.csv
+tail -n+2 tmp/SOURMASH-MANIFEST.csv |cut -f 1 -d, |while read x ; do cp $x tmp/signatures/$(basename $x) ; done
+
+cd tmp
+
+zip ../KOs_sketched_scaled_1000_demo.sig.zip SOURMASH-MANIFEST.csv signatures/*
+cd ../../../../
+```
