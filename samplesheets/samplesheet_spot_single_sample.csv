@@ -1,0 +1,2 @@
+sample,single_cell,spatial,ground_truth
+test1,https://github.com/nf-core/test-datasets/raw/refs/heads/scspatialmap/datasets/spot/min_sc.h5ad,https://github.com/nf-core/test-datasets/raw/refs/heads/scspatialmap/datasets/spot/min_sp.h5ad,https://github.com/nf-core/test-datasets/raw/refs/heads/scspatialmap/datasets/spot/min_gt.csv
