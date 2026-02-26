@@ -37,3 +37,6 @@ git fetch
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+
+## Datasets 
+- `spot`: Pseudocount test datasets with 900 x 3540 × 22914 (spots x cells × genes)
