@@ -45,15 +45,17 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 We include two sets of MetaPHlan/HUMAnN databases: one compatible with the HUMAnN 3.6 and one with HUMAnN 4.0a. These are derived from the toy datasets released by the authors, with additional subsetting of the utility databases to further shrink the sizes of the files. The file names themselves are changed as well, as the tools detect the usage of the demo files and issue warnings accordingly.
 
 #### A note about versions
+
 In order to understand the database compatibility network, the following can be run:
-```
+
+```bash
 for tag in 3.6.1 3.7 v3.8 v3.9 4.0.0.alpha.1 4.0.0.alpha.1-final ; do git checkout $tag ; cat humann/config.py | grep -e "metaphlan_v4_db_version\|metaphlan_v3_db_version\|metaphlan_v3_db_matching_uniref\|matching_uniref" | sed "s|^|$tag\t|g" ; done  > version_table
-```
 
 #### Generating the test datasets
 
 The data for HUMAnN v3 is generated as follows:
-```
+
+```bash
 mkdir -p ./data/database/humann/v3
 mkdir -p ./data/database/humann/v4
 
@@ -119,7 +121,7 @@ tar czf metaphlan_demo_for_humann4.tar.gz mpa*
 
 ## fmhfunprofiler
 
-```
+```bash
 mkdir data/database/fmhfunprofiler/
 
 cd data/database/fmhfunprofiler/
