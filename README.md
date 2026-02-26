@@ -42,7 +42,7 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 
 ### humann
 
-We include two sets of MetaPHlan/HUMAnN databases: one compatible with the HUMAnN 3.6 and one with HUMAnN 4.0a. These are derived from the toy datasets released by the authors, with additional subsetting of the utility databases to further shrink the sizes of the files. The file names themselves are changed as well, as the tools detect the usage of the demo files and issue warnings accordingly.
+We include two sets of MetaPHlan/HUMAnN databases: one compatible with the HUMAnN 3.6 and one with HUMAnN 4.0a. These are derived from the toy datasets bundled with these HUMAnN releases, with additional subsetting of the utility databases to further shrink the sizes of the files. The file names themselves are changed as well, as the tools detect the usage of the demo files and issue warnings accordingly.
 
 #### A note about versions
 
@@ -59,7 +59,13 @@ The data for HUMAnN v3 is generated as follows:
 mkdir -p ./data/database/humann/v3
 mkdir -p ./data/database/humann/v4
 
-#checkout 3.6.1 in human repo
+
+# make a local copy of humann, checkout an old release,
+# git clone https://github.com/biobakery/humann
+# git checkout 3.6.1
+
+# copy over the test and utility databases
+
 cp -r <path to clone of humann repo>/humann/humann/data/ ./data/database/humann/v3
 rm -r data/database/humann/v3/pathways
 # rename so it doesn't warn about us using demo databases
@@ -84,10 +90,11 @@ tar czf data/database/humann/v3/utility_nfDEMO.tar.gz -C data/database/humann/v3
 
 The data for HUMAnN v4 is generated as follows:
 
-```
-git checkout 4.0.0.alpha.1-final
+```bash
+# in the humann repo cloned above
+# git checkout 4.0.0.alpha.1-final
 
-cp -r ../humann-orig/humann/data/ ./data/database/humann/v4/
+cp -r <path to clone of humann repo>/humann/data/ ./data/database/humann/v4/
 mv  ./data/database/humann/v4/chocophlan_DEMO/ ./data/database/humann/v4/chocophlan_nfDEMO/
 mv ./data/database/humann/v4/uniref_DEMO/ ./data/database/humann/v4/uniref_nfDEMO/
 mv data/database/humann/v4/utility_DEMO/ data/database/humann/v4/utility_nfDEMO/
@@ -106,14 +113,14 @@ tar czf data/database/humann/v4/utility_nfDEMO.tar.gz -C  data/database/humann/v
 tar czf data/database/humann/v4/chocophlan_nfDEMO.tar.gz -C data/database/humann/v4/chocophlan_nfDEMO/ .
 tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz -C data/database/humann/v4/uniref_nfDEMO/ .
 
-
 ```
 
-## Metaphlan database for HUMANN4
-```
+## Metaphlan database for HUMANn4
+
+```bash
 mkdir data/database/metaphlan
 cd data/database/metaphlan
-wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
+wget https://github.com/nf-core/test-datasets/raw/409834b927c3a4e9314691b1125acee1434f7dd8/data/delete_me/metaphlan4_database.tar.gz
 for i in mpa_vJan21_TOY_CHOCOPhlAnSGB_20210* ; do newid=$(echo $i | sed "s|mpa_vJan21_TOY_CHOCOPhlAnSGB_202103|mpa_vOct22_CHOCOPhlAnSGB_202403|g") ; mv $i $newid ; done
 rm metaphlan4_database.tar.gz
 tar czf metaphlan_demo_for_humann4.tar.gz mpa*
