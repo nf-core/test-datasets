@@ -1,0 +1,4 @@
+sample,rna_matrix,hto_matrix
+test1,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata_without_barcode_suffix/rna.tar.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata_without_barcode_suffix/hto.tar.gz
+test2,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata_without_barcode_suffix/rna.tar.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata_without_barcode_suffix/hto.tar.gz
+test3,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata_without_barcode_suffix/rna.tar.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/hadge/testdata_without_barcode_suffix/hto.tar.gz
