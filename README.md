@@ -147,3 +147,15 @@ cd tmp
 zip ../KOs_sketched_scaled_1000_demo.sig.zip SOURMASH-MANIFEST.csv signatures/*
 cd ../../../../
 ```
+
+
+## Mifaser
+
+```
+mkdir data/database/mifaser
+git clone https://bitbucket.org/bromberglab/mifaser/src/3e41beae9746189e116d6ec6b15c73af68e9a99c/ tmpmifaser
+cp -r  tmpmifaser/mifaser/database/GS-24-all data/database/mifaser/
+tar czf data/database/mifaser/GS-24-all.tar.gz data/database/mifaser/GS-24-all/
+rm -rf tmpmifaser
+
+```

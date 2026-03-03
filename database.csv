@@ -9,3 +9,4 @@ humann_v4,demo_v4,humann_nucleotide,,https://github.com/nickp60/test-datasets/ra
 humann_v4,demo_v4,humann_protein,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/humann/v4/uniref_nfDEMO.tar.gz
 humann_v4,demo_v4,humann_utility,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/humann/v4/utility_nfDEMO.tar.gz
 humann_v4,demo_v4,humann_metaphlan,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/metaphlan/metaphlan_demo_for_humann4.tar.gz
+mifaser,GS-24-all,,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/mifaser/GS-24-all.tar.gz
