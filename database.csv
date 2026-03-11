@@ -2,7 +2,7 @@ tool,db_name,db_entity,db_params,db_path
 humann_v3,demo_v3,humann_nucleotide,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/humann/v3/chocophlan_nfDEMO.tar.gz
 humann_v3,demo_v3,humann_protein,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/humann/v3/uniref_nfDEMO.tar.gz
 humann_v3,demo_v3,humann_metaphlan,,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
-humann_v3,demo_v3,humann_utility,,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/metaphlan4_database.tar.gz
+humann_v3,demo_v3,humann_utility,,https://raw.githubusercontent.com/nf-core/test-datasets/funcprofiler/data/database/humann/v3/utility_nfDEMO.tar.gz
 fmhfunprofiler,fmhfunprofiler1000,,11 1000,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/fmhfunprofiler/KOs_sketched_scaled_1000_demo.sig.zip
 rgi,4.0.1,,,https://card.mcmaster.ca/download/0/broadstreet-v4.0.1.tar.bz2
 humann_v4,demo_v4,humann_nucleotide,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/humann/v4/chocophlan_nfDEMO.tar.gz

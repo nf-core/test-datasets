@@ -97,19 +97,17 @@ The data for HUMAnN v4 is generated as follows:
 cp -r <path to clone of humann repo>/humann/data/ ./data/database/humann/v4/
 mv  ./data/database/humann/v4/chocophlan_DEMO/ ./data/database/humann/v4/chocophlan_nfDEMO/
 mv ./data/database/humann/v4/uniref_DEMO/ ./data/database/humann/v4/uniref_nfDEMO/
-mv data/database/humann/v4/utility_DEMO/ data/database/humann/v4/utility_nfDEMO/
 
-# strategic shrinking of utility dbs
-mv data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full
-zcat < data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full | head -n 500 | gzip --best > data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz
-rm data/database/humann/v4/utility_nfDEMO/map_eggnog_uniref90.txt.gz_full
+mkdir tmp && cd tmp
+wget http://huttenhower.sph.harvard.edu/humann_data/full_mapping_v4_alpha.tar.gz
+tar xzf full_mapping_v4_alpha.tar.gz
+mkdir tmp
+ls *bz2 | while read f ; do tmpfile="tmp_$(basename $f)"; bzcat < $f | head -n 25 > tmpbz ;  bzip2 -c --best tmpbz > tmp/$f  ; done
+find . -name "*txt.gz" | while read f ; do tmpfile="tmp_$(basename $f)"; zcat < $f | head -n 25 | gzip --best > tmp/$f  ; done
+for f in metacyc_pathways_structured_filtered_v24_subreactions mpa_vJan21_CHOCOPhlAnSGB_202103.tsv unipathway_pathways vOct22_SGB_mapping.tsv ; do head $f > tmp/$f ; done
+cd ../
 
-mv data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
-zcat < data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full | head -n 500 | gzip --best > data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz
-rm data/database/humann/v4/utility_nfDEMO/map_ko_uniref90.txt.gz_full
-
-
-tar czf data/database/humann/v4/utility_nfDEMO.tar.gz -C  data/database/humann/v4/utility_nfDEMO/ .
+tar czf data/database/humann/v4/utility_nfDEMO.tar.gz -C  tmp/tmp/ .
 tar czf data/database/humann/v4/chocophlan_nfDEMO.tar.gz -C data/database/humann/v4/chocophlan_nfDEMO/ .
 tar czf data/database/humann/v4/uniref_nfDEMO.tar.gz -C data/database/humann/v4/uniref_nfDEMO/ .
 
