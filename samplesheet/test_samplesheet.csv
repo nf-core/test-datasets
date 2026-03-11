@@ -1,0 +1,5 @@
+gene_name,alignment,tree,suite,tool
+KSR2,./tests/data/ksr2.fna,./tests/data/ksr2.tree,hyphy,absrel
+KSR2,./tests/data/ksr2.fna,./tests/data/ksr2.tree,hyphy,busted
+KSR2,./tests/data/ksr2.fna,./tests/data/ksr2.tree,hyphy,meme
+KSR2,./tests/data/ksr2.fna,./tests/data/ksr2_labeled_test_reference.tree,hyphy,relax
