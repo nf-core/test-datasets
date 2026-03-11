@@ -1,0 +1,3 @@
+sample,fastq,cell_count,type
+RPMI8402,https://raw.githubusercontent.com/nf-core/test-datasets/scnanoseq/fastq/sub_RPMI8402_cDNA.fastq.gz,1000,cdna
+RPMI8402,https://raw.githubusercontent.com/nf-core/test-datasets/scnanoseq/fastq/sub_ERR9958133.fastq.gz/sub_RPMI8402_DNA.fastq.gz,1000,dna
