@@ -1,0 +1,9 @@
+ID,spectrum_file
+1,/yourDirectory/sample1.d
+2,/yourDirectory/sample2.tar.gz
+3,/yourDirectory/sample3.zip
+4,/yourDirectory/sample4.raw
+5,/yourDirectory/sample5.raw.gz
+6,/yourDirectory/sample6.raw.tar.gz
+7,/yourDirectory/sample7.raw.zip
+8,/yourDirectory/sample8.raw
