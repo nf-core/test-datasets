@@ -1,2 +1,2 @@
 sample,vcf,pheno,cov
-gwas_test,https://raw.githubusercontent.com/max-laurent/test-datasets/refs/heads/gwas/results/chunked_vcfs/chr10_chunked.vcf.gz, https://raw.githubusercontent.com/max-laurent/test-datasets/refs/heads/gwas/results/pheno_cov/example.pheno,https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/pheno_cov/example.covar
+gwas_test,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/gwas/results/chunked_vcfs/chr10_chunked.vcf.gz, https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/gwas/results/pheno_cov/example.pheno,https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/pheno_cov/example.covar
