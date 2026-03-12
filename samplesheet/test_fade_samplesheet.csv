@@ -1,2 +1,2 @@
 gene_name,alignment,tree,suite,tool
-KSR2,https://raw.githubusercontent.com/ninaxiong11/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/ninaxiong11/test-datasets/refs/heads/genephylomodeler/data/ksr2_labeled_test_reference.tree,hyphy,fade
+KSR2,https://raw.githubusercontent.com/ninaxiong11/test-datasets/refs/heads/genephylomodeler/data/ksr2.faa,https://raw.githubusercontent.com/ninaxiong11/test-datasets/refs/heads/genephylomodeler/data/ksr2_labeled_test_reference.tree,hyphy,fade
