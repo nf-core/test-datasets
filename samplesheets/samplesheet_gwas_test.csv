@@ -1,0 +1,2 @@
+sample,vcf,pheno
+gwas_test,https://raw.githubusercontent.com/max-laurent/test-datasets/refs/heads/gwas/results/chunked_vcfs/chr10_chunked.vcf.gz, https://raw.githubusercontent.com/max-laurent/test-datasets/refs/heads/gwas/results/pheno_cov/example.pheno
