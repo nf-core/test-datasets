@@ -1,0 +1,8 @@
+repository_type: pipeline
+nf_core_version: "3.3.1"
+
+lint:
+  # Add any specific lint configurations here
+  # For example, to skip certain tests:
+  # actions_awsfulltest: false
+  # pipeline_todos: false

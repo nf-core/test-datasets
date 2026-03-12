@@ -1,0 +1,24 @@
+# Nextflow logs and metadata
+*.nextflow.log*
+/.nextflow/
+.nextflow/**
+
+# SLURM or scheduler logs
+*.out
+*.err
+*.out
+*.err
+
+# Shell scripts (optional, if not versioning run.sh)
+*.sh
+
+# Work and results/vcfs
+/work/
+/results/vcfs/
+.nf-test/tests/**
+.nf-test*
+
+# Nextflow temporary execution files
+*.command.*
+*.Rout
+*.tmp

@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length=120"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}

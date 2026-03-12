@@ -1,0 +1,24 @@
+{
+    "Should create valid test vcfs for chr1 and chrX in 1000 genomes format": {
+        "content": [
+            [
+                [
+                    "ALL.chr1.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz:md5,5f921f93ff2fa331cb2937d59a0719ac",
+                    "ALL.chrX.phase3_shapeit2_mvncall_integrated_v1c.20130502.genotypes.vcf.gz:md5,4f450b127d38964f6360e0b3db65b7ee"
+                ]
+            ],
+            [
+                "ALL.chr1.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz:md5,5f921f93ff2fa331cb2937d59a0719ac",
+                "ALL.chrX.phase3_shapeit2_mvncall_integrated_v1c.20130502.genotypes.vcf.gz:md5,4f450b127d38964f6360e0b3db65b7ee"
+            ],
+            [
+                
+            ]
+        ],
+        "meta": {
+            "nf-test": "0.9.2",
+            "nextflow": "25.04.4"
+        },
+        "timestamp": "2025-07-02T13:11:05.353428"
+    }
+}
