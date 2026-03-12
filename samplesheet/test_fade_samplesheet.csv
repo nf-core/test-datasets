@@ -1,0 +1,2 @@
+gene_name,alignment,tree,suite,tool
+KSR2,data/KSR2.fas,data/KSR2.nwk,hyphy,fade
