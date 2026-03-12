@@ -4,7 +4,7 @@ KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephyl
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,busted
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,fubar
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,fel
-KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,,hyphy,gard
+KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2_subset.fna,,hyphy,gard
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,meme
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2_labeled_test_reference.tree,hyphy,relax
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,slac
