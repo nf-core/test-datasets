@@ -2,6 +2,7 @@ gene_name,alignment,tree,suite,tool
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,absrel
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,bgm
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,busted
+KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,fade
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,fubar
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,fel
 KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2_subset.fna,,hyphy,gard
