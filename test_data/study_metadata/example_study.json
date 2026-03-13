@@ -1,0 +1,15 @@
+{
+  "schema": "https://github.com/timrozday/ena-submission-dataharmonizer/SRA_study",
+  "location": "/templates/sra_study",
+  "version": "1.0.0",
+  "in_language": "en",
+  "Container": {
+    "SRA_studys": [
+      {
+        "IS_PRIMARY": "YES",
+        "STUDY_TITLE": "MIMICC",
+        "existing_study_type": "Metagenomics"
+      }
+    ]
+  }
+}
