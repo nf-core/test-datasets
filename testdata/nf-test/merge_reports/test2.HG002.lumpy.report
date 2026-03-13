@@ -1,1 +1,11 @@
-/Users/aaryanjaitly/Desktop/varinatbenchmarking/variantbenchmarking/work/df/4b0fc100ac8bf44a228eaccfb44361/test2.HG002.lumpy.report
+RECALL:
+Number of detected true variants (DTP): 21
+Number of undetected true variants (FN): 156
+Recall (DTP/(DTP+FN)): 11.86%
+
+PRECISION:
+Number of predictions that are true (PTP): 21
+Number of false positives (FP): 69
+Precision (PTP/(PTP+FP)): 23.33%
+
+F1 (2*Recall*Precision/(Recall+Precision): 0.157303370786517
