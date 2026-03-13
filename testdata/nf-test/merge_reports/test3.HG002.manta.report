@@ -1,1 +1,11 @@
-/Users/aaryanjaitly/Desktop/varinatbenchmarking/variantbenchmarking/work/cd/be224d2debd8c96da545e50ac6ecb3/test3.HG002.manta.report
+RECALL:
+Number of detected true variants (DTP): 65
+Number of undetected true variants (FN): 112
+Recall (DTP/(DTP+FN)): 36.72%
+
+PRECISION:
+Number of predictions that are true (PTP): 65
+Number of false positives (FP): 1028
+Precision (PTP/(PTP+FP)):  5.95%
+
+F1 (2*Recall*Precision/(Recall+Precision): 0.102362204724409

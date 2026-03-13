@@ -1,1 +1,11 @@
-/Users/aaryanjaitly/Desktop/varinatbenchmarking/variantbenchmarking/work/64/4a7fd0256b1a1e7eba4b9a10e5670b/test1.HG002.delly.report
+RECALL:
+Number of detected true variants (DTP): 22
+Number of undetected true variants (FN): 155
+Recall (DTP/(DTP+FN)): 12.43%
+
+PRECISION:
+Number of predictions that are true (PTP): 24
+Number of false positives (FP): 75
+Precision (PTP/(PTP+FP)): 24.24%
+
+F1 (2*Recall*Precision/(Recall+Precision): 0.164332399626517
