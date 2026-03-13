@@ -6,6 +6,8 @@ This branch contains test data and references for the [nf-core/variantprioritiza
 
 ## Content of this repository
 
+`module_data`: Holds files needed to test local modules of the pipeline.
+
 `test_data/*`: This folder contains minimal somatic vcf files for chr22 with their index and a cna file. 
 
 `test_data_full/*`: This folder contains vcf files with their index and a cna file for the `test_full` profile.
