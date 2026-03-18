@@ -1,2 +1,2 @@
 id,input_table
-tiny_test,/mnt/volume/workdir/projects/consensus_tool/nf-core_test-datasets/testdata-default/tcrpmhc_sample.tsv
+tiny_test,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/tcrpmhcbinding/testdata-default/tcrpmhc_sample.tsv
