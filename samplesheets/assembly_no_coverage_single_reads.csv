@@ -1,2 +1,2 @@
 sample,fasta,fastq_1,fastq_2,coverage,run_accession,assembler,assembler_version
-no_coverage_paired_reads,/Users/sofia/mgnify/seqsubmit/tests/data/contigs.fasta.gz,/Users/sofia/mgnify/seqsubmit/tests/data/fastq_1.fastq,,,ERR000001,SPAdes,3.15
+no_coverage_single_reads,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/genome/genome.fna.gz,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fastq/test1_1.fastq.gz,,,ERR000001,SPAdes,3.15
