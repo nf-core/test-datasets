@@ -1,0 +1,2 @@
+sample,fasta,fastq_1,fastq_2,coverage,run_accession,assembler,assembler_version
+no_coverage_paired_reads,/Users/sofia/mgnify/seqsubmit/tests/data/contigs.fasta.gz,/Users/sofia/mgnify/seqsubmit/tests/data/fastq_1.fastq,,,ERR000001,SPAdes,3.15
