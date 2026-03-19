@@ -1,0 +1,2 @@
+sample,fasta,fastq_1,fastq_2,coverage,run_accession,assembler,assembler_version
+one_contig,https://github.com/nf-core/test-datasets/raw/seqsubmit/test_data/bins/one_contig.fasta.gz,,,45,ERR000002,Velvet,1.2.10
