@@ -157,3 +157,24 @@ tar czf data/database/mifaser/GS-24-all.tar.gz data/database/mifaser/GS-24-all/
 rm -rf tmpmifaser
 
 ```
+
+## Eggnog-mapper
+
+```
+wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/sarscov2/genome/proteome.fasta
+podman run -v $PWD:$PWD quay.io/biocontainers/eggnog-mapper:2.1.13--pyhdfd78af_2 diamond makedb --in $PWD/proteome.fasta -d $PWD/proteome
+mkdir data/database/eggnog-mapper
+mv proteome.dmnd data/database/eggnog-mapper/
+
+```
+
+## RGI
+
+```
+wget https://card.mcmaster.ca/download/0/broadstreet-v4.0.1.tar.bz2
+mkdir data/database/rgi/ && mv broadstreet-v4.0.1.tar.bz2 data/database/rgi/
+
+
+
+
+```
