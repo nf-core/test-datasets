@@ -39,7 +39,11 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 
 ## nf-core/variantbenchmarking test data
 
-samplesheet/
+### manuscript/
+
+This directory contains necessary contigs and samplesheets used in variantbenchmarking manuscript (in preperation)
+
+### samplesheet/
 
 samplesheet_small_germline_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 small (snvs and indels) variants from germline sample HG002
 samplesheet_sv_germline_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 structural variants from germline sample HG002
@@ -49,9 +53,9 @@ samplesheet_sv_somatic_hg38: Sample sheet for nf-core/variantbenchmarking test p
 samplesheet_sv_somatic_hg37_liftover: Sample sheet for nf-core/variantbenchmarking test profiles for hg37 stuctural variants from HG002 sample for lifting over variants
 
 
-## test data
+### testdata/
 
-### germline 
+#### germline 
 
 HG002 GiAB sample is used for germline benchmarking
 
@@ -74,7 +78,7 @@ HG002 GiAB sample is used for germline benchmarking
 - lumpy sample is from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/analysis/BU_GRCh38_SVs_06252018/ajtrio.lumpy.svtyper.HG002.md.sorted.recal.vcf.gz
 
 
-### somatic
+#### somatic
 
 SEQC2 is used for germline benchmarking
 
@@ -84,9 +88,9 @@ SEQC2 is used for germline benchmarking
 
 - SEQC2 CNV test files are downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/analysis/CNVs/WES/
 
-## truth data
+#### truth data
 
-### somatic
+#### somatic
 
 *hg38* 
 
@@ -97,7 +101,7 @@ SEQC2 is used for germline benchmarking
 
 - We generated SEQC2 SV data using the high confidence SV set found in the supporting files in https://link.springer.com/article/10.1186/s13059-022-02816-6 paper. svconverstion.ipynb can be used to regenerate the vcf file.
 
-### germline
+#### germline
 
 *hg37* 
 
@@ -108,3 +112,7 @@ SEQC2 is used for germline benchmarking
 - HG002 data downloaded from https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/analysis/NIST_HG002_medical_genes_SV_benchmark_v0.01/ 
 
 - HG001 truth set is downloadedfrom here https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/genome-stratifications/v3.1/GRCh38/Union/GRCh38_notinalldifficultregions.bed.gz and then simply converted into a vcf file using  bed2vcf.py script.
+
+#### nf-test
+
+This directory contains test files required to run nf-tests for local modules.
