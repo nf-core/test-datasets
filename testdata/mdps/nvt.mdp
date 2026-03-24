@@ -1,0 +1,44 @@
+title                   = OPLS Lysozyme NVT equilibration 
+define                  = -DPOSRES  ; position restrain the protein
+; Run parameters
+integrator              = md        ; leap-frog integrator
+nsteps                  = 10000     ; Fast test: 20 ps
+dt                      = 0.002     ; 2 fs
+; Output control
+nstxout                 = 1000      ; save coordinates every 2.0 ps
+nstvout                 = 1000      ; save velocities every 2.0 ps
+nstenergy               = 1000      ; save energies every 2.0 ps
+nstlog                  = 1000      ; update log file every 2.0 ps
+; Bond parameters
+continuation            = no        ; first dynamics run
+constraint_algorithm    = lincs     ; holonomic constraints 
+constraints             = h-bonds   ; bonds involving H are constrained
+lincs_iter              = 1         ; accuracy of LINCS
+lincs_order             = 4         ; also related to accuracy
+; Nonbonded settings 
+cutoff-scheme           = Verlet    ; Buffered neighbor searching
+ns_type                 = grid      ; search neighboring grid cells
+nstlist                 = 10        ; 20 fs, largely irrelevant with Verlet
+; vdW
+rvdw                    = 1.2       ; short-range van der Waals cutoff (in nm)
+rvdw-switch             = 1.0
+vdw-modifier            = force-switch
+DispCorr                = No        ; per CHARMM FF convention 
+; Electrostatics
+rcoulomb                = 1.2       ; short-range electrostatic cutoff (in nm)
+coulombtype             = PME       ; Particle Mesh Ewald for long-range electrostatics
+pme_order               = 4         ; cubic interpolation
+fourierspacing          = 0.16      ; grid spacing for FFT
+; Temperature coupling is on
+tcoupl                  = V-rescale ; stochastic Bussi thermostat 
+tc-grps                 = System 
+tau_t                   = 1.0       ; value of tau (ps)
+ref_t                   = 298       ; temperature (K) 
+; Pressure coupling is off
+pcoupl                  = no        ; no pressure coupling in NVT
+; Periodic boundary conditions
+pbc                     = xyz       ; 3-D PBC
+; Velocity generation
+gen_vel                 = yes       ; assign velocities from Maxwell distribution
+gen_temp                = 298       ; temperature for Maxwell distribution
+gen_seed                = -1        ; generate a random seed
