@@ -1,0 +1,2 @@
+sample,spectra,condition
+dia_sample1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/dia_cptac_subset.mzML,control
