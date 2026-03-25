@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pepXML_std.xsl"?>
+<msms_pipeline_analysis date="2026-02-19T05:14:44" xmlns="http://regis-web.systemsbiology.net/pepXML" summary_xml="crystalc_test.pepXML" xsi:schemaLocation="http://sashimi.sourceforge.net/schema_revision/pepXML/pepXML_v122.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<msms_run_summary base_name="crystalc_test" raw_data_type="mzML" raw_data="mzML">
+<sample_enzyme name="stricttrypsin">
+<specificity cut="KR" no_cut="" sense="C"/>
+</sample_enzyme>
+<search_summary base_name="crystalc_test" precursor_mass_type="monoisotopic" search_engine="X! Tandem" search_engine_version="MSFragger-Commercial-4.4.1" fragment_mass_type="monoisotopic" search_id="1">
+<search_database local_path="erwinia_carotovora.fasta" type="AA"/>
+<enzymatic_search_constraint enzyme="default" min_number_termini="2" max_num_internal_cleavages="2"/>
+<aminoacid_modification aminoacid="C" massdiff="57.02146" mass="160.03065" variable="N"/>
+<aminoacid_modification aminoacid="M" massdiff="15.9949" mass="147.0354" variable="Y"/>
+<terminal_modification massdiff="42.0106" protein_terminus="Y" mass="43.018425" terminus="N" variable="Y"/>
+<parameter name="# MSFragger.build" value="MSFragger-Commercial-4.4.1"/>
+<parameter name="database_name" value="/home/projects/nextflow-tower-pipeline-dev/nf-preprocess-proteomics/nf-fragpipe/.nf-test/tests/c1b5ce9565e33de20e15cd1c7225d959/work/f3/d1fabac55d1cc0f7159e230e62645a/erwinia_db_philosopher.fasta"/>
+<parameter name="decoy_prefix" value="rev_"/>
+<parameter name="keep_decoys" value="1"/>
+<parameter name="num_threads" value="2"/>
+<parameter name="precursor_mass_lower" value="-20.0"/>
+<parameter name="precursor_mass_upper" value="20.0"/>
+<parameter name="precursor_mass_units" value="1"/>
+<parameter name="precursor_true_tolerance" value="20.0"/>
+<parameter name="data_type" value="0"/>
+<parameter name="precursor_true_units" value="1"/>
+<parameter name="fragment_mass_tolerance" value="5.0"/>
+<parameter name="fragment_mass_units" value="1"/>
+<parameter name="calibrate_mass" value="2"/>
+<parameter name="use_all_mods_in_first_search" value="0"/>
+<parameter name="write_calibrated_mzml" value="0"/>
+<parameter name="write_uncalibrated_mzml" value="1"/>
+<parameter name="write_mzbin_all" value="0"/>
+<parameter name="isotope_error" value="0/1/2"/>
+<parameter name="mass_offsets" value="0"/>
+<parameter name="use_detailed_offsets" value="0"/>
+<parameter name="labile_search_mode" value="OFF"/>
+<parameter name="restrict_deltamass_to" value="all"/>
+<parameter name="precursor_mass_mode" value="SELECTED"/>
+<parameter name="intensity_transform" value="0"/>
+<parameter name="activation_types" value="all"/>
+<parameter name="analyzer_types" value="all"/>
+<parameter name="group_variable" value="0"/>
+<parameter name="require_precursor" value="1"/>
+<parameter name="reuse_dia_fragment_peaks" value="0"/>
+<parameter name="remove_precursor_peak" value="1"/>
+<parameter name="remove_precursor_range" value="-1.5,1.5"/>
+<parameter name="localize_delta_mass" value="0"/>
+<parameter name="delta_mass_exclude_ranges" value="(-1.5,3.5)"/>
+<parameter name="fragment_ion_series" value="b,y"/>
+<parameter name="ion_series_definitions" value=""/>
+<parameter name="search_enzyme_name" value="stricttrypsin"/>
+<parameter name="min_sequence_matches" value="2"/>
+<parameter name="check_spectral_files" value="1"/>
+<parameter name="search_enzyme_cut_1" value="KR"/>
+<parameter name="search_enzyme_nocut_1" value=""/>
+<parameter name="num_enzyme_termini" value="2"/>
+<parameter name="allowed_missed_cleavage_1" value="2"/>
+<parameter name="search_enzyme_sense_1" value="C"/>
+<parameter name="clip_nTerm_M" value="1"/>
+<parameter name="allow_multiple_variable_mods_on_residue" value="0"/>
+<parameter name="max_variable_mods_per_peptide" value="3"/>
+<parameter name="max_variable_mods_combinations" value="5000"/>
+<parameter name="mass_diff_to_variable_mod" value="0"/>
+<parameter name="output_format" value="pepxml_pin"/>
+<parameter name="output_report_topN" value="1"/>
+<parameter name="output_max_expect" value="50.0"/>
+<parameter name="report_alternative_proteins" value="1"/>
+<parameter name="override_charge" value="0"/>
+<parameter name="precursor_charge" value="1 4"/>
+<parameter name="digest_min_length" value="7"/>
+<parameter name="digest_max_length" value="50"/>
+<parameter name="digest_mass_range" value="500.0 5000.0"/>
+<parameter name="max_fragment_charge" value="1"/>
+<parameter name="deisotope" value="1"/>
+<parameter name="deneutralloss" value="1"/>
+<parameter name="track_zero_topN" value="0"/>
+<parameter name="zero_bin_accept_expect" value="0.0"/>
+<parameter name="zero_bin_mult_expect" value="1.0"/>
+<parameter name="minimum_peaks" value="15"/>
+<parameter name="use_topN_peaks" value="175"/>
+<parameter name="min_fragments_modelling" value="2"/>
+<parameter name="min_matched_fragments" value="4"/>
+<parameter name="minimum_ratio" value="0.0"/>
+<parameter name="clear_mz_range" value="0.0 0.0"/>
+<parameter name="excluded_scan_list_file" value=""/>
+<parameter name="variable_mod_01" value="15.9949 M 3"/>
+<parameter name="variable_mod_02" value="42.0106 [^ 1"/>
+<parameter name="add_C_cysteine" value="57.02146"/>
+<parameter name="add_Cterm_peptide" value="0.0"/>
+<parameter name="add_Cterm_protein" value="0.0"/>
+<parameter name="add_Nterm_peptide" value="0.0"/>
+<parameter name="add_Nterm_protein" value="0.0"/>
+<parameter name="add_topN_complementary" value="0"/>
+</search_summary>
+<spectrum_query start_scan="25" assumed_charge="3" spectrum="crystalc_test.25.25.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=25" end_scan="25" index="22" precursor_neutral_mass="1900.0479" retention_time_sec="2244.6763">
+<search_result>
+<search_hit peptide="IIPMLAIMLIINQIDR" massdiff="1.9747314453125" calc_neutral_pep_mass="1898.0731" peptide_next_aa="S" num_missed_cleavages="0" num_tol_term="2" protein_descr="putative transport protein" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="4" protein="ECA0937" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="IIPM[147]LAIM[147]LIINQIDR">
+<mod_aminoacid_mass mass="147.0354" position="4"/>
+<mod_aminoacid_mass mass="147.0354" position="8"/>
+</modification_info>
+<search_score name="hyperscore" value="5.564"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="5.420008e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="67" assumed_charge="3" spectrum="crystalc_test.67.67.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=67" end_scan="67" index="60" precursor_neutral_mass="1660.856" retention_time_sec="2260.19">
+<search_result>
+<search_hit peptide="MTVEVALVTGGGQGIGR" massdiff="0.99462890625" calc_neutral_pep_mass="1659.8613" peptide_next_aa="A" num_missed_cleavages="0" num_tol_term="2" protein_descr="acetoin reductase" num_tot_proteins="1" tot_num_ions="32" hit_rank="1" num_matched_ions="4" protein="ECA0310" peptide_prev_aa="-" is_rejected="0">
+<modification_info modified_peptide="M[147]TVEVALVTGGGQGIGR">
+<mod_aminoacid_mass mass="147.0354" position="1"/>
+</modification_info>
+<search_score name="hyperscore" value="8.158"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="3.850348e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="114" assumed_charge="2" spectrum="crystalc_test.114.114.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=114" end_scan="114" index="103" precursor_neutral_mass="1689.9012" retention_time_sec="2277.1575">
+<search_result>
+<search_hit peptide="VGFFNPIATGQAEALR" massdiff="0.0174560546875" calc_neutral_pep_mass="1689.8838" peptide_next_aa="L" num_missed_cleavages="0" num_tol_term="2" protein_descr="30S ribosomal protein S16" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="7" protein="ECA3359" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="12.686"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.597718e-02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="246" assumed_charge="2" spectrum="crystalc_test.246.246.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=246" end_scan="246" index="223" precursor_neutral_mass="1969.0911" retention_time_sec="2325.4084">
+<search_result>
+<search_hit peptide="RIDGEVGSISVSDGVKVPR" massdiff="0.031982421875" calc_neutral_pep_mass="1969.0591" peptide_next_aa="E" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative mechanosensitive ion channel protein" num_tot_proteins="1" tot_num_ions="36" hit_rank="1" num_matched_ions="4" protein="rev_ECA3118" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="4.761"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.838937e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="253" assumed_charge="2" spectrum="crystalc_test.253.253.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=253" end_scan="253" index="229" precursor_neutral_mass="1299.7172" retention_time_sec="2328.2651">
+<search_result>
+<search_hit peptide="LESLVEELVNR" massdiff="0.0137939453125" calc_neutral_pep_mass="1299.7034" peptide_next_aa="S" num_missed_cleavages="0" num_tol_term="2" protein_descr="chaperone protein DnaK" num_tot_proteins="1" tot_num_ions="20" hit_rank="1" num_matched_ions="6" protein="ECA3882" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="13.498"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.780328e-02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="414" assumed_charge="4" spectrum="crystalc_test.414.414.4" spectrumNativeID="controllerType=0 controllerNumber=1 scan=414" end_scan="414" index="376" precursor_neutral_mass="2455.3176" retention_time_sec="2386.7136">
+<search_result>
+<search_hit peptide="RMLINATQQEELRVALVDGQR" massdiff="0.021240234375" calc_neutral_pep_mass="2455.2964" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="ribonuclease E" num_tot_proteins="1" tot_num_ions="40" hit_rank="1" num_matched_ions="4" protein="ECA1789" peptide_prev_aa="K" is_rejected="0">
+<modification_info modified_peptide="RM[147]LINATQQEELRVALVDGQR">
+<mod_aminoacid_mass mass="147.0354" position="2"/>
+</modification_info>
+<search_score name="hyperscore" value="9.892"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.487453e-02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+</msms_run_summary>
+</msms_pipeline_analysis>

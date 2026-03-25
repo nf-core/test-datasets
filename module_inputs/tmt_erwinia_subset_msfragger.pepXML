@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pepXML_std.xsl"?>
+<msms_pipeline_analysis date="2026-03-24T22:15:44" xmlns="http://regis-web.systemsbiology.net/pepXML" summary_xml="/work/tmt_erwinia_subset.pepXML" xsi:schemaLocation="http://sashimi.sourceforge.net/schema_revision/pepXML/pepXML_v122.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<msms_run_summary base_name="/work/tmt_erwinia_subset" raw_data_type="mzML" raw_data="mzML">
+<sample_enzyme name="stricttrypsin">
+<specificity cut="KR" no_cut="" sense="C"/>
+</sample_enzyme>
+<search_summary base_name="/work/tmt_erwinia_subset" precursor_mass_type="monoisotopic" search_engine="X! Tandem" search_engine_version="MSFragger-4.4.1" fragment_mass_type="monoisotopic" search_id="1">
+<search_database local_path="/work/erwinia_with_decoys.fasta" type="AA"/>
+<enzymatic_search_constraint enzyme="default" min_number_termini="2" max_num_internal_cleavages="2"/>
+<aminoacid_modification aminoacid="C" massdiff="57.021465" mass="160.03065" variable="N"/>
+<aminoacid_modification aminoacid="M" massdiff="15.9949" mass="147.0354" variable="Y"/>
+<terminal_modification massdiff="42.0106" protein_terminus="Y" mass="43.018425" terminus="N" variable="Y"/>
+<parameter name="# MSFragger.build" value="MSFragger-4.4.1"/>
+<parameter name="database_name" value="/work/erwinia_with_decoys.fasta"/>
+<parameter name="decoy_prefix" value="rev_"/>
+<parameter name="keep_decoys" value="1"/>
+<parameter name="num_threads" value="4"/>
+<parameter name="precursor_mass_lower" value="-20.0"/>
+<parameter name="precursor_mass_upper" value="20.0"/>
+<parameter name="precursor_mass_units" value="1"/>
+<parameter name="precursor_true_tolerance" value="20.0"/>
+<parameter name="data_type" value="0"/>
+<parameter name="precursor_true_units" value="1"/>
+<parameter name="fragment_mass_tolerance" value="20.0"/>
+<parameter name="fragment_mass_units" value="1"/>
+<parameter name="calibrate_mass" value="0"/>
+<parameter name="use_all_mods_in_first_search" value="0"/>
+<parameter name="write_calibrated_mzml" value="0"/>
+<parameter name="write_uncalibrated_mzml" value="1"/>
+<parameter name="write_mzbin_all" value="0"/>
+<parameter name="isotope_error" value="0"/>
+<parameter name="mass_offsets" value="0"/>
+<parameter name="use_detailed_offsets" value="0"/>
+<parameter name="labile_search_mode" value="OFF"/>
+<parameter name="restrict_deltamass_to" value="all"/>
+<parameter name="precursor_mass_mode" value="SELECTED"/>
+<parameter name="intensity_transform" value="0"/>
+<parameter name="activation_types" value="all"/>
+<parameter name="analyzer_types" value="all"/>
+<parameter name="group_variable" value="0"/>
+<parameter name="require_precursor" value="0"/>
+<parameter name="reuse_dia_fragment_peaks" value="0"/>
+<parameter name="remove_precursor_peak" value="1"/>
+<parameter name="remove_precursor_range" value="-1.5,1.5"/>
+<parameter name="localize_delta_mass" value="0"/>
+<parameter name="delta_mass_exclude_ranges" value="(-1.5, 3.5)"/>
+<parameter name="fragment_ion_series" value="b,y"/>
+<parameter name="ion_series_definitions" value=""/>
+<parameter name="search_enzyme_name" value="stricttrypsin"/>
+<parameter name="min_sequence_matches" value="2"/>
+<parameter name="check_spectral_files" value="1"/>
+<parameter name="search_enzyme_cut_1" value="KR"/>
+<parameter name="search_enzyme_nocut_1" value=""/>
+<parameter name="num_enzyme_termini" value="2"/>
+<parameter name="allowed_missed_cleavage_1" value="2"/>
+<parameter name="search_enzyme_sense_1" value="C"/>
+<parameter name="clip_nTerm_M" value="1"/>
+<parameter name="allow_multiple_variable_mods_on_residue" value="0"/>
+<parameter name="max_variable_mods_per_peptide" value="3"/>
+<parameter name="max_variable_mods_combinations" value="5000"/>
+<parameter name="mass_diff_to_variable_mod" value="0"/>
+<parameter name="output_format" value="pepxml_pin"/>
+<parameter name="output_report_topN" value="1"/>
+<parameter name="output_max_expect" value="50.0"/>
+<parameter name="report_alternative_proteins" value="1"/>
+<parameter name="override_charge" value="0"/>
+<parameter name="precursor_charge" value="1 4"/>
+<parameter name="digest_min_length" value="7"/>
+<parameter name="digest_max_length" value="50"/>
+<parameter name="digest_mass_range" value="500.0 5000.0"/>
+<parameter name="max_fragment_charge" value="1"/>
+<parameter name="deisotope" value="1"/>
+<parameter name="deneutralloss" value="1"/>
+<parameter name="track_zero_topN" value="0"/>
+<parameter name="zero_bin_accept_expect" value="0.0"/>
+<parameter name="zero_bin_mult_expect" value="1.0"/>
+<parameter name="minimum_peaks" value="15"/>
+<parameter name="use_topN_peaks" value="150"/>
+<parameter name="min_fragments_modelling" value="2"/>
+<parameter name="min_matched_fragments" value="4"/>
+<parameter name="minimum_ratio" value="0.01"/>
+<parameter name="clear_mz_range" value="0.0 0.0"/>
+<parameter name="excluded_scan_list_file" value=""/>
+<parameter name="variable_mod_01" value="15.99490 M 3"/>
+<parameter name="variable_mod_02" value="42.01060 [^ 3"/>
+<parameter name="add_C_cysteine" value="57.021464"/>
+<parameter name="add_Cterm_peptide" value="0.0"/>
+<parameter name="add_Cterm_protein" value="0.0"/>
+<parameter name="add_Nterm_peptide" value="0.0"/>
+<parameter name="add_Nterm_protein" value="0.0"/>
+</search_summary>
+<spectrum_query start_scan="4000" assumed_charge="2" spectrum="tmt_erwinia_subset.4000.4000.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4000" end_scan="4000" index="1" precursor_neutral_mass="1723.9529" retention_time_sec="2236.3567">
+<search_result>
+<search_hit peptide="EAALGGPTLGVIAIRMR" massdiff="-0.023681640625" calc_neutral_pep_mass="1723.9766" peptide_next_aa="K" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative capsular polysaccharide biosynthesis protein" num_tot_proteins="1" tot_num_ions="32" hit_rank="1" num_matched_ions="4" protein="rev_ECA0499" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="8.719"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="8.815563e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4007" assumed_charge="4" spectrum="tmt_erwinia_subset.4007.4007.4" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4007" end_scan="4007" index="7" precursor_neutral_mass="2905.544" retention_time_sec="2238.8833">
+<search_result>
+<search_hit peptide="TCHAAIIARELGIPAVVGCGDATERLR" massdiff="0.04248046875" calc_neutral_pep_mass="2905.5015" peptide_next_aa="K" num_missed_cleavages="2" num_tol_term="2" protein_descr="phosphoenolpyruvate synthase" num_tot_proteins="1" tot_num_ions="52" hit_rank="1" num_matched_ions="4" protein="ECA1853" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="TCHAAIIARELGIPAVVGCGDATERLR">
+<mod_aminoacid_mass mass="160.03065" position="2"/>
+<mod_aminoacid_mass mass="160.03065" position="19"/>
+</modification_info>
+<search_score name="hyperscore" value="4.112"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.250259e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4008" assumed_charge="3" spectrum="tmt_erwinia_subset.4008.4008.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4008" end_scan="4008" index="8" precursor_neutral_mass="2121.1147" retention_time_sec="2239.517">
+<search_result>
+<search_hit peptide="LDLRLYESLMGKGDLEAAK" massdiff="9.765625E-4" calc_neutral_pep_mass="2121.1138" peptide_next_aa="V" num_missed_cleavages="2" num_tol_term="2" protein_descr="methyl-accepting chemotaxis protein" num_tot_proteins="1" tot_num_ions="36" hit_rank="1" num_matched_ions="4" protein="ECA0390" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.465"/>
+<search_score name="nextscore" value="7.072"/>
+<search_score name="expect" value="1.814471e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4012" assumed_charge="2" spectrum="tmt_erwinia_subset.4012.4012.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4012" end_scan="4012" index="12" precursor_neutral_mass="1348.7128" retention_time_sec="2240.665">
+<search_result>
+<search_hit peptide="KALRLMEMADR" massdiff="0.017333984375" calc_neutral_pep_mass="1348.6954" peptide_next_aa="F" num_missed_cleavages="2" num_tol_term="2" protein_descr="acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha" num_tot_proteins="1" tot_num_ions="20" hit_rank="1" num_matched_ions="4" protein="ECA1047" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="KALRLM[147]EMADR">
+<mod_aminoacid_mass mass="147.0354" position="6"/>
+</modification_info>
+<search_score name="hyperscore" value="8.99"/>
+<search_score name="nextscore" value="8.99"/>
+<search_score name="expect" value="7.542235e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4014" assumed_charge="2" spectrum="tmt_erwinia_subset.4014.4014.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4014" end_scan="4014" index="14" precursor_neutral_mass="2121.1177" retention_time_sec="2241.24">
+<search_result>
+<search_hit peptide="GTPRLPNSQPIGDIMVLAAR" massdiff="-0.0185546875" calc_neutral_pep_mass="2121.1362" peptide_next_aa="G" num_missed_cleavages="1" num_tol_term="2" protein_descr="TonB-dependent ferric achromobactin receptor" num_tot_proteins="1" tot_num_ions="38" hit_rank="1" num_matched_ions="4" protein="rev_ECA2810" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="GTPRLPNSQPIGDIM[147]VLAAR">
+<mod_aminoacid_mass mass="147.0354" position="15"/>
+</modification_info>
+<search_score name="hyperscore" value="6.804"/>
+<search_score name="nextscore" value="6.112"/>
+<search_score name="expect" value="2.654606e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4018" assumed_charge="3" spectrum="tmt_erwinia_subset.4018.4018.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4018" end_scan="4018" index="17" precursor_neutral_mass="2025.1168" retention_time_sec="2242.887">
+<search_result>
+<search_hit peptide="NPYSLSVEALTHKARAIR" massdiff="0.0050048828125" calc_neutral_pep_mass="2025.1118" peptide_next_aa="R" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative transketolase N-terminal section" num_tot_proteins="1" tot_num_ions="34" hit_rank="1" num_matched_ions="4" protein="ECA1950" peptide_prev_aa="M" is_rejected="0">
+<search_score name="hyperscore" value="6.623"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.946117e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4020" assumed_charge="3" spectrum="tmt_erwinia_subset.4020.4020.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4020" end_scan="4020" index="19" precursor_neutral_mass="2472.2197" retention_time_sec="2243.8118">
+<search_result>
+<search_hit peptide="GVSHNLYQTDFIRPALSNRER" massdiff="-0.042236328125" calc_neutral_pep_mass="2472.262" peptide_next_aa="T" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative membrane protein" num_tot_proteins="1" tot_num_ions="40" hit_rank="1" num_matched_ions="4" protein="ECA4326" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="6.993"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.338906e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4021" assumed_charge="3" spectrum="tmt_erwinia_subset.4021.4021.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4021" end_scan="4021" index="20" precursor_neutral_mass="1921.0562" retention_time_sec="2244.0994">
+<search_result>
+<search_hit peptide="PLEGNVNIDAIGTLQVLR" massdiff="-0.007080078125" calc_neutral_pep_mass="1921.0632" peptide_next_aa="A" num_missed_cleavages="0" num_tol_term="2" protein_descr="putative exported protein" num_tot_proteins="1" tot_num_ions="34" hit_rank="1" num_matched_ions="4" protein="rev_ECA1385" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.109"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.252420e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4025" assumed_charge="3" spectrum="tmt_erwinia_subset.4025.4025.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4025" end_scan="4025" index="24" precursor_neutral_mass="2198.2546" retention_time_sec="2245.2515">
+<search_result>
+<search_hit peptide="LHDLLRGPTGVVIQAGGRLAR" massdiff="-0.021240234375" calc_neutral_pep_mass="2198.276" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="ATP-independent RNA helicase" num_tot_proteins="1" tot_num_ions="40" hit_rank="1" num_matched_ions="4" protein="rev_ECA0718" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="5.861"/>
+<search_score name="nextscore" value="5.715"/>
+<search_score name="expect" value="8.123627e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4026" assumed_charge="2" spectrum="tmt_erwinia_subset.4026.4026.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4026" end_scan="4026" index="25" precursor_neutral_mass="1900.0474" retention_time_sec="2245.5474">
+<search_result>
+<search_hit peptide="TQPTQARKDTHIHVIR" massdiff="0.00830078125" calc_neutral_pep_mass="1900.0391" peptide_next_aa="E" num_missed_cleavages="2" num_tol_term="2" protein_descr="CDS putative phage-related protein" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="5" protein="rev_ECA743861" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.909"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.405238e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4029" assumed_charge="3" spectrum="tmt_erwinia_subset.4029.4029.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4029" end_scan="4029" index="27" precursor_neutral_mass="2100.1475" retention_time_sec="2246.9038">
+<search_result>
+<search_hit peptide="AVVSGLTVMQGNTIVRDNAR" massdiff="0.03662109375" calc_neutral_pep_mass="2100.1108" peptide_next_aa="L" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative avirulence protein" num_tot_proteins="1" tot_num_ions="38" hit_rank="1" num_matched_ions="5" protein="ECA0931" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.252"/>
+<search_score name="nextscore" value="6.056"/>
+<search_score name="expect" value="1.153453e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4030" assumed_charge="2" spectrum="tmt_erwinia_subset.4030.4030.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4030" end_scan="4030" index="28" precursor_neutral_mass="2100.149" retention_time_sec="2247.5308">
+<search_result>
+<search_hit peptide="GAGIKVCSGGIVGLGETVRDR" massdiff="0.0380859375" calc_neutral_pep_mass="2100.1108" peptide_next_aa="A" num_missed_cleavages="2" num_tol_term="2" protein_descr="biotin synthase" num_tot_proteins="1" tot_num_ions="40" hit_rank="1" num_matched_ions="5" protein="ECA2825" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="GAGIKVCSGGIVGLGETVRDR">
+<mod_aminoacid_mass mass="160.03065" position="7"/>
+</modification_info>
+<search_score name="hyperscore" value="8.323"/>
+<search_score name="nextscore" value="8.097"/>
+<search_score name="expect" value="1.969020e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4032" assumed_charge="2" spectrum="tmt_erwinia_subset.4032.4032.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4032" end_scan="4032" index="30" precursor_neutral_mass="1675.9498" retention_time_sec="2248.1072">
+<search_result>
+<search_hit peptide="LGCDYLLLTVLLGAR" massdiff="0.016845703125" calc_neutral_pep_mass="1675.933" peptide_next_aa="K" num_missed_cleavages="0" num_tol_term="2" protein_descr="putative integrase" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="5" protein="ECA1054" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="LGCDYLLLTVLLGAR">
+<mod_aminoacid_mass mass="160.03065" position="3"/>
+</modification_info>
+<search_score name="hyperscore" value="10.24"/>
+<search_score name="nextscore" value="9.504"/>
+<search_score name="expect" value="2.065380e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4033" assumed_charge="3" spectrum="tmt_erwinia_subset.4033.4033.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4033" end_scan="4033" index="31" precursor_neutral_mass="2337.2832" retention_time_sec="2248.3948">
+<search_result>
+<search_hit peptide="QPIWTTELSVPEGNSLRVRR" massdiff="0.028076171875" calc_neutral_pep_mass="2337.2551" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="GntR-family transcriptional regulator" num_tot_proteins="1" tot_num_ions="38" hit_rank="1" num_matched_ions="4" protein="rev_ECA0348" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.263"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.038215e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4042" assumed_charge="2" spectrum="tmt_erwinia_subset.4042.4042.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4042" end_scan="4042" index="39" precursor_neutral_mass="1027.6705" retention_time_sec="2251.833">
+<search_result>
+<search_hit peptide="KMVRLLLR" massdiff="0.001708984375" calc_neutral_pep_mass="1027.6688" peptide_next_aa="V" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative exported protein" num_tot_proteins="1" tot_num_ions="14" hit_rank="1" num_matched_ions="5" protein="ECA2546" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="11.69"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.834654e-03"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4044" assumed_charge="3" spectrum="tmt_erwinia_subset.4044.4044.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4044" end_scan="4044" index="41" precursor_neutral_mass="2282.235" retention_time_sec="2252.4104">
+<search_result>
+<search_hit peptide="LDQAQAVAALCLSLGLAVASRR" massdiff="-0.017578125" calc_neutral_pep_mass="2282.2527" peptide_next_aa="V" num_missed_cleavages="1" num_tol_term="2" protein_descr="ABC transporter periplasmic binding protein" num_tot_proteins="1" tot_num_ions="42" hit_rank="1" num_matched_ions="4" protein="rev_ECA0137" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="LDQAQAVAALCLSLGLAVASRR">
+<mod_aminoacid_mass mass="160.03065" position="11"/>
+</modification_info>
+<search_score name="hyperscore" value="6.828"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.618183e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4048" assumed_charge="3" spectrum="tmt_erwinia_subset.4048.4048.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4048" end_scan="4048" index="45" precursor_neutral_mass="1771.99" retention_time_sec="2253.5732">
+<search_result>
+<search_hit peptide="IPSGLARIHGANIGIGAR" massdiff="-0.02685546875" calc_neutral_pep_mass="1772.0168" peptide_next_aa="Q" num_missed_cleavages="1" num_tol_term="2" protein_descr="ribonucleoside-diphosphate reductase 1 alpha chain" num_tot_proteins="1" tot_num_ions="34" hit_rank="1" num_matched_ions="4" protein="rev_ECA1199" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.289"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="3.570672e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4065" assumed_charge="3" spectrum="tmt_erwinia_subset.4065.4065.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4065" end_scan="4065" index="60" precursor_neutral_mass="1660.856" retention_time_sec="2260.19">
+<search_result>
+<search_hit peptide="RDALREMADITAAGR" massdiff="0.024658203125" calc_neutral_pep_mass="1660.8313" peptide_next_aa="I" num_missed_cleavages="2" num_tol_term="2" protein_descr="tRNA delta(2)-isopentenylpyrophosphate transferase" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="7" protein="ECA3935" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="RDALREM[147]ADITAAGR">
+<mod_aminoacid_mass mass="147.0354" position="7"/>
+</modification_info>
+<search_score name="hyperscore" value="13.253"/>
+<search_score name="nextscore" value="8.409"/>
+<search_score name="expect" value="1.152789e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4069" assumed_charge="2" spectrum="tmt_erwinia_subset.4069.4069.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4069" end_scan="4069" index="64" precursor_neutral_mass="1778.944" retention_time_sec="2261.3472">
+<search_result>
+<search_hit peptide="QLRKQLLYDAFSAAR" massdiff="-0.0350341796875" calc_neutral_pep_mass="1778.979" peptide_next_aa="G" num_missed_cleavages="2" num_tol_term="2" protein_descr="membrane-bound lytic murein transglycosylase C" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="rev_ECA0974" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.226"/>
+<search_score name="nextscore" value="6.394"/>
+<search_score name="expect" value="2.082093e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4086" assumed_charge="2" spectrum="tmt_erwinia_subset.4086.4086.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4086" end_scan="4086" index="79" precursor_neutral_mass="1692.9045" retention_time_sec="2267.9602">
+<search_result>
+<search_hit peptide="AQQAIRSFFNRLSR" massdiff="-0.0125732421875" calc_neutral_pep_mass="1692.9171" peptide_next_aa="D" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative phage integrase" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="4" protein="ECA0614" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.689"/>
+<search_score name="nextscore" value="8.656"/>
+<search_score name="expect" value="1.594961e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4089" assumed_charge="3" spectrum="tmt_erwinia_subset.4089.4089.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4089" end_scan="4089" index="82" precursor_neutral_mass="2154.1724" retention_time_sec="2268.8271">
+<search_result>
+<search_hit peptide="AVGLTAEHLLVADNDGKLYR" massdiff="0.029052734375" calc_neutral_pep_mass="2154.1433" peptide_next_aa="A" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative avirulence protein" num_tot_proteins="1" tot_num_ions="38" hit_rank="1" num_matched_ions="5" protein="ECA2113" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="6.193"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.193301e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4092" assumed_charge="2" spectrum="tmt_erwinia_subset.4092.4092.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4092" end_scan="4092" index="85" precursor_neutral_mass="2220.1453" retention_time_sec="2269.6948">
+<search_result>
+<search_hit peptide="GDAGELAQRQLLGTPSWEHR" massdiff="0.041748046875" calc_neutral_pep_mass="2220.1035" peptide_next_aa="L" num_missed_cleavages="1" num_tol_term="2" protein_descr="Rhs protein" num_tot_proteins="1" tot_num_ions="38" hit_rank="1" num_matched_ions="5" protein="rev_ECA3421" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="9.006"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.202426e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4097" assumed_charge="5" spectrum="tmt_erwinia_subset.4097.4097.5" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4097" end_scan="4097" index="89" precursor_neutral_mass="3368.7268" retention_time_sec="2271.9866">
+<search_result>
+<search_hit peptide="YELPSIGALNFVMYGALGGGVTRSLALDMHGK" massdiff="0.037353515625" calc_neutral_pep_mass="3368.6895" peptide_next_aa="G" num_missed_cleavages="1" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="62" hit_rank="1" num_matched_ions="4" protein="ECA1285" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="YELPSIGALNFVM[147]YGALGGGVTRSLALDM[147]HGK">
+<mod_aminoacid_mass mass="147.0354" position="13"/>
+<mod_aminoacid_mass mass="147.0354" position="29"/>
+</modification_info>
+<search_score name="hyperscore" value="8.85"/>
+<search_score name="nextscore" value="8.216"/>
+<search_score name="expect" value="8.175229e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4098" assumed_charge="2" spectrum="tmt_erwinia_subset.4098.4098.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4098" end_scan="4098" index="90" precursor_neutral_mass="1914.0365" retention_time_sec="2272.2668">
+<search_result>
+<search_hit peptide="MQQIDILRKLSEVWR" massdiff="-0.0142822265625" calc_neutral_pep_mass="1914.0508" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="hypothetical protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="ECA1058" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.89"/>
+<search_score name="nextscore" value="6.536"/>
+<search_score name="expect" value="1.420692e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4101" assumed_charge="3" spectrum="tmt_erwinia_subset.4101.4101.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4101" end_scan="4101" index="93" precursor_neutral_mass="2798.4329" retention_time_sec="2273.1313">
+<search_result>
+<search_hit peptide="QEVAAGRAIIPSNINHPESEPMIIGR" massdiff="-0.016845703125" calc_neutral_pep_mass="2798.4497" peptide_next_aa="N" num_missed_cleavages="1" num_tol_term="2" protein_descr="thiamine biosynthesis protein" num_tot_proteins="1" tot_num_ions="50" hit_rank="1" num_matched_ions="5" protein="ECA0232" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.362"/>
+<search_score name="nextscore" value="7.9"/>
+<search_score name="expect" value="1.925307e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4103" assumed_charge="2" spectrum="tmt_erwinia_subset.4103.4103.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4103" end_scan="4103" index="95" precursor_neutral_mass="1573.8575" retention_time_sec="2273.7126">
+<search_result>
+<search_hit peptide="SLEQAVISLQMSLR" massdiff="0.0078125" calc_neutral_pep_mass="1573.8497" peptide_next_aa="L" num_missed_cleavages="0" num_tol_term="2" protein_descr="killing factor" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="4" protein="rev_ECA2549" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="5.887"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.500388e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4110" assumed_charge="2" spectrum="tmt_erwinia_subset.4110.4110.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4110" end_scan="4110" index="101" precursor_neutral_mass="1522.7969" retention_time_sec="2276.5789">
+<search_result>
+<search_hit peptide="EFLISPSVFSLER" massdiff="-0.006103515625" calc_neutral_pep_mass="1522.803" peptide_next_aa="C" num_missed_cleavages="0" num_tol_term="2" protein_descr="putative thioesterase" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="5" protein="rev_ECA4498" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="11.169"/>
+<search_score name="nextscore" value="9.354"/>
+<search_score name="expect" value="1.209902e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4112" assumed_charge="2" spectrum="tmt_erwinia_subset.4112.4112.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4112" end_scan="4112" index="103" precursor_neutral_mass="1689.9012" retention_time_sec="2277.1575">
+<search_result>
+<search_hit peptide="VGFFNPIATGQAEALR" massdiff="0.0174560546875" calc_neutral_pep_mass="1689.8838" peptide_next_aa="L" num_missed_cleavages="0" num_tol_term="2" protein_descr="30S ribosomal protein S16" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="14" protein="ECA3359" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="27.211"/>
+<search_score name="nextscore" value="7.958"/>
+<search_score name="expect" value="2.100148e-05"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4117" assumed_charge="2" spectrum="tmt_erwinia_subset.4117.4117.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4117" end_scan="4117" index="107" precursor_neutral_mass="1777.9595" retention_time_sec="2279.1013">
+<search_result>
+<search_hit peptide="TVEVFEAKPFKQSLR" massdiff="-0.0130615234375" calc_neutral_pep_mass="1777.9725" peptide_next_aa="A" num_missed_cleavages="2" num_tol_term="2" protein_descr="Serum albumin OS=Bos taurus GN=ALB PE=1 SV=4" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="5" protein="rev_sp|P02769|ALBU_BOVIN" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="8.456"/>
+<search_score name="nextscore" value="8.301"/>
+<search_score name="expect" value="1.823895e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4120" assumed_charge="2" spectrum="tmt_erwinia_subset.4120.4120.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4120" end_scan="4120" index="110" precursor_neutral_mass="1673.0012" retention_time_sec="2280.3083">
+<search_result>
+<search_hit peptide="QYAAQGKSLILVARR" massdiff="0.0277099609375" calc_neutral_pep_mass="1672.9735" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="probable short-chain dehydrogenase" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="ECA2933" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.152"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.221800e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4143" assumed_charge="2" spectrum="tmt_erwinia_subset.4143.4143.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4143" end_scan="4143" index="131" precursor_neutral_mass="1893.0737" retention_time_sec="2288.6484">
+<search_result>
+<search_hit peptide="VTAEDVIKPGTADILVPR" massdiff="0.0167236328125" calc_neutral_pep_mass="1893.057" peptide_next_aa="N" num_missed_cleavages="1" num_tol_term="2" protein_descr="DNA-directed RNA polymerase beta&apos; subunit" num_tot_proteins="1" tot_num_ions="34" hit_rank="1" num_matched_ions="4" protein="ECA0224" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.326"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.965622e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4150" assumed_charge="2" spectrum="tmt_erwinia_subset.4150.4150.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4150" end_scan="4150" index="137" precursor_neutral_mass="1540.8812" retention_time_sec="2291.1643">
+<search_result>
+<search_hit peptide="IGRSAGSVIEIVGKR" massdiff="-0.0235595703125" calc_neutral_pep_mass="1540.9048" peptide_next_aa="A" num_missed_cleavages="2" num_tol_term="2" protein_descr="LexA repressor" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="rev_ECA0630" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="4.547"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="3.077868e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4156" assumed_charge="2" spectrum="tmt_erwinia_subset.4156.4156.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4156" end_scan="4156" index="143" precursor_neutral_mass="1745.0123" retention_time_sec="2293.2476">
+<search_result>
+<search_hit peptide="PLSTISSKHHRTLLR" massdiff="0.00634765625" calc_neutral_pep_mass="1745.006" peptide_next_aa="A" num_missed_cleavages="2" num_tol_term="2" protein_descr="probable transport protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="rev_ECA2350" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.898"/>
+<search_score name="nextscore" value="7.15"/>
+<search_score name="expect" value="1.414165e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4176" assumed_charge="2" spectrum="tmt_erwinia_subset.4176.4176.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4176" end_scan="4176" index="161" precursor_neutral_mass="1019.64557" retention_time_sec="2300.7163">
+<search_result>
+<search_hit peptide="RIIQVHVR" massdiff="0.0103759765625" calc_neutral_pep_mass="1019.6352" peptide_next_aa="I" num_missed_cleavages="1" num_tol_term="2" protein_descr="magnesium and cobalt efflux protein corc" num_tot_proteins="1" tot_num_ions="14" hit_rank="1" num_matched_ions="4" protein="ECA1316" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="9.285"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.131749e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4198" assumed_charge="2" spectrum="tmt_erwinia_subset.4198.4198.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4198" end_scan="4198" index="181" precursor_neutral_mass="1612.9209" retention_time_sec="2308.7676">
+<search_result>
+<search_hit peptide="KDIRNAGLNTIGLTK" massdiff="-0.0050048828125" calc_neutral_pep_mass="1612.9259" peptide_next_aa="E" num_missed_cleavages="2" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="rev_ECA3011" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.385"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.068439e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4200" assumed_charge="3" spectrum="tmt_erwinia_subset.4200.4200.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4200" end_scan="4200" index="183" precursor_neutral_mass="2883.5635" retention_time_sec="2309.3433">
+<search_result>
+<search_hit peptide="MKFKLLALAVTSLISVNAMAVTIDYR" massdiff="-0.032958984375" calc_neutral_pep_mass="2883.5964" peptide_next_aa="H" num_missed_cleavages="2" num_tol_term="2" protein_descr="oligogalacturonate-specific porin" num_tot_proteins="1" tot_num_ions="50" hit_rank="1" num_matched_ions="4" protein="ECA2407" peptide_prev_aa="-" is_rejected="0">
+<modification_info modified_peptide="MKFKLLALAVTSLISVNAM[147]AVTIDYR">
+<mod_aminoacid_mass mass="147.0354" position="19"/>
+</modification_info>
+<search_score name="hyperscore" value="10.711"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.574889e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4203" assumed_charge="2" spectrum="tmt_erwinia_subset.4203.4203.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4203" end_scan="4203" index="186" precursor_neutral_mass="1334.7399" retention_time_sec="2310.2148">
+<search_result>
+<search_hit peptide="EMVYNRLVRR" massdiff="0.015869140625" calc_neutral_pep_mass="1334.724" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="chemotaxis protein methyltransferase" num_tot_proteins="1" tot_num_ions="18" hit_rank="1" num_matched_ions="6" protein="ECA1692" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="11.608"/>
+<search_score name="nextscore" value="9.8"/>
+<search_score name="expect" value="9.397234e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4207" assumed_charge="2" spectrum="tmt_erwinia_subset.4207.4207.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4207" end_scan="4207" index="189" precursor_neutral_mass="1749.9369" retention_time_sec="2312.2014">
+<search_result>
+<search_hit peptide="GTWHAADKLDVIVGLR" massdiff="-0.015625" calc_neutral_pep_mass="1749.9525" peptide_next_aa="Q" num_missed_cleavages="1" num_tol_term="2" protein_descr="TonB-dependent receptor" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="5" protein="ECA4302" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="9.921"/>
+<search_score name="nextscore" value="7.668"/>
+<search_score name="expect" value="7.847840e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4208" assumed_charge="3" spectrum="tmt_erwinia_subset.4208.4208.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4208" end_scan="4208" index="190" precursor_neutral_mass="1613.9377" retention_time_sec="2312.495">
+<search_result>
+<search_hit peptide="IGNVLYISVPVRER" massdiff="0.0125732421875" calc_neutral_pep_mass="1613.9252" peptide_next_aa="R" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative phage-related protein (host factor-I protein)" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="5" protein="rev_ECA3934" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.209"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.102568e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4213" assumed_charge="2" spectrum="tmt_erwinia_subset.4213.4213.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4213" end_scan="4213" index="195" precursor_neutral_mass="1285.7427" retention_time_sec="2313.9446">
+<search_result>
+<search_hit peptide="LLRLMGELEGR" massdiff="0.025146484375" calc_neutral_pep_mass="1285.7175" peptide_next_aa="I" num_missed_cleavages="1" num_tol_term="2" protein_descr="homoserine kinase" num_tot_proteins="1" tot_num_ions="20" hit_rank="1" num_matched_ions="5" protein="ECA3890" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="9.243"/>
+<search_score name="nextscore" value="9.19"/>
+<search_score name="expect" value="2.061816e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4216" assumed_charge="2" spectrum="tmt_erwinia_subset.4216.4216.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4216" end_scan="4216" index="197" precursor_neutral_mass="1613.9326" retention_time_sec="2315.3096">
+<search_result>
+<search_hit peptide="IGNVLYISVPVRER" massdiff="0.0074462890625" calc_neutral_pep_mass="1613.9252" peptide_next_aa="R" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative phage-related protein (host factor-I protein)" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="6" protein="rev_ECA3934" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="10.108"/>
+<search_score name="nextscore" value="10.082"/>
+<search_score name="expect" value="1.253141e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4230" assumed_charge="2" spectrum="tmt_erwinia_subset.4230.4230.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4230" end_scan="4230" index="210" precursor_neutral_mass="1464.9132" retention_time_sec="2320.5369">
+<search_result>
+<search_hit peptide="LISSLKTKPLLPR" massdiff="-0.02587890625" calc_neutral_pep_mass="1464.9391" peptide_next_aa="I" num_missed_cleavages="2" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="4" protein="rev_ECA2899" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="5.143"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.183987e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4240" assumed_charge="2" spectrum="tmt_erwinia_subset.4240.4240.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4240" end_scan="4240" index="219" precursor_neutral_mass="1401.7738" retention_time_sec="2324.2605">
+<search_result>
+<search_hit peptide="LSLTDAGEKTLVR" massdiff="-0.0087890625" calc_neutral_pep_mass="1401.7826" peptide_next_aa="C" num_missed_cleavages="1" num_tol_term="2" protein_descr="LysR-family transcriptional regulator" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="6" protein="ECA3654" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="11.164"/>
+<search_score name="nextscore" value="10.786"/>
+<search_score name="expect" value="2.157745e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4241" assumed_charge="2" spectrum="tmt_erwinia_subset.4241.4241.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4241" end_scan="4241" index="220" precursor_neutral_mass="1712.0002" retention_time_sec="2324.5461">
+<search_result>
+<search_hit peptide="LALLLSESEVEQLLR" massdiff="0.0283203125" calc_neutral_pep_mass="1711.9719" peptide_next_aa="Q" num_missed_cleavages="0" num_tol_term="2" protein_descr="flagellar motor switch protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="rev_ECA1725" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.375"/>
+<search_score name="nextscore" value="7.036"/>
+<search_score name="expect" value="1.910953e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4243" assumed_charge="2" spectrum="tmt_erwinia_subset.4243.4243.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4243" end_scan="4243" index="222" precursor_neutral_mass="1605.8223" retention_time_sec="2325.122">
+<search_result>
+<search_hit peptide="LRSFCIQAAEITR" massdiff="-0.0074462890625" calc_neutral_pep_mass="1605.8297" peptide_next_aa="E" num_missed_cleavages="1" num_tol_term="2" protein_descr="glutamate-1-semialdehyde 2,1-aminomutase" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="5" protein="rev_ECA3307" peptide_prev_aa="-" is_rejected="0">
+<modification_info modified_peptide="n[43]LRSFCIQAAEITR" mod_nterm_mass="43.018425">
+<mod_aminoacid_mass mass="160.03065" position="5"/>
+</modification_info>
+<search_score name="hyperscore" value="7.793"/>
+<search_score name="nextscore" value="7.755"/>
+<search_score name="expect" value="2.671468e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4244" assumed_charge="2" spectrum="tmt_erwinia_subset.4244.4244.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4244" end_scan="4244" index="223" precursor_neutral_mass="1969.0911" retention_time_sec="2325.4084">
+<search_result>
+<search_hit peptide="RIDGEVGSISVSDGVKVPR" massdiff="0.031982421875" calc_neutral_pep_mass="1969.0591" peptide_next_aa="E" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative mechanosensitive ion channel protein" num_tot_proteins="1" tot_num_ions="36" hit_rank="1" num_matched_ions="5" protein="rev_ECA3118" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.679"/>
+<search_score name="nextscore" value="7.245"/>
+<search_score name="expect" value="1.604169e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4249" assumed_charge="2" spectrum="tmt_erwinia_subset.4249.4249.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4249" end_scan="4249" index="227" precursor_neutral_mass="1401.7646" retention_time_sec="2327.34">
+<search_result>
+<search_hit peptide="LSLTDAGEKTLVR" massdiff="-0.0179443359375" calc_neutral_pep_mass="1401.7826" peptide_next_aa="C" num_missed_cleavages="1" num_tol_term="2" protein_descr="LysR-family transcriptional regulator" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="5" protein="ECA3654" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="9.316"/>
+<search_score name="nextscore" value="9.058"/>
+<search_score name="expect" value="1.976970e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4251" assumed_charge="2" spectrum="tmt_erwinia_subset.4251.4251.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4251" end_scan="4251" index="229" precursor_neutral_mass="1299.7172" retention_time_sec="2328.2651">
+<search_result>
+<search_hit peptide="LESLVEELVNR" massdiff="0.0137939453125" calc_neutral_pep_mass="1299.7034" peptide_next_aa="S" num_missed_cleavages="0" num_tol_term="2" protein_descr="chaperone protein DnaK" num_tot_proteins="1" tot_num_ions="20" hit_rank="1" num_matched_ions="12" protein="ECA3882" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="25.286"/>
+<search_score name="nextscore" value="8.412"/>
+<search_score name="expect" value="2.011408e-04"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4256" assumed_charge="2" spectrum="tmt_erwinia_subset.4256.4256.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4256" end_scan="4256" index="234" precursor_neutral_mass="1848.9708" retention_time_sec="2329.7026">
+<search_result>
+<search_hit peptide="ETRVGGRTMVQFEIAR" massdiff="0.008056640625" calc_neutral_pep_mass="1848.9628" peptide_next_aa="W" num_missed_cleavages="2" num_tol_term="2" protein_descr="phage methylase" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="4" protein="rev_ECA2625" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.518"/>
+<search_score name="nextscore" value="7.307"/>
+<search_score name="expect" value="1.759948e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4261" assumed_charge="2" spectrum="tmt_erwinia_subset.4261.4261.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4261" end_scan="4261" index="238" precursor_neutral_mass="1887.0941" retention_time_sec="2331.9902">
+<search_result>
+<search_hit peptide="YVVLLSRVDVNAADVVR" massdiff="0.036376953125" calc_neutral_pep_mass="1887.0577" peptide_next_aa="P" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative bacteriophage tail fiber assembly protein" num_tot_proteins="1" tot_num_ions="32" hit_rank="1" num_matched_ions="4" protein="ECA3742" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.004"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.207266e-02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4263" assumed_charge="3" spectrum="tmt_erwinia_subset.4263.4263.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4263" end_scan="4263" index="240" precursor_neutral_mass="3019.5867" retention_time_sec="2332.5676">
+<search_result>
+<search_hit peptide="TIKIQMGDPHTMADPQKALNLLTQAIR" massdiff="-0.0078125" calc_neutral_pep_mass="3019.5945" peptide_next_aa="G" num_missed_cleavages="2" num_tol_term="2" protein_descr="cyclic AMP receptor protein" num_tot_proteins="1" tot_num_ions="52" hit_rank="1" num_matched_ions="4" protein="rev_ECA4064" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="TIKIQM[147]GDPHTMADPQKALNLLTQAIR">
+<mod_aminoacid_mass mass="147.0354" position="6"/>
+</modification_info>
+<search_score name="hyperscore" value="3.332"/>
+<search_score name="nextscore" value="3.332"/>
+<search_score name="expect" value="3.483373e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4264" assumed_charge="2" spectrum="tmt_erwinia_subset.4264.4264.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4264" end_scan="4264" index="241" precursor_neutral_mass="1528.8834" retention_time_sec="2332.8535">
+<search_result>
+<search_hit peptide="LDNCIKSLKVALR" massdiff="0.007568359375" calc_neutral_pep_mass="1528.8759" peptide_next_aa="K" num_missed_cleavages="2" num_tol_term="2" protein_descr="aspartate ammonia-lyase 2" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="6" protein="rev_ECA0621" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="LDNCIKSLKVALR">
+<mod_aminoacid_mass mass="160.03065" position="4"/>
+</modification_info>
+<search_score name="hyperscore" value="12.833"/>
+<search_score name="nextscore" value="10.684"/>
+<search_score name="expect" value="8.255625e-02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4278" assumed_charge="3" spectrum="tmt_erwinia_subset.4278.4278.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4278" end_scan="4278" index="254" precursor_neutral_mass="2901.481" retention_time_sec="2337.7559">
+<search_result>
+<search_hit peptide="SSATVPGKNIERSAYYALALAIAADGHR" massdiff="-0.028564453125" calc_neutral_pep_mass="2901.5095" peptide_next_aa="K" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative phage-related protein" num_tot_proteins="1" tot_num_ions="54" hit_rank="1" num_matched_ions="4" protein="rev_ECA3719" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.048"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.297179e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4288" assumed_charge="2" spectrum="tmt_erwinia_subset.4288.4288.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4288" end_scan="4288" index="263" precursor_neutral_mass="1707.976" retention_time_sec="2341.4983">
+<search_result>
+<search_hit peptide="NPDITLERRNLVLR" massdiff="0.001708984375" calc_neutral_pep_mass="1707.9742" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="penicillin-binding protein 1b" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="6" protein="ECA3313" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.994"/>
+<search_score name="nextscore" value="5.912"/>
+<search_score name="expect" value="2.379578e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4293" assumed_charge="2" spectrum="tmt_erwinia_subset.4293.4293.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4293" end_scan="4293" index="267" precursor_neutral_mass="1637.9712" retention_time_sec="2343.4539">
+<search_result>
+<search_hit peptide="LDRELILEKVAAIR" massdiff="-0.011474609375" calc_neutral_pep_mass="1637.9827" peptide_next_aa="A" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative mandelate racemase / muconate lactonizing enzyme family protein" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="4" protein="ECA0139" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="8.061"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.071459e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4294" assumed_charge="3" spectrum="tmt_erwinia_subset.4294.4294.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4294" end_scan="4294" index="268" precursor_neutral_mass="2346.3198" retention_time_sec="2344.0862">
+<search_result>
+<search_hit peptide="IDMNLLLTLHALLTEKHVTR" massdiff="0.010498046875" calc_neutral_pep_mass="2346.3093" peptide_next_aa="A" num_missed_cleavages="1" num_tol_term="2" protein_descr="LysR-family transcriptional regulator" num_tot_proteins="1" tot_num_ions="38" hit_rank="1" num_matched_ions="4" protein="ECA3863" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="IDM[147]NLLLTLHALLTEKHVTR">
+<mod_aminoacid_mass mass="147.0354" position="3"/>
+</modification_info>
+<search_score name="hyperscore" value="8.067"/>
+<search_score name="nextscore" value="7.088"/>
+<search_score name="expect" value="2.281655e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4304" assumed_charge="2" spectrum="tmt_erwinia_subset.4304.4304.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4304" end_scan="4304" index="277" precursor_neutral_mass="1831.9901" retention_time_sec="2347.498">
+<search_result>
+<search_hit peptide="VQHELALSPQDIDVIR" massdiff="0.010986328125" calc_neutral_pep_mass="1831.9791" peptide_next_aa="V" num_missed_cleavages="0" num_tol_term="2" protein_descr="putative dehydratase" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="5" protein="ECA2967" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.13"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="6.958249e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4306" assumed_charge="2" spectrum="tmt_erwinia_subset.4306.4306.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4306" end_scan="4306" index="279" precursor_neutral_mass="1396.7358" retention_time_sec="2348.4253">
+<search_result>
+<search_hit peptide="DHYPTPKGLTLR" massdiff="-0.0103759765625" calc_neutral_pep_mass="1396.7462" peptide_next_aa="S" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative GTP cyclohydrolase I" num_tot_proteins="1" tot_num_ions="22" hit_rank="1" num_matched_ions="5" protein="rev_ECA1020" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="9.283"/>
+<search_score name="nextscore" value="8.626"/>
+<search_score name="expect" value="2.014884e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4309" assumed_charge="2" spectrum="tmt_erwinia_subset.4309.4309.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4309" end_scan="4309" index="282" precursor_neutral_mass="1486.8829" retention_time_sec="2349.298">
+<search_result>
+<search_hit peptide="TAPTSLLKMLRTR" massdiff="0.0177001953125" calc_neutral_pep_mass="1486.8652" peptide_next_aa="Y" num_missed_cleavages="2" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="4" protein="rev_ECA1348" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="6.114"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="7.022634e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4317" assumed_charge="3" spectrum="tmt_erwinia_subset.4317.4317.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4317" end_scan="4317" index="289" precursor_neutral_mass="2980.5684" retention_time_sec="2352.4722">
+<search_result>
+<search_hit peptide="APAKEAAFLELPQPEFIMVMVPLGRAR" massdiff="-0.03466796875" calc_neutral_pep_mass="2980.603" peptide_next_aa="G" num_missed_cleavages="2" num_tol_term="2" protein_descr="riboflavin biosynthesis protein ribf [includes: riboflavin kinase; FMN adenylyltransferase]" num_tot_proteins="1" tot_num_ions="52" hit_rank="1" num_matched_ions="4" protein="rev_ECA3877" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.236"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.070141e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4318" assumed_charge="2" spectrum="tmt_erwinia_subset.4318.4318.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4318" end_scan="4318" index="290" precursor_neutral_mass="1862.9589" retention_time_sec="2352.7612">
+<search_result>
+<search_hit peptide="HPPIMLLSALDRDVDR" massdiff="-0.00830078125" calc_neutral_pep_mass="1862.9672" peptide_next_aa="V" num_missed_cleavages="1" num_tol_term="2" protein_descr="two component system response regulator" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="4" protein="ECA0785" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="HPPIM[147]LLSALDRDVDR">
+<mod_aminoacid_mass mass="147.0354" position="5"/>
+</modification_info>
+<search_score name="hyperscore" value="7.889"/>
+<search_score name="nextscore" value="6.601"/>
+<search_score name="expect" value="1.421510e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4322" assumed_charge="3" spectrum="tmt_erwinia_subset.4322.4322.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4322" end_scan="4322" index="294" precursor_neutral_mass="1862.9575" retention_time_sec="2353.9368">
+<search_result>
+<search_hit peptide="HPPIMLLSALDRDVDR" massdiff="-0.0096435546875" calc_neutral_pep_mass="1862.9672" peptide_next_aa="V" num_missed_cleavages="1" num_tol_term="2" protein_descr="two component system response regulator" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="4" protein="ECA0785" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="HPPIM[147]LLSALDRDVDR">
+<mod_aminoacid_mass mass="147.0354" position="5"/>
+</modification_info>
+<search_score name="hyperscore" value="6.569"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.709031e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4333" assumed_charge="3" spectrum="tmt_erwinia_subset.4333.4333.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4333" end_scan="4333" index="304" precursor_neutral_mass="2076.12" retention_time_sec="2357.9443">
+<search_result>
+<search_hit peptide="SPTTTLQSLPPHPWFVLR" massdiff="0.004638671875" calc_neutral_pep_mass="2076.1155" peptide_next_aa="R" num_missed_cleavages="0" num_tol_term="2" protein_descr="putative sulfate ester transporter, permease component" num_tot_proteins="1" tot_num_ions="34" hit_rank="1" num_matched_ions="4" protein="rev_ECA1557" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.49"/>
+<search_score name="nextscore" value="5.664"/>
+<search_score name="expect" value="1.005773e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4334" assumed_charge="3" spectrum="tmt_erwinia_subset.4334.4334.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4334" end_scan="4334" index="305" precursor_neutral_mass="2887.5735" retention_time_sec="2358.2363">
+<search_result>
+<search_hit peptide="STINIGLETLTEPTFLNGLSNRLTKR" massdiff="-0.003173828125" calc_neutral_pep_mass="2887.5767" peptide_next_aa="R" num_missed_cleavages="2" num_tol_term="2" protein_descr="dimethyladenosine transferase" num_tot_proteins="1" tot_num_ions="50" hit_rank="1" num_matched_ions="4" protein="rev_ECA3859" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.054"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.087898e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4337" assumed_charge="2" spectrum="tmt_erwinia_subset.4337.4337.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4337" end_scan="4337" index="307" precursor_neutral_mass="1778.9454" retention_time_sec="2359.601">
+<search_result>
+<search_hit peptide="ASRTIIWNRGDVVHR" massdiff="-0.0196533203125" calc_neutral_pep_mass="1778.9651" peptide_next_aa="Q" num_missed_cleavages="2" num_tol_term="2" protein_descr="vitamin B12 transport ATP-binding protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="5" protein="rev_ECA1834" peptide_prev_aa="-" is_rejected="0">
+<search_score name="hyperscore" value="9.536"/>
+<search_score name="nextscore" value="8.675"/>
+<search_score name="expect" value="1.741807e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4339" assumed_charge="3" spectrum="tmt_erwinia_subset.4339.4339.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4339" end_scan="4339" index="309" precursor_neutral_mass="1778.9446" retention_time_sec="2360.5251">
+<search_result>
+<search_hit peptide="GLMTLALFSSEAERVR" massdiff="0.009765625" calc_neutral_pep_mass="1778.9348" peptide_next_aa="Q" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative alanine racemase" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="4" protein="ECA4047" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.55"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.727826e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4340" assumed_charge="3" spectrum="tmt_erwinia_subset.4340.4340.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4340" end_scan="4340" index="310" precursor_neutral_mass="1945.0133" retention_time_sec="2360.813">
+<search_result>
+<search_hit peptide="ALQMALQISIAMSEPKAK" massdiff="-0.024169921875" calc_neutral_pep_mass="1945.0375" peptide_next_aa="G" num_missed_cleavages="1" num_tol_term="2" protein_descr="PdxA-like protein" num_tot_proteins="1" tot_num_ions="34" hit_rank="1" num_matched_ions="4" protein="rev_ECA3760" peptide_prev_aa="-" is_rejected="0">
+<modification_info modified_peptide="ALQM[147]ALQISIAMSEPKAK">
+<mod_aminoacid_mass mass="147.0354" position="4"/>
+</modification_info>
+<search_score name="hyperscore" value="6.055"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="4.085546e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4352" assumed_charge="2" spectrum="tmt_erwinia_subset.4352.4352.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4352" end_scan="4352" index="321" precursor_neutral_mass="1684.9363" retention_time_sec="2365.1362">
+<search_result>
+<search_hit peptide="TRRTPLQQTLSASAR" massdiff="0.0030517578125" calc_neutral_pep_mass="1684.9332" peptide_next_aa="R" num_missed_cleavages="2" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="5" protein="ECA4133" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="11.02"/>
+<search_score name="nextscore" value="7.911"/>
+<search_score name="expect" value="2.344228e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4355" assumed_charge="2" spectrum="tmt_erwinia_subset.4355.4355.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4355" end_scan="4355" index="324" precursor_neutral_mass="1292.8165" retention_time_sec="2366.0066">
+<search_result>
+<search_hit peptide="KVLSLQPPQKR" massdiff="0.0238037109375" calc_neutral_pep_mass="1292.7927" peptide_next_aa="E" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative DNA-binding protein" num_tot_proteins="1" tot_num_ions="20" hit_rank="1" num_matched_ions="4" protein="rev_ECA2911" peptide_prev_aa="-" is_rejected="0">
+<search_score name="hyperscore" value="8.596"/>
+<search_score name="nextscore" value="7.906"/>
+<search_score name="expect" value="1.682674e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4361" assumed_charge="2" spectrum="tmt_erwinia_subset.4361.4361.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4361" end_scan="4361" index="329" precursor_neutral_mass="1419.8076" retention_time_sec="2368.5884">
+<search_result>
+<search_hit peptide="LRHDVLARWVR" massdiff="-0.013427734375" calc_neutral_pep_mass="1419.821" peptide_next_aa="V" num_missed_cleavages="2" num_tol_term="2" protein_descr="global regulator" num_tot_proteins="1" tot_num_ions="20" hit_rank="1" num_matched_ions="4" protein="rev_ECA1931" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="10.045"/>
+<search_score name="nextscore" value="8.145"/>
+<search_score name="expect" value="1.299421e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4366" assumed_charge="2" spectrum="tmt_erwinia_subset.4366.4366.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4366" end_scan="4366" index="334" precursor_neutral_mass="1471.953" retention_time_sec="2370.038">
+<search_result>
+<search_hit peptide="IVFRVRTLLISR" massdiff="0.0179443359375" calc_neutral_pep_mass="1471.935" peptide_next_aa="F" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative acyltransferase" num_tot_proteins="1" tot_num_ions="22" hit_rank="1" num_matched_ions="4" protein="ECA2027" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="5.348"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.091440e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4368" assumed_charge="2" spectrum="tmt_erwinia_subset.4368.4368.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4368" end_scan="4368" index="336" precursor_neutral_mass="2323.225" retention_time_sec="2370.6228">
+<search_result>
+<search_hit peptide="GGIFAFGLLCTAAGWLTARGER" massdiff="0.03564453125" calc_neutral_pep_mass="2323.1895" peptide_next_aa="V" num_missed_cleavages="1" num_tol_term="2" protein_descr="2-(5&apos;&apos;-triphosphoribosyl)-3&apos;-dephosphocoenzyme-A synthase" num_tot_proteins="1" tot_num_ions="42" hit_rank="1" num_matched_ions="4" protein="ECA2569" peptide_prev_aa="K" is_rejected="0">
+<modification_info modified_peptide="GGIFAFGLLCTAAGWLTARGER">
+<mod_aminoacid_mass mass="160.03065" position="10"/>
+</modification_info>
+<search_score name="hyperscore" value="9.135"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="3.901665e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4370" assumed_charge="3" spectrum="tmt_erwinia_subset.4370.4370.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4370" end_scan="4370" index="337" precursor_neutral_mass="2009.124" retention_time_sec="2371.6973">
+<search_result>
+<search_hit peptide="AAVRAAIKELHYSPSAVAR" massdiff="0.007080078125" calc_neutral_pep_mass="2009.117" peptide_next_aa="S" num_missed_cleavages="2" num_tol_term="2" protein_descr="purine nucleotide synthesis repressor" num_tot_proteins="1" tot_num_ions="36" hit_rank="1" num_matched_ions="5" protein="ECA1925" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="9.724"/>
+<search_score name="nextscore" value="6.344"/>
+<search_score name="expect" value="1.563148e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4374" assumed_charge="2" spectrum="tmt_erwinia_subset.4374.4374.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4374" end_scan="4374" index="341" precursor_neutral_mass="1443.7899" retention_time_sec="2373.1963">
+<search_result>
+<search_hit peptide="KGEILGVAGLMGAGR" massdiff="0.0032958984375" calc_neutral_pep_mass="1443.7866" peptide_next_aa="T" num_missed_cleavages="1" num_tol_term="2" protein_descr="ribose transport ATP-binding protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="5" protein="ECA0011" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="KGEILGVAGLM[147]GAGR">
+<mod_aminoacid_mass mass="147.0354" position="11"/>
+</modification_info>
+<search_score name="hyperscore" value="9.351"/>
+<search_score name="nextscore" value="8.014"/>
+<search_score name="expect" value="1.937537e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4377" assumed_charge="2" spectrum="tmt_erwinia_subset.4377.4377.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4377" end_scan="4377" index="344" precursor_neutral_mass="1576.8661" retention_time_sec="2374.0608">
+<search_result>
+<search_hit peptide="RDLEGAVAAFLYPR" massdiff="0.030029296875" calc_neutral_pep_mass="1576.836" peptide_next_aa="D" num_missed_cleavages="1" num_tol_term="2" protein_descr="[protein-PII] uridylyltransferase" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="5" protein="rev_ECA1029" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.429"/>
+<search_score name="nextscore" value="6.289"/>
+<search_score name="expect" value="1.041718e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4383" assumed_charge="3" spectrum="tmt_erwinia_subset.4383.4383.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4383" end_scan="4383" index="349" precursor_neutral_mass="1842.051" retention_time_sec="2376.6445">
+<search_result>
+<search_hit peptide="LEVRDRSLASVISELR" massdiff="0.018798828125" calc_neutral_pep_mass="1842.0322" peptide_next_aa="D" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative sensor protein" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="4" protein="ECA1273" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="4.555"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.722860e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4385" assumed_charge="2" spectrum="tmt_erwinia_subset.4385.4385.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4385" end_scan="4385" index="351" precursor_neutral_mass="2009.1254" retention_time_sec="2377.2197">
+<search_result>
+<search_hit peptide="AAVRAAIKELHYSPSAVAR" massdiff="0.0084228515625" calc_neutral_pep_mass="2009.117" peptide_next_aa="S" num_missed_cleavages="2" num_tol_term="2" protein_descr="purine nucleotide synthesis repressor" num_tot_proteins="1" tot_num_ions="36" hit_rank="1" num_matched_ions="4" protein="ECA1925" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="9.12"/>
+<search_score name="nextscore" value="8.206"/>
+<search_score name="expect" value="2.213095e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4388" assumed_charge="3" spectrum="tmt_erwinia_subset.4388.4388.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4388" end_scan="4388" index="354" precursor_neutral_mass="2373.27" retention_time_sec="2378.0913">
+<search_result>
+<search_hit peptide="QAQQQALFDANSKASLAVLQSR" massdiff="0.030029296875" calc_neutral_pep_mass="2373.24" peptide_next_aa="R" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative membrane protein" num_tot_proteins="1" tot_num_ions="42" hit_rank="1" num_matched_ions="4" protein="ECA0802" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="8.259"/>
+<search_score name="nextscore" value="7.323"/>
+<search_score name="expect" value="2.042914e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4393" assumed_charge="3" spectrum="tmt_erwinia_subset.4393.4393.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4393" end_scan="4393" index="358" precursor_neutral_mass="2434.3394" retention_time_sec="2380.3826">
+<search_result>
+<search_hit peptide="GVDRIVAKAAMTGFTIIQSVADR" massdiff="0.039306640625" calc_neutral_pep_mass="2434.3" peptide_next_aa="G" num_missed_cleavages="2" num_tol_term="2" protein_descr="DNA polymerase III alpha subunit" num_tot_proteins="1" tot_num_ions="44" hit_rank="1" num_matched_ions="4" protein="rev_ECA1046" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="GVDRIVAKAAM[147]TGFTIIQSVADR">
+<mod_aminoacid_mass mass="147.0354" position="11"/>
+</modification_info>
+<search_score name="hyperscore" value="9.138"/>
+<search_score name="nextscore" value="9.023"/>
+<search_score name="expect" value="1.231686e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4396" assumed_charge="3" spectrum="tmt_erwinia_subset.4396.4396.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4396" end_scan="4396" index="361" precursor_neutral_mass="1925.0856" retention_time_sec="2381.246">
+<search_result>
+<search_hit peptide="LQTQGKDIGQHLYLRR" massdiff="0.026123046875" calc_neutral_pep_mass="1925.0594" peptide_next_aa="Y" num_missed_cleavages="2" num_tol_term="2" protein_descr="putative monooxygenase" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="5" protein="ECA0457" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="5.963"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.422423e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4397" assumed_charge="3" spectrum="tmt_erwinia_subset.4397.4397.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4397" end_scan="4397" index="362" precursor_neutral_mass="2547.4568" retention_time_sec="2381.5337">
+<search_result>
+<search_hit peptide="ILALWILGLDALATASGNTRLLPR" massdiff="-0.033203125" calc_neutral_pep_mass="2547.49" peptide_next_aa="T" num_missed_cleavages="1" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="46" hit_rank="1" num_matched_ions="4" protein="ECA0598" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.452"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="3.250873e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4400" assumed_charge="2" spectrum="tmt_erwinia_subset.4400.4400.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4400" end_scan="4400" index="365" precursor_neutral_mass="1797.9866" retention_time_sec="2382.4026">
+<search_result>
+<search_hit peptide="DATIRASHPHLQLLAR" massdiff="-0.009521484375" calc_neutral_pep_mass="1797.9961" peptide_next_aa="G" num_missed_cleavages="1" num_tol_term="2" protein_descr="ABC transporter ATP binding protein" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="4" protein="rev_ECA4073" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="8.386"/>
+<search_score name="nextscore" value="7.575"/>
+<search_score name="expect" value="1.898891e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4403" assumed_charge="2" spectrum="tmt_erwinia_subset.4403.4403.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4403" end_scan="4403" index="367" precursor_neutral_mass="1925.0874" retention_time_sec="2383.773">
+<search_result>
+<search_hit peptide="TTANIAKERLQIIVAER" massdiff="-0.018310546875" calc_neutral_pep_mass="1925.1057" peptide_next_aa="R" num_missed_cleavages="2" num_tol_term="2" protein_descr="cell division topological specificity factor" num_tot_proteins="1" tot_num_ions="32" hit_rank="1" num_matched_ions="4" protein="ECA2370" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="8.032"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.328092e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4404" assumed_charge="2" spectrum="tmt_erwinia_subset.4404.4404.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4404" end_scan="4404" index="368" precursor_neutral_mass="1362.8234" retention_time_sec="2384.4065">
+<search_result>
+<search_hit peptide="LGFVVSLRGFLR" massdiff="0.0098876953125" calc_neutral_pep_mass="1362.8135" peptide_next_aa="G" num_missed_cleavages="1" num_tol_term="2" protein_descr="1-acyl-sn-glycerol-3-phosphate acyltransferase" num_tot_proteins="1" tot_num_ions="22" hit_rank="1" num_matched_ions="6" protein="rev_ECA0346" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="11.125"/>
+<search_score name="nextscore" value="8.571"/>
+<search_score name="expect" value="2.206734e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4412" assumed_charge="4" spectrum="tmt_erwinia_subset.4412.4412.4" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4412" end_scan="4412" index="376" precursor_neutral_mass="2455.3176" retention_time_sec="2386.7136">
+<search_result>
+<search_hit peptide="RMLINATQQEELRVALVDGQR" massdiff="0.021240234375" calc_neutral_pep_mass="2455.2964" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="ribonuclease E" num_tot_proteins="1" tot_num_ions="40" hit_rank="1" num_matched_ions="5" protein="ECA1789" peptide_prev_aa="K" is_rejected="0">
+<modification_info modified_peptide="RM[147]LINATQQEELRVALVDGQR">
+<mod_aminoacid_mass mass="147.0354" position="2"/>
+</modification_info>
+<search_score name="hyperscore" value="9.516"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.761976e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4433" assumed_charge="3" spectrum="tmt_erwinia_subset.4433.4433.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4433" end_scan="4433" index="395" precursor_neutral_mass="1602.8877" retention_time_sec="2394.4463">
+<search_result>
+<search_hit peptide="AREAVLGASEGLFRK" massdiff="0.003662109375" calc_neutral_pep_mass="1602.884" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="28" hit_rank="1" num_matched_ions="4" protein="rev_ECA3438" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="6.903"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="7.929577e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4437" assumed_charge="3" spectrum="tmt_erwinia_subset.4437.4437.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4437" end_scan="4437" index="398" precursor_neutral_mass="2534.2988" retention_time_sec="2396.4487">
+<search_result>
+<search_hit peptide="PLTSAQTSVMKLADALNMKAAGER" massdiff="0.015869140625" calc_neutral_pep_mass="2534.283" peptide_next_aa="H" num_missed_cleavages="2" num_tol_term="2" protein_descr="ferrichrome-binding periplasmic protein" num_tot_proteins="1" tot_num_ions="46" hit_rank="1" num_matched_ions="5" protein="ECA3311" peptide_prev_aa="K" is_rejected="0">
+<modification_info modified_peptide="PLTSAQTSVM[147]KLADALNM[147]KAAGER">
+<mod_aminoacid_mass mass="147.0354" position="10"/>
+<mod_aminoacid_mass mass="147.0354" position="18"/>
+</modification_info>
+<search_score name="hyperscore" value="9.01"/>
+<search_score name="nextscore" value="5.72"/>
+<search_score name="expect" value="1.325867e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4438" assumed_charge="2" spectrum="tmt_erwinia_subset.4438.4438.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4438" end_scan="4438" index="399" precursor_neutral_mass="1578.8619" retention_time_sec="2396.7314">
+<search_result>
+<search_hit peptide="QHLRSLEGRTQVR" massdiff="-0.0081787109375" calc_neutral_pep_mass="1578.8701" peptide_next_aa="L" num_missed_cleavages="2" num_tol_term="2" protein_descr="ABC transporter, ATP-binding protein" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="4" protein="rev_ECA3748" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="9.471"/>
+<search_score name="nextscore" value="9.383"/>
+<search_score name="expect" value="1.808215e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4439" assumed_charge="2" spectrum="tmt_erwinia_subset.4439.4439.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4439" end_scan="4439" index="400" precursor_neutral_mass="2103.1528" retention_time_sec="2397.0203">
+<search_result>
+<search_hit peptide="DTRLDINILDSFIQTLAR" massdiff="0.0205078125" calc_neutral_pep_mass="2103.1323" peptide_next_aa="T" num_missed_cleavages="1" num_tol_term="2" protein_descr="probable PTS system regulatory protein" num_tot_proteins="1" tot_num_ions="34" hit_rank="1" num_matched_ions="4" protein="rev_ECA0343" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="5.571"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="9.599530e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4447" assumed_charge="2" spectrum="tmt_erwinia_subset.4447.4447.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4447" end_scan="4447" index="407" precursor_neutral_mass="1919.0692" retention_time_sec="2399.8247">
+<search_result>
+<search_hit peptide="RGLMNHLAILAPESELR" massdiff="0.0281982421875" calc_neutral_pep_mass="1919.041" peptide_next_aa="E" num_missed_cleavages="1" num_tol_term="2" protein_descr="putative RNA methylase" num_tot_proteins="1" tot_num_ions="32" hit_rank="1" num_matched_ions="4" protein="rev_ECA2535" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="7.183"/>
+<search_score name="nextscore" value="7.054"/>
+<search_score name="expect" value="2.134273e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4453" assumed_charge="3" spectrum="tmt_erwinia_subset.4453.4453.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4453" end_scan="4453" index="413" precursor_neutral_mass="1895.0469" retention_time_sec="2401.9026">
+<search_result>
+<search_hit peptide="RRILINEEQGLDGNLR" massdiff="0.0133056640625" calc_neutral_pep_mass="1895.0336" peptide_next_aa="H" num_missed_cleavages="2" num_tol_term="2" protein_descr="polyphosphate kinase" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="6" protein="ECA3164" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="13.107"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="7.050987e-02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4456" assumed_charge="2" spectrum="tmt_erwinia_subset.4456.4456.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4456" end_scan="4456" index="416" precursor_neutral_mass="1589.8645" retention_time_sec="2402.7666">
+<search_result>
+<search_hit peptide="PDIRNVMFRTVAR" massdiff="0.0185546875" calc_neutral_pep_mass="1589.846" peptide_next_aa="P" num_missed_cleavages="2" num_tol_term="2" protein_descr="subunit M of type I restriction - modification system" num_tot_proteins="1" tot_num_ions="24" hit_rank="1" num_matched_ions="4" protein="rev_ECA3121" peptide_prev_aa="K" is_rejected="0">
+<modification_info modified_peptide="PDIRNVM[147]FRTVAR">
+<mod_aminoacid_mass mass="147.0354" position="7"/>
+</modification_info>
+<search_score name="hyperscore" value="9.354"/>
+<search_score name="nextscore" value="7.742"/>
+<search_score name="expect" value="1.087677e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4459" assumed_charge="3" spectrum="tmt_erwinia_subset.4459.4459.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4459" end_scan="4459" index="418" precursor_neutral_mass="2858.623" retention_time_sec="2404.473">
+<search_result>
+<search_hit peptide="MSRVLLLGATGLVGHELLELLKANNR" massdiff="0.0068359375" calc_neutral_pep_mass="2858.6162" peptide_next_aa="V" num_missed_cleavages="2" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="50" hit_rank="1" num_matched_ions="4" protein="ECA0373" peptide_prev_aa="-" is_rejected="0">
+<modification_info modified_peptide="n[43]MSRVLLLGATGLVGHELLELLKANNR" mod_nterm_mass="43.018425">
+</modification_info>
+<search_score name="hyperscore" value="9.61"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="2.968247e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4460" assumed_charge="3" spectrum="tmt_erwinia_subset.4460.4460.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4460" end_scan="4460" index="419" precursor_neutral_mass="2090.1323" retention_time_sec="2404.7605">
+<search_result>
+<search_hit peptide="TPSIVVGGAHKGANRTVGELK" massdiff="-0.027099609375" calc_neutral_pep_mass="2090.1594" peptide_next_aa="R" num_missed_cleavages="2" num_tol_term="2" protein_descr="DNA polymerase III alpha subunit" num_tot_proteins="1" tot_num_ions="40" hit_rank="1" num_matched_ions="4" protein="rev_ECA1046" peptide_prev_aa="K" is_rejected="0">
+<search_score name="hyperscore" value="8.134"/>
+<search_score name="nextscore" value="5.517"/>
+<search_score name="expect" value="2.195331e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4466" assumed_charge="2" spectrum="tmt_erwinia_subset.4466.4466.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4466" end_scan="4466" index="425" precursor_neutral_mass="1606.8933" retention_time_sec="2406.4968">
+<search_result>
+<search_hit peptide="IPSPIEDVLLVQER" massdiff="3.662109375E-4" calc_neutral_pep_mass="1606.893" peptide_next_aa="Q" num_missed_cleavages="0" num_tol_term="2" protein_descr="putative ABC transporter ATP-binding protein" num_tot_proteins="1" tot_num_ions="26" hit_rank="1" num_matched_ions="4" protein="rev_ECA2835" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="6.97"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.356751e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4470" assumed_charge="4" spectrum="tmt_erwinia_subset.4470.4470.4" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4470" end_scan="4470" index="428" precursor_neutral_mass="2858.6196" retention_time_sec="2408.497">
+<search_result>
+<search_hit peptide="MSRVLLLGATGLVGHELLELLKANNR" massdiff="0.00341796875" calc_neutral_pep_mass="2858.6162" peptide_next_aa="V" num_missed_cleavages="2" num_tol_term="2" protein_descr="conserved hypothetical protein" num_tot_proteins="1" tot_num_ions="50" hit_rank="1" num_matched_ions="5" protein="ECA0373" peptide_prev_aa="-" is_rejected="0">
+<modification_info modified_peptide="n[43]MSRVLLLGATGLVGHELLELLKANNR" mod_nterm_mass="43.018425">
+</modification_info>
+<search_score name="hyperscore" value="7.464"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="1.815515e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4480" assumed_charge="3" spectrum="tmt_erwinia_subset.4480.4480.3" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4480" end_scan="4480" index="437" precursor_neutral_mass="2308.1904" retention_time_sec="2411.8774">
+<search_result>
+<search_hit peptide="QLQHALEGADRALTILKEMR" massdiff="-0.04150390625" calc_neutral_pep_mass="2308.232" peptide_next_aa="I" num_missed_cleavages="2" num_tol_term="2" protein_descr="methyl-accepting chemotaxis protein" num_tot_proteins="1" tot_num_ions="38" hit_rank="1" num_matched_ions="4" protein="rev_ECA0434" peptide_prev_aa="R" is_rejected="0">
+<modification_info modified_peptide="QLQHALEGADRALTILKEM[147]R">
+<mod_aminoacid_mass mass="147.0354" position="19"/>
+</modification_info>
+<search_score name="hyperscore" value="7.079"/>
+<search_score name="nextscore" value="6.449"/>
+<search_score name="expect" value="2.265948e+00"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4487" assumed_charge="4" spectrum="tmt_erwinia_subset.4487.4487.4" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4487" end_scan="4487" index="444" precursor_neutral_mass="2626.4546" retention_time_sec="2414.2524">
+<search_result>
+<search_hit peptide="AQSILELGRQYNIALPASDLDALR" massdiff="0.046875" calc_neutral_pep_mass="2626.4077" peptide_next_aa="P" num_missed_cleavages="1" num_tol_term="2" protein_descr="adenosine deaminase" num_tot_proteins="1" tot_num_ions="46" hit_rank="1" num_matched_ions="4" protein="ECA2266" peptide_prev_aa="R" is_rejected="0">
+<search_score name="hyperscore" value="7.396"/>
+<search_score name="nextscore" value="0.0"/>
+<search_score name="expect" value="5.970353e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query start_scan="4499" assumed_charge="2" spectrum="tmt_erwinia_subset.4499.4499.2" spectrumNativeID="controllerType=0 controllerNumber=1 scan=4499" end_scan="4499" index="455" precursor_neutral_mass="1823.932" retention_time_sec="2418.5586">
+<search_result>
+<search_hit peptide="LRSSMKFLDIGDVSEK" massdiff="-0.0130615234375" calc_neutral_pep_mass="1823.9451" peptide_next_aa="S" num_missed_cleavages="2" num_tol_term="2" protein_descr="MerR-family transcriptional regulator" num_tot_proteins="1" tot_num_ions="30" hit_rank="1" num_matched_ions="8" protein="ECA1575" peptide_prev_aa="-" is_rejected="0">
+<search_score name="hyperscore" value="13.898"/>
+<search_score name="nextscore" value="10.416"/>
+<search_score name="expect" value="2.514780e-01"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+</msms_run_summary>
+</msms_pipeline_analysis>
