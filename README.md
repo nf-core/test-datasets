@@ -41,6 +41,7 @@ Additionally there is a special subfolder for metagenome related files
   - rgi
   - taxonomy
 
+
 All folders are structured in a similar way, with any genome-specific files in `genome` (e.g. fasta, gtf, ...) and technology specific raw-data files in the `10xgenomics`, `illumina`, `nanopore`, `pacbio`, `hic` and `cooler` subfolders whenever available.
 `Genomics` contains all typical data required for genomics modules, such as fasta, fastq and bam files. Every folder in `genomics` corresponds to a single organism. For every data file, a short description about how this file was generated is available either in this description or in the respective subfolder.
 
@@ -83,6 +84,7 @@ The earth sciences folder contain subfolders for different data formats encounte
 ### genomics
 
 - sarscov2
+
   - alignment
     - last
       - 'contigs.genome.maf.gz': alignment of 'contigs.fasta' to 'scaffolds.fasta', in MAF format.
@@ -153,9 +155,9 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'sumstats.tsv': GWAS Summary statistics of variants from a subset of chr6, in the GCTA-Cojo format
     - 'sumstats_copy.tsv': A copy of sumstats.tsv file, to be used as an outcome file
     - bfile
-  - 'bfile.bed': plink bed file with variants matching the sumstats file
-  - 'bfile.bim': plink bim file with variants matching the sumstats file
-  - 'bfile.fam': plink fam file with variants matching the sumstats file
+	- 'bfile.bed': plink bed file with variants matching the sumstats file
+	- 'bfile.bim': plink bim file with variants matching the sumstats file
+	- 'bfile.fam': plink fam file with variants matching the sumstats file
   - illumina
     - alignment
       - `test.dnd`: Guide tree file generated with clustalo/guidetree module for the `sarscov2/genome/illumina/fasta/contigs.fasta` file.
@@ -169,8 +171,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'test.paired_end.methylated.sorted.bam.csi': csi index for the sorted bam file
       - 'test.paired_end.name.sorted.bam': Paired-end bam file sorted by name
       - 'test.paired_end.sorted.bam': Paired-end bam file
-      - 'test.paired_end.sorted.bam.bai': bam index for the sorted bam file
-      - 'test.paired_end.sorted.bam.csi': csi index for the sorted bam file
+      - 'test.paired_end.sorted.bam.bai': bam index for the sorted bam file 
+      - 'test.paired_end.sorted.bam.csi': csi index for the sorted bam file 
       - 'test.paired_end.sorted.invalid.sam': Paired-end sam file, invalid per format definition since alignments miss corresponding target in header
       - 'test.paired_end.umi.sorted.bam': Position sorted alignment of 'test.umi_extract\_{1,2}.fastq.gz'
       - 'test.paired_end.umi.sorted.bam.bai': bam index for the sorted bam file
@@ -272,7 +274,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'models_hg19_17sites.tar.gz': Archive containing ML models. From https://github.com/niu-lab/msisensor2/tree/master/test/tmp/models_hg19_17sites
   - nanopore
     - bam
-    - 'sars-cov-2_v5.3.2.bam': SC2 reads aligned to the `MN908947.3` reference, generated with the [artic-network v5.3.2 primer scheme](https://labs.primalscheme.com/detail/artic-sars-cov-2/400/v5.3.2/).
+	  - 'sars-cov-2_v5.3.2.bam': SC2 reads aligned to the `MN908947.3` reference, generated with the [artic-network v5.3.2 primer scheme](https://labs.primalscheme.com/detail/artic-sars-cov-2/400/v5.3.2/).
       - 'sars-cov-2_v5.3.2.bam.bai': Samtools index for 'sars-cov-2_v5.3.2.bam'.
       - 'test.sorted.bam'
       - 'test.sorted.bam.bai'
@@ -300,6 +302,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'card-data.tar.bz2': Resistance Gene Identifier data from the CARD database (May 2025 release, see https://card.mcmaster.ca/download for details)
 
 - homo_sapiens
+
   - 10xgenomics
     - cellranger
       - test*10x_10k_pbmc_5fb_fastq*\{1,2\}\_gz: 5' V2 Feature Barcode FASTQs from 10k PBMC data
@@ -425,7 +428,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - CTAT_HumanFusionLib.mini.dat.gz: A small fusion annotation library used in STAR-Fusion module.
     - minigenome.fa: A small genome sequence consisting of ~750 genes used in STAR-Fusion module with fusion annotation library.
     - minigenome.gtf: Transcript structure annotations of genes present in the minigenome used in STAR-Fusion module with fusion annotation library.
-    - test*starfusion_rnaseq*{1,2}.fq.gz: RNA-Seq read files used in STAR-Fusion module.
+    - test_starfusion_rnaseq_{1,2}.fq.gz: RNA-Seq read files used in STAR-Fusion module.
     - arriba.tsv: File contains fusions which pass all of Arriba's filters
     - starfusion.tsv: Fusion events from STAR-fusion.
     - Pfam-A.hmm.gz: Subset of Pfam HMM profiles usde in STAR-Fusion module.
@@ -451,8 +454,9 @@ The earth sciences folder contain subfolders for different data formats encounte
       - salmon.merged.gene_counts_length_scaled.tsv: Example matrix containing both Riboseq and RNA-seq runs, suitable for translational efficiency analysis
       - samplesheet.csv: Sample sheet corresponding to salmon.merged.gene_counts_length_scaled.tsv
   - illumina
+
     - bigwig:
-      - test_S\*.RPKM.bw: RPKM-normalized coverage track from control sample
+      - test_S*.RPKM.bw: RPKM-normalized coverage track from control sample
     - bam:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test{,.umi}*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test{,.umi}*{1,2}` (normal)
@@ -501,8 +505,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - fastq:
       - test\_{1,2}: reads corresponding to normal sample
       - test.umi\_{1,2}: UMI tagged reads corresponding to normal sample
-      - test_umi_cleanname\_{1,2}: test.umi fastq files without "/1" and "/2" in the readnames (so R1 and R2 names match)
-      - test_duplex_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
+      - test\_umi\_cleanname\_{1,2}: test.umi fastq files without "/1" and "/2" in the readnames (so R1 and R2 names match)
+      - test\_duplex\_umi\_{1,2}.fastq.gz: duplex UMI tagged reads corresponding to spiked samples (SRA accession: SRR7041712)
       - test2\_{1,2}: reads corresponding to tumor sample
       - test2.umi\_{1,2}: UMI tagged reads corresponding to tumor sample
       - test\_{1,2}germline.fq.gz: Synthetic raw reads file used to generate normal test data for HaplotypeCaller, simulated from chr21
@@ -635,6 +639,7 @@ The earth sciences folder contain subfolders for different data formats encounte
         - HG002_ont_tel_sub.bam: 17 ONT telomeric reads from [GIAB HG002 2025.01 release](https://ont-open-data.s3.amazonaws.com/giab_2025.01/basecalling/sup/HG002/PAW70337/calls.sorted.bam) (SUP basecalling, R10.4.1). Regions: last 10 kb of chr1 and chr2, downsampled with `samtools view -s 42.12`.
         - HG002_ont_tel_sub.bam.bai: Index for HG002_ont_tel_sub.bam
   - pacbio:
+
     - bam:
       - 200080.GRCh38.haplotagged.chrM.downsampled.bam: aligned and downsampled bam file containing only chrM. Original file from [Platinum-Pedigree-Datasets](https://github.com/Platinum-Pedigree-Consortium/Platinum-Pedigree-Datasets)
       - 200080.GRCh38.haplotagged.chrM.downsampled.bam.bai: index file for 200080.GRCh38.haplotagged.chrM.downsampled.bam
@@ -692,17 +697,19 @@ The earth sciences folder contain subfolders for different data formats encounte
     - plink_simulated_quantitative_phenoname.phe: quantitative phenotype file for plink_simulated
     - plink_simulated_binary_phenoname.phe: binary phenotype file for plink_simulated in 1/0 coding
     - plink_simulated_covariates.txt: covariates file for plink_simulated
-    - 1000GP.chr\*.vcf.gz: Reference panel phased VCF of the 1000 Genome Project in various format to be used for imputation for chr21 and 22 between position 16570000-16610000 with index.
+    - 1000GP.chr*.vcf.gz: Reference panel phased VCF of the 1000 Genome Project in various format to be used for imputation for chr21 and 22 between position 16570000-16610000 with index.
     - 1000GP.chr*.hap/legend/samples.gz: Same as 1000GP.chr*.vcf.gz but converted to hap/legend/samples format with bcftools
     - 1000GP.chr*.sites.vcf.gz: Variants informations present in 1000GP.chr*.vcf.gz obtain with `bcftools view -G -m 2 -M 2`
-    - 1000GP.chr\*.posfile: Variants position in tabulated format without header: chr, position, ref, alt
-    - 1000GP.chr\*.chunks.txt: chunks of the chromosome obtain with GLIMPSE_chunk
+    - 1000GP.chr*.posfile: Variants position in tabulated format without header: chr, position, ref, alt
+    - 1000GP.chr*.chunks.txt: chunks of the chromosome obtain with GLIMPSE_chunk
     - AFR.gwas: Study locus file. From [SuShiE](https://github.com/mancusolab/sushie).
     - AFR.ld: LD matrix file. From [SuShiE](https://github.com/mancusolab/sushie).
   - svsig:
+
     - NA03697B2_new.pbmm2.repeats.svsig.gz: structural variant file for NA03697B2_new.pbmm2.repeats.bam, created with PBSV discover version (2.9.0 default settings)
 
   - cooler:
+
     - cload:
       - hg19:
         - hg19.GM12878-MboI.pairs.subsample.blksrt.txt.gz, hg19.GM12878-MboI.pairs.subsample.blksrt.txt.gz.px2: hg19 pairix test file and its index file.
@@ -715,11 +722,13 @@ The earth sciences folder contain subfolders for different data formats encounte
         - toy.symm.upper.balanced.2.cool: test file for the cooltools/insulation module. Balanced copy of toy.symm.upper.2.cool, generated with cooler balance.
 
   - gene_set_analysis:
+
     - P53_6samples_collapsed_symbols.gct: a gene cluster text file format (GCT) example
     - P53_6samples.cls: a categorical (e.g tumor vs normal) class file format (CLS) example
     - c1.symbols.reduced.gmx: a GMX (Gene MatriX file format) example
 
   - array_expression:
+
     - GSE38751.csv: Sample sheet describing Affy array CEL files
     - GSE38751_RAW.tar: compressed CEL files archive
 
@@ -751,6 +760,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - SRR28679758_raw_matrix.seurat.rds: SRR28679758 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a Seurat RDS object.
 
 - mus_musculus
+
   - mageck
     - ERR376998.small.fastq.gz and ERR376999.small.fastq.gz downloaded from sourceforge mageck documentation, shortened to only 10k reads
     - design_matrix.txt taken from the mageck documentation tutorial
@@ -776,6 +786,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - SRP254919.spoofed_lengths.tsv: Spoofed file of transcript lengths
 
 - prokaryotes
+
   - bacteroides_fragilis
     - genome
       - 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
@@ -834,15 +845,15 @@ The earth sciences folder contain subfolders for different data formats encounte
         - names.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just tax IDs of the SARS-CoV2 and _Haemophilus influenzae_ TAX ID under `metagenome/fasta/`
         - nodes.dmp: A NCBI names.dmp file from 2024-02-03 filtered to just to just the taxonomy paths of the SARS-CoV2 and _Haemophilus influenzae_ TAX IDs under `metagenome/fasta/`
         - taxdump.tar.gz: A NCBI taxdump.tar.gz file from 2025-08-06 filtered to just include information relevant to tax ids of the SARS-CoV2 and _Haemophilus influenzae_ taxa under `metagenome/fasta/`. Contains:
-          - citations.dmp: Citations associated with remaining tax ids
-          - delnodes.dmp: Deleted tax ids (empty)
-          - division.dmp: Taxonomy database division ids (Bacteria, Unassigned, and Viruses)
-          - gencode.dmp: Genetic codes (Standard and Bacterial, Archaeal and Plant Plastid)
-          - images.dmp: Information about images associated with tax ids (Coronaviridae)
-          - merged.dmp: IDs of merged nodes and resulting nodes (Betacoronavirus and Severe acute respiratory syndrome-related coronavirus ids)
-          - names.dmp: Taxonomy names
-          - nodes.dmp: Taxonomy nodes with associated information
-          - readme.txt: Description of included files and table fields
+            - citations.dmp: Citations associated with remaining tax ids
+            - delnodes.dmp: Deleted tax ids (empty)
+            - division.dmp: Taxonomy database division ids (Bacteria, Unassigned, and Viruses)
+            - gencode.dmp: Genetic codes (Standard and Bacterial, Archaeal and Plant Plastid)
+            - images.dmp: Information about images associated with tax ids (Coronaviridae)
+            - merged.dmp: IDs of merged nodes and resulting nodes (Betacoronavirus and Severe acute respiratory syndrome-related coronavirus ids)
+            - names.dmp: Taxonomy names
+            - nodes.dmp: Taxonomy nodes with associated information
+            - readme.txt: Description of included files and table fields
   - plasmids
     - pUTI89
       - `pUTI89.fna.gz`: Escherichia coli UTI89 plasmid pUTI89 sequence from NCBI accession `NC_007941.1`.
@@ -853,14 +864,15 @@ The earth sciences folder contain subfolders for different data formats encounte
         - taxonomy.tsv: tsv file with tax lineage for streptococcus agalactiae.
       - emu.tar.gz: emu DB archive
     - nanopore
-      - fastq
-      - test.fastg.gz: Öong-read sequencing reads of the genome steptococcus agalactiae.
+       - fastq
+        - test.fastg.gz: Öong-read sequencing reads of the genome steptococcus agalactiae.
   - streptomyces_coelicolor
     - fixtures_bigslice_gbk.tar.gz: a directory in the required `bigslice` input format. Contains:
       - dataset_1/NC_003888.3/NC_003888.3.region002.gbk: GenBank file for the first genomic region of NC_003888.3.
       - dataset_1/NC_003888.3/NC_003888.3.region002.gbk: GenBank file for the second genomic region of NC_003888.3.
-      - taxonomy/dataset_1_taxonomy.tsv: tab-separated file providing taxonomy information for the genomes in the dataset (columns: # Genome folder Kingdom Phylum Class Order Family Genus Species Organism).
-      - datasets.tsv: tab-separated file listing datasets, their paths, corresponding taxonomy files, and descriptions (columns: # Dataset name Path to folder Path to taxonomy Description).
+      - taxonomy/dataset_1_taxonomy.tsv: tab-separated file providing taxonomy information for the genomes in the dataset (columns: # Genome folder	Kingdom	Phylum	Class	Order	Family	Genus	Species	Organism).
+      - datasets.tsv: tab-separated file listing datasets, their paths, corresponding taxonomy files, and descriptions (columns: # Dataset name	Path to folder	Path to taxonomy	Description).
+
 
 - eukaryotes
   - galaxea_fascicularis
@@ -900,25 +912,25 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'seatoxin-ref.dnd': guide tree of toxine sequences. Generated with famsa/guidetree
   - limulus_polyphemus
     - radseq
-      - bwa*output/msp*[0..9].bam : bam files from bwa-mem2 (v2.2.1) alignments of [nf-core/radseq test data](https://github.com/nf-core/test-datasets/tree/radseq). Simulated rad-seq fastqs were aligned to chr 26 of _Limulus polyphemus_ (atlantic horseshoe crab).
+      - bwa_output/msp_[0..9].bam : bam files from bwa-mem2 (v2.2.1) alignments of [nf-core/radseq test data](https://github.com/nf-core/test-datasets/tree/radseq). Simulated rad-seq fastqs were aligned to chr 26 of _Limulus polyphemus_ (atlantic horseshoe crab).   
       - popmap.tsv : manually created popmap of the bwa aligments with arbitrary two population definition (V1 and V2)
 
   - limulus_polyphemus
     - macse
-      - Raphidioptera_BOLD_COI_final_align_NT.aln : aln files from Raphidioptera alignments of [macse](https://www.agap-ge2pop.org/wp-content/uploads/macse/data/Ref_ali_files/Raphidioptera_BOLD_COI_final_align_NT.aln).
+      - Raphidioptera_BOLD_COI_final_align_NT.aln : aln files from Raphidioptera alignments of [macse](https://www.agap-ge2pop.org/wp-content/uploads/macse/data/Ref_ali_files/Raphidioptera_BOLD_COI_final_align_NT.aln). 
 
 - virus
   - influenza
     - fasta
-      - 'test-genome-A1.fasta': Complete HPAI H5N1 clade 2.3.4.4b genome with all eight segments (PB2, PB1, PA, HA, NP, NA, MP, NS). Expected GenoFLU genotype: A1 (fully Eurasian). Source: https://github.com/USDA-VS/GenoFLU/tree/main/test
+      - 'test-genome-A1.fasta': Complete HPAI H5N1 clade 2.3.4.4b genome with all eight segments (PB2, PB1, PA, HA, NP, NA, MP, NS). Expected GenoFLU genotype: A1 (fully Eurasian). Source: https://github.com/USDA-VS/GenoFLU/tree/main/test 
 
 ### imaging
-
 - staging
-  - '8*cycle1/*.tif': Synthetic image data simulating the naming nomenclature of MACSIma platform. Intensity was created using `numpy.uint16( 65535_ numpy.random.rand(256,256) )`. File names and xml metadata comment were transplanted from real MACSIma files.
+  - '8_cycle1/*.tif': Synthetic image data simulating the naming nomenclature of MACSIma platform. Intensity was created using ```numpy.uint16( 65535* numpy.random.rand(256,256) )```. File names and xml metadata comment were transplanted from real MACSIma files.
 
 - ome-zarr
   - zarr array from a 2D single-channel 16-bit `.tif` image from the [NuMorph test dataset](https://zenodo.org/records/14916478). The image is a single tile single z-slice (Z0600) of a WT mouse brain using a fluorescent antibody for Ctip2. Imaged with the Ultramicroscope II (Miltenyi).
+
 
 ### pangenomics
 
@@ -970,8 +982,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - pfam.tar.gz: An hh-suite formatted mini test database, containing PF00001.26 and PF00002.29 from pfam version 37.4.
 - interproscan
   - genomeProperties.txt.gz: Compressed flatfile containing the structured definitions of Genome Properties
-    (properties, steps, evidence rules, and cross-references) used for Genome Properties database construction and functional inference.
-    These properties are evaluated using protein functional annotations (e.g. InterPro matches) to infer the presence or absence of biological pathways and systems.
+  (properties, steps, evidence rules, and cross-references) used for Genome Properties database construction and functional inference.
+  These properties are evaluated using protein functional annotations (e.g. InterPro matches) to infer the presence or absence of biological pathways and systems.
   - human_skin_metagenome_ips_result.tsv: InterProScan TSV output generated from protein sequences predicted on contigs derived from a human skin metagenome, originally analysed with the MGnify v5 pipeline.
   - interproscan_test.tar.gz: An interproscan formatted mini test database, containing a few entries from the `hamap/2023_05`, `sfld/4` and `tigrfam/15.0` databases.
   - l_arginase.faa: A single protein (`GI|225038609|EFDID|719595|FULL`) that matches a family entry from the `interproscan/hamap` test dataset, the Glutaminase/Asparaginase family (`SFLDS00057`).
@@ -1022,7 +1034,7 @@ The earth sciences folder contain subfolders for different data formats encounte
   - agat_config.yaml: AGAT config file for v1.4.0 taken from <https://raw.githubusercontent.com/NBISweden/AGAT/v1.4.0/share/agat_config.yaml>
   - ncbi_user_settings.mkfg: Minimal NCBI user settings
   - paraphase_config.yaml: Minimal paraphase config for PRODH
-  - pytmb_snpeff.yml: Sample config file for the TMB tool taken from <https://github.com/bioinfo-pf-curie/TMB/blob/master/config/snpeff.yml>
+  - pytmb_snpeff.yml: Sample config file for the TMB tool taken from  <https://github.com/bioinfo-pf-curie/TMB/blob/master/config/snpeff.yml>
   - pytmb_haplotc.yml: Sample config file for the TMB tool for analysing VCF files created with HaplotypeCaller. See also example for mutect2 <https://github.com/bioinfo-pf-curie/TMB/blob/master/config/mutect2.yml>
   - config_baysor.toml: Sample config file to run the baysor module.
   - config_template.yte.yaml: YTE compatible exemplary config file
