@@ -190,6 +190,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - bcl
       - '200624_A00834_0183_BHMTFYDRXX.tar.gz': NovaSeq 6000 flowcell. Only the first tile of the first lane has been kept to reduce the size of the dataset
       - 'SampleSheet.csv': The corresponding samplesheet.
+    - bed
+      - 'test.bed': bed file containing 2 regions on MT chr
     - bedgraph
       - 'test.bedgraph'
     - bigwig
@@ -993,8 +995,9 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'MaxQuant_samplesheet.tsv': Samplesheet for the MaxQuant test dataset.
   - 'proteus.raw_MaxQuant_proteingroups_tab.tsv': Abundance matrix produced from this dataset with the Proteus R package.
 - msspectra
-  - 'OVEMB150205_12.raw': Thermo RAW mass spectra file.
-  - 'OVEMB150205_14.raw': Thermo RAW mass spectra file.
+  - 'OVEMB150205_12.raw': Thermo RAW mass spectra file (4 minute gradient of 5 fmol UPS1 5 measured on anLTQ Orbitrap Velos, originally from Proline test datasets).
+  - 'OVEMB150205_12.mzML': mzML conversion of Thermo RAW file using Thermorawfileparser (peak-picked and compressed, for identification testings).
+  - 'OVEMB150205_14.raw': Thermo RAW mass spectra file (4 minute gradient of 5 fmol UPS1 5 measured on anLTQ Orbitrap Velos, originally from Proline test datasets).
   - 'PXD012083_e005640_II.raw': Thermo RAW mass spectra file from PXD012083 study
   - 'peakpicker_tutorial_1.mzML': Profile mass spectra file
 - openms
@@ -1002,12 +1005,14 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'HepG2_rep2_small.idXML': Identification file in idXML format
 - parameter
   - 'mqpar.xml': MaxQuant parameter file
-- percolator
-  - 'OVEMB150205_12.pin': Percolator input file of a Comet search using the yeast_UPS.fasta
-  - 'OVEMB150205_14.pin': Percolator input file of a Comet search using the yeast_UPS.fasta
+  - 'OVEMB150205.comet.params': Comet params file for the OVEMB150205.* raw and mzML files (database and CPUs will be set accordingly during call of Comet module)
+  - 'sage_base_config.json': Sage parameter file
 - pdb
   - 1tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Engineered)
   - 8tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Breast)
+- percolator
+  - 'OVEMB150205_12.pin': Percolator input file of a Comet search using the yeast_UPS.fasta
+  - 'OVEMB150205_14.pin': Percolator input file of a Comet search using the yeast_UPS.fasta
 
 ### spatialomics
 
