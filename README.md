@@ -1011,8 +1011,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 1tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Engineered)
   - 8tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Breast)
 - percolator
-  - 'OVEMB150205_12.pin': Percolator input file of a Comet search using the yeast_UPS.fasta
-  - 'OVEMB150205_14.pin': Percolator input file of a Comet search using the yeast_UPS.fasta
+  - 'OVEMB150205_12.pin': Percolator input file of a Comet search using the yeast_UPS.fasta and OVEMB150205_12.mzML
+  - 'OVEMB150205_14.pin': Percolator input file of a Comet search using the yeast_UPS.fasta and OVEMB150205_14.mzML
 
 ### spatialomics
 
