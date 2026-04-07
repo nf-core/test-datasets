@@ -1,7 +1,0 @@
-sample,type,replicate,file1,file2
-GID1,input,1,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945046/GluePCA_GID1_input1_R1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945046/GluePCA_GID1_input1_R2.fastq.gz
-GID1,input,2,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945047/GluePCA_GID1_input2_R1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945047/GluePCA_GID1_input2_R2.fastq.gz
-GID1,input,3,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945048/GluePCA_GID1_input3_R1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945048/GluePCA_GID1_input3_R2.fastq.gz
-GID1,output,1,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945049/GluePCA_GID1_output1_2500uM_R1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945049/GluePCA_GID1_output1_2500uM_R2.fastq.gz
-GID1,output,2,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945050/GluePCA_GID1_output2_2500uM_R1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945050/GluePCA_GID1_output2_2500uM_R2.fastq.gz
-GID1,output,3,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945051/GluePCA_GID1_output3_2500uM_R1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/run/ERR169/ERR16945051/GluePCA_GID1_output3_2500uM_R2.fastq.gz
