@@ -1,0 +1,17 @@
+Package: BSgenome.sacCer3ChrIII.Test.sacCer3ChrIII
+Title: Full chrIII from sacCer3
+Description: Full chrIII from sacCer3
+Version: 1.0
+organism: Saccharomyces cerevisiae
+common_name: Yeast
+provider: custom
+genome: sacCer3ChrIII
+release_date: April 2011
+source_url: https://hgdownload.soe.ucsc.edu/goldenPath/sacCer3/bigZips/
+organism_biocview: Saccharomyces_cerevisiae
+BSgenomeObjname: sacCer3ChrIII
+SrcDataFiles: sacCer3chrIII.2bit
+seqs_srcdir: seq_dir
+seqfile_name: sacCer3chrIII.2bit
+circ_seqs: character(0)
+
