@@ -16,5 +16,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/sample_sheet_full.tsv`: Sample sheet of full sized tests that are downloaded from Pride (Accession PXD011628)
 
+`testdata/PXD009752.sdrf.tsv`: Minimal SDRF-sheet of the PRIDE Project [PXD009752](https://www.ebi.ac.uk/pride/archive/projects/PXD009752) following the immunopeptidomics template of the [SDRF annotation](https://github.com/bigbio/proteomics-sample-metadata)
+
 `testdata/allele_sheet_full.tsv`: Sheet containing allotypes of full sized tests
 
