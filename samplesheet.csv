@@ -1,3 +1,3 @@
 sample,spectra
-SAMPLE1,https://raw.githubusercontent.com/nf-core/test-datasets/denovoproteomics/testdata/sample1.mzML
-SAMPLE2,https://raw.githubusercontent.com/nf-core/test-datasets/denovoproteomics/testdata/sample2.mzML
+SAMPLE1,https://raw.githubusercontent.com/BioGeek/test-datasets/denovoproteomics/testdata/sample1.mzML
+SAMPLE2,https://raw.githubusercontent.com/BioGeek/test-datasets/denovoproteomics/testdata/sample2.mzML
