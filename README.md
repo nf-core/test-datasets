@@ -1,39 +1,28 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# nf-core/denovoproteomics test data
 
-Test data to be used for automated testing with the nf-core pipelines
+Test data for the [nf-core/denovoproteomics](https://github.com/nf-core/denovoproteomics) pipeline.
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+## Contents
 
-## Introduction
+| File | Description | Size |
+|------|-------------|------|
+| `samplesheet.csv` | Samplesheet for standard mode (2 samples) | <1 KB |
+| `samplesheet_mapping.csv` | Samplesheet for mapping mode (2 samples) | <1 KB |
+| `testdata/sample1.mzML` | DDA mzML, 48 spectra (34 MS2), Thermo LTQ FT | 4.9 MB |
+| `testdata/sample2.mzML` | DDA mzML, 48 spectra (34 MS2), Thermo LTQ FT | 4.9 MB |
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+## Cross-branch references
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+The pipeline test configs also reference data from other nf-core/test-datasets branches:
 
-## Documentation
+- **FASTA reference** for mapping mode: `modules` branch, `data/proteomics/database/yeast_UPS_mini.fasta` (4.2 KB, 10 proteins)
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+## Usage
 
 ```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+# Stub test (CI, no real tools)
+nextflow run nf-core/denovoproteomics -profile test -stub --outdir results
+
+# Full test (real tools, small data)
+nextflow run nf-core/denovoproteomics -profile test_full --outdir results
 ```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
