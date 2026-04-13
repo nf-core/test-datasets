@@ -8,13 +8,12 @@ Test data for the [nf-core/denovoproteomics](https://github.com/nf-core/denovopr
 |------|-------------|------|
 | `samplesheet.csv` | Samplesheet for standard mode (2 samples) | <1 KB |
 | `samplesheet_mapping.csv` | Samplesheet for mapping mode (2 samples) | <1 KB |
-| `testdata/sample1.mzML` | DDA mzML, 48 spectra (34 MS2), Thermo LTQ FT | 4.9 MB |
-| `testdata/sample2.mzML` | DDA mzML, 48 spectra (34 MS2), Thermo LTQ FT | 4.9 MB |
 
 ## Cross-branch references
 
-The pipeline test configs also reference data from other nf-core/test-datasets branches:
+All spectra files and FASTA references are reused from the `modules` branch to avoid data duplication:
 
+- **Spectra**: `modules` branch, `data/proteomics/msspectra/OVEMB150205_12.raw` (22.5 MB) and `OVEMB150205_14.raw` (26.5 MB)
 - **FASTA reference** for mapping mode: `modules` branch, `data/proteomics/database/yeast_UPS_mini.fasta` (4.2 KB, 10 proteins)
 
 ## Usage
