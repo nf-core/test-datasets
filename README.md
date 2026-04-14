@@ -22,6 +22,17 @@ The underlying read data was simulated with CAMISIM [(Fritz, A. et al., 2019)](h
 The data was further processed with the nf-core/mag pipeline version 2.1.0. The assemblies computed with `SPADes` as well as the by nf-core/mag generated contig depth files are used here.
 Due to the GitHub limit of 100MB, the top 300.000 contigs were extracted.
 
+### Proteins test data
+
+The `samplesheets/v1.0/samplesheet.proteins_only.csv` file links to the following minimal protein test data:
+
+| SAMPLE | PROTEIN FASTA FILE | ALLELES |
+|--------|--------------------|---------|
+| mock_proteins | mock_proteins.fasta | A\*01:01 |
+
+`mock_proteins.fasta` contains 10 short synthetic protein sequences used to test the direct protein input type (`type: proteins`), which bypasses Prodigal gene prediction. Each protein sequence becomes its own entity in the pipeline. The sequences are purely synthetic and not derived from any biological source.
+
+
 ## Downloading test data
 
 Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.

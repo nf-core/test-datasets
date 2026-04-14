@@ -1,0 +1,2 @@
+condition,type,microbiome_path,alleles,weights_path
+mock_proteins,proteins,https://github.com/nf-core/test-datasets/raw/testdata/metapep/mock_proteins.fasta,A*01:01,
