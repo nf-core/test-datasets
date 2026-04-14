@@ -1,0 +1,19 @@
+### /opt/conda/bin/STAR-avx   --runMode genomeGenerate      --runThreadN 12   --genomeDir star/   --genomeFastaFiles sacCer3chrIII.fa      --genomeSAindexNbases 8   --limitGenomeGenerateRAM 77209411328   --sjdbGTFfile sacCer3chrIII.gtf
+### GstrandBit 32
+versionGenome	2.7.4a
+genomeType	Full
+genomeFastaFiles	sacCer3chrIII.fa 
+genomeSAindexNbases	8
+genomeChrBinNbits	18
+genomeSAsparseD	1
+genomeTransformType	None
+genomeTransformVCF	-
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	sacCer3chrIII.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	526298 2628618
