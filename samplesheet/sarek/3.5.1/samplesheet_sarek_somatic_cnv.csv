@@ -1,4 +1,5 @@
-id,test_vcf,test_regions,caller
-test13,,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/controlfreec/HCC1395T_vs_HCC1395N.tumor.mpileup.gz_CNVs,controlfreec
-test14,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/cnvkit/HCC1395T_vs_HCC1395N.cnvcall.vcf,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/cnvkit/HCC1395T.sorted.somatic.call.cns,cnvkit
-test15,,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/ascat/HCC1395T_vs_HCC1395N.cnvs.txt,ascat
+id,test_vcf,test_regions,caller,pctsize,pctseq,pctovl,refdist,chunksize,normshift,normdist,normsizediff,maxdist,typeignore
+test13,,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/controlfreec/HCC1395T_vs_HCC1395N.tumor.mpileup.gz_CNVs,controlfreec,,,,,,,,,
+test14,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/cnvkit/HCC1395T_vs_HCC1395N.cnvcall.vcf,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/cnvkit/HCC1395T.sorted.somatic.call.cns,cnvkit,,,,,,,,,
+test15,,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/ascat/HCC1395T_vs_HCC1395N.cnvs.txt,ascat,,,,,,,,,
+test11,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/sarek/3.5.1/manta/HCC1395T_vs_HCC1395N.manta.somatic_sv.vcf.gz,,manta,0.5,0,0,1000000,1000000,0.5,0.5,0.5,1000000,true
