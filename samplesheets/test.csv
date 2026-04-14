@@ -1,0 +1,4 @@
+sample,run_accession,instrument_platform,fastq_1,fastq_2,fasta
+2612,ERR5766176,ILLUMINA,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474932_ERR5766176_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474932_ERR5766176_2.fastq.gz,
+2612,ERR5766176_B,ILLUMINA,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474932_ERR5766176_B_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474932_ERR5766176_B_2.fastq.gz,
+minigut,1,ILLUMINA,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R1.fastq.gz,https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R2.fastq.gz,
