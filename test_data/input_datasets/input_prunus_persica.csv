@@ -1,0 +1,2 @@
+counts,design,platform,normalised
+https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/input_datasets/prunus_persica.rnaseq.raw_counts.csv,https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/input_datasets/prunus_persica.rnaseq.design.csv,rnaseq,false
