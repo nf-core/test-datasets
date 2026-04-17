@@ -75,6 +75,12 @@ We have uploaded a copy of the official [GTDB-Tk mock database](https://data.gtd
 The database is available as a gzipped tarball at:
 - `databases/gtdbtk/gtdbtk_mockup_20250422.tar.gz`
 
+### GUNC
+
+GUNC database is provided by the GUNC team, as a minimal test set for CI/CD pipelines.
+
+This was introduces in GUNC v1.1.0 and can by downloaded by running `gunc download_db --db test_data`. It is also available in [Zenodo](https://zenodo.org/records/19631420).
+
 ## Broken samplesheets
 
 For testing input validation, the `samplesheets` directory contains the `broken/` subdirectory containing samplesheets with errors that should be caught by the pipeline.
@@ -91,30 +97,6 @@ For testing input validation, the `samplesheets` directory contains the `broken/
 -`samplesheets/broken/samplesheet_missing_sample.csv`: missing mandatory sample column 
 -`samplesheets/broken/samplesheet_nonunique_sample_run_combination.csv`: has invalid duplicate sample-run combinations 
 -`samplesheets/broken/samplesheet_spaces_in_name.csv`: incorrect sample name with spaces
-
-### GUNC
-
-For GUNC we created a mock database with the following commands:
-
-```bash
-curl "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=fasta_cds_aa&id=1992822979&extrafeat=null&conwithfeat=on&hide-cdd=on&ncbi_phid=CE8C15326D6BB8C10000000006490560" -o sequence.fasta
-diamond makedb --in sequence.fasta -d gunc-mock
-```
-
-Wich resulted in the `gunc-mock.dmnd` database file that can be used this way:
-```bash
-gunc run --db_file gunc-mock.dmnd -i bin.fa.gz
-```
-
-The only caveat is that the output is mostly NaNs, but it produces an output good enough to test if the tool is running.
-```tsv
-genome	n_genes_called	n_genes_mapped	n_contigs	taxonomic_level	proportion_genes_retained_in_major_clades	genes_retained_index	clade_separation_score	contamination_portion	n_effective_surplus_clades	mean_hit_identity	reference_representation_score	pass.GUNC
-MEGAHIT-MetaBAT2-test_minigut.1	736	663	76	kingdom	nan	nan	nan	nan	nan	nan	nan	nan
-```
-
-Versions used for the db creation / testing
-- diamond: 2.0.4
-- GUNC: 1.0.6
 
 ## Support
 
