@@ -6,6 +6,10 @@ Test data to be used for automated testing with the nf-core pipelines
 
 This branch contains test data for the [nf-core/mag](https://github.com/nf-core/mag) pipeline.
 
+## CI test data
+
+The `test_minigut` test datasets are synthetic reads generated from a single genome of a mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NCBI accession: NC_006347).
+
 ## Full-size test data
 
 The `manifext.full.tsv` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. _Nature Biotechnology_ (2019)](https://doi.org/10.1038/s41587-019-0191-2).
