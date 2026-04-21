@@ -34,7 +34,10 @@ git fetch
 
 ## Test Dataset Overview
 
-- Source: ENCODE Mouse Development Matrix
+
+- Source: ENCODE Mouse Development Matrix 
+
+    - DOI: https://doi.org/10.1038/nature11247
 
 - Tissue: Kidney
 
@@ -43,6 +46,11 @@ git fetch
 - Replicate: 1
 
 - Marks/Assays: H3K4me3 (ChIP-seq), H3K36me3 (ChIP-seq), WGBS
+
+- Files:
+    - https://www.encodeproject.org/files/ENCFF824RZT/@@download/ENCFF824RZT.bam -> H3K4me3
+    - https://www.encodeproject.org/files/ENCFF980SRC/@@download/ENCFF980SRC.bam -> H3K36me3
+    - https://www.encodeproject.org/files/ENCFF847ROX/@@download/ENCFF847ROX.bed.gz -> WGBS
 
 ```bash
 # 1. Subset to chr12
