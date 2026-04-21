@@ -32,6 +32,38 @@ git remote set-branches --add origin [remote-branch]
 git fetch
 ```
 
+## Test Dataset Overview
+
+
+- Source: ENCODE Mouse Development Matrix 
+
+    - DOI: https://doi.org/10.1038/nature11247
+
+- Tissue: Kidney
+
+- Stage: Postnatal Day 0 (P0)
+
+- Replicate: 1
+
+- Marks/Assays: H3K4me3 (ChIP-seq), H3K36me3 (ChIP-seq), WGBS
+
+- Files:
+    - https://www.encodeproject.org/files/ENCFF824RZT/@@download/ENCFF824RZT.bam -> H3K4me3
+    - https://www.encodeproject.org/files/ENCFF980SRC/@@download/ENCFF980SRC.bam -> H3K36me3
+    - https://www.encodeproject.org/files/ENCFF847ROX/@@download/ENCFF847ROX.bed.gz -> WGBS
+
+```bash
+# 1. Subset to chr12
+samtools view -b H3K4me3_KIDNEY_MOUSE_P0.bam chr12 > H3K4me3_KIDNEY_MOUSE_P0_chr12.bam
+zcat WGBS_KIDNEY_MOUSE_P0.bed.gz | awk '$1 == "chr12"' | gzip > WGBS_KIDNEY_MOUSE_P0_chr12.bed.gz
+
+# 2. Downsample to specific 500kb region
+samtools view -h -b H3K4me3_KIDNEY_MOUSE_P0_chr12.bam "chr12:10000000-10500000" > small_H3K4me3.bam
+samtools view -h -b H3K36me3_KIDNEY_MOUSE_P0_chr12.bam "chr12:10000000-10500000" > small_H3K36me3.bam
+zcat WGBS_KIDNEY_MOUSE_P0_chr12.bed.gz | awk '$1=="chr12" && $2>=10000000 && $3<=10500000' | gzip > small_WGBS.bed.gz
+```
+
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
