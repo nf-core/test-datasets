@@ -1,0 +1,2 @@
+sample,rna_matrix,hto_matrix,bam,vcf,n_samples,barcodes
+test1,s3://nf-core-awsmegatests/hadge/input_data/rna.tar.gz,s3://nf-core-awsmegatests/hadge/input_data/hto.tar.gz,s3://nf-core-awsmegatests/hadge/input_data/filtered_cells.bam,s3://nf-core-awsmegatests/hadge/input_data/freebayes.vcf,8,s3://nf-core-awsmegatests/hadge/input_data/barcodes.tsv
