@@ -1,0 +1,2 @@
+sample,tsv,seq_type
+HepG2_A,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/peptide/HepG2_A.tsv,peptide
