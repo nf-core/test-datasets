@@ -237,6 +237,56 @@ sylph sketch *
 
 This generates a database file `database.syldb`. If you want to use a custom database name, you can use `sylph sketch * -o custom_name.syldb`
 
+#### melon
+
+
+Create minimal dataset of Bacteroides fragilis as test database for melon to run nf-test.
+
+1. Get all the accessions from the melon DB for Bacteroides fragilis
+	- `tail -n +2 metadata.tsv | cut -f1 > accessions.txt`
+	- Adjust metadata.tsv `head -n1 metadata.tsv > fragmini/metadata.tsv && grep -f frag_mini.txt metadata.tsv >> fragmini/metadata.tsv`
+2. Fetch all sequences from the database .fa files
+	- `seqkit grep -r -f fragilis_ids.txt database/nucl.bacteria.*.fa -o database/combined_fragilis.fa`
+
+	```bash
+	for f in nucl.*.fa; do echo "Processing $f..."; seqkit grep -r -f ../fragilis_db/fragilis_ids.txt "$f" -o "fragdb/$f"; done
+	```
+
+3. From those extracted .fa files extract the annotation string
+	- `grep -o ":[+-] .*" combined_fragilis.fa | cut -d' ' -f2- > fragilis_annotations.txt`
+4. Fetch those sequences from the protein .fa file for the diamond index
+	- `seqkit grep -n -f database/fragilis_annotations.txt database/prot.fa -o database/fragilis_prot.fa`
+5. Create the test_db
+
+```bash
+diamond makedb --in fragilis_db/fragilis_prot.fa --db fragilis_db/fragilis_prot --quiet
+ls minimi/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
+	filename=${1%.fa*};
+	filename=${filename##*/};
+	minimap2 -x map-ont -d minimi/$filename.mmi ${1} 2> /dev/null;
+	echo "Indexed <minimi/$filename.fa>.";' - {}
+```
+
+Note: Each gene is in a seperate fa file. Check if all are needed and fetch for each gene the one for Bacteroides fragilis
+
+#### metacache
+
+Download the NCBI’s taxonomy with an included helper script:
+
+```bash
+download-ncbi-taxonomy ncbi_taxonomy
+```
+This downloads the taxonomy and puts it in a folder called `ncbi_taxonomy`.
+
+```bash
+mkdir metacache
+
+## Copy the downloaded fasta files for Penicillium roqueforti and Human genome mitochondral to folder metacache.
+
+metacache build test-db-metacache metacache/ -taxonomy ncbi_taxonomy
+```
+
+
 ## Taxprofiler AWS Full Test specific-information
 
 ### FASTQ
@@ -647,6 +697,146 @@ kmcp compute -k 21 -n 10 -l 150 -O tmp-k21-210-l150 -i list.txt
 kmcp index -I tmp-k21-210-l150/ --threads 8 --num-hash 1 --false-positive-rate 0.3 --out-dir refs.kmcp
 ```
 
+#### sylph
+
+For the full test dataset, a custom taxonomy file was created.
+
+Assign the corresponding taxids to the full test dataset using the script
+
+```
+#!/bin/bash
+
+echo -e "Acession\tTaxID" > "$taxid_results.tsv"
+
+for dir in /path/to/GCA_*; do
+    accession=$(basename "$dir")
+
+    # Query NCBI for the taxid
+    taxid=$(esearch -db assembly -query "$accession" | efetch -format docsum | xtract -pattern DocumentSummary -element Taxid)
+
+    # Handle cases where taxid is empty
+    if [[ -z "$taxid" ]]; then
+        taxid="NA"
+    fi
+
+    # Append result to file
+    echo -e "${accession}\t${taxid}" >> "$taxid_results"
+done
+```
+
+To get the taxonomy with the prefixes, please run the following command:
+
+```
+tail -n +2 taxid_results.tsv   | while read accession taxid; do taxonomy=$(echo "$taxid" | taxonkit reformat2 -I 1 -f "{domain|superkingdom}\t{phylum}\t{class}\t{or
+        | csvtk replace -Ht -f 2 -p ^ -r d__ \
+        | csvtk replace -Ht -f 3 -p ^ -r p__ \
+        | csvtk replace -Ht -f 4 -p ^ -r c__ \
+        | csvtk replace -Ht -f 5 -p ^ -r o__ \
+        | csvtk replace -Ht -f 6 -p ^ -r f__ \
+        | csvtk replace -Ht -f 7 -p ^ -r g__ \
+        | csvtk replace -Ht -f 8 -p ^ -r s__  \
+        | sed 's/\t/;/g' | sed 's/;/\t/');     echo -e "$accession\t$taxonomy"; done  > sylph_taxonomy.tsv
+
+```
+
+#### melon
+
+Before building the melon database, we need to do some preprocessing steps:
+
+Add the genbank assembly names in a file, named `gca_list.txt`
+
+Run following command: `python ncbi_scientific_name.py gca_list.txt > results_scientific_names.txt`
+
+```
+import os
+import sys
+from Bio import Entrez
+
+Entrez.email = "your.email@example.com"  # <-- Replace with your email
+
+def gca_to_scientific_name(gca):
+    try:
+        handle = Entrez.esearch(db="assembly", term=gca)
+        record = Entrez.read(handle)
+        handle.close()
+        if not record['IdList']:
+            return None
+
+        uid = record['IdList'][0]
+        handle = Entrez.esummary(db="assembly", id=uid)
+        summary = Entrez.read(handle)
+        handle.close()
+
+        docsum = summary['DocumentSummarySet']['DocumentSummary'][0]
+        return docsum['Organism']
+    except Exception as e:
+        print(f"[!] Error fetching scientific name for {gca}: {e}")
+        return None
+
+def read_gca_list(file_path):
+    with open(file_path) as f:
+        return [line.strip() for line in f if line.strip()]
+
+def main(input_arg):
+    if os.path.isfile(input_arg):
+        gca_list = read_gca_list(input_arg)
+    else:
+        gca_list = input_arg.split()
+
+    for gca in gca_list:
+        name = gca_to_scientific_name(gca)
+        if name:
+            print(f"{gca}\t{name}")
+        else:
+            print(f"{gca}\t[Scientific name not found]")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage:\n  python gca_to_name.py gca_list.txt\n  OR\n  python gca_to_name.py \"GCA_000007565.2 GCA_000001405.28\"")
+        sys.exit(1)
+
+    input_arg = sys.argv[1]
+    main(input_arg)
+```
+
+```
+cut -f2 results_scientific_names.txt | awk '{print $1, $2}' > species_names.txt
+grep -Ff species_names.txt metadata.tsv > matched_metadata.tsv
+cut -f1 matched_metadata.tsv > all_ids.txt
+
+seqkit grep -r -f all_ids.txt database/nucl.bacteria.*.fa -o database/combined_all.fa
+for f in database/nucl.*.fa; do echo "Processing $f..."; seqkit grep -r -f all_ids.txt "$f" -o "fulldb/$f"; done
+
+grep -o ":[+-] .*" database/combined_all.fa | cut -d' ' -f2- > database/all_annotations.txt
+
+seqkit grep -n -f database/all_annotations.txt database/prot.fa -o database/all_prot.fa
+
+diamond makedb --in database_melon_all_files/all_prot.fa --db database_melon_all_files/prot --quiet
+ls database_melon_all_files/nucl.*.fa | sort | xargs -P 16 -I {} bash -c '
+        filename=${1%.fa*};
+        filename=${filename##*/};
+        minimap2 -x map-ont -d database_melon_all_files/$filename.mmi ${1} 2> /dev/null;
+        echo "Indexed <minimi/$filename.fa>.";' - {}
+```
+
+#### metacache
+
+Download the NCBI’s taxonomy with an included helper script:
+
+```bash
+download-ncbi-taxonomy ncbi_taxonomy
+```
+This downloads the taxonomy and puts it in a folder called `ncbi_taxonomy`.
+
+```bash
+mkdir metacache
+
+# Copy the downloaded fasta files for Penicillium roqueforti and human genome mitochondrial to the folder metacache.
+
+metacache build test-db-metacache metacache/ -taxonomy ncbi_taxonomy
+```
+
+
 ## Database Archive Creation
 
 To make the compressed TAR, we must make sure all symlinks are followed as necessary. It is recommended to run the cleanup commands below _prior_ to archiving, however it is critical that Bracken archiving is performed BEFORE running the Kraken2 cleanup.
@@ -713,6 +903,16 @@ We also hold 'broken' samplesheets for testing input schema validation.
 - `broken_samplesheets/test_samplesheet_missing_sample.csv`: missing `sample` entry in the samplesheet
 - `broken_samplesheets/test_samplesheet_missing_run_accession.csv`: missing `run_accession.csv` entry in the samplesheet
 - `broken_samplesheets/test_samplesheet_missing_instrument_platform.csv`: missing `instrument_platform` column in the samplesheet
+
+## Test data for generating input for [gms/metaval](https://github.com/genomic-medicine-sweden/metaval)
+
+The `gms/metaval` workflow only verifies the classification results produced by the three classifiers: `Kraken2`, `Centrifuge`, and `DIAMOND`.
+
+Each classifier must only be executed with a single database and the raw read files must be provided as `*.fastq.gz` files.
+
+This test requires two files: 
+- `samplesheet_metaval.csv`
+- `database_metaval.csv`
 
 ## Support
 
