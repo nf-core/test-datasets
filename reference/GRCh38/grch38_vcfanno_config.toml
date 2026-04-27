@@ -1,0 +1,21 @@
+# TOML
+
+title = "Vcfanno configuration file"
+
+[[annotation]]
+file="grch38_gnomad_reformatted_merged_v4.1_subset.vcf.gz"
+fields = ["AF", "AF_grpmax"]
+ops=["self", "self"]
+names=["GNOMADAF", "GNOMADAF_grpmax"]
+
+[[annotation]]
+file="grch38_swegen_frequencies_fixploidy_-20190204_subset.vcf.gz"
+fields = ["AF", "AC_Hom", "AC_Het", "AC_Hemi"]
+ops=["self", "self", "self", "self"]
+names=["SWEGENAF", "SWEGENAAC_Hom", "SWEGENAAC_Het", "SWEGENAAC_Hemi"]
+
+[[annotation]]
+file="whole_genome_SNVs_chr_subset.tsv.gz"
+names=["CADD"]
+ops=["mean"]
+columns=[6]
