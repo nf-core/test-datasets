@@ -178,13 +178,13 @@ centrifuge-build -p 4 --conversion-table seqid2taxid.map --taxonomy-tree taxonom
 
 #### DIAMOND
 
-Diamond Version 2.0.15
+Diamond Version 2.1.24
 
 ```bash
 wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip
 unzip taxdmp.zip
 
-## warning: large file!
+## warning: large file! Accessed April,23 2026
 wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.FULL.gz
 
 ## warning: takes a long time!
@@ -458,7 +458,7 @@ malt-build -J-Xmx490G -i meslier2022_fasta/ncbi_dataset/data/*/*.fna -s DNA -d m
 
 #### DIAMOND
 
-The following steps were performed used DIAMOND (v2.0.15).
+The following steps were performed used DIAMOND (v2.1.24).
 
 Make a working directory
 
@@ -468,7 +468,7 @@ mkdir -p meslier2022/diamond
 
 Download and unpack the required taxonomy files.
 
-> ⚠️ The accession2taxid file is very large!
+> ⚠️ The accession2taxid file is very large! Accessed April,23 2026
 
 ```bash
 wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip
