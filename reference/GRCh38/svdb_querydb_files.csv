@@ -1,0 +1,3 @@
+filename,in_freq_info_key,in_allele_count_info_key,out_freq_info_key,out_allele_count_info_key,use_in_freq_filter
+https://raw.githubusercontent.com/Clinical-Genomics/test-datasets/refs/heads/oncorefiner/reference/GRCh38/grch38_gnomad_reformated_sv_v4.1_subset.vcf.gz,AF,AC,gnomad_svAF,gnomad_svAC
+https://raw.githubusercontent.com/Clinical-Genomics/test-datasets/refs/heads/oncorefiner/reference/GRCh38/grch38_swegen_svdb_concat_sort_-20200608_subset.vcf.gz,FRQ,OCC,swegenAF,swegenOCC
