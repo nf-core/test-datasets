@@ -5,9 +5,3 @@ file="grch37_gnomad_-r2.1.1-.vcf.gz"
 fields = ["AF", "AF_popmax"]
 ops=["self", "self"]
 names=["GNOMADAF", "GNOMADAF_popmax"]
-
-[[annotation]]
-file="vcfanno_cadd.tsv.gz"
-names=["CADD"]
-ops=["mean"]
-columns=[6] # ??
