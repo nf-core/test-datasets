@@ -1,2 +1,2 @@
-gene_name,alignment,tree,control_file,suite,tool
-Mx,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/Mx_aln.phy,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/Mx_unroot.tree,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/codeml-sites.ctl,paml,codeml
+gene_name,alignment,tree,suite,tool,control_file
+Mx,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/Mx_aln.phy,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/Mx_unroot.tree,paml,codeml,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/codeml-sites.ctl,
