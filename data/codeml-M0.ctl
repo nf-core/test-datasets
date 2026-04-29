@@ -1,6 +1,6 @@
       seqfile = Mx_aln.phy            * Path to the alignment file
      treefile = Mx_unroot.tree           * Path to the tree file
-      outfile = out_sites.txt            * Path to the output file
+      outfile = out_M0.txt            * Path to the output file
    
         noisy = 3              * How much rubbish on the screen
       verbose = 1              * More or less detailed report
@@ -11,9 +11,9 @@
     cleandata = 0              * Remove sites with ambiguity data?
 		
         model = 0         * Models for ω varying across lineages
-	  NSsites = 0 1 2 7 8          * Models for ω varying across sites
+      NSsites = 0          * Models for ω varying across sites
     CodonFreq = 7        * Codon frequencies
-	  estFreq = 0        * Use observed freqs or estimate freqs by ML
+      estFreq = 0        * Use observed freqs or estimate freqs by ML
         clock = 0          * Clock model
     fix_omega = 0         * Estimate or fix omega
         omega = 0.5        * Initial or fixed omega
