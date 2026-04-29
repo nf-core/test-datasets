@@ -1,2 +1,2 @@
-gene_name,alignment,tree,suite,tool
-KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,meme
+gene_name,alignment,tree,suite,tool,control_file
+KSR2,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.fna,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/genephylomodeler/data/ksr2.tree,hyphy,meme,
