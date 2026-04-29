@@ -22,6 +22,15 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `reference/mobile_elemement_references.tsv`: tsv file with paths to the mobile element locations on chromosome 21
 
+### For SNV subworkflow, scoring variants with MIVMIR, GICAM
+`reference/rank_model_dummy_mivmir_gicam_unit_test.ini`: Dummy genmod config for running genmod scoring
+
+`testdata/justhusky_snv_rank_variants_mivmir_gicam.vcf`: Data for running `rank_variants` subworkflow with MIVMIR, GICAM
+
+`testdata/justhusky_snv_mivmir.vcf`: Data for running MIVMIR module test
+
+`testdata/justhusky_snv_gicam.vcf`: Data for running GICAM module test
+
 ### For Mitochondrial subworkflow
 
 `reference/Homo_sapiens_assembly38_chr20_chrM.fasta`: chr20 and chrM hg38 reference fasta file
