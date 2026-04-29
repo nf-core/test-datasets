@@ -1,2 +1,0 @@
-https://raw.githubusercontent.com/Clinical-Genomics/test-datasets/refs/heads/oncorefiner/reference/grch37_gnomad_-r2.1.1-.vcf.gz
-https://raw.githubusercontent.com/Clinical-Genomics/test-datasets/refs/heads/oncorefiner/reference/grch37_gnomad_-r2.1.1-.vcf.gz.tbi
