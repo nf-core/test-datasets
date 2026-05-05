@@ -1,0 +1,4 @@
+sample,fastq_1,fastq_2
+sample00,https://github.com/nf-core/test-datasets/raw/magmap/testdata/sourmash_10genomes.sample00.r1.fastq.gz,https://github.com/nf-core/test-datasets/raw/magmap/testdata/sourmash_10genomes.sample00.r2.fastq.gz
+sample01,https://github.com/nf-core/test-datasets/raw/magmap/testdata/sourmash_10genomes.sample01.r1.fastq.gz,https://github.com/nf-core/test-datasets/raw/magmap/testdata/sourmash_10genomes.sample01.r2.fastq.gz
+sample02,https://github.com/nf-core/test-datasets/raw/magmap/testdata/sourmash_10genomes.sample02.r1.fastq.gz,https://github.com/nf-core/test-datasets/raw/magmap/testdata/sourmash_10genomes.sample02.r2.fastq.gz
