@@ -4,7 +4,9 @@
 ##contig=<ID=chr1,length=248956422>
 ##contig=<ID=chr7,length=159345973>
 ##contig=<ID=chr8,length=145138636>
+##contig=<ID=chr13,length=114364328>
 ##contig=<ID=chr17,length=83257441>
+##contig=<ID=chrX,length=156040895>
 ##contig=<ID=GL000008.2,length=209709>
 ##contig=<ID=GL000194.1,length=191469>
 ##ALT=<ID=DEL,Description="Deletion
