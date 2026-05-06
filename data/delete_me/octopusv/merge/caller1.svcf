@@ -9,7 +9,7 @@
 ##contig=<ID=chrX,length=156040895>
 ##contig=<ID=GL000008.2,length=209709>
 ##contig=<ID=GL000194.1,length=191469>
-##ALT=<ID=DEL,Description="Deletion
+##ALT=<ID=DEL,Description="Deletion">
 ##ALT=<ID=INV,Description="Inversion">
 ##ALT=<ID=INS,Description="Insertion">
 ##ALT=<ID=DUP,Description="Duplication">
