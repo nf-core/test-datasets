@@ -6,6 +6,10 @@ Test data to be used for automated testing with the nf-core pipelines
 
 This branch contains test data for the [nf-core/mag](https://github.com/nf-core/mag) pipeline.
 
+## CI test data
+
+The `test_minigut` test datasets are synthetic reads generated from a single genome of a mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NCBI accession: NC_006347).
+
 ## Full-size test data
 
 The `manifext.full.tsv` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. _Nature Biotechnology_ (2019)](https://doi.org/10.1038/s41587-019-0191-2).
@@ -77,6 +81,12 @@ We have uploaded a copy of the official [GTDB-Tk mock database](https://data.gtd
 The database is available as a gzipped tarball at:
 - (r232, latest) `databases/gtdbtk/gtdbtk_mockup_r232_20270507.tar.gz`
 - (r226) `databases/gtdbtk/gtdbtk_mockup_20250422.tar.gz`
+
+### GUNC
+
+GUNC database is provided by the GUNC team, as a minimal test set for CI/CD pipelines.
+
+This was introduces in GUNC v1.1.0 and can by downloaded by running `gunc download_db --db test_data`. It is also available in [Zenodo](https://zenodo.org/records/19631420).
 
 ## Broken samplesheets
 
