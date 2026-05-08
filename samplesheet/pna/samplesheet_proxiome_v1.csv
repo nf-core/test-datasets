@@ -1,0 +1,4 @@
+sample,design,panel,panel_file,fastq_1,fastq_2,sample_alias,condition,reference_condition,alternative_condition
+sample_1,proxiome-v1,proxiome-v1-immuno-155-v1.1,,fastq/sample1_R1.fastq.gz,fastq/sample1_R2.fastq.gz,S1,unstim_pbmc,unstim_pbmc,unstim_pbmc
+sample_1,proxiome-v1,proxiome-v1-immuno-155-v1.1,,fastq/sample1_reseq_R1.fastq.gz,fastq/sample1_reseq_R2.fastq.gz,S1,unstim_pbmc,unstim_pbmc,unstim_pbmc
+sample_2,proxiome-v1,,proxiome-immuno-155-custom.csv,fastq/sample2_R1.fastq.gz,fastq/sample2_R2.fastq.gz,S2,stim_pmc,,

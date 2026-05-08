@@ -1,0 +1,21 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna graph",
+        "options": {
+            "--multiplet-recovery": true,
+            "--edge-cycle-verification": true,
+            "--initial-stage-leiden-resolution": 1.0,
+            "--refinement-stage-leiden-resolution": 0.01,
+            "--min-count": 1,
+            "--max-refinement-recursion-depth": 3,
+            "--initial-stage-max-edges-to-remove": null,
+            "--refinement-stage-max-edges-to-remove": 10,
+            "--initial-stage-max-edges-to-remove-relative": null,
+            "--refinement-stage-max-edges-to-remove-relative": null,
+            "--component-size-max-threshold": null,
+            "--component-size-min-threshold": 100,
+            "--panel": "proxiome-v2-immuno-155-v1.0",
+            "--output": "."
+        }
+    }
+}
