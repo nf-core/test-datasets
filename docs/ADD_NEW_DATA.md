@@ -11,5 +11,4 @@ Please fill in the appropriate checklist below (delete whatever is not relevant)
 - [ ] Add your test dataset.
   - [ ] Warning: this repository is extremely large. If you clone locally, ensure you use the command `git clone <url> --branch <branch> --single-branch` to clone only the branch of interest.
 - [ ] Make a PR on a new branch with a relevant name.
-- [ ] Wait for the PR to be merged.
-- [ ] Use this newly created branch for your tests.
+- [ ] Wait for the PR to be merged. Once merged, use your new test data as described on the main [README](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md).
