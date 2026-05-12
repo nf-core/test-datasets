@@ -59,7 +59,9 @@ This branch contains test data for the [nf-core/airrflow](https://github.com/nf-
 
 ## Database cache
 
-`database cache` contains the IMGT and Igblast db human and mouse database caches for running the pipeline tests.
+- `database-cache` contains the IMGT and Igblast db human and mouse database caches for running the pipeline tests.
+- `database-cache/airrc-imgt` contains the AIRR-C (IG locus) and IMGT (TR locus and IGKC, IGLC) germline reference cache for running the pipeline tests.
+
 
 ### Reveal test data
 
