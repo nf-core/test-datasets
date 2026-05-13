@@ -14,7 +14,5 @@ For more information about the different test datasets, please refer to the READ
 - `samplesheet/mpx/samplesheet_full.csv`: Experiment design file for full MPX test dataset.
 - `samplesheet/mpx/samplesheet_v2.csv`: Experiment design file for minimal MPX test dataset using the v2 panel.
 - `samplesheet/mpx/samplesheet_mpx_scsp_v1_immunology1.csv` : Experiment design file for minimal MPX test dataset using the same data as the local module tests
-- `samplesheet/pna/samplesheet_pna.csv` : experiment design file for minimal test PNA dataset 
-
-
-
+- `samplesheet/pna/samplesheet_proxiome_v1.csv` : experiment design file for minimal test PNA dataset using proxiome v1 data
+- `samplesheet/pna/samplesheet_proxiome_v2.csv` : experiment design file for minimal test PNA dataset using proxiome v2 data
