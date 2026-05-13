@@ -1,0 +1,55 @@
+{
+    "sample_id": "all",
+    "product_id": "single-cell-pna",
+    "report_type": "sample_calling_total",
+    "number_of_components": 40,
+    "percentage_of_components_successfully_called": 0.975,
+    "sample_confidences_per_sample": {
+        "sample1": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9705882352941176,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9696969696969697,
+            1.0,
+            1.0,
+            1.0
+        ],
+        "pool1_undetermined": [
+            0.0
+        ],
+        "sample2": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna amplicon",
+        "options": {
+            "--output": ".",
+            "--design": "proxiome-v2",
+            "--sample-name": null,
+            "--mismatches": 0.1,
+            "--remove-polyg": true,
+            "--quality-cutoff": 20,
+            "--skip-input-checks": false,
+            "--force-run": false,
+            "--low-complexity-filter": true,
+            "--low-complexity-threshold": 0.8,
+            "--lbs-filter": true,
+            "--lbs-filter-min-overlap": 8,
+            "--lbs-filter-error-rate": 0.1,
+            "--threads": 4
+        }
+    }
+}
