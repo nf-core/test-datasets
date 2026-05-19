@@ -1,3 +1,3 @@
 id,single_end,path,new_name
-S1,true,[?/testdata/v2/bigwig/S1.Signal.Unique.str1.out.wig.bw ?/testdata/v2/bigwig/S1.Signal.Unique.str2.out.wig.bw],S1
-S2,true,[?/testdata/v2/bigwig/S2.Signal.Unique.str1.out.wig.bw ?/testdata/v2/bigwig/S2.Signal.Unique.str2.out.wig.bw],S2
+S1,true,[https://raw.githubusercontent.com/nf-core/test-datasets/cageseq/testdata/v2/bigwig/S1.Signal.Unique.str1.out.wig.bw https://raw.githubusercontent.com/nf-core/test-datasets/cageseq/testdata/v2/bigwig/S1.Signal.Unique.str2.out.wig.bw],S1
+S2,true,[https://raw.githubusercontent.com/nf-core/test-datasets/cageseq/testdata/v2/bigwig/S2.Signal.Unique.str1.out.wig.bw https://raw.githubusercontent.com/nf-core/test-datasets/cageseq/testdata/v2/bigwig/S2.Signal.Unique.str2.out.wig.bw],S2
