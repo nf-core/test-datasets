@@ -456,6 +456,10 @@ The earth sciences folder contain subfolders for different data formats encounte
         - SRX11780888_chr20.bam.bai index for filtered and trimmed reads from SRX11780888, aligned to human Chr20
         - SRX11780887.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780887, aligned to human Chr20, transcriptomic coordinates
         - SRX11780888.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20, transcriptomic coordinates
+      - orfcountmatrix
+        - orf_catalogue.bed12: 15-ORF BED12 catalogue defining row order and membership of the output matrix for testing custom/orfcountmatrix
+        - samples/sample1.orf_psite_counts.tsv: synthetic per-sample ORF P-site count TSV for sample1 (covers catalogue ORFs 1-8)
+        - samples/sample2.orf_psite_counts.tsv: synthetic per-sample ORF P-site count TSV for sample2 (covers catalogue ORFs 1-3, 9-13; exercises zero-fill and catalogue-only ORFs)
       - plastid
         - Homo_sapiens.GRCh38.111_chr20_rois.txt: metagene generated from Homo_sapiens.GRCh38.111_chr20.gtf using plastid `metagene generate` command
         - SRX11780887_p_offsets.txt: p-site offsets genereated from SRX11780887_chr20.bam and Homo_sapiens.GRCh38.111_chr20.gtf using plastid `psite` command
