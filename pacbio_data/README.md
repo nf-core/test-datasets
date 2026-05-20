@@ -4,7 +4,7 @@ This directory contains PacBio test datasets used for local pipeline testing.
 
 ## `revio-with-kinetics.bam`
 
-`revio-with-kinetics.bam` is a PacBio long-read Fiber-seq test dataseti, downsized (10 reads)
+`revio-with-kinetics.bam` is a PacBio long-read Fiber-seq test dataset, downsized (10 reads)
 from the[`fiberseq/fibertools-rs`](https://github.com/fiberseq/fibertools-rs)
 repository. It contains kinetic signatures and no m6A tags (A+a). 
 
