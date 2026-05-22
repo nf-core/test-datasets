@@ -458,6 +458,13 @@ The earth sciences folder contain subfolders for different data formats encounte
         - SRX11780888_chr20.bam.bai index for filtered and trimmed reads from SRX11780888, aligned to human Chr20
         - SRX11780887.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780887, aligned to human Chr20, transcriptomic coordinates
         - SRX11780888.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20, transcriptomic coordinates
+      - dotseq
+        - featureCounts.cell_cycle_subset.txt.gz: featureCounts ORF-level output, 6644 ORFs × 12 sample columns (chx subset of GSE231096 cell-cycle Ribo+RNA cohort), for testing dotseq/dotseq. DOTSeq requires featureCounts-format counts plus a matching flattened ORF GTF/BED, neither of which the existing chr20 fixtures provide, so this set is the DOTSeq package's own bundled example.
+        - gencode.v47.orf_flattened_subset.gtf.gz: flattened GENCODE v47 ORF annotation matching the featureCounts table on `gene_id:O###` naming.
+        - gencode.v47.orf_flattened_subset.bed.gz: same flattened ORFs in BED format.
+        - metadata.txt.gz: DOTSeq's headerless 24-sample metadata covering both chx and har treatment arms, columns `run strategy replicate treatment condition`.
+        - samplesheet.csv: headered, chx-only subset of `metadata.txt.gz` (12 rows: 6 Ribo + 6 RNA) - what the nf-test consumes directly.
+        - README.md: full derivation recipe + verification.
       - plastid
         - Homo_sapiens.GRCh38.111_chr20_rois.txt: metagene generated from Homo_sapiens.GRCh38.111_chr20.gtf using plastid `metagene generate` command
         - SRX11780887_p_offsets.txt: p-site offsets genereated from SRX11780887_chr20.bam and Homo_sapiens.GRCh38.111_chr20.gtf using plastid `psite` command
