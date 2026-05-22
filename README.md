@@ -459,10 +459,9 @@ The earth sciences folder contain subfolders for different data formats encounte
         - SRX11780887.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780887, aligned to human Chr20, transcriptomic coordinates
         - SRX11780888.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20, transcriptomic coordinates
       - dotseq
-        - featureCounts.cell_cycle_subset.txt.gz: featureCounts ORF-level output, 6644 ORFs × 12 sample columns (chx subset of GSE231096 cell-cycle Ribo+RNA cohort), for testing dotseq/dotseq. DOTSeq requires featureCounts-format counts plus a matching flattened ORF GTF/BED, neither of which the existing chr20 fixtures provide, so this set is the DOTSeq package's own bundled example.
-        - gencode.v47.orf_flattened_subset.gtf.gz: flattened GENCODE v47 ORF annotation matching the featureCounts table on `gene_id:O###` naming.
-        - gencode.v47.orf_flattened_subset.bed.gz: same flattened ORFs in BED format.
-        - metadata.txt.gz: DOTSeq's headerless 24-sample metadata covering both chx and har treatment arms, columns `run strategy replicate treatment condition`.
+        - counts.tsv.gz: per-ORF count matrix (6642 ORFs x 12 samples; 6 Ribo + 6 RNA) for the chx subset of the GSE231096 cell-cycle cohort. First column is `orf_id`, remaining columns are SRR accessions. Derived from the DOTSeq package's bundled `featureCounts.cell_cycle_subset.txt.gz` by stripping the featureCounts annotation columns and BAM-path sample names.
+        - annotation.tsv.gz: per-ORF annotation (6642 rows). Columns: `orf_id, gene_id, chrom, start, end, strand, orf_type`. ORF ids match `counts.tsv.gz`; `orf_type` is `mORF`, `uORF`, or `dORF`. Joined from the DOTSeq package's bundled flattened GENCODE v47 GTF + BED.
+        - metadata.txt.gz: DOTSeq's headerless 24-sample metadata covering both chx and har treatment arms, columns `run strategy replicate treatment condition`. Kept for upstream traceability; not consumed by the nf-test directly.
         - samplesheet.csv: headered, chx-only subset of `metadata.txt.gz` (12 rows: 6 Ribo + 6 RNA) - what the nf-test consumes directly.
         - README.md: full derivation recipe + verification.
       - plastid
