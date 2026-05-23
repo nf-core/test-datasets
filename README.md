@@ -15,23 +15,14 @@ nf-core/test-datasets comes with documentation in the `docs/` directory:
 
 ### `bam/NA11995_GRCh38.bam`
 
-NA11995 HapMap CEPH HLA-fished reads (SRA: SRR766010 — sourced from this branch's
-`fastq/NA11995_SRR766010_*_fished.fastq.gz`) re-paired with seqkit and aligned to
-GRCh38 with `bwa mem`. Used by hlatyping's BAM-input test profiles (OptiType,
-HLA*LA, SpecHLA).
-
-Reference: 1000 Genomes `GRCh38_full_analysis_set_plus_decoy_hla.fa` ([FTP](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa)).
+NA11995 reads from `fastq/NA11995_SRR766010_*_fished.fastq.gz`, re-paired and aligned to GRCh38.
 
 ```bash
-# Re-pair the unsynchronised fished FASTQs (R1 and R2 have different read sets)
 seqkit pair -1 NA11995_SRR766010_1_fished.fastq.gz \
-            -2 NA11995_SRR766010_2_fished.fastq.gz \
-            -O paired/
+            -2 NA11995_SRR766010_2_fished.fastq.gz -O paired/
 
-# Index reference (one-time, ~75 min)
+# Reference: ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa
 bwa index GRCh38_full_analysis_set_plus_decoy_hla.fa
-
-# Align, sort, index
 bwa mem -R '@RG\tID:NA11995\tSM:NA11995' \
         GRCh38_full_analysis_set_plus_decoy_hla.fa \
         paired/NA11995_R1.fastq.gz paired/NA11995_R2.fastq.gz \
