@@ -3,7 +3,7 @@ tree,args_tree,aligner,args_aligner
 ,,FAMSA,
 ,,FOLDMASON,
 ,,KALIGN,
-,,LEARNMSA,"--use_language_model --sequence_weights"
+,,LEARNMSA,"--use_language_model"
 ,,MAGUS,
 ,,MAFFT,
 ,,MAFFT, --dpparttree
