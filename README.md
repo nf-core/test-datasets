@@ -1,39 +1,52 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# nf-core/bacmodel Test Dataset
 
-Test data to be used for automated testing with the nf-core pipelines
+## Overview
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+This directory contains test data for the nf-core/bacmodel pipeline, which performs functional annotation and metabolic modeling of bacterial genomes.
 
-## Introduction
+The test dataset consists of a complete bacterial genome assembly from _Faecalibacterium taiwanense_, a beneficial gut bacterium known for its anti-inflammatory properties and butyrate production. This species is an excellent test case as it contains diverse functional features including secondary metabolite biosynthesis, carbohydrate-active enzymes, and well-characterized metabolic pathways - enabling comprehensive testing of all bacmodel annotation and modeling tools.
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+## Sampling Procedure
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+The test genome was selected from the Global Microbiome Conservancy (GMbC)
 
-## Documentation
+### Test Genome
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+**Species:** _Faecalibacterium taiwanense_  
+**Source:** Global Microbiome Conservancy (GMbC, https://microbiomeconservancy.org/)
+**Assembly:** Bacterial isolate genome assembly  
+**Size:** ~2.7 Mbp (13 contigs)  
+**File:** `faecalibacterium_taiwanense.fasta.gz`
 
-1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+### Assembly Details
 
-## Downloading test data
+**Sequencing Platform:** Illumina paired-end sequencing  
+**Assembly Method:** Shovill (via Bactopia pipeline, https://github.com/bactopia/bactopia)
 
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+The genome assembly was obtained from the Global Microbiome Conservancy (GMbC) collection, representing a _Faecalibacterium taiwanense_ isolate from a Nigeria rural sample. This assembly was selected for testing due to its compact size (802 KB compressed, 13 contigs, ~2.7 Mbp) while maintaining complete functional features.
+
+**No subsampling or downsampling was applied.** The complete assembly is used as-is to ensure all annotation and modeling tools have sufficient data for meaningful analysis while maintaining fast test execution times.
+
+**Data Availability:** This genome is redistributed with permission as part of the nf-core test-datasets collection for reproducible pipeline testing.
+
+## Files
+
+- `testdata/faecalibacterium_taiwanense.fasta.gz` - _Faecalibacterium taiwanense_ genome assembly (gzipped FASTA)
+- `samplesheet.tsv` - Input samplesheet for nf-core/bacmodel pipeline
+
+## Usage
+
+Use the test profile in nf-core/bacmodel:
 
 ```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+nextflow run nf-core/bacmodel -profile test,docker
 ```
 
-To subsequently clone other branches[^1]
+The test configuration automatically references this samplesheet from the test-datasets repository.
 
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
+## Samplesheet Format
+
+```tsv
+sample	fasta
+faecalibacterium_taiwanense	https://raw.githubusercontent.com/nf-core/test-datasets/bacmodel/testdata/faecalibacterium_taiwanense.fasta.gz
 ```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
