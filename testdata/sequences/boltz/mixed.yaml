@@ -1,0 +1,18 @@
+version: 1
+sequences:
+- protein:
+    id: [ A, B ]
+    sequence: GSAGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLLTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+    modifications:
+        - position: 2
+          ccd: SEP
+- rna:
+    id: C
+    sequence: AUCGAUCGAUCGAUCG
+- protein:
+    id: D
+    sequence: MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG
+constraints:
+    - contact:
+        token1: [ A, 1 ]
+        token2: [ C, 1 ]
