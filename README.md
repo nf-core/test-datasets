@@ -83,6 +83,7 @@ The database is available as a gzipped tarball at:
 
 - (r232, latest) `databases/gtdbtk/gtdbtk_mockup_r232_20260507.tar.gz`
 - (r226) `databases/gtdbtk/gtdbtk_mockup_20250422.tar.gz`
+
 > [!NOTE]
 > The r232 version of the GTDB-Tk mock database has a small patch applied, because the official one contains a mismatch between the skani index and the taxonomy files, which causes GTDB-Tk to sometimes fail. The genome `GCF_003697165.2` (_E. coli_) is present in the skani index but absent from the taxonomy files, so the following line was added to `taxonomy/bac120_taxonomy_r232_reps.tsv` and `taxonomy/gtdb_taxonomy.tsv`:
 >
