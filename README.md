@@ -103,7 +103,18 @@ This was introduces in GUNC v1.1.0 and can by downloaded by running `gunc downlo
 
 For testing input validation, the `samplesheets` directory contains the `broken/` subdirectory containing samplesheets with errors that should be caught by the pipeline.
 
--`samplesheets/broken/assembly_samplesheet_invalid_assembler.csv`: has a mistyped and missing (mandatory) assembler entry -`samplesheets/broken/assembly_samplesheet_invalid_id.csv`: incorrectly has a space in the sample ID name -`samplesheets/broken/assembly_samplesheet_missing_group.csv`: missing the mandatory group column -`samplesheets/broken/assembly_samplesheet_missing_id.csv`: missing the mandatory id column -`samplesheets/broken/assembly_samplesheet_nonunique_fasta.csv`: has duplicate FASTA files in two rows -`samplesheets/broken/samplesheet_empty_group.csv`: group column has a header but empty entries (must have a group) -`samplesheets/broken/samplesheet_empty_run.csv`: group column has a header but empty entries (if column is present, can't be empty) -`samplesheets/broken/samplesheet_lr_without_sr2.csv`: long-reads given, but missing read 2 required for hybrid assembly -`samplesheets/broken/samplesheet_missing_r1.csv`: missing mandatory read 1 column -`samplesheets/broken/samplesheet_missing_sample.csv`: missing mandatory sample column -`samplesheets/broken/samplesheet_nonunique_sample_run_combination.csv`: has invalid duplicate sample-run combinations -`samplesheets/broken/samplesheet_spaces_in_name.csv`: incorrect sample name with spaces
+-`samplesheets/broken/assembly_samplesheet_invalid_assembler.csv`: has a mistyped and missing (mandatory) assembler entry
+-`samplesheets/broken/assembly_samplesheet_invalid_id.csv`: incorrectly has a space in the sample ID name
+-`samplesheets/broken/assembly_samplesheet_missing_group.csv`: missing the mandatory group column
+-`samplesheets/broken/assembly_samplesheet_missing_id.csv`: missing the mandatory id column
+-`samplesheets/broken/assembly_samplesheet_nonunique_fasta.csv`: has duplicate FASTA files in two rows
+-`samplesheets/broken/samplesheet_empty_group.csv`: group column has a header but empty entries (must have a group)
+-`samplesheets/broken/samplesheet_empty_run.csv`: group column has a header but empty entries (if column is present, can't be empty)
+-`samplesheets/broken/samplesheet_lr_without_sr2.csv`: long-reads given, but missing read 2 required for hybrid assembly
+-`samplesheets/broken/samplesheet_missing_r1.csv`: missing mandatory read 1 column
+-`samplesheets/broken/samplesheet_missing_sample.csv`: missing mandatory sample column
+-`samplesheets/broken/samplesheet_nonunique_sample_run_combination.csv`: has invalid duplicate sample-run combinations
+-`samplesheets/broken/samplesheet_spaces_in_name.csv`: incorrect sample name with spaces
 
 ## Support
 
