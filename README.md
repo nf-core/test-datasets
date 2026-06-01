@@ -8,7 +8,7 @@ This branch contains test data for the [nf-core/mag](https://github.com/nf-core/
 
 ## CI test data
 
-The `test_minigut` test datasets are synthetic reads generated from a single genome of a mammalian-gut-residing Bacteroides fragilis\* YCH46 bacterium (NCBI accession: NC_006347).
+The `test_minigut` test datasets are synthetic reads generated from a single genome of a mammalian-gut-residing Bacteroides fragilis YCH46 bacterium (NCBI accession: NC_006347).
 
 ## Full-size test data
 
