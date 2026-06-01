@@ -8,7 +8,7 @@ This branch contains test data for the [nf-core/mag](https://github.com/nf-core/
 
 ## CI test data
 
-The `test_minigut` test datasets are synthetic reads generated from a single genome of a mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NCBI accession: NC_006347).
+The `test_minigut` test datasets are synthetic reads generated from a single genome of a mammalian-gut-residing Bacteroides fragilis YCH46 bacterium (NCBI accession: NC_006347).
 
 ## Full-size test data
 
@@ -34,6 +34,7 @@ To subsequently clone other branches[^1]
 git remote set-branches --add origin [remote-branch]
 git fetch
 ```
+
 ## samplesheets
 
 -`samplesheets/samplesheet.long_read.csv`: Sample sheet for testing running mag with only long read input
@@ -76,11 +77,21 @@ And then the `test/` directory was tarred to create `minigut_cat.tar.gz`.
 
 ### GTDB-Tk
 
-We have uploaded a copy of the official [GTDB-Tk mock database](https://data.gtdb.ecogenomic.org/releases/latest/auxillary_files/gtdbtk_package/mockup_db/) to this repository for use while testing mag and the nf-core GTDB modules - this significantly improves the run-time of tests as the GTDB server can be very slow. 
+We have uploaded a copy of the official [GTDB-Tk mock database](https://data.gtdb.ecogenomic.org/releases/latest/auxillary_files/gtdbtk_package/mockup_db/) to this repository for use while testing mag and the nf-core GTDB modules - this significantly improves the run-time of tests as the GTDB server can be very slow.
 
 The database is available as a gzipped tarball at:
+
 - (r232, latest) `databases/gtdbtk/gtdbtk_mockup_r232_20260507.tar.gz`
 - (r226) `databases/gtdbtk/gtdbtk_mockup_20250422.tar.gz`
+
+> [!NOTE]
+> The r232 version of the GTDB-Tk mock database has a small patch applied, because the official one contains a mismatch between the skani index and the taxonomy files, which causes GTDB-Tk to sometimes fail. The genome `GCF_003697165.2` (_E. coli_) is present in the skani index but absent from the taxonomy files, so the following line was added to `taxonomy/bac120_taxonomy_r232_reps.tsv` and `taxonomy/gtdb_taxonomy.tsv`:
+>
+> ```
+> RS_GCF_003697165.2    d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia;s__Escherichia coli
+> ```
+>
+> For more details, see [this issue](https://github.com/Ecogenomics/GTDBTk/issues/710).
 
 ### GUNC
 
@@ -92,17 +103,17 @@ This was introduces in GUNC v1.1.0 and can by downloaded by running `gunc downlo
 
 For testing input validation, the `samplesheets` directory contains the `broken/` subdirectory containing samplesheets with errors that should be caught by the pipeline.
 
--`samplesheets/broken/assembly_samplesheet_invalid_assembler.csv`: has a mistyped and missing (mandatory) assembler entry 
--`samplesheets/broken/assembly_samplesheet_invalid_id.csv`: incorrectly has a space in the sample ID name 
--`samplesheets/broken/assembly_samplesheet_missing_group.csv`: missing the mandatory group column 
--`samplesheets/broken/assembly_samplesheet_missing_id.csv`: missing the mandatory id column 
--`samplesheets/broken/assembly_samplesheet_nonunique_fasta.csv`: has duplicate FASTA files in two rows 
--`samplesheets/broken/samplesheet_empty_group.csv`: group column has a header but empty entries (must have a group) 
--`samplesheets/broken/samplesheet_empty_run.csv`: group column has a header but empty entries (if column is present, can't be empty) 
--`samplesheets/broken/samplesheet_lr_without_sr2.csv`: long-reads given, but missing read 2 required for hybrid assembly 
--`samplesheets/broken/samplesheet_missing_r1.csv`: missing mandatory read 1 column 
--`samplesheets/broken/samplesheet_missing_sample.csv`: missing mandatory sample column 
--`samplesheets/broken/samplesheet_nonunique_sample_run_combination.csv`: has invalid duplicate sample-run combinations 
+-`samplesheets/broken/assembly_samplesheet_invalid_assembler.csv`: has a mistyped and missing (mandatory) assembler entry
+-`samplesheets/broken/assembly_samplesheet_invalid_id.csv`: incorrectly has a space in the sample ID name
+-`samplesheets/broken/assembly_samplesheet_missing_group.csv`: missing the mandatory group column
+-`samplesheets/broken/assembly_samplesheet_missing_id.csv`: missing the mandatory id column
+-`samplesheets/broken/assembly_samplesheet_nonunique_fasta.csv`: has duplicate FASTA files in two rows
+-`samplesheets/broken/samplesheet_empty_group.csv`: group column has a header but empty entries (must have a group)
+-`samplesheets/broken/samplesheet_empty_run.csv`: group column has a header but empty entries (if column is present, can't be empty)
+-`samplesheets/broken/samplesheet_lr_without_sr2.csv`: long-reads given, but missing read 2 required for hybrid assembly
+-`samplesheets/broken/samplesheet_missing_r1.csv`: missing mandatory read 1 column
+-`samplesheets/broken/samplesheet_missing_sample.csv`: missing mandatory sample column
+-`samplesheets/broken/samplesheet_nonunique_sample_run_combination.csv`: has invalid duplicate sample-run combinations
 -`samplesheets/broken/samplesheet_spaces_in_name.csv`: incorrect sample name with spaces
 
 ## Support
