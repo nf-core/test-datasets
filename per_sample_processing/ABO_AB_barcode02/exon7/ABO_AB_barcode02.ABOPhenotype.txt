@@ -1,0 +1,173 @@
+Exon 7:
+
+Exon 7 position(1-based): 422
+A nucleotide: B blood type.
+C nucleotide: A or O blood type.
+(1-based) Position:422, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+48	52	0	0	52	0	48	0
+
+Exon 7 position(1-based): 428
+A nucleotide: O blood type (O2).
+G nucleotide: A or B or O blood type.
+(1-based) Position:428, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 429
+G nucleotide: A or O blood type.
+C nucleotide: B blood type.
+(1-based) Position:429, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+45	55	0	0	0	45	52	3
+
+Exon 7 position(1-based): 431
+G nucleotide: O blood type (O3).
+A nucleotide: O blood type (O4).
+T nucleotide: A or B or O blood type.
+(1-based) Position:431, Reference Base=T
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+95	0	0	3	0	0	0	95
+
+# -------- A subtypes variants --------
+
+Exon 7 position(1-based): 33
+C nucleotide: reference.
+Variant: A2 diagnostic position (c.407).
+(1-based) Position:33, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 93
+C nucleotide: A1 subtype.
+T nucleotide: A1.02 or A2 subtype.
+(1-based) Position:93, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+55	45	0	0	0	0	55	45
+
+Exon 7 position(1-based): 152
+C nucleotide: reference.
+Variant: A2 diagnostic position (c.526).
+(1-based) Position:152, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+49	51	0	0	0	51	49	0
+
+Exon 7 position(1-based): 153
+G nucleotide: reference.
+Variant: A2 diagnostic position (c.527).
+(1-based) Position:153, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 165
+G nucleotide: reference.
+Variant: A2 diagnostic position (c.539).
+(1-based) Position:165, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 283
+C nucleotide: reference.
+Variant: A2 diagnostic position (c.657).
+(1-based) Position:283, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+48	52	0	0	0	0	48	52
+
+Exon 7 position(1-based): 329
+G nucleotide: reference.
+Variant: A2 diagnostic position (c.703).
+(1-based) Position:329, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+49	51	0	0	51	49	0	0
+
+Exon 7 position(1-based): 348
+G nucleotide: reference.
+Variant: A2 diagnostic position (c.722).
+(1-based) Position:348, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+98	2	0	0	0	98	1	1
+
+Exon 7 position(1-based): 368
+C nucleotide: reference.
+Variant: A2 diagnostic position (c.742).
+(1-based) Position:368, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 397
+C nucleotide: reference.
+Variant: A2 diagnostic position (c.771).
+(1-based) Position:397, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 404
+G nucleotide: reference.
+Variant: A2 diagnostic position (c.778).
+(1-based) Position:404, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 455
+G nucleotide: reference.
+Variant: A2 diagnostic position (c.829).
+(1-based) Position:455, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 533
+G nucleotide: reference.
+A nucleotide: A2.06 subtype marker (c.907G>A).
+(1-based) Position:533, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 635
+A nucleotide: reference.
+Variant: A2 diagnostic position (c.1009).
+(1-based) Position:635, Reference Base=A
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 658
+G nucleotide: reference.
+A nucleotide: A2.01 subtype marker (c.1032G>A).
+(1-based) Position:658, Reference Base=G
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 680
+C nucleotide: reference.
+Variant: A2 diagnostic position (c.1054).
+(1-based) Position:680, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 685
+C nucleotide: A1 subtype.
+Deletion: A2.
+C + Deletion: A2.
+(1-based) Position:685, Reference Base=C
+Aligned Read Count:199 (reads=199, cov=100)
+Mat	Mis	Ins	Del	A	G	C	T
+54	3	0	41	3	0	54	0
