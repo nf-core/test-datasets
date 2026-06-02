@@ -1,1 +1,0 @@
-Exon 7 CDS reference sequence was truncated at 817 bp as this is the actual end of the exon and UTR

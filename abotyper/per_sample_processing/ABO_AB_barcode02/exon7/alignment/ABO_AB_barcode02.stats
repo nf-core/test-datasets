@@ -1,14 +1,14 @@
-# This file was produced by samtools stats (1.21+htslib-1.21) and can be plotted using plot-bamstats
+# This file was produced by samtools stats (1.23.1+htslib-1.23.1) and can be plotted using plot-bamstats
 # This file contains statistics for all reads.
 # The command line was:  stats --threads 1 --reference A1_01_01_1_reference_Exon7.fasta ABO_AB_barcode02.bam
 # CHK, Checksum	[2]Read Names	[3]Sequences	[4]Qualities
 # CHK, CRC32 of reads which passed filtering followed by addition (32bit overflow)
-CHK	0f592345	0b70b33e	1120532e
+CHK	0f592345	0b70b33e	5e702378
 # Summary Numbers. Use `grep ^SN | cut -f 2-` to extract this part.
 SN	raw total sequences:	198	# excluding supplementary and secondary reads
 SN	filtered sequences:	0
 SN	sequences:	198
-SN	is sorted:	1
+SN	is sorted:	1	# sorted by coordinate
 SN	1st fragments:	198
 SN	last fragments:	0
 SN	reads mapped:	197
