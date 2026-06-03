@@ -1,3 +1,3 @@
 sample,cram,crai
-NA12878,s3://nf-core-awsmegatests/sarek/results-4bd2948f98c5bf7b785c91cf6708fffccab25467/test_full_germline_aws/preprocessing/recalibrated/NA12878/NA12878.recal.cram,s3://nf-core-awsmegatests/sarek/results-4bd2948f98c5bf7b785c91cf6708fffccab25467/test_full_germline_aws/preprocessing/recalibrated/NA12878/NA12878.recal.cram.crai
-HCC1395N,s3://nf-core-awsmegatests/sarek/results-4bd2948f98c5bf7b785c91cf6708fffccab25467/test_full_aws/preprocessing/recalibrated/HCC1395N/HCC1395N.recal.cram,s3://nf-core-awsmegatests/sarek/results-4bd2948f98c5bf7b785c91cf6708fffccab25467/test_full_aws/preprocessing/recalibrated/HCC1395N/HCC1395N.recal.cram.crai
+NA12878,s3://nf-core-awsmegatests/sarek/results-4bd2948f98c5bf7b785c91cf6708fffccab25467/test_full_germline_aws/preprocessing/recalibrated/NA12878/NA12878.recal.cram,
+HCC1395N,s3://nf-core-awsmegatests/sarek/results-4bd2948f98c5bf7b785c91cf6708fffccab25467/test_full_aws/preprocessing/recalibrated/HCC1395N/HCC1395N.recal.cram,
