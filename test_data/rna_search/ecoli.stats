@@ -1,0 +1,84 @@
+
+tRNAscan-SE v.2.0.12 (Nov 2022) scan results (on host 311e9175be92)
+Started: Wed Mar 25 17:02:42 UTC 2026
+
+------------------------------------------------------------
+Sequence file(s) to search:        ecoli.fna
+Search Mode:                       Eukaryotic
+Results written to:                lachnospiraceae.tsv
+Output format:                     Tabular
+Searching with:                    Infernal First Pass->Infernal
+Isotype-specific model scan:       Yes
+Covariance model:                  /usr/local/lib/tRNAscan-SE/models/TRNAinf-euk.cm
+                                   /usr/local/lib/tRNAscan-SE/models/TRNAinf-euk-SeC.cm
+Infernal first pass cutoff score:  10
+
+Temporary directory:               .
+Search log saved in:               lachnospiraceae.log
+Search statistics saved in:        lachnospiraceae.stats
+------------------------------------------------------------
+
+First-pass Stats:
+---------------
+Sequences read:         2
+Seqs w/at least 1 hit:  1
+Bases read:             4642052 (x2 for both strands)
+Bases in tRNAs:         6562
+tRNAs predicted:        87
+Av. tRNA length:        75
+Script CPU time:        0.81 s
+Scan CPU time:          237.75 s
+Scan speed:             39.0 Kbp/sec
+
+First pass search(es) ended: Wed Mar 25 17:04:43 UTC 2026
+
+Infernal Stats:
+-----------
+Candidate tRNAs read:     87
+Infernal-confirmed tRNAs:     87
+Bases scanned by Infernal:  8302
+% seq scanned by Infernal:  0.1 %
+Script CPU time:          0.68 s
+Infernal CPU time:            90.17 s
+Scan speed:               92.1 bp/sec
+
+Infernal analysis of tRNAs ended: Wed Mar 25 17:05:53 UTC 2026
+
+Overall scan speed: 28184.0 bp/sec
+
+tRNAs decoding Standard 20 AA:              84
+Selenocysteine tRNAs (TCA):                 1
+Possible suppressor tRNAs (CTA,TTA,TCA):    0
+tRNAs with undetermined/unknown isotypes:   0
+Predicted pseudogenes:                      2
+                                            -------
+Total tRNAs:                                87
+
+tRNAs with introns:     	0
+
+|
+
+Isotype / Anticodon Counts:
+
+Ala     : 5	  AGC:         GGC: 2       CGC:         TGC: 3
+Gly     : 6	  ACC:         GCC: 4       CCC: 1       TCC: 1
+Pro     : 3	  AGG:         GGG: 1       CGG: 1       TGG: 1
+Thr     : 5	  AGT:         GGT: 2       CGT: 2       TGT: 1
+Val     : 7	  AAC:         GAC: 2       CAC:         TAC: 5
+Ser     : 5	  AGA:         GGA: 2       CGA: 1       TGA: 1       ACT:         GCT: 1
+Arg     : 7	  ACG: 4       GCG:         CCG: 1       TCG:         CCT: 1       TCT: 1
+Leu     : 8	  AAG:         GAG: 1       CAG: 4       TAG: 1       CAA: 1       TAA: 1
+Phe     : 2	  AAA:         GAA: 2
+Asn     : 4	  ATT:         GTT: 4
+Lys     : 6	                            CTT:         TTT: 6
+Asp     : 3	  ATC:         GTC: 3
+Glu     : 4	                            CTC:         TTC: 4
+His     : 1	  ATG:         GTG: 1
+Gln     : 4	                            CTG: 2       TTG: 2
+Ile     : 3	  AAT:         GAT: 3       CAT:         TAT:
+Met     : 8	                            CAT: 8
+Tyr     : 3	  ATA:         GTA: 3
+Supres  : 0	               CTA:         TTA:         TCA:
+Cys     : 1	  ACA:         GCA: 1
+Trp     : 1	                            CCA: 1
+SelCys  : 1	                                         TCA: 1
