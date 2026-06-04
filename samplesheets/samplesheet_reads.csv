@@ -1,0 +1,2 @@
+sample,sample_accession,fastq_1,fastq_2,platform,instrument,library_source,library_selection,library_strategy,insert_size
+bacteroides_fragilis,SAMEA104188781,https://github.com/nf-core/test-datasets/raw/seqsubmit/test_data/reads/fastq_1.fastq.gz,https://github.com/nf-core/test-datasets/raw/seqsubmit/test_data/reads/fastq_2.fastq.gz,ILLUMINA,Illumina HiSeq 2000,METAGENOMIC,RANDOM,WGS,500
