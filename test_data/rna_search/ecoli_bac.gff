@@ -1,0 +1,23 @@
+##gff-version 3
+NC_000913.3	barrnap:0.9	rRNA	223774	225311	0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	225761	228661	0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	228760	228870	1.9e-11	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	2726074	2726184	1.9e-11	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	2726282	2729182	0	-	.	Name=23S_rRNA;product=23S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	2729617	2731154	0	-	.	Name=16S_rRNA;product=16S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	3423428	3423538	4.4e-11	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	3423673	3423783	1.9e-11	-	.	Name=5S_rRNA;product=5S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	3423881	3426781	0	-	.	Name=23S_rRNA;product=23S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	3427222	3428759	0	-	.	Name=16S_rRNA;product=16S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	3941811	3943348	0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	3943706	3946606	0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	3946704	3946814	1.9e-11	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4035534	4037071	0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4037521	4040422	0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4040521	4040631	2.5e-11	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4166662	4168199	0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4168643	4171543	0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4171641	4171751	6.5e-11	+	.	Name=5S_rRNA;product=5S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4208150	4209687	0	+	.	Name=16S_rRNA;product=16S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4210045	4212945	0	+	.	Name=23S_rRNA;product=23S ribosomal RNA
+NC_000913.3	barrnap:0.9	rRNA	4213044	4213154	6.5e-11	+	.	Name=5S_rRNA;product=5S ribosomal RNA
