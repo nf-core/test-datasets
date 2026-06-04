@@ -39,4 +39,4 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
 
 ## Datasets 
-- `spot`: Pseudocount test datasets with 900 x 3540 × 22914 (spots x cells × genes)
+- `spot`: spatial ATACseq data from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM6753043
