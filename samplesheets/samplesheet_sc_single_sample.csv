@@ -1,2 +1,2 @@
 sample,single_cell,spatial
-test1,https://raw.githubusercontent.com/nf-core/test-datasets/raw/refs/heads/scspatialmap/datasets/sc/min_sc.h5ad,https://raw.githubusercontent.com/nf-core/test-datasets/raw/refs/heads/scspatialmap/datasets/sc/min_sp.h5ad
+test1,https://raw.githubusercontent.com/nf-core/test-datasets/scspatialmap/datasets/sc/min_sc.h5ad,https://raw.githubusercontent.com/nf-core/test-datasets/scspatialmap/datasets/sc/min_sp.h5ad
