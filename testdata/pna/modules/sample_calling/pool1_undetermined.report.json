@@ -2,6 +2,6 @@
     "sample_id": "pool1_undetermined",
     "product_id": "single-cell-pna",
     "report_type": "sample_calling",
-    "number_of_components": 1,
+    "number_of_components": 3,
     "number_of_incompatible_hashes_removed": 0
 }

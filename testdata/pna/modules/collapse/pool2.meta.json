@@ -3,16 +3,16 @@
         "command": "pixelator single-cell-pna combine-collapse",
         "options": {
             "--parquet": [
-                "parquet/pool2.collapse.m2.part_000.parquet",
-                "parquet/pool2.collapse.m1.part_000.parquet"
+                "parquet/pool2.collapse.m1.part_000.parquet",
+                "parquet/pool2.collapse.m2.part_000.parquet"
             ],
             "--report": [
-                "reports/pool2.collapse.m2.part_000.report.json",
-                "reports/pool2.collapse.m1.part_000.report.json"
+                "reports/pool2.collapse.m1.part_000.report.json",
+                "reports/pool2.collapse.m2.part_000.report.json"
             ],
             "--parquet-pattern": null,
             "--report-pattern": null,
-            "--memory": 11520000000,
+            "--memory": 2304000000,
             "--output": "."
         }
     }

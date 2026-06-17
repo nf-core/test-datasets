@@ -3,9 +3,9 @@
         "command": "pixelator single-cell-pna sample-calling",
         "options": {
             "--samplesheet": "samplesheet_proxiome_v2.csv",
-            "--remove-incompatible": false,
+            "--remove-incompatible": true,
             "--save-undetermined": false,
-            "--confidence-threshold": 0.9,
+            "--enrichment-threshold": 10.0,
             "--output": "."
         }
     }

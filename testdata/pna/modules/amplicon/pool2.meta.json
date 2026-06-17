@@ -15,7 +15,7 @@
             "--lbs-filter": true,
             "--lbs-filter-min-overlap": 8,
             "--lbs-filter-error-rate": 0.1,
-            "--threads": 4
+            "--threads": 2
         }
     }
 }

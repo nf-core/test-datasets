@@ -4,9 +4,9 @@
     "report_type": "analysis",
     "proximity": {},
     "k_cores": {
-        "median_average_k_core": 2.8339483394833946
+        "median_average_k_core": 2.6886826215296167
     },
     "svd": {
-        "median_variance_explained_3d": 0.02386725111322814
+        "median_variance_explained_3d": 0.024416144901462628
     }
 }

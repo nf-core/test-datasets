@@ -8,13 +8,13 @@
             "--refinement-stage-leiden-resolution": 0.01,
             "--min-count": 1,
             "--max-refinement-recursion-depth": 3,
-            "--initial-stage-max-edges-to-remove": null,
+            "--initial-stage-max-edges-to-remove": 10,
             "--refinement-stage-max-edges-to-remove": 10,
             "--initial-stage-max-edges-to-remove-relative": null,
             "--refinement-stage-max-edges-to-remove-relative": null,
             "--component-size-max-threshold": null,
             "--component-size-min-threshold": 100,
-            "--panel": "proxiome-v2-immuno-155-v1.0",
+            "--panel": "proxiome-v2-immuno-155-prerelease",
             "--output": "."
         }
     }

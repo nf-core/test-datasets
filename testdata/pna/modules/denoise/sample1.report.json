@@ -1,9 +1,0 @@
-{
-    "sample_id": "sample1",
-    "product_id": "single-cell-pna",
-    "report_type": "denoise",
-    "number_of_umis_removed": 934,
-    "ratio_of_umis_removed": 0.07959775012783364,
-    "number_of_disqualified_components": 0,
-    "ratio_of_disqualified_components": 0.0
-}
