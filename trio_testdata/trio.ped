@@ -1,0 +1,3 @@
+family1	father	0	0	1	1
+family1	mother	0	0	2	1
+family1	child	father	mother	1	2
