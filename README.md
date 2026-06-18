@@ -24,7 +24,7 @@ All datasets are restricted to **chromosome 22** to minimise file sizes and spee
 
 | Column                                    | Description                           |
 | ----------------------------------------- | ------------------------------------- |
-| `sample_id`                               | Unique identifier for the test sample |
+| `sample`                               | Unique identifier for the test sample |
 | `input_type`                              | Input data type (FASTQ, BAM, etc.)    |
 | `file_path`                               | Direct download link to test data     |
 | `hpo_terms`                               | Associated HPO phenotype terms        |
@@ -34,7 +34,7 @@ All datasets are restricted to **chromosome 22** to minimise file sizes and spee
 Example entry:
 
 ```
-sample_id,input_type,file_path,hpo_terms,sex,family_id,maternal_id,paternal_id
+sample,input_type,file_path,hpo_terms,sex,family_id,maternal_id,paternal_id
 test,fastq,https://raw.githubusercontent.com/nourmahfel/test-datasets/longraredisease/fastq_file/hg002_subset.fastq.gz,HP:0002721;HP:0002110;HP:0500093;HP:0000717;HP:0001263;HP:0001763;HP:0003298;HP:0002857;HP:0001382,F,,,
 ```
 
