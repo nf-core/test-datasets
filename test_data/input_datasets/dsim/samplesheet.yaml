@@ -1,0 +1,9 @@
+- counts: /home/olivier/repositories/nf-core-stableexpression/data/count_matrix_AutosomeSup.formated.csv.gz
+  design: /home/olivier/repositories/nf-core-stableexpression/data/AutosomeSup.design.csv
+  platform: rnaseq
+  normalised: false
+
+- counts: /home/olivier/repositories/nf-core-stableexpression/data/R1_001_gene.counts.csv
+  design: /home/olivier/repositories/nf-core-stableexpression/data/R1_001_gene.design.csv
+  platform: rnaseq
+  normalised: false
