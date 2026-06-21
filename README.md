@@ -7,6 +7,15 @@ This branch contains test data to be used for automated testing with the nf-core
 
 All the data contained here were subsampled from datasets collected from Expression. In some cases, data were also generated randomly.
 
-`input_datasets/`: contains files for multiple use cases of pipeline tests
+<details markdown="1">
+<summary>Folders</summary>
 
-`input_datasets/dsim/`: contains real life dataset for drosophila simulans, used for testing that the pipeline output matches the expected results from the publication
+- `test_data/`: contains files for different pipeline test use cases
+  - `drosophila_simulans/`: two real life dataset for drosophila simulans, used for testing that the pipeline output matches the expected results from the publication
+  - `mus_musculus/`: a link to a dataset used in the `nf-core/differentialabundance` pipeline, together with its design
+  - `sampled/`: multiple mini-datasets used for testing
+    - `solanum_tuberosum`
+    - `beta vulgaris`
+    - `prunus_persica`
+
+</details>
