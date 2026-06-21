@@ -1,9 +1,9 @@
-- counts: /home/olivier/repositories/nf-core-stableexpression/data/count_matrix_AutosomeSup.formated.csv.gz
-  design: /home/olivier/repositories/nf-core-stableexpression/data/AutosomeSup.design.csv
+- counts: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/count_matrix_AutosomeSup.formated.csv.gz
+  design: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/AutosomeSup.design.csv
   platform: rnaseq
   normalised: false
 
-- counts: /home/olivier/repositories/nf-core-stableexpression/data/R1_001_gene.counts.csv
-  design: /home/olivier/repositories/nf-core-stableexpression/data/R1_001_gene.design.csv
+- counts: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/R1_001_gene.counts.csv
+  design: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/R1_001_gene.design.csv
   platform: rnaseq
   normalised: false
