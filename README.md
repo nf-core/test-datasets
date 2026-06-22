@@ -178,6 +178,8 @@ centrifuge-build -p 4 --conversion-table seqid2taxid.map --taxonomy-tree taxonom
 
 #### Centrifuger
 
+Centrifuger version 1.1.0
+
 Download Database
 
 ```bash
