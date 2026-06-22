@@ -1,0 +1,26 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna denoise",
+        "options": {
+            "--run-one-core-graph-denoising": false,
+            "--run-ace-denoising": true,
+            "--ace-k": 3,
+            "--ace-max-k-core": 4,
+            "--ace-no-select-lcc": false,
+            "--one-core-ratio-threshold": 0.9,
+            "--pval-threshold": 0.05,
+            "--inflate-factor": 1.5,
+            "--run-pls-denoising": true,
+            "--pls-ncomp": 5,
+            "--pls-model-k": 2,
+            "--pls-pred-k": 1,
+            "--pls-use-weights": true,
+            "--pls-normalization": "L1",
+            "--pls-residualize": false,
+            "--pls-component-p-threshold": 0.01,
+            "--pls-min-coreness-correlation": 0.0,
+            "--pls-score-threshold": -3.0,
+            "--output": "."
+        }
+    }
+}
