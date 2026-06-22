@@ -1,1 +1,5 @@
-../../../../testdata/pna/modules/layout/sample1.report.json
+{
+    "sample_id": "sample1",
+    "product_id": "single-cell-pna",
+    "report_type": "layout"
+}
