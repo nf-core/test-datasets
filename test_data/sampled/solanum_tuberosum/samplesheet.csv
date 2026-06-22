@@ -1,0 +1,3 @@
+counts,design,platform,normalised
+https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/sampled/solanum_tuberosum/microarray.normalised.csv,https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/sampled/solanum_tuberosum/microarray.normalised.design.csv,microarray,true
+https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/sampled/solanum_tuberosum/rnaseq.raw.csv,https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/sampled/solanum_tuberosum/rnaseq.raw.design.csv,rnaseq,false

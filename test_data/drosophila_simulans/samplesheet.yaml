@@ -1,0 +1,9 @@
+- counts: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/count_matrix_AutosomeSup.formated.csv.gz
+  design: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/AutosomeSup.design.csv
+  platform: rnaseq
+  normalised: false
+
+- counts: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/R1_001_gene.counts.csv
+  design: https://raw.githubusercontent.com/nf-core/test-datasets/stableexpression/test_data/drosophila_simulans/R1_001_gene.design.csv
+  platform: rnaseq
+  normalised: false
