@@ -1,0 +1,7 @@
+pool,sample,sample_alias,condition,hash_index,design,panel,fastq_1,fastq_2
+pool1,sample1,S1,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_R1.fastq.gz,fastq/pool1_R2.fastq.gz
+pool1,sample2,S2,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_R1.fastq.gz,fastq/pool1_R2.fastq.gz
+pool1,sample1,S1,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_reseq_R1.fastq.gz,fastq/pool1_reseq_R2.fastq.gz
+pool1,sample2,S2,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_reseq_R1.fastq.gz,fastq/pool1_reseq_R2.fastq.gz
+pool2,sample3,S3,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool2_R1.fastq.gz,fastq/pool2_R2.fastq.gz
+pool2,sample4,S4,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool2_R1.fastq.gz,fastq/pool2_R2.fastq.gz

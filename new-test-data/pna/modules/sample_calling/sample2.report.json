@@ -1,0 +1,7 @@
+{
+    "sample_id": "sample2",
+    "product_id": "single-cell-pna",
+    "report_type": "sample_calling",
+    "number_of_components": 20,
+    "number_of_incompatible_hashes_removed": 0
+}

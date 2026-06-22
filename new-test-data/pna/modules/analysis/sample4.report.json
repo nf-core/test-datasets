@@ -1,0 +1,12 @@
+{
+    "sample_id": "sample4",
+    "product_id": "single-cell-pna",
+    "report_type": "analysis",
+    "proximity": {},
+    "k_cores": {
+        "median_average_k_core": 2.6867469879518073
+    },
+    "svd": {
+        "median_variance_explained_3d": 0.022032686282082287
+    }
+}
