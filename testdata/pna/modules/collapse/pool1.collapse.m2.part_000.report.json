@@ -12,7 +12,7 @@
     "processed_files": [
         {
             "path": "pool1.demux.m2.part_000.parquet",
-            "file_size": 437472,
+            "file_size": 440514,
             "molecule_count": 44351
         }
     ],

@@ -4,9 +4,9 @@
         "options": {
             "--mismatches": 2,
             "--algorithm": "directional",
-            "--threads": 2,
+            "--threads": 4,
             "--design": "proxiome-v2",
-            "--panel": "proxiome-v2-immuno-155-prerelease",
+            "--panel": "proxiome-v2-immuno-155-v1.0",
             "--output": "."
         }
     }

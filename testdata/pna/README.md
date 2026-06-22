@@ -20,7 +20,7 @@ Generation was performed in two steps:
 2. Convert each parquets into paired FASTQ files and using the corresponding PNA panel definitions:
 
 - proxiome-v1-immuno-155-v1.1 panel for `sample1`, `sample1_reseq`, `sample2`
-- proxiome-v2-immuno-155-prerelease panel for `pool1`, `pool1_reseq`, `pool2`
+- proxiome-v2-immuno-155-v1.0 panel for `pool1`, `pool1_reseq`, `pool2`
 
 This generates the files in `testdata/pna/fastq`, including:
 
@@ -36,15 +36,15 @@ Module artifacts were then generated with Pixelator `single-cell-pna` subcommand
 2. `demux`
 3. `collapse` + `combine-collapse`
 4. `graph`
-5. `denoise` (pool-level for proxiome-v2)
-6. `sample-calling`
+5. `sample-calling`
+6. `denoise`
 7. `layout`
 8. `analysis`
 
 Representative options (from module metadata):
 
-- `demux`: `--design proxiome-v2 --panel proxiome-v2-immuno-155-prerelease`
-- `sample-calling`: `--samplesheet samplesheet_proxiome_v2.csv --enrichment-threshold 10.0`
+- `demux`: `--design proxiome-v2 --panel proxiome-v2-immuno-155-v1.0`
+- `sample-calling`: `--samplesheet samplesheet_proxiome_v2.csv --confidence-threshold 0.9`
 - `graph`: `--component-size-min-threshold 100 --multiplet-recovery`
-- `layout`: `--layout-algorithm coarsened_pmds_3d`
+- `layout`: `--layout-algorithm wpmds_3d`
 - `analysis`: `--compute-proximity --proximity-nbr-of-permutations 100`
