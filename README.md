@@ -10,6 +10,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `reference/`: Sub-sampled genome reference files (ChrX)
 
+`reference/misopy_index.tar.gz`: Misopy index files derived from `reference/genes_chrX.gff3`
+
 `testdata/*.fastq.gz`: Subsampled fastq files (ChrX)
 
 ## Minimal test dataset origin
@@ -18,7 +20,7 @@ ChrX subsampled *H.sapiens* total RNA paired-end RNA-seq data was obtained from:
 
 > Pertea, M., Kim, D., Pertea, G. et al. Transcript-level expression analysis of RNA-seq experiments with HISAT, StringTie and Ballgown. Nat Protoc 11, 1650–1667 (2016). doi: 10.1038/nprot.2016.095. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/27560171/)
 
-Original data source: 
+Original data source:
 
 > Lappalainen T, Sammeth M, Friedländer MR, 't Hoen PA, Monlong J, Rivas MA, Gonzàlez-Porta M, Kurbatova N, Griebel T, Ferreira PG, Barann M, Wieland T, Greger L, van Iterson M, Almlöf J, Ribeca P, Pulyakhina I, Esser D, Giger T, Tikhonov A, Sultan M, Bertier G, MacArthur DG, Lek M, Lizano E, Buermans HP, Padioleau I, Schwarzmayr T, Karlberg O, Ongen H, Kilpinen H, Beltran S, Gut M, Kahlem K, Amstislavskiy V, Stegle O, Pirinen M, Montgomery SB, Donnelly P, McCarthy MI, Flicek P, Strom TM; Geuvadis Consortium, Lehrach H, Schreiber S, Sudbrak R, Carracedo A, Antonarakis SE, Häsler R, Syvänen AC, van Ommen GJ, Brazma A, Meitinger T, Rosenstiel P, Guigó R, Gut IG, Estivill X, Dermitzakis ET. Transcriptome and genome sequencing uncovers functional variation in humans. Nature. 2013 Sep 26;501(7468):506-11. doi: 10.1038/nature12531. [Pubmed](https://pubmed.ncbi.nlm.nih.gov/24037378/) [SRA](https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=study&acc=ERP001942)
 
@@ -44,7 +46,7 @@ ChrX fastq files we further sub-sampled to improve speed of testing.
   seqtk sample -s100 ERR188383_unclass_chrX_2.fastq.gz 50000 | gzip > ERR188383_chrX_2.fastq.gz
   ```
  2. Ensembl GRCh37 annotation was downloaded from iGenomes (https://ewels.github.io/AWS-iGenomes/) and subsetted for ChrX with the following command:
- 
+
   ```console
   awk -F"\t" '$1=="X"' genes.gtf > genes_chrX.gtf
   ```
