@@ -10,9 +10,9 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `reference/`: Sub-sampled genome reference files (ChrX)
 
-`testdata/*.fastq.gz`: Subsampled fastq files (ChrX)
+`reference/misopy_index.tar.gz`: Misopy index files derived from `reference/genes_chrX.gff3`
 
-`testdata/misopy_index/`: Misopy index files derived from `reference/genes_chrX.gff3`
+`testdata/*.fastq.gz`: Subsampled fastq files (ChrX)
 
 ## Minimal test dataset origin
 
