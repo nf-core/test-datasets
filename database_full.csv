@@ -1,0 +1,7 @@
+tool,db_name,db_entity,db_params,db_path
+humann_v3,201901b,humann_nucleotide,,s3://nf-core-awsmegatests/funcprofiler/input/v1/databases/full_chocophlan.v296_201901b/
+humann_v3,201901b,humann_protein,,s3://nf-core-awsmegatests/funcprofiler/input/v1/databases/uniref90_annotated_v201901b_full/
+humann_v3,201901b,humann_utility,,s3://nf-core-awsmegatests/funcprofiler/input/v1/databases/full_mapping_v201901b/
+humann_v3,demo_v3,humann_metaphlan,,s3://nf-core-awsmegatests/funcprofiler/input/v1/databases/mpa_vJan25_CHOCOPhlAnSGB_202503/
+fmhfunprofiler,fmhfunprofiler1000,,11 1000,s3://nf-core-awsmegatests/funcprofiler/input/v1/databases/KOs_sketched_scaled_1000/
+rgi,4.0.1,,,https://github.com/nfcore/test-datasets/raw/refs/heads/funcprofiler/data/database/rgi/broadstreet-v4.0.1.tar.gz
