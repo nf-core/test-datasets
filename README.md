@@ -78,11 +78,11 @@ branch — no heavy files are stored here.
 
 The full-size samplesheets cover the following datasets:
 
-| Samplesheet | Dataset | Chemistry |
-| --- | --- | --- |
-| [`human-ovarian-cancer-1-standard_v1_ffpe/samplesheet_full.csv`](testdata/human-ovarian-cancer-1-standard_v1_ffpe/samplesheet_full.csv) | Human ovarian cancer 1, FFPE direct placement | Visium v1 |
+| Samplesheet                                                                                                                                                                                             | Dataset                                                | Chemistry |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --------- |
+| [`human-ovarian-cancer-1-standard_v1_ffpe/samplesheet_full.csv`](testdata/human-ovarian-cancer-1-standard_v1_ffpe/samplesheet_full.csv)                                                                 | Human ovarian cancer 1, FFPE direct placement          | Visium v1 |
 | [`human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/samplesheet_full.csv`](testdata/human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/samplesheet_full.csv) | Human glioblastoma, 11 mm capture area, FFPE CytAssist | Visium v2 |
-| [`human-lung-cancer-post-xenium_hd_ffpe/samplesheet_full.csv`](testdata/human-lung-cancer-post-xenium_hd_ffpe/samplesheet_full.csv) | Human lung cancer (post-Xenium), FFPE | Visium HD |
+| [`human-lung-cancer-post-xenium_hd_ffpe/samplesheet_full.csv`](testdata/human-lung-cancer-post-xenium_hd_ffpe/samplesheet_full.csv)                                                                     | Human lung cancer (post-Xenium), FFPE                  | Visium HD |
 
 ## Support
 
