@@ -16,6 +16,7 @@ The test data includes the following:
 - Samplesheets (both with and without Space Ranger pre-processing)
 - Processed Space Ranger data for downstream testing
 - Compressed archives for downloading during CI testing
+- Full-size samplesheets for the full-size test profiles
 
 ## Origins
 
@@ -64,6 +65,24 @@ mkdir sub-sampled
 cp CytAssist_11mm_FFPE_Human_Glioblastoma_image.tif sub-sampled/
 for f in CytAssist_11mm_FFPE_Human_Glioblastoma_fastqs/*S1*L00{1,2}*R*; do; gzip -cdf $f | head -n 40000 | gzip -c > sub-sampled/$(basename $f); done
 ```
+
+## Full-size test data
+
+In addition to the sub-sampled CI test data above, each test-data directory
+provides a `samplesheet_full.csv` that drives the pipeline's full-size test
+profiles (`test_full`, `test_full_v1` and `test_full_hd`). Unlike the
+sub-sampled data, these samplesheets reference the **original, full-size**
+inputs (FASTQ `.tar` archives, tissue images and slide `.gpr` files) and stream
+them directly from 10x Genomics. Only the small samplesheets are hosted in this
+branch — no heavy files are stored here.
+
+The full-size samplesheets cover the following datasets:
+
+| Samplesheet                                                                                                                                                                                             | Dataset                                                | Chemistry |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --------- |
+| [`human-ovarian-cancer-1-standard_v1_ffpe/samplesheet_full.csv`](testdata/human-ovarian-cancer-1-standard_v1_ffpe/samplesheet_full.csv)                                                                 | Human ovarian cancer 1, FFPE direct placement          | Visium v1 |
+| [`human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/samplesheet_full.csv`](testdata/human-brain-cancer-11-mm-capture-area-ffpe-2-standard_v2_ffpe_cytassist/samplesheet_full.csv) | Human glioblastoma, 11 mm capture area, FFPE CytAssist | Visium v2 |
+| [`human-lung-cancer-post-xenium_hd_ffpe/samplesheet_full.csv`](testdata/human-lung-cancer-post-xenium_hd_ffpe/samplesheet_full.csv)                                                                     | Human lung cancer (post-Xenium), FFPE                  | Visium HD |
 
 ## Support
 
