@@ -1,2 +1,2 @@
 sample,fasta,fastq_1,fastq_2,coverage,run_accession,assembler,assembler_version
-complete_metadata,https://github.com/nf-core/test-datasets/raw/seqsubmit/test_data/contigs.fasta.gz,,,30,ERR000003,MEGAHIT,1.2.9
+complete_metadata,https://github.com/nf-core/test-datasets/raw/seqsubmit/test_data/assembly/contigs.fasta.gz,,,30,ERR000003,MEGAHIT,1.2.9
