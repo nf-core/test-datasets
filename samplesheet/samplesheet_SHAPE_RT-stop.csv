@@ -1,3 +1,0 @@
-sample,sample_id,fastq_1,fastq_2,method,principle,cell_line,condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern
-HEK293T_untreated_r1,GSM4333255,https://github.com/nf-core/test-datasets/raw/refs/heads/rnastructurome/testdata/SHAPE_RT-stop/GSM4333255.R1.HEK293T_untreated_r1.trim.top1.fastq.gz,,SHAPE,RT-stop,HEK293T,untreated,1,Homo sapiens,7.5,,,
-HEK293T_treated_r1,GSM4333256,https://github.com/nf-core/test-datasets/raw/refs/heads/rnastructurome/testdata/SHAPE_RT-stop/GSM4333256.R1.HEK293T_treated_r1.trim.top1.fastq.gz,,SHAPE,RT-stop,HEK293T,treated,1,Homo sapiens,7.5,,,

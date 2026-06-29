@@ -1,0 +1,3 @@
+16S_rRNA	testdata	gene	1	1542	.	+	.	gene_id "16S_rRNA"; gene_name "16S_rRNA"; gene_biotype "rRNA";
+16S_rRNA	testdata	transcript	1	1542	.	+	.	gene_id "16S_rRNA"; transcript_id "16S_rRNA"; gene_name "16S_rRNA"; transcript_biotype "rRNA";
+16S_rRNA	testdata	exon	1	1542	.	+	.	gene_id "16S_rRNA"; transcript_id "16S_rRNA"; exon_id "16S_rRNA.exon1"; exon_number "1";
