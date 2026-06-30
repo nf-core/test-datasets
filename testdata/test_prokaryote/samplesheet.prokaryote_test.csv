@@ -1,0 +1,2 @@
+sample,sample_id,fastq_1,fastq_2,method,principle,sample_group,condition,replicate,organism,pH,adapter_3p,adapter_5p,umi_pattern
+E_coli_DH5a_treated,GSM7885844,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/rnastructurome/testdata/test_prokaryote/E_coli_DH5a_treated.16S_rRNA.fastq.gz,,DMS,MaP,E_coli_DH5a,treated,1,Escherichia coli,,,,
