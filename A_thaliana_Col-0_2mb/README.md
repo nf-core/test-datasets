@@ -5,5 +5,8 @@ This subset was created from a whole-genome sequencing, mapping reads to Col-CEN
 ONT-Col-0_flye_assembly.fasta.gz was created by running the test dataset through the test-profile.
 
 # Source
+
 The dataset was created 2024 by Duncan Crosbie, Jin Khoo, and Niklas Schandry, Genetics Department of the Faculty of Biology at the Ludwig-Maximilians-University, Munich, Germany.
+
+A. thaliana HiC data was provided by @OlivierCoen based on SRR22354810 https://github.com/OlivierCoen/nf-genome-assembler/tree/main/tests/test_data/hic_short_reads/a_thaliana
 
