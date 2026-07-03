@@ -1,0 +1,8 @@
+accno,genome_fna,genome_gff
+local_GCA_013329705.1,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/refs/heads/magmap/testdata/GCA_013329705.1_ASM1332970v1_genomic.fna.gz,
+local_GCA_021654415.1,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/refs/heads/magmap/testdata/GCA_021654415.1_MjAS7_1.0_genomic.fna.gz,
+local_GCA_023269755.1,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/refs/heads/magmap/testdata/GCA_023269755.1_ASM2326975v1_genomic.fna.gz,
+local_GCF_001315825.1,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/refs/heads/magmap/testdata/GCF_001315825.1_ASM131582v1_genomic.fna.gz,
+local_GCF_002194565.1,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/refs/heads/magmap/testdata/GCF_002194565.1_Pdsh-A1.0_genomic.fna.gz,
+local_GCF_004323575.1,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/refs/heads/magmap/testdata/GCF_004323575.1_ASM432357v1_genomic.fna.gz,
+local_GCF_032248915.1,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/refs/heads/magmap/testdata/GCF_032248915.1_ASM3224891v1_genomic.fna.gz,
