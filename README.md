@@ -172,7 +172,26 @@ mv proteome.dmnd data/database/eggnog-mapper/
 wget https://card.mcmaster.ca/download/0/broadstreet-v4.0.1.tar.bz2
 mkdir data/database/rgi/ && mv broadstreet-v4.0.1.tar.bz2 data/database/rgi/
 
+```
 
 
+Reads from a plasmid harboring AMR genes were simulated from LR822058.1, saved to a file named plasmid.ga
 
+```
+# tmp.config
+process {
+    withName: WGSIM {
+        ext.args = "-N 100"
+        memory = "4GB"
+    }
+}
+
+```
+
+
+```
+nextflow module run nf-core/wgsim --meta.id test_sample --fasta ~/GitHub/nf-core-funcprofiler/modules/nf-core/rgi/bwt/tests/plasmid.fa -config conf/tmp.config -profile docker
+
+cat ./results/test_sample_1.fastq | gzip > data/reads/LR822058.1.R1.gz
+cat ./results/test_sample_2.fastq | gzip > data/reads/LR822058.1.R2.gz
 ```
