@@ -1,0 +1,3 @@
+patient,status,sample,vcf,cna
+HCC1395,0,HCC1395N,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data/HCC1395T_vs_HCC1395N.strelka.somatic_snvs_chr22.vcf.gz,
+HCC1395,0,HCC1395N,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data/HCC1395T_vs_HCC1395N.strelka.somatic_indels_chr22.vcf.gz,

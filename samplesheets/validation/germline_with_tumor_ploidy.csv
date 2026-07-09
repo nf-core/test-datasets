@@ -1,0 +1,2 @@
+patient,status,sample,vcf,tumor_ploidy
+test,0,test,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data/HCC1395T_vs_HCC1395N.strelka.somatic_snvs_chr22.vcf.gz,2
