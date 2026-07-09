@@ -1,0 +1,2 @@
+patient,status,sample,vcf,tumor_site,tumor_purity,tumor_ploidy,cna,sex
+test,1,test,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data/HCC1395T_vs_HCC1395N.strelka.somatic_snvs_chr22.vcf.gz,5,0.45,2.0,https://github.com/nf-core/test-datasets/raw/variantprioritization/test_data/HCC1395T_vs_HCC1395N.segments_chr22.txt,FEMALE
