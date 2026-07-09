@@ -1,0 +1,27 @@
+ID	Log1	Log2	Log3	Std1	Std2	Std3	copies	log_expected_percentage_per-taxon	std_expected_percentage_per-taxon
+Bacillus_subtilis_16S_4x_1-8-9-10	3.56	3.56	3.56	0.48	0.48	0.48	4	0.89	0.12
+Bacillus_subtilis_16S_2x_2-3	1.78	1.78	1.78	0.24	0.24	0.24	2	0.89	0.12
+Bacillus_subtilis_16S_4	0.89	0.89	0.89	0.12	0.12	0.12	1	0.89	0.12
+Bacillus_subtilis_16S_5	0.89	0.89	0.89	0.12	0.12	0.12	1	0.89	0.12
+Bacillus_subtilis_16S_6	0.89	0.89	0.89	0.12	0.12	0.12	1	0.89	0.12
+Bacillus_subtilis_16S_7	0.89	0.89	0.89	0.12	0.12	0.12	1	0.89	0.12
+Cryptococcus_neoformans_18S_170924	0	0	0	0	0	0	1	0.00089	0.02
+Cryptococcus_neoformans_Mitochondria_ssrRNA	0	0	0	0	0	0	1		0.02
+Enterococcus_faecalis_16S_4x_1-2-3-4	0.00356	0.00356	0.00356	0.48	0.48	0.48	4	0.00089	0.12
+Escherichia_coli_16S_4x_1-3-5-8	0.356	0.356	0.356	0.48	0.48	0.48	4	0.089	0.12
+Escherichia_coli_16S_2x_2-7	0.178	0.178	0.178	0.24	0.24	0.24	2	0.089	0.12
+Escherichia_coli_16S_4	0.089	0.089	0.089	0.12	0.12	0.12	1	0.089	0.12
+Lactobacillus_fermentum_16S_3x_1-2-4	0.0267	0.0267	0.0267	0.36	0.36	0.36	3	0.0089	0.12
+Lactobacillus_fermentum_16S_3	0.0089	0.0089	0.0089	0.12	0.12	0.12	1	0.0089	0.12
+Lactobacillus_fermentum_16S_5	0.0089	0.0089	0.0089	0.12	0.12	0.12	1	0.0089	0.12
+Listeria_monocytogenes_16S_4x_1-4-5-6	356.4	356.4	356.4	0.48	0.48	0.48	4	89.1	0.12
+Listeria_monocytogenes_16S_2	89.1	89.1	89.1	0.12	0.12	0.12	1	89.1	0.12
+Listeria_monocytogenes_16S_3	89.1	89.1	89.1	0.12	0.12	0.12	1	89.1	0.12
+Pseudomonas_aeruginosa_16S_4x_1-2-3-4	35.6	35.6	35.6	0.48	0.48	0.48	4	8.9	0.12
+Saccharomyces_cerevisiae_18S_170924	0	0	0	0	0	0	1	0.89	0.02
+Saccharomyces_cerevisiae_mitochondria_ssrRNA	0	0	0	0	0	0	1	0.89	0.02
+Salmonella_enterica_16S_1	0.089	0.089	0.089	0.12	0.12	0.12	1	0.089	0.12
+Salmonella_enterica_16S_6x_2-3-4-5-6	0.534	0.534	0.534	0.72	0.72	0.72	6	0.089	0.12
+Staphylococcus_aureus_16S_1	0.000089	0.000089	0.000089	0.12	0.12	0.12	1	0.000089	0.12
+Staphylococcus_aureus_16S_2	0.000089	0.000089	0.000089	0.12	0.12	0.12	1	0.000089	0.12
+Staphylococcus_aureus_16S_4x_3-4-5-6	0.000356	0.000356	0.000356	0.48	0.48	0.48	4	0.000089	0.12
