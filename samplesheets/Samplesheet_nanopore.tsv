@@ -1,0 +1,7 @@
+sample	fastq_1
+Log1	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/Log1_ZymoD6311_16SBarcodingKit24V14_SQK-16S114.24_r10.4.1_sup.chopper.3000.fastq.gz
+Log2	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/Log2_ZymoD6311_16SBarcodingKit24V14_SQK-16S114.24_r10.4.1_sup.chopper.3000.fastq.gz
+Log3	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/Log3_ZymoD6311_16SBarcodingKit24V14_SQK-16S114.24_r10.4.1_sup.chopper.3000.fastq.gz
+Std1	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/Std1_ZymoD6305_16SBarcodingKit24V14_SQK-16S114.24_r10.4.1_sup.chopper.1000.fastq.gz
+Std2	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/Std2_ZymoD6305_16SBarcodingKit24V14_SQK-16S114.24_r10.4.1_sup.chopper.1000.fastq.gz
+Std3	https://github.com/nf-core/test-datasets/raw/ampliseq/testdata/Std3_ZymoD6305_16SBarcodingKit24V14_SQK-16S114.24_r10.4.1_sup.chopper.1000.fastq.gz
