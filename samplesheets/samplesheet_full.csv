@@ -1,8 +1,4 @@
-sample,fastq_1,fastq_2,bam,seq_type
-SAMPLE_FASTQ,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_1_fished.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_2_fished.fastq.gz,,dna
-SAMPLE_FASTQ_CAT,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_1_fished.part_001.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_2_fished.part_001.fastq.gz,,dna
-SAMPLE_FASTQ_CAT,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_1_fished.part_002.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/fastq/NA11995_SRR766010_2_fished.part_002.fastq.gz,,dna
-SAMPLE_FASTQ_RNA,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_1_fished.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_2_fished.fastq.gz,,rna
-SAMPLE_FASTQ_RNA_CAT,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_1_fished.part_001.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_2_fished.part_001.fastq.gz,,rna
-SAMPLE_FASTQ_RNA_CAT,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_1_fished.part_002.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/rna/CRC_81_N_2_fished.part_002.fastq.gz,,rna
-SAMPLE_BAM,,,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/bam/example_pe.bam,dna
+sample,fastq_1,fastq_2,bam,tsv,seq_type
+NA12878_WES,https://zenodo.org/record/6513789/files/A006850052_NA12878_75M_R1.fq.gz,https://zenodo.org/record/6513789/files/A006850052_NA12878_75M_R2.fq.gz,,,dna
+GM12878_RNA,https://ngi-igenomes.s3.amazonaws.com/test-data/rnaseq/SRX1603629_T1_1.fastq.gz,https://ngi-igenomes.s3.amazonaws.com/test-data/rnaseq/SRX1603629_T1_2.fastq.gz,,,rna
+HepG2_PEPTIDE,,,,https://raw.githubusercontent.com/nf-core/test-datasets/hlatyping/peptide/HepG2_A.tsv,peptide
