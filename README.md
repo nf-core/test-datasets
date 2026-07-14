@@ -7,19 +7,19 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 The pipeline analyzes *Plasmodium* drug resistance markers from allele tables or [Portable Microhaplotype Object (PMO)](https://plasmogenepi.github.io/PMO_Docs/) files, translating loci of interest to amino acid changes and estimating single-locus and multi-locus allele frequencies and prevalences.
 
-All files live under `testdata/`.
+All files live under `testdata/`. This is all realistic, but simulated data. 
 
 ### Pipeline inputs
 
-- `testdata/example_PMO.json`: Example Portable Microhaplotype Object (PMO) file for the PMO entry point.
-- `testdata/allele_table.tsv`: Microhaplotype allele table (specimen, target, allele, reads, sequence) for the allele-table entry point extracted from `example_PMO.json`.
-- `testdata/panel_info.bed`: Panel information BED including insert reference sequences extracted from `example_PMO.json`.
-- `testdata/panel_info_no_ref.bed`: Panel information BED without reference sequences extracted from `example_PMO.json`.
+- `testdata/example_PMO.json`: Example Portable Microhaplotype Object (PMO) file for the PMO entry point including simulated data.
+- `testdata/allele_table.tsv`: Microhaplotype allele table (specimen, target, allele, reads, sequence) for the allele-table entry point extracted from `example_PMO.json` (see extract_allele_table.nf module).
+- `testdata/panel_info.bed`: Panel information BED including insert reference sequences extracted from `example_PMO.json` (see extract_panel_info_to_bed.nf module).
+- `testdata/panel_info_no_ref.bed`: Panel information BED without reference sequences extracted from `example_PMO.json` (see extract_panel_info_to_bed.nf module).
 - `testdata/dummy_panel_info_fake_chroms.bed`: Panel information BED with synthetic chromosome names to test adding ref from whole genome using `insert_refseqs.fasta`.
 - `testdata/insert_refseqs.fasta`: Targeted insert/reference sequences matching panel target names.
 - `testdata/loci_of_interest.bed`: Drug-resistance loci of interest (amino acid positions) used for translation.
 - `testdata/loci_groups.tsv`: Multi-locus groups (e.g. `pfdhfr_pfdhps`, `crt`) for multi-locus frequency estimation.
-- `testdata/population_map.tsv`: Specimen-to-population assignment table.
+- `testdata/population_map.tsv`: Specimen-to-population assignment table  (see extract_population_map_from_pmo.nf module).
 
 ### Intermediate and module test inputs
 
