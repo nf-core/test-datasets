@@ -4,10 +4,9 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ## Content of this repository
 
+The pipeline analyzes _Plasmodium_ drug resistance markers from allele tables or [Portable Microhaplotype Object (PMO)](https://plasmogenepi.github.io/PMO_Docs/) files, translating loci of interest to amino acid changes and estimating single-locus and multi-locus allele frequencies and prevalences.
 
-The pipeline analyzes *Plasmodium* drug resistance markers from allele tables or [Portable Microhaplotype Object (PMO)](https://plasmogenepi.github.io/PMO_Docs/) files, translating loci of interest to amino acid changes and estimating single-locus and multi-locus allele frequencies and prevalences.
-
-All files live under `testdata/`. This is all realistic, but simulated data. 
+All files live under `testdata/`. This is all realistic, but simulated data.
 
 ### Pipeline inputs
 
@@ -19,7 +18,7 @@ All files live under `testdata/`. This is all realistic, but simulated data.
 - `testdata/insert_refseqs.fasta`: Targeted insert/reference sequences matching panel target names.
 - `testdata/loci_of_interest.bed`: Drug-resistance loci of interest (amino acid positions) used for translation.
 - `testdata/loci_groups.tsv`: Multi-locus groups (e.g. `pfdhfr_pfdhps`, `crt`) for multi-locus frequency estimation.
-- `testdata/population_assignment.tsv`: Specimen-to-population assignment table  (see extract_population_map_from_pmo.nf module).
+- `testdata/population_assignment.tsv`: Specimen-to-population assignment table (see extract_population_map_from_pmo.nf module).
 
 ### Intermediate and module test inputs
 
