@@ -51,6 +51,7 @@ samplesheet_indel_somatic_hg38: Sample sheet for nf-core/variantbenchmarking tes
 samplesheet_snv_somatic_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 snv variants from somatic sample SEQC2
 samplesheet_sv_somatic_hg38: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 stuctural variants from somatic sample SEQC2
 samplesheet_sv_somatic_hg37_liftover: Sample sheet for nf-core/variantbenchmarking test profiles for hg37 stuctural variants from HG002 sample for lifting over variants
+samplesheet_HG008_hg38.csv: Sample sheet for nf-core/variantbenchmarking test profiles for hg38 small somatic variants from HG008 sample 
 
 
 ### testdata/
@@ -80,13 +81,14 @@ HG002 GiAB sample is used for germline benchmarking
 
 #### somatic
 
-SEQC2 is used for germline benchmarking
-
 *hg38*
 
 - HCC1395T_vs_HC1395N analysis is the results of nf-core/sarek (v3.4.2) with hg38 for SEQC2 tests.
 
 - SEQC2 CNV test files are downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/seqc/Somatic_Mutation_WG/analysis/CNVs/WES/
+
+- HG008 test datasets are downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_somatic/HG008/Liss_lab/analysis/
+
 
 #### truth data
 
@@ -100,6 +102,8 @@ SEQC2 is used for germline benchmarking
 - SEQC2 CNV benchmarks are downloaded from https://zenodo.org/records/14619054
 
 - We generated SEQC2 SV data using the high confidence SV set found in the supporting files in https://link.springer.com/article/10.1186/s13059-022-02816-6 paper. svconverstion.ipynb can be used to regenerate the vcf file.
+
+- - HG008 truth datasets are downloaded from https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data_somatic/HG008/Liss_lab/analysis/
 
 #### germline
 
