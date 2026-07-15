@@ -19,7 +19,7 @@ All files live under `testdata/`. This is all realistic, but simulated data.
 - `testdata/insert_refseqs.fasta`: Targeted insert/reference sequences matching panel target names.
 - `testdata/loci_of_interest.bed`: Drug-resistance loci of interest (amino acid positions) used for translation.
 - `testdata/loci_groups.tsv`: Multi-locus groups (e.g. `pfdhfr_pfdhps`, `crt`) for multi-locus frequency estimation.
-- `testdata/population_map.tsv`: Specimen-to-population assignment table  (see extract_population_map_from_pmo.nf module).
+- `testdata/population_assignment.tsv`: Specimen-to-population assignment table  (see extract_population_map_from_pmo.nf module).
 
 ### Intermediate and module test inputs
 
@@ -29,8 +29,7 @@ All files live under `testdata/`. This is all realistic, but simulated data.
 - `testdata/aa_mlaf.tsv`: Amino acid multi-locus allele frequencies (MLAF).
 - `testdata/mlaf_pop1.tsv`: Multi-locus allele frequencies for population `pop1`.
 - `testdata/mlaf_pop2.tsv`: Multi-locus allele frequencies for population `pop2`.
-- `testdata/population_map_indexed.tsv`: Specimen-to-population assignment including population index IDs.
-- `testdata/population_map_with_spaces.tsv`: Population assignment table with spaces in population names.
+- `testdata/population_assignment_indexed.tsv`: Specimen-to-population assignment including population index IDs.
 - `testdata/population_index_lookup.tsv`: Lookup table mapping population index IDs to population names.
 - `testdata/empty_population_index_lookup.tsv`: Empty population index lookup file for edge-case tests.
 - `testdata/allele_prev.tsv`: Expected allele prevalence estimates.
