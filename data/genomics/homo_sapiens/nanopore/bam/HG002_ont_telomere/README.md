@@ -9,14 +9,14 @@ Small BAM/CRAM containing 17 real ONT telomeric reads from GIAB HG002, for testi
 
 ## Files
 
-| File | Size | Description |
-|---|---|---|
-| `HG002_ont_tel_sub.bam` | ~491 KB | BAM with original GRCh38 coordinates |
-| `HG002_ont_tel_sub.bam.bai` | ~236 KB | BAM index |
-| `HG002_ont_tel_sub.cram` | ~309 KB | CRAM with coordinates adjusted to mini reference |
-| `HG002_ont_tel_sub.cram.crai` | 66 B | CRAM index |
-| `HG002_ont_tel_sub_ref.fa` | ~149 KB | Mini reference: last ~56 kb of chr1 + last ~94 kb of chr2 |
-| `HG002_ont_tel_sub_ref.fa.fai` | 42 B | Mini reference index |
+| File                           | Size    | Description                                               |
+| ------------------------------ | ------- | --------------------------------------------------------- |
+| `HG002_ont_tel_sub.bam`        | ~491 KB | BAM with original GRCh38 coordinates                      |
+| `HG002_ont_tel_sub.bam.bai`    | ~236 KB | BAM index                                                 |
+| `HG002_ont_tel_sub.cram`       | ~309 KB | CRAM with coordinates adjusted to mini reference          |
+| `HG002_ont_tel_sub.cram.crai`  | 66 B    | CRAM index                                                |
+| `HG002_ont_tel_sub_ref.fa`     | ~149 KB | Mini reference: last ~56 kb of chr1 + last ~94 kb of chr2 |
+| `HG002_ont_tel_sub_ref.fa.fai` | 42 B    | Mini reference index                                      |
 
 ## CRAM mini-reference
 

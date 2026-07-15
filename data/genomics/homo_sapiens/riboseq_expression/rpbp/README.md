@@ -10,17 +10,17 @@ The end-to-end integration test still lives in `subworkflows/nf-core/fasta_gtf_b
 
 ## Files
 
-| File | Size | Description |
-|---|---|---|
-| `reference.annotated.bed.gz` | <500 KB | Transcript-level annotated BED output by `rpbp/preparegenome`. Consumed by `rpbp/extractmetageneprofiles`. |
-| `reference.orfs-genomic.annotated.bed.gz` | <500 KB | Genomic-coordinate ORF BED output by `rpbp/preparegenome`. Consumed by `rpbp/extractorfprofiles` and `rpbp/estimateorfbayesfactors`. |
-| `reference.orfs-exons.annotated.bed.gz` | <500 KB | Exon-coordinate ORF BED output by `rpbp/preparegenome`. Consumed by `rpbp/extractorfprofiles`. |
-| `SRX11780888_chr20.metagene-profile.csv.gz` | <50 KB | Per-read-length metagene profile output by `rpbp/extractmetageneprofiles`. Consumed by `rpbp/estimatemetagenebayesfactors`. |
-| `SRX11780888_chr20.metagene-periodicity-bayes-factors.csv.gz` | <50 KB | Per-read-length periodicity Bayes-factor table output by `rpbp/estimatemetagenebayesfactors`. Consumed by `rpbp/selectperiodicoffsets`. |
-| `SRX11780888_chr20.periodic-offsets.csv.gz` | <50 KB | Per-read-length periodic-offset table output by `rpbp/selectperiodicoffsets`. Consumed by `rpbp/getperiodiclengthsoffsets`. |
-| `SRX11780888_chr20.periodic_lengths_offsets.tsv` | <1 KB | Filtered length/offset pairs output by `rpbp/getperiodiclengthsoffsets` using lenient `'10 1 None 0.0'` thresholds (chr20 alone does not pass the rpbp defaults). Consumed by `rpbp/extractorfprofiles`. |
-| `SRX11780888_chr20.profiles.mtx.gz` | <2 MB | Per-ORF Ribo-seq read-count profile sparse matrix output by `rpbp/extractorfprofiles`. Consumed by `rpbp/estimateorfbayesfactors`. |
-| `SRX11780888_chr20.bayes-factors.bed.gz` | <2 MB | Per-ORF translation-Bayes-factor table output by `rpbp/estimateorfbayesfactors`. Consumed by `rpbp/selectfinalpredictionset`. |
+| File                                                          | Size    | Description                                                                                                                                                                                              |
+| ------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `reference.annotated.bed.gz`                                  | <500 KB | Transcript-level annotated BED output by `rpbp/preparegenome`. Consumed by `rpbp/extractmetageneprofiles`.                                                                                               |
+| `reference.orfs-genomic.annotated.bed.gz`                     | <500 KB | Genomic-coordinate ORF BED output by `rpbp/preparegenome`. Consumed by `rpbp/extractorfprofiles` and `rpbp/estimateorfbayesfactors`.                                                                     |
+| `reference.orfs-exons.annotated.bed.gz`                       | <500 KB | Exon-coordinate ORF BED output by `rpbp/preparegenome`. Consumed by `rpbp/extractorfprofiles`.                                                                                                           |
+| `SRX11780888_chr20.metagene-profile.csv.gz`                   | <50 KB  | Per-read-length metagene profile output by `rpbp/extractmetageneprofiles`. Consumed by `rpbp/estimatemetagenebayesfactors`.                                                                              |
+| `SRX11780888_chr20.metagene-periodicity-bayes-factors.csv.gz` | <50 KB  | Per-read-length periodicity Bayes-factor table output by `rpbp/estimatemetagenebayesfactors`. Consumed by `rpbp/selectperiodicoffsets`.                                                                  |
+| `SRX11780888_chr20.periodic-offsets.csv.gz`                   | <50 KB  | Per-read-length periodic-offset table output by `rpbp/selectperiodicoffsets`. Consumed by `rpbp/getperiodiclengthsoffsets`.                                                                              |
+| `SRX11780888_chr20.periodic_lengths_offsets.tsv`              | <1 KB   | Filtered length/offset pairs output by `rpbp/getperiodiclengthsoffsets` using lenient `'10 1 None 0.0'` thresholds (chr20 alone does not pass the rpbp defaults). Consumed by `rpbp/extractorfprofiles`. |
+| `SRX11780888_chr20.profiles.mtx.gz`                           | <2 MB   | Per-ORF Ribo-seq read-count profile sparse matrix output by `rpbp/extractorfprofiles`. Consumed by `rpbp/estimateorfbayesfactors`.                                                                       |
+| `SRX11780888_chr20.bayes-factors.bed.gz`                      | <2 MB   | Per-ORF translation-Bayes-factor table output by `rpbp/estimateorfbayesfactors`. Consumed by `rpbp/selectfinalpredictionset`.                                                                            |
 
 All files <4 MB. Total set <10 MB.
 

@@ -104,6 +104,7 @@ samtools faidx ${REF_PATH}.fa.bgz chr21 chr22 | bgzip > ${REF_PATH}_chr21_22.fa.
 samtools faidx ${REF_PATH}_chr21_22.fa.gz
 rm ${REF_PATH}.fa.bgz*
 ```
+
 ### Two bit compressed genome files (.2bit)
 
 The two bit compressed genome file was generated directly from `genome.fasta` in this repository.
@@ -123,7 +124,7 @@ faToTwoBit genome.fasta genome.2bit
 ### Genome coordinates divided in 10kbp bins
 
 1. The binned version of 'genome.bed' from this repository was used to generate a BED of the interval divided into
-10kbp bins:
+   10kbp bins:
 
 ```bash
 bedtools makewindows -b genome.bed -w 10000 > genome.bins_10kb.bed
@@ -134,10 +135,10 @@ bedtools makewindows -b genome.bed -w 10000 > genome.bins_10kb.bed
 ```bash
 awk '{print $0 "\tbin" NR}' genome.bins_10kb.bed > genome.bins_10kb_annotated.bed
 ```
-### Coordinates of transcription start sites (TSS) 
 
-The list of TSS for hg38 was downloaded from the ENCODE project (release date 2021-02-05, [ID ENCFF766FGL](
-https://www.encodeproject.org/files/ENCFF766FGL/@@download/ENCFF766FGL.bed.gz)), sorted 
+### Coordinates of transcription start sites (TSS)
+
+The list of TSS for hg38 was downloaded from the ENCODE project (release date 2021-02-05, [ID ENCFF766FGL](https://www.encodeproject.org/files/ENCFF766FGL/@@download/ENCFF766FGL.bed.gz)), sorted
 with `bedtools` and limited to only chromosome 22:
 
 ```bash
@@ -214,11 +215,12 @@ salmon index -t transcriptome.fasta -k 31 -i salmon
 
 There is multiple type of genetic map depending on the softwares.
 They use the following columns separated by a tabulation or a space:
-  - chromosome
-  - variant id
-  - position
-  - combined_rate (cM/Mb)
-  - cM
+
+- chromosome
+- variant id
+- position
+- combined_rate (cM/Mb)
+- cM
 
 The genome map of GRCh38 have been generated as follow:
 
@@ -596,13 +598,14 @@ Contains a rules file for the paraphrase module.
 This folder contains test data containing soft-clipped clusters. The data was fetched from the official [repository](https://github.com/GeneDx/scramble/tree/master/validation) of the tool
 
 This test data contains:
-   - test.fa => A reference file containing chr3:70000000-70100000 and chr11:418014-438014
-   - test.fa.fai => The index of this reference
-   - test.bam => A BAM file containing soft-clipped clusters
-   - test.bam.bai => The index of the BAM file
-   - test.cram => The converted CRAM from the BAM file
-   - test.cram.crai => The index of the CRAM file
-   - test.bed => A BED file containing only the regions from chr11
+
+- test.fa => A reference file containing chr3:70000000-70100000 and chr11:418014-438014
+- test.fa.fai => The index of this reference
+- test.bam => A BAM file containing soft-clipped clusters
+- test.bam.bai => The index of the BAM file
+- test.cram => The converted CRAM from the BAM file
+- test.cram.crai => The index of the CRAM file
+- test.bed => A BED file containing only the regions from chr11
 
 ### Popgen data
 
@@ -614,11 +617,12 @@ For details about their simulation, see the specific README file.
 
 Test data is provided containing specific loci for the pharmacogenetics gene CYP2D6 and pseudogene CYP2D7 on GRCh37.
 This dataset contains:
-   - illumina/bam/test.PGx.CYP2D6.bam => Reads belonging to human genome project sample HG00436 mapped to the CYP2D6 and CYP2D7 loci
-      -  22:42512500-42551883
-      -  22:42512500-42551883
-   - illumina/bam/test.PGx.CYP2D6.bam.bai => The index of the BAM file
-   - genome/genome.GRCh37.chr22.fasta.gz => A reference GRCh37 genome fasta file (bgzipped) containing chromosome 22
+
+- illumina/bam/test.PGx.CYP2D6.bam => Reads belonging to human genome project sample HG00436 mapped to the CYP2D6 and CYP2D7 loci
+  - 22:42512500-42551883
+  - 22:42512500-42551883
+- illumina/bam/test.PGx.CYP2D6.bam.bai => The index of the BAM file
+- genome/genome.GRCh37.chr22.fasta.gz => A reference GRCh37 genome fasta file (bgzipped) containing chromosome 22
 
 ### RNASeq data
 
@@ -681,7 +685,7 @@ tabix hg002_chr20_90000_to_100000.dnascope.gvcf.gz
 
 #### B-allele frequency sampling locations
 
-* data/genomics/homo_sapiens/illumina/tab/gnomad_hg38_chr20_90000_to_100000.0.05.txt.gz
+- data/genomics/homo_sapiens/illumina/tab/gnomad_hg38_chr20_90000_to_100000.0.05.txt.gz
 
 Subset of the file https://github.com/SMD-Bioinformatics-Lund/gens/releases/download/v4.3.0/gnomad_hg38.0.05.txt.gz
 
@@ -695,12 +699,12 @@ zcat gnomad_hg38.0.05.txt.gz | awk '$1 == 20 && ($2 >= 90000 && $2 <= 100000)' |
 
 ### stitchr test dataset
 
-TCR data was downloaded from [vdjdb](https://vdjdb.com/) on March 12th 2026. 
+TCR data was downloaded from [vdjdb](https://vdjdb.com/) on March 12th 2026.
 
 ### anarcii test dataset
 
 Stitchr/thimble was run on the first five entries of the stitchr test dataset. The results were transformed into a fasta file with one entry per chain using a short python script:
-    
+
     ```
     import pandas as pd
     thimbleOut = pd.read_csv(<output file from stitchr/thimble>, sep="\t", dtype=str)
@@ -713,7 +717,8 @@ Stitchr/thimble was run on the first five entries of the stitchr test dataset. T
 
             fh.write(f">{tcr_name}|TRA\n{tra}\n")
             fh.write(f">{tcr_name}|TRB\n{trb}\n")
-   ```
+
+```
 
 ### Missing files
 
@@ -722,3 +727,4 @@ Stitchr/thimble was run on the first five entries of the stitchr test dataset. T
 3. Unaligned bams
 4. Ploidy files for ASCAT
 5. Mappability files for CONTROLFREEC
+```

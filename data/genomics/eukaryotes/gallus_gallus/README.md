@@ -1,4 +1,4 @@
-The fastq file in this repo is a subset of 10 reads extracted from raw read SRR19726169 (available from any INSDC database), representing a chicken gut metagenome sample sequenced with PacBio HiFi. 
+The fastq file in this repo is a subset of 10 reads extracted from raw read SRR19726169 (available from any INSDC database), representing a chicken gut metagenome sample sequenced with PacBio HiFi.
 This is a good test file for any tool filtering adapters from PacBio HiFi reads, as 1 read out of 10 contains an adapter.
 
 The original file was selected as some of its reads still contained an adapter, while some others didn't.

@@ -5,13 +5,13 @@ caller), used by `modules/nf-core/custom/orfnormalise` and
 `modules/nf-core/custom/orfmerge` to exercise the parser, classifier,
 score-direction, and cross-caller merge logic end-to-end.
 
-| File | Size | Caller | Source genome |
-|---|---|---|---|
-| `sample1.ribocode.txt` | 13 KB | RiboCode | chr20 |
-| `sample1.ribotish.pred.txt` | 3 KB | Ribo-TISH | chr20 |
-| `sample1.ribotricer.tsv` | 3 KB | Ribotricer | chr20 |
-| `sample1.rpbp.predicted-orfs.bed.gz` | 2 KB | Rp-Bp | chr20 |
-| `cohort.price.orfs.tsv` | 5 KB | PRICE | chr19+chr22 |
+| File                                 | Size  | Caller     | Source genome |
+| ------------------------------------ | ----- | ---------- | ------------- |
+| `sample1.ribocode.txt`               | 13 KB | RiboCode   | chr20         |
+| `sample1.ribotish.pred.txt`          | 3 KB  | Ribo-TISH  | chr20         |
+| `sample1.ribotricer.tsv`             | 3 KB  | Ribotricer | chr20         |
+| `sample1.rpbp.predicted-orfs.bed.gz` | 2 KB  | Rp-Bp      | chr20         |
+| `cohort.price.orfs.tsv`              | 5 KB  | PRICE      | chr19+chr22   |
 
 Each file is the head + first 15 records of a real-tool output, so every
 column the downstream parsers read is exercised; no synthetic data.

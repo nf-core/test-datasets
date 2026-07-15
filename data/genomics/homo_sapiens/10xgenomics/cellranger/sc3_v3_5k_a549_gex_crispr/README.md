@@ -34,10 +34,10 @@ curl -O https://cf.10xgenomics.com/samples/cell-exp/6.0.0/SC3_v3_NextGem_DI_CRIS
 
 For both gene expression and CRISPR FASTQ files, only lanes 1 and 2 files were kept, and the first 10,000 reads were sub-sampled (`fastqs` directory).
 
-In the `SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference.csv` file, the older gene symbol *H2AFY* was replaced by the newer gene symbol *MACROH2A1* designating the same gene for compatibility with newer genome references.
+In the `SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference.csv` file, the older gene symbol _H2AFY_ was replaced by the newer gene symbol _MACROH2A1_ designating the same gene for compatibility with newer genome references.
 
-In order to enable testing on a smaller genomic interval, a copy of this file was created keeping sgRNAs against the two consecutive target genes spanning the smallest genomic interval (*RBBP4* and *HDAC1*, spanning the interval chr1:32292083-32686211), as well as non-targeting control sgRNAs (file `SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference_chr1_32292083_32686211.csv`).
+In order to enable testing on a smaller genomic interval, a copy of this file was created keeping sgRNAs against the two consecutive target genes spanning the smallest genomic interval (_RBBP4_ and _HDAC1_, spanning the interval chr1:32292083-32686211), as well as non-targeting control sgRNAs (file `SC3_v3_NextGem_DI_CRISPR_A549_5K_Multiplex_count_feature_reference_chr1_32292083_32686211.csv`).
 
 ## Genomic reference files
 
-Reference FASTA and GTF files were obtained from the [10x Genomics website](https://www.10xgenomics.com/support/software/cell-ranger/downloads#reference-downloads) ("Human reference (GRCh38) - 2024-A", downloaded using `curl -O "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2024-A.tar.gz"`). The genomic interval chr1:32292083-32686211, encompassing target genes *RBBP4* and *HDAC1*, was then extracted from these two files, and genomic locations in the GTF file were reindexed accordingly (files `reference/genome_chr1_32292083_32686211.fa` and `reference/genes_chr1_32292083_32686211.gtf`).
+Reference FASTA and GTF files were obtained from the [10x Genomics website](https://www.10xgenomics.com/support/software/cell-ranger/downloads#reference-downloads) ("Human reference (GRCh38) - 2024-A", downloaded using `curl -O "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2024-A.tar.gz"`). The genomic interval chr1:32292083-32686211, encompassing target genes _RBBP4_ and _HDAC1_, was then extracted from these two files, and genomic locations in the GTF file were reindexed accordingly (files `reference/genome_chr1_32292083_32686211.fa` and `reference/genes_chr1_32292083_32686211.gtf`).

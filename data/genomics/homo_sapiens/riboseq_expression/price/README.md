@@ -14,12 +14,12 @@ Restricting the reference to protein-coding genes (drops ~10% of ORF calls vs th
 
 ## Files
 
-| File | Size | Description |
-|---|---|---|
-| `Homo_sapiens.GRCh38_chr19_22.pc_exon_masked.fa.gz` | 3.3 MB | chr19+chr22 from Ensembl GRCh38 primary assembly; everything outside protein-coding-gene exons hard-masked to `N`. |
-| `Homo_sapiens.GRCh38.111_chr19_22.pc.gtf.gz` | 1.6 MB | chr19+chr22 from Ensembl 111 GTF, subset to `gene_biotype "protein_coding"`. Attribute column trimmed to `gene_id`, `transcript_id`, `gene_biotype`, `gene_name`, `transcript_biotype`. |
-| `bams/SRX1178088{5,6,7,8}.chr19_22.ds50.bam` | 1.0-1.5 MB each | Four Ribo-seq samples from GSE182201, STAR-aligned to GRCh38, filtered to chr19+chr22, downsampled to 50% with `samtools view -bs`, then filtered to reads overlapping protein-coding-gene intervals. |
-| `bams/*.bai` | <90 KB each | BAM indexes. |
+| File                                                | Size            | Description                                                                                                                                                                                           |
+| --------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Homo_sapiens.GRCh38_chr19_22.pc_exon_masked.fa.gz` | 3.3 MB          | chr19+chr22 from Ensembl GRCh38 primary assembly; everything outside protein-coding-gene exons hard-masked to `N`.                                                                                    |
+| `Homo_sapiens.GRCh38.111_chr19_22.pc.gtf.gz`        | 1.6 MB          | chr19+chr22 from Ensembl 111 GTF, subset to `gene_biotype "protein_coding"`. Attribute column trimmed to `gene_id`, `transcript_id`, `gene_biotype`, `gene_name`, `transcript_biotype`.               |
+| `bams/SRX1178088{5,6,7,8}.chr19_22.ds50.bam`        | 1.0-1.5 MB each | Four Ribo-seq samples from GSE182201, STAR-aligned to GRCh38, filtered to chr19+chr22, downsampled to 50% with `samtools view -bs`, then filtered to reads overlapping protein-coding-gene intervals. |
+| `bams/*.bai`                                        | <90 KB each     | BAM indexes.                                                                                                                                                                                          |
 
 Total: ~11 MB across 10 files.
 

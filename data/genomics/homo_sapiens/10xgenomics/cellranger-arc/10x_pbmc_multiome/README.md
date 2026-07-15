@@ -13,7 +13,7 @@ curl -O https://s3-us-west-2.amazonaws.com/10x.files/samples/cell-arc/2.0.0/10k_
 curl -O https://cf.10xgenomics.com/samples/cell-arc/2.0.0/10k_PBMC_Multiome_nextgem_Chromium_X/10k_PBMC_Multiome_nextgem_Chromium_X_library.csv
 ```
 
-## Extracting reads aligned to chr21 and subsampling 
+## Extracting reads aligned to chr21 and subsampling
 
 ```bash
 CHR_NAME="chr21"

@@ -11,6 +11,7 @@ input_filename = None
 ```
 
 ## Running from nextflow
+
 The parameters are:
 
 ```python
@@ -49,4 +50,3 @@ if artifact_dir is not None:
     with open(f"{artifact_dir}/artifact.txt", 'w') as f:
         f.write("Hello World!\n")
 ```
-

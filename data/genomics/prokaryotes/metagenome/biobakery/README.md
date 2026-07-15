@@ -9,12 +9,12 @@ Built from `mpa_vJan25_CHOCOPhlAnSGB_202503` (produced 2026-04-30) by randomly s
 per kingdom (Bacteria, Archaea, Eukaryota) and keeping up to 200 markers per SGB, then building
 a Bowtie2 large index from the resulting FASTA.
 
-| Metric | Value |
-|--------|-------|
-| Kingdoms | Bacteria, Archaea, Eukaryota |
-| SGBs per kingdom | 10 (30 total) |
-| Max markers per SGB | 200 (6,000 total) |
-| Archive size | ~14 MB |
+| Metric              | Value                        |
+| ------------------- | ---------------------------- |
+| Kingdoms            | Bacteria, Archaea, Eukaryota |
+| SGBs per kingdom    | 10 (30 total)                |
+| Max markers per SGB | 200 (6,000 total)            |
+| Archive size        | ~14 MB                       |
 
 Files:
 

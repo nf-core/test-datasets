@@ -6,10 +6,10 @@ Gene Expression libraries were generated as described in the GEM-X Universal 3' 
 
 Paired-end, dual indexing:
 
-* 28 cycles Read 1
-* 10 cycles i7
-* 10 cycles i5
-* 90 cycles Read 2
+- 28 cycles Read 1
+- 10 cycles i7
+- 10 cycles i5
+- 90 cycles Read 2
 
 ## Download original input data
 

@@ -14,27 +14,32 @@
 - [pdb](#pdb)
 
 ## apbs
+
 This folder contains test datasets for electrostatics calculations performed using `APBS` and structures prepared with `PDB2PQR`.
 The `.pqr` files contain atomic charges and radii required for continuum electrostatics calculations.
 The `APBS` input file (`.in`) defines the physical parameters for solving the Poisson–Boltzmann equation.
 Test data files were sourced directly from the `apbs` [repository](https://github.com/Electrostatics/apbs/tree/main/examples/solv). These files are intended for testing modules related to:
+
 - Electrostatics calculations
 - Solvation energy estimation
 - Protein–ligand electrostatic analysis
 - Structural validation workflows involving electrostatic potentials
 
 ## cif
+
 The cif folder contains protein structure files in mmCIF (.cif) format.
 The macromolecular Crystallographic Information File (mmCIF) format is a standard text-based format developed by the Worldwide Protein Data Bank for representing three-dimensional macromolecular structure data. It is the modern replacement for the legacy PDB format and supports larger and more complex structures.
 mmCIF files typically contain atomic coordinates, chain and residue information, experimental metadata (e.g. method, resolution) and, structure annotations and cross-references.
 
 ## database
+
 - 'UP000005640_9606.fasta' is the reviewed human proteome of the [SWISS-PROT](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC102476/) and was downloaded from UniProt.
 - 'yeast_UPS_mini.fasta' is a minimal subset of the yeast UPS (Universal Proteomics Standard) dataset containing 10 protein sequences, created for efficient testing of DIA-NN spectral library generation.
-- 'protein_mini_with_cazymes.faa' is a small FASTA dataset containing 16 protein sequences, including a mix of carbohydrate-active enzymes (CAZymes) and non-CAZyme proteins. 
-The sequences were derived from the [CAALM](https://github.com/lczong/CAALM) (Carbohydrate Activity Annotation with protein Language Models) example dataset.
+- 'protein_mini_with_cazymes.faa' is a small FASTA dataset containing 16 protein sequences, including a mix of carbohydrate-active enzymes (CAZymes) and non-CAZyme proteins.
+  The sequences were derived from the [CAALM](https://github.com/lczong/CAALM) (Carbohydrate Activity Annotation with protein Language Models) example dataset.
 
 ## diann
+
 'diann_config.cfg' is a minimal DIA-NN configuration file containing basic parameters for in silico spectral library generation, including trypsin cleavage rules, peptide length constraints, and mass range settings.
 
 ## hhsuite
@@ -43,6 +48,7 @@ The [HH-suite](https://github.com/soedinglab/hh-suite) is an open-source softwar
 The hhsuite test-datasets folder contains a compressed archive of an HH-suite formatted mini test database (pfam.tar.gz).
 The mini database contains protein families PF00001.26 and PF00002.29, from pfam version 37.4, and can be searched by the HHblits and HHsearch tools.
 Such databases usually consist of the following six files, inside a folder, which all start with the name of the database, followed by different extensions:
+
 ```
 <dbname>_cs219.ffdata   packed file with column-state sequences for prefiltering
 <dbname>_cs219.ffindex  index file for packed column-state sequence file
@@ -51,12 +57,13 @@ Such databases usually consist of the following six files, inside a folder, whic
 <dbname>_hhm.ffdata     packed file with HHM-formatted HMMs
 <dbname>_hhm.ffindex    index file for packed HHM file
 ```
+
 More information regarding HH-suite format databases can be found [here](https://github.com/soedinglab/hh-suite/wiki#hh-suite-databases).
 
 ## interproscan
 
 The `interproscan` folder contains example InterProScan protein file inputs, test databases, and output files.
-InterProScan integrates multiple protein signature databases (e.g. Pfam, TIGRFAMs, Gene3D, SMART, CDD) to provide functional annotation of protein sequences. 
+InterProScan integrates multiple protein signature databases (e.g. Pfam, TIGRFAMs, Gene3D, SMART, CDD) to provide functional annotation of protein sequences.
 
 ## maxquant
 
@@ -81,6 +88,7 @@ write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.nam
 '''
 
 ## msspectra
+
 - 'PXD012083_e005640_II.raw' is a Thermo Fisher RAW file downloaded from [PRIDE](https://www.ebi.ac.uk/pride/) using the project ID PXD012083.
 - 'peakpicker_tutorial_1.mzML' is a mass spectrum file in the open mzML format. The file got retrieved from the [OpenMS](https://github.com/OpenMS/OpenMS) test data on GitHub
 
