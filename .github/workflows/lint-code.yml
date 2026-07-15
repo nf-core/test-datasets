@@ -1,8 +1,6 @@
 name: Run pre-commit hooks
 on:
-  push:
-    branches:
-      - "**" # runs on all branches
+  pull_request: # runs on PRs against any branch
 
 # Cancel if a newer run is started
 concurrency:
