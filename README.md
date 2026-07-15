@@ -1,39 +1,43 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# test-datasets: `plasmodiumdrugres`
 
-Test data to be used for automated testing with the nf-core pipelines
+This branch contains test data to be used for automated testing with the [nf-core/plasmodiumdrugres](https://github.com/nf-core/plasmodiumdrugres) pipeline.
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+## Content of this repository
 
-## Introduction
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+The pipeline analyzes *Plasmodium* drug resistance markers from allele tables or [Portable Microhaplotype Object (PMO)](https://plasmogenepi.github.io/PMO_Docs/) files, translating loci of interest to amino acid changes and estimating single-locus and multi-locus allele frequencies and prevalences.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+All files live under `testdata/`. This is all realistic, but simulated data. 
 
-## Documentation
+### Pipeline inputs
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
+- `testdata/example_PMO.json`: Example Portable Microhaplotype Object (PMO) file for the PMO entry point including simulated data.
+- `testdata/allele_table.tsv`: Microhaplotype allele table (specimen, target, allele, reads, sequence) for the allele-table entry point extracted from `example_PMO.json` (see extract_allele_table.nf module).
+- `testdata/panel_info.bed`: Panel information BED including insert reference sequences extracted from `example_PMO.json` (see extract_panel_info_to_bed.nf module).
+- `testdata/panel_info_no_ref.bed`: Panel information BED without reference sequences extracted from `example_PMO.json` (see extract_panel_info_to_bed.nf module).
+- `testdata/dummy_panel_info_fake_chroms.bed`: Panel information BED with synthetic chromosome names to test adding ref from whole genome using `insert_refseqs.fasta`.
+- `testdata/insert_refseqs.fasta`: Targeted insert/reference sequences matching panel target names.
+- `testdata/loci_of_interest.bed`: Drug-resistance loci of interest (amino acid positions) used for translation.
+- `testdata/loci_groups.tsv`: Multi-locus groups (e.g. `pfdhfr_pfdhps`, `crt`) for multi-locus frequency estimation.
+- `testdata/population_map.tsv`: Specimen-to-population assignment table  (see extract_population_map_from_pmo.nf module).
 
-1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
+### Intermediate and module test inputs
 
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+- `testdata/amino_acid_calls.tsv`: Amino acid call table produced from translation of loci of interest.
+- `testdata/loci_of_interest_mhaps.bed`: Loci-of-interest annotations linked to microhaplotype targets (for microhaplotype-based SLAF tests).
+- `testdata/mhaps_slaf.tsv`: Microhaplotype single-locus allele frequencies.
+- `testdata/aa_mlaf.tsv`: Amino acid multi-locus allele frequencies (MLAF).
+- `testdata/mlaf_pop1.tsv`: Multi-locus allele frequencies for population `pop1`.
+- `testdata/mlaf_pop2.tsv`: Multi-locus allele frequencies for population `pop2`.
+- `testdata/population_map_indexed.tsv`: Specimen-to-population assignment including population index IDs.
+- `testdata/population_map_with_spaces.tsv`: Population assignment table with spaces in population names.
+- `testdata/population_index_lookup.tsv`: Lookup table mapping population index IDs to population names.
+- `testdata/empty_population_index_lookup.tsv`: Empty population index lookup file for edge-case tests.
+- `testdata/allele_prev.tsv`: Expected allele prevalence estimates.
+- `testdata/aa_slaf.tsv`: Expected amino acid single-locus allele frequencies (SLAF).
+- `testdata/amino_acid_calls.aa_sl_from_ml.tsv`: Expected single-locus amino acid frequencies derived from multi-locus frequencies.
+- `testdata/sl_from_ml.tsv`: Expected single-locus frequencies derived from multi-locus allele frequencies.
+- `testdata/sl_from_mlaf_pop1.tsv`: Expected single-locus frequencies derived from MLAF for population `pop1`.
+- `testdata/sl_from_mlaf_pop2.tsv`: Expected single-locus frequencies derived from MLAF for population `pop2`.
+- `testdata/sl_pop1.tsv`: Expected single-locus allele frequencies and prevalences for population `pop1`.
+- `testdata/sl_pop2.tsv`: Expected single-locus allele frequencies and prevalences for population `pop2`.
