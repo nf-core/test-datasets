@@ -5,13 +5,16 @@ repos:
       - id: prettier
         additional_dependencies:
           - prettier@3.9.5
+        files: "\\.md$"
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
       - id: trailing-whitespace
         args:
           - --markdown-linebreak-ext=md
+        files: "\\.md$"
       - id: end-of-file-fixer
+        files: "\\.md$"
   - repo: local
     hooks:
       - id: prevent-file-deletion
