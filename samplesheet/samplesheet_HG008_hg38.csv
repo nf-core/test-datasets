@@ -1,0 +1,5 @@
+id,test_vcf,caller,subsample,missing_genotypes
+test12,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/HG008_edv_AF_recalibration.result.PASS_chr21.vcf.gz,haplotypecaller,,
+test13,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/0201_HG008_HiFi_DeepSomatic_v1.6.0_model354_somaticOnly_chr21.vcf.gz,deepsomatic,,
+test14,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/dragen_4.2.4_HG008-mosaic_tumor.hard-filtered_chr21.vcf.gz,dragen,"HG008-T-mosaic",
+test15,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/somatic/HG008-T--HG008-N.snv.strelka2_chr21.vcf.gz,strelka2,'HG008-T',true
