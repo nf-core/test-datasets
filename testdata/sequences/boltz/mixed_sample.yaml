@@ -1,0 +1,26 @@
+version: 1
+sequences:
+- protein:
+    id:
+    - A
+    - B
+    sequence: GSAGEDVGAPPDHLWVHQEGIYRDEYQRTWVAVVEEETSFLRARVQQIQVPLGDAARPSHLLTSQLPLMWQLYPEERYMDNNSRLWQIQHHLMVRGVQELLLKLLPDD
+    modifications:
+    - position: 2
+      ccd: SEP
+    msa: mixed_sample_0.csv
+- rna:
+    id: C
+    sequence: AUCGAUCGAUCGAUCG
+- protein:
+    id: D
+    sequence: MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG
+    msa: mixed_sample_2.csv
+constraints:
+- contact:
+    token1:
+    - A
+    - 1
+    token2:
+    - C
+    - 1
