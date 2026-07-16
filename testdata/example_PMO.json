@@ -1,1246 +1,1251 @@
 {
-    "pmo_header": {
-        "creation_date": "2026-03-11",
-        "generation_method": {
-            "program_name": "elucidator combingallintopmojson",
-            "program_version": "1.1.1"
-        },
-        "pmo_version": "v1.0.0"
+  "pmo_header": {
+    "creation_date": "2026-03-11",
+    "generation_method": {
+      "program_name": "elucidator combingallintopmojson",
+      "program_version": "1.1.1"
     },
-    "panel_info": [
+    "pmo_version": "v1.0.0"
+  },
+  "panel_info": [
+    {
+      "panel_name": "ReducedMAD4HATTER",
+      "reactions": [
         {
-            "panel_name": "ReducedMAD4HATTER",
-            "reactions": [
+          "reaction_name": "full",
+          "panel_targets": [0, 1, 2, 3, 4, 5]
+        }
+      ]
+    }
+  ],
+  "target_info": [
+    {
+      "forward_primer": {
+        "location": {
+          "chrom": "Pf3D7_13_v3",
+          "end": 1725493,
+          "genome_id": 0,
+          "start": 1725463,
+          "strand": "+"
+        },
+        "seq": "CATACACCTCAGTTTCAAATAAAGCCTTAT"
+      },
+      "gene_name": "PF3D7_1343700",
+      "insert_location": {
+        "chrom": "Pf3D7_13_v3",
+        "end": 1725694,
+        "genome_id": 0,
+        "ref_seq": "AATCATAGTTATTACCACCAAAAACGTATAAGAAATTATTCAATACAGCACTTCCAAAATAAGCTTTTTTGGTAGACATAGGTGTACACATACGCCAGCATTGTTGACTAATATCTAATAATTCCATCGAATTTAAATATTCTACACCATCAAATCCACCTATACAAAATACTAATGGGAATGGTAAAAATTTAATACCAT",
+        "start": 1725493,
+        "strand": "+"
+      },
+      "reverse_primer": {
+        "location": {
+          "chrom": "Pf3D7_13_v3",
+          "end": 1725493,
+          "genome_id": 0,
+          "start": 1725463,
+          "strand": "+"
+        },
+        "seq": "GCCTTGTTGAAAGAAGCAGAATTTT"
+      },
+      "target_name": "Pf3D7_13_v3-1725493-1725694"
+    },
+    {
+      "forward_primer": {
+        "location": {
+          "chrom": "Pf3D7_08_v3",
+          "end": 549609,
+          "genome_id": 0,
+          "start": 549582,
+          "strand": "+"
+        },
+        "seq": "CAGATGGAGGTATTTTTGTTGAACCTA"
+      },
+      "gene_name": "PF3D7_0810800",
+      "insert_location": {
+        "chrom": "Pf3D7_08_v3",
+        "end": 549776,
+        "genome_id": 0,
+        "ref_seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTCTGGTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA",
+        "start": 549609,
+        "strand": "+"
+      },
+      "reverse_primer": {
+        "location": {
+          "chrom": "Pf3D7_08_v3",
+          "end": 549609,
+          "genome_id": 0,
+          "start": 549582,
+          "strand": "+"
+        },
+        "seq": "TTGGTTTCGCATCACATTTAACAATTTTATT"
+      },
+      "target_name": "Pf3D7_08_v3-0549609-0549776"
+    },
+    {
+      "forward_primer": {
+        "location": {
+          "chrom": "Pf3D7_04_v3",
+          "end": 748128,
+          "genome_id": 0,
+          "start": 748104,
+          "strand": "+"
+        },
+        "seq": "CGACGTTTTCGATATTTATGCCAT"
+      },
+      "gene_name": "PF3D7_0417200",
+      "insert_location": {
+        "chrom": "Pf3D7_04_v3",
+        "end": 748326,
+        "genome_id": 0,
+        "ref_seq": "ATGTGCATGTTGTAAGGTTGAAAGCAAAAATGAGGGGAAAAAAAATGAGGTTTTTAATAACTACACATTTAGAGGTCTAGGAAATAAAGGAGTATTACCATGGAAATGTAATTCCCTAGATATGAAATATTTTTGTGCAGTTACAACATATGTGAATGAATCAAAATATGAAAAATTGAAATATAAGAGATGTAAATA",
+        "start": 748128,
+        "strand": "+"
+      },
+      "reverse_primer": {
+        "location": {
+          "chrom": "Pf3D7_04_v3",
+          "end": 748128,
+          "genome_id": 0,
+          "start": 748104,
+          "strand": "+"
+        },
+        "seq": "TCATTTACATTATCCACAGTTTCTTTGTTTAAA"
+      },
+      "target_name": "Pf3D7_04_v3-0748128-0748326"
+    },
+    {
+      "forward_primer": {
+        "location": {
+          "chrom": "Pf3D7_07_v3",
+          "end": 403499,
+          "genome_id": 0,
+          "start": 403478,
+          "strand": "+"
+        },
+        "seq": "GACCTTAACAGATGGCTCACG"
+      },
+      "gene_name": "PF3D7_0709000",
+      "insert_location": {
+        "chrom": "Pf3D7_07_v3",
+        "end": 403683,
+        "genome_id": 0,
+        "ref_seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA",
+        "start": 403499,
+        "strand": "+"
+      },
+      "reverse_primer": {
+        "location": {
+          "chrom": "Pf3D7_07_v3",
+          "end": 403499,
+          "genome_id": 0,
+          "start": 403478,
+          "strand": "+"
+        },
+        "seq": "AAAGAACATAATCATACAAATAAAGTTGTGAGT"
+      },
+      "target_name": "Pf3D7_07_v3-0403499-0403683"
+    },
+    {
+      "forward_primer": {
+        "location": {
+          "chrom": "Pf3D7_04_v3",
+          "end": 748406,
+          "genome_id": 0,
+          "start": 748373,
+          "strand": "+"
+        },
+        "seq": "AAAAATTACAAAATGTTGTAGTTATGGGAAGAA"
+      },
+      "gene_name": "PF3D7_0417200",
+      "insert_location": {
+        "chrom": "Pf3D7_04_v3",
+        "end": 748581,
+        "genome_id": 0,
+        "ref_seq": "CAAGCTGGGAAAGCATTCCAAAAAAATTTAAACCTTTAAGCAATAGGATAAATGTTATATTGTCTAGAACCTTAAAAAAAGAAGATTTTGATGAAGATGTTTATATCATTAACAAAGTTGAAGATCTAATAGTTTTACTTGGGAAATTAAATTACTATAAATGTTTTATTATAGG",
+        "start": 748406,
+        "strand": "+"
+      },
+      "reverse_primer": {
+        "location": {
+          "chrom": "Pf3D7_04_v3",
+          "end": 748406,
+          "genome_id": 0,
+          "start": 748373,
+          "strand": "+"
+        },
+        "seq": "TCTAAAAATTCTTGATAAACAACGGAACCT"
+      },
+      "target_name": "Pf3D7_04_v3-0748406-0748581"
+    },
+    {
+      "forward_primer": {
+        "location": {
+          "chrom": "Pf3D7_07_v3",
+          "end": 403507,
+          "genome_id": 0,
+          "start": 403486,
+          "strand": "+"
+        },
+        "seq": "CAGATGGCTCACGTTTAGGTG"
+      },
+      "gene_name": "PF3D7_0709000",
+      "insert_location": {
+        "chrom": "Pf3D7_07_v3",
+        "end": 403717,
+        "genome_id": 0,
+        "ref_seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA",
+        "start": 403507,
+        "strand": "+"
+      },
+      "reverse_primer": {
+        "location": {
+          "chrom": "Pf3D7_07_v3",
+          "end": 403507,
+          "genome_id": 0,
+          "start": 403486,
+          "strand": "+"
+        },
+        "seq": "TTCCCTTTTTATTTCCAAATAAGGAATAAACAA"
+      },
+      "target_name": "Pf3D7_07_v3-0403507-0403717"
+    }
+  ],
+  "representative_microhaplotypes": {
+    "targets": [
+      {
+        "mhap_location": {
+          "chrom": "Pf3D7_04_v3",
+          "end": 748326,
+          "genome_id": 0,
+          "start": 748128,
+          "strand": "+"
+        },
+        "microhaplotypes": [
+          {
+            "seq": "ATGTGCATGTTGTAAGGTTGAAAGCAAAAATGAGGGGAAAAAAAATGAGGTTTTTAATAACTACACATTTAGAGGTCTAGGAAATAAAGGAGTATTACCATGGAAATGTATTTCCCTAGATATGAAATATTTTCGTGCAGTTACAACATATGTGAATGAATCAAAATATGAAAAATTGAAATATAAGAGATGTAAATA"
+          },
+          {
+            "seq": "ATGTGCATGTTGTAAGGTTGAAAGCAAAAATGAGGGGAAAAAAAATGAGGTTTTTAATAACTACACATTTAGAGGTCTAGGAAATAAAGGAGTATTACCATGGAAATGTAATTCCCTAGATATGAAATATTTTCGTGCAGTTACAACATATGTGAATGAATCAAAATATGAAAAATTGAAATATAAGAGATGTAAATA"
+          }
+        ],
+        "target_id": 2
+      },
+      {
+        "mhap_location": {
+          "chrom": "Pf3D7_04_v3",
+          "end": 748581,
+          "genome_id": 0,
+          "start": 748406,
+          "strand": "+"
+        },
+        "microhaplotypes": [
+          {
+            "seq": "CAAACTGGGAAAGCATTCCAAAAAAATTTAAACCTTTAAGCAATAGGATAAATGTTATATTGTCTAGAACCTTAAAAAAAGAAGATTTTGATGAAGATGTTTATATCATTAACAAAGTTGAAGATCTAATAGTTTTACTTGGGAAATTAAATTACTATAAATGTTTTATTTTAGG"
+          },
+          {
+            "seq": "CAAACTGGGAAAGCATTCCAAAAAAATTTAAACCTTTAAGCAATAGGATAAATGTTATATTGTCTAGAACCTTAAAAAAAGAAGATTTTGATGAAGATGTTTATATCATTAACAAAGTTGAAGATCTAATAGTTTTACTTGGGAAATTAAATTACTATAAATGTTTTATTATAGG"
+          }
+        ],
+        "target_id": 4
+      },
+      {
+        "mhap_location": {
+          "chrom": "Pf3D7_07_v3",
+          "end": 403683,
+          "genome_id": 0,
+          "start": 403499,
+          "strand": "+"
+        },
+        "microhaplotypes": [
+          {
+            "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA"
+          },
+          {
+            "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTATCATCCGAA"
+          },
+          {
+            "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGATACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA"
+          },
+          {
+            "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA"
+          }
+        ],
+        "target_id": 3
+      },
+      {
+        "mhap_location": {
+          "chrom": "Pf3D7_07_v3",
+          "end": 403717,
+          "genome_id": 0,
+          "start": 403507,
+          "strand": "+"
+        },
+        "microhaplotypes": [
+          {
+            "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
+          },
+          {
+            "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTATCATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
+          },
+          {
+            "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGATACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
+          },
+          {
+            "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCTCAACTTTATTTGTATGATTATGTTCTTTA"
+          },
+          {
+            "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTTACAACTTTATTTGTATGATTATGTTCTTTA"
+          },
+          {
+            "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
+          }
+        ],
+        "target_id": 5
+      },
+      {
+        "mhap_location": {
+          "chrom": "Pf3D7_08_v3",
+          "end": 549776,
+          "genome_id": 0,
+          "start": 549609,
+          "strand": "+"
+        },
+        "microhaplotypes": [
+          {
+            "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTCTGGTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
+          },
+          {
+            "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTCTGCTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
+          },
+          {
+            "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCGCTGGTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
+          },
+          {
+            "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTTTGCTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
+          }
+        ],
+        "target_id": 1
+      },
+      {
+        "mhap_location": {
+          "chrom": "Pf3D7_13_v3",
+          "end": 1725694,
+          "genome_id": 0,
+          "start": 1725493,
+          "strand": "+"
+        },
+        "microhaplotypes": [
+          {
+            "seq": "AATCATAGTTATTACCACCAAAAACGTATAAGAAATTATTCAATACAGCACTTCCAAAATAAGCTTTTTTGGTAGACATAGGTGTACACATACGCCAGCATTGTTGACTAATATCTAATAATTCCATCGAATTTAAATATTCTACACCATCAAATCCACCTATACAAAATACTAATGGGAATGGTAAAAATTTAATACCAT"
+          },
+          {
+            "seq": "AATCATAGTTATTACCACCAAAAACGTGTAAGAAATTATTCAATACAGCACTTCCAAAATAAGCTTTTTTGGTAGACATAGGTGTACACATACGCCAGCATTGTTGACTAATATCTAATAATTCCATCGAATTTAAATATTCTACACCATCAAATCCACCTATACAAAATACTAATGGGAATGGTAAAAATTTAATACCAT"
+          }
+        ],
+        "target_id": 0
+      }
+    ]
+  },
+  "specimen_info": [
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201801-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2018-23",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201801-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2018-24",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201701-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2017-18",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201801-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2018-25",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Laos",
+      "collection_date": "201701-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "19.8563,102.4955",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Laos2017-07",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Laos",
+      "collection_date": "201701-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "19.8563,102.4955",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Laos2017-21",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201701-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2017-07",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201801-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2018-15",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201801-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2018-18",
+      "specimen_taxon_id": [5833]
+    },
+    {
+      "collection_country": "Vietnam",
+      "collection_date": "201801-01",
+      "host_taxon_id": 1758,
+      "lat_lon": "14.0583,108.2772",
+      "project_id": 0,
+      "samp_collect_device": "simulation",
+      "samp_store_loc": "Nick's computer",
+      "specimen_name": "Vietnam2018-21",
+      "specimen_taxon_id": [5833]
+    }
+  ],
+  "library_sample_info": [
+    {
+      "library_sample_name": "Vietnam2018-23",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 0
+    },
+    {
+      "library_sample_name": "Vietnam2018-24",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 1
+    },
+    {
+      "library_sample_name": "Vietnam2017-18",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 2
+    },
+    {
+      "library_sample_name": "Vietnam2018-25",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 3
+    },
+    {
+      "library_sample_name": "Laos2017-07",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 4
+    },
+    {
+      "library_sample_name": "Laos2017-21",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 5
+    },
+    {
+      "library_sample_name": "Vietnam2017-07",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 6
+    },
+    {
+      "library_sample_name": "Vietnam2018-15",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 7
+    },
+    {
+      "library_sample_name": "Vietnam2018-18",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 8
+    },
+    {
+      "library_sample_name": "Vietnam2018-21",
+      "panel_id": 0,
+      "sequencing_info_id": 0,
+      "specimen_id": 9
+    }
+  ],
+  "detected_microhaplotypes": [
+    {
+      "library_samples": [
+        {
+          "library_sample_id": 3,
+          "target_results": [
+            {
+              "mhaps": [
                 {
-                    "reaction_name": "full",
-                    "panel_targets": [0, 1, 2, 3, 4, 5]
+                  "mhap_id": 0,
+                  "reads": 5046
                 }
-            ]
-        }
-    ],
-    "target_info": [
-        {
-            "forward_primer": {
-                "location": {
-                    "chrom": "Pf3D7_13_v3",
-                    "end": 1725493,
-                    "genome_id": 0,
-                    "start": 1725463,
-                    "strand": "+"
-                },
-                "seq": "CATACACCTCAGTTTCAAATAAAGCCTTAT"
-            },
-            "gene_name": "PF3D7_1343700",
-            "insert_location": {
-                "chrom": "Pf3D7_13_v3",
-                "end": 1725694,
-                "genome_id": 0,
-                "ref_seq": "AATCATAGTTATTACCACCAAAAACGTATAAGAAATTATTCAATACAGCACTTCCAAAATAAGCTTTTTTGGTAGACATAGGTGTACACATACGCCAGCATTGTTGACTAATATCTAATAATTCCATCGAATTTAAATATTCTACACCATCAAATCCACCTATACAAAATACTAATGGGAATGGTAAAAATTTAATACCAT",
-                "start": 1725493,
-                "strand": "+"
-            },
-            "reverse_primer": {
-                "location": {
-                    "chrom": "Pf3D7_13_v3",
-                    "end": 1725493,
-                    "genome_id": 0,
-                    "start": 1725463,
-                    "strand": "+"
-                },
-                "seq": "GCCTTGTTGAAAGAAGCAGAATTTT"
-            },
-            "target_name": "Pf3D7_13_v3-1725493-1725694"
-        },
-        {
-            "forward_primer": {
-                "location": {
-                    "chrom": "Pf3D7_08_v3",
-                    "end": 549609,
-                    "genome_id": 0,
-                    "start": 549582,
-                    "strand": "+"
-                },
-                "seq": "CAGATGGAGGTATTTTTGTTGAACCTA"
-            },
-            "gene_name": "PF3D7_0810800",
-            "insert_location": {
-                "chrom": "Pf3D7_08_v3",
-                "end": 549776,
-                "genome_id": 0,
-                "ref_seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTCTGGTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA",
-                "start": 549609,
-                "strand": "+"
-            },
-            "reverse_primer": {
-                "location": {
-                    "chrom": "Pf3D7_08_v3",
-                    "end": 549609,
-                    "genome_id": 0,
-                    "start": 549582,
-                    "strand": "+"
-                },
-                "seq": "TTGGTTTCGCATCACATTTAACAATTTTATT"
-            },
-            "target_name": "Pf3D7_08_v3-0549609-0549776"
-        },
-        {
-            "forward_primer": {
-                "location": {
-                    "chrom": "Pf3D7_04_v3",
-                    "end": 748128,
-                    "genome_id": 0,
-                    "start": 748104,
-                    "strand": "+"
-                },
-                "seq": "CGACGTTTTCGATATTTATGCCAT"
-            },
-            "gene_name": "PF3D7_0417200",
-            "insert_location": {
-                "chrom": "Pf3D7_04_v3",
-                "end": 748326,
-                "genome_id": 0,
-                "ref_seq": "ATGTGCATGTTGTAAGGTTGAAAGCAAAAATGAGGGGAAAAAAAATGAGGTTTTTAATAACTACACATTTAGAGGTCTAGGAAATAAAGGAGTATTACCATGGAAATGTAATTCCCTAGATATGAAATATTTTTGTGCAGTTACAACATATGTGAATGAATCAAAATATGAAAAATTGAAATATAAGAGATGTAAATA",
-                "start": 748128,
-                "strand": "+"
-            },
-            "reverse_primer": {
-                "location": {
-                    "chrom": "Pf3D7_04_v3",
-                    "end": 748128,
-                    "genome_id": 0,
-                    "start": 748104,
-                    "strand": "+"
-                },
-                "seq": "TCATTTACATTATCCACAGTTTCTTTGTTTAAA"
-            },
-            "target_name": "Pf3D7_04_v3-0748128-0748326"
-        },
-        {
-            "forward_primer": {
-                "location": {
-                    "chrom": "Pf3D7_07_v3",
-                    "end": 403499,
-                    "genome_id": 0,
-                    "start": 403478,
-                    "strand": "+"
-                },
-                "seq": "GACCTTAACAGATGGCTCACG"
-            },
-            "gene_name": "PF3D7_0709000",
-            "insert_location": {
-                "chrom": "Pf3D7_07_v3",
-                "end": 403683,
-                "genome_id": 0,
-                "ref_seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA",
-                "start": 403499,
-                "strand": "+"
-            },
-            "reverse_primer": {
-                "location": {
-                    "chrom": "Pf3D7_07_v3",
-                    "end": 403499,
-                    "genome_id": 0,
-                    "start": 403478,
-                    "strand": "+"
-                },
-                "seq": "AAAGAACATAATCATACAAATAAAGTTGTGAGT"
-            },
-            "target_name": "Pf3D7_07_v3-0403499-0403683"
-        },
-        {
-            "forward_primer": {
-                "location": {
-                    "chrom": "Pf3D7_04_v3",
-                    "end": 748406,
-                    "genome_id": 0,
-                    "start": 748373,
-                    "strand": "+"
-                },
-                "seq": "AAAAATTACAAAATGTTGTAGTTATGGGAAGAA"
-            },
-            "gene_name": "PF3D7_0417200",
-            "insert_location": {
-                "chrom": "Pf3D7_04_v3",
-                "end": 748581,
-                "genome_id": 0,
-                "ref_seq": "CAAGCTGGGAAAGCATTCCAAAAAAATTTAAACCTTTAAGCAATAGGATAAATGTTATATTGTCTAGAACCTTAAAAAAAGAAGATTTTGATGAAGATGTTTATATCATTAACAAAGTTGAAGATCTAATAGTTTTACTTGGGAAATTAAATTACTATAAATGTTTTATTATAGG",
-                "start": 748406,
-                "strand": "+"
-            },
-            "reverse_primer": {
-                "location": {
-                    "chrom": "Pf3D7_04_v3",
-                    "end": 748406,
-                    "genome_id": 0,
-                    "start": 748373,
-                    "strand": "+"
-                },
-                "seq": "TCTAAAAATTCTTGATAAACAACGGAACCT"
-            },
-            "target_name": "Pf3D7_04_v3-0748406-0748581"
-        },
-        {
-            "forward_primer": {
-                "location": {
-                    "chrom": "Pf3D7_07_v3",
-                    "end": 403507,
-                    "genome_id": 0,
-                    "start": 403486,
-                    "strand": "+"
-                },
-                "seq": "CAGATGGCTCACGTTTAGGTG"
-            },
-            "gene_name": "PF3D7_0709000",
-            "insert_location": {
-                "chrom": "Pf3D7_07_v3",
-                "end": 403717,
-                "genome_id": 0,
-                "ref_seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA",
-                "start": 403507,
-                "strand": "+"
-            },
-            "reverse_primer": {
-                "location": {
-                    "chrom": "Pf3D7_07_v3",
-                    "end": 403507,
-                    "genome_id": 0,
-                    "start": 403486,
-                    "strand": "+"
-                },
-                "seq": "TTCCCTTTTTATTTCCAAATAAGGAATAAACAA"
-            },
-            "target_name": "Pf3D7_07_v3-0403507-0403717"
-        }
-    ],
-    "representative_microhaplotypes": {
-        "targets": [
-            {
-                "mhap_location": {
-                    "chrom": "Pf3D7_04_v3",
-                    "end": 748326,
-                    "genome_id": 0,
-                    "start": 748128,
-                    "strand": "+"
-                },
-                "microhaplotypes": [
-                    {
-                        "seq": "ATGTGCATGTTGTAAGGTTGAAAGCAAAAATGAGGGGAAAAAAAATGAGGTTTTTAATAACTACACATTTAGAGGTCTAGGAAATAAAGGAGTATTACCATGGAAATGTATTTCCCTAGATATGAAATATTTTCGTGCAGTTACAACATATGTGAATGAATCAAAATATGAAAAATTGAAATATAAGAGATGTAAATA"
-                    },
-                    {
-                        "seq": "ATGTGCATGTTGTAAGGTTGAAAGCAAAAATGAGGGGAAAAAAAATGAGGTTTTTAATAACTACACATTTAGAGGTCTAGGAAATAAAGGAGTATTACCATGGAAATGTAATTCCCTAGATATGAAATATTTTCGTGCAGTTACAACATATGTGAATGAATCAAAATATGAAAAATTGAAATATAAGAGATGTAAATA"
-                    }
-                ],
-                "target_id": 2
+              ],
+              "mhaps_target_id": 5
             },
             {
-                "mhap_location": {
-                    "chrom": "Pf3D7_04_v3",
-                    "end": 748581,
-                    "genome_id": 0,
-                    "start": 748406,
-                    "strand": "+"
-                },
-                "microhaplotypes": [
-                    {
-                        "seq": "CAAACTGGGAAAGCATTCCAAAAAAATTTAAACCTTTAAGCAATAGGATAAATGTTATATTGTCTAGAACCTTAAAAAAAGAAGATTTTGATGAAGATGTTTATATCATTAACAAAGTTGAAGATCTAATAGTTTTACTTGGGAAATTAAATTACTATAAATGTTTTATTTTAGG"
-                    },
-                    {
-                        "seq": "CAAACTGGGAAAGCATTCCAAAAAAATTTAAACCTTTAAGCAATAGGATAAATGTTATATTGTCTAGAACCTTAAAAAAAGAAGATTTTGATGAAGATGTTTATATCATTAACAAAGTTGAAGATCTAATAGTTTTACTTGGGAAATTAAATTACTATAAATGTTTTATTATAGG"
-                    }
-                ],
-                "target_id": 4
+              "mhaps": [
+                {
+                  "mhap_id": 2,
+                  "reads": 5199
+                }
+              ],
+              "mhaps_target_id": 4
             },
             {
-                "mhap_location": {
-                    "chrom": "Pf3D7_07_v3",
-                    "end": 403683,
-                    "genome_id": 0,
-                    "start": 403499,
-                    "strand": "+"
-                },
-                "microhaplotypes": [
-                    {
-                        "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA"
-                    },
-                    {
-                        "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTATCATCCGAA"
-                    },
-                    {
-                        "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGATACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA"
-                    },
-                    {
-                        "seq": "TTTAGGTGGAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAA"
-                    }
-                ],
-                "target_id": 3
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4795
+                }
+              ],
+              "mhaps_target_id": 0
             },
             {
-                "mhap_location": {
-                    "chrom": "Pf3D7_07_v3",
-                    "end": 403717,
-                    "genome_id": 0,
-                    "start": 403507,
-                    "strand": "+"
-                },
-                "microhaplotypes": [
-                    {
-                        "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
-                    },
-                    {
-                        "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTATCATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
-                    },
-                    {
-                        "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGATACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
-                    },
-                    {
-                        "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCTCAACTTTATTTGTATGATTATGTTCTTTA"
-                    },
-                    {
-                        "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATTGAAACAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTTACAACTTTATTTGTATGATTATGTTCTTTA"
-                    },
-                    {
-                        "seq": "GAGGTTCTTGTCTTGGTAAATGTGCTCATGTGTTTAAACTTATTTTTAAAGAGATTAAGGATAATATTTTTATTTATATTTTAAGTATTATTTATTTAAGTGTATGTGTAATGAATAAAATTTTTGCTAAAAGAACTTTAAACAAAATTGGTAACTATAGTTTTGTAACATCCGAAACTCACAACTTTATTTGTATGATTATGTTCTTTA"
-                    }
-                ],
-                "target_id": 5
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5240
+                }
+              ],
+              "mhaps_target_id": 2
             },
             {
-                "mhap_location": {
-                    "chrom": "Pf3D7_08_v3",
-                    "end": 549776,
-                    "genome_id": 0,
-                    "start": 549609,
-                    "strand": "+"
-                },
-                "microhaplotypes": [
-                    {
-                        "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTCTGGTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
-                    },
-                    {
-                        "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTCTGCTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
-                    },
-                    {
-                        "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCGCTGGTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
-                    },
-                    {
-                        "seq": "AACGTGCTGTTCAAAGAATGTTTGAAATGATAAATGAAGGTGCTAGTGTTATAGATATAGGTGGAGAATCCTTTGCTCCTTTTGTTATACCTAATCCAAAAATTAGTGAAAGAGATTTAGTAGTACCTGTATTACAATTATTTCAAAAAGAATGGAATGATATAAAA"
-                    }
-                ],
-                "target_id": 1
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 5210
+                }
+              ],
+              "mhaps_target_id": 1
             },
             {
-                "mhap_location": {
-                    "chrom": "Pf3D7_13_v3",
-                    "end": 1725694,
-                    "genome_id": 0,
-                    "start": 1725493,
-                    "strand": "+"
-                },
-                "microhaplotypes": [
-                    {
-                        "seq": "AATCATAGTTATTACCACCAAAAACGTATAAGAAATTATTCAATACAGCACTTCCAAAATAAGCTTTTTTGGTAGACATAGGTGTACACATACGCCAGCATTGTTGACTAATATCTAATAATTCCATCGAATTTAAATATTCTACACCATCAAATCCACCTATACAAAATACTAATGGGAATGGTAAAAATTTAATACCAT"
-                    },
-                    {
-                        "seq": "AATCATAGTTATTACCACCAAAAACGTGTAAGAAATTATTCAATACAGCACTTCCAAAATAAGCTTTTTTGGTAGACATAGGTGTACACATACGCCAGCATTGTTGACTAATATCTAATAATTCCATCGAATTTAAATATTCTACACCATCAAATCCACCTATACAAAATACTAATGGGAATGGTAAAAATTTAATACCAT"
-                    }
-                ],
-                "target_id": 0
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5256
+                }
+              ],
+              "mhaps_target_id": 3
             }
-        ]
-    },
-    "specimen_info": [
-        {
-            "collection_country": "Vietnam",
-            "collection_date": "201801-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2018-23",
-            "specimen_taxon_id": [5833]
+          ]
         },
         {
-            "collection_country": "Vietnam",
-            "collection_date": "201801-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2018-24",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Vietnam",
-            "collection_date": "201701-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2017-18",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Vietnam",
-            "collection_date": "201801-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2018-25",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Laos",
-            "collection_date": "201701-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "19.8563,102.4955",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Laos2017-07",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Laos",
-            "collection_date": "201701-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "19.8563,102.4955",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Laos2017-21",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Vietnam",
-            "collection_date": "201701-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2017-07",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Vietnam",
-            "collection_date": "201801-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2018-15",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Vietnam",
-            "collection_date": "201801-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2018-18",
-            "specimen_taxon_id": [5833]
-        },
-        {
-            "collection_country": "Vietnam",
-            "collection_date": "201801-01",
-            "host_taxon_id": 1758,
-            "lat_lon": "14.0583,108.2772",
-            "project_id": 0,
-            "samp_collect_device": "simulation",
-            "samp_store_loc": "Nick's computer",
-            "specimen_name": "Vietnam2018-21",
-            "specimen_taxon_id": [5833]
-        }
-    ],
-    "library_sample_info": [
-        {
-            "library_sample_name": "Vietnam2018-23",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 0
-        },
-        {
-            "library_sample_name": "Vietnam2018-24",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 1
-        },
-        {
-            "library_sample_name": "Vietnam2017-18",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 2
-        },
-        {
-            "library_sample_name": "Vietnam2018-25",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 3
-        },
-        {
-            "library_sample_name": "Laos2017-07",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 4
-        },
-        {
-            "library_sample_name": "Laos2017-21",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 5
-        },
-        {
-            "library_sample_name": "Vietnam2017-07",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 6
-        },
-        {
-            "library_sample_name": "Vietnam2018-15",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 7
-        },
-        {
-            "library_sample_name": "Vietnam2018-18",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 8
-        },
-        {
-            "library_sample_name": "Vietnam2018-21",
-            "panel_id": 0,
-            "sequencing_info_id": 0,
-            "specimen_id": 9
-        }
-    ],
-    "detected_microhaplotypes": [
-        {
-            "library_samples": [
+          "library_sample_id": 1,
+          "target_results": [
+            {
+              "mhaps": [
                 {
-                    "library_sample_id": 3,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5046
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 2,
-                                    "reads": 5199
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4795
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5240
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 5210
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5256
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 1,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5325
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5360
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4945
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4762
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4098
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5251
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 6,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4557
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4398
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4547
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 5074
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 3908
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 4607
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 0,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5859
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5311
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4408
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5115
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4551
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5277
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 9,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4635
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5177
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5061
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4490
-                                },
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 378
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 5327
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5245
-                                },
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 447
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 8,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5986
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5569
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5481
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4483
-                                },
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 596
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5073
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 3523
-                                },
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 502
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 2,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5765
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4121
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5788
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4592
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5747
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 4,
-                                    "reads": 5855
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 7,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5082
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4815
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4517
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5138
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 4307
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5787
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 4,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4717
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 2,
-                                    "reads": 4233
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5160
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 5449
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 4879
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4399
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
-                },
-                {
-                    "library_sample_id": 5,
-                    "target_results": [
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 4236
-                                }
-                            ],
-                            "mhaps_target_id": 5
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 4451
-                                },
-                                {
-                                    "mhap_id": 2,
-                                    "reads": 142
-                                }
-                            ],
-                            "mhaps_target_id": 4
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 4612
-                                },
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 157
-                                }
-                            ],
-                            "mhaps_target_id": 0
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 2,
-                                    "reads": 4655
-                                },
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 139
-                                }
-                            ],
-                            "mhaps_target_id": 2
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 1,
-                                    "reads": 5032
-                                },
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 172
-                                }
-                            ],
-                            "mhaps_target_id": 1
-                        },
-                        {
-                            "mhaps": [
-                                {
-                                    "mhap_id": 2,
-                                    "reads": 4368
-                                },
-                                {
-                                    "mhap_id": 0,
-                                    "reads": 137
-                                }
-                            ],
-                            "mhaps_target_id": 3
-                        }
-                    ]
+                  "mhap_id": 0,
+                  "reads": 5325
                 }
-            ],
-            "bioinformatics_run_id": 0
-        }
-    ],
-    "sequencing_info": [
-        {
-            "lib_kit": "TruSeq i5/i7 barcode primers",
-            "library_layout": "paired-end",
-            "library_selection": "RANDOM",
-            "library_source": "GENOMIC",
-            "library_strategy": "WGS",
-            "nucl_acid_date": "2024-01-10",
-            "pcr_cond": "simulated 23 rounds for density less than 6,000 and 45 rounds greater than 6,000",
-            "seq_center": "Nick computer",
-            "seq_date": "2024-01-10",
-            "seq_instrument_model": "NextSeq 550 simulated",
-            "seq_platform": "Illumina",
-            "sequencing_info_name": "ReducedMAD4HATTERSim"
-        }
-    ],
-    "project_info": [
-        {
-            "project_collector_chief_scientist": "Nick Hathaway",
-            "project_description": "Simulation of MAD4HATTER panel",
-            "project_name": "ReducedMAD4HATTERSim"
-        }
-    ],
-    "bioinformatics_methods_info": [
-        {
-            "methods": [
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
                 {
-                    "program": "SeekDeep extractorPairedEnd",
-                    "program_description": "Takes raw paired-end reads and demultiplexes on primers and does QC filtering",
-                    "program_version": "v2.6.5"
-                },
-                {
-                    "additional_argument": ["--illumina", "--qualThres 25,20", "--trimFront 1", "--trimBack 1"],
-                    "program": "SeekDeep qluster",
-                    "program_description": "Takes sequences per sample per target and clusters them",
-                    "program_version": "v2.6.5"
-                },
-                {
-                    "additional_argument": [
-                        "--strictErrors",
-                        "--illumina",
-                        "--removeOneSampOnlyOneOffHaps",
-                        "--excludeCommonlyLowFreqHaplotypes",
-                        "--excludeLowFreqOneOffs",
-                        "--rescueExcludedOneOffLowFreqHaplotypes"
-                    ],
-                    "program": "SeekDeep processClusters",
-                    "program_description": "Compare across samples for each target to create population level identifiers and do post artifact cleanup",
-                    "program_version": "v2.6.5"
+                  "mhap_id": 0,
+                  "reads": 5360
                 }
-            ]
-        }
-    ],
-    "bioinformatics_run_info": [
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4945
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4762
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4098
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5251
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
         {
-            "bioinformatics_methods_id": 0,
-            "bioinformatics_run_name": "ReducedMAD4HATTERSim-SeekDeep",
-            "run_date": "2025-01-11"
-        }
-    ],
-    "targeted_genomes": [
+          "library_sample_id": 6,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4557
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4398
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4547
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 5074
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 3908
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 4607
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
         {
-            "chromosomes": [
-                "Pf3D7_01_v3",
-                "Pf3D7_02_v3",
-                "Pf3D7_03_v3",
-                "Pf3D7_04_v3",
-                "Pf3D7_05_v3",
-                "Pf3D7_06_v3",
-                "Pf3D7_07_v3",
-                "Pf3D7_08_v3",
-                "Pf3D7_09_v3",
-                "Pf3D7_10_v3",
-                "Pf3D7_11_v3",
-                "Pf3D7_12_v3",
-                "Pf3D7_13_v3",
-                "Pf3D7_14_v3",
-                "Pf3D7_API_v3",
-                "Pf3D7_MIT_v3"
-            ],
-            "genome_version": "2020-09-01",
-            "gff_url": "https://plasmodb.org/common/downloads/release-65/Pfalciparum3D7/gff/data/PlasmoDB-65_Pfalciparum3D7.gff",
-            "name": "3D7",
-            "taxon_id": [5833],
-            "url": "https://plasmodb.org/common/downloads/release-65/Pfalciparum3D7/fasta/data/PlasmoDB-65_Pfalciparum3D7_Genome.fasta"
+          "library_sample_id": 0,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5859
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5311
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4408
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5115
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4551
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5277
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
+        {
+          "library_sample_id": 9,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4635
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5177
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5061
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4490
+                },
+                {
+                  "mhap_id": 1,
+                  "reads": 378
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 5327
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5245
+                },
+                {
+                  "mhap_id": 1,
+                  "reads": 447
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
+        {
+          "library_sample_id": 8,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5986
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5569
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5481
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4483
+                },
+                {
+                  "mhap_id": 1,
+                  "reads": 596
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5073
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 3523
+                },
+                {
+                  "mhap_id": 1,
+                  "reads": 502
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
+        {
+          "library_sample_id": 2,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5765
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4121
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5788
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4592
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5747
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 4,
+                  "reads": 5855
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
+        {
+          "library_sample_id": 7,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5082
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4815
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4517
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5138
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 4307
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5787
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
+        {
+          "library_sample_id": 4,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4717
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 2,
+                  "reads": 4233
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5160
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 5449
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 4879
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4399
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
+        },
+        {
+          "library_sample_id": 5,
+          "target_results": [
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 0,
+                  "reads": 4236
+                }
+              ],
+              "mhaps_target_id": 5
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 4451
+                },
+                {
+                  "mhap_id": 2,
+                  "reads": 142
+                }
+              ],
+              "mhaps_target_id": 4
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 4612
+                },
+                {
+                  "mhap_id": 0,
+                  "reads": 157
+                }
+              ],
+              "mhaps_target_id": 0
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 2,
+                  "reads": 4655
+                },
+                {
+                  "mhap_id": 0,
+                  "reads": 139
+                }
+              ],
+              "mhaps_target_id": 2
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 1,
+                  "reads": 5032
+                },
+                {
+                  "mhap_id": 0,
+                  "reads": 172
+                }
+              ],
+              "mhaps_target_id": 1
+            },
+            {
+              "mhaps": [
+                {
+                  "mhap_id": 2,
+                  "reads": 4368
+                },
+                {
+                  "mhap_id": 0,
+                  "reads": 137
+                }
+              ],
+              "mhaps_target_id": 3
+            }
+          ]
         }
-    ],
-    "read_counts_by_stage": []
+      ],
+      "bioinformatics_run_id": 0
+    }
+  ],
+  "sequencing_info": [
+    {
+      "lib_kit": "TruSeq i5/i7 barcode primers",
+      "library_layout": "paired-end",
+      "library_selection": "RANDOM",
+      "library_source": "GENOMIC",
+      "library_strategy": "WGS",
+      "nucl_acid_date": "2024-01-10",
+      "pcr_cond": "simulated 23 rounds for density less than 6,000 and 45 rounds greater than 6,000",
+      "seq_center": "Nick computer",
+      "seq_date": "2024-01-10",
+      "seq_instrument_model": "NextSeq 550 simulated",
+      "seq_platform": "Illumina",
+      "sequencing_info_name": "ReducedMAD4HATTERSim"
+    }
+  ],
+  "project_info": [
+    {
+      "project_collector_chief_scientist": "Nick Hathaway",
+      "project_description": "Simulation of MAD4HATTER panel",
+      "project_name": "ReducedMAD4HATTERSim"
+    }
+  ],
+  "bioinformatics_methods_info": [
+    {
+      "methods": [
+        {
+          "program": "SeekDeep extractorPairedEnd",
+          "program_description": "Takes raw paired-end reads and demultiplexes on primers and does QC filtering",
+          "program_version": "v2.6.5"
+        },
+        {
+          "additional_argument": [
+            "--illumina",
+            "--qualThres 25,20",
+            "--trimFront 1",
+            "--trimBack 1"
+          ],
+          "program": "SeekDeep qluster",
+          "program_description": "Takes sequences per sample per target and clusters them",
+          "program_version": "v2.6.5"
+        },
+        {
+          "additional_argument": [
+            "--strictErrors",
+            "--illumina",
+            "--removeOneSampOnlyOneOffHaps",
+            "--excludeCommonlyLowFreqHaplotypes",
+            "--excludeLowFreqOneOffs",
+            "--rescueExcludedOneOffLowFreqHaplotypes"
+          ],
+          "program": "SeekDeep processClusters",
+          "program_description": "Compare across samples for each target to create population level identifiers and do post artifact cleanup",
+          "program_version": "v2.6.5"
+        }
+      ]
+    }
+  ],
+  "bioinformatics_run_info": [
+    {
+      "bioinformatics_methods_id": 0,
+      "bioinformatics_run_name": "ReducedMAD4HATTERSim-SeekDeep",
+      "run_date": "2025-01-11"
+    }
+  ],
+  "targeted_genomes": [
+    {
+      "chromosomes": [
+        "Pf3D7_01_v3",
+        "Pf3D7_02_v3",
+        "Pf3D7_03_v3",
+        "Pf3D7_04_v3",
+        "Pf3D7_05_v3",
+        "Pf3D7_06_v3",
+        "Pf3D7_07_v3",
+        "Pf3D7_08_v3",
+        "Pf3D7_09_v3",
+        "Pf3D7_10_v3",
+        "Pf3D7_11_v3",
+        "Pf3D7_12_v3",
+        "Pf3D7_13_v3",
+        "Pf3D7_14_v3",
+        "Pf3D7_API_v3",
+        "Pf3D7_MIT_v3"
+      ],
+      "genome_version": "2020-09-01",
+      "gff_url": "https://plasmodb.org/common/downloads/release-65/Pfalciparum3D7/gff/data/PlasmoDB-65_Pfalciparum3D7.gff",
+      "name": "3D7",
+      "taxon_id": [5833],
+      "url": "https://plasmodb.org/common/downloads/release-65/Pfalciparum3D7/fasta/data/PlasmoDB-65_Pfalciparum3D7_Genome.fasta"
+    }
+  ],
+  "read_counts_by_stage": []
 }
