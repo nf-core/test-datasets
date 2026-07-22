@@ -1,2 +1,2 @@
-sample,fasta,fastq_1,fastq_2,coverage,run_accession,assembler,assembler_version
+id,fasta,fastq_1,fastq_2,coverage,run_accession,assembler,assembler_version
 no_coverage_paired_reads,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/genome/genome.fna.gz,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fastq/test1_1.fastq.gz,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fastq/test1_2.fastq.gz,,ERR000001,SPAdes,3.15
