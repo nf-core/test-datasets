@@ -688,6 +688,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test2.yak: Yak kmer index of 1000 of maternal reads from the GIAB Ashkenazim trio [RM8392](https://www-s.nist.gov/srmors/view_detail.cfm?srm=8392). These reads were selected from D3_S1_L001_R{1,2}\_001.fastq.gz and D3_S1_L001_R{1,2}\_001.fastq.gz so that they map to `pacbio/fastq/test_hifi.fastq.gz`.
     - gridss:
       - test.gridss.vcf: First 500 lines of a somatic structural variant vcf file generated using `gridss`, suitable for testing gridds/somaticfilter.
+      - gridss.properties: GRIDSS configuration properties file, suitable for testing the `gridss` modules.
 
   - nanopore
     - bam
