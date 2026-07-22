@@ -1,4 +1,3 @@
 sample,input,output_path,checksum_md5
 Illumina_annotation,s3://ngi-igenomes/igenomes/PhiX/Illumina/RTA/Annotation/Archives/,s3://ngi-igenomes/igenomes/PhiX/Illumina/RTA/Annotation/,https://raw.githubusercontent.com/nf-core/test-datasets/datasync/test-data/Illumina_annotation_md5.tsv
-test_fastq,https://raw.githubusercontent.com/nf-core/test-datasets/datasync/test-data/test2_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/datasync/test-data/,https://raw.githubusercontent.com/nf-core/test-datasets/datasync/test-data/test2_1_fastq_md5.tsv
 benchmark_bed,gs://deepvariant/GIAB_v5q0/HG002_GRCh38_v5.0q_smvar.benchmark.bed,gs://deepvariant/GIAB_v5q0/,https://raw.githubusercontent.com/nf-core/test-datasets/datasync/test-data/bed_md5.tsv

@@ -1,2 +1,0 @@
-This file exists only in the fixture destination.
-If RCLONE_CHECK uses --one-way, this destination-only path should be ignored.
