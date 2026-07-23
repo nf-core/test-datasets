@@ -188,7 +188,7 @@ wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/533/775/GCF_015533775.1_AS
 
 Include human mitochondrial genome
 
-```bash 
+```bash
 curl 'https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=fasta&id=251831106&extrafeat=null&conwithfeat=on&hide-cdd=on'| gzip > NC_012920.1.fa.gz # H. sapiens mito
 ```
 
@@ -198,7 +198,7 @@ Unzip the files:
 gunzip *.gz
 ```
 
-Combine fastas together 
+Combine fastas together
 
 ```bash
 cat *.{fa,fna} > input-sequences.fna
@@ -248,7 +248,7 @@ Diamond Version 2.0.15
 wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip
 unzip taxdmp.zip
 
-## warning: large file! 
+## warning: large file!
 wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/prot.accession2taxid.FULL.gz
 
 ## warning: takes a long time!
@@ -379,7 +379,7 @@ FASTA files for use in database construction were identified based on Supp. Tabl
 We then used the AWK combined with the NCBI Datasets package (v14.7.0) to download the reference genomes and protein translations of each strain from the file.
 
 ```bash
-awk -F'\t' '{print $2}' meslier2022_supptab1.tsv | xargs -I '{}' datasets download genome accession {} --include genome,protein --filename meslier2022_fasta/{}.zip
+awk -F'\t' '{print $4}' meslier2022_supptab1.tsv | xargs -I '{}' datasets download genome accession {} --include genome,protein --filename meslier2022_fasta/{}.zip
 ```
 
 In this case I had one failure for assembly `GCA_000009225.1`, which has since been replaced with `GCA_931907645.1`, which was downloaded manually using the command above. A further five accessions have been suppressed with no replacement, and thus these were not included in the databases.
@@ -415,6 +415,7 @@ Download NCBI taxonomy files
 ```bash
 kraken2-build --download-taxonomy --db meslier2022/kraken2
 ```
+**Note:** if you get an rsync  error, use the --use-ftp option. If error persists, download manually from https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/
 
 Index all the FASTA files to the Kraken2 database
 
@@ -534,7 +535,7 @@ mkdir -p meslier2022/diamond
 
 Download and unpack the required taxonomy files.
 
-> ⚠️ The accession2taxid file is very large! 
+> ⚠️ The accession2taxid file is very large!
 
 ```bash
 wget ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdmp.zip
@@ -577,6 +578,35 @@ Run the build command using the saved Kraken2 `seqid2taxid.map` file from the co
 
 ```bash
 centrifuge-build -p 32 --conversion-table seqid2taxid.map --taxonomy-tree nodes.dmp --name-table names.dmp centrifuge_sequences.fna meslier2022/centrifuge/centrifuge
+```
+
+#### Centrifuger
+
+The following steps were performed used Centrifuger (v1.1.2).
+
+Make a working directory
+
+```bash
+mkdir -p meslier2022/centrifuger
+```
+
+Download and unpack the required taxonomy files
+
+```bash
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.zip
+unzip new_taxdump.zip
+```
+
+Combine all reference sequences into a single FASTA
+
+```bash
+cat meslier2022_fasta/ncbi_dataset/data/*/*.fna > centrifuger_sequences.fna
+```
+
+Run the build command using the saved Kraken2 `seqid2taxid.map` file from the corresponding section above
+
+```bash
+centrifuger-build -r centrifuger_sequences.fna -t 32 --conversion-table seqid2taxid.map --taxonomy-tree nodes.dmp --name-table names.dmp -o meslier2022/centrifuger/centrifuger
 ```
 
 #### Kaiju
@@ -978,7 +1008,7 @@ The `gms/metaval` workflow only verifies the classification results produced by 
 
 Each classifier must only be executed with a single database and the raw read files must be provided as `*.fastq.gz` files.
 
-This test requires two files: 
+This test requires two files:
 - `samplesheet_metaval.csv`
 - `database_metaval.csv`
 
