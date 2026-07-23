@@ -857,7 +857,10 @@ The earth sciences folder contain subfolders for different data formats encounte
   - gene_set_analysis:
     - mh.all.v2022.1.Mm.symbols.gmt hallmark gene sets, downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2022.1.Mm/mh.all.v2022.1.Mm.symbols.gmt) 5/1/2023
     - Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip Ensembl ID to gene symbol mapping in Broad's 'chip' format, suitable for passing to GSEA when using matrices keyed by Ensembl Gene ID. Downloaded from [MSigDB](https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations/mouse/Mouse_Ensembl_Gene_ID_MSigDB.v2022.1.Mm.chip) 5/1/2023
-    - shinyngs/: minimal synthetic GSEA-report-format enrichment tables (`{contrast_name}.{geneset_type}.gsea_report_for_{target|reference}.tsv`) for the SRP254919 contrasts and mh.all.v2022.1.Mm.symbols gene sets, used to test the `--enrichment_*` inputs of the shinyngs/app module
+    - shinyngs/treatment_mCherry_hND6_.mh.all.v2022.1.Mm.symbols.gsea_report_for_hND6.tsv synthetic GSEA-report enrichment table for the shinyngs/app module `--enrichment_*` test
+    - shinyngs/treatment_mCherry_hND6_.mh.all.v2022.1.Mm.symbols.gsea_report_for_mCherry.tsv synthetic GSEA-report enrichment table for the shinyngs/app module `--enrichment_*` test
+    - shinyngs/treatment_mCherry_hND6_sample_number.mh.all.v2022.1.Mm.symbols.gsea_report_for_hND6.tsv synthetic GSEA-report enrichment table for the shinyngs/app module `--enrichment_*` test
+    - shinyngs/treatment_mCherry_hND6_sample_number.mh.all.v2022.1.Mm.symbols.gsea_report_for_mCherry.tsv synthetic GSEA-report enrichment table for the shinyngs/app module `--enrichment_*` test
   - rna_velocity:
     - gencode.vM19.annotation.chr19.gtf genome annotation file in GTF format from nf-core/scrnaseq test datasets.
     - mm10_rmsk.chr19.gt repeat mask optional file generated following the instructions at http://velocyto.org/velocyto.py/tutorial/cli.html#preparation.
