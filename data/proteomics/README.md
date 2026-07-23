@@ -12,6 +12,7 @@
 - [msspectra](#msspectra)
 - [parameter](#parameter)
 - [pdb](#pdb)
+- [proteinfamilies](#proteinfamilies)
 
 ## apbs
 
@@ -99,3 +100,7 @@ write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.nam
 The pdb folder contains protein structure files in .PDB format.
 Files 1tim.pdb and 8tim.pdb are part of the example datasets used in the [foldseek tool](https://github.com/steineggerlab/foldseek).
 They describe chicken muscle proteins (engineered and breast respectively) and their structures were determined through X-ray diffraction.
+
+## proteinfamilies
+
+This folder contains an amino acid sequence set of 204 proteins (`mgnify_proteins.faa`) along with its respective clustering (`mgnify_proteins_trimmed_clustering.tsv`), through the `MMSeqs2` `linclust` algorithm, with some singletons removed, useful for family generation software.

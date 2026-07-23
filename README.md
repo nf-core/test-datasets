@@ -1107,6 +1107,9 @@ The earth sciences folder contain subfolders for different data formats encounte
 - pdb
   - 1tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Engineered)
   - 8tim.pdb: Triose phosphate isomerase, through X-ray diffraction (Chicken muscle - Breast)
+- proteinfamilies
+  - mgnify_proteins.faa: An amino acid fasta file subset of metagenomics derived sequences predicted through the `MGnify` assemply analysis pipeline. The original superset can be found in the relevant [FTP](https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/current_release/) server. The file contains 204 sequences, a size that allows family generation algorithms to execute fast, and also generate enough families to test.
+  - mgnify_proteins_trimmed_clustering.tsv: Initial clustering of `mgnifams_input.faa` sequences based on MMSeqs2 `linclust` algorithm, with many singletons trimmed off for lowering file size.
 
 ### spatialomics
 
