@@ -1,3 +1,2 @@
 sample,run_accession,instrument_platform,fastq_1,fastq_2,fasta
-ERR5766181,ERR5766181,ILLUMINA,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474937_ERR5766181_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/taxprofiler/data/fastq/ERX5474937_ERR5766181_2.fastq.gz,
 minigut,1,ILLUMINA,https://raw.githubusercontent.com/nf-core/test-datasets/mag/test_data/test_minigut_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/mag/test_data/test_minigut_R2.fastq.gz,
