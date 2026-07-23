@@ -17,3 +17,12 @@ nextflow run nf-core/differentialabundance -r  9a84f4bf1e581425c0fcb7edcec772998
 ## Other
 
 - `gprofiler2_mmusculus_random_example.tsv` is a minimal dataset provided by gprofiler2 for organism = mmusculus.
+
+## shinyngs enrichment
+
+Files under `shinyngs/` are minimal, synthetic GSEA-report-format enrichment tables used to exercise the `--enrichment_*` inputs of the `shinyngs/app` module. They follow the `{contrast_name}.{geneset_type}.gsea_report_for_{target|reference}.tsv` naming shinyngs expects, keyed to the `SRP254919.contrasts.csv` contrasts (target `hND6`, reference `mCherry`) and the `mh.all.v2022.1.Mm.symbols.gmt` gene sets. Only the columns and gene-set names are meaningful.
+
+- `treatment_mCherry_hND6_.mh.all.v2022.1.Mm.symbols.gsea_report_for_hND6.tsv` gene sets enriched toward the target (`hND6`) for the `treatment_mCherry_hND6_` contrast.
+- `treatment_mCherry_hND6_.mh.all.v2022.1.Mm.symbols.gsea_report_for_mCherry.tsv` gene sets enriched toward the reference (`mCherry`) for the `treatment_mCherry_hND6_` contrast.
+- `treatment_mCherry_hND6_sample_number.mh.all.v2022.1.Mm.symbols.gsea_report_for_hND6.tsv` gene sets enriched toward the target (`hND6`) for the `treatment_mCherry_hND6_sample_number` contrast.
+- `treatment_mCherry_hND6_sample_number.mh.all.v2022.1.Mm.symbols.gsea_report_for_mCherry.tsv` gene sets enriched toward the reference (`mCherry`) for the `treatment_mCherry_hND6_sample_number` contrast.
