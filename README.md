@@ -59,3 +59,4 @@ testdata/archaeal_duplicates.genomes.csv
 testdata/archaeal_duplicates.checkm2.tsv
 testdata/archaeal_duplicates.checkm.tsv
 
+* Subsequently, local_GCA_021654415.1 was removed from the `testdata/archaeal_duplicates.genomes.csv` to ensure certain test cases work better.
