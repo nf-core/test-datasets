@@ -17,3 +17,12 @@ nextflow run nf-core/differentialabundance -r  9a84f4bf1e581425c0fcb7edcec772998
 ## Other
 
 - `gprofiler2_mmusculus_random_example.tsv` is a minimal dataset provided by gprofiler2 for organism = mmusculus.
+
+## shinyngs enrichment
+
+Files under `shinyngs/` are minimal GSEA-report-format enrichment tables used to
+exercise the `--enrichment_*` inputs of the `shinyngs/app` module. They follow the
+`{contrast_name}.{geneset_type}.gsea_report_for_{target|reference}.tsv` naming that
+shinyngs expects, keyed to the `SRP254919.contrasts.csv` contrasts (target `hND6`,
+reference `mCherry`) and the `mh.all.v2022.1.Mm.symbols.gmt` gene sets. Values are
+synthetic; only the columns and gene-set names are meaningful.
