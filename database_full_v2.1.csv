@@ -1,7 +1,7 @@
 tool,db_name,db_params,db_type,db_path
 bracken,bracken-db,;-r 150,short,s3://nf-core-awsmegatests/taxprofiler/input/bracken.tar.gz
 centrifuge,centrifuge-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/centrifuge.tar.gz
-centrifuger,centrifuger-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/centrifuger.tar.gz
+centrifuger,centrifuger-db,,short,s3://nf-core-awsmegatests/taxprofiler/input/centrifuger_v1_1_2.tar.gz
 diamond,diamond-db1,,short,s3://nf-core-awsmegatests/taxprofiler/input/diamond_v2_1_24.dmnd
 diamond,diamond-db2,--long-reads,long,s3://nf-core-awsmegatests/taxprofiler/input/diamond_v2_1_24.dmnd
 diamond,diamond-db3,,short;long,s3://nf-core-awsmegatests/taxprofiler/input/diamond_v2_1_24.dmnd
