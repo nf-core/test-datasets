@@ -1,0 +1,26 @@
+NAME	GS<br> follow link to MSigDB	GS DETAILS	SIZE	ES	NES	NOM p-val	FDR q-val	FWER p-val	RANK AT MAX	LEADING EDGE
+HALLMARK_TNFA_SIGNALING_VIA_NFKB	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_TNFA_SIGNALING_VIA_NFKB	Details ...	50	0.25	1.1	0.001	0.005	0.01	100	tags=20%, list=100, signal=25%
+HALLMARK_HYPOXIA	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_HYPOXIA	Details ...	57	0.3	1.18	0.011	0.025	0.04	137	tags=23%, list=137, signal=28%
+HALLMARK_CHOLESTEROL_HOMEOSTASIS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_CHOLESTEROL_HOMEOSTASIS	Details ...	64	0.35	1.26	0.021	0.045	0.07	174	tags=26%, list=174, signal=31%
+HALLMARK_MITOTIC_SPINDLE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_MITOTIC_SPINDLE	Details ...	71	0.4	1.34	0.031	0.065	0.1	211	tags=29%, list=211, signal=34%
+HALLMARK_WNT_BETA_CATENIN_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_WNT_BETA_CATENIN_SIGNALING	Details ...	78	0.45	1.42	0.041	0.085	0.13	248	tags=32%, list=248, signal=37%
+HALLMARK_TGF_BETA_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_TGF_BETA_SIGNALING	Details ...	85	0.5	1.5	0.051	0.105	0.16	285	tags=35%, list=285, signal=40%
+HALLMARK_IL6_JAK_STAT3_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_IL6_JAK_STAT3_SIGNALING	Details ...	92	0.55	1.58	0.061	0.125	0.19	322	tags=38%, list=322, signal=43%
+HALLMARK_DNA_REPAIR	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_DNA_REPAIR	Details ...	99	0.6	1.66	0.001	0.145	0.22	359	tags=41%, list=359, signal=46%
+HALLMARK_G2M_CHECKPOINT	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_G2M_CHECKPOINT	Details ...	106	0.65	1.74	0.011	0.165	0.25	396	tags=44%, list=396, signal=49%
+HALLMARK_APOPTOSIS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_APOPTOSIS	Details ...	113	0.7	1.82	0.021	0.005	0.28	433	tags=47%, list=433, signal=52%
+HALLMARK_NOTCH_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_NOTCH_SIGNALING	Details ...	120	0.25	1.1	0.031	0.025	0.31	470	tags=50%, list=470, signal=55%
+HALLMARK_ADIPOGENESIS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_ADIPOGENESIS	Details ...	127	0.3	1.18	0.041	0.045	0.01	507	tags=53%, list=507, signal=58%
+HALLMARK_ESTROGEN_RESPONSE_EARLY	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_ESTROGEN_RESPONSE_EARLY	Details ...	134	0.35	1.26	0.051	0.065	0.04	544	tags=56%, list=544, signal=61%
+HALLMARK_ESTROGEN_RESPONSE_LATE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_ESTROGEN_RESPONSE_LATE	Details ...	141	0.4	1.34	0.061	0.085	0.07	581	tags=59%, list=581, signal=64%
+HALLMARK_ANDROGEN_RESPONSE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_ANDROGEN_RESPONSE	Details ...	148	0.45	1.42	0.001	0.105	0.1	618	tags=22%, list=618, signal=27%
+HALLMARK_MYOGENESIS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_MYOGENESIS	Details ...	155	0.5	1.5	0.011	0.125	0.13	655	tags=25%, list=655, signal=30%
+HALLMARK_PROTEIN_SECRETION	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_PROTEIN_SECRETION	Details ...	162	0.55	1.58	0.021	0.145	0.16	692	tags=28%, list=692, signal=33%
+HALLMARK_INTERFERON_ALPHA_RESPONSE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_INTERFERON_ALPHA_RESPONSE	Details ...	169	0.6	1.66	0.031	0.165	0.19	729	tags=31%, list=729, signal=36%
+HALLMARK_INTERFERON_GAMMA_RESPONSE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_INTERFERON_GAMMA_RESPONSE	Details ...	176	0.65	1.74	0.041	0.005	0.22	766	tags=34%, list=766, signal=39%
+HALLMARK_APICAL_JUNCTION	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_APICAL_JUNCTION	Details ...	183	0.7	1.82	0.051	0.025	0.25	803	tags=37%, list=803, signal=42%
+HALLMARK_APICAL_SURFACE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_APICAL_SURFACE	Details ...	190	0.25	1.1	0.061	0.045	0.28	840	tags=40%, list=840, signal=45%
+HALLMARK_HEDGEHOG_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_HEDGEHOG_SIGNALING	Details ...	197	0.3	1.18	0.001	0.065	0.31	877	tags=43%, list=877, signal=48%
+HALLMARK_COMPLEMENT	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_COMPLEMENT	Details ...	54	0.35	1.26	0.011	0.085	0.01	914	tags=46%, list=914, signal=51%
+HALLMARK_UNFOLDED_PROTEIN_RESPONSE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_UNFOLDED_PROTEIN_RESPONSE	Details ...	61	0.4	1.34	0.021	0.105	0.04	951	tags=49%, list=951, signal=54%
+HALLMARK_PI3K_AKT_MTOR_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_PI3K_AKT_MTOR_SIGNALING	Details ...	68	0.45	1.42	0.031	0.125	0.07	988	tags=52%, list=988, signal=57%
