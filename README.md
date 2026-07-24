@@ -53,10 +53,8 @@ samplesheets/archaeal_duplicate_genomes_per_species.csv
 
 testdata/archaeal_duplicates.index.sbt.zip
 
-* A genomeinfo csv plus CheckM, CheckM2 and GTDB-Tk files were created for the non species-representative from the official GTDB metadata
+* A genomeinfo csv (`archaeal_duplicates.genomes.csv`) -- that also includes a Prokka-generated GFF file -- plus CheckM, CheckM2 and GTDB-Tk files were created for the non species-representative from the official GTDB metadata. Note: Only six of the genomes were selected for `archaeal_duplicates.genomes.csv` to make sure species preference tests can be done.
 
 testdata/archaeal_duplicates.genomes.csv
 testdata/archaeal_duplicates.checkm2.tsv
 testdata/archaeal_duplicates.checkm.tsv
-
-* Subsequently, local_GCA_021654415.1 was removed from the `testdata/archaeal_duplicates.genomes.csv` to ensure certain test cases work better.
