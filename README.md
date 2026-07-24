@@ -134,16 +134,19 @@ wget https://zenodo.org/records/10045253/files/KOs_sketched_scaled_1000.sig.zip
 
 unzip KOs_sketched_scaled_1000.sig.zip
 
-# find the 30s ribosomal protein s8 for a nice essential gene to test with
+# find  ribosomal protein KOs; many start with K028 for a nice essential gene to test with
+# added in K00147, found when running minigut R1 using full database
+# see
 mkdir -p tmp/signatures
 
-cat SOURMASH-MANIFEST.csv | grep "K02994\|moltype" > tmp/SOURMASH-MANIFEST.csv
-tail -n+2 tmp/SOURMASH-MANIFEST.csv |cut -f 1 -d, |while read x ; do cp $x tmp/signatures/$(basename $x) ; done
+cat SOURMASH-MANIFEST.csv | grep "K028\|K00147\|moltype\|SOURMASH" > tmp/SOURMASH-MANIFEST.csv
+cat tmp/SOURMASH-MANIFEST.csv | tail -n+3 | cut -f1 -d, | while read x ; do cp $x tmp/$x ; done
 
 cd tmp
 
 zip ../KOs_sketched_scaled_1000_demo.sig.zip SOURMASH-MANIFEST.csv signatures/*
 cd ../../../../
+rm -r  data/database/fmhfunprofiler/signatures/ data/database/fmhfunprofiler/tmp/ data/database/fmhfunprofiler/SOURMASH-MANIFEST.csv
 ```
 
 
@@ -175,7 +178,7 @@ mkdir data/database/rgi/ && mv broadstreet-v4.0.1.tar.bz2 data/database/rgi/
 ```
 
 
-Reads from a plasmid harboring AMR genes were simulated from LR822058.1, saved to a file named plasmid.ga
+Reads from a plasmid harboring AMR genes were simulated from JF449446.1.fa
 
 ```
 # tmp.config
@@ -190,8 +193,8 @@ process {
 
 
 ```
-nextflow module run nf-core/wgsim --meta.id test_sample --fasta ~/GitHub/nf-core-funcprofiler/modules/nf-core/rgi/bwt/tests/plasmid.fa -config conf/tmp.config -profile docker
+ nextflow module run nf-core/wgsim --meta.id test_sample --fasta JF449446.1.fa  -config ../nf-core-funcprofiler/nextflow.config -config ../nf-core-funcprofiler/conf/tmp.config -profile docker
 
-cat ./results/test_sample_1.fastq | gzip > data/reads/LR822058.1.R1.gz
-cat ./results/test_sample_2.fastq | gzip > data/reads/LR822058.1.R2.gz
+cat ./results/test_sample_R1.fastq | gzip > data/reads/JF449446.1.R1.gz
+cat ./results/test_sample_R2.fastq | gzip > data/reads/JF449446.1.R2.gz
 ```
