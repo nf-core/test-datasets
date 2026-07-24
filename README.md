@@ -168,33 +168,3 @@ mkdir data/database/eggnog-mapper
 mv proteome.dmnd data/database/eggnog-mapper/
 
 ```
-
-## RGI
-
-```
-wget https://card.mcmaster.ca/download/0/broadstreet-v4.0.1.tar.bz2
-mkdir data/database/rgi/ && mv broadstreet-v4.0.1.tar.bz2 data/database/rgi/
-
-```
-
-
-Reads from a plasmid harboring AMR genes were simulated from JF449446.1.fa
-
-```
-# tmp.config
-process {
-    withName: WGSIM {
-        ext.args = "-N 100"
-        memory = "4GB"
-    }
-}
-
-```
-
-
-```
- nextflow module run nf-core/wgsim --meta.id test_sample --fasta JF449446.1.fa  -config ../nf-core-funcprofiler/nextflow.config -config ../nf-core-funcprofiler/conf/tmp.config -profile docker
-
-cat ./results/test_sample_R1.fastq | gzip > data/reads/JF449446.1.R1.gz
-cat ./results/test_sample_R2.fastq | gzip > data/reads/JF449446.1.R2.gz
-```
