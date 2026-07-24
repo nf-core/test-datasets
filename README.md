@@ -75,7 +75,28 @@ Which resulted in a last line of the log as
 
 And then the `test/` directory was tarred to create `minigut_cat.tar.gz`.
 
-### GTDB-Tk
+### geNomad
+
+`databases/genomad/genomad_db_subset_v1.9.tar.gz` is a reduced copy of the [official geNomad database v1.9](https://zenodo.org/records/14886553), the version `genomad download-database` fetches for geNomad 1.11.x. It keeps the same layout and file formats as the official database and contains 1,000 of the 227,918 marker profiles: 5.9 MB compressed, 14 MB unpacked. Marker-based scores and taxonomy are only meaningful for the sequences it was built for.
+
+The 1,000 markers are the ones matched by a small set of reference sequences: the _Bacteroides fragilis_ YCH46 genome (`NC_006347.1`) and short-read assemblies derived from it, plus the _Escherichia_ phage lambda genome (`NC_001416.1`) as a positive control for virus calling. The hits were collected from the `marker` column of `genomad annotate` runs against the full database, padding with a deterministic sample (seed 42) up to 1,000. Both complete genomes and fragmented assemblies were used because partial proteins match markers that full-length ones do not.
+
+Everything else was either subset accordingly (metadata table, taxonomy mapping, minimal marker set) or copied verbatim (ICTV taxdump, integrase database, hallmark lists):
+
+```bash
+## marker names -> MMseqs2 keys (MMseqs2 18.8cc5c)
+awk -F'\t' 'NR==FNR{m[$1];next} ($2 in m){print $1}' markers.txt genomad_db/genomad_db.lookup > keys.txt
+mmseqs createsubdb keys.txt genomad_db/genomad_db   out/genomad_db
+mmseqs createsubdb keys.txt genomad_db/genomad_db_h out/genomad_db_h
+
+## createsubdb symlinks .lookup/.source/_mapping/_taxonomy back to the source database,
+## so those are replaced by subset files; genomad_mini_db is kept as a relative symlink
+## to genomad_db with its own filtered index, exactly as in the official database
+
+tar czf genomad_db_subset_v1.9.tar.gz -C out genomad_db
+```
+
+### GTDB-Tk
 
 We have uploaded a copy of the official [GTDB-Tk mock database](https://data.gtdb.ecogenomic.org/releases/latest/auxillary_files/gtdbtk_package/mockup_db/) to this repository for use while testing mag and the nf-core GTDB modules - this significantly improves the run-time of tests as the GTDB server can be very slow.
 
