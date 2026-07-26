@@ -1,0 +1,49 @@
+{
+    "states": "2",
+    "topology": {
+        "1": [
+            "0"
+        ],
+        "2": [
+            "1"
+        ]
+    },
+    "marker": [
+        "H3K4me3"
+    ],
+    "coverage_marker": "",
+    "emission": [
+        [
+            {
+                "distribution": "NBI",
+                "parameters": {
+                    "p": "0.0035277855451515314",
+                    "r": "0.00073957122750165582"
+                }
+            }
+        ],
+        [
+            {
+                "distribution": "NBI",
+                "parameters": {
+                    "p": "0.0035350304820424773",
+                    "r": "0.00073983727633018163"
+                }
+            }
+        ]
+    ],
+    "initial_state_distribution": [
+        "0.5",
+        "0.5"
+    ],
+    "transition_matrix": [
+        [
+            "0",
+            "1"
+        ],
+        [
+            "1",
+            "0"
+        ]
+    ]
+}

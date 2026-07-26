@@ -1,0 +1,2 @@
+sample_id,replicate,epigenetic_mark,file_name,modality,paired_end,distribution
+kidney_P0,1,H3K4me3,https://raw.githubusercontent.com/nf-core/test-datasets/epigenomesegmentation/testdata/H3K4me3_mm10_kidney_chr12_reduced.bam,ChIP-seq,false,NBI

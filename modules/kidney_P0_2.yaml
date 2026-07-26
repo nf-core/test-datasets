@@ -1,0 +1,7 @@
+states: 2
+marker: 1
+marker_spec:
+  - name: H3K4me3
+    distribution: NBI
+data: [kidney_P0.tab]
+chr: [12]
