@@ -1,0 +1,1 @@
+H3K4me3	H3K4me3_mm10_kidney_chr12_reduced.nochr.bam	false

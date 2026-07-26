@@ -1,0 +1,7 @@
+states: 2
+coverage_marker: 1
+coverage_marker_spec:
+  - name: WGBS
+    distribution: BI
+coverage_data: [Forebrain_16.5_WGBS_binnedbedcounts.bed]
+chr: [12]
