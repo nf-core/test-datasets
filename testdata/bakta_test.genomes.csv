@@ -1,0 +1,8 @@
+accno,genome_fna
+GCA_002688505.1,https://github.com/nf-core/test-datasets/raw/magmap/testdata/GCA_002688505.1_ASM268850v1_genomic.fna.gz
+local_GCA_013329705.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCA_013329705.1.fna.gz
+local_GCA_023269755.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCA_023269755.1.fna.gz
+local_GCF_001315825.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_001315825.1.fna.gz
+local_GCF_002194565.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_002194565.1.fna.gz
+local_GCF_004323575.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_004323575.1.fna.gz
+local_GCF_032248915.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_032248915.1.fna.gz
