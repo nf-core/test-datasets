@@ -136,7 +136,7 @@ unzip KOs_sketched_scaled_1000.sig.zip
 
 # find  ribosomal protein KOs; many start with K028 for a nice essential gene to test with
 # added in K00147, found when running minigut R1 using full database
-# see
+# see https://github.com/KoslickiLab/fmh-funprofiler/tree/dbb016b8c3a6d2d55e565d39b179dc27a96a62ec#start-from-scratch
 mkdir -p tmp/signatures
 
 cat SOURMASH-MANIFEST.csv | grep "K028\|K00147\|moltype\|SOURMASH" > tmp/SOURMASH-MANIFEST.csv
