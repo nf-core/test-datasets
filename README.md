@@ -134,16 +134,19 @@ wget https://zenodo.org/records/10045253/files/KOs_sketched_scaled_1000.sig.zip
 
 unzip KOs_sketched_scaled_1000.sig.zip
 
-# find the 30s ribosomal protein s8 for a nice essential gene to test with
+# find  ribosomal protein KOs; many start with K028 for a nice essential gene to test with
+# added in K00147, found when running minigut R1 using full database
+# see https://github.com/KoslickiLab/fmh-funprofiler/tree/dbb016b8c3a6d2d55e565d39b179dc27a96a62ec#start-from-scratch
 mkdir -p tmp/signatures
 
-cat SOURMASH-MANIFEST.csv | grep "K02994\|moltype" > tmp/SOURMASH-MANIFEST.csv
-tail -n+2 tmp/SOURMASH-MANIFEST.csv |cut -f 1 -d, |while read x ; do cp $x tmp/signatures/$(basename $x) ; done
+cat SOURMASH-MANIFEST.csv | grep "K028\|K00147\|moltype\|SOURMASH" > tmp/SOURMASH-MANIFEST.csv
+cat tmp/SOURMASH-MANIFEST.csv | tail -n+3 | cut -f1 -d, | while read x ; do cp $x tmp/$x ; done
 
 cd tmp
 
 zip ../KOs_sketched_scaled_1000_demo.sig.zip SOURMASH-MANIFEST.csv signatures/*
 cd ../../../../
+rm -r  data/database/fmhfunprofiler/signatures/ data/database/fmhfunprofiler/tmp/ data/database/fmhfunprofiler/SOURMASH-MANIFEST.csv
 ```
 
 
@@ -163,16 +166,5 @@ wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomi
 podman run -v $PWD:$PWD quay.io/biocontainers/eggnog-mapper:2.1.13--pyhdfd78af_2 diamond makedb --in $PWD/proteome.fasta -d $PWD/proteome
 mkdir data/database/eggnog-mapper
 mv proteome.dmnd data/database/eggnog-mapper/
-
-```
-
-## RGI
-
-```
-wget https://card.mcmaster.ca/download/0/broadstreet-v4.0.1.tar.bz2
-mkdir data/database/rgi/ && mv broadstreet-v4.0.1.tar.bz2 data/database/rgi/
-
-
-
 
 ```
