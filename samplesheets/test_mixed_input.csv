@@ -1,5 +1,5 @@
 sample_id,name,path,path_2,ncbi_accession,ncbi_query,ncbi_query_max,ploidy,enabled,report_group_ids,ref_group_ids
-123456,E.coli,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/prokaryotes/escherichia_coli/illumina/SRR389222_sub1.fastq.gz,,,,,1,TRUE,all,e_coli_refs
+123456,E. coli,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/prokaryotes/escherichia_coli/illumina/SRR389222_sub1.fastq.gz,,,,,1,TRUE,all,e_coli_refs
 test_lf,L. fermentum,,,ERR16686288,,,1,TRUE,all,
 test_bf,B. fragilis,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fastq/test1_1.fastq.gz,https://github.com/nf-core/test-datasets/raw/refs/heads/modules/data/genomics/prokaryotes/bacteroides_fragilis/illumina/fastq/test1_2.fastq.gz,,,,1,TRUE,all,b_fragilis_refs
 test_mg,M. genitalium,,,,"(Mycoplasmoides genitalium[Organism]) AND (platform_illumina[Properties] AND strategy_wgs[Properties] OR strategy_wga[Properties] OR strategy_wcs[Properties] OR strategy_clone[Properties] OR strategy_finishing[Properties] OR strategy_validation[Properties])",1,1,TRUE,all,
