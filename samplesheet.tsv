@@ -1,2 +1,2 @@
-sample	fasta
-faecalibacterium_taiwanense	https://raw.githubusercontent.com/nf-core/test-datasets/bacmodel/testdata/faecalibacterium_taiwanense.fasta.gz
+sample	fasta	medium_gapseq	medium_gapseq_csv	medium_carveme	medium_carveme_tsv
+faecalibacterium_taiwanense	https://raw.githubusercontent.com/nf-core/test-datasets/bacmodel/testdata/faecalibacterium_taiwanense.fasta.gz			LB
