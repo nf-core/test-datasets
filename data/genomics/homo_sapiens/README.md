@@ -228,6 +228,21 @@ cat << EOF > GenomeSize.xml
 EOF
 ```
 
+Similarly, the GenomeSize.xml index for the entirety of chr22 (`homo_sapiens/genome/chr22/sequence/GenomeSize.xml`) was created accordingly:
+
+```bash
+stripped_seq=$(mktemp)
+tail -n +2 hg38.chr22.fasta | tr -d '\n' > $stripped_seq
+length=$(wc -c $stripped_seq | cut -f 1 -d ' ' )
+md5=$(md5sum $stripped_seq | cut -f 1 -d ' ' )
+
+cat << EOF > GenomeSize.xml
+<sequenceSizes genomeName="Homo Sapiens (NCBI GRCh38)">
+	<chromosome fileName="genome.fa" contigName="chr22" totalBases="${length}" build="GRCh38" isCircular="false" md5="${md5}" ploidy="2" species="Homo_sapiens" knownBases="${length}" type="Autosome" />
+</sequenceSizes>
+EOF
+```
+
 ### Genome map
 
 There is multiple type of genetic map depending on the softwares.
