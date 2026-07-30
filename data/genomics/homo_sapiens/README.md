@@ -229,6 +229,7 @@ EOF
 ```
 
 Similarly, the GenomeSize.xml index for the entirety of chr22 (`homo_sapiens/genome/chr22/sequence/GenomeSize.xml`) was created accordingly:
+
 ```bash
 stripped_seq=$(mktemp)
 tail -n +2 hg38.chr22.fasta | tr -d '\n' > $stripped_seq
