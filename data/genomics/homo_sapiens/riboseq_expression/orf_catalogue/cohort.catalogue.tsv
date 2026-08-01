@@ -1,5 +1,5 @@
-orf_id	chrom	start	end	strand	gene_id	transcript_id	orf_class	aa_length	called_by_ribotish	called_by_ribocode	called_by_ribotricer	called_by_rpbp	called_by_price	score_ribotish	score_ribocode	score_ribotricer	score_rpbp	score_price	n_samples	samples
-orf_00000001	chr20	100	160	+	g1	t1	smORF	20	1	0	0	0	0	0.01					1	sampleA
-orf_00000002	chr20	9000	9060	-	g5	t5	smORF	20	0	1	0	0	0		0.02				1	sampleB
-orf_00000003	chr20	2000	2900	+	g2	t2	canonical_cds	300	1	0	0	0	0	0.5					1	sampleA
-orf_00000004	chr20	50	125	+	g3	t3	smORF	25	1	0	0	0	0	0.3					1	sampleA
+orf_id	chrom	start	end	strand	gene_id	transcript_id	orf_class	aa_length	called_by_ribotish	called_by_ribocode	called_by_ribotricer	called_by_rpbp	called_by_price	score_ribotish	score_ribocode	score_ribotricer	score_rpbp	score_price	n_samples	samples	orf_type_native	is_smorf
+orf_00000001	chr20	100	160	+	g1	t1	uORF	20	1	0	0	0	0	0.01					1	sampleA	5'UTR	1
+orf_00000002	chr20	9000	9060	-	g5	t5	uORF	20	0	1	0	0	0		0.02				1	sampleB	uORF	1
+orf_00000003	chr20	2000	2900	+	g2	t2	canonical_cds	300	1	0	0	0	0	0.5					1	sampleA	Annotated	0
+orf_00000004	chr20	50	125	+	g3	t3	dORF	25	1	0	0	0	0	0.3					1	sampleA	3'UTR	1
