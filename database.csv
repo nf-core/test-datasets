@@ -12,4 +12,4 @@ humann_v4,demo_v4,humann_metaphlan,,https://github.com/nickp60/test-datasets/raw
 mifaser,GS-24-all,,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/mifaser/GS-24-all.tar.gz
 eggnogmapper,demo,eggnogmapper_db,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/eggnog-mapper/proteome.dmnd
 eggnogmapper,demo,eggnogmapper_data_dir,,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/eggnogmapper/eggnog.db
-diamond,demo,,,https://github.com/nickp60/test-datasets/raw/refs/heads/funcprofiler/data/database/eggnog-mapper/proteome.dmnd
+diamond,bfragilis,,,https://raw.githubusercontent.com/nf-core/test-datasets/funcprofiler/data/database/diamond/bfragilis_proteome.dmnd

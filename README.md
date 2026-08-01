@@ -168,3 +168,40 @@ mkdir data/database/eggnog-mapper
 mv proteome.dmnd data/database/eggnog-mapper/
 
 ```
+
+## Diamond
+
+All 4170 CDS translations from the *B. fragilis* record on the `modules` branch (NZ_CP069563.1, strain
+FDAARGOS_1225). B. fragilis is one of the two genomes behind the minigut read fixtures, so blastx gets
+34,551 hits over 15,376 reads of `test_minigut_R1.fastq.gz`; the SARS-CoV-2 proteome previously used
+here gave 1.
+
+The `.faa.gz` is kept for rebuilds, as `.dmnd` files are not portable across DIAMOND major versions.
+
+```
+wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/prokaryotes/bacteroides_fragilis/genome/genome.gbff.gz
+
+# pull the /translation qualifier out of every CDS feature
+python3 - <<'PY'
+import gzip, re
+with gzip.open("genome.gbff.gz", "rt") as fh:
+    text = fh.read()
+with open("bfragilis_proteome.faa", "w") as out:
+    for n, m in enumerate(re.finditer(r'\n     CDS  .*?(?=\n     \S|\nORIGIN)', text, re.S)):
+        blk = m.group(0)
+        t = re.search(r'/translation="([^"]*)"', blk, re.S)
+        if not t:
+            continue
+        pid = re.search(r'/protein_id="([^"]+)"', blk)
+        prod = re.search(r'/product="([^"]*)"', blk, re.S)
+        name = pid.group(1) if pid else "CDS_%d" % n
+        desc = re.sub(r'\s+', ' ', prod.group(1)) if prod else ""
+        seq = re.sub(r'\s+', '', t.group(1))
+        out.write(">%s %s\n%s\n" % (name, desc, seq))
+PY
+
+mkdir -p data/database/diamond
+podman run -v $PWD:$PWD quay.io/biocontainers/diamond:2.2.1--he361c42_0 diamond makedb --in $PWD/bfragilis_proteome.faa -d $PWD/bfragilis_proteome
+mv bfragilis_proteome.dmnd data/database/diamond/
+gzip -9 -c bfragilis_proteome.faa > data/database/diamond/bfragilis_proteome.faa.gz
+```
