@@ -1,3 +1,9 @@
 Class	Count
-smORF	3
 canonical_cds	1
+uORF	2
+uoORF	0
+dORF	1
+doORF	0
+intORF	0
+novel_u	0
+other	0
