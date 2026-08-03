@@ -166,7 +166,17 @@ wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomi
 podman run -v $PWD:$PWD quay.io/biocontainers/eggnog-mapper:2.1.13--pyhdfd78af_2 diamond makedb --in $PWD/proteome.fasta -d $PWD/proteome
 mkdir data/database/eggnog-mapper
 mv proteome.dmnd data/database/eggnog-mapper/
+```
 
+`emapper.py --data_dir` takes a directory, not a file, so the annotation database is shipped as a
+tarball with `eggnog.db` inside a top-level directory. The file is the same demo `eggnog.db` the
+nf-core/eggnogmapper module test uses.
+
+```
+mkdir eggnog_data_dir
+wget -P eggnog_data_dir https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/delete_me/eggnogmapper/eggnog.db
+tar czf data/database/eggnog-mapper/eggnog_data_dir.tar.gz eggnog_data_dir
+rm -r eggnog_data_dir
 ```
 
 ## Diamond
