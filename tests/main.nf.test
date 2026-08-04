@@ -18,8 +18,12 @@ nextflow_pipeline {
             // Assert that the workflow exited with status 0 (no error)
             assert workflow.exitStatus == 0
 
-            // Assert that exactly 8 processes were run in the workflow
-            assert workflow.trace.tasks().size() == 8, "Expected 8 processes, got ${workflow.trace.tasks().size()}"
+            // Assert that exactly 82 processes were run in the workflow:
+            // 8 for the source-data stage (download, chunk, index, concat, sample IDs,
+            // legacy pheno/cov) and 74 for the GWAS fixture stage (sample selection,
+            // 22 x per-chromosome thinning, merge, PCA, causal weights, scoring,
+            // pheno/covar, 23 x format export, 23 x VCF compression)
+            assert workflow.trace.tasks().size() == 82, "Expected 82 processes, got ${workflow.trace.tasks().size()}"
 
             // Snapshot test: capture the relative paths of all files produced in the workDir
             // - path("${workDir}").list() lists all files/directories in the work directory

@@ -1,6 +1,6 @@
 process EXTRACT_SAMPLE_IDS {
 	container "community.wave.seqera.io/library/r-base:4.4.3--1e564c44feffeaa0"
-        publishDir params.outdir_pheno_cov, mode: 'symlink'
+	publishDir params.outdir_pheno_cov, mode: 'copy'
 
 	input:
 	path vcf_file

@@ -1,0 +1,14 @@
+samples	500
+target_h2	0.500
+target_covariate_variance	0.100
+target_prevalence	0.300
+cases	150
+controls	350
+cor_QT_genetic_score	0.6983
+cor_QT_covariate_effect	0.2676
+cor_liability_genetic_score	0.7106
+cor_BT_genetic_score	0.5231
+var_QT_explained_by_genetic_score	0.4876
+mean_age	54.84
+males	250
+females	250
