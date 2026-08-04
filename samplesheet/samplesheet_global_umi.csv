@@ -1,3 +1,0 @@
-"sample","fastq_1","fastq_2","strandedness","type"
-"SRX11780885","https://raw.githubusercontent.com/nf-core/test-datasets/riboseq/testdata/GSE182201/SRX11780885_SRR15480788_chr20_1.fastq.gz","","unstranded","riboseq"
-"SRX11780879","https://raw.githubusercontent.com/nf-core/test-datasets/riboseq/testdata/GSE182201/SRX11780879_SRR15480782_chr20_1.fastq.gz","https://raw.githubusercontent.com/nf-core/test-datasets/riboseq/testdata/GSE182201/SRX11780879_SRR15480782_chr20_2.fastq.gz","unstranded","rnaseq"
