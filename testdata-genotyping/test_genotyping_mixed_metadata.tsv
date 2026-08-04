@@ -1,0 +1,4 @@
+filename	species	subject_id	sample_id	tissue	sex	age	biomaterial_provider	pcr_target_locus	single_cell
+https://raw.githubusercontent.com/ayeletperes/test-datasets/airrflow/testdata-genotyping/airr_data_to_test_novel_alleles.tsv	human	subject_A	sample_A	PBMC	NA	NA	bulk	ig	FALSE
+https://raw.githubusercontent.com/ayeletperes/test-datasets/airrflow/testdata-genotyping/tcr_assembled_airr.tsv	human	subject_A	sample_A_tcr	PBMC	NA	NA	bulk	tr	FALSE
+https://raw.githubusercontent.com/ayeletperes/test-datasets/airrflow/testdata-genotyping/airr_data_to_test_novel_alleles.tsv	human	subject_B	sample_C	PBMC	NA	NA	bulk	ig	FALSE
