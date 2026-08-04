@@ -1,0 +1,37 @@
+{
+  "heterogeneous_qt": {
+    "gcta": {
+      "grm_maf": 0.01,
+      "grm_extract": "https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures/relational/resources/gcta_grm_extract.txt",
+      "reml_no_constrain": true,
+      "sparse_cutoff": 0.025,
+      "ld_score_region_kb": 100,
+      "ld_bins": 2,
+      "ldms_maf_edges": [0, 0.01, 0.05, 0.5]
+    },
+    "ldak": {
+      "model": "custom",
+      "power": -0.5,
+      "weights_policy": "provided",
+      "weights": "https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures/relational/resources/ldak_weights.txt",
+      "relatedness_filter": true,
+      "kvik_step1_subset": "provided",
+      "predictor_extract": "https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures/relational/resources/ldak_predictor_extract.txt"
+    }
+  },
+  "heterogeneous_bt": {
+    "gcta": {
+      "sparse_cutoff": 0.05,
+      "ld_score_region_kb": 200,
+      "ld_bins": 4,
+      "ldms_maf_edges": [0, 0.01, 0.05, 0.2, 0.5]
+    },
+    "ldak": {
+      "model": "human_default",
+      "power": -0.25,
+      "weights_policy": "equal",
+      "relatedness_filter": false,
+      "kvik_step1_subset": "all"
+    }
+  }
+}

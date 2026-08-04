@@ -1,0 +1,2 @@
+analysis_id,cohort_id,trait_id,trait_type,phenotype,phenotype_column,control_value,case_value,quant_covariates,cat_covariates,association_methods,heritability_methods,population_prevalence
+example_quantitative,example_cohort,QT,quantitative,https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures/pheno_cov/example.pheno,QT,,,,,plink2,,

@@ -1,0 +1,2 @@
+cohort_id,genome_build,ancestry,pgen,psam,pvar,bed,bim,fam,vcf
+example_cohort,GRCh37,EUR,https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures/genotypes/example_all.pgen,https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures/genotypes/example_all.psam,https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures/genotypes/example_all.pvar,,,,
