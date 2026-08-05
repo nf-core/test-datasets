@@ -57,6 +57,13 @@ Raw sample dose response data for Afatinib and Lapatinib, taken from CTRPv2.
 * drug_target_genes_all_drugs(_proteomics).csv: Originally, the drug target genes are the genes targeted by the drugs used in GDSC, extractable from the GDSC Data Portal (compounds annotation). Here, just the same 13 genes occurring in all omics screens.
 * *_intersection.csv: Originally, the omics features of all screens intersecting. Here, just the same 13 genes as above, except for the methylation file. The methylation file just contains all methylation features from TOYv1.intersection(TOYv2).  
 
+#### meta/gcmf_drug_relations
+
+Prior-knowledge drug graphs for the relational GCMF models (RGCMF, PRGCMF) in drevalpy, keyed on `pubchem_id`. Drugs missing from a table keep a self-loop.
+
+* drug_pathways.csv: Originally, the KEGG and Reactome pathways a drug's targets belong to, for 668 drugs over 1,993 pathways. Here, just the TOYv1/TOYv2 drugs and pathways shared by more than one of them, leaving 37 of 40 drugs with edges.
+* drug_bioassay.csv: Originally, the PubChem BioAssay AIDs in which a drug is an active hit, for 417 drugs over 57,231 assays. Here, reduced the same way, leaving 34 of 40 drugs with edges.
+
 
 ## Rationale for Test Data Selection
 The test datasets are deliberately kept as small as possible while still looking realistic and providing enough samples.
@@ -65,6 +72,7 @@ The test datasets are deliberately kept as small as possible while still looking
 * The gene-based omics datasets (copy number variation, gene expression, mutations, proteomics) are all subsetted to 13 genes only.
 * The methylation data is limited to 80 features, which is still large enough to run a PCA on it (which is part of some implemented, tested models).  
 * Drug features are only supplied for the 36 drugs.
+* The drug relation tables only keep features shared by more than one toy drug, so the graphs have real edges instead of only self-loops.
 
 ## Documentation
 
