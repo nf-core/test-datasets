@@ -57,6 +57,15 @@ Raw sample dose response data for Afatinib and Lapatinib, taken from CTRPv2.
 * drug_target_genes_all_drugs(_proteomics).csv: Originally, the drug target genes are the genes targeted by the drugs used in GDSC, extractable from the GDSC Data Portal (compounds annotation). Here, just the same 13 genes occurring in all omics screens.
 * *_intersection.csv: Originally, the omics features of all screens intersecting. Here, just the same 13 genes as above, except for the methylation file. The methylation file just contains all methylation features from TOYv1.intersection(TOYv2).  
 
+#### meta/gcmf_drug_relations
+
+Prior-knowledge drug graphs used by the relational GCMF models (RGCMF, PRGCMF) in drevalpy. Both are long tables keyed on `pubchem_id`, the same drug identifier the datasets use, so they are joined onto a dataset's drugs on that column and no drug-name matching is involved. The `drug_name` column is carried for readability only. Drugs missing from a table simply keep a self-loop in that relation.
+
+* drug_pathways.csv: Originally, the KEGG and Reactome pathways that a drug's targets belong to, for 668 drugs over 1,993 pathways. RGCMF turns this into a Jaccard graph over shared pathways (broad mechanism-of-action similarity). Here, only the drugs occurring in TOYv1/TOYv2 and only pathways shared by more than one of them, so 37 of the 40 toy drugs still get graph edges.
+* drug_bioassay.csv: Originally, the PubChem BioAssay AIDs in which a drug is an *active* hit (PUG-REST `/compound/cid/<CID>/aids/JSON?aids_type=active`), for 417 drugs over 57,231 assays. RGCMF turns this into a Jaccard graph over shared assays, a biological-activity fingerprint independent of 2D structure. Here, reduced the same way, leaving 34 of the 40 toy drugs with edges.
+
+A drug whose name maps to more than one `pubchem_id` across the datasets is listed once per identifier, so every dataset joins against the id it actually uses.
+
 
 ## Rationale for Test Data Selection
 The test datasets are deliberately kept as small as possible while still looking realistic and providing enough samples.
@@ -65,6 +74,7 @@ The test datasets are deliberately kept as small as possible while still looking
 * The gene-based omics datasets (copy number variation, gene expression, mutations, proteomics) are all subsetted to 13 genes only.
 * The methylation data is limited to 80 features, which is still large enough to run a PCA on it (which is part of some implemented, tested models).  
 * Drug features are only supplied for the 36 drugs.
+* The drug relation tables are cut down to the drugs in TOYv1/TOYv2 and to features shared by more than one of them, so the graphs still have real edges instead of only self-loops.
 
 ## Documentation
 
