@@ -428,6 +428,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - genome.fasta.gz.gzi: index file for 'genome.fasta.gz'
     - genome2.fasta: Reference fasta based on chr22:16600000-16800000
     - genome3.fasta: Reference fasta based on chr19:45760000-45770300
+    - genome3.fna: Reference fasta based on chr19:45760000-45770300 (copy of genome3.fasta, with different extension)
     - genomeGRCh38_chr21_22.fa.gz: bgzipped version of GRCh38 fasta file containing whole chr21 and chr22
     - genomeGRCh38_chr21_22.fa.gz.fai: index file for 'genomeGRCh38_chr21_22.fa.gz'
     - genomeGRCh38_chr21_22.fa.gz.gzi: index file for 'genomeGRCh38_chr21_22.fa.gz'
