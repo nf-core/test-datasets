@@ -1,0 +1,65 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths (counting only informative reads out of the total reads) for the ref and alt alleles in the order listed">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Allele fractions for alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=F1R2,Number=R,Type=Integer,Description="Count of reads in F1R2 pair orientation supporting each allele">
+##FORMAT=<ID=F2R1,Number=R,Type=Integer,Description="Count of reads in F2R1 pair orientation supporting each allele">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=MB,Number=4,Type=Integer,Description="Per-sample component statistics to detect mate bias">
+##FORMAT=<ID=PS,Number=1,Type=Integer,Description="Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records within a phasing group">
+##FORMAT=<ID=SB,Number=4,Type=Integer,Description="Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias">
+##FORMAT=<ID=SQ,Number=A,Type=Float,Description="Somatic quality">
+##DRAGENCommandLine=<ID=HashTableBuild,Version="SW: 01.003.044.4.2.1-105-geb7b59c8, HashTableVersion: 9",CommandLineOptions="/opt/edico/bin/dragen --ht-reference=/staging/tmp/suite_def/illumina-isi07/scratch/dragen_datasets/data/vault/reference_genomes/Hsapiens/hg38/seq/hg38.fa --enable-performance-monitoring=true --output-file-prefix=run_dragen-hg38-alt_masked.graph.cnv.hla.rna_v3-suite10083942-stage1 --events-log-file=/staging/tmp/suite_def/prod/10083942/001_Run_DRAGEN_to_build_v9_HT_on_ref_hg38_alt_masked_graph_cnv_hla_rna_v3_/_application_debug/dragen_events.csv --output-directory=/staging/tmp/suite_def/prod/10083942/001_Run_DRAGEN_to_build_v9_HT_on_ref_hg38_alt_masked_graph_cnv_hla_rna_v3_/_application_output --ht-num-threads=40 --build-hash-table=true --ht-build-rna-hashtable=true --enable-cnv=true --ht-build-hla-hashtable=true --ht-pop-alt-contigs=/illumina-isi07/scratch/dragen_datasets/data/vault/reference_genomes/Hsapiens/hg38_32global_graph_resources/32global.af.05_2mhc_tpo_siglec16.fasta.gz --ht-pop-alt-liftover=/illumina-isi07/scratch/dragen_datasets/data/vault/reference_genomes/Hsapiens/hg38_32global_graph_resources/32global.af.05_2mhc_tpo_siglec16.sam.gz --ht-pop-snps=/illumina-isi07/scratch/dragen_datasets/data/vault/reference_genomes/Hsapiens/hg38_32global_graph_resources/32global.af.05.sorted.vcf --ht-mask-bed=/illumina-isi07/scratch/dragen_datasets/data/vault/reference_genomes/Hsapiens/hg38_alt_masked_v3/hg38_v2_mask.plus_chr6_7442581-7443291_fix.bed">
+##DRAGENCommandLine=<ID=dragen,Version="SW: 07.031.676.4.2.4, HW: 07.031.676",Date="Mon Jan 27 08:39:24 CET 2025",CommandLineOptions="-f -r /data/persistent/references/dragen/grch38_graph_alt_masked_v2_4.2/index/ --bam-input /data/persistent/projects/Kundenprojekte/S12944/S12944_2/dragen_exome_germline/S000021_S12944Nr2/S000021_S12944Nr2.bam --tumor-bam-input /data/persistent/projects/Kundenprojekte/S12944/S12944_2/dragen_exome_tumor/S000021_S12944Nr1/S000021_S12944Nr1_tumor.bam --output-directory /data/persistent/projects/Kundenprojekte/S12944/S12944_2/dragen_exome_t_n/S000021_S12944Nr1_S12944Nr2/ --output-file-prefix S000021_S12944Nr1_S12944Nr2 --intermediate-results-dir /staging/tmpfiles --vc-target-bed /data/bioinfo/versand/supplements/S000021_hg38_targets.bed --vc-target-bed-padding 30 --cnv-target-bed /data/bioinfo/versand/supplements/S000021_hg38_targets.bed --cnv-normals-list /data/persistent/references/dragen/panel_of_normals/4.2.4/S000021_EF_grch38/PONFile.txt --cnv-normal-cnv-vcf /data/persistent/projects/Kundenprojekte/S12944/S12944_2/dragen_exome_germline/S000021_S12944Nr2/S000021_S12944Nr2.cnv.vcf.gz --enable-map-align false --cnv-use-somatic-vc-baf true --enable-hrd true --sample-sex AUTO --enable-variant-caller true --vc-systematic-noise /data/persistent/references/dragen/panel_of_normals/4.2.4/wgs_TN_grch38/snv_wgs_hg38_mean_v1.1_systematic_noise.bed.gz --enable-tmb true --qc-coverage-tag-1=tmb --qc-coverage-region-1 /data/bioinfo/versand/supplements/S000021_hg38_targets.bed --qc-coverage-reports-1=callability --enable-cnv true --cnv-enable-self-normalization false --qc-cross-cont-vcf /opt/edico/config/sample_cross_contamination_resource_hg38.vcf.gz --enable-variant-annotation=true --variant-annotation-data=/data/persistent/references/dragen/annotation/GRCh38 --variant-annotation-assembly=GRCh38 --msi-command tumor-normal --msi-coverage-threshold 60 --msi-microsatellites-file /data/persistent/references/dragen/panel_of_normals/4.2.4/S000021_EF_grch38/MSIFile.txt">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (informative and non-informative); some reads may have been filtered based on mapq etc.">
+##INFO=<ID=FractionInformativeReads,Number=1,Type=Float,Description="The fraction of informative reads out of the total reads">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##INFO=<ID=SoftClipRatio,Number=1,Type=Float,Description="Ratio of soft-clipped bases out of total bases supporting the variant">
+##INFO=<ID=AQ,Number=A,Type=Float,Description="Systematic noise score">
+##INFO=<ID=hotspot,Number=0,Type=Flag,Description="Known somatic site, used to increase confidence in call">
+##FILTER=<ID=alt_allele_in_normal,Description="ALT allele frequency is too high in the normal sample">
+##FILTER=<ID=base_quality,Description="Site filtered because median base quality of alt reads at this locus does not meet the threshold of 20">
+##FILTER=<ID=filtered_reads,Description="Site filtered because the fraction of reads have been filtered out is larger than 0.5">
+##FILTER=<ID=fragment_length,Description="Site filtered because absolute difference between the median fragment length of alt reads and median fragment length of ref reads at this locus exceeds the threshold of 10000">
+##FILTER=<ID=low_af,Description="Allele frequency does not meet threshold. For mitochondrial contigs, the threshold is 0.02; for other chromosomes, the threshold is 0.05">
+##FILTER=<ID=low_frac_info_reads,Description="Site filtered because the fraction of informative reads is below the threshold of 0.5">
+##FILTER=<ID=low_normal_depth,Description="Site filtered because the normal sample read depth is less than the threshold of 3">
+##FILTER=<ID=long_indel,Description="Site filtered because the indel length is more than 100bp">
+##FILTER=<ID=low_tlen,Description="Site filtered because the fraction of low TLEN ALT supporting reads exceeds the threshold of 0.4">
+##FILTER=<ID=mapping_quality,Description="Site filtered because median mapping quality of alt reads at this locus does not meet the threshold of 20">
+##FILTER=<ID=multiallelic,Description="Site filtered because more than two alt alleles pass tumor LOD">
+##FILTER=<ID=non_homref_normal,Description="Site filtered because the normal sample genotype is not homozygous reference">
+##FILTER=<ID=no_reliable_supporting_read,Description="Site filtered because no reliable supporting somatic read exists">
+##FILTER=<ID=noisy_normal,Description="Site filtered because too many alleles (more than 3) are observed in the normal sample">
+##FILTER=<ID=panel_of_normals,Description="Seen in at least one sample in the panel of normals vcf">
+##FILTER=<ID=read_position,Description="Site filtered because median of distances between start/end of read and this locus is below the threshold of 5">
+##FILTER=<ID=RMxNRepeatRegion,Description="Site filtered because all or part of the variant allele is a repeat of the reference">
+##FILTER=<ID=str_contraction,Description="Site filtered due to suspected PCR error where the alt allele is one repeat unit less than the reference">
+##FILTER=<ID=too_few_supporting_reads,Description="Site filtered because there are too few supporting reads (the threshold is 3) in the tumor sample.">
+##FILTER=<ID=weak_evidence,Description="Somatic variant score does not meet the threshold of 17.5">
+##FILTER=<ID=systematic_noise,Description="Site filtered based on evidence of systematic noise in normals">
+##referenceSexKaryotype=XY
+##contig=<ID=4,length=190214555>
+##contig=<ID=19,length=58617616>
+##reference=file:///data/persistent/references/dragen/grch38_graph_alt_masked_v2_4.2/index//reference.bin
+##source=DRAGEN_SNV
+##bcftools_viewVersion=1.23.1+htslib-1.23.1
+##bcftools_viewCommand=view -f PASS -Ou S000021_S12944Nr1_S12944Nr2.snvs_indels.vcf; Date=Mon Jul 27 06:50:08 2026
+##bcftools_annotateVersion=1.23.1+htslib-1.23.1
+##bcftools_annotateCommand=annotate --rename-chrs chr_map.txt -Ou; Date=Mon Jul 27 06:50:08 2026
+##bcftools_normVersion=1.23.1+htslib-1.23.1
+##bcftools_normCommand=norm -m- -f homo_sapiens.GRCh38.fa -Oz -o S000021.prep.vcf.gz; Date=Mon Jul 27 06:50:08 2026
+##VEP="v116.0" API="v116" time="2026-07-27 07:04:13" cache="/mnt/data/projects/variant-calling/work/2d/be20c7606cfc476fa4f3e53579d514/vep_cache/homo_sapiens/110_GRCh38" ensembl=116.c0cf13d ensembl-compara=116.46f80af ensembl-funcgen=116.90049ea ensembl-io=116.6afb5dc ensembl-variation=116.2fb834b 1000genomes="phase3" COSMIC="97" ClinVar="202301" HGMD-PUBLIC="20204" assembly="GRCh38.p14" dbSNP="154" gencode="GENCODE 44" genebuild="2014-07" gnomADe="r2.1.1" gnomADg="v3.1.2" polyphen="2.2.3" regbuild="1.0" sift="6.2.1"
+##WildtypeProtein=The normal, non-mutated protein sequence
+##FrameshiftSequence=Predicted sequence for frameshift mutations
+##VEP-command-line='vep --assembly GRCh38 --biotype --cache --cache_version 110 --canonical --compress_output bgzip --database 0 --dir_cache [PATH]/vep_cache --dir_plugins . --fasta homo_sapiens.GRCh38.fa --fork 6 --hgvs --input_file S000021.prep.vcf.gz --mane_select --numbers --offline --output_file S000021.vcf.gz --plugin Wildtype --plugin Frameshift --symbol --transcript_version --tsl --uniprot --vcf'
+##bcftools_annotateVersion=1.19+htslib-1.19
+##bcftools_annotateCommand=annotate -x INFO/CSQ -Ov -o /mnt/data/projects/variant-calling/testdata_chr4_chr19/variants_chr4_chr19.vcf -; Date=Thu Aug  6 10:48:51 2026
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NORMAL	TUMOR
+4	1801841	.	C	G	.	PASS	DP=354;MQ=181.32;FractionInformativeReads=0.994;SoftClipRatio=0;hotspot	GT:SQ:AD:AF:F1R2:F2R1:DP:SB:MB	0/0:0:165,0:0:85,0:80,0:165:.:.	0/1:188.58:142,44:0.2366:72,23:70,21:186:82,60,24,20:62,80,21,23
+4	99906562	.	ATGT	A	.	PASS	DP=210;MQ=182.27;FractionInformativeReads=0.976;SoftClipRatio=0	GT:SQ:AD:AF:F1R2:F2R1:DP:SB:MB	0/0:0:77,0:0:41,0:36,0:77:.:.	0/1:57.84:107,21:0.1641:59,10:48,11:128:56,51,10,11:50,57,13,8
+19	33302298	.	GGGGCCCGC	G	.	PASS	DP=519;MQ=196.93;FractionInformativeReads=0.992;SoftClipRatio=0.12	GT:SQ:AD:AF:F1R2:F2R1:DP:SB:MB	0/0:0:194,0:0:92,0:102,0:194:.:.	0/1:213.72:234,87:0.271:127,46:107,41:321:103,131,45,42:112,122,56,31
+19	35879152	.	G	A	.	PASS	DP=533;MQ=189.39;FractionInformativeReads=0.998;SoftClipRatio=0	GT:SQ:AD:AF:F1R2:F2R1:DP:SB:MB	0/0:0:225,0:0:125,0:100,0:225:.:.	0/1:218.66:228,78:0.2549:116,37:112,41:306:118,110,45,33:106,122,44,34

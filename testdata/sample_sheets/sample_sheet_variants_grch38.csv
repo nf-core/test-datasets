@@ -1,0 +1,2 @@
+sample,alleles,mhc_class,filename,tumor_sample
+sample1,A*01:01,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/variants/variants_chr4_chr19.vcf,TUMOR
