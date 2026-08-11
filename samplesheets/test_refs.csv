@@ -1,0 +1,4 @@
+ref_group_ids,ref_id,ref_name,ref_path,ref_ncbi_query,ref_ncbi_query_max,ref_primary_usage,ref_contextual_usage,ref_enabled
+c_perfringens_refs,c_perfringens,C. perfringens,,Clostridium perfringens[Organism],1,exclusive,exclusive,TRUE
+b_fragilis_refs,b_fragilis,B. fragilis,,Bacteroides fragilis[Organism],1,exclusive,exclusive,TRUE
+e_coli_refs,e_coli,E. coli,https://github.com/worthyc51/test-datasets/raw/refs/heads/pathogensurveillance/genomic_data/GCA_000005845.2_ASM584v2_genomic.fna,,,exclusive,exclusive,TRUE 

@@ -1,0 +1,4 @@
+sample_id,name,ncbi_accession,ploidy,enabled,report_group_ids,ref_group_ids
+EC1,E. coli,ERR17174237,1,TRUE,all,e_coli_refs
+EC2,E. coli,SRR39969204,1,TRUE,all,e_coli_refs
+EC3,E. coli,SRR39969185,1,TRUE,all,e_coli_refs
