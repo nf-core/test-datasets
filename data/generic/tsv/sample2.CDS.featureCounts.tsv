@@ -1,0 +1,2 @@
+accno	orf	chr	start	end	strand	length	sample	count	tpm
+GCA_000001.1	orf1	chr1	100	400	+	300	sample2	40	400.1
