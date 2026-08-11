@@ -43,10 +43,11 @@ There are three independent test datasets, each exercising a different route thr
 - **`test_prokaryote`**: tests the `jackknife` and `eval` modules using prokaryote 16S rRNA data and a known reference structure for that rRNA. Run with `-profile test_prokaryote,conda`.
 
 **Human (HEK293) data** — the `test_genome` and `test_transcriptome` datasets are both derived from a real HEK293 dataset (accessions listed below). Reads aligning to the mitochondrial gene RNR1 (`ENST00000389680.2`) were extracted from the full dataset to create this small test data.
+
 - For the genome route, the full GRCh38 FASTA and GTF were each subsetted to just the MT chromosome.
 - For the transcriptome route, the RNR1 transcript was extracted from the full GRCh38 transcriptome FASTA, and the same MT GTF was reused.
 
-**Prokaryote (E. coli) data** — reads aligning to 16S rRNA were extracted from a real *E. coli* dataset (accession listed below) to create the tiny prokaryote dataset. The reference structure for 16S rRNA was supplied by Danny Incarnato and is used by both the `jackknife` and `eval` modules. The FASTA and GTF files were created from the 16S rRNA reference structure.
+**Prokaryote (E. coli) data** — reads aligning to 16S rRNA were extracted from a real _E. coli_ dataset (accession listed below) to create the tiny prokaryote dataset. The reference structure for 16S rRNA was supplied by Danny Incarnato and is used by both the `jackknife` and `eval` modules. The FASTA and GTF files were created from the 16S rRNA reference structure.
 
 ### Directory structure
 
@@ -54,15 +55,15 @@ There are three independent test datasets, each exercising a different route thr
 testdata/
 ├── HEK293T_untreated_r1.fastq.gz       # shared SHAPE-seq reads (untreated, GSM4333255)
 ├── HEK293T_treated_r1.fastq.gz         # shared SHAPE-seq reads (treated, GSM4333256)
-├── test_genome/                         
-│   ├── Homo_sapiens.GRCh38.MT.fa       # human mitochondrial chromosome 
+├── test_genome/
+│   ├── Homo_sapiens.GRCh38.MT.fa       # human mitochondrial chromosome
 │   ├── Homo_sapiens.GRCh38.MT.gtf      # MT genome annotation
 │   └── samplesheet.genome_test.csv
-├── test_transcriptome/                  
+├── test_transcriptome/
 │   ├── Homo_sapiens.GRCh38.ENST00000389680.fa  # single-transcript FASTA (MT-RNR1)
-│   ├── Homo_sapiens.GRCh38.MT.gtf              # MT genome annotation 
+│   ├── Homo_sapiens.GRCh38.MT.gtf              # MT genome annotation
 │   └── samplesheet.transcriptome_test.csv
-└── test_prokaryote/                     
+└── test_prokaryote/
     ├── 16S_rRNA.fa                      # E. coli 16S rRNA FASTA
     ├── 16S_rRNA.gtf                     # matching single-transcript GTF
     ├── 16S_rRNA.reference.db            # dot-bracket reference structure for rf-eval/rf-jackknife
