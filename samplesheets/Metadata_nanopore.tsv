@@ -1,0 +1,7 @@
+ID	input_file_name	type
+Log1	Run2_CommLog_1_pass.fastq.gz	log
+Log2	Run2_CommLog_2_pass.fastq.gz	log
+Log3	Run2_CommLog_3_pass.fastq.gz	log
+Std1	Run2_CommStd_1_pass.fastq.gz	even
+Std2	Run2_CommStd_2_pass.fastq.gz	even
+Std3	Run2_CommStd_3_pass.fastq.gz	even

@@ -1,0 +1,9 @@
+Taxonomy	Log1	Log2	Log3	Std1	Std2	Std3
+Bacteria;Firmicutes;Bacilli;Bacillales;Bacillaceae;Bacillus;Bacillus subtilis	0.0089	0.0089	0.0089	0.12	0.12	0.12
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Enterococcaceae;Enterococcus;Enterococcus faecalis	0.0000089	0.0000089	0.0000089	0.12	0.12	0.12
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Limosilactobacillus;Limosilactobacillus fermentum	0.000089	0.000089	0.000089	0.12	0.12	0.12
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Listeriaceae;Listeria;Listeria monocytogenes	0.891	0.891	0.891	0.12	0.12	0.12
+Bacteria;Firmicutes;Bacilli;Staphylococcales;Staphylococcaceae;Staphylococcus;Staphylococcus aureus	0.00000089	0.00000089	0.00000089	0.12	0.12	0.12
+Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Escherichia;Escherichia coli	0.00089	0.00089	0.00089	0.12	0.12	0.12
+Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Salmonella;Salmonella enterica	0.00089	0.00089	0.00089	0.12	0.12	0.12
+Bacteria;Proteobacteria;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas;Pseudomonas aeruginosa	0.089	0.089	0.089	0.12	0.12	0.12
