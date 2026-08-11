@@ -1,0 +1,60 @@
+SUMMARISING RUN PARAMETERS
+=========================
+Input filename: sample1_1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 2.1.0 (Oxidized Edition)
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (user-specified or auto-detected)
+Maximum trimming error rate: 0.1
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+Trim Galore 2.1.0 (Oxidized Edition) — adapter trimming built in
+This is cutadapt 4.0 (compatible; for MultiQC backwards compatibility)
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC sample1_1.fastq.gz
+Processing reads on 1 core in single-end mode ...
+
+=== Summary ===
+
+Total reads processed:                  250
+Reads with adapters:                    126 (50.4%)
+Reads written (passing filters):        300 (100.0%)
+
+Total basepairs processed:         37,500 bp
+Quality-trimmed:                        0 bp (0.0%)
+Total written (filtered):          37,353 bp (99.6%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 126 times.
+
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	113	62.5	0	113
+2	7	15.6	0	7
+3	4	3.9	0	4
+4	2	1.0	0	2
+
+
+RUN STATISTICS FOR INPUT FILE: sample1_1.fastq.gz
+=============================================
+250 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	0 (0.0%)
+Sequences removed because they were longer than the upper length cutoff:	0 (0.0%)
+Sequences removed because of too many N bases:	0 (0.0%)
+
+=== Paired-end validation ===
+
+Number of sequence pairs analysed:         250
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (0.00%):
+                                      0
+Number of pairs removed for N content (0.00%):
+                                      0
+

@@ -1,0 +1,18 @@
+java -ea -Xmx4g -Xms4g -cp /opt/conda/opt/bbmap-39.18-0/current/ jgi.BBDuk -Xmx4g in=sample2.fastq.gz out=sample2.trim.fastq.gz threads=2 trimq=10 qtrim=r ref=contaminants.fasta
+Executing jgi.BBDuk [-Xmx4g, in=sample2.fastq.gz, out=sample2.trim.fastq.gz, threads=2, trimq=10, qtrim=r, ref=contaminants.fasta]
+Version 39.18
+
+Set threads to 2
+Input is being processed as unpaired
+Started output streams:	0.017 seconds.
+Processing time:   		0.014 seconds.
+
+Input:                  	150 reads 		20850 bases.
+Contaminants:           	0 reads (0.00%) 	0 bases (0.00%)
+QTrimmed:               	0 reads (0.00%) 	0 bases (0.00%)
+Total Removed:          	0 reads (0.00%) 	0 bases (0.00%)
+Result:                 	150 reads (100.00%) 	20850 bases (100.00%)
+
+Time:                         	0.058 seconds.
+Reads Processed:         150 	1.73k reads/sec
+Bases Processed:       20850 	0.24m bases/sec
