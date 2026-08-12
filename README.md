@@ -17,26 +17,11 @@ graph TD
     B --> D[CONCAT_CHUNKED_VCFS]
     B --> F[EXTRACT_SAMPLE_IDS]
     F --> G[GENERATE_PHENO_COV]
-    H[results/chunked_vcfs] --> I[FIXTURE_SELECT_SAMPLES]
-    H --> J[FIXTURE_THIN_CHROMOSOME]
-    I --> J
-    J --> K[FIXTURE_MERGE_CHROMOSOMES]
-    K --> L[FIXTURE_PCA]
-    K --> M[FIXTURE_CAUSAL_WEIGHTS]
-    M --> N[FIXTURE_SCORE_LIABILITY]
-    K --> N
-    L --> O[FIXTURE_PHENO_COVAR]
-    N --> O
-    I --> O
-    J --> P[FIXTURE_EXPORT_FORMATS]
-    K --> P
-    P --> Q[FIXTURE_COMPRESS_VCF]
+    H[GENERATE_GWAS_FIXTURES]
 ```
 
-The two stages are independent. The upper stage downloads the 1000 Genomes release
-and chunks it; its output is already committed, so it is skipped with
-`--skip_source_generation`. The lower stage derives the GWAS pipeline fixtures from
-that committed output and never touches the network.
+The historical source-data stage and the compact GWAS fixture generator are
+independent. The fixture generator is deterministic and does not read the network.
 
 ## Git clone the gwas pipeline test data
 
@@ -79,29 +64,40 @@ results/
 ├── pheno_cov/
 │   ├── example.pheno
 │   └── example.covar
-├── fixtures/
-│   ├── README.md
-│   ├── genotypes/
-│   │   ├── example_chr1.{pgen,pvar,psam,bed,bim,fam,vcf.gz,vcf.gz.tbi}
-│   │   ├── example_chr2.{...}
-│   │   ├── ...                     (one bundle per autosome, chr1..chr22)
-│   │   ├── example_chr22.{...}
-│   │   └── example_all.{...}
-│   └── pheno_cov/
-│       ├── example.pheno
-│       ├── example.covar
-│       ├── example.qcovar
-│       ├── example.catcovar
-│       ├── causal_weights.tsv
-│       ├── fixture_samples.tsv
-│       ├── fixture_sex.tsv
-│       └── fixture_summary.txt
+└── fixtures/
+    ├── genotypes/
+    │   └── example_all.vcf.gz
+    └── pheno_cov/
+        ├── example.pheno
+        ├── example.qcovar
+        └── example.catcovar
 
 ```
 
 Each chromosome-specific VCF file (chr\*.vcf.gz) is accompanied by its corresponding tabix index (.vcf.gz.tbi), enabling efficient querying. A combined VCF and index are also included for downstream association tests or visualization.
 
-`results/fixtures/` holds the pipeline-level GWAS fixtures: 500 samples across all 22 autosomes, 4942 LD-thinned variants (`--indep-pairwise 100 10 0.2`), the same samples and variants in PLINK 2, PLINK 1 and VCF encodings, a headered phenotype file with a simulated signal-bearing quantitative trait and a simulated binary trait, and headered covariate files carrying sex, age and principal components. They are derived from `results/chunked_vcfs/` with no download step. See [`results/fixtures/README.md`](results/fixtures/README.md) for the dimensions, how the traits were simulated, and how to regenerate them.
+`results/fixtures/` is a compact canonical dataset for `nf-core/gwas`. It has 200
+samples and exactly 2,200 biallelic autosomal variants across chromosomes 1 and 2.
+The BGZF VCF is GT-only and deliberately contains modest blockwise LD. The phenotype
+file has a variable quantitative trait plus 113 controls and 87 cases. The sidecars
+provide four full-rank quantitative covariates and one balanced categorical
+covariate, with identical sample identifiers and order in every file.
+
+The standard-library generator, semantic validator, dimensions, and seed are
+tracked in this branch. Regenerate the four files without downloading inputs:
+
+```bash
+nextflow run . -profile test --skip_source_generation true
+python3 bin/validate_gwas_fixtures.py \
+    --vcf results/fixtures/genotypes/example_all.vcf.gz \
+    --pheno results/fixtures/pheno_cov/example.pheno \
+    --qcovar results/fixtures/pheno_cov/example.qcovar \
+    --catcovar results/fixtures/pheno_cov/example.catcovar
+```
+
+The real `tests/main.nf.test` regeneration test validates the generated data and
+requires all four regenerated files, including BGZF compression, to be
+byte-identical to the committed canonical copies.
 
 ## Support
 
