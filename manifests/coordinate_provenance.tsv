@@ -1,0 +1,10 @@
+new_contig	new_start	new_end	original_chrom	original_start	original_end	variant_types_present	locus_label	notes
+chr1	1	34001	chr1	92792000	92826000	SNV,SV,ME	INV_DUP	
+chr7	1	14001	chr7	139095000	139109000	SNV,SV,ME	ME_SVA	flank-widened +870bp in Phase 3, +1000bp leading edge in Phase 4 (RetroSeq negative-coordinate margin fix, approved)
+chr12	1	45001	chr12	123495000	123540000	SNV,SV,STR,ME	RILPL1	
+chr16	1	13001	chr16	17465000	17478000	SNV,SV,STR	XYLT1	
+chr20	1	14001	chr20	2648000	2662000	SNV,SV,STR	NOP56	
+chr20	14502	36502	chr20	29785000	29807000	SNV,SV,ME	ME_ALU_L1_HERV	flank-widened +1,905bp in Phase 3
+chr21	1	30001	chr21	43772000	43802000	SNV,SV,STR	CSTB	
+chrX	1	35001	chrX	140485000	140520000	SNV,SV,STR,ME	SOX3	
+chrM	1	16569	chrM	1	16569	SNV,SV	MT_whole	whole mitochondrial genome, no slicing

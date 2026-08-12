@@ -1,0 +1,5 @@
+filename,in_freq_info_key,in_allele_count_info_key,out_freq_info_key,out_allele_count_info_key
+/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_alu_swegen.remapped.vcf.gz,FRQ,OCC,swegen_alu_FRQ,swegen_alu_OCC
+/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_herv_swegen.remapped.vcf.gz,FRQ,OCC,swegen_herv_FRQ,swegen_herv_OCC
+/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_l1_swegen.remapped.vcf.gz,FRQ,OCC,swegen_l1_FRQ,swegen_l1_OCC
+/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_sva_swegen.remapped.vcf.gz,FRQ,OCC,swegen_sva_FRQ,swegen_sva_OCC
