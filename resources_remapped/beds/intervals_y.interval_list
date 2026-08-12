@@ -1,0 +1,9 @@
+@HD	VN:1.0	SO:unsorted
+@SQ	SN:chr1	LN:34001	M5:85177fae2d58d49984eae1d99ba51faf	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta
+@SQ	SN:chr7	LN:14001	M5:bcdfedf0323a71fe0ab94e5f6700de12	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta
+@SQ	SN:chr12	LN:45001	M5:a1f0c67bb76efe117327b304ff0682af	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta
+@SQ	SN:chr16	LN:13001	M5:71e715177d32a8e486c372ee04fad941	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta
+@SQ	SN:chr20	LN:36502	M5:9f2431f3ca5de83c22d61c16e97df437	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta
+@SQ	SN:chr21	LN:30001	M5:0a070ddba0cf98d7533d3bcf94204793	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta
+@SQ	SN:chrX	LN:35001	M5:f01807356fc293120918f9ee2a90739f	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta
+@SQ	SN:chrM	LN:16569	M5:c68f52674c9fb33aef52dcf399755519	UR:file:///mnt/DATA/ram/phase3_output/reference_sliced/minimal_reference.fasta

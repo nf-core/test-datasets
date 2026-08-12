@@ -60,3 +60,149 @@ This branch contains test data to be used for automated testing with the [nf-cor
 `testdata/samplesheet_MT.csv`: samplesheet containing fastq from chr20 and chrM
 
 `testdata/samplesheet_2_samples.csv`: samplesheet containing fastq from chr20 and chrM for 2 patients
+
+## Minimal test dataset
+
+A ~40MB, 9-locus, 3-sample trio dataset with a sliced local reference, used to drive the `test_minimal` CI profile (GTF-mode VEP, no Ensembl cache). Regions/labels are defined in `manifests/fasta_region_table.tsv` and their real-genome origin is documented in `manifests/coordinate_provenance.tsv`.
+
+Loci covered, one per region id used throughout `fastq/`: `01_chrM` (MT_whole, MT SNVs), `02_chrX` (SOX3, STR), `03_chr12` (RILPL1, STR), `04_chr20b` (ME_ALU_L1_HERV, mobile element), `05_chr7` (ME_SVA, mobile element), `06_chr20a` (NOP56, STR), `07_chr16` (XYLT1, STR), `08_chr21` (CSTB, STR), `09_chr1` (INV_DUP, SV).
+
+### `fastq/`
+
+Trio of samples (`ACC13778A1`, `ACC13778A2`, `ACC13778A3`), each with the same 9 regions x R1/R2/singleton layout:
+
+`fastq/<sample>/<region>_R1.fastq.gz`: forward reads extracted from the real-genome region for this locus/sample
+
+`fastq/<sample>/<region>_R2.fastq.gz`: reverse reads, paired with the R1 above
+
+`fastq/<sample>/<region>_singleton.fastq.gz`: reads whose mate fell outside the sliced region during extraction
+
+### `manifests/`
+
+`manifests/samplesheet.csv`: pipeline-format samplesheet (trio, sex/phenotype/pedigree) pointing at the `fastq/` files
+
+`manifests/coordinate_provenance.tsv`: maps each local sliced contig/region back to its real GRCh38 chrom:start-end origin, with variant types present and notes
+
+`manifests/fasta_region_table.tsv`: the 9 regions' local coordinates, lengths, and locus labels used to build `minimal_reference.fasta`
+
+`manifests/fastq_extraction_manifest.tsv`: per-region, per-sample read/singleton counts and source fastq paths from the extraction step
+
+`manifests/mt_downsample_manifest.tsv`: before/after read count, coverage, and file size for downsampling each sample's chrM reads to ~150x
+
+`manifests/param_to_file_mapping.tsv`: maps each pipeline config param (fasta, fai, sequence_dictionary, etc.) to its minimized file and original vs. minimized size
+
+### `reference_sliced/`
+
+`reference_sliced/minimal_reference.fasta`: the sliced multi-contig reference (9 regions, ~226KB), original contig names kept, local coordinates
+
+`reference_sliced/minimal_reference.fasta.fai`: samtools faidx index for the sliced reference
+
+`reference_sliced/minimal_reference.dict`: samtools/Picard sequence dictionary for the sliced reference
+
+`reference_sliced/minimal_reference.fasta.amb`: BWA index, ambiguous-base positions
+
+`reference_sliced/minimal_reference.fasta.ann`: BWA index, sequence/contig annotation
+
+`reference_sliced/minimal_reference.fasta.pac`: BWA index, packed 2-bit sequence
+
+`reference_sliced/minimal_reference.fasta.bwt.2bit.64`: BWA-MEM2 index, 2-bit Burrows-Wheeler transform
+
+`reference_sliced/minimal_reference.fasta.0123`: BWA-MEM2 index, 2-bit packed sequence
+
+### `resources_remapped/beds/`
+
+`resources_remapped/beds/target_bed.remapped.bed`: target capture regions, remapped to local coordinates
+
+`resources_remapped/beds/sambamba_regions.remapped.bed`: coverage-QC regions for sambamba, remapped
+
+`resources_remapped/beds/manta_call_regions.remapped.bed.gz` (+ `.tbi`): Manta SV-calling regions, remapped and indexed
+
+`resources_remapped/beds/intervals_wgs.interval_list`: whole-genome calling intervals for the sliced reference
+
+`resources_remapped/beds/intervals_y.interval_list`: chrY-equivalent calling intervals for the sliced reference
+
+`resources_remapped/beds/GRCh38_PAR.remapped.bed`: pseudoautosomal-region bed, remapped (empty for this dataset, no PAR overlap in the sliced regions)
+
+### `resources_remapped/mobile_elements/`
+
+`resources_remapped/mobile_elements/grch38_alu.remapped.bed`: ALU mobile-element reference positions, remapped
+
+`resources_remapped/mobile_elements/grch38_herv.remapped.bed`: HERV mobile-element reference positions, remapped
+
+`resources_remapped/mobile_elements/grch38_l1.remapped.bed`: L1 mobile-element reference positions, remapped
+
+`resources_remapped/mobile_elements/grch38_sva.remapped.bed`: SVA mobile-element reference positions, remapped
+
+`resources_remapped/mobile_elements/grch38_alu_swegen.remapped.vcf.gz`: SweGen ALU frequency annotation VCF, remapped
+
+`resources_remapped/mobile_elements/grch38_herv_swegen.remapped.vcf.gz`: SweGen HERV frequency annotation VCF, remapped
+
+`resources_remapped/mobile_elements/grch38_l1_swegen.remapped.vcf.gz`: SweGen L1 frequency annotation VCF, remapped
+
+`resources_remapped/mobile_elements/grch38_sva_swegen.remapped.vcf.gz`: SweGen SVA frequency annotation VCF, remapped
+
+`resources_remapped/mobile_elements/mobile_element_references_remapped.tsv`: maps each ME type (ALU/HERV/L1/SVA) to its remapped bed file, for `--mobile_element_references`
+
+`resources_remapped/mobile_elements/mobile_element_svdb_annotations_remapped.csv`: maps each SweGen ME VCF to its SVDB frequency/count INFO key rename, for `--mobile_element_svdb_annotations`
+
+### `resources_remapped/peddy/`
+
+`resources_remapped/peddy/custom_sites.txt`: 592 chrom:pos:ref:alt sites within the sliced regions, used as `--peddy_sites` since peddy's bundled hg19/hg38 sites don't overlap the local coordinates
+
+### `resources_remapped/rank_models/`
+
+`resources_remapped/rank_models/grch38_rank_model_-v0.4-.minimal_trimmed.ini`: production SNV/MT rank model with 13 plugin-dependent sections removed (CSQ fields absent in GTF-mode VEP output would otherwise crash genmod scoring)
+
+### `resources_remapped/svdb/`
+
+`resources_remapped/svdb/grch38_gnomad.v4.1.sv.sites.no_cnv.remapped.vcf.gz` (+ `.tbi`): gnomAD v4.1 SV sites for the sliced regions, for SVDB frequency annotation
+
+`resources_remapped/svdb/grch38_clinvar_sv_pathogenic_-20250728-.remapped.bedpe`: ClinVar pathogenic SV records overlapping the sliced regions
+
+`resources_remapped/svdb/grch38_clinvar_sv_non_pathogenic_-20250728-.remapped.bedpe`: ClinVar non-pathogenic SV records overlapping the sliced regions
+
+`resources_remapped/svdb/svdb_query_dbs_remapped.csv`: maps the gnomAD-SV VCF to its SVDB frequency/count INFO key rename, for `--svdb_query_dbs`
+
+`resources_remapped/svdb/svdb_query_bedpedbs_remapped.csv`: maps the two ClinVar bedpe files to their SVDB frequency/count INFO key renames, for `--svdb_query_bedpedbs`
+
+### `resources_remapped/variant_catalog/`
+
+`resources_remapped/variant_catalog/grch38_expansionhunter_variant_catalog_remapped.json`: ExpansionHunter STR catalog, trimmed to the 4 STR loci (SOX3, RILPL1, NOP56, XYLT1) in local coordinates
+
+### `resources_remapped/vcfanno/`
+
+`resources_remapped/vcfanno/grch38_gnomad_reformatted_merged_r4.1.remapped.vcf.gz` (+ `.tbi`): gnomAD v4.1 genome AF, remapped, used as `--gnomad_af` source for vcfanno
+
+`resources_remapped/vcfanno/grch38_gnomad_af.remapped.tab.gz` (+ `.tbi`): gnomAD AF reformatted as a tabix'd tab file for vcfanno's `--gnomad_af`
+
+`resources_remapped/vcfanno/grch38_gnomad_genomes_mt_-r3.1-.vcf.gz` (+ `.tbi`): gnomAD MT-specific genome AF, remapped
+
+`resources_remapped/vcfanno/grch28_grch37_genbank_haplogroup_-2015-08-01-.vcf.gz` (+ `.tbi`): GenBank mtDNA haplogroup reference VCF, remapped
+
+`resources_remapped/vcfanno/grch38_vcfanno_config_remapped.toml`: vcfanno TOML config wiring the above resources to the sliced/local-coordinate contigs
+
+`resources_remapped/vcfanno/vcfanno_resources_manifest.txt`: list of vcfanno resource file paths referenced by the TOML config, for `--vcfanno_resources`
+
+### `resources_remapped/vep_gtf/`
+
+`resources_remapped/vep_gtf/minimal_reference.sorted.gtf.gz` (+ `.tbi`): sorted, indexed GTF for the sliced reference, VEP's GTF-mode annotation source, replacing the Ensembl cache
+
+`resources_remapped/vep_gtf/grch38_gnomad_pli_per_gene_-r4.1-.txt`: gnomAD v4.1 per-gene pLI scores, for the VEP pLI plugin
+
+`resources_remapped/vep_gtf/pLI.pm`: VEP pLI plugin Perl module
+
+`resources_remapped/vep_gtf/pLI_values.txt`: pLI plugin's score lookup table (subset covering genes in-scope)
+
+`resources_remapped/vep_gtf/LoFtool.pm`: VEP LoFtool plugin Perl module
+
+`resources_remapped/vep_gtf/LoFtool_scores.txt`: LoFtool plugin's gene-level loss-of-function intolerance scores
+
+`resources_remapped/vep_gtf/SpliceAI.pm`: VEP SpliceAI plugin Perl module
+
+`resources_remapped/vep_gtf/spliceai_snv.vcf.gz` (+ `.tbi`): precomputed SpliceAI SNV scores for the sliced regions
+
+`resources_remapped/vep_gtf/spliceai_indel.vcf.gz` (+ `.tbi`): precomputed SpliceAI indel scores for the sliced regions
+
+`resources_remapped/vep_gtf/plugin_config.txt`: Perl hash config wiring all VEP plugins above (paths, thresholds) into a single `--plugin` block
+
+`resources_remapped/vep_gtf/vep_plugin_files.csv`: list of plugin Perl modules/config to stage as VEP `--dir_plugins` input, for `--vep_plugin_files`

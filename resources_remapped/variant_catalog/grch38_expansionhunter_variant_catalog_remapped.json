@@ -1,0 +1,88 @@
+[
+ {
+  "LocusId": "CSTB",
+  "HGNCId": 2482,
+  "InheritanceMode": "AR",
+  "DisplayRU": "CCCCGCCCCGCG",
+  "SourceDisplay": "GeneReviews Internet 2019-11-07",
+  "Source": "GeneReviews",
+  "SourceId": "NBK535148",
+  "LocusStructure": "(CGCGGGGCGGGG)*",
+  "ReferenceRegion": "21:4444-4480",
+  "VariantType": "Repeat",
+  "Disease": "EPM1",
+  "NormalMax": 3,
+  "PathologicMin": 30
+ },
+ {
+  "LocusId": "NOP56",
+  "HGNCId": 15911,
+  "InheritanceMode": "AD",
+  "DisplayRU": "GGCCTG",
+  "SourceDisplay": "GeneReviews Internet 2014-08-07",
+  "Source": "GeneReviews",
+  "SourceId": "NBK231880",
+  "LocusStructure": "(GGCCTG)*(CGCCTG)*",
+  "ReferenceRegion": [
+   "20:4734-4758",
+   "20:4758-4776"
+  ],
+  "VariantId": [
+   "NOP56",
+   "NOP56_CGCCTG"
+  ],
+  "VariantType": [
+   "Repeat",
+   "Repeat"
+  ],
+  "PathologicRegion": "20:2652733-2652757",
+  "Disease": "SCA36",
+  "NormalMax": 14,
+  "PathologicMin": 650
+ },
+ {
+  "VariantType": "Repeat",
+  "LocusId": "RILPL1",
+  "HGNCId": 26814,
+  "InheritanceMode": "AD",
+  "DisplayRU": "CGG",
+  "SourceDisplay": "Yu et al (2022) AJHG 109(3):533-541",
+  "Source": "PubMed",
+  "SourceId": "35148830",
+  "LocusStructure": "(GGC)*",
+  "ReferenceRegion": "12:38721-38756",
+  "Disease": "OPDM4",
+  "NormalMax": 16,
+  "PathologicMin": 139
+ },
+ {
+  "VariantType": "Repeat",
+  "LocusId": "SOX3",
+  "HGNCId": 11199,
+  "InheritanceMode": "XR",
+  "DisplayRU": "GCN",
+  "SourceDisplay": "GeneReviews Internet 2019-11-07",
+  "Source": "GeneReviews",
+  "SourceId": "NBK535148",
+  "LocusStructure": "(NGC)*",
+  "ReferenceRegion": "X:19317-19362",
+  "Disease": "MRGH",
+  "NormalMax": 15,
+  "PathologicMin": 22
+ },
+ {
+  "VariantType": "Repeat",
+  "LocusId": "XYLT1",
+  "HGNCId": 15516,
+  "InheritanceMode": "AR",
+  "DisplayRU": "GGC",
+  "SourceDisplay": "LaCroix et al (2018) AJHG 104(1) 35-44",
+  "Source": "PubMed",
+  "SourceId": "30554721",
+  "LocusStructure": "(GCC)*",
+  "ReferenceRegion": "16:5908-5923",
+  "Disease": "DBQD2",
+  "NormalMax": 60,
+  "PathologicMin": 70
+ }
+]

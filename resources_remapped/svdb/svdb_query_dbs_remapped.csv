@@ -1,0 +1,2 @@
+filename,in_freq_info_key,in_allele_count_info_key,out_freq_info_key,out_allele_count_info_key
+/mnt/DATA/ram/phase3_output/resources_remapped/svdb/grch38_gnomad.v4.1.sv.sites.no_cnv.remapped.vcf.gz,AF,AC,gnomad_svAF,gnomad_svAC
