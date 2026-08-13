@@ -1,104 +1,91 @@
 # ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
 
-Test data to be used for automated testing with the nf-core pipelines
+Test data to be used for automated testing with the nf-core pipelines.
 
 ## Introduction
 
-This is the gwas example-data branch, part of the nf-core collection of high quality Nextflow pipelines.
+This is the `gwas` example-data branch, part of the nf-core collection of high-quality Nextflow pipeline test data.
 
-## Workflow DAG
+The branch publishes one compact, deterministic fixture family. Its single BGZF VCF contains two autosomal contigs, chromosomes 1 and 2, so consumers can test multi-chromosome behavior without maintaining per-chromosome copies or additional genotype representations.
 
-Below is a diagram of the workflow steps as a Directed Acyclic Graph (DAG):
+## Workflow
 
 ```mermaid
 graph TD
-    A[GENERATE_EXAMPLE_GENOTYPES_VCFS] --> B[CHUNK_VCFS]
-    B --> C[INDEX_CHUNKED_VCFS]
-    B --> D[CONCAT_CHUNKED_VCFS]
-    B --> F[EXTRACT_SAMPLE_IDS]
-    F --> G[GENERATE_PHENO_COV]
-    H[GENERATE_GWAS_FIXTURES]
+    A[GENERATE_GWAS_FIXTURES] --> B[Compact two-contig VCF]
+    A --> C[Phenotype and covariates]
+    A --> D[Static relational manifests and resources]
 ```
 
-The historical source-data stage and the compact GWAS fixture generator are
-independent. The fixture generator is deterministic and does not read the network.
+The generator is network-free and uses only its declared container plus Python's standard library.
 
-## Git clone the gwas pipeline test data
+## Clone the GWAS test data
 
-If you want to get a local copy of the test data, you can either git clone the whole test data material, including all test data for all nf-core pipelnies, or if you want to save storage space you can clone the example data for one specific pipeline.
-
-The data in this example-data branch is the same as the gwas pipeline uses for testing. It is accessed simply by cloning the branch either directly from nf-core if you just want to access the data, or if you want to update the data and make pull-request, it is suggested that you first fork the repository and then clone from your personal fork.
-
-```
-# If you are a normal user that wants to get a local copy of the test data
-git clone -b gwas --single-branch git@github.com:nf-core/test-datasets.git
-
-# If you are a developer and want to update the test data, fork first and then
-#  use this command, substituting with your github username
-git clone -b gwas --single-branch git@github.com:USERNAME/test-datasets.git
-
-```
-
-## Documentation
-
-This test data comes from the 1000 Genomes Project phase3 release of variant calls. VCF files have been 'chunked' to include only the first 4,500 variants to reduce file sizes. Chromosome Y is excluded. Please see the datasets [README](https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/README_phase3_callset_20150220) for more details. Covariates and phenotypes were randomly generated for each sample in the VCF.
-
-nf-core/test-datasets comes with documentation in the `docs/` directory and the data can be generated running main.nf.
-
-## Example data organisation
-
-nf-core/test-datasets generated test data is located in the `results/` directory and includes the following structure.
-
-```
-results/
-├── chunked_vcfs/
-│   ├── chr1_chunked.vcf.gz
-│   ├── chr1_chunked.vcf.gz.tbi
-│   ├── chr2_chunked.vcf.gz
-│   ├── chr2_chunked.vcf.gz.tbi
-│   ├── ...
-│   ├── chrX_chunked.vcf.gz
-│   ├── chrX_chunked.vcf.gz.tbi
-│   ├── combined_chunked.vcf.gz
-│   └── combined_chunked.vcf.gz.tbi
-├── pheno_cov/
-│   ├── example.pheno
-│   └── example.covar
-└── fixtures/
-    ├── genotypes/
-    │   └── example_all.vcf.gz
-    └── pheno_cov/
-        ├── example.pheno
-        ├── example.qcovar
-        └── example.catcovar
-
-```
-
-Each chromosome-specific VCF file (chr\*.vcf.gz) is accompanied by its corresponding tabix index (.vcf.gz.tbi), enabling efficient querying. A combined VCF and index are also included for downstream association tests or visualization.
-
-`results/fixtures/` is a compact canonical dataset for `nf-core/gwas`. It has 200
-samples and exactly 2,200 biallelic autosomal variants across chromosomes 1 and 2.
-The BGZF VCF is GT-only and deliberately contains modest blockwise LD. The phenotype
-file has a variable quantitative trait plus 113 controls and 87 cases. The sidecars
-provide four full-rank quantitative covariates and one balanced categorical
-covariate, with identical sample identifiers and order in every file.
-
-The standard-library generator, semantic validator, dimensions, and seed are
-tracked in this branch. Regenerate the four files without downloading inputs:
+Clone the branch directly to obtain only this pipeline's test data:
 
 ```bash
-nextflow run . -profile test --skip_source_generation true
+git clone -b gwas --single-branch git@github.com:nf-core/test-datasets.git
+```
+
+To contribute changes, fork the repository first and substitute your GitHub username:
+
+```bash
+git clone -b gwas --single-branch git@github.com:USERNAME/test-datasets.git
+```
+
+## Fixture contract
+
+The committed output family is:
+
+```text
+results/fixtures/
+├── genotypes/
+│   └── example_all.vcf.gz
+├── pheno_cov/
+│   ├── example.catcovar
+│   ├── example.pheno
+│   └── example.qcovar
+└── relational/
+    ├── analysis_manifest_association_only.csv
+    ├── analysis_manifest_binary.csv
+    ├── analysis_manifest_heritability_only.csv
+    ├── analysis_manifest_heterogeneous.csv
+    ├── analysis_manifest_quantitative.csv
+    ├── cohort_manifest.csv
+    ├── method_options_heterogeneous.json
+    └── resources/
+        ├── gcta_grm_extract.txt
+        ├── ldak_predictor_extract.txt
+        └── ldak_weights.txt
+```
+
+`example_all.vcf.gz` is a GT-only BGZF VCF with 200 samples and exactly 2,200 biallelic variants: 1,100 on chromosome 1 and 1,100 on chromosome 2. Variant IDs follow `v1_0001` through `v1_1100` and `v2_0001` through `v2_1100`. The generated genotypes contain modest blockwise linkage disequilibrium.
+
+The phenotype contains a variable quantitative trait (`QT`) and a binary trait (`BT`) with 113 controls coded as 1 and 87 cases coded as 2. The covariate sidecars provide four full-rank quantitative covariates and one balanced categorical covariate. Sample identifiers and ordering are identical in all four scientific inputs.
+
+The static relational bundle provides directly inspectable quantitative, binary, association-only, heritability-only, and heterogeneous analysis scenarios. Its URLs use the stable public `nf-core/test-datasets:gwas` paths. The cohort manifest selects the canonical VCF; the pipeline performs any required genotype-format preparation. The selector and weight resources contain variant IDs present in that VCF.
+
+## Regeneration and validation
+
+The dimensions, seed, generator, semantic validator, static manifests, and resources are all tracked on this branch. Regenerate the complete 14-file family without downloading source data:
+
+```bash
+nextflow run . -profile test
+```
+
+Validate the committed scientific and relational contracts directly:
+
+```bash
 python3 bin/validate_gwas_fixtures.py \
     --vcf results/fixtures/genotypes/example_all.vcf.gz \
     --pheno results/fixtures/pheno_cov/example.pheno \
     --qcovar results/fixtures/pheno_cov/example.qcovar \
-    --catcovar results/fixtures/pheno_cov/example.catcovar
+    --catcovar results/fixtures/pheno_cov/example.catcovar \
+    --relational-dir results/fixtures/relational
 ```
 
-The real `tests/main.nf.test` regeneration test validates the generated data and
-requires all four regenerated files, including BGZF compression, to be
-byte-identical to the committed canonical copies.
+The regeneration test validates the generated data and requires all 14 generated files, including BGZF compression, to be byte-identical to the committed canonical copies.
 
 ## Support
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+For further information or help, join the [nf-core Slack organisation](https://nf-co.re/join/slack).

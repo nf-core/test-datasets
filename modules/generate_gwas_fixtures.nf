@@ -2,12 +2,14 @@ process GENERATE_GWAS_FIXTURES {
 	container "community.wave.seqera.io/library/bcftools_tabix_pip_tools:48085064a9189d8c"
 	publishDir "${params.outdir_fixtures}/genotypes", mode: 'copy', overwrite: true, pattern: "${params.fixture_prefix}_all.vcf.gz"
 	publishDir "${params.outdir_fixtures}/pheno_cov", mode: 'copy', overwrite: true, pattern: "${params.fixture_prefix}.{pheno,qcovar,catcovar}"
+	publishDir "${params.outdir_fixtures}", mode: 'copy', overwrite: true, pattern: "relational/**"
 
 	output:
 	path "${params.fixture_prefix}_all.vcf.gz", emit: vcf
 	path "${params.fixture_prefix}.pheno", emit: pheno
 	path "${params.fixture_prefix}.qcovar", emit: qcovar
 	path "${params.fixture_prefix}.catcovar", emit: catcovar
+	path "relational/**", emit: relational
 
 	script:
 	"""
@@ -26,6 +28,7 @@ process GENERATE_GWAS_FIXTURES {
 		--pheno ${params.fixture_prefix}.pheno \
 		--qcovar ${params.fixture_prefix}.qcovar \
 		--catcovar ${params.fixture_prefix}.catcovar \
+		--relational-dir relational \
 		--samples ${params.fixture_n_samples} \
 		--chromosomes ${params.fixture_chromosomes} \
 		--variants-per-chromosome ${params.fixture_variants_per_chromosome} \

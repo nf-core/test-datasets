@@ -6,12 +6,16 @@ from __future__ import annotations
 import argparse
 import csv
 import gzip
+import json
 import math
 import re
 import statistics
 import struct
 from collections import Counter
 from pathlib import Path
+from urllib.parse import urlparse
+
+from generate_gwas_fixtures import ANALYSIS_HEADER, FIXTURE_BASE_URL
 
 GENOTYPE_PATTERN = re.compile(r"^[01]\|[01]$")
 
@@ -22,6 +26,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--pheno", type=Path, required=True)
     parser.add_argument("--qcovar", type=Path, required=True)
     parser.add_argument("--catcovar", type=Path, required=True)
+    parser.add_argument("--relational-dir", type=Path, required=True)
     parser.add_argument("--samples", type=int, default=200)
     parser.add_argument("--chromosomes", default="1,2")
     parser.add_argument("--variants-per-chromosome", type=int, default=1100)
@@ -54,6 +59,237 @@ def read_tsv(path: Path, expected_header: list[str]) -> list[dict[str, str]]:
         rows = list(reader)
     require(all(row["FID"] == row["IID"] for row in rows), f"{path}: FID/IID mismatch")
     return rows
+
+
+def read_csv(path: Path, expected_header: list[str]) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        require(reader.fieldnames == expected_header, f"{path}: unexpected header")
+        return list(reader)
+
+
+def fixture_url_to_path(
+    url: str, fixtures_dir: Path, generated_files: dict[str, Path]
+) -> Path:
+    prefix = f"{FIXTURE_BASE_URL}/"
+    require(url.startswith(prefix), f"URL is not on the stable gwas branch: {url}")
+    parsed = urlparse(url)
+    require(
+        not parsed.query and not parsed.fragment, f"URL has query or fragment: {url}"
+    )
+    relative_path = url.removeprefix(prefix)
+    require(".." not in Path(relative_path).parts, f"URL escapes fixture root: {url}")
+    local_path = generated_files.get(relative_path, fixtures_dir / relative_path)
+    require(local_path.is_file(), f"URL target is absent from fixture bundle: {url}")
+    return local_path
+
+
+def validate_relational_fixtures(
+    relational_dir: Path,
+    variant_ids: set[str],
+    generated_files: dict[str, Path],
+) -> dict[str, object]:
+    fixtures_dir = relational_dir.parent
+    expected_files = {
+        "analysis_manifest_association_only.csv",
+        "analysis_manifest_binary.csv",
+        "analysis_manifest_heritability_only.csv",
+        "analysis_manifest_heterogeneous.csv",
+        "analysis_manifest_quantitative.csv",
+        "cohort_manifest.csv",
+        "method_options_heterogeneous.json",
+        "resources/gcta_grm_extract.txt",
+        "resources/ldak_predictor_extract.txt",
+        "resources/ldak_weights.txt",
+    }
+    actual_files = {
+        path.relative_to(relational_dir).as_posix()
+        for path in relational_dir.rglob("*")
+        if path.is_file()
+    }
+    require(actual_files == expected_files, "unexpected relational fixture inventory")
+
+    cohort_header = [
+        "cohort_id",
+        "genome_build",
+        "ancestry",
+        "pgen",
+        "psam",
+        "pvar",
+        "bed",
+        "bim",
+        "fam",
+        "vcf",
+    ]
+    cohort_rows = read_csv(relational_dir / "cohort_manifest.csv", cohort_header)
+    require(len(cohort_rows) == 1, "cohort manifest must contain exactly one row")
+    cohort = cohort_rows[0]
+    require(cohort["cohort_id"] == "example_cohort", "unexpected cohort ID")
+    require(cohort["genome_build"] == "GRCh37", "unexpected genome build")
+    require(cohort["ancestry"] == "EUR", "unexpected ancestry")
+    require(
+        all(
+            not cohort[column]
+            for column in ("pgen", "psam", "pvar", "bed", "bim", "fam")
+        ),
+        "cohort manifest must select only the canonical VCF representation",
+    )
+    fixture_url_to_path(cohort["vcf"], fixtures_dir, generated_files)
+
+    expected_analyses = {
+        "analysis_manifest_quantitative.csv": {
+            "example_quantitative": ("QT", "quantitative", {"plink2"}, set()),
+        },
+        "analysis_manifest_binary.csv": {
+            "example_binary": ("BT", "binary", {"plink2"}, set()),
+        },
+        "analysis_manifest_association_only.csv": {
+            "example_association": (
+                "QT",
+                "quantitative",
+                {"plink2", "regenie", "gcta_fastgwa", "ldak_kvik"},
+                set(),
+            ),
+        },
+        "analysis_manifest_heritability_only.csv": {
+            "example_heritability": (
+                "BT",
+                "binary",
+                set(),
+                {"gcta_greml", "gcta_greml_ldms", "ldak_reml", "ldak_he", "ldak_pcgc"},
+            ),
+        },
+        "analysis_manifest_heterogeneous.csv": {
+            "heterogeneous_qt": (
+                "QT",
+                "quantitative",
+                {"plink2", "regenie", "gcta_fastgwa", "ldak_kvik"},
+                {"gcta_greml", "gcta_greml_ldms", "ldak_reml", "ldak_he"},
+            ),
+            "heterogeneous_bt": (
+                "BT",
+                "binary",
+                {"plink2", "gcta_fastgwa", "ldak_kvik"},
+                {"gcta_greml", "gcta_greml_ldms", "ldak_reml", "ldak_he", "ldak_pcgc"},
+            ),
+        },
+    }
+    all_analysis_ids: set[str] = set()
+    for filename, expected_rows in expected_analyses.items():
+        rows = read_csv(relational_dir / filename, ANALYSIS_HEADER)
+        require(
+            {row["analysis_id"] for row in rows} == set(expected_rows),
+            f"{filename}: unexpected analysis IDs",
+        )
+        for row in rows:
+            analysis_id = row["analysis_id"]
+            require(
+                analysis_id not in all_analysis_ids,
+                f"duplicate analysis ID {analysis_id}",
+            )
+            all_analysis_ids.add(analysis_id)
+            trait_id, trait_type, associations, heritability = expected_rows[
+                analysis_id
+            ]
+            require(
+                row["cohort_id"] == cohort["cohort_id"],
+                f"{analysis_id}: unknown cohort",
+            )
+            require(
+                (row["trait_id"], row["trait_type"], row["phenotype_column"])
+                == (trait_id, trait_type, trait_id),
+                f"{analysis_id}: inconsistent trait contract",
+            )
+            fixture_url_to_path(row["phenotype"], fixtures_dir, generated_files)
+            for column in ("quant_covariates", "cat_covariates"):
+                if row[column]:
+                    fixture_url_to_path(row[column], fixtures_dir, generated_files)
+            require(
+                set(filter(None, row["association_methods"].split(",")))
+                == associations,
+                f"{analysis_id}: unexpected association methods",
+            )
+            require(
+                set(filter(None, row["heritability_methods"].split(",")))
+                == heritability,
+                f"{analysis_id}: unexpected heritability methods",
+            )
+            if trait_type == "binary":
+                require(
+                    (row["control_value"], row["case_value"]) == ("1", "2"),
+                    f"{analysis_id}: invalid binary coding",
+                )
+            else:
+                require(
+                    not row["control_value"] and not row["case_value"],
+                    f"{analysis_id}: quantitative trait has binary coding",
+                )
+            if "ldak_pcgc" in heritability:
+                require(
+                    row["population_prevalence"] == "0.1",
+                    f"{analysis_id}: invalid prevalence",
+                )
+
+    with (relational_dir / "method_options_heterogeneous.json").open(
+        encoding="utf-8"
+    ) as handle:
+        method_options = json.load(handle)
+    require(
+        set(method_options) == {"heterogeneous_qt", "heterogeneous_bt"},
+        "method options do not join to the heterogeneous analyses",
+    )
+    require(
+        all(set(options) == {"gcta", "ldak"} for options in method_options.values()),
+        "method options have unexpected method keys",
+    )
+    for option_name in ("grm_extract",):
+        fixture_url_to_path(
+            method_options["heterogeneous_qt"]["gcta"][option_name],
+            fixtures_dir,
+            generated_files,
+        )
+    for option_name in ("weights", "predictor_extract"):
+        fixture_url_to_path(
+            method_options["heterogeneous_qt"]["ldak"][option_name],
+            fixtures_dir,
+            generated_files,
+        )
+
+    selected_ids: set[str] = set()
+    for filename in ("gcta_grm_extract.txt", "ldak_predictor_extract.txt"):
+        ids = (
+            (relational_dir / "resources" / filename)
+            .read_text(encoding="utf-8")
+            .splitlines()
+        )
+        require(
+            ids and len(ids) == len(set(ids)), f"{filename}: empty or duplicate IDs"
+        )
+        require(set(ids) <= variant_ids, f"{filename}: IDs are absent from compact VCF")
+        selected_ids.update(ids)
+    weight_lines = (
+        (relational_dir / "resources" / "ldak_weights.txt")
+        .read_text(encoding="utf-8")
+        .splitlines()
+    )
+    weights = [line.split() for line in weight_lines]
+    require(
+        weights
+        and all(len(fields) == 2 and float(fields[1]) > 0 for fields in weights),
+        "ldak_weights.txt: invalid predictor weights",
+    )
+    require(
+        {fields[0] for fields in weights} <= variant_ids,
+        "ldak_weights.txt: IDs are absent from compact VCF",
+    )
+    selected_ids.update(fields[0] for fields in weights)
+
+    return {
+        "relational_files": len(actual_files),
+        "cohorts": len(cohort_rows),
+        "analyses": len(all_analysis_ids),
+        "resource_variant_ids": sorted(selected_ids),
+    }
 
 
 def squared_correlation(first: list[int], second: list[int]) -> float:
@@ -268,7 +504,7 @@ def validate() -> dict[str, object]:
         "within-block LD is not distinguishable from background",
     )
 
-    return {
+    summary = {
         "samples": len(samples),
         "chromosome_variants": dict(chromosome_counts),
         "variants": len(variant_ids),
@@ -281,6 +517,18 @@ def validate() -> dict[str, object]:
         "median_within_block_r2": round(median_within, 6),
         "median_between_block_r2": round(median_between, 6),
     }
+    generated_files = {
+        f"genotypes/{args.vcf.name}": args.vcf,
+        f"pheno_cov/{args.pheno.name}": args.pheno,
+        f"pheno_cov/{args.qcovar.name}": args.qcovar,
+        f"pheno_cov/{args.catcovar.name}": args.catcovar,
+    }
+    summary.update(
+        validate_relational_fixtures(
+            args.relational_dir, set(variant_ids), generated_files
+        )
+    )
+    return summary
 
 
 def main() -> None:

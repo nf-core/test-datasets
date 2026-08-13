@@ -5,12 +5,31 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import math
 import random
 from pathlib import Path
 
 ALLELE_PAIRS = (("A", "C"), ("G", "T"), ("C", "G"), ("T", "A"))
 BLOCK_SIZE = 11
+FIXTURE_BASE_URL = (
+    "https://raw.githubusercontent.com/nf-core/test-datasets/gwas/results/fixtures"
+)
+ANALYSIS_HEADER = [
+    "analysis_id",
+    "cohort_id",
+    "trait_id",
+    "trait_type",
+    "phenotype",
+    "phenotype_column",
+    "control_value",
+    "case_value",
+    "quant_covariates",
+    "cat_covariates",
+    "association_methods",
+    "heritability_methods",
+    "population_prevalence",
+]
 
 
 def parse_args() -> argparse.Namespace:
@@ -51,6 +70,198 @@ def write_tsv(path: Path, header: list[str], rows: list[list[object]]) -> None:
         writer = csv.writer(handle, delimiter="\t", lineterminator="\n")
         writer.writerow(header)
         writer.writerows(rows)
+
+
+def write_csv(path: Path, header: list[str], rows: list[list[object]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle, lineterminator="\n")
+        writer.writerow(header)
+        writer.writerows(rows)
+
+
+def write_relational_fixtures(output_dir: Path, prefix: str) -> None:
+    """Write the static, public manifest contract used by nf-core/gwas tests."""
+    relational_dir = output_dir / "relational"
+    resources_dir = relational_dir / "resources"
+    resources_dir.mkdir(parents=True, exist_ok=True)
+
+    genotype_url = f"{FIXTURE_BASE_URL}/genotypes/{prefix}_all.vcf.gz"
+    phenotype_url = f"{FIXTURE_BASE_URL}/pheno_cov/{prefix}.pheno"
+    qcovar_url = f"{FIXTURE_BASE_URL}/pheno_cov/{prefix}.qcovar"
+    catcovar_url = f"{FIXTURE_BASE_URL}/pheno_cov/{prefix}.catcovar"
+    resource_url = f"{FIXTURE_BASE_URL}/relational/resources"
+
+    write_csv(
+        relational_dir / "cohort_manifest.csv",
+        [
+            "cohort_id",
+            "genome_build",
+            "ancestry",
+            "pgen",
+            "psam",
+            "pvar",
+            "bed",
+            "bim",
+            "fam",
+            "vcf",
+        ],
+        [["example_cohort", "GRCh37", "EUR", "", "", "", "", "", "", genotype_url]],
+    )
+
+    common = ["example_cohort", "QT", "quantitative", phenotype_url, "QT"]
+    write_csv(
+        relational_dir / "analysis_manifest_quantitative.csv",
+        ANALYSIS_HEADER,
+        [["example_quantitative", *common, "", "", "", "", "plink2", "", ""]],
+    )
+    write_csv(
+        relational_dir / "analysis_manifest_binary.csv",
+        ANALYSIS_HEADER,
+        [
+            [
+                "example_binary",
+                "example_cohort",
+                "BT",
+                "binary",
+                phenotype_url,
+                "BT",
+                "1",
+                "2",
+                "",
+                "",
+                "plink2",
+                "",
+                "",
+            ]
+        ],
+    )
+    write_csv(
+        relational_dir / "analysis_manifest_association_only.csv",
+        ANALYSIS_HEADER,
+        [
+            [
+                "example_association",
+                *common,
+                "",
+                "",
+                qcovar_url,
+                catcovar_url,
+                "plink2,regenie,gcta_fastgwa,ldak_kvik",
+                "",
+                "",
+            ]
+        ],
+    )
+    write_csv(
+        relational_dir / "analysis_manifest_heritability_only.csv",
+        ANALYSIS_HEADER,
+        [
+            [
+                "example_heritability",
+                "example_cohort",
+                "BT",
+                "binary",
+                phenotype_url,
+                "BT",
+                "1",
+                "2",
+                qcovar_url,
+                catcovar_url,
+                "",
+                "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he,ldak_pcgc",
+                "0.1",
+            ]
+        ],
+    )
+    write_csv(
+        relational_dir / "analysis_manifest_heterogeneous.csv",
+        ANALYSIS_HEADER,
+        [
+            [
+                "heterogeneous_qt",
+                *common,
+                "",
+                "",
+                qcovar_url,
+                catcovar_url,
+                "plink2,regenie,gcta_fastgwa,ldak_kvik",
+                "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he",
+                "",
+            ],
+            [
+                "heterogeneous_bt",
+                "example_cohort",
+                "BT",
+                "binary",
+                phenotype_url,
+                "BT",
+                "1",
+                "2",
+                qcovar_url,
+                catcovar_url,
+                "plink2,gcta_fastgwa,ldak_kvik",
+                "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he,ldak_pcgc",
+                "0.1",
+            ],
+        ],
+    )
+
+    method_options = {
+        "heterogeneous_qt": {
+            "gcta": {
+                "grm_maf": 0.01,
+                "grm_extract": f"{resource_url}/gcta_grm_extract.txt",
+                "reml_no_constrain": True,
+                "sparse_cutoff": 0.025,
+                "ld_score_region_kb": 100,
+                "ld_bins": 2,
+                "ldms_maf_edges": [0, 0.01, 0.05, 0.5],
+            },
+            "ldak": {
+                "model": "custom",
+                "power": -0.5,
+                "weights_policy": "provided",
+                "weights": f"{resource_url}/ldak_weights.txt",
+                "relatedness_filter": True,
+                "kvik_step1_subset": "provided",
+                "predictor_extract": f"{resource_url}/ldak_predictor_extract.txt",
+            },
+        },
+        "heterogeneous_bt": {
+            "gcta": {
+                "sparse_cutoff": 0.05,
+                "ld_score_region_kb": 200,
+                "ld_bins": 4,
+                "ldms_maf_edges": [0, 0.01, 0.05, 0.2, 0.5],
+            },
+            "ldak": {
+                "model": "human_default",
+                "power": -0.25,
+                "weights_policy": "equal",
+                "relatedness_filter": False,
+                "kvik_step1_subset": "all",
+            },
+        },
+    }
+    method_options_text = json.dumps(method_options, indent=2)
+    for values in ([0, 0.01, 0.05, 0.5], [0, 0.01, 0.05, 0.2, 0.5]):
+        expanded = json.dumps(values, indent=2).replace("\n", "\n      ")
+        compact = json.dumps(values)
+        method_options_text = method_options_text.replace(expanded, compact)
+    (relational_dir / "method_options_heterogeneous.json").write_text(
+        f"{method_options_text}\n", encoding="utf-8"
+    )
+
+    selected_variants = ["v1_0001", "v1_0101", "v2_0001"]
+    for filename in ("gcta_grm_extract.txt", "ldak_predictor_extract.txt"):
+        (resources_dir / filename).write_text(
+            "".join(f"{variant_id}\n" for variant_id in selected_variants),
+            encoding="utf-8",
+        )
+    (resources_dir / "ldak_weights.txt").write_text(
+        "".join(f"{variant_id} 1\n" for variant_id in selected_variants),
+        encoding="utf-8",
+    )
 
 
 def build_genotypes(
@@ -259,6 +470,7 @@ def main() -> None:
     )
     write_vcf(args.output_dir / f"{args.prefix}_all.vcf", samples, records)
     write_sidecars(args.output_dir, args.prefix, samples, dosages, args.cases, rng)
+    write_relational_fixtures(args.output_dir, args.prefix)
 
 
 if __name__ == "__main__":

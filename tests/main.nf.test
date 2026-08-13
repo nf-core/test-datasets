@@ -10,7 +10,6 @@ nextflow_pipeline {
 
         when {
             params {
-                skip_source_generation = true
                 outdir_fixtures = "${workDir}/published"
             }
         }
@@ -29,7 +28,17 @@ nextflow_pipeline {
                 "genotypes/example_all.vcf.gz",
                 "pheno_cov/example.catcovar",
                 "pheno_cov/example.pheno",
-                "pheno_cov/example.qcovar"
+                "pheno_cov/example.qcovar",
+                "relational/analysis_manifest_association_only.csv",
+                "relational/analysis_manifest_binary.csv",
+                "relational/analysis_manifest_heritability_only.csv",
+                "relational/analysis_manifest_heterogeneous.csv",
+                "relational/analysis_manifest_quantitative.csv",
+                "relational/cohort_manifest.csv",
+                "relational/method_options_heterogeneous.json",
+                "relational/resources/gcta_grm_extract.txt",
+                "relational/resources/ldak_predictor_extract.txt",
+                "relational/resources/ldak_weights.txt"
             ]
 
             generatedFiles.each { relativePath ->
