@@ -1,5 +1,5 @@
 type	path
-ALU	/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_alu.remapped.bed
-HERV	/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_herv.remapped.bed
-L1	/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_l1.remapped.bed
-SVA	/mnt/DATA/ram/phase3_output/resources_remapped/mobile_elements/grch38_sva.remapped.bed
+ALU	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/mobile_elements/grch38_alu.remapped.bed
+HERV	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/mobile_elements/grch38_herv.remapped.bed
+L1	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/mobile_elements/grch38_l1.remapped.bed
+SVA	https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/mobile_elements/grch38_sva.remapped.bed

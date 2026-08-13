@@ -1,6 +1,6 @@
-/mnt/DATA/ram/phase3_output/resources_remapped/vcfanno/grch38_gnomad_reformatted_merged_r4.1.remapped.vcf.gz
-/mnt/DATA/ram/phase3_output/resources_remapped/vcfanno/grch38_gnomad_reformatted_merged_r4.1.remapped.vcf.gz.tbi
-/mnt/DATA/ram/phase3_output/resources_remapped/vcfanno/grch28_grch37_genbank_haplogroup_-2015-08-01-.vcf.gz
-/mnt/DATA/ram/phase3_output/resources_remapped/vcfanno/grch28_grch37_genbank_haplogroup_-2015-08-01-.vcf.gz.tbi
-/mnt/DATA/ram/phase3_output/resources_remapped/vcfanno/grch38_gnomad_genomes_mt_-r3.1-.vcf.gz
-/mnt/DATA/ram/phase3_output/resources_remapped/vcfanno/grch38_gnomad_genomes_mt_-r3.1-.vcf.gz.tbi
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/vcfanno/grch38_gnomad_reformatted_merged_r4.1.remapped.vcf.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/vcfanno/grch38_gnomad_reformatted_merged_r4.1.remapped.vcf.gz.tbi
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/vcfanno/grch28_grch37_genbank_haplogroup_-2015-08-01-.vcf.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/vcfanno/grch28_grch37_genbank_haplogroup_-2015-08-01-.vcf.gz.tbi
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/vcfanno/grch38_gnomad_genomes_mt_-r3.1-.vcf.gz
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/vcfanno/grch38_gnomad_genomes_mt_-r3.1-.vcf.gz.tbi
