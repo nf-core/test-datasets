@@ -772,5 +772,5 @@ awk '
     if (g[1] != "" && t[1] != "")
         print g[1] "\t" t[1]
 }
-' minigenome.gtf | sort -u > gene_trans_map.tsv
+' minigenome.gtf | sort -u > gene2transcript_mapping.tsv
 ```
