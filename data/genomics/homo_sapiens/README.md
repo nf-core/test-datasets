@@ -760,3 +760,17 @@ Stitchr/thimble was run on the first five entries of the stitchr test dataset. T
 4. Ploidy files for ASCAT
 5. Mappability files for CONTROLFREEC
 ```
+
+### Gene to transcripts mapping
+TSV file containing transcripts and associated gene names based on the ORFs (open reading frames) detected in minigenome.fasta. This file was built with the minigenome.gtf file
+
+```
+awk '                     
+/transcript/ {
+    match($0, /gene_id "([^"]+)"/, g)
+    match($0, /transcript_id "([^"]+)"/, t)
+    if (g[1] != "" && t[1] != "")
+        print g[1] "\t" t[1]
+}
+' minigenome.gtf | sort -u > gene2transcript_mapping.tsv
+```
