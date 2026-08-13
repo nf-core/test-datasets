@@ -63,7 +63,7 @@ results/fixtures/
 
 The phenotype contains a variable quantitative trait (`QT`) and a binary trait (`BT`) with 113 controls coded as 1 and 87 cases coded as 2. The covariate sidecars provide four full-rank quantitative covariates and one balanced categorical covariate. Sample identifiers and ordering are identical in all four scientific inputs.
 
-The static relational bundle provides directly inspectable quantitative, binary, association-only, heritability-only, and heterogeneous analysis scenarios. Its URLs use the stable public `nf-core/test-datasets:gwas` paths. The cohort manifest selects the canonical VCF; the pipeline performs any required genotype-format preparation. The selector and weight resources contain variant IDs present in that VCF.
+The static relational bundle provides directly inspectable quantitative, binary, association-only, heritability-only, and heterogeneous analysis scenarios. Its URLs use the stable public `nf-core/test-datasets:gwas` paths. The cohort manifest selects the canonical VCF; the pipeline performs any required genotype-format preparation. The GCTA GRM selector includes all 2,200 variants so the dense GRM is estimable for 200 samples. The focused LDAK selector and weight resources contain three valid VCF variant IDs.
 
 ## Regeneration and validation
 

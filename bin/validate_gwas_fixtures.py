@@ -255,18 +255,29 @@ def validate_relational_fixtures(
             generated_files,
         )
 
-    selected_ids: set[str] = set()
-    for filename in ("gcta_grm_extract.txt", "ldak_predictor_extract.txt"):
-        ids = (
-            (relational_dir / "resources" / filename)
-            .read_text(encoding="utf-8")
-            .splitlines()
-        )
-        require(
-            ids and len(ids) == len(set(ids)), f"{filename}: empty or duplicate IDs"
-        )
-        require(set(ids) <= variant_ids, f"{filename}: IDs are absent from compact VCF")
-        selected_ids.update(ids)
+    grm_ids = (
+        (relational_dir / "resources" / "gcta_grm_extract.txt")
+        .read_text(encoding="utf-8")
+        .splitlines()
+    )
+    require(
+        grm_ids
+        == sorted(variant_ids, key=lambda value: tuple(map(int, value[1:].split("_")))),
+        "gcta_grm_extract.txt must select every compact VCF variant in genomic order",
+    )
+    ldak_ids = (
+        (relational_dir / "resources" / "ldak_predictor_extract.txt")
+        .read_text(encoding="utf-8")
+        .splitlines()
+    )
+    require(
+        ldak_ids and len(ldak_ids) == len(set(ldak_ids)),
+        "ldak_predictor_extract.txt: empty or duplicate IDs",
+    )
+    require(
+        set(ldak_ids) <= variant_ids,
+        "ldak_predictor_extract.txt: IDs are absent from compact VCF",
+    )
     weight_lines = (
         (relational_dir / "resources" / "ldak_weights.txt")
         .read_text(encoding="utf-8")
@@ -282,13 +293,14 @@ def validate_relational_fixtures(
         {fields[0] for fields in weights} <= variant_ids,
         "ldak_weights.txt: IDs are absent from compact VCF",
     )
-    selected_ids.update(fields[0] for fields in weights)
-
     return {
         "relational_files": len(actual_files),
         "cohorts": len(cohort_rows),
         "analyses": len(all_analysis_ids),
-        "resource_variant_ids": sorted(selected_ids),
+        "gcta_grm_variant_ids": len(grm_ids),
+        "ldak_resource_variant_ids": sorted(
+            set(ldak_ids) | {fields[0] for fields in weights}
+        ),
     }
 
 

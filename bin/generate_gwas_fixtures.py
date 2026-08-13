@@ -79,7 +79,11 @@ def write_csv(path: Path, header: list[str], rows: list[list[object]]) -> None:
         writer.writerows(rows)
 
 
-def write_relational_fixtures(output_dir: Path, prefix: str) -> None:
+def write_relational_fixtures(
+    output_dir: Path,
+    prefix: str,
+    records: list[tuple[int, int, str, str, str, list[str]]],
+) -> None:
     """Write the static, public manifest contract used by nf-core/gwas tests."""
     relational_dir = output_dir / "relational"
     resources_dir = relational_dir / "resources"
@@ -252,12 +256,16 @@ def write_relational_fixtures(output_dir: Path, prefix: str) -> None:
         f"{method_options_text}\n", encoding="utf-8"
     )
 
+    grm_variants = [record[2] for record in records]
+    (resources_dir / "gcta_grm_extract.txt").write_text(
+        "".join(f"{variant_id}\n" for variant_id in grm_variants),
+        encoding="utf-8",
+    )
     selected_variants = ["v1_0001", "v1_0101", "v2_0001"]
-    for filename in ("gcta_grm_extract.txt", "ldak_predictor_extract.txt"):
-        (resources_dir / filename).write_text(
-            "".join(f"{variant_id}\n" for variant_id in selected_variants),
-            encoding="utf-8",
-        )
+    (resources_dir / "ldak_predictor_extract.txt").write_text(
+        "".join(f"{variant_id}\n" for variant_id in selected_variants),
+        encoding="utf-8",
+    )
     (resources_dir / "ldak_weights.txt").write_text(
         "".join(f"{variant_id} 1\n" for variant_id in selected_variants),
         encoding="utf-8",
@@ -470,7 +478,7 @@ def main() -> None:
     )
     write_vcf(args.output_dir / f"{args.prefix}_all.vcf", samples, records)
     write_sidecars(args.output_dir, args.prefix, samples, dosages, args.cases, rng)
-    write_relational_fixtures(args.output_dir, args.prefix)
+    write_relational_fixtures(args.output_dir, args.prefix, records)
 
 
 if __name__ == "__main__":
