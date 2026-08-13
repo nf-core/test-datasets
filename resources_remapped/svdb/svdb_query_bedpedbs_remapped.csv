@@ -1,3 +1,3 @@
 filename,in_freq_info_key,in_allele_count_info_key,out_freq_info_key,out_allele_count_info_key
-/mnt/DATA/ram/phase3_output/resources_remapped/svdb/grch38_clinvar_sv_pathogenic_-20250728-.remapped.bedpe,,,clinvar_pathogenicFrq,clinvar_pathogenicOcc
-/mnt/DATA/ram/phase3_output/resources_remapped/svdb/grch38_clinvar_sv_non_pathogenic_-20250728-.remapped.bedpe,,,clinvar_non_pathogenicFrq,clinvar_non_pathogenicOcc
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/svdb/grch38_clinvar_sv_pathogenic_-20250728-.remapped.bedpe,,,clinvar_pathogenicFrq,clinvar_pathogenicOcc
+https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/resources_remapped/svdb/grch38_clinvar_sv_non_pathogenic_-20250728-.remapped.bedpe,,,clinvar_non_pathogenicFrq,clinvar_non_pathogenicOcc
