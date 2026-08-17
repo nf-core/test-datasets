@@ -5,7 +5,7 @@ params:
   meta: NULL
   input_dir: NULL
   artifact_dir: NULL
-  cpus: 1 
+  cpus: 1
   input_filename: NULL
   n_iter: 10
 ---
@@ -18,8 +18,8 @@ params:
  * n_iter = `r params$n`
  * input_filename = `r params$input_filename`
  * meta.id = `r params$meta$id`
- 
- 
+
+
 ## Read an input file
 
 ```{r}
@@ -30,7 +30,7 @@ if(!is.null(params$input_dir)) {
 ```
 
 
-## Print "Hello World" `n` times: 
+## Print "Hello World" `n` times:
 ```{r}
 for(i in 1:params$n_iter) {
   print(paste0("Hello World ", i))
@@ -51,3 +51,19 @@ if(!is.null(params$artifact_dir)) {
 }
 ```
 
+## Write versions to CSV
+
+```{r}
+versions <- data.frame(
+    package = "R",
+    version = as.character(getRversion())
+)
+write.table(
+    versions,
+    "versions.csv",
+    sep       = ",",
+    row.names = FALSE,
+    col.names = FALSE,
+    quote     = FALSE
+)
+```
