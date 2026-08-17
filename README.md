@@ -77,9 +77,47 @@ Trio of samples (`ACC13778A1`, `ACC13778A2`, `ACC13778A3`), each with the same 9
 
 `fastq/<sample>/<region>_singleton.fastq.gz`: reads whose mate fell outside the sliced region during extraction
 
+### `alignment/`
+
+Pre-aligned BAM/CRAM versions of the trio's `fastq/` reads, for the `test_align`/`test_align_singleton` profiles (which skip alignment and feed the pipeline pre-aligned files directly). All derived from the same underlying alignment as `fastq/`, so results should match the fastq-driven `test`/`test_singleton` profiles.
+
+`alignment/ACC13778A1_sorted_md.cram` (+ `.crai`): proband, pre-aligned and CRAM-compressed, used by `test_align`'s trio (mixed BAM/CRAM input) to also exercise CRAM ingestion
+
+`alignment/ACC13778A1_sorted_md.bam` (+ `.bai`): proband, pre-aligned BAM, converted from the CRAM above (same underlying alignment -- alignment is sample-level and doesn't depend on which other samples are present in a run); used as the sole input for `test_align_singleton`
+
+`alignment/ACC13778A2_sorted_md.bam` (+ `.bai`): father, pre-aligned BAM, used by `test_align`'s trio
+
+`alignment/ACC13778A3_sorted_md.bam` (+ `.bai`): mother, pre-aligned BAM, used by `test_align`'s trio
+
+### `precalled/`
+
+Case-level precalled VCFs for case `amusingmarmoset`, one per variant type, nested by scope: `trio/` for the `test_vcf` profile, `singleton/` for `test_vcf_singleton` (the two scopes' calls genuinely differ -- jointly-called across the family vs. the proband alone -- unlike `alignment/` above, which has no such fork). These profiles skip calling in favor of the precalled data. Only the proband (`ACC13778A1`) gets a samplesheet row per type -- parents (trio scope) are referenced via `paternal_id`/`maternal_id` only, per the pipeline's precalled-VCF samplesheet convention (see `docs/usage.md` in nf-core/raredisease).
+
+`precalled/trio/amusingmarmoset_precalled_snv.vcf.gz` (+ `.tbi`): case-level SNV calls
+
+`precalled/trio/amusingmarmoset_precalled_sv.vcf.gz` (+ `.tbi`): case-level SV calls
+
+`precalled/trio/amusingmarmoset_precalled_mt.vcf.gz` (+ `.tbi`): case-level MT calls
+
+`precalled/trio/amusingmarmoset_precalled_me.vcf.gz` (+ `.tbi`): case-level mobile-element calls
+
+`precalled/trio/amusingmarmoset_precalled_repeat.vcf.gz` (+ `.tbi`): case-level repeat-expansion calls, pre-Stranger annotation (matches `CALL_REPEAT_EXPANSIONS`'s own `vcf` emit, the convention the pipeline expects for this precalled type)
+
+`precalled/singleton/amusingmarmoset_precalled_snv.vcf.gz` (+ `.tbi`), `..._sv.vcf.gz`, `..._mt.vcf.gz`, `..._me.vcf.gz`, `..._repeat.vcf.gz` (+ `.tbi` each): same 5 types, called for the proband alone (no parents)
+
 ### `manifests/`
 
 `manifests/samplesheet.csv`: pipeline-format samplesheet (trio, sex/phenotype/pedigree) pointing at the `fastq/` files
+
+`manifests/samplesheet_singleton.csv`: samplesheet for the proband alone (no parents), pointing at the `fastq/` files, for the `test_singleton` profile
+
+`manifests/samplesheet_align.csv`: trio samplesheet pointing at `alignment/` (2 BAM parents + 1 CRAM proband), for the `test_align` profile
+
+`manifests/samplesheet_align_singleton.csv`: singleton samplesheet pointing at `alignment/`'s proband BAM, for the `test_align_singleton` profile
+
+`manifests/samplesheet_vcf.csv`: trio samplesheet (proband-only rows) pointing at `precalled/trio/`, for the `test_vcf` profile
+
+`manifests/samplesheet_vcf_singleton.csv`: singleton samplesheet pointing at `precalled/singleton/`, for the `test_vcf_singleton` profile
 
 `manifests/coordinate_provenance.tsv`: maps each local sliced contig/region back to its real GRCh38 chrom:start-end origin, with variant types present and notes
 

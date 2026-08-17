@@ -1,0 +1,2 @@
+sample,bam,bai,cram,crai,sex,phenotype,paternal_id,maternal_id,case_id
+ACC13778A1,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A1_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A1_sorted_md.bam.bai,,,1,2,0,0,amusingmarmoset
