@@ -50,3 +50,20 @@ if(!is.null(params$artifact_dir)) {
     cat("Hello World", file=file.path(params$artifact_dir, "artifact.txt"))
 }
 ```
+
+# Write versions to CSV
+
+```{r}
+versions <- data.frame(
+    package = "R",
+    version = as.character(getRversion())
+)
+write.table(
+    versions,
+    "versions.csv",
+    sep       = ",",
+    row.names = FALSE,
+    col.names = FALSE,
+    quote     = FALSE
+)
+```

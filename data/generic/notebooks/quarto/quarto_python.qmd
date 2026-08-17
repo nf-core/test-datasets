@@ -6,6 +6,8 @@ format:
 ---
 
 ```{python}
+import csv
+import platform
 import matplotlib.pyplot as plt
 ```
 
@@ -58,4 +60,12 @@ plt.plot(range(10))
 if artifact_dir is not None:
     with open(f"{artifact_dir}/artifact.txt", 'w') as f:
         f.write("Hello World!\n")
+```
+
+# Write versions to CSV
+
+```{python}
+with open('versions.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['python', platform.python_version()])
 ```
