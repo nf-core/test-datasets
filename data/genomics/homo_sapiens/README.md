@@ -762,10 +762,11 @@ Stitchr/thimble was run on the first five entries of the stitchr test dataset. T
 ```
 
 ### Gene to transcripts mapping
+
 TSV file containing transcripts and associated gene names based on the ORFs (open reading frames) detected in minigenome.fasta. This file was built with the minigenome.gtf file
 
 ```
-awk '                     
+awk '
 /transcript/ {
     match($0, /gene_id "([^"]+)"/, g)
     match($0, /transcript_id "([^"]+)"/, t)
