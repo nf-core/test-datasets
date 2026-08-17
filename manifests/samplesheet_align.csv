@@ -1,0 +1,4 @@
+sample,bam,bai,cram,crai,sex,phenotype,paternal_id,maternal_id,case_id
+ACC13778A2,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A2_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A2_sorted_md.bam.bai,,,2,1,0,0,amusingmarmoset
+ACC13778A3,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A3_sorted_md.bam,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A3_sorted_md.bam.bai,,,1,1,0,0,amusingmarmoset
+ACC13778A1,,,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A1_sorted_md.cram,https://raw.githubusercontent.com/nf-core/test-datasets/raredisease/alignment/ACC13778A1_sorted_md.cram.crai,1,2,ACC13778A3,ACC13778A2,amusingmarmoset
