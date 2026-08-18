@@ -115,7 +115,7 @@ Case-level precalled VCFs for case `amusingmarmoset`, one per variant type, nest
 
 `manifests/samplesheet_align_singleton.csv`: singleton samplesheet pointing at `alignment/`'s proband BAM, for the `test_align_singleton` profile
 
-`manifests/samplesheet_vcf.csv`: trio samplesheet (proband-only rows) pointing at `precalled/trio/`, for the `test_vcf` profile
+`manifests/samplesheet_vcf.csv`: proband-only samplesheet pointing at `precalled/trio/` (a jointly-called, multi-sample VCF), for the `test_vcf` profile. `paternal_id`/`maternal_id` are `0` rather than the real parent IDs -- the pipeline's `CREATE_PEDIGREE_FILE` only adds a row per sample that has its own samplesheet row, so referencing parent IDs with no row of their own makes `genmod models` fail with `PedigreeError: Parent is not in family.`
 
 `manifests/samplesheet_vcf_singleton.csv`: singleton samplesheet pointing at `precalled/singleton/`, for the `test_vcf_singleton` profile
 
