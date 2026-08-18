@@ -35,4 +35,46 @@ git fetch
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
 
+## Datasets for nf-core/metatdenovo
+
+### MetaEuk eukaryotic ORF-calling test data (RPL28 locus)
+
+Created to support development of MetaEuk-based eukaryotic ORF calling ([issue #459](https://github.com/nf-core/metatdenovo/issues/459)), same-contig locus-level consolidation ([issue #463](https://github.com/nf-core/metatdenovo/issues/463)), and cross-contig protein-cluster-level consolidation ([issue #460](https://github.com/nf-core/metatdenovo/issues/460)).
+The pipeline's existing test data has no eukaryotic genomic (intron-containing) content, so it can't exercise splice-aware gene calling or cross-caller/cross-contig consolidation.
+
+Source: the *Saccharomyces cerevisiae* S288C RPL28 locus (60S ribosomal protein uL15), which has a single, well-annotated intron.
+Downloaded from NCBI:
+
+* Genomic region `NC_001139.9:310767-312127` (chromosome VII, includes the 511 bp intron plus flanking sequence)
+* Spliced mRNA `NM_001180968.1` (exact CDS, no UTR)
+* Protein `NP_011412.1` (149 aa)
+
+Three read sets were simulated from these references with `wgsim -e 0.005 -r 0.0 -R 0.0` (sequencing error only, no true mutations/indels), 200 read pairs each:
+
+* `rpl28_genomic` -- reads from the genomic (intron-containing) sequence.
+* `rpl28_mrna` -- reads from the original spliced mRNA.
+* `rpl28_mrna_recoded` -- reads from a synonymously recoded version of the same CDS (every codon substituted for its maximally-divergent synonymous alternative via a full genetic-code lookup table), 38.9% nucleotide-divergent from the original mRNA but translating to an identical 149 aa protein.
+
+Assembly behaviour (MEGAHIT, `community.wave.seqera.io/library/megahit_pigz:87a590163e594224`), verified empirically before committing this data:
+
+* `rpl28_genomic` + `rpl28_mrna` co-assemble into a single 1348 bp contig.
+  MEGAHIT's graph merges the intron-skipping and intron-containing paths, since they share enough sequence identity/coverage support.
+  This is the intended same-contig, splice-aware ORF-calling case for #459/#463: one contig, two valid gene models (spliced vs. unspliced) that a splice-aware caller like MetaEuk must resolve as one locus.
+* `rpl28_genomic` + `rpl28_mrna_recoded` assemble into two separate contigs (1335 bp genomic, 449 bp recoded).
+  The nucleotide divergence is large enough that MEGAHIT does not merge them.
+* All three read sets combined assemble into exactly two contigs (1348 bp merged genomic+original-mRNA, 449 bp recoded-only).
+  This is the intended cross-contig, protein-level consolidation case for #460: two contigs, two ORF calls, but one shared protein once translated.
+
+`rpl28_reference_db.faa` (copy of `NP_011412.1`) is included as a minimal homology-search reference database for MetaEuk.
+
+```
+test_data/metaeuk/rpl28_genomic_R1.fastq.gz
+test_data/metaeuk/rpl28_genomic_R2.fastq.gz
+test_data/metaeuk/rpl28_mrna_R1.fastq.gz
+test_data/metaeuk/rpl28_mrna_R2.fastq.gz
+test_data/metaeuk/rpl28_mrna_recoded_R1.fastq.gz
+test_data/metaeuk/rpl28_mrna_recoded_R2.fastq.gz
+test_data/metaeuk/rpl28_reference_db.faa
+```
+
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
