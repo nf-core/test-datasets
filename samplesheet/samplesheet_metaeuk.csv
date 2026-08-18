@@ -1,4 +1,4 @@
 sample,fastq_1,fastq_2
-RPL28_GENOMIC,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/metatdenovo/test_data/metaeuk/rpl28_genomic_R1.fastq.gz,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/metatdenovo/test_data/metaeuk/rpl28_genomic_R2.fastq.gz
-RPL28_MRNA,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_R1.fastq.gz,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_R2.fastq.gz
-RPL28_MRNA_RECODED,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_recoded_R1.fastq.gz,https://raw.githubusercontent.com/erikrikarddaniel/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_recoded_R2.fastq.gz
+RPL28_GENOMIC,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/metaeuk/rpl28_genomic_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/metaeuk/rpl28_genomic_R2.fastq.gz
+RPL28_MRNA,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_R2.fastq.gz
+RPL28_MRNA_RECODED,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_recoded_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/metaeuk/rpl28_mrna_recoded_R2.fastq.gz
