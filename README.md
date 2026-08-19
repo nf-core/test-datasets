@@ -77,4 +77,15 @@ test_data/metaeuk/rpl28_mrna_recoded_R2.fastq.gz
 test_data/metaeuk/rpl28_reference_db.faa
 ```
 
+### Single-row `diamond_dbs.csv` variant for CI-lightweight multi-caller testing
+
+Added to support [issue #462](https://github.com/nf-core/metatdenovo/issues/462) (running multiple `--orf_caller` values in one execution).
+The pipeline's `tests/megahit_prokka_transdecoder.nf.test` needs `--diamond_dbs` on to catch a real class of bug (a Nextflow `.join()` silently dropping duplicate left-side keys when multiple ORF callers share the same diamond db name) -- but that test already combines two ORF callers' own containers, and adding the full two-row `samplesheet/diamond_dbs.csv` (pulling both the `ncbi-refseq-test` and `gtdb-r220-test` databases/containers) pushed the combination over the CI runner's disk budget.
+
+`diamond_dbs_single.csv` is the same `ncbi-refseq-test` row already used in `diamond_dbs.csv` (chosen over `gtdb-r220-test` since it also exercises the `parse_with_taxdump` code path), just as the only row -- still enough to reproduce the duplicate-key bug (two callers sharing one db name), at roughly half the diamond-side CI cost. No new database files -- points at the same `.dmnd`/`.dmp` files `diamond_dbs.csv` already references.
+
+```
+samplesheet/diamond_dbs_single.csv
+```
+
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
