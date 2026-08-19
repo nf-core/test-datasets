@@ -475,6 +475,12 @@ The earth sciences folder contain subfolders for different data formats encounte
         - SRX11780888_chr20.bam.bai index for filtered and trimmed reads from SRX11780888, aligned to human Chr20
         - SRX11780887.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780887, aligned to human Chr20, transcriptomic coordinates
         - SRX11780888.Aligned.toTranscriptome.out.bam filtered and trimmed reads from SRX11780888, aligned to human Chr20, transcriptomic coordinates
+      - dotseq
+        - counts.tsv.gz: per-ORF count matrix (6642 ORFs x 12 samples; 6 Ribo + 6 RNA) for the chx subset of the GSE231096 cell-cycle cohort. First column is `orf_id`, remaining columns are SRR accessions. Derived from the DOTSeq package's bundled `featureCounts.cell_cycle_subset.txt.gz` by stripping the featureCounts annotation columns and BAM-path sample names.
+        - annotation.tsv.gz: per-ORF annotation (6642 rows). Columns: `orf_id, gene_id, chrom, start, end, strand, orf_type`. ORF ids match `counts.tsv.gz`; `orf_type` is `mORF`, `uORF`, or `dORF`. Joined from the DOTSeq package's bundled flattened GENCODE v47 GTF + BED.
+        - metadata.txt.gz: DOTSeq's headerless 24-sample metadata covering both chx and har treatment arms, columns `run strategy replicate treatment condition`. Kept for upstream traceability; not consumed by the nf-test directly.
+        - samplesheet.csv: headered, chx-only subset of `metadata.txt.gz` (12 rows: 6 Ribo + 6 RNA) - what the nf-test consumes directly.
+        - README.md: full derivation recipe + verification.
       - plastid
         - Homo_sapiens.GRCh38.111_chr20_rois.txt: metagene generated from Homo_sapiens.GRCh38.111_chr20.gtf using plastid `metagene generate` command
         - SRX11780887_p_offsets.txt: p-site offsets genereated from SRX11780887_chr20.bam and Homo_sapiens.GRCh38.111_chr20.gtf using plastid `psite` command
