@@ -1,0 +1,2 @@
+db,dmnd_path,taxdump_names,taxdump_nodes,ranks,parse_with_taxdump
+ncbi-refseq-test,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/diamond_taxonomy/ncbi-refseq-test.dmnd,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/diamond_taxonomy/ncbi_taxdump/names.dmp,https://raw.githubusercontent.com/nf-core/test-datasets/metatdenovo/test_data/diamond_taxonomy/ncbi_taxdump/nodes.dmp,,true
