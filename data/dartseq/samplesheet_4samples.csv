@@ -1,5 +1,5 @@
 sample,fastq_1,fastq_2,group
-A03,data/dartseq/fastq/A03_R1.fastq.gz,data/dartseq/fastq/A03_R2.fastq.gz,control
-C03,data/dartseq/fastq/C03_R1.fastq.gz,data/dartseq/fastq/C03_R2.fastq.gz,control
-A04,data/dartseq/fastq/A04_R1.fastq.gz,data/dartseq/fastq/A04_R2.fastq.gz,dart
-E01,data/dartseq/fastq/E01_R1.fastq.gz,data/dartseq/fastq/E01_R2.fastq.gz,dart
+A03,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/A03_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/A03_R2.fastq.gz,control
+C03,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/C03_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/C03_R2.fastq.gz,control
+A04,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/A04_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/A04_R2.fastq.gz,dart
+E01,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/E01_R1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/dartseq/data/dartseq/fastq/E01_R2.fastq.gz,dart
