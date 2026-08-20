@@ -41,7 +41,11 @@ For further information or help, don't hesitate to get in touch on our [Slack or
 
 ### manuscript/
 
-This directory contains necessary contigs and samplesheets used in variantbenchmarking manuscript (in preperation)
+This directory contains necessary configs and samplesheets used in variantbenchmarking manuscript which is currently under review with Gigascience.
+
+### testdata/
+
+Intermediate test files necessary for nf-test profiles.
 
 ### samplesheet/
 
