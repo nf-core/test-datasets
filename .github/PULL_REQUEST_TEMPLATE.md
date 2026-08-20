@@ -15,6 +15,6 @@ Closes #XXX <!-- If this PR fixes an issue, please link it here! -->
 
 - [ ] I read the [test-data specifications](https://nf-co.re/docs/guidelines/components/test_data)
 - [ ] I tried testing my module with available data and there is no compatible data in test-datasets
-- [ ] If I added data:  I described the new files on the root `README.md`
+- [ ] If I added data: I described the new files on the root `README.md`
 - [ ] If I modified data: I checked whether the root `README.md` is still up-to-date
 - [ ] I made sure to submit the smallest dataset possible (e.g. try .tar.gz for larger directories)

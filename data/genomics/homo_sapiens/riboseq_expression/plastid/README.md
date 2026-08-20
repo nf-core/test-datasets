@@ -6,4 +6,3 @@ The files in this directory are needed to run nf-test on the plastid module/subm
 - `SRX11780887_p_offsets.txt` was generated using the command `nf-core modules test plastid/psite`.
 
 After running the above commands, the files can be extracted from the `work` directory used by nf-test: `.nf-test/tests/<hash>/work/<hash>/<hash>/`
-

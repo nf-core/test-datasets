@@ -2,16 +2,16 @@
 
 ## HG002_PAW70337_giab_10reads.pod5
 
-| Field | Value |
-|-------|-------|
-| Sample | HG002 (Genome in a Bottle reference sample) |
-| Run | PAW70337 |
-| Chemistry | 5kHz, R10.4.1 |
-| Reads | 10 (subset) |
-| Size | ~2.2 MB |
-| Source | `s3://ont-open-data/giab_2025.01/flowcells/HG002/PAW70337/pod5/PAW70337_66b2eea5_de8117b1_33.pod5` |
-| Access | Public, no authentication required (`--no-sign-request`) |
-| Released | 2025-01-14 |
+| Field     | Value                                                                                              |
+| --------- | -------------------------------------------------------------------------------------------------- |
+| Sample    | HG002 (Genome in a Bottle reference sample)                                                        |
+| Run       | PAW70337                                                                                           |
+| Chemistry | 5kHz, R10.4.1                                                                                      |
+| Reads     | 10 (subset)                                                                                        |
+| Size      | ~2.2 MB                                                                                            |
+| Source    | `s3://ont-open-data/giab_2025.01/flowcells/HG002/PAW70337/pod5/PAW70337_66b2eea5_de8117b1_33.pod5` |
+| Access    | Public, no authentication required (`--no-sign-request`)                                           |
+| Released  | 2025-01-14                                                                                         |
 
 ### How this file was created
 

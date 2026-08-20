@@ -1,26 +1,32 @@
 # Test data for `custom/orfnormalise` + `custom/orfmerge`
 
-Five small per-caller Ribo-seq ORF prediction outputs (one per supported
-caller), used by `modules/nf-core/custom/orfnormalise` and
-`modules/nf-core/custom/orfmerge` to exercise the parser, classifier,
-score-direction, and cross-caller merge logic end-to-end.
+Six small Ribo-seq ORF prediction outputs — one per supported caller, plus a
+second Ribo-TISH file covering its extended-ORF output — used by
+`modules/nf-core/custom/orfnormalise` and `modules/nf-core/custom/orfmerge` to
+exercise the parser, classifier, score-direction, and cross-caller merge logic
+end-to-end.
 
-| File | Size | Caller | Source genome |
-|---|---|---|---|
-| `sample1.ribocode.txt` | 13 KB | RiboCode | chr20 |
-| `sample1.ribotish.pred.txt` | 3 KB | Ribo-TISH | chr20 |
-| `sample1.ribotricer.tsv` | 3 KB | Ribotricer | chr20 |
-| `sample1.rpbp.predicted-orfs.bed.gz` | 2 KB | Rp-Bp | chr20 |
-| `cohort.price.orfs.tsv` | 5 KB | PRICE | chr19+chr22 |
+| File                                 | Size  | Caller     | Source genome |
+| ------------------------------------ | ----- | ---------- | ------------- |
+| `sample1.ribocode.txt`               | 13 KB | RiboCode   | chr20         |
+| `sample1.ribotish.pred.txt`          | 3 KB  | Ribo-TISH  | chr20         |
+| `sample1.ribotish.extended.pred.txt` | 3 KB  | Ribo-TISH  | chr20         |
+| `sample1.ribotricer.tsv`             | 3 KB  | Ribotricer | chr20         |
+| `sample1.rpbp.predicted-orfs.bed.gz` | 2 KB  | Rp-Bp      | chr20         |
+| `cohort.price.orfs.tsv`              | 5 KB  | PRICE      | chr19+chr22   |
 
-Each file is the head + first 15 records of a real-tool output, so every
-column the downstream parsers read is exercised; no synthetic data.
+All are real-tool output with no synthetic data. The first five are the head
+plus first 15 records, so every column the downstream parsers read is
+exercised; `sample1.ribotish.extended.pred.txt` is row-selected instead, to
+cover each distinct `TisType` value (see below).
 
 ## How they were derived
 
-All five files are sliced from outputs produced by existing nf-core/modules
+Five of the six are sliced from outputs produced by existing nf-core/modules
 tests (or nf-core/modules#11695 for Rp-Bp) on the VM, then trimmed to
-header + 15 records with `head`.
+header + 15 records with `head`. `sample1.ribotish.extended.pred.txt` comes
+from an nf-core/riboseq pipeline run instead, because no module test supplies
+the input that produces its ORF-type values.
 
 ### `sample1.ribocode.txt`
 
@@ -58,6 +64,41 @@ head -16 test_pred.txt | tail -15 >> sample1.ribotish.pred.txt
 awk -F'\t' 'BEGIN{OFS="\t"} NR==1 {print; next} {if ($15=="None" && $13!="None") $15=$13; print}' \
     sample1.ribotish.pred.txt > .tmp && mv .tmp sample1.ribotish.pred.txt
 ```
+
+### `sample1.ribotish.extended.pred.txt`
+
+Ribo-TISH qualifies its `TisType` after a colon (`Novel:CDSFrameOverlap`) only
+when a secondary annotation is supplied with `-a`, which nf-core/riboseq does in
+extended-ORF mode. `sample1.ribotish.pred.txt` above predates that mode and its
+`ribotish/predict` test passes no secondary annotation, so no fixture carried a
+qualified value.
+
+Produced by running nf-core/riboseq on its own chr20 test data:
+
+```bash
+nextflow run nf-core/riboseq -profile test,docker \
+    --skip_stringtie false \
+    --extended_orf_analysis true \
+    --outdir results
+```
+
+Taken from the pooled Ribo-TISH output
+(`results/orf_predictions/ribotish_all/allsamples_pred.txt`, 2716 records) and
+reduced to one row per distinct `TisType` — seven qualified, seven bare:
+
+| Qualified                  | Bare        |
+| -------------------------- | ----------- |
+| `Novel:CDSFrameOverlap`    | `Annotated` |
+| `5'UTR:Known`              | `Truncated` |
+| `5'UTR:CDSFrameOverlap`    | `Extended`  |
+| `3'UTR:CDSFrameOverlap`    | `Novel`     |
+| `Truncated:Known`          | `5'UTR`     |
+| `Novel:Known`              | `3'UTR`     |
+| `Internal:CDSFrameOverlap` | `Internal`  |
+
+All 19 columns and the header are unchanged, every row is verbatim tool output,
+and all rows are chr20 with transcript and gene ids that resolve against
+`Homo_sapiens.GRCh38.111_chr20.gtf`.
 
 ### `sample1.ribotricer.tsv`
 

@@ -1,6 +1,7 @@
 # modules/nf-core/stainwarpy test data
 
 ## Description
+
 This dataset consists of **multiplexed and H&E images of human colon tissue** intended for testing image processing modules in tasks such as multiplexed and H&E image registration/transformation. The images are cropped or simplified versions of real data to allow testing of module functionality.
 
 ---
@@ -25,10 +26,12 @@ This dataset consists of **multiplexed and H&E images of human colon tissue** in
 ---
 
 ## Source
-Derived from real colon tissue images. Files have been cropped and/or simplified to create a small test dataset suitable for module testing. No patient-identifiable information is included.  
+
+Derived from real colon tissue images. Files have been cropped and/or simplified to create a small test dataset suitable for module testing. No patient-identifiable information is included.
 
 ---
 
 ## Notes
-- All image files are in **OME-TIFF** format except the transformation map, which is a NumPy `.npy` array.   
+
+- All image files are in **OME-TIFF** format except the transformation map, which is a NumPy `.npy` array.
 - File sizes are small to allow CI testing.

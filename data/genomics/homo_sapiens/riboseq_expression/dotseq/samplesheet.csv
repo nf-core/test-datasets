@@ -1,0 +1,13 @@
+run,strategy,replicate,condition
+SRR24230462,rna,2,Mitotic_Cycling
+SRR24230465,ribo,2,Mitotic_Cycling
+SRR24230466,rna,1,Mitotic_Cycling
+SRR24230467,ribo,1,Mitotic_Cycling
+SRR24230469,ribo,2,Mitotic_Arrest
+SRR24230471,ribo,1,Mitotic_Arrest
+SRR24230472,rna,1,Mitotic_Arrest
+SRR24230474,rna,2,Mitotic_Arrest
+SRR24230477,rna,2,Interphase
+SRR24230479,rna,1,Interphase
+SRR24230480,ribo,1,Interphase
+SRR24230482,ribo,2,Interphase

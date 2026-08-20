@@ -13,14 +13,14 @@ These data are not sufficient for actual copy number calling. SAVANA is expected
 
 ### Test files
 
-| File | Size | Description |
-|---|---:|---|
-| `colo829.PAU61426.sup.chr22.subset.0.05.bam` | ~3.3 MB | Tumour COLO829 ONT BAM, 5% downsample of the chr22 subset |
-| `colo829.PAU61426.sup.chr22.subset.0.05.bam.bai` | ~15 KB | Tumour BAM index |
-| `colo829bl.PAU59807.sup.chr22.subset.0.05.bam` | ~3.0 MB | Matched normal COLO829BL ONT BAM, 5% downsample of the chr22 subset |
-| `colo829bl.PAU59807.sup.chr22.subset.0.05.bam.bai` | ~14 KB | Normal BAM index |
-| `hg38.chr22.fasta` | ~49 MB | hg38 chromosome 22 FASTA reference |
-| `hg38.chr22.fasta.fai` | 27 B | FASTA index |
+| File                                               |    Size | Description                                                         |
+| -------------------------------------------------- | ------: | ------------------------------------------------------------------- |
+| `colo829.PAU61426.sup.chr22.subset.0.05.bam`       | ~3.3 MB | Tumour COLO829 ONT BAM, 5% downsample of the chr22 subset           |
+| `colo829.PAU61426.sup.chr22.subset.0.05.bam.bai`   |  ~15 KB | Tumour BAM index                                                    |
+| `colo829bl.PAU59807.sup.chr22.subset.0.05.bam`     | ~3.0 MB | Matched normal COLO829BL ONT BAM, 5% downsample of the chr22 subset |
+| `colo829bl.PAU59807.sup.chr22.subset.0.05.bam.bai` |  ~14 KB | Normal BAM index                                                    |
+| `hg38.chr22.fasta`                                 |  ~49 MB | hg38 chromosome 22 FASTA reference                                  |
+| `hg38.chr22.fasta.fai`                             |    27 B | FASTA index                                                         |
 
 > [!NOTE]
 > The fasta and its index is stored under `data/genomics/homo_sapiens/genome/chr22/`

@@ -1,4 +1,4 @@
-# VueGen Test Data 
+# VueGen Test Data
 
 Test data for the [VueGen](https://github.com/Multiomics-Analytics-Group/vuegen) nf-core module, which is designed to automate report generation from outputs produced by other nf-core modules, subworkflows, or pipelines.
 

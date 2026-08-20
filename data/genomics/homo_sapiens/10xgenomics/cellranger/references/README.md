@@ -8,8 +8,9 @@ This directory contains downloaded references for use in testing Cellranger modu
 
 This repository does not store references for `cellranger count` and related single cell gene expression analyses.
 Instead, choose one of two options:
-* either use `cellranger mkref` to construct one from an existing reference sequence, such as human [chromosome 21](../../../../genome/chr21/sequence/genome.fasta) or [chromosome 22](../../../../genome/genome.fasta); or
-* [download](https://support.10xgenomics.com/single-cell-gene-expression/software/release-notes/build) a full reference from 10X Genomics
+
+- either use `cellranger mkref` to construct one from an existing reference sequence, such as human [chromosome 21](../../../../genome/chr21/sequence/genome.fasta) or [chromosome 22](../../../../genome/genome.fasta); or
+- [download](https://support.10xgenomics.com/single-cell-gene-expression/software/release-notes/build) a full reference from 10X Genomics
 
 ### VDJ
 
@@ -19,6 +20,7 @@ The option to [download a VDJ reference from IMGT](https://support.10xgenomics.c
 #### Source
 
 The reference is found in the official 10X Genomics `cellranger vdj` tutorial:
+
 - [Tutorial](https://support.10xgenomics.com/single-cell-vdj/software/pipelines/latest/tutorial/tutorial-vdj)
 - [Reference files](https://support.10xgenomics.com/single-cell-vdj/software/pipelines/latest/tutorial/tutorial-vdj#download:~:text=https%3A//cf.10xgenomics.com/supp/cell%2Dvdj/refdata%2Dcellranger%2Dvdj%2DGRCh38%2Dalts%2Densembl%2D5.0.0.tar.gz)
 
@@ -29,9 +31,11 @@ tar -xf refdata-cellranger-vdj-GRCh38-alts-ensembl-5.0.0.tar.gz
 ```
 
 ### Flex
+
 A probeset for use with cellranger Flex (`cellranger multi`) datasets. Filtered to only chr22 to match the reference
 genome files (genomics/homo_sapiens/genome/) with a few extra probes (chosen at random) added to meet cellranger's
 minimum requirement of 10 probes.
 
 #### Source
+
 Downloaded from: https://www.10xgenomics.com/support/software/cell-ranger/downloads

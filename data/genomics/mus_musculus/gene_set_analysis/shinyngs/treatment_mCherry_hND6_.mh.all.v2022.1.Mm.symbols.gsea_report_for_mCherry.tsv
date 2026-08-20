@@ -1,0 +1,26 @@
+NAME	GS<br> follow link to MSigDB	GS DETAILS	SIZE	ES	NES	NOM p-val	FDR q-val	FWER p-val	RANK AT MAX	LEADING EDGE
+HALLMARK_MTORC1_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_MTORC1_SIGNALING	Details ...	50	-0.25	-1.1	0.001	0.005	0.01	100	tags=20%, list=100, signal=25%
+HALLMARK_E2F_TARGETS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_E2F_TARGETS	Details ...	57	-0.3	-1.18	0.011	0.025	0.04	137	tags=23%, list=137, signal=28%
+HALLMARK_MYC_TARGETS_V1	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_MYC_TARGETS_V1	Details ...	64	-0.35	-1.26	0.021	0.045	0.07	174	tags=26%, list=174, signal=31%
+HALLMARK_MYC_TARGETS_V2	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_MYC_TARGETS_V2	Details ...	71	-0.4	-1.34	0.031	0.065	0.1	211	tags=29%, list=211, signal=34%
+HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION	Details ...	78	-0.45	-1.42	0.041	0.085	0.13	248	tags=32%, list=248, signal=37%
+HALLMARK_INFLAMMATORY_RESPONSE	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_INFLAMMATORY_RESPONSE	Details ...	85	-0.5	-1.5	0.051	0.105	0.16	285	tags=35%, list=285, signal=40%
+HALLMARK_XENOBIOTIC_METABOLISM	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_XENOBIOTIC_METABOLISM	Details ...	92	-0.55	-1.58	0.061	0.125	0.19	322	tags=38%, list=322, signal=43%
+HALLMARK_FATTY_ACID_METABOLISM	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_FATTY_ACID_METABOLISM	Details ...	99	-0.6	-1.66	0.001	0.145	0.22	359	tags=41%, list=359, signal=46%
+HALLMARK_OXIDATIVE_PHOSPHORYLATION	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_OXIDATIVE_PHOSPHORYLATION	Details ...	106	-0.65	-1.74	0.011	0.165	0.25	396	tags=44%, list=396, signal=49%
+HALLMARK_GLYCOLYSIS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_GLYCOLYSIS	Details ...	113	-0.7	-1.82	0.021	0.005	0.28	433	tags=47%, list=433, signal=52%
+HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_REACTIVE_OXIGEN_SPECIES_PATHWAY	Details ...	120	-0.25	-1.1	0.031	0.025	0.31	470	tags=50%, list=470, signal=55%
+HALLMARK_P53_PATHWAY	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_P53_PATHWAY	Details ...	127	-0.3	-1.18	0.041	0.045	0.01	507	tags=53%, list=507, signal=58%
+HALLMARK_UV_RESPONSE_UP	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_UV_RESPONSE_UP	Details ...	134	-0.35	-1.26	0.051	0.065	0.04	544	tags=56%, list=544, signal=61%
+HALLMARK_UV_RESPONSE_DN	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_UV_RESPONSE_DN	Details ...	141	-0.4	-1.34	0.061	0.085	0.07	581	tags=59%, list=581, signal=64%
+HALLMARK_ANGIOGENESIS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_ANGIOGENESIS	Details ...	148	-0.45	-1.42	0.001	0.105	0.1	618	tags=22%, list=618, signal=27%
+HALLMARK_HEME_METABOLISM	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_HEME_METABOLISM	Details ...	155	-0.5	-1.5	0.011	0.125	0.13	655	tags=25%, list=655, signal=30%
+HALLMARK_COAGULATION	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_COAGULATION	Details ...	162	-0.55	-1.58	0.021	0.145	0.16	692	tags=28%, list=692, signal=33%
+HALLMARK_IL2_STAT5_SIGNALING	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_IL2_STAT5_SIGNALING	Details ...	169	-0.6	-1.66	0.031	0.165	0.19	729	tags=31%, list=729, signal=36%
+HALLMARK_BILE_ACID_METABOLISM	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_BILE_ACID_METABOLISM	Details ...	176	-0.65	-1.74	0.041	0.005	0.22	766	tags=34%, list=766, signal=39%
+HALLMARK_PEROXISOME	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_PEROXISOME	Details ...	183	-0.7	-1.82	0.051	0.025	0.25	803	tags=37%, list=803, signal=42%
+HALLMARK_ALLOGRAFT_REJECTION	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_ALLOGRAFT_REJECTION	Details ...	190	-0.25	-1.1	0.061	0.045	0.28	840	tags=40%, list=840, signal=45%
+HALLMARK_SPERMATOGENESIS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_SPERMATOGENESIS	Details ...	197	-0.3	-1.18	0.001	0.065	0.31	877	tags=43%, list=877, signal=48%
+HALLMARK_KRAS_SIGNALING_UP	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_KRAS_SIGNALING_UP	Details ...	54	-0.35	-1.26	0.011	0.085	0.01	914	tags=46%, list=914, signal=51%
+HALLMARK_KRAS_SIGNALING_DN	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_KRAS_SIGNALING_DN	Details ...	61	-0.4	-1.34	0.021	0.105	0.04	951	tags=49%, list=951, signal=54%
+HALLMARK_PANCREAS_BETA_CELLS	http://www.gsea-msigdb.org/gsea/msigdb/mouse/geneset/HALLMARK_PANCREAS_BETA_CELLS	Details ...	68	-0.45	-1.42	0.031	0.125	0.07	988	tags=52%, list=988, signal=57%

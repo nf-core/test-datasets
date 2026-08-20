@@ -1,0 +1,3 @@
+<sequenceSizes genomeName="Homo Sapiens (NCBI GRCh38)">
+<chromosome fileName="genome.fa" contigName="chr22" totalBases="40001" build="GRCh38" isCircular="false" md5="1922b52e1af6977302717072ebaca0a1" ploidy="2" species="Homo_sapiens" knownBases="40001" type="Autosome" />
+</sequenceSizes>
