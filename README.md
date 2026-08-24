@@ -244,3 +244,43 @@ Case-level precalled VCFs for case `amusingmarmoset`, one per variant type, nest
 `resources_remapped/vep_gtf/plugin_config.txt`: Perl hash config wiring all VEP plugins above (paths, thresholds) into a single `--plugin` block
 
 `resources_remapped/vep_gtf/vep_plugin_files.csv`: list of plugin Perl modules/config to stage as VEP `--dir_plugins` input, for `--vep_plugin_files`
+
+### `subworkflow_fixtures/`
+
+Fixtures derived ad hoc for standalone subworkflow-level nf-test coverage, where no existing minimal-dataset file was directly suitable as input. Unlike the directories above (built for pipeline-level test profiles), these are one-off intermediates or outputs produced by running the relevant modules/subworkflows against the minimal dataset.
+
+`subworkflow_fixtures/minimal_reference_mt.fasta` (+ `.fasta.fai`, `.dict`): chrM-only reference sliced from `reference_sliced/minimal_reference.fasta`, for subworkflows that operate on the MT reference alone (`align_mitochondria`, `align_MT`, `call_mt_snvs`, `postprocess_MT_calls`, `call_sv_MT`)
+
+`subworkflow_fixtures/minimal_reference_mt.intervals`: MT calling intervals for the unshifted MT reference above
+
+`subworkflow_fixtures/minimal_reference_mtshift.fasta` (+ `.fasta.fai`, `.dict`): the MT reference above, shifted via GATK `ShiftFasta`, for the mitochondrial control-region calling pass
+
+`subworkflow_fixtures/minimal_reference_mtshift.intervals`: MT calling intervals for the shifted reference above
+
+`subworkflow_fixtures/minimal_reference_mtshift.back_chain`: liftover chain back from shifted to unshifted MT coordinates, GATK `ShiftFasta` output
+
+`subworkflow_fixtures/ACC13778A2_mtreverted.bam`: father's MT-region reads reverted to an unaligned BAM (GATK `RevertSam`), input to `convert_mt_bam_to_fastq`'s standalone test
+
+`subworkflow_fixtures/ACC13778A2_mt_1.fastq.gz` (+ `_2.fastq.gz`): father's MT-region reads as paired fastq, extracted from the BAM above, input to `align_mitochondria`/`align_MT`
+
+`subworkflow_fixtures/ACC13778A2_mt_aligned.bam` (+ `.bai`): father's MT-region reads aligned (BWA-MEM2) to the unshifted MT reference, input to `call_mt_snvs`/`subsample_mt_frac`/`subsample_mt_reads`
+
+`subworkflow_fixtures/ACC13778A2_mtshift_aligned.bam` (+ `.bai`): father's MT-region reads aligned to the shifted MT reference, the control-region calling input to `call_mt_snvs`
+
+`subworkflow_fixtures/ACC13778A2_mutect2_mt.vcf.gz` (+ `.tbi`): Mutect2 MT calls against the unshifted reference, input to `postprocess_MT_calls`
+
+`subworkflow_fixtures/ACC13778A2_mutect2_mtshift.vcf.gz` (+ `.tbi`): Mutect2 MT calls against the shifted reference, the control-region calls input to `postprocess_MT_calls`
+
+`subworkflow_fixtures/ACC13778A3_mt_1.fastq.gz` (+ `_2.fastq.gz`): mother's MT-region reads as paired fastq (same extraction recipe as the father's above), second trio member for `call_sv_MT`'s 2-sample test
+
+`subworkflow_fixtures/amusingmarmoset_vep_annotated_snv.vcf.gz` (+ `.tbi`): case-level VEP-annotated SNV calls, input to `filter_annotate_rank` and `annotate_consequence_pli`
+
+`subworkflow_fixtures/amusingmarmoset_csq_pli_annotated_snv.vcf.gz` (+ `.tbi`): case-level CSQ/PLI-annotated SNV calls, one step downstream of the VEP-annotated VCF above (`annotate_consequence_pli`'s own output), input to `rank_variants`
+
+`subworkflow_fixtures/amusingmarmoset_mobile_elements.vcf.gz` (+ `.tbi`): case-level mobile-element calls (RetroSeq + SVDB merge, `call_mobile_elements`'s own output), input to `annotate_mobile_elements`
+
+`subworkflow_fixtures/minimal_reference_bait.interval_list`: padded, scatter-merged bait intervals for the sliced reference (`PREPARE_REFERENCES`'s own `BedToIntervalList`/`IntervalListTools`/`CatVariants` recipe), input to `qc_bam`'s Picard HsMetrics test
+
+`subworkflow_fixtures/minimal_reference_target.interval_list`: unpadded target intervals for the sliced reference (GATK `BedToIntervalList`), input to `qc_bam`
+
+`subworkflow_fixtures/minimal_reference_chrom.sizes`: 2-column chromosome/length sizes file for the sliced reference, input to `qc_bam`

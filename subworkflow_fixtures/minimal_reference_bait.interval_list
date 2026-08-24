@@ -1,0 +1,54 @@
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:chr1	LN:34001	M5:85177fae2d58d49984eae1d99ba51faf	UR:minimal_reference.fasta
+@SQ	SN:chr7	LN:14001	M5:bcdfedf0323a71fe0ab94e5f6700de12	UR:minimal_reference.fasta
+@SQ	SN:chr12	LN:45001	M5:a1f0c67bb76efe117327b304ff0682af	UR:minimal_reference.fasta
+@SQ	SN:chr16	LN:13001	M5:71e715177d32a8e486c372ee04fad941	UR:minimal_reference.fasta
+@SQ	SN:chr20	LN:36502	M5:9f2431f3ca5de83c22d61c16e97df437	UR:minimal_reference.fasta
+@SQ	SN:chr21	LN:30001	M5:0a070ddba0cf98d7533d3bcf94204793	UR:minimal_reference.fasta
+@SQ	SN:chrX	LN:35001	M5:f01807356fc293120918f9ee2a90739f	UR:minimal_reference.fasta
+@SQ	SN:chrM	LN:16569	M5:c68f52674c9fb33aef52dcf399755519	UR:minimal_reference.fasta
+@PG	ID:1	CL:IntervalListTools --INPUT target_bed_target.interval_list --OUTPUT target_bed_split --PADDING 100 --SCATTER_COUNT 2 --SUBDIVISION_MODE INTERVAL_SUBDIVISION --TMP_DIR . --UNIQUE false --DONT_MERGE_ABUTTING false --SORT true --ACTION CONCAT --INCLUDE_FILTERED false --BREAK_BANDS_AT_MULTIPLES_OF 0 --INVERT false --OUTPUT_VALUE NONE --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false	PN:IntervalListTools
+chr1	245	495	+	.
+chr12	3445	3866	+	.
+chr12	4319	4637	+	.
+chr12	28396	28746	+	.
+chr12	28929	29233	+	.
+chr12	38075	38583	+	.
+chr16	5335	5897	+	.
+chr20	4562	5032	+	.
+chr20	5180	5494	+	.
+chr20	6315	7048	+	.
+chr20	7139	8135	+	.
+chr20	8302	8650	+	.
+chr20	8675	9491	+	.
+chr20	9830	10942	+	.
+chr20	11154	11413	+	.
+chr20	11426	11504	+	.
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:chr1	LN:34001	M5:85177fae2d58d49984eae1d99ba51faf	UR:minimal_reference.fasta
+@SQ	SN:chr7	LN:14001	M5:bcdfedf0323a71fe0ab94e5f6700de12	UR:minimal_reference.fasta
+@SQ	SN:chr12	LN:45001	M5:a1f0c67bb76efe117327b304ff0682af	UR:minimal_reference.fasta
+@SQ	SN:chr16	LN:13001	M5:71e715177d32a8e486c372ee04fad941	UR:minimal_reference.fasta
+@SQ	SN:chr20	LN:36502	M5:9f2431f3ca5de83c22d61c16e97df437	UR:minimal_reference.fasta
+@SQ	SN:chr21	LN:30001	M5:0a070ddba0cf98d7533d3bcf94204793	UR:minimal_reference.fasta
+@SQ	SN:chrX	LN:35001	M5:f01807356fc293120918f9ee2a90739f	UR:minimal_reference.fasta
+@SQ	SN:chrM	LN:16569	M5:c68f52674c9fb33aef52dcf399755519	UR:minimal_reference.fasta
+@PG	ID:1	CL:IntervalListTools --INPUT target_bed_target.interval_list --OUTPUT target_bed_split --PADDING 100 --SCATTER_COUNT 2 --SUBDIVISION_MODE INTERVAL_SUBDIVISION --TMP_DIR . --UNIQUE false --DONT_MERGE_ABUTTING false --SORT true --ACTION CONCAT --INCLUDE_FILTERED false --BREAK_BANDS_AT_MULTIPLES_OF 0 --INVERT false --OUTPUT_VALUE NONE --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false	PN:IntervalListTools
+chr20	11505	11904	+	.
+chr20	11931	13080	+	.
+chr21	1668	2094	+	.
+chr21	2103	2445	+	.
+chr21	2475	2864	+	.
+chr21	4105	4412	+	.
+chr21	17531	17863	+	.
+chr21	18917	19121	+	.
+chr21	19251	19533	+	.
+chr21	20573	20830	+	.
+chr21	21220	21505	+	.
+chr21	23090	23351	+	.
+chr21	25323	25796	+	.
+chr21	25808	26201	+	.
+chr21	27471	27750	+	.
+chr21	28418	28715	+	.
+chr21	28763	28982	+	.
+chrX	18621	20165	+	.
