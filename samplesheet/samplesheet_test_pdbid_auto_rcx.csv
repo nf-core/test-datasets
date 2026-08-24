@@ -1,0 +1,2 @@
+sample,receptor,ligand,binding_ligand
+cox2_aspirin,5KIR,tests/data/ligands/aspirin.smi,RCX
