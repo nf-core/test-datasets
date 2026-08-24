@@ -29,6 +29,25 @@ git remote set-branches --add origin [remote-branch]
 git fetch
 ```
 
+## Datasets for nf-core/phyloplace
+
+### `testdata/hmmrank/` - HMMER search tables for the `hmmer/hmmrank` module tests
+
+Four gzipped HMMER 3.4 output tables, two per profile, for the `NrdJ` and `NrdJm1` ribonucleotide reductase profiles:
+
+- `NrdJ.tbl.gz`, `NrdJm1.tbl.gz`: per-sequence hit tables (`--tblout`)
+- `NrdJ.domtbl.gz`, `NrdJm1.domtbl.gz`: per-domain hit tables (`--domtblout`)
+
+They are excerpts of a real `hmmsearch` of both profiles against protein sequences predicted from the GTDB r226 representative genomes, run through nf-core/phyloplace in "search and place" mode.
+Five target sequences were selected and every row for them kept verbatim, giving nine `(target, profile)` pairs, four of the five targets being hit by both profiles.
+The trailing comment block that `hmmsearch` writes at the end of each table was removed, because it records the run's working directory and a timestamp and so is neither reproducible nor meaningful outside the original run.
+Nothing else was altered.
+
+The five targets were picked to cover the cases that the per-domain coordinate arithmetic has to get right: a pair matching in a single domain, a pair with several overlapping domains, a pair with several disjoint domains, and a pair whose domains overlap in profile coordinates while lying far apart on the target sequence.
+That last case is the point of the selection: `AACBMDAH_04658` against `NrdJm1` spans positions 14 to 803 on the sequence but covers only 400 of them, which is what a gene split over more than one open reading frame looks like in these tables.
+
+Consumed by the `hmmer/hmmrank` module tests in nf-core/modules.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
