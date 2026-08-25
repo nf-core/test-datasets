@@ -29,6 +29,7 @@ ANALYSIS_HEADER = [
     "association_methods",
     "heritability_methods",
     "population_prevalence",
+    "sample_prevalence",
 ]
 
 
@@ -116,7 +117,7 @@ def write_relational_fixtures(
     write_csv(
         relational_dir / "analysis_manifest_quantitative.csv",
         ANALYSIS_HEADER,
-        [["example_quantitative", *common, "", "", "", "", "plink2", "", ""]],
+        [["example_quantitative", *common, "", "", "", "", "plink2", "", "", ""]],
     )
     write_csv(
         relational_dir / "analysis_manifest_binary.csv",
@@ -136,6 +137,7 @@ def write_relational_fixtures(
                 "plink2",
                 "",
                 "",
+                "",
             ]
         ],
     )
@@ -151,6 +153,7 @@ def write_relational_fixtures(
                 qcovar_url,
                 catcovar_url,
                 "plink2,regenie,gcta_fastgwa,ldak_kvik",
+                "",
                 "",
                 "",
             ]
@@ -174,6 +177,7 @@ def write_relational_fixtures(
                 "",
                 "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he,ldak_pcgc",
                 "0.1",
+                "",
             ]
         ],
     )
@@ -191,6 +195,7 @@ def write_relational_fixtures(
                 "plink2,regenie,gcta_fastgwa,ldak_kvik",
                 "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he",
                 "",
+                "",
             ],
             [
                 "heterogeneous_bt",
@@ -206,6 +211,7 @@ def write_relational_fixtures(
                 "plink2,gcta_fastgwa,ldak_kvik",
                 "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he,ldak_pcgc",
                 "0.1",
+                "",
             ],
         ],
     )

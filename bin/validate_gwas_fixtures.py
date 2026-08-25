@@ -229,6 +229,10 @@ def validate_relational_fixtures(
                     row["population_prevalence"] == "0.1",
                     f"{analysis_id}: invalid prevalence",
                 )
+            require(
+                not row["sample_prevalence"],
+                f"{analysis_id}: sample prevalence must remain optional",
+            )
 
     with (relational_dir / "method_options_heterogeneous.json").open(
         encoding="utf-8"
