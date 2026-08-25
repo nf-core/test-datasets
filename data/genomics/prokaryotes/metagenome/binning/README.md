@@ -4,13 +4,13 @@ A small synthetic community containing two genomes and three samples with differ
 
 ## Files
 
-| File               | Size   | Description                                              |
-| ------------------ | ------ | -------------------------------------------------------- |
-| `contigs.fasta.gz` | 684 kB | 449 contigs of 5 kb, 2.25 Mb total                       |
-| `s1.sorted.bam`    | 1.4 MB | Sample 1 reads mapped to the contigs and sorted          |
-| `s2.sorted.bam`    | 950 kB | Sample 2 reads mapped to the contigs and sorted          |
-| `s3.sorted.bam`    | 1.1 MB | Sample 3 reads mapped to the contigs and sorted          |
-| `s*.sorted.bam.bai`| 36 kB  | BAM indexes, required by MetaBAT2 and CONCOCT            |
+| File                | Size   | Description                                     |
+| ------------------- | ------ | ----------------------------------------------- |
+| `contigs.fasta.gz`  | 684 kB | 449 contigs of 5 kb, 2.25 Mb total              |
+| `s1.sorted.bam`     | 1.4 MB | Sample 1 reads mapped to the contigs and sorted |
+| `s2.sorted.bam`     | 950 kB | Sample 2 reads mapped to the contigs and sorted |
+| `s3.sorted.bam`     | 1.1 MB | Sample 3 reads mapped to the contigs and sorted |
+| `s*.sorted.bam.bai` | 36 kB  | BAM indexes, required by MetaBAT2 and CONCOCT   |
 
 ## Composition
 
@@ -84,4 +84,3 @@ Bins returned by each binner, in multi-sample mode (all three BAMs) and single-s
 | Vamb       | 5.0.4   | 1         | 0        |
 
 Vamb writes no FASTA at all unless `--minfasta` is given (the runs above used `--minfasta 200000`) and its VAE needs coverage across several samples to separate contigs, so a single sample leaves it with single-contig clusters.
-
