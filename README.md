@@ -1172,7 +1172,11 @@ The earth sciences folder contain subfolders for different data formats encounte
   - clair3_v2.hifi.tar.gz: gzipped tar folder containing PyTorch models needed to run clair3 V2 on Hifi data
 - msa_tree_pairs
   - mammals_codon_msa.fasta: in frame codon alignment of a short protein (187 codons) in 10 mammalian species
-  - mammals_codon_tree.nwk: phylogenetic tree for mammals_codon_msa.fasta
+  - mammals_aa_msa.fasta: protein alignment of a short protein (187 aa) in 10 mammalian species
+  - mammals_codon_tree.nwk: phylogenetic tree for mammals_codon/aa_msa.fasta
+  - mammals_codon_msa_small.fasta: in frame codon alignment of a very short protein (5 sequences, 10 codons)
+  - mammals_aa_msa_small.fasta: protein alignment of a very short protein (5 sequences, 10 aa)
+  - mammals_codon_tree_small.nwk: phylogenetic tree for mammals_codon/aa_msa_small.fasta
 - newick
   - gene_tree.nwk: phylogenetic gene tree of 6 generated species with duplication events.
   - species_tree.nwk: cladogram of 6 generated species.
