@@ -1,0 +1,27 @@
+[Header]
+IEMFileVersion,5
+Experiment Name,240115_A01234_0042_AHJLG7DRXX
+Date,2024-01-15
+Workflow,GenerateFASTQ
+Application,FASTQ Only
+Instrument Type,NovaSeq 6000
+Assay,TruSeq DNA PCR-Free
+Index Adapters,TruSeq DNA UD Indexes (96 Indexes)
+Chemistry,Amplicon
+
+[Reads]
+151
+151
+
+[Settings]
+ReverseComplement,0
+Adapter,AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+AdapterRead2,AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+[Data]
+Lane,Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,I5_Index_ID,index2,Sample_Project,Description
+3,Sample6,SampleSix,,F01,UDP0006,TATGAGACAT,UDP0006,ATGAAGGCAG,ProjectGamma,WGS_batch3
+3,Sample7,SampleSeven,,G01,UDP0007,TAATCTCGTC,UDP0007,GCAGAATTCG,ProjectGamma,WGS_batch3
+3,Sample8,SampleEight,,H01,UDP0008,CAGTCCAAGG,UDP0008,CTAAGCCTCA,ProjectGamma,WGS_batch3
+4,Sample9,SampleNine,,A02,UDP0009,TGCTGCTATA,UDP0009,TTCGTAGCTG,ProjectDelta,WGS_batch4
+4,Sample10,SampleTen,,B02,UDP0010,CGACTTGGAT,UDP0010,GAACATACGG,ProjectDelta,WGS_batch4
