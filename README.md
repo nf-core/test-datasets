@@ -48,6 +48,13 @@ That last case is the point of the selection: `AACBMDAH_04658` against `NrdJm1` 
 
 Consumed by the `hmmer/hmmrank` module tests in nf-core/modules.
 
+### `testdata/PF14720_seed_embedded_taxonomy.alnfaa` - embedded-taxonomy variant of `PF14720_seed.alnfaa`
+
+Same 138 sequences and alignment as `PF14720_seed.alnfaa` (the reference alignment several other phyloplace test profiles already use), with each header's existing taxonomy string from `testdata/hmmrank/../../modules/data/delete_me/gappa/gappa_taxonomy.tsv` (the `nf-core/modules` test-datasets `gappa_taxonomy.tsv` fixture, keyed by the same sequence ids) appended after the id, GTDB single-file style: `>id taxonomy;string`.
+Content is otherwise byte-identical -- only the header lines changed.
+
+Used to test deriving taxonomy from `--refseqfile` FASTA headers instead of a separate `--taxonomy` file, without needing a new reference alignment/tree pair -- the existing `PF14720_seed.ft.LGCAT.newick` tree still applies unchanged.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
