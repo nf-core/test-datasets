@@ -561,6 +561,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - flowcell_samplesheet.v2.csv: Illumina SampleSheet in BCLConvert V2 format — dual-index, 5 samples across 2 projects and 2 lanes. For samplesheet validation/parsing tests only; not intended to be run against `flowcell.tar.gz`.
       - flowcell_samplesheet_b.v1.csv: Illumina SampleSheet in IEM V1 (bcl2fastq) format — dual-index, 5 samples across 2 projects and lanes 3–4. Companion to `flowcell_samplesheet.v1.csv` for samplesheet merge tests.
       - flowcell_samplesheet_b.v2.csv: Illumina SampleSheet in BCLConvert V2 format — dual-index, 5 samples across 2 projects and lanes 3–4. Companion to `flowcell_samplesheet.v2.csv` for samplesheet merge tests.
+      - samesheetparser/a/SampleSheet.csv: Copy of `flowcell_samplesheet.v1.csv` placed under an `a/` subdirectory so it shares the basename `SampleSheet.csv` with the companion below. Used by the samplesheetparser/merge nf-test.
+      - samesheetparser/b/SampleSheet.csv: Copy of `flowcell_samplesheet_b.v1.csv` placed under a `b/` subdirectory. Paired with `samesheetparser/a/SampleSheet.csv` so two identically named, non-colliding sheets can be merged, verifying the module stages same-named per-project sheets without an input filename collision.
     - cram:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test*{1,2}` (normal)
