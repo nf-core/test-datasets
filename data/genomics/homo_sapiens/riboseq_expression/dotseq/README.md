@@ -8,12 +8,12 @@ The `dotseq/dotseq` module wraps `DOTSeqDataSetsFromSummarizeOverlaps()`, which 
 
 ## Files
 
-| File | Size | Description |
-|---|---|---|
-| `counts.tsv.gz` | 73 KB | Per-ORF count matrix (6642 ORFs x 12 samples). First column is `orf_id`, remaining columns are sample IDs (6 Ribo-seq + 6 RNA-seq). Sample IDs match the `run` column of `samplesheet.csv`. |
-| `annotation.tsv.gz` | 72 KB | Per-ORF annotation (6642 rows). Columns: `orf_id, gene_id, chrom, start, end, strand, orf_type`. `orf_type` is one of `mORF`, `uORF`, `dORF`. |
-| `samplesheet.csv` | 423 B | 12-sample condition table covering 3 conditions (Mitotic_Cycling, Mitotic_Arrest, Interphase) x 2 strategies (ribo, rna). Columns: `run, strategy, replicate, condition`. |
-| `metadata.txt.gz` | 211 B | DOTSeq's headerless 24-sample metadata covering both chx + har treatment arms, columns: `run strategy replicate treatment condition`. Kept verbatim from the upstream package for traceability; not consumed by the nf-test directly. |
+| File                | Size  | Description                                                                                                                                                                                                                           |
+| ------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `counts.tsv.gz`     | 73 KB | Per-ORF count matrix (6642 ORFs x 12 samples). First column is `orf_id`, remaining columns are sample IDs (6 Ribo-seq + 6 RNA-seq). Sample IDs match the `run` column of `samplesheet.csv`.                                           |
+| `annotation.tsv.gz` | 72 KB | Per-ORF annotation (6642 rows). Columns: `orf_id, gene_id, chrom, start, end, strand, orf_type`. `orf_type` is one of `mORF`, `uORF`, `dORF`.                                                                                         |
+| `samplesheet.csv`   | 423 B | 12-sample condition table covering 3 conditions (Mitotic_Cycling, Mitotic_Arrest, Interphase) x 2 strategies (ribo, rna). Columns: `run, strategy, replicate, condition`.                                                             |
+| `metadata.txt.gz`   | 211 B | DOTSeq's headerless 24-sample metadata covering both chx + har treatment arms, columns: `run strategy replicate treatment condition`. Kept verbatim from the upstream package for traceability; not consumed by the nf-test directly. |
 
 ## How they were derived
 
