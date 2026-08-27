@@ -242,6 +242,14 @@ TBD
 
 > All FastQ files were sub-sampled down to 10,000 reads.
 
+### `local_modules/blast_report/`
+The following files are used as input for process testing the local module blast_report:
+`SRR13266665_scaffolds.fa`: Fasta file including scaffolds generated from viralrecon using input data `SRR13266665_1.fastq.gz` and `SRR13266665_2.fastq.gz`.
+`SRR13266665.blast.tsv`: TSV file with unfiltered blast results generated from viralrecon using input data `SRR13266665_1.fastq.gz` and `SRR13266665_2.fastq.gz`.
+`SRR13266665_error.blast.tsv`: TSV file with unfiltered blast results generated from viralrecon using input data `SRR13266665_1.fastq.gz` and `SRR13266665_2.fastq.gz`, and additionally modified to a coverage below 50x.
+
+The files were generated using the enterovirus typing path in viralrecon.
+
 ## Sampling procedure
 
 ### SARS-CoV-2
