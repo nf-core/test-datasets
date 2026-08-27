@@ -1,0 +1,101 @@
+stitle	staxids	sscinames	qaccver	saccver	pident	length	mismatch	gapopen	qstart	qend	sstart	send	evalue	bitscore	slen	qlen	qcovs
+Echovirus E30 strain 13-311, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KY888272.1	98.215	7394	131	1	1	7393	7404	11	0.0	12922	7428	7412	99
+Echovirus E30 strain 14-397, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KY888274.1	97.714	7393	169	0	1	7393	7404	12	0.0	12717	7428	7412	99
+Enterovirus B isolate NO/538705/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815101.1	100.000	6585	0	0	75	6659	6585	1	0.0	12161	6585	7412	89
+Echovirus E30 isolate E30SD2010CHN, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	JX976773.1	95.470	7395	334	1	1	7395	7402	9	0.0	11799	7425	7412	99
+Echovirus E30 isolate JH-865B/2015, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OP207961.1	95.989	7205	289	0	32	7236	7206	2	0.0	11705	7206	7412	97
+Echovirus E30 isolate E30/USA/13I10/2016, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ791571.1	95.455	7194	327	0	1	7194	7197	4	0.0	11474	7207	7412	97
+Echovirus E30 strain 16-I10, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KY645964.1	95.453	7191	327	0	1	7191	7235	45	0.0	11468	7245	7412	97
+Echovirus E30 isolate A538/GD/CHN/2009, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	ON129560.1	90.481	7396	699	5	1	7393	7403	10	0.0	9753	7425	7412	99
+Human echovirus 30 isolate FDJS03_84 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	AY948442.1	89.797	7400	741	11	1	7393	7402	10	0.0	9470	7428	7412	99
+Human echovirus 30 strain Echo30/Zhejiang/17/03/CSF, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	DQ246620.1	89.757	7400	744	11	1	7393	7402	10	0.0	9454	7428	7412	99
+Echovirus E30 isolate TL12C/NM/CHN/2016, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MW080372.1	88.914	7388	818	1	7	7393	7397	10	0.0	9105	7429	7412	99
+Echovirus E30 isolate TL7C/NM/CHN/2016, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MW080377.1	88.847	7388	823	1	7	7393	7397	10	0.0	9077	7429	7412	99
+Echovirus E30 isolate E30/USA/14A10/2017, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ842429.1	88.755	7381	823	5	1	7377	7385	8	0.0	9025	7393	7412	99
+Echovirus E30 strain NZ/Ashburton/17WQ2027G/2017-08-20 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MW586892.1	88.525	7381	840	5	1	7377	7385	8	0.0	8931	7393	7412	99
+Echovirus E30 isolate Echo30/Jiangsu/21/11/, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OM677620.1	88.343	7395	859	3	1	7393	7403	10	0.0	8877	7425	7412	99
+Echovirus E30 isolate JH-636/2015, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OP207962.1	88.433	7236	823	10	7	7236	7246	19	0.0	8713	7272	7412	98
+Echovirus E30 isolate 15K3/YN/CHN/2019, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ210941.1	87.885	7396	889	5	1	7392	7407	15	0.0	8687	7445	7412	99
+Echovirus E30 isolate 9K3/YN/CHN/2019, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ210942.1	87.855	7394	891	5	1	7390	7406	16	0.0	8672	7422	7412	99
+Echovirus E30 isolate 52R3/YN/CHN/2019, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ210943.1	87.794	7398	896	5	1	7394	7399	5	0.0	8652	7424	7412	99
+Echovirus E30 strain USA/2017/CA-RGDS-1005, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MK238483.1	88.446	7158	821	4	68	7222	7155	1	0.0	8632	7155	7412	97
+Echovirus E30 strain KM/A363/09 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KF878942.1	87.674	7399	901	11	1	7393	7403	10	0.0	8600	7425	7412	99
+Echovirus E30 isolate 32R3/YN/CHN/2019, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ210944.1	87.603	7381	908	5	1	7377	7414	37	0.0	8554	7452	7412	99
+Echovirus E30 strain USA/2017/CA-RGDS-1048 polyprotein gene, partial cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MN153801.1	88.608	7040	796	4	221	7257	7037	1	0.0	8552	7040	7412	95
+Echovirus E30 isolate FY21/HB.WH/CHN/2019, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MZ229660.1	87.785	7245	876	7	32	7271	7256	16	0.0	8468	7257	7412	98
+Echovirus E30 isolate FY9/HB.WH/CHN/2019, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MZ229659.1	87.888	7208	865	6	68	7271	7219	16	0.0	8468	7298	7412	97
+Echovirus E30 isolate 2012EM161, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KC897073.1	85.473	7407	1047	27	1	7393	7401	10	0.0	7690	7427	7412	99
+Human enterovirus B strain EV30-14125-00 from Ukraine polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	AY896766.1	85.279	7377	1067	16	9	7377	7369	4	0.0	7589	7369	7412	99
+Human echovirus 30 isolate 14916net87, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	DQ534205.1	84.068	7400	1167	12	1	7393	7404	10	0.0	7123	7430	7412	99
+Human enterovirus B strain EV30-8477-98 from Russia polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	AY896767.1	84.097	7376	1154	16	9	7377	7367	4	0.0	7107	7367	7412	99
+Enterovirus B, complete genome	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MH152412.1	83.731	7290	1172	14	65	7347	7283	1	0.0	6879	7283	7412	98
+Echovirus E30 strain 13-759, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KY888273.1	83.249	7337	1216	13	63	7392	7343	13	0.0	6728	7426	7412	99
+Echovirus E30 isolate E30/USA/1C7/2020, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ842411.1	82.926	7403	1242	19	1	7392	7392	1	0.0	6649	7430	7412	99
+Echovirus E30 polyprotein gene, partial cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KY131965.1	83.440	7162	1172	14	223	7377	7180	26	0.0	6643	7180	7412	97
+Echovirus E30 isolate E30/USA/2C2/2019, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	OQ842412.1	82.872	7403	1246	19	1	7392	7392	1	0.0	6637	7429	7412	99
+Echovirus E30 strain 18L polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MH484073.1	82.870	7379	1237	26	12	7377	7368	4	0.0	6599	7371	7412	99
+Echovirus E30 strain E30/Spain_LCR675/2017, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MZ389232.1	82.736	7420	1260	20	3	7412	7410	2	0.0	6586	7431	7412	99
+Echovirus E30 strain 20L polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MH484075.1	82.814	7378	1243	24	12	7377	7368	4	0.0	6577	7371	7412	99
+Enterovirus B isolate NL/16-443/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815074.1	82.682	7391	1250	28	1	7377	7376	2	0.0	6530	7412	7412	99
+Echovirus E30 strain 19L polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MH484074.1	82.694	7379	1250	26	12	7377	7368	4	0.0	6527	7371	7412	99
+Enterovirus B isolate NL/17-002/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815077.1	82.689	7377	1247	28	12	7374	7361	1	0.0	6521	7374	7412	99
+Echovirus E30 isolate 4-MRS2013 polyprotein gene, partial cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KF920600.1	82.869	7279	1234	13	96	7368	7272	1	0.0	6521	7272	7412	98
+Echovirus E30 strain 15L polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MH484072.1	82.667	7379	1252	26	12	7377	7368	4	0.0	6516	7371	7412	99
+Echovirus E30 isolate ECHO30_INMI1 polyprotein gene, partial cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF101537.1	83.424	7022	1152	12	343	7358	7016	1	0.0	6508	7029	7412	95
+Echovirus E30 Echo30/Hokkaido.JPN/21214/2017 genomic RNA, complete sequence	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	LC416534.1	82.586	7408	1260	25	1	7393	7402	10	0.0	6506	7428	7412	99
+Echovirus E30 isolate E30_240016834401_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612488.1	82.651	7378	1249	28	32	7393	7372	10	0.0	6505	7376	7412	99
+Echovirus E30 strain E30/Spain_LCR265/2016, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MZ436966.1	82.646	7370	1253	24	37	7394	7356	1	0.0	6501	7356	7412	99
+Echovirus E30 Echo30/Hokkaido.JPN/21208/2017 genomic RNA, complete sequence	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	LC416533.1	82.559	7408	1262	25	1	7393	7402	10	0.0	6495	7428	7412	99
+Echovirus E30 Echo30/Hokkaido.JPN/21246/2017 genomic RNA, complete sequence	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	LC416535.1	82.555	7412	1255	27	1	7393	7402	10	0.0	6490	7428	7412	99
+Echovirus E30 isolate 1-MRS2013 polyprotein gene, partial cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KF920598.1	82.932	7218	1214	16	97	7305	7209	1	0.0	6488	7209	7412	97
+Echovirus E30 isolate Hu/RU/Kurgan/2023/E30/1173_23 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PV821999.1	82.867	7249	1216	24	1	7236	7240	5	0.0	6482	7266	7412	98
+Echovirus E30 isolate E30_240027975305_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612489.1	82.579	7382	1247	35	32	7393	7372	10	0.0	6471	7375	7412	99
+Echovirus E30 Echo30/Hokkaido.JPN/21326/2017 genomic RNA, complete sequence	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	LC416536.1	82.492	7408	1267	25	1	7393	7402	10	0.0	6468	7428	7412	99
+Echovirus E30 isolate E30_240032946101_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612485.1	82.568	7383	1248	34	31	7393	7373	10	0.0	6468	7373	7412	99
+Enterovirus B isolate NL/17-439/FAE/2017 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815079.1	82.631	7335	1248	25	1	7323	7321	1	0.0	6464	7344	7412	99
+Echovirus E30 isolate E30_240029462601_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612492.1	82.536	7381	1250	34	33	7393	7371	10	0.0	6453	7371	7412	99
+Enterovirus B isolate NL/16-328/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815073.1	82.619	7324	1249	23	12	7324	7311	1	0.0	6451	7336	7412	99
+Echovirus E30 strain 61251-440 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF422576.1	82.475	7378	1269	21	29	7392	7368	1	0.0	6440	7371	7412	99
+Echovirus E30 strain 61250-858 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF422575.1	82.511	7359	1265	19	31	7376	7350	1	0.0	6440	7350	7412	99
+Echovirus E30 isolate E30_240028789901_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612486.1	82.489	7384	1256	33	29	7393	7375	10	0.0	6438	7376	7412	99
+Enterovirus B isolate NL/16-197/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815071.1	82.678	7274	1238	21	12	7274	7288	26	0.0	6433	7294	7412	98
+Enterovirus B isolate BG/501_2017/FAE/2017 polyprotein gene, partial cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815000.1	82.597	7315	1245	26	90	7391	7301	2	0.0	6431	7304	7412	99
+Human echovirus 30 strain TW/2513/01 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	EF066391.1	82.510	7370	1248	34	20	7367	7351	1	0.0	6431	7351	7412	99
+Enterovirus B isolate NL/16-521/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815075.1	82.555	7326	1248	28	12	7323	7310	1	0.0	6421	7339	7412	99
+Echovirus E30 isolate E30_240025328601_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612490.1	82.455	7381	1256	34	33	7393	7371	10	0.0	6420	7373	7412	99
+Echovirus E30 strain 61248-1425 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF422573.1	82.462	7361	1267	22	31	7377	7361	11	0.0	6420	7361	7412	99
+Enterovirus B isolate NL/17-384/FAE/2017 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815078.1	82.516	7338	1251	30	1	7323	7321	1	0.0	6414	7335	7412	99
+Echovirus E30 isolate E30_240032971501_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612493.1	82.444	7382	1255	36	33	7393	7371	10	0.0	6414	7373	7412	99
+Echovirus E30 isolate E30_240025354501_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612491.1	82.441	7381	1257	34	33	7393	7371	10	0.0	6414	7376	7412	99
+Enterovirus B isolate NL/16-302/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815072.1	82.528	7326	1250	29	12	7323	7310	1	0.0	6410	7312	7412	99
+Echovirus E30 isolate ECV30/GX10/05, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	JX854435.1	82.348	7410	1278	26	1	7393	7406	10	0.0	6410	7432	7412	99
+Enterovirus B isolate NL/17-475/FAE/2017 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815081.1	82.497	7336	1256	27	1	7323	7321	1	0.0	6408	7343	7412	99
+Echovirus E30 isolate E30_240032973801_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612494.1	82.414	7381	1261	32	32	7393	7372	10	0.0	6405	7376	7412	99
+Echovirus E30 isolate E30_240020771701_FRA24 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PQ612487.1	82.414	7381	1259	34	33	7393	7371	10	0.0	6403	7376	7412	99
+Enterovirus B isolate NL/16-619/FAE/2016 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815076.1	82.459	7337	1257	28	1	7323	7321	1	0.0	6392	7342	7412	99
+Enterovirus B isolate BG/521_2017/CSF/2017 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815001.1	82.358	7380	1277	24	26	7392	7368	1	0.0	6392	7397	7412	99
+Echovirus E30 strain 61249-244 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF422574.1	82.371	7363	1274	21	29	7377	7367	15	0.0	6384	7370	7412	99
+Echovirus E30 strain 63039-1999 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF422578.1	82.443	7319	1261	22	61	7365	7309	1	0.0	6375	7325	7412	99
+Echovirus E30 strain 63037-1463 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF422577.1	82.359	7358	1274	21	34	7377	7362	15	0.0	6375	7362	7412	99
+Human echovirus 30 strain Kor08-ECV30, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	JN704615.1	82.226	7404	1298	17	1	7393	7406	10	0.0	6366	7432	7412	99
+Echovirus E30 isolate 3-MRS2013 polyprotein gene, partial cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KF920599.1	82.777	7124	1218	9	96	7215	7119	1	0.0	6349	7125	7412	96
+Human echovirus 30 strain TW/3182/01 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	EF066392.1	82.275	7323	1267	26	62	7368	7308	1	0.0	6303	7334	7412	99
+Echovirus E30 strain 2002-59, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KP266571.1	82.232	7322	1270	25	62	7367	7307	1	0.0	6285	7333	7412	99
+Enterovirus B isolate BG/579_2018-B1/FAE/2018 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815002.1	82.073	7391	1298	26	1	7377	7380	3	0.0	6283	7405	7412	99
+Echovirus E30 strain 1-B4-TW, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KT353720.1	82.506	7174	1232	20	1	7161	7164	1	0.0	6274	7190	7412	97
+Echovirus E30 isolate Hu/RU/Ekaterinburg/2023/E30/1147_22 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	PV821998.1	82.329	7249	1255	23	1	7236	7240	5	0.0	6266	7266	7412	98
+Human echovirus 30 isolate 1167438_phMC polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	JN797616.1	82.021	7392	1297	26	1	7376	7380	5	0.0	6261	7406	7412	99
+Human echovirus 30 genomic RNA for partial polyprotein gene, isolate ITA97-002	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	AJ295172.1	84.091	6493	1024	9	870	7358	6488	1	0.0	6259	6489	7412	88
+Enterovirus B isolate BG/580_2018-B2/CSF/2018 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815003.1	82.068	7361	1293	26	1	7347	7348	1	0.0	6255	7368	7412	99
+Echovirus E30 isolate E30/TO/BR/032 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MW775344.1	81.963	7429	1295	34	7	7412	7422	16	0.0	6255	7465	7412	99
+Echovirus E30 strain USA/2018-23125, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MK800120.1	82.204	7249	1264	26	1	7236	7240	5	0.0	6218	7247	7412	98
+Echovirus E30 isolate B001/USA/2016 polyprotein gene, partial cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF346639.1	82.269	7174	1246	24	158	7317	7162	1	0.0	6178	7179	7412	97
+Human echovirus 30 isolate 1167438 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	JN797614.1	81.938	7308	1296	19	1	7296	7309	14	0.0	6163	7335	7412	98
+Echovirus E3 isolate HNWY-01, complete genome	47516	Echovirus E3	NODE_1_length_7412_cov_139.228369	KM388538.1	93.952	4051	245	0	23	4073	7319	3269	0.0	6124	7319	7412	55
+Enterovirus B isolate NL/18-204/FAE/2018 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815094.1	82.037	7120	1256	22	1	7108	7109	1	0.0	6041	7131	7412	96
+Enterovirus B isolate NL/18-321/FAE/2018 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815097.1	82.013	7122	1258	22	1	7110	7111	1	0.0	6034	7133	7412	96
+Echovirus E30 strain USA/2015/CA-RGDS-1046 polyprotein gene, complete cds	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MN153799.1	82.082	7071	1240	25	1	7057	7058	1	0.0	6013	7076	7412	95
+Enterovirus B isolate NL/18-170/FAE/2018 polyprotein gene, complete cds	138949	Enterovirus B	NODE_1_length_7412_cov_139.228369	MK815093.1	81.897	7126	1269	20	1	7115	7116	1	0.0	5993	7130	7412	96
+Echovirus E30 isolate NSW-V47B-2005-ECHO30, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	MF678337.1	82.184	6932	1214	19	15	6935	6922	1	0.0	5939	6922	7412	93
+Human echovirus 30 strain Bastianni, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	AF311938.1	81.194	7423	1353	30	1	7393	7419	10	0.0	5934	7445	7412	99
+Echovirus E30 strain Bastianni, complete genome	41846	Echovirus E30	NODE_1_length_7412_cov_139.228369	KY888275.1	81.207	7407	1349	30	1	7377	7398	5	0.0	5927	7414	7412	99
