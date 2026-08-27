@@ -14,6 +14,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/salmon_quant/`: Salmon quantification results for the subsampled fastq files (ChrX)
 
+`testdata/drimseq/`: test files for DRIMSeq
+
 ## Minimal test dataset origin
 
 ChrX subsampled *H.sapiens* total RNA paired-end RNA-seq data was obtained from:
