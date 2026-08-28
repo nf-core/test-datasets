@@ -1,0 +1,120 @@
+# SPDX-FileCopyrightText: The Bio++ Development Group
+#
+# SPDX-License-Identifier: CECILL-2.1
+
+# Global variables set by command line (ALIGNMENT, TREE, DATA)
+
+# The alphabet to use:
+# DNA, RNA or Protein...
+alphabet=Codon(letter=DNA)
+genetic_code=Standard
+
+# The sequence file to use (sequences must be aligned!)
+input.data1=alignment(file=$(ALIGNMENT), format=Fasta, sites_to_use = all, max_gap_allowed = 50%, max_unresolved_allowed = 100%, remove_stop_codons = yes)
+
+# ----------------------------------------------------------------------------------------
+#                                     Input tree file
+# ----------------------------------------------------------------------------------------
+
+input.tree1=user(file = $(TREE), format = Newick)
+
+# ----------------------------------------------------------------------------------------
+#                                     Model specification
+# ----------------------------------------------------------------------------------------
+# See the manual for a description of the syntax and available options.
+#
+model1 = YN98(kappa=1, omega=1, frequencies=F1X4(init=observed), data=1)
+
+process1 = Homogeneous(model=1, tree=1, rate=1)
+
+rate_distribution1 = Constant() //Gamma(n=4, alpha=0.358)
+
+phylo1 = Single(process=1, data=1)
+
+# ----------------------------------------------------------------------------------------
+#                                     Optimization
+# ----------------------------------------------------------------------------------------
+
+# Should we reestimate likelihood parameters? Tree topology will not be optimized.
+# (recommended)
+optimization = FullD(derivatives=Newton)
+
+# Tell if the parameter should be transformed in order to remove constraints.
+# This can improves the optimization, but might be a bit slower.
+optimization.reparametrization = no
+
+# Final optimization step, may be useful if numerical derivatives are used:
+# powell or simplex or none.
+optimization.final = none
+
+# Set the quantity of output to the screen:
+optimization.verbose = 3
+
+# Parameters to ignore (for instance equilibrium frequencies)
+optimization.ignore_parameters = 
+
+# Maximum number of likelihood evaluations:
+optimization.max_number_f_eval = 10000
+
+# Precision to reach:
+optimization.tolerance = 0.000001
+
+# idem for error or warning messages:
+optimization.message_handler = $(DATA).messages
+
+# A file where to dump optimization steps (a file path or std for standard output)
+optimization.profiler = $(DATA).profile
+
+# Shall we optimize tree topology as well?
+optimization.topology = no
+
+# Algorithm to use for topology estimation: only NNI for now
+optimization.topology.algorithm = NNI
+
+# NNI method: fast, better or phyml
+# You should use the phyml option, since it is really more efficient!
+optimization.topology.algorithm_nni.method = phyml
+
+# Number of phyml topology movement steps before reoptimizing parameters:
+optimization.topology.nstep = 4
+
+# Shall we estimate parameters before looking for topology movements?
+optimization.topology.numfirst = no
+
+# Tolerances: These numbers should not be too low, in order to save computation
+# time and also for a better topology estimation.
+# The optimization.tolerance parameter will be used for the final optimization
+# of numerical parameters.
+#
+# Tolerance for the prior-topology estimation
+optimization.topology.tolerance.before = 100
+
+# Tolerance for the during-topology estimation
+optimization.topology.tolerance.during = 100
+
+# Shall we first scale the tree before optimizing parameters? [deprecated]
+optimization.scale_first = no
+
+
+
+
+# Should we write the resulting tree? none or file name.
+output.tree.file = $(DATA).ML.dnd
+output.tree.format = Newick
+
+# Alignment information log file (site specific rates, etc):
+output.infos = $(DATA).infos
+
+# Write numerical parameter estimated values:
+output.estimates = $(DATA).params.txt
+
+# ----------------------------------------------------------------------------------------
+#                                     Bootstrap
+# ----------------------------------------------------------------------------------------
+
+bootstrap.number = 0
+# Tell if numerical parameters should be kept to their initial value when bootstrapping: 
+bootstrap.approximate = no
+# Set this to yes for detailed output when bootstrapping. 
+bootstrap.verbose = no
+bootstrap.output.file = $(DATA).ML_bstrees.dnd
