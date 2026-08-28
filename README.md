@@ -1153,6 +1153,7 @@ The earth sciences folder contain subfolders for different data formats encounte
 
 - config
   - agat_config.yaml: AGAT config file for v1.4.0 taken from <https://raw.githubusercontent.com/NBISweden/AGAT/v1.4.0/share/agat_config.yaml>
+  - bppml.bpp: parameters file to run model M0/YN98 with bppml from bppsuite.
   - ncbi_user_settings.mkfg: Minimal NCBI user settings
   - paraphase_config.yaml: Minimal paraphase config for PRODH
   - pytmb_snpeff.yml: Sample config file for the TMB tool taken from <https://github.com/bioinfo-pf-curie/TMB/blob/master/config/snpeff.yml>
