@@ -1197,6 +1197,8 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'media_db.tsv': CarveMe-compatible [media](https://github.com/cdanielmachado/carveme/blob/master/carveme/data/input/media_db.tsv) database, with LB and M9 media definitions using BiGG metabolite IDs in the required four-column TSV format (medium, description, compound, name).
   - 'network.tsv': edge list in TSV format describing weighted directed relationships from source nodes to target nodes
   - 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
+  - 'sample1.subread.featureCounts.tsv': raw subread featureCounts output (v2.1.1) for one sample against the sarscov2 genome, for custom/collectfeaturecounts tests.
+  - 'sample2.subread.featureCounts.tsv': raw subread featureCounts output (v2.1.1) for a second sample against the sarscov2 genome, matching sample1.subread.featureCounts.tsv, for custom/collectfeaturecounts tests.
 - txt
   - 'hello.txt': one-line txt file
   - 'taxonomy_ids.txt': contains species names, to be used as input for [goat-cli taxon search tool](https://github.com/genomehubs/goat-cli).
