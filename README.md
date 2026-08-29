@@ -1165,6 +1165,10 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'test.csv': exemplary comma-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
   - 'test2.csv': exemplary comma-separated file with user data (id, first_name, last_name, email)
   - 'test3.csv': exemplary comma-separated file with email and last_login timestamps
+- fasta
+  - 'resolvetaxonomy_plain.fasta': two sequences with plain, taxonomy-free headers, for custom/resolvetaxonomy tests.
+  - 'resolvetaxonomy_embedded.fasta': two sequences with taxonomy embedded directly in the header, for custom/resolvetaxonomy tests.
+  - 'resolvetaxonomy_partial.fasta': one sequence with taxonomy embedded in the header and one without, for custom/resolvetaxonomy tests.
 - fastq
   - 'rrna_reads_1.fastq.gz': Synthetic 5.8S rRNA paired-end reads (R1), 10 reads from rfam-5.8s-database-id98 for testing rRNA removal tools
   - 'rrna_reads_2.fastq.gz': Synthetic 5.8S rRNA paired-end reads (R2), matching R1 file
@@ -1199,6 +1203,9 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'test.tsv': exemplary tab-separated file obtained from [here](https://bioinf.shenwei.me/csvtk/usage/#split)
   - 'sample1.subread.featureCounts.tsv': raw subread featureCounts output (v2.1.1) for one sample against the sarscov2 genome, for custom/collectfeaturecounts tests.
   - 'sample2.subread.featureCounts.tsv': raw subread featureCounts output (v2.1.1) for a second sample against the sarscov2 genome, matching sample1.subread.featureCounts.tsv, for custom/collectfeaturecounts tests.
+- tax
+  - 'resolvetaxonomy_plain.tax': taxonomy strings keyed by sequence id, matching the ids in resolvetaxonomy_plain.fasta, for custom/resolvetaxonomy tests.
+  - 'resolvetaxonomy_override.tax': taxonomy strings keyed by sequence id that override the taxonomy embedded in resolvetaxonomy_embedded.fasta, for custom/resolvetaxonomy tests.
 - txt
   - 'hello.txt': one-line txt file
   - 'taxonomy_ids.txt': contains species names, to be used as input for [goat-cli taxon search tool](https://github.com/genomehubs/goat-cli).
