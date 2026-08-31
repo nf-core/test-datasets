@@ -55,6 +55,18 @@ Content is otherwise byte-identical -- only the header lines changed.
 
 Used to test deriving taxonomy from `--refseqfile` FASTA headers instead of a separate `--taxonomy` file, without needing a new reference alignment/tree pair -- the existing `PF14720_seed.ft.LGCAT.newick` tree still applies unchanged.
 
+### `testdata/phyloplace_input.csv` - `reftreename` column
+
+The sample sheet gained an optional `reftreename` column, naming the reference tree a row places onto so that rows sharing one can be summarised jointly as well as individually.
+The existing rows already fell into two such groups, and the column just labels them: `PF14720wt` and `PF14720mafft` both place onto `PF14720_seed.ft.LGCAT.newick` with the same taxonomy file and are grouped as `PF14720`, while `nuc_hmmer` and `nuc_mafft` both place onto `cyanos_16s.newick` with no taxonomy and are grouped as `cyanos16s`.
+Each group deliberately mixes the `hmmer` and `mafft` alignment methods, since placements made with different alignment methods still have to merge onto the same reference tree.
+
+`PF14720wo` is left ungrouped on purpose, even though it places onto the same tree as the other two `PF14720` rows: it declares no taxonomy where they declare one, and a group has to agree on a taxonomy for a joint classification to mean anything.
+So the file covers a group with a taxonomy, a group without one, and a row that opts out.
+
+Nothing else in the file changed, and the column is ignored by pipeline versions that do not know about it.
+Consumed by nf-core/phyloplace's `test_phyloplace_input` profile.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
