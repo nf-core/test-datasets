@@ -73,11 +73,19 @@ for CHR in chr21 chr22; do
 done
 
 # Download reference genome GRCh38
-mkdir -p hum_data/reference_genome/
-wget -c -O- https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz | gunzip | bgzip  > hum_data/reference_genome/GRCh38.fa.bgz
+REF_DIR=hum_data/reference_genome
+mkdir -p ${REF_DIR}
+wget -c -O- https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz | gunzip | bgzip  > ${REF_DIR}/GRCh38.fa.bgz
 
-# Download the reference genome map
-wget --no-check-certificate https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip -O hum_data/reference_genome/GRCh38.map.zip
+mkdir -p ${REF_DIR}/map_with_chr/ ${REF_DIR}/map_no_chr/
+for CHR in {1..22} X X_par1 X_par2; do
+  echo "$CHR"
+  wget https://github.com/odelaneau/shapeit/raw/refs/heads/main/resources/maps/b38/chr${CHR}.b38.gmap.gz \
+    -O ${REF_DIR}/map_no_chr/chr${CHR}.b38.gmap.gz
+  zcat ${REF_DIR}/map_no_chr/chr${CHR}.b38.gmap.gz | \
+    awk 'BEGIN {FS=OFS="\t"} NR==1 {print;next} {print $1, "chr"$2, $3}' | \
+    gzip > ${REF_DIR}/map_with_chr/chr${CHR}.b38.gmap.gz
+done
 ```
 
 The affimetrix SNP array is also to be downloaded with
@@ -146,11 +154,9 @@ We can now download the corresponding folder:
 ```
 
 6) Extract the SNP position present in the SNP chip array
-7) Get the map file for the reference genome
 
 ```bash
-. get_map_snp.sh \
-    hum_data/reference_genome/ \
+. get_snp.sh \
     GRCh38 \
     hum_data/affi/snp6 \
     region.lst
