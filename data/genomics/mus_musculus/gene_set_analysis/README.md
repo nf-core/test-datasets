@@ -14,6 +14,12 @@ nextflow run nf-core/differentialabundance -r  9a84f4bf1e581425c0fcb7edcec772998
 
 - `Mus_musculus.anno.feature_metadata.chip` was extracted from the channel `TABULAR_TO_GSEA_CHIP.out.chip`.
 
+## MSigDB gene sets
+
+- `mh.all.v2022.1.Mm.symbols.gmt` is the mouse MSigDB Hallmark collection, gene-symbol-keyed, from the versioned `2022.1.Mm` release.
+
+- `m5.mpt.v2022.1.Mm.symbols.gmt` is the mouse MSigDB `M5:MPT` (tumor phenotype ontology) collection, gene-symbol-keyed, from the same versioned `2022.1.Mm` release.
+
 ## Other
 
 - `gprofiler2_mmusculus_random_example.tsv` is a minimal dataset provided by gprofiler2 for organism = mmusculus.
