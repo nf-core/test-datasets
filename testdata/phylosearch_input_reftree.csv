@@ -1,0 +1,3 @@
+target,alignmethod,hmm,extract_hmm,refseqfile,refphylogeny,model,taxonomy,reftreename
+arc16s,clustalo,https://raw.githubusercontent.com/tseemann/barrnap/refs/tags/0.9/db/arc.hmm,16S_rRNA,https://ndownloader.figshare.com/files/47244067,https://ndownloader.figshare.com/files/47244070,GTR+F+I+G4,https://ndownloader.figshare.com/files/47244058,arc16s
+bac16s,clustalo,https://raw.githubusercontent.com/tseemann/barrnap/refs/tags/0.9/db/bac.hmm,16S_rRNA,https://ndownloader.figshare.com/files/47244067,https://ndownloader.figshare.com/files/47244070,GTR+F+I+G4,https://ndownloader.figshare.com/files/47244058,arc16s

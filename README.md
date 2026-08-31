@@ -67,6 +67,19 @@ So the file covers a group with a taxonomy, a group without one, and a row that 
 Nothing else in the file changed, and the column is ignored by pipeline versions that do not know about it.
 Consumed by nf-core/phyloplace's `test_phyloplace_input` profile.
 
+### `testdata/phylosearch_input_reftree.csv` - grouped "search and place" sample sheet
+
+A two-row sample sheet for nf-core/phyloplace's "search and place" mode, in which both rows carry the same `reftreename` and so are summarised jointly as well as individually.
+It exists as a separate file rather than as extra columns on `phylosearch_input.csv`, so that the original sheet keeps covering the layout of a sample sheet written before the `reftreename` column existed.
+
+Both rows search `testdata/domain_16s.fna` and place onto the same archaeal 16S reference alignment and tree, one with barrnap's archaeal 16S profile and one with its bacterial one.
+The two profiles hit disjoint sets of the 23 search sequences -- 11 archaeal and 12 bacterial -- so the joint outputs demonstrably contain queries that neither row produces on its own.
+
+Placing the bacterial sequences on an archaeal reference tree is deliberate and not biologically meaningful: it puts them on long branches.
+The point is to have two different profiles legitimately sharing one reference tree, which is the situation the grouping feature exists for, using reference data that is already in this branch.
+
+Consumed by nf-core/phyloplace's `test_phylosearch_reftree` profile.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
