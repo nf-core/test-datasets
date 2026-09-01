@@ -1,5 +1,4 @@
 # How to add new test data
-
 - collect/generate your test dataset
 - make sure your test data is working with the module(s) it is designed for
 - make a fork of the `nf-core/test-dataset` repository
