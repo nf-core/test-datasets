@@ -1,7 +1,0 @@
-accno,genome_fna,genome_gff
-local_GCA_013329705.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCA_013329705.1.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCA_013329705.1.gff.gz
-local_GCA_023269755.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCA_023269755.1.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCA_023269755.1.gff.gz
-local_GCF_001315825.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_001315825.1.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_001315825.1.gff.gz
-local_GCF_002194565.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_002194565.1.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_002194565.1.gff.gz
-local_GCF_004323575.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_004323575.1.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_004323575.1.gff.gz
-local_GCF_032248915.1,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_032248915.1.fna.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/local_GCF_032248915.1.gff.gz
