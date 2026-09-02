@@ -1,4 +1,0 @@
-sample,fastq_1,fastq_2
-arc00,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/archaeal_duplicates00_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/archaeal_duplicates00_2.fastq.gz
-arc01,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/archaeal_duplicates01_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/archaeal_duplicates01_2.fastq.gz
-arc02,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/archaeal_duplicates02_1.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/magmap/testdata/archaeal_duplicates02_2.fastq.gz
