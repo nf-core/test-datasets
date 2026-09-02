@@ -10,9 +10,8 @@ conda init bash
 conda activate env_tools
 
 FOLDER=$1
-REF_GEN=$2
-SNP_FILE=$3
-REGION_LST=$4
+SNP_FILE=$2
+REGION_LST=$3
 
 # Get SNP file
 echo 'Extracting region from SNP array file'
@@ -32,19 +31,4 @@ while IFS=':' read -r CHR REGION; do
     zcat ${SNP_FILE}.txt.gz | \
         awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' { print "chr"$2":"$3}' \
         >> ${SNP_FILE}.s.map
-    # Unzip the map file and keep only the chromosome file
-    echo -e "pos\tchr\tcM" > ${FOLDER}/${REF_GEN}_${CHR}.glimpse.map
-    unzip -p ${FOLDER}${REF_GEN}.map.zip chr_in_chrom_field/plink.chr${CHR}.${REF_GEN}.map | \
-        awk -v OFS='\t' -F' ' '{
-            if ($1 !~ /^chr/) $1 = "chr" $1
-            print $4, $1, $3
-        }' \
-        >>  ${FOLDER}/${REF_GEN}_${CHR}.glimpse.map
-    # Unzip the map file and keep all 4 PLINK columns + add chr prefix
-    unzip -p ${FOLDER}${REF_GEN}.map.zip chr_in_chrom_field/plink.chr${CHR}.${REF_GEN}.map | \
-        awk -v OFS=' ' -F' ' '{ 
-            if ($1 !~ /^chr/) $1 = "chr" $1
-            print $1, $2, $3, $4 
-        }' \
-        >  ${FOLDER}/${REF_GEN}_${CHR}.plink.map
 done < $REGION_LST
