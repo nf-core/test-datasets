@@ -9,6 +9,12 @@
 conda init bash
 conda activate env_tools
 
+PANEL_DIR=hum_data/panel
+PANEL_NAME=1000GP
+REF_FASTA=hum_data/reference_genome/GRCh38
+REGION_LST=region.lst
+PREFIX=chr
+
 PANEL_DIR=$1
 PANEL_NAME=$2
 REF_FASTA=$3
@@ -60,8 +66,11 @@ do
         --input ${PANEL_FILE}.s.norel.vcf.gz --region ${REGION} \
         --window-size 10000 --window-count 400 --buffer-size 5000 --buffer-count 30 \
         --output ${PANEL_FILE}_chunks.txt
-        #--sequential --window-mb 0.01 --window-cm 0.01 --window-count 200 --buffer-mb 0.0005 --buffer-cm 0.0005 --buffer-count 5 \
-        
+
+    GLIMPSE2_chunk \
+        --input ${PANEL_FILE}.s.norel.vcf.gz --region ${REGION} \
+        --sequential --window-mb 0.01 --window-cm 0.01 --window-count 400 --buffer-mb 0.005 --buffer-cm 0.005 --buffer-count 30 \
+        --output ${PANEL_FILE}_chunks_v2.txt
 
     # Select only the SNPS and drop Genotypes
     echo 'Select only SNPs and drop Genotypes'
