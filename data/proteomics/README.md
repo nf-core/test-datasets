@@ -6,6 +6,7 @@
 - [cif](#cif)
 - [database](#database)
 - [diann](#diann)
+- [easypqp](#easypqp)
 - [hhsuite](#hhsuite)
 - [interproscan](#interproscan)
 - [maxquant](#maxquant)
@@ -42,6 +43,10 @@ mmCIF files typically contain atomic coordinates, chain and residue information,
 ## diann
 
 'diann_config.cfg' is a minimal DIA-NN configuration file containing basic parameters for in silico spectral library generation, including trypsin cleavage rules, peptide length constraints, and mass range settings.
+
+## easypqp
+
+- 'HepG2_rep1_small.psmpkl' and 'HepG2_rep1_small.peakpkl' are the outputs of `easypqp convert` (v0.1.59) run on `openms/HepG2_rep1_small.idXML` and `msspectra/HepG2_rep1_small.mzML`. They serve as input for `easypqp library`.
 
 ## hhsuite
 
