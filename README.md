@@ -161,6 +161,26 @@ Case-level precalled VCFs for case `amusingmarmoset`, one per variant type, nest
 
 `resources_remapped/beds/GRCh38_PAR.remapped.bed`: pseudoautosomal-region bed, remapped (empty for this dataset, no PAR overlap in the sliced regions)
 
+### `resources_remapped/gens/`
+
+Precomputed reference files for the `gens` preprocessing subworkflow (`GATK4_COLLECTREADCOUNTS` → `GATK4_DENOISEREADCOUNTS` → `gens/preparecovandbaf`). Built against the sliced reference.
+
+`resources_remapped/gens/gens_targets.interval_list`: 1000 bp binned target intervals across the sliced regions (`gatk PreprocessIntervals`), for `--gens_interval_list` / `GATK4_COLLECTREADCOUNTS`
+
+`resources_remapped/gens/gens_pon.hdf5`: read-count panel of normals built from the two non-proband trio members (`ACC13778A2`, `ACC13778A3`) via `gatk CollectReadCounts` + `gatk CreateReadCountPanelOfNormals`; used for both `--gens_pon_female` and `--gens_pon_male`
+
+`resources_remapped/gens/gens_gnomad_pos.txt.gz`: 518 common biallelic SNV positions (gnomAD AF ≥ 0.05) within the sliced regions, as a two-column `chrom<TAB>pos` file, for `--gens_gnomad_pos` (BAF sampling sites)
+
+### `resources_remapped/gcnv/`
+
+Precomputed reference files for the `call_sv_germlinecnvcaller` subworkflow, which runs GATK gCNV in CASE mode against pre-trained models. All built against the sliced reference and the 3-sample trio (`chrM` excluded).
+
+`resources_remapped/gcnv/gcnv_readcount.interval_list`: 1000 bp bins across the nuclear sliced regions (`gatk PreprocessIntervals` → `gatk FilterIntervals` on the trio read counts), for `--readcount_intervals`; must match the intervals the models below were trained on
+
+`resources_remapped/gcnv/germlinecnvcaller_ploidy_model.tar.gz`: `gatk DetermineGermlineContigPloidy` COHORT-mode model (trained on the trio), for `--ploidy_model`. Tarred because it is a directory of small files -- untar before use.
+
+`resources_remapped/gcnv/germlinecnvcaller_model.tar.gz`: `gatk GermlineCNVCaller` COHORT-mode model shard (trained on the trio, GC-annotated intervals), for `--gcnvcaller_model`. Tarred -- untar before use.
+
 ### `resources_remapped/mobile_elements/`
 
 `resources_remapped/mobile_elements/grch38_alu.remapped.bed`: ALU mobile-element reference positions, remapped
