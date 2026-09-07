@@ -18,6 +18,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/drimseq/`: test files for DRIMSeq
 
+`testdata/dexseq/`: test files for DEXSeq subworkflow
+
 ## Minimal test dataset origin
 
 ChrX subsampled *H.sapiens* total RNA paired-end RNA-seq data was obtained from:
