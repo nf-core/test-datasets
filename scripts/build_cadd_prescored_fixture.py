@@ -211,13 +211,17 @@ def remap_prescored_contig(
             if not line or line.startswith("#"):
                 continue
             fields = line.split("\t")
+            ref = fields[CADD_COL_REF]
             local_pos = int(fields[CADD_COL_POS]) + segment.real_to_local_offset
-            if not segment.local_start <= local_pos <= segment.local_end:
+            # Require the whole REF span (not just POS) to sit inside the segment,
+            # so a multi-base indel near a segment boundary can't be lifted onto
+            # coordinates that partly belong to another segment / the unmapped gap.
+            if not (segment.local_start <= local_pos and local_pos + len(ref) - 1 <= segment.local_end):
                 continue
             yield PrescoredVariant(
                 contig=local_contig_nochr,
                 pos=local_pos,
-                ref=fields[CADD_COL_REF],
+                ref=ref,
                 alt=fields[CADD_COL_ALT],
                 raw_score=fields[CADD_COL_RAW],
                 phred=fields[CADD_COL_PHRED],
