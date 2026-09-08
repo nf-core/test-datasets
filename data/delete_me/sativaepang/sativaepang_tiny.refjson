@@ -1,0 +1,1024 @@
+{
+    "binary_model": "",
+    "branch_tax_map": {
+        "0": [
+            "Bacteria@@Firmicutes@@Clostridia@@Clostridiales@@Clostridiaceae@@Clostridium@@Clostridium rectum",
+            6,
+            0.001476
+        ],
+        "1": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium necrogenes",
+            1,
+            0.013204
+        ],
+        "10": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium necrophorum subsp. funduliforme",
+            1,
+            0.001058
+        ],
+        "11": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium necrophorum subsp. necrophorum",
+            1,
+            0.003022
+        ],
+        "12": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium",
+            0,
+            0.014535
+        ],
+        "13": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium",
+            0,
+            0.011279
+        ],
+        "14": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium",
+            5,
+            0.040091
+        ],
+        "15": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium nucleatum subsp. polymorphum",
+            6,
+            0.002972
+        ],
+        "16": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium nucleatum subsp. vincentii",
+            1,
+            0.009658
+        ],
+        "17": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium nucleatum subsp. fusiforme",
+            1,
+            0.002186
+        ],
+        "18": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium",
+            5,
+            0.01217
+        ],
+        "19": [
+            "Bacteria@@Firmicutes@@Clostridia@@Clostridiales@@Peptostreptococcaceae@@Filifactor@@Filifactor alocis",
+            6,
+            0.013449
+        ],
+        "2": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium mortiferum",
+            1,
+            0.014612
+        ],
+        "20": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium simiae",
+            6,
+            0.007861
+        ],
+        "21": [
+            "Bacteria",
+            0,
+            0.001771
+        ],
+        "22": [
+            "Bacteria",
+            0,
+            0.005858
+        ],
+        "23": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium nucleatum subsp. animalis",
+            6,
+            0.012785
+        ],
+        "24": [
+            "Bacteria",
+            0,
+            0.003628
+        ],
+        "25": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium nucleatum subsp. nucleatum",
+            6,
+            0.005341
+        ],
+        "26": [
+            "Bacteria",
+            0,
+            0.003128
+        ],
+        "27": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium canifelinum",
+            6,
+            0.003151
+        ],
+        "28": [
+            "Bacteria",
+            0,
+            0.011395
+        ],
+        "29": [
+            "Bacteria",
+            0,
+            0.007284
+        ],
+        "3": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium",
+            5,
+            0.001183
+        ],
+        "30": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium periodonticum",
+            6,
+            0.00147
+        ],
+        "31": [
+            "Bacteria",
+            0,
+            0.037061
+        ],
+        "32": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium russii",
+            6,
+            0.038329
+        ],
+        "33": [
+            "Bacteria",
+            0,
+            0.0138
+        ],
+        "34": [
+            "Bacteria",
+            0,
+            0.019277
+        ],
+        "35": [
+            "Bacteria",
+            0,
+            0.014001
+        ],
+        "36": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Ilyobacter@@Ilyobacter insuetus",
+            3,
+            0.003933
+        ],
+        "37": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Sneathia@@Sneathia sanguinegens",
+            2,
+            0.118677
+        ],
+        "38": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Streptobacillus@@Streptobacillus moniliformis",
+            2,
+            0.05696
+        ],
+        "39": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae",
+            0,
+            0.080009
+        ],
+        "4": [
+            "Bacteria",
+            0,
+            0.001183
+        ],
+        "40": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Sebaldella@@Sebaldella termitidis",
+            2,
+            0.12716
+        ],
+        "41": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia@@Leptotrichia hofstadii",
+            1,
+            0.016214
+        ],
+        "42": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia@@Leptotrichia wadei",
+            1,
+            0.035414
+        ],
+        "43": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia@@Leptotrichia trevisanii",
+            1,
+            0.023775
+        ],
+        "44": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia@@Leptotrichia hongkongensis",
+            1,
+            0.020021
+        ],
+        "45": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia",
+            0,
+            0.013833
+        ],
+        "46": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia",
+            0,
+            0.019132
+        ],
+        "47": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia@@Leptotrichia shahii",
+            1,
+            0.014557
+        ],
+        "48": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia",
+            0,
+            0.035763
+        ],
+        "49": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia",
+            0,
+            0.020326
+        ],
+        "5": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium varium",
+            1,
+            0.006929
+        ],
+        "50": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia@@Leptotrichia buccalis",
+            1,
+            0.010741
+        ],
+        "51": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia",
+            0,
+            0.151295
+        ],
+        "52": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia@@Leptotrichia goodfellowii",
+            1,
+            0.042261
+        ],
+        "53": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia",
+            1,
+            0.069295
+        ],
+        "54": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae",
+            0,
+            0.011399
+        ],
+        "55": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae",
+            1,
+            0.263888
+        ],
+        "56": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Propionigenium@@Propionigenium modestum",
+            2,
+            0.010412
+        ],
+        "57": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Psychrilyobacter@@Psychrilyobacter atlanticus",
+            2,
+            0.122224
+        ],
+        "58": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Propionigenium@@Propionigenium maris",
+            2,
+            0.02603
+        ],
+        "59": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae",
+            0,
+            0.015286
+        ],
+        "6": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium ulcerans",
+            1,
+            0.00536
+        ],
+        "60": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Ilyobacter@@Ilyobacter polytropus",
+            1,
+            0.020273
+        ],
+        "61": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Ilyobacter@@Ilyobacter tartaricus",
+            1,
+            0.005808
+        ],
+        "62": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Ilyobacter",
+            1,
+            0.004563
+        ],
+        "63": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae",
+            0,
+            0.004925
+        ],
+        "64": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae",
+            1,
+            0.011548
+        ],
+        "65": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales",
+            0,
+            0.005452
+        ],
+        "66": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales",
+            0,
+            0.072922
+        ],
+        "67": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Cetobacterium@@Cetobacterium somerae",
+            1,
+            0.038831
+        ],
+        "68": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Cetobacterium@@Cetobacterium ceti",
+            1,
+            0.045146
+        ],
+        "69": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Cetobacterium",
+            2,
+            0.037707
+        ],
+        "7": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium",
+            5,
+            0.02674
+        ],
+        "70": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales",
+            0,
+            0.018073
+        ],
+        "71": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium perfoetens",
+            3,
+            0.070238
+        ],
+        "72": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales",
+            3,
+            0.03308
+        ],
+        "8": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium gonidiaformans",
+            1,
+            0.010681
+        ],
+        "9": [
+            "Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium@@Fusobacterium equinum",
+            1,
+            0.009045
+        ]
+    },
+    "corr_ranks_map": {},
+    "corr_seqid_map": {},
+    "fields": [
+        "version",
+        "branch_tax_map",
+        "tree",
+        "raxmltree",
+        "outgroup",
+        "ratehet_model",
+        "tax_tree",
+        "pattern_compression",
+        "taxcode",
+        "merged_ranks_map",
+        "corr_ranks_map",
+        "corr_seqid_map",
+        "metadata",
+        "sequences",
+        "origin_taxonomy",
+        "rate",
+        "node_height",
+        "binary_model"
+    ],
+    "merged_ranks_map": {},
+    "metadata": {
+        "invocation_epac": "/usr/local/share/sativa-epang-0.9.3.4-0/sativa.py -s test.phy -t test.tax -x bac -reftree tiny.raxml.bestTree -refmodel tiny.raxml.bestModel -n tiny -o . -T 2 -stage reference",
+        "invocation_raxml_epalbl": "",
+        "invocation_raxml_multif": "supplied via -reftree: /data/tiny.raxml.bestTree",
+        "invocation_raxml_optmod": "",
+        "raxml_version": "not used (-reftree)",
+        "ref_alignment_width": 1602,
+        "ref_tree_size": 38,
+        "reftree_loglh": 0.0,
+        "timestamp": "2026-09-08 13:23:19.122903"
+    },
+    "node_height": {
+        "0": 1,
+        "1": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "2": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "3": 1,
+        "30": 1,
+        "31": 1,
+        "32": 1,
+        "33": 1,
+        "34": 1,
+        "35": 1,
+        "36": 1,
+        "37": 1,
+        "38": 1,
+        "39": 1,
+        "4": 1,
+        "40": 1,
+        "41": 1,
+        "42": 1,
+        "43": 1,
+        "44": 1,
+        "45": 1,
+        "46": 1,
+        "47": 1,
+        "48": 1,
+        "49": 1,
+        "5": 1,
+        "50": 1,
+        "51": 1,
+        "52": 1,
+        "53": 1,
+        "54": 1,
+        "55": 1,
+        "56": 1,
+        "57": 1,
+        "58": 1,
+        "59": 1,
+        "6": 1,
+        "60": 1,
+        "61": 1,
+        "62": 1,
+        "63": 1,
+        "64": 1,
+        "65": 1,
+        "66": 1,
+        "67": 1,
+        "68": 1,
+        "69": 1,
+        "7": 1,
+        "70": 1,
+        "71": 1,
+        "72": 1,
+        "8": 1,
+        "9": 1
+    },
+    "origin_taxonomy": {
+        "r_UnpCCeti": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Cetobacterium",
+            "Cetobacterium ceti"
+        ],
+        "r_UnpSomer": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Cetobacterium",
+            "Cetobacterium somerae"
+        ],
+        "r_UpbRectu": [
+            "Bacteria",
+            "Firmicutes",
+            "Clostridia",
+            "Clostridiales",
+            "Clostridiaceae",
+            "Clostridium",
+            "Clostridium rectum"
+        ],
+        "r_UxjAloci": [
+            "Bacteria",
+            "Firmicutes",
+            "Clostridia",
+            "Clostridiales",
+            "Peptostreptococcaceae",
+            "Filifactor",
+            "Filifactor alocis"
+        ],
+        "r_UyvCanif": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium canifelinum"
+        ],
+        "r_UyvEquin": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium equinum"
+        ],
+        "r_UyvGonid": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium gonidiaformans"
+        ],
+        "r_UyvMorti": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium mortiferum"
+        ],
+        "r_UyvNecr2": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium necrophorum subsp. funduliforme"
+        ],
+        "r_UyvNecr3": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium necrophorum subsp. necrophorum"
+        ],
+        "r_UyvNecro": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium necrogenes"
+        ],
+        "r_UyvNucl2": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium nucleatum subsp. fusiforme"
+        ],
+        "r_UyvNucl3": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium nucleatum subsp. nucleatum"
+        ],
+        "r_UyvNucl4": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium nucleatum subsp. polymorphum"
+        ],
+        "r_UyvNucl5": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium nucleatum subsp. vincentii"
+        ],
+        "r_UyvNucle": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium nucleatum subsp. animalis"
+        ],
+        "r_UyvPerfo": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium perfoetens"
+        ],
+        "r_UyvPerio": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium periodonticum"
+        ],
+        "r_UyvRussi": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium russii"
+        ],
+        "r_UyvSimia": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium simiae"
+        ],
+        "r_UyvUlcer": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium ulcerans"
+        ],
+        "r_UyvVariu": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Fusobacterium",
+            "Fusobacterium varium"
+        ],
+        "r_VejInsue": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Ilyobacter",
+            "Ilyobacter insuetus"
+        ],
+        "r_VejPolyt": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Ilyobacter",
+            "Ilyobacter polytropus"
+        ],
+        "r_VejTarta": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Ilyobacter",
+            "Ilyobacter tartaricus"
+        ],
+        "r_VikBucca": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Leptotrichia",
+            "Leptotrichia buccalis"
+        ],
+        "r_VikGoodf": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Leptotrichia",
+            "Leptotrichia goodfellowii"
+        ],
+        "r_VikHofst": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Leptotrichia",
+            "Leptotrichia hofstadii"
+        ],
+        "r_VikShahi": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Leptotrichia",
+            "Leptotrichia shahii"
+        ],
+        "r_VikSpeci": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Leptotrichia",
+            "Leptotrichia hongkongensis"
+        ],
+        "r_VikTrevi": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Leptotrichia",
+            "Leptotrichia trevisanii"
+        ],
+        "r_VikWadei": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Leptotrichia",
+            "Leptotrichia wadei"
+        ],
+        "r_VxsMaris": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Propionigenium",
+            "Propionigenium maris"
+        ],
+        "r_VxsModes": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Propionigenium",
+            "Propionigenium modestum"
+        ],
+        "r_VzeAtlan": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Fusobacteriaceae",
+            "Psychrilyobacter",
+            "Psychrilyobacter atlanticus"
+        ],
+        "r_WekTermi": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Sebaldella",
+            "Sebaldella termitidis"
+        ],
+        "r_WgeSangu": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Sneathia",
+            "Sneathia sanguinegens"
+        ],
+        "r_WicMonil": [
+            "Bacteria",
+            "Fusobacteria",
+            "Fusobacteriia",
+            "Fusobacteriales",
+            "Leptotrichiaceae",
+            "Streptobacillus",
+            "Streptobacillus moniliformis"
+        ]
+    },
+    "outgroup": "(r_UpbRectu,r_UxjAloci);",
+    "pattern_compression": true,
+    "rate": 24.02296335589111,
+    "ratehet_model": "GTRGAMMA",
+    "raxmltree": "((r_UpbRectu:0.001476,(r_UyvNecro:0.013204,r_UyvMorti:0.014612):0.002366):0.016242,((r_UyvVariu:0.006929,r_UyvUlcer:0.00536):0.02674,((r_UyvGonid:0.010681,(r_UyvEquin:0.009045,(r_UyvNecr2:0.001058,r_UyvNecr3:0.003022):0.014535):0.011279):0.040091,(((r_UyvNucl4:0.002972,(((((r_UyvNucl5:0.009658,r_UyvNucl2:0.002186):0.01217,(r_UxjAloci:0.013449,r_UyvSimia:0.007861):0.001771):0.005858,r_UyvNucle:0.012785):0.003628,r_UyvNucl3:0.005341):0.003128,r_UyvCanif:0.003151):0.011395):0.007284,r_UyvPerio:0.00147):0.037061,r_UyvRussi:0.038329):0.0138):0.019277):0.014001,(((r_VejInsue:0.003933,(((r_WgeSangu:0.118677,r_WicMonil:0.05696):0.080009,(r_WekTermi:0.12716,(((r_VikHofst:0.016214,((r_VikWadei:0.035414,(r_VikTrevi:0.023775,r_VikSpeci:0.020021):0.013833):0.019132,r_VikShahi:0.014557):0.035763):0.020326,r_VikBucca:0.010741):0.151295,r_VikGoodf:0.042261):0.069295):0.011399):0.263888,(r_VxsModes:0.010412,((r_VzeAtlan:0.122224,r_VxsMaris:0.02603):0.015286,(r_VejPolyt:0.020273,r_VejTarta:0.005808):0.004563):0.004925):0.011548):0.005452):0.072922,(r_UnpSomer:0.038831,r_UnpCCeti:0.045146):0.037707):0.018073,r_UyvPerfo:0.070238):0.03308);",
+    "sequences": [
+        [
+            "r_UnpCCeti",
+            "????????????????????????????????????????G??AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUUGAAGC----AACUUC-GGUU-----GU-GGAAAGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUUCAGUCUGGGACAACCAUUGGAAACGAUGGCUAAUACCGGAUAUUAUGGAACUCUCGCAUGG-GA-GGA-UCAUGAAA-GCUAUA-UGCGCUGAAGGAGAGCUUUGCGUUCCAUUAGCUAGUUGGUGAGGUAACGGCUCACCAAGGCGACGAUGGAUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUUUUCGGAUCGUAAAGUGC-UUUCAGUUGGGAAGAA-GAAA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGGUUCAUAAGUCUGAUGUUAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-UGAACCUAGAGUAUCAGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGAGAAGUCAGCUCACUGGAUGAAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUCACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA--CUAACGCGAUAAGUGAUCCGCCUG-GGGAGUACGCACGCAAGUGUGAAACUCAAAGGAAUUGACGGGGAC-CGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCUAAGAACUUCCUAGAGAUA-GGAGGGUGCCGGCUUGC-CGGA-ACUUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUUGUAUGUUGCUACCAUUAAGUUGAGCACUCAUGCGAUACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGCAAUACAACGAGUCGCCAACCCGCGAGG-GUGAGCUAAUCUCUUAAAGUUGUUCGUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUAAAGUAGCAGGCCUAACC--GUAA---GGAGGGAUGCUCCUAAGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCCUACGGGAACGUGCGGCUGGAUCACCUCC?????",
+            []
+        ],
+        [
+            "r_UnpSomer",
+            "???????????????????????????????????????????AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-UUCGAUUU----ACCUUC-GGGU-----AU-UGAGGAUGGCGGACGGGUGAGUAACGCGUAAGGAACUUGCCUCUUGGUCUGGGACAACUGUUGGAAACGACAGCUAAUACCGGAUAUUAUGAGAUUCUCGCAUGG-GA-AAC-UUAUGAAA-GCUAUA-UGCGCCAAGAGAGAGCCUUGCGUUCCAUUAGCUAGUUGGUGGGGUAACGGCCCACCAAGGCGACGAUGGAUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGGCCACAAGCCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUCUUCGGAUUGUAAAGUGC-UUUCAGUUGGGAAGAA-GAAA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGAAAAAUAAGUCUGAUGUUAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-UUUUUCUAGAGUACUGGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGAGAAGUCAGCUCACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUCACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUGAUCCGCCUG-GGGAGUACGCACGCAAGUGUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGAAACCUUACCAGCGUUUGACAUCCUAAGAAGUUUCCAGAGAUG-GAUUCGUGCCGGCUUGC-CGGA-ACUUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUUGUAUGUUGCUACCAUUAAGUUGAGCACUCAUGCGAUACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGCAGUACAGAGAGUUGCCAACCCGCGAGG-GUGAGCUAAUCUCUUAAAGCUGUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGC-AUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GUAA---GGAGGGAUGUUCCUAAGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGU??????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UpbRectu",
+            "???????????????????????????????????NNNNNN?GAGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUAGCUUGAU-------CCUUC-GGG---------UGAUGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUGCAGUCUGGGACAACAUUUGGAAACGAAUGCUAAUACCGGAUAUUAUGUGAGUUUCGCAUGA-AA-UUC-AUAUGAAA-GCUAUA-UGCGCUGCAGGAGAGCUUUGCGUCCUAUUAGCUAGUUGGUGAGGUAACGGCUCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUU-CGGAAUGUAAAGUGC-UUUCAGUUGGGACGAA-GUAA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGU-GCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUCGUAGGCGGUUUGGUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUGUCCAAACUAGAGUACUGGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCCACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUACCCUGGCCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCUAAGAAAUUAGCAGAGAUG-CUUUUGUGC--CUUCGG-GGGA-ACUUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUGCCAUCAUUAAGUUGGGCACUCAUGCGAUACUGCCUGCGAUCAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGUCGCAAACCUGCGAGG-GGGAGCUAAUCUCAGAAAACUAUUCUCAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCUAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GCAA---GGAGGGAUGCUCCGAGGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACGGGAACGUGCGGCUGGAUCACCUCCUU???",
+            []
+        ],
+        [
+            "r_UxjAloci",
+            "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????GGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGAUAGGGACAACAUUUAGAAAUGAAUGCUAAUNCCUNAUAUUAUGAAAAUAGGGCAUCC-UA-UAA-UUAUGAAA-GCUAAA-UGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCNGCNGUGGGGAAUAUUGGA-CAAUGGACCGAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AAGA-AUGACGGUACCNACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACGAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UGUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACC-GCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGNAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGAUAGAGAUA-UAUCAGUG--UCUUCGGGG--AAACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUNUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUNAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUUGCAAAGCCGUGAGG-UGGAGCUAAUCUCAGAAAACUNUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--G???????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvCanif",
+            "???????????????????????????????????????????????????????UGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUA-CUUGAAUU-UGGGUUUUU-UAACUUC--GA-UUUGGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGCUAGGGACAACAUUUGGAAACGAAUGCUAAUACCUAAUAUUAUGAUUUUAGGGCAUCC-UA-GAA-UUAUGAAA-GCUAUA-UGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AAAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UGUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUGAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCAAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGACAGAGAUG-UUUCAGUGUCCUUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUACGAUGAGUAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUUGCAAAGCCGUGAGG-UGGAGCUAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GCAA---GGAGGGAUGCUCCGAGGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUA?????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvEquin",
+            "???????????????????????????????????????????UGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCAA-CUCGA-------GUCUUC-GGAC---------UUGGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCUUAGUCUGGGACAACAUCUGGAAACGGAUGCUAAUACCGGAUAUUAUGCUUUUUUCGCAUGG-AG-AAA-GCAUGAAA-GCUACA-UGCGCUAAGAGAGAGCUUUGCGUCCCAUUAGCUCGUUGGUGAGGUAACGGCUCACCAAGGCAAUGAUGGGUA-CCCGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGACGUUUUUCGGAAUGUAAAGUGC-UUUCAGUCGGGAAGAA-GAAA-GUGACGGUACCGACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCAAGGAAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-CCUUACUAGAGUACUGGAGAGGUAGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCUGUAAACGAUGAUUACUAGGUGUUGGGGG-UCAAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCUACGAACGGUGCAGAGAUG-CGCCGGUGCCCCUUCGG-GGGA-ACGUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAGCCUUCAGUUGGGGACUCAUGCGAUACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGCCGCAAACCCGCGAGG-GGGAGCAAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUGGGUUGCACCUGAAGUAGCAGGCCUAACC--UUAG---GGAAGGAUGCUCCGAGGGUGUGGUUCGCG-AUUGGGGUG-AAGUCGUAACAAGGUAGCCGUA???????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvGonid",
+            "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????GGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCNUNGUCUGGGACAACAUCUGGAAACGGAUGCUAAUACCGGAUAUUAUGCUUUCUUCGCAUGG-AG-GAA-GUAUGAAA-GCUAUA-UGCGCUAUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGUGAGGUAACGGCCCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCNNNCUCCUACGGGAGGCNGCNGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGACGUUUUUCGGAAUGUAAAGUGC-UUUCAGUCGGGAAGAA-GUAA-GUGACGGUACCGACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCAAGGAAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-CCUAACUAGAGUACUGGAGAGGUAGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCUGUAAACGAUGAUUACUAGGUGUUGGGGG-UCNAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGAC-CGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGNAACGCGAGGAACCUUACCAGCGUUUGACAUCCUACNAAGAGUGCAGAGAUG-CGCUNGUGCUUCUUCGG-AAGA-AUGUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAGCCUUUAGUUGGGGACUCAUGCGAUACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUNAAGUCAUCAUGCCCCUNAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGCGGCGAACCCGCGAGG-GGGAGCAAAUCUCAGAAAACUNUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--G???????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvMorti",
+            "????????????????????????????????????????????????UUGAUCCUGGCUCAGGAUGAACGCUUACAGAAUGCUUAACACAUGCAAGUCUA-CUUGAU-------CCUUC-GGG---------UGAUGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUGCAGUCUGGGACAACAUUUGGAAACGAAUGCUAAUACCGGAUAUUAUGUGAGUUUCGCAUGA-AA-UUC-AUAUGAAA-GCUAUA-UGCGCUGCAGGAGAGCUUUGCGUCCUAUUAGCUAGUUGGUGAGGUAACGGCUCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGACGAA-GUAA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGUUUGGUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-CCAAACUAGAGUACUGGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCCACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGGGUAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCUAAGAAAUUAGCAGAGAUG-CUUUUGUYGC-CUUCGG-GGGA-ACUUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUGCCAUCAUUAAGUUGGGCACUCAUGCGAUACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGUCGCAAACCUGCGAGGGGGGAGCUAAUCUCAGAAAACUAUUCUCAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCUAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUGACAACACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GCCA---GGAGGGAUGCUCCGAGGGUGUGAAUAGCGAAUUGGGGUGGAAGUCGUAACAAGGUAUCCGUACGGGAACGUGCCGGUUGGAUCACCU??????",
+            []
+        ],
+        [
+            "r_UyvNecro",
+            "???????????????????????????????????????????????UUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUA-CUUGAU-------CCUUC-GGG---------UGAUGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUGCAGUCUGGGACAACAUUUGGAAACGAAUGCUAAUACCGGAUAUUAUGUGAGUUUCGCAUGG-AA-UUC-AUAUGAAA-GCUAUA-UGCGCUGCAGGAGAGCUUUGCGUCCUAUUAGCUAGUUGGUGAGGUAACGGCUCACCAAGGCCAUGAUAGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAUAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGACGAA-GUAA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGUUUGGUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-UCAAACUAGAGUACUGGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCCACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCUAGGAAGUUGGCAGAGAUGCCUUCGGUGG--CUUCGG-GGGA-ACCUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUGCCAUCAUUAAGUUGGGCACUCAUGCGAUACAGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGUCGCAAACCCGCGAGG-GGGAGCUAAUCUCAGAAAACUAUUCUCAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCUAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GUAA---GGAGGGAUGCUCCGAGGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAAC???????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvNecr2",
+            "???????????????????????????????????????????AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUCGA-------GUCUUC-GGAC---------UUGGGUGGCGCACGGGUGAGUAACGCGUAAAGAACUUGCCUCUUAGACCGGGACAACAUCUGGAAACGGAUGCUAAUACCGGAUAUUAUGGUUUUUUCGCAUGG-AG-GAA-UCAUGAAA-GCUAGA-UGCGCUAAGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGUGAGGUAACGGCCCACCAAGGCAAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCACAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGACGUUUUUCGGAAUGUAAAGUGC-UUUCAGUCGGGAAGAA-GUCA-GUGACGGUACCGACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCAAGGAAAGUCUGAUGUGAAAAUGCGGAGCUCAACUCCGUAU-GGCGUUGGAAACUG-CCUUACUAGAGUACUGGAGAGGUAGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCUGUAAACGAUGAUUACUAGGUGUUGGGGG-UCAAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCUACGAACGGAGCAGAGAUG-CGCCGGUGCCCUUUCGG-GGGA-ACGUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAUCCUUCAGUUGGGGACUCAUGCGAUACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGCGGCAAACCCGCGAGG-GGGAGCAAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--UUAG---GGAAGGAUGCUCCGAGGGUGUGGUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAACC??????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvNecr3",
+            "???????????????????????????????????????????????UUUGAUCCUGGCUCGAGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUCGA-------GUCUUC-GGAC---------UUGGGUGGCGCACGGGUGAGUAACGCGUAAAGAACUUGCCUCUUAGACUGGGACAACAUCUGGAAACGGAUGCUAAUACCGGAUAUUAUGGUUUUUUCGCAUGG-AG-GAA-UCAUGAAA-GCUAGA-UGCGCUAAGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGUGAGGUAACGGCCCACCAAGGCAAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCACAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGACGUUUUUCGGAAUGUAAAGUGC-UUUCAGUCGGGAAGAA-GUCA-GUGACGGUACCGACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAUUACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCAAGGAAAGUCUGAUGUGAAAAUGCGGAGCUCAACUCCGUAU-GGCGUUGGAAACUG-CCUUACUAGAGUACUGGAGAGGUAGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCUGUAAACGAUGAUUACUAGGUGUUGGGGG-UCAAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCUACGAACGGAGCAGAGAUG-CGCCGGUGCCCUUUCGG-GGGA-ACGUAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAUCCUUCAGUUGGGGACUCAUGCGAUACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAG-AGCAAACCCGCGAG--GGGAGCAAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--UUAG---GGAAGGAUGCUCCGAGGGUGUGGUUAGCG-AUUGGGGUG-AAGUCGUAAC???????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvNucle",
+            "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????GGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGCUAGGGACAACAUUUAGAAAUGAAUGCUAAUNCCUNAUAUUAUGAUUUUAAGGCAUCU-UA-GAA-UUAUGAAA-GCUAUA-AGCACUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACAGCUCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCNNNCUCCUACGGGAGGCNGCAGUGGGGAAUAUUGGA-CAAUGGACCGAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AGAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACGAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UAUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUNAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGAC-CGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGNAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGAUAGAGAUN-UUUCAGUGU--CUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUNUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUNCGAUGAGUAGGAGGAAGGUGGGGAUGACGUNNAGUCAUCAUGCCCCUNAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUUGCAAAGCCGUGAGG-UGGAGCUAAUCUCAGAAAACUNUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--G???????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvNucl2",
+            "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????GGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACNGGUAGGGACAACAUUUGGAAACGAAUGCUAAUNCCUNAUAUUAUGAUNAUAGGGCAUCC-UN-UAA-UUAUGAAA-GCUAUA-AGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCNNACUCCUACGGGAGGCNGCNGUGGGGAAUAUUGGA-CAAUGGACCGAGAGUCUGAUCCAGCNAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-ACAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACNAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UAUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGAC-CGCACAAGCGGUGGAGCAUNUNGUUUAAUUCGACGNAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGACAGAGAUN-UNUCAGUGU--CUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUNUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUNCGAUGAGUAGGAGGAAGGUGGGGAUGACGUNAAGUCAUCAUGCCCCUNAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUCGCAAAGCUGUGAAG-UGGAGCUAAUCUCAGAAAACUNUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--G???????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvNucl3",
+            "UAAAUAAGAUAGCAAAGAUGAGCUAUUAAAAAGAUUGAACGA?AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUA-CUUGAAUU-UGGGUUUUU-UAACUUC--GA-UUUGGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGCUAGGGACAACAUUUGGAAACGAAUGCUAAUACCUAAUAUUAUGAUUAUAGGGCAUCC-UA-GAA-UUAUGAAA-GCUAUA-UGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCAAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCGAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGACGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AAAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACGAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UGUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUGAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCAAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGACAGAGAUG-UUUCAGUGUCCCUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUACGAUGAGUAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUUGCAAAGCCGUGAGG-UGGAGCUAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GUAA---GGAGGGAUGUUCCGAGGGUGUGAUUAGCG-AUUGGGG????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvNucl4",
+            "???????????????????????????????????UGAACGA?AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCNN-CUUGAA--------CUUC-GG----------UUUGGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGAUAGGGACAACAUUUGGAAACGAAUGCUAAUUCCUGAUAUUAUGAUUUUAGGGCAUCC-UA-GGA-UUAUGAAA-GCUAUA-UGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGNAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACNCGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AAAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUNUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UGUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUGAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUNAACGAUGAUUACUAGGURUNGGGGG-UCGAACCUCAGCGCCCAA-GCAAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGAC-CGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGNAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGACAGAGAUG-UUUCAGUGUCCCUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACNCNCGUGCUACAAUGGGUAGUACAGAGAGUCGCAAAGCCGUGAGG-UGGAGCUAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUNGCAGGCCUAACC--GUUA---GGAGGGAUGCUCCGAGGGUGUGAUUA???????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvNucl5",
+            "AAUUAAAGAUAGCAAAAUGAGCUAUAAGAAAAGAUUGAACGA?AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCAA-CUUGAAUU-UGGGUUUUU--AACUUA--GG-UUUGGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGUUAGGGACAACAUUUGGAAACGAAUGCUAAUACCUAAUAUUAUGAUAAUAGGGCAUCC-UA-UGA-UUAUGAAA-GCUAUA-AGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AAAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACGAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UAUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUGAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCAAACGUGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGACAGAGAUG-UUUCAGUGUCCCUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUACGAUGAGUAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUCGCAAAGCUGUGAAG-UGGAGCUAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GUAA---GGAGGGAUGCUCCGAGGGUGUGAUUAGCG-AUUGGGG????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvPerfo",
+            "?????????????????????????????????NUUUAAUGA?AGAGUUUGAUCCUGGCUCAGGAUNAACGCUGACAGAAUGCUUAACACAUGCAAGUCUA-CUUGAAUU---CAC-UUC-G-GUG---AUA-GUNNGGUGNCGGACGGGUGAGUAACACGUAAAGAACUUGCCUUGUAGUCUGGGACAACUAUUGGAAACGAUAGCUAAUACCGGAUAUUAUGAUUUUAUCGCAUGA-UA-AGA-UUAUGAAA-GCUAUA-UGCGCUACGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGUGAGGUAACGGCUCACNAAGGCGACGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCNNNCUCCUACGGGAGGCAGCAGUGGGNAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGACGGUCUUAGGAUUGUAAAGUGC-NUUCAAUUGGGAAGAA-ACAA-AUGACGGUACCAAUAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCNAGCGUUAUCCGGAUUUAUUGGGCGUNAAGCGCGUC-UAGGUGGUUUGGUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-CCNAACUAGAGUAUCGGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUAGAGAAGUCAGCUCACUGGACGAAUACUGA-CACUGAAGCGCNNAAGCAUGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCAUGCUGUAAACGAUGAUNACUAAGCGUCGGGGG-UCGAACCUCGGCNCUCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGUGGUGGAGCAUGUGGUUUAAUUCGANNNAACGCGAGGAACCUUACCAGCNUUUGACAUCCUAGGAAUGAGAAAGAGAUU-UCUUAGUGCUCCUUCGG-GAGA-ACCUAGAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCNCAACGAGCGCAACCCCUAUUGUAUGUUGCCAUCAUUAAGUUGGGCACUCAUGCGAUACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGCAGUACAGAGAGAAGCAAUUUCGCGAGA-AGGAGCAAAUCUCAGAAAGCUGUUCGUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCACUAGUAAUCGCAAAUCAGCUAUGUUGC-GGUGAAUACGUU-CUCGGGNCUUGUACACACCGNNCNUCACACCACGAGAGUUGAUUGCACCUGAAGUAGCAGGCCUAACC--GUAA---GGANGGAUGCUCCGAGGGNGUGGUUAGCG-A??????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvPerio",
+            "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????GGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCNCNGUUAGGGACAACAUUUGGAAACGAAUGCUAAUNCCUNAUAUUAUGAUUUUAGGGCAUCC-UA-AGA-UUAUGAAA-GCUAUA-UGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACNCGGCCCNNNCUCCUACGGGAGGCNGCNGUGGGGAAUAUUGGA-CAAUGGACCAANAGUCUGAUCCAGCNAUUCUGUGUGCNCGAUGACGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AAAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACNAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-CAUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUNAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGA-CCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGNAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGACAGAGAUG-UUUCAGUGU--CUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUNUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUNAAGUCAUCAUGCCCCUNAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGUCGCAAAGCCGCGAGG-UGGAGCUAAUCUCAGAAAACUNUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--G???????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvRussi",
+            "??????????????????????????????????NNGAACGA?AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCAA-CUUGAA--------CUUC-GG----------UUUGGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGACUGGGACAACAUUUGGAAACGAAUGCUAAGACCGGAUAUUAUGAAUUCAUUGCAUGA-UG-AAG-UCAUGAAA-GCUAUA-AGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCNACAAGGGGACUGAGACACGGCCNNUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-GAAA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGCUGCNAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCUAGAUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-UAUAGCUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-CGCUGAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCAAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGANGGGGACCNGNACAAGNGGUGGAGCAUGUGGUUUAAUUCGANNNAACGCGAGGAACCUUACCAGCGUUUGACAUCCUACUAAGGGCUCAGAGAUG-AGCUUGUGCUCCUUCGG-GAGA-AAGUAGAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUNNAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUGGCGAAGCUGUGAAG-UGGAGCAAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACNCCACGAGAGUUGGUUGCACCUGAAGUAACAGGCCUAACC--GAAA---GGAGGGAUGUUCCGAGGGUGUGAUUAGCG-ANNGGG?????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvSimia",
+            "?????????????????????????????????NNUGAACGA?AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCAA-CUUGAAUU-UGGGUUUUU--AACUUA--GA-UUUGGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUCACAGAUAGGGACAACAUUUGGAAACGAAUGCUAAUACCUGAUAUUAUGAUUACAAGGCAUCU-UG-UAA-UUAUGAAA-GCUAAA-UGCGCUGAGAGAGAGCUUUGCGUCCCAUUAGCUAGUUGGAGAGGUAACGGCUCACCAAGGCGAUGAUGGGNAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCNUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCGAGAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-AAAA-AUGACGGUACCAACAGAAGAAGUGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCACGAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGUGGUUAUGUAAGUCUGAUGUGAAAAUGCAGGGCUCAACUCUGUAU-UGCGUUGGAAACUG-UGUAACUAGAGUACUGGAGAGGUAAGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUUACUGGACAGAUACUGA-NGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCNAA-GCAAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGAAACGCGAGGAACCUUACCAGCGUUUGACAUCUUAGGAAUGAGACAGAGAUG-UUUCAGUGUCCCUUCGG-GGAA-ACCUAAAGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCUACGAUGAGUAGGAGGAAGGUGGGGAUGACGUNNAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGAACAGAGAGUUGCAAAGCCGUGAGG-UGGAGCUAAUCUCAGAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GUAA---GGAGGGAUGCUCCGAGGGUGUGAUUAGCG-ANCNGGG????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvUlcer",
+            "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????AGGUGGCGGACGGGUNAGUAACGCGUAAAGAACUUGCCUCACNGACUGGGACAACAUUUGGAAACGAAUGCUAAUACCGGAUAUUAUGAUUGGGUCGCAUCA-UC-UGG-UUAUGAAA-GCUAUA-UGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGUUAGUUGGUGAGGUAACGGCUCACCAAGACGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCNNNCUCCUACGGGAGGCNGCNGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCNAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-GUCA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCNAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCUUAGUAAGUCUGAUGUGAAAAUGCGGGGCUCAACCCCGUAU-UGCGUUGGAAACUG-CUUAACUAGAGUACUGGAGAGGUAGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-UAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUNAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGAC-CGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGNAACGCGAGGAACCUUACCAGCGUUUGACAUCCCAAGAAGUUAACAGAGAUG-UUUUCGUGCCUCUUCGG-AGGA-ACUUGGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUNUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAGACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUNAAGUCAUCAUGCCCCUNAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGCUGCAAACCUGCGAGG-GUGAGCUAAUCUCAUAAAACUNUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCUAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACUCACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAACAGGCCUAACC--G???????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_UyvVariu",
+            "??????????????????????????????????????U?????????UUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUA-CUUGAU-------CCUUC-GGG---------UGAAGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCUUACAGACUGGGACAACAUUUGGAAACGAAUGCUAAUACCGGAUAUUAUGACUGAGUCGCAUGA-UU-UGG-UUAUGAAA-GCUAUA-UGCGCUGUGAGAGAGCUUUGCGUCCCAUUAGUUAGUUGGUGAGGUAACGGCUCACCAAGACGAUGAUGGGUAGC-CGGCCUGAGAGG-UGGAACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGUUUUUCGGAAUGUAAAGUGC-UUUCAGUUGGGAAGAA-GUCA-GUGACGGUACCAACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAUUUAUUGGGCGUAAAGCGCGUC-UAGGCGGUUUAGUAAGUCUGAUGUGAAAAUGCGGGGCUCAACCCCGUAU-UGCGUUGGAAACUG-CUAAACUAGAGUACUGGAGAGGUAGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCCUACUGGACAGAUACUGA-CGCUAAAGCGCGAAAGCGUGGGGUAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGAUUACUAGGUGUUGGGGG-UCGAACCUCAGCGCCCAA-GCUAACGCGAUAAGUAAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCGUUUGACAUCCCAAGAAGUUAACAGAGAUG-UUUUCGUGCCUCUUCGG-AGGA-ACUUGGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAGACUGCCUGCGAUGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUACGCUGGGCUACACACGUGCUACAAUGGGUAGUACAGAGAGCUGCAAACCUGCGAGG-GUAAGCUAAUCUCAUAAAACUAUUCUUAGUUCGGAUUGUACUCUGCAACUCGAGUACAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCUAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUUACAACACGAGAGUUGGUUGCACCUGAAGUAACAGGCCUAACC--GUAA---GGAGGGAUGUUCCGAGGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACGGGAACGUGCGGGUGGAUCACCU???????",
+            []
+        ],
+        [
+            "r_VejInsue",
+            "???????????????????????????????????????????AGAGUUUGAUNNUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUGGAAUU---CACCUUC-GGGUG---UUA-GUACGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUCUAGACUGGGACAACUGUUGGAAACGGCAGCUAAUACCGGAUAUUAUGAGAACCUGGCAUCA-GG-AAC-UUAUGAAAAGCUAUA-UGCGCUAGAGGAGAGCUUUGCGUCCCAUUAGCUAGUUGGUAGGGUAAUGGCCUACCAAGGCGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUUUUCGGAUCGUAAAGUGC-UUUCAGCAGGGAAGAA-GCAA-GUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCCUUUUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-GAAGGCUAGAGUAUCAGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUCACUGGAUGAAUACUGA-CGCUGAAGCGCGAAAGCGUGGG-GAGCAAACGGGAUUAGAUAC-----CCCGGUAGUCCACGCCGUAAACGAUGAUCACUAAGUGUGGGGGG-UCGAACCUCCGUGCUCAA-GCUAACGCGAUAAGUGAUCCGCCUG-GGGAGUACGCACGCAAGUGUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCCCUUGACAUCCCAAGAACUUGGCAGAGAUG-CCUUGGUGCCU-UUCGG-GGGA-ACUUGGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAGACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGGGCUGGGCUACACACGUGCUACAAUGGGCAGUACAGAGAGUCGCGAACCCGCGAGG-GGGAGCCAAUCUCAGAAAGCUGUUCUUAGUUCGGAUUGCACUCUGCAACUCGAGUGCAUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACC--GUAA---GGAGGGAUGUUCCUAAGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACGGGAACGUGCGGAUGGAUCACCUCCUUU??",
+            []
+        ],
+        [
+            "r_VejPolyt",
+            "???????????????????????????????????????????AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUGGAAUU---CACCUUC-GGGUG---AUA-GUACGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUCUAGACUGGGACAACUGUUGGAAACGACAGCUAAUACCGGAUAUUAUGGAACUGCGGCAUCG-CG-GAA-CUAUGAAAGGCUAUA-UGCGCUAGAGGAGAGCUUUGCGUCCCAUUAGUUAGUUGGUAGGGUAAUGGCCUACCAAGACGAUGAUGGGUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACUAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUCUUCGGAUCGUAAAGUGC-UUUCAGGUGGGAAGAA-GAAA-GUGACGGUACCACCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCCUUUUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-GAAGGCUAGAGUAUCAGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUCACUGGAUGAAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-GAGCAAACGGGAUUAGAUAC-----CCCGGUAGUCCACGCCGUAAACGAUGAUCACUAAGUGUGGGGGG-UCGAACCUCCGUGCUCAA-GCUAACGCGAUAAGUGAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCCCUUGACAUCCCAAGAACUAGGCAGAGAUG-CUUAGGUGCCU-UUCGG-AGGA-ACUUGGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAGACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGGGCUGGGCUACACACGUGCUACAAUGGACAAUACAGAGGGUAGCGAUCCCGCGAGG-GGGAGCCAAUCUCAGAAAGUUGUUCUUAGUUCGGAUCGCAGUCUGCAACUCGACUGCGUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGCCGGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACCCGUUUA-CGGGAGGGAUGUUCCUAAGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACGGGAACGUGCGGAUGGAUCACCU???????",
+            []
+        ],
+        [
+            "r_VejTarta",
+            "???????????????????????????????????????????AGAGUUUGAUNNUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUGGAAUU---CACUUUC-GGGUG---AUA-GUACGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUCUAGACUGGGACAACUGUUGGAAACGACAGCUAAUACCGGAUAUUAUGGAACUGUGACAUCG-CA-GAU-CUAUGAAAGGCUAUA-UGCGCUAGAGGAGAGCUUUGCGUCCCAUUAGCUAGUUGGUAGGGUAAUGGCCUACCAAGGCGACGAUGGGUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUCUUCGGAUCGUAAAGUGC-UUUCAGGUGGGAAGAA-GCAA-GUGACGGUACCACCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCCUAUUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-GAAGGCUAGAGUAUCAGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUCACUGGAUGAAUACUGA-CGCUAAAGCGCGAAAGCGUGGG-GAGCAAACGGGAUUAGAUAC-----CCCGGUAGUCCACGCCGUAAACGAUGAUCACUAAGUGUGGGGGG-UCGAACCUCCGUGCUCAA-GCUAACGCGAUAAGUGAUCCGCCUG-GGGAGUACGCACGCAAGUGUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCCCUUGACAUCCCAAGAACUUAGCAGAGAUG-CUUUGGUGCCU-UUCGG-GGGA-ACUUGGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAGACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGGGCUGGGCUACACACGUGCUACAAUGGGCAGUACAGAGAGUCGCGAUCCCGCGAGG-GGGAGCCAAUCUCAGAAAGCUGUUCUUAGUUCGGAUCGCAGUCUGCAACUCGACUGCGUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACCC-UUCGG-GGGAGGGAUGUUCCUAAGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACGGGAACGUGCGGAUGGAUCACCUCCUUUCU",
+            []
+        ],
+        [
+            "r_VikBucca",
+            "???????????????????????????????????????????AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUU-UGGCAAAU--CUGUGCUU-GCACAG---CC-UAGCCAAGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCACUGCAGACAGGGAUAACAGACGGAAACGACUGAUAAUACCUGAUAUAAUUGCCAGCACGCAUGU-GCCCGG-CAAUGAAA-A--GAGA--UGCUGCAGGAGAGCUUUGCGUCCUAUUAGCUUGUUGGUGAGGUAACGGCUCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGGG-GCAACCCUGAUCCAGCAAUUCUGUGUGCACGAAGAAGGUUUUCGGAUUGUAAAGUGC-UUUCAGCAGGGAAGAA-GAAA-GUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGCUAGACAAGUCUGGGGUGAAAACUUGCGGCUCAACCGCAAGCCUGCCCUGGAAACUG-UUUGGCUAGAGUGCUGGAGAGGUGGACGGAACUGCACGAGUAGAGGUGAAAUUCGUAGAUAUGUGCAGGAAUGCCGAUGAUGAAGAUAGUUCACUGGACGGCAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCGAACAGGAUUAGAUAC-----CCUGGUAGUCCUAGCUGUAAACGAUGAUUACUGGGUGUGGGCAUGAAGAGUGUCCGUGCCGAA-GCUAAUGCGAUAAGUAAUCCGCCUG-GGGAGUACGGCCGCAAGGCUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCCACGUAUGCCUACGAGAGU-AGGCAGUGC--CUUCGG-G--A-ACGUGGAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGCUAGUUGCCAUCAUUAAGUUGGGGACUCUAGCGAGACUGCCUGCGAAGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGCCGGUACAAAGAGCUGCAAAACGGUAACG-UUUAGCCAAUCUUU-AAAGCCGGUCCAAGUUCGGAUUGAAGUCUGCAACUCGACUUCAUGAAGCCGGAAUCGCUAGUAAUCGCAGAUCAGCAAUGCUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGUUUGCACCUGAAGCCGCCGGUCCAACC--GUAA---GGAGGAAGGCGUCUAAGGUGUGGAUAGUG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACCGGAAGGUGCGGAUGGAUCACCUCCUUU??",
+            []
+        ],
+        [
+            "r_VikGoodf",
+            "????????????????????????????????????????????GAGUUUGAUYCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-UGGGGAAG-AAUUAACUU-GUUAAUU--UGGUAACCAUGGCGGACGGGUGAGUAACGCGUAAAGAACUUACCUUUCAGACUGGGAUAACAGAGGGAAACUUCUGAUAAGACCGGAUAUAAUUAAUUGAUUGCAUGA-GA-GAU-UAAUGAAA-A--GAGA--UGCUGAAAGAGAGCUUUGCGUCCUAUUAGCUAGUUGGUAAGGUAAUGGCUUACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-GACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCUUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGAG-GAGACUCUGAUCCAGCAAUUCUGUGUGCACGAAGAAGGUUUUCGGAUUGUAAAGUGC-UUUCAGUGGGGAAGAA-GGAA-GUGACGGUACCCACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCGAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGACGAUCAAGUCAGGGGUGAAAACUUGCGGCUCAACUGUAAGCUUGCCUUUGAAACUG-AUUGUCUAGAGUAUUGGAAAGGUGGGCGGAACUACACGAGUAGAGGUGAAAUUCGUAGAUAUGUGUAGGAAUGCCGAUGAUGAAGAUAGCUCACUGGACGAUAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCGAACAGGAUUAGAUAC-----CCUGGUAGUCCUAGCUGUAAACGAUGAUCACUGGGUGUGGGCAGGAAGACUGUCUGUGCCGAA-GCAAAUGCGAUAAGUGAUCCGCCUG-GGGAGUACGACCGCAAGGUUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCUACGAACAUGUAUGAGGAU-ACAUGGUG--CCUUCGG-G--A-ACGUAGAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUUAUCGUUAGUUACCAUCAUUAAGUUGGGGACUCUAGCGGGACUGCCUGCGAAGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGGCAGUACAAAGAGGAGCGAGAUAGUGAUA-UGGAGCGAAUCUUG-AAAGCUGUUCUAAGUUCGGAUUGAAGUCUGCAACUCGACUUCAUGAAGUUGGAAUCGCUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACG-U-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGUUUGCACCUGAAGUUACUGGUCUAAC---UUAG----GAGGAAGGUACCUAAGGUGUGAAUAGUG-AUUGGGGUG-AAGUCGUAACAGGGUAUCCGUACCGGAAGGUGC????????????????????",
+            []
+        ],
+        [
+            "r_VikHofst",
+            "????????????????????????????????????????????GAGUUUGAUYCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUU-UGGCGAAU--CUGUGCUU-GCACAG---GC-UAGCCAAGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUGCAGACAGGGAUAACAGACGGAAACGACUGACAACACCUGAUACAGUUGCCGGCACGCAUGU-GCCCGG-CAAUGAAA-A--GAGA--UGCUGCGGGAGAGCUUUGCGUCCUAUUAGCUUGUUGGCGGGGUAACGGCCCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGGG-GCAACCCUGAUCCAGCAAUUCUGUGUGCACGAGGAAGGUUUUCGGAUUGUAAAGUGC-UUUCAGCAGGGAAGAA-GGAA-GUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGCCAGGCAAGUCUGGGGUGAAAACUUGCGGCUCAACCGCAAGCCUGCCCUGGAAACUG-CCUGGCUAGAGUGCUGGAGAGGUGGACGGAACUGCACGAGUAGAGGUGAAAUUCGUAGAUAUGUGCAGGAAUGCCGAUGAUGAAGAUAGUUCACUGGACGGCAACUGA-CGCUGAAGUGCGAAAGCUGGGG-GAGCRAACAGGAUUAGAUAC-----CCUGGUAGUCCCAGCCGUAAACGAUGAUUACUGGGUGUGGGCAUGAAGAGUGUCCGUGCCGAA-GCAAAUGCGAUAAGUAAUCCGCCUG-GGGAGUACGGCCGCAAGGCUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCCACGUAUGCCUGCGAGAGC-GGGCAGUG--CCUUCGG-G--A-ACGUGGAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGCCAGUUGCCAUCAUUAAGYUGGGGACUCUGGCGAGACUGCCUGCGAAGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGCCGGUACAGAGAGCUGCGAGGCGGCAACG-CCCAGCGAAUCUUC-AAAGCCGGUCCAAGUUCGGAUUGAAGUCUGCAACUCGACUUCAUGAAGCUGGAAUCGCUAGUAAUCGCAGAUCAGCAAUGCUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGUCUGCACCUGAAGCUGCCGGUCUAACC--GCAA---GGAGGAAGGCAUCUAAGGUGUGGACAGUG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACCGGAAGGUGC????????????????????",
+            []
+        ],
+        [
+            "r_VikSpeci",
+            "???????????????????????????????????????????????????????????????????????????????????????????UGCAAGUCAU-UGGCGAAG--CUGCGUUU-GCGCAG---UC-UAGCCAAGGCGGACGGGUGAGUAACGCGUAAGGAACUUGCCCUGCAGACAGGGAUAACAGACGGAAACGACUGAUAACACCUGGUAUUGUCAGGCUGGCGCAUGC-CG-GCC-UGAUGAAA-G--GAGA--CGCUGCAGGAGAGCCUUGCGUCCUAUUAGCUAGUUGGUGGGGUAACGGCCCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGGG-GCAACCCUGAUCCAGCAAUUCUGUGUGCACGAAGAAGGUUUUCGGAUUGUAAAGUGC-UUUCAGCAGGGAAGAA-GAAA-GUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGCCCUGUAAGUCUAGGGUGAAAACCUGCGGCUCAACCGCAGGCCUGCCCCGGAAACUA-CAGGGCUAGAGUAUCGGAGAGGUGGACGGAACUGCACGAGUAGAGGUGAAAUUCGUAGAUAUGUGCAGGAAUGCCGAUGAUGAAGAUAGUUCACUGGACGGUAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCUAGCUGUAAACGAUGAUUACUGGGUGUGGGCAUGAAGAGUGUCCGUGCCGAA-GCAAAUGCGAUAAGUAAUCCGCCUG-GGGAGUACGGCCGCAAGGCUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCUGCGAAUGCCCGUGAGAAC-GGGCAGUG--CCUUCGG-G--A-ACGCAGAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUUAGUUGCCAUCAUUAAGUUGGGGACUCUAGCGAGACUGCCUGCGAAGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGCCGGUACAGAGAGCAGCCAGGCGGCAACG-CCGAGCGAAUCUUU-AAAGCCGGUCCAAGUUCGGAUUGAAGCCUGCAACUCGGCUUCAUGAAGCUGGAAUCGCUAGUAAUCGCA???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_VikShahi",
+            "????????????????????????????????????????????GAGUUUGAUYCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUU-UGGCGAAG--CUGCGCUU-GCGCAG---AC-GAGCCAAGGCGGACGGGUGAGUAACGCGUAAGGAACUUGCCCUGCAGACAGGGAUAACAGACGGAAACGACUGACAAGACCUGAUACAGUUGCCGGCACGCAUGUGCC-UGG-CGAUGAAA-G--GAGA--CGCUGCAGGAGAGCCUUGCGUCCUAUUAGCUUGUUGGCGGGGUAAUGGCCCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-GACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGGG-GCAACCCUGAUCCAGCAAUUCUGUGUGCACGAAGAAGGUUUUCGGAUUGUAAAGUGC-UUUCAGCAGGGAAGAA-GAAA-GUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCGAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGCCCUGUAAGUCUAGGGUGAAAACCUGCGGCUCAACCGCAGGCCUGCCCCGGAAACUA-CAGGGCUAGAGUGCUGGAGAGGUGGACGGAACUGCACGAGUAGAGGUGAAAUUCGUAGAUAUGUGCAGGAAUGCCGAUGAUGAAGAUAGUUCACUGGACGGCAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCUAGCUGUAAACGAUGAUUACUGGGUGUGGGCAUGAAGAGUGUCCGUGCCGAA-GCUAAUGCGAUAAGUAAUCCGCCUG-GGGAGUACGGCCGCAAGGCUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCUGCGAAGGCCUGCGAGAGC-AGGCCGUG--CCUUCGG-G--A-ACGCAGAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGCUAGUUGCCAUCAUUAGGUUGGGGACUCUAGCGAGACUGCCUGCGAAGAGCAGGAGGAAGGCGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGCCGGUACAAAGAGCUGCCAGGCGGCAACG-CCAAGCGAAUCUUU-AAAGCCGGUCCAAGUUCGGAUUGAAGCCUGCAACUCGGCUUCAUGAAGCUGGAAUCGCUAGUAAUCGCAGAUCAGCAAUGCUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGC-CGUCACACCACGAGAGUUGUCUGCACCUGAAGCCGCCGGUCCAACC--GAAA---GGAGGAAGGCGUCUAAGGUGUGGACAGUG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACCGGAAGGUGC????????????????????",
+            []
+        ],
+        [
+            "r_VikTrevi",
+            "??????????????????????????????????????????UAGAGUU-GAUCAUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUU-UGGCGAAG--CUGUGCUU-GCACAG---AC-GAGCCAAGGCGGACGGGUGAGUAACGCGUAAGGAACUUGCCCCGCAGACAGGGAUAACAGACGGAAACGACUGAUAARACCUGGUGUUGUCAGGCUGACGCAUGU-CA-GGC-UGAUGAAA-G--GAGA--CGCUGCGGGAGAGCCUUGCGUCCUAUUAGCUUGUUGGUGAGGUAACGGCCCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGGG-GCAACCCUGAUCCAGCAAUUCUGUGUGCACGAAGAAGGUUUUCGGAUUGUAAAGUGC-UUUCAGCAGGGAAGAA-GCAA-GUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGCCCUGUAAGUCUAGGGUGAAAACCUGCGGCUCAACCGCAGGCCUGCCCCGGAAACUA-CAGGGCUGGAGUAUUGGAGAGGUGGACGGAACUGCACGAGUAGAGGUGAAAUUCGUAGAUAUGUGCAGGAAUGCCGAUGAUGAAGAUAGUUCACUGGACGAUAACUGA-CGCUGAAGUGCGAAAGCUGGGG-GAGCGAACAGGAUUAGAUAC-----CCUGGUAGUCCCAGCUGUAAACGAUGAUUACUGGGUGUGGGCAUGAAGAGUGUCCGUGCCGAA-GCAAAUGCGAUAAGUAAUCCGCCUG-GGGAGUACGGCCGCAAGGCUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCUGCGUAUGCCCGUGAGAGC-GGGCAGUGC--CUUCGG-G--A-ACGCAGAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGCUAGUUGCCAUCAUUAGGUUGGGGACUCUAGCGAGACUGCCUGCGAAGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGCCGGUACAGAGAGCUGCAAGGCGGUAACG-CCAAGCGAACCUGC-AAAGCCGGUCCAAGUUCGGAUUGAAGUCUGCAACUCGACUUCAUGAAGCUGGAAUCGCUAGUAAUCGCAGAUCAGCAAUGCUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGUCUGCACCUGAAGCUACUGGUCCAACC--GCAA---GGGGGAAGGUAUCUAAGGUGUGGAUAGUG-AUUGGGGUG-AAGUCGUA?????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_VikWadei",
+            "????????????????????????????????????????????GAGUUUGAUYCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCUU-UGGCGAAG--CUGUGCUU-GCACAG---CC-UAGCCAAGGCGGACGGGUGAGUAACGCGUAAGGGACUUGCCCUGCAGUCAGGGAUAACAGACGGAAACGACUGAUAAAACCUGAUAAAGUCAGGCGGACUCAUGU-CCAGCC-UGAUGAAA-A--GGAA--UGCUGCAGGAGAGCCUUGCGUCCUAUUAGCUUGUUGGUGGGGUAACGGCCCACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-GACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGG-CCAAUGGGG-GCAACCCUUAUCCAGCAAUUCUGUGUGCACGAUGAAGGUCUUCGGAUUGUAAAGUGC-UUUCAGCAGGGAAGAA-AAAA-AUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCGAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGCCGURUAAGUCUAGGGUGAAAACUUGCGGCUCAACCGCAAGCCUGCCCUGGAAACUA-UACGGCUAGAGURCUGGAGAGGUGGACGGAACUGCACGAGUAGAGGUGAAAUUCGUAGAUAUGUGCAGGAAUGCCGAUGAUGAAGAUAGUUCACUGGACGGUAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCUAGCUGUAAACGAUGAUUACUGGGUGUGGGCAUGAAGAGUGUCCGUGCCGAA-GCAAAUGCGAUAAGUAAUCCGCCUG-GGGAGUACGGCCGCAAGGCUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCUGCGAAGGCCUGCGAGAGC-AGGCUGUG--CCUCCGG-G--A-ACGCAGAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUUGCCAGUUGCCAUCAUUAGGUUGGGGACUCUGGCGAGACUGCCUGCGAAGAGCAGGAGGAAGGCGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGCCGGCACAGAGAGCUGCAAGGCGGCAACG-CCAAGCCAACCUUC-AAAGCCGGUCCAAGUUCGGAUUGAAGCCUGCAACUCGGCUUCAUGAAGCUGGAAUCGCUAGUAAUCGCAGAUCAGCAAUGCUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGUCUGCACCUGAAGCUGCCGGUCCAACC--GCAA---GGGGGAAAGCAUCUAAGGUGUGGAUAGUG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACCGGAAGGUGC????????????????????",
+            []
+        ],
+        [
+            "r_VxsMaris",
+            "?????????????????????????????????????????????????????????????????????CGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUGGAAUU---CACCUUC-GGGUG---AUA-GUACGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUCUAGACUGGGACAACUGUUGGAAACGACAGCUAAUACCGGAUAUUAUGAGAUUCUCGCAUGA-GG-AAC-UUAUGAAAGGCUAUA-UGCGCUAGAGGAGAGCUUUGCGUGCCAUUAGGUAGUUGGUAGGGUAAUGGCCUACCAAGCCGACGAUGGCUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUUUUCGGAUCGUAAAGUGC-UUUCAGGUGGGAAGAA-AAAA-AUGACGGUACCACCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCCUUUUAAGUCUGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-GAAGGCUAGAGUAUCAGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUUGGGAAGCCAGCUCACUGGAUGAAUACUGA-CGCUGAAGCGCGAAAGCGUGGG-GAGCAAACGGGAUUAGAUAC-----CCCGGUAGUCCACGCCGUAAACGAUGAUCACUAAGUGUGGGGGG-UCGAACCUCCGUGCUCAA-GCUAACGCGAUAAGUGAUCCGCCUG-GGGAGUACGCACGCAAGUGUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCCCUUGACAUCCUCAGAACUUAGCAGAGAUG-CUUUGGUGCCACUUCGG-UGGA-ACUGAGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUUUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAUACUGCCGGUGACAAACCGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGGGCUGGGCUACACACGUGCUACAAUGGGCGAUACAGAGAGUCGCAAUACCGCGAGG-UGGAGCUAAUCUCAGAAAGUCGUUCUUAGUUCGGAUCGCAGUCUGCAACUCGACUGCGUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACCC-UUCG--GGGAGGGAUGUUCCUAAGGUGUGAUUAGC?????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_VxsModes",
+            "?????????????????????????????????NNNNAAUGA?AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-CUGGAAUU---CACCUUC-GGGUG---AUA-GUACGGUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCCUCUAGACUGGGACAACUGUUGGAAACGACAGCUAAUACCGGAUAUUAUGGACCCCUGGCAUCU-GG-GGA-CUAUGAAAGGCUAUA-UGCGCUAGAGGAGAGCUUUGCGUCCCAUUAGCUAGUUGGUAGGGUAAUGGCCUACCAAGGCGACGAUGGGUAGC-CGGCCUGAGAGGGUG-AUCGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUCUUCGGAUUGUAAAGUGC-UUUCAGCAGGGAAGAA-GCAA-GUGACGGUACCUGCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCGUAAAGCGCGUC-UAGGCGGCCUAUUAAGUCUGAUGUUAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUGGAAACUG-GUAGGCUAGAGUAUCAGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUGGGGAAGCCAGCUCACUGGAUGAAUACUGAGC-CUGAAGCGCGAAAGCGUGGG-GAGCAAACGGGAUUAGAUAC-----CCCGGUAGUCCACGCCGUAAACGAUGAUCACUAAGUGUGGGGGG-UCGAACCUCCGUGCUCAACG-UAACGCGAUAAGUGAUCCGCCUGCGGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCCCUUGACAUCCCAAGAACUUAGCAGAGAUG-CUUUGGUGCCU-UUCGG-GGGA-ACUUGGUGACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAGACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGGGCUGGGCUACACACGUGCUACAAUGGACAGUACAGAGAGUCGCGAUCCCGCGAGG-GGGAGCCAAUCUCAGAAAGCUGUUCUUAGUUCGGAUCGCAGUCUGCAACUCGACUGCGUGAAGUUGGAAUCGCUAGUAAUCGCGAAUCAGCAAUGUCGC-G-UGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUGGUUGCACCUGAAGUAGCAGGCCUAACCC-UUCG--GGGAGGGAUGUUCCUAAGGUGUGAUUAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACGGGAACGUGCGGAUGGAUCACCUCCUUUC?",
+            []
+        ],
+        [
+            "r_VzeAtlan",
+            "????????????????????????????????????????????????????????????????????????????????????????????????????????????????CGGAUCUCUCGGAAG---AU-AGUCGGUGGCGGACGGGUGAGUAACGCGUAAAGAAUUUGCCCUUCAGACUGGGACAACUAAUCGAAAGGUUAGCUAAUACCGGAUAUUAUGAGACCUUGGCAUCA-AG-GAC-UUAUGAAA-GCUAUA-UGCGCUGAAGGAGAACUUUGCGUUCCAUUAGGUAGUUGGUAGGGUAAUGGCCUACCAAGCCGACGAUGGAUAGC-CGGCCUGAGAGGGUG-AACGGCCACAAGGGGACUGAGACACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGACCAAAAGUCUGAUCCAGCAAUUCUGUGUGCACGAUGAAGGUCUUCGGAUUGUAAAGUGC-UUUCAGGUGGGAAGAA-GAAA-GUGACGGUACCACCAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCGUAAAGCGAGUC-UAGGCGGCUUGUUAAGUCAGAUGUGAAAAUGCGGGGCUCAACUCCGUAU-UGCGUUUGAAACUG-GCAGGCUAGAGUACUGGAGAGGUGGGCGGAACUACAAGUGUAGAGGUGAAAUUCGUAGAUAUUUGUAGGAAUGCCGAUAGUGAAGACAGCUCACUGGACAGAUACUGA-CGCUAAAGCUCGAAAGCGUGGG-GAGCGAACAGGAUUAGAUAC-----CCUGGUAGUCCACGCCGUAAACGAUGUUCACUGGGUGUAGGGGG-UCGAACCUCUGUGCCGAA-GCUAACGCGAUAAGUGAACCGCCUG-GGGAGUACGCACGCAAGUGUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGCACUUGACAUACAACGAACUCGUCAGAGAUG-ACUUGGUGCCGCUUCGG-UGGA-ACGUUGAUACAGGUGGUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUAUGUUACCAUCAUUAAGUUGGGGACUCAUGCGAGACUGCCUGCGACGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGUGCUGGGCUACACACGUGCUACAAUGGUUGGUACAGAGAGCAGCAAUACCGCGAGG-UGGAGCAAAUCUCAGAAAGCCAAUCUUAGUUCGGAUCGCAGUCUGCAACUCGACUGCGUGAAGUUGGAAUCGCUA-GAAUCGCGAAUCAGCAA??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_WekTermi",
+            "???????????????????????????????????????????AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-UGAGAAGA--CUCCCUUC-GGGGAGA--GG-GUAUCAUGGCGGACGGGUGAGUAACGCGUAAAGAACUUGCCAUAUGGACAGGGAUAACCGAUGGAAACGACGGAUAAGACCUGAUAUAAUGAAUUAAUGGCAUCA-UU-GAU-UCAUGAAA-A--GCAA--UGCCAUAUGAGAGCUUUGCGUCCUAUUAGCUAGUUGGUAGUGUAACGGACAACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-GACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCUUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGAG-GUAACUCUGAUCCAGCAAUUCUGUGUGCACGACGAAGGUCUUCGGAUUGUAAAGUGC-UUUAAGUUGGGAAGAA-AAAA-AUGACGGUACCAACAGAAUAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCAUAAAGGGCAUC-UAGGCGGGGUUUCAAGUCGACGGUGAAAACUAGUGGCUCAACCAUUAGCUUGCCGACGAAACUG-AAAUUCUAGAGUAUUGGAAAGGUGGGCGGAACUACAUGAGUAGAGGUGAAAUUCGUAGAUAUAUGUAGGAAUGCCGAUGACGAAGGUAGCUCACUGGACAAAAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCUAGCUGUAAACGAUGUUCACUGGGUGUGGGCGAGUAGAUCGUCUGUGCCGAA-GCAAAUGCGAUAAGUGAACCGCCUG-GGGAGUACGGCCGCAAGGCUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCUCCGGAAUUAGGUAGAGAUA-CUUAAGUGC--CUUCGG-G--A-ACCGGAAGACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUAUCGUUAGUUACUAACAUUAAGUUGAGGACUUUAGCGAGACUGCCUGCGAAGAGCAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGACAGUACAAAGAGAAGCAAAAUGGUGACA-UGGAGCAAAUC-AAGAAAUCUGUUCUCAGUUCGGAUUGAAGUCUGCAACUCGACUUCAUGAAGUUGGAAUCGCUAGUAAUCGCGGAUCAGCAAUGCCGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUUGUUGCACCUGAAAUUGCUGGCCUAACCC-GUAA--GGGAAGGAAGUACUGAAGGUGUGGUAAGCG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACCGGAAGGUGCGGAUGGAUCACCU???????",
+            []
+        ],
+        [
+            "r_WgeSangu",
+            "???????????????????????????????????????????????????????UGGCUCAGGAUAAACGCUGACAGAAUGCUUAACACAUGCAAGUCGA-UGAUGGGA--GCUAGCUU-GCUAGA---AG-AAGUCAUGGCGGACGGGUGAGUAACGUGUAAAGAACUUACCAUAUAGACUGGGAUAACAGAGGGAAACUUCUGAUAAUACUGGAUAA-GUUAGUAGUA-GCAU-U-AC-UAAGUAAUGAAAGGUAGCAAUACGCUAUAUGAGAGCUUUGCAUCCUAUUAGCUAGUUGGUGGGGUAAAAGCCUACCAAGGCGAUGAUAGGUAGC-CGGCCUGAGAGGGUG-GACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGAG-GCAACUCUGAUCCAGCAAUUCUGUGUGUGUGAAGAAGGUUUUAGGACUGUAAAACACAUUUUAGUAGGGAAGAA-AGAA-AUGACGGUACCUACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCGAGCGUUAUCCGGAAUUAUUGGGCUUAAAGGGCAUC-UAGGCGGUUAAACAAGUUGAAGGUGAAAACCUGUGGCUCAACCAUAGGCUUGCCUACAAAACUG-UAUAACUAGAGUACUGGAAAGGUGGGUGGAACUACACGAGUAGAGGUGAAAUUCGUAGAUAUGUGUAGGAAUGCCGAUGAUGAAGAUAACUCACUGGACAGCAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUA-UCCUAGCUGUAAACGAUGAUCACUGGGUGUGGGGAUUCGAAGUCUCUGUGCCGAA-GCAAAAGCGAUAAGUGAUCCGCCUG-GGGAGUACGUUCGCAAGAAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGUGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGAUCUUGACAUCCUCCGAAGAGCAUAGAAGUA-UGCUUGUG--CCUACGG-G--A-ACGGAGAGACAGGUGGUGCAUGGCUGUCCACAGCUCNUGUUGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGAAACCCCUAUCAUUAGUUACCAUCAUUAAGUUGGGGACUCUAAUGAAACUGCCUACGAAGAGUAGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGAUAGUACAAAGAGAAGCUUUGUAGCGAUA-CAUGGCAAAACUAAGAAAGCUAUUCUUAGUUCGGAUUGAAGUCUGCAACUCGACUUCAUGAAGUUGGNAUCACUAGUAAUCGUGAAUCAGCAAUGUCAC-GGUGAAUACGUUCUCGGGGUCUUGUACACACCGCCCGUC????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+            []
+        ],
+        [
+            "r_WicMonil",
+            "???????????????????????????????????????????AGAGUUUGAUCCUGGCUCAGGAUGAACGCUGACAGAAUGCUUAACACAUGCAAAUCUA-UGUAUGAAAUGUAAGCUU-GCUUACAU-AG-ACUACAUGGUGGACUGGUGAGUAACGUGUAAAGAACUUACCUCUUAGACUGGGAUAACCAUUAGAAAUGAUGGAUAAUACUAGAUAUUAUUAGUAGUAGGCAUCU-AC-UAU-UAAUGAAAGGA-GAGA-UUGCUAAGAGAGAGCUUUGCAUCCUAUUAGCUAGUUGGUGGGGUAAAGGCCUACCAAGGCUAUGAUAGGUAGC-CGGCCCGAGAGGGUG-AACGGCCACAAGGGGACUGAGAUACGGCCCUUACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGA-CAAUGGAG-GAAACUCUGAUCCAGCAAUUCUGUGUGCACGAAGAAGGUUUUCGGAUUGUAAAGUGC-UUUCAGUAGGGAAGA-AGAAGA-UGACGGUACCUACAGAAGAAGCGACGGCUAAAUACGUGCCAGCAGCCGCGGUAAU-ACGUAUGUCGCAAGCGUUAUCCGGAAUUAUUGGGCUUAAAGGGCAUC-UAGGCGGUCUAACAAGUUGAAGGUGAAAAGCUGUGGCUCAACCAUAGUCUUGCCUACAAAACUG-UCAGACUAGAGUACUGGAAAGGUGGGUGGAACUACACGAGUAGAGGUGAAAUUCGUAGAUAUGUGUAGGAAUGCCGAUGAUGAAGAUAACUCACUGGACAGAAACUGA-CGCUGAAGUGCGAAAGCUAGGG-GAGCAAACAGGAUUAGAUAC-----CCUGGUAGUCCUAGCUGUAAACGAUGAUCACUGGGUGUGGGGGUGUGAAGCCUCUGUGCCGAA-GCAAAAGCGAUAAGUGAUCCGCCUG-GGGAGUACGUACGCAAGUAUGAAACUCAAAGGAAUUGACGGGGACCCGCACAAGUGGUGGAGCAUGUGGUUUAAUUCGACGCAACGCGAGGAACCUUACCAGGUCUUGACAUACUCGGAAUAAGAUGGAAGCA-UCUUAGUG--CCUUUGG-G--A-ACCGAGAUACAGGUGGUGCAUGGCUGUCGACAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGAAACCCCUAUCAUUAGUUGCCAUCAUUAAGUUGGGGACUCUAAUGAAACUGCCCGCGACGAGCGGGAGGAAGGUGGGGAUGACGUCAAGUCAUCAUGCCCCUUAUGAUCUGGGCUACACACGUGCUACAAUGGGUAGUACAAAGAGGAGCUAAGCAGUGAUG-UGGAGCAAAUCUUC-AAAGCUACUCUCAGUUCGGAUUGAAGUCUGCAACUCGACUUCAUGAAGUUGGAAUCACUAGUAAUCGCAAAUCAGCAAUGUUGC-GGUGAAUACGUU-CUCGGGUCUUGUACACACCGCCCGUCACACCACGAGAGUUAGUUGCACCUGAAGUUACUGGCCUAACC--GUAA---GGAGGGAAGUACCUAAGGUGUGAUUAGUG-AUUGGGGUG-AAGUCGUAACAAGGUAUCCGUACCGGAAGGUGCGGAUGGAUCACCU???????",
+            []
+        ]
+    ],
+    "tax_tree": "(((((r_UnpCCeti,r_UnpSomer)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Cetobacterium,(r_UyvCanif,r_UyvEquin,r_UyvGonid,r_UyvMorti,r_UyvNecro,r_UyvNecr2,r_UyvNecr3,r_UyvNucle,r_UyvNucl2,r_UyvNucl3,r_UyvNucl4,r_UyvNucl5,r_UyvPerfo,r_UyvPerio,r_UyvRussi,r_UyvSimia,r_UyvUlcer,r_UyvVariu)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Fusobacterium,(r_VejInsue,r_VejPolyt,r_VejTarta)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Ilyobacter,(r_VxsMaris,r_VxsModes)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae@@Propionigenium,r_VzeAtlan)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Fusobacteriaceae,((r_VikBucca,r_VikGoodf,r_VikHofst,r_VikSpeci,r_VikShahi,r_VikTrevi,r_VikWadei)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae@@Leptotrichia,r_WekTermi,r_WgeSangu,r_WicMonil)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales@@Leptotrichiaceae)Bacteria@@Fusobacteria@@Fusobacteriia@@Fusobacteriales,(r_UpbRectu,r_UxjAloci)Bacteria@@Firmicutes@@Clostridia@@Clostridiales)Bacteria);",
+    "taxcode": "bac",
+    "tree": "((r_UpbRectu:0.0014760000[&&NHX:B=0],(r_UyvNecro:0.0132040000[&&NHX:B=1],r_UyvMorti:0.0146120000[&&NHX:B=2]):0.0023660000[&&NHX:B=3]):0.0162420000[&&NHX:B=4],((r_UyvVariu:0.0069290000[&&NHX:B=5],r_UyvUlcer:0.0053600000[&&NHX:B=6]):0.0267400000[&&NHX:B=7],((r_UyvGonid:0.0106810000[&&NHX:B=8],(r_UyvEquin:0.0090450000[&&NHX:B=9],(r_UyvNecr2:0.0010580000[&&NHX:B=10],r_UyvNecr3:0.0030220000[&&NHX:B=11]):0.0145350000[&&NHX:B=12]):0.0112790000[&&NHX:B=13]):0.0400910000[&&NHX:B=14],(((r_UyvNucl4:0.0029720000[&&NHX:B=15],(((((r_UyvNucl5:0.0096580000[&&NHX:B=16],r_UyvNucl2:0.0021860000[&&NHX:B=17]):0.0121700000[&&NHX:B=18],(r_UxjAloci:0.0134490000[&&NHX:B=19],r_UyvSimia:0.0078610000[&&NHX:B=20]):0.0017710000[&&NHX:B=21]):0.0058580000[&&NHX:B=22],r_UyvNucle:0.0127850000[&&NHX:B=23]):0.0036280000[&&NHX:B=24],r_UyvNucl3:0.0053410000[&&NHX:B=25]):0.0031280000[&&NHX:B=26],r_UyvCanif:0.0031510000[&&NHX:B=27]):0.0113950000[&&NHX:B=28]):0.0072840000[&&NHX:B=29],r_UyvPerio:0.0014700000[&&NHX:B=30]):0.0370610000[&&NHX:B=31],r_UyvRussi:0.0383290000[&&NHX:B=32]):0.0138000000[&&NHX:B=33]):0.0192770000[&&NHX:B=34]):0.0140010000[&&NHX:B=35],(((r_VejInsue:0.0039330000[&&NHX:B=36],(((r_WgeSangu:0.1186770000[&&NHX:B=37],r_WicMonil:0.0569600000[&&NHX:B=38]):0.0800090000[&&NHX:B=39],(r_WekTermi:0.1271600000[&&NHX:B=40],(((r_VikHofst:0.0162140000[&&NHX:B=41],((r_VikWadei:0.0354140000[&&NHX:B=42],(r_VikTrevi:0.0237750000[&&NHX:B=43],r_VikSpeci:0.0200210000[&&NHX:B=44]):0.0138330000[&&NHX:B=45]):0.0191320000[&&NHX:B=46],r_VikShahi:0.0145570000[&&NHX:B=47]):0.0357630000[&&NHX:B=48]):0.0203260000[&&NHX:B=49],r_VikBucca:0.0107410000[&&NHX:B=50]):0.1512950000[&&NHX:B=51],r_VikGoodf:0.0422610000[&&NHX:B=52]):0.0692950000[&&NHX:B=53]):0.0113990000[&&NHX:B=54]):0.2638880000[&&NHX:B=55],(r_VxsModes:0.0104120000[&&NHX:B=56],((r_VzeAtlan:0.1222240000[&&NHX:B=57],r_VxsMaris:0.0260300000[&&NHX:B=58]):0.0152860000[&&NHX:B=59],(r_VejPolyt:0.0202730000[&&NHX:B=60],r_VejTarta:0.0058080000[&&NHX:B=61]):0.0045630000[&&NHX:B=62]):0.0049250000[&&NHX:B=63]):0.0115480000[&&NHX:B=64]):0.0054520000[&&NHX:B=65]):0.0729220000[&&NHX:B=66],(r_UnpSomer:0.0388310000[&&NHX:B=67],r_UnpCCeti:0.0451460000[&&NHX:B=68]):0.0377070000[&&NHX:B=69]):0.0180730000[&&NHX:B=70],r_UyvPerfo:0.0702380000[&&NHX:B=71]):0.0330800000[&&NHX:B=72]);",
+    "version": "1.6"
+}
