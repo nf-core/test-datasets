@@ -93,6 +93,7 @@ write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.nam
 - 'PXD012083_e005640_II.raw' is a Thermo Fisher RAW file downloaded from [PRIDE](https://www.ebi.ac.uk/pride/) using the project ID PXD012083.
 - 'peakpicker_tutorial_1.mzML' is a mass spectrum file in the open mzML format. The file got retrieved from the [OpenMS](https://github.com/OpenMS/OpenMS) test data on GitHub
 - 'HepG2_rep1_small.mzML' contains the 1078 MS2 spectra referenced by `openms/HepG2_rep1_small.idXML`, subset from the nf-core/mhcquant test data. Use it together with that idXML for tools that need matched identifications and spectra (e.g. easypqp).
+- 'HepG2_rep2_small.mzML' contains the 1064 MS2 spectra referenced by `openms/HepG2_rep2_small.idXML`, produced the same way; together with the rep1 pair it allows multi-run tests.
 
 ## parameter
 
