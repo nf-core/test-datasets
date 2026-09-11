@@ -18,3 +18,4 @@ kmcp,db1,;-m 0,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/da
 sylph,db1,-m 60,short;long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sylph/testdb-sylph.syldb
 melon,db1,,long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/melon/melon_db.tar.gz
 metacache,db1,,long,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/metacache/test-db-metacache.tar.gz
+sourmash,db1,;--threshold-bp 0;,short,https://github.com/nf-core/test-datasets/raw/taxprofiler/data/database/sourmash/test-db-sourmash.tar.gz
