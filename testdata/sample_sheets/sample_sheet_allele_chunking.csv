@@ -1,0 +1,2 @@
+sample,alleles,mhc_class,filename
+sample1,Mamu-all,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/peptides/peptides_class_I_and_II.tsv
