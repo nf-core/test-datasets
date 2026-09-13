@@ -352,6 +352,58 @@ mkdir metacache
 metacache build test-db-metacache metacache/ -taxonomy ncbi_taxonomy
 ```
 
+#### sourmash
+
+The reference genomes were sketched into signatures using sourmash (v4.9.4), with each genome kept as different signature so `sourmash gather` can identify individual organisms and `sourmash tax annotate` can map hits to taxonomy.
+
+Download genomes
+```bash
+wget -O proqueforti.fna.gz \
+  "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/015/533/775/GCF_015533775.1_ASM1553377v1/GCF_015533775.1_ASM1553377v1_genomic.fna.gz"
+```
+
+```bash
+curl -L -o NC_012920.1.fa \
+  "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_012920.1&rettype=fasta&retmode=text"
+gzip -f NC_012920.1.fa
+```
+
+Sketch each seperately with accession name (no --merge)
+
+```bash
+sourmash sketch dna -p k=31,scaled=1000 --name "GCF_015533775.1" -o proq.sig proqueforti.fna.gz
+sourmash sketch dna -p k=31,scaled=1000 --name "NC_012920.1" -o human.sig NC_012920.1.fa.gz
+```
+
+Combine into one db (multiple signatures)
+
+```bash
+sourmash sig cat  proq.sig human.sig -o sourmash-db.zip
+```
+
+Create maching lineages CSV
+
+```bash
+cat > lineages.csv << 'EOF'
+ident,taxid,taxpath,superkingdom,phylum,class,order,family,genus,species,strain
+GCF_015533775.1,5082,2759|4890|147545|5042|1131492|5073|5082|,Eukaryota,Ascomycota,Eurotiomycetes,Eurotiales,Aspergillaceae,Penicillium,Penicillium roqueforti,unclassified Penicillium roqueforti
+NC_012920.1,9606,2759|7711|40674|9443|9604|9605|9606|,Eukaryota,Chordata,Mammalia,Primates,Hominidae,Homo,Homo sapiens,Homo sapiens
+EOF
+gzip lineages.csv
+```
+
+Make a tarball
+
+```bash
+mkdir test-db-sourmash
+cp sourmash-db.zip lineages.csv.gz test-db-sourmash/
+tar -czf test-db-sourmash.tar.gz test-db-sourmash/
+```
+
+The tarball contains `sourmash-db.zip` (one signature per reference genome) and `lineages.csv.gz` (taxonomy).
+
+**Note:** Individual signatures per genome (via --name) are required. The default nf-core/modules sourmash/sketch uses --merge, collapsing all inputs into one signature — this prevents species-level identification.
+
 
 ## Taxprofiler AWS Full Test specific-information
 
