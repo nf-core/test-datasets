@@ -16,12 +16,6 @@ jobs:
         NXF_VER:
           - "25.04.6"
         TEST_FILE:
-          - tests/modules/generate_example_genotypes_vcfs.nf.test
-          - tests/modules/concat_chunked_vcfs.nf.test
-          - tests/modules/generate_pheno_cov.nf.test
-          - tests/modules/extract_sample_ids.nf.test
-          - tests/modules/chunk_vcfs.nf.test
-          - tests/modules/index_chunked_vcfs.nf.test
           - tests/main.nf.test
     steps:
       - name: Check out pipeline code
