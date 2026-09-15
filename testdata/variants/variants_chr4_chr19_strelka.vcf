@@ -1,0 +1,15 @@
+##fileformat=VCFv4.2
+##source=strelka
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Combined depth across samples">
+##INFO=<ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+##INFO=<ID=SGT,Number=1,Type=String,Description="Most likely somatic genotype excluding normal noise states">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Somatic mutation">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth for tier1">
+##contig=<ID=4,length=190214555>
+##contig=<ID=19,length=58617616>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NORMAL	TUMOR
+4	1801841	.	C	G	.	PASS	DP=354;NT=ref;SGT=CC->CG;SOMATIC	DP	165	186
+4	99906562	.	ATGT	A	.	PASS	DP=210;NT=ref;SGT=ref->het;SOMATIC	DP	77	128
+19	33302298	.	GGGGCCCGC	G	.	PASS	DP=519;NT=ref;SGT=ref->het;SOMATIC	DP	194	321
+19	35879152	.	G	A	.	PASS	DP=533;NT=ref;SGT=GG->AA;SOMATIC	DP	225	306

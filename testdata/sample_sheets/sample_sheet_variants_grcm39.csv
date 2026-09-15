@@ -1,0 +1,2 @@
+sample,alleles,mhc_class,filename
+mouse01,H2-Db,I,https://raw.githubusercontent.com/nf-core/test-datasets/epitopeprediction/testdata/variants/variants_grcm39_chr15_chr18_chr19.vcf
