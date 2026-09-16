@@ -1,0 +1,6 @@
+sample1	Bacteria;PhylumA;ClassA;OrderA;FamilyA;GenusA;SpeciesA
+sample2	Bacteria;PhylumA;ClassA;OrderA;FamilyA;GenusA;SpeciesB
+sample3	Bacteria;PhylumA;ClassA;OrderA;FamilyB;GenusB;SpeciesC
+sample4	Bacteria;PhylumA;ClassA;OrderA;FamilyC;GenusC;SpeciesD
+sample5	Archaea;PhylumB;ClassB;OrderB;FamilyD;GenusD;SpeciesE
+sample6	Archaea;PhylumB;ClassB;OrderB;FamilyE;GenusE;SpeciesF

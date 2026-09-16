@@ -1169,6 +1169,7 @@ The earth sciences folder contain subfolders for different data formats encounte
   - 'resolvetaxonomy_plain.fasta': two sequences with plain, taxonomy-free headers, for custom/resolvetaxonomy tests.
   - 'resolvetaxonomy_embedded.fasta': two sequences with taxonomy embedded directly in the header, for custom/resolvetaxonomy tests.
   - 'resolvetaxonomy_partial.fasta': one sequence with taxonomy embedded in the header and one without, for custom/resolvetaxonomy tests.
+  - 'taxonomytree_test.fasta': six synthetic 61bp DNA sequences with real phylogenetic signal (three shared-mutation pairs), matching taxonomytree_test.tax's sequence ids, for taxonomy2phylogeny subworkflow tests.
 - fastq
   - 'rrna_reads_1.fastq.gz': Synthetic 5.8S rRNA paired-end reads (R1), 10 reads from rfam-5.8s-database-id98 for testing rRNA removal tools
   - 'rrna_reads_2.fastq.gz': Synthetic 5.8S rRNA paired-end reads (R2), matching R1 file
@@ -1206,6 +1207,7 @@ The earth sciences folder contain subfolders for different data formats encounte
 - tax
   - 'resolvetaxonomy_plain.tax': taxonomy strings keyed by sequence id, matching the ids in resolvetaxonomy_plain.fasta, for custom/resolvetaxonomy tests.
   - 'resolvetaxonomy_override.tax': taxonomy strings keyed by sequence id that override the taxonomy embedded in resolvetaxonomy_embedded.fasta, for custom/resolvetaxonomy tests.
+  - 'taxonomytree_test.tax': six samples' taxonomy strings -- one genus-sharing pair plus two more under the same order (Bacteria), and a resolved pair under a second kingdom (Archaea) -- deliberately not fully resolvable into a bifurcating tree, for custom/taxonomytree and taxonomy2phylogeny tests.
 - txt
   - 'hello.txt': one-line txt file
   - 'taxonomy_ids.txt': contains species names, to be used as input for [goat-cli taxon search tool](https://github.com/genomehubs/goat-cli).
