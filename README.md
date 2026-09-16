@@ -1,39 +1,25 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# test-datasets: `eupathpopgen`
 
-Test data to be used for automated testing with the nf-core pipelines
+This branch contains test data for automated testing with the [nf-core/eupathpopgen](https://github.com/nf-core/eupathpopgen) pipeline (currently developed at [PlasmoGenEpi/eupathpopgen](https://github.com/PlasmoGenEpi/eupathpopgen)).
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+## Content of this repository
 
-## Introduction
+All files live under `testdata/`. These are the same simulated microhaplotype inputs used by [nf-core/plasmodiumdrugres](https://github.com/nf-core/plasmodiumdrugres) (shared from the `plasmodiumdrugres` test-datasets branch) so related PlasmoGenEpi pipelines stay consistent.
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+### Pipeline inputs
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+- `testdata/allele_table.tsv`: Microhaplotype allele table (`specimen_name`, `target_name`, `reads`, `seq`, plus optional `bioinformatics_run_name` / `allele` columns from the drugres extract).
+- `testdata/population_assignment.tsv`: Specimen-to-population map (`specimen_name`, `population`) for optional `--population_map` runs.
 
-## Documentation
-
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
+## Usage
 
 ```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+nextflow run nf-core/eupathpopgen \
+  -profile test,docker \
+  --outdir results
 ```
 
-To subsequently clone other branches[^1]
+Raw URLs (branch `eupathpopgen`):
 
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+- `https://raw.githubusercontent.com/nf-core/test-datasets/eupathpopgen/testdata/allele_table.tsv`
+- `https://raw.githubusercontent.com/nf-core/test-datasets/eupathpopgen/testdata/population_assignment.tsv`
