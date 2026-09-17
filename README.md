@@ -80,6 +80,22 @@ The point is to have two different profiles legitimately sharing one reference t
 
 Consumed by nf-core/phyloplace's `test_phylosearch_reftree` profile.
 
+### `testdata/hmmdomains/` - Two overlapping Pfam profiles and a two-domain protein for the `hmmer/hmmdomains` module tests
+
+Two Pfam profiles and one protein sequence:
+
+- `PF00034.hmm`, `PF13442.hmm`: the `Cytochrom_C` (PF00034.27) and `Cytochrome_CBB3` (PF13442.12) profiles, downloaded from InterPro's `?annotation=hmm` endpoint and decompressed, otherwise unaltered
+- `A0R050.faa`: UniProt A0R050, the QcrCC cytochrome c subunit of the cytochrome bc1 complex of *Mycolicibacterium smegmatis* MC2 155, downloaded from UniProt unaltered
+
+A0R050 carries two cytochrome c domains, and both profiles match both of them.
+The profiles score unequally and, crucially, in opposite directions: PF00034 wins the first domain and PF13442 the second.
+That is what makes the set a test rather than a demonstration.
+A sequence where one profile simply dominated would pass under an implementation that only ever reported a single best profile per sequence, which is precisely the behaviour `hmmer/hmmdomains` exists to replace.
+
+The profiles are stored uncompressed so that `hmmsearch` reads them directly, without depending on a `.gz` suffix surviving however the file is staged.
+
+Consumed by the `hmmer/hmmdomains` module test in nf-core/phyloplace.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
