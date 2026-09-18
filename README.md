@@ -1125,6 +1125,32 @@ The earth sciences folder contain subfolders for different data formats encounte
   - mgnify_proteins.faa: An amino acid fasta file subset of metagenomics derived sequences predicted through the `MGnify` assemply analysis pipeline. The original superset can be found in the relevant [FTP](https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/current_release/) server. The file contains 204 sequences, a size that allows family generation algorithms to execute fast, and also generate enough families to test.
   - mgnify_proteins_trimmed_clustering.tsv: Initial clustering of `mgnifams_input.faa` sequences based on MMSeqs2 `linclust` algorithm, with many singletons trimmed off for lowering file size.
 
+### metabolomics
+
+All datasets below are the example datasets bundled with the [MetaProViz](https://doi.org/10.1038/s44320-026-00231-8) R package (Schmidt et al., "Integrated metabolomics data analysis to generate mechanistic hypotheses with MetaProViz", Molecular Systems Biology, 2026), used for testing the `metaproviz/*` modules.
+
+- raw_annotation_data
+  - cellline
+    - intracell
+      - 'SE.RData': SummarizedExperiment (R-only) of intracellular metabolomics from HK2 (healthy renal epithelial cells) and 3 clear cell renal cell carcinoma (ccRCC) cell lines (786-O, 786-M1A, 786-M2A), 182 features x 58 samples, including 10 pooled QC samples. From [Metabolomics Workbench study ST002224](https://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&StudyID=ST002224) (project [PR001418](https://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Project&ProjectID=PR001418)), from [Sciacovelli et al. 2022, "Dynamic partitioning of branched-chain amino acids-derived nitrogen supports renal cancer progression"](https://doi.org/10.1038/s41467-022-35036-4) (Nature Communications).
+      - csv
+        - 'data_matrix.csv': feature-by-sample abundance matrix, equivalent to SE.RData's assay().
+        - 'feature_matrix.csv': feature metadata (HMDB, KEGG ID, pathway), equivalent to SE.RData's rowData().
+        - 'sample_matrix.csv': sample metadata (condition, replicate info), equivalent to SE.RData's colData().
+    - media
+      - 'SE.RData': SummarizedExperiment of extracellular (spent culture media) metabolomics from the same cell-line experiment family as `cellline/intracell` (similar LC-MS metabolite panel), 73 features x 44 samples, including 5 pooled QC samples alongside 8 other condition groups. Same [Metabolomics Workbench project PR001418](https://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Project&ProjectID=PR001418) family and [Sciacovelli et al. 2022](https://doi.org/10.1038/s41467-022-35036-4) source as `cellline/intracell`.
+      - csv
+        - 'data_matrix.csv': feature-by-sample abundance matrix, equivalent to SE.RData's assay().
+        - 'feature_matrix.csv': feature metadata (HMDB, KEGG ID, pathway), equivalent to SE.RData's rowData().
+        - 'sample_matrix.csv': sample metadata (condition, replicate info), equivalent to SE.RData's colData().
+  - patient
+    - tissue
+      - 'SE.RData': SummarizedExperiment of normalized clear cell renal cell carcinoma (ccRCC) patient tissue metabolomics, tumor vs. adjacent normal tissue pairs, 570 features x 276 samples, with clinical metadata (tissue type, gender, race, stage, age). Normalized data from [Hakimi et al. 2016, "An Integrated Metabolic Atlas of Clear Cell Renal Cell Carcinoma"](https://doi.org/10.1016/j.ccell.2015.12.004) (Cancer Cell).
+      - csv
+        - 'data_matrix.csv': feature-by-sample abundance matrix, equivalent to SE.RData's assay().
+        - 'feature_matrix.csv': feature metadata (CAS, pathway, HMDB/KEGG/PubChem IDs), equivalent to SE.RData's rowData().
+        - 'sample_matrix.csv': sample metadata (tissue type, gender, race, stage, age), equivalent to SE.RData's colData().
+
 ### spatialomics
 
 - tiff
