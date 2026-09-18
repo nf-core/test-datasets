@@ -96,6 +96,18 @@ The profiles are stored uncompressed so that `hmmsearch` reads them directly, wi
 
 Consumed by the `hmmer/hmmdomains` module test in nf-core/phyloplace.
 
+### `testdata/gzipped/` - Gzipped copies of the PF14720 fixtures
+
+Gzipped copies of five files that phyloplace test profiles already use uncompressed, plus one derived taxonomy table:
+
+- `PF14720_3_sequences.faa.gz`, `PF14720_seed.alnfaa.gz`, `PF14720_seed.faa.gz`, `PF14720_seed.ft.LGCAT.newick.gz`, `PF14720.hmm.gz`: byte-for-byte the corresponding files one directory up, compressed with `gzip -n` so the archives carry no timestamp and stay reproducible
+- `PF14720_seed.taxonomy.tsv.gz`: the taxonomy strings embedded in `PF14720_seed_embedded_taxonomy.alnfaa`'s headers, written out as a two-column `id<TAB>taxonomy` table, for the one input that has no uncompressed equivalent here
+
+These exist so that a pipeline run can be driven entirely from compressed input, covering every file parameter at once.
+The content deliberately duplicates the uncompressed fixtures rather than introducing new sequences: what is under test is the handling of the compression, so any difference in the resulting placement would be noise.
+
+Consumed by nf-core/phyloplace's `test_gzipped` and `test_gzipped_hmmfile` profiles.
+
 ## Support
 
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
