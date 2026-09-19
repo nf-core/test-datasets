@@ -855,6 +855,13 @@ The earth sciences folder contain subfolders for different data formats encounte
       - SRR28679757_raw_matrix.sce.rds: SRR28679757 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a SingleCellExperiment RDS object.
       - SRR28679758_filtered_matrix.seurat.rds: SRR28679758 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a Seurat RDS object.
       - SRR28679758_raw_matrix.seurat.rds: SRR28679758 was processed with nf-core/scrnaseq v4.0.0, subsetted to 10k genes and stored as a Seurat RDS object.
+  - vepyr:
+    - cache.tar.gz: [vepyr](https://github.com/biodatageeks/vepyr) Parquet VEP cache (Ensembl release 116, GRCh38, `ensembl` cache type) trimmed to the rows annotating `input.vcf.gz` reads; archived because the cache is a directory. Produced and verified against Ensembl VEP 116 `--everything` by `nf-core-module/stage-testdata.sh` in biodatageeks/vepyr.
+    - input.vcf.gz: 1,000 consecutive records of the GIAB HG002 GRCh38 v4.2.1 benchmark VCF (chr22:20572272-21735973), normalized with `bcftools norm -m -both`, bgzip-compressed.
+    - input.vcf.gz.tbi: tabix index of `input.vcf.gz`.
+    - reference.fa.gz: GRCh38 chromosome 22, bases 1-21745973, extracted from Ensembl `Homo_sapiens.GRCh38.dna.primary_assembly.fa` with `samtools faidx` (contig named `22`), bgzip-compressed.
+    - reference.fa.gz.fai: `samtools faidx` index of `reference.fa.gz`.
+    - reference.fa.gz.gzi: bgzip index of `reference.fa.gz`.
 
 - mus_musculus
 
