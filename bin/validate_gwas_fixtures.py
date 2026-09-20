@@ -129,7 +129,6 @@ def validate_relational_fixtures(
         "bed",
         "bim",
         "fam",
-        "vcf",
     ]
     cohort_rows = read_csv(relational_dir / "cohort_manifest.csv", cohort_header)
     require(len(cohort_rows) == 1, "cohort manifest must contain exactly one row")
@@ -138,13 +137,12 @@ def validate_relational_fixtures(
     require(cohort["genome_build"] == "GRCh37", "unexpected genome build")
     require(cohort["ancestry"] == "EUR", "unexpected ancestry")
     require(
-        all(
-            not cohort[column]
-            for column in ("pgen", "psam", "pvar", "bed", "bim", "fam")
-        ),
-        "cohort manifest must select only the canonical VCF representation",
+        all(not cohort[column] for column in ("bed", "bim", "fam")),
+        "cohort manifest must select exactly one genotype representation",
     )
-    fixture_url_to_path(cohort["vcf"], fixtures_dir, generated_files)
+    for column in ("pgen", "psam", "pvar"):
+        require(bool(cohort[column]), f"cohort manifest is missing {column}")
+        fixture_url_to_path(cohort[column], fixtures_dir, generated_files)
 
     expected_analyses = {
         "analysis_manifest_quantitative.csv": {
@@ -368,10 +366,7 @@ def validate_plink_derivatives(
     ):
         pvar_rows = read_plink_text(pvar, pvar_header)
         require(
-            [
-                (row[0], int(row[1]), row[2], row[3], row[4])
-                for row in pvar_rows
-            ]
+            [(row[0], int(row[1]), row[2], row[3], row[4]) for row in pvar_rows]
             == expected_records,
             f"{pvar}: variants differ from the VCF they derive from",
         )
@@ -383,10 +378,7 @@ def validate_plink_derivatives(
     # PLINK 1 counts the alternate allele first, so A1 is the VCF ALT and A2 the VCF REF.
     bim_rows = read_plink_text(args.bim, None)
     require(
-        [
-            (row[0], row[1], row[2], int(row[3]), row[4], row[5])
-            for row in bim_rows
-        ]
+        [(row[0], row[1], row[2], int(row[3]), row[4], row[5]) for row in bim_rows]
         == [
             (chromosome, variant_id, "0", position, alt, ref)
             for chromosome, position, variant_id, ref, alt in records
