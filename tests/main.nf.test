@@ -17,7 +17,7 @@ nextflow_pipeline {
         then {
             assert workflow.success
             assert workflow.exitStatus == 0
-            assert workflow.trace.tasks().size() == 1
+            assert workflow.trace.tasks().size() == 3
 
             def generatedRoot = new File("${workDir}/published")
             def generatedFiles = []
@@ -25,7 +25,16 @@ nextflow_pipeline {
                 generatedFiles << generatedRoot.toPath().relativize(generatedFile.toPath()).toString()
             }
             assert generatedFiles.sort() == [
+                "genotypes/example_all.bed",
+                "genotypes/example_all.bim",
+                "genotypes/example_all.fam",
+                "genotypes/example_all.pgen",
+                "genotypes/example_all.psam",
+                "genotypes/example_all.pvar",
                 "genotypes/example_all.vcf.gz",
+                "genotypes/example_chr1.pgen",
+                "genotypes/example_chr1.psam",
+                "genotypes/example_chr1.pvar",
                 "pheno_cov/example.catcovar",
                 "pheno_cov/example.pheno",
                 "pheno_cov/example.qcovar",
