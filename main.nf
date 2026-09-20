@@ -15,7 +15,6 @@ workflow {
         GENERATE_GWAS_FIXTURES.out.catcovar,
         GENERATE_GWAS_FIXTURES.out.relational,
         PLINK2_GWAS_DERIVATIVES.out.pgen_all,
-        PLINK2_GWAS_DERIVATIVES.out.pgen_chr,
         PLINK2_GWAS_DERIVATIVES.out.bed_all,
     )
 }

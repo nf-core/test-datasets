@@ -10,7 +10,6 @@ process VALIDATE_GWAS_FIXTURES {
 	path catcovar
 	path relational_dir
 	tuple path(pgen), path(psam), path(pvar)
-	tuple path(chr_pgen), path(chr_psam), path(chr_pvar)
 	tuple path(bed), path(bim), path(fam)
 
 	output:
@@ -26,9 +25,6 @@ process VALIDATE_GWAS_FIXTURES {
 		--pgen ${pgen} \
 		--psam ${psam} \
 		--pvar ${pvar} \
-		--subset-pgen ${chr_pgen} \
-		--subset-psam ${chr_psam} \
-		--subset-pvar ${chr_pvar} \
 		--bed ${bed} \
 		--bim ${bim} \
 		--fam ${fam} \
@@ -37,7 +33,6 @@ process VALIDATE_GWAS_FIXTURES {
 		--chromosomes ${params.fixture_chromosomes} \
 		--variants-per-chromosome ${params.fixture_variants_per_chromosome} \
 		--cases ${params.fixture_n_cases} \
-		--subset-chromosome ${params.fixture_derivative_chromosome} \
 		| tee fixture_summary.tsv
 	"""
 }
