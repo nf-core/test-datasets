@@ -138,16 +138,16 @@ def validate_relational_fixtures(
 
     expected_analyses = {
         "analysis_manifest_quantitative.csv": {
-            "example_quantitative": ("QT", "quantitative", {"plink2"}, set()),
+            "example_quantitative": ("QT", "quantitative", {"regenie"}, set()),
         },
         "analysis_manifest_binary.csv": {
-            "example_binary": ("BT", "binary", {"plink2"}, set()),
+            "example_binary": ("BT", "binary", {"regenie"}, set()),
         },
         "analysis_manifest_association_only.csv": {
             "example_association": (
                 "QT",
                 "quantitative",
-                {"plink2", "regenie", "gcta_fastgwa", "ldak_kvik"},
+                {"regenie", "gcta_fastgwa", "ldak_kvik"},
                 set(),
             ),
         },
@@ -163,13 +163,13 @@ def validate_relational_fixtures(
             "heterogeneous_qt": (
                 "QT",
                 "quantitative",
-                {"plink2", "regenie", "gcta_fastgwa", "ldak_kvik"},
+                {"regenie", "gcta_fastgwa", "ldak_kvik"},
                 {"gcta_greml", "gcta_greml_ldms", "ldak_reml", "ldak_he"},
             ),
             "heterogeneous_bt": (
                 "BT",
                 "binary",
-                {"plink2", "gcta_fastgwa", "ldak_kvik"},
+                {"gcta_fastgwa", "ldak_kvik"},
                 {"gcta_greml", "gcta_greml_ldms", "ldak_reml", "ldak_he", "ldak_pcgc"},
             ),
         },
