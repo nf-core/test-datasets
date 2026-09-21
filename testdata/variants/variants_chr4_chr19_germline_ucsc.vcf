@@ -1,0 +1,13 @@
+##fileformat=VCFv4.2
+##source=HaplotypeCaller
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##contig=<ID=chr4,length=190214555>
+##contig=<ID=chr19,length=58617616>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NORMAL
+chr4	1801844	.	C	G	912.5	PASS	DP=142	GT:AD:DP:GQ	0/1:71,71:142:99
+chr19	35878587	.	C	T	734.2	PASS	DP=118	GT:AD:DP:GQ	0/1:60,58:118:99
