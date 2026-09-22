@@ -157,7 +157,6 @@ We can now download the corresponding folder:
 
 ```bash
 . get_snp.sh \
-    GRCh38 \
     hum_data/affi/snp6 \
     region.lst
 ```

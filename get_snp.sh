@@ -9,9 +9,11 @@
 conda init bash
 conda activate env_tools
 
-FOLDER=$1
-SNP_FILE=$2
-REGION_LST=$3
+SNP_FILE=hum_data/affi/snp6
+REGION_LST=region.lst
+
+SNP_FILE=$1
+REGION_LST=$2
 
 # Get SNP file
 echo 'Extracting region from SNP array file'
@@ -29,6 +31,6 @@ while IFS=':' read -r CHR REGION; do
     echo "$CHR: $START - $END"
     # Extract the SNPs
     zcat ${SNP_FILE}.txt.gz | \
-        awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' { print "chr"$2":"$3}' \
+        awk -F'\t' '$5 == "SNP" && $2 == '"$CHR_NUM"' { print "chr"$2"\t"$3}' \
         >> ${SNP_FILE}.s.map
 done < $REGION_LST

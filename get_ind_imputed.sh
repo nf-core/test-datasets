@@ -41,7 +41,8 @@ while IFS="," read IND; do
                 --keep-monomorphic-ref-sites \
                 --output ${IND_TMP}/${CHR}/${IND}_${REG}_imputed.bcf
         done < ${IND_TMP}/${IND}_${CHR}_chunks.txt
-         # Impute with glimpse
+
+        # Impute with glimpse
         ls -1v ${IND_TMP}/${CHR}/${IND}_*_imputed.bcf >  ${IND_TMP}/${IND}_${CHR}_list.txt
         GLIMPSE2_ligate --input ${IND_TMP}/${IND}_${CHR}_list.txt --output ${IND_TMP}/${IND}_${CHR}_imputed.bcf
     done < ${REGION_LST}
