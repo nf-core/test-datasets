@@ -52,14 +52,7 @@ Source: Minimal NCBI taxonomy and RefSeq data subset needed to exercise `DIAMOND
 - `WP_168247882.1` -- extended-spectrum class C beta-lactamase IDC-2 [sediment metagenome]
 - `WP_168247881.1` -- extended-spectrum class C beta-lactamase IDC-1 [sediment metagenome]
 
-`test_refseq.fasta`: minimal refseq protein fasta for DIAMOND_BLASTP
-`refseq/release/other/other.wp_protein_test.1.protein.faa.gz`: minimal RefSeq 'other' category subset for NCBIREFSEQDOWNLOAD, replacing the full-category download that was exhausting CI disk space
-`mini_taxdump.tar.gz`: minimal NCBI taxdump for DIAMONDPREPARETAXA tests
-`mini_prot.accession2taxid.gz`: minimal accession2taxid map for DIAMOND_MAKEDB
-
-```
-testdata/diamond/mini_taxdump.tar.gz
-testdata/diamond/mini_prot.accession2taxid.gz
-testdata/diamond/test_refseq.fasta
-testdata/diamond/refseq/release/other/other.wp_protein_test.1.protein.faa.gz
-```
+- `refseq/release/other/other.wp_protein_test.1.protein.faa.gz`: minimal RefSeq 'other' category subset for NCBIREFSEQDOWNLOAD, replacing the full-category download that was exhausting CI disk space
+- `mini_prot.accession2taxid.gz`: minimal accession2taxid map for DIAMOND_MAKEDB
+- `mini_taxdump.tar.gz`: minimal NCBI taxdump for DIAMONDPREPARETAXA tests
+- `test_refseq.fasta`: minimal refseq protein fasta for DIAMOND_BLASTP
