@@ -9,6 +9,14 @@
 #conda init bash
 #conda activate env_tools
 
+DIR_IND=hum_data/individuals
+DIR_PANEL=hum_data/panel
+PANEL_NAME=1000GP
+REF_FASTA=hum_data/reference_genome/GRCh38.s.fa.gz
+SNP_FILE=hum_data/affi/snp6.s.map
+IND_SEL=ind_sel.lst
+REGION_LST=region.lst
+
 DIR_IND=$1
 DIR_PANEL=$2
 PANEL_NAME=$3
@@ -19,10 +27,12 @@ REGION_LST=$7
 
 # Create full tsv file from legend file
 > ${DIR_PANEL}/${PANEL_NAME}.tsv
+ALLCHR=$(cut -d: -f1 "$REGION_LST" | sort -u | paste -sd'|' -)
+
 for REGION in $( cat $REGION_LST );
 do
     CHR=$(echo $REGION | cut -d':' -f1)
-    zcat ${DIR_PANEL}/$CHR/${PANEL_NAME}.${CHR}.legend.gz | \
+    zcat ${DIR_PANEL}/${CHR}/${PANEL_NAME}.${CHR}.legend.gz | \
         awk -v OFS='\t' 'NR>1 { split($1, a, "[:-_]"); print a[1], $2, $3 "," $4 }' >> ${DIR_PANEL}/${PANEL_NAME}.tsv
 done
 
@@ -32,8 +42,7 @@ tabix -s1 -b2 -e2 ${DIR_PANEL}/${PANEL_NAME}.tsv.gz
 TSV=${DIR_PANEL}/${PANEL_NAME}.tsv.gz
 
 while IFS="," read IND; do
-    # Get the genotype likelihood based on the panel for the validation file
-    echo 'Get the genotype likelihood based on the panel for the validation file'
+    echo "Get genotype likelihood based on the panel for individual: ${IND}"
 
     IND_DIR=${DIR_IND}/${IND}
     IND_S=${IND_DIR}/${IND}.s
@@ -42,31 +51,32 @@ while IFS="," read IND; do
         -I -E -a 'FORMAT/DP' -T ${TSV} \
         ${IND_S}.bam | \
         bcftools call -Aim -C alleles -T ${TSV} | \
-        bcftools annotate --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' -Ob -o ${IND_S}.bcf
-
-    bcftools index -f ${IND_S}.bcf
+        bcftools annotate --set-id '%CHROM\:%POS\:%REF\:%FIRST_ALT' -Ov | \
+        sed -E "
+            /^##contig=<ID=/ {
+                /ID=(${ALLCHR})(,|>)/!d
+            }
+        " | \
+        bcftools view -Oz -o ${IND_S}.vcf.gz --write-index
 
     # Get individual SNP
     echo 'Get individual SNP'
     mkdir -p ${IND_DIR}/tmp
-    plink --bcf ${IND_S}.bcf \
-        --allow-extra-chr \
-        --geno 0 \
-        --make-bed --out ${IND_DIR}/tmp/${IND}
-
-    # Replace all variants id by . to filter them with snp array
-    awk '{$2 = "."; print}' ${IND_DIR}/tmp/${IND}.bim > ${IND_DIR}/tmp/${IND}_NID.bim
-    plink --bfile ${IND_DIR}/tmp/${IND} \
-        --bim ${IND_DIR}/tmp/${IND}_NID.bim \
-        --allow-extra-chr \
-        --set-missing-var-ids chr@:# \
-        --extract ${SNP_FILE} \
-        --recode vcf-iid bgz\
-        --output-chr chrM \
-        --out ${IND_S}.snp
+    bcftools view \
+        -R "${SNP_FILE}" \
+        -Ov \
+        -o "${IND_S}.snp.vcf.gz" \
+        "${IND_S}.vcf.gz"
 
     bcftools index -f ${IND_S}.snp.vcf.gz
 
     #bcftools view -e 'GT="./."||GT="."' ${IND_S}.snp.vcf.gz -Oz -o ${IND_S}.snp.filtered.vcf.gz
     #bcftools index -f ${IND_S}.snp.filtered.vcf.gz
 done < $IND_SEL
+
+# Concatenate all individual SNP files into one
+mkdir -p ${DIR_IND}/ALL_IND/tmp
+ls -1 ${DIR_IND}/NA*/*.snp.vcf.gz > ${DIR_IND}/ALL_IND/tmp/ALL_IND_list.txt
+bcftools merge -Oz -o ${DIR_IND}/ALL_IND/ALL_IND.snp.vcf.gz \
+    --file-list ${DIR_IND}/ALL_IND/tmp/ALL_IND_list.txt
+bcftools index -f ${DIR_IND}/ALL_IND/ALL_IND.snp.vcf.gz
