@@ -708,6 +708,11 @@ The earth sciences folder contain subfolders for different data formats encounte
       - test2.sorted.bam.bai: Index for test2.sorted.bam
       - test.sorted.phased.bam: Haplotagged version of test.sorted.bam
       - test.sorted.phased.bam.bai: Index for test.sorted.phased.bam
+    - bedmethyl
+      - test_hp1.bed.gz: bgzip-compressed bedMethyl pileup for haplotype 1 of test.sorted.phased.bam, generated with `modkit pileup --phased --modified-bases 5mC 5hmC` against genome.fasta, for testing modkit/dmr
+      - test_hp1.bed.gz.tbi: Tabix index for test_hp1.bed.gz
+      - test_hp2.bed.gz: bgzip-compressed bedMethyl pileup for haplotype 2 of test.sorted.phased.bam, generated the same way as test_hp1.bed.gz
+      - test_hp2.bed.gz.tbi: Tabix index for test_hp2.bed.gz
       - HG002_ont_telomere
         - HG002_ont_tel_sub.bam: 17 ONT telomeric reads from [GIAB HG002 2025.01 release](https://ont-open-data.s3.amazonaws.com/giab_2025.01/basecalling/sup/HG002/PAW70337/calls.sorted.bam) (SUP basecalling, R10.4.1). Regions: last 10 kb of chr1 and chr2, downsampled with `samtools view -s 42.12`.
         - HG002_ont_tel_sub.bam.bai: Index for HG002_ont_tel_sub.bam
