@@ -101,11 +101,24 @@ testdata/archaeal_trio.gtdbtk.tsv
 
 All matches were verified with real `sourmash sketch`/`prefetch` runs (not just assumed from the original dataset's numbers) before committing: every sample's simulated reads cleanly match both their public-representative and, where applicable, local-genome signatures, well above the pipeline's Sourmash Gather threshold.
 
-### NCBI assembly summary for the three-species dataset
+### NCBI assembly summaries and GTDB metadata for the three-species dataset
 
-Created for [nf-core/magmap#258](https://github.com/nf-core/magmap/issues/258): with `--indexes`, the pipeline reads the NCBI assembly summaries given by `--remote_genome_sources` to find the FTP path of each public genome Sourmash selects.
-The default summaries (RefSeq plus GenBank) are about 2 GB, and downloading and parsing them dominated the runtime of the tests using `archaeal_trio.index.sbt.zip`.
+Created for [nf-core/magmap#258](https://github.com/nf-core/magmap/issues/258): the tests using `archaeal_trio.index.sbt.zip` read NCBI's full assembly summaries (about 2 GB) and GTDB's full archaeal metadata.
+Downloading and parsing the summaries dominated their runtime, and the GTDB download has made test runs fail when the server was unavailable.
 
-This file holds the two header lines of NCBI's `assembly_summary_refseq.txt` and the rows for the three public genomes in that index (`GCF_000011125.1`, `GCF_022064045.1`, `GCF_030186535.1`), extracted with `awk` on the first column:
+These are extracts of the real files, keeping the rows the tests need plus decoys, so that the lookups have to pick the right rows rather than the only ones:
 
-testdata/archaeal_trio.assembly_summary.txt
+* The two header lines of NCBI's `assembly_summary_refseq.txt` and `assembly_summary_genbank.txt` (downloaded 2026-09-23), with:
+  * the three public genomes in the index (`GCF_000011125.1`, `GCF_022064045.1`, `GCF_030186535.1`), and their GenBank twins (`GCA_` with the same number);
+  * up to four other genomes per genus (Aeropyrum, Metallosphaera, Ignisphaera), including viruses named after the genus;
+  * two GenBank rows whose `ftp_path` is `na`;
+  * every 250,000th row of each file.
+* One constructed row: `GCA_977173205.1` in the GenBank file is a real row truncated before the `ftp_path` column, to reproduce the missing-field case from nf-core/magmap#244.
+* The header of GTDB release 226 `ar53_metadata_r226.tsv.gz`, with every genome of the three species, up to three other genomes per genus, and every 1500th row.
+  This includes the GTDB rows for the local genomes' own accessions and for the non-representative Metallosphaera javensis genome.
+
+All rows were extracted with `awk` from the live files; none except the truncated one were edited.
+
+testdata/archaeal_trio.assembly_summary_refseq.txt
+testdata/archaeal_trio.assembly_summary_genbank.txt
+testdata/archaeal_trio.ar53_metadata.tsv
