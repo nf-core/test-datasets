@@ -100,3 +100,12 @@ testdata/archaeal_trio.checkm2.tsv
 testdata/archaeal_trio.gtdbtk.tsv
 
 All matches were verified with real `sourmash sketch`/`prefetch` runs (not just assumed from the original dataset's numbers) before committing: every sample's simulated reads cleanly match both their public-representative and, where applicable, local-genome signatures, well above the pipeline's Sourmash Gather threshold.
+
+### NCBI assembly summary for the three-species dataset
+
+Created for [nf-core/magmap#258](https://github.com/nf-core/magmap/issues/258): with `--indexes`, the pipeline reads the NCBI assembly summaries given by `--remote_genome_sources` to find the FTP path of each public genome Sourmash selects.
+The default summaries (RefSeq plus GenBank) are about 2 GB, and downloading and parsing them dominated the runtime of the tests using `archaeal_trio.index.sbt.zip`.
+
+This file holds the two header lines of NCBI's `assembly_summary_refseq.txt` and the rows for the three public genomes in that index (`GCF_000011125.1`, `GCF_022064045.1`, `GCF_030186535.1`), extracted with `awk` on the first column:
+
+testdata/archaeal_trio.assembly_summary.txt
