@@ -100,3 +100,51 @@ testdata/archaeal_trio.checkm2.tsv
 testdata/archaeal_trio.gtdbtk.tsv
 
 All matches were verified with real `sourmash sketch`/`prefetch` runs (not just assumed from the original dataset's numbers) before committing: every sample's simulated reads cleanly match both their public-representative and, where applicable, local-genome signatures, well above the pipeline's Sourmash Gather threshold.
+
+### NCBI assembly summaries and GTDB metadata for the three-species dataset
+
+Created for [nf-core/magmap#258](https://github.com/nf-core/magmap/issues/258): the tests using `archaeal_trio.index.sbt.zip` read NCBI's full assembly summaries (about 2 GB) and GTDB's full archaeal metadata.
+Downloading and parsing the summaries dominated their runtime, and the GTDB download has made test runs fail when the server was unavailable.
+
+These are extracts of the real files, keeping the rows the tests need plus decoys, so that the lookups have to pick the right rows rather than the only ones:
+
+* The two header lines of NCBI's `assembly_summary_refseq.txt` and `assembly_summary_genbank.txt` (downloaded 2026-09-23), with:
+  * the three public genomes in the index (`GCF_000011125.1`, `GCF_022064045.1`, `GCF_030186535.1`), and their GenBank twins (`GCA_` with the same number);
+  * up to four other genomes per genus (Aeropyrum, Metallosphaera, Ignisphaera), including viruses named after the genus;
+  * two GenBank rows whose `ftp_path` is `na`;
+  * every 250,000th row of each file.
+* One constructed row: `GCA_977173205.1` in the GenBank file is a real row truncated before the `ftp_path` column, to reproduce the missing-field case from nf-core/magmap#244.
+* The header of GTDB release 226 `ar53_metadata_r226.tsv.gz`, with every genome of the three species, up to three other genomes per genus, and every 1500th row.
+  This includes the GTDB rows for the local genomes' own accessions and for the non-representative Metallosphaera javensis genome.
+
+All rows were extracted from the live files with the commands below; none except the truncated one were edited.
+The NCBI summaries change daily, so rerunning the first command picks different sampled rows.
+
+```bash
+# NCBI assembly summaries (downloaded 2026-09-23)
+for src in refseq genbank; do
+    curl -s https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_${src}.txt | awk -F'\t' '
+        NR<=2 { print; next }
+        $1 ~ /^GC[AF]_(000011125|022064045|030186535)\./ { print; next }
+        $8 ~ /^(Aeropyrum|Metallosphaera|Ignisphaera) / && g[substr($8,1,index($8," "))]++ < 4 { print; next }
+        ($20 == "" || $20 == "na" || NF < 20) && bad++ < 2 { print; next }
+        NR % 250000 == 0 { print }
+    ' > trio_${src}.txt
+done
+cp trio_refseq.txt archaeal_trio.assembly_summary_refseq.txt
+
+# Truncate one GenBank row before the ftp_path column (column 20)
+awk -F'\t' -v OFS='\t' '$1=="GCA_977173205.1"{NF=19} {print}' trio_genbank.txt > archaeal_trio.assembly_summary_genbank.txt
+
+# GTDB release 226 archaeal metadata (gawk, for gensub)
+curl -s https://data.gtdb.ecogenomic.org/releases/release226/226.0/ar53_metadata_r226.tsv.gz | zcat | gawk -F'\t' '
+    NR==1 { print; next }
+    $20 ~ /s__(Aeropyrum pernix|Metallosphaera javensis|Ignisphaera cupida)$/ { print; next }
+    $20 ~ /g__(Aeropyrum|Metallosphaera|Ignisphaera);/ && g[gensub(/.*g__([^;]+);.*/, "\\1", 1, $20)]++ < 3 { print; next }
+    NR % 1500 == 0 { print }
+' > archaeal_trio.ar53_metadata.tsv
+```
+
+testdata/archaeal_trio.assembly_summary_refseq.txt
+testdata/archaeal_trio.assembly_summary_genbank.txt
+testdata/archaeal_trio.ar53_metadata.tsv
