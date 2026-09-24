@@ -117,7 +117,33 @@ These are extracts of the real files, keeping the rows the tests need plus decoy
 * The header of GTDB release 226 `ar53_metadata_r226.tsv.gz`, with every genome of the three species, up to three other genomes per genus, and every 1500th row.
   This includes the GTDB rows for the local genomes' own accessions and for the non-representative Metallosphaera javensis genome.
 
-All rows were extracted with `awk` from the live files; none except the truncated one were edited.
+All rows were extracted from the live files with the commands below; none except the truncated one were edited.
+The NCBI summaries change daily, so rerunning the first command picks different sampled rows.
+
+```bash
+# NCBI assembly summaries (downloaded 2026-09-23)
+for src in refseq genbank; do
+    curl -s https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_${src}.txt | awk -F'\t' '
+        NR<=2 { print; next }
+        $1 ~ /^GC[AF]_(000011125|022064045|030186535)\./ { print; next }
+        $8 ~ /^(Aeropyrum|Metallosphaera|Ignisphaera) / && g[substr($8,1,index($8," "))]++ < 4 { print; next }
+        ($20 == "" || $20 == "na" || NF < 20) && bad++ < 2 { print; next }
+        NR % 250000 == 0 { print }
+    ' > trio_${src}.txt
+done
+cp trio_refseq.txt archaeal_trio.assembly_summary_refseq.txt
+
+# Truncate one GenBank row before the ftp_path column (column 20)
+awk -F'\t' -v OFS='\t' '$1=="GCA_977173205.1"{NF=19} {print}' trio_genbank.txt > archaeal_trio.assembly_summary_genbank.txt
+
+# GTDB release 226 archaeal metadata (gawk, for gensub)
+curl -s https://data.gtdb.ecogenomic.org/releases/release226/226.0/ar53_metadata_r226.tsv.gz | zcat | gawk -F'\t' '
+    NR==1 { print; next }
+    $20 ~ /s__(Aeropyrum pernix|Metallosphaera javensis|Ignisphaera cupida)$/ { print; next }
+    $20 ~ /g__(Aeropyrum|Metallosphaera|Ignisphaera);/ && g[gensub(/.*g__([^;]+);.*/, "\\1", 1, $20)]++ < 3 { print; next }
+    NR % 1500 == 0 { print }
+' > archaeal_trio.ar53_metadata.tsv
+```
 
 testdata/archaeal_trio.assembly_summary_refseq.txt
 testdata/archaeal_trio.assembly_summary_genbank.txt
