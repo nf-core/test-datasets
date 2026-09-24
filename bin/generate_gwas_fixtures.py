@@ -90,12 +90,17 @@ def write_relational_fixtures(
     resources_dir = relational_dir / "resources"
     resources_dir.mkdir(parents=True, exist_ok=True)
 
-    genotype_url = f"{FIXTURE_BASE_URL}/genotypes/{prefix}_all.vcf.gz"
+    genotype_urls = [
+        f"{FIXTURE_BASE_URL}/genotypes/{prefix}_all.{extension}"
+        for extension in ("pgen", "psam", "pvar")
+    ]
     phenotype_url = f"{FIXTURE_BASE_URL}/pheno_cov/{prefix}.pheno"
     qcovar_url = f"{FIXTURE_BASE_URL}/pheno_cov/{prefix}.qcovar"
     catcovar_url = f"{FIXTURE_BASE_URL}/pheno_cov/{prefix}.catcovar"
     resource_url = f"{FIXTURE_BASE_URL}/relational/resources"
 
+    # The pipeline's cohort schema accepts a PLINK 2 or a PLINK 1 bundle and forbids any other
+    # column, so the canonical row selects the PGEN triple and leaves the PLINK 1 columns empty.
     write_csv(
         relational_dir / "cohort_manifest.csv",
         [
@@ -108,16 +113,15 @@ def write_relational_fixtures(
             "bed",
             "bim",
             "fam",
-            "vcf",
         ],
-        [["example_cohort", "GRCh37", "EUR", "", "", "", "", "", "", genotype_url]],
+        [["example_cohort", "GRCh37", "EUR", *genotype_urls, "", "", ""]],
     )
 
     common = ["example_cohort", "QT", "quantitative", phenotype_url, "QT"]
     write_csv(
         relational_dir / "analysis_manifest_quantitative.csv",
         ANALYSIS_HEADER,
-        [["example_quantitative", *common, "", "", "", "", "plink2", "", "", ""]],
+        [["example_quantitative", *common, "", "", "", "", "regenie", "", "", ""]],
     )
     write_csv(
         relational_dir / "analysis_manifest_binary.csv",
@@ -134,7 +138,7 @@ def write_relational_fixtures(
                 "2",
                 "",
                 "",
-                "plink2",
+                "regenie",
                 "",
                 "",
                 "",
@@ -152,7 +156,7 @@ def write_relational_fixtures(
                 "",
                 qcovar_url,
                 catcovar_url,
-                "plink2,regenie,gcta_fastgwa,ldak_kvik",
+                "regenie,gcta_fastgwa,ldak_kvik",
                 "",
                 "",
                 "",
@@ -192,7 +196,7 @@ def write_relational_fixtures(
                 "",
                 qcovar_url,
                 catcovar_url,
-                "plink2,regenie,gcta_fastgwa,ldak_kvik",
+                "regenie,gcta_fastgwa,ldak_kvik",
                 "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he",
                 "",
                 "",
@@ -208,7 +212,7 @@ def write_relational_fixtures(
                 "2",
                 qcovar_url,
                 catcovar_url,
-                "plink2,gcta_fastgwa,ldak_kvik",
+                "gcta_fastgwa,ldak_kvik",
                 "gcta_greml,gcta_greml_ldms,ldak_reml,ldak_he,ldak_pcgc",
                 "0.1",
                 "",

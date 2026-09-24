@@ -26,6 +26,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--pheno", type=Path, required=True)
     parser.add_argument("--qcovar", type=Path, required=True)
     parser.add_argument("--catcovar", type=Path, required=True)
+    parser.add_argument("--pgen", type=Path, required=True)
+    parser.add_argument("--psam", type=Path, required=True)
+    parser.add_argument("--pvar", type=Path, required=True)
+    parser.add_argument("--bed", type=Path, required=True)
+    parser.add_argument("--bim", type=Path, required=True)
+    parser.add_argument("--fam", type=Path, required=True)
     parser.add_argument("--relational-dir", type=Path, required=True)
     parser.add_argument("--samples", type=int, default=200)
     parser.add_argument("--chromosomes", default="1,2")
@@ -119,7 +125,6 @@ def validate_relational_fixtures(
         "bed",
         "bim",
         "fam",
-        "vcf",
     ]
     cohort_rows = read_csv(relational_dir / "cohort_manifest.csv", cohort_header)
     require(len(cohort_rows) == 1, "cohort manifest must contain exactly one row")
@@ -128,26 +133,25 @@ def validate_relational_fixtures(
     require(cohort["genome_build"] == "GRCh37", "unexpected genome build")
     require(cohort["ancestry"] == "EUR", "unexpected ancestry")
     require(
-        all(
-            not cohort[column]
-            for column in ("pgen", "psam", "pvar", "bed", "bim", "fam")
-        ),
-        "cohort manifest must select only the canonical VCF representation",
+        all(not cohort[column] for column in ("bed", "bim", "fam")),
+        "cohort manifest must select exactly one genotype representation",
     )
-    fixture_url_to_path(cohort["vcf"], fixtures_dir, generated_files)
+    for column in ("pgen", "psam", "pvar"):
+        require(bool(cohort[column]), f"cohort manifest is missing {column}")
+        fixture_url_to_path(cohort[column], fixtures_dir, generated_files)
 
     expected_analyses = {
         "analysis_manifest_quantitative.csv": {
-            "example_quantitative": ("QT", "quantitative", {"plink2"}, set()),
+            "example_quantitative": ("QT", "quantitative", {"regenie"}, set()),
         },
         "analysis_manifest_binary.csv": {
-            "example_binary": ("BT", "binary", {"plink2"}, set()),
+            "example_binary": ("BT", "binary", {"regenie"}, set()),
         },
         "analysis_manifest_association_only.csv": {
             "example_association": (
                 "QT",
                 "quantitative",
-                {"plink2", "regenie", "gcta_fastgwa", "ldak_kvik"},
+                {"regenie", "gcta_fastgwa", "ldak_kvik"},
                 set(),
             ),
         },
@@ -163,13 +167,13 @@ def validate_relational_fixtures(
             "heterogeneous_qt": (
                 "QT",
                 "quantitative",
-                {"plink2", "regenie", "gcta_fastgwa", "ldak_kvik"},
+                {"regenie", "gcta_fastgwa", "ldak_kvik"},
                 {"gcta_greml", "gcta_greml_ldms", "ldak_reml", "ldak_he"},
             ),
             "heterogeneous_bt": (
                 "BT",
                 "binary",
-                {"plink2", "gcta_fastgwa", "ldak_kvik"},
+                {"gcta_fastgwa", "ldak_kvik"},
                 {"gcta_greml", "gcta_greml_ldms", "ldak_reml", "ldak_he", "ldak_pcgc"},
             ),
         },
@@ -308,6 +312,85 @@ def validate_relational_fixtures(
     }
 
 
+def read_plink_text(path: Path, expected_header: list[str] | None) -> list[list[str]]:
+    """Return the data rows of a PLINK text table, skipping '##' metadata lines."""
+    rows: list[list[str]] = []
+    header: list[str] | None = None
+    with path.open(encoding="utf-8", newline="") as handle:
+        for line in handle:
+            line = line.rstrip("\n")
+            if line.startswith("##"):
+                continue
+            fields = line.split("\t")
+            if header is None and expected_header is not None:
+                require(fields == expected_header, f"{path}: unexpected header")
+                header = fields
+                continue
+            rows.append(fields)
+    return rows
+
+
+def validate_plink_derivatives(
+    args: argparse.Namespace,
+    samples: list[str],
+    records: list[tuple[str, int, str, str, str]],
+) -> dict[str, object]:
+    """Check the committed PLINK 2 and PLINK 1 views against the canonical VCF they derive from."""
+    psam_header = ["#FID", "IID", "SEX"]
+    psam_rows = read_plink_text(args.psam, psam_header)
+    require(
+        [row[:2] for row in psam_rows] == [[sample, sample] for sample in samples],
+        f"{args.psam}: --double-id sample IDs or order differ from the VCF",
+    )
+    require(
+        all(row[2] == "NA" for row in psam_rows),
+        f"{args.psam}: GT-only conversion must leave sex unknown",
+    )
+
+    pvar_header = ["#CHROM", "POS", "ID", "REF", "ALT", "FILTER"]
+    pvar_rows = read_plink_text(args.pvar, pvar_header)
+    require(
+        [(row[0], int(row[1]), row[2], row[3], row[4]) for row in pvar_rows] == records,
+        f"{args.pvar}: variants differ from the VCF they derive from",
+    )
+    require(
+        all(row[5] == "PASS" for row in pvar_rows),
+        f"{args.pvar}: every fixture variant must stay unfiltered",
+    )
+
+    # PLINK 1 counts the alternate allele first, so A1 is the VCF ALT and A2 the VCF REF.
+    bim_rows = read_plink_text(args.bim, None)
+    require(
+        [(row[0], row[1], row[2], int(row[3]), row[4], row[5]) for row in bim_rows]
+        == [
+            (chromosome, variant_id, "0", position, alt, ref)
+            for chromosome, position, variant_id, ref, alt in records
+        ],
+        f"{args.bim}: variants or allele coding differ from the VCF",
+    )
+    fam_rows = read_plink_text(args.fam, None)
+    require(
+        fam_rows == [[sample, sample, "0", "0", "0", "-9"] for sample in samples],
+        f"{args.fam}: samples or pedigree columns differ from the VCF",
+    )
+
+    bed = args.bed.read_bytes()
+    require(bed[:3] == b"\x6c\x1b\x01", f"{args.bed}: not a variant-major PLINK 1 bed")
+    require(
+        len(bed) == 3 + ((len(samples) + 3) // 4) * len(records),
+        f"{args.bed}: unexpected size for {len(records)} variants",
+    )
+    require(
+        args.pgen.read_bytes()[:2] == b"\x6c\x1b", f"{args.pgen}: not a PLINK 2 pgen"
+    )
+
+    return {
+        "plink2_variants": len(records),
+        "plink1_variants": len(bim_rows),
+        "plink_samples": len(psam_rows),
+    }
+
+
 def squared_correlation(first: list[int], second: list[int]) -> float:
     first_mean = sum(first) / len(first)
     second_mean = sum(second) / len(second)
@@ -324,12 +407,20 @@ def squared_correlation(first: list[int], second: list[int]) -> float:
 def parse_vcf(
     path: Path,
     expected_chromosomes: set[str],
-) -> tuple[list[str], Counter[str], list[str], list[list[int]], list[int]]:
+) -> tuple[
+    list[str],
+    Counter[str],
+    list[str],
+    list[list[int]],
+    list[int],
+    list[tuple[str, int, str, str, str]],
+]:
     sample_ids: list[str] = []
     chromosome_counts: Counter[str] = Counter()
     variant_ids: list[str] = []
     dosages: list[list[int]] = []
     positions: list[int] = []
+    records: list[tuple[str, int, str, str, str]] = []
     previous_key: tuple[int, int] | None = None
 
     with gzip.open(path, "rt", encoding="utf-8", newline="") as handle:
@@ -387,13 +478,14 @@ def parse_vcf(
             variant_ids.append(variant_id)
             dosages.append(dosage)
             positions.append(position)
+            records.append((chromosome, position, variant_id, ref, alt))
 
     require(len(variant_ids) == len(set(variant_ids)), f"{path}: duplicate variant IDs")
     require(
         all(len(variant_id) <= 8 for variant_id in variant_ids),
         f"{path}: variant ID is not short",
     )
-    return sample_ids, chromosome_counts, variant_ids, dosages, positions
+    return sample_ids, chromosome_counts, variant_ids, dosages, positions, records
 
 
 def matrix_rank(matrix: list[list[float]], tolerance: float = 1e-10) -> int:
@@ -429,7 +521,7 @@ def validate() -> dict[str, object]:
     args = parse_args()
     chromosomes = args.chromosomes.split(",")
     assert_bgzf(args.vcf)
-    samples, chromosome_counts, variant_ids, dosages, _ = parse_vcf(
+    samples, chromosome_counts, variant_ids, dosages, _, records = parse_vcf(
         args.vcf, set(chromosomes)
     )
 
@@ -533,12 +625,23 @@ def validate() -> dict[str, object]:
         "median_within_block_r2": round(median_within, 6),
         "median_between_block_r2": round(median_between, 6),
     }
+    summary.update(validate_plink_derivatives(args, samples, records))
+
     generated_files = {
         f"genotypes/{args.vcf.name}": args.vcf,
         f"pheno_cov/{args.pheno.name}": args.pheno,
         f"pheno_cov/{args.qcovar.name}": args.qcovar,
         f"pheno_cov/{args.catcovar.name}": args.catcovar,
     }
+    for derivative in (
+        args.pgen,
+        args.psam,
+        args.pvar,
+        args.bed,
+        args.bim,
+        args.fam,
+    ):
+        generated_files[f"genotypes/{derivative.name}"] = derivative
     summary.update(
         validate_relational_fixtures(
             args.relational_dir, set(variant_ids), generated_files
