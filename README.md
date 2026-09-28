@@ -4,13 +4,11 @@ This branch contains test data for automated testing with the [nf-core/eupathpop
 
 ## Content of this repository
 
-
 All files are located under `testdata/`. The allele table and PMO examples represent the same dataset in different formats.
 
 The data were simulated using [recombuddy](https://github.com/PlasmoGenEpi/recombuddy) from a background population derived from publicly available whole-genome sequencing data from Southeast Asia (SEA). The simulated parasite genomes were then processed in silico using the MAD4HaTteR targeted sequencing panel to generate realistic targeted-sequencing FASTQ files. These FASTQ files were subsequently processed using the SeekDeep pipeline.
 
 The PMO file also contains synthetic sample metadata.
-   
 
 ### Pipeline inputs
 
