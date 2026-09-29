@@ -1,39 +1,17 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# test-datasets: `eupathpopgen`
 
-Test data to be used for automated testing with the nf-core pipelines
+This branch contains test data for automated testing with the [nf-core/eupathpopgen](https://github.com/nf-core/eupathpopgen) pipeline.
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+## Content of this repository
 
-## Introduction
+All files are located under `testdata/`. The allele table and PMO examples represent the same dataset in different formats.
 
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
+The data were simulated using [recombuddy](https://github.com/PlasmoGenEpi/recombuddy) from a background population derived from publicly available whole-genome sequencing data from Southeast Asia (SEA). The simulated parasite genomes were then processed in silico using the MAD4HaTteR targeted sequencing panel to generate realistic targeted-sequencing FASTQ files. These FASTQ files were subsequently processed using the SeekDeep pipeline.
 
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
+The PMO file also contains synthetic sample metadata.
 
-## Documentation
+### Pipeline inputs
 
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
-```
-
-To subsequently clone other branches[^1]
-
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
-```
-
-## Support
-
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
-
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+- `testdata/allele_table.tsv`: Microhaplotype allele table (`specimen_name`, `target_name`, `reads`, `seq`, plus optional `bioinformatics_run_name` / `allele` columns from the drugres extract).
+- `testdata/population_assignment.tsv`: Specimen-to-population map (`specimen_name`, `population`) for optional `--population_map` runs.
+- `testdata/example_PMO.json`: Example Portable Microhaplotype Object for `--pmo` / `-profile test_pmo`.
