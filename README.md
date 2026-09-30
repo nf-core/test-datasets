@@ -1,39 +1,195 @@
-# ![nfcore/test-datasets](docs/images/test-datasets_logo.png)
+# Test Data for nf-core/msproteomics
 
-Test data to be used for automated testing with the nf-core pipelines
+Small subset mzML files, FASTA databases, and pre-generated module inputs for testing the [nf-core/msproteomics](https://github.com/nf-core/msproteomics) Nextflow pipeline.
 
-> ⚠️ **Do not merge your test data to `master`! Each pipeline has a dedicated branch (and a special one for modules)**
+## Directory Structure
 
-## Introduction
-
-nf-core is a collection of high quality Nextflow pipelines. This repository contains various files for CI and unit testing of nf-core pipelines and infrastructure.
-
-The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
-
-## Documentation
-
-nf-core/test-datasets comes with documentation in the `docs/` directory:
-
-1.  [Add a new test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/ADD_NEW_DATA.md)
-2.  [Use an existing test dataset](https://github.com/nf-core/test-datasets/blob/master/docs/USE_EXISTING_DATA.md)
-
-## Downloading test data
-
-Due the large number of large files in this repository for each pipeline, we highly recommend cloning only the branches you would use.
-
-```bash
-git clone <url> --single-branch --branch <pipeline/modules/branch_name>
+```
+spectra/               - Subsetted mzML spectral data
+databases/             - FASTA protein databases
+module_inputs/         - Pre-computed intermediate files for module integration tests
+samplesheets/          - CSV input samplesheets for pipeline test profiles
 ```
 
-To subsequently clone other branches[^1]
+## Spectra
 
-```bash
-git remote set-branches --add origin [remote-branch]
-git fetch
+All mzML files are subsetted from public datasets using msconvert (ProteoWizard).
+Docker image: `proteowizard/pwiz-skyline-i-agree-to-the-vendor-licenses`.
+
+### tmt_erwinia_subset.mzML (17M)
+
+- **Source**: PRIDE PXD000001 — Kocher et al. (2012) "High precision quantitative proteomics"
+- **Original file**: `TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.raw` (~220MB)
+- **Download URL**: https://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/
+- **Subset command**: `msconvert TMT_Erwinia_*.raw --filter "scanNumber [4000,4500]" --filter "peakPicking true 1-" -o spectra/`
+- **Content**: Scans 4000-4500 (middle of gradient for best PSM yield), ~29 MS2 spectra
+
+### tmt_erwinia_subset_2.mzML (17M)
+
+- **Source**: Same as above (PRIDE PXD000001)
+- **Subset command**: `msconvert TMT_Erwinia_*.raw --filter "scanNumber [4500,5000]" --filter "peakPicking true 1-" -o spectra/`
+- **Content**: Scans 4500-5000 (adjacent window), second replicate for multi-sample tests
+
+### dda_silac_subset.mzML (9.1M)
+
+- **Source**: Zenodo 1051552 — SILAC-labeled HEK cells (K6R6)
+- **Original file**: `HEK_SILAC-K6R6_ST905_part.mzml` (~209MB)
+- **Download URL**: https://zenodo.org/records/1051552
+- **Subset command**: `msconvert HEK_SILAC-K6R6_ST905_part.mzml --filter "index [0,499]" -o spectra/`
+- **Content**: First 500 scans (indices 0-499)
+
+### dda_silac_subset_2.mzML (8.3M)
+
+- **Source**: Same as above (Zenodo 1051552)
+- **Subset command**: `msconvert HEK_SILAC-K6R6_ST905_part.mzml --filter "index [500,999]" -o spectra/`
+- **Content**: Scans 500-999, second replicate for multi-sample tests
+
+### dia_cptac_subset.mzML (38M)
+
+- **Source**: CPTAC Clear Cell Renal Cell Carcinoma, DIA acquisition
+- **Original file**: `CPTAC_CCRCC_W_JHU_20190112_LUMOS_C3L-01882_T.mzML`
+- **Download URL**: https://cptac-data-portal.georgetown.edu/
+- **Subset command**: `msconvert CPTAC_CCRCC_*.mzML --filter "index [0,2499]" -o spectra/`
+- **Content**: First 2500 scans (DIA needs more scans for peptide identification)
+
+## Databases
+
+### erwinia_carotovora.fasta (1.6M)
+
+- **Source**: Companion FASTA from PRIDE PXD000001
+- **Content**: 4499 protein entries for Erwinia carotovora (Pectobacterium carotovorum)
+- **Headers**: Simple format `>ECA0001 description`
+- **Used by**: TMT label check tests, MSFragger/Percolator/Philosopher module tests
+
+### erwinia_uniprot.fasta (1.9M)
+
+- **Source**: Generated from `erwinia_carotovora.fasta` by adding UniProt-style headers
+- **Command**: Python script appending `OS=Pectobacterium carotovorum OX=554 GN=<accession> PE=4 SV=1` to each header
+- **Headers**: `>ECA0001 description OS=Pectobacterium carotovorum OX=554 GN=ECA0001 PE=4 SV=1`
+- **Used by**: Metaproteomics module test (FP-Meta requires `OS=` and `OX=` annotations for taxonomy parsing)
+
+### human_sp_subset.fasta (14M)
+
+- **Source**: UniProt Swiss-Prot, Homo sapiens (UP000005640), reviewed entries
+- **Download URL**: `https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=(proteome:UP000005640)+AND+(reviewed:true)`
+- **Subset**: First 500 protein entries
+- **Used by**: DIA test profile, DDA LFQ test profile, TMT quant test profile
+
+### ecoli_ups1_test.fasta (1.8M)
+
+- **Source**: UniProt E. coli K-12 (UP000000625) + UPS1 spike-in standard proteins (Sigma-Aldrich)
+- **Content**: E. coli proteome with 48 UPS1 standard proteins appended
+- **Used by**: Benchmarking tests with known spike-in concentrations
+
+## Module Inputs
+
+Pre-computed intermediate files for module-level integration tests.
+Generated by running the FragPipe toolchain on `tmt_erwinia_subset.mzML` + `erwinia_carotovora.fasta`.
+
+**Generation pipeline** (run inside `altoslabscom/fragpipe:24.0-academic` Docker container):
+
+```
+erwinia_carotovora.fasta
+    → philosopher database --annotate --prefix rev_
+    → added decoys + contaminants
+
+tmt_erwinia_subset.mzML + annotated FASTA
+    → MSFragger 4.4.1 (--calibrate_mass 0 --output_format pepXML_pin)
+    → outputs: tmt_erwinia_subset.pepXML, tmt_erwinia_subset.pin
+
+tmt_erwinia_subset.pepXML
+    → PeptideProphet (--nonparam --expectscore --decoyprobs --ppm --accmass)
+    → output: interact-tmt_erwinia_subset.pep.xml
+
+tmt_erwinia_subset.pin
+    → Percolator 3.07.1 (--only-psms --no-terminate --post-processing-tdc)
+    → outputs: tmt_erwinia_subset_percolator_target_psms.tsv,
+               tmt_erwinia_subset_percolator_decoy_psms.tsv
+
+interact-tmt_erwinia_subset.pep.xml
+    → philosopher filter (--sequential --razor --prot 0.05 --picked --pepxml .)
+    → philosopher report (--msstats)
+    → outputs: psm.tsv, peptide.tsv
 ```
 
-## Support
+### File details
 
-For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
+| File | Size | Generated by | Description |
+| ---- | ---- | ------------ | ----------- |
+| `psm.tsv` | 11K | Philosopher report | PSM-level results (52 PSMs, 40 columns) |
+| `peptide.tsv` | 4.2K | Philosopher report | Peptide-level results (19 peptides, 23 columns) |
+| `tmt_erwinia_subset.pin` | 22K | MSFragger | Percolator input format (PSM features for rescoring) |
+| `tmt_erwinia_subset_msfragger.pepXML` | 87K | MSFragger | Search results in pepXML format |
+| `interact-tmt_erwinia_subset.pep.xml` | 154K | PeptideProphet | Validated pepXML with probability scores |
+| `tmt_erwinia_subset_percolator_target_psms.tsv` | 4.8K | Percolator | Target PSMs with q-values |
+| `tmt_erwinia_subset_percolator_decoy_psms.tsv` | 4.4K | Percolator | Decoy PSMs with q-values |
+| `crystalc_test.mzML` | 17M | msconvert | Copy of tmt_erwinia_subset.mzML for CrystalC test |
+| `crystalc_test.pepXML` | 11K | MSFragger | Search results for CrystalC test input |
 
-[^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
+## Samplesheets
+
+CSV files with spectra URLs for each pipeline test profile.
+Spectra paths use full GitHub raw URLs so Nextflow can fetch them remotely.
+
+| File | Workflow | Samples | Columns |
+| ---- | -------- | ------- | ------- |
+| `test_dia.csv` | DIA (DIA-NN) | 1 DIA sample | sample, spectra, condition |
+| `test_dda_lfq.csv` | DDA LFQ (FragPipe) | 2 DDA samples | sample, spectra, condition |
+| `test_tmt.csv` | TMT labelcheck | 2 TMT6 samples | sample, spectra, condition, label |
+| `test_tmtq.csv` | TMT quantification | 2 TMT6 samples | sample, spectra, condition, label |
+
+## Regeneration
+
+### Spectra and databases
+
+```bash
+./generate_test_subsets.sh
+```
+
+Requires Docker and internet access.
+Downloads source files from PRIDE/Zenodo/CPTAC/UniProt, then subsets with msconvert.
+
+### Module inputs
+
+Module inputs are NOT generated by `generate_test_subsets.sh`.
+They are produced by running the FragPipe pipeline on the test spectra:
+
+```bash
+docker run --rm -v $(pwd):/work -w /work altoslabscom/fragpipe:24.0-academic bash -c '
+  TOOLS=/fragpipe_bin/fragpipe-24.0/fragpipe-24.0/tools
+  $TOOLS/Philosopher/philosopher-v5.1.3-RC9 workspace --init --nocheck
+  $TOOLS/Philosopher/philosopher-v5.1.3-RC9 database --annotate databases/erwinia_carotovora.fasta --prefix rev_
+  java -Xmx8g -jar $TOOLS/MSFragger-*.jar \
+    --database_name databases/erwinia_carotovora.fasta \
+    --decoy_prefix rev_ --calibrate_mass 0 --output_format pepXML_pin \
+    spectra/tmt_erwinia_subset.mzML
+  $TOOLS/Philosopher/philosopher-v5.1.3-RC9 peptideprophet \
+    --nonparam --expectscore --decoyprobs --ppm --accmass \
+    --database databases/erwinia_carotovora.fasta tmt_erwinia_subset.pepXML
+  $TOOLS/percolator_3_7_1/linux/percolator --only-psms --no-terminate --post-processing-tdc \
+    --results-psms tmt_erwinia_subset_percolator_target_psms.tsv \
+    --decoy-results-psms tmt_erwinia_subset_percolator_decoy_psms.tsv \
+    tmt_erwinia_subset.pin
+  $TOOLS/Philosopher/philosopher-v5.1.3-RC9 filter --sequential --razor --prot 0.05 --picked --pepxml .
+  $TOOLS/Philosopher/philosopher-v5.1.3-RC9 report --msstats
+'
+```
+
+Update module_inputs files must be regenerated when upstream tool versions change.
+
+## Usage in Pipeline Tests
+
+Reference in pipeline test configs (e.g., `conf/tests/test_dia.config`):
+
+```groovy
+params {
+    input    = 'https://raw.githubusercontent.com/an-altosian/test-datasets/refs/heads/msproteomics/samplesheets/test_dia.csv'
+    database = 'https://raw.githubusercontent.com/an-altosian/test-datasets/refs/heads/msproteomics/databases/human_sp_subset.fasta'
+}
+```
+
+In module nf-test files:
+
+```groovy
+def psm_file = file("${params.pipelines_testdata_base_path}/module_inputs/psm.tsv", checkIfExists: true)
+```
