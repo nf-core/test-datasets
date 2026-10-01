@@ -1,0 +1,4 @@
+id,fasta,existing_hmms,existing_seed_msas,existing_full_msas
+update_hmm_only,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_extra.faa,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/v3/existing_hmms.tar.gz,,
+update_hmm_seed_gz,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_extra.faa.gz,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/v3/existing_hmms.tar.gz,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/v3/existing_seed_msas.tar.gz,
+update_hmm_seed_full,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_extra.faa,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/v3/existing_hmms.tar.gz,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/v3/existing_seed_msas.tar.gz,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/v3/existing_full_msas.tar.gz

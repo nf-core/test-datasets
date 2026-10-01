@@ -1,0 +1,2 @@
+id,fasta,existing_hmms,existing_seed_msas,existing_full_msas
+mgnifams_test,https://github.com/nf-core/test-datasets/raw/proteinfamilies/test_data/mgnifams_input_small.faa,,,
