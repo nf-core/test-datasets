@@ -15,3 +15,4 @@ The PMO file also contains synthetic sample metadata.
 - `testdata/allele_table.tsv`: Microhaplotype allele table (`specimen_name`, `target_name`, `reads`, `seq`, plus optional `bioinformatics_run_name` / `allele` columns from the drugres extract).
 - `testdata/population_assignment.tsv`: Specimen-to-population map (`specimen_name`, `population`) for optional `--population_map` runs.
 - `testdata/example_PMO.json`: Example Portable Microhaplotype Object for `--pmo` / `-profile test_pmo`.
+- `testdata/population_assignment_unassigned.tsv`: Specimen-to-population assignment table missing some specimens (`Vietnam2018-23`, `Vietnam2018-24`) to test handling of unassigned specimens.
