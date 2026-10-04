@@ -859,6 +859,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - cache.tar.gz: [vepyr](https://github.com/biodatageeks/vepyr) Parquet VEP cache (Ensembl release 116, GRCh38, `ensembl` cache type) trimmed to the rows annotating `input.vcf.gz` reads; archived because the cache is a directory. Produced and verified against Ensembl VEP 116 `--everything` by `nf-core-module/stage-testdata.sh` in biodatageeks/vepyr.
     - input.vcf.gz: 1,000 consecutive records of the GIAB HG002 GRCh38 v4.2.1 benchmark VCF (chr22:20572272-21735973), normalized with `bcftools norm -m -both`, bgzip-compressed.
     - input.vcf.gz.tbi: tabix index of `input.vcf.gz`.
+    - input_multiallelic.vcf.gz: the same GIAB HG002 GRCh38 v4.2.1 window as `input.vcf.gz` (chr22:20572272-21735973) before normalization: 986 records, 14 of them multiallelic. `bcftools norm -m -both` of this file has the same records as `input.vcf.gz`. bgzip-compressed.
+    - input_multiallelic.vcf.gz.tbi: tabix index of `input_multiallelic.vcf.gz`.
     - reference.fa.gz: GRCh38 chromosome 22, bases 1-21745973, extracted from Ensembl `Homo_sapiens.GRCh38.dna.primary_assembly.fa` with `samtools faidx` (contig named `22`), bgzip-compressed.
     - reference.fa.gz.fai: `samtools faidx` index of `reference.fa.gz`.
     - reference.fa.gz.gzi: bgzip index of `reference.fa.gz`.
