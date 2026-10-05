@@ -38,7 +38,7 @@ This branch contains test data for the [nf-core/proteinfamilies](https://github.
 * **mgnifams_extra.faa**: An amino acid fasta file of another 50K sequences. Called by samplesheets samplesheet_update.csv and samplesheet_full.csv to test the functionality of the update families mechanism. Sequences that match existing families are processed along those families, which are then updated. Non-hit sequences will go through the basic family generation workflow.
 * **existing_hmms.tar.gz**: A compressed archive containing 5 HMM files (.hmm.gz) of previously generated families (from mgnifams_input_small.faa). Called by samplesheets samplesheet_update.csv and samplesheet_full.csv to test the functionality of the update families mechanism.
 * **existing_msas.tar.gz**: A compressed archive containing 5 MSA files (.aln) of previously generated families (from mgnifams_input_small.faa). Called by samplesheets samplesheet_update.csv and samplesheet_full.csv to test the functionality of the update families mechanism. The files in the archive are the same in number as those in the HMM archive, and their base file names are matching.
-* **mgnifams_extra.faa.gz**: A compressed copy of mgnifams_extra.faa. Called by samplesheets/v3/samplesheet_update.csv to test compressed fasta input in the update families mechanism.
+* **mgnifams_extra.faa.gz**: A compressed copy of mgnifams_extra.faa. Used by the update families module and subworkflow tests of the pipeline to test compressed fasta input.
 
 ### v3 test data (pipeline v3.0.0 onwards)
 
