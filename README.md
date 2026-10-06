@@ -10,6 +10,17 @@ nf-core is a collection of high quality Nextflow pipelines. This repository cont
 
 The principle for nf-core test data is as small as possible, as large as necessary. Please see the [guidelines](https://nf-co.re/docs/contributing/test_data_guidelines) for more detailed information. Always ask for guidance on the [nf-core slack](https://nf-co.re/join) before adding new test data.
 
+## nf-core/deepmutscan test data
+
+| File | Description |
+| --- | --- |
+| `testdata/GID1A.fasta` | Reference amplicon containing the GID1A ORF (UniProt Q9MAA7); the mutagenised reading frame is `352-1383`. |
+| `testdata/reads/GID1A_{input,output}{1,2}_50k_{1,2}.fastq.gz` | 50,000 read-pair subsamples of the GluePCA GID1A-GAI shotgun DMS libraries below, used by `-profile test`. |
+| `samplesheet/GID1A_test.csv` | Samplesheet for `-profile test` (2 input + 2 output replicates, the subsampled reads). |
+| `samplesheet/GID1A_full.csv` | Samplesheet for `-profile test_full`: all 6 libraries (3 input, 3 output at 2500 uM GA3), ~480M read pairs, linked directly from ENA. |
+
+Source: ENA project [PRJEB110196](https://www.ebi.ac.uk/ena/browser/view/PRJEB110196) (runs ERR16945046-ERR16945051), publicly available under the INSDC data policy. The full samplesheet points at the submitted FASTQ files, which ENA archives for all six runs.
+
 ## Documentation
 
 nf-core/test-datasets comes with documentation in the `docs/` directory:
