@@ -12,12 +12,13 @@ The principle for nf-core test data is as small as possible, as large as necessa
 
 ## nf-core/deepmutscan test data
 
-| File                                                          | Description                                                                                                                           |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `testdata/GID1A.fasta`                                        | Reference amplicon containing the GID1A ORF (UniProt Q9MAA7); the mutagenised reading frame is `352-1383`.                            |
-| `testdata/reads/GID1A_{input,output}{1,2}_50k_{1,2}.fastq.gz` | 50,000 read-pair subsamples of the GluePCA GID1A-GAI shotgun DMS libraries below, used by `-profile test`.                            |
-| `samplesheet/GID1A_test.csv`                                  | Samplesheet for `-profile test` (2 input + 2 output replicates, the subsampled reads).                                                |
-| `samplesheet/GID1A_full.csv`                                  | Samplesheet for `-profile test_full`: all 6 libraries (3 input, 3 output at 2500 uM GA3), ~480M read pairs, linked directly from ENA. |
+| File | Description |
+| --- | --- |
+| `testdata/GID1A.fasta` | Reference amplicon containing the GID1A ORF (UniProt Q9MAA7); the mutagenised reading frame is `352-1383`. |
+| `testdata/reads/GID1A_{input,output}{1,2}_50k_{1,2}.fastq.gz` | 50,000 read-pair subsamples of the GluePCA GID1A-GAI shotgun DMS libraries below, used by `-profile test`. |
+| `testdata/GID1A_AFDB.pdb` | AlphaFold DB model of GID1A (UniProt Q9MAA7, https://alphafold.ebi.ac.uk/entry/Q9MAA7), used by both profiles for the variant effect inspection tool. CC-BY-4.0, © EMBL-EBI & Google DeepMind. |
+| `samplesheet/GID1A_test.csv` | Samplesheet for `-profile test` (2 input + 2 output replicates, the subsampled reads). |
+| `samplesheet/GID1A_full.csv` | Samplesheet for `-profile test_full`: all 6 libraries (3 input, 3 output at 2500 uM GA3), ~480M read pairs, linked directly from ENA. |
 
 Source: ENA project [PRJEB110196](https://www.ebi.ac.uk/ena/browser/view/PRJEB110196) (runs ERR16945046-ERR16945051), publicly available under the INSDC data policy. The full samplesheet points at the submitted FASTQ files, which ENA archives for all six runs.
 
