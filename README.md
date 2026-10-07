@@ -14,6 +14,7 @@ Test data for the [nf-core/denovoproteomics](https://github.com/nf-core/denovopr
 | `winnow/winnow_psms.csv` | 500 winnow-scored PSMs, the input to protein assembly | 57 KB |
 | `clustalo/cluster_multi_4seq.fasta` | A 4-sequence scaffold cluster, input to CLUSTALO_ALIGN | <1 KB |
 | `clustalo/cluster_multi_2seq.fasta` | A 2-sequence scaffold cluster (the minimum alignable) | <1 KB |
+| `msspectra/OVEMB150205_12_60.mzML` | First 60 spectra of OVEMB150205_12, for the CI smoke test | 880 KB |
 
 ## Vendor spectra
 
@@ -90,6 +91,40 @@ only invokes `CLUSTALO_ALIGN` when MMseqs2 happens to emit a cluster with more
 than one sequence, and whether that happens varies by assembly mode and by tool
 version: over the same PSM fixture, `greedy` produces 3 such clusters and `dbg`
 158, while `dbg_weighted` produces none.
+
+## CI smoke-test spectra
+
+### `msspectra/OVEMB150205_12_60.mzML`
+
+The first 60 spectra of the canonical Thermo test file, carrying 26 MS2 spectra all of which
+have a precursor charge state. Enough to drive the whole pipeline; small enough that CI does
+not spend three quarters of an hour on it.
+
+Why it exists: de novo prediction runs on CPU in CI and its cost is linear in spectrum count
+— roughly 38 of the 42 minutes of a conda job went to predicting the full file's 1,193
+spectra. This subset runs the same chain, conversion through assembly and quantification, in
+about 200 seconds.
+
+Measured end to end with `--mode all --assembly_mode all --quantify`: 21 PSMs, 1 mapped
+protein, greedy 17 scaffolds, dbg 18, dbg_weighted 0 — the last exercising the pipeline's
+empty-scaffold guard, which skips clustering for an unproductive assembler rather than
+failing on MMseqs2's `query createdb died`.
+
+Two smaller options were tried and rejected. A single-spectrum MGF starves Winnow's
+calibrator (`All spectra were removed during feature computation … insufficient RT spread`).
+The HUPO-PSI example mzMLs are MS1-only, so they contain no de novo input at all.
+
+**Derived from:** `nf-core/test-datasets@modules:data/proteomics/msspectra/OVEMB150205_12.mzML`,
+first 60 spectra by index.
+
+```bash
+msconvert OVEMB150205_12.mzML --mzML --zlib --64 \
+    --filter "index [0,59]" --outfile OVEMB150205_12_60.mzML
+```
+
+```
+sha256: bceb49c29d327279abdc7a92f25c42f4f701df0171d848fc5b9e8b06f9081293
+```
 
 ## Cross-branch references
 
