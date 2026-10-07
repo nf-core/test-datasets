@@ -9,6 +9,7 @@ Test data for the [nf-core/denovoproteomics](https://github.com/nf-core/denovopr
 | `samplesheet.csv` | Samplesheet for standard mode (2 samples) | <1 KB |
 | `samplesheet_mapping.csv` | Samplesheet for mapping mode (2 samples) | <1 KB |
 | `vendor/bruker_timstof_dia.d/` | Bruker timsTOF diaPASEF acquisition (TDF) | 11 MB |
+| `vendor/bruker_timstof_dda.d/` | Bruker timsTOF ddaPASEF acquisition (TDF) | 59 MB |
 | `vendor/sciex_qtrap.wiff` + `.wiff.scan` | Sciex QTRAP acquisition | 3.3 MB |
 | `winnow/winnow_psms.csv` | 500 winnow-scored PSMs, the input to protein assembly | 57 KB |
 | `clustalo/cluster_multi_4seq.fasta` | A 4-sequence scaffold cluster, input to CLUSTALO_ALIGN | <1 KB |
@@ -33,9 +34,19 @@ table. The MannLabs/timsrust fixtures are far smaller but are simulated and lack
 that table, so tdf2mzml rejects them; the other small `.d` archives in
 circulation are BAF (QTOF), which is a different format entirely.
 
-A DDA alternative, `200ngHeLaPASEF_1min.d`, is available from the same source at
-60 MB. It converts cleanly to 65 MS1 and 2519 MS2 spectra, but at 50 MB of mzML
-it is too slow for CPU-only de novo prediction to finish in a test.
+### `vendor/bruker_timstof_dda.d`
+
+The same acquisition as above but ddaPASEF, kept for end-to-end runs. 59 MB,
+converting to 65 MS1 and 2519 MS2 spectra, all of them carrying a precursor
+charge state (1922 at 2+, 510 at 3+, 52 at 1+, 25 at 4+, 10 at 5+).
+
+That is the difference that matters: the DIA fixture above converts correctly
+but its spectra carry **no** precursor charge, so InstaNovo discards every one
+of them and de novo sequencing cannot run on it. The DIA file is the cheap
+fixture for testing conversion; this one is the fixture for testing the pipeline.
+
+**Source:** [tacular-omics/tdfextractor](https://github.com/tacular-omics/tdfextractor),
+`tests/data/200ngHeLaPASEF_1min.d`, MIT licence, Copyright (c) 2023 Patrick Garrett.
 
 ### `vendor/sciex_qtrap.wiff` + `vendor/sciex_qtrap.wiff.scan`
 
