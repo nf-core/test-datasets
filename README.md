@@ -11,6 +11,8 @@ Test data for the [nf-core/denovoproteomics](https://github.com/nf-core/denovopr
 | `vendor/bruker_timstof_dia.d/` | Bruker timsTOF diaPASEF acquisition (TDF) | 11 MB |
 | `vendor/sciex_qtrap.wiff` + `.wiff.scan` | Sciex QTRAP acquisition | 3.3 MB |
 | `winnow/winnow_psms.csv` | 500 winnow-scored PSMs, the input to protein assembly | 57 KB |
+| `clustalo/cluster_multi_4seq.fasta` | A 4-sequence scaffold cluster, input to CLUSTALO_ALIGN | <1 KB |
+| `clustalo/cluster_multi_2seq.fasta` | A 2-sequence scaffold cluster (the minimum alignable) | <1 KB |
 
 ## Vendor spectra
 
@@ -60,6 +62,23 @@ that has to be accepted by hand.
 `spectrum_id`, `prediction`, `calibrated_confidence`, `psm_fdr`, `psm_q_value`,
 `psm_pep`. Lets the assembly subworkflow be tested without first running
 prediction and rescoring.
+
+### `clustalo/cluster_multi_*seq.fasta`
+
+Single clusters in the shape `SPLIT_MMSEQS_CLUSTERS` scatters to
+`CLUSTALO_ALIGN`: a FASTA of de novo scaffolds that MMseqs2 grouped together.
+
+Taken from a real `greedy` assembly run over `winnow/winnow_psms.csv`.
+`cluster_multi_4seq` holds four scaffolds sharing the core
+`AGATVGGEGQASQLGGGGGGGGG` with ragged ends, so the alignment has gaps on both
+sides. `cluster_multi_2seq` is the two-sequence boundary case — the smallest
+input the subworkflow routes to alignment rather than passing through.
+
+These exist because alignment coverage was otherwise incidental. The subworkflow
+only invokes `CLUSTALO_ALIGN` when MMseqs2 happens to emit a cluster with more
+than one sequence, and whether that happens varies by assembly mode and by tool
+version: over the same PSM fixture, `greedy` produces 3 such clusters and `dbg`
+158, while `dbg_weighted` produces none.
 
 ## Cross-branch references
 
