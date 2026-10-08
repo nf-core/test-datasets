@@ -1,0 +1,13 @@
+sample,spectra,condition,label
+plex1_126,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset.mzML,plex1,TMT126
+plex1_127N,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset.mzML,plex1,TMT127N
+plex1_128C,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset.mzML,plex1,TMT128C
+plex1_129N,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset.mzML,plex1,TMT129N
+plex1_130C,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset.mzML,plex1,TMT130C
+plex1_131N,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset.mzML,plex1,TMT131N
+plex2_126,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset_2.mzML,plex2,TMT126
+plex2_127N,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset_2.mzML,plex2,TMT127N
+plex2_128C,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset_2.mzML,plex2,TMT128C
+plex2_129N,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset_2.mzML,plex2,TMT129N
+plex2_130C,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset_2.mzML,plex2,TMT130C
+plex2_131N,https://raw.githubusercontent.com/nf-core/test-datasets/refs/heads/msproteomics/spectra/tmt_erwinia_subset_2.mzML,plex2,TMT131N
