@@ -6,6 +6,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `samples/`: The pipeline input in `h5ad` and `rds` formats.
 `samplesheet.csv`: The samplesheet used as the pipeline input.
+`decoupler/`: Small prior-knowledge networks (`network.tsv`, `network.gmt`) for the decoupler module tests.
+`volcanoplot/`: Small differential expression tables (`*_results.parquet`) and `interesting_genes.csv` for the volcano plot module tests; regenerate the parquet files with `make_fixtures.py`.
 
 ## Test dataset origin
 
