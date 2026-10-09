@@ -88,4 +88,23 @@ The pipeline's `tests/megahit_prokka_transdecoder.nf.test` needs `--diamond_dbs`
 samplesheet/diamond_dbs_single.csv
 ```
 
+### KofamScan subworkflow test proteins
+
+Added for the KofamScan subworkflow test in nf-core/metatdenovo ([PR #589](https://github.com/nf-core/metatdenovo/pull/589)), which runs KofamScan on batches of proteins.
+The pipeline test's proteins come from a MEGAHIT assembly, which differs slightly between runs, so they cannot back a test that asserts exact annotations.
+
+`proteins.faa.gz` holds 42 Prodigal proteins from nf-core/metatdenovo's `-profile test_kofamscan` (megahit + prodigal), headers unchanged, 11076 residues in all.
+They were picked by their hits against the tiny KOfam database in `test_data/kofamscan/`:
+
+* 20 proteins with a hit above the KO's threshold, one per KO.
+* 5 proteins with only hits below threshold.
+* 2 proteins with hits to two KOs each (`k141_479_4`, `k141_1034_23`).
+* 15 proteins with no hit.
+
+Run directly with `exec_annotation --format detail-tsv` (kofamscan 1.3.0, `quay.io/biocontainers/kofamscan:1.3.0--hdfd78af_2`) against that database, they give 29 hit rows, 21 of them above threshold.
+
+```
+test_data/kofamscan/proteins.faa.gz
+```
+
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
