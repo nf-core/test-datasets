@@ -103,8 +103,5 @@ They were picked by their hits against the tiny KOfam database in `test_data/kof
 
 Run directly with `exec_annotation --format detail-tsv` (kofamscan 1.3.0, `quay.io/biocontainers/kofamscan:1.3.0--hdfd78af_2`) against that database, they give 29 hit rows, 21 of them above threshold.
 
-```
-test_data/kofamscan/proteins.faa.gz
-```
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
