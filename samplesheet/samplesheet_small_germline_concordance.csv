@@ -1,0 +1,4 @@
+id,test_vcf,caller,subsample
+test6,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/germline/HG002.strelka.variants.chr21.vcf.gz,strelka,
+test7,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/germline/HG002.bcftools.chr21.vcf.gz,bcftools,
+test7-copy,https://raw.githubusercontent.com/nf-core/test-datasets/variantbenchmarking/testdata/hg38/test/germline/HG002.bcftools.chr21.vcf.gz,bcftools,
