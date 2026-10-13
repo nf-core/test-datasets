@@ -1,6 +1,4 @@
-# Human RNA-seq expression
-
-## chrX transcript counts
+# dexseq/dtu
 
 Transcript counts for four samples of human chromosome X: two GBR (`ERR188383`, `ERR188428`) and two YRI (`ERR188454`, `ERR204916`), from the Geuvadis project. The counts were imported with `tximeta/tximport` from the Salmon results in `testdata/salmon_quant/salmon_quant.tar.gz` of the `rnasplice` branch, with a transcript-to-gene map built by `custom/tx2gene` from `reference/genes_chrX.gtf` of the same branch.
 
