@@ -1,0 +1,5 @@
+sample,hifireads,ontreads,qc_reads
+hifi,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/HiFi-Col-0_test_data.fastq.gz,,ont
+ont,,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/ONT-Col-0_test_data.fastq.gz,hifi
+mixed_hifi,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/HiFi-Col-0_test_data.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/ONT-Col-0_test_data.fastq.gz,hifi
+mixed_ont,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/HiFi-Col-0_test_data.fastq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/ONT-Col-0_test_data.fastq.gz,ont
