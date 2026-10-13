@@ -498,6 +498,10 @@ The earth sciences folder contain subfolders for different data formats encounte
         - SRX11780888_chr20.periodic-offsets.csv.gz: per-length periodic-offset table output by rpbp/selectperiodicoffsets, for testing rpbp/getperiodiclengthsoffsets
         - SRX11780888_chr20.periodic_lengths_offsets.tsv: filtered length/offset pairs (lenient thresholds for chr20) output by rpbp/getperiodiclengthsoffsets, for testing rpbp/extractorfprofiles
         - SRX11780888_chr20.profiles.mtx.gz: per-ORF Ribo-seq read-count profile matrix output by rpbp/extractorfprofiles, for testing rpbp/estimateorfbayesfactors
+    - rnaseq_expression
+      - README.md: Explanatory notes for the human RNA-seq expression data
+      - chrX.transcript_counts.tsv: Salmon transcript counts (imported with tximport) of two GBR and two YRI Geuvadis samples on chromosome X, restricted to genes with at least two expressed transcripts, for testing dexseq/dtu
+      - chrX.samplesheet.csv: Sample sheet assigning the four samples of `chrX.transcript_counts.tsv` to the GBR or YRI condition
         - SRX11780888_chr20.bayes-factors.bed.gz: per-ORF Bayes-factor table output by rpbp/estimateorfbayesfactors, for testing rpbp/selectfinalpredictionset
         - README.md: per-file derivation recipe.
       - ribocode
