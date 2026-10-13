@@ -148,3 +148,13 @@ curl -s https://data.gtdb.ecogenomic.org/releases/release226/226.0/ar53_metadata
 testdata/archaeal_trio.assembly_summary_refseq.txt
 testdata/archaeal_trio.assembly_summary_genbank.txt
 testdata/archaeal_trio.ar53_metadata.tsv
+
+### HMM profiles for the HMM search
+
+Used in the `-profile test, hmmfiles` test in `tests/default.nf.test`, added for [issue #34](https://github.com/nf-core/magmap/issues/34).
+
+Three Pfam profiles downloaded from [InterPro](https://www.ebi.ac.uk/interpro/) that hit proteins of `GCA_002688505.1`, the genome in the default test:
+
+* `PF00006.hmm`: ATP-synt_ab, ATP synthase alpha/beta family, nucleotide-binding domain (PF00006.32)
+* `PF00009.hmm`: GTP_EFTU, elongation factor Tu GTP binding domain (PF00009.34)
+* `PF00154.hmm`: RecA_N, recA bacterial DNA recombination protein (PF00154.28)
