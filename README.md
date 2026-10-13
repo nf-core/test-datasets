@@ -898,11 +898,15 @@ The earth sciences folder contain subfolders for different data formats encounte
 
   - bacteroides_fragilis
     - genome
-      - 'genome.fna.gz': NC_006347 genome downloaded from NCBI Genome
-      - 'genome.gbff.gz': NC_006347 genome downloaded from NCBI Genomes in GenBank format
+      - 'genome.fna.gz': genome of strain FDAARGOS_1225 (chromosome NZ_CP069563.1 and plasmid NZ_CP069564.1) downloaded from NCBI Genome
+      - 'genome.gbff.gz': FDAARGOS_1225 genome downloaded from NCBI Genomes in GenBank format (a different RefSeq annotation from 'genome.gff.gz'; the protein sets differ)
       - 'genome.paf': NC_006347 genome PAF file
       - 'genome.mapping.potential.ARG': DeepARG anti-microbial resistance gene prediction of NC_006347 genome
-      - 'genome.gff.gz': NC_006347 genome downloaded from NCBI Genomes in GFF3 format
+      - 'genome.gff.gz': FDAARGOS_1225 chromosome (NZ_CP069563.1) annotation downloaded from NCBI Genomes in GFF3 format
+      - 'region_2500000-3000000.faa.gz': the 356 proteins of 'genome.gff.gz' whose CDS start between positions 2,500,000 and 3,000,000 of NZ_CP069563.1, translated from 'genome.fna.gz' with Biopython (table 11, start codon as Met), named by `protein_id`. The region holds 14 CAZyme gene clusters, 9 of them with a dbCAN-PUL substrate prediction.
+      - 'region_2500000-3000000.gff': the lines of 'genome.gff.gz' for features starting in the same region, uncompressed because run_dbcan cannot read a gzipped GFF
+      - db
+        - 'dbcan.tar.gz': mini dbCAN database (directory `dbcan_db`) for the `rundbcan` modules, cut from the full dbcan 5.2.9 database (`run_dbcan database --aws_s3`, 7.4 GB) so that `run_dbcan easy_substrate --mode protein --gff_type NCBI_prok` on the two region files above gives the same CAZymes, dbCAN-HMM, dbCAN-sub, CAZy, peptidase and TF hits, CAZyme gene clusters, PUL hits and substrate predictions as the full database. TCDB, sulfatase and STP get 1-2 extra borderline hits, since E-values are smaller against a smaller database. The HMM files hold the models in the full database's results (all `GT2_*` models within dbCAN's thresholds for `dbCAN.hmm`, and the three best-scoring `GT2_*` models per protein reported as GT2 for `dbCAN-sub.hmm`, since dbCAN reports every `GT2_*` model as GT2) or within 1000x of dbCAN's E-value threshold (`STP.hmm`, `TF.hmm`). The DIAMOND databases hold the subjects found by dbCAN's own command plus a `--more-sensitive --max-target-seqs 25` search. Each of these files also has 10 random non-matching entries. `PUL.dmnd` and `dbCAN-PUL/` hold the PULs the region's clusters hit; `dbCAN-PUL.xlsx` and `fam-substrate-mapping.tsv` are complete.
     - illumina
       - fastq
         - 'test1*{1,2}.fastq.gz': synthetic raw short-read sequencing reads of the genome of the mammalian-gut-residing Bacteroides fragilis* YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
