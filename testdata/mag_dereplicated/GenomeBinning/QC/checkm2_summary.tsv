@@ -1,0 +1,5 @@
+Name	Completeness	Contamination	Completeness_Model_Used	Translation_Table_Used	Coding_Density	Contig_N50	Average_Gene_Length	Genome_Size	GC_Content	Total_Coding_Sequences	Total_Contigs	Max_Contig_Length	Additional_Notes
+MEGAHIT-MaxBin2-minigut.001	23.31	1.18	Neural Network (Specific Model)	11	0.892	23272	339.36953807740326	913086	0.43	801	61	126196	None
+MEGAHIT-MaxBin2-minigut.002	15.18	0.23	Neural Network (Specific Model)	11	0.887	6500	284.30518697225574	795662	0.52	829	154	20088	None
+SPAdes-MaxBin2-test_minigut.002	17.2	0.59	Neural Network (Specific Model)	11	0.871	47120	299.43719806763283	852294	0.52	828	29	126407	None
+SPAdes-MaxBin2-test_minigut_sample2.001	3.97	0.0	Neural Network (Specific Model)	11	0.74	1523	149.27868852459017	183169	0.42	305	117	7629	None

@@ -1,0 +1,326 @@
+##gff-version 3
+##sequence-region NODE_1_length_7629_cov_2.011619 1 7629
+##sequence-region NODE_2_length_6451_cov_4.303940 1 6451
+##sequence-region NODE_3_length_5949_cov_2.096709 1 5949
+##sequence-region NODE_4_length_4328_cov_3.352914 1 4328
+##sequence-region NODE_5_length_3333_cov_2.868517 1 3333
+##sequence-region NODE_6_length_2880_cov_1.433982 1 2880
+##sequence-region NODE_7_length_2852_cov_1.637469 1 2852
+##sequence-region NODE_10_length_2351_cov_1.382840 1 2351
+##sequence-region NODE_11_length_2308_cov_1.241012 1 2308
+##sequence-region NODE_12_length_2219_cov_1.791590 1 2219
+##sequence-region NODE_13_length_2144_cov_1.509813 1 2144
+##sequence-region NODE_14_length_2094_cov_1.433546 1 2094
+##sequence-region NODE_15_length_2066_cov_1.578319 1 2066
+##sequence-region NODE_17_length_2017_cov_1.150866 1 2017
+##sequence-region NODE_18_length_2011_cov_1.316973 1 2011
+##sequence-region NODE_19_length_1952_cov_1.364787 1 1952
+##sequence-region NODE_20_length_1938_cov_1.022836 1 1938
+##sequence-region NODE_21_length_1935_cov_2.221277 1 1935
+##sequence-region NODE_23_length_1885_cov_1.914754 1 1885
+##sequence-region NODE_26_length_1870_cov_1.767493 1 1870
+##sequence-region NODE_28_length_1810_cov_1.375499 1 1810
+##sequence-region NODE_29_length_1786_cov_2.261121 1 1786
+##sequence-region NODE_30_length_1773_cov_0.963912 1 1773
+##sequence-region NODE_31_length_1752_cov_1.347083 1 1752
+##sequence-region NODE_32_length_1745_cov_1.258580 1 1745
+##sequence-region NODE_33_length_1669_cov_1.466543 1 1669
+##sequence-region NODE_34_length_1664_cov_2.058421 1 1664
+##sequence-region NODE_35_length_1664_cov_1.919826 1 1664
+##sequence-region NODE_36_length_1618_cov_1.969930 1 1618
+##sequence-region NODE_37_length_1613_cov_1.548780 1 1613
+##sequence-region NODE_39_length_1605_cov_1.699355 1 1605
+##sequence-region NODE_40_length_1601_cov_1.441785 1 1601
+##sequence-region NODE_41_length_1600_cov_1.105502 1 1600
+##sequence-region NODE_43_length_1588_cov_1.558382 1 1588
+##sequence-region NODE_44_length_1579_cov_1.236877 1 1579
+##sequence-region NODE_45_length_1572_cov_1.470007 1 1572
+##sequence-region NODE_48_length_1554_cov_1.361574 1 1554
+##sequence-region NODE_49_length_1551_cov_1.905749 1 1551
+##sequence-region NODE_51_length_1538_cov_1.756575 1 1538
+##sequence-region NODE_53_length_1523_cov_1.301090 1 1523
+##sequence-region NODE_57_length_1490_cov_1.395122 1 1490
+##sequence-region NODE_60_length_1403_cov_1.695104 1 1403
+##sequence-region NODE_61_length_1385_cov_1.444361 1 1385
+##sequence-region NODE_62_length_1379_cov_1.357251 1 1379
+##sequence-region NODE_65_length_1373_cov_1.920334 1 1373
+##sequence-region NODE_66_length_1369_cov_1.635464 1 1369
+##sequence-region NODE_68_length_1367_cov_1.339939 1 1367
+##sequence-region NODE_70_length_1360_cov_1.229119 1 1360
+##sequence-region NODE_71_length_1359_cov_1.340491 1 1359
+##sequence-region NODE_73_length_1347_cov_1.576625 1 1347
+##sequence-region NODE_76_length_1332_cov_1.512138 1 1332
+##sequence-region NODE_78_length_1328_cov_1.296936 1 1328
+##sequence-region NODE_80_length_1314_cov_1.305004 1 1314
+##sequence-region NODE_82_length_1311_cov_1.500796 1 1311
+##sequence-region NODE_83_length_1301_cov_1.332263 1 1301
+##sequence-region NODE_84_length_1300_cov_1.255422 1 1300
+##sequence-region NODE_85_length_1292_cov_1.447858 1 1292
+##sequence-region NODE_88_length_1264_cov_1.258892 1 1264
+##sequence-region NODE_89_length_1250_cov_1.733054 1 1250
+##sequence-region NODE_90_length_1249_cov_1.662479 1 1249
+##sequence-region NODE_93_length_1239_cov_1.633446 1 1239
+##sequence-region NODE_94_length_1239_cov_1.087838 1 1239
+##sequence-region NODE_95_length_1232_cov_1.141886 1 1232
+##sequence-region NODE_97_length_1222_cov_1.441302 1 1222
+##sequence-region NODE_100_length_1211_cov_1.506055 1 1211
+##sequence-region NODE_101_length_1211_cov_0.932526 1 1211
+##sequence-region NODE_103_length_1204_cov_1.066144 1 1204
+##sequence-region NODE_104_length_1199_cov_1.283217 1 1199
+##sequence-region NODE_105_length_1197_cov_1.492995 1 1197
+##sequence-region NODE_107_length_1189_cov_1.405644 1 1189
+##sequence-region NODE_109_length_1184_cov_1.615589 1 1184
+##sequence-region NODE_110_length_1169_cov_1.486535 1 1169
+##sequence-region NODE_111_length_1161_cov_1.394213 1 1161
+##sequence-region NODE_112_length_1160_cov_1.177376 1 1160
+##sequence-region NODE_113_length_1159_cov_1.734601 1 1159
+##sequence-region NODE_115_length_1148_cov_1.177493 1 1148
+##sequence-region NODE_116_length_1144_cov_1.623508 1 1144
+##sequence-region NODE_119_length_1141_cov_0.952118 1 1141
+##sequence-region NODE_120_length_1139_cov_1.168819 1 1139
+##sequence-region NODE_122_length_1132_cov_1.247911 1 1132
+##sequence-region NODE_124_length_1131_cov_1.652416 1 1131
+##sequence-region NODE_125_length_1131_cov_1.319703 1 1131
+##sequence-region NODE_126_length_1129_cov_2.267225 1 1129
+##sequence-region NODE_127_length_1128_cov_1.322460 1 1128
+##sequence-region NODE_129_length_1127_cov_1.211754 1 1127
+##sequence-region NODE_130_length_1122_cov_1.396439 1 1122
+##sequence-region NODE_131_length_1121_cov_1.240150 1 1121
+##sequence-region NODE_132_length_1118_cov_1.428975 1 1118
+##sequence-region NODE_133_length_1118_cov_1.335842 1 1118
+##sequence-region NODE_135_length_1114_cov_1.784703 1 1114
+##sequence-region NODE_136_length_1114_cov_1.616619 1 1114
+##sequence-region NODE_138_length_1109_cov_1.338710 1 1109
+##sequence-region NODE_139_length_1094_cov_1.274302 1 1094
+##sequence-region NODE_140_length_1092_cov_1.367406 1 1092
+##sequence-region NODE_143_length_1084_cov_2.005831 1 1084
+##sequence-region NODE_144_length_1080_cov_1.265366 1 1080
+##sequence-region NODE_146_length_1077_cov_1.221135 1 1077
+##sequence-region NODE_147_length_1072_cov_1.084562 1 1072
+##sequence-region NODE_148_length_1071_cov_1.357283 1 1071
+##sequence-region NODE_151_length_1067_cov_1.209486 1 1067
+##sequence-region NODE_152_length_1067_cov_1.196640 1 1067
+##sequence-region NODE_154_length_1065_cov_1.418812 1 1065
+##sequence-region NODE_155_length_1063_cov_1.099206 1 1063
+##sequence-region NODE_157_length_1056_cov_1.610390 1 1056
+##sequence-region NODE_160_length_1055_cov_1.536000 1 1055
+##sequence-region NODE_166_length_1045_cov_1.537374 1 1045
+##sequence-region NODE_167_length_1045_cov_1.379798 1 1045
+##sequence-region NODE_169_length_1043_cov_0.911943 1 1043
+##sequence-region NODE_177_length_1032_cov_1.866940 1 1032
+##sequence-region NODE_179_length_1030_cov_1.714872 1 1030
+##sequence-region NODE_182_length_1028_cov_1.658787 1 1028
+##sequence-region NODE_183_length_1024_cov_1.356037 1 1024
+##sequence-region NODE_184_length_1024_cov_1.180599 1 1024
+##sequence-region NODE_188_length_1011_cov_1.436192 1 1011
+##sequence-region NODE_189_length_1009_cov_1.520964 1 1009
+##sequence-region NODE_191_length_1002_cov_1.104541 1 1002
+##sequence-region NODE_192_length_1001_cov_1.319239 1 1001
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	18	173	.	+	0	ID=NPFKAFAJ_00001;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00001;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	166	342	.	+	0	ID=NPFKAFAJ_00002;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00002;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	335	607	.	+	0	ID=NPFKAFAJ_00003;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00003;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	600	926	.	+	0	ID=NPFKAFAJ_00004;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00004;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	926	1321	.	+	0	ID=NPFKAFAJ_00005;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00005;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	1318	1473	.	+	0	ID=NPFKAFAJ_00006;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00006;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	1558	2193	.	+	0	ID=NPFKAFAJ_00007;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00007;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	2254	2487	.	+	0	ID=NPFKAFAJ_00008;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00008;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	2637	2954	.	+	0	ID=NPFKAFAJ_00009;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00009;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	3299	3472	.	+	0	ID=NPFKAFAJ_00010;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00010;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	3520	3999	.	+	0	ID=NPFKAFAJ_00011;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00011;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	3989	4489	.	+	0	ID=NPFKAFAJ_00012;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00012;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	4452	5390	.	+	0	ID=NPFKAFAJ_00013;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00013;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	5387	6418	.	+	0	ID=NPFKAFAJ_00014;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00014;product=hypothetical protein
+NODE_1_length_7629_cov_2.011619	Prodigal:v2.6	CDS	6459	6743	.	+	0	ID=NPFKAFAJ_00015;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00015;product=hypothetical protein
+NODE_2_length_6451_cov_4.303940	infernal:1.1.5	rRNA	493	2029	2.8e-49	+	.	ID=NPFKAFAJ_00016;Alias=SSU_rRNA_bacteria;Dbxref=Rfam:RF00177;locus_tag=NPFKAFAJ_00016;product=16S ribosomal RNA
+NODE_2_length_6451_cov_4.303940	Aragorn:v1.2	tRNA	2089	2165	.	+	.	ID=NPFKAFAJ_00017;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=NPFKAFAJ_00017;product=tRNA-Ile(gat)
+NODE_2_length_6451_cov_4.303940	Aragorn:v1.2	tRNA	2221	2296	.	+	.	ID=NPFKAFAJ_00018;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=NPFKAFAJ_00018;product=tRNA-Ala(tgc)
+NODE_2_length_6451_cov_4.303940	infernal:1.1.5	rRNA	2637	5529	2.1e-07	+	.	ID=NPFKAFAJ_00019;Alias=LSU_rRNA_bacteria;Dbxref=Rfam:RF02541;locus_tag=NPFKAFAJ_00019;product=23S ribosomal RNA
+NODE_2_length_6451_cov_4.303940	infernal:1.1.5	rRNA	5715	5829	9.4e-18	+	.	ID=NPFKAFAJ_00020;Alias=5S_rRNA;Dbxref=Rfam:RF00001;locus_tag=NPFKAFAJ_00020;product=5S ribosomal RNA
+NODE_2_length_6451_cov_4.303940	Prodigal:v2.6	CDS	6048	6374	.	-	0	ID=NPFKAFAJ_00021;eC_number=1.6.1.1;Name=sthA;gene=sthA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00247;locus_tag=NPFKAFAJ_00021;product=Soluble pyridine nucleotide transhydrogenase
+NODE_3_length_5949_cov_2.096709	Prodigal:v2.6	CDS	50	1114	.	+	0	ID=NPFKAFAJ_00022;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00022;product=hypothetical protein
+NODE_3_length_5949_cov_2.096709	Prodigal:v2.6	CDS	1210	2133	.	+	0	ID=NPFKAFAJ_00023;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00023;product=hypothetical protein
+NODE_3_length_5949_cov_2.096709	Prodigal:v2.6	CDS	2149	2664	.	+	0	ID=NPFKAFAJ_00024;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00024;product=hypothetical protein
+NODE_3_length_5949_cov_2.096709	Prodigal:v2.6	CDS	2990	3172	.	+	0	ID=NPFKAFAJ_00025;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00025;product=hypothetical protein
+NODE_3_length_5949_cov_2.096709	Prodigal:v2.6	CDS	3265	3669	.	+	0	ID=NPFKAFAJ_00026;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00026;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	51	419	.	-	0	ID=NPFKAFAJ_00027;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00027;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	391	795	.	-	0	ID=NPFKAFAJ_00028;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00028;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	877	1491	.	-	0	ID=NPFKAFAJ_00029;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00029;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	1501	1914	.	-	0	ID=NPFKAFAJ_00030;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00030;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	1871	2260	.	-	0	ID=NPFKAFAJ_00031;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00031;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	2265	2930	.	-	0	ID=NPFKAFAJ_00032;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00032;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	2995	3783	.	-	0	ID=NPFKAFAJ_00033;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00033;product=hypothetical protein
+NODE_4_length_4328_cov_3.352914	Prodigal:v2.6	CDS	3811	4308	.	-	0	ID=NPFKAFAJ_00034;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00034;product=hypothetical protein
+NODE_5_length_3333_cov_2.868517	Prodigal:v2.6	CDS	118	363	.	-	0	ID=NPFKAFAJ_00035;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00035;product=hypothetical protein
+NODE_5_length_3333_cov_2.868517	Prodigal:v2.6	CDS	365	877	.	-	0	ID=NPFKAFAJ_00036;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00036;product=hypothetical protein
+NODE_5_length_3333_cov_2.868517	Prodigal:v2.6	CDS	888	1193	.	-	0	ID=NPFKAFAJ_00037;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00037;product=hypothetical protein
+NODE_5_length_3333_cov_2.868517	Prodigal:v2.6	CDS	1190	2311	.	-	0	ID=NPFKAFAJ_00038;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00038;product=hypothetical protein
+NODE_5_length_3333_cov_2.868517	Prodigal:v2.6	CDS	2323	2646	.	-	0	ID=NPFKAFAJ_00039;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00039;product=hypothetical protein
+NODE_5_length_3333_cov_2.868517	Prodigal:v2.6	CDS	2649	3089	.	-	0	ID=NPFKAFAJ_00040;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00040;product=hypothetical protein
+NODE_6_length_2880_cov_1.433982	Prodigal:v2.6	CDS	94	198	.	-	0	ID=NPFKAFAJ_00041;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00041;product=hypothetical protein
+NODE_6_length_2880_cov_1.433982	Prodigal:v2.6	CDS	234	761	.	-	0	ID=NPFKAFAJ_00042;Name=ubiJ;gene=ubiJ;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_02215;locus_tag=NPFKAFAJ_00042;product=Ubiquinone biosynthesis accessory factor UbiJ
+NODE_6_length_2880_cov_1.433982	Prodigal:v2.6	CDS	773	1486	.	-	0	ID=NPFKAFAJ_00043;eC_number=2.1.1.163;Name=ubiE;gene=ubiE;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01813;locus_tag=NPFKAFAJ_00043;product=Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
+NODE_6_length_2880_cov_1.433982	Prodigal:v2.6	CDS	1619	1843	.	-	0	ID=NPFKAFAJ_00044;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00044;product=hypothetical protein
+NODE_6_length_2880_cov_1.433982	Prodigal:v2.6	CDS	2051	2623	.	+	0	ID=NPFKAFAJ_00045;eC_number=2.7.4.33;Name=pap;gene=pap;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q83XD3;locus_tag=NPFKAFAJ_00045;product=Polyphosphate:AMP phosphotransferase
+NODE_7_length_2852_cov_1.637469	Prodigal:v2.6	CDS	808	1032	.	+	0	ID=NPFKAFAJ_00046;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00046;product=hypothetical protein
+NODE_7_length_2852_cov_1.637469	Prodigal:v2.6	CDS	2061	2690	.	-	0	ID=NPFKAFAJ_00047;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00047;product=hypothetical protein
+NODE_10_length_2351_cov_1.382840	Prodigal:v2.6	CDS	456	557	.	-	0	ID=NPFKAFAJ_00048;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00048;product=hypothetical protein
+NODE_10_length_2351_cov_1.382840	Prodigal:v2.6	CDS	569	799	.	-	0	ID=NPFKAFAJ_00049;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00049;product=hypothetical protein
+NODE_11_length_2308_cov_1.241012	Prodigal:v2.6	CDS	14	931	.	+	0	ID=NPFKAFAJ_00050;eC_number=3.1.26.-;Name=rng;gene=rng;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0A0H3NGK0;locus_tag=NPFKAFAJ_00050;product=Ribonuclease G
+NODE_11_length_2308_cov_1.241012	Prodigal:v2.6	CDS	1071	1244	.	+	0	ID=NPFKAFAJ_00051;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00051;product=hypothetical protein
+NODE_11_length_2308_cov_1.241012	Prodigal:v2.6	CDS	1294	1743	.	-	0	ID=NPFKAFAJ_00052;eC_number=2.3.1.20;Name=wax-dgaT;db_xref=COG:COG1020;gene=wax-dgaT;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8GGG1;locus_tag=NPFKAFAJ_00052;product=O-acyltransferase WSD
+NODE_12_length_2219_cov_1.791590	Prodigal:v2.6	CDS	44	673	.	+	0	ID=NPFKAFAJ_00053;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00053;product=hypothetical protein
+NODE_12_length_2219_cov_1.791590	Prodigal:v2.6	CDS	735	2093	.	-	0	ID=NPFKAFAJ_00054;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00054;product=hypothetical protein
+NODE_13_length_2144_cov_1.509813	Prodigal:v2.6	CDS	351	746	.	-	0	ID=NPFKAFAJ_00055;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00055;product=hypothetical protein
+NODE_13_length_2144_cov_1.509813	Prodigal:v2.6	CDS	851	1681	.	-	0	ID=NPFKAFAJ_00056;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00056;product=hypothetical protein
+NODE_13_length_2144_cov_1.509813	Prodigal:v2.6	CDS	1839	2042	.	+	0	ID=NPFKAFAJ_00057;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00057;product=hypothetical protein
+NODE_14_length_2094_cov_1.433546	Prodigal:v2.6	CDS	101	457	.	-	0	ID=NPFKAFAJ_00058;Name=rpsM;gene=rpsM;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B7IA17;locus_tag=NPFKAFAJ_00058;product=Small ribosomal subunit protein uS13
+NODE_14_length_2094_cov_1.433546	Prodigal:v2.6	CDS	565	681	.	-	0	ID=NPFKAFAJ_00059;Name=rpmJ;gene=rpmJ;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B7IA18;locus_tag=NPFKAFAJ_00059;product=Large ribosomal subunit protein bL36
+NODE_14_length_2094_cov_1.433546	Prodigal:v2.6	CDS	748	1266	.	-	0	ID=NPFKAFAJ_00060;Name=secY;gene=secY;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01465;locus_tag=NPFKAFAJ_00060;product=Protein translocase subunit SecY
+NODE_14_length_2094_cov_1.433546	Prodigal:v2.6	CDS	1833	2015	.	-	0	ID=NPFKAFAJ_00061;Name=rplO;gene=rplO;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B7IA20;locus_tag=NPFKAFAJ_00061;product=Large ribosomal subunit protein uL15
+NODE_15_length_2066_cov_1.578319	Prodigal:v2.6	CDS	50	742	.	-	0	ID=NPFKAFAJ_00062;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00062;product=hypothetical protein
+NODE_15_length_2066_cov_1.578319	Prodigal:v2.6	CDS	744	2021	.	-	0	ID=NPFKAFAJ_00063;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00063;product=hypothetical protein
+NODE_17_length_2017_cov_1.150866	Prodigal:v2.6	CDS	66	1517	.	+	0	ID=NPFKAFAJ_00064;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00064;product=hypothetical protein
+NODE_17_length_2017_cov_1.150866	Prodigal:v2.6	CDS	1541	1846	.	+	0	ID=NPFKAFAJ_00065;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00065;product=hypothetical protein
+NODE_18_length_2011_cov_1.316973	Prodigal:v2.6	CDS	842	1615	.	-	0	ID=NPFKAFAJ_00066;eC_number=6.1.1.3;Name=thrS_1;gene=thrS_1;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00184;locus_tag=NPFKAFAJ_00066;product=Threonine--tRNA ligase
+NODE_18_length_2011_cov_1.316973	Prodigal:v2.6	CDS	1623	1895	.	-	0	ID=NPFKAFAJ_00067;eC_number=6.1.1.3;Name=thrS_2;db_xref=COG:COG0441;gene=thrS_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B2FN79;locus_tag=NPFKAFAJ_00067;product=Threonine--tRNA ligase
+NODE_19_length_1952_cov_1.364787	Prodigal:v2.6	CDS	80	304	.	+	0	ID=NPFKAFAJ_00068;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00068;product=hypothetical protein
+NODE_19_length_1952_cov_1.364787	Prodigal:v2.6	CDS	1453	1932	.	-	0	ID=NPFKAFAJ_00069;eC_number=2.1.1.185;Name=rlmB;db_xref=COG:COG0566;gene=rlmB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P44906;locus_tag=NPFKAFAJ_00069;product=23S rRNA (guanosine-2'-O-)-methyltransferase RlmB
+NODE_20_length_1938_cov_1.022836	Prodigal:v2.6	CDS	63	464	.	+	0	ID=NPFKAFAJ_00070;eC_number=3.6.4.-;Name=mfd_1;db_xref=COG:COG1197;gene=mfd_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P30958;locus_tag=NPFKAFAJ_00070;product=Transcription-repair-coupling factor
+NODE_20_length_1938_cov_1.022836	Prodigal:v2.6	CDS	409	1152	.	+	0	ID=NPFKAFAJ_00071;eC_number=3.6.4.-;Name=mfd_2;db_xref=COG:COG1197;gene=mfd_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P30958;locus_tag=NPFKAFAJ_00071;product=Transcription-repair-coupling factor
+NODE_20_length_1938_cov_1.022836	Prodigal:v2.6	CDS	1551	1910	.	+	0	ID=NPFKAFAJ_00072;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00072;product=hypothetical protein
+NODE_23_length_1885_cov_1.914754	Prodigal:v2.6	CDS	285	446	.	+	0	ID=NPFKAFAJ_00073;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:ISfinder:ISAba43;locus_tag=NPFKAFAJ_00073;product=ISL3 family transposase ISAba43
+NODE_23_length_1885_cov_1.914754	Prodigal:v2.6	CDS	418	588	.	+	0	ID=NPFKAFAJ_00074;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00074;product=hypothetical protein
+NODE_23_length_1885_cov_1.914754	Prodigal:v2.6	CDS	673	1416	.	-	0	ID=NPFKAFAJ_00075;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00075;product=hypothetical protein
+NODE_23_length_1885_cov_1.914754	Prodigal:v2.6	CDS	1465	1878	.	-	0	ID=NPFKAFAJ_00076;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:ISfinder:ISVsa3;locus_tag=NPFKAFAJ_00076;product=IS91 family transposase ISVsa3
+NODE_26_length_1870_cov_1.767493	Prodigal:v2.6	CDS	152	1135	.	-	0	ID=NPFKAFAJ_00077;eC_number=3.6.5.-;Name=yeiR;db_xref=COG:COG0523;gene=yeiR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P33030;locus_tag=NPFKAFAJ_00077;product=Zinc chaperone YeiR
+NODE_26_length_1870_cov_1.767493	Prodigal:v2.6	CDS	1634	1834	.	+	0	ID=NPFKAFAJ_00078;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00078;product=hypothetical protein
+NODE_28_length_1810_cov_1.375499	Prodigal:v2.6	CDS	76	612	.	-	0	ID=NPFKAFAJ_00079;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00079;product=hypothetical protein
+NODE_28_length_1810_cov_1.375499	Prodigal:v2.6	CDS	660	1610	.	-	0	ID=NPFKAFAJ_00080;eC_number=4.2.99.18;Name=nth_1;gene=nth_1;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00942;locus_tag=NPFKAFAJ_00080;product=Endonuclease III
+NODE_29_length_1786_cov_2.261121	Prodigal:v2.6	CDS	154	435	.	-	0	ID=NPFKAFAJ_00081;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00081;product=hypothetical protein
+NODE_29_length_1786_cov_2.261121	Prodigal:v2.6	CDS	712	1032	.	-	0	ID=NPFKAFAJ_00082;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00082;product=hypothetical protein
+NODE_29_length_1786_cov_2.261121	Prodigal:v2.6	CDS	1032	1430	.	-	0	ID=NPFKAFAJ_00083;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00083;product=hypothetical protein
+NODE_29_length_1786_cov_2.261121	Prodigal:v2.6	CDS	1480	1725	.	-	0	ID=NPFKAFAJ_00084;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00084;product=hypothetical protein
+NODE_30_length_1773_cov_0.963912	Prodigal:v2.6	CDS	43	288	.	-	0	ID=NPFKAFAJ_00085;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00085;product=hypothetical protein
+NODE_30_length_1773_cov_0.963912	Prodigal:v2.6	CDS	1013	1312	.	-	0	ID=NPFKAFAJ_00086;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00086;product=hypothetical protein
+NODE_31_length_1752_cov_1.347083	Prodigal:v2.6	CDS	399	518	.	-	0	ID=NPFKAFAJ_00087;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00087;product=hypothetical protein
+NODE_31_length_1752_cov_1.347083	Prodigal:v2.6	CDS	585	860	.	-	0	ID=NPFKAFAJ_00088;eC_number=2.8.1.7;Name=iscS_1;db_xref=COG:COG1104;gene=iscS_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A6B9;locus_tag=NPFKAFAJ_00088;product=Cysteine desulfurase IscS
+NODE_31_length_1752_cov_1.347083	Prodigal:v2.6	CDS	860	1669	.	-	0	ID=NPFKAFAJ_00089;eC_number=2.8.1.7;Name=iscS_2;gene=iscS_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O31269;locus_tag=NPFKAFAJ_00089;product=Cysteine desulfurase IscS
+NODE_32_length_1745_cov_1.258580	Prodigal:v2.6	CDS	1128	1310	.	-	0	ID=NPFKAFAJ_00090;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00090;product=hypothetical protein
+NODE_32_length_1745_cov_1.258580	Prodigal:v2.6	CDS	1297	1692	.	-	0	ID=NPFKAFAJ_00091;eC_number=2.6.1.76;Name=dat;db_xref=COG:COG0160;gene=dat;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P56744;locus_tag=NPFKAFAJ_00091;product=Diaminobutyrate--2-oxoglutarate aminotransferase
+NODE_34_length_1664_cov_2.058421	Prodigal:v2.6	CDS	18	737	.	+	0	ID=NPFKAFAJ_00092;eC_number=1.14.13.240;Name=ubiI;db_xref=COG:COG0654;gene=ubiI;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P25535;locus_tag=NPFKAFAJ_00092;product=2-octaprenylphenol hydroxylase
+NODE_34_length_1664_cov_2.058421	Prodigal:v2.6	CDS	780	1073	.	+	0	ID=NPFKAFAJ_00093;eC_number=1.14.99.60;Name=ubiF;db_xref=COG:COG0654;gene=ubiF;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75728;locus_tag=NPFKAFAJ_00093;product=3-demethoxyubiquinol 3-hydroxylase
+NODE_34_length_1664_cov_2.058421	Prodigal:v2.6	CDS	1250	1501	.	+	0	ID=NPFKAFAJ_00094;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00094;product=hypothetical protein
+NODE_35_length_1664_cov_1.919826	Prodigal:v2.6	CDS	349	672	.	-	0	ID=NPFKAFAJ_00095;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00095;product=hypothetical protein
+NODE_35_length_1664_cov_1.919826	Prodigal:v2.6	CDS	678	1211	.	-	0	ID=NPFKAFAJ_00096;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00096;product=hypothetical protein
+NODE_35_length_1664_cov_1.919826	Prodigal:v2.6	CDS	1267	1416	.	-	0	ID=NPFKAFAJ_00097;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00097;product=hypothetical protein
+NODE_35_length_1664_cov_1.919826	Prodigal:v2.6	CDS	1432	1662	.	-	0	ID=NPFKAFAJ_00098;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00098;product=hypothetical protein
+NODE_36_length_1618_cov_1.969930	Prodigal:v2.6	CDS	83	589	.	+	0	ID=NPFKAFAJ_00099;eC_number=3.7.1.22;Name=iolD_1;gene=iolD_1;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01669;locus_tag=NPFKAFAJ_00099;product=3D-(3%2C5/4)-trihydroxycyclohexane-1%2C2-dione hydrolase
+NODE_36_length_1618_cov_1.969930	Prodigal:v2.6	CDS	634	1452	.	+	0	ID=NPFKAFAJ_00100;eC_number=3.7.1.22;Name=iolD_2;db_xref=COG:COG3962;gene=iolD_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P42415;locus_tag=NPFKAFAJ_00100;product=3D-(3%2C5/4)-trihydroxycyclohexane-1%2C2-dione hydrolase
+NODE_37_length_1613_cov_1.548780	Prodigal:v2.6	CDS	261	812	.	-	0	ID=NPFKAFAJ_00101;eC_number=2.3.1.187;Name=madA;gene=madA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O06924;locus_tag=NPFKAFAJ_00101;product=Acetyl-S-ACP:malonate ACP transferase
+NODE_37_length_1613_cov_1.548780	Prodigal:v2.6	CDS	922	1587	.	-	0	ID=NPFKAFAJ_00102;Name=gcvA;db_xref=COG:COG0583;gene=gcvA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A9F6;locus_tag=NPFKAFAJ_00102;product=Glycine cleavage system transcriptional activator
+NODE_39_length_1605_cov_1.699355	Prodigal:v2.6	CDS	16	1152	.	+	0	ID=NPFKAFAJ_00103;eC_number=2.7.6.5;Name=relA;db_xref=COG:COG0317;gene=relA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AG20;locus_tag=NPFKAFAJ_00103;product=GTP pyrophosphokinase
+NODE_39_length_1605_cov_1.699355	Prodigal:v2.6	CDS	1026	1592	.	-	0	ID=NPFKAFAJ_00104;eC_number=1.1.1.226;Name=chcB1;gene=chcB1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0DXE0;locus_tag=NPFKAFAJ_00104;product=Trans-4-hydroxycyclohexanecarboxylate dehydrogenase
+NODE_40_length_1601_cov_1.441785	Prodigal:v2.6	CDS	136	828	.	-	0	ID=NPFKAFAJ_00105;eC_number=4.2.99.18;Name=nth_2;db_xref=COG:COG0177;gene=nth_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AB83;locus_tag=NPFKAFAJ_00105;product=Endonuclease III
+NODE_40_length_1601_cov_1.441785	Prodigal:v2.6	CDS	1410	1580	.	+	0	ID=NPFKAFAJ_00106;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00106;product=hypothetical protein
+NODE_41_length_1600_cov_1.105502	Prodigal:v2.6	CDS	282	872	.	-	0	ID=NPFKAFAJ_00107;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00107;product=hypothetical protein
+NODE_43_length_1588_cov_1.558382	Prodigal:v2.6	CDS	298	561	.	+	0	ID=NPFKAFAJ_00108;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00108;product=hypothetical protein
+NODE_44_length_1579_cov_1.236877	Prodigal:v2.6	CDS	3	305	.	+	0	ID=NPFKAFAJ_00109;eC_number=3.4.16.4;Name=ftsI;gene=ftsI;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_02080;locus_tag=NPFKAFAJ_00109;product=Peptidoglycan D%2CD-transpeptidase FtsI
+NODE_45_length_1572_cov_1.470007	Prodigal:v2.6	CDS	336	962	.	-	0	ID=NPFKAFAJ_00110;Name=ssuA;db_xref=COG:COG0715;gene=ssuA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75853;locus_tag=NPFKAFAJ_00110;product=Putative aliphatic sulfonates-binding protein
+NODE_45_length_1572_cov_1.470007	Prodigal:v2.6	CDS	1311	1442	.	-	0	ID=NPFKAFAJ_00111;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00111;product=hypothetical protein
+NODE_48_length_1554_cov_1.361574	Prodigal:v2.6	CDS	242	1528	.	-	0	ID=NPFKAFAJ_00112;eC_number=2.3.1.12;Name=aceF;gene=aceF;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q59638;locus_tag=NPFKAFAJ_00112;product=Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex
+NODE_49_length_1551_cov_1.905749	Prodigal:v2.6	CDS	28	216	.	+	0	ID=NPFKAFAJ_00113;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00113;product=hypothetical protein
+NODE_49_length_1551_cov_1.905749	Prodigal:v2.6	CDS	257	415	.	+	0	ID=NPFKAFAJ_00114;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00114;product=hypothetical protein
+NODE_49_length_1551_cov_1.905749	Prodigal:v2.6	CDS	415	1305	.	+	0	ID=NPFKAFAJ_00115;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00115;product=hypothetical protein
+NODE_51_length_1538_cov_1.756575	Prodigal:v2.6	CDS	173	967	.	-	0	ID=NPFKAFAJ_00116;Name=cycA;db_xref=COG:COG1113;gene=cycA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AAE0;locus_tag=NPFKAFAJ_00116;product=D-serine/D-alanine/glycine transporter
+NODE_53_length_1523_cov_1.301090	Prodigal:v2.6	CDS	927	1076	.	-	0	ID=NPFKAFAJ_00117;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00117;product=hypothetical protein
+NODE_53_length_1523_cov_1.301090	Prodigal:v2.6	CDS	1030	1521	.	-	0	ID=NPFKAFAJ_00118;eC_number=4.2.1.82;Name=xylD;db_xref=COG:COG0129;gene=xylD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9A9Z2;locus_tag=NPFKAFAJ_00118;product=D-xylonate dehydratase
+NODE_61_length_1385_cov_1.444361	Prodigal:v2.6	CDS	33	275	.	+	0	ID=NPFKAFAJ_00119;eC_number=4.2.1.12;Name=edd_1;db_xref=COG:COG0129;gene=edd_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0ADF6;locus_tag=NPFKAFAJ_00119;product=Phosphogluconate dehydratase
+NODE_61_length_1385_cov_1.444361	Prodigal:v2.6	CDS	272	1009	.	+	0	ID=NPFKAFAJ_00120;eC_number=4.2.1.12;Name=edd_2;db_xref=COG:COG0129;gene=edd_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P21909;locus_tag=NPFKAFAJ_00120;product=Phosphogluconate dehydratase
+NODE_62_length_1379_cov_1.357251	Prodigal:v2.6	CDS	11	271	.	+	0	ID=NPFKAFAJ_00121;Name=pilJ;gene=pilJ;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P42257;locus_tag=NPFKAFAJ_00121;product=Protein PilJ
+NODE_62_length_1379_cov_1.357251	Prodigal:v2.6	CDS	418	891	.	+	0	ID=NPFKAFAJ_00122;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00122;product=hypothetical protein
+NODE_62_length_1379_cov_1.357251	Prodigal:v2.6	CDS	1162	1371	.	-	0	ID=NPFKAFAJ_00123;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00123;product=hypothetical protein
+NODE_65_length_1373_cov_1.920334	Prodigal:v2.6	CDS	58	423	.	-	0	ID=NPFKAFAJ_00124;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00124;product=hypothetical protein
+NODE_65_length_1373_cov_1.920334	Prodigal:v2.6	CDS	378	1073	.	-	0	ID=NPFKAFAJ_00125;eC_number=4.2.99.20;Name=menH;gene=menH;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01660;locus_tag=NPFKAFAJ_00125;product=2-succinyl-6-hydroxy-2%2C4-cyclohexadiene-1-carboxylate synthase
+NODE_65_length_1373_cov_1.920334	Prodigal:v2.6	CDS	1073	1360	.	-	0	ID=NPFKAFAJ_00126;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00126;product=hypothetical protein
+NODE_66_length_1369_cov_1.635464	Prodigal:v2.6	CDS	135	416	.	+	0	ID=NPFKAFAJ_00127;Name=kgtP;db_xref=COG:COG0477;gene=kgtP;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AEX3;locus_tag=NPFKAFAJ_00127;product=Alpha-ketoglutarate permease
+NODE_68_length_1367_cov_1.339939	Prodigal:v2.6	CDS	891	1328	.	-	0	ID=NPFKAFAJ_00128;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00128;product=hypothetical protein
+NODE_70_length_1360_cov_1.229119	Prodigal:v2.6	CDS	783	968	.	+	0	ID=NPFKAFAJ_00129;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00129;product=hypothetical protein
+NODE_70_length_1360_cov_1.229119	Prodigal:v2.6	CDS	971	1294	.	-	0	ID=NPFKAFAJ_00130;eC_number=1.4.1.3;Name=gdhA;db_xref=COG:COG0334;gene=gdhA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P96110;locus_tag=NPFKAFAJ_00130;product=Glutamate dehydrogenase
+NODE_71_length_1359_cov_1.340491	Prodigal:v2.6	CDS	25	228	.	+	0	ID=NPFKAFAJ_00131;eC_number=2.7.7.66;Name=mdcG;gene=mdcG;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00650;locus_tag=NPFKAFAJ_00131;product=Phosphoribosyl-dephospho-CoA transferase
+NODE_71_length_1359_cov_1.340491	Prodigal:v2.6	CDS	241	924	.	+	0	ID=NPFKAFAJ_00132;eC_number=2.3.1.39;Name=fabD;gene=fabD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q99UN8;locus_tag=NPFKAFAJ_00132;product=Malonyl CoA-acyl carrier protein transacylase
+NODE_71_length_1359_cov_1.340491	Prodigal:v2.6	CDS	933	1352	.	-	0	ID=NPFKAFAJ_00133;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00133;product=hypothetical protein
+NODE_73_length_1347_cov_1.576625	Prodigal:v2.6	CDS	645	1040	.	+	0	ID=NPFKAFAJ_00134;Name=hxlR;db_xref=COG:COG1733;gene=hxlR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P42406;locus_tag=NPFKAFAJ_00134;product=HTH-type transcriptional activator HxlR
+NODE_73_length_1347_cov_1.576625	Prodigal:v2.6	CDS	1037	1282	.	-	0	ID=NPFKAFAJ_00135;Name=gbdR;gene=gbdR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0A0H2ZIC3;locus_tag=NPFKAFAJ_00135;product=HTH-type transcriptional regulator GbdR
+NODE_76_length_1332_cov_1.512138	Prodigal:v2.6	CDS	145	525	.	+	0	ID=NPFKAFAJ_00136;Name=emrA;gene=emrA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0DPR6;locus_tag=NPFKAFAJ_00136;product=Colistin resistance protein EmrA
+NODE_78_length_1328_cov_1.296936	Prodigal:v2.6	CDS	8	1105	.	+	0	ID=NPFKAFAJ_00137;eC_number=1.2.1.71;Name=astD;db_xref=COG:COG1012;gene=astD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P76217;locus_tag=NPFKAFAJ_00137;product=N-succinylglutamate 5-semialdehyde dehydrogenase
+NODE_80_length_1314_cov_1.305004	Prodigal:v2.6	CDS	2	1087	.	+	0	ID=NPFKAFAJ_00138;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00138;product=hypothetical protein
+NODE_82_length_1311_cov_1.500796	Prodigal:v2.6	CDS	181	315	.	-	0	ID=NPFKAFAJ_00139;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00139;product=hypothetical protein
+NODE_82_length_1311_cov_1.500796	Prodigal:v2.6	CDS	376	627	.	-	0	ID=NPFKAFAJ_00140;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00140;product=hypothetical protein
+NODE_82_length_1311_cov_1.500796	Prodigal:v2.6	CDS	624	959	.	-	0	ID=NPFKAFAJ_00141;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00141;product=hypothetical protein
+NODE_82_length_1311_cov_1.500796	Prodigal:v2.6	CDS	934	1278	.	-	0	ID=NPFKAFAJ_00142;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00142;product=hypothetical protein
+NODE_83_length_1301_cov_1.332263	Prodigal:v2.6	CDS	559	681	.	-	0	ID=NPFKAFAJ_00143;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00143;product=hypothetical protein
+NODE_83_length_1301_cov_1.332263	Prodigal:v2.6	CDS	727	993	.	-	0	ID=NPFKAFAJ_00144;eC_number=1.14.13.244;Name=dmpM;gene=dmpM;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P19731;locus_tag=NPFKAFAJ_00144;product=Phenol 2-monooxygenase%2C stimulatory component DmpM
+NODE_83_length_1301_cov_1.332263	Prodigal:v2.6	CDS	1005	1262	.	-	0	ID=NPFKAFAJ_00145;eC_number=1.14.13.244;Name=mphL;gene=mphL;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q7WTJ6;locus_tag=NPFKAFAJ_00145;product=Phenol 2-monooxygenase%2C oxygenase component MhpL
+NODE_85_length_1292_cov_1.447858	Prodigal:v2.6	CDS	40	1068	.	+	0	ID=NPFKAFAJ_00146;eC_number=2.7.7.56;Name=rph;gene=rph;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00564;locus_tag=NPFKAFAJ_00146;product=Ribonuclease PH
+NODE_90_length_1249_cov_1.662479	Prodigal:v2.6	CDS	129	521	.	+	0	ID=NPFKAFAJ_00147;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00147;product=hypothetical protein
+NODE_90_length_1249_cov_1.662479	Prodigal:v2.6	CDS	830	1012	.	+	0	ID=NPFKAFAJ_00148;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00148;product=hypothetical protein
+NODE_90_length_1249_cov_1.662479	Prodigal:v2.6	CDS	1009	1215	.	+	0	ID=NPFKAFAJ_00149;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00149;product=hypothetical protein
+NODE_94_length_1239_cov_1.087838	Prodigal:v2.6	CDS	812	1228	.	-	0	ID=NPFKAFAJ_00150;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00150;product=hypothetical protein
+NODE_97_length_1222_cov_1.441302	Prodigal:v2.6	CDS	30	713	.	+	0	ID=NPFKAFAJ_00151;Name=glnE;db_xref=COG:COG1391;gene=glnE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P30870;locus_tag=NPFKAFAJ_00151;product=Bifunctional glutamine synthetase adenylyltransferase/adenylyl-removing enzyme
+NODE_100_length_1211_cov_1.506055	Prodigal:v2.6	CDS	944	1066	.	+	0	ID=NPFKAFAJ_00152;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00152;product=hypothetical protein
+NODE_103_length_1204_cov_1.066144	Prodigal:v2.6	CDS	45	347	.	-	0	ID=NPFKAFAJ_00153;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00153;product=hypothetical protein
+NODE_104_length_1199_cov_1.283217	Prodigal:v2.6	CDS	329	898	.	-	0	ID=NPFKAFAJ_00154;Name=rpsD;gene=rpsD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B7IA15;locus_tag=NPFKAFAJ_00154;product=Small ribosomal subunit protein uS4
+NODE_104_length_1199_cov_1.283217	Prodigal:v2.6	CDS	911	1177	.	-	0	ID=NPFKAFAJ_00155;Name=rpsK;gene=rpsK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B7IA16;locus_tag=NPFKAFAJ_00155;product=Small ribosomal subunit protein uS11
+NODE_105_length_1197_cov_1.492995	Prodigal:v2.6	CDS	233	427	.	+	0	ID=NPFKAFAJ_00156;Name=yacG;gene=yacG;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00649;locus_tag=NPFKAFAJ_00156;product=DNA gyrase inhibitor YacG
+NODE_105_length_1197_cov_1.492995	Prodigal:v2.6	CDS	424	720	.	-	0	ID=NPFKAFAJ_00157;eC_number=3.1.2.6;Name=gloC_1;db_xref=COG:COG0491;gene=gloC_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75849;locus_tag=NPFKAFAJ_00157;product=Hydroxyacylglutathione hydrolase GloC
+NODE_105_length_1197_cov_1.492995	Prodigal:v2.6	CDS	722	1078	.	-	0	ID=NPFKAFAJ_00158;eC_number=3.1.2.6;Name=gloC_2;db_xref=COG:COG0491;gene=gloC_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75849;locus_tag=NPFKAFAJ_00158;product=Hydroxyacylglutathione hydrolase GloC
+NODE_107_length_1189_cov_1.405644	Prodigal:v2.6	CDS	189	1130	.	-	0	ID=NPFKAFAJ_00159;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00159;product=hypothetical protein
+NODE_109_length_1184_cov_1.615589	Prodigal:v2.6	CDS	17	457	.	-	0	ID=NPFKAFAJ_00160;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00160;product=hypothetical protein
+NODE_109_length_1184_cov_1.615589	Prodigal:v2.6	CDS	747	1079	.	+	0	ID=NPFKAFAJ_00161;eC_number=4.2.1.25;Name=araC;gene=araC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q1JUQ1;locus_tag=NPFKAFAJ_00161;product=L-arabonate dehydratase
+NODE_110_length_1169_cov_1.486535	Prodigal:v2.6	CDS	32	763	.	+	0	ID=NPFKAFAJ_00162;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00162;product=hypothetical protein
+NODE_110_length_1169_cov_1.486535	Prodigal:v2.6	CDS	776	874	.	+	0	ID=NPFKAFAJ_00163;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00163;product=hypothetical protein
+NODE_112_length_1160_cov_1.177376	Prodigal:v2.6	CDS	62	424	.	+	0	ID=NPFKAFAJ_00164;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00164;product=hypothetical protein
+NODE_112_length_1160_cov_1.177376	Prodigal:v2.6	CDS	451	855	.	-	0	ID=NPFKAFAJ_00165;eC_number=1.20.4.1;Name=arsC;db_xref=COG:COG1393;gene=arsC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P08692;locus_tag=NPFKAFAJ_00165;product=Arsenate reductase
+NODE_113_length_1159_cov_1.734601	Prodigal:v2.6	CDS	126	599	.	-	0	ID=NPFKAFAJ_00166;eC_number=1.4.99.-;Name=dadA_1;gene=dadA_1;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01202;locus_tag=NPFKAFAJ_00166;product=D-amino acid dehydrogenase
+NODE_113_length_1159_cov_1.734601	Prodigal:v2.6	CDS	569	1045	.	-	0	ID=NPFKAFAJ_00167;eC_number=1.4.99.-;Name=dadA_2;gene=dadA_2;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01202;locus_tag=NPFKAFAJ_00167;product=D-amino acid dehydrogenase
+NODE_113_length_1159_cov_1.734601	Prodigal:v2.6	CDS	1042	1137	.	-	0	ID=NPFKAFAJ_00168;eC_number=5.1.1.8;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B0VB44;locus_tag=NPFKAFAJ_00168;product=4-hydroxyproline 2-epimerase
+NODE_115_length_1148_cov_1.177493	Prodigal:v2.6	CDS	12	173	.	+	0	ID=NPFKAFAJ_00169;eC_number=1.18.1.2;Name=fpr;gene=fpr;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9HYK7;locus_tag=NPFKAFAJ_00169;product=Ferredoxin--NADP reductase
+NODE_115_length_1148_cov_1.177493	Prodigal:v2.6	CDS	519	632	.	+	0	ID=NPFKAFAJ_00170;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00170;product=hypothetical protein
+NODE_116_length_1144_cov_1.623508	Prodigal:v2.6	CDS	901	1137	.	-	0	ID=NPFKAFAJ_00171;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00171;product=hypothetical protein
+NODE_119_length_1141_cov_0.952118	Prodigal:v2.6	CDS	600	806	.	+	0	ID=NPFKAFAJ_00172;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00172;product=hypothetical protein
+NODE_120_length_1139_cov_1.168819	Prodigal:v2.6	CDS	43	585	.	+	0	ID=NPFKAFAJ_00173;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00173;product=hypothetical protein
+NODE_122_length_1132_cov_1.247911	Prodigal:v2.6	CDS	813	1061	.	-	0	ID=NPFKAFAJ_00174;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00174;product=hypothetical protein
+NODE_124_length_1131_cov_1.652416	Prodigal:v2.6	CDS	599	793	.	+	0	ID=NPFKAFAJ_00175;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00175;product=hypothetical protein
+NODE_124_length_1131_cov_1.652416	Prodigal:v2.6	CDS	790	1101	.	-	0	ID=NPFKAFAJ_00176;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00176;product=hypothetical protein
+NODE_125_length_1131_cov_1.319703	Prodigal:v2.6	CDS	65	364	.	+	0	ID=NPFKAFAJ_00177;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00177;product=hypothetical protein
+NODE_125_length_1131_cov_1.319703	Prodigal:v2.6	CDS	482	757	.	-	0	ID=NPFKAFAJ_00178;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00178;product=hypothetical protein
+NODE_125_length_1131_cov_1.319703	Prodigal:v2.6	CDS	840	971	.	-	0	ID=NPFKAFAJ_00179;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00179;product=hypothetical protein
+NODE_126_length_1129_cov_2.267225	Prodigal:v2.6	CDS	809	1117	.	-	0	ID=NPFKAFAJ_00180;eC_number=3.4.21.-;Name=umuD;db_xref=COG:COG1974;gene=umuD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AG11;locus_tag=NPFKAFAJ_00180;product=Protein UmuD
+NODE_127_length_1128_cov_1.322460	Prodigal:v2.6	CDS	115	468	.	+	0	ID=NPFKAFAJ_00181;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00181;product=hypothetical protein
+NODE_127_length_1128_cov_1.322460	Prodigal:v2.6	CDS	500	793	.	+	0	ID=NPFKAFAJ_00182;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00182;product=hypothetical protein
+NODE_129_length_1127_cov_1.211754	Prodigal:v2.6	CDS	35	214	.	+	0	ID=NPFKAFAJ_00183;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00183;product=hypothetical protein
+NODE_130_length_1122_cov_1.396439	Prodigal:v2.6	CDS	29	745	.	+	0	ID=NPFKAFAJ_00184;Name=murJ;db_xref=COG:COG0728;gene=murJ;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AF16;locus_tag=NPFKAFAJ_00184;product=Lipid II flippase MurJ
+NODE_130_length_1122_cov_1.396439	Prodigal:v2.6	CDS	791	958	.	-	0	ID=NPFKAFAJ_00185;eC_number=5.2.1.8;Name=fkpA;gene=fkpA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9JYI8;locus_tag=NPFKAFAJ_00185;product=putative FKBP-type peptidyl-prolyl cis-trans isomerase FkpA
+NODE_131_length_1121_cov_1.240150	Prodigal:v2.6	CDS	5	811	.	-	0	ID=NPFKAFAJ_00186;eC_number=2.1.1.33;Name=trmB;db_xref=COG:COG0220;gene=trmB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A8I5;locus_tag=NPFKAFAJ_00186;product=tRNA (guanine-N(7)-)-methyltransferase
+NODE_133_length_1118_cov_1.335842	Prodigal:v2.6	CDS	96	890	.	+	0	ID=NPFKAFAJ_00187;Name=ribF;db_xref=COG:COG0196;gene=ribF;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AG40;locus_tag=NPFKAFAJ_00187;product=Bifunctional riboflavin kinase/FMN adenylyltransferase
+NODE_135_length_1114_cov_1.784703	Prodigal:v2.6	CDS	97	861	.	+	0	ID=NPFKAFAJ_00188;Name=ftsA;db_xref=COG:COG0849;gene=ftsA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0ABH0;locus_tag=NPFKAFAJ_00188;product=Cell division protein FtsA
+NODE_138_length_1109_cov_1.338710	Prodigal:v2.6	CDS	113	805	.	+	0	ID=NPFKAFAJ_00189;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00189;product=hypothetical protein
+NODE_139_length_1094_cov_1.274302	Prodigal:v2.6	CDS	251	433	.	-	0	ID=NPFKAFAJ_00190;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00190;product=hypothetical protein
+NODE_139_length_1094_cov_1.274302	Prodigal:v2.6	CDS	696	1046	.	-	0	ID=NPFKAFAJ_00191;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00191;product=hypothetical protein
+NODE_140_length_1092_cov_1.367406	Prodigal:v2.6	CDS	105	524	.	+	0	ID=NPFKAFAJ_00192;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00192;product=hypothetical protein
+NODE_140_length_1092_cov_1.367406	Prodigal:v2.6	CDS	594	968	.	-	0	ID=NPFKAFAJ_00193;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00193;product=hypothetical protein
+NODE_143_length_1084_cov_2.005831	Prodigal:v2.6	CDS	50	505	.	+	0	ID=NPFKAFAJ_00194;eC_number=4.2.1.3;Name=acnB;db_xref=COG:COG1049;gene=acnB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P36683;locus_tag=NPFKAFAJ_00194;product=Aconitate hydratase B
+NODE_144_length_1080_cov_1.265366	Prodigal:v2.6	CDS	92	613	.	+	0	ID=NPFKAFAJ_00195;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00195;product=hypothetical protein
+NODE_144_length_1080_cov_1.265366	Prodigal:v2.6	CDS	625	942	.	-	0	ID=NPFKAFAJ_00196;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00196;product=hypothetical protein
+NODE_146_length_1077_cov_1.221135	Prodigal:v2.6	CDS	806	1054	.	-	0	ID=NPFKAFAJ_00197;eC_number=4.2.1.24;Name=hemB;gene=hemB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q59643;locus_tag=NPFKAFAJ_00197;product=Delta-aminolevulinic acid dehydratase
+NODE_147_length_1072_cov_1.084562	Prodigal:v2.6	CDS	197	769	.	+	0	ID=NPFKAFAJ_00198;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00198;product=hypothetical protein
+NODE_152_length_1067_cov_1.196640	Prodigal:v2.6	CDS	694	1002	.	+	0	ID=NPFKAFAJ_00199;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00199;product=hypothetical protein
+NODE_155_length_1063_cov_1.099206	Prodigal:v2.6	CDS	586	891	.	+	0	ID=NPFKAFAJ_00200;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00200;product=hypothetical protein
+NODE_160_length_1055_cov_1.536000	Prodigal:v2.6	CDS	77	199	.	+	0	ID=NPFKAFAJ_00201;Name=abaQ;gene=abaQ;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0DPR4;locus_tag=NPFKAFAJ_00201;product=Quinolone resistance transporter
+NODE_160_length_1055_cov_1.536000	Prodigal:v2.6	CDS	210	602	.	+	0	ID=NPFKAFAJ_00202;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00202;product=hypothetical protein
+NODE_167_length_1045_cov_1.379798	Prodigal:v2.6	CDS	274	1044	.	-	0	ID=NPFKAFAJ_00203;eC_number=3.6.1.-;Name=uup;db_xref=COG:COG0488;gene=uup;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P43672;locus_tag=NPFKAFAJ_00203;product=ATP-binding protein Uup
+NODE_177_length_1032_cov_1.866940	Prodigal:v2.6	CDS	172	459	.	+	0	ID=NPFKAFAJ_00204;Name=rpsG;gene=rpsG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B7I7S0;locus_tag=NPFKAFAJ_00204;product=Small ribosomal subunit protein uS7
+NODE_179_length_1030_cov_1.714872	Prodigal:v2.6	CDS	73	495	.	+	0	ID=NPFKAFAJ_00205;Name=mdtC;gene=mdtC;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01424;locus_tag=NPFKAFAJ_00205;product=Multidrug resistance protein MdtC
+NODE_183_length_1024_cov_1.356037	Prodigal:v2.6	CDS	148	708	.	-	0	ID=NPFKAFAJ_00206;eC_number=1.2.1.88;Name=rocA;gene=rocA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00733;locus_tag=NPFKAFAJ_00206;product=1-pyrroline-5-carboxylate dehydrogenase
+NODE_183_length_1024_cov_1.356037	Prodigal:v2.6	CDS	678	1007	.	-	0	ID=NPFKAFAJ_00207;Name=putA;gene=putA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P10503;locus_tag=NPFKAFAJ_00207;product=Bifunctional protein PutA
+NODE_192_length_1001_cov_1.319239	Prodigal:v2.6	CDS	457	786	.	+	0	ID=NPFKAFAJ_00208;inference=ab initio prediction:Prodigal:v2.6;locus_tag=NPFKAFAJ_00208;product=hypothetical protein
