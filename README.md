@@ -22,10 +22,10 @@ Two kinds of test data are provided:
 
 ### GLM real-data fixture (`glm/`)
 
-- `glm/coverage.txt`, `glm/mut.txt`, `glm/score.txt` - `BULLSEYE_GATHER_SITES` output matrices (per-site coverage / mutation count / score), restricted to `chr19` (3,143 sites). Derived from a single real DART-seq A04-vs-A03 contrast, reprocessed through the current pipeline's `BULLSEYE_QUANTIFY_SITES` + `BULLSEYE_ACFILTER` + `BULLSEYE_GATHER_SITES` modules to guarantee the file format matches what the pipeline currently produces.
-- `glm/observations.tsv` - Matching `BULLSEYE_R_GLM` design/colData file (`sample`, `group` columns).
+- `glm/coverage.txt`, `glm/mut.txt`, `glm/score.txt` - Per-site coverage / mutation count / score matrices, restricted to `chr19` (372 sites), for 6 real METTL3 DART-seq samples: 3 `wt` (`B04`, `D03`, `F02`) vs 3 `kd` (`B05`, `D02`, `F01`). Sites are the union of each `kd` sample's RAC-filtered edit sites (`BULLSEYE_RACFILTER` output); every sample, `wt` included, is then quantified at that union with `quantify_sites.pl` (`EditedMinCoverage 10`, matching the pipeline's `--bullseye_quant_coverage` default) and outer-joined into these matrices the same way `BULLSEYE_GATHER_SITES` does (a sample missing a site gets coverage/mutation `0`, score `NA`).
+- `glm/observations.tsv` - Matching `BULLSEYE_R_GLM` design/colData file (`sample`, `group` columns: `wt`/`kd`).
 
-  Only one real sample/contrast is available in this fixture, so the beta-binomial GLM design has no residual degrees of freedom - `glm_comp_bbn()` in Bullseye's `functions.R` returns all-`NA` p-values by design whenever a comparison factor has fewer than 2 levels, rather than erroring. This fixture exercises `BULLSEYE_R_GLM`'s file-format handling and R execution path with real biological data; it is not a statistically meaningful GLM comparison (that would require multiple real contrasts, which this dataset does not have).
+  With 3 samples per group, the beta-binomial GLM design has residual degrees of freedom, so `BULLSEYE_R_GLM` returns real `wt_pvalue`/`wt_log2FoldChange` values here (not the all-`NA` output you'd get from a single-sample-per-group design) - this fixture exercises both `BULLSEYE_R_GLM`'s file-format handling and a statistically meaningful GLM comparison.
 
 **Data provenance and permission:** the `glm/` files derive from RNA-seq data generated for a METTL3 DART-seq study; redistributed here in subsetted, aggregated form (per-site coverage/mutation counts only - no raw reads or alignments) with permission from the data owner.
 
