@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,rundir,tags,platform
+hg001_unmatched_rundir,https://github.com/nf-core/test-datasets/raw/seqinspector/data/fastq/20230505_1857_1B_PAO99309_94e07fab/fastq_pass/PAO99309_pass__94e07fab_c3641428_1.fastq.gz,,https://github.com/nf-core/test-datasets/raw/seqinspector/data/rundir/20261009_1457_1A_PBO51508_cb5816a7.tar.gz,,ont
