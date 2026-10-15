@@ -16,6 +16,11 @@ Test data to be used for automated testing with the nf-core pipelines
 
 # Test data for SeqInspector
 
+## Samplesheets
+
+- `samplesheet/1.0/`: samplesheets for seqinspector <= 1.1, with columns `sample,fastq_1,fastq_2,rundir,tags`.
+- `samplesheet/1.1/`: the same samplesheets with an added `platform` column (`illumina` or `ont`), set for every row with a `rundir`. `samplesheet/1.1/full_test.csv` is the same for `full_tests/SampleSheet.csv`.
+
 This folder contains demultiplexed data generated from the test data for the [demultiplex pipeline](https://github.com/nf-core/test-datasets/tree/demultiplex). Both MiSeq and NovaSeq6000 datasets were demultiplexed using bcl2fastq, and randomly subsampled with `seqtk sample -s100`. 
 
 Miseq_PairedEnd was demultiplexed with bclconvert using the [demultiplex pipeline](https://github.com/nf-core/test-datasets/tree/demultiplex) and randomly subsampled with `seqtk sample -s100`.
@@ -46,3 +51,5 @@ Passed and failed `fastq` files were derived from
 Both files were basecalled via `Dorado` (hac), coverted to `fastq` via `samtools` and randomly subsampled with `seqtk sample -s100` to 50 passed and 10 failed reads.
 
 Oxford Nanopore Technologies Benchmark Datasets was accessed on 2024-03-21 from https://registry.opendata.aws/ont-open-data.
+
+The rundir also contains the MinKNOW run report `report_PAO99309_20230505_1903_94e07fab.json` and `final_summary_PAO99309_94e07fab_c3641428.txt`, copied unmodified from the same S3 folder (accessed on 2026-10-15). These are used to test parsing of ONT run metadata.
