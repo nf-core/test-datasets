@@ -1,0 +1,2 @@
+assembler,hic_F,hic_R,hic_trim,hifiasm_args,hifiasm_hic_phasing,hifireads,sample,strategy
+hifiasm,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/SRR22354810_1.sampled.fq.gz,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/SRR22354810_2.sampled.fq.gz,true,-1 paternal.yak,true,https://raw.githubusercontent.com/nf-core/test-datasets/genomeassembler/A_thaliana_Col-0_2mb/HiFi-Col-0_test_data.fastq.gz,sample,single
