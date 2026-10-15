@@ -1,0 +1,822 @@
+##gff-version 3
+##sequence-region k141_3 1 3991
+##sequence-region k141_208 1 3219
+##sequence-region k141_5 1 2926
+##sequence-region k141_9 1 21034
+##sequence-region k141_145 1 8161
+##sequence-region k141_68 1 45151
+##sequence-region k141_210 1 47374
+##sequence-region k141_211 1 11496
+##sequence-region k141_73 1 4298
+##sequence-region k141_212 1 7998
+##sequence-region k141_74 1 9161
+##sequence-region k141_147 1 24062
+##sequence-region k141_17 1 1107
+##sequence-region k141_148 1 13502
+##sequence-region k141_79 1 17838
+##sequence-region k141_18 1 21144
+##sequence-region k141_82 1 1716
+##sequence-region k141_150 1 21607
+##sequence-region k141_221 1 12709
+##sequence-region k141_21 1 9735
+##sequence-region k141_162 1 3696
+##sequence-region k141_28 1 3215
+##sequence-region k141_90 1 26086
+##sequence-region k141_34 1 5298
+##sequence-region k141_168 1 3970
+##sequence-region k141_35 1 11487
+##sequence-region k141_171 1 13248
+##sequence-region k141_42 1 1065
+##sequence-region k141_44 1 11793
+##sequence-region k141_46 1 7400
+##sequence-region k141_113 1 14647
+##sequence-region k141_172 1 58006
+##sequence-region k141_234 1 126196
+##sequence-region k141_236 1 5995
+##sequence-region k141_173 1 8843
+##sequence-region k141_56 1 2037
+##sequence-region k141_57 1 3592
+##sequence-region k141_115 1 27155
+##sequence-region k141_238 1 7317
+##sequence-region k141_174 1 17289
+##sequence-region k141_178 1 2236
+##sequence-region k141_118 1 18822
+##sequence-region k141_242 1 9192
+##sequence-region k141_67 1 2639
+##sequence-region k141_126 1 3346
+##sequence-region k141_247 1 1666
+##sequence-region k141_127 1 9446
+##sequence-region k141_184 1 9931
+##sequence-region k141_248 1 18450
+##sequence-region k141_251 1 2992
+##sequence-region k141_252 1 11284
+##sequence-region k141_196 1 6634
+##sequence-region k141_255 1 23272
+##sequence-region k141_257 1 1885
+##sequence-region k141_258 1 6016
+##sequence-region k141_259 1 17821
+##sequence-region k141_128 1 94357
+##sequence-region k141_263 1 3322
+##sequence-region k141_264 1 10370
+##sequence-region k141_265 1 11283
+##sequence-region k141_268 1 1558
+k141_3	Prodigal:v2.6	CDS	136	1641	.	+	0	ID=PNCDIBDO_00001;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00001;product=hypothetical protein
+k141_3	Prodigal:v2.6	CDS	2106	2657	.	+	0	ID=PNCDIBDO_00002;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77368;locus_tag=PNCDIBDO_00002;note=UPF0098 protein YbcL;product=hypothetical protein
+k141_3	Prodigal:v2.6	CDS	2667	3464	.	+	0	ID=PNCDIBDO_00003;Name=rhaS;gene=rhaS;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01534;locus_tag=PNCDIBDO_00003;product=HTH-type transcriptional activator RhaS
+k141_208	Prodigal:v2.6	CDS	301	762	.	-	0	ID=PNCDIBDO_00004;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00004;product=hypothetical protein
+k141_208	Prodigal:v2.6	CDS	759	1256	.	-	0	ID=PNCDIBDO_00005;eC_number=3.2.1.17;Name=rrrD;db_xref=COG:COG3772;gene=rrrD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P78285;locus_tag=PNCDIBDO_00005;product=Lysozyme RrrD
+k141_208	Prodigal:v2.6	CDS	1983	3110	.	+	0	ID=PNCDIBDO_00006;Name=ompD;gene=ompD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:D0ZXQ1;locus_tag=PNCDIBDO_00006;product=Outer membrane porin protein OmpD
+k141_5	Prodigal:v2.6	CDS	235	468	.	-	0	ID=PNCDIBDO_00007;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00007;product=hypothetical protein
+k141_5	Prodigal:v2.6	CDS	545	1801	.	-	0	ID=PNCDIBDO_00008;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00008;product=hypothetical protein
+k141_5	Prodigal:v2.6	CDS	2386	2505	.	-	0	ID=PNCDIBDO_00009;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00009;product=hypothetical protein
+k141_5	Prodigal:v2.6	CDS	2502	2834	.	-	0	ID=PNCDIBDO_00010;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00010;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	81	659	.	+	0	ID=PNCDIBDO_00011;eC_number=2.7.1.5;Name=rhaB;gene=rhaB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q1R415;locus_tag=PNCDIBDO_00011;product=Rhamnulokinase
+k141_9	Prodigal:v2.6	CDS	671	2002	.	+	0	ID=PNCDIBDO_00012;Name=fucP;db_xref=COG:COG0738;gene=fucP;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P11551;locus_tag=PNCDIBDO_00012;product=L-fucose-proton symporter
+k141_9	Prodigal:v2.6	CDS	2016	3119	.	+	0	ID=PNCDIBDO_00013;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00013;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	3290	4441	.	+	0	ID=PNCDIBDO_00014;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00014;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	4441	5655	.	+	0	ID=PNCDIBDO_00015;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00015;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	5793	6260	.	+	0	ID=PNCDIBDO_00016;Name=rimP;gene=rimP;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01077;locus_tag=PNCDIBDO_00016;product=Ribosome maturation factor RimP
+k141_9	Prodigal:v2.6	CDS	6263	7525	.	+	0	ID=PNCDIBDO_00017;Name=nusA;db_xref=COG:COG0195;gene=nusA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P32727;locus_tag=PNCDIBDO_00017;product=Transcription termination/antitermination protein NusA
+k141_9	Prodigal:v2.6	CDS	7646	10693	.	+	0	ID=PNCDIBDO_00018;Name=lepA;gene=lepA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00071;locus_tag=PNCDIBDO_00018;product=Elongation factor 4
+k141_9	Prodigal:v2.6	CDS	10768	11271	.	+	0	ID=PNCDIBDO_00019;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00019;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	11277	12731	.	+	0	ID=PNCDIBDO_00020;Name=sufB;db_xref=COG:COG0719;gene=sufB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77522;locus_tag=PNCDIBDO_00020;product=Iron-sulfur cluster assembly protein SufB
+k141_9	Prodigal:v2.6	CDS	12731	13477	.	+	0	ID=PNCDIBDO_00021;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00021;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	13501	14253	.	+	0	ID=PNCDIBDO_00022;Name=sufC;db_xref=COG:COG0396;gene=sufC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77499;locus_tag=PNCDIBDO_00022;product=putative ATP-dependent transporter SufC
+k141_9	Prodigal:v2.6	CDS	14250	15605	.	+	0	ID=PNCDIBDO_00023;Name=sufD;db_xref=COG:COG0719;gene=sufD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77689;locus_tag=PNCDIBDO_00023;product=Iron-sulfur cluster assembly protein SufD
+k141_9	Prodigal:v2.6	CDS	15587	16828	.	+	0	ID=PNCDIBDO_00024;eC_number=2.8.1.7;Name=cyd;db_xref=COG:COG0520;gene=cyd;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8KUU5;locus_tag=PNCDIBDO_00024;product=Cysteine desulfurase
+k141_9	Prodigal:v2.6	CDS	17127	17447	.	+	0	ID=PNCDIBDO_00025;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A8C1;locus_tag=PNCDIBDO_00025;note=UPF0145 protein YbjQ;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	17522	19114	.	-	0	ID=PNCDIBDO_00026;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00026;product=hypothetical protein
+k141_9	Prodigal:v2.6	CDS	19206	20957	.	-	0	ID=PNCDIBDO_00027;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00027;product=hypothetical protein
+k141_145	Prodigal:v2.6	CDS	94	4083	.	+	0	ID=PNCDIBDO_00028;eC_number=2.7.13.3;Name=rcsC_1;gene=rcsC_1;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00979;locus_tag=PNCDIBDO_00028;product=Sensor histidine kinase RcsC
+k141_145	Prodigal:v2.6	CDS	4265	5341	.	-	0	ID=PNCDIBDO_00029;eC_number=3.2.1.55;db_xref=COG:COG3940;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q82P90;locus_tag=PNCDIBDO_00029;product=Extracellular exo-alpha-(1->5)-L-arabinofuranosidase
+k141_145	Prodigal:v2.6	CDS	5423	7921	.	-	0	ID=PNCDIBDO_00030;eC_number=3.2.1.52;Name=nagZ;gene=nagZ;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00364;locus_tag=PNCDIBDO_00030;product=Beta-hexosaminidase
+k141_68	Prodigal:v2.6	CDS	2827	3918	.	+	0	ID=PNCDIBDO_00031;eC_number=2.8.1.13;Name=mnmA;db_xref=COG:COG0482;gene=mnmA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P25745;locus_tag=PNCDIBDO_00031;product=tRNA-specific 2-thiouridylase MnmA
+k141_68	Prodigal:v2.6	CDS	3978	5489	.	-	0	ID=PNCDIBDO_00032;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00032;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	5659	6669	.	+	0	ID=PNCDIBDO_00033;eC_number=2.7.1.90;Name=pfp;gene=pfp;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q59126;locus_tag=PNCDIBDO_00033;product=Pyrophosphate--fructose 6-phosphate 1-phosphotransferase
+k141_68	Prodigal:v2.6	CDS	6688	7560	.	-	0	ID=PNCDIBDO_00034;eC_number=3.1.26.3;Name=rnc;gene=rnc;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00104;locus_tag=PNCDIBDO_00034;product=Ribonuclease 3
+k141_68	Prodigal:v2.6	CDS	7565	8827	.	-	0	ID=PNCDIBDO_00035;eC_number=2.3.1.179;Name=fabF;db_xref=COG:COG0304;gene=fabF;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O34340;locus_tag=PNCDIBDO_00035;product=3-oxoacyl-[acyl-carrier-protein] synthase 2
+k141_68	Prodigal:v2.6	CDS	8843	9079	.	-	0	ID=PNCDIBDO_00036;Name=acpP;gene=acpP;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P94123;locus_tag=PNCDIBDO_00036;product=Acyl carrier protein
+k141_68	Prodigal:v2.6	CDS	9229	9801	.	+	0	ID=PNCDIBDO_00037;eC_number=2.1.2.2;Name=purN;gene=purN;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P99162;locus_tag=PNCDIBDO_00037;product=Phosphoribosylglycinamide formyltransferase
+k141_68	Prodigal:v2.6	CDS	9839	10885	.	-	0	ID=PNCDIBDO_00038;eC_number=1.1.1.290;Name=pdxB;gene=pdxB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P60802;locus_tag=PNCDIBDO_00038;product=Erythronate-4-phosphate dehydrogenase
+k141_68	Prodigal:v2.6	CDS	10964	11734	.	+	0	ID=PNCDIBDO_00039;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00039;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	11739	12452	.	+	0	ID=PNCDIBDO_00040;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00040;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	12421	13356	.	-	0	ID=PNCDIBDO_00041;Name=gspA;db_xref=COG:COG1442;gene=gspA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P25148;locus_tag=PNCDIBDO_00041;product=General stress protein A
+k141_68	Prodigal:v2.6	CDS	13384	14406	.	-	0	ID=PNCDIBDO_00042;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00042;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	14409	15212	.	-	0	ID=PNCDIBDO_00043;Name=kfoC;gene=kfoC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8L0V4;locus_tag=PNCDIBDO_00043;product=Chondroitin synthase
+k141_68	Prodigal:v2.6	CDS	15333	16403	.	-	0	ID=PNCDIBDO_00044;eC_number=2.4.2.53;Name=arnC;gene=arnC;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01164;locus_tag=PNCDIBDO_00044;product=Undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose transferase
+k141_68	Prodigal:v2.6	CDS	16824	18659	.	+	0	ID=PNCDIBDO_00045;eC_number=7.5.2.6;Name=msbA;db_xref=COG:COG1132;gene=msbA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9KQW9;locus_tag=PNCDIBDO_00045;product=ATP-dependent lipid A-core flippase
+k141_68	Prodigal:v2.6	CDS	18662	19894	.	+	0	ID=PNCDIBDO_00046;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00046;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	19898	20527	.	-	0	ID=PNCDIBDO_00047;eC_number=3.1.26.4;Name=rnhA;db_xref=COG:COG0328;gene=rnhA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9KEI9;locus_tag=PNCDIBDO_00047;product=Ribonuclease H
+k141_68	Prodigal:v2.6	CDS	20647	21249	.	+	0	ID=PNCDIBDO_00048;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00048;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	21543	21680	.	+	0	ID=PNCDIBDO_00049;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00049;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	22209	22748	.	+	0	ID=PNCDIBDO_00050;eC_number=2.7.1.71;Name=aroK;db_xref=COG:COG0703;gene=aroK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8A2B2;locus_tag=PNCDIBDO_00050;product=Shikimate kinase
+k141_68	Prodigal:v2.6	CDS	22895	25393	.	+	0	ID=PNCDIBDO_00051;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00051;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	25401	27167	.	+	0	ID=PNCDIBDO_00052;Name=htpG;gene=htpG;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00505;locus_tag=PNCDIBDO_00052;product=Chaperone protein HtpG
+k141_68	Prodigal:v2.6	CDS	27176	28255	.	+	0	ID=PNCDIBDO_00053;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00053;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	28313	30205	.	+	0	ID=PNCDIBDO_00054;eC_number=4.1.1.19;Name=speA;db_xref=COG:COG1166;gene=speA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P21170;locus_tag=PNCDIBDO_00054;product=Biosynthetic arginine decarboxylase
+k141_68	Prodigal:v2.6	CDS	30345	31118	.	+	0	ID=PNCDIBDO_00055;eC_number=2.7.2.8;Name=argB;db_xref=COG:COG0548;gene=argB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q6V1L5;locus_tag=PNCDIBDO_00055;product=Acetylglutamate kinase
+k141_68	Prodigal:v2.6	CDS	31180	31689	.	+	0	ID=PNCDIBDO_00056;Name=sigH;gene=sigH;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P66808;locus_tag=PNCDIBDO_00056;product=ECF RNA polymerase sigma factor SigH
+k141_68	Prodigal:v2.6	CDS	31673	32188	.	+	0	ID=PNCDIBDO_00057;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00057;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	32220	32669	.	+	0	ID=PNCDIBDO_00058;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00058;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	32857	33636	.	-	0	ID=PNCDIBDO_00059;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00059;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	33656	34390	.	-	0	ID=PNCDIBDO_00060;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00060;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	34511	35209	.	+	0	ID=PNCDIBDO_00061;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00061;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	35371	35769	.	-	0	ID=PNCDIBDO_00062;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00062;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	35771	36931	.	+	0	ID=PNCDIBDO_00063;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00063;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	37092	37319	.	+	0	ID=PNCDIBDO_00064;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00064;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	37486	37752	.	+	0	ID=PNCDIBDO_00065;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00065;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	37823	39007	.	+	0	ID=PNCDIBDO_00066;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00066;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	38994	39554	.	+	0	ID=PNCDIBDO_00067;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00067;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	39577	39723	.	-	0	ID=PNCDIBDO_00068;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00068;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	39759	40739	.	+	0	ID=PNCDIBDO_00069;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00069;product=hypothetical protein
+k141_68	Prodigal:v2.6	CDS	40812	42584	.	+	0	ID=PNCDIBDO_00070;eC_number=5.3.1.25;Name=fucI;db_xref=COG:COG2407;gene=fucI;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q97N97;locus_tag=PNCDIBDO_00070;product=L-fucose isomerase
+k141_68	Prodigal:v2.6	CDS	42603	43757	.	+	0	ID=PNCDIBDO_00071;eC_number=1.1.1.77;Name=fucO;db_xref=COG:COG1454;gene=fucO;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A9S1;locus_tag=PNCDIBDO_00071;product=Lactaldehyde reductase
+k141_68	Prodigal:v2.6	CDS	43754	44392	.	+	0	ID=PNCDIBDO_00072;eC_number=4.1.1.104;Name=otnC;db_xref=COG:COG0235;gene=otnC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q57199;locus_tag=PNCDIBDO_00072;product=3-oxo-tetronate 4-phosphate decarboxylase
+k141_210	Prodigal:v2.6	CDS	314	1396	.	-	0	ID=PNCDIBDO_00073;Name=mdtA;gene=mdtA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01422;locus_tag=PNCDIBDO_00073;product=Multidrug resistance protein MdtA
+k141_210	Prodigal:v2.6	CDS	1765	2484	.	-	0	ID=PNCDIBDO_00074;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00074;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	3626	4558	.	-	0	ID=PNCDIBDO_00075;eC_number=3.6.1.-;Name=rsgA;db_xref=COG:COG1162;gene=rsgA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9X242;locus_tag=PNCDIBDO_00075;product=Small ribosomal subunit biogenesis GTPase RsgA
+k141_210	Prodigal:v2.6	CDS	4655	5215	.	-	0	ID=PNCDIBDO_00076;Name=frr;db_xref=COG:COG0233;gene=frr;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q81WL1;locus_tag=PNCDIBDO_00076;product=Ribosome-recycling factor
+k141_210	Prodigal:v2.6	CDS	5342	6400	.	-	0	ID=PNCDIBDO_00077;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00077;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	6412	6963	.	-	0	ID=PNCDIBDO_00078;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00078;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	6974	9769	.	-	0	ID=PNCDIBDO_00079;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00079;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	9797	11386	.	-	0	ID=PNCDIBDO_00080;Name=dnaK;db_xref=COG:COG0443;gene=dnaK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0QQC8;locus_tag=PNCDIBDO_00080;product=Chaperone protein DnaK
+k141_210	Prodigal:v2.6	CDS	11426	12274	.	-	0	ID=PNCDIBDO_00081;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00081;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	13351	14511	.	+	0	ID=PNCDIBDO_00082;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00082;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	14759	15469	.	-	0	ID=PNCDIBDO_00083;eC_number=2.7.4.22;Name=pyrH;db_xref=COG:COG0528;gene=pyrH;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A7E9;locus_tag=PNCDIBDO_00083;product=Uridylate kinase
+k141_210	Prodigal:v2.6	CDS	15518	16831	.	-	0	ID=PNCDIBDO_00084;Name=dinF;db_xref=COG:COG0534;gene=dinF;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P28303;locus_tag=PNCDIBDO_00084;product=DNA damage-inducible protein F
+k141_210	Prodigal:v2.6	CDS	17031	18353	.	+	0	ID=PNCDIBDO_00085;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00085;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	18468	19151	.	+	0	ID=PNCDIBDO_00086;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00086;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	19178	20215	.	-	0	ID=PNCDIBDO_00087;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00087;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	20324	20488	.	-	0	ID=PNCDIBDO_00088;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00088;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	20554	21309	.	-	0	ID=PNCDIBDO_00089;eC_number=6.3.4.15;Name=birA;gene=birA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00978;locus_tag=PNCDIBDO_00089;product=Bifunctional ligase/repressor BirA
+k141_210	Prodigal:v2.6	CDS	21293	21649	.	-	0	ID=PNCDIBDO_00090;Name=yjbR;db_xref=COG:COG2315;gene=yjbR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AF50;locus_tag=PNCDIBDO_00090;product=putative protein YjbR
+k141_210	Prodigal:v2.6	CDS	21656	22021	.	-	0	ID=PNCDIBDO_00091;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q6NCZ4;locus_tag=PNCDIBDO_00091;note=UPF0102 protein RPA0323;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	22159	22392	.	+	0	ID=PNCDIBDO_00092;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00092;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	22397	22834	.	+	0	ID=PNCDIBDO_00093;eC_number=3.5.4.33;Name=tadA;gene=tadA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q99W51;locus_tag=PNCDIBDO_00093;product=tRNA-specific adenosine deaminase
+k141_210	Prodigal:v2.6	CDS	22851	23138	.	-	0	ID=PNCDIBDO_00094;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00094;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	23201	23911	.	-	0	ID=PNCDIBDO_00095;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00095;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	23921	24607	.	-	0	ID=PNCDIBDO_00096;eC_number=4.1.1.65;Name=psd;gene=psd;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00664;locus_tag=PNCDIBDO_00096;product=Phosphatidylserine decarboxylase proenzyme
+k141_210	Prodigal:v2.6	CDS	24669	28565	.	+	0	ID=PNCDIBDO_00097;eC_number=2.7.7.7;Name=dnaE;gene=dnaE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9XDH5;locus_tag=PNCDIBDO_00097;product=DNA polymerase III subunit alpha
+k141_210	Prodigal:v2.6	CDS	28626	28940	.	+	0	ID=PNCDIBDO_00098;Name=trxA;gene=trxA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A4L2;locus_tag=PNCDIBDO_00098;product=Thioredoxin 1
+k141_210	Prodigal:v2.6	CDS	28967	29302	.	+	0	ID=PNCDIBDO_00099;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00099;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	29525	30256	.	-	0	ID=PNCDIBDO_00100;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00100;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	30295	30444	.	-	0	ID=PNCDIBDO_00101;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00101;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	31177	32139	.	+	0	ID=PNCDIBDO_00102;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00102;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	32120	33052	.	+	0	ID=PNCDIBDO_00103;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00103;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	33063	33686	.	+	0	ID=PNCDIBDO_00104;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00104;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	33683	34930	.	+	0	ID=PNCDIBDO_00105;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00105;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	34994	35989	.	+	0	ID=PNCDIBDO_00106;Name=moxR1;db_xref=COG:COG0714;gene=moxR1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q79FN7;locus_tag=PNCDIBDO_00106;product=Chaperone MoxR1
+k141_210	Prodigal:v2.6	CDS	35992	37302	.	+	0	ID=PNCDIBDO_00107;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00107;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	37294	37518	.	-	0	ID=PNCDIBDO_00108;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00108;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	37530	37949	.	-	0	ID=PNCDIBDO_00109;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00109;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	37964	38773	.	-	0	ID=PNCDIBDO_00110;Name=znuB;db_xref=COG:COG1108;gene=znuB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P39832;locus_tag=PNCDIBDO_00110;product=High-affinity zinc uptake system membrane protein ZnuB
+k141_210	Prodigal:v2.6	CDS	38812	39234	.	-	0	ID=PNCDIBDO_00111;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00111;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	39337	40338	.	+	0	ID=PNCDIBDO_00112;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00112;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	40346	41518	.	+	0	ID=PNCDIBDO_00113;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00113;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	41669	43954	.	+	0	ID=PNCDIBDO_00114;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00114;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	43995	46661	.	+	0	ID=PNCDIBDO_00115;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00115;product=hypothetical protein
+k141_210	Prodigal:v2.6	CDS	46604	47005	.	-	0	ID=PNCDIBDO_00116;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00116;product=hypothetical protein
+k141_211	Prodigal:v2.6	CDS	1012	1155	.	+	0	ID=PNCDIBDO_00117;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00117;product=hypothetical protein
+k141_211	Prodigal:v2.6	CDS	1264	2628	.	-	0	ID=PNCDIBDO_00118;eC_number=2.7.2.4;Name=lysC;db_xref=COG:COG0527;gene=lysC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P08660;locus_tag=PNCDIBDO_00118;product=Lysine-sensitive aspartokinase 3
+k141_211	Prodigal:v2.6	CDS	2933	4276	.	+	0	ID=PNCDIBDO_00119;Name=atoC;db_xref=COG:COG2204;gene=atoC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q06065;locus_tag=PNCDIBDO_00119;product=Regulatory protein AtoC
+k141_211	Prodigal:v2.6	CDS	4717	6423	.	+	0	ID=PNCDIBDO_00120;Name=kdpA;db_xref=COG:COG2060;gene=kdpA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O32327;locus_tag=PNCDIBDO_00120;product=Potassium-transporting ATPase potassium-binding subunit
+k141_211	Prodigal:v2.6	CDS	6445	8493	.	+	0	ID=PNCDIBDO_00121;eC_number=7.2.2.6;Name=kdpB;db_xref=COG:COG2216;gene=kdpB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P03960;locus_tag=PNCDIBDO_00121;product=Potassium-transporting ATPase ATP-binding subunit
+k141_211	Prodigal:v2.6	CDS	8505	9080	.	+	0	ID=PNCDIBDO_00122;Name=kdpC;db_xref=COG:COG2156;gene=kdpC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WKF1;locus_tag=PNCDIBDO_00122;product=Potassium-transporting ATPase KdpC subunit
+k141_211	Prodigal:v2.6	CDS	9090	9839	.	+	0	ID=PNCDIBDO_00123;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00123;product=hypothetical protein
+k141_211	Prodigal:v2.6	CDS	9935	11062	.	+	0	ID=PNCDIBDO_00124;eC_number=2.7.13.3;Name=kdpD;db_xref=COG:COG2205;gene=kdpD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P21865;locus_tag=PNCDIBDO_00124;product=Sensor protein KdpD
+k141_73	Prodigal:v2.6	CDS	449	847	.	+	0	ID=PNCDIBDO_00125;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00125;product=hypothetical protein
+k141_73	Prodigal:v2.6	CDS	1468	2055	.	-	0	ID=PNCDIBDO_00126;Name=nrfH;db_xref=COG:COG3005;gene=nrfH;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9S1E6;locus_tag=PNCDIBDO_00126;product=Cytochrome c-type protein NrfH
+k141_73	Prodigal:v2.6	CDS	2196	2699	.	-	0	ID=PNCDIBDO_00127;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00127;product=hypothetical protein
+k141_73	Prodigal:v2.6	CDS	2784	3965	.	+	0	ID=PNCDIBDO_00128;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00128;product=hypothetical protein
+k141_212	Prodigal:v2.6	CDS	23	1420	.	+	0	ID=PNCDIBDO_00129;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00129;product=hypothetical protein
+k141_212	Prodigal:v2.6	CDS	1615	3075	.	+	0	ID=PNCDIBDO_00130;eC_number=3.1.6.-;db_xref=COG:COG3119;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8A2H2;locus_tag=PNCDIBDO_00130;product=N-acetylgalactosamine-6-O-sulfatase
+k141_212	Prodigal:v2.6	CDS	3199	3825	.	-	0	ID=PNCDIBDO_00131;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00131;product=hypothetical protein
+k141_212	Prodigal:v2.6	CDS	3843	4475	.	-	0	ID=PNCDIBDO_00132;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00132;product=hypothetical protein
+k141_212	Prodigal:v2.6	CDS	4584	5951	.	+	0	ID=PNCDIBDO_00133;eC_number=3.4.11.-;Name=ptp;gene=ptp;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P83615;locus_tag=PNCDIBDO_00133;product=Prolyl tri/tetrapeptidyl aminopeptidase
+k141_212	Prodigal:v2.6	CDS	6110	6460	.	-	0	ID=PNCDIBDO_00134;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00134;product=hypothetical protein
+k141_212	Prodigal:v2.6	CDS	6470	7948	.	-	0	ID=PNCDIBDO_00135;eC_number=1.8.1.14;Name=cdr;gene=cdr;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01608;locus_tag=PNCDIBDO_00135;product=Coenzyme A disulfide reductase
+k141_74	Prodigal:v2.6	CDS	54	749	.	+	0	ID=PNCDIBDO_00136;eC_number=4.1.2.4;Name=deoC;gene=deoC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B1IS38;locus_tag=PNCDIBDO_00136;product=Deoxyribose-phosphate aldolase
+k141_74	Prodigal:v2.6	CDS	1150	1857	.	+	0	ID=PNCDIBDO_00137;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00137;product=hypothetical protein
+k141_74	Prodigal:v2.6	CDS	1867	2841	.	-	0	ID=PNCDIBDO_00138;eC_number=2.5.1.84;Name=sdsA;gene=sdsA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O24743;locus_tag=PNCDIBDO_00138;product=All-trans-nonaprenyl-diphosphate synthase (geranyl-diphosphate specific)
+k141_74	Prodigal:v2.6	CDS	2927	5734	.	+	0	ID=PNCDIBDO_00139;eC_number=2.7.7.7;Name=polA;db_xref=COG:COG0258;gene=polA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P00582;locus_tag=PNCDIBDO_00139;product=DNA polymerase I
+k141_74	Prodigal:v2.6	CDS	6004	6399	.	+	0	ID=PNCDIBDO_00140;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00140;product=hypothetical protein
+k141_74	Prodigal:v2.6	CDS	6775	7530	.	-	0	ID=PNCDIBDO_00141;eC_number=3.5.1.44;Name=cheB;gene=cheB;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00099;locus_tag=PNCDIBDO_00141;product=Protein-glutamate methylesterase/protein-glutamine glutaminase
+k141_74	Prodigal:v2.6	CDS	7543	9072	.	-	0	ID=PNCDIBDO_00142;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00142;product=hypothetical protein
+k141_147	Prodigal:v2.6	CDS	574	1584	.	+	0	ID=PNCDIBDO_00143;eC_number=1.2.1.11;Name=asd;db_xref=COG:COG0136;gene=asd;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q04797;locus_tag=PNCDIBDO_00143;product=Aspartate-semialdehyde dehydrogenase
+k141_147	Prodigal:v2.6	CDS	1884	2732	.	+	0	ID=PNCDIBDO_00144;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00144;product=hypothetical protein
+k141_147	Prodigal:v2.6	CDS	3191	6526	.	+	0	ID=PNCDIBDO_00145;db_xref=COG:COG1629;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KM18;locus_tag=PNCDIBDO_00145;product=TonB-dependent receptor P26
+k141_147	Prodigal:v2.6	CDS	6556	8253	.	+	0	ID=PNCDIBDO_00146;db_xref=COG:COG0702;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPM5;locus_tag=PNCDIBDO_00146;product=SusD-like protein P38
+k141_147	Prodigal:v2.6	CDS	8438	9643	.	+	0	ID=PNCDIBDO_00147;eC_number=3.2.1.92;Name=namZ_1;db_xref=COG:COG3876;gene=namZ_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P40407;locus_tag=PNCDIBDO_00147;product=Peptidoglycan beta-N-acetylmuramidase NamZ
+k141_147	Prodigal:v2.6	CDS	9684	11141	.	+	0	ID=PNCDIBDO_00148;Name=siaT;db_xref=COG:COG0591;gene=siaT;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B4EZY7;locus_tag=PNCDIBDO_00148;product=Sodium/sialic acid symporter SiaT
+k141_147	Prodigal:v2.6	CDS	11144	14215	.	+	0	ID=PNCDIBDO_00149;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00149;product=hypothetical protein
+k141_147	Prodigal:v2.6	CDS	14311	16176	.	+	0	ID=PNCDIBDO_00150;Name=bamB;gene=bamB;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00923;locus_tag=PNCDIBDO_00150;product=Outer membrane protein assembly factor BamB
+k141_147	Prodigal:v2.6	CDS	16200	17666	.	+	0	ID=PNCDIBDO_00151;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00151;product=hypothetical protein
+k141_147	Prodigal:v2.6	CDS	17663	18595	.	+	0	ID=PNCDIBDO_00152;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00152;product=hypothetical protein
+k141_147	Prodigal:v2.6	CDS	18592	19947	.	+	0	ID=PNCDIBDO_00153;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00153;product=hypothetical protein
+k141_147	Prodigal:v2.6	CDS	19963	21261	.	+	0	ID=PNCDIBDO_00154;Name=ampG;db_xref=COG:COG2223;gene=ampG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AE16;locus_tag=PNCDIBDO_00154;product=Anhydromuropeptide permease
+k141_147	Prodigal:v2.6	CDS	21303	22577	.	+	0	ID=PNCDIBDO_00155;eC_number=3.2.1.92;Name=namZ_2;db_xref=COG:COG3876;gene=namZ_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P40407;locus_tag=PNCDIBDO_00155;product=Peptidoglycan beta-N-acetylmuramidase NamZ
+k141_147	Prodigal:v2.6	CDS	23780	23902	.	-	0	ID=PNCDIBDO_00156;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00156;product=hypothetical protein
+k141_17	Prodigal:v2.6	CDS	37	264	.	+	0	ID=PNCDIBDO_00157;eC_number=3.1.21.10;Name=rusA;db_xref=COG:COG4570;gene=rusA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AG74;locus_tag=PNCDIBDO_00157;product=Crossover junction endodeoxyribonuclease RusA
+k141_17	Prodigal:v2.6	CDS	261	401	.	+	0	ID=PNCDIBDO_00158;Name=ylcG;gene=ylcG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q47272;locus_tag=PNCDIBDO_00158;product=putative protein YlcG
+k141_17	Prodigal:v2.6	CDS	487	870	.	+	0	ID=PNCDIBDO_00159;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00159;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	83	628	.	+	0	ID=PNCDIBDO_00160;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00160;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	601	2337	.	+	0	ID=PNCDIBDO_00161;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00161;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	2343	2540	.	+	0	ID=PNCDIBDO_00162;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00162;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	3184	4191	.	-	0	ID=PNCDIBDO_00163;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00163;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	4374	4532	.	+	0	ID=PNCDIBDO_00164;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00164;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	4522	6861	.	+	0	ID=PNCDIBDO_00165;Name=btuB;gene=btuB;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01531;locus_tag=PNCDIBDO_00165;product=Vitamin B12 transporter BtuB
+k141_148	Prodigal:v2.6	CDS	6895	8118	.	+	0	ID=PNCDIBDO_00166;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00166;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	8214	8390	.	+	0	ID=PNCDIBDO_00167;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00167;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	8586	10166	.	-	0	ID=PNCDIBDO_00168;eC_number=3.2.1.-;db_xref=COG:COG3507;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KN85;locus_tag=PNCDIBDO_00168;product=Beta-xylosidase
+k141_148	Prodigal:v2.6	CDS	10178	12961	.	-	0	ID=PNCDIBDO_00169;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00169;product=hypothetical protein
+k141_148	Prodigal:v2.6	CDS	12974	13339	.	-	0	ID=PNCDIBDO_00170;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00170;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	193	1545	.	+	0	ID=PNCDIBDO_00171;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00171;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	1580	2566	.	+	0	ID=PNCDIBDO_00172;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00172;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	2569	3144	.	+	0	ID=PNCDIBDO_00173;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00173;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	3152	4054	.	+	0	ID=PNCDIBDO_00174;eC_number=2.7.7.101;Name=dnaG;gene=dnaG;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00974;locus_tag=PNCDIBDO_00174;product=DNA primase
+k141_79	Prodigal:v2.6	CDS	4051	4554	.	+	0	ID=PNCDIBDO_00175;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00175;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	4551	5078	.	+	0	ID=PNCDIBDO_00176;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00176;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	5287	5532	.	+	0	ID=PNCDIBDO_00177;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00177;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	5566	5874	.	-	0	ID=PNCDIBDO_00178;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00178;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	5928	6173	.	-	0	ID=PNCDIBDO_00179;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00179;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	6170	6403	.	-	0	ID=PNCDIBDO_00180;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00180;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	6423	6680	.	-	0	ID=PNCDIBDO_00181;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00181;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	6705	7679	.	-	0	ID=PNCDIBDO_00182;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00182;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	7710	8036	.	-	0	ID=PNCDIBDO_00183;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00183;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	8033	8449	.	-	0	ID=PNCDIBDO_00184;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00184;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	8463	8684	.	-	0	ID=PNCDIBDO_00185;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00185;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	8718	9200	.	+	0	ID=PNCDIBDO_00186;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00186;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	9232	9471	.	+	0	ID=PNCDIBDO_00187;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00187;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	10071	11759	.	-	0	ID=PNCDIBDO_00188;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00188;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	11774	11998	.	+	0	ID=PNCDIBDO_00189;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00189;product=hypothetical protein
+k141_79	Prodigal:v2.6	CDS	12496	14373	.	+	0	ID=PNCDIBDO_00190;Name=mnmG;db_xref=COG:COG0445;gene=mnmG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8KA85;locus_tag=PNCDIBDO_00190;product=tRNA uridine 5-carboxymethylaminomethyl modification enzyme MnmG
+k141_79	Prodigal:v2.6	CDS	14424	14960	.	+	0	ID=PNCDIBDO_00191;eC_number=2.4.2.7;Name=apt;gene=apt;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q66DQ2;locus_tag=PNCDIBDO_00191;product=Adenine phosphoribosyltransferase
+k141_79	Prodigal:v2.6	CDS	15013	16839	.	+	0	ID=PNCDIBDO_00192;Name=uvrC;db_xref=COG:COG0322;gene=uvrC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q5KWH6;locus_tag=PNCDIBDO_00192;product=UvrABC system protein C
+k141_79	Prodigal:v2.6	CDS	16885	17337	.	+	0	ID=PNCDIBDO_00193;eC_number=3.1.1.96;Name=dtd;db_xref=COG:COG1490;gene=dtd;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0A023W421;locus_tag=PNCDIBDO_00193;product=D-aminoacyl-tRNA deacylase
+k141_79	Prodigal:v2.6	CDS	17337	17675	.	+	0	ID=PNCDIBDO_00194;Name=ypjD;db_xref=COG:COG1694;gene=ypjD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P42979;locus_tag=PNCDIBDO_00194;product=putative protein YpjD
+k141_18	Prodigal:v2.6	CDS	25	573	.	+	0	ID=PNCDIBDO_00195;Name=mdtE;db_xref=COG:COG0845;gene=mdtE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P37636;locus_tag=PNCDIBDO_00195;product=Multidrug resistance protein MdtE
+k141_18	Prodigal:v2.6	CDS	598	3801	.	+	0	ID=PNCDIBDO_00196;Name=bepE_1;gene=bepE_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8G2M6;locus_tag=PNCDIBDO_00196;product=Efflux pump membrane transporter BepE
+k141_18	Prodigal:v2.6	CDS	3818	5209	.	+	0	ID=PNCDIBDO_00197;Name=cusC;db_xref=COG:COG1538;gene=cusC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77211;locus_tag=PNCDIBDO_00197;product=Cation efflux system protein CusC
+k141_18	Prodigal:v2.6	CDS	5229	5999	.	+	0	ID=PNCDIBDO_00198;eC_number=2.3.1.129;Name=lpxA;db_xref=COG:COG1043;gene=lpxA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A722;locus_tag=PNCDIBDO_00198;product=Acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase
+k141_18	Prodigal:v2.6	CDS	6101	6742	.	-	0	ID=PNCDIBDO_00199;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00199;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	6973	8193	.	+	0	ID=PNCDIBDO_00200;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00200;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	8200	9132	.	+	0	ID=PNCDIBDO_00201;eC_number=1.3.1.-;Name=dusC;gene=dusC;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_02043;locus_tag=PNCDIBDO_00201;product=tRNA-dihydrouridine(16) synthase
+k141_18	Prodigal:v2.6	CDS	9326	9886	.	-	0	ID=PNCDIBDO_00202;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00202;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	9978	11246	.	-	0	ID=PNCDIBDO_00203;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00203;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	11342	12070	.	+	0	ID=PNCDIBDO_00204;eC_number=1.17.1.8;Name=dapB;db_xref=COG:COG0289;gene=dapB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9X1K8;locus_tag=PNCDIBDO_00204;product=4-hydroxy-tetrahydrodipicolinate reductase
+k141_18	Prodigal:v2.6	CDS	12075	13559	.	+	0	ID=PNCDIBDO_00205;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00205;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	13567	14502	.	+	0	ID=PNCDIBDO_00206;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00206;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	14566	15210	.	+	0	ID=PNCDIBDO_00207;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00207;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	15339	16151	.	+	0	ID=PNCDIBDO_00208;eC_number=1.-.-.-;Name=uxuB;db_xref=COG:COG1028;gene=uxuB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O34896;locus_tag=PNCDIBDO_00208;product=putative oxidoreductase UxuB
+k141_18	Prodigal:v2.6	CDS	16248	17456	.	+	0	ID=PNCDIBDO_00209;eC_number=4.2.1.8;Name=uxuA;db_xref=COG:COG1312;gene=uxuA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P24215;locus_tag=PNCDIBDO_00209;product=Mannonate dehydratase
+k141_18	Prodigal:v2.6	CDS	17603	18130	.	-	0	ID=PNCDIBDO_00210;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00210;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	18381	18731	.	+	0	ID=PNCDIBDO_00211;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00211;product=hypothetical protein
+k141_18	Prodigal:v2.6	CDS	18897	20174	.	-	0	ID=PNCDIBDO_00212;eC_number=3.4.24.-;db_xref=COG:COG0612;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WHT5;locus_tag=PNCDIBDO_00212;product=putative zinc protease
+k141_18	Prodigal:v2.6	CDS	20246	20776	.	+	0	ID=PNCDIBDO_00213;eC_number=3.2.2.-;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P48636;locus_tag=PNCDIBDO_00213;product=Cytokinin riboside 5'-monophosphate phosphoribohydrolase
+k141_82	Prodigal:v2.6	CDS	483	671	.	+	0	ID=PNCDIBDO_00214;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00214;product=hypothetical protein
+k141_150	Prodigal:v2.6	CDS	48	1040	.	+	0	ID=PNCDIBDO_00215;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00215;product=hypothetical protein
+k141_150	Prodigal:v2.6	CDS	1045	1644	.	+	0	ID=PNCDIBDO_00216;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00216;product=hypothetical protein
+k141_150	Prodigal:v2.6	CDS	1713	4142	.	+	0	ID=PNCDIBDO_00217;Name=iacT;db_xref=COG:COG4773;gene=iacT;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8YQ14;locus_tag=PNCDIBDO_00217;product=Iron and copper transporter IacT
+k141_150	Prodigal:v2.6	CDS	4296	5270	.	-	0	ID=PNCDIBDO_00218;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00218;product=hypothetical protein
+k141_150	Prodigal:v2.6	CDS	5267	7093	.	-	0	ID=PNCDIBDO_00219;Name=rlhA;db_xref=COG:COG0826;gene=rlhA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P76104;locus_tag=PNCDIBDO_00219;product=23S rRNA 5-hydroxycytidine synthase
+k141_150	Prodigal:v2.6	CDS	7090	8007	.	-	0	ID=PNCDIBDO_00220;eC_number=2.3.1.31;Name=metAA;db_xref=COG:COG1897;gene=metAA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q5LHS7;locus_tag=PNCDIBDO_00220;product=Homoserine O-acetyltransferase
+k141_150	Prodigal:v2.6	CDS	8167	8337	.	+	0	ID=PNCDIBDO_00221;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P14073;locus_tag=PNCDIBDO_00221;product=Ferredoxin
+k141_150	Prodigal:v2.6	CDS	8420	11155	.	-	0	ID=PNCDIBDO_00222;eC_number=3.2.1.40;db_xref=COG:COG3250;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q82PP4;locus_tag=PNCDIBDO_00222;product=Alpha-L-rhamnosidase
+k141_150	Prodigal:v2.6	CDS	11285	12478	.	-	0	ID=PNCDIBDO_00223;eC_number=2.6.1.1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A3PMF8;locus_tag=PNCDIBDO_00223;product=Aspartate/prephenate aminotransferase
+k141_150	Prodigal:v2.6	CDS	12561	13775	.	-	0	ID=PNCDIBDO_00224;Name=ribBA;db_xref=COG:COG0108;gene=ribBA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A5U2B7;locus_tag=PNCDIBDO_00224;product=Riboflavin biosynthesis protein RibBA
+k141_150	Prodigal:v2.6	CDS	13780	15690	.	-	0	ID=PNCDIBDO_00225;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00225;product=hypothetical protein
+k141_150	Prodigal:v2.6	CDS	15767	16153	.	-	0	ID=PNCDIBDO_00226;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00226;product=hypothetical protein
+k141_150	Aragorn:v1.2	tRNA	16379	16455	.	+	.	ID=PNCDIBDO_00227;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00227;product=tRNA-Met(cat)
+k141_150	Prodigal:v2.6	CDS	17029	17685	.	+	0	ID=PNCDIBDO_00228;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00228;product=hypothetical protein
+k141_150	Prodigal:v2.6	CDS	18641	19396	.	-	0	ID=PNCDIBDO_00229;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00229;product=hypothetical protein
+k141_150	Prodigal:v2.6	CDS	19502	21595	.	-	0	ID=PNCDIBDO_00230;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00230;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	47	574	.	+	0	ID=PNCDIBDO_00231;eC_number=2.1.1.-;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q7A794;locus_tag=PNCDIBDO_00231;product=Putative TrmH family tRNA/rRNA methyltransferase
+k141_221	Prodigal:v2.6	CDS	729	2198	.	+	0	ID=PNCDIBDO_00232;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00232;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	2191	3162	.	+	0	ID=PNCDIBDO_00233;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00233;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	3176	4015	.	+	0	ID=PNCDIBDO_00234;eC_number=2.4.-.-;Name=epsE;db_xref=COG:COG1215;gene=epsE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P71054;locus_tag=PNCDIBDO_00234;product=Putative glycosyltransferase EpsE
+k141_221	Prodigal:v2.6	CDS	4049	4513	.	+	0	ID=PNCDIBDO_00235;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00235;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	4545	6356	.	+	0	ID=PNCDIBDO_00236;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00236;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	6368	8170	.	+	0	ID=PNCDIBDO_00237;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00237;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	8109	8255	.	+	0	ID=PNCDIBDO_00238;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00238;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	8289	8417	.	+	0	ID=PNCDIBDO_00239;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00239;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	8630	10396	.	+	0	ID=PNCDIBDO_00240;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00240;product=hypothetical protein
+k141_221	Prodigal:v2.6	CDS	10393	11511	.	+	0	ID=PNCDIBDO_00241;eC_number=2.4.1.250;Name=mshA;gene=mshA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01695;locus_tag=PNCDIBDO_00241;product=D-inositol-3-phosphate glycosyltransferase
+k141_221	Prodigal:v2.6	CDS	11492	12160	.	+	0	ID=PNCDIBDO_00242;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00242;product=hypothetical protein
+k141_21	Prodigal:v2.6	CDS	41	883	.	+	0	ID=PNCDIBDO_00243;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00243;product=hypothetical protein
+k141_21	Prodigal:v2.6	CDS	892	2055	.	+	0	ID=PNCDIBDO_00244;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00244;product=hypothetical protein
+k141_21	Prodigal:v2.6	CDS	2052	2888	.	+	0	ID=PNCDIBDO_00245;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00245;product=hypothetical protein
+k141_21	Prodigal:v2.6	CDS	2912	3757	.	+	0	ID=PNCDIBDO_00246;eC_number=4.2.1.126;Name=murQ;db_xref=COG:COG2103;gene=murQ;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P44862;locus_tag=PNCDIBDO_00246;product=N-acetylmuramic acid 6-phosphate etherase
+k141_21	Prodigal:v2.6	CDS	3790	5673	.	+	0	ID=PNCDIBDO_00247;eC_number=3.4.16.4;Name=yfeW_1;gene=yfeW_1;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01034;locus_tag=PNCDIBDO_00247;product=Putative D-alanyl-D-alanine carboxypeptidase
+k141_21	Prodigal:v2.6	CDS	5685	6371	.	-	0	ID=PNCDIBDO_00248;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00248;product=hypothetical protein
+k141_21	Prodigal:v2.6	CDS	6418	7683	.	-	0	ID=PNCDIBDO_00249;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00249;product=hypothetical protein
+k141_21	Prodigal:v2.6	CDS	7716	8507	.	-	0	ID=PNCDIBDO_00250;Name=ccsA;gene=ccsA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01391;locus_tag=PNCDIBDO_00250;product=Cytochrome c biogenesis protein CcsA
+k141_21	Prodigal:v2.6	CDS	8504	9625	.	-	0	ID=PNCDIBDO_00251;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00251;product=hypothetical protein
+k141_162	Prodigal:v2.6	CDS	460	1812	.	+	0	ID=PNCDIBDO_00252;Name=rclA;db_xref=COG:COG1249;gene=rclA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77212;locus_tag=PNCDIBDO_00252;product=putative pyridine nucleotide-disulfide oxidoreductase RclA
+k141_162	Prodigal:v2.6	CDS	1909	2157	.	+	0	ID=PNCDIBDO_00253;Name=rclB;gene=rclB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75687;locus_tag=PNCDIBDO_00253;product=putative protein RclB
+k141_162	Prodigal:v2.6	CDS	2169	2762	.	+	0	ID=PNCDIBDO_00254;Name=rclC;db_xref=COG:COG3059;gene=rclC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75685;locus_tag=PNCDIBDO_00254;product=Inner membrane protein RclC
+k141_28	Prodigal:v2.6	CDS	93	347	.	-	0	ID=PNCDIBDO_00255;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:ISfinder:ISEc5;locus_tag=PNCDIBDO_00255;product=ISAs1 family transposase ISEc5
+k141_28	Prodigal:v2.6	CDS	478	1539	.	-	0	ID=PNCDIBDO_00256;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:ISfinder:ISEc1;locus_tag=PNCDIBDO_00256;product=ISAs1 family transposase ISEc1
+k141_28	Prodigal:v2.6	CDS	1840	2409	.	-	0	ID=PNCDIBDO_00257;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00257;product=hypothetical protein
+k141_28	Prodigal:v2.6	CDS	2406	3209	.	-	0	ID=PNCDIBDO_00258;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00258;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	190	1257	.	+	0	ID=PNCDIBDO_00259;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00259;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	1773	1988	.	+	0	ID=PNCDIBDO_00260;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00260;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	2453	3571	.	+	0	ID=PNCDIBDO_00261;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00261;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	3568	4437	.	+	0	ID=PNCDIBDO_00262;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00262;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	4566	4724	.	+	0	ID=PNCDIBDO_00263;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00263;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	4852	5823	.	+	0	ID=PNCDIBDO_00264;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00264;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	5861	6904	.	+	0	ID=PNCDIBDO_00265;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00265;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	6984	8027	.	+	0	ID=PNCDIBDO_00266;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00266;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	8102	10111	.	+	0	ID=PNCDIBDO_00267;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00267;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	10261	11160	.	+	0	ID=PNCDIBDO_00268;eC_number=2.1.1.-;Name=cmoM;gene=cmoM;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_02057;locus_tag=PNCDIBDO_00268;product=tRNA 5-carboxymethoxyuridine methyltransferase
+k141_90	Prodigal:v2.6	CDS	11160	12041	.	+	0	ID=PNCDIBDO_00269;Name=ftsX;db_xref=COG:COG2177;gene=ftsX;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q81X30;locus_tag=PNCDIBDO_00269;product=Cell division protein FtsX
+k141_90	Prodigal:v2.6	CDS	12082	12315	.	+	0	ID=PNCDIBDO_00270;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00270;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	12322	13122	.	+	0	ID=PNCDIBDO_00271;eC_number=3.6.1.27;Name=uppP;db_xref=COG:COG1968;gene=uppP;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P60932;locus_tag=PNCDIBDO_00271;product=Undecaprenyl-diphosphatase
+k141_90	Prodigal:v2.6	CDS	13130	13831	.	+	0	ID=PNCDIBDO_00272;eC_number=5.4.99.25;Name=truB;db_xref=COG:COG0130;gene=truB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WHP7;locus_tag=PNCDIBDO_00272;product=tRNA pseudouridine synthase B
+k141_90	Prodigal:v2.6	CDS	13880	14938	.	+	0	ID=PNCDIBDO_00273;eC_number=2.4.99.17;Name=queA;gene=queA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P65951;locus_tag=PNCDIBDO_00273;product=S-adenosylmethionine:tRNA ribosyltransferase-isomerase
+k141_90	Prodigal:v2.6	CDS	14938	15399	.	+	0	ID=PNCDIBDO_00274;Name=sulD;db_xref=COG:COG0801;gene=sulD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P22291;locus_tag=PNCDIBDO_00274;product=Bifunctional folate synthesis protein
+k141_90	Prodigal:v2.6	CDS	15379	15573	.	-	0	ID=PNCDIBDO_00275;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00275;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	15782	17074	.	+	0	ID=PNCDIBDO_00276;eC_number=2.5.1.6;Name=metK;gene=metK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P66767;locus_tag=PNCDIBDO_00276;product=S-adenosylmethionine synthase
+k141_90	Prodigal:v2.6	CDS	17215	17802	.	+	0	ID=PNCDIBDO_00277;eC_number=3.2.2.-;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P48636;locus_tag=PNCDIBDO_00277;product=Cytokinin riboside 5'-monophosphate phosphoribohydrolase
+k141_90	Prodigal:v2.6	CDS	17799	18629	.	+	0	ID=PNCDIBDO_00278;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00278;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	18634	19386	.	+	0	ID=PNCDIBDO_00279;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00279;product=hypothetical protein
+k141_90	Prodigal:v2.6	CDS	19441	19857	.	+	0	ID=PNCDIBDO_00280;eC_number=3.1.26.5;Name=rnpA;gene=rnpA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00227;locus_tag=PNCDIBDO_00280;product=Ribonuclease P protein component
+k141_90	Prodigal:v2.6	CDS	19854	20075	.	+	0	ID=PNCDIBDO_00281;db_xref=COG:COG0759;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q97NX8;locus_tag=PNCDIBDO_00281;product=Putative membrane protein insertion efficiency factor
+k141_90	Prodigal:v2.6	CDS	20082	20717	.	+	0	ID=PNCDIBDO_00282;eC_number=3.1.1.96;Name=dtd3;db_xref=COG:COG0084;gene=dtd3;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P73335;locus_tag=PNCDIBDO_00282;product=D-aminoacyl-tRNA deacylase
+k141_90	Prodigal:v2.6	CDS	20785	22077	.	+	0	ID=PNCDIBDO_00283;eC_number=6.1.1.1;Name=tyrS;gene=tyrS;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P00952;locus_tag=PNCDIBDO_00283;product=Tyrosine--tRNA ligase
+k141_90	Prodigal:v2.6	CDS	22190	25462	.	-	0	ID=PNCDIBDO_00284;eC_number=3.4.21.-;Name=tri1;db_xref=COG:COG0793;gene=tri1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9RDE2;locus_tag=PNCDIBDO_00284;product=Tricorn protease 
+k141_90	Aragorn:v1.2	tRNA	25626	25697	.	+	.	ID=PNCDIBDO_00285;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00285;product=tRNA-Gln(ttg)
+k141_34	Prodigal:v2.6	CDS	620	793	.	-	0	ID=PNCDIBDO_00286;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00286;product=hypothetical protein
+k141_34	Prodigal:v2.6	CDS	929	3979	.	+	0	ID=PNCDIBDO_00287;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00287;product=TonB-dependent receptor P3
+k141_168	Prodigal:v2.6	CDS	441	983	.	+	0	ID=PNCDIBDO_00288;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00288;product=hypothetical protein
+k141_168	Prodigal:v2.6	CDS	1268	2668	.	+	0	ID=PNCDIBDO_00289;Name=xerC_1;gene=xerC_1;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01808;locus_tag=PNCDIBDO_00289;product=Tyrosine recombinase XerC
+k141_168	Prodigal:v2.6	CDS	2893	3225	.	+	0	ID=PNCDIBDO_00290;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00290;product=hypothetical protein
+k141_168	Prodigal:v2.6	CDS	3222	3446	.	+	0	ID=PNCDIBDO_00291;Name=ykgV;gene=ykgV;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0DPM9;locus_tag=PNCDIBDO_00291;product=Protein YkgV
+k141_35	Prodigal:v2.6	CDS	490	822	.	-	0	ID=PNCDIBDO_00292;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00292;product=hypothetical protein
+k141_35	Prodigal:v2.6	CDS	1340	1621	.	-	0	ID=PNCDIBDO_00293;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00293;product=hypothetical protein
+k141_35	Prodigal:v2.6	CDS	1688	2338	.	-	0	ID=PNCDIBDO_00294;eC_number=2.7.10.-;Name=ptkA;db_xref=COG:COG0546;gene=ptkA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WPI9;locus_tag=PNCDIBDO_00294;product=Tyrosine-protein kinase PtkA
+k141_35	Prodigal:v2.6	CDS	2335	2940	.	-	0	ID=PNCDIBDO_00295;eC_number=2.3.1.-;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q7A3E8;locus_tag=PNCDIBDO_00295;product=Putative acetyltransferase
+k141_35	Prodigal:v2.6	CDS	2954	3463	.	-	0	ID=PNCDIBDO_00296;eC_number=1.5.1.39;Name=nfrA2;db_xref=COG:COG0778;gene=nfrA2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P94424;locus_tag=PNCDIBDO_00296;product=FMN reductase [NAD(P)H]
+k141_35	Prodigal:v2.6	CDS	3573	4415	.	+	0	ID=PNCDIBDO_00297;Name=rhaR;db_xref=COG:COG1917;gene=rhaR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P09378;locus_tag=PNCDIBDO_00297;product=HTH-type transcriptional activator RhaR
+k141_35	Prodigal:v2.6	CDS	4612	4926	.	+	0	ID=PNCDIBDO_00298;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00298;product=hypothetical protein
+k141_35	Prodigal:v2.6	CDS	4913	5206	.	+	0	ID=PNCDIBDO_00299;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00299;product=hypothetical protein
+k141_35	Prodigal:v2.6	CDS	5260	5553	.	+	0	ID=PNCDIBDO_00300;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00300;product=hypothetical protein
+k141_35	Prodigal:v2.6	CDS	5839	7059	.	-	0	ID=PNCDIBDO_00301;Name=xerC_2;gene=xerC_2;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01808;locus_tag=PNCDIBDO_00301;product=Tyrosine recombinase XerC
+k141_35	Aragorn:v1.2	tRNA	7301	7374	.	-	.	ID=PNCDIBDO_00302;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00302;product=tRNA-Lys(ttt)
+k141_35	Prodigal:v2.6	CDS	7469	8638	.	-	0	ID=PNCDIBDO_00303;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00303;product=hypothetical protein
+k141_35	Prodigal:v2.6	CDS	8671	9270	.	-	0	ID=PNCDIBDO_00304;eC_number=2.7.1.21;Name=tdk;gene=tdk;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q814U0;locus_tag=PNCDIBDO_00304;product=Thymidine kinase
+k141_35	Prodigal:v2.6	CDS	9275	10114	.	+	0	ID=PNCDIBDO_00305;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00305;product=hypothetical protein
+k141_35	Prodigal:v2.6	CDS	10134	10808	.	+	0	ID=PNCDIBDO_00306;eC_number=2.1.1.198;Name=rsmI;db_xref=COG:COG0313;gene=rsmI;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P67087;locus_tag=PNCDIBDO_00306;product=Ribosomal RNA small subunit methyltransferase I
+k141_171	Prodigal:v2.6	CDS	288	1496	.	-	0	ID=PNCDIBDO_00307;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00307;product=hypothetical protein
+k141_171	Prodigal:v2.6	CDS	2244	2405	.	+	0	ID=PNCDIBDO_00308;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00308;product=hypothetical protein
+k141_171	Prodigal:v2.6	CDS	2494	4197	.	+	0	ID=PNCDIBDO_00309;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00309;product=hypothetical protein
+k141_171	Prodigal:v2.6	CDS	4590	6704	.	-	0	ID=PNCDIBDO_00310;eC_number=3.2.1.31;Name=lacZ_1;db_xref=COG:COG3250;gene=lacZ_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q5LIC7;locus_tag=PNCDIBDO_00310;product=Beta-glucuronidase
+k141_171	Prodigal:v2.6	CDS	6760	8178	.	-	0	ID=PNCDIBDO_00311;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00311;product=hypothetical protein
+k141_171	Prodigal:v2.6	CDS	8296	9669	.	-	0	ID=PNCDIBDO_00312;eC_number=2.8.4.3;Name=miaB;db_xref=COG:COG0621;gene=miaB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O31778;locus_tag=PNCDIBDO_00312;product=tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase
+k141_171	Prodigal:v2.6	CDS	10000	10329	.	+	0	ID=PNCDIBDO_00313;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00313;product=hypothetical protein
+k141_171	Prodigal:v2.6	CDS	10366	11865	.	+	0	ID=PNCDIBDO_00314;eC_number=2.8.3.27;Name=scpC;db_xref=COG:COG0427;gene=scpC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P52043;locus_tag=PNCDIBDO_00314;product=Propanoyl-CoA:succinate CoA transferase
+k141_171	Prodigal:v2.6	CDS	11944	13218	.	-	0	ID=PNCDIBDO_00315;eC_number=3.4.16.4;Name=dacC;db_xref=COG:COG2027;gene=dacC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P39844;locus_tag=PNCDIBDO_00315;product=D-alanyl-D-alanine carboxypeptidase DacC
+k141_44	Prodigal:v2.6	CDS	118	1062	.	-	0	ID=PNCDIBDO_00316;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00316;product=hypothetical protein
+k141_44	Prodigal:v2.6	CDS	1059	1733	.	-	0	ID=PNCDIBDO_00317;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00317;product=hypothetical protein
+k141_44	Prodigal:v2.6	CDS	2234	5593	.	+	0	ID=PNCDIBDO_00318;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00318;product=hypothetical protein
+k141_44	Prodigal:v2.6	CDS	5610	6224	.	+	0	ID=PNCDIBDO_00319;eC_number=3.5.1.104;Name=pgdA;db_xref=COG:COG0726;gene=pgdA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8DP63;locus_tag=PNCDIBDO_00319;product=Peptidoglycan-N-acetylglucosamine deacetylase
+k141_44	Prodigal:v2.6	CDS	6224	7153	.	+	0	ID=PNCDIBDO_00320;eC_number=1.17.99.6;Name=queG;db_xref=COG:COG1600;gene=queG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P97030;locus_tag=PNCDIBDO_00320;product=Epoxyqueuosine reductase
+k141_44	Prodigal:v2.6	CDS	7187	8458	.	-	0	ID=PNCDIBDO_00321;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00321;product=hypothetical protein
+k141_44	Prodigal:v2.6	CDS	8458	9249	.	-	0	ID=PNCDIBDO_00322;eC_number=1.1.1.127;Name=kduD;db_xref=COG:COG1028;gene=kduD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KLZ8;locus_tag=PNCDIBDO_00322;product=2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase
+k141_44	Prodigal:v2.6	CDS	9316	10158	.	-	0	ID=PNCDIBDO_00323;eC_number=5.3.1.17;Name=kduI;db_xref=COG:COG3717;gene=kduI;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KN98;locus_tag=PNCDIBDO_00323;product=4-deoxy-L-threo-5-hexosulose-uronate ketol-isomerase
+k141_44	Prodigal:v2.6	CDS	10282	11694	.	-	0	ID=PNCDIBDO_00324;eC_number=3.1.6.1;db_xref=COG:COG3119;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q0TUK6;locus_tag=PNCDIBDO_00324;product=Arylsulfatase
+k141_46	Prodigal:v2.6	CDS	56	1336	.	+	0	ID=PNCDIBDO_00325;eC_number=3.4.14.-;Name=dpp7;db_xref=COG:COG3591;gene=dpp7;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:C3JAQ3;locus_tag=PNCDIBDO_00325;product=Dipeptidyl-peptidase 7
+k141_46	Prodigal:v2.6	CDS	1386	2249	.	-	0	ID=PNCDIBDO_00326;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00326;product=hypothetical protein
+k141_46	Prodigal:v2.6	CDS	2996	4939	.	-	0	ID=PNCDIBDO_00327;eC_number=3.6.4.13;Name=deaD;db_xref=COG:COG0513;gene=deaD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WH05;locus_tag=PNCDIBDO_00327;product=ATP-dependent RNA helicase DeaD
+k141_46	Prodigal:v2.6	CDS	5001	6056	.	-	0	ID=PNCDIBDO_00328;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00328;product=hypothetical protein
+k141_46	Prodigal:v2.6	CDS	6241	7161	.	-	0	ID=PNCDIBDO_00329;eC_number=2.7.1.4;Name=scrK;gene=scrK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P26420;locus_tag=PNCDIBDO_00329;product=Fructokinase
+k141_113	Prodigal:v2.6	CDS	116	253	.	+	0	ID=PNCDIBDO_00330;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00330;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	325	1716	.	+	0	ID=PNCDIBDO_00331;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00331;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	1709	2059	.	+	0	ID=PNCDIBDO_00332;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00332;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	2056	2727	.	+	0	ID=PNCDIBDO_00333;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00333;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	2733	3023	.	+	0	ID=PNCDIBDO_00334;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00334;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	3082	4389	.	+	0	ID=PNCDIBDO_00335;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00335;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	4407	4646	.	-	0	ID=PNCDIBDO_00336;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00336;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	4734	4859	.	+	0	ID=PNCDIBDO_00337;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00337;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	4856	5428	.	+	0	ID=PNCDIBDO_00338;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00338;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	5641	6921	.	+	0	ID=PNCDIBDO_00339;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00339;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	7278	7964	.	+	0	ID=PNCDIBDO_00340;Name=cusR;db_xref=COG:COG0745;gene=cusR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0ACZ8;locus_tag=PNCDIBDO_00340;product=Transcriptional regulatory protein CusR
+k141_113	Prodigal:v2.6	CDS	7961	9328	.	+	0	ID=PNCDIBDO_00341;eC_number=2.7.13.3;Name=sasA;gene=sasA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01837;locus_tag=PNCDIBDO_00341;product=Adaptive-response sensory-kinase SasA
+k141_113	Prodigal:v2.6	CDS	9488	12139	.	+	0	ID=PNCDIBDO_00342;eC_number=7.2.2.14;Name=mgtB;gene=mgtB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P22036;locus_tag=PNCDIBDO_00342;product=Magnesium-transporting ATPase%2C P-type 1
+k141_113	Prodigal:v2.6	CDS	12204	13289	.	+	0	ID=PNCDIBDO_00343;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00343;product=hypothetical protein
+k141_113	Prodigal:v2.6	CDS	13510	14307	.	+	0	ID=PNCDIBDO_00344;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00344;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	1300	1887	.	-	0	ID=PNCDIBDO_00345;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00345;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	1884	3641	.	-	0	ID=PNCDIBDO_00346;eC_number=3.4.-.-;Name=bepA;gene=bepA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00997;locus_tag=PNCDIBDO_00346;product=Beta-barrel assembly-enhancing protease
+k141_172	Prodigal:v2.6	CDS	3672	4106	.	-	0	ID=PNCDIBDO_00347;eC_number=3.6.1.23;Name=dut;db_xref=COG:COG0756;gene=dut;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9ZDD2;locus_tag=PNCDIBDO_00347;product=Deoxyuridine 5'-triphosphate nucleotidohydrolase
+k141_172	Prodigal:v2.6	CDS	4211	5536	.	+	0	ID=PNCDIBDO_00348;eC_number=3.1.5.1;Name=dgt;gene=dgt;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q59827;locus_tag=PNCDIBDO_00348;product=Deoxyguanosinetriphosphate triphosphohydrolase
+k141_172	Prodigal:v2.6	CDS	5508	6521	.	-	0	ID=PNCDIBDO_00349;eC_number=2.3.2.-;Name=glsB;db_xref=COG:COG3176;gene=glsB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8A247;locus_tag=PNCDIBDO_00349;product=Glycine N(alpha)-acyltransferase
+k141_172	Prodigal:v2.6	CDS	6552	7370	.	-	0	ID=PNCDIBDO_00350;eC_number=2.3.1.-;Name=glsA;db_xref=COG:COG0204;gene=glsA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8A248;locus_tag=PNCDIBDO_00350;product=Lyso-glycine lipid O-acyltransferase
+k141_172	Prodigal:v2.6	CDS	7636	8139	.	-	0	ID=PNCDIBDO_00351;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00351;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	8136	10295	.	-	0	ID=PNCDIBDO_00352;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9JZN9;locus_tag=PNCDIBDO_00352;product=putative TonB-dependent receptor
+k141_172	Prodigal:v2.6	CDS	10370	10711	.	-	0	ID=PNCDIBDO_00353;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00353;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	10909	11415	.	+	0	ID=PNCDIBDO_00354;Name=ecfG;gene=ecfG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B3Q6P8;locus_tag=PNCDIBDO_00354;product=ECF RNA polymerase sigma factor EcfG
+k141_172	Prodigal:v2.6	CDS	11514	11648	.	-	0	ID=PNCDIBDO_00355;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00355;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	11959	12459	.	+	0	ID=PNCDIBDO_00356;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00356;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	12566	13042	.	+	0	ID=PNCDIBDO_00357;Name=mraZ;gene=mraZ;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01008;locus_tag=PNCDIBDO_00357;product=Transcriptional regulator MraZ
+k141_172	Prodigal:v2.6	CDS	13039	13953	.	+	0	ID=PNCDIBDO_00358;eC_number=2.1.1.199;Name=rsmH;db_xref=COG:COG0275;gene=rsmH;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q07876;locus_tag=PNCDIBDO_00358;product=Ribosomal RNA small subunit methyltransferase H
+k141_172	Prodigal:v2.6	CDS	13982	14323	.	+	0	ID=PNCDIBDO_00359;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00359;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	14351	16450	.	+	0	ID=PNCDIBDO_00360;eC_number=3.4.16.4;Name=spoVD;db_xref=COG:COG0768;gene=spoVD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q03524;locus_tag=PNCDIBDO_00360;product=Stage V sporulation protein D
+k141_172	Prodigal:v2.6	CDS	16468	17925	.	+	0	ID=PNCDIBDO_00361;eC_number=6.3.2.13;Name=murE;gene=murE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q819Q0;locus_tag=PNCDIBDO_00361;product=UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2%2C6-diaminopimelate ligase
+k141_172	Prodigal:v2.6	CDS	18011	19279	.	+	0	ID=PNCDIBDO_00362;eC_number=2.7.8.13;Name=mraY;db_xref=COG:COG0472;gene=mraY;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A6W3;locus_tag=PNCDIBDO_00362;product=Phospho-N-acetylmuramoyl-pentapeptide-transferase
+k141_172	Prodigal:v2.6	CDS	19419	20753	.	+	0	ID=PNCDIBDO_00363;eC_number=6.3.2.9;Name=murD;gene=murD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8E186;locus_tag=PNCDIBDO_00363;product=UDP-N-acetylmuramoylalanine--D-glutamate ligase
+k141_172	Prodigal:v2.6	CDS	20812	22107	.	+	0	ID=PNCDIBDO_00364;eC_number=2.4.99.28;Name=mrdB;gene=mrdB;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_02079;locus_tag=PNCDIBDO_00364;product=Peptidoglycan glycosyltransferase MrdB
+k141_172	Prodigal:v2.6	CDS	22109	23251	.	+	0	ID=PNCDIBDO_00365;eC_number=2.4.1.227;Name=murG;gene=murG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9HW01;locus_tag=PNCDIBDO_00365;product=UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase
+k141_172	Prodigal:v2.6	CDS	23248	24642	.	+	0	ID=PNCDIBDO_00366;eC_number=6.3.2.8;Name=murC;db_xref=COG:COG0773;gene=murC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P45066;locus_tag=PNCDIBDO_00366;product=UDP-N-acetylmuramate--L-alanine ligase
+k141_172	Prodigal:v2.6	CDS	24674	25414	.	+	0	ID=PNCDIBDO_00367;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00367;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	25491	26921	.	+	0	ID=PNCDIBDO_00368;Name=ftsA;gene=ftsA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9K0X8;locus_tag=PNCDIBDO_00368;product=Cell division protein FtsA
+k141_172	Prodigal:v2.6	CDS	26948	28258	.	+	0	ID=PNCDIBDO_00369;Name=ftsZ;gene=ftsZ;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00909;locus_tag=PNCDIBDO_00369;product=Cell division protein FtsZ
+k141_172	Prodigal:v2.6	CDS	28333	28782	.	+	0	ID=PNCDIBDO_00370;Name=yqeY;db_xref=COG:COG1610;gene=yqeY;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P54464;locus_tag=PNCDIBDO_00370;product=putative protein YqeY
+k141_172	Prodigal:v2.6	CDS	28892	29620	.	-	0	ID=PNCDIBDO_00371;Name=recO;gene=recO;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00201;locus_tag=PNCDIBDO_00371;product=DNA repair protein RecO
+k141_172	Aragorn:v1.2	tRNA	29920	29992	.	+	.	ID=PNCDIBDO_00372;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00372;product=tRNA-Glu(ttc)
+k141_172	Prodigal:v2.6	CDS	30031	30285	.	+	0	ID=PNCDIBDO_00373;Name=rpsT;db_xref=COG:COG0268;gene=rpsT;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0R102;locus_tag=PNCDIBDO_00373;product=Small ribosomal subunit protein bS20
+k141_172	Prodigal:v2.6	CDS	30465	32423	.	+	0	ID=PNCDIBDO_00374;eC_number=5.6.2.2;Name=gyrB;db_xref=COG:COG0187;gene=gyrB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O87545;locus_tag=PNCDIBDO_00374;product=DNA gyrase subunit B
+k141_172	Prodigal:v2.6	CDS	32524	35490	.	-	0	ID=PNCDIBDO_00375;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00375;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	35487	36068	.	-	0	ID=PNCDIBDO_00376;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00376;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	36130	36270	.	-	0	ID=PNCDIBDO_00377;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00377;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	36423	38366	.	-	0	ID=PNCDIBDO_00378;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00378;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	38363	39457	.	-	0	ID=PNCDIBDO_00379;eC_number=2.7.13.3;Name=rcsC_2;gene=rcsC_2;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00979;locus_tag=PNCDIBDO_00379;product=Sensor histidine kinase RcsC
+k141_172	Prodigal:v2.6	CDS	39606	41120	.	-	0	ID=PNCDIBDO_00380;eC_number=5.4.2.12;Name=gpmI_1;db_xref=COG:COG0696;gene=gpmI_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P52832;locus_tag=PNCDIBDO_00380;product=2%2C3-bisphosphoglycerate-independent phosphoglycerate mutase
+k141_172	Prodigal:v2.6	CDS	41406	42332	.	+	0	ID=PNCDIBDO_00381;Name=corA;db_xref=COG:COG0598;gene=corA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9WZ31;locus_tag=PNCDIBDO_00381;product=Cobalt/magnesium transport protein CorA
+k141_172	Prodigal:v2.6	CDS	42340	42945	.	-	0	ID=PNCDIBDO_00382;eC_number=3.1.26.4;Name=rnhB;db_xref=COG:COG0164;gene=rnhB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P10442;locus_tag=PNCDIBDO_00382;product=Ribonuclease HII
+k141_172	Prodigal:v2.6	CDS	43161	45365	.	-	0	ID=PNCDIBDO_00383;eC_number=7.2.3.1;Name=hppA1;db_xref=COG:COG3808;gene=hppA1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q2RIS7;locus_tag=PNCDIBDO_00383;product=Putative K(+)-stimulated pyrophosphate-energized sodium pump 1
+k141_172	Prodigal:v2.6	CDS	45489	46043	.	-	0	ID=PNCDIBDO_00384;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00384;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	46287	48446	.	+	0	ID=PNCDIBDO_00385;eC_number=3.2.1.22;Name=agaA_1;gene=agaA_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9ALJ4;locus_tag=PNCDIBDO_00385;product=Alpha-galactosidase AgaA
+k141_172	Prodigal:v2.6	CDS	49512	49856	.	-	0	ID=PNCDIBDO_00386;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00386;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	50198	50296	.	-	0	ID=PNCDIBDO_00387;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00387;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	50739	52118	.	+	0	ID=PNCDIBDO_00388;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00388;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	52108	52464	.	+	0	ID=PNCDIBDO_00389;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00389;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	52461	53129	.	+	0	ID=PNCDIBDO_00390;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00390;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	53166	53450	.	+	0	ID=PNCDIBDO_00391;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00391;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	53513	54838	.	+	0	ID=PNCDIBDO_00392;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00392;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	54868	55083	.	-	0	ID=PNCDIBDO_00393;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00393;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	55523	55660	.	-	0	ID=PNCDIBDO_00394;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00394;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	55957	56499	.	+	0	ID=PNCDIBDO_00395;Name=sigW;db_xref=COG:COG1595;gene=sigW;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q45585;locus_tag=PNCDIBDO_00395;product=ECF RNA polymerase sigma factor SigW
+k141_172	Prodigal:v2.6	CDS	56587	57735	.	+	0	ID=PNCDIBDO_00396;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00396;product=hypothetical protein
+k141_172	Prodigal:v2.6	CDS	57754	57885	.	+	0	ID=PNCDIBDO_00397;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00397;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	555	3746	.	-	0	ID=PNCDIBDO_00398;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00398;product=TonB-dependent receptor P3
+k141_234	Prodigal:v2.6	CDS	4363	7398	.	-	0	ID=PNCDIBDO_00399;eC_number=3.4.16.4;Name=yfeW_2;gene=yfeW_2;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01034;locus_tag=PNCDIBDO_00399;product=Putative D-alanyl-D-alanine carboxypeptidase
+k141_234	Prodigal:v2.6	CDS	7446	10412	.	-	0	ID=PNCDIBDO_00400;eC_number=3.4.16.4;Name=yfeW_3;gene=yfeW_3;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01034;locus_tag=PNCDIBDO_00400;product=Putative D-alanyl-D-alanine carboxypeptidase
+k141_234	Prodigal:v2.6	CDS	10504	11376	.	-	0	ID=PNCDIBDO_00401;Name=yfkN;db_xref=COG:COG0737;gene=yfkN;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O34313;locus_tag=PNCDIBDO_00401;product=Trifunctional nucleotide phosphoesterase protein YfkN
+k141_234	Prodigal:v2.6	CDS	11416	12204	.	-	0	ID=PNCDIBDO_00402;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00402;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	12361	12714	.	+	0	ID=PNCDIBDO_00403;Name=rplS;db_xref=COG:COG0335;gene=rplS;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q2FZ42;locus_tag=PNCDIBDO_00403;product=Large ribosomal subunit protein bL19
+k141_234	Prodigal:v2.6	CDS	13470	14450	.	-	0	ID=PNCDIBDO_00404;eC_number=2.7.1.2;Name=glk;gene=glk;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9X1I0;locus_tag=PNCDIBDO_00404;product=Glucokinase
+k141_234	Prodigal:v2.6	CDS	14629	15345	.	+	0	ID=PNCDIBDO_00405;eC_number=7.6.2.-;Name=yknY;db_xref=COG:COG1136;gene=yknY;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O31711;locus_tag=PNCDIBDO_00405;product=putative ABC transporter ATP-binding protein YknY
+k141_234	Prodigal:v2.6	CDS	15360	16619	.	+	0	ID=PNCDIBDO_00406;eC_number=7.6.2.-;Name=macB_1;db_xref=COG:COG0577;gene=macB_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q2EHL8;locus_tag=PNCDIBDO_00406;product=Macrolide export ATP-binding/permease protein MacB
+k141_234	Prodigal:v2.6	CDS	16622	17866	.	+	0	ID=PNCDIBDO_00407;eC_number=7.6.2.-;Name=macB_2;db_xref=COG:COG0577;gene=macB_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q2EHL8;locus_tag=PNCDIBDO_00407;product=Macrolide export ATP-binding/permease protein MacB
+k141_234	Prodigal:v2.6	CDS	17975	19075	.	+	0	ID=PNCDIBDO_00408;Name=pvdR;db_xref=COG:COG0845;gene=pvdR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q88F89;locus_tag=PNCDIBDO_00408;product=Pyoverdine export membrane fusion protein PvdR
+k141_234	Prodigal:v2.6	CDS	19124	20446	.	+	0	ID=PNCDIBDO_00409;Name=bepC;gene=bepC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8G0Y6;locus_tag=PNCDIBDO_00409;product=Outer membrane efflux protein BepC
+k141_234	Prodigal:v2.6	CDS	20685	21446	.	+	0	ID=PNCDIBDO_00410;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00410;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	21540	22469	.	+	0	ID=PNCDIBDO_00411;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00411;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	22678	25848	.	+	0	ID=PNCDIBDO_00412;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00412;product=TonB-dependent receptor P3
+k141_234	Prodigal:v2.6	CDS	25865	27580	.	+	0	ID=PNCDIBDO_00413;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00413;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	27688	29925	.	+	0	ID=PNCDIBDO_00414;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00414;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	30039	32207	.	+	0	ID=PNCDIBDO_00415;eC_number=3.2.1.22;Name=agaA_2;gene=agaA_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9ALJ4;locus_tag=PNCDIBDO_00415;product=Alpha-galactosidase AgaA
+k141_234	Prodigal:v2.6	CDS	32381	32941	.	-	0	ID=PNCDIBDO_00416;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00416;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	33020	34153	.	-	0	ID=PNCDIBDO_00417;Name=mutS;gene=mutS;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00096;locus_tag=PNCDIBDO_00417;product=DNA mismatch repair protein MutS
+k141_234	Prodigal:v2.6	CDS	34434	36356	.	+	0	ID=PNCDIBDO_00418;eC_number=2.4.99.28;Name=mtgA;gene=mtgA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00766;locus_tag=PNCDIBDO_00418;product=Biosynthetic peptidoglycan transglycosylase
+k141_234	Prodigal:v2.6	CDS	36476	37339	.	-	0	ID=PNCDIBDO_00419;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00419;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	37349	38017	.	-	0	ID=PNCDIBDO_00420;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00420;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	38032	38685	.	-	0	ID=PNCDIBDO_00421;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00421;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	38788	39627	.	-	0	ID=PNCDIBDO_00422;Name=cvfB;gene=cvfB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q7A5Q1;locus_tag=PNCDIBDO_00422;product=Conserved virulence factor B
+k141_234	Prodigal:v2.6	CDS	39848	40849	.	+	0	ID=PNCDIBDO_00423;eC_number=1.1.1.37;Name=mdh;gene=mdh;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q2YLR9;locus_tag=PNCDIBDO_00423;product=Malate dehydrogenase
+k141_234	Prodigal:v2.6	CDS	40942	41679	.	-	0	ID=PNCDIBDO_00424;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00424;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	41896	43494	.	+	0	ID=PNCDIBDO_00425;Name=gadC;db_xref=COG:COG0531;gene=gadC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O30417;locus_tag=PNCDIBDO_00425;product=Glutamate/gamma-aminobutyrate antiporter
+k141_234	Prodigal:v2.6	CDS	43587	44819	.	-	0	ID=PNCDIBDO_00426;eC_number=2.7.13.3;Name=rcsC_3;gene=rcsC_3;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00979;locus_tag=PNCDIBDO_00426;product=Sensor histidine kinase RcsC
+k141_234	Aragorn:v1.2	tRNA	45263	45336	.	+	.	ID=PNCDIBDO_00427;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00427;product=tRNA-Phe(gaa)
+k141_234	Aragorn:v1.2	tRNA	45348	45421	.	+	.	ID=PNCDIBDO_00428;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00428;product=tRNA-Pro(cgg)
+k141_234	Prodigal:v2.6	CDS	45550	46611	.	-	0	ID=PNCDIBDO_00429;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00429;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	46772	47284	.	-	0	ID=PNCDIBDO_00430;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00430;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	47720	48193	.	+	0	ID=PNCDIBDO_00431;Name=argR;db_xref=COG:COG1438;gene=argR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P17893;locus_tag=PNCDIBDO_00431;product=Arginine repressor
+k141_234	Prodigal:v2.6	CDS	48227	48805	.	+	0	ID=PNCDIBDO_00432;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00432;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	48819	50024	.	+	0	ID=PNCDIBDO_00433;eC_number=6.3.4.5;Name=argG;db_xref=COG:COG0137;gene=argG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77973;locus_tag=PNCDIBDO_00433;product=Argininosuccinate synthase
+k141_234	Prodigal:v2.6	CDS	50021	50989	.	+	0	ID=PNCDIBDO_00434;eC_number=1.2.1.38;Name=argC;db_xref=COG:COG0002;gene=argC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9X2A2;locus_tag=PNCDIBDO_00434;product=N-acetyl-gamma-glutamyl-phosphate reductase
+k141_234	Prodigal:v2.6	CDS	50999	52123	.	+	0	ID=PNCDIBDO_00435;eC_number=2.6.1.118;Name=lysJ;db_xref=COG:COG4992;gene=lysJ;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q5SHH5;locus_tag=PNCDIBDO_00435;product=[LysW]-aminoadipate semialdehyde transaminase
+k141_234	Prodigal:v2.6	CDS	52236	53009	.	+	0	ID=PNCDIBDO_00436;eC_number=1.5.1.2;Name=proC;db_xref=COG:COG0345;gene=proC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A9L8;locus_tag=PNCDIBDO_00436;product=Pyrroline-5-carboxylate reductase
+k141_234	Prodigal:v2.6	CDS	53069	53623	.	+	0	ID=PNCDIBDO_00437;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00437;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	53641	55296	.	+	0	ID=PNCDIBDO_00438;eC_number=6.2.1.1;Name=acsA;db_xref=COG:COG0365;gene=acsA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P39062;locus_tag=PNCDIBDO_00438;product=Acetyl-coenzyme A synthetase
+k141_234	Prodigal:v2.6	CDS	55445	55645	.	+	0	ID=PNCDIBDO_00439;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00439;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	55784	58153	.	-	0	ID=PNCDIBDO_00440;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00440;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	59369	59560	.	+	0	ID=PNCDIBDO_00441;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00441;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	59508	59822	.	+	0	ID=PNCDIBDO_00442;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00442;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	59782	60480	.	+	0	ID=PNCDIBDO_00443;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00443;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	60680	61822	.	-	0	ID=PNCDIBDO_00444;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00444;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	61834	61971	.	-	0	ID=PNCDIBDO_00445;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00445;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	62109	62594	.	-	0	ID=PNCDIBDO_00446;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00446;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	62831	63067	.	-	0	ID=PNCDIBDO_00447;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00447;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	63191	63742	.	+	0	ID=PNCDIBDO_00448;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00448;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	63759	65723	.	+	0	ID=PNCDIBDO_00449;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00449;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	65720	66307	.	-	0	ID=PNCDIBDO_00450;Name=xerC_3;gene=xerC_3;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01808;locus_tag=PNCDIBDO_00450;product=Tyrosine recombinase XerC
+k141_234	Prodigal:v2.6	CDS	66416	66718	.	-	0	ID=PNCDIBDO_00451;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00451;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	66890	67180	.	+	0	ID=PNCDIBDO_00452;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00452;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	67429	68445	.	+	0	ID=PNCDIBDO_00453;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00453;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	68538	68699	.	+	0	ID=PNCDIBDO_00454;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00454;product=hypothetical protein
+k141_234	Aragorn:v1.2	tRNA	70281	70365	.	-	.	ID=PNCDIBDO_00455;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00455;product=tRNA-Leu(taa)
+k141_234	Aragorn:v1.2	tRNA	70379	70452	.	-	.	ID=PNCDIBDO_00456;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00456;product=tRNA-Gly(gcc)
+k141_234	Prodigal:v2.6	CDS	70597	71940	.	-	0	ID=PNCDIBDO_00457;eC_number=4.3.2.1;Name=argH;db_xref=COG:COG0165;gene=argH;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P11447;locus_tag=PNCDIBDO_00457;product=Argininosuccinate lyase
+k141_234	Prodigal:v2.6	CDS	71946	72356	.	-	0	ID=PNCDIBDO_00458;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00458;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	72456	73094	.	-	0	ID=PNCDIBDO_00459;eC_number=2.4.2.10;Name=pyrE;db_xref=COG:COG0461;gene=pyrE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P25972;locus_tag=PNCDIBDO_00459;product=Orotate phosphoribosyltransferase
+k141_234	Prodigal:v2.6	CDS	73190	73654	.	-	0	ID=PNCDIBDO_00460;Name=recX;gene=recX;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01114;locus_tag=PNCDIBDO_00460;product=Regulatory protein RecX
+k141_234	Prodigal:v2.6	CDS	73651	74487	.	-	0	ID=PNCDIBDO_00461;eC_number=2.1.1.297;Name=prmC;gene=prmC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B0B9D1;locus_tag=PNCDIBDO_00461;product=Release factor glutamine methyltransferase
+k141_234	Prodigal:v2.6	CDS	74541	75581	.	+	0	ID=PNCDIBDO_00462;Name=ribD;db_xref=COG:COG0117;gene=ribD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P17618;locus_tag=PNCDIBDO_00462;product=Riboflavin biosynthesis protein RibD
+k141_234	Prodigal:v2.6	CDS	75720	77078	.	+	0	ID=PNCDIBDO_00463;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00463;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	77083	77817	.	+	0	ID=PNCDIBDO_00464;eC_number=2.5.1.-;Name=uppS;db_xref=COG:COG0020;gene=uppS;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q97SR4;locus_tag=PNCDIBDO_00464;product=Isoprenyl transferase
+k141_234	Prodigal:v2.6	CDS	77841	80477	.	+	0	ID=PNCDIBDO_00465;Name=bamA;gene=bamA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01430;locus_tag=PNCDIBDO_00465;product=Outer membrane protein assembly factor BamA
+k141_234	Prodigal:v2.6	CDS	80502	81017	.	+	0	ID=PNCDIBDO_00466;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00466;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	81075	81584	.	+	0	ID=PNCDIBDO_00467;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00467;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	81687	82529	.	+	0	ID=PNCDIBDO_00468;eC_number=5.1.1.3;Name=murI;db_xref=COG:COG0796;gene=murI;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8Y7N7;locus_tag=PNCDIBDO_00468;product=Glutamate racemase
+k141_234	Prodigal:v2.6	CDS	82606	82842	.	+	0	ID=PNCDIBDO_00469;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00469;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	82956	84038	.	+	0	ID=PNCDIBDO_00470;eC_number=2.7.2.11;Name=proB;db_xref=COG:COG0263;gene=proB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A7B5;locus_tag=PNCDIBDO_00470;product=Glutamate 5-kinase
+k141_234	Prodigal:v2.6	CDS	84051	85298	.	+	0	ID=PNCDIBDO_00471;eC_number=1.2.1.41;Name=proA;db_xref=COG:COG0014;gene=proA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9WYC9;locus_tag=PNCDIBDO_00471;product=Gamma-glutamyl phosphate reductase
+k141_234	Prodigal:v2.6	CDS	85782	86804	.	+	0	ID=PNCDIBDO_00472;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00472;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	86843	87571	.	+	0	ID=PNCDIBDO_00473;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00473;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	87625	88581	.	+	0	ID=PNCDIBDO_00474;eC_number=2.1.3.11;Name=argF';gene=argF';inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:E1WKT5;locus_tag=PNCDIBDO_00474;product=N-succinylornithine carbamoyltransferase
+k141_234	Prodigal:v2.6	CDS	88680	89075	.	-	0	ID=PNCDIBDO_00475;eC_number=2.8.1.1;Name=glpE;gene=glpE;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01009;locus_tag=PNCDIBDO_00475;product=Thiosulfate sulfurtransferase GlpE
+k141_234	Prodigal:v2.6	CDS	89080	89775	.	-	0	ID=PNCDIBDO_00476;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00476;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	89772	90920	.	-	0	ID=PNCDIBDO_00477;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00477;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	91061	92035	.	-	0	ID=PNCDIBDO_00478;eC_number=6.3.2.4;Name=ddl;db_xref=COG:COG1181;gene=ddl;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8ZIE7;locus_tag=PNCDIBDO_00478;product=D-alanine--D-alanine ligase
+k141_234	Prodigal:v2.6	CDS	92032	93105	.	-	0	ID=PNCDIBDO_00479;eC_number=5.4.99.23;Name=rluD;db_xref=COG:COG0564;gene=rluD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P33643;locus_tag=PNCDIBDO_00479;product=Ribosomal large subunit pseudouridine synthase D
+k141_234	Prodigal:v2.6	CDS	93135	93776	.	-	0	ID=PNCDIBDO_00480;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00480;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	93988	94149	.	-	0	ID=PNCDIBDO_00481;Name=rpmH;db_xref=COG:COG0230;gene=rpmH;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9RSH2;locus_tag=PNCDIBDO_00481;product=Large ribosomal subunit protein bL34
+k141_234	Prodigal:v2.6	CDS	94343	94909	.	+	0	ID=PNCDIBDO_00482;Name=efp;db_xref=COG:COG0231;gene=efp;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0QWR4;locus_tag=PNCDIBDO_00482;product=Elongation factor P
+k141_234	Prodigal:v2.6	CDS	95369	96358	.	+	0	ID=PNCDIBDO_00483;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00483;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	96401	97093	.	+	0	ID=PNCDIBDO_00484;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q97QW0;locus_tag=PNCDIBDO_00484;note=UPF0758 protein SP_1088;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	97123	97887	.	-	0	ID=PNCDIBDO_00485;eC_number=3.6.1.54;db_xref=COG:COG2908;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q7MTZ8;locus_tag=PNCDIBDO_00485;product=UDP-2%2C3-diacylglucosamine hydrolase
+k141_234	Prodigal:v2.6	CDS	97933	98244	.	-	0	ID=PNCDIBDO_00486;db_xref=COG:COG2151;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q7MTZ9;locus_tag=PNCDIBDO_00486;product=Fe-S protein maturation auxiliary factor
+k141_234	Prodigal:v2.6	CDS	98327	99727	.	-	0	ID=PNCDIBDO_00487;eC_number=3.1.3.1;Name=phoB;db_xref=COG:COG1785;gene=phoB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P19405;locus_tag=PNCDIBDO_00487;product=Alkaline phosphatase 3
+k141_234	Prodigal:v2.6	CDS	99950	101146	.	-	0	ID=PNCDIBDO_00488;eC_number=2.7.2.1;Name=ackA;db_xref=COG:COG0282;gene=ackA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B2RK02;locus_tag=PNCDIBDO_00488;product=Acetate kinase
+k141_234	Prodigal:v2.6	CDS	101165	102184	.	-	0	ID=PNCDIBDO_00489;eC_number=2.3.1.8;Name=pta;db_xref=COG:COG0280;gene=pta;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77844;locus_tag=PNCDIBDO_00489;product=Phosphate acetyltransferase
+k141_234	Prodigal:v2.6	CDS	102318	103871	.	-	0	ID=PNCDIBDO_00490;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00490;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	103916	104713	.	-	0	ID=PNCDIBDO_00491;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00491;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	104739	105422	.	-	0	ID=PNCDIBDO_00492;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00492;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	105453	105593	.	-	0	ID=PNCDIBDO_00493;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00493;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	105631	105969	.	+	0	ID=PNCDIBDO_00494;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P60632;locus_tag=PNCDIBDO_00494;note=UPF0299 membrane protein YohJ;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	105966	106661	.	+	0	ID=PNCDIBDO_00495;Name=yohK;db_xref=COG:COG1346;gene=yohK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AD19;locus_tag=PNCDIBDO_00495;product=Inner membrane protein YohK
+k141_234	Prodigal:v2.6	CDS	106716	107633	.	+	0	ID=PNCDIBDO_00496;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00496;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	107643	108662	.	+	0	ID=PNCDIBDO_00497;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00497;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	108756	110669	.	-	0	ID=PNCDIBDO_00498;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00498;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	110711	111844	.	-	0	ID=PNCDIBDO_00499;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00499;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	111873	112013	.	-	0	ID=PNCDIBDO_00500;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00500;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	112013	113089	.	-	0	ID=PNCDIBDO_00501;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00501;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	113289	113615	.	-	0	ID=PNCDIBDO_00502;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00502;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	113825	114868	.	-	0	ID=PNCDIBDO_00503;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00503;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	114958	115236	.	-	0	ID=PNCDIBDO_00504;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00504;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	115372	116259	.	-	0	ID=PNCDIBDO_00505;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00505;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	116259	116486	.	-	0	ID=PNCDIBDO_00506;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00506;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	116552	117622	.	-	0	ID=PNCDIBDO_00507;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00507;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	117619	117846	.	-	0	ID=PNCDIBDO_00508;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00508;product=hypothetical protein
+k141_234	Prodigal:v2.6	CDS	118503	119267	.	-	0	ID=PNCDIBDO_00509;eC_number=2.7.7.85;Name=cdaA;db_xref=COG:COG1624;gene=cdaA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q45589;locus_tag=PNCDIBDO_00509;product=Cyclic di-AMP synthase CdaA
+k141_234	Prodigal:v2.6	CDS	119302	120162	.	-	0	ID=PNCDIBDO_00510;eC_number=2.5.1.15;Name=folP;db_xref=COG:COG0294;gene=folP;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AC13;locus_tag=PNCDIBDO_00510;product=Dihydropteroate synthase
+k141_234	Prodigal:v2.6	CDS	120274	122289	.	+	0	ID=PNCDIBDO_00511;eC_number=2.7.13.3;Name=rcsC_4;gene=rcsC_4;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00979;locus_tag=PNCDIBDO_00511;product=Sensor histidine kinase RcsC
+k141_234	Prodigal:v2.6	CDS	122375	123340	.	-	0	ID=PNCDIBDO_00512;eC_number=3.5.1.2;Name=glsA1;db_xref=COG:COG2066;gene=glsA1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P77454;locus_tag=PNCDIBDO_00512;product=Glutaminase 1
+k141_234	Prodigal:v2.6	CDS	123356	124798	.	-	0	ID=PNCDIBDO_00513;eC_number=4.1.1.15;Name=gadB;db_xref=COG:COG0076;gene=gadB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O30418;locus_tag=PNCDIBDO_00513;product=Glutamate decarboxylase
+k141_234	Prodigal:v2.6	CDS	124830	125057	.	+	0	ID=PNCDIBDO_00514;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00514;product=hypothetical protein
+k141_236	Prodigal:v2.6	CDS	16	2082	.	+	0	ID=PNCDIBDO_00515;Name=staC;gene=staC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:BARRGD:CFY25454.1;locus_tag=PNCDIBDO_00515;product=Sta fimbria outer membrane usher protein StaC
+k141_236	Prodigal:v2.6	CDS	2135	2668	.	+	0	ID=PNCDIBDO_00516;Name=yadM;db_xref=COG:COG3539;gene=yadM;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P37018;locus_tag=PNCDIBDO_00516;product=putative fimbrial-like protein YadM
+k141_236	Prodigal:v2.6	CDS	2680	3285	.	+	0	ID=PNCDIBDO_00517;Name=yadL;db_xref=COG:COG3539;gene=yadL;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P37017;locus_tag=PNCDIBDO_00517;product=putative fimbrial-like protein YadL
+k141_236	Prodigal:v2.6	CDS	3312	3908	.	+	0	ID=PNCDIBDO_00518;Name=yadK;db_xref=COG:COG3539;gene=yadK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P37016;locus_tag=PNCDIBDO_00518;product=putative fimbrial-like protein YadK
+k141_236	Prodigal:v2.6	CDS	3958	5196	.	+	0	ID=PNCDIBDO_00519;Name=yadC;db_xref=COG:COG3539;gene=yadC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P31058;locus_tag=PNCDIBDO_00519;product=putative fimbrial-like protein YadC
+k141_236	Prodigal:v2.6	CDS	5331	5717	.	-	0	ID=PNCDIBDO_00520;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00520;product=hypothetical protein
+k141_173	Prodigal:v2.6	CDS	614	985	.	-	0	ID=PNCDIBDO_00521;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00521;product=hypothetical protein
+k141_173	Prodigal:v2.6	CDS	1041	2408	.	-	0	ID=PNCDIBDO_00522;eC_number=3.6.4.-;Name=radA;db_xref=COG:COG1066;gene=radA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P37572;locus_tag=PNCDIBDO_00522;product=DNA repair protein RadA
+k141_173	Prodigal:v2.6	CDS	3066	4115	.	-	0	ID=PNCDIBDO_00523;eC_number=3.5.1.1;Name=ansA;db_xref=COG:COG0252;gene=ansA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A962;locus_tag=PNCDIBDO_00523;product=L-asparaginase 1
+k141_173	Prodigal:v2.6	CDS	4321	4458	.	+	0	ID=PNCDIBDO_00524;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00524;product=hypothetical protein
+k141_173	Prodigal:v2.6	CDS	4609	7044	.	+	0	ID=PNCDIBDO_00525;Name=thrA;db_xref=COG:COG0460;gene=thrA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P00561;locus_tag=PNCDIBDO_00525;product=Bifunctional aspartokinase/homoserine dehydrogenase 1
+k141_173	Prodigal:v2.6	CDS	7056	8267	.	+	0	ID=PNCDIBDO_00526;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00526;product=hypothetical protein
+k141_56	Prodigal:v2.6	CDS	488	1180	.	-	0	ID=PNCDIBDO_00527;Name=yadV;db_xref=COG:COG3121;gene=yadV;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P33128;locus_tag=PNCDIBDO_00527;product=putative fimbrial chaperone YadV
+k141_56	Prodigal:v2.6	CDS	1326	1910	.	-	0	ID=PNCDIBDO_00528;Name=yadN;db_xref=COG:COG3539;gene=yadN;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P37050;locus_tag=PNCDIBDO_00528;product=putative fimbrial-like protein YadN
+k141_57	Prodigal:v2.6	CDS	85	807	.	+	0	ID=PNCDIBDO_00529;eC_number=1.1.1.2;Name=yahK;db_xref=COG:COG1064;gene=yahK;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75691;locus_tag=PNCDIBDO_00529;product=Aldehyde reductase YahK
+k141_57	Prodigal:v2.6	CDS	1050	1865	.	+	0	ID=PNCDIBDO_00530;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00530;product=hypothetical protein
+k141_57	Aragorn:v1.2	tRNA	2208	2288	.	+	.	ID=PNCDIBDO_00531;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00531;product=tRNA-Ser(gga)
+k141_57	Prodigal:v2.6	CDS	2540	3208	.	-	0	ID=PNCDIBDO_00532;Name=rhtC;db_xref=COG:COG1280;gene=rhtC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AG38;locus_tag=PNCDIBDO_00532;product=Threonine efflux protein
+k141_115	Prodigal:v2.6	CDS	121	744	.	-	0	ID=PNCDIBDO_00533;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00533;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	776	1780	.	-	0	ID=PNCDIBDO_00534;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00534;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	1784	2395	.	-	0	ID=PNCDIBDO_00535;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00535;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	2437	2817	.	-	0	ID=PNCDIBDO_00536;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00536;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	2858	5362	.	-	0	ID=PNCDIBDO_00537;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00537;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	5359	5691	.	-	0	ID=PNCDIBDO_00538;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00538;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	5702	6019	.	-	0	ID=PNCDIBDO_00539;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00539;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	6221	6949	.	-	0	ID=PNCDIBDO_00540;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00540;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	6966	7307	.	-	0	ID=PNCDIBDO_00541;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00541;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	7322	7762	.	-	0	ID=PNCDIBDO_00542;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00542;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	7765	8526	.	-	0	ID=PNCDIBDO_00543;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00543;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	9236	9664	.	+	0	ID=PNCDIBDO_00544;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00544;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	9643	10890	.	+	0	ID=PNCDIBDO_00545;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00545;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	10921	12939	.	+	0	ID=PNCDIBDO_00546;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00546;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	13071	16325	.	-	0	ID=PNCDIBDO_00547;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00547;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	16342	17472	.	-	0	ID=PNCDIBDO_00548;db_xref=COG:COG1373;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WLM9;locus_tag=PNCDIBDO_00548;product=putative protein
+k141_115	Prodigal:v2.6	CDS	17774	18379	.	-	0	ID=PNCDIBDO_00549;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00549;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	18618	19040	.	-	0	ID=PNCDIBDO_00550;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00550;product=hypothetical protein
+k141_115	Prodigal:v2.6	CDS	19320	20642	.	-	0	ID=PNCDIBDO_00551;Name=zraR;db_xref=COG:COG2204;gene=zraR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P14375;locus_tag=PNCDIBDO_00551;product=Transcriptional regulatory protein ZraR
+k141_115	Prodigal:v2.6	CDS	20635	21477	.	-	0	ID=PNCDIBDO_00552;eC_number=2.7.13.3;Name=evgS;db_xref=COG:COG0784;gene=evgS;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P30855;locus_tag=PNCDIBDO_00552;product=Sensor protein EvgS
+k141_115	Prodigal:v2.6	CDS	21453	22952	.	-	0	ID=PNCDIBDO_00553;eC_number=2.7.13.3;Name=rcsC_5;gene=rcsC_5;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00979;locus_tag=PNCDIBDO_00553;product=Sensor histidine kinase RcsC
+k141_115	Prodigal:v2.6	CDS	22952	24877	.	-	0	ID=PNCDIBDO_00554;Name=tet(Q);gene=tet(Q);inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:BARRGD:WP_063856407.1;locus_tag=PNCDIBDO_00554;product=tetracycline resistance ribosomal protection protein Tet(Q)
+k141_115	Prodigal:v2.6	CDS	25535	27106	.	-	0	ID=PNCDIBDO_00555;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00555;product=hypothetical protein
+k141_238	Prodigal:v2.6	CDS	106	1734	.	+	0	ID=PNCDIBDO_00556;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00556;product=hypothetical protein
+k141_238	Prodigal:v2.6	CDS	1716	2444	.	+	0	ID=PNCDIBDO_00557;eC_number=6.1.-.-;Name=tcdA;db_xref=COG:COG1179;gene=tcdA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q46927;locus_tag=PNCDIBDO_00557;product=tRNA threonylcarbamoyladenosine dehydratase
+k141_238	Prodigal:v2.6	CDS	2449	3099	.	+	0	ID=PNCDIBDO_00558;eC_number=7.6.2.-;Name=lolD;db_xref=COG:COG1136;gene=lolD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O66646;locus_tag=PNCDIBDO_00558;product=Lipoprotein-releasing system ATP-binding protein LolD
+k141_238	Prodigal:v2.6	CDS	3100	4002	.	-	0	ID=PNCDIBDO_00559;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00559;product=hypothetical protein
+k141_238	Prodigal:v2.6	CDS	4005	5372	.	-	0	ID=PNCDIBDO_00560;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00560;product=hypothetical protein
+k141_238	Prodigal:v2.6	CDS	5477	5869	.	+	0	ID=PNCDIBDO_00561;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00561;product=hypothetical protein
+k141_238	Prodigal:v2.6	CDS	5874	7172	.	-	0	ID=PNCDIBDO_00562;eC_number=6.3.2.10;Name=murF;db_xref=COG:COG0770;gene=murF;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q2FWH4;locus_tag=PNCDIBDO_00562;product=UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase
+k141_174	Prodigal:v2.6	CDS	79	435	.	+	0	ID=PNCDIBDO_00563;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00563;product=hypothetical protein
+k141_174	Prodigal:v2.6	CDS	439	804	.	+	0	ID=PNCDIBDO_00564;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00564;product=hypothetical protein
+k141_174	Prodigal:v2.6	CDS	880	2553	.	+	0	ID=PNCDIBDO_00565;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:ISfinder:ISPba3;locus_tag=PNCDIBDO_00565;product=IS66 family transposase ISPba3
+k141_174	Prodigal:v2.6	CDS	3015	6200	.	+	0	ID=PNCDIBDO_00566;db_xref=COG:COG1629;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KM18;locus_tag=PNCDIBDO_00566;product=TonB-dependent receptor P26
+k141_174	Prodigal:v2.6	CDS	6214	7896	.	+	0	ID=PNCDIBDO_00567;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00567;product=hypothetical protein
+k141_174	Prodigal:v2.6	CDS	7918	8871	.	+	0	ID=PNCDIBDO_00568;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00568;product=hypothetical protein
+k141_174	Prodigal:v2.6	CDS	8900	10351	.	+	0	ID=PNCDIBDO_00569;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00569;product=hypothetical protein
+k141_174	Prodigal:v2.6	CDS	10469	14023	.	+	0	ID=PNCDIBDO_00570;eC_number=3.2.1.23;Name=lacZ_2;db_xref=COG:COG3250;gene=lacZ_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q56307;locus_tag=PNCDIBDO_00570;product=Beta-galactosidase
+k141_174	Prodigal:v2.6	CDS	14169	15401	.	-	0	ID=PNCDIBDO_00571;eC_number=2.5.1.19;Name=aroA;db_xref=COG:COG0128;gene=aroA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9KRB0;locus_tag=PNCDIBDO_00571;product=3-phosphoshikimate 1-carboxyvinyltransferase
+k141_174	Prodigal:v2.6	CDS	15686	16561	.	+	0	ID=PNCDIBDO_00572;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00572;product=hypothetical protein
+k141_174	Prodigal:v2.6	CDS	16643	17215	.	-	0	ID=PNCDIBDO_00573;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00573;product=hypothetical protein
+k141_178	Prodigal:v2.6	CDS	72	515	.	-	0	ID=PNCDIBDO_00574;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00574;product=hypothetical protein
+k141_178	Prodigal:v2.6	CDS	561	899	.	-	0	ID=PNCDIBDO_00575;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00575;product=hypothetical protein
+k141_178	Prodigal:v2.6	CDS	1234	2004	.	-	0	ID=PNCDIBDO_00576;eC_number=3.5.1.3;Name=yafV;db_xref=COG:COG0388;gene=yafV;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0A140NDS5;locus_tag=PNCDIBDO_00576;product=Omega-amidase YafV
+k141_118	Prodigal:v2.6	CDS	63	899	.	+	0	ID=PNCDIBDO_00577;eC_number=4.2.3.1;Name=thrC;db_xref=COG:COG0498;gene=thrC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P00934;locus_tag=PNCDIBDO_00577;product=Threonine synthase
+k141_118	Prodigal:v2.6	CDS	1318	2268	.	+	0	ID=PNCDIBDO_00578;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00578;product=hypothetical protein
+k141_118	Prodigal:v2.6	CDS	2222	2845	.	-	0	ID=PNCDIBDO_00579;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00579;product=hypothetical protein
+k141_118	Prodigal:v2.6	CDS	2832	3404	.	-	0	ID=PNCDIBDO_00580;Name=pnuC;gene=pnuC;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P24520;locus_tag=PNCDIBDO_00580;product=Nicotinamide riboside transporter PnuC
+k141_118	Prodigal:v2.6	CDS	3408	5627	.	-	0	ID=PNCDIBDO_00581;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00581;product=hypothetical protein
+k141_118	Prodigal:v2.6	CDS	5840	6745	.	+	0	ID=PNCDIBDO_00582;Name=mscS;db_xref=COG:COG0668;gene=mscS;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0C0S1;locus_tag=PNCDIBDO_00582;product=Small-conductance mechanosensitive channel
+k141_118	Prodigal:v2.6	CDS	6815	7054	.	-	0	ID=PNCDIBDO_00583;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00583;product=hypothetical protein
+k141_118	Prodigal:v2.6	CDS	7182	7769	.	+	0	ID=PNCDIBDO_00584;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00584;product=hypothetical protein
+k141_118	Prodigal:v2.6	CDS	7831	8829	.	+	0	ID=PNCDIBDO_00585;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00585;product=hypothetical protein
+k141_118	Prodigal:v2.6	CDS	8835	11438	.	+	0	ID=PNCDIBDO_00586;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00586;product=hypothetical protein
+k141_118	Prodigal:v2.6	CDS	11534	14815	.	+	0	ID=PNCDIBDO_00587;Name=susC_1;db_xref=COG:COG1629;gene=susC_1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8A1G1;locus_tag=PNCDIBDO_00587;product=TonB-dependent receptor SusC
+k141_118	Prodigal:v2.6	CDS	14828	16396	.	+	0	ID=PNCDIBDO_00588;db_xref=COG:COG0561;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A7LXT5;locus_tag=PNCDIBDO_00588;product=SusD-like protein
+k141_242	Prodigal:v2.6	CDS	152	775	.	+	0	ID=PNCDIBDO_00589;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00589;product=hypothetical protein
+k141_242	Prodigal:v2.6	CDS	902	2269	.	-	0	ID=PNCDIBDO_00590;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00590;product=hypothetical protein
+k141_242	Prodigal:v2.6	CDS	2272	3768	.	-	0	ID=PNCDIBDO_00591;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00591;product=hypothetical protein
+k141_242	Prodigal:v2.6	CDS	3797	4825	.	-	0	ID=PNCDIBDO_00592;eC_number=3.6.4.-;Name=ruvB;gene=ruvB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q51426;locus_tag=PNCDIBDO_00592;product=Holliday junction branch migration complex subunit RuvB
+k141_242	Prodigal:v2.6	CDS	5154	5852	.	-	0	ID=PNCDIBDO_00593;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00593;product=hypothetical protein
+k141_242	Prodigal:v2.6	CDS	5959	7191	.	+	0	ID=PNCDIBDO_00594;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00594;product=hypothetical protein
+k141_242	Prodigal:v2.6	CDS	8864	8983	.	+	0	ID=PNCDIBDO_00595;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00595;product=hypothetical protein
+k141_242	Prodigal:v2.6	CDS	9038	9145	.	+	0	ID=PNCDIBDO_00596;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00596;product=hypothetical protein
+k141_67	Prodigal:v2.6	CDS	84	671	.	-	0	ID=PNCDIBDO_00597;Name=ecpA;gene=ecpA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AAA4;locus_tag=PNCDIBDO_00597;product=Common pilus major fimbrillin subunit EcpA
+k141_67	Prodigal:v2.6	CDS	746	1288	.	-	0	ID=PNCDIBDO_00598;Name=ecpR;db_xref=COG:COG2771;gene=ecpR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P71301;locus_tag=PNCDIBDO_00598;product=HTH-type transcriptional regulator EcpR
+k141_67	Prodigal:v2.6	CDS	2112	2339	.	+	0	ID=PNCDIBDO_00599;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00599;product=hypothetical protein
+k141_126	Prodigal:v2.6	CDS	76	3303	.	+	0	ID=PNCDIBDO_00600;db_xref=COG:COG1629;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KM18;locus_tag=PNCDIBDO_00600;product=TonB-dependent receptor P26
+k141_247	Prodigal:v2.6	CDS	103	1563	.	-	0	ID=PNCDIBDO_00601;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00601;product=hypothetical protein
+k141_127	Prodigal:v2.6	CDS	9	287	.	-	0	ID=PNCDIBDO_00602;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00602;product=hypothetical protein
+k141_127	Prodigal:v2.6	CDS	360	1250	.	+	0	ID=PNCDIBDO_00603;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00603;product=hypothetical protein
+k141_127	Prodigal:v2.6	CDS	1433	2194	.	+	0	ID=PNCDIBDO_00604;Name=adiY;db_xref=COG:COG2207;gene=adiY;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P33234;locus_tag=PNCDIBDO_00604;product=HTH-type transcriptional regulator AdiY
+k141_127	Prodigal:v2.6	CDS	2708	3661	.	+	0	ID=PNCDIBDO_00605;eC_number=3.4.23.49;Name=ompT;db_xref=COG:COG4571;gene=ompT;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P09169;locus_tag=PNCDIBDO_00605;product=Protease 7
+k141_127	Prodigal:v2.6	CDS	3911	4660	.	-	0	ID=PNCDIBDO_00606;Name=appY;db_xref=COG:COG2207;gene=appY;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P05052;locus_tag=PNCDIBDO_00606;product=HTH-type transcriptional regulator AppY
+k141_127	Prodigal:v2.6	CDS	5281	5466	.	-	0	ID=PNCDIBDO_00607;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00607;product=hypothetical protein
+k141_127	Prodigal:v2.6	CDS	6244	6987	.	-	0	ID=PNCDIBDO_00608;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00608;product=hypothetical protein
+k141_127	Prodigal:v2.6	CDS	6962	7507	.	-	0	ID=PNCDIBDO_00609;Name=nohA;db_xref=COG:COG4220;gene=nohA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P31061;locus_tag=PNCDIBDO_00609;product=Prophage DNA-packing protein NohA
+k141_127	Prodigal:v2.6	CDS	8705	9157	.	+	0	ID=PNCDIBDO_00610;Name=ydfO;db_xref=COG:COG5562;gene=ydfO;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P76156;locus_tag=PNCDIBDO_00610;product=putative protein YdfO
+k141_184	Prodigal:v2.6	CDS	41	508	.	+	0	ID=PNCDIBDO_00611;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00611;product=hypothetical protein
+k141_184	Prodigal:v2.6	CDS	513	1448	.	+	0	ID=PNCDIBDO_00612;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00612;product=hypothetical protein
+k141_184	Prodigal:v2.6	CDS	1765	2190	.	+	0	ID=PNCDIBDO_00613;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00613;product=hypothetical protein
+k141_184	Prodigal:v2.6	CDS	2187	2327	.	+	0	ID=PNCDIBDO_00614;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00614;product=hypothetical protein
+k141_184	Prodigal:v2.6	CDS	2345	3364	.	+	0	ID=PNCDIBDO_00615;eC_number=2.1.1.113;Name=pvuIIM;gene=pvuIIM;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P11409;locus_tag=PNCDIBDO_00615;product=Type II methyltransferase M.PvuII
+k141_184	Prodigal:v2.6	CDS	3342	5396	.	+	0	ID=PNCDIBDO_00616;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00616;product=hypothetical protein
+k141_184	Prodigal:v2.6	CDS	5409	6833	.	+	0	ID=PNCDIBDO_00617;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00617;product=hypothetical protein
+k141_184	Prodigal:v2.6	CDS	6830	8959	.	+	0	ID=PNCDIBDO_00618;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00618;product=hypothetical protein
+k141_184	Prodigal:v2.6	CDS	8946	9893	.	+	0	ID=PNCDIBDO_00619;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00619;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	5	826	.	+	0	ID=PNCDIBDO_00620;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00620;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	831	3014	.	+	0	ID=PNCDIBDO_00621;eC_number=3.4.22.-;Name=lagD;gene=lagD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P59852;locus_tag=PNCDIBDO_00621;product=Lactococcin-G-processing and transport ATP-binding protein LagD
+k141_248	Prodigal:v2.6	CDS	3131	3730	.	-	0	ID=PNCDIBDO_00622;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00622;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	3850	5877	.	+	0	ID=PNCDIBDO_00623;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00623;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	5935	6708	.	+	0	ID=PNCDIBDO_00624;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00624;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	6750	7259	.	+	0	ID=PNCDIBDO_00625;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00625;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	7277	8890	.	+	0	ID=PNCDIBDO_00626;eC_number=3.1.6.1;Name=atsA;gene=atsA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P51691;locus_tag=PNCDIBDO_00626;product=Arylsulfatase
+k141_248	Prodigal:v2.6	CDS	8994	9620	.	-	0	ID=PNCDIBDO_00627;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00627;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	9621	12035	.	-	0	ID=PNCDIBDO_00628;Name=cntO;gene=cntO;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A0A0H2ZI93;locus_tag=PNCDIBDO_00628;product=Metal-pseudopaline receptor CntO
+k141_248	Prodigal:v2.6	CDS	12236	13915	.	-	0	ID=PNCDIBDO_00629;Name=dauA;db_xref=COG:COG0659;gene=dauA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AFR2;locus_tag=PNCDIBDO_00629;product=C4-dicarboxylic acid transporter DauA
+k141_248	Prodigal:v2.6	CDS	14176	14709	.	+	0	ID=PNCDIBDO_00630;Name=rbr;db_xref=COG:COG1592;gene=rbr;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q9AGG3;locus_tag=PNCDIBDO_00630;product=Rubrerythrin
+k141_248	Prodigal:v2.6	CDS	14838	16409	.	-	0	ID=PNCDIBDO_00631;eC_number=1.4.3.16;Name=nadB;db_xref=COG:COG0029;gene=nadB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P10902;locus_tag=PNCDIBDO_00631;product=L-aspartate oxidase
+k141_248	Prodigal:v2.6	CDS	16517	16915	.	+	0	ID=PNCDIBDO_00632;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00632;product=hypothetical protein
+k141_248	Prodigal:v2.6	CDS	16922	18265	.	+	0	ID=PNCDIBDO_00633;eC_number=1.8.1.4;Name=pdhD;gene=pdhD;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P11959;locus_tag=PNCDIBDO_00633;product=Dihydrolipoyl dehydrogenase
+k141_251	Prodigal:v2.6	CDS	46	462	.	+	0	ID=PNCDIBDO_00634;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00634;product=hypothetical protein
+k141_251	Prodigal:v2.6	CDS	489	1187	.	+	0	ID=PNCDIBDO_00635;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00635;product=hypothetical protein
+k141_251	Prodigal:v2.6	CDS	1459	2085	.	+	0	ID=PNCDIBDO_00636;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00636;product=hypothetical protein
+k141_251	Prodigal:v2.6	CDS	2176	2907	.	-	0	ID=PNCDIBDO_00637;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00637;product=hypothetical protein
+k141_252	Prodigal:v2.6	CDS	87	350	.	+	0	ID=PNCDIBDO_00638;eC_number=2.7.13.3;Name=resE;db_xref=COG:COG5002;gene=resE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P35164;locus_tag=PNCDIBDO_00638;product=Sensor histidine kinase ResE
+k141_252	Prodigal:v2.6	CDS	360	1037	.	+	0	ID=PNCDIBDO_00639;Name=kdpE;db_xref=COG:COG0745;gene=kdpE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WGN1;locus_tag=PNCDIBDO_00639;product=Transcriptional regulatory protein KdpE
+k141_252	Prodigal:v2.6	CDS	1101	1937	.	+	0	ID=PNCDIBDO_00640;eC_number=3.1.3.23;Name=yidA;db_xref=COG:COG0561;gene=yidA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A8Y5;locus_tag=PNCDIBDO_00640;product=Sugar phosphatase YidA
+k141_252	Prodigal:v2.6	CDS	2492	3967	.	+	0	ID=PNCDIBDO_00641;eC_number=6.1.1.16;Name=cysS;db_xref=COG:COG0215;gene=cysS;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q83BL7;locus_tag=PNCDIBDO_00641;product=Cysteine--tRNA ligase
+k141_252	Prodigal:v2.6	CDS	4078	4482	.	+	0	ID=PNCDIBDO_00642;eC_number=3.1.2.-;Name=paaI;db_xref=COG:COG2050;gene=paaI;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P76084;locus_tag=PNCDIBDO_00642;product=Acyl-coenzyme A thioesterase PaaI
+k141_252	Prodigal:v2.6	CDS	4472	5350	.	-	0	ID=PNCDIBDO_00643;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00643;product=hypothetical protein
+k141_252	Prodigal:v2.6	CDS	5289	7208	.	-	0	ID=PNCDIBDO_00644;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00644;product=hypothetical protein
+k141_252	Prodigal:v2.6	CDS	7314	10418	.	+	0	ID=PNCDIBDO_00645;eC_number=3.2.1.23;Name=lacZ_3;db_xref=COG:COG3250;gene=lacZ_3;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q56307;locus_tag=PNCDIBDO_00645;product=Beta-galactosidase
+k141_196	Prodigal:v2.6	CDS	75	272	.	+	0	ID=PNCDIBDO_00646;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00646;product=hypothetical protein
+k141_196	Prodigal:v2.6	CDS	365	2032	.	-	0	ID=PNCDIBDO_00647;Name=bcaP;db_xref=COG:COG0531;gene=bcaP;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O07576;locus_tag=PNCDIBDO_00647;product=Branched-chain amino acid permease BcaP
+k141_196	Prodigal:v2.6	CDS	2560	3885	.	-	0	ID=PNCDIBDO_00648;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00648;product=hypothetical protein
+k141_196	Prodigal:v2.6	CDS	3882	6596	.	-	0	ID=PNCDIBDO_00649;Name=bepE_2;gene=bepE_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8G2M6;locus_tag=PNCDIBDO_00649;product=Efflux pump membrane transporter BepE
+k141_255	Prodigal:v2.6	CDS	1785	3776	.	-	0	ID=PNCDIBDO_00650;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00650;product=hypothetical protein
+k141_255	Prodigal:v2.6	CDS	3801	5054	.	-	0	ID=PNCDIBDO_00651;Name=hflX;db_xref=COG:COG2262;gene=hflX;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P25519;locus_tag=PNCDIBDO_00651;product=GTPase HflX
+k141_255	Prodigal:v2.6	CDS	5171	6565	.	-	0	ID=PNCDIBDO_00652;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00652;product=hypothetical protein
+k141_255	Prodigal:v2.6	CDS	6600	9524	.	-	0	ID=PNCDIBDO_00653;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00653;product=TonB-dependent receptor P3
+k141_255	Prodigal:v2.6	CDS	10065	11564	.	-	0	ID=PNCDIBDO_00654;db_xref=COG:COG0561;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A7LXT5;locus_tag=PNCDIBDO_00654;product=SusD-like protein
+k141_255	Prodigal:v2.6	CDS	11597	14416	.	-	0	ID=PNCDIBDO_00655;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00655;product=TonB-dependent receptor P3
+k141_255	Prodigal:v2.6	CDS	15028	16209	.	-	0	ID=PNCDIBDO_00656;Name=xerC_4;gene=xerC_4;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01808;locus_tag=PNCDIBDO_00656;product=Tyrosine recombinase XerC
+k141_255	Prodigal:v2.6	CDS	16678	19845	.	+	0	ID=PNCDIBDO_00657;Name=susC_2;db_xref=COG:COG1629;gene=susC_2;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q8A1G1;locus_tag=PNCDIBDO_00657;product=TonB-dependent receptor SusC
+k141_255	Prodigal:v2.6	CDS	19857	21452	.	+	0	ID=PNCDIBDO_00658;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00658;product=hypothetical protein
+k141_255	Prodigal:v2.6	CDS	21556	22200	.	-	0	ID=PNCDIBDO_00659;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P67143;locus_tag=PNCDIBDO_00659;note=UPF0056 inner membrane protein YhgN;product=hypothetical protein
+k141_255	Prodigal:v2.6	CDS	22257	22949	.	-	0	ID=PNCDIBDO_00660;eC_number=3.1.3.5;Name=yjjG;db_xref=COG:COG1011;gene=yjjG;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0A8Y1;locus_tag=PNCDIBDO_00660;product=Pyrimidine 5'-nucleotidase YjjG
+k141_255	Prodigal:v2.6	CDS	23039	23260	.	-	0	ID=PNCDIBDO_00661;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00661;product=hypothetical protein
+k141_257	Prodigal:v2.6	CDS	1293	1394	.	+	0	ID=PNCDIBDO_00662;Name=ykgR;gene=ykgR;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:C1P5Z8;locus_tag=PNCDIBDO_00662;product=putative membrane protein YkgR
+k141_258	Prodigal:v2.6	CDS	56	763	.	+	0	ID=PNCDIBDO_00663;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00663;product=hypothetical protein
+k141_258	Prodigal:v2.6	CDS	1076	1165	.	-	0	ID=PNCDIBDO_00664;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00664;product=hypothetical protein
+k141_258	Prodigal:v2.6	CDS	1187	2833	.	+	0	ID=PNCDIBDO_00665;eC_number=4.2.1.2;Name=fumB;db_xref=COG:COG1838;gene=fumB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P14407;locus_tag=PNCDIBDO_00665;product=Fumarate hydratase class I%2C anaerobic
+k141_258	Prodigal:v2.6	CDS	2966	4111	.	+	0	ID=PNCDIBDO_00666;eC_number=2.3.1.-;Name=wecH;gene=wecH;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01949;locus_tag=PNCDIBDO_00666;product=O-acetyltransferase WecH
+k141_258	Prodigal:v2.6	CDS	4562	5854	.	-	0	ID=PNCDIBDO_00667;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00667;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	39	311	.	-	0	ID=PNCDIBDO_00668;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00668;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	311	604	.	-	0	ID=PNCDIBDO_00669;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00669;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	1071	1943	.	+	0	ID=PNCDIBDO_00670;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00670;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	2537	2953	.	+	0	ID=PNCDIBDO_00671;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00671;product=hypothetical protein
+k141_259	Aragorn:v1.2	tRNA	3957	4039	.	-	.	ID=PNCDIBDO_00672;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00672;product=tRNA-Leu(tag)
+k141_259	Prodigal:v2.6	CDS	4436	7495	.	+	0	ID=PNCDIBDO_00673;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00673;product=TonB-dependent receptor P3
+k141_259	Prodigal:v2.6	CDS	7524	9011	.	+	0	ID=PNCDIBDO_00674;db_xref=COG:COG0702;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KNB8;locus_tag=PNCDIBDO_00674;product=SusD-like protein P25
+k141_259	Prodigal:v2.6	CDS	9167	10198	.	-	0	ID=PNCDIBDO_00675;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00675;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	10211	11080	.	-	0	ID=PNCDIBDO_00676;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00676;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	11105	13753	.	-	0	ID=PNCDIBDO_00677;eC_number=5.6.2.2;Name=gyrA;gene=gyrA;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01897;locus_tag=PNCDIBDO_00677;product=DNA gyrase subunit A
+k141_259	Prodigal:v2.6	CDS	13938	15479	.	+	0	ID=PNCDIBDO_00678;eC_number=6.1.1.14;Name=glyQS;gene=glyQS;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P99129;locus_tag=PNCDIBDO_00678;product=Glycine--tRNA ligase
+k141_259	Prodigal:v2.6	CDS	15491	16042	.	+	0	ID=PNCDIBDO_00679;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00679;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	16154	17035	.	-	0	ID=PNCDIBDO_00680;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00680;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	17095	17475	.	-	0	ID=PNCDIBDO_00681;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00681;product=hypothetical protein
+k141_259	Prodigal:v2.6	CDS	17556	17795	.	+	0	ID=PNCDIBDO_00682;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00682;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	322	2622	.	+	0	ID=PNCDIBDO_00683;eC_number=3.2.1.-;db_xref=COG:COG1472;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KMH0;locus_tag=PNCDIBDO_00683;product=Beta-xylosidase
+k141_128	Prodigal:v2.6	CDS	2788	4143	.	+	0	ID=PNCDIBDO_00684;eC_number=3.2.1.214;db_xref=COG:COG5368;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A6LGF6;locus_tag=PNCDIBDO_00684;product=Exo beta-1%2C2-glucooligosaccharide sophorohydrolase (non-reducing end)
+k141_128	Prodigal:v2.6	CDS	4144	4887	.	+	0	ID=PNCDIBDO_00685;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00685;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	5027	7465	.	+	0	ID=PNCDIBDO_00686;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00686;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	7559	9208	.	-	0	ID=PNCDIBDO_00687;eC_number=2.7.13.3;Name=rcsC_6;gene=rcsC_6;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00979;locus_tag=PNCDIBDO_00687;product=Sensor histidine kinase RcsC
+k141_128	Prodigal:v2.6	CDS	9573	12926	.	+	0	ID=PNCDIBDO_00688;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00688;product=TonB-dependent receptor P3
+k141_128	Prodigal:v2.6	CDS	12944	14791	.	+	0	ID=PNCDIBDO_00689;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00689;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	15143	17050	.	+	0	ID=PNCDIBDO_00690;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00690;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	17054	18265	.	+	0	ID=PNCDIBDO_00691;eC_number=3.2.1.-;db_xref=COG:COG4225;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KLZ3;locus_tag=PNCDIBDO_00691;product=Unsaturated glucuronyl hydrolase
+k141_128	Prodigal:v2.6	CDS	18286	19197	.	+	0	ID=PNCDIBDO_00692;eC_number=5.4.2.12;Name=gpmI_2;gene=gpmI_2;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01038;locus_tag=PNCDIBDO_00692;product=2%2C3-bisphosphoglycerate-independent phosphoglycerate mutase
+k141_128	Prodigal:v2.6	CDS	19228	20763	.	+	0	ID=PNCDIBDO_00693;eC_number=3.2.1.52;db_xref=COG:COG3525;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:B2UQG6;locus_tag=PNCDIBDO_00693;product=Beta-hexosaminidase
+k141_128	Prodigal:v2.6	CDS	20820	22907	.	+	0	ID=PNCDIBDO_00694;eC_number=3.2.1.31;Name=lacZ_4;db_xref=COG:COG3250;gene=lacZ_4;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q5LIC7;locus_tag=PNCDIBDO_00694;product=Beta-glucuronidase
+k141_128	Prodigal:v2.6	CDS	22907	24127	.	+	0	ID=PNCDIBDO_00695;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00695;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	24408	26984	.	-	0	ID=PNCDIBDO_00696;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00696;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	27155	28450	.	-	0	ID=PNCDIBDO_00697;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00697;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	28507	28977	.	-	0	ID=PNCDIBDO_00698;eC_number=3.6.1.25;db_xref=COG:COG2954;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:A3DIJ8;locus_tag=PNCDIBDO_00698;product=Inorganic triphosphatase
+k141_128	Prodigal:v2.6	CDS	28985	30304	.	-	0	ID=PNCDIBDO_00699;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00699;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	30421	30555	.	-	0	ID=PNCDIBDO_00700;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00700;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	30708	31667	.	-	0	ID=PNCDIBDO_00701;Name=prfB;db_xref=COG:COG1186;gene=prfB;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P07012;locus_tag=PNCDIBDO_00701;product=Peptide chain release factor RF2
+k141_128	Prodigal:v2.6	CDS	31885	33690	.	-	0	ID=PNCDIBDO_00702;eC_number=6.2.1.3;db_xref=COG:COG1022;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:O53521;locus_tag=PNCDIBDO_00702;product=Long-chain-fatty-acid--CoA ligase FadD15
+k141_128	Prodigal:v2.6	CDS	33879	34940	.	+	0	ID=PNCDIBDO_00703;eC_number=3.5.1.18;Name=dapE;db_xref=COG:COG0624;gene=dapE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P9WHS9;locus_tag=PNCDIBDO_00703;product=Putative succinyl-diaminopimelate desuccinylase DapE
+k141_128	Prodigal:v2.6	CDS	35120	37759	.	-	0	ID=PNCDIBDO_00704;eC_number=3.2.1.40;db_xref=COG:COG3408;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPL4;locus_tag=PNCDIBDO_00704;product=Alpha-L-rhamnosidase
+k141_128	Prodigal:v2.6	CDS	37769	40195	.	-	0	ID=PNCDIBDO_00705;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00705;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	40197	42284	.	-	0	ID=PNCDIBDO_00706;eC_number=3.2.1.185;Name=hypBA1;gene=hypBA1;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:E8MGH8;locus_tag=PNCDIBDO_00706;product=Non-reducing end beta-L-arabinofuranosidase
+k141_128	Prodigal:v2.6	CDS	42496	43473	.	+	0	ID=PNCDIBDO_00707;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00707;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	43633	45015	.	-	0	ID=PNCDIBDO_00708;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00708;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	45318	45881	.	+	0	ID=PNCDIBDO_00709;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00709;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	45978	47132	.	+	0	ID=PNCDIBDO_00710;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00710;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	47367	48398	.	-	0	ID=PNCDIBDO_00711;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00711;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	49218	49361	.	-	0	ID=PNCDIBDO_00712;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00712;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	49486	49839	.	-	0	ID=PNCDIBDO_00713;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00713;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	49925	50989	.	-	0	ID=PNCDIBDO_00714;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00714;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	50995	51288	.	-	0	ID=PNCDIBDO_00715;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00715;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	51762	52730	.	-	0	ID=PNCDIBDO_00716;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00716;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	52762	55755	.	-	0	ID=PNCDIBDO_00717;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00717;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	55805	57025	.	-	0	ID=PNCDIBDO_00718;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00718;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	57129	58250	.	-	0	ID=PNCDIBDO_00719;eC_number=5.1.3.3;Name=mro;gene=mro;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P05149;locus_tag=PNCDIBDO_00719;product=Aldose 1-epimerase
+k141_128	Prodigal:v2.6	CDS	58357	58452	.	-	0	ID=PNCDIBDO_00720;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00720;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	58471	59937	.	-	0	ID=PNCDIBDO_00721;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00721;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	59981	62266	.	-	0	ID=PNCDIBDO_00722;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00722;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	62385	64865	.	-	0	ID=PNCDIBDO_00723;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00723;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	64892	67054	.	-	0	ID=PNCDIBDO_00724;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00724;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	67083	68201	.	-	0	ID=PNCDIBDO_00725;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00725;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	69238	70215	.	-	0	ID=PNCDIBDO_00726;eC_number=3.2.1.99;Name=abnA;db_xref=COG:COG3507;gene=abnA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P94522;locus_tag=PNCDIBDO_00726;product=Extracellular endo-alpha-(1->5)-L-arabinanase 1
+k141_128	Prodigal:v2.6	CDS	70307	70738	.	-	0	ID=PNCDIBDO_00727;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00727;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	70836	71549	.	-	0	ID=PNCDIBDO_00728;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00728;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	71570	73423	.	-	0	ID=PNCDIBDO_00729;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00729;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	73430	76633	.	-	0	ID=PNCDIBDO_00730;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00730;product=TonB-dependent receptor P3
+k141_128	Prodigal:v2.6	CDS	76977	80594	.	+	0	ID=PNCDIBDO_00731;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00731;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	80614	80895	.	+	0	ID=PNCDIBDO_00732;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00732;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	81148	83658	.	-	0	ID=PNCDIBDO_00733;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00733;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	83754	85568	.	-	0	ID=PNCDIBDO_00734;eC_number=3.2.1.23;Name=lacZ_5;gene=lacZ_5;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01687;locus_tag=PNCDIBDO_00734;product=Beta-galactosidase
+k141_128	Prodigal:v2.6	CDS	85671	86777	.	-	0	ID=PNCDIBDO_00735;eC_number=3.2.1.55;db_xref=COG:COG3940;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q82P90;locus_tag=PNCDIBDO_00735;product=Extracellular exo-alpha-(1->5)-L-arabinofuranosidase
+k141_128	Prodigal:v2.6	CDS	87055	89118	.	+	0	ID=PNCDIBDO_00736;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00736;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	89157	91193	.	+	0	ID=PNCDIBDO_00737;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00737;product=hypothetical protein
+k141_128	Prodigal:v2.6	CDS	91334	93094	.	+	0	ID=PNCDIBDO_00738;eC_number=3.2.1.31;Name=uidA;db_xref=COG:COG3250;gene=uidA;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P05804;locus_tag=PNCDIBDO_00738;product=Beta-glucuronidase
+k141_263	Prodigal:v2.6	CDS	600	1922	.	-	0	ID=PNCDIBDO_00739;Name=rlmL;db_xref=COG:COG0116;gene=rlmL;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P75864;locus_tag=PNCDIBDO_00739;product=Ribosomal RNA large subunit methyltransferase K/L
+k141_263	Prodigal:v2.6	CDS	2018	2917	.	-	0	ID=PNCDIBDO_00740;eC_number=2.3.1.30;Name=srpH;db_xref=COG:COG1045;gene=srpH;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:Q59967;locus_tag=PNCDIBDO_00740;product=Serine acetyltransferase%2C plasmid
+k141_264	Prodigal:v2.6	CDS	582	2975	.	-	0	ID=PNCDIBDO_00741;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00741;product=hypothetical protein
+k141_264	Prodigal:v2.6	CDS	3099	4586	.	-	0	ID=PNCDIBDO_00742;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00742;product=hypothetical protein
+k141_264	Prodigal:v2.6	CDS	4610	8023	.	-	0	ID=PNCDIBDO_00743;db_xref=COG:COG4771;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:T2KPJ3;locus_tag=PNCDIBDO_00743;product=TonB-dependent receptor P3
+k141_264	Prodigal:v2.6	CDS	8141	9151	.	-	0	ID=PNCDIBDO_00744;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00744;product=hypothetical protein
+k141_264	Prodigal:v2.6	CDS	9205	9768	.	-	0	ID=PNCDIBDO_00745;Name=rpoE;db_xref=COG:COG1595;gene=rpoE;inference=ab initio prediction:Prodigal:v2.6,similar to AA sequence:UniProtKB:P0AGB6;locus_tag=PNCDIBDO_00745;product=ECF RNA polymerase sigma-E factor
+k141_265	Prodigal:v2.6	CDS	562	2133	.	-	0	ID=PNCDIBDO_00746;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00746;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	2160	2612	.	+	0	ID=PNCDIBDO_00747;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00747;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	2508	2870	.	-	0	ID=PNCDIBDO_00748;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00748;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	3078	3371	.	+	0	ID=PNCDIBDO_00749;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00749;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	3403	3708	.	+	0	ID=PNCDIBDO_00750;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00750;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	3786	4148	.	-	0	ID=PNCDIBDO_00751;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00751;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	4160	5395	.	-	0	ID=PNCDIBDO_00752;Name=xerC_5;gene=xerC_5;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_01808;locus_tag=PNCDIBDO_00752;product=Tyrosine recombinase XerC
+k141_265	Prodigal:v2.6	CDS	5750	6100	.	+	0	ID=PNCDIBDO_00753;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00753;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	6136	7359	.	+	0	ID=PNCDIBDO_00754;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00754;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	7377	7757	.	+	0	ID=PNCDIBDO_00755;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00755;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	8049	8468	.	-	0	ID=PNCDIBDO_00756;eC_number=3.1.-.-;Name=ybeY;gene=ybeY;inference=ab initio prediction:Prodigal:v2.6,protein motif:HAMAP:MF_00009;locus_tag=PNCDIBDO_00756;product=Endoribonuclease YbeY
+k141_265	Prodigal:v2.6	CDS	8978	9343	.	+	0	ID=PNCDIBDO_00757;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00757;product=hypothetical protein
+k141_265	Prodigal:v2.6	CDS	9508	10389	.	+	0	ID=PNCDIBDO_00758;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00758;product=hypothetical protein
+k141_268	Aragorn:v1.2	tRNA	298	374	.	+	.	ID=PNCDIBDO_00759;inference=COORDINATES:profile:Aragorn:v1.2;locus_tag=PNCDIBDO_00759;product=tRNA-Asp(gtc)
+k141_268	Prodigal:v2.6	CDS	702	1487	.	+	0	ID=PNCDIBDO_00760;inference=ab initio prediction:Prodigal:v2.6;locus_tag=PNCDIBDO_00760;product=hypothetical protein

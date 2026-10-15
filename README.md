@@ -158,3 +158,31 @@ Three Pfam profiles downloaded from [InterPro](https://www.ebi.ac.uk/interpro/) 
 * `PF00006.hmm`: ATP-synt_ab, ATP synthase alpha/beta family, nucleotide-binding domain (PF00006.32)
 * `PF00009.hmm`: GTP_EFTU, elongation factor Tu GTP binding domain (PF00009.34)
 * `PF00154.hmm`: RecA_N, recA bacterial DNA recombination protein (PF00154.28)
+
+### Output of nf-core/mag with dereplication
+
+Created for `--mag_outdir` ([nf-core/magmap#280](https://github.com/nf-core/magmap/issues/280)), which reads the output directory of an nf-core/mag run with `--dereplicate`.
+It is a trimmed copy of such an output directory, with the same layout as the real one under `testdata/mag_dereplicated/`.
+
+The input was four bins named after assembler, binner and sample (the `minigut` test samples of nf-core/mag), run through nf-core/mag 5.6.0dev with `--bins_input` and `--dereplicate`.
+`--bins_input` was an unreleased branch of nf-core/mag at the time of writing: commit `f5218a59` on the branch `bins-input` of [erikrikarddaniel/nf-core-mag](https://github.com/erikrikarddaniel/nf-core-mag).
+The run used, among others, `--bins_input bins.csv`, `--binning_map_mode group`, `--run_checkm2 --checkm2_db binette_checkm2_small_db.dmnd`, `--gtdb_db gtdbtk_mockup_r232_20260507.tar.gz`, `--skip_prodigal`, `--dereplicate --dereplicate_ani 90 --dereplicate_min_completeness 1 --dereplicate_max_contamination 100` (so that the tiny bins pass the filters) and `--gtdbtk_min_completeness 0.01 --gtdbtk_min_perc_aa 10`.
+Only the files magmap reads were kept.
+If the layout of the output changes when `--bins_input` is released, rerun with the released version and replace the files.
+
+The four bins form three clusters: `MEGAHIT-MaxBin2-minigut.002` is a member of the cluster of `SPAdes-MaxBin2-test_minigut.002`.
+So there are three representatives, and the fourth bin is in neither the dereplicated bins nor the GTDB-Tk and Prokka results, but is in the CheckM2 summary.
+The GTDB-Tk summary covers a species-level call, a partial lineage (`g__;s__`) and one `Unclassified Bacteria`.
+GTDB-Tk used a mock-up database, so the taxonomy is only meant for testing the parsing: `SPAdes-MaxBin2-test_minigut.002` is classified as _Escherichia coli_ although its closest placement is _Selenomonas_C_.
+
+```text
+testdata/mag_dereplicated/
+  GenomeBinning/Dereplication/dereplicated_bins/*.fa.gz
+  GenomeBinning/Dereplication/dereplicated_bins.tsv
+  GenomeBinning/QC/checkm2_summary.tsv
+  Taxonomy/GTDB-Tk/gtdbtk_summary.tsv
+  Annotation/Prokka/external/<bin>/<bin>.gff
+```
+
+The GFF files are the Prokka output cut before the `##FASTA` section.
+The sequences are already in the dereplicated bins, and magmap only reads the annotation lines.
