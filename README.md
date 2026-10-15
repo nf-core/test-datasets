@@ -12,6 +12,7 @@ Test data to be used for automated testing with the nf-core pipelines
     - [200624\_A00834\_0183\_BHMTFYDRXX](#200624_a00834_0183_bhmtfydrxx)
   - [PromethION](#promethion)
     - [20230505\_1857\_1B\_PAO99309\_94e07fab](#20230505_1857_1b_pao99309_94e07fab)
+    - [20261009\_1457\_1A\_PBO51508\_cb5816a7](#20261009_1457_1a_pbo51508_cb5816a7)
 
 
 # Test data for SeqInspector
@@ -53,3 +54,6 @@ Both files were basecalled via `Dorado` (hac), coverted to `fastq` via `samtools
 Oxford Nanopore Technologies Benchmark Datasets was accessed on 2024-03-21 from https://registry.opendata.aws/ont-open-data.
 
 The rundir also contains the MinKNOW run report `report_PAO99309_20230505_1903_94e07fab.json` and `final_summary_PAO99309_94e07fab_c3641428.txt`, copied unmodified from the same S3 folder (accessed on 2026-10-15). These are used to test parsing of ONT run metadata.
+
+### 20261009_1457_1A_PBO51508_cb5816a7
+Run folder containing only the MinKNOW run report `report_PBO51508_20261009_1457_cb5816a7.json`, from a PromethION run with MinKNOW 6.10 and a barcoded PCR-cDNA kit (SQK-PCB114-24). Added with permission of the data owner. There is no matching `fastq` data, so this is used for module tests of ONT run metadata parsing with the newer MinKNOW report layout.
