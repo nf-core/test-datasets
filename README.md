@@ -57,3 +57,5 @@ The rundir also contains the MinKNOW run report `report_PAO99309_20230505_1903_9
 
 ### 20261009_1457_1A_PBO51508_cb5816a7
 Run folder containing only the MinKNOW run report `report_PBO51508_20261009_1457_cb5816a7.json`, from a PromethION run with MinKNOW 6.10 and a barcoded PCR-cDNA kit (SQK-PCB114-24). Added with permission of the data owner. There is no matching `fastq` data, so this is used for module tests of ONT run metadata parsing with the newer MinKNOW report layout.
+
+`samplesheet/1.1/promethion_minknow6_unmatched.csv` pairs this rundir with the `hg001` passed `fastq` file from `20230505_1857_1B_PAO99309_94e07fab`. **The reads and the rundir are from different runs.** This samplesheet only exists to test ONT rundir parsing with the newer MinKNOW report layout in a full pipeline run, and should not be used to compare reads with run metadata.
