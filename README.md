@@ -39,7 +39,15 @@ git fetch
 
 -`samplesheets/samplesheet.long_read.csv`: Sample sheet for testing running mag with only long read input
 
+- `samplesheets/bins_samplesheet.csv`: Samplesheet for testing `--bins_input`, listing the four bins in `bins/`
+
 The samplesheet with the suffix `v4` (e.g., `samplesheet.long_read.v4.csv`) is intended for the v4.0.0 release of mag. In this version, samplesheets must include the `short_reads_platform` or `long_reads_platform` fields to specify the sequencing platform for short and long reads, respectively.
+
+## Bins
+
+`bins/` contains four MaxBin2 bins (`*.fa.gz`) from the `test_minigut` and `test_minigut_sample2` samples, taken from the output of a nf-core/mag run on the main test data (`GenomeBinning/MaxBin2/bins/`).
+They are used to test starting the pipeline from pre-computed bins (`--bins_input`, profile `test_bins_input`).
+Two of the bins, `MEGAHIT-MaxBin2-minigut.002` and `SPAdes-MaxBin2-test_minigut.002`, are near-identical and cluster together under dereplication.
 
 ## Databases
 
