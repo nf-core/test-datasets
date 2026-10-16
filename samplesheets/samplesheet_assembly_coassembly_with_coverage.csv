@@ -1,0 +1,2 @@
+id,fasta,fastq_1,fastq_2,coverage,run_accession,assembler,assembler_version
+coassembly_sample,https://github.com/nf-core/test-datasets/raw/modules/data/genomics/prokaryotes/bacteroides_fragilis/genome/genome.fna.gz,,,45.5,SRR3183850;SRR3183951,SPAdes,3.15
