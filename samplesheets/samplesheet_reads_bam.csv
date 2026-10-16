@@ -1,0 +1,2 @@
+id,sample_accession,fastq_1,fastq_2,bam,platform,instrument,library_source,library_selection,library_strategy,insert_size,library_name,description
+bacteroides_fragilis_ont_bam,SAMEA104188781,,,tests/test_data/reads/tiny_ont.bam,OXFORD_NANOPORE,MinION,METAGENOMIC,RANDOM,WGS,,,Tiny unaligned ONT BAM test
