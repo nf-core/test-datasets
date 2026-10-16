@@ -1,0 +1,6 @@
+sample,bam,rundir,tags
+Sample1,https://github.com/nf-core/test-datasets/raw/seqinspector/data/bam/200624_A00834_0183_BHMTFYDRXX/Sample1_01.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/rundir/200624_A00834_0183_BHMTFYDRXX.tar.gz,lane1:group1
+SampleA,https://github.com/nf-core/test-datasets/raw/seqinspector/data/bam/200624_A00834_0183_BHMTFYDRXX/SampleA_02.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/rundir/200624_A00834_0183_BHMTFYDRXX.tar.gz,lane1:group1
+Sample23,https://github.com/nf-core/test-datasets/raw/seqinspector/data/bam/200624_A00834_0183_BHMTFYDRXX/Sample23_03.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/rundir/200624_A00834_0183_BHMTFYDRXX.tar.gz,lane1:group2:test
+sampletest,https://github.com/nf-core/test-datasets/raw/seqinspector/data/bam/200624_A00834_0183_BHMTFYDRXX/sampletest_04.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/rundir/200624_A00834_0183_BHMTFYDRXX.tar.gz,test
+Undetermined,https://github.com/nf-core/test-datasets/raw/seqinspector/data/bam/200624_A00834_0183_BHMTFYDRXX/Undetermined_05.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/rundir/200624_A00834_0183_BHMTFYDRXX.tar.gz,test
