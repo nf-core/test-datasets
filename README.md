@@ -68,9 +68,10 @@ The subset keeps the database entries hit by the four assemblies in `assemblies/
 - `amrfinderplus-db/`: rebuilt from the AMRFinderPlus database `2026-08-07.1` (format 4.2.0, AMRFinderPlus 4.2.7) keeping only the reference proteins/CDS and HMMs of the four genes found (`tet(Q)`, `sul2`, `emrE`, `aac(3)-II`), then `amrfinder_index`
 - everything else (`sorf.dmnd`, `rRNA`, `orit.fna`, `rfam-go.tsv`, `version.json`) copied verbatim
 
-On the same inputs, the annotations match the full light database, apart from E-values and a few extra low-scoring ncRNA hits, as Infernal E-values scale with the number of models searched. The script used is `databases/bakta/build_bakta_db_subset.py`:
+On the same inputs, the annotations match the full light database, apart from E-values and a few extra low-scoring ncRNA hits, as Infernal E-values scale with the number of models searched. The script used is `databases/bakta/build_bakta_db_subset.py`. Run it in the same environment as Bakta, as it needs pyhmmer, DIAMOND, HMMER, Infernal and AMRFinderPlus: ideally the Bakta container used by the nf-core/mag module, so the DIAMOND and AMRFinderPlus versions match those of the tests, or a conda environment with `bioconda::bakta=1.12.0` and `bioconda::diamond=2.2.0`:
 
 ```bash
+# inside the Bakta container used by the nf-core/mag module (Bakta 1.12.0, DIAMOND 2.2.0, AMRFinderPlus 4.2.7)
 bakta --db db-light --meta --debug --tmp-dir runs/<name>.tmp --output runs/<name> --prefix <name> <fasta>  # for each input, after `mkdir -p runs/<name>.tmp`
 python build_bakta_db_subset.py db-light db-light-subset runs/<name> [runs/<name> ...]
 ```
