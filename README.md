@@ -56,6 +56,29 @@ Two of the bins, `MEGAHIT-MaxBin2-minigut.002` and `SPAdes-MaxBin2-test_minigut.
 
 We have also generated tiny versions of databases for tools that normally require very large databases
 
+### Bakta
+
+`databases/bakta/bakta_db_light_subset_v6.0.tar.gz` is a reduced copy of the [official Bakta light database v6.0](https://doi.org/10.5281/zenodo.14916843), the version `bakta_db download --type light` fetches for Bakta 1.12.x. It keeps the same layout and file formats as the official database (top-level directory `db-light/`): 17 MB compressed, 38 MB unpacked, instead of 1.3 GB compressed. Annotations are only meaningful for the sequences it was built for.
+
+The subset keeps the database entries hit by the four assemblies in `assemblies/` and the four bins in `bins/`. Bakta (v1.12.0, `--meta --debug`) was run on each of them against the full light database, and the hits were collected from the raw search tables and logs Bakta keeps in debug mode. Each component was then filtered to those hits and re-indexed with the same tools Bakta uses:
+
+- `pscc.dmnd` and `expert-protein-sequences.dmnd`: hit sequences only (`diamond getseq` + `diamond makedb`, DIAMOND 2.2.0); `bakta.db` keeps the matching `pscc` rows (also used by sORF hits)
+- `pfam` and `antifam`: hit HMMs only (`hmmpress`); `ncRNA-genes` and `ncRNA-regions`: hit CMs only (`cmconvert` + `cmfetch` + `cmpress`)
+- `oric.fna`: the first 10 sequences, as no assembly has an oriC hit
+- `amrfinderplus-db/`: rebuilt from the AMRFinderPlus database `2026-08-07.1` (format 4.2.0, AMRFinderPlus 4.2.7) keeping only the reference proteins/CDS and HMMs of the four genes found (`tet(Q)`, `sul2`, `emrE`, `aac(3)-II`), then `amrfinder_index`
+- everything else (`sorf.dmnd`, `rRNA`, `orit.fna`, `rfam-go.tsv`, `version.json`) copied verbatim
+
+On the same inputs, the annotations match the full light database, apart from E-values and a few extra low-scoring ncRNA hits, as Infernal E-values scale with the number of models searched. The script used is `databases/bakta/build_bakta_db_subset.py`. Run it in the same environment as Bakta, as it needs pyhmmer, DIAMOND, HMMER, Infernal and AMRFinderPlus: ideally the Bakta container used by the nf-core/mag module, so the DIAMOND and AMRFinderPlus versions match those of the tests, or a conda environment with `bioconda::bakta=1.12.0` and `bioconda::diamond=2.2.0`:
+
+```bash
+# inside the Bakta container used by the nf-core/mag module (Bakta 1.12.0, DIAMOND 2.2.0, AMRFinderPlus 4.2.7)
+bakta --db db-light --meta --debug --tmp-dir runs/<name>.tmp --output runs/<name> --prefix <name> <fasta>  # for each input, after `mkdir -p runs/<name>.tmp`
+python build_bakta_db_subset.py db-light db-light-subset runs/<name> [runs/<name> ...]
+```
+
+> [!NOTE]
+> The AMRFinderPlus database must match the AMRFinderPlus version shipped in the Bakta container. If the Bakta module is updated to an AMRFinderPlus release with a different database format, rebuild the subset.
+
 ### CAT_pack
 
 For CAT of CAT_pack we did the following, and using CAT_pack (v6.0):
