@@ -53,7 +53,7 @@ Raw sample dose response data for Afatinib and Lapatinib, taken from CTRPv2.
 
 #### meta/gene_lists
 
-* landmark_genes_reduced.csv: Originally, the 978 landmark genes are from the L1000 assay. Here, just 13 genes occurring in all omics screens.
+* landmark_genes.csv: Originally, the 978 landmark genes are from the L1000 assay. Here, just 13 genes occurring in all omics screens.
 * drug_target_genes_all_drugs(_proteomics).csv: Originally, the drug target genes are the genes targeted by the drugs used in GDSC, extractable from the GDSC Data Portal (compounds annotation). Here, just the same 13 genes occurring in all omics screens.
 * *_intersection.csv: Originally, the omics features of all screens intersecting. Here, just the same 13 genes as above, except for the methylation file. The methylation file just contains all methylation features from TOYv1.intersection(TOYv2).  
 
