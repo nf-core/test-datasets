@@ -1,9 +1,9 @@
-; em.mdp - used as input into grompp to generate em.tpr
+; em.mdp - full test: used as input into grompp to generate em.tpr
 ; Parameters describing what to do, when to stop and what to save
 integrator  = steep         ; Algorithm (steep = steepest descent minimization)
 emtol       = 1000.0        ; Stop minimization when the maximum force < 1000.0 kJ/mol/nm
 emstep      = 0.01          ; Minimization step size
-nsteps      = 5000          ; Fast test: max minimization steps
+nsteps      = 5000          ; full test: max minimization steps
 
 ; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
 nstlist         = 1         ; Frequency to update the neighbor list and long range forces

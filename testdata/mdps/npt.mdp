@@ -1,8 +1,8 @@
-title                   = OPLS Lysozyme NPT equilibration 
+title                   = Lysozyme NPT equilibration (full test)
 define                  = -DPOSRES  ; position restrain the protein
 ; Run parameters
 integrator              = md        ; leap-frog integrator
-nsteps                  = 10000     ; Fast test: 20 ps
+nsteps                  = 10000     ; full test: 20 ps
 dt                      = 0.002     ; 2 fs
 ; Output control
 nstxout                 = 1000      ; save coordinates every 2.0 ps
