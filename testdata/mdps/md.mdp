@@ -4,7 +4,7 @@ integrator              = md        ; leap-frog integrator
 nsteps                  = 25000     ; full test: 50 ps
 dt                      = 0.002     ; 2 fs
 ; Output control
-nstxout                 = 0         ; suppress bulky .trr file by specifying 
+nstxout                 = 0         ; suppress bulky .trr file by specifying
 nstvout                 = 0         ; 0 for output frequency of nstxout,
 nstfout                 = 0         ; nstvout, and nstfout
 nstenergy               = 1000      ; save energies every 2.0 ps
@@ -12,12 +12,12 @@ nstlog                  = 1000      ; update log file every 2.0 ps
 nstxout-compressed      = 1000      ; save compressed coordinates every 2.0 ps
 compressed-x-grps       = System    ; save the whole system
 ; Bond parameters
-continuation            = yes       ; Restarting after NPT 
-constraint_algorithm    = lincs     ; holonomic constraints 
+continuation            = yes       ; Restarting after NPT
+constraint_algorithm    = lincs     ; holonomic constraints
 constraints             = h-bonds   ; bonds involving H are constrained
 lincs_iter              = 1         ; accuracy of LINCS
 lincs_order             = 4         ; also related to accuracy
-; Nonbonded settings 
+; Nonbonded settings
 cutoff-scheme           = Verlet    ; Buffered neighbor searching
 nstlist                 = 10        ; 20 fs, largely irrelevant with Verlet scheme
 ; vdW
@@ -31,12 +31,12 @@ coulombtype             = PME       ; Particle Mesh Ewald for long-range electro
 pme_order               = 4         ; cubic interpolation
 fourierspacing          = 0.16      ; grid spacing for FFT
 ; Temperature coupling is on
-tcoupl                  = V-rescale             ; modified Berendsen thermostat
-tc-grps                 = System 
+tcoupl                  = V-rescale             ; stochastic Bussi thermostat
+tc-grps                 = System
 tau_t                   = 1.0
-ref_t                   = 298 
+ref_t                   = 298
 ; Pressure coupling is on
-pcoupl                  = C-rescale 
+pcoupl                  = C-rescale
 pcoupltype              = isotropic             ; uniform scaling of box vectors
 tau_p                   = 5.0                   ; time constant, in ps
 ref_p                   = 1.0                   ; reference pressure, in bar
@@ -44,4 +44,4 @@ compressibility         = 4.5e-5                ; isothermal compressibility of 
 ; Periodic boundary conditions
 pbc                     = xyz       ; 3-D PBC
 ; Velocity generation
-gen_vel                 = no        ; Velocity generation is off 
+gen_vel                 = no        ; Velocity generation is off
