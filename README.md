@@ -34,12 +34,16 @@ testdata/
 
 ### MDP parameter files
 
-Both MDP sets use the same physics:
+The MDP files are taken from the [GROMACS lysozyme tutorial](http://www.mdtutorials.com/gmx/lysozyme/) by Justin A. Lemkul, keeping its parameters and changing only the run length and output frequency (see the table below). Both MDP sets (full and minimal) use the same parameters.
+
+The dynamics steps (NVT, NPT and production) use:
 
 - non-bonded settings for the CHARMM force field: 1.2 nm cut-offs, force-switched van der Waals, PME electrostatics
 - bonds to hydrogen constrained with LINCS
 - V-rescale thermostat at 298 K and C-rescale barostat at 1 bar
 - position restraints on the protein (`-DPOSRES`) during equilibration
+
+As in the tutorial, energy minimisation uses simpler settings: PME electrostatics with 1.0 nm cut-offs and no force-switch. It only removes steric clashes before the dynamics starts, so thermostat, barostat and constraints do not apply to it.
 
 The two sets differ only in run length and output frequency:
 
