@@ -103,5 +103,20 @@ They were picked by their hits against the tiny KOfam database in `test_data/kof
 
 Run directly with `exec_annotation --format detail-tsv` (kofamscan 1.3.0, `quay.io/biocontainers/kofamscan:1.3.0--hdfd78af_2`) against that database, they give 29 hit rows, 21 of them above threshold.
 
+### Diamond taxonomy subworkflow test proteins
+
+Added for the Diamond taxonomy subworkflow test in nf-core/metatdenovo, which runs Diamond on batches of proteins.
+
+`test_data/diamond_taxonomy/proteins.faa.gz` holds 54 proteins, 10870 residues in all:
+
+* the 27 reference sequences of `gtdb-r220-test.dmnd` and the 22 of `ncbi-refseq-test.dmnd`, dumped with `diamond getseq` (diamond 2.2.1);
+* the first 5 proteins of `test_data/kofamscan/proteins.faa.gz`, which hit neither database.
+
+The reference sequences keep their database names, `<db>_<taxid>_<n>`, so the taxid each should get in its own database is part of its name.
+
+```
+test_data/diamond_taxonomy/proteins.faa.gz
+```
+
 
 [^1]: From [stackoverflow](https://stackoverflow.com/a/60846265/11502856)
