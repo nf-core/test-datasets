@@ -12,7 +12,13 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `reference/misopy_index.tar.gz`: Misopy index files derived from `reference/genes_chrX.gff3`
 
+`samplesheet/samplesheet_strandedness_auto.csv`: Experiment design file for the reverse stranded test dataset, with two samples set to `auto`
+
 `testdata/*.fastq.gz`: Subsampled fastq files (ChrX)
+
+`testdata/*_chrX_reverse_{1,2}.fastq.gz`: Reverse stranded fastq files derived from the subsampled fastq files (ChrX)
+
+`scripts/make_reverse_stranded.py`: Script used to derive the reverse stranded fastq files
 
 `testdata/salmon_quant/`: Salmon quantification results for the subsampled fastq files (ChrX)
 
@@ -57,6 +63,19 @@ ChrX fastq files we further sub-sampled to improve speed of testing.
   awk -F"\t" '$1=="X"' genes.gtf > genes_chrX.gtf
   ```
  3. Ensembl GRCh37 ChrX fasta file was downloaded from iGenomes (https://ewels.github.io/AWS-iGenomes/).
+
+### Reverse stranded test dataset
+
+The GEUVADIS libraries are unstranded. To test strandedness inference on stranded data, a reverse stranded version of each sample was derived from the subsampled fastq files. In a pair whose read 1 aligns to the same strand as the transcripts it overlaps, the two mates were swapped, so read 1 is antisense to the transcript, as in a dUTP library. Pairs that overlap transcripts on both strands, or no transcript, were left unchanged. The files keep all 50,000 pairs.
+
+  ```console
+  samtools view -f 0x40 -F 0x904 testdata/ERR188383.Aligned.out.bam | cut -f1-6 > ERR188383.read1.tsv
+  python3 scripts/make_reverse_stranded.py reference/genes_chrX.gtf ERR188383.read1.tsv \
+      testdata/ERR188383_chrX_1.fastq.gz testdata/ERR188383_chrX_2.fastq.gz \
+      ERR188383_chrX_reverse_1.fastq.gz ERR188383_chrX_reverse_2.fastq.gz
+  ```
+
+About 88% of the pairs end up with read 1 antisense to their transcript. nf-core/rnasplice calls them reverse stranded (Salmon about 96% antisense, RSeQC `infer_experiment.py` about 91%).
 
 ## Full test dataset origin
 
