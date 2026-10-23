@@ -26,6 +26,10 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `testdata/dexseq/`: test files for DEXSeq subworkflow
 
+`chrX_subset/`: The minimal test dataset cut down to a few regions of chrX, with every file under 1 MB and the same layout and file names as above (`reference/`, `samplesheet/`, `testdata/`)
+
+`scripts/make_chrx_subset.py`, `scripts/filter_pairs.py`, `scripts/package_chrx_subset.sh`: Scripts used to make `chrX_subset/`
+
 ## Minimal test dataset origin
 
 ChrX subsampled *H.sapiens* total RNA paired-end RNA-seq data was obtained from:
@@ -76,6 +80,38 @@ The GEUVADIS libraries are unstranded. To test strandedness inference on strande
   ```
 
 About 88% of the pairs end up with read 1 antisense to their transcript. nf-core/rnasplice calls them reverse stranded (Salmon about 96% antisense, RSeQC `infer_experiment.py` about 91%).
+
+### chrX subset
+
+The minimal test dataset builds its STAR and Salmon indices from all of chrX (156 Mb, 2,392 genes), although most reads fall on a few hundred genes. `chrX_subset/` is a smaller version of it, with every file under 1 MB (20 MB in all).
+
+- Reference: the regions around the 30 genes with at least two transcripts and the most reads across the four samples, plus the three genes nf-core/rnasplice plots with MISO by default (ENSG00000004961, ENSG00000005302 and ENSG00000147403). Each gene is padded by 1 kb, regions closer than 10 kb are merged, and a region is widened until no gene crosses its ends. The 30 regions are joined into one 3.4 Mb contig, still named `X`, separated by 1 kb of `N`.
+- Annotation: the 82 genes inside the regions, in the new coordinates. Only the `transcript`, `exon` and `CDS` lines and the `gene_id`, `transcript_id`, `gene_name`, `gene_biotype` and `exon_number` attributes are kept, which is what the pipeline uses.
+- Reads: 10,000 pairs per sample, drawn with a fixed seed from the pairs whose two mates start in the same region.
+
+  ```console
+  # columns 1-8 of the primary alignments of the four samples
+  for s in ERR188383 ERR188428 ERR188454 ERR204916; do
+      samtools view -F 0x904 testdata/$s.Aligned.out.bam | cut -f1-8
+  done > alignments.tsv
+  python3 scripts/make_chrx_subset.py X.fa reference/genes_chrX.gtf alignments.tsv 30 \
+      ENSG00000004961,ENSG00000005302,ENSG00000147403 10000 subset
+  python3 scripts/filter_pairs.py subset/keep_reads.txt \
+      testdata/ERR188383_chrX_1.fastq.gz testdata/ERR188383_chrX_2.fastq.gz \
+      subset/testdata/ERR188383_chrX_1.fastq.gz subset/testdata/ERR188383_chrX_2.fastq.gz
+  ```
+
+The other files come from a run of nf-core/rnasplice (`-profile test` with `--leafcutter --save_dexseq_annotation`) on this reference and these reads, packaged by `scripts/package_chrx_subset.sh`:
+
+- `reference/genes_chrX.gff3` and `reference/misopy_index.tar.gz`: from `GFFREAD_GTF2GFF3` (`gffread -L --keep-genes`) and `MISOPY_INDEX`
+- `testdata/*.Aligned.out.bam` and `.bai`: the coordinate sorted STAR alignments; `testdata/*.Aligned.toTranscriptome.out.bam`: the STAR transcriptome alignments. Both keep 4,000 of the pairs of each sample with a spliced mate (`samtools view -N`), to stay under 1 MB and still give the splicing tools junctions to work on
+- `testdata/ERR*/`, `testdata/ERR*.tar.gz` and `testdata/salmon_quant/salmon_quant.tar.gz` (with `genes_chrX.tx2gene.tsv` from `GFFREAD_TX2GENE`): the Salmon quantification of the trimmed reads
+- `testdata/drimseq/drimseq_testdata.tar.gz`: the tximport DTU object and tx2gene table after STAR and Salmon, with a samplesheet of the four samples
+- `testdata/dexseq/genes_chrX.DEXSeq.gff.gz`: the DEXSeq annotation prepared from the GTF
+- `testdata/*_chrX_reverse_{1,2}.fastq.gz`: made from these reads and their alignments as described above
+- `testdata/*_reverse.Aligned.out.bam` and `.bai`: the coordinate sorted STAR alignments of the reverse stranded reads (run with `strandedness` set to `reverse`), cut down to 4,000 pairs with a spliced mate in the same way, for tests of the stranded LeafCutter path
+
+On this data the STAR index drops from 1.7 GB to 42 MB and the Salmon index from 0.9 GB to 23 MB, STAR needs under 1 GB to align instead of 4.9 GB, and every analysis still reports results.
 
 ## Full test dataset origin
 
