@@ -1,362 +1,613 @@
 #!/usr/bin/env python3
-"""
-Create variations of anndata files for testing the ADATA_UNIFY module.
-Based on TEST_STRUCTURES.md requirements.
-"""
+"""Build small, independent AnnData fixtures for structural tests."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+from pathlib import Path
+from typing import Any, cast
+
+os.environ.setdefault("ANNDATA_ALLOW_WRITE_NULLABLE_STRINGS", "0")
 
 import anndata as ad
+import h5py
 import numpy as np
 import pandas as pd
-from pathlib import Path
-from scipy.sparse import csr_matrix, csc_matrix
-import sys
-
-OUTDIR = Path('anndata-variations')
-
-OUTDIR.mkdir(parents=True, exist_ok=True)
-
-# Load base anndata file
-input_file = Path("pbmc/SRR28679756_filtered_matrix.h5ad")
-if not input_file.exists():
-    print(f"Error: Input file {input_file} not found!")
-    sys.exit(1)
-
-print("Loading base anndata file...")
-adata_base = ad.read_h5ad(input_file)
-adata_base.var["symbols"] = adata_base.var.index
-adata_base.layers["counts"] = adata_base.X.copy()
-print(adata_base)
-
-
-# Helper function to save variation
-def save_variation(adata, filename, description=""):
-    """Save anndata variation to file."""
-    filepath = OUTDIR / filename
-    adata.write_h5ad(filepath, compression="gzip")
-    if description:
-        print(f"  ✓ {filename}: {description}")
-
-# Get random cell type labels for testing
-np.random.seed(42)
-cell_types = ["T-Cell", "B cell", "CD4+ T", "CD8+ T", "NK cell", "Monocyte", "Dendritic", "Unassigned"]
-n_cells = adata_base.n_obs
-
-print("\n=== Creating variations ===\n")
-
-# ============================================================================
-# 1. COUNTS LAYER VARIATIONS
-# ============================================================================
-print("1. Counts Layer Variations")
-
-# 1.1 Counts in X (base case - already has counts in layer, move to X)
-adata = adata_base.copy()
-adata.X = adata.layers["counts"].copy()
-adata.layers = {}
-save_variation(adata, "counts_in_X.h5ad", "Counts in X matrix")
-
-# 1.2 Counts in layer (base case - already has this)
-adata = adata_base.copy()
-save_variation(adata, "counts_in_layer.h5ad", "Counts in 'counts' layer")
-
-# 1.3 Counts in different layer name
-adata = adata_base.copy()
-adata.layers["raw"] = adata.layers["counts"].copy()
-del adata.layers["counts"]
-save_variation(adata, "counts_in_raw_layer.h5ad", "Counts in 'raw' layer")
-
-# ============================================================================
-# 2. GENE SYMBOL COLUMN VARIATIONS
-# ============================================================================
-print("\n2. Gene Symbol Column Variations")
-
-# 2.1 Symbols as index (move symbols to index)
-adata = adata_base.copy()
-adata.var.index = adata.var["symbols"]
-adata.var = adata.var.drop(columns=["symbols"])
-save_variation(adata, "symbols_as_index.h5ad", "Gene symbols as var.index")
-
-# 2.2 Symbols in var column (base case - already has this)
-adata = adata_base.copy()
-save_variation(adata, "symbols_in_column.h5ad", "Gene symbols in var['symbols']")
-
-# 2.3 Symbols in different column name
-adata = adata_base.copy()
-adata.var["gene_symbol"] = adata.var["symbols"]
-del adata.var["symbols"]
-save_variation(adata, "symbols_in_gene_symbol.h5ad", "Gene symbols in var['gene_symbol']")
-
-# ============================================================================
-# 3. DUPLICATE GENE HANDLING
-# ============================================================================
-print("\n3. Duplicate Gene Handling")
-
-# 3.1 No duplicates (base case - should already be unique)
-adata = adata_base.copy()
-save_variation(adata, "no_duplicates.h5ad", "No duplicate gene names")
-
-# 3.2 Create duplicates for testing aggregation methods
-# Duplicate some genes by copying them with the same symbol
-adata = adata_base.copy()
-n_dup = 50  # Number of genes to duplicate
-dup_indices = np.random.choice(adata.n_vars, n_dup, replace=False)
-
-# Create new var rows with same symbols (true duplicates)
-var_dup = adata.var.iloc[dup_indices].copy()
-var_dup.index = [f"{idx}_dup" for idx in var_dup.index]
-new_var = pd.concat([adata.var, var_dup])
-
-# Create new X with duplicated columns
-X_new = np.hstack([adata.X.toarray(), adata.X[:, dup_indices].toarray()])
-adata_dup = ad.AnnData(X=csr_matrix(X_new), obs=adata.obs.copy(), var=new_var)
-
-# Recreate layers with correct shape (extend to match new var dimension)
-adata_dup.layers = {}
-for layer_name, layer_data in adata.layers.items():
-    layer_array = layer_data.toarray()
-    layer_new = np.hstack([layer_array, layer_array[:, dup_indices]])
-    adata_dup.layers[layer_name] = csr_matrix(layer_new)
-
-# Ensure duplicates have same symbol values for proper testing
-for orig_idx in dup_indices:
-    orig_gene_idx = adata.var.index[orig_idx]
-    dup_idx = f"{orig_gene_idx}_dup"
-    adata_dup.var.loc[dup_idx, "symbols"] = adata.var.loc[orig_gene_idx, "symbols"]
-
-save_variation(adata_dup, "with_duplicates.h5ad", f"Contains {n_dup} duplicate genes for aggregation testing")
-
-# ============================================================================
-# 4. ISOFORM AGGREGATION
-# ============================================================================
-print("\n4. Isoform Aggregation")
-
-# 4.1 With isoform suffixes (add numeric suffixes to some genes)
-adata = adata_base.copy()
-n_isoforms = 100
-isoform_indices = np.random.choice(adata.n_vars, n_isoforms, replace=False)
-for idx in isoform_indices:
-    gene_name = adata.var.index[idx]
-    adata.var.index.values[idx] = f"{gene_name}.1"
-save_variation(adata, "with_isoforms.h5ad", f"Contains {n_isoforms} genes with numeric suffixes (e.g., GENE.1)")
-
-# ============================================================================
-# 5. BATCH COLUMN VARIATIONS
-# ============================================================================
-print("\n5. Batch Column Variations")
-
-# 5.1 Batch column exists with different name
-adata = adata_base.copy()
-adata.obs["batch_id"] = adata.obs["sample"]
-del adata.obs["sample"]
-save_variation(adata, "batch_different_name.h5ad", "Batch column named 'batch_id'")
-
-# 5.2 Batch column already named "batch"
-adata = adata_base.copy()
-adata.obs["batch"] = adata.obs["sample"]
-del adata.obs["sample"]
-save_variation(adata, "batch_correct_name.h5ad", "Batch column already named 'batch'")
-
-# 5.3 Batch column missing
-adata = adata_base.copy()
-del adata.obs["sample"]
-save_variation(adata, "batch_missing.h5ad", "No batch column in obs")
-
-# 5.4 Batch column conflict case (batch exists but batch_col != "batch")
-adata = adata_base.copy()
-adata.obs["batch"] = "conflict_batch"
-save_variation(adata, "batch_conflict.h5ad", "Both 'batch' and 'sample' exist (error case)")
-
-# ============================================================================
-# 6. LABEL COLUMN VARIATIONS
-# ============================================================================
-print("\n6. Label Column Variations")
-
-# 6.1 Label column exists with different name
-adata = adata_base.copy()
-adata.obs["cell_type"] = np.random.choice(cell_types, n_cells)
-save_variation(adata, "label_different_name.h5ad", "Label column named 'cell_type'")
-
-# 6.2 Label column already named "label"
-adata = adata_base.copy()
-adata.obs["label"] = np.random.choice(cell_types, n_cells)
-save_variation(adata, "label_correct_name.h5ad", "Label column already named 'label'")
-
-# 6.3 Label column missing
-adata = adata_base.copy()
-save_variation(adata, "label_missing.h5ad", "No label column in obs")
-
-# 6.4 Label column with unknown values
-adata = adata_base.copy()
-labels = np.random.choice(cell_types, n_cells)
-labels[np.random.choice(n_cells, 100, replace=False)] = "Unassigned"
-adata.obs["cell_type"] = labels
-save_variation(adata, "label_with_unknown.h5ad", "Label column with 'Unassigned' values (unknown_label)")
-
-# 6.5 Label column with NaN values
-adata = adata_base.copy()
-labels = np.random.choice(cell_types, n_cells)
-nan_indices = np.random.choice(n_cells, 50, replace=False)
-labels = labels.astype(object)
-labels[nan_indices] = np.nan
-adata.obs["cell_type"] = labels
-save_variation(adata, "label_with_nan.h5ad", "Label column with NaN values")
-
-# 6.6 Label column with special characters
-adata = adata_base.copy()
-special_labels = ["T-Cell", "B cell", "CD4+ T", "CD8+ T", "NK cell", "Monocyte"]
-adata.obs["cell_type"] = np.random.choice(special_labels, n_cells)
-save_variation(adata, "label_special_chars.h5ad", "Labels with spaces, dashes, special chars (T-Cell, B cell, CD4+)")
-
-# 6.7 Label column conflict case
-adata = adata_base.copy()
-adata.obs["label"] = "conflict_label"
-adata.obs["cell_type"] = np.random.choice(cell_types, n_cells)
-save_variation(adata, "label_conflict.h5ad", "Both 'label' and 'cell_type' exist (error case)")
-
-# ============================================================================
-# 6b. CONDITION COLUMN VARIATIONS
-# ============================================================================
-print("\n6b. Condition Column Variations")
-
-conditions = ["healthy", "disease", "treated"]
-
-# 6b.1 Condition column exists with different name
-adata = adata_base.copy()
-adata.obs["disease_state"] = np.random.choice(conditions, n_cells)
-save_variation(adata, "condition_different_name.h5ad", "Condition column named 'disease_state'")
-
-# 6b.2 Condition column already named "condition"
-adata = adata_base.copy()
-adata.obs["condition"] = np.random.choice(conditions, n_cells)
-save_variation(adata, "condition_correct_name.h5ad", "Condition column already named 'condition'")
-
-# 6b.3 Condition column missing
-adata = adata_base.copy()
-save_variation(adata, "condition_missing.h5ad", "No condition column in obs")
-
-# 6b.4 Condition column conflict case
-adata = adata_base.copy()
-adata.obs["condition"] = "conflict_condition"
-adata.obs["disease_state"] = np.random.choice(conditions, n_cells)
-save_variation(adata, "condition_conflict.h5ad", "Both 'condition' and 'disease_state' exist (error case)")
-
-# 6b.5 Complete test data with label and condition (for differential expression testing)
-adata = adata_base.copy()
-adata.obs["label"] = np.random.choice(cell_types[:6], n_cells)  # Use cell types without "Unassigned"
-adata.obs["condition"] = np.random.choice(conditions, n_cells)
-save_variation(adata, "with_label_and_condition.h5ad", "Contains both label and condition columns for DE testing")
-
-# ============================================================================
-# 7. MATRIX FORMAT VARIATIONS
-# ============================================================================
-print("\n7. Matrix Format Variations")
-
-# 7.1 Sparse CSR (base case - likely already CSR)
-adata = adata_base.copy()
-adata.X = csr_matrix(adata.X)
-save_variation(adata, "matrix_csr.h5ad", "X is CSR sparse matrix")
-
-# 7.2 Sparse CSC
-adata = adata_base.copy()
-adata.X = csc_matrix(adata.X)
-save_variation(adata, "matrix_csc.h5ad", "X is CSC sparse matrix")
-
-# 7.3 Different dtypes
-for dtype_name, dtype in [("int32", np.int32), ("int64", np.int64), ("float64", np.float64)]:
-    adata = adata_base.copy()
-    adata.X = adata.X.astype(dtype)
-    save_variation(adata, f"matrix_{dtype_name}.h5ad", f"X is {dtype_name}")
-
-# ============================================================================
-# 8. OBSERVATION METADATA VARIATIONS
-# ============================================================================
-print("\n8. Observation Metadata Variations")
-
-# 8.1 Duplicate cell names
-adata = adata_base.copy()
-# Create some duplicates
-dup_indices = np.random.choice(n_cells, 100, replace=False)
-new_names = list(adata.obs_names)
-for idx in dup_indices[:50]:
-    new_names[idx] = new_names[dup_indices[50]]  # Make duplicates
-adata.obs_names = new_names
-save_variation(adata, "obs_duplicate_names.h5ad", "Contains duplicate cell names")
-
-# 8.2 Sample column exists with same value (base case)
-adata = adata_base.copy()
-save_variation(adata, "sample_exists_same.h5ad", "Sample column exists")
-
-# 8.3 Sample column exists with different value
-adata = adata_base.copy()
-adata.obs["sample"] = "different_sample_id"
-save_variation(adata, "sample_exists_different.h5ad", "Sample column with different value")
-
-# 8.4 Sample column missing
-adata = adata_base.copy()
-del adata.obs["sample"]
-save_variation(adata, "sample_missing.h5ad", "No sample column")
-
-# ============================================================================
-# 9. AnnData STRUCTURE VARIATIONS
-# ============================================================================
-print("\n9. AnnData Structure Variations")
-
-# 9.1 With obsm (embeddings)
-adata = adata_base.copy()
-# Add some mock embeddings
-n_obs = adata.n_obs
-adata.obsm["X_pca"] = np.random.randn(n_obs, 50).astype(np.float32)
-adata.obsm["X_umap"] = np.random.randn(n_obs, 2).astype(np.float32)
-save_variation(adata, "with_obsm.h5ad", "Contains obsm embeddings (X_pca, X_umap)")
-
-# 9.2 With varm
-adata = adata_base.copy()
-n_vars = adata.n_vars
-adata.varm["PCs"] = np.random.randn(n_vars, 10).astype(np.float32)
-save_variation(adata, "with_varm.h5ad", "Contains varm (gene-level metadata)")
-
-# 9.3 With uns
-adata = adata_base.copy()
-adata.uns["neighbors"] = {"connectivities_key": "connectivities"}
-adata.uns["pca"] = {"variance_ratio": np.random.rand(50)}
-save_variation(adata, "with_uns.h5ad", "Contains uns metadata (neighbors, pca)")
-
-# 9.4 With layers (base case - already has counts)
-adata = adata_base.copy()
-adata.layers["spliced"] = adata.X.copy()
-adata.layers["unspliced"] = adata.X.copy() * 0.5
-save_variation(adata, "with_layers.h5ad", "Contains multiple layers (counts, spliced, unspliced)")
-
-# ============================================================================
-# 10. COMBINED SCENARIOS
-# ============================================================================
-print("\n10. Combined Scenarios")
-
-# 10.1 Minimal structure (only X, obs, var)
-adata = adata_base.copy()
-adata.obsm = {}
-adata.varm = {}
-adata.uns = {}
-adata.layers = {}
-del adata.obs["sample"]
-save_variation(adata, "minimal_structure.h5ad", "Minimal structure: only X, obs, var")
-
-# 10.2 Complex structure (all components)
-adata = adata_base.copy()
-# Add all optional components
-n_obs, n_vars = adata.shape
-adata.obsm["X_pca"] = np.random.randn(n_obs, 50).astype(np.float32)
-adata.obsm["X_umap"] = np.random.randn(n_obs, 2).astype(np.float32)
-adata.varm["PCs"] = np.random.randn(n_vars, 10).astype(np.float32)
-adata.uns["neighbors"] = {"connectivities_key": "connectivities"}
-adata.uns["pca"] = {"variance_ratio": np.random.rand(50)}
-adata.layers["spliced"] = adata.X.copy()
-adata.layers["unspliced"] = adata.X.copy() * 0.5
-# Add various obs columns
-adata.obs["batch_id"] = np.random.choice(["batch1", "batch2", "batch3"], n_obs)
-adata.obs["cell_type"] = np.random.choice(cell_types, n_obs)
-# Add var columns
-adata.var["gene_id"] = [f"ENSG{i:010d}" for i in range(n_vars)]
-save_variation(adata, "complex_structure.h5ad", "Complex structure: all optional components present")
-
-print(f"\n=== Done! Created {len(list(OUTDIR.glob('*.h5ad')))} variations in {OUTDIR}/ ===")
-
+from scipy.sparse import csc_matrix, csr_matrix
+
+N_CELLS = 128
+N_GENES = 128
+LABELS = np.array(["T-Cell", "B cell", "CD4+ T", "CD8+ T", "NK cell", "Monocyte"])
+CONDITIONS = np.array(["Healthy", "Disease", "Treated"])
+
+
+def _obs(adata: ad.AnnData) -> pd.DataFrame:
+    return cast(pd.DataFrame, adata.obs)
+
+
+def _var(adata: ad.AnnData) -> pd.DataFrame:
+    return cast(pd.DataFrame, adata.var)
+
+
+def _counts(seed: int, case_number: int) -> tuple[np.ndarray, np.random.Generator]:
+    rng = np.random.default_rng(np.random.SeedSequence([seed, case_number]))
+    values = rng.poisson(2.0, size=(N_CELLS, N_GENES)).astype(np.int32)
+    values[rng.random(values.shape) < 0.82] = 0
+    values[np.arange(N_CELLS), np.arange(N_CELLS)] += 1
+    return values, rng
+
+
+def _new_adata(
+    seed: int, case_number: int
+) -> tuple[ad.AnnData, np.ndarray, np.random.Generator]:
+    counts, rng = _counts(seed, case_number)
+    obs = pd.DataFrame(
+        {
+            "sample": np.array(
+                [f"sample_{i % 2}" for i in range(N_CELLS)], dtype=object
+            ),
+        },
+        index=pd.Index([f"cell_{i:03d}" for i in range(N_CELLS)]),
+    )
+    genes = [f"GENE{i:03d}" for i in range(N_GENES)]
+    var = pd.DataFrame(
+        {
+            "symbols": np.array(genes, dtype=object),
+            "gene_id": np.array(
+                [f"ENSG{i:011d}" for i in range(N_GENES)], dtype=object
+            ),
+        },
+        index=pd.Index(genes),
+    )
+    return ad.AnnData(X=csr_matrix(counts), obs=obs, var=var), counts, rng
+
+
+def _with_layers(adata: ad.AnnData, counts: np.ndarray) -> None:
+    adata.X = csr_matrix(counts.astype(np.float32) * 0.5 + 0.25)
+    adata.layers["counts"] = csr_matrix(counts.copy())
+    adata.layers["spliced"] = csr_matrix(counts + 2)
+    adata.layers["unspliced"] = csr_matrix(counts * 2 + 3)
+
+
+def _add_optional_slots(adata: ad.AnnData, rng: np.random.Generator) -> None:
+    adata.obsm["X_pca"] = rng.normal(size=(N_CELLS, 4)).astype(np.float32)
+    adata.obsm["X_umap"] = rng.normal(size=(N_CELLS, 2)).astype(np.float32)
+    adata.varm["PCs"] = rng.normal(size=(N_GENES, 4)).astype(np.float32)
+    adata.uns["neighbors"] = {"connectivities_key": "connectivities"}
+    adata.uns["pca"] = {"variance_ratio": rng.random(4).astype(np.float32)}
+    rows = np.arange(N_CELLS - 1)
+    cols = rows + 1
+    values = np.ones(N_CELLS - 1, dtype=np.float32)
+    adata.obsp["connectivities"] = csr_matrix(
+        (
+            np.concatenate([values, values]),
+            (np.concatenate([rows, cols]), np.concatenate([cols, rows])),
+        ),
+        shape=(N_CELLS, N_CELLS),
+    )
+
+
+def _fixture_cases(seed: int) -> tuple[dict[str, ad.AnnData], dict[str, str]]:
+    cases: dict[str, ad.AnnData] = {}
+    distinctions: dict[str, str] = {}
+
+    def add(name: str, description: str, make: Any) -> None:
+        case_number = len(cases) + 1
+        adata, counts, rng = _new_adata(seed, case_number)
+        make(adata, counts, rng)
+        cases[f"{name}.h5ad"] = adata
+        distinctions[f"{name}.h5ad"] = description
+
+    add(
+        "counts_in_X",
+        "Counts are stored in X; there are no layers.",
+        lambda a, _x, _r: None,
+    )
+
+    def counts_in_layer(
+        adata: ad.AnnData, counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        adata.X = csr_matrix(counts.astype(np.float32) * 0.25 + 0.125)
+        adata.layers["counts"] = csr_matrix(counts.copy())
+
+    add(
+        "counts_in_layer",
+        "X differs from the selected integer counts layer.",
+        counts_in_layer,
+    )
+
+    def symbols_as_index(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        _var(adata).index = _var(adata)["symbols"].astype(str)
+        adata.var = _var(adata).drop(columns="symbols")
+
+    add(
+        "symbols_as_index",
+        "Gene symbols are represented only by var_names.",
+        symbols_as_index,
+    )
+    add(
+        "symbols_in_column",
+        "Gene symbols are in the non-boolean var column symbols.",
+        lambda _a, _x, _r: None,
+    )
+
+    def duplicates(
+        adata: ad.AnnData, counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        symbols = _var(adata)["symbols"].to_numpy(dtype=object)
+        for i in range(8):
+            symbols[64 + i] = symbols[i]
+            counts[i, i] = i + 1
+            counts[i, 64 + i] = i + 10
+        _var(adata)["symbols"] = symbols
+        adata.X = csr_matrix(counts)
+
+    add(
+        "with_duplicates",
+        "Eight pairs collide after selecting var.symbols; their count columns differ.",
+        duplicates,
+    )
+
+    def isoforms(
+        adata: ad.AnnData, counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        names = _var(adata).index.to_numpy(dtype=object)
+        for i in range(8):
+            names[i] = f"GENE{i:03d}.1"
+            names[64 + i] = f"GENE{i:03d}.2"
+            counts[i, i] = i + 1
+            counts[i, 64 + i] = i + 10
+        _var(adata).index = names
+        adata.X = csr_matrix(counts)
+
+    add(
+        "with_isoforms",
+        "Eight numeric-suffix pairs collide after isoform suffix removal.",
+        isoforms,
+    )
+
+    def batch_different(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["batch_id"] = _obs(adata)["sample"].copy()
+        adata.obs = _obs(adata).drop(columns="sample")
+
+    add(
+        "batch_different_name",
+        "Batch labels are present only in obs.batch_id.",
+        batch_different,
+    )
+
+    def batch_correct(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["batch"] = _obs(adata)["sample"].copy()
+        adata.obs = _obs(adata).drop(columns="sample")
+
+    add(
+        "batch_correct_name",
+        "Batch labels are present only in obs.batch.",
+        batch_correct,
+    )
+    add(
+        "batch_missing",
+        "Neither sample nor batch labels are present.",
+        lambda a, _x, _r: setattr(a, "obs", _obs(a).drop(columns="sample")),
+    )
+
+    def batch_conflict(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        adata.obs["batch"] = "conflict_batch"
+
+    add(
+        "batch_conflict",
+        "Both sample and batch are present with conflicting values.",
+        batch_conflict,
+    )
+
+    def label_different(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["cell_type"] = rng.choice(LABELS, size=N_CELLS).astype(object)
+
+    add(
+        "label_different_name",
+        "Labels are present only in obs.cell_type.",
+        label_different,
+    )
+
+    def label_correct(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["label"] = rng.choice(LABELS, size=N_CELLS).astype(object)
+
+    add("label_correct_name", "Labels are present only in obs.label.", label_correct)
+    add("label_missing", "No label column is present.", lambda _a, _x, _r: None)
+
+    def label_unknown(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        labels = rng.choice(LABELS, size=N_CELLS).astype(object)
+        labels[:16] = "Unassigned"
+        _obs(adata)["cell_type"] = labels
+
+    add(
+        "label_with_unknown",
+        "cell_type includes an explicit Unassigned value.",
+        label_unknown,
+    )
+
+    def label_nan(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        labels = rng.choice(LABELS, size=N_CELLS).astype(object)
+        labels[:12] = np.nan
+        _obs(adata)["cell_type"] = labels
+
+    add(
+        "label_with_nan",
+        "cell_type contains both labels and missing values.",
+        label_nan,
+    )
+
+    def label_special(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["cell_type"] = np.resize(LABELS, N_CELLS).astype(object)
+
+    add(
+        "label_special_chars",
+        "cell_type includes spaces, plus signs and hyphens.",
+        label_special,
+    )
+
+    def label_conflict(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["label"] = "conflict_label"
+        _obs(adata)["cell_type"] = rng.choice(LABELS, size=N_CELLS).astype(object)
+
+    add("label_conflict", "Both label and cell_type are present.", label_conflict)
+
+    def condition_different(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["disease_state"] = rng.choice(CONDITIONS, size=N_CELLS).astype(
+            object
+        )
+
+    add(
+        "condition_different_name",
+        "Conditions are present only in obs.disease_state.",
+        condition_different,
+    )
+
+    def condition_correct(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["condition"] = rng.choice(CONDITIONS, size=N_CELLS).astype(object)
+
+    add(
+        "condition_correct_name",
+        "Conditions are present only in obs.condition.",
+        condition_correct,
+    )
+    add("condition_missing", "No condition column is present.", lambda _a, _x, _r: None)
+
+    def condition_conflict(
+        adata: ad.AnnData, _counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["condition"] = "conflict_condition"
+        _obs(adata)["disease_state"] = rng.choice(CONDITIONS, size=N_CELLS).astype(
+            object
+        )
+
+    add(
+        "condition_conflict",
+        "Both condition and disease_state are present.",
+        condition_conflict,
+    )
+
+    def minimal(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        adata.obs = _obs(adata).drop(columns="sample")
+        adata.layers.clear()
+
+    add(
+        "minimal_structure",
+        "Only X, obs and var are present; no sample or optional slots.",
+        minimal,
+    )
+
+    def matrix_csr(
+        adata: ad.AnnData, counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        adata.X = csr_matrix(counts)
+
+    add("matrix_csr", "X is encoded as CSR sparse data.", matrix_csr)
+
+    def matrix_csc(
+        adata: ad.AnnData, counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        adata.X = csc_matrix(counts)
+
+    add("matrix_csc", "X is encoded as CSC sparse data.", matrix_csc)
+
+    def duplicate_cells(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        names = _obs(adata).index.to_list()
+        for i in range(8):
+            names[64 + i] = names[i]
+        adata.obs_names = names
+
+    add("obs_duplicate_names", "Eight cell-name pairs are duplicated.", duplicate_cells)
+
+    def sample_different(
+        adata: ad.AnnData, _counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        _obs(adata)["sample"] = "different_sample_id"
+
+    add(
+        "sample_exists_different",
+        "sample is present and differs from the sample identifier.",
+        sample_different,
+    )
+    add(
+        "sample_missing",
+        "The sample column is absent.",
+        lambda a, _x, _r: setattr(a, "obs", _obs(a).drop(columns="sample")),
+    )
+
+    def with_obsm(
+        adata: ad.AnnData, counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _with_layers(adata, counts)
+        _add_optional_slots(adata, rng)
+
+    add(
+        "with_obsm",
+        "obsm, varm, uns, obsp and unrelated layers are populated for removal checks.",
+        with_obsm,
+    )
+
+    def with_layers(
+        adata: ad.AnnData, counts: np.ndarray, _rng: np.random.Generator
+    ) -> None:
+        adata.layers.clear()
+        adata.X = csr_matrix(counts.astype(np.float32) * 0.5 + 0.25)
+        adata.layers["counts"] = csr_matrix(counts.copy())
+        adata.layers["spliced"] = csr_matrix(counts + 2)
+        adata.layers["unspliced"] = csr_matrix(counts * 2 + 3)
+
+    add(
+        "with_layers",
+        "X, counts, spliced and unspliced contain intentionally distinct matrices.",
+        with_layers,
+    )
+
+    def complex_structure(
+        adata: ad.AnnData, counts: np.ndarray, rng: np.random.Generator
+    ) -> None:
+        _with_layers(adata, counts)
+        _add_optional_slots(adata, rng)
+        _obs(adata)["batch_id"] = _obs(adata)["sample"].copy()
+        _obs(adata)["cell_type"] = rng.choice(LABELS, size=N_CELLS).astype(object)
+        _var(adata)["feature_type"] = np.array(
+            ["Gene Expression"] * N_GENES, dtype=object
+        )
+
+    add(
+        "complex_structure",
+        "Counts layers, string var metadata and every optional AnnData slot are populated.",
+        complex_structure,
+    )
+
+    if len({id(adata) for adata in cases.values()}) != len(cases):
+        raise AssertionError(
+            "Each structural fixture must use an independent AnnData object"
+        )
+    return cases, distinctions
+
+
+def _check_compression(path: Path) -> dict[str, int]:
+    checked = 0
+    exempt = 0
+    with h5py.File(path, "r") as handle:
+
+        def visit(_name: str, obj: h5py.Dataset | h5py.Group) -> None:
+            nonlocal checked, exempt
+            if not isinstance(obj, h5py.Dataset):
+                return
+            if obj.shape == () or obj.size == 0:
+                exempt += 1
+                return
+            checked += 1
+            if obj.compression != "gzip":
+                raise AssertionError(
+                    f"{path.name}: dataset {_name} uses {obj.compression!r}, not gzip"
+                )
+
+        handle.visititems(visit)
+    return {"gzip_datasets": checked, "scalar_or_empty_exemptions": exempt}
+
+
+def _matrix_equal(left: Any, right: Any) -> bool:
+    difference = csr_matrix(left) - csr_matrix(right)
+    return difference.nnz == 0
+
+
+def _columns_equal(matrix: Any, left: int, right: int) -> bool:
+    return _matrix_equal(matrix[:, left], matrix[:, right])
+
+
+def build_variations(
+    output_dir: str | Path,
+    seed: int = 42,
+    *,
+    writer: Any = None,
+    write_manifest: bool = True,
+) -> dict[str, Any]:
+    """Write structural fixtures and return their deterministic QA manifest."""
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    cases, distinctions = _fixture_cases(seed)
+    manifest: dict[str, Any] = {
+        "seed": seed,
+        "shape": [N_CELLS, N_GENES],
+        "synthetic_counts": True,
+        "raw_counts_layer_written": False,
+        "files": {},
+    }
+
+    if writer is None:
+
+        def writer(adata: ad.AnnData, path: Path) -> None:
+            adata.write_h5ad(path, compression="gzip", compression_opts=4)
+
+    for filename, adata in cases.items():
+        path = output_dir / filename
+        manifest_path = output_dir / "structural_manifest.json"
+        if path.exists() or manifest_path.exists():
+            raise FileExistsError(
+                f"Refusing to overwrite existing output: {path if path.exists() else manifest_path}"
+            )
+        writer(adata, path)
+        if path.stat().st_size >= 5_000_000:
+            raise AssertionError(f"{filename} is not below the 5 MB hard limit")
+        if path.stat().st_size >= 1_000_000:
+            raise AssertionError(f"{filename} exceeds the 1 MB target")
+
+        restored = ad.read_h5ad(path)
+        compression = _check_compression(path)
+        file_qa: dict[str, Any] = {
+            "bytes": path.stat().st_size,
+            "shape": list(restored.shape),
+            "x_encoding": type(restored.X).__name__,
+            "obs_columns": list(restored.obs.columns),
+            "var_columns": list(restored.var.columns),
+            "layers": list(restored.layers.keys()),
+            "optional_slots": {
+                "obsm": list(restored.obsm.keys()),
+                "varm": list(restored.varm.keys()),
+                "obsp": list(restored.obsp.keys()),
+                "uns": list(restored.uns.keys()),
+            },
+            "obs_names_unique": bool(restored.obs_names.is_unique),
+            "var_names_unique": bool(restored.var_names.is_unique),
+            "symbols_dtype": (
+                str(restored.var["symbols"].dtype)
+                if "symbols" in restored.var
+                else None
+            ),
+            "compression": compression,
+            "distinction": distinctions[filename],
+        }
+        if restored.shape != (N_CELLS, N_GENES):
+            raise AssertionError(f"{filename} has unexpected shape {restored.shape}")
+        manifest["files"][filename] = file_qa
+
+    files = manifest["files"]
+    if files["matrix_csr.h5ad"]["x_encoding"] != "csr_matrix":
+        raise AssertionError("matrix_csr.h5ad did not round-trip as CSR")
+    if files["matrix_csc.h5ad"]["x_encoding"] != "csc_matrix":
+        raise AssertionError("matrix_csc.h5ad did not round-trip as CSC")
+    if files["with_duplicates.h5ad"]["var_names_unique"] is False:
+        raise AssertionError(
+            "Duplicate-symbol fixture must have unique source var_names"
+        )
+    if "symbols" not in files["symbols_in_column.h5ad"]["var_columns"]:
+        raise AssertionError("symbols_in_column.h5ad is missing var.symbols")
+    if files["symbols_in_column.h5ad"]["symbols_dtype"] in {"bool", "boolean"}:
+        raise AssertionError(
+            "var.symbols must remain non-boolean for dtype-validation tests"
+        )
+    if files["obs_duplicate_names.h5ad"]["obs_names_unique"]:
+        raise AssertionError(
+            "obs_duplicate_names.h5ad does not contain duplicate cell names"
+        )
+    if files["with_obsm.h5ad"]["optional_slots"]["obsm"] == []:
+        raise AssertionError("with_obsm.h5ad must populate optional slots")
+
+    counts_layer = ad.read_h5ad(output_dir / "counts_in_layer.h5ad")
+    if _matrix_equal(counts_layer.X, counts_layer.layers["counts"]):
+        raise AssertionError("counts_in_layer.h5ad must distinguish X and counts")
+    layered = ad.read_h5ad(output_dir / "with_layers.h5ad")
+    if not all(
+        not _matrix_equal(left, right)
+        for left, right in (
+            (layered.X, layered.layers["counts"]),
+            (layered.layers["counts"], layered.layers["spliced"]),
+            (layered.layers["spliced"], layered.layers["unspliced"]),
+        )
+    ):
+        raise AssertionError(
+            "with_layers.h5ad must contain distinct X/counts/spliced/unspliced matrices"
+        )
+
+    for filename, adata in cases.items():
+        if filename == "with_duplicates.h5ad":
+            duplicate_count = int(_var(adata)["symbols"].duplicated().sum())
+            if duplicate_count != 8:
+                raise AssertionError(
+                    f"Expected eight duplicate symbols, found {duplicate_count}"
+                )
+            distinct_pairs = sum(
+                not _columns_equal(adata.X, i, 64 + i) for i in range(8)
+            )
+            if distinct_pairs != 8:
+                raise AssertionError(
+                    f"Expected eight distinct duplicate-gene count pairs, found {distinct_pairs}"
+                )
+            files[filename]["duplicate_symbols"] = duplicate_count
+            files[filename]["distinct_duplicate_gene_count_pairs"] = distinct_pairs
+        if filename == "with_isoforms.h5ad":
+            collapsed = pd.Series(adata.var_names).str.replace(r"\.\d+", "", regex=True)
+            collisions = int(collapsed.duplicated().sum())
+            if collisions != 8:
+                raise AssertionError(
+                    f"Expected eight isoform collisions, found {collisions}"
+                )
+            distinct_pairs = sum(
+                not _columns_equal(adata.X, i, 64 + i) for i in range(8)
+            )
+            if distinct_pairs != 8:
+                raise AssertionError(
+                    f"Expected eight distinct isoform count pairs, found {distinct_pairs}"
+                )
+            files[filename]["isoform_collisions_after_suffix_removal"] = collisions
+            files[filename]["distinct_isoform_count_pairs"] = distinct_pairs
+        if filename == "label_with_nan.h5ad":
+            missing = int(_obs(adata)["cell_type"].isna().sum())
+            if missing != 12:
+                raise AssertionError(f"Expected twelve missing labels, found {missing}")
+            files[filename]["missing_labels"] = missing
+
+    manifest_path = output_dir / "structural_manifest.json"
+    if write_manifest:
+        manifest_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+    return manifest
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", required=True, type=Path)
+    parser.add_argument("--seed", default=42, type=int)
+    args = parser.parse_args()
+    manifest = build_variations(args.output_dir, seed=args.seed)
+    largest = max(
+        (details["bytes"], name) for name, details in manifest["files"].items()
+    )
+    print(f"Built {len(manifest['files'])} structural fixtures in {args.output_dir}")
+    print(f"Largest fixture: {largest[1]} ({largest[0]} bytes)")
+    print(f"Manifest: {args.output_dir / 'structural_manifest.json'}")
+
+
+if __name__ == "__main__":
+    main()
