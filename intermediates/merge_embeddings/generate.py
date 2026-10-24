@@ -1,121 +1,136 @@
 #!/usr/bin/env python3
-"""
-Generate test data for adata/mergeembeddings module.
+"""Generate deterministic, tiny fixtures for ADATA_MERGEEMBEDDINGS."""
 
-This script creates three h5ad files that simulate the merge embeddings scenario:
-- base.h5ad: Pre-existing data with X_{integration} embeddings
-- integrated.h5ad: Newly integrated data with X_emb embeddings
-- combined.h5ad: Union of cells from both (no embeddings yet)
+from __future__ import annotations
 
-For scanvi tests, additional files include label:scANVI columns.
-"""
+import argparse
+from collections.abc import Callable
+from pathlib import Path
+from typing import Any, cast
 
-import numpy as np
 import anndata as ad
+import numpy as np
 import pandas as pd
 from scipy.sparse import csr_matrix
-from pathlib import Path
 
-np.random.seed(42)
-
-OUTPUT_DIR = Path(__file__).parent
 N_BASE_CELLS = 50
 N_INTEGRATED_CELLS = 30
 N_GENES = 100
 EMBEDDING_DIM = 10
+FILENAMES = [
+    f"{kind}_{algorithm}.h5ad"
+    for algorithm in ("scvi", "scanvi")
+    for kind in ("base", "integrated", "combined")
+]
 
 
-def create_base_adata(integration_name: str = "scvi", include_scanvi_labels: bool = False):
-    """Create base anndata with X_{integration} embedding."""
+def _obs(adata: ad.AnnData) -> pd.DataFrame:
+    return cast(pd.DataFrame, adata.obs)
+
+
+def create_base_adata(
+    rng: np.random.Generator,
+    integration_name: str = "scvi",
+    include_scanvi_labels: bool = False,
+) -> ad.AnnData:
+    """Create base data with X_<integration> and unique observation names."""
     cell_names = [f"base_cell_{i}" for i in range(N_BASE_CELLS)]
     gene_names = [f"gene_{i}" for i in range(N_GENES)]
-
-    # Random count matrix
-    X = csr_matrix(np.random.poisson(5, size=(N_BASE_CELLS, N_GENES)).astype(np.float32))
-
-    # Create embedding
-    embedding = np.random.randn(N_BASE_CELLS, EMBEDDING_DIM).astype(np.float32)
-
+    counts = csr_matrix(rng.poisson(5, size=(N_BASE_CELLS, N_GENES)).astype(np.int32))
     adata = ad.AnnData(
-        X=X,
-        obs=pd.DataFrame(index=cell_names),
-        var=pd.DataFrame(index=gene_names),
+        X=counts,
+        obs=pd.DataFrame({"base_only": "base"}, index=pd.Index(cell_names)),
+        var=pd.DataFrame(index=pd.Index(gene_names)),
     )
-    adata.obsm[f"X_{integration_name}"] = embedding
-
+    adata.obsm[f"X_{integration_name}"] = rng.normal(
+        size=(N_BASE_CELLS, EMBEDDING_DIM)
+    ).astype(np.float32)
     if include_scanvi_labels:
-        labels = np.random.choice(["TypeA", "TypeB", "TypeC"], size=N_BASE_CELLS)
+        labels = rng.choice(["TypeA", "TypeB", "TypeC"], size=N_BASE_CELLS)
         adata.obs["label:scANVI"] = pd.Categorical(labels)
-
     return adata
 
 
-def create_integrated_adata(include_scanvi_labels: bool = False):
-    """Create integrated anndata with X_emb embedding."""
+def create_integrated_adata(
+    rng: np.random.Generator, include_scanvi_labels: bool = False
+) -> ad.AnnData:
+    """Create integrated data with X_emb and unique observation names."""
     cell_names = [f"integrated_cell_{i}" for i in range(N_INTEGRATED_CELLS)]
     gene_names = [f"gene_{i}" for i in range(N_GENES)]
-
-    # Random count matrix
-    X = csr_matrix(np.random.poisson(5, size=(N_INTEGRATED_CELLS, N_GENES)).astype(np.float32))
-
-    # Create embedding (named X_emb as expected by the module)
-    embedding = np.random.randn(N_INTEGRATED_CELLS, EMBEDDING_DIM).astype(np.float32)
-
-    adata = ad.AnnData(
-        X=X,
-        obs=pd.DataFrame(index=cell_names),
-        var=pd.DataFrame(index=gene_names),
+    counts = csr_matrix(
+        rng.poisson(5, size=(N_INTEGRATED_CELLS, N_GENES)).astype(np.int32)
     )
-    adata.obsm["X_emb"] = embedding
-
+    adata = ad.AnnData(
+        X=counts,
+        obs=pd.DataFrame({"integrated_only": "integrated"}, index=pd.Index(cell_names)),
+        var=pd.DataFrame(index=pd.Index(gene_names)),
+    )
+    adata.obsm["X_emb"] = rng.normal(size=(N_INTEGRATED_CELLS, EMBEDDING_DIM)).astype(
+        np.float32
+    )
     if include_scanvi_labels:
-        labels = np.random.choice(["TypeA", "TypeB", "TypeC"], size=N_INTEGRATED_CELLS)
+        labels = rng.choice(["TypeA", "TypeB", "TypeC"], size=N_INTEGRATED_CELLS)
         adata.obs["label:scANVI"] = pd.Categorical(labels)
-
     return adata
 
 
-def create_combined_adata(base_adata: ad.AnnData, integrated_adata: ad.AnnData):
-    """Create combined anndata (union of cells, no embeddings)."""
-    # Concatenate the two datasets
+def create_combined_adata(
+    base_adata: ad.AnnData,
+    integrated_adata: ad.AnnData,
+    rng: np.random.Generator,
+) -> ad.AnnData:
+    """Create a shuffled union with aligned, intentionally missing obs metadata."""
     combined = ad.concat([base_adata, integrated_adata], join="outer")
-
-    # Remove embeddings (the module will add them)
-    combined.obsm = {}
-
-    # Remove scanvi labels if present (the module will add them for scanvi)
-    if "label:scANVI" in combined.obs.columns:
-        del combined.obs["label:scANVI"]
-
+    combined.obsm.clear()
+    if "label:scANVI" in _obs(combined):
+        combined.obs = _obs(combined).drop(columns="label:scANVI")
+    # The modules must align by observation index, not assume source order.
+    combined = combined[rng.permutation(combined.n_obs)].copy()
     return combined
 
 
-def main():
-    print(f"Generating test data in {OUTPUT_DIR}")
+def build_fixtures(
+    output_dir: str | Path,
+    seed: int = 42,
+    *,
+    writer: Callable[[Any, Path], None] | None = None,
+) -> list[str]:
+    """Build the six consumed H5ADs, optionally through the shared writer."""
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    rng = np.random.default_rng(seed)
+    produced: list[str] = []
+    for algorithm in ("scvi", "scanvi"):
+        labels = algorithm == "scanvi"
+        base = create_base_adata(rng, algorithm, labels)
+        integrated = create_integrated_adata(rng, labels)
+        combined = create_combined_adata(base, integrated, rng)
+        for kind, adata in (
+            ("base", base),
+            ("integrated", integrated),
+            ("combined", combined),
+        ):
+            filename = f"{kind}_{algorithm}.h5ad"
+            path = output_dir / filename
+            if path.exists():
+                raise FileExistsError(f"Refusing to overwrite existing fixture: {path}")
+            if writer is None:
+                adata.write_h5ad(path, compression="gzip", compression_opts=4)
+            else:
+                writer(adata, path)
+            produced.append(filename)
+    return produced
 
-    # Standard scvi test data
-    print("Creating scvi test data...")
-    base_scvi = create_base_adata(integration_name="scvi", include_scanvi_labels=False)
-    integrated_scvi = create_integrated_adata(include_scanvi_labels=False)
-    combined_scvi = create_combined_adata(base_scvi, integrated_scvi)
 
-    base_scvi.write_h5ad(OUTPUT_DIR / "base_scvi.h5ad")
-    integrated_scvi.write_h5ad(OUTPUT_DIR / "integrated_scvi.h5ad")
-    combined_scvi.write_h5ad(OUTPUT_DIR / "combined_scvi.h5ad")
-
-    # scanvi test data (includes label:scANVI)
-    print("Creating scanvi test data...")
-    base_scanvi = create_base_adata(integration_name="scanvi", include_scanvi_labels=True)
-    integrated_scanvi = create_integrated_adata(include_scanvi_labels=True)
-    combined_scanvi = create_combined_adata(base_scanvi, integrated_scanvi)
-
-    base_scanvi.write_h5ad(OUTPUT_DIR / "base_scanvi.h5ad")
-    integrated_scanvi.write_h5ad(OUTPUT_DIR / "integrated_scanvi.h5ad")
-    combined_scanvi.write_h5ad(OUTPUT_DIR / "combined_scanvi.h5ad")
-
-    print("Done! Created files:")
-    for f in sorted(OUTPUT_DIR.glob("*.h5ad")):
-        print(f"  - {f.name}")
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--seed", type=int, default=42)
+    args = parser.parse_args()
+    names = build_fixtures(args.output_dir, args.seed)
+    print(f"Built {len(names)} fixtures in {args.output_dir}")
+    for name in names:
+        print(name)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,6 @@
+anndata>=0.12,<0.13
+h5py>=3.11,<4
+numpy>=2,<3
+pandas
+pyarrow>=19,<24
+scipy

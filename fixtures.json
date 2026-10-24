@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "pipeline": {
+    "revision": "825cf27cafc27764d576f611143f56fffb92fdb9",
+    "nextflow": "25.10.4",
+    "nf_test": "0.9.4"
+  },
+  "size_policy": {
+    "target_bytes": 1000000,
+    "hard_limit_bytes": 5000000,
+    "h5ad_compression": "gzip",
+    "h5ad_compression_level": 4,
+    "exempt_hdf5_datasets": ["scalar", "empty"]
+  },
+  "stages": {
+    "source": ["pbmc", "misc"],
+    "structural": ["anndata-variations", "intermediates/merge_embeddings", "volcanoplot"],
+    "analysis": ["pbmc", "intermediates/fragments", "intermediates/doublet_detection"],
+    "reference": ["extension_base"],
+    "singler": ["singleR"]
+  },
+  "sources": {
+    "pbmc": {
+      "revision": "e3a7f43eb802a090affac918026d2ba5dce8fcd5",
+      "selection": "Select the 384 deepest filtered cells from SRR28679756 and SRR28679759, then select the shared 3000-gene panel by population variance with ANXA1, JCHAIN, GPNMB, HSPA12B and VCAN required. Retain each selected raw barcode plus 512 non-zero raw-only droplets below 100 counts. Counts are subsetted, never inflated or normalised.",
+      "ena_accessions": {
+        "study": "PRJNA1100403",
+        "geo": "GSE263932",
+        "title": "Selective CAR-T cell mediated B cell depletion suppresses interferon signature in SLE [Bcells]",
+        "runs": {
+          "SRR28679756": {"experiment": "SRX24247854", "sample": "SAMN40969801", "source_design": "Patient 7, post CAR-T"},
+          "SRR28679757": {"experiment": "SRX24247853", "sample": "SAMN40969802", "source_design": "Patient 7, pre CAR-T"},
+          "SRR28679758": {"experiment": "SRX24247853", "sample": "SAMN40969802", "source_design": "Patient 7, pre CAR-T"},
+          "SRR28679759": {"experiment": "SRX24247852", "sample": "SAMN40969803", "source_design": "Patient 6, post CAR-T"}
+        },
+        "caveat": "SRR28679757 and SRR28679758 are the same source experiment and sample. Synthetic donor and condition fields are test design, not biological donor claims."
+      },
+      "processing_history": "The pinned fixture blobs establish source bytes only. Their original matrix processing and downsampling history are not independently verified and are not described as a fresh nf-core/scrnaseq run.",
+      "r_runtime": {
+        "container": "community.wave.seqera.io/library/adata_readrds:a4ce240ec6f50fd9",
+        "pipeline_process": "ADATA_READRDS",
+        "lock_file": "modules/local/adata/readrds/.conda-lock/linux_amd64-bd-a4ce240ec6f50fd9_6.txt"
+      },
+      "reader_runtimes": {
+        "csv": {"container": "community.wave.seqera.io/library/anndata_python_pyyaml:5ac0fd4d280528a5", "pipeline_process": "ADATA_READCSV"},
+        "tenx": {"container": "community.wave.seqera.io/library/python_pyyaml_scanpy:ab265932a4ff2ebf", "pipeline_process": "SCANPY_READH5"},
+        "rds": {"container": "community.wave.seqera.io/library/adata_readrds:a4ce240ec6f50fd9", "pipeline_process": "ADATA_READRDS"}
+      },
+      "artifacts": {
+        "SRR28679756_filtered_matrix.h5ad": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679756_filtered_matrix.h5ad", "sha256": "8b1224ee1d079b15afec9ffbb1cfab46c7ea1b8105c4c01d348d4f904965a95f"},
+        "SRR28679756_raw_matrix.h5ad": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679756_raw_matrix.h5ad", "sha256": "c8a22fc2253e70cec1d26ad2030bae09907169033e593985c76dcf3ac0106b0b"},
+        "SRR28679759_filtered_matrix.h5ad": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679759_filtered_matrix.h5ad", "sha256": "b9c45cb3f203c1b3581de59ac1987e702a43ac55fee934b7f038a18fc945281a"},
+        "SRR28679759_raw_matrix.h5ad": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679759_raw_matrix.h5ad", "sha256": "234b7f11d48a7fcdd646864ad7c5326e41451fb2c79f668ccd2980ce5bed4bfe"},
+        "SRR28679757_filtered_matrix.sce.rds": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679757_filtered_matrix.sce.rds", "sha256": "e2eb0c1241a24d0d937a1252e089d6e5d1330f2bb8370338d757c74823c56b9b"},
+        "SRR28679757_raw_matrix.sce.rds": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679757_raw_matrix.sce.rds", "sha256": "613e0f74a25ea4b9a0280140ba446e5e6ca088e0f16cb5772f9488df7efcb9c6"},
+        "SRR28679758_filtered_matrix.seurat.rds": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679758_filtered_matrix.seurat.rds", "sha256": "77b21cdd1583bdfefb4d83787ca97a8901ef1b42019814064964f612015cdaa9"},
+        "SRR28679758_raw_matrix.seurat.rds": {"url": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/pbmc/SRR28679758_raw_matrix.seurat.rds", "sha256": "14efe231c19a0afcc696913428082dbcbe0efdb4d2a0d453444420c2231796f2"}
+      }
+    },
+    "singler": {
+      "selection": "Subset authentic HDF5-backed references with retained label columns and gene overlap.",
+      "gene_panel_path": "pbmc/combined_filtered_matrix.h5ad",
+      "target_genes": 1000,
+      "minimum_shared_genes": 1000,
+      "uris": [
+        {
+          "name": "celldex_hpca__2024-02-26_h5_se.tar",
+          "uri": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/singleR/celldex_hpca__2024-02-26_h5_se.tar",
+          "sha256": "85d2fa25cb81fcae72594b64e55b4ceccf52f1639100d22d3c0d428d63b7c007",
+          "reference": "hpca",
+          "label_field": "label.fine",
+          "stratify_field": "label.fine",
+          "profile_count": 128,
+          "minimum_label_categories": 128
+        },
+        {
+          "name": "celldex_monaco_immune__2024-02-26_h5_se.tar",
+          "uri": "https://raw.githubusercontent.com/nf-core/test-datasets/e3a7f43eb802a090affac918026d2ba5dce8fcd5/singleR/celldex_monaco_immune__2024-02-26_h5_se.tar",
+          "sha256": "3d3e207cd6741c4e68cd8165d273eee1bdad183754fad44c62423af132d644e8",
+          "reference": "monaco_immune",
+          "label_field": "label.main",
+          "stratify_field": "label.fine",
+          "profile_count": 114,
+          "minimum_label_categories": 10
+        }
+      ]
+    }
+  },
+  "fixture_families": {
+    "pbmc": {
+      "stage": "source",
+      "paths": ["pbmc/*.h5ad", "pbmc/*.csv", "pbmc/*.rds"],
+      "representation": "real biological counts and genuine production-readable representations",
+      "contracts": [
+        "Filtered and raw inputs retain matching source identity and axes where the consumer requires a pair.",
+        "Biological fixtures preserve count provenance and do not use synthetic inflated counts.",
+        "Analysis derivatives retain the intentional sparse or dense encoding and dtype."
+      ],
+      "positive_cases": ["QC", "normalisation", "integration", "annotation", "DE"],
+      "negative_cases": []
+    },
+    "misc": {
+      "stage": "source",
+      "paths": ["misc/filtered_feature_bc_matrix.h5"],
+      "representation": "valid 10x HDF5, not a renamed H5AD",
+      "contracts": ["The production 10x reader reloads the file."]
+    },
+    "anndata-variations": {
+      "stage": "structural",
+      "paths": ["anndata-variations/*.h5ad"],
+      "representation": "small independent synthetic AnnData structural cases",
+      "contracts": [
+        "CSR and CSC remain distinct sparse encodings.",
+        "float64, int32 and int64 cases retain their intentional dtypes.",
+        "Duplicate, isoform, metadata and optional-slot cases each establish the named distinction."
+      ],
+      "positive_cases": ["named counts sources", "symbol lookup", "duplicate aggregation", "metadata normalisation"],
+      "negative_cases": ["metadata conflicts", "missing requested columns", "duplicate observation names"]
+    },
+    "intermediates": {
+      "stage": "analysis",
+      "paths": ["intermediates/fragments/*", "intermediates/doublet_detection/*", "intermediates/merge_embeddings/*.h5ad"],
+      "representation": "only alignment-specific or materially expensive production derivatives",
+      "contracts": ["Fragment indices and AnnData axes are generated together."]
+    },
+    "extension_base": {
+      "stage": "reference",
+      "paths": ["extension_base/merged.h5ad", "extension_base/model.pt", "extension_base/symphony_reference.h5ad"],
+      "representation": "one production-generated matched AnnData, scVI and Symphony triplet",
+      "contracts": [
+        "The three artefacts are generated together from raw-count provenance.",
+        "Mapping and extension consume the same feature order and reference axes."
+      ],
+      "positive_cases": ["reference mapping", "reference extension", "base-only integration"],
+      "negative_cases": ["a separate structural no-raw-counts input rejects before analysis"]
+    },
+    "singleR": {
+      "stage": "singler",
+      "paths": ["singleR/*.tar", "singleR/references.csv"],
+      "representation": "compact authentic HDF5-backed reference archives",
+      "contracts": ["Archive stems match extracted directories and retain requested label fields."]
+    },
+    "volcanoplot": {
+      "stage": "structural",
+      "paths": ["volcanoplot/*_results.parquet"],
+      "representation": "tiny synthetic plotting edge cases",
+      "contracts": ["The named dynamic parquet family is explicitly enumerated by the consumer audit."]
+    }
+  },
+  "numerical_gates": {
+    "qc": "Retain more than 20 genes, the min_cells=20 branch and at least 100 eligible cells for positive sampling.",
+    "ambient": "Use matched filtered/raw barcodes and axes with low-count background and high-count cells.",
+    "integration": "Retain enough cells and variable genes for exercised PCA, Symphony, Scanorama, Seurat and BBKNN branches.",
+    "de": "Each intended donor, condition and label profile retains at least ten cells and 1000 original counts after selection, with full-rank designs and non-empty results.",
+    "annotation": "Retain marker overlap and more than one known scANVI label; keep declared negative cases.",
+    "reference": "Probe actual mapping and extension with the complete matching triplet."
+  },
+  "consumer_audit": {
+    "baseline_cases": 416,
+    "expected_cases": 420,
+    "baseline_reconciliation": "The pinned revision contains 416 executable cases. The companion branch adds two doublet-report edge cases, one regular HVG fragment-namespace round trip and one reference marker-plotting regression; no baseline suite was removed. The audit parses Groovy triple-quoted setup blocks.",
+    "included_roots": ["tests", "modules/local", "subworkflows/local"],
+    "required_categories": ["modules_local", "subworkflows_local", "pipeline"],
+    "dynamic_dataset_patterns": ["volcanoplot/${name}_results.parquet"],
+    "route_classifications": {
+      "dataset": "candidate fixture required",
+      "modules_external": "shared external fixture, migration review required for biological inputs",
+      "hardcoded_external": "external dependency or legacy route, migration review required",
+      "inline_or_derived": "created in the nf-test setup or supplied by an upstream production module"
+    }
+  }
+}
