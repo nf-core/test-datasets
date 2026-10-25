@@ -13,6 +13,10 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 Small text inputs, including custom decoupler networks, sample identifier validation sheets and interesting-gene lists, are generated inline by the pipeline's nf-test tests.
 
+The additional matched `.raw` differential-expression pair has a separate [generation recipe and contract](anndata-variations/DE_RAW_FIXTURES.md). Run `generate_de_raw_fixtures.py` to reproduce it; it is not part of the 72-file rebuild inventory below.
+
+The additional [dense LIANA consensus fixture](anndata-variations/LIANA_DENSE_FIXTURE.md) has its own deterministic generator, `generate_liana_dense_fixture.py`, and optional real-library validation. It is also separate from the rebuild inventory.
+
 ## Fixture generation and provenance
 
 The biological panel retains 384 cells per source and 3,000 shared genes. Raw inputs also retain genuine background droplets for EmptyDrops and SCAR. Counts are subsetted, never inflated. Individual sources preserve source identities; combined inputs expose explicitly synthetic donor, condition and label fields for test design.
