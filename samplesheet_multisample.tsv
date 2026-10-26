@@ -1,0 +1,4 @@
+sample	fasta	medium_gapseq	medium_gapseq_csv	medium_carveme	medium_carveme_tsv
+prevotella_copri	https://raw.githubusercontent.com/nf-core/test-datasets/bacmodel/testdata/prevotella_copri.fasta.gz			LB
+faecalibacterium_duncaniae	https://raw.githubusercontent.com/nf-core/test-datasets/bacmodel/testdata/faecalibacterium_duncaniae.fasta.gz			LB
+dorea_formicigenerans	https://raw.githubusercontent.com/nf-core/test-datasets/bacmodel/testdata/dorea_formicigenerans.fasta.gz			LB
