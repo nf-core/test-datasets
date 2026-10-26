@@ -838,11 +838,14 @@ The earth sciences folder contain subfolders for different data formats encounte
   - rnaseq:
     - test_starfusion.annotfilterrule.pm: Filtering rules for `prep_genome_lib.pl` script in starfusion
   - scrnaseq:
+    - celltypist:
+      - pbmc3k_celltypist_model.pkl: CellTypist model trained on 600 cells from `scanpy.datasets.pbmc3k_processed()` using the `louvain` cell type labels, with 1,806 features. Made with celltypist 1.7.1. Used with `pbmc3k_celltypist_query.h5ad` in the celltypist module tests.
     - csv:
       - SRR28679756_filtered_matrix.csv: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 100 cells and 100 genes.
     - h5ad:
       - pbmc3k.h5ad: Standard scanpy test dataset obtained using `scanpy.datasets.pbmc3k()`.
       - pbmc1k.h5ad: `pbmc3k.h5ad` subsampled to 1,000 cells and genes. `adata.obs` contains `batch`column with batches '1', '2', and '3'
+      - pbmc3k_celltypist_query.h5ad: 300 cells and 1,838 genes from `scanpy.datasets.pbmc3k_processed()`, different cells from those used to train `pbmc3k_celltypist_model.pkl`. Log1p-normalised to 10,000 counts per cell, with no cell metadata.
       - combined_filtered_matrix.h5ad: Combined filtered matrix from SRR28679756, SRR28679757, SRR28679758 and SRR28679759, generated with nf-core/scrnaseq v4.0.0, subsetted to 10k genes.
       - SRR28679756_filtered_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes. Contains an additional layer `counts` and a column `symbols` in `adata.var`.
       - SRR28679756_raw_matrix.h5ad: SRR28679756 was processed with nf-core/scrnaseq v4.0.0 and subsetted to 10k genes and 300k cells.
