@@ -41,6 +41,11 @@ All files live under `testdata/`. Files used by the minimal `test`, `test_pmo` a
 - `testdata/sl_from_mlaf_pop2.tsv`: Expected single-locus frequencies derived from MLAF for population `pop2`.
 - `testdata/sl_pop1.tsv`: Expected single-locus allele frequencies and prevalences for population `pop1`.
 - `testdata/sl_pop2.tsv`: Expected single-locus allele frequencies and prevalences for population `pop2`.
+- `testdata/loci_no_gene.bed`: One-row loci-of-interest table with no `gene` column. Hand-written for the `CONCAT_TABLES` test that checks summaries stay unchanged when gene names are not supplied.
+- `testdata/loci_with_gene.bed`: Loci-of-interest table with a `gene` column for _dhfr-ts_, _crt_ and _dhps_. Hand-written for the `CONCAT_TABLES` test that adds gene names to summary tables.
+- `testdata/sl_pop.tsv`: Tiny single-locus summary (`pop1`) paired with `loci_with_gene.bed`. Not an output of the pipeline test run.
+- `testdata/ml_pop.tsv`: Tiny multi-locus summary paired with `loci_with_gene.bed`. Includes one haplotype per gene and one two-gene haplotype written in both gene orders, so the test can check `;`-separated gene names follow variant-string order.
+- `testdata/sl_from_ml_pop.tsv`: Tiny single-locus-from-multi-locus summary paired with the tables above. The gene column is not added to this raw table.
 
 ### Full-size test data (`test_full`)
 
