@@ -1,0 +1,6 @@
+#chrom	start	end	name	length	strand	gene	aa_position	gene_id
+Pf3D7_04_v3	748237	748240	dhfr51	3	+	dhfr-ts	51	PF3D7_0417200.1
+Pf3D7_04_v3	748261	748264	dhfr59	3	+	dhfr-ts	59	PF3D7_0417200.1
+Pf3D7_04_v3	748408	748411	dhfr108	3	+	dhfr-ts	108	PF3D7_0417200.1
+Pf3D7_07_v3	403623	403626	crt76	3	+	crt	76	PF3D7_0709000.1
+Pf3D7_08_v3	549683	549686	dhps437	3	+	dhps	437	PF3D7_0810800.1

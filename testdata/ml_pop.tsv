@@ -1,0 +1,4 @@
+population	group_id	variant	prev	sample_count	sample_total	freq
+pop1	reversed	PF3D7_0810800.1:437:A;PF3D7_0417200.1:51:N	0.1	1	10	0.1
+pop1	pfdhfr	PF3D7_0417200.1:51_59_108:I_R_N	1	10	10	0.9
+pop1	pfdhfr_pfdhps	PF3D7_0417200.1:51_59_108:I_R_N;PF3D7_0810800.1:437:G	0.9	9	10	0.8
