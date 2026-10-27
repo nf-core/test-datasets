@@ -1,0 +1,11 @@
+chrTest	synth	gene	501	1800	.	+	.	gene_id "geneA"; gene_name "geneA"; gene_biotype "protein_coding";
+chrTest	synth	transcript	501	1800	.	+	.	gene_id "geneA"; transcript_id "txA"; gene_name "geneA"; gene_biotype "protein_coding";
+chrTest	synth	exon	501	900	.	+	.	gene_id "geneA"; transcript_id "txA"; gene_name "geneA"; gene_biotype "protein_coding"; exon_number "1";
+chrTest	synth	exon	1401	1800	.	+	.	gene_id "geneA"; transcript_id "txA"; gene_name "geneA"; gene_biotype "protein_coding"; exon_number "2";
+chrTest	synth	gene	2501	3100	.	+	.	gene_id "geneB"; gene_name "geneB"; gene_biotype "protein_coding";
+chrTest	synth	transcript	2501	3100	.	+	.	gene_id "geneB"; transcript_id "txB"; gene_name "geneB"; gene_biotype "protein_coding";
+chrTest	synth	exon	2501	3100	.	+	.	gene_id "geneB"; transcript_id "txB"; gene_name "geneB"; gene_biotype "protein_coding"; exon_number "1";
+chrTest	synth	gene	3901	5000	.	-	.	gene_id "geneC"; gene_name "geneC"; gene_biotype "protein_coding";
+chrTest	synth	transcript	3901	5000	.	-	.	gene_id "geneC"; transcript_id "txC"; gene_name "geneC"; gene_biotype "protein_coding";
+chrTest	synth	exon	4701	5000	.	-	.	gene_id "geneC"; transcript_id "txC"; gene_name "geneC"; gene_biotype "protein_coding"; exon_number "1";
+chrTest	synth	exon	3901	4200	.	-	.	gene_id "geneC"; transcript_id "txC"; gene_name "geneC"; gene_biotype "protein_coding"; exon_number "2";
