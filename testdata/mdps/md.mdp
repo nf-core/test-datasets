@@ -1,15 +1,15 @@
 title                   = Lysozyme MD run (full test)
 ; Run parameters
 integrator              = md        ; leap-frog integrator
-nsteps                  = 25000     ; full test: 50 ps
+nsteps                  = 500000    ; full test: 1 ns
 dt                      = 0.002     ; 2 fs
 ; Output control
 nstxout                 = 0         ; suppress bulky .trr file by specifying
 nstvout                 = 0         ; 0 for output frequency of nstxout,
 nstfout                 = 0         ; nstvout, and nstfout
-nstenergy               = 1000      ; save energies every 2.0 ps
-nstlog                  = 1000      ; update log file every 2.0 ps
-nstxout-compressed      = 1000      ; save compressed coordinates every 2.0 ps
+nstenergy               = 5000      ; save energies every 10.0 ps
+nstlog                  = 5000      ; update log file every 10.0 ps
+nstxout-compressed      = 5000      ; save compressed coordinates every 10.0 ps
 compressed-x-grps       = System    ; save the whole system
 ; Bond parameters
 continuation            = yes       ; Restarting after NPT

@@ -52,7 +52,7 @@ The two sets differ only in run length and output frequency:
 | Energy minimisation (steepest descent, Fmax < 1000 kJ/mol/nm) | max. 5000 steps | max. 1000 steps |
 | NVT equilibration (dt = 2 fs) | 20 ps (10 000 steps) | 1 ps (500 steps) |
 | NPT equilibration (dt = 2 fs) | 20 ps (10 000 steps) | 1 ps (500 steps) |
-| Production MD (dt = 2 fs) | 50 ps (25 000 steps), frames every 2 ps | 2 ps (1000 steps), frames every 0.2 ps |
+| Production MD (dt = 2 fs) | 1 ns (500 000 steps), frames every 10 ps | 2 ps (1000 steps), frames every 0.2 ps |
 
 The minimal NVT file uses a fixed random seed (`gen_seed = 12345`), so CI runs start from the same velocities every time.
 
