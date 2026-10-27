@@ -1236,6 +1236,19 @@ All datasets below are the example datasets bundled with the [MetaProViz](https:
   - 'ontology.obo': a mock gene ontology with 5 terms.
   - 'ontology_slim.obo': a mock GO slim with 2 terms.
   - 'go_annotation.gaf': a mock GO annotation in GAF format, containing annotations for 8 genes.
+- starsolo: Starsolo synthetic test data, taken from [here](https://raw.githubusercontent.com/cellgeni/STARsolo/main/data/test.tar.gz).
+  - 'test.fa': Synthetic reference genome
+  - 'test.gtf': Gene annotation corresponding to the synthetic reference genome, containing annotations for 3 genes.
+  - indrops
+    - 'IND1_1.fastq.gz': Synthetic inDrop read FASTQ (R1).
+    - 'IND1_2.fastq.gz': Synthetic inDrop read FASTQ (R2).
+    - 'inDrops_Ambros2_bc1.txt': First inDrop cell barcode whitelist.
+    - 'inDrops_Ambros2_bc2.txt': Second inDrop cell barcode whitelist.
+  - smartseq
+    - 'CELL01_R1.fastq.gz': Synthetic Smart-seq read FASTQ for cell 1 (R1).
+    - 'CELL01_R2.fastq.gz': Synthetic Smart-seq read FASTQ for cell 1 (R2).
+    - 'CELL02_R1.fastq.gz': Synthetic Smart-seq read FASTQ for cell 2 (R1).
+    - 'CELL02_R2.fastq.gz': Synthetic Smart-seq read FASTQ for cell 2 (R2).
 - tsv
   - 'ani.tsv': exemplary tab-seperated file describing pairwise similarities from [here](https://github.com/refresh-bio/clusty).
   - 'expression.tsv': numeric sample-by-feature matrix in TSV format, commonly used for gene abundance, expression, intensity, or other per-sample quantitative measurements
