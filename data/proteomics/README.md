@@ -4,6 +4,7 @@
 
 - [apbs](#apbs)
 - [cif](#cif)
+- [colabfold](#colabfold)
 - [database](#database)
 - [diann](#diann)
 - [hhsuite](#hhsuite)
@@ -31,6 +32,14 @@ Test data files were sourced directly from the `apbs` [repository](https://githu
 The cif folder contains protein structure files in mmCIF (.cif) format.
 The macromolecular Crystallographic Information File (mmCIF) format is a standard text-based format developed by the Worldwide Protein Data Bank for representing three-dimensional macromolecular structure data. It is the modern replacement for the legacy PDB format and supports larger and more complex structures.
 mmCIF files typically contain atomic coordinates, chain and residue information, experimental metadata (e.g. method, resolution) and, structure annotations and cross-references.
+
+## colabfold
+
+Small inputs for the template paths of the [ColabFold](https://github.com/sokrypton/ColabFold) `colabfold_batch` module, built around the 20-residue Trp-cage miniprotein (PDB [1L2Y](https://www.rcsb.org/structure/1L2Y)), so a prediction takes seconds on a GPU.
+
+- `trp_cage.a3m` is the Trp-cage sequence (`NLYIQWLKDGGPSSGRPPPS`) as a single-sequence A3M. With an A3M input, `colabfold_batch --templates` searches the templates without querying the ColabFold MSA server.
+- `trp_cage_pdb_hits.m8` is a one-line BLAST-m8 template hit file (as written by `colabfold_search`) pointing the query to `1l2y_A`, for `--pdb-hit-file`.
+- `local_pdb.tar.gz` is a one-entry local PDB mirror (`local_pdb/1l2y.cif`), for `--local-pdb-path`. The mmCIF is model 1 of 1L2Y (`../pdb/1l2y.pdb`) converted with ColabFold 1.5.5's own `convert_pdb_to_mmcif`, which writes the fields `colabfold_batch` requires of a template.
 
 ## database
 
@@ -101,6 +110,7 @@ write.table(out_df, file = 'proteus.raw_MaxQuant_proteingroups_tab.tsv', row.nam
 The pdb folder contains protein structure files in .PDB format.
 Files 1tim.pdb and 8tim.pdb are part of the example datasets used in the [foldseek tool](https://github.com/steineggerlab/foldseek).
 They describe chicken muscle proteins (engineered and breast respectively) and their structures were determined through X-ray diffraction.
+File 1l2y.pdb is the first model of the NMR structure of the Trp-cage miniprotein (PDB [1L2Y](https://www.rcsb.org/structure/1L2Y), 20 residues), downloaded from the RCSB PDB and trimmed to its header records and model 1.
 
 ## proteinfamilies
 
