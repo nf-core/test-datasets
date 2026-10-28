@@ -426,6 +426,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - genome.fasta.gz: bgzipped version of 'genome.fasta'
     - genome.fasta.gz.fai: index file for 'genome.fasta.gz'
     - genome.fasta.gz.gzi: index file for 'genome.fasta.gz'
+    - genome_extra_contig.fasta: `genome.fasta` plus a 2 kb synthetic random contig `chrExtra` that is not in the headers of the `illumina/bam/test*.paired_end.sorted.bam` files, so variant callers produce no records for it
     - genome2.fasta: Reference fasta based on chr22:16600000-16800000
     - genome3.fasta: Reference fasta based on chr19:45760000-45770300
     - genome3.fna: Reference fasta based on chr19:45760000-45770300 (copy of genome3.fasta, with different extension)
@@ -444,6 +445,7 @@ The earth sciences folder contain subfolders for different data formats encounte
     - multi_intervals.bed: Contains the interval from `interval.list` split into two parts
     - genome.intervals1_multi.bed: First interval from `multi_intervals.bed` (chr22:1-15000), used for scatter-gather testing
     - genome.intervals2_multi.bed: Second interval from `multi_intervals.bed` (chr22:20000-40001), used for scatter-gather testing
+    - genome_extra_contig.multi_intervals.bed: Intervals for `genome_extra_contig.fasta` (chr22:1-15000 and chrExtra:1-2000), used for scatter-gather testing with an interval that yields no records
     - blacklist_intervals.bed: Contains the intervals of problematic regions of the genome
     - annotated_intervals.tsv: Contains the intervals of the genome (annotated with gc-content) excluding problematic regions
     - filtered_intervals.interval_list: Contains the intervals of the genome that contain at least one read hit
