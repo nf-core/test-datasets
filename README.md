@@ -391,6 +391,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - sequence/chr22_23800000-23980000.fa: Fasta file containing a section of chr22
       - sequence/hg38.chr22.fasta: Fasta file containing the entire chr22
       - sequence/hg38.chr22.fasta.fai: Fasta index for `hg38.chr22.fasta`
+      - sequence/chr22_test.refFlat: refFlat gene annotation matching chr22_23800000-23980000.fa (relabeled `chr22_test` to match the dartseq pipeline's reference), copied from the dartseq branch's `bullseye.test.refFlat`. Used by the bullseye/findeditsites, bullseye/summarizesites and bullseye/quantifysites module tests.
     - chr22_chr22_KI270734v1_random: directory for reference files using chr22 and chr22_KI270734v1_random, for paraphase
       - sequence/genome.fa.gz: Gzipped fasta file from GRCh38 with bases not within chr22:18912282-18936793 and chr22_KI270734v1_random:137587-162092 hard masked to N.
     - genetic_map: directory containing genetic map of GRCh38 in various format
@@ -554,6 +555,8 @@ The earth sciences folder contain subfolders for different data formats encounte
         - test.paired_end.duplex_umi_grouped.bam: file originating from `test.paired_end.duplex_umi_mapped_tagged.bam`
         - test.paired_end.duplex_umi_duplex_consensus.bam: file originating from `test.paired_end.duplex_umi_grouped.bam`
         - test.paired_end.umi_in_header.bam{,.bai}: Modification of `test.paired_end.unsorted_tagged.bam` to move the UMIs to the read header, and swap chromosome to entire chr22 rather than chr22:16570000-16610000. Sorted and indexed.
+      - 'control.chr22_test.bam{.bai}': STAR-aligned, sorted, indexed control-group DART-seq RNA-seq BAM against the `chr22_test` reference (genomics/homo_sapiens/genome/chr22/sequence/chr22_23800000-23980000.fa, relabeled), from the dartseq pipeline's public test FASTQs (test-datasets `dartseq` branch, sample A03). Used by the bullseye/findeditsites, bullseye/summarizesites and bullseye/quantifysites module tests.
+      - 'dart.chr22_test.bam{.bai}': STAR-aligned, sorted, indexed DART-seq-treated ("dart" group) RNA-seq BAM against the `chr22_test` reference, matching `control.chr22_test.bam` (test-datasets `dartseq` branch, sample A04). Used by the bullseye/findeditsites, bullseye/summarizesites and bullseye/quantifysites module tests.
     - bcl:
       - flowcell.tar.gz: bcl data generated on a MiSeq sequencer. Contains only data for the first tile.
       - flowcell_samplesheet.csv: SampleSheet for data on flowcell
