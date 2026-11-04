@@ -81,4 +81,9 @@ Small reference files for testing, based on `GRCh37`
 - `small.intervals`
   Intervals for Preprocessing and Variant Calling
 
+- `varnet_chr21_hg38/`
+  Germline filtering resources for VarNet tumor-only calling, based on `GRCh38`.
+  Cut down from the full resources on [figshare](https://doi.org/10.6084/m9.figshare.34420128) to the regions covered by `test2.paired_end.recalibrated.sorted.cram` from the nf-core/modules test data, plus 500 bp either side.
+  The file names must not change, as VarNet looks them up by name.
+
 For further information or help, don't hesitate to get in touch on our [Slack organisation](https://nf-co.re/join/slack) (a tool for instant messaging).
