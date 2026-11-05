@@ -1,0 +1,16 @@
+schema: https://w3id.org/fair-bioheaders/fhgff3/v0.4.0
+schemaVersion: '1.0'
+annotation: Candidatus Portiera aleyrodidarum test annotation
+taxon:
+  name: Candidatus Portiera aleyrodidarum
+  uri: https://identifiers.org/taxonomy:235282
+version: '1'
+metadataAuthor:
+  - name: Josiah Carberry
+    uri: https://orcid.org/0000-0002-1825-0097
+dateCreated: '2020-01-01'
+derivedFrom:
+  - headerType: FHR
+    checksum: 8kMW7cFzWbKkOLt0tgS3srVGNuzqNuoGaVqAimI8A2c=
+    relationship: annotates
+checksum: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
