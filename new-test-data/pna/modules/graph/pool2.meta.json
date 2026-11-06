@@ -9,13 +9,18 @@
             "--min-count": 1,
             "--max-refinement-recursion-depth": 3,
             "--initial-stage-max-edges-to-remove": 10,
-            "--refinement-stage-max-edges-to-remove": 10,
+            "--refinement-stage-max-edges-to-remove": 20,
             "--initial-stage-max-edges-to-remove-relative": null,
             "--refinement-stage-max-edges-to-remove-relative": null,
-            "--component-size-max-threshold": null,
+            "--component-size-max-threshold": 1000000,
             "--component-size-min-threshold": 100,
-            "--panel": "proxiome-v2-immuno-155-prerelease",
-            "--output": "."
+            "--panel": [
+                "proxiome-v2-immuno-155-prerelease"
+            ],
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/70/33b902c2dcedeb315087bb042369ea"
+        },
+        "arguments": {
+            "parquet_file": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/b4/fc74452557a02e55364da96aa67b43/aggregate/pool2.parquet"
         }
     }
 }

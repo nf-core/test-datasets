@@ -1,0 +1,17 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna aggregate",
+        "options": {
+            "--sample-name": "pool1",
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/9f/81a2efc6668ffc611025ec32ed2f7c",
+            "--threads": 2,
+            "--memory": 11520000000
+        },
+        "arguments": {
+            "edgelist": [
+                "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/ed/7e2c9946b560ab258d2c23b2376674/edgelist/pool1_reseq.parquet",
+                "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/e9/bd2a4a242c4893a53b72984add1dae/edgelist/pool1.parquet"
+            ]
+        }
+    }
+}

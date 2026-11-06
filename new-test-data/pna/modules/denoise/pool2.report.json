@@ -2,6 +2,8 @@
     "sample_id": "pool2",
     "product_id": "single-cell-pna",
     "report_type": "denoise",
-    "number_of_umis_removed": 499,
-    "ratio_of_umis_removed": 0.0399487631094388
+    "number_of_umis_removed": 442,
+    "ratio_of_umis_removed": 0.035524835235492686,
+    "input_reads": 150980,
+    "output_reads": 145718
 }
