@@ -1196,6 +1196,7 @@ All datasets below are the example datasets bundled with the [MetaProViz](https:
 - insitugame
   - 'insitugame.tsv': Small deterministic spatial marker table for the nf-core `insitugame` module.
   - 'insitugame.tsv.gz': Gzip-compressed version of the same table for compressed-input tests.
+  - 'insitugame.csv': Comma-separated version of the same table for CSV input tests.
 
 ### generic
 
