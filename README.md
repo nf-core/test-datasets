@@ -1193,6 +1193,10 @@ All datasets below are the example datasets bundled with the [MetaProViz](https:
     - transcripts.parquet - parquet file containing the transcript coordinates
     - xenium.toml - config used to run the baysor module with the transcript above
     - spatial_gene_expression.csv - Cropped csv file from a Xenium homo sapiens breast cancer dataset.
+- insitugame
+  - 'insitugame.tsv': Small deterministic spatial marker table for the nf-core `insitugame` module.
+  - 'insitugame.tsv.gz': Gzip-compressed version of the same table for compressed-input tests.
+  - 'insitugame.csv': Comma-separated version of the same table for CSV input tests.
 
 ### generic
 
