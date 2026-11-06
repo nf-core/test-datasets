@@ -2,11 +2,14 @@
     "cli": {
         "command": "pixelator single-cell-pna sample-calling",
         "options": {
-            "--samplesheet": "samplesheet_proxiome_v2.csv",
+            "--samplesheet": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/stage-13a57ebd-711e-470f-8653-0b41dd39525d/71/03f3e75bfba99f6af31786e3ee22b0/samplesheet_proxiome_v2.csv",
             "--remove-incompatible": true,
             "--save-undetermined": false,
             "--enrichment-threshold": 10.0,
-            "--output": "."
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/3f/ad60774108a772a473b956468a7a22"
+        },
+        "arguments": {
+            "input_pxl_file": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/93/9fa6de27819369c801be15a62d923e/denoise/pool1.denoised_graph.pxl"
         }
     }
 }

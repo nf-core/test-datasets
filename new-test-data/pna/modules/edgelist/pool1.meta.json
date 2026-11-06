@@ -1,0 +1,22 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna edgelist",
+        "options": {
+            "--read-forward": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/stage-13a57ebd-711e-470f-8653-0b41dd39525d/b9/f3f26df9c2de9b323b9728a5bb4069/pool1_R1.fastq.gz",
+            "--read-reverse": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/stage-13a57ebd-711e-470f-8653-0b41dd39525d/5f/83627e97b68ce1bac5e9a7684d863e/pool1_R2.fastq.gz",
+            "--sample-name": "pool1",
+            "--mismatch-threshold": 0,
+            "--min-avg-quality": 20,
+            "--max-umi-base-freq": 0.8,
+            "--lbs-overlap-max-edits": 6,
+            "--save-dropped-reads": false,
+            "--design": "proxiome-v2",
+            "--panel": [
+                "proxiome-v2-immuno-155-prerelease"
+            ],
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/e9/bd2a4a242c4893a53b72984add1dae",
+            "--threads": 2
+        },
+        "arguments": {}
+    }
+}

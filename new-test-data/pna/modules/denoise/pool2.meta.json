@@ -20,7 +20,10 @@
             "--pls-component-p-threshold": 0.01,
             "--pls-min-coreness-correlation": 0.0,
             "--pls-score-threshold": -3.0,
-            "--output": "."
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/75/a12078d33d2f7fb3094611af7d1eed"
+        },
+        "arguments": {
+            "pxl_file": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/5f/adbe6f3642efe7a15d0a9038a4219e/graph-collapse/pool2.graph-collapse.pxl"
         }
     }
 }

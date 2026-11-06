@@ -1,0 +1,24 @@
+{
+    "sample_id": "pool1",
+    "product_id": "single-cell-pna",
+    "report_type": "aggregate",
+    "input_reads": 309597,
+    "output_molecules": 44400,
+    "umi1_degree_distribution": {
+        "1": 2000,
+        "4": 7868,
+        "5": 1882,
+        "6": 233,
+        "7": 16,
+        "8": 1
+    },
+    "umi2_degree_distribution": {
+        "1": 2000,
+        "4": 7846,
+        "5": 1924,
+        "6": 215,
+        "7": 14,
+        "8": 1
+    },
+    "output_reads": 309597
+}

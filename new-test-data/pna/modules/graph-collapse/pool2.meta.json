@@ -1,0 +1,18 @@
+{
+    "cli": {
+        "command": "pixelator single-cell-pna graph-collapse",
+        "options": {
+            "--design": "proxiome-v2",
+            "--bfs-distance": 6,
+            "--hamming-threshold": 2,
+            "--report-collapsed-sequences": false,
+            "--max-degree": 1,
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/5f/adbe6f3642efe7a15d0a9038a4219e",
+            "--threads": -1,
+            "--memory": 11520000000
+        },
+        "arguments": {
+            "pxl_file": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/70/33b902c2dcedeb315087bb042369ea/graph/pool2.graph.pxl"
+        }
+    }
+}

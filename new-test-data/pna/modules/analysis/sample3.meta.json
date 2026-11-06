@@ -3,11 +3,13 @@
         "command": "pixelator single-cell-pna analysis",
         "options": {
             "--compute-proximity": true,
-            "--proximity-nbr-of-permutations": 100,
             "--compute-k-cores": true,
             "--compute-svd-var-explained": true,
             "--svd-nbr-of-pivots": 50,
-            "--output": "."
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/de/dc3dcad835210dd40a539fa8b71fca"
+        },
+        "arguments": {
+            "pxl_file": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/8e/49916c363a29a3fd20f26a22fac18c/sample_calling/sample3.dehashed.pxl"
         }
     }
 }

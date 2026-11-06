@@ -3,11 +3,14 @@
         "command": "pixelator single-cell-pna layout",
         "options": {
             "--layout-algorithm": [
-                "coarsened_pmds_3d"
+                "wpmds_3d"
             ],
             "--pmds-pivots": 50,
             "--wpmds-k": 5,
-            "--output": "."
+            "--output": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/e4/718dcce87e5ad41301fb4c6823f9f4"
+        },
+        "arguments": {
+            "pxl_file": "/home/adriencoulier/Documents/nf-core/pixelator-workspaces/edgelist_wf/work/54/83e40569f964d2cd24ff61b63cff78/analysis/sample1.analysis.pxl"
         }
     }
 }
