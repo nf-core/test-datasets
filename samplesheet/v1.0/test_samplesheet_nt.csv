@@ -1,0 +1,3 @@
+id,fastafile,treefile
+TSTG1,https://raw.githubusercontent.com/nf-core/test-datasets/genephylo/testdata/blastquery/TSTG1_nt.fasta,
+TSTG2,https://raw.githubusercontent.com/nf-core/test-datasets/genephylo/testdata/blastquery/TSTG2_nt.fasta,
