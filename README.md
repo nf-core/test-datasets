@@ -945,7 +945,7 @@ The earth sciences folder contain subfolders for different data formats encounte
   - candidatus_portiera_aleyrodidarum
     - genome
       - fairbioheaders
-        - 'test1.fhgff3.yaml': [FAIR-bioHeaders](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Tools) FHGFF3 metadata for 'gff/test1.gff', for testing the `fairbioheaders` modules. The checksum is a placeholder
+        - 'test1.fhgff3.yaml': [FAIR-bioHeaders](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Tools) FHGFF3 metadata for 'gff/test1.gff', for testing the `fairbioheaders` modules. The top-level checksum is a placeholder, replaced when the metadata is combined with the GFF3; the `derivedFrom` checksum is a well-formed example value standing in for the FHR checksum of a parent genome file (no headed genome file is included)
     - illumina
       - ???
     - nanopore
