@@ -151,6 +151,12 @@ The earth sciences folder contain subfolders for different data formats encounte
     - 'proteome.fasta.gz': gzipped version of 'proteome.fasta'
     - 'proteome.hmm.gz': A HMM file from Pfam SARS-CoV-2
     - 'proteome_test.faa': The first sequence from `proteome.fasta`, duplicated eight times with minor differences, to test quality check software
+    - fairbioheaders: [FAIR-bioHeaders](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Tools) metadata for testing the `fairbioheaders` modules. The checksums are placeholders, replaced when the metadata is combined with a sequence file
+      - 'genome.fhr.yaml': FHR metadata for 'genome.fasta' (also used with 'illumina/gfa/assembly.gfa')
+      - 'genome.fhr.json': the same FHR metadata as JSON
+      - 'genome.missing_genome.fhr.yaml': invalid FHR metadata, without the required `genome` field
+      - 'proteome_test.fhp.yaml': FHP metadata for 'proteome_test.faa'
+      - 'proteome_test.unsupported_schema.fhp.yaml': FHP metadata citing a schema release (v9.9.9) that does not exist
     - graphtyper: files for testing graphtyper
       - 'regions.txt': chromosome names and positions for MT192765.1 genome
     - PRG_test: zipped directory to build a test Population Reference Graph
@@ -938,7 +944,8 @@ The earth sciences folder contain subfolders for different data formats encounte
         - 'test.fastq.gz' synthetic raw long-read sequencing reads of the genome of the mammalian-gut-residing _Bacteroides fragilis_ YCH46 bacterium (NC_006347). Originally generated for the [MAG pipeline test dataset](https://github.com/nf-core/test-datasets/tree/mag).
   - candidatus_portiera_aleyrodidarum
     - genome
-      - ???
+      - fairbioheaders
+        - 'test1.fhgff3.yaml': [FAIR-bioHeaders](https://github.com/FAIR-bioHeaders/FAIR-bioHeaders-Tools) FHGFF3 metadata for 'gff/test1.gff', for testing the `fairbioheaders` modules. The top-level checksum is a placeholder, replaced when the metadata is combined with the GFF3; the `derivedFrom` checksum is a well-formed example value standing in for the FHR checksum of a parent genome file (no headed genome file is included)
     - illumina
       - ???
     - nanopore

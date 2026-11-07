@@ -1,0 +1,13 @@
+schema: https://w3id.org/fair-bioheaders/fhp/v0.4.0
+schemaVersion: '1.0'
+proteome: SARS-CoV-2 test proteome
+sourceType: database
+taxon:
+  name: Severe acute respiratory syndrome coronavirus 2
+  uri: https://identifiers.org/taxonomy:2697049
+version: '1'
+metadataAuthor:
+  - name: Josiah Carberry
+    uri: https://orcid.org/0000-0002-1825-0097
+dateCreated: '2020-01-01'
+checksum: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
