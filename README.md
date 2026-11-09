@@ -22,6 +22,7 @@ The genomics folder contains subfolders for all organisms for which test data is
 - actinidia_chinensis
 - arabidopsis_thaliana
 - bacteroides_fragilis
+- caenorhabditis_elegans
 - candidatus_portiera_aleyrodidarum
 - deilephila_porcellus (mitochondrion)
 - escherichia_coli
@@ -1013,6 +1014,16 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'ilDeiPorc1.HiFi.reads.fa': test dataset for reads for Deilephila porcellus
       - 'MW539688.1.fasta': sequence of the mitochondrial reference genome for Deilephila porcellus
       - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
+  - caenorhabditis_elegans
+    - genome
+      - 'c_elegans_X1-58063.fa':  test data reference for caenorhabditis elegans
+      - 'c_elegans_X1-58063.fa.fai': FASTA index for 'c_elegans_X1-58063.fa'
+      - 'c_elegans_X1-58063.gff3': GFF3 gene models for X:1-58,063, subset from Ensembl Metazoa release 63
+    - illumina/vcf
+      - 'c_elegans_caendr_X.vcf.gz': test vcf for caenorhabditis_elegans.
+      - 'c_elegans_caendr_X.vcf.gz.tbi': tabix index for 'c_elegans_caendr_X.vcf.gz'
+    - sa
+      - 'worm.osa2': fastVEP supplementary annotation database built from the CaeNDR variant VCF with `fastvep sa-build --source custom_vcf`
   - arabidopsis_thaliana
     - genome
       - 'ont_Col-0_tets_data_Chr1_5mb_7mb.bam': basecalled, unaligned ONT reads from Chromosome 1:5mb-7mb region for Arabidopsis thaliana.
