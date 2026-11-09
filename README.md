@@ -68,3 +68,14 @@ Apart from test data, this branch also contains the reference sequences and corr
 The lambda virus genome and pUC19 plasmid are used as unmethylated and fully methylated controls, respectively, to assess the efficiency of cytosine conversion (e.g., bisulfite or enzymatic) within the [nf-core/methylseq](https://github.com/nf-core/methylseq) pipeline.
 
 The lambda virus genome assembly was obtained from [NCBI](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000840245.1/) and the pUC19 plamsid sequence was obtained directly from [New England Biolabs](https://www.neb.com/en/-/media/nebus/page-images/tools-and-resources/interactive-tools/dna-sequences-and-maps/text-documents/puc19fsa.txt?rev=6e10f4c4a4234d638e401cd2f4578ef0&hash=1D2E6BD5DE8CA3F58A404EF6801C06A1) website.
+
+# bwa-mem3 index
+
+`reference/Bwamem3_Index.tar.gz` is a bwa-mem3 0.16.0 methylation index of `reference/genome.fa`, used by nf-core/methylseq (`--aligner bwamem3 --bwamem3_index`) and by the nf-core/modules `fasta_index_methylseq` tests. It works for both `bwa-mem3 mem --meth` (bisulfite/EM-seq) and `--meth=taps` (TAPS). It unpacks to `bwamem3/genome.fa.{amb,ann,bwt.2bit.64,pac}` plus the `bwamem3/genome.fa.meth.*` seed index, and was built with:
+
+```
+mkdir bwamem3 && ln -s ../genome.fa bwamem3/genome.fa
+bwa-mem3 index --meth bwamem3/genome.fa
+rm bwamem3/genome.fa bwamem3/genome.fa.meth.fa
+tar --sort=name --owner=0 --group=0 --numeric-owner --mtime=@0 -cf - bwamem3 | gzip -n -9 > Bwamem3_Index.tar.gz
+```
