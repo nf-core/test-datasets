@@ -7,6 +7,7 @@ This branch contains test data to be used for automated testing with the [nf-cor
 `reference/`: Sub-sampled genome reference files (iGenomes **S. cerevisiae** R64-1-1 Ensembl release)
 `reference/salmon.tar.gz`: Pre-built salmon index in the salmon 1.x (pufferfish) format
 `reference/salmon_2.7.0.tar.gz`: Pre-built salmon index in the salmon 2.x (Rust rewrite) format, which salmon 1.x cannot read and vice versa
+`reference/salmon_2.11.0.tar.gz`: Pre-built salmon index in the salmon 2.x index format v3, required by salmon 2.9 and later (earlier 2.x indexes such as `salmon_2.7.0.tar.gz` are format v2 and unreadable)
 `reference/prokaryotic/`: Reference files for **S. enterica** Typhimurium SL1344
 
 `testdata/*.fastq.gz`: Historical single-end test data for pipeline sub-sampled to ~2000 reads
