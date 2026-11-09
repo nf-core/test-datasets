@@ -1018,7 +1018,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
   - caenorhabditis_elegans
     - genome
-      - 'c_elegans_X1-58063.fa':  test data reference for caenorhabditis elegans
+      - 'c_elegans_X1-58063.fa': test data reference for caenorhabditis elegans
       - 'c_elegans_X1-58063.fa.fai': FASTA index for 'c_elegans_X1-58063.fa'
       - 'c_elegans_X1-58063.gff3': GFF3 gene models for X:1-58,063, subset from Ensembl Metazoa release 63
     - illumina/vcf
