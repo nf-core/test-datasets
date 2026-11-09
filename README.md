@@ -749,6 +749,8 @@ The earth sciences folder contain subfolders for different data formats encounte
       - mini.5p--3p.bam: subsample of hifi reads from the public pacbio dataset [pbmc singlecell mini](https://downloads.pacbcloud.com/public/dataset/IsoSeq_sandbox/2022_pbmc_singlecell_mini/ccs.bam) where the primers where removed with LIMA.
       - test.sorted.bam: 35 reads from a [public PacBio Revio dataset of HG002](https://downloads.pacbcloud.com/public/revio/2022Q4/HG002-rep1/analysis/HG002.m84011_220902_175841_s1.GRCh38.bam) aligned to GRCh38.
       - test.sorted.bam.bai: BAM index for 'test.sorted.bam'
+      - test.fail_reads.sorted.bam: 13 failed reads from a [public PacBio Revio dataset of HG002](https://human-pangenomics.s3.amazonaws.com/submissions/80d00e88-7a92-46d8-88c7-48f1486e11ed--HG002_PACBIO_REVIO/m84039_230117_233243_s1.fail_reads.default.bam) aligned to GRCh38.
+      - test.fail_reads.sorted.bam.bai: BAM index for 'test.fail_reads.sorted.bam'
       - NA03697B2_downsampled.pbmm2.repeats.bam: subsample of puretarget pacbio reads from the [public pacbio dataset](https://downloads.pacbcloud.com/public/dataset/PureTargetRE/Coriell/PBMM2-BAM-Input-For-IGV-And-TRGT/) aligned to genome3.fasta
       - NA03697B2_downsampled.pbmm2.repeats.bai: associated index to NA03697B2_downsampled.pbmm2.repeats.bam
       - NA037562_downsampled.pbmm2.repeats.bam: subsample of puretarget pacbio reads from the [public pacbio dataset](https://downloads.pacbcloud.com/public/dataset/PureTargetRE/Coriell/PBMM2-BAM-Input-For-IGV-And-TRGT/) aligned to genome3.fasta
@@ -1016,7 +1018,7 @@ The earth sciences folder contain subfolders for different data formats encounte
       - 'MW539688.1.gb': gene annotation for the mitochondrial reference genome for Deilephila porcellus
   - caenorhabditis_elegans
     - genome
-      - 'c_elegans_X1-58063.fa':  test data reference for caenorhabditis elegans
+      - 'c_elegans_X1-58063.fa': test data reference for caenorhabditis elegans
       - 'c_elegans_X1-58063.fa.fai': FASTA index for 'c_elegans_X1-58063.fa'
       - 'c_elegans_X1-58063.gff3': GFF3 gene models for X:1-58,063, subset from Ensembl Metazoa release 63
     - illumina/vcf
