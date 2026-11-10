@@ -40,6 +40,10 @@ git fetch
 
 `testdata/blastquery/TSTG1_aa.fasta`, `testdata/blastquery/TSTG2_aa.fasta`: translated CDS (protein) of human TSTG1 and TSTG2 respectively. Queries for `tblastn`.
 
+`testdata/speciestree/mammals_sptree.nwk`: rooted species tree (Newick, topology only, no branch lengths) of the 15 species in `mammals_db.fasta`, with full species names as leaves (spaces replaced by underscores, e.g. `Homo_sapiens`). For reconciliation with `treerecs`.
+
+`testdata/speciestree/mammals_sptree_codes.nwk`: same tree with species codes as leaves (first 3 letters of genus + first 3 letters of species, e.g. `HOMSAP`; for three-part names, 3 + 2 + 1 letters, e.g. `CANLUF` for _Canis lupus familiaris_).
+
 ### Species
 
 | Species               | NCBI taxid | Sequences |
