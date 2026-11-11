@@ -1,0 +1,23 @@
+{
+  "sample_name": "sample2_single_end_forward",
+  "edgelist": "sample2",
+  "panel": "proxiome-v1-immuno-155-v1.1",
+  "assay": "proxiome-v1",
+  "edgelist_seed": 4,
+  "fastq_seed": 141,
+  "n_reads": 21800,
+  "quality_std": 0.0,
+  "sequencing": "single_end",
+  "reverse_read": false,
+  "n_edges_total": 10900,
+  "n_cells": 18,
+  "n_nodes": 200,
+  "n_edges": 600,
+  "min_neighbors": 20,
+  "n_crossing_edges": 100,
+  "hashing_fraction": 0.2,
+  "hashing_indices": null,
+  "n_cell_types": 3,
+  "cell_type_effect": 10.0,
+  "n_shared_markers": 3
+}

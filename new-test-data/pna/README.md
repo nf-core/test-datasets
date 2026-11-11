@@ -28,6 +28,14 @@ This generates the files in `testdata/pna/fastq`, including:
 - `pool1*_R1.fastq.gz`, `pool1*_R2.fastq.gz`, `pool2_R1.fastq.gz`, `pool2_R2.fastq.gz`
 - corresponding `*.metadata.json` files
 
+Single-end versions of `sample1`, `sample1_reseq`, `sample2`, `pool1`, `pool1_reseq` and `pool2` are also provided as
+`<library>_single_end_forward.fastq.gz` (with `*.metadata.json`).
+Each read covers the whole amplicon, as is. They were generated separately from the paired-end files, with the Pixelator test data generator
+(`uv run python -m pixelator.testing.test_data`), so they do not share edge lists with the paired-end files.
+
+The samplesheets in `new-test-data/samplesheet/pna/` each hold four units (samples for v1, pools for v2):
+two resequenced (`sample_1` / `pool1` and their `_forward` counterparts) and two single-end (`*_forward`, forward read in `fastq_1`).
+
 ### Module output generation (`testdata/pna/modules`)
 
 Module artifacts were then generated with Pixelator `single-cell-pna` subcommands, in this order:

@@ -5,3 +5,9 @@ pool1,sample1,S1,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/po
 pool1,sample2,S2,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_reseq_R1.fastq.gz,fastq/pool1_reseq_R2.fastq.gz
 pool2,sample3,S3,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool2_R1.fastq.gz,fastq/pool2_R2.fastq.gz
 pool2,sample4,S4,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool2_R1.fastq.gz,fastq/pool2_R2.fastq.gz
+pool1_forward,sample1_forward,S1_forward,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_single_end_forward.fastq.gz,
+pool1_forward,sample2_forward,S2_forward,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_single_end_forward.fastq.gz,
+pool1_forward,sample1_forward,S1_forward,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_reseq_single_end_forward.fastq.gz,
+pool1_forward,sample2_forward,S2_forward,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool1_reseq_single_end_forward.fastq.gz,
+pool2_forward,sample3_forward,S3_forward,unstim,1,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool2_single_end_forward.fastq.gz,
+pool2_forward,sample4_forward,S4_forward,stim,5,proxiome-v2,proxiome-v2-immuno-155-prerelease,fastq/pool2_single_end_forward.fastq.gz,
