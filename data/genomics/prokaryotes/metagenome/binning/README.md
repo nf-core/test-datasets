@@ -179,7 +179,6 @@ SemiBin2 bins each sample separately, so its counts are per sample in `S1` to `S
 
 Vamb clusters the whole set at once and then splits the bins by sample. It was run with `-o C -e 5 -q 2 3 --minfasta 1 --seed 1`, the low epoch count nf-core/modules uses for testing, which leaves most contigs in their own bin. Raising it gives fewer, larger bins.
 
-
 ## `metabinner/`
 
 Inputs for the MetaBinner module (`metabinner/metabinner`).
