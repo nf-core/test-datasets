@@ -178,3 +178,44 @@ Software: `samtools` 1.24, `bwa` 0.7.19-r1273, `strobealign` 0.18.0, `SemiBin2` 
 SemiBin2 bins each sample separately, so its counts are per sample in `S1` to `S5` order, and each run takes about 70 seconds. It was run with `-s C --ml-threshold 0 --minfasta-kbs 0 --min-len 0 --random-seed 0`.
 
 Vamb clusters the whole set at once and then splits the bins by sample. It was run with `-o C -e 5 -q 2 3 --minfasta 1 --seed 1`, the low epoch count nf-core/modules uses for testing, which leaves most contigs in their own bin. Raising it gives fewer, larger bins.
+
+## `metabinner/`
+
+Inputs for the MetaBinner module (`metabinner/metabinner`).
+
+| File                  | Size  | Description                                                   |
+| --------------------- | ----- | ------------------------------------------------------------- |
+| `kmer_4_f1000.csv.gz` | 70 kB | Tetranucleotide composition profile of the 449 contigs        |
+| `depth.txt.gz`        | 9 kB  | Unmodified depth table from `jgi_summarize_bam_contig_depths` |
+
+`depth.txt.gz` is kept in jgi's raw form, so it carries `contigLen`, `totalAvgDepth` and a variance column per sample. The module keeps only the per-sample mean depths.
+
+### How it was generated
+
+Both files were generated from the metagenomic data above. The k-mer script ships with the MetaBinner source rather than as a standalone command, so it is taken from the repository at the `v1.4.4` commit.
+
+```bash
+# Metabinner holds the generating script - Pinning it to a commit to stay consistent
+git clone https://github.com/ziyewang/MetaBinner.git MetaBinner
+git -C MetaBinner checkout 76c257d
+
+zcat contigs.fasta.gz > contigs.fasta
+
+# k-mer profile (k = 4, contigs > 1000 bp, which here is all of them)
+python MetaBinner/scripts/gen_kmer.py contigs.fasta 1000 4
+gzip -n -9 -c contigs_kmer_4_f1000.csv > kmer_4_f1000.csv.gz
+
+# depth table, default options (MetaBAT2 2.18)
+jgi_summarize_bam_contig_depths --outputDepth depth.txt s1.sorted.bam s2.sorted.bam s3.sorted.bam
+gzip -n -9 -c depth.txt > depth.txt.gz
+```
+
+Software: MetaBinner 1.4.4 (commit `76c257d`), MetaBAT2 2.18.
+
+### Tested with
+
+| Tool       | Version | Bins | `hinf` contigs binned | `port` contigs binned | Unbinned |
+| ---------- | ------- | ---- | --------------------- | --------------------- | -------- |
+| MetaBinner | 1.4.4   | 2    | 374 / 378             | 71 / 71               | 4 `hinf` |
+
+The two bins are clean: one holds only `hinf` (_H. influenzae_) contigs and the other holds all of the `port` (_Candidatus_ Portiera aleyrodidarum) contigs, with no mixing between them.
