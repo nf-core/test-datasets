@@ -1007,6 +1007,9 @@ The earth sciences folder contain subfolders for different data formats encounte
       - datasets.tsv: tab-separated file listing datasets, their paths, corresponding taxonomy files, and descriptions (columns: # Dataset name Path to folder Path to taxonomy Description).
 
 - eukaryotes
+  - metagenome
+    - qc
+      - 'eukcc2_db_tiny_fungi.tar.gz': tiny EukCC 2 database (directory `eukcc2_db_tiny_fungi`, 1.8 MB, md5 `11bc3772bf119444207b17a4fd005c32`), downloaded unchanged from the [EukCC FTP](https://ftp.ebi.ac.uk/pub/databases/metagenomics/eukcc/eukcc2_db_tiny_fungi.tar.gz). Cut down to 24 PANTHER 16.0 SCMG profiles and a 409-protein MetaEuk reference, it gives the same results as the full tiny database for `proteomics/database/yeast_UPS.fasta` (`--AA`) and `genomics/eukaryotes/saccharomyces_cerevisiae/genome/genome.fa` with `--clade fungi`; not for real analyses. Build sources, the reduction script and tool versions are in the archive's `README.md` and `provenance/`.
   - galaxea_fascicularis
     - hic
       - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
