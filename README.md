@@ -1007,6 +1007,9 @@ The earth sciences folder contain subfolders for different data formats encounte
       - datasets.tsv: tab-separated file listing datasets, their paths, corresponding taxonomy files, and descriptions (columns: # Dataset name Path to folder Path to taxonomy Description).
 
 - eukaryotes
+  - metagenome
+    - qc
+      - 'eukcc2_db_tiny_fungi.tar.gz': Test database for EukCC single command. Downloaded from the [EukCC FTP](https://ftp.ebi.ac.uk/pub/databases/metagenomics/eukcc/eukcc2_db_tiny_fungi.tar.gz). Details on how the dataset was generated are provided in the README.md in the database folder, and the LICENSE file is available in the FTP folder.
   - galaxea_fascicularis
     - hic
       - 'jaGalFasc40_2.pretext': sparse data pretext map of hic contacts
