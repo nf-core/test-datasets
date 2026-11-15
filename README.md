@@ -5,11 +5,12 @@ This branch contains test data to be used for automated testing with the [nf-cor
 ## Content of this repository
 
 - `pbmc/`: Biological count inputs and shared PCA, neighbour graphs and Leiden clusters.
-- `samplesheet.csv` and `samplesheet_single.csv`: Pipeline input samplesheets using the upstream `nf-core/test-datasets` `scdownstream` branch.
+- `samplesheet.csv` and `samplesheet_single.csv`: Pipeline input samplesheets using the `nictru/test-datasets` `scdownstream` fork branch.
 - `extension_base/`: Matching compact AnnData, scVI and Symphony references with raw-count provenance.
 - `volcanoplot/`: Synthetic differential-expression tables for plotting regressions and their generator.
 - `anndata-variations/`, `intermediates/`, `misc/` and `singleR/`: Compact structural fixtures, shared derivatives, format inputs and annotation references.
 - `generation/`, `fixtures.json` and `requirements.txt`: Generation recipes, fixture contracts and required Python packages.
+- `generate_fragment_parquet_fixtures.py`: Supplemental Parquet fragment and regression fixtures, with their [format, manifest and reproduction commands](docs/FRAGMENT_PARQUET_FIXTURES.md).
 
 Small text inputs, including custom decoupler networks, sample identifier validation sheets and interesting-gene lists, are generated inline by the pipeline's nf-test tests.
 
@@ -21,7 +22,7 @@ The additional [dense LIANA consensus fixture](anndata-variations/LIANA_DENSE_FI
 
 The biological panel retains 384 cells per source and 3,000 shared genes. Raw inputs also retain genuine background droplets for EmptyDrops and SCAR. Counts are subsetted, never inflated. Individual sources preserve source identities; combined inputs expose explicitly synthetic donor, condition and label fields for test design.
 
-All 72 generated fixture files are below 1,000,000 bytes. H5AD arrays use gzip compression; identical `X` and `raw_counts` matrices share HDF5 storage. The two root samplesheets are additional metadata files. The previous fixture inventory had 91 files; the published inventory has 74 including those samplesheets.
+All 72 baseline generated fixture files are below 1,000,000 bytes. H5AD arrays use gzip compression; identical `X` and `raw_counts` matrices share HDF5 storage. The two root samplesheets are additional metadata files. The previous fixture inventory had 91 files; the baseline published inventory has 74 including those samplesheets. The supplemental Parquet generator adds 35 Parquet tables and two CSV inputs, each below the same size limit, without changing the baseline inventory or legacy pickles.
 
 Run generation into a new external directory, with Apptainer and the pinned pipeline checkout available:
 
