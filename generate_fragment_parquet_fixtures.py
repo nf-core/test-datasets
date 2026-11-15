@@ -304,6 +304,18 @@ def fixtures(root: Path) -> tuple[dict, dict, list[str]]:
         [TESTS["liana"], csv_source],
     )
 
+    large_integer = pd.DataFrame(
+        {"large_integer": pd.array([9007199254740993, None], dtype="Int64")},
+        index=[CELL, SECOND_CELL],
+    )
+    add(
+        "large_integer",
+        physical_frame(large_integer, "obs"),
+        "obs",
+        ["extend"],
+        "Synthetic nullable integer precision contract",
+    )
+
     uns = pd.DataFrame(
         {
             "source": ["sender", "receiver"],

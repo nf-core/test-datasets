@@ -788,6 +788,30 @@
       "slot": "obs",
       "source": "modules/local/adata/splitcol/tests/labels.nf.test"
     },
+    "intermediates/fragments/regressions/large_integer.parquet": {
+      "bytes": 1921,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "large_integer",
+          "null_count": 1,
+          "pandas_dtype": "Int64"
+        }
+      ],
+      "rows": 2,
+      "sha256": "1e4a4821109033fa8e7208933d8b929c65591d97751f2b7d1101647306717d44",
+      "slot": "obs",
+      "source": "Synthetic nullable integer precision contract"
+    },
     "intermediates/fragments/regressions/missing_batch.parquet": {
       "bytes": 1868,
       "consumers": [

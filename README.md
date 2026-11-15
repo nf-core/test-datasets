@@ -22,7 +22,7 @@ The additional [dense LIANA consensus fixture](anndata-variations/LIANA_DENSE_FI
 
 The biological panel retains 384 cells per source and 3,000 shared genes. Raw inputs also retain genuine background droplets for EmptyDrops and SCAR. Counts are subsetted, never inflated. Individual sources preserve source identities; combined inputs expose explicitly synthetic donor, condition and label fields for test design.
 
-All 72 baseline generated fixture files are below 1,000,000 bytes. H5AD arrays use gzip compression; identical `X` and `raw_counts` matrices share HDF5 storage. The two root samplesheets are additional metadata files. The previous fixture inventory had 91 files; the baseline published inventory has 74 including those samplesheets. The supplemental Parquet generator adds 35 Parquet tables and two CSV inputs, each below the same size limit, without changing the baseline inventory or legacy pickles.
+All 72 baseline generated fixture files are below 1,000,000 bytes. H5AD arrays use gzip compression; identical `X` and `raw_counts` matrices share HDF5 storage. The two root samplesheets are additional metadata files. The previous fixture inventory had 91 files; the baseline published inventory has 74 including those samplesheets. The supplemental Parquet generator adds 36 Parquet tables and two CSV inputs, each below the same size limit, without changing the baseline inventory or legacy pickles.
 
 Run generation into a new external directory, with Apptainer and the pinned pipeline checkout available:
 

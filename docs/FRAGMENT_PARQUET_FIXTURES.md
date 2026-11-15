@@ -2,7 +2,7 @@
 
 These supplemental fixtures support the `feat/parquet-fragments` pipeline migration.
 They do not replace the legacy `.pkl` files or change the main generation stages.
-The package contains 35 Parquet tables, two CSV inputs and a machine-readable
+The package contains 36 Parquet tables, two CSV inputs and a machine-readable
 [manifest](../intermediates/fragments/parquet_manifest.json).
 Every fixture is smaller than 1,000,000 bytes.
 
@@ -110,6 +110,12 @@ a row explicitly describes an intentional error.
 | `interleaved.parquet`, `contiguous.parquet` | 64 each | `regression_batch`: string |
 | `groups.parquet` | 64 | `interaction_group`: string |
 | `categorical_obs.parquet`, `categorical_var.parquet` | 3 each | Category and nullable columns described below |
+| `large_integer.parquet` | 2 | `large_integer`: nullable pandas `Int64`, values `[9007199254740993, null]` |
+
+`large_integer.parquet` uses the first two base cell IDs in their original
+order. Its integer value is `2**53 + 1`, which cannot round-trip through
+float64 without losing precision. The physical `large_integer` field is Arrow
+`int64`, with one null and pandas nullable `Int64` metadata.
 
 `labels.parquet` retains all dangerous labels, punctuation and case exactly as
 the original split-column test. The safe labels cycle through `A B`, `a_b`,
