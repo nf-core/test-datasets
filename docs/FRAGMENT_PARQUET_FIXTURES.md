@@ -165,6 +165,26 @@ strings, `magnitude_rank`, `specificity_rank`: float64. Its values are
 `(3, receiver, sender, CCL5, CCR5, 0.5, null)`. These are synthetic structural
 values, not inferred interactions.
 
+## Doublet score and merge regressions
+
+`generate_doublet_parquet_regressions.py` adds 28 tables in
+`intermediates/doublet_detection/regressions/` for the regression tests introduced
+in scdownstream PRs 393 and 395. Run it with:
+
+```bash
+uv run generate_doublet_parquet_regressions.py
+```
+
+The generator checks the table round trips and Snappy compression. Its
+`manifest.json` records paths, row counts, columns and SHA-256 values.
+These fixtures use 128 `cell_000` to `cell_127` identifiers. Calls retain the
+original reversed or interleaved row order. Score tables retain reordered
+native score/class columns and a missing Scrublet score. `sample_a` and
+`sample_b` tables use the sample-prefixed identifiers from `ADATA_UNIFY`.
+Malformed tables cover duplicate, missing and extra identifiers, multiple
+prediction columns, null calls, ambiguous strings and numeric calls.
+The existing fixtures and generation stages remain unchanged.
+
 ## Pipeline consumers
 
 The manifest maps fixtures to these 13 test files. It records the source test
