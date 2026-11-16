@@ -1,0 +1,1440 @@
+{
+  "consumer_tests": {
+    "annotations": "modules/local/custom/aggregate_per_cell_annotations/tests/main.nf.test",
+    "batch_validation": "modules/local/scanorama/integrate/tests/batch_validation.nf.test",
+    "doublet_plots": "modules/local/custom/doubletremoval/tests/plot_edge_cases.nf.test",
+    "doublets": "modules/local/custom/doubletremoval/tests/main.nf.test",
+    "edgepython": "modules/local/edgepython/differential/tests/design.nf.test",
+    "entropy": "modules/local/adata/entropy/tests/main.nf.test",
+    "extend": "modules/local/adata/extend/tests/main.nf.test",
+    "finalize": "subworkflows/local/finalize/tests/main.nf.test",
+    "liana": "modules/local/liana/rankaggregate/tests/dense.nf.test",
+    "panel_plots": "modules/local/scanpy/filter/tests/small_panels_plot.nf.test",
+    "panels": "modules/local/scanpy/filter/tests/small_panels.nf.test",
+    "scanorama": "modules/local/scanorama/integrate/tests/main.nf.test",
+    "splitcol": "modules/local/adata/splitcol/tests/labels.nf.test"
+  },
+  "encoding": {
+    "compression": "snappy",
+    "engine": "pyarrow",
+    "index_column": "__index__",
+    "pandas_index": false
+  },
+  "files": {
+    "intermediates/doublet_detection/test_doubletdetection.parquet": {
+      "bytes": 6307,
+      "consumers": [
+        "doublets"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "test_doubletdetection",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        }
+      ],
+      "rows": 384,
+      "sha256": "b2bf500a82c41397ba6b5415d3e68af0c2e7d8a2a0635628548232d5b7f63505",
+      "slot": "pred",
+      "source": "intermediates/doublet_detection/test_doubletdetection.pkl"
+    },
+    "intermediates/doublet_detection/test_scrublet.parquet": {
+      "bytes": 6245,
+      "consumers": [
+        "doublets"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "test_scrublet",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        }
+      ],
+      "rows": 384,
+      "sha256": "d2c5979f9d09332e7b8e22531bce83ebf5585de0c16e1835b66d22c14cfd305c",
+      "slot": "pred",
+      "source": "intermediates/doublet_detection/test_scrublet.pkl"
+    },
+    "intermediates/doublet_detection/test_solo.parquet": {
+      "bytes": 6223,
+      "consumers": [
+        "doublets"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "test_solo",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        }
+      ],
+      "rows": 384,
+      "sha256": "7f091e32daebbcf76e9a93b327f6aeb893400b1998b8b7125a6dd428e22a784b",
+      "slot": "pred",
+      "source": "intermediates/doublet_detection/test_solo.pkl"
+    },
+    "intermediates/fragments/X_scvi-global_umap.parquet": {
+      "bytes": 2431,
+      "consumers": [
+        "extend",
+        "finalize"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "float",
+          "name": "0",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "1",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        }
+      ],
+      "rows": 12,
+      "sha256": "b5b74ccbd30e9f6307494893c9127871512c62bb66aea30e7e8aa3545bdff99e",
+      "slot": "obsm",
+      "source": "intermediates/fragments/X_scvi-global_umap.pkl"
+    },
+    "intermediates/fragments/X_scvi.parquet": {
+      "bytes": 5368,
+      "consumers": [
+        "extend",
+        "finalize"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "float",
+          "name": "0",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "1",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "2",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "3",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "4",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "5",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "6",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        },
+        {
+          "arrow_type": "float",
+          "name": "7",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        }
+      ],
+      "rows": 16,
+      "sha256": "03274ec2cb169f521dd3a767f04eb8cea264c705b9dd481075bd7d81ec56c3d2",
+      "slot": "obsm",
+      "source": "intermediates/fragments/X_scvi.pkl"
+    },
+    "intermediates/fragments/regressions/a_conflict.parquet": {
+      "bytes": 1775,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "label",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 1,
+      "sha256": "684b6a8ca748394f1cf443b289bb84c652a349dc9a81ca49475774101f95e8bf",
+      "slot": "obs",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/a_obs.parquet": {
+      "bytes": 3875,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "label",
+          "null_count": 1,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "double",
+          "name": "n_counts",
+          "null_count": 1,
+          "pandas_dtype": "float64"
+        },
+        {
+          "arrow_type": "double",
+          "name": "score",
+          "null_count": 0,
+          "pandas_dtype": "float64"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "flag",
+          "null_count": 1,
+          "pandas_dtype": "object"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "version.1",
+          "null_count": 1,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 3,
+      "sha256": "35161b6213a6fd9d4feec90f7d0cc74df8cc2d0505eb6c185fdac28d7c7833bd",
+      "slot": "obs",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/a_score.parquet": {
+      "bytes": 1743,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "score",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        }
+      ],
+      "rows": 1,
+      "sha256": "971e98dbbf34fed8230365f304fe9074fd7d3a10c989cb02d20e171338f3c874",
+      "slot": "var",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/a_var.parquet": {
+      "bytes": 2200,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "selected",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "double",
+          "name": "score",
+          "null_count": 0,
+          "pandas_dtype": "float64"
+        }
+      ],
+      "rows": 1,
+      "sha256": "5ae2c9f561c01a17aa1adceecff73fd8ae65c2cf4ca8db45affb94b0a528ff74",
+      "slot": "var",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/annotations.parquet": {
+      "bytes": 1946,
+      "consumers": [
+        "annotations"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "annotation:test:per_cell",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 2,
+      "sha256": "338259c61f1c033226034950cc5331f25216693de83fc77001921cae78216cbe",
+      "slot": "obs",
+      "source": "modules/local/custom/aggregate_per_cell_annotations/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/b_conflict.parquet": {
+      "bytes": 1775,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "label",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 1,
+      "sha256": "2a0f4fb2f16d973ec87902200a1015cd9514953fe91cadc6a528cdc19e81d0a3",
+      "slot": "obs",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/b_obs.parquet": {
+      "bytes": 3879,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "label",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "double",
+          "name": "n_counts",
+          "null_count": 1,
+          "pandas_dtype": "float64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "score",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "flag",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "version.1",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 2,
+      "sha256": "05f120b0736acd5948dfa4eb4261f990c0a3fe7d04c401c9fd248da26aeb8433",
+      "slot": "obs",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/b_score.parquet": {
+      "bytes": 1743,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "score",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        }
+      ],
+      "rows": 1,
+      "sha256": "f0728e0e354e56d8e87a1bb8ef3a16d2253dfbb11b6bc4e2b7381dce4a81819f",
+      "slot": "var",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/b_var.parquet": {
+      "bytes": 2204,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "selected",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "double",
+          "name": "score",
+          "null_count": 0,
+          "pandas_dtype": "float64"
+        }
+      ],
+      "rows": 2,
+      "sha256": "99695b10706d13745c4215541ad15fb55d78e83317b1d2778ae536f899d3740d",
+      "slot": "var",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/categorical_obs.parquet": {
+      "bytes": 5097,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "dictionary<values=string, indices=int8, ordered=1>",
+          "categories": [
+            "low",
+            "medium",
+            "high",
+            "unused"
+          ],
+          "name": "ordered_label",
+          "null_count": 1,
+          "ordered": true,
+          "pandas_dtype": "category"
+        },
+        {
+          "arrow_type": "dictionary<values=string, indices=int8, ordered=0>",
+          "categories": [
+            "B",
+            "A",
+            "unused"
+          ],
+          "name": "unordered_label",
+          "null_count": 1,
+          "ordered": false,
+          "pandas_dtype": "category"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "nullable_integer",
+          "null_count": 1,
+          "pandas_dtype": "Int64"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "nullable_boolean",
+          "null_count": 1,
+          "pandas_dtype": "boolean"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "nullable_string",
+          "null_count": 1,
+          "pandas_dtype": "string"
+        },
+        {
+          "arrow_type": "double",
+          "name": "nullable_float",
+          "null_count": 1,
+          "pandas_dtype": "float64"
+        }
+      ],
+      "rows": 3,
+      "sha256": "7e6325e9262387d0ee895cbe5ebe068625aa482267fee7dba8c085faeffc700f",
+      "slot": "obs",
+      "source": "Synthetic reader round-trip contract"
+    },
+    "intermediates/fragments/regressions/categorical_var.parquet": {
+      "bytes": 5035,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "dictionary<values=string, indices=int8, ordered=1>",
+          "categories": [
+            "low",
+            "medium",
+            "high",
+            "unused"
+          ],
+          "name": "ordered_label",
+          "null_count": 1,
+          "ordered": true,
+          "pandas_dtype": "category"
+        },
+        {
+          "arrow_type": "dictionary<values=string, indices=int8, ordered=0>",
+          "categories": [
+            "B",
+            "A",
+            "unused"
+          ],
+          "name": "unordered_label",
+          "null_count": 1,
+          "ordered": false,
+          "pandas_dtype": "category"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "nullable_integer",
+          "null_count": 1,
+          "pandas_dtype": "Int64"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "nullable_boolean",
+          "null_count": 1,
+          "pandas_dtype": "boolean"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "nullable_string",
+          "null_count": 1,
+          "pandas_dtype": "string"
+        },
+        {
+          "arrow_type": "double",
+          "name": "nullable_float",
+          "null_count": 1,
+          "pandas_dtype": "float64"
+        }
+      ],
+      "rows": 3,
+      "sha256": "5948a53e853d38ac10fbca706d855bf8237279194dcc2dad8879af5b588a6f84",
+      "slot": "var",
+      "source": "Synthetic reader round-trip contract"
+    },
+    "intermediates/fragments/regressions/contiguous.parquet": {
+      "bytes": 2648,
+      "consumers": [
+        "scanorama"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "regression_batch",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 64,
+      "sha256": "616a7b5149e353f216a8173149f334ed7c46456c9a1517e7e9e59e04181822ca",
+      "slot": "obs",
+      "source": [
+        "modules/local/scanorama/integrate/tests/main.nf.test",
+        "pbmc/SRR28679756_filtered_matrix.csv"
+      ]
+    },
+    "intermediates/fragments/regressions/duplicate_columns.csv": {
+      "bytes": 61,
+      "consumers": [
+        "extend"
+      ],
+      "format": "csv",
+      "sha256": "ae85d66416274bac7bcc6e7d85afe695a78aef9fc7cdcb5156244647d48ba0f3",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/duplicate_index.parquet": {
+      "bytes": 1775,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "label",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "intentional_error": "duplicate identifiers",
+      "rows": 2,
+      "sha256": "a1de7f356dfccfbe1bc701f2cf295cddb7894e4db0ce5f3b25dd0448a4c75e52",
+      "slot": "obs",
+      "source": "modules/local/adata/extend/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/empty_batch.parquet": {
+      "bytes": 1694,
+      "consumers": [
+        "entropy"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "double",
+          "name": "empty_batch",
+          "null_count": 1,
+          "pandas_dtype": "float64"
+        }
+      ],
+      "rows": 1,
+      "sha256": "39c5dca364cf26bf806ed2201a6823da0ca73ef1567fcff3c0b8481b60d44281",
+      "slot": "obs",
+      "source": "modules/local/adata/entropy/tests/main.nf.test"
+    },
+    "intermediates/fragments/regressions/groups.parquet": {
+      "bytes": 2669,
+      "consumers": [
+        "liana"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "interaction_group",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 64,
+      "sha256": "43a1659caf61292cd5c3474a1876b16e853bab633fac81300297484e630b29b2",
+      "slot": "obs",
+      "source": [
+        "modules/local/liana/rankaggregate/tests/dense.nf.test",
+        "pbmc/SRR28679756_filtered_matrix.csv"
+      ]
+    },
+    "intermediates/fragments/regressions/interleaved.parquet": {
+      "bytes": 2653,
+      "consumers": [
+        "scanorama"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "regression_batch",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 64,
+      "sha256": "f782d51d60d879008396dc5785c41975ed135f49ffcd87e1ecdfe59b52a9b779",
+      "slot": "obs",
+      "source": [
+        "modules/local/scanorama/integrate/tests/main.nf.test",
+        "pbmc/SRR28679756_filtered_matrix.csv"
+      ]
+    },
+    "intermediates/fragments/regressions/labels.parquet": {
+      "bytes": 4451,
+      "consumers": [
+        "splitcol"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "safe",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "collision",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "path",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "traversal",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "staged_input",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 128,
+      "sha256": "870cab6d812e971c779b4fa38f1c62933c4fd15e9a8ffc57cfb3aa855cc07715",
+      "slot": "obs",
+      "source": "modules/local/adata/splitcol/tests/labels.nf.test"
+    },
+    "intermediates/fragments/regressions/large_integer.parquet": {
+      "bytes": 1921,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "large_integer",
+          "null_count": 1,
+          "pandas_dtype": "Int64"
+        }
+      ],
+      "rows": 2,
+      "sha256": "1e4a4821109033fa8e7208933d8b929c65591d97751f2b7d1101647306717d44",
+      "slot": "obs",
+      "source": "Synthetic nullable integer precision contract"
+    },
+    "intermediates/fragments/regressions/missing_batch.parquet": {
+      "bytes": 1868,
+      "consumers": [
+        "batch_validation"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "regression_batch",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 1,
+      "sha256": "153c55c7a824a0b1986432315bf2a43d4e25931e286ba685eaeb8f4e104f2c18",
+      "slot": "obs",
+      "source": "modules/local/scanorama/integrate/tests/batch_validation.nf.test"
+    },
+    "intermediates/fragments/regressions/missing_index.parquet": {
+      "bytes": 1145,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "label",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "intentional_error": "missing __index__ column",
+      "rows": 1,
+      "sha256": "793a5453f3fcc6a421833805b2bf26eb7b7147ff7cae411e34518cfecf990d83",
+      "slot": "obs",
+      "source": "Parquet reader contract"
+    },
+    "intermediates/fragments/regressions/null_index.parquet": {
+      "bytes": 1785,
+      "consumers": [
+        "extend"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 1,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "label",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "intentional_error": "null identifier",
+      "rows": 2,
+      "sha256": "ee903f1cf0917ef515c0575caa3baa1cacee1f8f1843a944163cc35687ae22d4",
+      "slot": "obs",
+      "source": "Parquet reader contract"
+    },
+    "intermediates/fragments/regressions/panels.parquet": {
+      "bytes": 4174,
+      "consumers": [
+        "panels"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_1",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_10",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_19",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_20",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_32",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        }
+      ],
+      "rows": 128,
+      "sha256": "c7c5bcbee0d2cd2c1160419e6b2d925dcddc3a147720cae1ddfeea8166818b5a",
+      "slot": "var",
+      "source": "modules/local/scanpy/filter/tests/small_panels.nf.test"
+    },
+    "intermediates/fragments/regressions/panels_plot.parquet": {
+      "bytes": 3606,
+      "consumers": [
+        "panel_plots"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_1",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_10",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_19",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_20",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "panel_32",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        }
+      ],
+      "rows": 32,
+      "sha256": "973651673bed919e1cc8f051373d1a54badc7c620991ed01c48f66d74b218f44",
+      "slot": "var",
+      "source": "modules/local/scanpy/filter/tests/small_panels_plot.nf.test"
+    },
+    "intermediates/fragments/regressions/positive_counts.csv": {
+      "bytes": 829,
+      "consumers": [
+        "panel_plots"
+      ],
+      "format": "csv",
+      "sha256": "34bb70cb07fd789b015afb9e1c54b80fe11478bfba251168129e647adee130db",
+      "source": "modules/local/scanpy/filter/tests/small_panels_plot.nf.test"
+    },
+    "intermediates/fragments/regressions/positive_counts.parquet": {
+      "bytes": 19890,
+      "consumers": [
+        "panel_plots"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE000",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE001",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE002",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE003",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE004",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE005",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE006",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE007",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE008",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE009",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE010",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE011",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE012",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE013",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE014",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE015",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE016",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE017",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE018",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE019",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE020",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE021",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE022",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE023",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE024",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE025",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE026",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE027",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE028",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE029",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE030",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "int64",
+          "name": "GENE031",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        }
+      ],
+      "rows": 8,
+      "sha256": "c2ac1642e1a3ec7d50795924e7fbfef8ae94f412a17a5936cfaf929705c06459",
+      "slot": "counts",
+      "source": "modules/local/scanpy/filter/tests/small_panels_plot.nf.test"
+    },
+    "intermediates/fragments/regressions/previous_qc.parquet": {
+      "bytes": 2555,
+      "consumers": [
+        "panels"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "double",
+          "name": "pct_counts_in_top_20_genes",
+          "null_count": 0,
+          "pandas_dtype": "float64"
+        }
+      ],
+      "rows": 128,
+      "sha256": "a1ce1c6a33b2d08b2544c9b75b985de14e15ce79f25678d69a332464f9643acc",
+      "slot": "obs",
+      "source": "modules/local/scanpy/filter/tests/small_panels.nf.test"
+    },
+    "intermediates/fragments/regressions/small_predictions.parquet": {
+      "bytes": 2732,
+      "consumers": [
+        "doublet_plots"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "first",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "second",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        }
+      ],
+      "rows": 128,
+      "sha256": "bb09c93633bfb5e83456565edea101205a6e7f772fbe8b59cd5f2ca501beaa87",
+      "slot": "pred",
+      "source": "modules/local/custom/doubletremoval/tests/plot_edge_cases.nf.test"
+    },
+    "intermediates/fragments/regressions/unpaired_obs.parquet": {
+      "bytes": 1951,
+      "consumers": [
+        "edgepython"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "unpaired_donor",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        }
+      ],
+      "rows": 12,
+      "sha256": "09110cc64db935d9e9719018898b1cefaa55cc6507b3dbfb7df79ca0a2fde54e",
+      "slot": "obs",
+      "source": "modules/local/edgepython/differential/tests/design.nf.test"
+    },
+    "intermediates/fragments/regressions/uns_table.parquet": {
+      "bytes": 4669,
+      "consumers": [
+        "extend",
+        "finalize"
+      ],
+      "fields": [
+        {
+          "arrow_type": "int64",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "int64"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "source",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "target",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "ligand_complex",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "large_string",
+          "name": "receptor_complex",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "double",
+          "name": "magnitude_rank",
+          "null_count": 0,
+          "pandas_dtype": "float64"
+        },
+        {
+          "arrow_type": "double",
+          "name": "specificity_rank",
+          "null_count": 1,
+          "pandas_dtype": "float64"
+        }
+      ],
+      "rows": 2,
+      "sha256": "4187124660611cef80a82f1d624b60119794196fbf02e080d11d31b8c8a010b3",
+      "slot": "uns",
+      "source": "Synthetic LIANA-like indexed table"
+    },
+    "intermediates/fragments/regressions/zero_predictions.parquet": {
+      "bytes": 2732,
+      "consumers": [
+        "doublet_plots"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "first",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        },
+        {
+          "arrow_type": "bool",
+          "name": "second",
+          "null_count": 0,
+          "pandas_dtype": "bool"
+        }
+      ],
+      "rows": 128,
+      "sha256": "1ee72221691f94f9ee94fbea9b42473cd862b45f9f608390c0d652e89f89c5d5",
+      "slot": "pred",
+      "source": "modules/local/custom/doubletremoval/tests/plot_edge_cases.nf.test"
+    },
+    "intermediates/fragments/scvi-global-1.0_entropy.parquet": {
+      "bytes": 2174,
+      "consumers": [
+        "extend",
+        "finalize"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "float",
+          "name": "scvi-global-1.0:entropy",
+          "null_count": 0,
+          "pandas_dtype": "float32"
+        }
+      ],
+      "rows": 12,
+      "sha256": "559979b634df923dbc42d76d9323557f6284e776b1cff3a65d6a4c6501699b5a",
+      "slot": "obs",
+      "source": "intermediates/fragments/scvi-global-1.0_entropy.pkl"
+    },
+    "intermediates/fragments/scvi-global-1.0_leiden.parquet": {
+      "bytes": 2241,
+      "consumers": [
+        "extend",
+        "finalize"
+      ],
+      "fields": [
+        {
+          "arrow_type": "large_string",
+          "name": "__index__",
+          "null_count": 0,
+          "pandas_dtype": "str"
+        },
+        {
+          "arrow_type": "dictionary<values=string, indices=int8, ordered=0>",
+          "categories": [
+            "0",
+            "1"
+          ],
+          "name": "scvi-global-1.0_leiden",
+          "null_count": 0,
+          "ordered": false,
+          "pandas_dtype": "category"
+        }
+      ],
+      "rows": 12,
+      "sha256": "aac35b808f3aadcbd7d24fbac1ad3b1867bb641efd764e453116d5720fe4be81",
+      "slot": "obs",
+      "source": "intermediates/fragments/scvi-global-1.0_leiden.pkl"
+    }
+  },
+  "generator": "generate_fragment_parquet_fixtures.py",
+  "retained_nested_pickles": [
+    "intermediates/fragments/scvi-global-1.0_paga.pkl"
+  ],
+  "runtime": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.0",
+    "pyarrow": "23.0.1",
+    "python": "3.12"
+  },
+  "schema_version": 1,
+  "source_pipeline_revision": "a219db8f144eb1f8be17104b8b4b733539396298",
+  "source_sha256": {
+    "intermediates/doublet_detection/test_doubletdetection.pkl": "55c067af023ee7c36cbb038d424ce4bb2f31088b8940d949b150a8e836162ca2",
+    "intermediates/doublet_detection/test_scrublet.pkl": "6a0e59be687d7331cc92908c19879f6c4d32e7df685d36236e73d5712165feeb",
+    "intermediates/doublet_detection/test_solo.pkl": "0480a00151b92e9ed6733c9d79c29c9e171aee49b47513cc641e62c5e01187a9",
+    "intermediates/fragments/X_scvi-global_umap.pkl": "809eecb0ee39cb62c281a73cb31f0d50c5debbfeed064636fc8ae8f923b54621",
+    "intermediates/fragments/X_scvi.pkl": "75d17791173acaeb42616a92ef5783e3b05c4c489ec37e9a1edda52ddf95a397",
+    "intermediates/fragments/scvi-global-1.0_entropy.pkl": "2a67a810b3275351adb77842ae28099f9b1a0c636a8bf3ba2683f62ad669c55d",
+    "intermediates/fragments/scvi-global-1.0_leiden.pkl": "8d842978c0d11fd7a837cf760c1ce24f25d92c0f8c9df6afeaa4fa04753cd078",
+    "intermediates/fragments/scvi-global-1.0_paga.pkl": "8f345b855f703e08ab766faebda1d5bc6b90d57a11442047e39b17a8d7de64bb",
+    "pbmc/SRR28679756_filtered_matrix.csv": "be92058ba564801efd66f8e3b2b74e8aaa91d53c58a65ae2447eeff491189e05"
+  }
+}

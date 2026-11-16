@@ -1,0 +1,238 @@
+{
+  "generator": "generate_doublet_parquet_regressions.py",
+  "source": "scdownstream regression test literals from PRs 393 and 395",
+  "tables": {
+    "intermediates/doublet_detection/regressions/all_true.parquet": {
+      "sha256": "ef210e8473411393e36f7d0515b412aed62a7077db53d3a03c453bc01cfcec8e",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/columns.parquet": {
+      "sha256": "c08da2e2150ffba1d80ce748ae11288b088c9703723767b4c94e69c1f374a092",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "call",
+        "score"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/doubletdetection.parquet": {
+      "sha256": "ba536e5fee6c163bb1d6ac3da2216a3732d015a5b47a2aa23debe961b63a8d23",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/doubletdetection_scores.parquet": {
+      "sha256": "0197b81e6002dbd527dba98cf5238719407f597e69cb5cce64678d8c74596a74",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "doubletdetection_score"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/duplicate.parquet": {
+      "sha256": "4765be5b299f2d6304966a8dd33f9de1610fd1ae79cec84884a25c6e6bbf79a6",
+      "rows": 2,
+      "columns": [
+        "__index__",
+        "call"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/existing.parquet": {
+      "sha256": "20040f568fa043ea0a4d9b85cae2390ea7b21e84d7eb57c156ba89e67ff19680",
+      "rows": 1,
+      "columns": [
+        "__index__",
+        "solo_class"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/extra.parquet": {
+      "sha256": "c96a6e9107f78229ea9ec73f9beeeca9a5c17b6b9c3f2737d88186d90da99c45",
+      "rows": 129,
+      "columns": [
+        "__index__",
+        "call"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/invalid.parquet": {
+      "sha256": "f4b61c2ef5c0aa7a9417effb160bb842dd134ae9e4ffb58896049c08d6002c5a",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "call"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/missing.parquet": {
+      "sha256": "ff1d95c2abca3ece17bce9c9e1eec6e1a56708847afe7234d1f6b5dcec969db2",
+      "rows": 127,
+      "columns": [
+        "__index__",
+        "call"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/null.parquet": {
+      "sha256": "f9849c4fd3f386f7c6d47cb38c87f36fc1c401d324a7b8f740e2d140afd86d54",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "call"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/numeric.parquet": {
+      "sha256": "97a4ceb6eeb97b52bd7065720d490f99d98f212402407cf523ea8244443294eb",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "call"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/sample_a.scdblfinder.parquet": {
+      "sha256": "15c558e20560e373261122f7a07ee3bd08563401cfcd4667db8a571dc6e47a42",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/sample_a.scores.parquet": {
+      "sha256": "7f3f3af391da203a4c9aa57b207fb2a177141574fd1a00b6cdb6735e4398c529",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "scDblFinder.score",
+        "scDblFinder.class",
+        "scrublet_score"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/sample_a.scrublet.parquet": {
+      "sha256": "39c10279ed849543835b7e5aa1679bc8e5cd3eb0a5e94228cd424dacfe2a9fe7",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/sample_b.scdblfinder.parquet": {
+      "sha256": "c87f822c16df5303abcc59ad93687cfe7016d76fef0604e092accac6f4733b6a",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/sample_b.scores.parquet": {
+      "sha256": "67bfbaa8c3854c33d79e36a87ae32c7927f3b1e1521e8989e6804131c859b2c9",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "scDblFinder.score",
+        "scDblFinder.class",
+        "scrublet_score"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/sample_b.scrublet.parquet": {
+      "sha256": "52d9275fe748f2b8773bfc7817f0461f1c1c93c4daffec5cf75a236bd6bca8f4",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/scdblfinder.parquet": {
+      "sha256": "3285223c60577e50c018b490785cde181d0cc6b088479ab3a02941b55810be8a",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/scdblfinder_scores.parquet": {
+      "sha256": "dbba414f43dd28fe910dbe5e3bdc1ed330d71b41fe193d211c9532eae08d63ae",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "scDblFinder.score",
+        "scDblFinder.class",
+        "scDblFinder.cxds_score",
+        "scDblFinder.mostLikelyOrigin"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/scrublet.parquet": {
+      "sha256": "c6e465f8729f01291b9139d2777044b39a7c84e894556bca4a79b7f3633eb6b4",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/scrublet_scores.parquet": {
+      "sha256": "cf29f1f56da92495d9f273691bf9f8dedd46a85dd900cb9139c5eaae0021d9b1",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "scrublet_score"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/scrublet_scores_full.parquet": {
+      "sha256": "87a25c1ba76d4c024c5fd00b7cbe2e393278d3e52ac7c9b08efd2824fd240ccc",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "scrublet_score"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/small.parquet": {
+      "sha256": "86fff5d0b20bd6c64b9f1ea2e7b10f8d9e40ce0e1cc5088843fe013be98c1144",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/small_solo.parquet": {
+      "sha256": "86fff5d0b20bd6c64b9f1ea2e7b10f8d9e40ce0e1cc5088843fe013be98c1144",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/solo.parquet": {
+      "sha256": "ebefcb3c83f030470690e1457e648bdbd8334783c9803dc4af95400f43756716",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/solo_single.parquet": {
+      "sha256": "3d7205f6efecdfeb756104b55efbb20b068c3b372fc974806ef3bc1e6b701679",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/zero.parquet": {
+      "sha256": "7f1978fef6a5905c9f34a41abd7c6f59ac3dd3d54a7a6f647b42f88ee19313ea",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    },
+    "intermediates/doublet_detection/regressions/zero_solo.parquet": {
+      "sha256": "7f1978fef6a5905c9f34a41abd7c6f59ac3dd3d54a7a6f647b42f88ee19313ea",
+      "rows": 128,
+      "columns": [
+        "__index__",
+        "arbitrary_prefix"
+      ]
+    }
+  }
+}
