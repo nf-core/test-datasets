@@ -1,0 +1,2 @@
+sample	evidence_source	positions	both	clair3_only	bam_only	no_evidence	discordant	discordant_primary	discordant_primary_names	filled_primary_from_bam	bam_max_depth
+ABO_AA_barcode01	CLAIR3+BAM	51	51	0	0	0	0	0		0	92

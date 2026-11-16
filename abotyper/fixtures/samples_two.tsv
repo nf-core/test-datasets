@@ -1,0 +1,3 @@
+id	control	sample	barcode	phenotype	haplotypes	evidence_status	concordance	coverage	stats	flagstat
+ABO_AA_barcode01				sample_files/ABO_AA_barcode01.ABOPhenotype.txt	sample_files/ABO_AA_barcode01.Haplotypes.tsv	sample_files/ABO_AA_barcode01.evidence_status.tsv	sample_files/ABO_AA_barcode01.concordance.tsv	sample_files/ABO_AA_barcode01.coverage.txt		sample_files/ABO_AA_barcode01.flagstat
+ABO_BO1_barcode06				sample_files/ABO_BO1_barcode06.ABOPhenotype.txt	sample_files/ABO_BO1_barcode06.Haplotypes.tsv	sample_files/ABO_BO1_barcode06.evidence_status.tsv	sample_files/ABO_BO1_barcode06.concordance.tsv	sample_files/ABO_BO1_barcode06.coverage.txt		sample_files/ABO_BO1_barcode06.flagstat
