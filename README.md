@@ -80,6 +80,18 @@ The point is to have two different profiles legitimately sharing one reference t
 
 Consumed by nf-core/phyloplace's `test_phylosearch_reftree` profile.
 
+### `testdata/phylosearch_catalogue.csv` and `testdata/phylosearch_own.csv` - "search and place" sample sheet split in two
+
+The five rows of `phylosearch_input.csv` divided over two sample sheets, to test that nf-core/phyloplace accepts several sheets in `--phylosearch_input`.
+`phylosearch_catalogue.csv` holds the two rows with a reference phylogeny, `arc` and `bac16s`, as a shared collection of reference phylogenies would.
+`phylosearch_own.csv` holds the three search-only rows, `euk18s`, `euk28s` and `mito16s`, as a user's own profiles would.
+
+Together the two sheets give the same placements as `phylosearch_input.csv`.
+Every path is an absolute URL, since nf-core/phyloplace resolves relative paths in a sheet against the launch directory and not the location of the sheet.
+The test for duplicate targets combines `phylosearch_catalogue.csv` with `phylosearch_input.csv`, in which `arc` and `bac16s` then occur twice.
+
+Consumed by nf-core/phyloplace's `test_phylosearch_catalogue` profile.
+
 ### `testdata/hmmdomains/` - Two overlapping Pfam profiles and a two-domain protein for the `hmmer/hmmdomains` module tests
 
 Two Pfam profiles and one protein sequence:

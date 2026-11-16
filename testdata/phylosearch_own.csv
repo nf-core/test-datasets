@@ -1,0 +1,4 @@
+target,alignmethod,hmm,extract_hmm,refseqfile,refphylogeny,model,taxonomy
+euk18s,clustalo,https://raw.githubusercontent.com/tseemann/barrnap/refs/tags/0.9/db/euk.hmm,18S_rRNA,,,,
+euk28s,clustalo,https://raw.githubusercontent.com/tseemann/barrnap/refs/tags/0.9/db/euk.hmm,28S_rRNA,,,,
+mito16s,clustalo,https://raw.githubusercontent.com/nf-core/test-datasets/phyloplace/testdata/mito_16S.hmm,,,,,
