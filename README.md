@@ -6,56 +6,46 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 ### `samplesheet/`
 
-This directory contains the sample sheets used to test different test configurations of the `nf-core/viralrecon` pipeline.
+Sample sheets are grouped by pipeline/sample-sheet version where applicable. Files directly in this directory are legacy sheets. The versioned folders contain sheets intended for the corresponding viralrecon version. Versions 2.6 and 3.0 use the older schemas; v3.1 sheets use the four-column schema `sample`, `fastq_1`, `fastq_2`, and `barcode` (unused columns are left blank).
 
-#### `samplesheet_test_nanopore.csv`
+#### Legacy sheets (root of `samplesheet/`)
 
-Sample sheet for Nanopore test data.  
-Includes SARS-CoV-2 sample names and MinION barcodes hosted in this repository.  
-For testing purposes, some barcodes are included without associated data.  
-Raw data can be found in [`nanopore/minion`](nanopore/minion) and have been subsetted to include a maximum of three `fast5` or `fastq` files per barcode.
+- [`samplesheet_test_nanopore.csv`](samplesheet/samplesheet_test_nanopore.csv): Sample sheet for Nanopore test data. Includes SARS-CoV-2 sample names and MinION barcodes hosted in this repository. For testing purposes, some barcodes are included without associated data. Raw data can be found in [`nanopore/minion`](nanopore/minion) and have been subsetted to include a maximum of three `fast5` or `fastq` files per barcode.
+- [`samplesheet_test_sra.txt`](samplesheet/samplesheet_test_sra.txt): Plain-text list of two SRA accessions (`SRR11140750` and `SRR11241254`) for SRA-input testing.
+- [`samplesheet_test_illumina_sispa.csv`](samplesheet/samplesheet_test_illumina_sispa.csv): Sample sheet for small-scale SISPA test data. Contains four SARS-CoV-2 SISPA probe enriched sample information and links to corresponding FastQ files.
+- [`samplesheet_test_amplicon.csv`](samplesheet/samplesheet_test_amplicon.csv) and [`samplesheet_test_illumina_amplicon.csv`](samplesheet/samplesheet_test_illumina_amplicon.csv): Sample sheet for small-scale amplicon test data. Includes SARS-CoV-2 amplicon primer enriched sample sample information and links to FastQ files hosted in this repository. Contains two paired-end samples and one single-end sample.
+- [`samplesheet_full_illumina_sispa.csv`](samplesheet/samplesheet_full_illumina_sispa.csv): Four SISPA/metagenomic Illumina accessions with FASTQ fields left blank for SRA-based input.
+- [`samplesheet_full_amplicon.csv`](samplesheet/samplesheet_full_amplicon.csv) and [`samplesheet_full_illumina_amplicon.csv`](samplesheet/samplesheet_full_illumina_amplicon.csv): Sample sheet for full-scale amplicon test data. Includes SARS-CoV-2 amplicon primer enriched sample information and links to FastQ files for `sample1` and `sample2`, hosted in S3.
+- [`samplesheet_full_illumina_fragmented.csv`](samplesheet/samplesheet_full_illumina_fragmented.csv): Sample sheet for fragmented genome tests. Contains Crimean-Congo hemorrhagic fever virus sample information and links to FastQ files stored in this repository. Used to assess pipeline performance on non-contiguous viral genomes. Three paired-end fragmented-genome samples (`SRR5185732`-`SRR5185734`).
 
-#### `samplesheet_test_sra.csv`
+#### Version 2.6 (`samplesheet/v2.6/`)
 
-Sample sheet for SISPA-based Illumina data.  
-Contains SARS-CoV-2 SISPA probe enriched sample information, including one link to original full FastQ files and two datasets to be downloaded from SRA (one single-end and one paired-end).  
-Used to test SRA-based inputs and mixed dataset handling.
+- [`samplesheet_full_amplicon_illumina.csv`](samplesheet/v2.6/samplesheet_full_amplicon_illumina.csv): Full-scale Illumina amplicon input with 48 sample records and paired FASTQ files hosted in S3.
+- [`samplesheet_full_amplicon_nanopore.csv`](samplesheet/v2.6/samplesheet_full_amplicon_nanopore.csv): Full-scale Nanopore amplicon input with 49 sample-to-barcode records.
+- [`samplesheet_full_metagenomic_illumina.csv`](samplesheet/v2.6/samplesheet_full_metagenomic_illumina.csv): Four SISPA/metagenomic Illumina SRA accessions; FASTQ fields are blank for SRA-based input.
+- [`samplesheet_test_amplicon_illumina.csv`](samplesheet/v2.6/samplesheet_test_amplicon_illumina.csv): Small Illumina amplicon test with two paired-end samples and one single-end sample.
+- [`samplesheet_test_amplicon_nanopore.csv`](samplesheet/v2.6/samplesheet_test_amplicon_nanopore.csv): Nanopore amplicon test samples mapped to barcodes.
+- [`samplesheet_test_metagenomic_illumina.csv`](samplesheet/v2.6/samplesheet_test_metagenomic_illumina.csv): Four SISPA/metagenomic Illumina samples with paired FASTQ links to the repository.
 
-#### `samplesheet_test_illumina_sispa.csv`
+#### Version 3.0 (`samplesheet/v3.0/`)
 
-Sample sheet for small-scale SISPA test data.  
-Contains SARS-CoV-2 SISPA probe enriched sample information and links to corresponding FastQ files.  
+- [`samplesheet_test_EV.csv`](samplesheet/v3.0/samplesheet_test_EV.csv): Paired-end Illumina metagenomic enterovirus test sample `SRR13266665`.
+- [`samplesheet_test_hiv.csv`](samplesheet/v3.0/samplesheet_test_hiv.csv): Three paired-end Illumina HIV test samples (`DRR030302`, `SRR4071760`, and `SRR6937100`).
 
-#### `samplesheet_test_illumina_amplicon.csv`
+#### Version 3.1 (`samplesheet/v3.1/`)
 
-Sample sheet for small-scale amplicon test data.  
-Includes SARS-CoV-2 amplicon primer enriched sample sample information and links to FastQ files hosted in this repository.  
+This folder contains the homogenized version of the samplesheets (4 columns `sample,fastq_1,fastq_2,barcode`) that only work in the v3.1 of the pipeline.
 
-#### `samplesheet_full_illumina_sispa.csv`
-
-Sample sheet for full-scale SISPA test data.  
-Contains SARS-CoV-2 SISPA probe enriched sample information and links to corresponding FastQ files.  
-
-#### `samplesheet_full_illumina_amplicon.csv`
-
-Sample sheet for full-scale amplicon test data.  
-Includes SARS-CoV-2 amplicon primer enriched sample sample information and links to FastQ files hosted in this repository.  
-
-#### `samplesheet_full_illumina_fragmented.csv`
-
-Sample sheet for fragmented genome tests.  
-Contains Crimean-Congo hemorrhagic fever virus sample information and links to FastQ files stored in this repository.  
-Used to assess pipeline performance on non-contiguous viral genomes.
-
-#### `v3.0/samplesheet_test_hiv.csv`
-
-Sample sheet for HIV  test data.  
-Contains HIV Illumina amplicon primer enriched sample information and links to FastQ files stored in this repository.  
-Data originate from multiple SRA experiments and are treated as non-amplicon data for testing purposes.
-
-#### `v3.0/samplesheet_test_EV.csv`
-
-Sample information sheet required to test the pipeline containing sample information and links to FastQ files stored in this repository. This sample sheet corresponds to subsampled Illumina metagenomics enterovirus data.
+- [`samplesheet_full_amplicon_illumina.csv`](samplesheet/v3.1/samplesheet_full_amplicon_illumina.csv): Full-scale Illumina amplicon input with 48 sample records and paired FASTQ files hosted in S3.
+- [`samplesheet_full_amplicon_nanopore.csv`](samplesheet/v3.1/samplesheet_full_amplicon_nanopore.csv): Full-scale Nanopore amplicon input with 49 sample-to-barcode records.
+- [`samplesheet_full_illumina_fragmented.csv`](samplesheet/v3.1/samplesheet_full_illumina_fragmented.csv): Three paired-end fragmented-genome samples (`SRR5185732`-`SRR5185734`).
+- [`samplesheet_full_metagenomic_illumina.csv`](samplesheet/v3.1/samplesheet_full_metagenomic_illumina.csv): Four SISPA/metagenomic Illumina SRA accessions; FASTQ fields are blank for SRA-based input.
+- [`samplesheet_test_amplicon_illumina.csv`](samplesheet/v3.1/samplesheet_test_amplicon_illumina.csv): Small Illumina amplicon test with two paired-end samples and one single-end sample.
+- [`samplesheet_test_amplicon_nanopore.csv`](samplesheet/v3.1/samplesheet_test_amplicon_nanopore.csv): Nanopore amplicon test samples mapped to barcodes.
+- [`samplesheet_test_amplicon_nanopore_fastq.csv`](samplesheet/v3.1/samplesheet_test_amplicon_nanopore_fastq.csv): Nine Nanopore sample FASTQ inputs (`SAMPLE_01`-`SAMPLE_09`), supplied as direct read paths rather than barcode assignments.
+- [`samplesheet_test_EV.csv`](samplesheet/v3.1/samplesheet_test_EV.csv): Paired-end Illumina metagenomic enterovirus test sample `SRR13266665`.
+- [`samplesheet_test_hiv.csv`](samplesheet/v3.1/samplesheet_test_hiv.csv): Three paired-end Illumina HIV test samples (`DRR030302`, `SRR4071760`, and `SRR6937100`).
+- [`samplesheet_test_metagenomic_illumina.csv`](samplesheet/v3.1/samplesheet_test_metagenomic_illumina.csv): Four SISPA/metagenomic Illumina samples with paired FASTQ links to the repository.
 
 ### `genome/`
 
