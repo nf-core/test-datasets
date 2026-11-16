@@ -1,0 +1,10 @@
+sample,fastq_1,fastq_2,barcode
+SAMPLE_01,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_01/SAMPLE_01.fastq,,
+SAMPLE_02,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_02/SAMPLE_02.fastq,,
+SAMPLE_03,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_03/SAMPLE_03.fastq,,
+SAMPLE_04,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_04/SAMPLE_04.fastq,,
+SAMPLE_05,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_05/SAMPLE_05.fastq,,
+SAMPLE_06,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_06/SAMPLE_06.fastq,,
+SAMPLE_07,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_07/SAMPLE_07.fastq,,
+SAMPLE_08,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_08/SAMPLE_08.fastq,,
+SAMPLE_09,https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/nanopore/minion/fastq_pass/SAMPLE_09/SAMPLE_09.fastq,,
