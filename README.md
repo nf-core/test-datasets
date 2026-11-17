@@ -3,15 +3,31 @@
 Test data for [nf-core/abotyper](https://github.com/nf-core/abotyper), an ABO blood group genotyping pipeline for
 Oxford Nanopore amplicon reads. The pipeline's `test` and `test_full` profiles and its nf-test tests read these files.
 
-## Licence and origin
+## At a glance
 
-**All reads on this branch are simulated. They contain no human data.**
+| | |
+| --- | --- |
+| **Data** | Simulated Oxford Nanopore reads of the ABO exon 2-7 amplicon, one sample per common ABO genotype |
+| **Human data** | None. Every read is generated from public ISBT allele definitions on the NG_006669.2 reference |
+| **Truth** | Known by construction: `simulation/truth.tsv` lists each sample's two alleles and the reads drawn from each |
+| **Reproducible** | `simulation/simulate_abo_reads.py` with a fixed seed regenerates the FASTQs byte for byte |
+| **Pipeline outputs** | `per_sample_processing/` comes from nf-core/abotyper run on these reads, under the real output names |
+| **Licence** | [MIT](https://opensource.org/license/mit), the licence of nf-core/abotyper |
 
-The data and the simulation script are released under the [MIT licence](https://opensource.org/license/mit),
-the licence of nf-core/abotyper.
+## Why simulated reads
 
-Earlier versions of this branch held reads subsampled from laboratory sequencing runs. They were replaced by the
-simulated reads described below.
+These reads test that the pipeline runs and types correctly. They are not a measure of its accuracy, which was
+assessed on laboratory data that is not part of this branch.
+
+The first version of this branch held small subsamples of reads from cell lines with known ABO genotypes, which a
+commercial partner supplied for developing the assay. The partner asked for synthetic reads to be used for the
+pipeline instead, so those files were replaced by the simulated reads described here.
+
+Simulation also has advantages of its own:
+
+- every genotype is exact;
+- any allele in the ISBT table can be added;
+- the data carry no third-party terms.
 
 ## Contents
 
@@ -82,8 +98,7 @@ python simulation/simulate_abo_reads.py --ref NG_006669v2.fasta --amplicon 17922
 
 Every sample types as its intended genotype with the pipeline (see `per_sample_processing/`).
 
-The reads test the pipeline's code, not its accuracy. Simulated errors approximate nanopore behaviour, and the
-pipeline's accuracy was assessed on laboratory data that is not public.
+The simulated errors approximate nanopore behaviour rather than reproduce it exactly.
 
 Simulated alleles carry no variation beyond their ISBT changes. As a result, three samples have no heterozygous SNPs
 for Clair3 to phase, and Clair3 writes no gVCF or phased VCF for them:
