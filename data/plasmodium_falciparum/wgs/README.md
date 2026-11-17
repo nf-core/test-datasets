@@ -9,11 +9,11 @@ datasets or amplicon reads.
 The six files in the table were copied without recompression from `ci_fastq/` in
 the source dataset and constitute the documented CI dataset.
 
-| Run accession | Source files in `ci_fastq/` | Repository files in this directory | Read pairs |
-| --- | --- | --- | ---: |
-| ERR10375861 | `ERR10375861_{1,2}.fastq.gz` | `ERR10375861_Pf3D7_01_v3_R{1,2}.fastq.gz` | 9,579 |
-| ERR10375871 | `ERR10375871_{1,2}.fastq.gz` | `ERR10375871_Pf3D7_01_v3_R{1,2}.fastq.gz` | 770 |
-| ERR10375886 | `ERR10375886_{1,2}.fastq.gz` | `ERR10375886_Pf3D7_01_v3_R{1,2}.fastq.gz` | 1,876 |
+| Run accession | Source files in `ci_fastq/`  | Repository files in this directory        | Read pairs |
+| ------------- | ---------------------------- | ----------------------------------------- | ---------: |
+| ERR10375861   | `ERR10375861_{1,2}.fastq.gz` | `ERR10375861_Pf3D7_01_v3_R{1,2}.fastq.gz` |      9,579 |
+| ERR10375871   | `ERR10375871_{1,2}.fastq.gz` | `ERR10375871_Pf3D7_01_v3_R{1,2}.fastq.gz` |        770 |
+| ERR10375886   | `ERR10375886_{1,2}.fastq.gz` | `ERR10375886_Pf3D7_01_v3_R{1,2}.fastq.gz` |      1,876 |
 
 In each row, source mate `_1` maps to repository `_R1`, and `_2` to `_R2`.
 The source samplesheet identifies all three runs as `WGS`, `ILLUMINA`.
