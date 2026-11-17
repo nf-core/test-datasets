@@ -4,17 +4,25 @@ Exon 6 position(1-based): 22694
 G nucleotide: A or B blood type.
 Deletion: O blood type (O1).
 (1-based) Position:22694, Reference Base=N
-Aligned Read Count:92 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
-63.04	36.96	0	36.96	0	0	0	0
+51	49	0	49	0	0	0	0
 
 # -------- Subtype / null-allele variants --------
+
+Exon 6 position(1-based): 22680
+Reference.
+ISBT v9 c.247G>T p.(Asp83Tyr): defines B3.04.
+(1-based) Position:22680, Reference Base=G
+Aligned Read Count:91 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
 
 Exon 6 position(1-based): 22699
 C nucleotide: reference (A1/O).
 T nucleotide: A2 haplotype marker (c.266C>T).
 (1-based) Position:22699, Reference Base=C
-Aligned Read Count:89 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
@@ -22,32 +30,96 @@ Exon 6 position(1-based): 22701
 T nucleotide: reference (A1/O).
 C nucleotide: A2 haplotype marker (c.268T>C).
 (1-based) Position:22701, Reference Base=T
-Aligned Read Count:89 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	100
+
+Exon 6 position(1-based): 22711
+Reference.
+ISBT v9 c.278C>T p.(Pro93Leu): defines BW.12.
+(1-based) Position:22711, Reference Base=C
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
 
 Exon 6 position(1-based): 22730
 A nucleotide: reference (A1/O).
 G nucleotide: A2.01 subtype marker / B-lineage backbone SNP (c.297A>G).
 (1-based) Position:22730, Reference Base=A
-Aligned Read Count:71 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
-42.25	57.75	0	0	39.44	57.75	0	0
+51	49	0	0	50	49	0	0
+
+Exon 6 position(1-based): 22744
+Reference.
+ISBT v9 c.311T>A p.(Ile104Asn): defines AW.29.
+(1-based) Position:22744, Reference Base=T
+Aligned Read Count:97 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 6 position(1-based): 22751
+Reference.
+ISBT v9 c.318C>T p.(Thr88ProfsTer31): defines O.01.09, O.01.27, O.01.29.
+(1-based) Position:22751, Reference Base=C
+Aligned Read Count:97 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 6 position(1-based): 22755
+Reference.
+ISBT v9 c.322C>T p.(Gln108Ter): defines O.05.
+(1-based) Position:22755, Reference Base=C
+Aligned Read Count:97 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 6 position(1-based): 22780
+Reference.
+ISBT v9 c.347T>C p.(Ile116Thr): defines AW.18.
+(1-based) Position:22780, Reference Base=T
+Aligned Read Count:97 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 6 position(1-based): 22783
+Reference.
+ISBT v9 c.350G>C p.(Gly117Ala): defines AW.02.
+(1-based) Position:22783, Reference Base=G
+Aligned Read Count:97 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 6 position(1-based): 22784
+Reference.
+ISBT v9 c.351G>A p.(Thr88ProfsTer31): defines O.01.34.
+(1-based) Position:22784, Reference Base=G
+Aligned Read Count:97 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 6 position(1-based): 22803
+Reference.
+ISBT v9 c.370A>G p.(Lys124Glu): defines AW.41.
+(1-based) Position:22803, Reference Base=A
+Aligned Read Count:97 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
 Exon 7:
 
 Exon 7 position(1-based): 24281
 C nucleotide: A or O blood type.
 A nucleotide: B blood type.
 (1-based) Position:24281, Reference Base=C
-Aligned Read Count:71 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
-43.66	56.34	0	0	56.34	0	39.44	0
+50	50	0	0	50	0	50	0
 
 Exon 7 position(1-based): 24287
 G nucleotide: A or B or O blood type.
 A nucleotide: O blood type (O2).
 (1-based) Position:24287, Reference Base=G
-Aligned Read Count:85 (reads=92, cov=16)
+Aligned Read Count:95 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
@@ -55,15 +127,15 @@ Exon 7 position(1-based): 24288
 G nucleotide: A or O blood type.
 C nucleotide: B blood type.
 (1-based) Position:24288, Reference Base=G
-Aligned Read Count:92 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
-40.22	59.78	0	0	0	30.43	59.78	0
+50	50	0	0	0	50	50	0
 
 Exon 7 position(1-based): 24290
 T nucleotide: A or B or O blood type.
 G/A nucleotide: O blood type (O3/O4, legacy naming).
 (1-based) Position:24290, Reference Base=N
-Aligned Read Count:92 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	0
 
@@ -71,7 +143,7 @@ Exon 7 position(1-based): 23952
 C nucleotide: A1 subtype.
 T nucleotide: A1.02 or A2 subtype.
 (1-based) Position:23952, Reference Base=C
-Aligned Read Count:87 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
@@ -79,35 +151,131 @@ Exon 7 position(1-based): 24544
 C nucleotide: A1 subtype.
 Deletion: A2.
 (1-based) Position:24544, Reference Base=C
-Aligned Read Count:86 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
 # -------- Subtype / null-allele variants --------
 
+Exon 7 position(1-based): 23870
+Reference.
+ISBT v9 c.385T>C p.(Phe129Leu): defines AW.39.
+(1-based) Position:23870, Reference Base=T
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
 Exon 7 position(1-based): 23892
 C nucleotide: reference.
 Variant: A2 diagnostic position (c.407).
 (1-based) Position:23892, Reference Base=C
-Aligned Read Count:76 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 23895
+Reference.
+ISBT v9 c.410C>T p.(Thr99=): defines B3.07.
+(1-based) Position:23895, Reference Base=C
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
 Exon 7 position(1-based): 23910
 (1-based) Position:23910, Reference Base=T
-Aligned Read Count:76 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	100
 
-Exon 7 position(1-based): 23987
-(1-based) Position:23987, Reference Base=C
-Aligned Read Count:87 (reads=92, cov=16)
+Exon 7 position(1-based): 23911
+Reference.
+ISBT v9 c.426G>C p.(Met142Ile): defines AW.38.
+(1-based) Position:23911, Reference Base=G
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 23919
+Reference.
+ISBT v9 c.434A>G p.(His145Arg): defines AW.19.
+(1-based) Position:23919, Reference Base=A
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 23937
+Reference.
+ISBT v9 c.452T>G p.(Val151Gly): defines O.13.
+(1-based) Position:23937, Reference Base=T
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 23939
+Reference.
+ISBT v9 c.454T>C p.(Thr88ProfsTer31): defines O.01.25.
+(1-based) Position:23939, Reference Base=T
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 23973
+Reference.
+ISBT v9 c.488C>T p.(Pro74Ser): defines AW.08, O.02.04.
+(1-based) Position:23973, Reference Base=C
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
+Exon 7 position(1-based): 23981
+Reference.
+ISBT v9 c.496delA p.(Thr88ProfsTer31): defines O.01.56.
+(1-based) Position:23981, Reference Base=N
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	0
+
+Exon 7 position(1-based): 23983
+Reference.
+ISBT v9 c.498C>T p.(Thr88ProfsTer31): defines O.01.33.
+(1-based) Position:23983, Reference Base=C
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 23984
+Reference.
+ISBT v9 c.499G>T p.(Gly167Cys): defines AW.40.
+(1-based) Position:23984, Reference Base=G
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 23987
+(1-based) Position:23987, Reference Base=C
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 23988
+Reference.
+ISBT v9 c.503G>T p.(Thr99=): defines BW.22.
+(1-based) Position:23988, Reference Base=G
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 23991
+Reference.
+ISBT v9 c.506_508delAGC p.(Thr99=): defines O.11.
+(1-based) Position:23991, Reference Base=N
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	0
+
 Exon 7 position(1-based): 24008
 (1-based) Position:24008, Reference Base=G
-Aligned Read Count:87 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
@@ -115,43 +283,203 @@ Exon 7 position(1-based): 24011
 C nucleotide: reference.
 Variant: A2 diagnostic position (c.526); also B-lineage backbone.
 (1-based) Position:24011, Reference Base=C
-Aligned Read Count:92 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
-35.87	64.13	0	0	0	64.13	33.70	0
+52	48	0	0	0	48	49	0
 
 Exon 7 position(1-based): 24012
 G nucleotide: reference.
 Variant: A2 diagnostic position (c.527).
 (1-based) Position:24012, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
+Exon 7 position(1-based): 24014
+Reference.
+ISBT v9 c.529G>A p.(Thr88ProfsTer31): defines O.01.31.
+(1-based) Position:24014, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24023
+Reference.
+ISBT v9 c.538C>T p.(Thr88ProfsTer31): defines O.01.32.
+(1-based) Position:24023, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
 Exon 7 position(1-based): 24024
 G nucleotide: reference.
-Variant: A2 diagnostic position (c.539).
+Variant: A2 diagnostic position (c.539). G>C: A2.07/A2.08; G>A: A3.04/BW.05.
 (1-based) Position:24024, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24026
+Reference.
+ISBT v9 c.541T>C p.(Thr99=): defines BW.28.
+(1-based) Position:24026, Reference Base=T
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 24027
+G nucleotide: reference.
+A nucleotide: nonsense variant c.542G>A (p.Trp181Ter). Defines ABO*O.06 on its own; on a c.261delG background with the 297/646/681/771/829 cassette it is ABO*O.01.11 (O.01.75 when c.106/188/189/220 are also present).
+(1-based) Position:24027, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24028
+Reference.
+ISBT v9 c.543G>T p.(Pro156Leu): defines AW.33.
+(1-based) Position:24028, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24032
+Reference.
+ISBT v9 c.547G>A p.(Thr99=): defines B3.06.
+(1-based) Position:24032, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24033
+Reference.
+ISBT v9 c.548A>G p.(Thr99=): defines BW.04.
+(1-based) Position:24033, Reference Base=A
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24035
+Reference.
+ISBT v9 c.550G>A p.(Thr99=): defines BW.33.
+(1-based) Position:24035, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
 Exon 7 position(1-based): 24041
 (1-based) Position:24041, Reference Base=A
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	100	0	0	0
 
-Exon 7 position(1-based): 24092
-(1-based) Position:24092, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Exon 7 position(1-based): 24043
+Reference.
+ISBT v9 c.558G>T p.(Thr99=): defines BW.24.
+(1-based) Position:24043, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24044
+Reference.
+ISBT v9 c.559C>T p.(Thr99=): defines B.03.
+(1-based) Position:24044, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24048
+Reference.
+ISBT v9 c.563G>A p.(Thr99=): defines O.12.
+(1-based) Position:24048, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24050
+Reference.
+ISBT v9 c.565A>G p.(Thr99=): defines BW.15.
+(1-based) Position:24050, Reference Base=A
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24060
+Reference.
+ISBT v9 c.575T>C p.(Thr99=): defines BW.16.
+(1-based) Position:24060, Reference Base=T
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 24064
+Reference.
+ISBT v9 c.579T>C p.(Thr88ProfsTer31): defines O.01.04, O.01.76.
+(1-based) Position:24064, Reference Base=T
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 24073
+Reference.
+ISBT v9 c.588C>G p.(Thr99=): defines BW.29.
+(1-based) Position:24073, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24077
+Reference.
+ISBT v9 c.592C>T p.(Pro156Leu): defines AW.07.
+(1-based) Position:24077, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24080
+Reference.
+ISBT v9 c.595C>T p.(Thr88ProfsTer31): defines O.01.12.
+(1-based) Position:24080, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24092
+(1-based) Position:24092, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24104
+Reference.
+ISBT v9 c.619C>G p.(Gly35Arg): defines BW.25.
+(1-based) Position:24104, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24119
+Reference.
+ISBT v9 c.634G>A p.(Pro156Leu): defines AW.22.
+(1-based) Position:24119, Reference Base=G
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24120
+Reference.
+ISBT v9 c.635T>A p.(Val212Glu): defines O.14.
+(1-based) Position:24120, Reference Base=T
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
 
 Exon 7 position(1-based): 24125
 A nucleotide: reference.
 G nucleotide: B(A).04 marker (c.640A>G).
 (1-based) Position:24125, Reference Base=A
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	100	0	0	0
 
@@ -159,7 +487,7 @@ Exon 7 position(1-based): 24126
 T nucleotide: reference.
 C: B(A).05; G: Bel.01.
 (1-based) Position:24126, Reference Base=T
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	100
 
@@ -167,31 +495,95 @@ Exon 7 position(1-based): 24131
 T nucleotide: reference.
 A nucleotide: shared null/weak/el cassette marker (c.646T>A) — combine with c.681, c.771, c.829 to resolve the O1v/Ael-like backbone.
 (1-based) Position:24131, Reference Base=T
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 24134
+Reference.
+ISBT v9 c.649C>T p.(Arg18Leu): defines O.02.02.
+(1-based) Position:24134, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
 
 Exon 7 position(1-based): 24142
 C nucleotide: reference.
 Variant: A2 diagnostic position (c.657); also B-lineage backbone SNP (present in nearly all B/Bw/Bel/cisAB/BA alleles — do not use alone to call Bw.06).
 (1-based) Position:24142, Reference Base=C
-Aligned Read Count:92 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
-33.70	66.30	0	0	0	0	33.70	66.30
+50	50	0	0	0	0	49	50
+
+Exon 7 position(1-based): 24149
+Reference.
+ISBT v9 c.664G>A p.(Val222Met): defines AM.02.
+(1-based) Position:24149, Reference Base=G
+Aligned Read Count:95 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24154
+Reference.
+ISBT v9 c.669G>T p.(Thr99=): defines BEL.02.
+(1-based) Position:24154, Reference Base=G
+Aligned Read Count:95 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
 
 Exon 7 position(1-based): 24166
 G nucleotide: reference.
 A nucleotide: shared null/weak/el cassette marker (c.681G>A).
 (1-based) Position:24166, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:95 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24172
+Reference.
+ISBT v9 c.687C>T p.(Thr88ProfsTer31): defines O.01.58.
+(1-based) Position:24172, Reference Base=C
+Aligned Read Count:95 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24173
+Reference.
+ISBT v9 c.688G>C p.(Thr99=): defines BW.21.
+(1-based) Position:24173, Reference Base=G
+Aligned Read Count:95 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24174
+Reference.
+ISBT v9 c.689G>A p.(Arg18Leu): defines O.02.02, O.02.03.
+(1-based) Position:24174, Reference Base=G
+Aligned Read Count:95 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24180
+Reference.
+ISBT v9 c.695T>C p.(Thr99=): defines BW.11.
+(1-based) Position:24180, Reference Base=T
+Aligned Read Count:95 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 24184
+Reference.
+ISBT v9 c.699C>A p.(Pro156Leu): defines AW.14.
+(1-based) Position:24184, Reference Base=C
+Aligned Read Count:95 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
 
 Exon 7 position(1-based): 24185
 C nucleotide: reference.
 G: B(A).02; T: cisAB.03 — single SNP resolves B(A) vs cisAB on a B backbone.
 (1-based) Position:24185, Reference Base=C
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:95 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
@@ -199,13 +591,13 @@ Exon 7 position(1-based): 24188
 G nucleotide: reference.
 Variant: A2 diagnostic position (c.703); also B-lineage backbone.
 (1-based) Position:24188, Reference Base=G
-Aligned Read Count:92 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
-35.87	64.13	0	0	64.13	35.87	0	0
+50	50	0	0	50	49	0	0
 
 Exon 7 position(1-based): 24206
 (1-based) Position:24206, Reference Base=C
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
@@ -213,29 +605,69 @@ Exon 7 position(1-based): 24207
 G nucleotide: reference.
 Variant: A2 diagnostic position (c.722).
 (1-based) Position:24207, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24214
+Reference.
+ISBT v9 c.729C>T p.(Thr88ProfsTer31): defines O.01.27.
+(1-based) Position:24214, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
 
 Exon 7 position(1-based): 24227
 C nucleotide: reference.
 Variant: A2 diagnostic position (c.742).
 (1-based) Position:24227, Reference Base=C
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
 Exon 7 position(1-based): 24228
 (1-based) Position:24228, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:98 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24230
+Reference.
+ISBT v9 c.745C>T p.(Pro156Leu): defines A3.07.
+(1-based) Position:24230, Reference Base=C
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24246
+Reference.
+ISBT v9 c.761C>T p.(Pro156Leu): defines AM.01.
+(1-based) Position:24246, Reference Base=C
+Aligned Read Count:92 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24252
+Reference.
+ISBT v9 c.767T>C p.(Pro156Leu): defines AEL.05.
+(1-based) Position:24252, Reference Base=T
+Aligned Read Count:92 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 24253
+C nucleotide: reference.
+A nucleotide: synonymous c.768C>A, defines ABO*O.01.26 together with c.261delG.
+(1-based) Position:24253, Reference Base=C
+Aligned Read Count:92 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
 
 Exon 7 position(1-based): 24256
 C nucleotide: reference.
 Variant: A2 diagnostic position (c.771).
 (1-based) Position:24256, Reference Base=C
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:92 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 
@@ -243,49 +675,209 @@ Exon 7 position(1-based): 24263
 G nucleotide: reference.
 Variant: A2 diagnostic position (c.778).
 (1-based) Position:24263, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:92 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
 Exon 7 position(1-based): 24269
 (1-based) Position:24269, Reference Base=G
-Aligned Read Count:88 (reads=92, cov=16)
+Aligned Read Count:92 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24278
+Reference.
+ISBT v9 c.793T>C p.(Tyr265His): defines O.15.
+(1-based) Position:24278, Reference Base=T
+Aligned Read Count:92 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
 
 Exon 7 position(1-based): 24289
 Homopolymer indel — dup gives Ael.01/AEL.08/O.03, del gives Ael.03. Ael is serologically silent/very weak A: transfusion-safety relevant.
 (1-based) Position:24289, Reference Base=N
-Aligned Read Count:92 (reads=92, cov=16)
+Aligned Read Count:100 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	0
+
+Exon 7 position(1-based): 24293
+Reference.
+ISBT v9 c.808T>A p.(Thr99=): defines BW.32.
+(1-based) Position:24293, Reference Base=T
+Aligned Read Count:98 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
+
+Exon 7 position(1-based): 24301
+Reference.
+ISBT v9 c.816dup p.(Thr99=): defines BW.20.
+(1-based) Position:24301, Reference Base=N
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	0
+
+Exon 7 position(1-based): 24305
+Reference.
+ISBT v9 c.820G>A p.(Val274Met): defines A3.05, A3.06.
+(1-based) Position:24305, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
 
 Exon 7 position(1-based): 24314
 G nucleotide: reference.
 Variant: A2 diagnostic position (c.829).
 (1-based) Position:24314, Reference Base=G
-Aligned Read Count:76 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24323
+Reference.
+ISBT v9 c.838C>T p.(Leu280Phe): defines A3.03.
+(1-based) Position:24323, Reference Base=C
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24345
+Reference.
+ISBT v9 c.860C>T p.(Pro156Leu): defines AW.35.
+(1-based) Position:24345, Reference Base=C
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24348
+Reference.
+ISBT v9 c.863T>G p.(Thr99=): defines BW.08.
+(1-based) Position:24348, Reference Base=T
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	100
 
 Exon 7 position(1-based): 24356
 A3/Bx marker — associated with mixed-field agglutination, a classic reason for molecular referral.
 (1-based) Position:24356, Reference Base=G
-Aligned Read Count:76 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24358
+Reference.
+ISBT v9 c.873C>G p.(Thr99=): defines BW.02.
+(1-based) Position:24358, Reference Base=C
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24374
+Reference.
+ISBT v9 c.889G>A p.(Thr99=): defines BW.34.
+(1-based) Position:24374, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24377
+Reference.
+ISBT v9 c.892G>T p.(Thr99=): defines B.02.
+(1-based) Position:24377, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24378
+Reference.
+ISBT v9 c.893C>T p.(Pro156Leu): defines O.07.
+(1-based) Position:24378, Reference Base=C
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24385
+Reference.
+ISBT v9 c.900G>C p.(Thr99=): defines BW.31.
+(1-based) Position:24385, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
 Exon 7 position(1-based): 24390
 (1-based) Position:24390, Reference Base=A
-Aligned Read Count:76 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	100	0	0	0
 
 Exon 7 position(1-based): 24392
 G nucleotide: reference.
-A nucleotide: A2.06 subtype marker (c.907G>A).
+A nucleotide: c.907G>A, a pipeline background marker that is not part of any ISBT allele definition (ABO*A2.06 is c.1061delC alone); reported but not used for allele naming.
 (1-based) Position:24392, Reference Base=G
-Aligned Read Count:76 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24411
+Reference.
+ISBT v9 c.926A>G p.(Thr88ProfsTer31): defines O.01.28.
+(1-based) Position:24411, Reference Base=A
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24412
+Reference.
+ISBT v9 c.927C>A p.(Tyr309Ter): defines O.08.
+(1-based) Position:24412, Reference Base=C
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24423
+Reference.
+ISBT v9 c.938A>C p.(Thr99=): defines B3.08.
+(1-based) Position:24423, Reference Base=A
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24425
+Reference.
+ISBT v9 c.940A>G p.(Lys314Glu): defines AW.37.
+(1-based) Position:24425, Reference Base=A
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24437
+Reference.
+ISBT v9 c.952G>A p.(Thr99=): defines BEL.05.
+(1-based) Position:24437, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24450
+Reference.
+ISBT v9 c.965A>G p.(Glu322Gly): defines AW.05.
+(1-based) Position:24450, Reference Base=A
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24461
+Reference.
+ISBT v9 c.976G>T p.(Thr99=): defines BW.30.
+(1-based) Position:24461, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 7 position(1-based): 24481
+Reference.
+ISBT v9 c.996G>A p.(Trp332Ter): defines AW.32.
+(1-based) Position:24481, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
@@ -293,32 +885,72 @@ Exon 7 position(1-based): 24494
 A nucleotide: reference.
 Variant: A2 diagnostic position (c.1009).
 (1-based) Position:24494, Reference Base=A
-Aligned Read Count:86 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	100	0	0	0
 
 Exon 7 position(1-based): 24517
 G nucleotide: reference.
-A nucleotide: A2.01 subtype marker (c.1032G>A).
+A nucleotide: c.1032G>A, a pipeline background marker that is not part of any ISBT allele definition; reported but not used for allele naming.
 (1-based) Position:24517, Reference Base=G
-Aligned Read Count:86 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
+Exon 7 position(1-based): 24521
+Reference.
+ISBT v9 c.1036A>G p.(Thr99=): defines BW.06.
+(1-based) Position:24521, Reference Base=A
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24522
+Reference.
+ISBT v9 c.1037A>T p.(Thr99=): defines BW.09.
+(1-based) Position:24522, Reference Base=A
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	100	0	0	0
+
+Exon 7 position(1-based): 24531
+Reference.
+ISBT v9 c.1046_1048delAGG p.(Thr88ProfsTer31): defines O.01.76.
+(1-based) Position:24531, Reference Base=N
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	0
+
 Exon 7 position(1-based): 24539
 C nucleotide: reference.
-Variant: A2 diagnostic position (c.1054); also Bw.04 marker on a B backbone.
+Variant: A2 diagnostic position (c.1054). C>T: A2.02 (p.Arg352Trp); C>G: A2.03 (p.Arg352Gly).
 (1-based) Position:24539, Reference Base=C
-Aligned Read Count:86 (reads=92, cov=16)
+Aligned Read Count:94 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
+
+Exon 7 position(1-based): 24540
+Reference.
+ISBT v9 c.1055G>A p.(Thr99=): defines BW.07.
+(1-based) Position:24540, Reference Base=G
+Aligned Read Count:94 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
 Exon 3:
 
 # -------- Subtype / null-allele variants --------
 
+Exon 3 position(1-based): 18845
+Reference.
+ISBT v9 c.103G>A p.(Gly35Arg): defines BW.25, O.01.67.
+(1-based) Position:18845, Reference Base=G
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
 Exon 3 position(1-based): 18848
 (1-based) Position:18848, Reference Base=G
-Aligned Read Count:84 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 Exon 4:
@@ -327,37 +959,77 @@ Exon 4:
 
 Exon 4 position(1-based): 20381
 (1-based) Position:20381, Reference Base=G
-Aligned Read Count:80 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
 Exon 4 position(1-based): 20382
 (1-based) Position:20382, Reference Base=C
-Aligned Read Count:80 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
+
+Exon 4 position(1-based): 20383
+Reference.
+ISBT v9 c.190G>A p.(Val64Ile): defines A2.12, O.01.82.
+(1-based) Position:20383, Reference Base=G
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 4 position(1-based): 20396
+Reference.
+ISBT v9 c.203G>C p.(Arg68Thr): defines AW.03.
+(1-based) Position:20396, Reference Base=G
+Aligned Read Count:93 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
 Exon 5:
 
 # -------- Subtype / null-allele variants --------
 
 Exon 5 position(1-based): 22099
 (1-based) Position:22099, Reference Base=C
-Aligned Read Count:87 (reads=92, cov=16)
+Aligned Read Count:89 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	100	0
+
+Exon 5 position(1-based): 22115
+Reference.
+ISBT v9 c.236C>T p.(Pro79Leu): defines AW.17.
+(1-based) Position:22115, Reference Base=C
+Aligned Read Count:89 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	100	0
 Exon 2:
 
 # -------- Subtype / null-allele variants --------
 
-Exon 2 position(1-based): 18071
-(1-based) Position:18071, Reference Base=G
-Aligned Read Count:82 (reads=92, cov=16)
+Exon 2 position(1-based): 18064
+Reference.
+ISBT v9 c.46G>A p.(Ala16Thr): defines AW.09.
+(1-based) Position:18064, Reference Base=G
+Aligned Read Count:92 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	100	0	0
 
+Exon 2 position(1-based): 18071
+(1-based) Position:18071, Reference Base=G
+Aligned Read Count:92 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	100	0	0
+
+Exon 2 position(1-based): 18084
+Reference.
+ISBT v9 c.66_67insG p.(Phe23ValfsTer34): defines O.10.
+(1-based) Position:18084, Reference Base=N
+Aligned Read Count:92 (reads=100, cov=16)
+Mat	Mis	Ins	Del	A	G	C	T
+100	0	0	0	0	0	0	0
+
 Exon 2 position(1-based): 18106
 (1-based) Position:18106, Reference Base=N
-Aligned Read Count:82 (reads=92, cov=16)
+Aligned Read Count:92 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	0
 Intron 6:
@@ -366,7 +1038,7 @@ Intron 6:
 
 Intron 6 position(1-based): 22811
 (1-based) Position:22811, Reference Base=N
-Aligned Read Count:90 (reads=92, cov=16)
+Aligned Read Count:97 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	0
 Intron 2:
@@ -375,7 +1047,7 @@ Intron 2:
 
 Intron 2 position(1-based): 18118
 (1-based) Position:18118, Reference Base=N
-Aligned Read Count:82 (reads=92, cov=16)
+Aligned Read Count:92 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	0
 Intron 3:
@@ -384,7 +1056,7 @@ Intron 3:
 
 Intron 3 position(1-based): 18902
 (1-based) Position:18902, Reference Base=N
-Aligned Read Count:84 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	0
 Intron 4:
@@ -393,6 +1065,6 @@ Intron 4:
 
 Intron 4 position(1-based): 20397
 (1-based) Position:20397, Reference Base=N
-Aligned Read Count:80 (reads=92, cov=16)
+Aligned Read Count:93 (reads=100, cov=16)
 Mat	Mis	Ins	Del	A	G	C	T
 100	0	0	0	0	0	0	0

@@ -1,0 +1,35 @@
+[2026-11-17 12:51:51] INFO: ================================================================================
+[2026-11-17 12:51:51] INFO: abotyper-core v0.4.1 ABO phenotype prediction - Started at 2026-11-17 12:51:51.433326
+[2026-11-17 12:51:51] INFO: Panel: 135 variants across exons: Exon 6, Exon 7, Exon 3, Exon 4, Exon 5, Exon 2, Intron 6, Intron 2, Intron 3, Intron 4
+[2026-11-17 12:51:51] INFO: ================================================================================
+[2026-11-17 12:51:51] INFO: ============================================================
+[2026-11-17 12:51:51] INFO: Starting ABO phenotype prediction
+[2026-11-17 12:51:51] INFO: ============================================================
+[2026-11-17 12:51:51] INFO: Reading nucleotide frequencies from: ABO_BO1_barcode06.AlignmentStatistics.tsv
+[2026-11-17 12:51:51] INFO: Successfully processed 135 positions, max position: 24544
+[2026-11-17 12:51:51] INFO: Reading coverage information from: ABO_BO1_barcode06.coverage.txt
+[2026-11-17 12:51:51] INFO: Extracted coverage info: numreads=100, coverage=16
+[2026-11-17 12:51:51] INFO: Aligned Read Count = per-position Depth from the input file
+[2026-11-17 12:51:51] INFO: Exons detected from position overlap: ['Exon 6', 'Exon 7', 'Exon 3', 'Exon 4', 'Exon 5', 'Exon 2', 'Intron 6', 'Intron 2', 'Intron 3', 'Intron 4']
+[2026-11-17 12:51:51] INFO: Generating Exon 6 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Exon 6 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Exon 7 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Exon 7 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Exon 3 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Exon 3 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Exon 4 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Exon 4 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Exon 5 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Exon 5 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Exon 2 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Exon 2 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Intron 6 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Intron 6 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Intron 2 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Intron 2 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Intron 3 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Intron 3 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Generating Intron 4 report to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] Intron 4 report successfully written to ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: [OK] ABO phenotype metrics written to: ABO_BO1_barcode06.ABOPhenotype.txt
+[2026-11-17 12:51:51] INFO: Script execution completed successfully at: 2026-11-17 12:51:51.486953
