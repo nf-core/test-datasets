@@ -30,23 +30,13 @@ The source samplesheet identifies all three runs as `WGS`, `ILLUMINA`.
 The extraction fetches mates, so reads outside the selected interval can be
 included. The reference is the full chromosome, not a cropped interval.
 
-## Provenance and extraction
+## Regenerating the FASTQ files
 
-The immediate source was the local dataset
-`/home/vmduarut/Projects/pathogenepidemiology/Pf3D7_01_v3/`:
-its `ci_fastq/` files, `Pf3D7_01_v3_CI.bed`, `samplesheet_Pf3D7_01_v3.csv`,
-`README.md`, and `downsample.sh`. The chromosome reference at
-`/home/vmduarut/Projects/pathogenepidemiology/Pf3D7_chr1.fa` is byte-identical
-to the existing repository reference, which was left unchanged. No reference
-indexes are stored alongside the repository FASTA.
-
-The source README describes extraction from three coordinate-sorted, indexed
-whole-genome BAMs aligned to an indexed whole-genome FASTA. The source extraction
-script uses the same mate-fetching and FASTQ conversion workflow. The following
-adaptation writes the repository-compatible names into a **new** output
-directory; it requires Bash, samtools with `view -P`, and gzip. Set the reference
-and BAM paths to the original inputs, and ensure the output directory's parent
-exists. A failed run may leave partial output; inspect it before retrying.
+The following Bash script requires samtools with `view -P`, gzip, an indexed
+whole-genome FASTA, and three coordinate-sorted, indexed BAMs aligned to that
+reference. These whole-genome inputs are not included here. Set the reference
+and BAM paths to the original inputs and choose a **new** output directory whose
+parent exists. A failed run may leave partial output; inspect it before retrying.
 
 ```bash
 set -euo pipefail
@@ -82,12 +72,6 @@ for sample in ERR10375861 ERR10375871 ERR10375886; do
   [[ "$n1" -gt 0 && "$n1" -eq "$n2" ]]
 done
 ```
-
-`samtools view -P -L` selects alignments overlapping the BED and fetches mates.
-`collate` groups read names before conversion; `fastq -F 0x900` excludes
-secondary and supplementary alignments, discards unpaired/other reads via
-`-s /dev/null -0 /dev/null`, and preserves read names with `-n`.
-The original whole-genome BAMs and FASTA are not included here.
 
 ## Validation of the copied dataset
 
