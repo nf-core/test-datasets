@@ -70,7 +70,7 @@ Clair3 is restricted to the exon 2-7 region `NG_006669.2:17950-24700` (`assets/r
 
 ### How the reads were made
 
-`simulation/simulate_abo_reads.py` (Python 3, standard library and
+`simulation/simulate_abo_reads.py` (Python 3.11 or later, standard library and
 [abotyper-core](https://pypi.org/project/abotyper-core/0.4.1/) 0.4.1) does the following:
 
 1. **Builds each allele.** It cuts the exon 2-7 amplicon, `NG_006669.2:17922-24675` (6,754 bp), out of NG_006669.2.
@@ -92,8 +92,10 @@ Clair3 is restricted to the exon 2-7 region `NG_006669.2:17950-24700` (`assets/r
 To regenerate the reads:
 
 ```bash
+# from the root of this branch; abotyper-core 0.4.1 needs Python >= 3.11
 pip install abotyper-core==0.4.1
-python simulation/simulate_abo_reads.py --ref NG_006669v2.fasta --amplicon 17922-24675 --outdir abotyper/
+curl -sLO https://raw.githubusercontent.com/nf-core/abotyper/d98b3b175f8bcbda107c2aa6d7ccdfabfdab04fa/assets/refs/NG_006669v2.fasta
+python abotyper/simulation/simulate_abo_reads.py --ref NG_006669v2.fasta --amplicon 17922-24675 --outdir abotyper/
 ```
 
 Every sample types as its intended genotype with the pipeline (see `per_sample_processing/`).
@@ -126,7 +128,7 @@ nextflow run nf-core/abotyper -r bbf404a -profile test,docker --input sampleshee
 
 | Folder | Step (module) | Tool and version |
 | --- | --- | --- |
-| `alignment/` | `MINIMAP2_ALIGN` (`-x map-ont`), `SAMTOOLS_COVERAGE`, `SAMTOOLS_FLAGSTAT`, `SAMTOOLS_STATS` | minimap2 2.30-r1287, samtools 1.25 |
+| `alignment/` | `MINIMAP2_ALIGN` (`-x map-ont`), `SAMTOOLS_COVERAGE`, `SAMTOOLS_FLAGSTAT`, `SAMTOOLS_STATS` | minimap2 2.30-r1287, samtools 1.23.1 (sort) and 1.25 |
 | `clair3/` | `CLAIR3` (`--gvcf --enable_phasing --enable_long_indel`, model `r1041_e82_400bps_sup_v500`), `BCFTOOLS_NORM`, `BCFTOOLS_VIEW`, `BCFTOOLS_QUERY` | Clair3 2.0.5, bcftools 1.25 |
 | `clair2metrics/` | `ABOTYPERCORE_CLAIR2METRICS`, `ABOTYPERCORE_PILEUP2METRICS`, `ABOTYPERCORE_CLAIR2HAPLOTYPES` | abotyper-core 0.4.1 (135 panel positions) |
 | `<sample>.ABOPhenotype.txt`, `<sample>.log.txt` | `ABOTYPERCORE_PREDICTPHENOTYPE` | abotyper-core 0.4.1 |

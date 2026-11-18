@@ -6,10 +6,10 @@ coding changes of that allele from the ISBT ABO allele table applied (introns st
 pair of alleles; reads are drawn from the two alleles with a fixed random seed and given nanopore-like errors and
 quality scores by the simple model below.
 
-Requirements: Python >= 3.9 and abotyper-core (used only to place ISBT cDNA changes on NG_006669.2, with the same
+Requirements: Python >= 3.11 and abotyper-core (used only to place ISBT cDNA changes on NG_006669.2, with the same
 exon offsets the pipeline uses).
 
-    python simulate_abo_reads.py --ref NG_006669.2.fasta --outdir .
+    python simulate_abo_reads.py --ref NG_006669v2.fasta --amplicon 17922-24675 --outdir .
 
 writes, for every sample in SAMPLES:
     <sample>.fastq.gz          simulated reads (byte-identical between runs: fixed seed, gzip mtime 0)
