@@ -1,0 +1,7 @@
+sample,fastq_1,control,barcode
+ABO_BB,https://raw.githubusercontent.com/nf-core/test-datasets/abotyper/abotyper/ABO_BB_barcode05.fastq.gz,,7
+ABO_AO1_barcode03,https://raw.githubusercontent.com/nf-core/test-datasets/abotyper/abotyper/ABO_AO1_barcode03.fastq.gz,,
+NTC,https://raw.githubusercontent.com/nf-core/test-datasets/abotyper/abotyper/fixtures/empty.fastq.gz,negative,95
+ABO_AA,https://raw.githubusercontent.com/nf-core/test-datasets/abotyper/abotyper/ABO_AA_barcode01.fastq.gz,,1
+ABO_AA,https://raw.githubusercontent.com/nf-core/test-datasets/abotyper/abotyper/ABO_AA_barcode01.fastq.gz,,1
+ABO_AA,https://raw.githubusercontent.com/nf-core/test-datasets/abotyper/abotyper/ABO_AA_barcode01.fastq.gz,,1
