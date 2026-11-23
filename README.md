@@ -349,6 +349,8 @@ The earth sciences folder contain subfolders for different data formats encounte
     - test_reference.cnn: synthetic chr22 copy number reference profile (with gc, rmask, spread columns) built manually from the above bins for cnvkit module testing.
     - test.cnr: copy number ratio file produced by running `cnvkit.py fix` on the test.targetcoverage.cnn, test.antitargetcoverage.cnn and test_reference.cnn files.
     - test.cns: copy number segment file produced by running `cnvkit.py segment` on the test.cnr file.
+  - ccnv
+    - full test data suite for ccnv modules. Description at `data/genomics/homo_sapiens/ccnv/README.md`
   - demultiplexing
     - barcode.tsv: A list of barcodes used for demultiplexing the test data.
     - chr21.bam: A BAM file containing reads from chromosome 21.
