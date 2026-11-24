@@ -1,0 +1,4 @@
+sample,filtered,unfiltered,batch_col
+GSM8207598,https://scdownstream.nbg1.your-objectstorage.com/test-data/raw/GSM8207598_filtered_matrix.h5ad,https://scdownstream.nbg1.your-objectstorage.com/test-data/raw/GSM8207598_raw_matrix.h5ad,sample
+GSM8207600,https://scdownstream.nbg1.your-objectstorage.com/test-data/raw/GSM8207600_filtered_matrix.h5ad,https://scdownstream.nbg1.your-objectstorage.com/test-data/raw/GSM8207600_raw_matrix.h5ad,sample
+GSM8207603,,https://scdownstream.nbg1.your-objectstorage.com/test-data/raw/GSM8207603_raw_matrix.h5ad,sample

@@ -1,0 +1,6 @@
+sample,filtered,symbol_col,min_genes,min_counts_cell,min_cells,max_mito_percentage,log1p_total_counts_nmads,log1p_n_genes_by_counts_nmads,pct_counts_in_top_20_genes_nmads,pct_counts_mt_nmads,condition_col,donor_col,batch_col,label_col
+deng,https://scdownstream.nbg1.your-objectstorage.com/test-data/cohorts/deng.h5ad,index,200,500,0,20,0,0,0,0,condition,patient,batch,dataset
+duan,https://scdownstream.nbg1.your-objectstorage.com/test-data/cohorts/duan.h5ad,none,200,500,0,20,0,0,0,0,condition,patient,batch,dataset
+gao,https://scdownstream.nbg1.your-objectstorage.com/test-data/cohorts/gao.h5ad,index,200,500,0,20,0,0,0,0,condition,patient,batch,dataset
+mistry,https://scdownstream.nbg1.your-objectstorage.com/test-data/cohorts/mistry.h5ad,index,200,500,0,20,0,0,0,0,condition,patient,batch,dataset
+wilhelm-pbmc,https://scdownstream.nbg1.your-objectstorage.com/test-data/cohorts/wilhelm-pbmc.h5ad,index,200,500,0,20,0,0,0,0,condition,patient,batch,dataset
