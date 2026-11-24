@@ -1,0 +1,7 @@
+sample,bam,bai,tags,individual,batch,sex
+P1_N,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P1_N.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P1_N.bam.bai,identity,P1,,female
+P1_T,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P1_T.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P1_T.bam.bai,identity,P1,,female
+P2_A,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P2_A.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P2_A.bam.bai,identity,P2,,M
+P3_A,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P3_A.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P3_A.bam.bai,identity,P3,,female
+P4_A,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P4_A.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P4_A.bam.bai,identity,P4,,
+P6_A,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P6_A.bam,https://github.com/nf-core/test-datasets/raw/seqinspector/data/sample_identity/bam/P6_A.bam.bai,identity,P6,,female
