@@ -1,0 +1,3 @@
+id,variable,reference,target,blocking
+GBR-YRI,condition,YRI,GBR,batch
+YRI-GBR,condition,GBR,YRI,

@@ -28,6 +28,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `chrX_subset/`: The minimal test dataset cut down to a few regions of chrX, with every file under 1 MB and the same layout and file names as above (`reference/`, `samplesheet/`, `testdata/`)
 
+`chrX_subset/samplesheet/samplesheet_blocking.csv`, `chrX_subset/samplesheet/contrastsheet_blocking.csv`: The minimal samplesheet with a `batch` column crossed with `condition`, and a contrastsheet that blocks one of its two contrasts on `batch`
+
 `scripts/make_chrx_subset.py`, `scripts/filter_pairs.py`, `scripts/package_chrx_subset.sh`: Scripts used to make `chrX_subset/`
 
 ## Minimal test dataset origin
