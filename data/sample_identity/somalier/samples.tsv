@@ -1,0 +1,7 @@
+sample	file	individual	batch	role	input	sex
+P1_N	somalier/P1_N.somalier	P1		cohort	P1_N.bam	female
+P1_T	somalier/P1_T.somalier	P1		cohort	P1_T.bam	female
+P2_A	somalier/P2_A.somalier	P2		cohort	P2_A.bam	M
+P3_A	somalier/P3_A.somalier	P3		cohort	P3_A.bam	female
+P4_A	somalier/P4_A.somalier	P4		cohort	P4_A.bam	
+P6_A	somalier/P6_A.somalier	P6		cohort	P6_A.bam	female

@@ -13,6 +13,7 @@ Test data to be used for automated testing with the nf-core pipelines
   - [PromethION](#promethion)
     - [20230505\_1857\_1B\_PAO99309\_94e07fab](#20230505_1857_1b_pao99309_94e07fab)
     - [20261009\_1457\_1A\_PBO51508\_cb5816a7](#20261009_1457_1a_pbo51508_cb5816a7)
+  - [Sample identity](#sample-identity)
 
 
 # Test data for SeqInspector
@@ -21,6 +22,7 @@ Test data to be used for automated testing with the nf-core pipelines
 
 - `samplesheet/1.0/`: samplesheets for seqinspector <= 1.1, with columns `sample,fastq_1,fastq_2,rundir,tags`.
 - `samplesheet/1.1/`: the same samplesheets with an added `platform` column (`illumina` or `ont`), set for every row with a `rundir`. `samplesheet/1.1/full_test.csv` is the same for `full_tests/SampleSheet.csv`.
+- `samplesheet/1.2/`: samplesheets for aligned BAM input with the columns `bam,bai,individual,batch,sex`.
 
 This folder contains demultiplexed data generated from the test data for the [demultiplex pipeline](https://github.com/nf-core/test-datasets/tree/demultiplex). Both MiSeq and NovaSeq6000 datasets were demultiplexed using bcl2fastq, and randomly subsampled with `seqtk sample -s100`. 
 
@@ -59,3 +61,12 @@ The rundir also contains the MinKNOW run report `report_PAO99309_20230505_1903_9
 Run folder containing only the MinKNOW run report `report_PBO51508_20261009_1457_cb5816a7.json`, from a PromethION run with MinKNOW 6.10 and a barcoded PCR-cDNA kit (SQK-PCB114-24). Added with permission of the data owner. There is no matching `fastq` data, so this is used for module tests of ONT run metadata parsing with the newer MinKNOW report layout.
 
 `samplesheet/1.1/promethion_minknow6_unmatched.csv` pairs this rundir with the `hg001` passed `fastq` file from `20230505_1857_1B_PAO99309_94e07fab`. **The reads and the rundir are from different runs.** This samplesheet only exists to test ONT rundir parsing with the newer MinKNOW report layout in a full pipeline run, and should not be used to compare reads with run metadata.
+
+## Sample identity
+
+`data/sample_identity/` holds a synthetic, deterministic dataset for the sample identity, contamination and sex check tools. `simulate_test_data.py` creates all files and documents the truth of every sample in its docstring.
+
+- `references/`: 1 Mb `chr21`, 100 kb `chrX` and `chrY`, a somalier sites VCF and a panel BED
+- `bam/`: six aligned, indexed BAM files, including a contaminated pair, a contaminated sample without a source in the cohort and a sex mismatch
+- `background/`: a somalier digest of an individual that is absent from the cohort
+- `somalier/` and `coverage/`: somalier digests and `samtools coverage` tables of the BAM files, used by module tests
