@@ -32,6 +32,8 @@ This branch contains test data to be used for automated testing with the [nf-cor
 
 `scripts/make_chrx_subset.py`, `scripts/filter_pairs.py`, `scripts/package_chrx_subset.sh`: Scripts used to make `chrX_subset/`
 
+`chrX_subset/samplesheet/samplesheet_with_bams.csv`, `chrX_subset/testdata/rnaseq/`: The `samplesheet_with_bams.csv` of an nf-core/rnaseq run on the minimal test dataset, with a `condition` column added, and the genome BAM, transcriptome BAM and transcript FASTA files it lists, for testing the hand-off from nf-core/rnaseq to nf-core/rnasplice
+
 ## Minimal test dataset origin
 
 ChrX subsampled *H.sapiens* total RNA paired-end RNA-seq data was obtained from:
@@ -114,6 +116,39 @@ The other files come from a run of nf-core/rnasplice (`-profile test` with `--le
 - `testdata/*_reverse.Aligned.out.bam` and `.bai`: the coordinate sorted STAR alignments of the reverse stranded reads (run with `strandedness` set to `reverse`), cut down to 4,000 pairs with a spliced mate in the same way, for tests of the stranded LeafCutter path
 
 On this data the STAR index drops from 1.7 GB to 42 MB and the Salmon index from 0.9 GB to 23 MB, STAR needs under 1 GB to align instead of 4.9 GB, and every analysis still reports results.
+
+### nf-core/rnaseq hand-off
+
+`chrX_subset/samplesheet/samplesheet_with_bams.csv` and `chrX_subset/testdata/rnaseq/` come from an nf-core/rnaseq 3.28.0 run on the `chrX_subset` reads and reference. With `--save_align_intermeds`, nf-core/rnaseq writes a samplesheet listing the BAM files of each sample, which nf-core/rnasplice takes as its input once a `condition` column is added. `strandedness` was set to `auto`, so the samplesheet holds what nf-core/rnaseq inferred (`unstranded`). `--min_trimmed_reads 1` keeps the samples, which have fewer than the default 10,000 reads after trimming.
+
+```console
+B=https://raw.githubusercontent.com/nf-core/test-datasets/rnasplice/chrX_subset
+echo "sample,fastq_1,fastq_2,strandedness" > samplesheet.csv
+for s in ERR188383 ERR188428 ERR188454 ERR204916; do
+    echo "$s,$B/testdata/${s}_chrX_1.fastq.gz,$B/testdata/${s}_chrX_2.fastq.gz,auto" >> samplesheet.csv
+done
+nextflow run nf-core/rnaseq -r 3.28.0 -profile docker \
+    --input samplesheet.csv --outdir results \
+    --fasta $B/reference/X.fa.gz --gtf $B/reference/genes_chrX.gtf \
+    --aligner star_salmon --save_align_intermeds --save_reference --min_trimmed_reads 1 \
+    --skip_qc --skip_bigwig --skip_stringtie --skip_markduplicates
+```
+
+The BAM files were then cut down to stay under 1 MB. `samtools view -s 7.4` keeps a read according to a hash of its name, so with the same seed and fraction for every file both mates of a pair are kept together, and the same reads are kept in the genome and transcriptome BAM files of a sample. The order of the reads is unchanged, so the genome BAM files stay coordinate sorted and the mates in the transcriptome BAM files stay next to each other, as Salmon needs. The headers are unchanged. About 40% of the reads are kept (for ERR188383, 8,110 of 20,132 genome alignments and 25,284 of 62,688 transcriptome alignments). The transcript FASTA is copied unchanged.
+
+```console
+# samtools 1.24 (community.wave.seqera.io/library/htslib_samtools:1.24--d697cfb9dce007cd)
+mkdir -p rnaseq
+for s in ERR188383 ERR188428 ERR188454 ERR204916; do
+    for f in $s.sorted.bam $s.Aligned.toTranscriptome.out.bam; do
+        samtools view -b -s 7.4 --output-fmt-option level=9 -o rnaseq/$f results/star_salmon/$f
+    done
+done
+cp results/genome/genome.transcripts.fa rnaseq/
+```
+
+In `samplesheet_with_bams.csv`, the rows are sorted by sample, a `condition` column is added (`GBR` for ERR188383 and ERR188428, `YRI` for ERR188454 and ERR204916, as in `samplesheet.csv`), and the BAM paths, which nf-core/rnaseq writes relative to its `--outdir`, point to the files in `chrX_subset/testdata/rnaseq/`. The other columns are as nf-core/rnaseq wrote them, including the `percent_mapped` of the full BAM files.
+
 
 ## Full test dataset origin
 
