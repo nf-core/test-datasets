@@ -31,6 +31,20 @@ git fetch
 
 ## Datasets for nf-core/phyloplace
 
+### `testdata/ar53.alnfna.gz` and `testdata/ar53.newick.gz` - archaeal 16S reference alignment and tree
+
+A reference alignment of 1976 archaeal 16S rRNA sequences over 1477 columns, and the phylogeny built from it, with GTDB genome accessions as sequence names.
+They are gzipped copies of two files on the SciLifeLab Data Repository (figshare), with the content unchanged:
+
+- `ar53.alnfna.gz`: file [47244067](https://ndownloader.figshare.com/files/47244067), `sbdigtdbsativa.r09rs220.ar53.sprepr.alnfna`
+- `ar53.newick.gz`: file [47244070](https://ndownloader.figshare.com/files/47244070), `sbdigtdbsativa.r09rs220.ar53.sprepr.brlenopt.newick`
+
+As the original names say, the sequences come from the archaeal (`ar53`) species representatives of GTDB release 220.
+Both were compressed with `gzip -9n`.
+
+nf-core/phyloplace's "search and place" tests downloaded these files from figshare, which now and then refused the download and failed a CI job.
+The tests and the sample sheets in this branch that point to figshare will move to these copies.
+
 ### `testdata/hmmrank/` - HMMER search tables for the `hmmer/hmmrank` module tests
 
 Four gzipped HMMER 3.4 output tables, two per profile, for the `NrdJ` and `NrdJm1` ribonucleotide reductase profiles:
