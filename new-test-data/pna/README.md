@@ -29,12 +29,20 @@ This generates the files in `testdata/pna/fastq`, including:
 - corresponding `*.metadata.json` files
 
 Single-end versions of `sample1`, `sample1_reseq`, `sample2`, `pool1`, `pool1_reseq` and `pool2` are also provided as
-`<library>_single_end_forward.fastq.gz` (with `*.metadata.json`).
-Each read covers the whole amplicon, as is. They were generated separately from the paired-end files, with the Pixelator test data generator
+`<library>_single_end_forward.fastq.gz` and `<library>_single_end_reverse.fastq.gz` (each with `*.metadata.json`).
+Each read covers the whole amplicon: as is in the forward file, reverse-complemented in the reverse file.
+Both are drawn from the library's edge list with the same seed, so each read in the reverse file is the reverse complement
+of the matching read in the forward file.
+They were generated separately from the paired-end files, with the Pixelator test data generator
 (`uv run python -m pixelator.testing.test_data`), so they do not share edge lists with the paired-end files.
 
-The samplesheets in `new-test-data/samplesheet/pna/` each hold four units (samples for v1, pools for v2):
-two resequenced (`sample_1` / `pool1` and their `_forward` counterparts) and two single-end (`*_forward`, forward read in `fastq_1`).
+The samplesheets `samplesheet_proxiome_v1.csv` and `samplesheet_proxiome_v2.csv` in `new-test-data/samplesheet/pna/` each hold
+four units (samples for v1, pools for v2): two resequenced (`sample_1` / `pool1` and their `_forward` counterparts) and two
+single-end (`*_forward`, forward read in `fastq_1`).
+
+The samplesheets `samplesheet_proxiome_v1_single_end.csv` and `samplesheet_proxiome_v2_single_end.csv` hold the same units,
+plus `*_reverse` units that pass the reverse files as the reverse read. They have a `reverse_read` column: `yes` for the
+`*_reverse` rows, `no` or empty for the `*_forward` rows, and empty for the paired-end rows.
 
 ### Module output generation (`testdata/pna/modules`)
 
