@@ -215,3 +215,21 @@ podman run -v $PWD:$PWD quay.io/biocontainers/diamond:2.2.1--he361c42_0 diamond 
 mv bfragilis_proteome.dmnd data/database/diamond/
 gzip -9 -c bfragilis_proteome.faa > data/database/diamond/bfragilis_proteome.faa.gz
 ```
+
+## Cayman
+
+A mini Cayman database: 23 genes of the prevalence-filtered GMGC freshwater gene catalogue (18 of them CAZy-annotated, covering AA, CBM, CE, GH, GT and PL families), with their CAZy annotation exactly as distributed on [Zenodo record 10473258](https://zenodo.org/records/10473258). The same genes, their annotation and reads simulated from them are the test data of the nf-core `cayman/profile` module, on the `modules` branch (`data/genomics/prokaryotes/metagenome/cayman/`).
+
+The minigut reads do not align to these genes, so the test profile checks that the database is read and that Cayman runs, writing its alignment statistics; the profiles themselves are checked by the module tests.
+
+`cayman_bwa_index.tar.gz` holds the bwa index (bwa 0.7.19) of `cayman_ref.fna` from the `modules` branch, in a top-level `bwa/` directory, which the pipeline untars.
+
+```bash
+mkdir -p data/database/cayman
+wget https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/prokaryotes/metagenome/cayman/cayman_ref.fna
+wget -P data/database/cayman https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/prokaryotes/metagenome/cayman/cayman_annotation.csv
+mkdir bwa
+bwa index -p bwa/cayman_ref cayman_ref.fna
+tar czf data/database/cayman/cayman_bwa_index.tar.gz bwa
+rm -r bwa cayman_ref.fna
+```
