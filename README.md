@@ -478,6 +478,12 @@ The earth sciences folder contain subfolders for different data formats encounte
     - test_starfusion_dfam.hmm: Subset of profile HMMs for repetitive elements used in STAR-Fusion module.
     - test_starfusion_dfam.hmm.{h3f,h3i,h3m,h3p}: Index files for `test_starfusion_dfam.hmm`.
     - fusioncatcher.txt: Detected gene fusions from fusioncatcher module.
+    - rnaseq_expression
+      - README.md: Explanatory notes for the human chrX exon and transcript count tables
+      - chrX.samplesheet.csv: Sample sheet for four Geuvadis samples of chromosome X (two GBR, two YRI), columns `sample` and `condition`
+      - chrX.exon_counts.tsv: Exon count matrix (`gene_id`, `exon_id`, one column per sample) for 14 genes, made with `dexseq/count` from the `rnasplice` branch chrX BAM files
+      - chrX.exon_counts.featureCounts.tsv: Exonic parts counted with featureCounts (`-f -O`) from the `rnasplice` branch `chrX_subset` BAM files, in featureCounts' multi-sample format, for the 7 genes with counts
+      - chrX.transcript_counts.tsv: Transcript count matrix (`tx`, `gene_id`, one column per sample) for 40 genes, imported with `tximeta/tximport` from the `rnasplice` branch Salmon results
     - riboseq_expression
       - Homo_sapiens.GRCh38.111_chr20.gtf: Ensembl human GTF subsetted to chromosome 20 for compact riboseq test data
       - aligned_reads
