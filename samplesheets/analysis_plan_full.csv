@@ -1,0 +1,3 @@
+integration,subset,resolution,analyses,de_methods
+scvi,global,1.0,"paga,liana,cell2cell,de,decoupler,aggregate_per_cell_annotation",
+,,,"paga,de,aggregate_per_cell_annotation",wilcoxon
