@@ -31,16 +31,18 @@ git fetch
 
 ## Datasets for nf-core/phyloplace
 
-### `testdata/ar53.alnfna.gz` and `testdata/ar53.newick.gz` - archaeal 16S reference alignment and tree
+### `testdata/ar53.alnfna.gz`, `testdata/ar53.newick.gz` and `testdata/ar53.taxonomy.tsv.gz` - archaeal 16S reference alignment, tree and taxonomy
 
-A reference alignment of 1976 archaeal 16S rRNA sequences over 1477 columns, and the phylogeny built from it, with GTDB genome accessions as sequence names.
-They are gzipped copies of two files on the SciLifeLab Data Repository (figshare), with the content unchanged:
+A reference alignment of 1976 archaeal 16S rRNA sequences over 1477 columns, the phylogeny built from it, and a GTDB taxonomy for its sequences, with GTDB genome accessions as sequence names.
+They are gzipped copies of three files on the SciLifeLab Data Repository (figshare), with the content unchanged:
 
 - `ar53.alnfna.gz`: file [47244067](https://ndownloader.figshare.com/files/47244067), `sbdigtdbsativa.r09rs220.ar53.sprepr.alnfna`
 - `ar53.newick.gz`: file [47244070](https://ndownloader.figshare.com/files/47244070), `sbdigtdbsativa.r09rs220.ar53.sprepr.brlenopt.newick`
+- `ar53.taxonomy.tsv.gz`: file [47244058](https://ndownloader.figshare.com/files/47244058), `sbdigtdbsativa.r09rs220.ar53.sprep.taxonomy.tsv`
 
 As the original names say, the sequences come from the archaeal (`ar53`) species representatives of GTDB release 220.
-Both were compressed with `gzip -9n`.
+The taxonomy has 1991 rows, 15 more than the tree has leaves, and every leaf has a row.
+All three were compressed with `gzip -9n`.
 
 nf-core/phyloplace's "search and place" tests downloaded these files from figshare, which now and then refused the download and failed a CI job.
 The tests and the sample sheets in this branch that point to figshare will move to these copies.
