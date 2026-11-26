@@ -45,7 +45,7 @@ The taxonomy has 1991 rows, 15 more than the tree has leaves, and every leaf has
 All three were compressed with `gzip -9n`.
 
 nf-core/phyloplace's "search and place" tests downloaded these files from figshare, which now and then refused the download and failed a CI job.
-The tests and the sample sheets in this branch that point to figshare will move to these copies.
+The sample sheets `phylosearch_input.csv`, `phylosearch_input_reftree.csv` and `phylosearch_catalogue.csv` in this branch use these copies instead.
 
 ### `testdata/hmmrank/` - HMMER search tables for the `hmmer/hmmrank` module tests
 
