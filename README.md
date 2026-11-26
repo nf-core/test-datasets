@@ -83,7 +83,7 @@ Used as the default `--hmm` value (with `--hmm_name 16S_rRNA`) for the pipeline'
 
 `resolvetaxonomy_test_embedded.fasta`: two short synthetic sequences (`SeqA`, `SeqB`) with taxonomy embedded directly in their FASTA header, GTDB-style (`>id taxonomy;string`), for `RESOLVETAXONOMY`'s own test of deriving a taxonomy file from `--sequences` headers when no separate `--taxonomy` file is given.
 
-`resolvetaxonomy_test.tax`: a separate taxonomy file for the same two sequence names, but with deliberately *different* (and clearly distinguishable -- `Archaea` rather than `Bacteria`) lineages than what's embedded in `resolvetaxonomy_test_embedded.fasta`'s headers. Used to test that an explicitly provided `--taxonomy` file always wins over embedded header text, with a warning rather than silently using the wrong source.
+`resolvetaxonomy_test.tax`: a separate taxonomy file for the same two sequence names, but with deliberately _different_ (and clearly distinguishable -- `Archaea` rather than `Bacteria`) lineages than what's embedded in `resolvetaxonomy_test_embedded.fasta`'s headers. Used to test that an explicitly provided `--taxonomy` file always wins over embedded header text, with a warning rather than silently using the wrong source.
 
 ## Support
 
