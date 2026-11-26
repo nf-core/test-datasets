@@ -1,0 +1,3 @@
+SeqOK	Bacteria;PhylumA;ClassA;GenusA;SpeciesA1
+SeqSpeciesMismatch	Bacteria;PhylumA;ClassA;GenusA;SpeciesA2
+SeqSevereMismatch	Bacteria;PhylumA;ClassA;GenusA;SpeciesA1

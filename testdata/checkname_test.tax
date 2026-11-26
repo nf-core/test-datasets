@@ -1,0 +1,5 @@
+SeqA	Bacteria;PhylumA;ClassA
+SeqB(1)	Bacteria;PhylumA;ClassB
+SeqC	Bacteria;PhylumB;ClassC
+SeqD~2	Bacteria;PhylumB;ClassD
+SeqE#3	Bacteria;PhylumC;ClassE

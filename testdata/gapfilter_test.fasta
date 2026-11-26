@@ -1,0 +1,8 @@
+>SeqGood1
+ACGTACGTAC
+>SeqGood2
+ACGTACGT--
+>SeqBad1
+ACG-------
+>SeqBad2
+----------

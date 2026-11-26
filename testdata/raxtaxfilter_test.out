@@ -1,0 +1,4 @@
+SeqOK;tax=Bacteria,PhylumA,ClassA,GenusA,SpeciesA1;	Bacteria,PhylumA,ClassA,GenusA,SpeciesA1	1.00,1.00,1.00,1.00,1.00	0.00000	0.90000
+SeqSpeciesMismatch;tax=Bacteria,PhylumA,ClassA,GenusA,SpeciesA2;	Bacteria,PhylumA,ClassA,GenusX,SpeciesX1	1.00,1.00,1.00,0.10,0.10	0.00000	0.30000
+SeqSpeciesMismatch;tax=Bacteria,PhylumA,ClassA,GenusA,SpeciesA2;	Bacteria,PhylumA,ClassA,GenusA,SpeciesA1	1.00,1.00,1.00,0.90,0.90	0.00000	0.80000
+SeqSevereMismatch;tax=Bacteria,PhylumA,ClassA,GenusA,SpeciesA1;	Bacteria,PhylumB,ClassB,GenusB,SpeciesB1	1.00,0.95,0.95,0.95,0.95	0.00000	0.85000

@@ -1,0 +1,4 @@
+SeqGood1	Bacteria;PhylumA;ClassA
+SeqGood2	Bacteria;PhylumA;ClassB
+SeqBad1	Bacteria;PhylumB;ClassC
+SeqBad2	Bacteria;PhylumB;ClassD
