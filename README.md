@@ -581,6 +581,9 @@ The earth sciences folder contain subfolders for different data formats encounte
       - flowcell_samplesheet.v2.csv: Illumina SampleSheet in BCLConvert V2 format — dual-index, 5 samples across 2 projects and 2 lanes. For samplesheet validation/parsing tests only; not intended to be run against `flowcell.tar.gz`.
       - flowcell_samplesheet_b.v1.csv: Illumina SampleSheet in IEM V1 (bcl2fastq) format — dual-index, 5 samples across 2 projects and lanes 3–4. Companion to `flowcell_samplesheet.v1.csv` for samplesheet merge tests.
       - flowcell_samplesheet_b.v2.csv: Illumina SampleSheet in BCLConvert V2 format — dual-index, 5 samples across 2 projects and lanes 3–4. Companion to `flowcell_samplesheet.v2.csv` for samplesheet merge tests.
+      - flowcell_no_runparameters.tar.gz: Same MiSeq run as `flowcell.tar.gz` without `RunParameters.xml`, for testing missing run parameters (from the `demultiplex` branch).
+      - miseq_35147139_samplesheet.csv: Illumina SampleSheet in IEM V1 format from a MiSeq Nextera DNA Flex run (from the `demultiplex` branch).
+      - nextseq2000_samplesheet.csv: Illumina SampleSheet in BCLConvert V2 format from a NextSeq 2000 10x single-cell run (from the `demultiplex` branch).
     - cram:
       - test.paired*end.sorted: Mapped, and sorted reads based on `test*{1,2}` (normal)
       - test.paired*end.markduplicates.sorted: Mapped, sorted, and duplicate marked reads based on `test*{1,2}` (normal)
@@ -720,6 +723,14 @@ The earth sciences folder contain subfolders for different data formats encounte
     - gridss:
       - test.gridss.vcf: First 500 lines of a somatic structural variant vcf file generated using `gridss`, suitable for testing gridds/somaticfilter.
       - gridss.properties: GRIDSS configuration properties file, suitable for testing the `gridss` modules. source: https://github.com/PapenfussLab/gridss/blob/825bc8e1bb092e9bb2ccb0c1c51dc6e7e1a922dd/src/main/resources/gridss.properties
+
+  - element
+    - sim-data (simulated data, from the `demultiplex` branch):
+      - sim-data.tar.gz: Simulated Element AVITI run folder `20230404-bases2fastq-sim-151-151-9-9` (2x151 bp reads, 9 bp indexes).
+      - RunManifest.csv: bases2fastq run manifest for `sim-data.tar.gz`.
+      - fastq.tar.gz: Simulated undemultiplexed FASTQ files (`out_L001_{I1,I2,R1,R2}_001.fastq.gz`).
+      - out.sample_meta.csv: Sample barcode sheet for `fastq.tar.gz` (sgdemux format).
+      - fqtk_sample_metadata_subset.tsv: Sample barcode sheet for `fastq.tar.gz` (fqtk format).
 
   - nanopore
     - bam
