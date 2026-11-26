@@ -26,8 +26,8 @@ to use `--tiles s_1_2101` with `bcl2fasq` or `--first-tile-only true` with
 
 ### Samplesheets
 
-`samplesheet/1.3.0/*_v2.csv` are copies of the matching samplesheets that point
-to the identical files on the `modules` branch
-(`data/genomics/homo_sapiens/element/sim-data/`,
+`samplesheet/1.3.0/{b2fq-samplesheet,flowcell_input,fqtk-samplesheet,samplesheet_full,sgdemux-samplesheet,uncompressed-samplesheet}.csv`
+and `samplesheet/two_lane_samplesheet.csv` point to the identical files on the
+`modules` branch (`data/genomics/homo_sapiens/element/sim-data/`,
 `data/genomics/homo_sapiens/illumina/bcl/`). Data not on the `modules` branch
 still comes from this branch, s3 or Hugging Face.

@@ -1,2 +1,0 @@
-id,samplesheet,lane,flowcell
-sim-data,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/homo_sapiens/element/sim-data/out.sample_meta.csv,,https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/homo_sapiens/element/sim-data/fastq.tar.gz
