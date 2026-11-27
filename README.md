@@ -26,6 +26,7 @@ There is no archaeon: the GTDB-Tk mock-up database has no archaeal reference gen
 There are two samples with different abundance profiles, so binners that use differential coverage have a signal to work with.
 Illumina reads (2x126 bp) are simulated with [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) 2.0.1 (HiSeq error model) and Nanopore reads with [readfaker](https://github.com/dialvarezs/readfaker) 0.4.0, using read lengths and qualities of R10.4.1 reads basecalled with dorado 2.1.2 (`sup@v5.2.0`).
 Coverage is kept low (fragmented assemblies) to keep the tests fast; the goal is to exercise the pipeline flow, not to get high-quality bins.
+The scripts and inputs that generate it are in [dialvarezs/mag-v6-dataset](https://github.com/dialvarezs/mag-v6-dataset).
 
 | File                               | Description                                                 |
 | ---------------------------------- | ----------------------------------------------------------- |
