@@ -24,7 +24,7 @@ The `test_minigut` test datasets are synthetic reads generated from a single gen
 
 There are two samples with different abundance profiles, so binners that use differential coverage have a signal to work with.
 Illumina reads (2x126 bp) are simulated with [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) 2.0.1 (HiSeq error model) and Nanopore reads with [readfaker](https://github.com/dialvarezs/readfaker) 0.4.0, using read lengths and qualities of R10.4.1 reads basecalled with dorado 2.1.2 (`sup@v5.2.0`).
-Coverage is kept low (fragmented assemblies) to keep the tests fast; the goal is to exercise the pipeline flow, not to get high-quality bins.
+Coverage is kept low (fragmented assemblies) to keep the tests fast.
 The scripts and inputs that generate it are in [dialvarezs/mag-v6-dataset](https://github.com/dialvarezs/mag-v6-dataset).
 
 | File                               | Description                                                 |
@@ -39,8 +39,7 @@ Read names carry their origin: Illumina reads are named `<genome>_<record>_<n>_<
 
 The samplesheets are in `samplesheets/v6/`.
 `assemblies/v6/` has a MEGAHIT assembly of sample1 and a metaSPAdes assembly of sample2 for assembly input tests, made by nf-core/mag from these reads and keeping only contigs of at least 1000 bp.
-`databases/cat/synthetic_cat.tar.gz` is a CAT*pack 6.0.1 database with the proteins of the five genomes plus those of \_Nanoarchaeum equitans* (GCF_000008085.1) and phage phiX174 (GCF_000819615.1), with the NCBI taxonomy cut down to their lineages.
-The archaeon and the phage are not in the reads: they give root and "cellular organisms" several children, as in a real database, and without them CAT_pack 6.0.1 crashes when it adds suggestive asterisks to a lineage.
+`databases/cat/synthetic_cat.tar.gz` is the matching CAT_pack database (see [CAT_pack](#cat_pack)).
 
 The read error correction step of SPAdes (BayesHammer, 4.1.0 and 4.3.0) stalls for hours on some inputs of this data, so tests should run SPAdes with `--spades_options '--only-assembler'`.
 
@@ -92,7 +91,13 @@ We have also generated tiny versions of databases for tools that normally requir
 
 ### CAT_pack
 
-For CAT of CAT_pack we did the following, and using CAT_pack (v6.0):
+`synthetic_cat.tar.gz` is the database for the synthetic v6 dataset.
+It is a CAT_pack 6.0.1 database with the proteins of the five genomes plus those of _Nanoarchaeum equitans_ (GCF_000008085.1) and phage phiX174 (GCF_000819615.1), with the NCBI taxonomy cut down to their lineages.
+The archaeon and the phage are not in the reads: they give root and "cellular organisms" several children, as in a real database, and without them CAT_pack 6.0.1 crashes when it adds suggestive asterisks to a lineage.
+It is built by `scripts/build_cat_db.py` in [dialvarezs/mag-v6-dataset](https://github.com/dialvarezs/mag-v6-dataset).
+
+`minigut_cat.tar.gz` is the previous database, made for the `test_minigut` data with the proteins of _B. fragilis_ only.
+For it we did the following, and using CAT_pack (v6.0):
 
 ```bash
 ## Download the FASTA of coding sequences FASTA AA of B. fragilis
