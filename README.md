@@ -34,7 +34,6 @@ The scripts and inputs that generate it are in [dialvarezs/mag-v6-dataset](https
 | `sample1_run{1,2}_R{1,2}.fastq.gz` | The two halves of sample1, as two sequencing runs           |
 | `sample{1,2}_ont.fastq.gz`         | Oxford Nanopore reads                                       |
 | `record_to_genome.tsv`             | Ground truth: reference record to genome                    |
-| `md5sums.txt`                      | Checksums of the reads                                      |
 
 Read names carry their origin: Illumina reads are named `<genome>_<record>_<n>_<m>/<mate>` by InSilicoSeq, and Nanopore reads have an `XO:Z:<genome>_<record>:<start>-<end>:<strand>` comment written by readfaker.
 
