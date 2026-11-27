@@ -13,7 +13,6 @@ The `test_minigut` test datasets are synthetic reads generated from a single gen
 ### Synthetic dataset (v6)
 
 `test_data/v6/` is a fully synthetic metagenome of five complete bacterial genomes from NCBI RefSeq, chosen for small size and distinct GC content, plus a 500 kb region of human chromosome 21 (`host_reference/genome.hg38.chr21_10000bp_region.fa`) at low coverage as host contamination.
-There is no archaeon: the GTDB-Tk mock-up database has no archaeal reference genomes.
 
 | Genome       | Accession       | Organism                                        | Size (Mb) | GC (%) |
 | ------------ | --------------- | ----------------------------------------------- | --------- | ------ |
