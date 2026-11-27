@@ -1276,7 +1276,7 @@ All datasets below are the example datasets bundled with the [MetaProViz](https:
   - 'sample1.subread.featureCounts.tsv': raw subread featureCounts output (v2.1.1) for one sample against the sarscov2 genome, for custom/collectfeaturecounts tests.
   - 'sample2.subread.featureCounts.tsv': raw subread featureCounts output (v2.1.1) for a second sample against the sarscov2 genome, matching sample1.subread.featureCounts.tsv, for custom/collectfeaturecounts tests.
   - 'phyclone_input.tsv': example PhyClone input file `mixing_small.tsv` obtained from [here](https://github.com/Roth-Lab/PhyClone/tree/main/examples/data). Columns contain mutation_id, sample_id, ref_counts, alt_counts, major_cn, minor_cn, normal_cn, variant_cases, and genotypes.
-  - 'pyclonevi_clusters.tsv': example clusters file `mixing_small_clusters.tsv` obtained from [here](https://github.com/Roth-Lab/PhyClone/tree/main/examples/data)
+  - 'pyclonevi_clusters.tsv': example clusters file `mixing_small_clusters.tsv` obtained from [here](https://github.com/Roth-Lab/PhyClone/tree/main/examples/data). Columns are mutation_id, and cluster_id
 - tax
   - 'resolvetaxonomy_plain.tax': taxonomy strings keyed by sequence id, matching the ids in resolvetaxonomy_plain.fasta, for custom/resolvetaxonomy tests.
   - 'resolvetaxonomy_override.tax': taxonomy strings keyed by sequence id that override the taxonomy embedded in resolvetaxonomy_embedded.fasta, for custom/resolvetaxonomy tests.
