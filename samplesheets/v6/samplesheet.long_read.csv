@@ -1,2 +1,2 @@
 sample,group,short_reads_1,short_reads_2,long_reads_platform,long_reads
-sample1,0,,,OXFORD_NANOPORE,https://raw.githubusercontent.com/dialvarezs/nfcore-test-datasets/mag/test_data/v6/sample1_ont.fastq.gz
+sample1,0,,,OXFORD_NANOPORE,https://github.com/nf-core/test-datasets/raw/mag/test_data/v6/sample1_ont.fastq.gz
