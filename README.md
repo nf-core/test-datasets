@@ -10,6 +10,39 @@ This branch contains test data for the [nf-core/mag](https://github.com/nf-core/
 
 The `test_minigut` test datasets are synthetic reads generated from a single genome of a mammalian-gut-residing Bacteroides fragilis YCH46 bacterium (NCBI accession: NC_006347).
 
+### Synthetic dataset (v6)
+
+`test_data/v6/` is a fully synthetic metagenome of five complete bacterial genomes from NCBI RefSeq, chosen for small size and distinct GC content, plus a 500 kb region of human chromosome 21 (`host_reference/genome.hg38.chr21_10000bp_region.fa`) at low coverage as host contamination.
+
+| Genome       | Accession       | Organism                                        | Size (Mb) | GC (%) |
+| ------------ | --------------- | ----------------------------------------------- | --------- | ------ |
+| `aquifex`    | GCF_000008625.1 | Aquifex aeolicus VF5                            | 1.59      | 43.5   |
+| `chlamydia`  | GCF_000008725.1 | Chlamydia trachomatis D/UW-3/CX                 | 1.04      | 41.5   |
+| `tropheryma` | GCF_000007485.1 | Tropheryma whipplei str. Twist                  | 0.93      | 46.5   |
+| `treponema`  | GCF_000008605.1 | Treponema pallidum subsp. pallidum str. Nichols | 1.14      | 53.0   |
+| `rickettsia` | GCF_000195735.1 | Rickettsia prowazekii str. Madrid E             | 1.11      | 29.0   |
+
+There are two samples with different abundance profiles, so binners that use differential coverage have a signal to work with.
+Illumina reads (2x126 bp) are simulated with [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) 2.0.1 (HiSeq error model) and Nanopore reads with [readfaker](https://github.com/dialvarezs/readfaker) 0.4.0, using read lengths and qualities of R10.4.1 reads basecalled with dorado 2.1.2 (`sup@v5.2.0`).
+Coverage is kept low (fragmented assemblies) to keep the tests fast.
+The scripts and inputs that generate it are in [dialvarezs/mag-v6-dataset](https://github.com/dialvarezs/mag-v6-dataset).
+
+| File                               | Description                                                 |
+| ---------------------------------- | ----------------------------------------------------------- |
+| `sample{1,2}_R{1,2}.fastq.gz`      | Illumina paired-end reads                                   |
+| `sample{1,2}_se.fastq.gz`          | Illumina single-end reads, at twice the paired-end coverage |
+| `sample1_run{1,2}_R{1,2}.fastq.gz` | The two halves of sample1, as two sequencing runs           |
+| `sample{1,2}_ont.fastq.gz`         | Oxford Nanopore reads                                       |
+| `record_to_genome.tsv`             | Ground truth: reference record to genome                    |
+
+Read names carry their origin: Illumina reads are named `<genome>_<record>_<n>_<m>/<mate>` by InSilicoSeq, and Nanopore reads have an `XO:Z:<genome>_<record>:<start>-<end>:<strand>` comment written by readfaker.
+
+The samplesheets are in `samplesheets/v6/`.
+`assemblies/v6/` has a MEGAHIT assembly of sample1 and a metaSPAdes assembly of sample2 for assembly input tests, made by nf-core/mag from these reads and keeping only contigs of at least 1000 bp.
+`databases/cat/synthetic_cat.tar.gz` is the matching CAT_pack database (see [CAT_pack](#cat_pack)).
+
+The read error correction step of SPAdes (BayesHammer, 4.1.0 and 4.3.0) stalls for hours on some inputs of this data, so tests should run SPAdes with `--spades_options '--only-assembler'`.
+
 ## Full-size test data
 
 The `manifext.full.tsv` links to gut metagenome data of antibiotic-treated patients originating from [Bertrand et al. _Nature Biotechnology_ (2019)](https://doi.org/10.1038/s41587-019-0191-2).
@@ -81,7 +114,13 @@ python build_bakta_db_subset.py db-light db-light-subset runs/<name> [runs/<name
 
 ### CAT_pack
 
-For CAT of CAT_pack we did the following, and using CAT_pack (v6.0):
+`synthetic_cat.tar.gz` is the database for the synthetic v6 dataset.
+It is a CAT_pack 6.0.1 database with the proteins of the five genomes plus those of _Nanoarchaeum equitans_ (GCF_000008085.1) and phage phiX174 (GCF_000819615.1), with the NCBI taxonomy cut down to their lineages.
+The archaeon and the phage are not in the reads: they give root and "cellular organisms" several children, as in a real database, and without them CAT_pack 6.0.1 crashes when it adds suggestive asterisks to a lineage.
+It is built by `scripts/build_cat_db.py` in [dialvarezs/mag-v6-dataset](https://github.com/dialvarezs/mag-v6-dataset).
+
+`minigut_cat.tar.gz` is the previous database, made for the `test_minigut` data with the proteins of _B. fragilis_ only.
+For it we did the following, and using CAT_pack (v6.0):
 
 ```bash
 ## Download the FASTA of coding sequences FASTA AA of B. fragilis
