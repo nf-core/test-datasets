@@ -1,0 +1,3 @@
+id,group,assembler,fasta
+sample1,0,MEGAHIT,https://raw.githubusercontent.com/dialvarezs/nfcore-test-datasets/mag/assemblies/v6/MEGAHIT-sample1.contigs.fa.gz
+sample2,0,SPAdes,https://raw.githubusercontent.com/dialvarezs/nfcore-test-datasets/mag/assemblies/v6/SPAdes-sample2.contigs.fa.gz
