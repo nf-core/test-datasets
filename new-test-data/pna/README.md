@@ -29,20 +29,21 @@ This generates the files in `testdata/pna/fastq`, including:
 - corresponding `*.metadata.json` files
 
 Single-end versions of `sample1`, `sample1_reseq`, `sample2`, `pool1`, `pool1_reseq` and `pool2` are also provided as
-`<library>_single_end_forward.fastq.gz` and `<library>_single_end_reverse.fastq.gz` (each with `*.metadata.json`).
+`<library>_single_end_forward.fastq.gz`, and of `sample1` and `pool1` as `<library>_single_end_reverse.fastq.gz`
+(each with `*.metadata.json`).
 Each read covers the whole amplicon: as is in the forward file, reverse-complemented in the reverse file.
 Both are drawn from the library's edge list with the same seed, so each read in the reverse file is the reverse complement
 of the matching read in the forward file.
 They were generated separately from the paired-end files, with the Pixelator test data generator
 (`uv run python -m pixelator.testing.test_data`), so they do not share edge lists with the paired-end files.
 
-The samplesheets `samplesheet_proxiome_v1.csv` and `samplesheet_proxiome_v2.csv` in `new-test-data/samplesheet/pna/` each hold
-four units (samples for v1, pools for v2): two resequenced (`sample_1` / `pool1` and their `_forward` counterparts) and two
-single-end (`*_forward`, forward read in `fastq_1`).
-
-The samplesheets `samplesheet_proxiome_v1_single_end.csv` and `samplesheet_proxiome_v2_single_end.csv` hold the same units,
-plus `*_reverse` units that pass the reverse files as the reverse read. They have a `reverse_read` column: `yes` for the
-`*_reverse` rows, `no` or empty for the `*_forward` rows, and empty for the paired-end rows.
+The samplesheets `samplesheet_proxiome_v1.csv` and `samplesheet_proxiome_v2.csv` in `new-test-data/samplesheet/pna/` mix
+paired-end and single-end units (samples for v1, pools for v2) so the pipeline tests run all of them in one go:
+paired-end units, single-end `*_forward` units (forward read in `fastq_1`) and single-end `*_reverse` units (reverse read in `fastq_1`).
+To keep the tests short, not every combination is covered: `sample_1` / `pool1` and their `_forward` counterparts are
+resequenced, and `sample_2` and `sample_2_forward` use a custom panel. There is one `*_reverse` unit per design
+(`sample_1_reverse`, `pool1_reverse`), without resequencing and with the standard panel.
+The `reverse_read` column is `yes` for the `*_reverse` rows, `no` or empty for the `*_forward` rows, and empty for the paired-end rows.
 
 ### Module output generation (`testdata/pna/modules`)
 
