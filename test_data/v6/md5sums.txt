@@ -1,0 +1,12 @@
+88a20cb8d6b91ed5d5d1cfb16288c714  ./sample1_R1.fastq.gz
+986cbb235e36e3bebafd91deb7efda6d  ./sample1_R2.fastq.gz
+bc2d23858dcef3a48e741270342fc5fd  ./sample1_ont.fastq.gz
+dd68e58e0117c7500ed4e391f5a1acc0  ./sample1_run1_R1.fastq.gz
+f2d4201115e4f8c373d9314348980b28  ./sample1_run1_R2.fastq.gz
+8fc664c60ea7c8f8e74143b91f6dd2cc  ./sample1_run2_R1.fastq.gz
+9716c463479a7d94c2b92edd9d4e7b19  ./sample1_run2_R2.fastq.gz
+bbfcd6d1217c7a9d22176b73815bb964  ./sample1_se.fastq.gz
+61774c225b9e2e226801ff176f621ae7  ./sample2_R1.fastq.gz
+0453f56ab5a5a9f15c9da4e2b6abd7bd  ./sample2_R2.fastq.gz
+d2dbd829de8b55472f64564df0af18a0  ./sample2_ont.fastq.gz
+8d759c58984baa25a34d0935a7da1cfc  ./sample2_se.fastq.gz
