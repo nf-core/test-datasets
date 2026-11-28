@@ -1,0 +1,11 @@
+#mpa_vJan21_CHOCOPhlAnSGB_202103
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Bacteroidetes	2|976	100.0	
+k__Bacteria|p__Bacteroidetes|c__Bacteroidia	2|976|200643	100.0	
+k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales	2|976|200643|171549	100.0	
+k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae	2|976|200643|171549|815	100.0	
+k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides	2|976|200643|171549|815|816	100.0	
+k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_dorei	2|976|200643|171549|815|816|357276	50.0	
+k__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__Bacteroidaceae|g__Bacteroides|s__Bacteroides_vulgatus	2|976|200643|171549|815|816|821	50.0	

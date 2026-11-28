@@ -983,6 +983,13 @@ The earth sciences folder contain subfolders for different data formats encounte
       - genome.aln.nwk: A newick format phylogeny file of genomes of various strains of _Haemophilus influenzae_
       - genome.fna.gz: _Haemophilus influenzae_ reference genome (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
   - metagenome
+    - biobakery
+      - humann3: HUMAnN 3.6 demo databases, reads and profile, made from the `funcprofiler` branch databases and the demo data of the MIT-licensed HUMAnN 3.6.1 repository (see `biobakery/README.md`)
+        - chocophlan_nfDEMO.tar.gz: Nucleotide database with three ChocoPhlAn genes each of _Bacteroides dorei_ and _Bacteroides vulgatus_
+        - uniref_nfDEMO.tar.gz: Protein database with UniRef90 demo proteins (FASTA and DIAMOND index)
+        - utility_nfDEMO.tar.gz: Utility mapping database (UniRef to KO, EC, GO, Pfam and eggNOG maps and name files, cut to one line each; enough for `humann_regroup_table` on `test_genefamilies.tsv`)
+        - demo_subset.fastq.gz: 177 reads from the HUMAnN demo reads (`examples/demo.fastq.gz`) that hit the demo databases: HUMAnN finds 11 gene families and two pathways
+        - demo_profile.txt: Hand-written MetaPhlAn 4 (`vJan21`) profile of _Bacteroides dorei_ and _Bacteroides vulgatus_, for `--taxonomic-profile`
     - fasta
       - haemophilus_influenzae.fna.gz: Multi-chromosomed reference genome file (NZ_LS483480.1 from Haemophilus influenzae strain NCTC13377)
       - SARS-sarscov2.fasta: Reference genome file for SARS-CoV-2 (MT192765.1 Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/USA/PC00101P/2020)
